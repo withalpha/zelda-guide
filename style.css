@@ -1801,3 +1801,119 @@ table.data-tbl tbody tr:hover td { background:rgba(201,162,39,0.04); color:var(-
 /* ── 修正 corner 底部 ── */
 .cinematic-frame-wrap .cin-corner-bl,
 .cinematic-frame-wrap .cin-corner-br { bottom:44px; }
+
+
+/* ════════════════════════════════════════════════
+   📱 移动端全面优化
+   ════════════════════════════════════════════════ */
+
+/* ── 导航遮罩层（点击空白关闭菜单）── */
+.nav-overlay {
+  display: none;
+  position: fixed; inset: 0; top: 60px;
+  background: rgba(0,0,0,0.55);
+  z-index: 999;
+  backdrop-filter: blur(2px);
+}
+.nav-overlay.open { display: block; }
+
+@media (max-width: 768px) {
+
+  /* ── 导航菜单：限高 + 可滚动 ── */
+  .navbar-nav {
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    z-index: 1000;
+    /* 平滑滚动 */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* ── 首页卡片网格：最小宽度改小，手机不溢出 ── */
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── 卡片内边距缩小 ── */
+  .category-card { padding: 22px 18px; }
+
+  /* ── 表格：手机上横向滚动 ── */
+  .table-wrap {
+    -webkit-overflow-scrolling: touch;
+  }
+  table.data-tbl { min-width: 560px; }
+
+  /* ── 坐标文字不换行 ── */
+  .coord { font-size: 0.7rem; }
+
+  /* ── 进度统计数字缩小 ── */
+  .progress-stat-val { font-size: 1.1rem; }
+
+  /* ── 筛选标签：可横向滚动，不换行 ── */
+  .filter-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .filter-tabs::-webkit-scrollbar { display: none; }
+  .filter-tab { flex-shrink: 0; }
+
+  /* ── page-body 内边距缩小 ── */
+  .page-body { padding: 28px 16px 60px; }
+  .page-hero  { padding: 80px 16px 36px; }
+
+  /* ── hero 统计数字间距 ── */
+  .hero-stats { gap: 20px; }
+  .hero-stat-number { font-size: 1.6rem; }
+
+  /* ── 主线任务详情：单列 ── */
+  .quest-detail-inner {
+    grid-template-columns: 1fr;
+    padding-left: 16px;
+  }
+
+  /* ── 武器/套装卡片图片高度 ── */
+  .clothes-img-wrap { height: 160px; }
+
+  /* ── 神庙列表右侧徽章换行 ── */
+  .shrine-right { flex-wrap: wrap; gap: 5px; }
+
+  /* ── 高亮框文字大小 ── */
+  .highlight-box, .tip-box { font-size: 0.8rem; padding: 12px 14px; }
+
+  /* ── 面包屑缩小 ── */
+  .breadcrumb { font-size: 0.75rem; }
+
+  /* ── 搜索框 ── */
+  .search-input { font-size: 0.85rem; padding: 11px 42px 11px 14px; }
+
+  /* ── 奖励卡片（mauyu-lost）── */
+  .reward-grid { grid-template-columns: 1fr; }
+
+  /* ── 料理统计栏 ── */
+  .cook-stats { gap: 8px; }
+  .cook-stat  { padding: 10px 12px; }
+  .cook-stat-val { font-size: 1.3rem; }
+}
+
+/* ── 极窄屏（360px 以下）── */
+@media (max-width: 380px) {
+  .navbar-logo { font-size: 0.82rem; }
+  .logo-icon   { width: 26px; height: 26px; font-size: 0.85rem; }
+  .page-hero-title { font-size: 1.6rem; }
+  .hero-title  { font-size: 2.2rem; }
+  .filter-tab  { padding: 5px 11px; font-size: 0.74rem; }
+  .category-card { padding: 18px 14px; }
+  .card-title  { font-size: 1.2rem; }
+}
+
+/* ── 触摸设备：去掉 hover 位移动画（防止点击后卡住）── */
+@media (hover: none) {
+  .category-card:hover,
+  .info-card:hover,
+  .recipe-card:hover,
+  .weapon-card:hover { transform: none; }
+  .quest-item:hover,
+  .shrine-item:hover { transform: none; }
+}

@@ -7,18 +7,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.getElementById('hamburger');
   const nav       = document.getElementById('mainNav');
 
+  // ── 创建遮罩层 ──
+  const overlay = document.createElement('div');
+  overlay.className = 'nav-overlay';
+  document.body.appendChild(overlay);
+
+  function closeMenu() {
+    hamburger.classList.remove('open');
+    nav.classList.remove('open');
+    overlay.classList.remove('open');
+  }
+
   if (hamburger && nav) {
     hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      nav.classList.toggle('open');
+      const isOpen = nav.classList.contains('open');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        hamburger.classList.add('open');
+        nav.classList.add('open');
+        overlay.classList.add('open');
+      }
     });
+
+    // 点击遮罩关闭菜单
+    overlay.addEventListener('click', closeMenu);
+
     // 点击导航项后关闭菜单（下拉触发项除外）
     nav.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', (e) => {
         // 如果是下拉触发项，不关闭菜单
         if (a.closest('.nav-dropdown') && a.parentElement.classList.contains('nav-dropdown')) return;
-        hamburger.classList.remove('open');
-        nav.classList.remove('open');
+        closeMenu();
       });
     });
   }
