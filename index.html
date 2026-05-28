@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- ═══ 安全与版权 meta ═══ -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="withalpha@proton.me">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="塞尔达传说王国之泪（Tears of the Kingdom）完整攻略站，覆盖主线任务、情节挑战、神庙挑战、破魔树根、武器、料理、套装全内容。">
+  <meta name="keywords" content="塞尔达传说,王国之泪,Tears of the Kingdom,攻略,神庙,破魔树根,武器,料理,套装">
+  <meta property="og:title" content="塞尔达传说：王国之泪 · 全攻略">
+  <meta property="og:description" content="塞尔达传说王国之泪（Tears of the Kingdom）完整攻略站，覆盖主线任务、情节挑战、神庙挑战、破魔树根、武器、料理、套装全内容。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="塞尔达传说：王国之泪 · 全攻略">
+  <meta name="twitter:description" content="塞尔达传说王国之泪（Tears of the Kingdom）完整攻略站，覆盖主线任务、情节挑战、神庙挑战、破魔树根、武器、料理、套装全内容。">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>塞尔达传说：王国之泪 · 全攻略</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 预加载背景图 -->
+  <link rel="preload" as="image" href="images/characters/20192200rsab.png">
+  <link rel="preload" as="image" href="images/characters/desktop1.jpg">
+  <link rel="preload" as="image" href="images/characters/desktop2.jpg">
+  <style>
+  /* ══════════════════════════════════════════════════
+     TOTK Hero —— 三图轮播背景 · 电影虚化风
+  ══════════════════════════════════════════════════ */
+
+  /* ── 外壳 ── */
+  .hero-totk {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  /* ══════════════════════
+     轮播背景层
+  ══════════════════════ */
+  .hero-slides {
+    position: absolute; inset: 0; z-index: 0;
+  }
+
+  .hero-slide {
+    position: absolute; inset: 0;
+    background-size: cover;
+    background-position: center;
+    /* 虚化 + 压暗 + 去饱和，保留隐约轮廓 */
+    filter: blur(18px) brightness(0.22) saturate(0.5);
+    /* 稍微放大防止虚化边缘露出 */
+    transform: scale(1.08);
+    opacity: 0;
+    /* 单张完整时间：3s淡入 + 5s停留 + 3s淡出 = 11s × 3 = 33s循环 */
+    animation: slide-cycle 33s infinite;
+    will-change: opacity, transform;
+  }
+
+  /* 三张图依次延迟 11s */
+  .hero-slide:nth-child(1) {
+    background-image: url('images/characters/20192200rsab.png');
+    animation-delay: 0s;
+  }
+  .hero-slide:nth-child(2) {
+    background-image: url('images/characters/desktop1.jpg');
+    animation-delay: 11s;
+  }
+  .hero-slide:nth-child(3) {
+    background-image: url('images/characters/desktop2.jpg');
+    animation-delay: 22s;
+  }
+
+  /*
+    关键帧：
+    0%   → 淡出完毕（不可见）
+    9%   → 淡入完成（33%/11s * 3s ≈ 9%）
+    63%  → 保持可见到下一张开始（约 7/11s）
+    73%  → 淡出完成
+    100% → 依然不可见，等下一轮
+  */
+  @keyframes slide-cycle {
+    0%         { opacity: 0; transform: scale(1.08); }
+    9%         { opacity: 1; transform: scale(1.04); }
+    63%        { opacity: 1; transform: scale(1.00); }
+    73%, 100%  { opacity: 0; transform: scale(1.08); }
+  }
+
+  /* ══════════════════════
+     颜色叠加层
+  ══════════════════════ */
+
+  /* 深色渐变：顶部海蓝 → 中段黑 → 底部暖橙 */
+  .hero-color-overlay {
+    position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: linear-gradient(
+      180deg,
+      rgba(4,   8,  20, 0.82)  0%,
+      rgba(8,  14,  32, 0.72) 18%,
+      rgba(10, 12,  28, 0.60) 38%,
+      rgba(6,   8,  18, 0.55) 55%,
+      rgba(18, 12,   4, 0.72) 72%,
+      rgba(30, 16,   2, 0.88) 86%,
+      rgba(8,   4,   2, 0.97) 100%
+    );
+  }
+
+  /* 中央光晕：金绿色光从中心扩散 */
+  .hero-center-glow {
+    position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background:
+      radial-gradient(ellipse 55% 42% at 50% 48%,
+        rgba(50, 195, 140, 0.08) 0%,
+        rgba(201, 162, 39, 0.06) 40%,
+        transparent 70%),
+      radial-gradient(ellipse 40% 25% at 50% 72%,
+        rgba(255, 185, 40, 0.14) 0%,
+        transparent 65%);
+  }
+
+  /* 地平线暖光带 */
+  .hero-horizon {
+    position: absolute; z-index: 2; pointer-events: none;
+    left: 0; right: 0;
+    bottom: 22%;
+    height: 180px;
+    background: radial-gradient(
+      ellipse 80% 100% at 50% 100%,
+      rgba(220, 150, 20, 0.22) 0%,
+      rgba(180, 100, 10, 0.10) 45%,
+      transparent 100%
+    );
+    filter: blur(16px);
+  }
+
+  /* 暗角 */
+  .hero-vignette {
+    position: absolute; inset: 0; z-index: 3; pointer-events: none;
+    background:
+      radial-gradient(ellipse 110% 90% at 50% 50%,
+        transparent 28%,
+        rgba(0,0,0,0.65) 100%),
+      linear-gradient(180deg,
+        rgba(0,0,0,0.30) 0%,
+        transparent 15%,
+        transparent 78%,
+        rgba(0,0,0,0.55) 100%);
+  }
+
+  /* ══════════════════════
+     内容层
+  ══════════════════════ */
+  .totk-content {
+    position: relative; z-index: 5;
+    display: flex; flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 80px 24px 130px;
+    /* 内容整体入场动画 */
+    animation: content-in 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  @keyframes content-in {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── 徽章 ── */
+  .totk-emblem {
+    width: 128px; height: 128px;
+    margin-bottom: 22px;
+    filter: drop-shadow(0 0 14px rgba(50,195,140,0.65));
+    animation: totk-glow 4s ease-in-out infinite;
+  }
+  @keyframes totk-glow {
+    0%,100% { filter: drop-shadow(0 0 14px rgba(50,195,140,0.60)); }
+    50%     { filter: drop-shadow(0 0 32px rgba(50,195,140,1.00))
+                      drop-shadow(0 0 64px rgba(50,195,140,0.30)); }
+  }
+
+  /* ── 标题三列 ── */
+  .totk-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1120px;
+    width: 100%;
+  }
+
+  .totk-cjk-l, .totk-cjk-r {
+    font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
+    font-size: clamp(2.2rem, 6.4vw, 5.2rem);
+    font-weight: 900;
+    color: #f2ede4;
+    letter-spacing: 0.06em;
+    line-height: 1;
+    text-shadow:
+      0 0 60px rgba(50, 195, 140, 0.20),
+      2px 3px 0  rgba(0, 0, 0, 0.92),
+      0 0 100px  rgba(255, 200, 90, 0.05);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .totk-en-block {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 7px; flex-shrink: 0;
+  }
+  .totk-en-top {
+    font-size: clamp(0.6rem, 1.5vw, 0.95rem);
+    color: rgba(220, 210, 190, 0.85);
+    letter-spacing: 0.24em;
+    font-weight: 400;
+    white-space: nowrap;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.9);
+  }
+  .totk-en-bot {
+    font-size: clamp(0.78rem, 1.9vw, 1.22rem);
+    color: #ffffff;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    white-space: nowrap;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.9), 0 0 28px rgba(255,255,255,0.08);
+  }
+  .totk-en-crown { font-size: 0.68em; opacity: 0.65; }
+
+  /* ── 分割线 ── */
+  .totk-divider {
+    width: 260px; height: 1px;
+    background: linear-gradient(90deg,
+      transparent,
+      rgba(200, 170, 70, 0.40),
+      rgba(50,  195,140, 0.55),
+      rgba(200, 170, 70, 0.40),
+      transparent);
+    margin: 28px auto 24px;
+  }
+
+  /* ── 统计数字 ── */
+  .totk-stats {
+    display: flex; align-items: center;
+    gap: 32px; flex-wrap: wrap; justify-content: center;
+  }
+  .totk-stat { text-align: center; }
+  .totk-stat-num {
+    display: block;
+    font-size: 1.9rem; font-weight: 800;
+    color: #f0d060;
+    font-family: 'Noto Serif SC', serif;
+    text-shadow: 0 0 24px rgba(240, 208, 96, 0.55);
+    transition: text-shadow 0.3s;
+  }
+  .totk-stat-lbl {
+    display: block;
+    font-size: 0.63rem; color: rgba(180, 168, 138, 0.75);
+    letter-spacing: 0.12em; margin-top: 4px;
+  }
+  .totk-stat-sep { color: rgba(200,170,70,0.30); font-size: 0.42rem; }
+
+  /* ── 副标签 ── */
+  .totk-tagline {
+    margin-top: 20px;
+    font-size: 0.70rem;
+    color: rgba(188, 178, 154, 0.55);
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+  }
+
+  /* ══════════════════════
+     轮播指示点
+  ══════════════════════ */
+  .hero-dots {
+    position: absolute; bottom: 68px; left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+    display: flex; gap: 8px; align-items: center;
+  }
+  .hero-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: rgba(200, 170, 90, 0.30);
+    border: 1px solid rgba(200, 170, 90, 0.45);
+    transition: all 0.4s;
+    animation: dot-cycle 33s infinite;
+  }
+  .hero-dot:nth-child(1) { animation-delay:  0s; }
+  .hero-dot:nth-child(2) { animation-delay: 11s; }
+  .hero-dot:nth-child(3) { animation-delay: 22s; }
+  @keyframes dot-cycle {
+    0%         { background: rgba(240,208,96,0.90); width: 18px; border-radius: 3px; }
+    30.3%      { background: rgba(240,208,96,0.90); width: 18px; border-radius: 3px; }
+    39.4%      { background: rgba(200,170,90,0.30); width:  6px; border-radius: 50%; }
+    100%       { background: rgba(200,170,90,0.30); width:  6px; border-radius: 50%; }
+  }
+
+  /* ── 向下提示 ── */
+  .totk-scroll-hint {
+    position: absolute; bottom: 28px; left: 50%;
+    transform: translateX(-50%);
+    color: rgba(178, 166, 138, 0.50);
+    font-size: 0.60rem;
+    display: flex; flex-direction: column; align-items: center; gap: 5px;
+    letter-spacing: 0.14em;
+    animation: float-hint 2.6s ease-in-out infinite;
+    z-index: 6;
+  }
+
+  /* ══════════════════════
+     响应式
+  ══════════════════════ */
+  @media (max-width: 640px) {
+    .totk-title-row { flex-direction: column; gap: 6px; }
+    .totk-cjk-l, .totk-cjk-r { font-size: clamp(1.9rem, 9.5vw, 2.7rem); }
+    .totk-emblem { width: 90px; height: 90px; }
+    .hero-dots   { bottom: 58px; }
+  }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html">
+      <div class="logo-icon">⚔</div>
+      王国之泪 攻略
+    </a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html" class="active">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li class="nav-dropdown">
+        <a href="#" onclick="return false">物品收集</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li>
+          <li><a href="sage-will.html" class="disabled">贤者的遗志</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero-totk">
+
+  <!-- ── 三图轮播背景 ── -->
+  <div class="hero-slides">
+    <div class="hero-slide"></div>
+    <div class="hero-slide"></div>
+    <div class="hero-slide"></div>
+  </div>
+
+  <!-- ── 颜色叠加层 ── -->
+  <div class="hero-color-overlay"></div>
+  <div class="hero-center-glow"></div>
+  <div class="hero-horizon"></div>
+  <div class="hero-vignette"></div>
+
+  <!-- 内容 -->
+  <div class="totk-content">
+
+    <!-- 佐纳依徽章 -->
+    <img class="totk-emblem" src="images/characters/图标.png" alt="佐纳依徽章">
+
+    <!-- 三列标题 -->
+    <div class="totk-title-row">
+      <span class="totk-cjk-l">薩爾達傳說</span>
+
+      <div class="totk-en-block">
+        <span class="totk-en-top">THE LEGEND OF ZELDA</span>
+        <span class="totk-en-bot">TEARS OF<span class="totk-en-crown">™</span> THE KINGDOM</span>
+      </div>
+
+      <span class="totk-cjk-r">王國之淚</span>
+    </div>
+
+    <div class="totk-divider"></div>
+
+    <div class="totk-stats">
+      <div class="totk-stat">
+        <span class="totk-stat-num">23</span>
+        <span class="totk-stat-lbl">主线任务</span>
+      </div>
+      <span class="totk-stat-sep">◆</span>
+      <div class="totk-stat">
+        <span class="totk-stat-num">152</span>
+        <span class="totk-stat-lbl">神庙总数</span>
+      </div>
+      <span class="totk-stat-sep">◆</span>
+      <div class="totk-stat">
+        <span class="totk-stat-num">120</span>
+        <span class="totk-stat-lbl">破魔树根</span>
+      </div>
+      <span class="totk-stat-sep">◆</span>
+      <div class="totk-stat">
+        <span class="totk-stat-num">∞</span>
+        <span class="totk-stat-lbl">料理组合</span>
+      </div>
+    </div>
+
+    <p class="totk-tagline">Nintendo Switch · 全攻略指南</p>
+  </div>
+
+  <div class="totk-scroll-hint">
+    <span>向下探索</span>
+    <span>▼</span>
+  </div>
+
+  <!-- 轮播指示点 -->
+  <div class="hero-dots">
+    <span class="hero-dot"></span>
+    <span class="hero-dot"></span>
+    <span class="hero-dot"></span>
+  </div>
+
+</section>
+
+<!-- ══ CATEGORIES ══ -->
+<div class="categories-section">
+  <div class="section-header">
+    <span class="section-tag">GUIDE CATEGORIES</span>
+    <h2 class="section-title">选择<span>攻略类型</span></h2>
+    <p class="section-subtitle">涵盖主线支线、神庙、武器、料理等全部内容</p>
+  </div>
+
+  <div class="categories-grid">
+
+    <a href="main-quest.html" class="category-card">
+      <span class="card-icon">📜</span>
+      <p class="card-number">CHAPTER 01</p>
+      <h3 class="card-title">主线任务</h3>
+      <p class="card-desc">从初始空岛到讨伐加侬多夫，23条主线任务完整攻略，包含剧情解析、推进顺序与关键道具。</p>
+      <span class="card-count">🗺 共 23 条任务</span>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a href="side-quest.html" class="category-card">
+      <span class="card-icon">💬</span>
+      <p class="card-number">CHAPTER 02</p>
+      <h3 class="card-title">情节挑战</h3>
+      <p class="card-desc">遍布海拉鲁大地的情节挑战全收录，NPC对话触发条件、奖励道具与完成建议一览。</p>
+      <span class="card-count">📋 精选情节挑战攻略</span>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a href="shrines.html" class="category-card">
+      <span class="card-icon">🏛</span>
+      <p class="card-number">CHAPTER 03</p>
+      <h3 class="card-title">神庙挑战</h3>
+      <p class="card-desc">31个神庙挑战完整攻略，涵盖水晶神庙、洞窟神庙与特殊任务触发等各类型，详解找寻路线与开启条件。</p>
+      <span class="card-count">🏛 31 个神庙挑战</span>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a href="shrine-unlock.html" class="category-card">
+      <span class="card-icon">🔮</span>
+      <p class="card-number">CHAPTER 04</p>
+      <h3 class="card-title">神庙开启指南</h3>
+      <p class="card-desc">152座神庙按地区分类，标注精确坐标、前置条件与开启方式，助你完成全神庙收集。</p>
+      <span class="card-count">📍 全区坐标收录</span>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a href="roots.html" class="category-card">
+      <span class="card-icon">🌿</span>
+      <p class="card-number">CHAPTER 05</p>
+      <h3 class="card-title">破魔树根</h3>
+      <p class="card-desc">120个破魔树根全部位置与开启方式，地底世界分区攻略，帮你点亮每一寸地图。</p>
+      <span class="card-count">🌿 120 个树根</span>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a href="weapons.html" class="category-card">
+      <span class="card-icon">⚔</span>
+      <p class="card-number">CHAPTER 06</p>
+      <h3 class="card-title">武器获取与合成</h3>
+      <p class="card-desc">各类武器获取途径、融合材料推荐、伤害计算与最优合成配方，打造你的究极兵装。</p>
+      <span class="card-count">⚔ 含融合配方</span>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a href="cooking.html" class="category-card">
+      <span class="card-icon">🍲</span>
+      <p class="card-number">CHAPTER 07</p>
+      <h3 class="card-title">料理合成</h3>
+      <p class="card-desc">回血、强化心跳、耐寒耐热等效果料理全收录，星级食材搭配与最高效食谱推荐。</p>
+      <span class="card-count">🍳 含特效料理</span>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a href="clothes.html" class="category-card">
+      <span class="card-icon">🧥</span>
+      <p class="card-number">CHAPTER 08</p>
+      <h3 class="card-title">套装获取</h3>
+      <p class="card-desc">全 38 套套装完整图鉴，含获取方式、套装加成、大妖精强化素材与使用建议，助你打造最强防具。</p>
+      <span class="card-count">🛡 共 38 套套装</span>
+      <span class="card-arrow">→</span>
+    </a>
+
+  </div>
+</div>
+
+<!-- ══ COLLECTIBLES ══ -->
+<div id="collectibles" class="categories-section">
+  <div class="section-header">
+    <span class="section-tag">COLLECTIBLES</span>
+    <h2 class="section-title">物品<span>收集</span></h2>
+    <p class="section-subtitle">散落在海拉鲁各地的珍贵遗物，等待你逐一寻回</p>
+  </div>
+
+  <div class="categories-grid">
+
+    <a href="mauyu-lost.html" class="category-card">
+      <span class="card-icon">🌀</span>
+      <p class="card-number">COLLECT 01</p>
+      <h3 class="card-title">魔犹伊的遗失物</h3>
+      <p class="card-desc">散落于海拉鲁各地的魔犹伊遗失物全收录，含精确坐标、获取方式与交还奖励，助你完成全数集齐。</p>
+      <span class="card-count">🔍 全部遗失物位置</span>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a href="sage-will.html" class="category-card" style="opacity:0.5;pointer-events:none;cursor:default">
+      <span class="card-icon">📖</span>
+      <p class="card-number">COLLECT 02</p>
+      <h3 class="card-title">贤者的遗志</h3>
+      <p class="card-desc">记录古代贤者意志的遗志碎片全图鉴，分布地点、触发条件与解锁内容详解，还原王国之泪的深层剧情。</p>
+      <span class="card-count">🚧 即将上线</span>
+      <span class="card-arrow">→</span>
+    </a>
+
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">
+      本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。<br>
+      《塞尔达传说 王国之泪》版权归任天堂株式会社所有。<br>
+      © 2023 Nintendo. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+

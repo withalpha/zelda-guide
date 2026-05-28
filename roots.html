@@ -1,0 +1,2310 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- ═══ 安全与版权 meta ═══ -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="withalpha@proton.me">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="王国之泪全120个破魔树根位置攻略，含地底互动地图与各区域分布说明。">
+  <meta name="keywords" content="王国之泪,破魔树根,Lightroot,地底,地图,攻略">
+  <meta property="og:title" content="破魔树根全位置 · 王国之泪">
+  <meta property="og:description" content="王国之泪全120个破魔树根位置攻略，含地底互动地图与各区域分布说明。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="破魔树根全位置 · 王国之泪">
+  <meta name="twitter:description" content="王国之泪全120个破魔树根位置攻略，含地底互动地图与各区域分布说明。">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>破魔树根 · 王国之泪攻略</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html" class="active">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a><ul class="nav-dropdown-menu"><li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li><li><a href="sage-will.html" class="disabled">贤者的遗志</a></li></ul></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <span class="page-hero-eyebrow">LIGHTROOTS</span>
+  <h1 class="page-hero-title">🌿 破魔树根</h1>
+  <p class="page-hero-subtitle">120个破魔树根全位置 · 地底世界地图点亮指南</p>
+</div>
+
+<div class="page-body">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span><span class="cur">破魔树根</span>
+  </nav>
+
+  <!-- 进度追踪 -->
+  <div class="progress-section">
+    <div class="progress-info">
+      <p class="progress-label">破魔树根收集进度</p>
+      <div class="progress-bar"><div class="progress-fill" style="width:0%" id="rootProgressFill"></div></div>
+    </div>
+    <div class="progress-stats">
+      <div class="progress-stat">
+        <span class="progress-stat-val" id="rootDoneCount">0</span>
+        <span class="progress-stat-lbl">已激活</span>
+      </div>
+      <div class="progress-stat">
+        <span class="progress-stat-val">120</span>
+        <span class="progress-stat-lbl">全部树根</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <strong>破魔树根说明：</strong>破魔树根分布在地底世界，激活后可照亮周围区域，并显示在地图上。其名称与地面神庙名称高度对应（反转拼写），可利用此规律快速定位。每个树根正下方通常有对应的地面神庙。共120个，与地面120座神庙一一对应。
+  </div>
+
+  <!-- 搜索 -->
+  <div class="search-wrap">
+    <input class="search-input" type="text" placeholder="搜索树根名称或坐标..." oninput="searchRoots(this.value)">
+    <span class="search-icon">🔍</span>
+  </div>
+
+  <!-- 地区统计 -->
+  <div class="section-label">🌑 地底区域分布</div>
+  <div class="card-grid" style="margin-bottom:32px">
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="info-card-icon">🏙</span>
+        <div><div class="info-card-title">中央海拉鲁地底</div><div class="info-card-sub">Central Hyrule Depths</div></div>
+      </div>
+      <div class="info-card-body">树根数量：<strong style="color:var(--green)">23个</strong></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="info-card-icon">💧</span>
+        <div><div class="info-card-title">拉聂尔地底</div><div class="info-card-sub">Lanayru Depths</div></div>
+      </div>
+      <div class="info-card-body">树根数量：<strong style="color:var(--green)">13个</strong></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="info-card-icon">🔥</span>
+        <div><div class="info-card-title">奥尔汀地底</div><div class="info-card-sub">Eldin Depths</div></div>
+      </div>
+      <div class="info-card-body">树根数量：<strong style="color:var(--green)">13个</strong></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="info-card-icon">⚡</span>
+        <div><div class="info-card-title">格鲁德地底</div><div class="info-card-sub">Gerudo Depths</div></div>
+      </div>
+      <div class="info-card-body">树根数量：<strong style="color:var(--green)">16个</strong></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="info-card-icon">🪶</span>
+        <div><div class="info-card-title">赫布拉地底</div><div class="info-card-sub">Hebra Depths</div></div>
+      </div>
+      <div class="info-card-body">树根数量：<strong style="color:var(--green)">20个</strong></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="info-card-icon">🌲</span>
+        <div><div class="info-card-title">海拉鲁大森林地底</div><div class="info-card-sub">Great Hyrule Forest Depths</div></div>
+      </div>
+      <div class="info-card-body">树根数量：<strong style="color:var(--green)">8个</strong></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="info-card-icon">🛡</span>
+        <div><div class="info-card-title">阿卡莱地底</div><div class="info-card-sub">Akkala Depths</div></div>
+      </div>
+      <div class="info-card-body">树根数量：<strong style="color:var(--green)">10个</strong></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="info-card-icon">🌿</span>
+        <div><div class="info-card-title">内克鲁达地底</div><div class="info-card-sub">Necluda Depths</div></div>
+      </div>
+      <div class="info-card-body">树根数量：<strong style="color:var(--green)">14个</strong></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="info-card-icon">🌊</span>
+        <div><div class="info-card-title">费罗尼地底</div><div class="info-card-sub">Faron Depths</div></div>
+      </div>
+      <div class="info-card-body">树根数量：<strong style="color:var(--green)">3个</strong></div>
+    </div>
+  </div>
+
+  <!-- 地底地图 -->
+  <div class="section-label">🗺 地底世界互动地图</div>
+
+  <!-- ══ MAP CARD ══ -->
+  <div style="background:var(--bg-card);border:1px solid var(--border-gold);border-radius:16px;overflow:hidden;margin-bottom:32px;box-shadow:0 8px 40px rgba(0,0,0,0.5);">
+
+    <!-- 地图工具栏 -->
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid rgba(201,162,39,0.15);background:rgba(0,0,0,0.25);">
+      <!-- 层级切换 -->
+      <div style="display:flex;gap:4px;margin-right:8px;">
+        <button id="mapLayerSurface" onclick="switchLayer('surface')"
+          style="padding:5px 13px;border-radius:6px;border:1px solid rgba(201,162,39,0.4);background:rgba(201,162,39,0.08);color:#c9a227;font-size:11px;cursor:pointer;font-weight:600;letter-spacing:.04em;">
+          🌍 地表
+        </button>
+        <button id="mapLayerDepths" onclick="switchLayer('depths')"
+          style="padding:5px 13px;border-radius:6px;border:1px solid rgba(167,139,250,0.7);background:rgba(167,139,250,0.15);color:#a78bfa;font-size:11px;cursor:pointer;font-weight:700;letter-spacing:.04em;">
+          🌑 地底
+        </button>
+      </div>
+      <div style="width:1px;height:22px;background:rgba(201,162,39,0.2);margin:0 4px;"></div>
+      <!-- 区域筛选 -->
+      <button class="mrb active" data-r="all" onclick="mapFilter('all',this)">全部</button>
+      <button class="mrb" data-r="central" onclick="mapFilter('central',this)">中央</button>
+      <button class="mrb" data-r="lanayru" onclick="mapFilter('lanayru',this)">拉聂尔</button>
+      <button class="mrb" data-r="eldin" onclick="mapFilter('eldin',this)">奥尔汀</button>
+      <button class="mrb" data-r="gerudo" onclick="mapFilter('gerudo',this)">格鲁德</button>
+      <button class="mrb" data-r="hebra" onclick="mapFilter('hebra',this)">赫布拉</button>
+      <button class="mrb" data-r="forest" onclick="mapFilter('forest',this)">大森林</button>
+      <button class="mrb" data-r="akkala" onclick="mapFilter('akkala',this)">阿卡莱</button>
+      <button class="mrb" data-r="necluda" onclick="mapFilter('necluda',this)">内克鲁达</button>
+      <button class="mrb" data-r="faron" onclick="mapFilter('faron',this)">费罗尼</button>
+      <!-- 右侧缩放控件 -->
+      <div style="margin-left:auto;display:flex;gap:4px;">
+        <button onclick="mapZoomIn()"  title="放大" style="width:28px;height:28px;border-radius:6px;border:1px solid rgba(201,162,39,0.35);background:rgba(201,162,39,0.07);color:#c9a227;font-size:14px;cursor:pointer;line-height:1;">＋</button>
+        <button onclick="mapZoomOut()" title="缩小" style="width:28px;height:28px;border-radius:6px;border:1px solid rgba(201,162,39,0.35);background:rgba(201,162,39,0.07);color:#c9a227;font-size:14px;cursor:pointer;line-height:1;">－</button>
+        <button onclick="mapReset()"   title="复位" style="width:28px;height:28px;border-radius:6px;border:1px solid rgba(201,162,39,0.35);background:rgba(201,162,39,0.07);color:#c9a227;font-size:12px;cursor:pointer;line-height:1;">⊙</button>
+      </div>
+    </div>
+
+    <!-- Leaflet 地图主体 -->
+    <div style="position:relative;overflow:hidden;background:#050510;">
+      <div id="depthsMap" style="width:100%;height:640px;background:#050510;"></div>
+
+      <!-- 坐标显示 -->
+      <div id="mapCoords" style="position:absolute;bottom:10px;left:12px;background:rgba(5,5,20,0.82);color:rgba(201,162,39,0.8);font-size:11px;font-family:monospace;padding:4px 10px;border-radius:5px;border:1px solid rgba(201,162,39,0.2);pointer-events:none;letter-spacing:.06em;">X — · Y —</div>
+
+      <!-- 指南针 -->
+      <div style="position:absolute;top:12px;right:12px;width:44px;height:44px;pointer-events:none;">
+        <svg viewBox="0 0 44 44" width="44" height="44">
+          <circle cx="22" cy="22" r="20" fill="rgba(5,5,20,0.75)" stroke="rgba(201,162,39,0.35)" stroke-width="1"/>
+          <polygon points="22,5 18,22 22,20 26,22" fill="#c9a227" opacity=".9"/>
+          <polygon points="22,39 18,22 22,24 26,22" fill="rgba(255,255,255,0.25)"/>
+          <text x="22" y="10" text-anchor="middle" font-size="7" fill="#c9a227" font-family="sans-serif">N</text>
+          <text x="22" y="37" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.35)" font-family="sans-serif">S</text>
+          <text x="8"  y="24.5" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.35)" font-family="sans-serif">W</text>
+          <text x="36" y="24.5" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.35)" font-family="sans-serif">E</text>
+        </svg>
+      </div>
+
+      <!-- 缩放比例尺 -->
+      <div id="mapScale" style="position:absolute;bottom:10px;right:12px;background:rgba(5,5,20,0.82);color:rgba(201,162,39,0.7);font-size:10px;font-family:monospace;padding:4px 10px;border-radius:5px;border:1px solid rgba(201,162,39,0.2);pointer-events:none;">×1.0</div>
+    </div>
+
+    <!-- 图例 & 提示 -->
+    <div style="padding:12px 18px;border-top:1px solid rgba(201,162,39,0.12);background:rgba(0,0,0,0.18);display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;">
+      <span style="font-size:11px;color:rgba(201,162,39,0.5);margin-right:4px;letter-spacing:.06em;">图例：</span>
+      <span class="mleg" style="--c:#60d0ff">中央</span>
+      <span class="mleg" style="--c:#3a9bff">拉聂尔</span>
+      <span class="mleg" style="--c:#ff6a2a">奥尔汀</span>
+      <span class="mleg" style="--c:#e8b400">格鲁德</span>
+      <span class="mleg" style="--c:#a0e4ff">赫布拉</span>
+      <span class="mleg" style="--c:#54d48a">大森林</span>
+      <span class="mleg" style="--c:#ff4d6d">阿卡莱</span>
+      <span class="mleg" style="--c:#c77dff">内克鲁达</span>
+      <span class="mleg" style="--c:#40e0c8">费罗尼</span>
+      <span class="mleg mleg-done">已激活 ✓</span>
+      <span style="margin-left:auto;font-size:11px;color:rgba(201,162,39,0.4);">拖拽平移 · 滚轮缩放 · 点击树根定位列表 · 切换地表/地底</span>
+    </div>
+  </div>
+
+  <style>
+  .mrb {
+    padding:4px 11px;border-radius:20px;font-size:11px;font-family:inherit;
+    border:1px solid rgba(201,162,39,0.3);background:transparent;
+    color:rgba(201,162,39,0.6);cursor:pointer;transition:all .2s;letter-spacing:.03em;white-space:nowrap;
+  }
+  .mrb:hover { color:#c9a227;border-color:#c9a227;background:rgba(201,162,39,0.06); }
+  .mrb.active { background:rgba(201,162,39,0.14);border-color:#c9a227;color:#c9a227;font-weight:700; }
+  .mleg {
+    display:inline-flex;align-items:center;gap:5px;font-size:11px;color:rgba(255,255,255,0.45);
+  }
+  .mleg::before {
+    content:'';display:inline-block;width:9px;height:9px;border-radius:50%;
+    background:var(--c,#888);box-shadow:0 0 5px var(--c,#888);
+  }
+  .mleg-done {
+    color:rgba(127,255,127,0.7);
+  }
+  .mleg-done::before { background:#7fff7f;box-shadow:0 0 5px #7fff7f;border:1.5px solid #fff; }
+  </style>
+
+  <!-- 详细列表 -->
+  <div class="section-label">📍 破魔树根坐标列表（全120个）</div>
+
+  <div class="filter-tabs">
+    <button class="filter-tab active" onclick="filterRoots('all',this)">全部(120)</button>
+    <button class="filter-tab" onclick="filterRoots('central',this)">中央海拉鲁(23)</button>
+    <button class="filter-tab" onclick="filterRoots('lanayru',this)">拉聂尔(13)</button>
+    <button class="filter-tab" onclick="filterRoots('eldin',this)">奥尔汀(13)</button>
+    <button class="filter-tab" onclick="filterRoots('gerudo',this)">格鲁德(16)</button>
+    <button class="filter-tab" onclick="filterRoots('hebra',this)">赫布拉(20)</button>
+    <button class="filter-tab" onclick="filterRoots('forest',this)">大森林(8)</button>
+    <button class="filter-tab" onclick="filterRoots('akkala',this)">阿卡莱(10)</button>
+    <button class="filter-tab" onclick="filterRoots('necluda',this)">内克鲁达(14)</button>
+    <button class="filter-tab" onclick="filterRoots('faron',this)">费罗尼(3)</button>
+  </div>
+
+  <div class="shrine-list" id="rootList">
+
+    <!-- ===== 中央海拉鲁地底 (23个) ===== -->
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">001</div>
+      <div>
+        <div class="shrine-name">阿帕佩斯之根 (Apapes)</div>
+        <div class="shrine-type">坐标：0220, 1090, -0475 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">002</div>
+      <div>
+        <div class="shrine-name">卡莫巴图雷斯之根 (Camobatures)</div>
+        <div class="shrine-type">坐标：-0180, 1170, -0515 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">003</div>
+      <div>
+        <div class="shrine-name">阿莫涅之根 (Amo-ne)</div>
+        <div class="shrine-type">坐标：0102, -2518, -0414 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">004</div>
+      <div>
+        <div class="shrine-name">加多西之根 (Gadohsi)</div>
+        <div class="shrine-type">坐标：-0880, 0422, -0497 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">005</div>
+      <div>
+        <div class="shrine-name">伊阿尤苏斯之根 (Iayusus)</div>
+        <div class="shrine-type">坐标：-0785, -0433, -0469 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">006</div>
+      <div>
+        <div class="shrine-name">卡瓦卡尼斯之根 (Kawakanis)</div>
+        <div class="shrine-type">坐标：-1413, 0755, -0538 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">007</div>
+      <div>
+        <div class="shrine-name">卡瓦卡鲁特之根 (Kawakarut)</div>
+        <div class="shrine-type">坐标：-3496, -0197, -0514 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">008</div>
+      <div>
+        <div class="shrine-name">科戈伊尔之根 (Kogoir)</div>
+        <div class="shrine-type">坐标：-1440, -1616, -0537 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">009</div>
+      <div>
+        <div class="shrine-name">科拉达特之根 (Koradat)</div>
+        <div class="shrine-type">坐标：-1080, -2186, -0561 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">010</div>
+      <div>
+        <div class="shrine-name">穆乌斯图斯图之根 (Mu-ustust)</div>
+        <div class="shrine-type">坐标：-1422, -1349, -0517 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">011</div>
+      <div>
+        <div class="shrine-name">穆扎苏之根 (Muzasu)</div>
+        <div class="shrine-type">坐标：-2137, -0875, -0541 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">012</div>
+      <div>
+        <div class="shrine-name">纳巴希伊卡特之根 (Nabahi-ikat)</div>
+        <div class="shrine-type">坐标：-1829, 1193, -0723 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">013</div>
+      <div>
+        <div class="shrine-name">纳帕诺斯之根 (Napanos)</div>
+        <div class="shrine-type">坐标：-1920, -0362, -0634 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">014</div>
+      <div>
+        <div class="shrine-name">涅提涅特之根 (Netinet)</div>
+        <div class="shrine-type">坐标：-0073, -1115, -0471 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">015</div>
+      <div>
+        <div class="shrine-name">尼恰亚姆之根 (Nihcayam)</div>
+        <div class="shrine-type">坐标：-0705, -0867, -0481 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">016</div>
+      <div>
+        <div class="shrine-name">尼索伊吉之根 (Nisoij)</div>
+        <div class="shrine-type">坐标：-0240, -0372, -0478 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">017</div>
+      <div>
+        <div class="shrine-name">诺古科伊克之根 (Nogukoyk)</div>
+        <div class="shrine-type">坐标：-0716, -1547, -0515 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">018</div>
+      <div>
+        <div class="shrine-name">诺乔吉之根 (Nojoj)</div>
+        <div class="shrine-type">坐标：1201, 0331, -0575 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">019</div>
+      <div>
+        <div class="shrine-name">努兹马克之根 (Nuzimak)</div>
+        <div class="shrine-type">坐标：-0178, -1559, -0473 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">020</div>
+      <div>
+        <div class="shrine-name">欧伊玛伊之根 (Oyimay)</div>
+        <div class="shrine-type">坐标：0332, 0470, -0478 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">021</div>
+      <div>
+        <div class="shrine-name">希诺诺伊克之根 (Sinonoyk)</div>
+        <div class="shrine-type">坐标：-0204, 0450, -0472 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">022</div>
+      <div>
+        <div class="shrine-name">斯塔基加特之根 (Stakijat)</div>
+        <div class="shrine-type">坐标：0343, -1008, -0468 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="central">
+      <div class="shrine-num">023</div>
+      <div>
+        <div class="shrine-name">兹涅尔之根 (Zi-ner)</div>
+        <div class="shrine-type">坐标：0747, 0821, -0530 · 中央海拉鲁地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <!-- ===== 拉聂尔地底 (13个) ===== -->
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">024</div>
+      <div>
+        <div class="shrine-name">阿涅希之根 (A-nehi)</div>
+        <div class="shrine-type">坐标：3788, 0575, -0925 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">025</div>
+      <div>
+        <div class="shrine-name">卡瓦戈姆之根 (Kawagom)</div>
+        <div class="shrine-type">坐标：3298, 0422, -0748 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">026</div>
+      <div>
+        <div class="shrine-name">凯戈帕之根 (Kegopa)</div>
+        <div class="shrine-type">坐标：3888, -0215, -0608 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">027</div>
+      <div>
+        <div class="shrine-name">科拉库特之根 (Korakut)</div>
+        <div class="shrine-type">坐标：0915, -0250, -0481 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">028</div>
+      <div>
+        <div class="shrine-name">科罗姆之根 (Korom)</div>
+        <div class="shrine-type">坐标：1182, -0779, -0499 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">029</div>
+      <div>
+        <div class="shrine-name">库兹莫伊之根 (Kuzimoy)</div>
+        <div class="shrine-type">坐标：4414, -0613, -0513 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">030</div>
+      <div>
+        <div class="shrine-name">米戈欧之根 (Migo-o)</div>
+        <div class="shrine-type">坐标：2754, -1088, -0548 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">031</div>
+      <div>
+        <div class="shrine-name">塞基欧阿姆之根 (Sekioam)</div>
+        <div class="shrine-type">坐标：2276, 0148, -0500 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">032</div>
+      <div>
+        <div class="shrine-name">希阿基吉之根 (Siakij)</div>
+        <div class="shrine-type">坐标：4261, -1674, -0628 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">033</div>
+      <div>
+        <div class="shrine-name">塔卡鲁克之根 (Takaruk)</div>
+        <div class="shrine-type">坐标：2362, -0510, -0589 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">034</div>
+      <div>
+        <div class="shrine-name">乌阿斯诺吉之根 (Uasnoj)</div>
+        <div class="shrine-type">坐标：1743, 0015, -0458 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">035</div>
+      <div>
+        <div class="shrine-name">乌伊诺吉之根 (Uinoj)</div>
+        <div class="shrine-type">坐标：2919, 0510, -0794 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="lanayru">
+      <div class="shrine-num">036</div>
+      <div>
+        <div class="shrine-name">乌苏卡兹之根 (Usukaz)</div>
+        <div class="shrine-type">坐标：3525, -1482, -0612 · 拉聂尔地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <!-- ===== 奥尔汀地底 (13个) ===== -->
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">037</div>
+      <div>
+        <div class="shrine-name">阿诺尼希克之根 (Anonisik)</div>
+        <div class="shrine-type">坐标：2568, 1245, -0601 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">038</div>
+      <div>
+        <div class="shrine-name">库古卡拉姆之根 (Cugukaram)</div>
+        <div class="shrine-type">坐标：1763, 2510, -0719 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">039</div>
+      <div>
+        <div class="shrine-name">格迪恰亚姆之根 (Gedihcayam)</div>
+        <div class="shrine-type">坐标：3062, 1816, -0661 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">040</div>
+      <div>
+        <div class="shrine-name">卡提加比斯之根 (Katijabis)</div>
+        <div class="shrine-type">坐标：2400, 3270, -0844 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">041</div>
+      <div>
+        <div class="shrine-name">卡托伊吉之根 (Katoij)</div>
+        <div class="shrine-type">坐标：1835, 3181, -0838 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">042</div>
+      <div>
+        <div class="shrine-name">卡瓦米特之根 (Kawamit)</div>
+        <div class="shrine-type">坐标：1798, 1637, -0748 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">043</div>
+      <div>
+        <div class="shrine-name">卡亚姆之根 (Kayam)</div>
+        <div class="shrine-type">坐标：1270, 3733, -0554 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">044</div>
+      <div>
+        <div class="shrine-name">基索莫姆之根 (Kisomom)</div>
+        <div class="shrine-type">坐标：2960, 2757, -0964 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">045</div>
+      <div>
+        <div class="shrine-name">米希希之根 (Misisi)</div>
+        <div class="shrine-type">坐标：1842, 2843, -0838 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">046</div>
+      <div>
+        <div class="shrine-name">穆斯提斯之根 (Mustis)</div>
+        <div class="shrine-type">坐标：2638, 2596, -0948 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">047</div>
+      <div>
+        <div class="shrine-name">尼帕索姆之根 (Nipahsom)</div>
+        <div class="shrine-type">坐标：2679, 1904, -0687 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">048</div>
+      <div>
+        <div class="shrine-name">塔亚米克之根 (Tayamik)</div>
+        <div class="shrine-type">坐标：2871, 3623, -0684 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="eldin">
+      <div class="shrine-num">049</div>
+      <div>
+        <div class="shrine-name">乌伊乔凯之根 (Uihcoke)</div>
+        <div class="shrine-type">坐标：1059, 1278, -0494 · 奥尔汀地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <!-- ===== 格鲁德地底 (16个) ===== -->
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">050</div>
+      <div>
+        <div class="shrine-name">马卡瓦希之根 (Amakawis)</div>
+        <div class="shrine-type">坐标：-2444, -3345, -0464 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">051</div>
+      <div>
+        <div class="shrine-name">加塔哈拉克之根 (Gataharak)</div>
+        <div class="shrine-type">坐标：-3726, -3622, -0494 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">052</div>
+      <div>
+        <div class="shrine-name">戈纳托伊里姆之根 (Gonatoyrim)</div>
+        <div class="shrine-type">坐标：-4680, -3088, -0502 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">053</div>
+      <div>
+        <div class="shrine-name">戈纳托伊罗斯之根 (Gonatoyros)</div>
+        <div class="shrine-type">坐标：-3882, -2963, -0434 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">054</div>
+      <div>
+        <div class="shrine-name">加杜卡卡尔之根 (Jadukakar)</div>
+        <div class="shrine-type">坐标：-2031, -1850, -0504 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">055</div>
+      <div>
+        <div class="shrine-name">卡萨里之根 (Kasari)</div>
+        <div class="shrine-type">坐标：-4158, -3826, -0478 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">056</div>
+      <div>
+        <div class="shrine-name">卡瓦提克之根 (Kawatik)</div>
+        <div class="shrine-type">坐标：-1530, -2930, -0730 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">057</div>
+      <div>
+        <div class="shrine-name">卡维劳斯之根 (Kawiraus)</div>
+        <div class="shrine-type">坐标：-2515, -1771, -0712 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">058</div>
+      <div>
+        <div class="shrine-name">基马卡鲁特之根 (Kimakarut)</div>
+        <div class="shrine-type">坐标：-2660, -2236, -0488 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">059</div>
+      <div>
+        <div class="shrine-name">米恰伊恰之根 (Mihcihc)</div>
+        <div class="shrine-type">坐标：-3210, -3008, -0470 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">060</div>
+      <div>
+        <div class="shrine-name">穆斯图托之根 (Mustuto)</div>
+        <div class="shrine-type">坐标：-4469, -0672, -0949 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">061</div>
+      <div>
+        <div class="shrine-name">拉希纳杜克之根 (Rasinaduk)</div>
+        <div class="shrine-type">坐标：-4170, -2141, -0486 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">062</div>
+      <div>
+        <div class="shrine-name">希苏斯托姆之根 (Sisustom)</div>
+        <div class="shrine-type">坐标：-1796, -3484, -0477 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">063</div>
+      <div>
+        <div class="shrine-name">斯塔马亚姆之根 (Stamayam)</div>
+        <div class="shrine-type">坐标：-4638, -1512, -0890 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">064</div>
+      <div>
+        <div class="shrine-name">塔塔亚姆之根 (Tatayam)</div>
+        <div class="shrine-type">坐标：-3291, -2511, -0475 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="gerudo">
+      <div class="shrine-num">065</div>
+      <div>
+        <div class="shrine-name">乌马穆斯托尔之根 (Umamustor)</div>
+        <div class="shrine-type">坐标：-3406, -1363, -0779 · 格鲁德地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <!-- ===== 赫布拉地底 (20个) ===== -->
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">066</div>
+      <div>
+        <div class="shrine-name">阿杜翁之根 (Aduon)</div>
+        <div class="shrine-type">坐标：-2320, 2191, -0780 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">067</div>
+      <div>
+        <div class="shrine-name">伊卡托阿亚姆之根 (Ikatoayam)</div>
+        <div class="shrine-type">坐标：-0823, 3534, -0636 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">068</div>
+      <div>
+        <div class="shrine-name">卡塔基之根 (Kataki)</div>
+        <div class="shrine-type">坐标：-3949, 1137, -0551 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">069</div>
+      <div>
+        <div class="shrine-name">卡托之根 (Kato)</div>
+        <div class="shrine-type">坐标：-4390, 3714, -0701 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">070</div>
+      <div>
+        <div class="shrine-name">卡乌莫罗之根 (Kawumoro)</div>
+        <div class="shrine-type">坐标：-3079, 1617, -0687 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">071</div>
+      <div>
+        <div class="shrine-name">科罗努伊之根 (Koro-nui)</div>
+        <div class="shrine-type">坐标：-3538, 0853, -0575 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">072</div>
+      <div>
+        <div class="shrine-name">穆乌法图尔之根 (Mu-ufatur)</div>
+        <div class="shrine-type">坐标：-2997, 3101, -1005 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">073</div>
+      <div>
+        <div class="shrine-name">穆伊乔罗之根 (Muihcoro)</div>
+        <div class="shrine-type">坐标：-1636, 2641, -0684 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">074</div>
+      <div>
+        <div class="shrine-name">穆欧图埃之根 (Muotue)</div>
+        <div class="shrine-type">坐标：-3509, 3570, -0826 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">075</div>
+      <div>
+        <div class="shrine-name">纳鲁希斯之根 (Narusis)</div>
+        <div class="shrine-type">坐标：-2560, 3353, -0689 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">076</div>
+      <div>
+        <div class="shrine-name">努皮索尤阿特之根 (Nupisoyuat)</div>
+        <div class="shrine-type">坐标：-4535, 2880, -0707 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">077</div>
+      <div>
+        <div class="shrine-name">萨萨格之根 (Sasag)</div>
+        <div class="shrine-type">坐标：-4153, 0098, -0489 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">078</div>
+      <div>
+        <div class="shrine-name">希卡塔格之根 (Sikatag)</div>
+        <div class="shrine-type">坐标：-3640, 1804, -0417 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">079</div>
+      <div>
+        <div class="shrine-name">希库鲁卡姆之根 (Sikurukam)</div>
+        <div class="shrine-type">坐标：-2848, 0630, -0620 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">080</div>
+      <div>
+        <div class="shrine-name">索欧阿乌之根 (So-oaw)</div>
+        <div class="shrine-type">坐标：-4060, 1987, -0674 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">081</div>
+      <div>
+        <div class="shrine-name">提卡努尔之根 (Tikanur)</div>
+        <div class="shrine-type">坐标：-2526, 1169, -0622 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">082</div>
+      <div>
+        <div class="shrine-name">乌纳佐索之根 (U-nazohso)</div>
+        <div class="shrine-type">坐标：-1405, 3677, -0711 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">083</div>
+      <div>
+        <div class="shrine-name">乌欧约尤伊克之根 (Uoyoyuik)</div>
+        <div class="shrine-type">坐标：-1106, 2086, -0555 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">084</div>
+      <div>
+        <div class="shrine-name">沃里哈斯之根 (Worihas)</div>
+        <div class="shrine-type">坐标：-3355, 2387, -0801 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="hebra">
+      <div class="shrine-num">085</div>
+      <div>
+        <div class="shrine-name">伊苏阿亚姆之根 (Yisuayam)</div>
+        <div class="shrine-type">坐标：-1165, 2600, -0349 · 赫布拉地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <!-- ===== 海拉鲁大森林地底 (8个) ===== -->
+    <div class="shrine-item" data-region="forest">
+      <div class="shrine-num">086</div>
+      <div>
+        <div class="shrine-name">埃克努普普之根 (Eknupup)</div>
+        <div class="shrine-type">坐标：0621, 2211, -0611 · 海拉鲁大森林地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="forest">
+      <div class="shrine-num">087</div>
+      <div>
+        <div class="shrine-name">卡特尼姆之根 (Katenim)</div>
+        <div class="shrine-type">坐标：0395, 3485, -0594 · 海拉鲁大森林地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="forest">
+      <div class="shrine-num">088</div>
+      <div>
+        <div class="shrine-name">恩帖马恩帖之根 (Netamnet)</div>
+        <div class="shrine-type">坐标：-0594, 1549, -0599 · 海拉鲁大森林地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="forest">
+      <div class="shrine-num">089</div>
+      <div>
+        <div class="shrine-name">尼卡基克之根 (Nikakik)</div>
+        <div class="shrine-type">坐标：-0394, 2734, -0724 · 海拉鲁大森林地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="forest">
+      <div class="shrine-num">090</div>
+      <div>
+        <div class="shrine-name">拉马波恩克世之根 (Ramobnukas)</div>
+        <div class="shrine-type">坐标：0167, 2323, -0625 · 海拉鲁大森林地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="forest">
+      <div class="shrine-num">091</div>
+      <div>
+        <div class="shrine-name">拉奇诺萨姆之根 (Rikonasum)</div>
+        <div class="shrine-type">坐标：0409, 2130, -0592 · 海拉鲁大森林地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="forest">
+      <div class="shrine-num">092</div>
+      <div>
+        <div class="shrine-name">希吉宁之根 (Sijnin)</div>
+        <div class="shrine-type">坐标：0353, 1891, 0178 · 海拉鲁大森林地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="forest">
+      <div class="shrine-num">093</div>
+      <div>
+        <div class="shrine-name">乌库基斯之根 (Uukukis)</div>
+        <div class="shrine-type">坐标：0700, 2795, -0671 · 海拉鲁大森林地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <!-- ===== 阿卡莱地底 (10个) ===== -->
+    <div class="shrine-item" data-region="akkala">
+      <div class="shrine-num">094</div>
+      <div>
+        <div class="shrine-name">阿基希伊乔吉之根 (Agihi-ihcoj)</div>
+        <div class="shrine-type">坐标：3810, 1219, -0536 · 阿卡莱地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="akkala">
+      <div class="shrine-num">095</div>
+      <div>
+        <div class="shrine-name">阿基纳塔尼斯之根 (Akinatanis)</div>
+        <div class="shrine-type">坐标：3840, 2300, -0487 · 阿卡莱地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="akkala">
+      <div class="shrine-num">096</div>
+      <div>
+        <div class="shrine-name">卡维卡提萨尔之根 (Kawikatisar)</div>
+        <div class="shrine-type">坐标：4166, 1321, -0673 · 阿卡莱地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="akkala">
+      <div class="shrine-num">097</div>
+      <div>
+        <div class="shrine-name">卡维萨尔之根 (Kawisar)</div>
+        <div class="shrine-type">坐标：4663, 3264, -0453 · 阿卡莱地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="akkala">
+      <div class="shrine-num">098</div>
+      <div>
+        <div class="shrine-name">基米梅格之根 (Kimimeg)</div>
+        <div class="shrine-type">坐标：4512, 2115, -0453 · 阿卡莱地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="akkala">
+      <div class="shrine-num">099</div>
+      <div>
+        <div class="shrine-name">库萨基之根 (Kuhsagi)</div>
+        <div class="shrine-type">坐标：4655, 3731, -0400 · 阿卡莱地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="akkala">
+      <div class="shrine-num">100</div>
+      <div>
+        <div class="shrine-name">纽兹莫德之根 (Niuzimod)</div>
+        <div class="shrine-type">坐标：3304, 1442, -0790 · 阿卡莱地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="akkala">
+      <div class="shrine-num">101</div>
+      <div>
+        <div class="shrine-name">希库塔马克之根 (Sikutamak)</div>
+        <div class="shrine-type">坐标：3431, 3357, -0520 · 阿卡莱地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="akkala">
+      <div class="shrine-num">102</div>
+      <div>
+        <div class="shrine-name">希希纳塔格之根 (Sisinatag)</div>
+        <div class="shrine-type">坐标：4498, 0827, -0535 · 阿卡莱地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="akkala">
+      <div class="shrine-num">103</div>
+      <div>
+        <div class="shrine-name">乌伊伊乔吉之根 (Ui-ihcoj)</div>
+        <div class="shrine-type">坐标：4346, 2877, -0608 · 阿卡莱地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <!-- ===== 内克鲁达地底 (14个) ===== -->
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">104</div>
+      <div>
+        <div class="shrine-name">阿鲁萨卡姆之根 (Arusakam)</div>
+        <div class="shrine-type">坐标：1771, -1050, -0611 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">105</div>
+      <div>
+        <div class="shrine-name">布苏斯之根 (Busus)</div>
+        <div class="shrine-type">坐标：0350, -2050, -0471 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">106</div>
+      <div>
+        <div class="shrine-name">基米马德纳之根 (Kimimadena)</div>
+        <div class="shrine-type">坐标：4226, -2180, -0520 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">107</div>
+      <div>
+        <div class="shrine-name">基姆纳兹之根 (Kimnaz)</div>
+        <div class="shrine-type">坐标：3468, -2480, -0594 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">108</div>
+      <div>
+        <div class="shrine-name">基希哈亚姆之根 (Kisihayam)</div>
+        <div class="shrine-type">坐标：3727, -2058, -0665 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">109</div>
+      <div>
+        <div class="shrine-name">科提马布之根 (Kotimab)</div>
+        <div class="shrine-type">坐标：3095, -2307, -0625 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">110</div>
+      <div>
+        <div class="shrine-name">尼伊拉拉姆之根 (Ni-iraram)</div>
+        <div class="shrine-type">坐标：4633, -3713, -0505 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">111</div>
+      <div>
+        <div class="shrine-name">尼穆菲斯之根 (Nimufis)</div>
+        <div class="shrine-type">坐标：2924, -3721, -0526 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">112</div>
+      <div>
+        <div class="shrine-name">希乔图之根 (Sijotu)</div>
+        <div class="shrine-type">坐标：1218, -2542, -0611 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">113</div>
+      <div>
+        <div class="shrine-name">索赫塞之根 (Sohse)</div>
+        <div class="shrine-type">坐标：1564, -1945, -0464 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">114</div>
+      <div>
+        <div class="shrine-name">乌乌乌乔吉之根 (U-u-ujoj)</div>
+        <div class="shrine-type">坐标：1515, -3577, -0528 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">115</div>
+      <div>
+        <div class="shrine-name">乌伊希乔吉之根 (Uisihcoj)</div>
+        <div class="shrine-type">坐标：0933, -1902, -0460 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">116</div>
+      <div>
+        <div class="shrine-name">乌欧戈吉之根 (Uogoj)</div>
+        <div class="shrine-type">坐标：3346, -1188, -0609 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="necluda">
+      <div class="shrine-num">117</div>
+      <div>
+        <div class="shrine-name">约基特之根 (Yokit)</div>
+        <div class="shrine-type">坐标：2304, -2375, -0617 · 内克鲁达地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <!-- ===== 费罗尼地底 (3个) ===== -->
+    <div class="shrine-item" data-region="faron">
+      <div class="shrine-num">118</div>
+      <div>
+        <div class="shrine-name">伊肖金之根 (Ishokin)</div>
+        <div class="shrine-type">坐标：-0566, -3525, -0574 · 费罗尼地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="faron">
+      <div class="shrine-num">119</div>
+      <div>
+        <div class="shrine-name">穆欧库伊吉之根 (Muokuij)</div>
+        <div class="shrine-type">坐标：0868, -2279, -0555 · 费罗尼地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+    <div class="shrine-item" data-region="faron">
+      <div class="shrine-num">120</div>
+      <div>
+        <div class="shrine-name">科苏斯图之根 (Kohsustu)</div>
+        <div class="shrine-type">坐标：0670, -3358, -0484 · 费罗尼地底</div>
+      </div>
+      <div class="shrine-right">
+        <span class="rbadge rbadge-depth">地底</span>
+        <button class="shrine-check" onclick="toggleRootCheck(this)">✓</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tip-box" style="margin-top:24px">
+    <strong>💡 高效探索地底技巧：</strong>
+    <br>① 携带大量发光果（地底种植或购买），投掷可临时照亮区域。
+    <br>② 使用佐纳乌灯具组合余料建造，打造移动光源车。
+    <br>③ 地图上神庙位置对应树根位置，先找神庙再下地底即可快速定位。
+    <br>④ 破魔树根激活时会回复生命，可作为补血点使用。
+    <br>⑤ 每个破魔树根的名称是对应地面神庙名称的反转拼写。
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+// ================================================================
+//  王国之泪 破魔树根 · 互动地图引擎
+//  参考 gamertw.com 互动地图风格 ·  支持平移 / 缩放 / 筛选 / 定位
+// ================================================================
+
+const LIGHTROOTS = [
+  [220,1090,"central","001","阿帕佩斯之根 (Apapes)"],
+  [-180,1170,"central","002","卡莫巴图雷斯之根 (Camobatures)"],
+  [102,-2518,"central","003","阿莫涅之根 (Amo-ne)"],
+  [-880,422,"central","004","加多西之根 (Gadohsi)"],
+  [-785,-433,"central","005","伊阿尤苏斯之根 (Iayusus)"],
+  [-1413,755,"central","006","卡瓦卡尼斯之根 (Kawakanis)"],
+  [-3496,-197,"central","007","卡瓦卡鲁特之根 (Kawakarut)"],
+  [-1440,-1616,"central","008","科戈伊尔之根 (Kogoir)"],
+  [-1080,-2186,"central","009","科拉达特之根 (Koradat)"],
+  [-1422,-1349,"central","010","穆乌斯图斯图之根 (Mu-ustust)"],
+  [-2137,-875,"central","011","穆扎苏之根 (Muzasu)"],
+  [-1829,1193,"central","012","纳巴希伊卡特之根 (Nabahi-ikat)"],
+  [-1920,-362,"central","013","纳帕诺斯之根 (Napanos)"],
+  [-73,-1115,"central","014","涅提涅特之根 (Netinet)"],
+  [-705,-867,"central","015","尼恰亚姆之根 (Nihcayam)"],
+  [-240,-372,"central","016","尼索伊吉之根 (Nisoij)"],
+  [-716,-1547,"central","017","诺古科伊克之根 (Nogukoyk)"],
+  [1201,331,"central","018","诺乔吉之根 (Nojoj)"],
+  [-178,-1559,"central","019","努兹马克之根 (Nuzimak)"],
+  [332,470,"central","020","欧伊玛伊之根 (Oyimay)"],
+  [-204,450,"central","021","希诺诺伊克之根 (Sinonoyk)"],
+  [343,-1008,"central","022","斯塔基加特之根 (Stakijat)"],
+  [747,821,"central","023","兹涅尔之根 (Zi-ner)"],
+  [3788,575,"lanayru","024","阿涅希之根 (A-nehi)"],
+  [3298,422,"lanayru","025","卡瓦戈姆之根 (Kawagom)"],
+  [3888,-215,"lanayru","026","凯戈帕之根 (Kegopa)"],
+  [915,-250,"lanayru","027","科拉库特之根 (Korakut)"],
+  [1182,-779,"lanayru","028","科罗姆之根 (Korom)"],
+  [4414,-613,"lanayru","029","库兹莫伊之根 (Kuzimoy)"],
+  [2754,-1088,"lanayru","030","米戈欧之根 (Migo-o)"],
+  [2276,148,"lanayru","031","塞基欧阿姆之根 (Sekioam)"],
+  [4261,-1674,"lanayru","032","希阿基吉之根 (Siakij)"],
+  [2362,-510,"lanayru","033","塔卡鲁克之根 (Takaruk)"],
+  [1743,15,"lanayru","034","乌阿斯诺吉之根 (Uasnoj)"],
+  [2919,510,"lanayru","035","乌伊诺吉之根 (Uinoj)"],
+  [3525,-1482,"lanayru","036","乌苏卡兹之根 (Usukaz)"],
+  [2568,1245,"eldin","037","阿诺尼希克之根 (Anonisik)"],
+  [1763,2510,"eldin","038","库古卡拉姆之根 (Cugukaram)"],
+  [3062,1816,"eldin","039","格迪恰亚姆之根 (Gedihcayam)"],
+  [2400,3270,"eldin","040","卡提加比斯之根 (Katijabis)"],
+  [1835,3181,"eldin","041","卡托伊吉之根 (Katoij)"],
+  [1798,1637,"eldin","042","卡瓦米特之根 (Kawamit)"],
+  [1270,3733,"eldin","043","卡亚姆之根 (Kayam)"],
+  [2960,2757,"eldin","044","基索莫姆之根 (Kisomom)"],
+  [1842,2843,"eldin","045","米希希之根 (Misisi)"],
+  [2638,2596,"eldin","046","穆斯提斯之根 (Mustis)"],
+  [2679,1904,"eldin","047","尼帕索姆之根 (Nipahsom)"],
+  [2871,3623,"eldin","048","塔亚米克之根 (Tayamik)"],
+  [1059,1278,"eldin","049","乌伊乔凯之根 (Uihcoke)"],
+  [-2444,-3345,"gerudo","050","马卡瓦希之根 (Amakawis)"],
+  [-3726,-3622,"gerudo","051","加塔哈拉克之根 (Gataharak)"],
+  [-4680,-3088,"gerudo","052","戈纳托伊里姆之根 (Gonatoyrim)"],
+  [-3882,-2963,"gerudo","053","戈纳托伊罗斯之根 (Gonatoyros)"],
+  [-2031,-1850,"gerudo","054","加杜卡卡尔之根 (Jadukakar)"],
+  [-4158,-3826,"gerudo","055","卡萨里之根 (Kasari)"],
+  [-1530,-2930,"gerudo","056","卡瓦提克之根 (Kawatik)"],
+  [-2515,-1771,"gerudo","057","卡维劳斯之根 (Kawiraus)"],
+  [-2660,-2236,"gerudo","058","基马卡鲁特之根 (Kimakarut)"],
+  [-3210,-3008,"gerudo","059","米恰伊恰之根 (Mihcihc)"],
+  [-4469,-672,"gerudo","060","穆斯图托之根 (Mustuto)"],
+  [-4170,-2141,"gerudo","061","拉希纳杜克之根 (Rasinaduk)"],
+  [-1796,-3484,"gerudo","062","希苏斯托姆之根 (Sisustom)"],
+  [-4638,-1512,"gerudo","063","斯塔马亚姆之根 (Stamayam)"],
+  [-3291,-2511,"gerudo","064","塔塔亚姆之根 (Tatayam)"],
+  [-3406,-1363,"gerudo","065","乌马穆斯托尔之根 (Umamustor)"],
+  [-2320,2191,"hebra","066","阿杜翁之根 (Aduon)"],
+  [-823,3534,"hebra","067","伊卡托阿亚姆之根 (Ikatoayam)"],
+  [-3949,1137,"hebra","068","卡塔基之根 (Kataki)"],
+  [-4390,3714,"hebra","069","卡托之根 (Kato)"],
+  [-3079,1617,"hebra","070","卡乌莫罗之根 (Kawumoro)"],
+  [-3538,853,"hebra","071","科罗努伊之根 (Koro-nui)"],
+  [-2997,3101,"hebra","072","穆乌法图尔之根 (Mu-ufatur)"],
+  [-1636,2641,"hebra","073","穆伊乔罗之根 (Muihcoro)"],
+  [-3509,3570,"hebra","074","穆欧图埃之根 (Muotue)"],
+  [-2560,3353,"hebra","075","纳鲁希斯之根 (Narusis)"],
+  [-4535,2880,"hebra","076","努皮索尤阿特之根 (Nupisoyuat)"],
+  [-4153,98,"hebra","077","萨萨格之根 (Sasag)"],
+  [-3640,1804,"hebra","078","希卡塔格之根 (Sikatag)"],
+  [-2848,630,"hebra","079","希库鲁卡姆之根 (Sikurukam)"],
+  [-4060,1987,"hebra","080","索欧阿乌之根 (So-oaw)"],
+  [-2526,1169,"hebra","081","提卡努尔之根 (Tikanur)"],
+  [-1405,3677,"hebra","082","乌纳佐索之根 (U-nazohso)"],
+  [-1106,2086,"hebra","083","乌欧约尤伊克之根 (Uoyoyuik)"],
+  [-3355,2387,"hebra","084","沃里哈斯之根 (Worihas)"],
+  [-1165,2600,"hebra","085","伊苏阿亚姆之根 (Yisuayam)"],
+  [621,2211,"forest","086","埃克努普普之根 (Eknupup)"],
+  [395,3485,"forest","087","卡特尼姆之根 (Katenim)"],
+  [-594,1549,"forest","088","恩帖马恩帖之根 (Netamnet)"],
+  [-394,2734,"forest","089","尼卡基克之根 (Nikakik)"],
+  [167,2323,"forest","090","拉马波恩克世之根 (Ramobnukas)"],
+  [409,2130,"forest","091","拉奇诺萨姆之根 (Rikonasum)"],
+  [353,1891,"forest","092","希吉宁之根 (Sijnin)"],
+  [700,2795,"forest","093","乌库基斯之根 (Uukukis)"],
+  [3810,1219,"akkala","094","阿基希伊乔吉之根 (Agihi-ihcoj)"],
+  [3840,2300,"akkala","095","阿基纳塔尼斯之根 (Akinatanis)"],
+  [4166,1321,"akkala","096","卡维卡提萨尔之根 (Kawikatisar)"],
+  [4663,3264,"akkala","097","卡维萨尔之根 (Kawisar)"],
+  [4512,2115,"akkala","098","基米梅格之根 (Kimimeg)"],
+  [4655,3731,"akkala","099","库萨基之根 (Kuhsagi)"],
+  [3304,1442,"akkala","100","纽兹莫德之根 (Niuzimod)"],
+  [3431,3357,"akkala","101","希库塔马克之根 (Sikutamak)"],
+  [4498,827,"akkala","102","希希纳塔格之根 (Sisinatag)"],
+  [4346,2877,"akkala","103","乌伊伊乔吉之根 (Ui-ihcoj)"],
+  [1771,-1050,"necluda","104","阿鲁萨卡姆之根 (Arusakam)"],
+  [350,-2050,"necluda","105","布苏斯之根 (Busus)"],
+  [4226,-2180,"necluda","106","基米马德纳之根 (Kimimadena)"],
+  [3468,-2480,"necluda","107","基姆纳兹之根 (Kimnaz)"],
+  [3727,-2058,"necluda","108","基希哈亚姆之根 (Kisihayam)"],
+  [3095,-2307,"necluda","109","科提马布之根 (Kotimab)"],
+  [4633,-3713,"necluda","110","尼伊拉拉姆之根 (Ni-iraram)"],
+  [2924,-3721,"necluda","111","尼穆菲斯之根 (Nimufis)"],
+  [1218,-2542,"necluda","112","希乔图之根 (Sijotu)"],
+  [1564,-1945,"necluda","113","索赫塞之根 (Sohse)"],
+  [1515,-3577,"necluda","114","乌乌乌乔吉之根 (U-u-ujoj)"],
+  [933,-1902,"necluda","115","乌伊希乔吉之根 (Uisihcoj)"],
+  [3346,-1188,"necluda","116","乌欧戈吉之根 (Uogoj)"],
+  [2304,-2375,"necluda","117","约基特之根 (Yokit)"],
+  [-566,-3525,"faron","118","伊肖金之根 (Ishokin)"],
+  [868,-2279,"faron","119","穆欧库伊吉之根 (Muokuij)"],
+  [670,-3358,"faron","120","科苏斯图之根 (Kohsustu)"]
+];
+
+// 区域颜色 & 中文名
+const REGION_COLORS = {
+  central:"#60d0ff",lanayru:"#3a9bff",eldin:"#ff6a2a",
+  gerudo:"#e8b400",hebra:"#a0e4ff",forest:"#54d48a",
+  akkala:"#ff4d6d",necluda:"#c77dff",faron:"#40e0c8"
+};
+const REGION_NAMES = {
+  central:"中央海拉鲁",lanayru:"拉聂尔",eldin:"奥尔汀",
+  gerudo:"格鲁德",hebra:"赫布拉",forest:"大森林",
+  akkala:"阿卡莱",necluda:"内克鲁达",faron:"费罗尼"
+};
+
+// 区域范围（用于点击区域过滤时的视图聚焦）
+const REGION_BOUNDS = {
+  central: {xmin:-3700,xmax:1500,ymin:-2500,ymax:1400},
+  lanayru: {xmin: 700, xmax:4800,ymin:-2000,ymax:1000},
+  eldin:   {xmin: 700, xmax:3400,ymin: 900, ymax:4100},
+  gerudo:  {xmin:-5000,xmax:-900,ymin:-4200,ymax:-300},
+  hebra:   {xmin:-5000,xmax:-600,ymin: 500, ymax:4200},
+  forest:  {xmin:-900, xmax:1100,ymin:1300, ymax:4100},
+  akkala:  {xmin:3000, xmax:4900,ymin: 500, ymax:4100},
+  necluda: {xmin: 600, xmax:4900,ymin:-4200,ymax:-700},
+  faron:   {xmin:-900, xmax:1200,ymin:-4200,ymax:-1800}
+};
+
+// ─── 海拉鲁地名（中文标签 · 官方简体中文 · 来源：zeldawiki.wiki） ──────
+// 地表层关键地名
+const SURFACE_LABELS = [
+  // 主要村镇/据点
+  {x:-200,y:-500,name:"监视堡垒",cls:"town"},
+  {x:1810,y:-1230,name:"卡卡利科村",cls:"town"},
+  {x:3290,y:-2500,name:"哈特诺村",cls:"town"},
+  {x:3230,y:600,name:"卓拉领地",cls:"town"},
+  {x:1880,y:2200,name:"鼓隆城",cls:"town"},
+  {x:-1080,y:2800,name:"利特村",cls:"town"},
+  {x:-3970,y:-2940,name:"格鲁德小镇",cls:"town"},
+  {x:1200,y:1750,name:"沃托里村",cls:"town"},
+  {x:3400,y:3300,name:"一始村",cls:"town"},
+  {x:-3070,y:1620,name:"塔邦挞大桥驿站",cls:"point"},
+  // 主要地理区域
+  {x:-1000,y:0,name:"海拉鲁城堡",cls:"region big"},
+  {x:0,y:-1100,name:"海拉鲁平原",cls:"region"},
+  {x:2200,y:-2200,name:"东海拉鲁平原",cls:"region"},
+  {x:-1800,y:-1600,name:"格鲁德高地",cls:"region"},
+  {x:-3500,y:-3200,name:"格鲁德沙漠",cls:"region big"},
+  {x:-3000,y:2400,name:"海布拉山脉",cls:"region big"},
+  {x:2400,y:2700,name:"死亡之山",cls:"region big"},
+  {x:0,y:2700,name:"海拉鲁大森林",cls:"region big"},
+  {x:3800,y:2100,name:"阿卡莱高地",cls:"region"},
+  {x:3100,y:-100,name:"拉聂尔山",cls:"region"},
+  {x:1200,y:-3400,name:"费罗尼草原",cls:"region"},
+  {x:1700,y:-700,name:"双峰山",cls:"point"},
+  {x:3460,y:-1000,name:"拉聂耳大水源",cls:"point"},
+  {x:-800,y:3500,name:"克洛格森林",cls:"point"},
+];
+
+// 地底层关键地名（官方简体中文 Depths 名称）
+const DEPTHS_LABELS = [
+  // 主要深穴区域
+  {x:-800,y:0,name:"中央海拉鲁地底",cls:"region big"},
+  {x:2200,y:-2000,name:"东聂尔鲁达地底",cls:"region big"},
+  {x:-1000,y:-2000,name:"西聂尔鲁达地底",cls:"region big"},
+  {x:3500,y:0,name:"拉聂尔山地底",cls:"region big"},
+  {x:2500,y:2400,name:"奥尔汀峡谷地底",cls:"region big"},
+  {x:-3000,y:2400,name:"海布拉山脉地底",cls:"region big"},
+  {x:-3000,y:-3000,name:"格鲁德沙漠地底",cls:"region big"},
+  {x:0,y:2700,name:"海拉鲁大森林地底",cls:"region big"},
+  {x:4000,y:2400,name:"阿卡莱高地地底",cls:"region big"},
+  {x:0,y:-3000,name:"费罗尼草原地底",cls:"region big"},
+  {x:2400,y:2700,name:"死亡之山地底",cls:"region"},
+  // 重要地底据点
+  {x:-1200,y:-100,name:"左纳尼乌姆遗迹",cls:"point"},
+  {x:200,y:-1100,name:"王族密道",cls:"point"},
+  {x:1500,y:1500,name:"风之神殿（地底）",cls:"point"},
+  {x:-3500,y:2700,name:"雷之神殿（地底）",cls:"point"},
+  {x:2500,y:2700,name:"火之神殿（地底）",cls:"point"},
+  {x:3500,y:-1000,name:"水之神殿（地底）",cls:"point"},
+  {x:1500,y:-3500,name:"米涅鲁工坊",cls:"point"},
+];
+
+// 游戏坐标范围
+const WX_MIN=-5200, WX_MAX=5200, WY_MIN=-4500, WY_MAX=4500;
+
+// ════════════════════════════════════════════════════════════════
+//  Leaflet 互动地图引擎（真实游戏地图 · 中文地名标签）
+//  地图素材：vguzman812/totk-coordinates-map (MIT License)
+// ════════════════════════════════════════════════════════════════
+let hmap = null;
+let LAYERS = {};
+let labelLayers = { surface: null, depths: null };
+let lightrootMarkers = [];
+let activatedSet = new Set();
+let mapRegion = 'all';
+let currentLayer = 'depths';
+
+// 游戏坐标 (gx, gy) → Leaflet latlng（CRS.Simple）
+// 游戏 Y 正方向朝北（屏幕上方），所以 lat = -gy
+function g2ll(gx, gy) { return [-gy, gx]; }
+
+// ─── 初始化地图 ─────────────────────────────────────────────
+function initLeafletMap() {
+  if (typeof L === 'undefined') {
+    document.getElementById('depthsMap').innerHTML =
+      '<div style="color:#c9a227;padding:80px;text-align:center;font-size:14px">⚠ 地图库加载失败，请检查网络连接后刷新页面</div>';
+    return;
+  }
+
+  hmap = L.map('depthsMap', {
+    crs: L.CRS.Simple,
+    minZoom: -4,
+    maxZoom: 3,
+    zoomSnap: 0.25,
+    zoomDelta: 0.5,
+    wheelPxPerZoomLevel: 120,
+    attributionControl: true,
+    zoomControl: false  // 用我们自己的工具栏按钮
+  });
+
+  // 地图覆盖范围 [-6000,6000] × [-5000,5000]（游戏坐标）
+  const leftBottom = hmap.unproject([-6000, 5000], 0);
+  const topRight   = hmap.unproject([ 6000, -5000], 0);
+  const mapBounds  = new L.LatLngBounds(leftBottom, topRight);
+  hmap.setMaxBounds(mapBounds.pad(0.15));
+
+  // 三层底图（地表 / 地底）
+  const CDN = 'https://cdn.jsdelivr.net/gh/vguzman812/totk-coordinates-map@main/images/';
+  LAYERS = {
+    surface: L.imageOverlay(CDN + 'surface.jpg', mapBounds, { attribution: 'Map: TotK · vguzman812 (MIT)' }),
+    depths:  L.imageOverlay(CDN + 'depths.jpg',  mapBounds, { attribution: 'Map: TotK · vguzman812 (MIT)' })
+  };
+
+  // 默认地底层
+  LAYERS.depths.addTo(hmap);
+  hmap.setView([0, 0], -3);
+
+  L.control.attribution({ prefix: false, position: 'bottomleft' }).addTo(hmap);
+
+  // 注入暗色 popup 主题 + 标签样式
+  const st = document.createElement('style');
+  st.textContent = `
+    .leaflet-container{background:#050510;font-family:inherit}
+    .leaflet-container .leaflet-control-attribution{
+      background:rgba(5,5,20,0.7);color:#888;font-size:10px;padding:2px 6px}
+    .leaflet-container .leaflet-control-attribution a{color:#c9a227}
+    .lr-popup .leaflet-popup-content-wrapper{
+      background:rgba(7,7,20,0.97);color:#e8e4d4;
+      border:1px solid rgba(201,162,39,0.45);border-radius:10px;
+      box-shadow:0 6px 28px rgba(0,0,0,0.7),0 0 0 1px rgba(201,162,39,0.1)}
+    .lr-popup .leaflet-popup-tip{background:rgba(7,7,20,0.97);border:1px solid rgba(201,162,39,0.45)}
+    .lr-popup .leaflet-popup-close-button{color:#888!important}
+    .lr-popup .leaflet-popup-content{margin:10px 14px;font-size:12px}
+    /* 地名标签 */
+    .place-label{
+      background:transparent;border:none;text-align:center;
+      pointer-events:none;white-space:nowrap;
+      font-family:'Noto Serif SC','Noto Sans SC',serif;font-weight:700;
+      text-shadow:0 0 6px #000,0 0 4px #000,0 1px 2px #000;
+      letter-spacing:.05em;
+    }
+    .place-label.region{color:rgba(201,162,39,0.85);font-size:13px}
+    .place-label.region.big{color:rgba(232,180,0,0.95);font-size:16px;letter-spacing:.15em}
+    .place-label.town{color:#a0e4ff;font-size:11px}
+    .place-label.town::before{content:"◆ ";color:#fff;font-size:9px}
+    .place-label.point{color:rgba(255,255,255,0.7);font-size:10px;font-weight:500}
+    .place-label.point::before{content:"· ";color:rgba(201,162,39,0.6)}
+    /* 树根标记 */
+    .lr-pin{
+      background:transparent;border:none;cursor:pointer;
+    }
+    .lr-pin .lr-dot{
+      width:12px;height:12px;border-radius:50%;
+      border:2px solid rgba(255,255,255,0.85);
+      box-shadow:0 0 8px rgba(0,0,0,0.9),0 0 5px var(--c, #c9a227);
+      transition:transform .12s, box-shadow .12s;
+    }
+    .lr-pin:hover .lr-dot{transform:scale(1.4);box-shadow:0 0 14px var(--c, #fff),0 0 4px #fff}
+    .lr-pin.done .lr-dot{
+      background:#7fff7f!important;
+      box-shadow:0 0 9px #7fff7f,0 0 4px #fff}
+    .lr-pin.done .lr-dot::after{
+      content:"✓";color:#04190a;font-size:10px;font-weight:900;
+      display:flex;align-items:center;justify-content:center;
+      width:100%;height:100%;line-height:1}
+  `;
+  document.head.appendChild(st);
+
+  // 添加地名标签层
+  labelLayers.surface = L.layerGroup();
+  labelLayers.depths  = L.layerGroup();
+  buildPlaceLabels(SURFACE_LABELS, labelLayers.surface);
+  buildPlaceLabels(DEPTHS_LABELS,  labelLayers.depths);
+  labelLayers.depths.addTo(hmap);
+
+  // 添加所有树根标记
+  buildLightrootMarkers();
+
+  // 实时坐标显示
+  hmap.on('mousemove', e => {
+    const x = Math.round(e.latlng.lng);
+    const y = Math.round(-e.latlng.lat);
+    const el = document.getElementById('mapCoords');
+    if (el) el.textContent = `X ${x} · Y ${y}`;
+  });
+  hmap.on('mouseout', () => {
+    const el = document.getElementById('mapCoords');
+    if (el) el.textContent = 'X — · Y —';
+  });
+
+  // 缩放比例尺更新
+  hmap.on('zoomend', () => {
+    const sc = document.getElementById('mapScale');
+    if (sc) sc.textContent = '×' + Math.pow(2, hmap.getZoom() + 3).toFixed(1);
+  });
+  // 触发一次初始更新
+  const sc = document.getElementById('mapScale');
+  if (sc) sc.textContent = '×' + Math.pow(2, hmap.getZoom() + 3).toFixed(1);
+}
+
+// ─── 构建地名标签 ───────────────────────────────────────────
+function buildPlaceLabels(list, layerGroup) {
+  list.forEach(p => {
+    const icon = L.divIcon({
+      className: 'place-label ' + (p.cls || ''),
+      html: p.name,
+      iconSize: [0, 0]  // 让文本自然撑开
+    });
+    L.marker(g2ll(p.x, p.y), { icon: icon, interactive: false, keyboard: false })
+      .addTo(layerGroup);
+  });
+}
+
+// ─── 构建树根标记 ───────────────────────────────────────────
+function buildLightrootMarkers() {
+  LIGHTROOTS.forEach(([wx, wy, reg, num, name], idx) => {
+    const color = REGION_COLORS[reg] || '#fff';
+    const isDone = activatedSet.has(num);
+    const icon = L.divIcon({
+      className: 'lr-pin' + (isDone ? ' done' : ''),
+      html: `<div class="lr-dot" style="--c:${color};background:${color}"></div>`,
+      iconSize: [12, 12],
+      iconAnchor: [6, 6]
+    });
+    const m = L.marker(g2ll(wx, wy), {
+      icon: icon,
+      title: '#' + num + ' ' + name,
+      riseOnHover: true
+    });
+
+    // 弹窗内容
+    const popupHtml = `
+      <div style="display:flex;align-items:center;gap:7px;margin-bottom:6px">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${color};box-shadow:0 0 6px ${color}"></span>
+        <strong style="color:#e8e4d4;font-size:13px">#${num} ${name}</strong>
+      </div>
+      <div style="color:rgba(201,162,39,0.85);font-family:monospace;font-size:11px;margin-bottom:4px">
+        X: ${wx}&nbsp;&nbsp;Y: ${wy}
+      </div>
+      <div style="color:rgba(255,255,255,0.5);font-size:11px">所属：${REGION_NAMES[reg]}地底</div>
+      <div style="margin-top:8px;border-top:1px solid rgba(201,162,39,0.18);padding-top:6px">
+        <a href="javascript:void(0)" onclick="scrollToListItem('${num}')"
+           style="color:#c9a227;font-size:11px;text-decoration:none">→ 在列表中查看</a>
+      </div>`;
+    m.bindPopup(popupHtml, { maxWidth: 240, className: 'lr-popup' });
+
+    m.addTo(hmap);
+    lightrootMarkers.push({ m, reg, num, name, wx, wy });
+  });
+}
+
+// ─── 应用区域筛选 ───────────────────────────────────────────
+function applyMapFilter() {
+  lightrootMarkers.forEach(item => {
+    const visible = (mapRegion === 'all' || item.reg === mapRegion);
+    if (visible && !hmap.hasLayer(item.m)) item.m.addTo(hmap);
+    if (!visible && hmap.hasLayer(item.m)) hmap.removeLayer(item.m);
+  });
+}
+
+// ─── 公共 API（与原工具栏按钮兼容） ─────────────────────────
+function mapFilter(region, btn) {
+  mapRegion = region;
+  document.querySelectorAll('.mrb').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  applyMapFilter();
+  // 自动聚焦到所选区域
+  if (region !== 'all' && REGION_BOUNDS[region]) {
+    const b = REGION_BOUNDS[region];
+    const sw = g2ll(b.xmin, b.ymin);
+    const ne = g2ll(b.xmax, b.ymax);
+    hmap.flyToBounds([sw, ne], { padding: [40, 40], duration: 0.6, maxZoom: 1 });
+  } else {
+    hmap.flyTo([0, 0], -3, { duration: 0.5 });
+  }
+  // 同步列表筛选
+  filterRoots(region, { classList:{ toggle:()=>{}, remove:()=>{}, add:()=>{} } });
+}
+
+function switchLayer(layer) {
+  if (!hmap || !LAYERS[layer]) return;
+  Object.keys(LAYERS).forEach(k => {
+    if (hmap.hasLayer(LAYERS[k])) hmap.removeLayer(LAYERS[k]);
+  });
+  LAYERS[layer].addTo(hmap);
+
+  // 切换地名标签
+  Object.keys(labelLayers).forEach(k => {
+    if (labelLayers[k] && hmap.hasLayer(labelLayers[k])) hmap.removeLayer(labelLayers[k]);
+  });
+  if (labelLayers[layer]) labelLayers[layer].addTo(hmap);
+
+  currentLayer = layer;
+
+  // 树根仅在地底层显示
+  lightrootMarkers.forEach(item => {
+    const visible = (layer === 'depths') &&
+                    (mapRegion === 'all' || item.reg === mapRegion);
+    if (visible && !hmap.hasLayer(item.m)) item.m.addTo(hmap);
+    if (!visible && hmap.hasLayer(item.m)) hmap.removeLayer(item.m);
+  });
+
+  // 按钮状态
+  const btnS = document.getElementById('mapLayerSurface');
+  const btnD = document.getElementById('mapLayerDepths');
+  if (layer === 'surface') {
+    btnS.style.borderColor='rgba(201,162,39,0.9)';
+    btnS.style.background='rgba(201,162,39,0.28)';
+    btnS.style.fontWeight='800';
+    btnD.style.borderColor='rgba(167,139,250,0.35)';
+    btnD.style.background='rgba(167,139,250,0.06)';
+    btnD.style.fontWeight='400';
+  } else {
+    btnD.style.borderColor='rgba(167,139,250,0.85)';
+    btnD.style.background='rgba(167,139,250,0.28)';
+    btnD.style.fontWeight='800';
+    btnS.style.borderColor='rgba(201,162,39,0.4)';
+    btnS.style.background='rgba(201,162,39,0.08)';
+    btnS.style.fontWeight='600';
+  }
+}
+
+function mapZoomIn()  { if (hmap) hmap.zoomIn(0.5); }
+function mapZoomOut() { if (hmap) hmap.zoomOut(0.5); }
+function mapReset()   { if (hmap) hmap.flyTo([0, 0], -3, { duration: 0.5 }); }
+
+// ─── 列表定位 ───────────────────────────────────────────────
+function scrollToListItem(num) {
+  const items = document.querySelectorAll('#rootList .shrine-item');
+  for (const item of items) {
+    if (item.querySelector('.shrine-num')?.textContent.trim() === num) {
+      item.style.display = 'flex';
+      item.scrollIntoView({behavior:'smooth', block:'center'});
+      item.style.outline = '2px solid var(--gold)';
+      item.style.outlineOffset = '2px';
+      setTimeout(()=>{ item.style.outline=''; item.style.outlineOffset=''; }, 2200);
+      break;
+    }
+  }
+}
+
+// ─── 激活状态同步 ───────────────────────────────────────────
+function syncMapActivation() {
+  activatedSet.clear();
+  document.querySelectorAll('#rootList .shrine-check.done').forEach(btn => {
+    const item = btn.closest('.shrine-item');
+    const num = item?.querySelector('.shrine-num')?.textContent.trim();
+    if (num) activatedSet.add(num);
+  });
+  // 更新所有标记的 done 状态
+  lightrootMarkers.forEach(item => {
+    const isDone = activatedSet.has(item.num);
+    const color = REGION_COLORS[item.reg] || '#fff';
+    item.m.setIcon(L.divIcon({
+      className: 'lr-pin' + (isDone ? ' done' : ''),
+      html: `<div class="lr-dot" style="--c:${color};background:${color}"></div>`,
+      iconSize: [12, 12],
+      iconAnchor: [6, 6]
+    }));
+  });
+}
+
+// ─── 初始化 ─────────────────────────────────────────────────
+window.addEventListener('load', () => {
+  initLeafletMap();
+});
+
+// ── 列表 & 进度函数 ──────────────────────────────────────────
+function filterRoots(region, btn) {
+
+  document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#rootList .shrine-item').forEach(el => {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? 'flex' : 'none';
+  });
+}
+function searchRoots(val) {
+  const q = val.toLowerCase();
+  document.querySelectorAll('#rootList .shrine-item').forEach(el => {
+    el.style.display = el.textContent.toLowerCase().includes(q) ? 'flex' : 'none';
+  });
+}
+function toggleRootCheck(btn) {
+  btn.classList.toggle('done');
+  const allBtns = [...document.querySelectorAll('#rootList .shrine-check')];
+  const idx = allBtns.indexOf(btn);
+  const key = window.location.pathname + '_roots_' + idx;
+  localStorage.setItem(key, btn.classList.contains('done') ? 'done' : '');
+  updateRootProgress();
+  syncMapActivation();
+}
+function updateRootProgress() {
+  const done = document.querySelectorAll('#rootList .shrine-check.done').length;
+  const total = document.querySelectorAll('#rootList .shrine-check').length;
+  const pct = total > 0 ? (done / 120) * 100 : 0;
+  document.getElementById('rootProgressFill').style.width = pct + '%';
+  document.getElementById('rootDoneCount').textContent = done;
+}
+document.addEventListener('DOMContentLoaded', function() {
+  const allBtns = [...document.querySelectorAll('#rootList .shrine-check')];
+  allBtns.forEach(function(btn, i) {
+    if (localStorage.getItem(window.location.pathname + '_roots_' + i) === 'done') {
+      btn.classList.add('done');
+    }
+  });
+  updateRootProgress();
+  syncMapActivation();
+});
+</script>
+</body>
+</html>
+
+
+

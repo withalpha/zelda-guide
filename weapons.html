@@ -1,0 +1,772 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- ═══ 安全与版权 meta ═══ -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="withalpha@proton.me">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="王国之泪武器图鉴，含各类武器获取途径、融合材料推荐与最优合成配方。">
+  <meta name="keywords" content="王国之泪,武器,融合,攻略,塞尔达">
+  <meta property="og:title" content="武器图鉴 · 王国之泪">
+  <meta property="og:description" content="王国之泪武器图鉴，含各类武器获取途径、融合材料推荐与最优合成配方。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="武器图鉴 · 王国之泪">
+  <meta name="twitter:description" content="王国之泪武器图鉴，含各类武器获取途径、融合材料推荐与最优合成配方。">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>武器图鉴 · 王国之泪攻略</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ══════ 武器卡片系统 ══════ */
+    .weapon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 22px;
+      margin-top: 24px;
+    }
+    .weapon-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      position: relative;
+    }
+    .weapon-card:hover {
+      border-color: rgba(201,162,39,0.6);
+      box-shadow: var(--glow-gold);
+      transform: translateY(-5px);
+    }
+    /* 图片区 */
+    .wc-img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: rgba(0,0,0,0.40);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-gold);
+      position: relative;
+    }
+    .wc-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 14px;
+      filter: drop-shadow(0 4px 18px rgba(201,162,39,0.28));
+      transition: transform 0.35s ease;
+    }
+    .weapon-card:hover .wc-img img { transform: scale(1.07); }
+    .wc-type-badge {
+      position: absolute;
+      top: 10px; left: 10px;
+      background: rgba(0,0,0,0.65);
+      border: 1px solid var(--border-gold);
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 0.68rem;
+      color: var(--gold);
+      letter-spacing: 0.03em;
+      backdrop-filter: blur(4px);
+    }
+    /* 内容区 */
+    .wc-body { padding: 18px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+    .wc-name { font-size: 1.05rem; font-weight: 700; color: var(--text-primary); }
+    .wc-desc { font-size: 0.78rem; color: var(--text-secondary); line-height: 1.75; flex: 1; }
+    /* 数值徽章 */
+    .wc-stats { display: flex; flex-wrap: wrap; gap: 6px; }
+    .stat-b {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 3px 10px; border-radius: 20px;
+      font-size: 0.72rem; font-weight: 600; border: 1px solid;
+    }
+    .s-atk  { color: #f87171; border-color: rgba(248,113,113,0.35); background: rgba(248,113,113,0.08); }
+    .s-dur  { color: #60a5fa; border-color: rgba(96,165,250,0.35);  background: rgba(96,165,250,0.08); }
+    .s-inf  { color: #a78bfa; border-color: rgba(167,139,250,0.35); background: rgba(167,139,250,0.08); }
+    .s-fx   { color: var(--gold); border-color: var(--border-gold); background: rgba(201,162,39,0.08); }
+    .s-fire { color: #fb923c; border-color: rgba(251,146,60,0.35);  background: rgba(251,146,60,0.08); }
+    .s-ice  { color: #7dd3fc; border-color: rgba(125,211,252,0.35); background: rgba(125,211,252,0.08); }
+    .s-elec { color: #fde047; border-color: rgba(253,224,71,0.35);  background: rgba(253,224,71,0.08); }
+    .s-dark { color: #c084fc; border-color: rgba(192,132,252,0.35); background: rgba(192,132,252,0.08); }
+    .s-water{ color: #38bdf8; border-color: rgba(56,189,248,0.35);  background: rgba(56,189,248,0.08); }
+    /* 信息列表 */
+    .wc-info { border-top: 1px solid var(--border-gold); padding-top: 12px; display: flex; flex-direction: column; gap: 6px; }
+    .wc-info-row { display: flex; gap: 8px; font-size: 0.76rem; line-height: 1.6; }
+    .wc-info-label { color: var(--gold); font-weight: 600; white-space: nowrap; min-width: 52px; }
+    .wc-info-val { color: var(--text-secondary); }
+    /* 过滤器 */
+    .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+    .fb-btn {
+      padding: 6px 16px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; cursor: pointer;
+      border: 1px solid var(--border-gold); background: transparent; color: var(--text-muted);
+      transition: all 0.2s;
+    }
+    .fb-btn:hover { color: var(--gold); border-color: rgba(201,162,39,0.5); }
+    .fb-btn.active { background: rgba(201,162,39,0.15); color: var(--gold); border-color: var(--gold); }
+    /* 隐藏 */
+    .weapon-card.hidden { display: none; }
+    /* 稀有度指示条 */
+    .rarity-bar { height: 3px; width: 100%; }
+    .r-common  { background: linear-gradient(90deg, #6b7280, #9ca3af); }
+    .r-uncommon{ background: linear-gradient(90deg, #16a34a, #4ade80); }
+    .r-rare    { background: linear-gradient(90deg, #2563eb, #60a5fa); }
+    .r-epic    { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
+    .r-legend  { background: linear-gradient(90deg, #b45309, #f59e0b, #fde68a); }
+
+    /* 融合提示 */
+    .fuse-hint {
+      margin-top: 6px;
+      background: rgba(201,162,39,0.05);
+      border: 1px solid rgba(201,162,39,0.18);
+      border-radius: var(--radius);
+      padding: 8px 12px;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+    .fuse-hint strong { color: var(--gold); }
+    .section-tip {
+      background: rgba(201,162,39,0.04);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+    .section-tip strong { color: var(--gold-light); }
+    @media(max-width:600px){ .weapon-grid{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html" class="active">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a><ul class="nav-dropdown-menu"><li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li><li><a href="sage-will.html" class="disabled">贤者的遗志</a></li></ul></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <span class="page-hero-eyebrow">WEAPONS DATABASE</span>
+  <h1 class="page-hero-title">⚔ 武器完全图鉴</h1>
+  <p class="page-hero-subtitle">攻击力 · 耐久度 · 获取途径 · 特殊效果</p>
+</div>
+
+<div class="page-body">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span><span class="cur">武器图鉴</span>
+  </nav>
+
+  <div class="section-tip">
+    <strong>余料建造 / 融合系统：</strong>按 <strong>Y</strong> 键可将素材与武器融合，最终攻击力 = 武器基础攻击 + 素材加成。龙骨碎片 / 银色莱乃尔角最高可加 <strong>+55</strong>；宝石融合附加元素属性（🔥火 / ❄冰 / ⚡雷）。<strong>大师之剑耐久无限</strong>，耗尽后约 10 分钟充能，不会永久破损。
+  </div>
+
+  <!-- 过滤按钮 -->
+  <div class="filter-bar">
+    <button class="fb-btn active" onclick="filterWeapons('all', this)">全部（20）</button>
+    <button class="fb-btn" onclick="filterWeapons('sword', this)">🗡 单手剑</button>
+    <button class="fb-btn" onclick="filterWeapons('twohanded', this)">🪓 双手武器</button>
+    <button class="fb-btn" onclick="filterWeapons('spear', this)">🔱 长柄武器</button>
+    <button class="fb-btn" onclick="filterWeapons('bow', this)">🏹 弓</button>
+    <button class="fb-btn" onclick="filterWeapons('dagger', this)">🗡 匕首</button>
+    <button class="fb-btn" onclick="filterWeapons('legendary', this)">⭐ 传说</button>
+    <button class="fb-btn" onclick="filterWeapons('gloom', this)">🟣 瘴气系</button>
+  </div>
+
+  <div class="weapon-grid" id="weaponGrid">
+
+    <!-- ══════ 1. 大师之剑 ══════ -->
+    <div class="weapon-card" data-type="sword legendary">
+      <div class="rarity-bar r-legend"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">⭐ 传说 · 单手剑</span>
+        <img src="images/weapons/大师之剑.jpg" alt="大师之剑">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">大师之剑</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 30（满血 60）</span>
+          <span class="stat-b s-inf">♾ 耐久无限</span>
+          <span class="stat-b s-fx">✨ 光束攻击</span>
+        </div>
+        <div class="wc-desc">
+          驱逐邪恶之力的圣剑。满血时攻击力翻倍至 60，可向远处发射能量光束。耐久归零后约 10 分钟充能复原，不会永久破损。需要 <strong style="color:var(--gold)">至少 13 颗心</strong> 才能从光源龙额头取下。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">30（满血状态下 60）</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">无限（耗尽后 10 分钟充能）</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">完成主线「失落的勇者之剑」后，骑乘光源龙飞行至龙头，从额头光源宝箱中取出</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">满血时攻击力翻倍；可发射能量光束；对幽暗之力敌人有克制效果；耐久不会永久归零</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>龙骨碎片（+55）→ 总攻击 85，满血约 <strong style="color:#f87171">115</strong>，全游戏最强输出</div>
+      </div>
+    </div>
+
+    <!-- ══════ 2. 森民之枪 ══════ -->
+    <div class="weapon-card" data-type="spear">
+      <div class="rarity-bar r-common"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🔱 长柄武器</span>
+        <img src="images/weapons/森民之枪.jpg" alt="森民之枪">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">森民之枪</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 7</span>
+          <span class="stat-b s-dur">🔵 耐久 35</span>
+        </div>
+        <div class="wc-desc">
+          科洛格森林居民使用的木制长枪，以森林硬木打造，轻巧灵活。虽然攻击力偏低，但耐久尚可，适合初期远程刺击和融合底座使用。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">7</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">35</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">科洛格森林附近地面拾取；林间宝箱；击败科洛格守卫偶尔掉落</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">无特殊效果；木质材质可被点燃，注意火焰环境</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>蜥蜴族尾巴（+10）→ 增加攻击范围；火石（+3，🔥）适合初期点燃草丛</div>
+      </div>
+    </div>
+
+    <!-- ══════ 3. 骑士单手剑 ══════ -->
+    <div class="weapon-card" data-type="sword">
+      <div class="rarity-bar r-uncommon"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🗡 单手剑</span>
+        <img src="images/weapons/骑士单手剑.jpg" alt="骑士单手剑">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">骑士单手剑</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 18</span>
+          <span class="stat-b s-dur">🔵 耐久 27</span>
+        </div>
+        <div class="wc-desc">
+          海拉鲁骑士的标准配剑，做工扎实，攻击与耐久均衡，是中期最常见的主力武器之一。外形简洁，适合配盾使用。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">18</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">27</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">海拉鲁城堡周边守卫掉落；城堡外围宝箱；坐骑驿站附近拾取</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">无特殊效果；可配盾单手操作，攻防兼备</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>莱乃尔角（+21）→ 总攻击 39；蓝宝石（+4，❄）适合对付火属性敌人</div>
+      </div>
+    </div>
+
+    <!-- ══════ 4. 骑士双手剑 ══════ -->
+    <div class="weapon-card" data-type="twohanded">
+      <div class="rarity-bar r-uncommon"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🪓 双手武器</span>
+        <img src="images/weapons/骑士双手剑.jpg" alt="骑士双手剑">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">骑士双手剑</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 26</span>
+          <span class="stat-b s-dur">🔵 耐久 20</span>
+        </div>
+        <div class="wc-desc">
+          海拉鲁重骑兵使用的双手大剑，挥动范围宽广，一击可横扫多个目标。虽需双手持握无法同时使用盾牌，但爆发输出强力。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">26</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">20</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">海拉鲁城堡周边宝箱；重骑士守卫掉落；地图中部宝箱</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">双手武器范围攻击，可扫击周围敌人；攻击带有轻微冲击波</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>龙骨碎片（+55）→ 总攻击 <strong style="color:#f87171">81</strong>；红宝石（+4，🔥）兼顾范围燃烧</div>
+      </div>
+    </div>
+
+    <!-- ══════ 5. 骑士之枪 ══════ -->
+    <div class="weapon-card" data-type="spear">
+      <div class="rarity-bar r-uncommon"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🔱 长柄武器</span>
+        <img src="images/weapons/骑士之枪.jpg" alt="骑士之枪">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">骑士之枪</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 15</span>
+          <span class="stat-b s-dur">🔵 耐久 20</span>
+        </div>
+        <div class="wc-desc">
+          海拉鲁骑士步兵使用的标准长矛，攻击射程长，适合保持距离对敌。快速刺击连段流畅，是中期长柄武器的优秀代表。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">15</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">20</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">海拉鲁城堡区域守卫掉落；城堡内宝箱；中部平原骑兵掉落</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">攻击范围长，可隔距攻击；三连刺速度快</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>蜥蜴族尾巴（+10）→ 扩大攻击范围；龙骨碎片（+55）→ 总攻击 70</div>
+      </div>
+    </div>
+
+    <!-- ══════ 6. 近卫双手剑 ══════ -->
+    <div class="weapon-card" data-type="twohanded legendary">
+      <div class="rarity-bar r-legend"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">⭐ 传说 · 双手武器</span>
+        <img src="images/weapons/近卫双手剑.jpg" alt="近卫双手剑">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">近卫双手剑</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 52</span>
+          <span class="stat-b s-dur">🔵 耐久 7</span>
+          <span class="stat-b s-fx">💥 濒死爆发</span>
+        </div>
+        <div class="wc-desc">
+          谢卡族以古代技术为皇室护卫打造的试作双手剑，攻击力极高但耐久极度脆弱。耐久剩余 3 格时触发濒死爆发，攻击力翻倍至约 104，适合对 Boss 进行致命一击。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">52（濒死爆发时约 104）</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">7（极低，慎用）</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">海拉鲁城堡深处地牢宝箱；地底冥界城堡对应区域宝箱</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">耐久剩余 3 格时攻击力翻倍（濒死爆发），可瞬间斩杀高血量 Boss</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>古代刀片（+30）→ 总攻击 82，濒死爆发约 <strong style="color:#f87171">164</strong>，全游戏爆发伤害之王</div>
+      </div>
+    </div>
+
+    <!-- ══════ 7. 格鲁德双手剑 ══════ -->
+    <div class="weapon-card" data-type="twohanded">
+      <div class="rarity-bar r-rare"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🪓 双手武器</span>
+        <img src="images/weapons/格鲁德双手剑.jpg" alt="格鲁德双手剑">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">格鲁德双手剑</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 28</span>
+          <span class="stat-b s-dur">🔵 耐久 30</span>
+        </div>
+        <div class="wc-desc">
+          杰鲁多族工匠以沙漠精金铸造的双手大剑，造型华丽，刀身宽厚。在沙漠高温环境下性能稳定，耐久与攻击均衡，是中后期优秀的双手武器底座。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">28</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">30</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">杰鲁多城地区宝箱；格鲁德精英战士掉落；沙漠遗迹宝箱</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">无特殊属性；抗高温材质，沙漠探险不受环境影响</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>黄玉（+4，⚡雷击）对沙漠系和水系敌人有效；龙骨碎片（+55）→ 总攻击 83</div>
+      </div>
+    </div>
+
+    <!-- ══════ 8. 蜥蜴战士之骨 ══════ -->
+    <div class="weapon-card" data-type="sword">
+      <div class="rarity-bar r-common"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🗡 怪物武器</span>
+        <img src="images/weapons/蜥蜴战士之骨.jpg" alt="蜥蜴战士之骨">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">蜥蜴战士之骨</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 10</span>
+          <span class="stat-b s-dur">🔵 耐久 18</span>
+        </div>
+        <div class="wc-desc">
+          蜥蜴族（Lizalfos）用于战斗的骨制武器，由其前肢改造而成。虽攻击力低，但骨质轻盈，挥击速度极快。更多用途是作为融合素材叠加攻击力。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">10</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">18</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">击败蜥蜴族（Lizalfos）必定掉落；全游戏各地蜥蜴族巢穴</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">骨质材质，受部分环境魔法影响；可作为融合素材附加在其他武器上提升攻击</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>作为底座融合龙骨碎片（+55）→ 总攻击 65，性价比融合武器</div>
+      </div>
+    </div>
+
+    <!-- ══════ 9. 光鳞之枪 ══════ -->
+    <div class="weapon-card" data-type="spear legendary">
+      <div class="rarity-bar r-legend"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">⭐ 英杰 · 长柄武器</span>
+        <img src="images/weapons/光鳞之枪.jpg" alt="光鳞之枪">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">光鳞之枪</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 22</span>
+          <span class="stat-b s-dur">🔵 耐久 70</span>
+          <span class="stat-b s-water">💧 水属性</span>
+        </div>
+        <div class="wc-desc">
+          卓拉英杰米法使用的三叉戟，由卓拉族最精良的海底矿石打造，耐久度为同类最高。每次攻击自带水属性，在水中攻击速度明显提升，对火焰系敌人克制效果翻倍。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">22</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">70（长柄武器中最高）</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">完成水之神殿主线后，在卓拉领地找到特定 NPC，用卓拉蓝宝石等素材重新打造或接受赠予</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">攻击自带💧水属性；水中攻速提升 20%；对火焰属性敌人造成额外伤害；损毁后可找 NPC 修复</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>龙骨碎片（+55）→ 总攻击 <strong style="color:#f87171">77</strong>；配合水系装束更强</div>
+      </div>
+    </div>
+
+    <!-- ══════ 10. 七宝匕首 ══════ -->
+    <div class="weapon-card" data-type="dagger">
+      <div class="rarity-bar r-rare"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🗡 匕首</span>
+        <img src="images/weapons/七宝匕首.jpg" alt="七宝匕首">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">七宝匕首</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 16</span>
+          <span class="stat-b s-dur">🔵 耐久 20</span>
+          <span class="stat-b s-fx">✨ 七宝之力</span>
+        </div>
+        <div class="wc-desc">
+          镶嵌七种神圣宝石的精致匕首，刀身短小但锋利异常。据传由杰鲁多古代工匠历时多年打造，攻击时随机触发宝石对应的元素属性爆发。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">16</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">20</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">杰鲁多古代宝库宝箱；完成沙漠特定支线任务奖励；沙漠深处神庙宝箱</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">攻击时随机触发🔥火 / ❄冰 / ⚡雷三种元素之一的小范围爆发；匕首攻速极快</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>已含元素特效，可融合宝石强化特定属性；配合潜行套装潜行斩效果极佳</div>
+      </div>
+    </div>
+
+    <!-- ══════ 11. 魔法短杖 ══════ -->
+    <div class="weapon-card" data-type="spear">
+      <div class="rarity-bar r-rare"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🔱 短杖</span>
+        <img src="images/weapons/魔法短杖.jpg" alt="魔法短杖">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">魔法短杖</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 8</span>
+          <span class="stat-b s-dur">🔵 耐久 25</span>
+          <span class="stat-b s-fx">✨ 魔法爆炸</span>
+        </div>
+        <div class="wc-desc">
+          蕴含古代魔力的短杖，每次击打时会在命中点引发魔法能量爆炸，造成小范围冲击波伤害。物理攻击力虽低，但魔法爆炸附加伤害不可忽视。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">8（+魔法爆炸附加伤害）</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">25</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">神圣神庙宝箱；古代佐纳依遗迹特定区域；击败魔法系小 Boss 掉落</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">每次命中触发魔法爆炸，产生小范围冲击波；可引爆附近爆炸桶</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>炸弹花（+2）→ 触发连锁大爆炸，清场效率极高</div>
+      </div>
+    </div>
+
+    <!-- ══════ 12. 兽神弓 ══════ -->
+    <div class="weapon-card" data-type="bow legendary">
+      <div class="rarity-bar r-legend"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">⭐ 传说 · 弓</span>
+        <img src="images/weapons/兽神弓.png" alt="兽神弓">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">兽神弓</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 32</span>
+          <span class="stat-b s-dur">🔵 耐久 45</span>
+          <span class="stat-b s-fx">🏹 三连射</span>
+        </div>
+        <div class="wc-desc">
+          以传说中兽神之力加持的复合弓，每次拉弓可同时射出三支箭，实际单次伤害 96（32×3）。射速极快，对空中目标和快速移动敌人尤为有效，是对付龙形 Boss 的利器。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">32 × 3箭 = 实际 96</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">45</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">击败银色莱乃尔或特殊变种必定掉落；地底深层莱乃尔区域</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">三连射（同时发射 3 箭）；拉弓时可瞄准时间慢速效果更长；对空中目标额外命中加成</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>电气果 → 三箭同时麻痹群敌；火果 → 三点同时燃烧，清场利器</div>
+      </div>
+    </div>
+
+    <!-- ══════ 13. 卓拉大剑 ══════ -->
+    <div class="weapon-card" data-type="twohanded">
+      <div class="rarity-bar r-uncommon"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🪓 双手武器</span>
+        <img src="images/weapons/卓拉大剑.jpg" alt="卓拉大剑">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">卓拉大剑</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 14</span>
+          <span class="stat-b s-dur">🔵 耐久 45</span>
+          <span class="stat-b s-water">💧 水属性</span>
+        </div>
+        <div class="wc-desc">
+          卓拉族工匠以深海玄铁打造的双手大剑，耐久极高，攻击自带水属性。下雨天或在水中战斗时攻击力额外提升，是卓拉地区探险的理想装备。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">14（雨天 / 水中 +4）</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">45（双手剑中高耐久）</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">卓拉领地武器商店购买（约 300 卢比）；完成卓拉支线任务奖励；卓拉精英战士掉落</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">攻击自带💧水属性；雨天或水中攻击力提升；可对火焰系敌人造成克制伤害</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>龙骨碎片（+55）→ 总攻击 69；搭配雷电宝石可形成水电联动</div>
+      </div>
+    </div>
+
+    <!-- ══════ 14. 戒心小刀 ══════ -->
+    <div class="weapon-card" data-type="dagger">
+      <div class="rarity-bar r-uncommon"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🗡 匕首</span>
+        <img src="images/weapons/戒心小刀.jpg" alt="戒心小刀">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">戒心小刀</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 8</span>
+          <span class="stat-b s-dur">🔵 耐久 15</span>
+          <span class="stat-b s-fx">🥷 潜行加成</span>
+        </div>
+        <div class="wc-desc">
+          专为潜行刺杀设计的小型利刃，刀身细薄，几乎无声。在敌人未发现状态下发动攻击时，伤害倍率大幅提升，是潜行流玩家的首选近战武器。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">8（潜行暗杀时 ×3）</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">15</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">完成潜行相关支线任务奖励；特定地区地下密室宝箱；稀有商人贩售</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">潜行状态下暗杀伤害 ×3；移动无声音；配合潜行套装效果叠加</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>配合潜行套装 + 潜行药 → 暗杀伤害可达 ×6，即秒大多数精英敌人</div>
+      </div>
+    </div>
+
+    <!-- ══════ 15. 瘴气之剑 ══════ -->
+    <div class="weapon-card" data-type="sword gloom legendary">
+      <div class="rarity-bar r-epic"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🟣 瘴气 · 单手剑</span>
+        <img src="images/weapons/瘴气之剑.jpg" alt="瘴气之剑">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">瘴气之剑</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 32</span>
+          <span class="stat-b s-dur">🔵 耐久 45</span>
+          <span class="stat-b s-dark">🟣 瘴气诅咒</span>
+        </div>
+        <div class="wc-desc">
+          被瘴气（幽暗之力）完全侵蚀的魔王之剑，攻击时会对敌人附加瘴气效果，持续减少其最大心力上限。但同时也会对持剑者自身造成相同反噬效果，需备足心力使用。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">32</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">45</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">击败地底幽暗幻影 Boss（Gloom Hands / 幽暗手掌）掉落；地底冥王领地深层宝箱</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">攻击对敌人附加🟣瘴气效果，持续减少最大心力；使用者同样受到反噬，使用前确保心力充足</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>搭配满心力状态使用；融合龙骨碎片（+55）→ 总攻击 87，注意瘴气自伤</div>
+      </div>
+    </div>
+
+    <!-- ══════ 16. 王族双手剑 ══════ -->
+    <div class="weapon-card" data-type="twohanded">
+      <div class="rarity-bar r-rare"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🪓 双手武器</span>
+        <img src="images/weapons/王族双手剑.jpg" alt="王族双手剑">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">王族双手剑</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 40</span>
+          <span class="stat-b s-dur">🔵 耐久 32</span>
+        </div>
+        <div class="wc-desc">
+          海拉鲁王族御用铸造师打造的顶级双手大剑，攻击力在普通双手剑中排名最高。刀身以精钢锻造，即便不融合素材也有强大的输出能力，是中后期最佳双手武器底座之一。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">40</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">32</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">海拉鲁城堡内部宝箱（多处）；皇家精英护卫掉落；地底冥界城堡对应区域</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">无特殊效果；王族锻造工艺使其基础攻击力在同类中最高</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>龙骨碎片（+55）→ 总攻击 <strong style="color:#f87171">95</strong>；银色莱乃尔角（+55）同样效果</div>
+      </div>
+    </div>
+
+    <!-- ══════ 17. 王族之剑 ══════ -->
+    <div class="weapon-card" data-type="sword">
+      <div class="rarity-bar r-rare"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🗡 单手剑</span>
+        <img src="images/weapons/王族之剑.jpg" alt="王族之剑">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">王族之剑</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 28</span>
+          <span class="stat-b s-dur">🔵 耐久 36</span>
+        </div>
+        <div class="wc-desc">
+          皇家工匠精心铸造的单手剑，攻击力与耐久均高于骑士之剑，是中后期攻防平衡的首选单手剑。皇室纹章刀身造型华丽，既是武器也是身份象征。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">28</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">36</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">海拉鲁城堡内部多处宝箱；皇家护卫队掉落；地底对应冥界区域宝箱</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">无特殊效果；单手剑中攻击与耐久综合最优，是单手剑融合的最佳底座</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>龙骨碎片（+55）→ 总攻击 <strong style="color:#f87171">83</strong>，性价比单手剑天花板</div>
+      </div>
+    </div>
+
+    <!-- ══════ 18. 戒心长刀 ══════ -->
+    <div class="weapon-card" data-type="sword dagger">
+      <div class="rarity-bar r-uncommon"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🗡 长刀</span>
+        <img src="images/weapons/戒心长刀.jpg" alt="戒心长刀">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">戒心长刀</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 14</span>
+          <span class="stat-b s-dur">🔵 耐久 22</span>
+          <span class="stat-b s-fx">🥷 连击加速</span>
+        </div>
+        <div class="wc-desc">
+          比戒心小刀更长的刺客用刀，刀身细长，同样为潜行战斗设计。连击速度极快，在未被发现时可发动快速多段偷袭，配合潜行套装效果显著。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">14（潜行暗杀 ×3）</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">22</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">潜行支线任务高阶奖励；地下秘密宝库宝箱；特定商人高价购买</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">连击速度快；潜行状态暗杀伤害 ×3；配合潜行套装效果叠加至更高倍率</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>潜行链条：潜行套装满级 + 潜行药 + 戒心长刀 → 暗杀可秒杀精英怪</div>
+      </div>
+    </div>
+
+    <!-- ══════ 19. 碎岩巨剑 ══════ -->
+    <div class="weapon-card" data-type="twohanded legendary">
+      <div class="rarity-bar r-legend"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">⭐ 英杰 · 双手武器</span>
+        <img src="images/weapons/碎岩巨剑.jpg" alt="碎岩巨剑">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">碎岩巨剑</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 38</span>
+          <span class="stat-b s-dur">🔵 耐久 40</span>
+          <span class="stat-b s-fire">🔥 火属性</span>
+        </div>
+        <div class="wc-desc">
+          鼓隆（Goron）英杰达鲁克使用的巨型重锤，铸造于火山矿脉，攻击时自带火焰效果，可点燃敌人并熔化冰块。在双手武器中同时拥有高攻击和优秀耐久，是英杰武器中综合表现最强的。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">38</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">40</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">完成火之神殿主线后，前往鼓隆城找到特定铁匠 NPC（格凌 / Rohan），用鼓隆矿石等素材重新打造或修复</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">攻击自带🔥火焰属性，可点燃敌人持续灼烧；可熔化冰块解谜；击碎岩石矿脉效率 ×2；损毁后可找 NPC 修复</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>龙骨碎片（+55）→ 总攻击 <strong style="color:#f87171">93</strong>；已自带火焰，再融合红宝石可增大燃烧范围</div>
+      </div>
+    </div>
+
+    <!-- ══════ 20. 瘴气金属棒 ══════ -->
+    <div class="weapon-card" data-type="twohanded gloom legendary">
+      <div class="rarity-bar r-epic"></div>
+      <div class="wc-img">
+        <span class="wc-type-badge">🟣 瘴气 · 双手武器</span>
+        <img src="images/weapons/瘴气金属棒.jpg" alt="瘴气金属棒">
+      </div>
+      <div class="wc-body">
+        <div class="wc-name">瘴气金属棒</div>
+        <div class="wc-stats">
+          <span class="stat-b s-atk">⚔ 攻击 40</span>
+          <span class="stat-b s-dur">🔵 耐久 40</span>
+          <span class="stat-b s-dark">🟣 瘴气诅咒</span>
+        </div>
+        <div class="wc-desc">
+          被瘴气力量渗透的巨型金属棒，挥动范围极广，命中时产生大范围瘴气爆炸，使周围多个敌人同时附加瘴气诅咒。与瘴气之剑同样会对使用者造成反噬，使用时心力需充足。
+        </div>
+        <div class="wc-info">
+          <div class="wc-info-row"><span class="wc-info-label">攻击力</span><span class="wc-info-val">40</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">耐久度</span><span class="wc-info-val">40</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">获取方法</span><span class="wc-info-val">击败地底幽暗幻影 Boss（Phantom Ganon）掉落；地底深层瘴气浓郁区域大型宝箱</span></div>
+          <div class="wc-info-row"><span class="wc-info-label">特殊效果</span><span class="wc-info-val">命中时产生大范围🟣瘴气爆炸，可同时对多个敌人附加瘴气诅咒；使用者受到同等瘴气反噬，须保持满心力</span></div>
+        </div>
+        <div class="fuse-hint"><strong>融合建议：</strong>配合满心力状态使用；融合龙骨碎片（+55）→ 总攻击 <strong style="color:#f87171">95</strong>，瘴气范围伤害清场之王</div>
+      </div>
+    </div>
+
+  </div><!-- /weapon-grid -->
+</div><!-- /page-body -->
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">
+      本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。<br>
+      《塞尔达传说 王国之泪》版权归任天堂株式会社所有。<br>
+      © 2023 Nintendo. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  // 武器过滤
+  function filterWeapons(type, btn) {
+    document.querySelectorAll('.fb-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.weapon-card').forEach(card => {
+      if (type === 'all') {
+        card.classList.remove('hidden');
+      } else {
+        const types = card.getAttribute('data-type') || '';
+        card.classList.toggle('hidden', !types.includes(type));
+      }
+    });
+  }
+</script>
+</body>
+</html>
+
+
+

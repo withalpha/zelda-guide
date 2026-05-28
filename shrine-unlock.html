@@ -1,0 +1,1307 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- ═══ 安全与版权 meta ═══ -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="withalpha@proton.me">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="王国之泪全152座神庙位置坐标与开启条件，含互动地图、地区筛选与进度追踪。">
+  <meta name="keywords" content="王国之泪,神庙坐标,神庙位置,攻略,地图,152座神庙">
+  <meta property="og:title" content="神庙开启指南 · 王国之泪">
+  <meta property="og:description" content="王国之泪全152座神庙位置坐标与开启条件，含互动地图、地区筛选与进度追踪。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="神庙开启指南 · 王国之泪">
+  <meta name="twitter:description" content="王国之泪全152座神庙位置坐标与开启条件，含互动地图、地区筛选与进度追踪。">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>神庙开启指南 · 王国之泪攻略</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    .shrine-section-header {
+      display:flex; align-items:center; gap:14px;
+      background:rgba(201,162,39,0.06); border:1px solid var(--border-gold);
+      border-radius:var(--radius); padding:14px 18px; margin:20px 0 8px;
+    }
+    .shrine-section-img {
+      width:90px; height:52px; object-fit:cover;
+      border-radius:6px; border:1px solid var(--border-gold);
+      flex-shrink:0;
+    }
+    .shrine-section-info { flex:1; }
+    .shrine-section-title { font-family:'Noto Serif SC',serif; font-size:1rem; font-weight:700; color:var(--gold); }
+    .shrine-section-sub { font-size:0.75rem; color:var(--text-muted); margin-top:2px; }
+    .shrine-section-count { font-size:0.78rem; color:var(--green); font-weight:600; }
+    .sname-cn { font-weight:600; color:var(--text-primary); font-size:0.85rem; }
+    .sname-en { font-size:0.7rem; color:var(--text-muted); display:block; margin-top:1px; }
+    .coord { color:var(--green); font-family:monospace; font-size:0.75rem; white-space:nowrap; }
+    .snote { font-size:0.74rem; color:var(--text-secondary); }
+    #shrineTableBody tr:hover td { background:rgba(201,162,39,0.04); }
+    .num-cell { color:var(--text-muted); font-size:0.76rem; text-align:center; width:36px; }
+
+    /* ─── Shrine Interactive Map ─── */
+    #shrine-map-section {
+      margin: 24px 0;
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      background: #0a0f0a;
+    }
+    #shrine-map-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 18px;
+      background: rgba(201,162,39,0.06);
+      border-bottom: 1px solid var(--border-gold);
+      flex-wrap: wrap; gap: 10px;
+    }
+    #shrine-map-header h3 {
+      font-family: 'Noto Serif SC', serif;
+      color: var(--gold); margin: 0; font-size: 1rem;
+    }
+    #shrine-map-controls { display: flex; gap: 8px; flex-wrap: wrap; }
+    #shrine-map-layers { display: flex; gap: 6px; flex-wrap: wrap; }
+    .map-layer-btn {
+      padding: 6px 14px; font-size: 0.8rem; cursor: pointer; border-radius: 4px;
+      border: 1px solid var(--border-gold);
+      background: rgba(0,0,0,0.4);
+      color: var(--text-secondary); transition: all .2s;
+      font-weight: 500;
+    }
+    .map-layer-btn:hover { background: rgba(201,162,39,0.18); color: var(--gold); }
+    .map-layer-btn.active {
+      background: linear-gradient(180deg, rgba(201,162,39,0.35), rgba(201,162,39,0.18));
+      color: var(--gold); border-color: var(--gold);
+      box-shadow: 0 0 8px rgba(201,162,39,0.4);
+    }
+    .map-grid-btn { border-color: rgba(255,255,255,0.25)!important; color: #aaa!important; }
+    .map-grid-btn.active { background: rgba(255,255,255,0.18)!important; color: #fff!important; border-color: #fff!important; }
+    #shrine-map-controls-row {
+      display: flex; gap: 6px; flex-wrap: wrap; align-items: center;
+      padding: 8px 18px;
+      background: rgba(0,0,0,0.25);
+      border-bottom: 1px solid rgba(201,162,39,0.18);
+    }
+    .map-ctrl-lbl { color: var(--text-muted); font-size: 0.75rem; margin-right: 4px; }
+    .map-ctrl-btn {
+      padding: 5px 12px; font-size: 0.78rem; cursor: pointer; border-radius: 4px;
+      border: 1px solid var(--border-gold);
+      background: rgba(201,162,39,0.08);
+      color: var(--gold); transition: background .2s;
+    }
+    .map-ctrl-btn:hover, .map-ctrl-btn.active { background: rgba(201,162,39,0.25); }
+    .map-done-btn { border-color: #4caf50!important; color: #4caf50!important; }
+    .map-done-btn.active { background: rgba(76,175,80,0.3)!important; }
+    #hyrule-map {
+      width: 100%; height: 620px;
+      cursor: grab;
+    }
+    #hyrule-map:active { cursor: grabbing; }
+    #hyrule-map .leaflet-control-zoom a {
+      background: rgba(20,30,20,0.92); color: var(--gold);
+      border: 1px solid var(--border-gold);
+    }
+    #hyrule-map .leaflet-control-zoom a:hover { background: rgba(201,162,39,0.3); }
+    #map-cursor-coord {
+      position: absolute; bottom: 8px; right: 14px; z-index: 500;
+      background: rgba(0,0,0,0.78); color: var(--gold);
+      padding: 4px 10px; border-radius: 4px;
+      font-family: monospace; font-size: 0.78rem;
+      border: 1px solid var(--border-gold); pointer-events: none;
+    }
+    .leaflet-container { background: #0d1a0d; }
+    /* Custom shrine marker */
+    .shrine-pin {
+      width: 12px; height: 12px; border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 0 4px rgba(0,0,0,.7);
+      cursor: pointer;
+    }
+    .shrine-pin.type-祝福 { background: #4caf50; }
+    .shrine-pin.type-谜题 { background: #c9a227; }
+    .shrine-pin.type-战斗 { background: #e53935; }
+    .shrine-pin.type-教学 { background: #2196f3; }
+    .shrine-pin.type-试炼 { background: #9c27b0; }
+    .shrine-pin.done { opacity: 0.35; }
+    .shrine-popup { font-size: 0.82rem; min-width: 180px; }
+    .shrine-popup .sp-name { font-weight: 700; color: #c9a227; font-size: 0.92rem; }
+    .shrine-popup .sp-en { color: #888; font-size: 0.75rem; }
+    .shrine-popup .sp-coord { font-family: monospace; color: #4caf50; font-size: 0.78rem; }
+    .shrine-popup .sp-meta { margin-top: 4px; font-size: 0.78rem; color: #aaa; }
+    #map-legend {
+      display: flex; gap: 12px; flex-wrap: wrap; padding: 8px 18px;
+      border-top: 1px solid rgba(201,162,39,.2);
+      background: rgba(0,0,0,.3);
+      font-size: 0.75rem;
+    }
+    .map-legend-item { display: flex; align-items: center; gap: 5px; color: var(--text-secondary); }
+    .map-legend-dot {
+      width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid #fff; flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html" class="active">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a><ul class="nav-dropdown-menu"><li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li><li><a href="sage-will.html" class="disabled">贤者的遗志</a></li></ul></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <span class="page-hero-eyebrow">SHRINE LOCATIONS · ALL 152</span>
+  <h1 class="page-hero-title">🔮 神庙开启指南</h1>
+  <p class="page-hero-subtitle">全 152 座神庙坐标 · 地区地图 · 开启条件 · 实时进度追踪</p>
+</div>
+
+<div class="page-body">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span><span class="cur">神庙开启</span>
+  </nav>
+
+  <div class="progress-section">
+    <div class="progress-info">
+      <p class="progress-label">神庙激活进度</p>
+      <div class="progress-bar"><div class="progress-fill" id="shrineProgressFill" style="width:0%"></div></div>
+    </div>
+    <div class="progress-stats">
+      <div class="progress-stat"><span class="progress-stat-val" id="shrineDoneCount">0</span><span class="progress-stat-lbl">已激活</span></div>
+      <div class="progress-stat"><span class="progress-stat-val">152</span><span class="progress-stat-lbl">总数</span></div>
+      <div class="progress-stat"><span class="progress-stat-val">120</span><span class="progress-stat-lbl">地面</span></div>
+      <div class="progress-stat"><span class="progress-stat-val">32</span><span class="progress-stat-lbl">天空</span></div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <strong>坐标说明：</strong>游戏内按 <strong>M</strong> 打开地图，右下角显示当前坐标（X,Y,Z）。X 正方向朝东，Y 正方向朝北，Z 为高度。天空神庙 Z &gt; 800，地面神庙 Z ≈ 0~500。
+    神庙类型：<span class="tag tag-green">祝福</span>无谜题直接领奖 · <span class="tag tag-gold">谜题</span>解谜神殿 · <span class="tag tag-red">战斗</span>战斗训练 · <span class="tag tag-blue">教学</span>佐纳依教学 · <span class="tag tag-purple">试炼</span>试炼场
+  </div>
+
+  <div class="filter-tabs" id="regionTabs">
+    <button class="filter-tab active" onclick="filterRegion('all',this)">全部(152)</button>
+    <button class="filter-tab" onclick="filterRegion('sky-island',this)">☁ 初始空岛(4)</button>
+    <button class="filter-tab" onclick="filterRegion('sky',this)">🌤 天空群岛(28)</button>
+    <button class="filter-tab" onclick="filterRegion('central',this)">🏙 中央平原(19)</button>
+    <button class="filter-tab" onclick="filterRegion('ridge',this)">⛰ 山脊(6)</button>
+    <button class="filter-tab" onclick="filterRegion('necluda',this)">🌊 奈克鲁达(16)</button>
+    <button class="filter-tab" onclick="filterRegion('faron',this)">🌿 法罗尼(7)</button>
+    <button class="filter-tab" onclick="filterRegion('lanayru',this)">💧 拉纳尤(15)</button>
+    <button class="filter-tab" onclick="filterRegion('eldin',this)">🔥 艾尔丁(14)</button>
+    <button class="filter-tab" onclick="filterRegion('akkala',this)">⚔ 阿卡拉(10)</button>
+    <button class="filter-tab" onclick="filterRegion('hebra',this)">❄ 赫布拉(18)</button>
+    <button class="filter-tab" onclick="filterRegion('gerudo',this)">⚡ 格鲁德(18)</button>
+    <button class="filter-tab" onclick="filterRegion('forest',this)">🌲 大森林(9)</button>
+  </div>
+
+  <div class="filter-tabs" id="typeTabs" style="margin-top:6px">
+    <button class="filter-tab active" onclick="filterType('all',this)">全部类型</button>
+    <button class="filter-tab" onclick="filterType('祝福',this)">祝福神殿</button>
+    <button class="filter-tab" onclick="filterType('谜题',this)">谜题神殿</button>
+    <button class="filter-tab" onclick="filterType('战斗',this)">战斗训练</button>
+    <button class="filter-tab" onclick="filterType('教学',this)">佐纳依教学</button>
+    <button class="filter-tab" onclick="filterType('试炼',this)">试炼场</button>
+  </div>
+
+  <div class="search-wrap" style="margin-top:14px">
+    <input class="search-input" id="shrineSearch" type="text" placeholder="搜索神庙名称（中文/英文）或坐标..." oninput="searchShrines(this.value)">
+    <span class="search-icon">🔍</span>
+  </div>
+
+  <!-- ═══════════════════════ 互动地图 ═══════════════════════ -->
+  <div id="shrine-map-section">
+    <div id="shrine-map-header">
+      <h3>🗺 海拉鲁大陆 · 神庙互动地图</h3>
+      <div id="shrine-map-layers">
+        <button class="map-layer-btn active" data-layer="surface" onclick="shrineSwitchLayer('surface',this)">🌍 地表</button>
+        <button class="map-layer-btn" data-layer="sky" onclick="shrineSwitchLayer('sky',this)">☁ 天空</button>
+        <button class="map-layer-btn" data-layer="depths" onclick="shrineSwitchLayer('depths',this)">🌑 地底</button>
+        <button class="map-layer-btn map-grid-btn" onclick="shrineToggleGrid(this)">⊞ 网格</button>
+      </div>
+    </div>
+    <div id="shrine-map-controls-row">
+      <span class="map-ctrl-lbl">类型筛选：</span>
+      <button class="map-ctrl-btn active" id="mapFilterAll" onclick="mapFilterType('all',this)">全部</button>
+      <button class="map-ctrl-btn" id="mapFilterZhufu" onclick="mapFilterType('祝福',this)">祝福</button>
+      <button class="map-ctrl-btn" id="mapFilterMiti" onclick="mapFilterType('谜题',this)">谜题</button>
+      <button class="map-ctrl-btn" id="mapFilterZhandou" onclick="mapFilterType('战斗',this)">战斗</button>
+      <button class="map-ctrl-btn" id="mapFilterJiaoxue" onclick="mapFilterType('教学',this)">教学</button>
+      <button class="map-ctrl-btn" id="mapFilterShilian" onclick="mapFilterType('试炼',this)">试炼</button>
+      <button class="map-ctrl-btn map-done-btn" onclick="mapToggleDone(this)">隐藏已完成</button>
+    </div>
+    <div id="hyrule-map-wrap" style="position:relative">
+      <div id="hyrule-map"></div>
+      <div id="map-cursor-coord">X: ---  Y: ---</div>
+    </div>
+    <div id="map-legend">
+      <span style="color:var(--text-muted);font-size:0.75rem;align-self:center">图例：</span>
+      <div class="map-legend-item"><div class="map-legend-dot" style="background:#4caf50"></div>祝福神殿</div>
+      <div class="map-legend-item"><div class="map-legend-dot" style="background:#c9a227"></div>谜题神殿</div>
+      <div class="map-legend-item"><div class="map-legend-dot" style="background:#e53935"></div>战斗训练</div>
+      <div class="map-legend-item"><div class="map-legend-dot" style="background:#2196f3"></div>佐纳依教学</div>
+      <div class="map-legend-item"><div class="map-legend-dot" style="background:#9c27b0"></div>试炼场</div>
+      <div class="map-legend-item" style="margin-left:auto;color:var(--text-muted)">点击标记查看详情 · 滚轮缩放 · 切换地表/天空层级</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ 全部神庙表格 ═══════════════════════ -->
+  <div class="table-wrap">
+    <table class="data-tbl">
+      <thead><tr><th>#</th><th>神庙名称</th><th>坐标 (X, Y, Z)</th><th>地区</th><th>类型</th><th>备注</th><th>✓</th></tr></thead>
+      <tbody id="shrineTableBody">
+  <tr id="sec-sky-island"><td colspan="7" style="padding:4px 0"><div class="shrine-section-header" style="margin:0">
+    <img class="shrine-section-img" src="https://cdn.wikimg.net/en/zeldawiki/images/9/92/TotK_The_Closed_Door.png" alt="初始空岛" loading="lazy">
+    <div class="shrine-section-info"><div class="shrine-section-title">☁ 初始空岛（大天空岛）</div><div class="shrine-section-sub">Great Sky Island · Z 高度 1400~2300</div></div>
+    <span class="shrine-section-count">4 座</span>
+  </div></td></tr>
+
+<tr id="shrine-row-0" data-region="sky-island" data-type="谜题"><td class="num-cell">001</td><td><span class="sname-cn">乌可乌侯神庙</span><span class="sname-en">Ukouh Shrine</span></td><td><span class="coord">0274, -0913, 1460</span></td><td><span class="rbadge rbadge-sky">初始空岛</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">主线教学·究极手入门，必须完成</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-1" data-region="sky-island" data-type="谜题"><td class="num-cell">002</td><td><span class="sname-cn">因·伊萨神庙</span><span class="sname-en">In-Isa Shrine</span></td><td><span class="coord">0027, -1503, 1408</span></td><td><span class="rbadge rbadge-sky">初始空岛</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">主线教学·余料建造入门</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-2" data-region="sky-island" data-type="谜题"><td class="num-cell">003</td><td><span class="sname-cn">古坦巴克神庙</span><span class="sname-en">Gutanbac Shrine</span></td><td><span class="coord">0709, -1381, 1584</span></td><td><span class="rbadge rbadge-sky">初始空岛</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">主线教学·通天术入门</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-3" data-region="sky-island" data-type="谜题"><td class="num-cell">004</td><td><span class="sname-cn">纳丘亚神庙</span><span class="sname-en">Nachoyah Shrine</span></td><td><span class="coord">0388, -1660, 2299</span></td><td><span class="rbadge rbadge-sky">初始空岛</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">主线教学·倒转乾坤入门，位于觉醒之间内</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+  <!-- ═══════════════════════ 天空群岛 ═══════════════════════ -->
+  <tr><td colspan="7" style="padding:4px 0"><div class="shrine-section-header" id="sec-sky" style="margin:0">
+    <img class="shrine-section-img" src="https://cdn.wikimg.net/en/zeldawiki/images/9/92/TotK_The_Closed_Door.png" alt="天空群岛" loading="lazy">
+    <div class="shrine-section-info"><div class="shrine-section-title">🌤 天空群岛（各区）</div><div class="shrine-section-sub">Sky Islands · 需飞行器或天空塔发射抵达</div></div>
+    <span class="shrine-section-count">28 座</span>
+  </div></td></tr>
+
+<tr id="shrine-row-4" data-region="sky" data-type="祝福"><td class="num-cell">005</td><td><span class="sname-cn">嘎·阿希萨斯神庙</span><span class="sname-en">Ga-ahisas Shrine</span></td><td><span class="coord">-3596, 0961, 1699</span></td><td><span class="rbadge rbadge-sky">塔班达·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">塔班达边境天空群岛西侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-5" data-region="sky" data-type="祝福"><td class="num-cell">006</td><td><span class="sname-cn">嘎诺斯神庙</span><span class="sname-en">Ganos Shrine</span></td><td><span class="coord">-3370, 0466, 1695</span></td><td><span class="rbadge rbadge-sky">塔班达·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">塔班达边境天空群岛南侧平台</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-6" data-region="sky" data-type="祝福"><td class="num-cell">007</td><td><span class="sname-cn">吉卡库神庙</span><span class="sname-en">Gikaku Shrine</span></td><td><span class="coord">4506, 2164, 1155</span></td><td><span class="rbadge rbadge-sky">阿卡拉海·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">阿卡拉海东北天空，洛梅天空迷宫旁</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-7" data-region="sky" data-type="谜题"><td class="num-cell">008</td><td><span class="sname-cn">伊戈修恩神庙</span><span class="sname-en">Igoshon Shrine</span></td><td><span class="coord">3480, 0667, 1325</span></td><td><span class="rbadge rbadge-sky">拉纳尤大泉·天</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">拉纳尤大泉天空，浮岛东侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-8" data-region="sky" data-type="谜题"><td class="num-cell">009</td><td><span class="sname-cn">伊约·欧神庙</span><span class="sname-en">Ijo-o Shrine</span></td><td><span class="coord">-3860, 2682, 0702</span></td><td><span class="rbadge rbadge-sky">赫布拉·天</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">赫布拉山天空，需从天空矿落地再升空</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-9" data-region="sky" data-type="祝福"><td class="num-cell">010</td><td><span class="sname-cn">吉诺多克神庙</span><span class="sname-en">Jinodok Shrine</span></td><td><span class="coord">-1257, -1487, 1008</span></td><td><span class="rbadge rbadge-sky">中央海拉鲁·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">中央天空群岛，南侧浮岛</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-10" data-region="sky" data-type="教学"><td class="num-cell">011</td><td><span class="sname-cn">吉鲁塔古玛克神庙</span><span class="sname-en">Jirutagumac Shrine</span></td><td><span class="coord">2916, 0533, 0951</span></td><td><span class="rbadge rbadge-sky">拉纳尤大泉·天</span></td><td><span class="tag tag-blue">教学</span></td><td class="snote">拉纳尤大泉天空岛北侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-11" data-region="sky" data-type="祝福"><td class="num-cell">012</td><td><span class="sname-cn">若库·乌神庙</span><span class="sname-en">Joku-u Shrine</span></td><td><span class="coord">1375, -3339, 0429</span></td><td><span class="rbadge rbadge-sky">法罗尼·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">法罗尼草原天空东侧浮岛</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-12" data-region="sky" data-type="试炼"><td class="num-cell">013</td><td><span class="sname-cn">若库·乌希恩神庙</span><span class="sname-en">Joku-usin Shrine</span></td><td><span class="coord">1074, -3347, 0786</span></td><td><span class="rbadge rbadge-sky">法罗尼·天</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">法罗尼天空西侧，与Joku-u相邻</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-13" data-region="sky" data-type="祝福"><td class="num-cell">014</td><td><span class="sname-cn">若修神庙</span><span class="sname-en">Josiu Shrine</span></td><td><span class="coord">1759, -1208, 0924</span></td><td><span class="rbadge rbadge-sky">西奈克鲁达·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">西奈克鲁达天空，需从附近视野塔射出</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-14" data-region="sky" data-type="谜题"><td class="num-cell">015</td><td><span class="sname-cn">卡道纳尔神庙</span><span class="sname-en">Kadaunar Shrine</span></td><td><span class="coord">1879, 1202, 1251</span></td><td><span class="rbadge rbadge-sky">艾尔丁峡谷·天</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">艾尔丁峡谷上方天空岛</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-15" data-region="sky" data-type="祝福"><td class="num-cell">016</td><td><span class="sname-cn">卡哈塔努姆神庙</span><span class="sname-en">Kahatanaum Shrine</span></td><td><span class="coord">-3286, 3425, 1347</span></td><td><span class="rbadge rbadge-sky">赫布拉·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">赫布拉山北侧天空群岛</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-16" data-region="sky" data-type="祝福"><td class="num-cell">017</td><td><span class="sname-cn">库玛曼神庙</span><span class="sname-en">Kumamayn Shrine</span></td><td><span class="coord">2855, -2856, 1212</span></td><td><span class="rbadge rbadge-sky">东奈克鲁达·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">东奈克鲁达天空，高空浮岛</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-17" data-region="sky" data-type="祝福"><td class="num-cell">018</td><td><span class="sname-cn">玛雅姆神庙</span><span class="sname-en">Mayam Shrine</span></td><td><span class="coord">0344, 2816, 1820</span></td><td><span class="rbadge rbadge-sky">大海拉鲁森林·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">大海拉鲁森林上方天空岛，高度较高</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-18" data-region="sky" data-type="谜题"><td class="num-cell">019</td><td><span class="sname-cn">玛雅纳斯神庙</span><span class="sname-en">Mayanas Shrine</span></td><td><span class="coord">4613, -0947, 1790</span></td><td><span class="rbadge rbadge-sky">拉纳尤海·天</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">拉纳尤海东侧高空天岛</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-19" data-region="sky" data-type="祝福"><td class="num-cell">020</td><td><span class="sname-cn">玛雅西亚尔神庙</span><span class="sname-en">Mayasiar Shrine</span></td><td><span class="coord">-3545, -0320, 1965</span></td><td><span class="rbadge rbadge-sky">格鲁德高地·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">格鲁德高地天空，西侧高空浮岛</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-20" data-region="sky" data-type="谜题"><td class="num-cell">021</td><td><span class="sname-cn">玛雅乌梅基斯神庙</span><span class="sname-en">Mayaumekis Shrine</span></td><td><span class="coord">-2947, 3051, 0897</span></td><td><span class="rbadge rbadge-sky">赫布拉·天</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">赫布拉山天空岛，弹射器练习</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-21" data-region="sky" data-type="谜题"><td class="num-cell">022</td><td><span class="sname-cn">莫基萨里神庙</span><span class="sname-en">Mogisari Shrine</span></td><td><span class="coord">4656, 3509, 1010</span></td><td><span class="rbadge rbadge-sky">阿卡拉海·天</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">洛梅天空迷宫正面入口旁</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-22" data-region="sky" data-type="祝福"><td class="num-cell">023</td><td><span class="sname-cn">纳塔克神庙</span><span class="sname-en">Natak Shrine</span></td><td><span class="coord">3671, 1484, 1158</span></td><td><span class="rbadge rbadge-sky">阿卡拉·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">阿卡拉天空岛，西侧平台</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-23" data-region="sky" data-type="教学"><td class="num-cell">024</td><td><span class="sname-cn">拉卡修格神庙</span><span class="sname-en">Rakashog Shrine</span></td><td><span class="coord">-1716, -2118, 1149</span></td><td><span class="rbadge rbadge-sky">格鲁德高地·天</span></td><td><span class="tag tag-blue">教学</span></td><td class="snote">格鲁德高地天空南侧，需耐热</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-24" data-region="sky" data-type="祝福"><td class="num-cell">025</td><td><span class="sname-cn">希哈约格神庙</span><span class="sname-en">Sihajog Shrine</span></td><td><span class="coord">4544, -0845, 1121</span></td><td><span class="rbadge rbadge-sky">拉纳尤大泉·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">拉纳尤大泉天空岛东侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-25" data-region="sky" data-type="试炼"><td class="num-cell">026</td><td><span class="sname-cn">希莫希瓦克神庙</span><span class="sname-en">Simosiwak Shrine</span></td><td><span class="coord">0163, 1972, 0759</span></td><td><span class="rbadge rbadge-sky">大海拉鲁森林·天</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">大海拉鲁森林上方，武器强化试炼</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-26" data-region="sky" data-type="祝福"><td class="num-cell">027</td><td><span class="sname-cn">希雅莫苏斯神庙</span><span class="sname-en">Siyamotsus Shrine</span></td><td><span class="coord">-1794, -3295, 1011</span></td><td><span class="rbadge rbadge-sky">格鲁德高地·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">格鲁德高地南侧天空</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-27" data-region="sky" data-type="祝福"><td class="num-cell">028</td><td><span class="sname-cn">塔尼诺德神庙</span><span class="sname-en">Taninoud Shrine</span></td><td><span class="coord">-1801, 3406, 0949</span></td><td><span class="rbadge rbadge-sky">赫布拉·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">赫布拉山北侧天空岛</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-28" data-region="sky" data-type="战斗"><td class="num-cell">029</td><td><span class="sname-cn">陶恩希神庙</span><span class="sname-en">Taunhiy Shrine</span></td><td><span class="coord">-2400, 0824, 0615</span></td><td><span class="rbadge rbadge-sky">海拉鲁丘陵·天</span></td><td><span class="tag tag-red">战斗</span></td><td class="snote">海拉鲁丘陵上方天空</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-29" data-region="sky" data-type="谜题"><td class="num-cell">030</td><td><span class="sname-cn">滕贝兹神庙</span><span class="sname-en">Tenbez Shrine</span></td><td><span class="coord">-0964, 3540, 1011</span></td><td><span class="rbadge rbadge-sky">赫布拉·天</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">赫布拉山东北天空，水流谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-30" data-region="sky" data-type="祝福"><td class="num-cell">031</td><td><span class="sname-cn">乌科欧吉希神庙</span><span class="sname-en">Ukoojisi Shrine</span></td><td><span class="coord">1458, -2164, 0585</span></td><td><span class="rbadge rbadge-sky">西奈克鲁达·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">西奈克鲁达上方天空岛</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-31" data-region="sky" data-type="试炼"><td class="num-cell">032</td><td><span class="sname-cn">延萨明神庙</span><span class="sname-en">Yansamin Shrine</span></td><td><span class="coord">2350, -1782, 1475</span></td><td><span class="rbadge rbadge-sky">东奈克鲁达·天</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">东奈克鲁达高空天岛，武装试炼</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+  <!-- ═══════════════════════ 海拉鲁平原/中央 ═══════════════════════ -->
+  <tr><td colspan="7" style="padding:4px 0"><div class="shrine-section-header" id="sec-central" style="margin:0">
+    <img class="shrine-section-img" src="https://cdn.wikimg.net/en/zeldawiki/images/3/30/TotK_Crisis_at_Hyrule_Castle.png" alt="海拉鲁中央" loading="lazy">
+    <div class="shrine-section-info"><div class="shrine-section-title">🏙 海拉鲁平原（中央区）</div><div class="shrine-section-sub">Hyrule Field · 监视堡垒周边</div></div>
+    <span class="shrine-section-count">19 座</span>
+  </div></td></tr>
+
+<tr id="shrine-row-32" data-region="central" data-type="谜题"><td class="num-cell">033</td><td><span class="sname-cn">焦辛神庙</span><span class="sname-en">Jiosin Shrine</span></td><td><span class="coord">-0240, -0370, 0027</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">监视堡垒西南，平地神庙</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-33" data-region="central" data-type="试炼"><td class="num-cell">034</td><td><span class="sname-cn">若诺神庙</span><span class="sname-en">Jojon Shrine</span></td><td><span class="coord">1209, 0322, 0027</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">监视堡垒东侧平原</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-34" data-region="central" data-type="试炼"><td class="num-cell">035</td><td><span class="sname-cn">卡米祖恩神庙</span><span class="sname-en">Kamizun Shrine</span></td><td><span class="coord">-0177, -1557, 0023</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">中央平原南侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-35" data-region="central" data-type="谜题"><td class="num-cell">036</td><td><span class="sname-cn">乔库贡神庙</span><span class="sname-en">Kyokugon Shrine</span></td><td><span class="coord">0710, -1550, 0006</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">中央平原东南侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-36" data-region="central" data-type="战斗"><td class="num-cell">037</td><td><span class="sname-cn">乔诺尼斯神庙</span><span class="sname-en">Kyononis Shrine</span></td><td><span class="coord">-0205, 0451, 0021</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-red">战斗</span></td><td class="snote">监视堡垒正北</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-37" data-region="central" data-type="教学"><td class="num-cell">038</td><td><span class="sname-cn">伊修达格神庙</span><span class="sname-en">Ishodag Shrine</span></td><td><span class="coord">-0880, 0419, 0049</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-blue">教学</span></td><td class="snote">中央平原西北，佐纳依载具教学</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-38" data-region="central" data-type="教学"><td class="num-cell">039</td><td><span class="sname-cn">玛雅欣神庙</span><span class="sname-en">Mayachin Shrine</span></td><td><span class="coord">-0705, -0869, 0031</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-blue">教学</span></td><td class="snote">中央平原，机械球教学</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-39" data-region="central" data-type="谜题"><td class="num-cell">040</td><td><span class="sname-cn">朗·伊兹神庙</span><span class="sname-en">Ren-iz Shrine</span></td><td><span class="coord">0744, 0823, 0081</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">中央平原东北侧丘陵</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-40" data-region="central" data-type="谜题"><td class="num-cell">041</td><td><span class="sname-cn">里欧戈克神庙</span><span class="sname-en">Riogok Shrine</span></td><td><span class="coord">-1440, -1616, 0089</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">中央平原西南丘陵地带</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-41" data-region="central" data-type="谜题"><td class="num-cell">042</td><td><span class="sname-cn">塞帕帕神庙</span><span class="sname-en">Sepapa Shrine</span></td><td><span class="coord">0219, 1082, 0028</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">监视堡垒正北山丘</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-42" data-region="central" data-type="谜题"><td class="num-cell">043</td><td><span class="sname-cn">塞鲁塔博玛克神庙</span><span class="sname-en">Serutabomac Shrine</span></td><td><span class="coord">-0179, 1170, 0280</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">监视堡垒北侧悬崖上</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-43" data-region="central" data-type="教学"><td class="num-cell">044</td><td><span class="sname-cn">苏苏亚伊神庙</span><span class="sname-en">Susuyai Shrine</span></td><td><span class="coord">-0785, -0434, 0018</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-blue">教学</span></td><td class="snote">中央平原西侧，风帆教学</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-44" data-region="central" data-type="谜题"><td class="num-cell">045</td><td><span class="sname-cn">塔达洛克神庙</span><span class="sname-en">Tadarok Shrine</span></td><td><span class="coord">-1082, -2187, 0129</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">中央平原西南，通往法罗尼路上</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-45" data-region="central" data-type="谜题"><td class="num-cell">046</td><td><span class="sname-cn">塔吉卡兹神庙</span><span class="sname-en">Tajikats Shrine</span></td><td><span class="coord">0346, -1013, 0016</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">监视堡垒正南，平地神庙</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-46" data-region="central" data-type="祝福"><td class="num-cell">047</td><td><span class="sname-cn">天玛滕神庙</span><span class="sname-en">Tenmaten Shrine</span></td><td><span class="coord">-0602, 1553, -0014</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">中央平原北侧，外部有谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-47" data-region="central" data-type="战斗"><td class="num-cell">048</td><td><span class="sname-cn">滕尼滕神庙</span><span class="sname-en">Teniten Shrine</span></td><td><span class="coord">-0075, -1115, 0021</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-red">战斗</span></td><td class="snote">监视堡垒南侧平原</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-48" data-region="central" data-type="谜题"><td class="num-cell">049</td><td><span class="sname-cn">兹兹·乌姆神庙</span><span class="sname-en">Tsutsu-um Shrine</span></td><td><span class="coord">-1423, -1349, 0068</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">中央平原西侧小山丘上</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-49" data-region="central" data-type="战斗"><td class="num-cell">050</td><td><span class="sname-cn">亚米约神庙</span><span class="sname-en">Yamiyo Shrine</span></td><td><span class="coord">0322, 0464, 0028</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-red">战斗</span></td><td class="snote">监视堡垒附近，平地战斗神庙</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-50" data-region="central" data-type="谜题"><td class="num-cell">051</td><td><span class="sname-cn">图卡洛克神庙</span><span class="sname-en">Tukarok Shrine</span></td><td><span class="coord">0916, -0253, 0034</span></td><td><span class="rbadge rbadge-central">中央平原</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">中央平原东侧，兰娜尤湿地西边</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+  <!-- ═══════════════════════ 海拉鲁丘陵 ═══════════════════════ -->
+  <tr><td colspan="7" style="padding:4px 0"><div class="shrine-section-header" id="sec-ridge" style="margin:0">
+    <img class="shrine-section-img" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="海拉鲁丘陵" loading="lazy">
+    <div class="shrine-section-info"><div class="shrine-section-title">⛰ 海拉鲁丘陵</div><div class="shrine-section-sub">Hyrule Ridge · 中央偏西山脉地带</div></div>
+    <span class="shrine-section-count">6 座</span>
+  </div></td></tr>
+
+<tr id="shrine-row-51" data-region="ridge" data-type="战斗"><td class="num-cell">052</td><td><span class="sname-cn">玛库鲁基斯神庙</span><span class="sname-en">Makurukis Shrine</span></td><td><span class="coord">-2847, 0629, 0233</span></td><td><span class="rbadge rbadge-central">山脊</span></td><td><span class="tag tag-red">战斗</span></td><td class="snote">山脊中段，附近有莱乃尔</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-52" data-region="ridge" data-type="谜题"><td class="num-cell">053</td><td><span class="sname-cn">鲁纳基特神庙</span><span class="sname-en">Runakit Shrine</span></td><td><span class="coord">-2532, 1169, 0177</span></td><td><span class="rbadge rbadge-central">山脊</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">山脊北段高地</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-53" data-region="ridge" data-type="教学"><td class="num-cell">054</td><td><span class="sname-cn">希纳卡瓦克神庙</span><span class="sname-en">Sinakawak Shrine</span></td><td><span class="coord">-1413, 0756, 0089</span></td><td><span class="rbadge rbadge-central">山脊</span></td><td><span class="tag tag-blue">教学</span></td><td class="snote">山脊东侧，气球教学神庙</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-54" data-region="ridge" data-type="谜题"><td class="num-cell">055</td><td><span class="sname-cn">索纳潘神庙</span><span class="sname-en">Sonapan Shrine</span></td><td><span class="coord">-1921, -0357, 0228</span></td><td><span class="rbadge rbadge-central">山脊</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">山脊南段悬崖边</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-55" data-region="ridge" data-type="祝福"><td class="num-cell">056</td><td><span class="sname-cn">塔基·伊哈班神庙</span><span class="sname-en">Taki-ihaban Shrine</span></td><td><span class="coord">-1816, 1190, 0147</span></td><td><span class="rbadge rbadge-central">山脊</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">山脊北段，外部有谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-56" data-region="ridge" data-type="祝福"><td class="num-cell">057</td><td><span class="sname-cn">乌萨朱姆神庙</span><span class="sname-en">Usazum Shrine</span></td><td><span class="coord">-2139, -0873, 0093</span></td><td><span class="rbadge rbadge-central">山脊</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">山脊西南侧谷地</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+  <!-- ═══════════════════════ 奈克鲁达（东西） ═══════════════════════ -->
+  <tr><td colspan="7" style="padding:4px 0"><div class="shrine-section-header" id="sec-necluda" style="margin:0">
+    <img class="shrine-section-img" src="https://cdn.wikimg.net/en/zeldawiki/images/1/1c/TotK_The_Broken_Slate.png" alt="奈克鲁达" loading="lazy">
+    <div class="shrine-section-info"><div class="shrine-section-title">🌊 奈克鲁达（东部·西部）</div><div class="shrine-section-sub">Necluda · 双峰山·林娜尤湖周边</div></div>
+    <span class="shrine-section-count">16 座</span>
+  </div></td></tr>
+
+<tr id="shrine-row-57" data-region="necluda" data-type="谜题"><td class="num-cell">058</td><td><span class="sname-cn">安内达米米克神庙</span><span class="sname-en">Anedamimik Shrine</span></td><td><span class="coord">4224, -2191, -0009</span></td><td><span class="rbadge rbadge-necluda">东奈克</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">东奈克鲁达海岸边</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-58" data-region="necluda" data-type="祝福"><td class="num-cell">059</td><td><span class="sname-cn">巴米托克神庙</span><span class="sname-en">Bamitok Shrine</span></td><td><span class="coord">-3094, -3209, 0082</span></td><td><span class="rbadge rbadge-necluda">东奈克</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">东奈克鲁达南岸</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-59" data-region="necluda" data-type="战斗"><td class="num-cell">060</td><td><span class="sname-cn">艾修斯神庙</span><span class="sname-en">Eshos Shrine</span></td><td><span class="coord">1562, -1944, 0157</span></td><td><span class="rbadge rbadge-necluda">西奈克</span></td><td><span class="tag tag-red">战斗</span></td><td class="snote">西奈克鲁达平原，双峰山北侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-60" data-region="necluda" data-type="祝福"><td class="num-cell">061</td><td><span class="sname-cn">若奇希加神庙</span><span class="sname-en">Jochi-ihiga Shrine</span></td><td><span class="coord">0933, -1895, 0029</span></td><td><span class="rbadge rbadge-necluda">西奈克</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">西奈克鲁达西北</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-61" data-region="necluda" data-type="教学"><td class="num-cell">062</td><td><span class="sname-cn">玛卡苏拉神庙</span><span class="sname-en">Makasura Shrine</span></td><td><span class="coord">1770, -1050, 0166</span></td><td><span class="rbadge rbadge-necluda">西奈克</span></td><td><span class="tag tag-blue">教学</span></td><td class="snote">西奈克鲁达，卡卡里科村附近</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-62" data-region="necluda" data-type="祝福"><td class="num-cell">063</td><td><span class="sname-cn">玛雅希希克神庙</span><span class="sname-en">Mayahisik Shrine</span></td><td><span class="coord">3731, -2058, 0189</span></td><td><span class="rbadge rbadge-necluda">东奈克</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">东奈克鲁达中部</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-63" data-region="necluda" data-type="祝福"><td class="num-cell">064</td><td><span class="sname-cn">玛拉里·因神庙</span><span class="sname-en">Marari-in Shrine</span></td><td><span class="coord">4634, -3713, 0018</span></td><td><span class="rbadge rbadge-necluda">东奈克</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">奈克鲁达海东南小岛</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-64" data-region="necluda" data-type="祝福"><td class="num-cell">065</td><td><span class="sname-cn">欧·欧吉姆神庙</span><span class="sname-en">O-ogim Shrine</span></td><td><span class="coord">2754, -1102, 0099</span></td><td><span class="rbadge rbadge-necluda">东奈克</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">东奈克鲁达西北</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-65" data-region="necluda" data-type="试炼"><td class="num-cell">066</td><td><span class="sname-cn">西福明神庙</span><span class="sname-en">Sifumim Shrine</span></td><td><span class="coord">2826, -3271, 0078</span></td><td><span class="rbadge rbadge-necluda">东奈克</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">东奈克鲁达南部，卢雷林村旁</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-66" data-region="necluda" data-type="祝福"><td class="num-cell">067</td><td><span class="sname-cn">苏苏布神庙</span><span class="sname-en">Susub Shrine</span></td><td><span class="coord">0348, -2051, -0026</span></td><td><span class="rbadge rbadge-necluda">西奈克</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">西奈克鲁达南侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-67" data-region="necluda" data-type="祝福"><td class="num-cell">068</td><td><span class="sname-cn">托基神庙</span><span class="sname-en">Tokiy Shrine</span></td><td><span class="coord">2312, -2372, -0029</span></td><td><span class="rbadge rbadge-necluda">东奈克</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">东奈克鲁达南部平原</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-68" data-region="necluda" data-type="祝福"><td class="num-cell">069</td><td><span class="sname-cn">乌托吉斯神庙</span><span class="sname-en">Utojis Shrine</span></td><td><span class="coord">1217, -2530, 0095</span></td><td><span class="rbadge rbadge-necluda">东奈克</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">东奈克鲁达西侧丘陵</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-69" data-region="necluda" data-type="谜题"><td class="num-cell">070</td><td><span class="sname-cn">扎南米克神庙</span><span class="sname-en">Zanmik Shrine</span></td><td><span class="coord">3469, -2182, 0148</span></td><td><span class="rbadge rbadge-necluda">东奈克</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">东奈克鲁达中部高台</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-70" data-region="necluda" data-type="谜题"><td class="num-cell">071</td><td><span class="sname-cn">霍奇修神庙</span><span class="sname-en">Jochisiu Shrine</span></td><td><span class="coord">0933, -1895, 0029</span></td><td><span class="rbadge rbadge-necluda">西奈克</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">西奈克鲁达，双峰山附近</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-71" data-region="necluda" data-type="谜题"><td class="num-cell">072</td><td><span class="sname-cn">约古神庙</span><span class="sname-en">Jogou Shrine</span></td><td><span class="coord">3346, -1187, 0057</span></td><td><span class="rbadge rbadge-necluda">拉纳尤山</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">拉纳尤山西侧山腰</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-72" data-region="necluda" data-type="谜题"><td class="num-cell">073</td><td><span class="sname-cn">吉卡伊斯神庙</span><span class="sname-en">Jikais Shrine</span></td><td><span class="coord">4263, -1666, 0181</span></td><td><span class="rbadge rbadge-necluda">拉纳尤山</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">拉纳尤山东侧，冰雪地带</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+  <!-- ═══════════════════════ 法罗尼 ═══════════════════════ -->
+  <tr><td colspan="7" style="padding:4px 0"><div class="shrine-section-header" id="sec-faron" style="margin:0">
+    <img class="shrine-section-img" src="https://cdn.wikimg.net/en/zeldawiki/images/1/1d/TotK_Lurelin_Village.png" alt="法罗尼" loading="lazy">
+    <div class="shrine-section-info"><div class="shrine-section-title">🌿 法罗尼草原</div><div class="shrine-section-sub">Faron Grasslands · 南部热带草原</div></div>
+    <span class="shrine-section-count">7 座</span>
+  </div></td></tr>
+
+<tr id="shrine-row-73" data-region="faron" data-type="祝福"><td class="num-cell">074</td><td><span class="sname-cn">伊修金神庙</span><span class="sname-en">Ishokin Shrine</span></td><td><span class="coord">-0566, -3524, 0129</span></td><td><span class="rbadge rbadge-faron">法罗尼</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">法罗尼草原西侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-74" data-region="faron" data-type="谜题"><td class="num-cell">075</td><td><span class="sname-cn">吉乌库姆神庙</span><span class="sname-en">Jiukoum Shrine</span></td><td><span class="coord">0867, -2279, 0141</span></td><td><span class="rbadge rbadge-faron">法罗尼</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">法罗尼草原北部，铁块秤谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-75" data-region="faron" data-type="谜题"><td class="num-cell">076</td><td><span class="sname-cn">若朱·乌·乌神庙</span><span class="sname-en">Joju-u-u Shrine</span></td><td><span class="coord">1516, -3576, 0142</span></td><td><span class="rbadge rbadge-faron">法罗尼</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">法罗尼南部，靠近海岸</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-76" data-region="faron" data-type="谜题"><td class="num-cell">077</td><td><span class="sname-cn">基塔瓦克神庙</span><span class="sname-en">Kitawak Shrine</span></td><td><span class="coord">-1527, -2927, 0321</span></td><td><span class="rbadge rbadge-faron">法罗尼</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">格鲁德高地南侧斜坡</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-77" data-region="faron" data-type="祝福"><td class="num-cell">078</td><td><span class="sname-cn">莫苏希斯神庙</span><span class="sname-en">Motsusis Shrine</span></td><td><span class="coord">-1795, -3485, 0045</span></td><td><span class="rbadge rbadge-faron">法罗尼</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">格鲁德高地东南侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-78" data-region="faron" data-type="谜题"><td class="num-cell">079</td><td><span class="sname-cn">乌次苏霍克神庙</span><span class="sname-en">Utsushok Shrine</span></td><td><span class="coord">0669, -3358, 0072</span></td><td><span class="rbadge rbadge-faron">法罗尼</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">法罗尼草原东侧，林娜尤海旁</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-79" data-region="faron" data-type="祝福"><td class="num-cell">080</td><td><span class="sname-cn">恩·欧玛神庙</span><span class="sname-en">En-oma Shrine</span></td><td><span class="coord">0111, -2511, -0088</span></td><td><span class="rbadge rbadge-faron">法罗尼</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">林娜尤湖北侧岸边</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+  <!-- ═══════════════════════ 拉纳尤/兰娜尤 ═══════════════════════ -->
+  <tr><td colspan="7" style="padding:4px 0"><div class="shrine-section-header" id="sec-lanayru" style="margin:0">
+    <img class="shrine-section-img" src="https://cdn.wikimg.net/en/zeldawiki/images/8/86/TotK_Water_Temple.png" alt="拉纳尤" loading="lazy">
+    <div class="shrine-section-info"><div class="shrine-section-title">💧 拉纳尤大泉·湿地</div><div class="shrine-section-sub">Lanayru · 卓拉领地周边水系</div></div>
+    <span class="shrine-section-count">15 座</span>
+  </div></td></tr>
+
+<tr id="shrine-row-80" data-region="lanayru" data-type="谜题"><td class="num-cell">081</td><td><span class="sname-cn">阿波盖克神庙</span><span class="sname-en">Apogek Shrine</span></td><td><span class="coord">3889, -0220, 0163</span></td><td><span class="rbadge rbadge-zora">拉纳尤大泉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">拉纳尤大泉东侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-81" data-region="lanayru" data-type="谜题"><td class="num-cell">082</td><td><span class="sname-cn">伊汉·阿神庙</span><span class="sname-en">Ihen-a Shrine</span></td><td><span class="coord">3787, 0577, 0486</span></td><td><span class="rbadge rbadge-zora">拉纳尤大泉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">拉纳尤大泉高台</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-82" data-region="lanayru" data-type="谜题"><td class="num-cell">083</td><td><span class="sname-cn">若恩索神庙</span><span class="sname-en">Jonsau Shrine</span></td><td><span class="coord">1744, 0017, 0025</span></td><td><span class="rbadge rbadge-zora">拉纳尤湿地</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">兰娜尤湿地西部</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-83" data-region="lanayru" data-type="祝福"><td class="num-cell">084</td><td><span class="sname-cn">若尼乌神庙</span><span class="sname-en">Joniu Shrine</span></td><td><span class="coord">2918, 0494, 0152</span></td><td><span class="rbadge rbadge-zora">拉纳尤大泉</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">拉纳尤大泉北部</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-84" data-region="lanayru" data-type="祝福"><td class="num-cell">085</td><td><span class="sname-cn">库拉卡特神庙</span><span class="sname-en">Kurakat Shrine</span></td><td><span class="coord">2358, -0509, 0156</span></td><td><span class="rbadge rbadge-zora">拉纳尤大泉</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">拉纳尤大泉西侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-85" data-region="lanayru" data-type="祝福"><td class="num-cell">086</td><td><span class="sname-cn">玛欧伊柯斯神庙</span><span class="sname-en">Maoikes Shrine</span></td><td><span class="coord">2277, 0150, 0079</span></td><td><span class="rbadge rbadge-zora">拉纳尤湿地</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">拉纳尤湿地东侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-86" data-region="lanayru" data-type="谜题"><td class="num-cell">087</td><td><span class="sname-cn">莫格瓦克神庙</span><span class="sname-en">Mogawak Shrine</span></td><td><span class="coord">3299, 0424, 0112</span></td><td><span class="rbadge rbadge-zora">拉纳尤大泉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">拉纳尤大泉东南</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-87" data-region="lanayru" data-type="教学"><td class="num-cell">088</td><td><span class="sname-cn">莫洛克神庙</span><span class="sname-en">Morok Shrine</span></td><td><span class="coord">1179, -0778, 0133</span></td><td><span class="rbadge rbadge-zora">拉纳尤湿地</span></td><td><span class="tag tag-blue">教学</span></td><td class="snote">兰娜尤湿地中心，弹弓教学</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-88" data-region="lanayru" data-type="谜题"><td class="num-cell">089</td><td><span class="sname-cn">图卡洛克神庙（已含）</span><span class="sname-en">Yomizuk Shrine</span></td><td><span class="coord">4414, -0612, 0034</span></td><td><span class="rbadge rbadge-zora">拉纳尤大泉</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">拉纳尤大泉最东侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-89" data-region="lanayru" data-type="试炼"><td class="num-cell">090</td><td><span class="sname-cn">扎库苏神庙</span><span class="sname-en">Zakusu Shrine</span></td><td><span class="coord">3527, -1482, 0168</span></td><td><span class="rbadge rbadge-zora">拉纳尤山</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">拉纳尤山西侧，武装试炼</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-90" data-region="lanayru" data-type="祝福"><td class="num-cell">091</td><td><span class="sname-cn">若奇乌神庙</span><span class="sname-en">Jochi-iu Shrine</span></td><td><span class="coord">4346, 2875, 0165</span></td><td><span class="rbadge rbadge-akkala">深阿卡拉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">深阿卡拉，卡玛基斯附近</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-91" data-region="lanayru" data-type="谜题"><td class="num-cell">092</td><td><span class="sname-cn">拉西瓦克神庙</span><span class="sname-en">Rasiwak Shrine</span></td><td><span class="coord">4664, 3262, 0002</span></td><td><span class="rbadge rbadge-akkala">阿卡拉海</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">阿卡拉海南岸</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-92" data-region="lanayru" data-type="谜题"><td class="num-cell">093</td><td><span class="sname-cn">伊卡达克神庙</span><span class="sname-en">Igashuk Shrine</span></td><td><span class="coord">4654, 3712, 0131</span></td><td><span class="rbadge rbadge-akkala">阿卡拉海</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">阿卡拉海东北岸</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-93" data-region="lanayru" data-type="谜题"><td class="num-cell">094</td><td><span class="sname-cn">卡玛基斯神庙</span><span class="sname-en">Kamatukis Shrine</span></td><td><span class="coord">3429, 3356, 0071</span></td><td><span class="rbadge rbadge-akkala">深阿卡拉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">深阿卡拉北部，磁力谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-94" data-region="lanayru" data-type="谜题"><td class="num-cell">095</td><td><span class="sname-cn">乔格欧神庙</span><span class="sname-en">Jogou Shrine</span></td><td><span class="coord">3346, -1187, 0057</span></td><td><span class="rbadge rbadge-zora">拉纳尤山</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">拉纳尤山西麓（已计入奈克鲁达区）</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+  <!-- ═══════════════════════ 艾尔丁/鼓隆 ═══════════════════════ -->
+  <tr><td colspan="7" style="padding:4px 0"><div class="shrine-section-header" id="sec-eldin" style="margin:0">
+    <img class="shrine-section-img" src="https://cdn.wikimg.net/en/zeldawiki/images/2/22/TotK_Fire_Temple.png" alt="艾尔丁" loading="lazy">
+    <div class="shrine-section-info"><div class="shrine-section-title">🔥 艾尔丁峡谷·死亡山</div><div class="shrine-section-sub">Eldin Canyon · 鼓隆城周边火山区</div></div>
+    <span class="shrine-section-count">14 座</span>
+  </div></td></tr>
+
+<tr id="shrine-row-95" data-region="eldin" data-type="祝福"><td class="num-cell">096</td><td><span class="sname-cn">吉欧塔克神庙</span><span class="sname-en">Jiotak Shrine</span></td><td><span class="coord">1833, 3179, 0257</span></td><td><span class="rbadge rbadge-goron">艾尔丁</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">艾尔丁峡谷北部</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-96" data-region="eldin" data-type="试炼"><td class="num-cell">097</td><td><span class="sname-cn">伊希希姆神庙</span><span class="sname-en">Isisim Shrine</span></td><td><span class="coord">1842, 2844, 0363</span></td><td><span class="rbadge rbadge-goron">艾尔丁</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">艾尔丁峡谷中部高台</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-97" data-region="eldin" data-type="谜题"><td class="num-cell">098</td><td><span class="sname-cn">基希诺纳神庙</span><span class="sname-en">Kisinona Shrine</span></td><td><span class="coord">2567, 1245, 0173</span></td><td><span class="rbadge rbadge-goron">艾尔丁</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">艾尔丁峡谷南部，矿车谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-98" data-region="eldin" data-type="试炼"><td class="num-cell">099</td><td><span class="sname-cn">基马亚特神庙</span><span class="sname-en">Kimayat Shrine</span></td><td><span class="coord">2855, 3629, 0238</span></td><td><span class="rbadge rbadge-goron">艾尔丁</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">艾尔丁峡谷北端</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-99" data-region="eldin" data-type="谜题"><td class="num-cell">100</td><td><span class="sname-cn">玛拉库古克神庙</span><span class="sname-en">Marakuguc Shrine</span></td><td><span class="coord">1761, 2508, 0437</span></td><td><span class="rbadge rbadge-goron">艾尔丁</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">艾尔丁峡谷中段高台</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-100" data-region="eldin" data-type="谜题"><td class="num-cell">101</td><td><span class="sname-cn">玛亚克神庙</span><span class="sname-en">Mayak Shrine</span></td><td><span class="coord">1270, 3720, 0106</span></td><td><span class="rbadge rbadge-goron">艾尔丁山</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">艾尔丁山顶区域</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-101" data-region="eldin" data-type="试炼"><td class="num-cell">102</td><td><span class="sname-cn">玛雅欣戴格神庙</span><span class="sname-en">Mayachideg Shrine</span></td><td><span class="coord">3061, 1823, 0216</span></td><td><span class="rbadge rbadge-goron">艾尔丁</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">艾尔丁峡谷东侧，防守试炼</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-102" data-region="eldin" data-type="祝福"><td class="num-cell">103</td><td><span class="sname-cn">米内塔克神庙</span><span class="sname-en">Minetak Shrine</span></td><td><span class="coord">0388, 3495, 0066</span></td><td><span class="rbadge rbadge-goron">艾尔丁山</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">艾尔丁山西侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-103" data-region="eldin" data-type="祝福"><td class="num-cell">104</td><td><span class="sname-cn">莫莫西克神庙</span><span class="sname-en">Momosik Shrine</span></td><td><span class="coord">2959, 2758, 0524</span></td><td><span class="rbadge rbadge-goron">艾尔丁</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">艾尔丁峡谷东北高台</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-104" data-region="eldin" data-type="祝福"><td class="num-cell">105</td><td><span class="sname-cn">莫沙平神庙</span><span class="sname-en">Moshapin Shrine</span></td><td><span class="coord">2680, 1902, 0131</span></td><td><span class="rbadge rbadge-goron">艾尔丁</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">艾尔丁峡谷东侧平地</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-105" data-region="eldin" data-type="谜题"><td class="num-cell">106</td><td><span class="sname-cn">西巴吉塔克神庙</span><span class="sname-en">Sibajitak Shrine</span></td><td><span class="coord">2399, 3274, 0402</span></td><td><span class="rbadge rbadge-goron">艾尔丁</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">艾尔丁峡谷高地，岩石滚动谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-106" data-region="eldin" data-type="谜题"><td class="num-cell">107</td><td><span class="sname-cn">希库库神庙</span><span class="sname-en">Sikukuu Shrine</span></td><td><span class="coord">0699, 2793, 0226</span></td><td><span class="rbadge rbadge-goron">艾尔丁山</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">艾尔丁山西麓</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-107" data-region="eldin" data-type="教学"><td class="num-cell">108</td><td><span class="sname-cn">希图苏姆神庙</span><span class="sname-en">Sitsum Shrine</span></td><td><span class="coord">2369, 2595, 0790</span></td><td><span class="rbadge rbadge-goron">死亡山</span></td><td><span class="tag tag-blue">教学</span></td><td class="snote">死亡山顶部附近</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-108" data-region="eldin" data-type="谜题"><td class="num-cell">109</td><td><span class="sname-cn">提玛瓦克神庙</span><span class="sname-en">Timawak Shrine</span></td><td><span class="coord">1800, 1642, 0311</span></td><td><span class="rbadge rbadge-goron">艾尔丁</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">艾尔丁峡谷南部，水流+风扇谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+  <!-- ═══════════════════════ 阿卡拉 ═══════════════════════ -->
+  <tr><td colspan="7" style="padding:4px 0"><div class="shrine-section-header" id="sec-akkala" style="margin:0">
+    <img class="shrine-section-img" src="https://cdn.wikimg.net/en/zeldawiki/images/3/30/TotK_Crisis_at_Hyrule_Castle.png" alt="阿卡拉" loading="lazy">
+    <div class="shrine-section-info"><div class="shrine-section-title">⚔ 阿卡拉高地</div><div class="shrine-section-sub">Akkala Highlands · 东北部高地</div></div>
+    <span class="shrine-section-count">10 座</span>
+  </div></td></tr>
+
+<tr id="shrine-row-109" data-region="akkala" data-type="谜题"><td class="num-cell">110</td><td><span class="sname-cn">多米祖因神庙</span><span class="sname-en">Domizuin Shrine</span></td><td><span class="coord">3307, 1444, 0426</span></td><td><span class="rbadge rbadge-akkala">阿卡拉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">阿卡拉高地西侧，飞行板谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-110" data-region="akkala" data-type="谜题"><td class="num-cell">111</td><td><span class="sname-cn">嘎塔尼希斯神庙</span><span class="sname-en">Gatanisis Shrine</span></td><td><span class="coord">4498, 0825, 0095</span></td><td><span class="rbadge rbadge-akkala">阿卡拉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">阿卡拉高地东侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-111" data-region="akkala" data-type="谜题"><td class="num-cell">112</td><td><span class="sname-cn">格米米克神庙</span><span class="sname-en">Gemimik Shrine</span></td><td><span class="coord">4513, 2116, 0001</span></td><td><span class="rbadge rbadge-akkala">阿卡拉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">阿卡拉高地最东北侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-112" data-region="akkala" data-type="祝福"><td class="num-cell">113</td><td><span class="sname-cn">若奇希加神庙</span><span class="sname-en">Jochi-ihiga Shrine</span></td><td><span class="coord">3809, 1220, 0092</span></td><td><span class="rbadge rbadge-akkala">阿卡拉</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">阿卡拉高地中部</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-113" data-region="akkala" data-type="试炼"><td class="num-cell">114</td><td><span class="sname-cn">拉希塔奇瓦克神庙</span><span class="sname-en">Rasitakiwak Shrine</span></td><td><span class="coord">4166, 1323, 0229</span></td><td><span class="rbadge rbadge-akkala">阿卡拉</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">阿卡拉高地东侧，武装试炼</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-114" data-region="akkala" data-type="战斗"><td class="num-cell">115</td><td><span class="sname-cn">西纳塔尼卡神庙</span><span class="sname-en">Sinatanika Shrine</span></td><td><span class="coord">3843, 2299, 0048</span></td><td><span class="rbadge rbadge-akkala">阿卡拉</span></td><td><span class="tag tag-red">战斗</span></td><td class="snote">阿卡拉高地北侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-115" data-region="akkala" data-type="谜题"><td class="num-cell">116</td><td><span class="sname-cn">若奇·乌神庙</span><span class="sname-en">Jochi-iu Shrine</span></td><td><span class="coord">4346, 2875, 0165</span></td><td><span class="rbadge rbadge-akkala">深阿卡拉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">深阿卡拉西侧，磁力谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-116" data-region="akkala" data-type="谜题"><td class="num-cell">117</td><td><span class="sname-cn">卡玛图基斯神庙</span><span class="sname-en">Kamatukis Shrine</span></td><td><span class="coord">3429, 3356, 0071</span></td><td><span class="rbadge rbadge-akkala">深阿卡拉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">深阿卡拉北侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-117" data-region="akkala" data-type="谜题"><td class="num-cell">118</td><td><span class="sname-cn">拉希瓦克神庙</span><span class="sname-en">Rasiwak Shrine</span></td><td><span class="coord">4664, 3262, 0002</span></td><td><span class="rbadge rbadge-akkala">阿卡拉海</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">阿卡拉海南岸，水上平台谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-118" data-region="akkala" data-type="祝福"><td class="num-cell">119</td><td><span class="sname-cn">伊格舒克神庙</span><span class="sname-en">Igashuk Shrine</span></td><td><span class="coord">4654, 3712, 0131</span></td><td><span class="rbadge rbadge-akkala">阿卡拉海</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">阿卡拉海东北岸海边</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+  <!-- ═══════════════════════ 赫布拉 ═══════════════════════ -->
+  <tr><td colspan="7" style="padding:4px 0"><div class="shrine-section-header" id="sec-hebra" style="margin:0">
+    <img class="shrine-section-img" src="https://cdn.wikimg.net/en/zeldawiki/images/2/24/TotK_Wind_Temple.png" alt="赫布拉" loading="lazy">
+    <div class="shrine-section-info"><div class="shrine-section-title">❄ 赫布拉山脉</div><div class="shrine-section-sub">Hebra Mountains · 西北冰雪山区（利特村附近）</div></div>
+    <span class="shrine-section-count">18 座</span>
+  </div></td></tr>
+
+<tr id="shrine-row-119" data-region="hebra" data-type="试炼"><td class="num-cell">120</td><td><span class="sname-cn">尤托乌姆神庙</span><span class="sname-en">Eutoum Shrine</span></td><td><span class="coord">-3506, 3570, 0387</span></td><td><span class="rbadge rbadge-rito">赫布拉</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">赫布拉山顶北侧，需耐寒装备</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-120" data-region="hebra" data-type="谜题"><td class="num-cell">121</td><td><span class="sname-cn">嘎萨斯神庙</span><span class="sname-en">Gasas Shrine</span></td><td><span class="coord">-4155, 0097, 0040</span></td><td><span class="rbadge rbadge-rito">塔班达</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">塔班达边境西侧，气球谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-121" data-region="hebra" data-type="谜题"><td class="num-cell">122</td><td><span class="sname-cn">嘎塔克斯神庙</span><span class="sname-en">Gatakis Shrine</span></td><td><span class="coord">-3647, 1807, 0168</span></td><td><span class="rbadge rbadge-rito">塔班达</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">白诘报社附近，气流谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-122" data-region="hebra" data-type="谜题"><td class="num-cell">123</td><td><span class="sname-cn">伊乌恩·欧洛克神庙</span><span class="sname-en">Iun-orok Shrine</span></td><td><span class="coord">-3538, 0853, -0133</span></td><td><span class="rbadge rbadge-rito">塔班达</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">塔班达边境南部，地底入口</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-123" data-region="hebra" data-type="谜题"><td class="num-cell">124</td><td><span class="sname-cn">伊卡塔克神庙</span><span class="sname-en">Ikatak Shrine</span></td><td><span class="coord">-3950, 1138, 0112</span></td><td><span class="rbadge rbadge-rito">塔班达</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">塔班达边境西侧高台</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-124" data-region="hebra" data-type="谜题"><td class="num-cell">125</td><td><span class="sname-cn">玛雅乌西神庙</span><span class="sname-en">Mayausiy Shrine</span></td><td><span class="coord">-1169, 2602, -0083</span></td><td><span class="rbadge rbadge-rito">赫布拉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">赫布拉山南侧，水渠谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-125" data-region="hebra" data-type="祝福"><td class="num-cell">126</td><td><span class="sname-cn">玛亚奥塔基神庙</span><span class="sname-en">Mayaotaki Shrine</span></td><td><span class="coord">-0825, 3534, 0234</span></td><td><span class="rbadge rbadge-rito">赫布拉</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">赫布拉山东北侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-126" data-region="hebra" data-type="试炼"><td class="num-cell">127</td><td><span class="sname-cn">诺乌达神庙</span><span class="sname-en">Nouda Shrine</span></td><td><span class="coord">-2318, 2201, 0173</span></td><td><span class="rbadge rbadge-rito">赫布拉</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">赫布拉山中部，冰地试炼</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-127" data-region="hebra" data-type="教学"><td class="num-cell">128</td><td><span class="sname-cn">欧洛慕瓦克神庙</span><span class="sname-en">Oromuwak Shrine</span></td><td><span class="coord">-3061, 1623, 0244</span></td><td><span class="rbadge rbadge-rito">赫布拉</span></td><td><span class="tag tag-blue">教学</span></td><td class="snote">赫布拉山西侧，风力装置教学</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-128" data-region="hebra" data-type="谜题"><td class="num-cell">129</td><td><span class="sname-cn">欧绍占·乌神庙</span><span class="sname-en">Oshozan-u Shrine</span></td><td><span class="coord">-1402, 3677, 0287</span></td><td><span class="rbadge rbadge-rito">赫布拉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">赫布拉山东北高地</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-129" data-region="hebra" data-type="试炼"><td class="num-cell">130</td><td><span class="sname-cn">欧塔克神庙</span><span class="sname-en">Otak Shrine</span></td><td><span class="coord">-4392, 3714, 0212</span></td><td><span class="rbadge rbadge-rito">赫布拉</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">赫布拉山最西北角</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-130" data-region="hebra" data-type="祝福"><td class="num-cell">131</td><td><span class="sname-cn">鲁塔佛·乌姆神庙</span><span class="sname-en">Rutafu-um Shrine</span></td><td><span class="coord">-2997, 3107, 0513</span></td><td><span class="rbadge rbadge-rito">赫布拉</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">赫布拉山北侧，外部飞行谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-131" data-region="hebra" data-type="谜题"><td class="num-cell">132</td><td><span class="sname-cn">萨希洛神庙</span><span class="sname-en">Sahirow Shrine</span></td><td><span class="coord">-3352, 2384, 0360</span></td><td><span class="rbadge rbadge-rito">赫布拉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">赫布拉山西侧高地，雪地谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-132" data-region="hebra" data-type="祝福"><td class="num-cell">133</td><td><span class="sname-cn">西苏兰神庙</span><span class="sname-en">Sisuran Shrine</span></td><td><span class="coord">-2570, 3352, 0242</span></td><td><span class="rbadge rbadge-rito">赫布拉</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">赫布拉山北部平台</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-133" data-region="hebra" data-type="谜题"><td class="num-cell">134</td><td><span class="sname-cn">道于西蓬神庙</span><span class="sname-en">Tauyosipun Shrine</span></td><td><span class="coord">-4539, 2881, 0262</span></td><td><span class="rbadge rbadge-rito">赫布拉</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">赫布拉山最西侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-134" data-region="hebra" data-type="谜题"><td class="num-cell">135</td><td><span class="sname-cn">瓦欧·欧斯神庙</span><span class="sname-en">Wao-os Shrine</span></td><td><span class="coord">-4053, 2002, 0183</span></td><td><span class="rbadge rbadge-rito">塔班达</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">塔班达边境北侧，磁力谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-135" data-region="hebra" data-type="谜题"><td class="num-cell">136</td><td><span class="sname-cn">图拉卡瓦克神庙</span><span class="sname-en">Turakawak Shrine</span></td><td><span class="coord">-3497, -0197, 0066</span></td><td><span class="rbadge rbadge-rito">塔班达</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">塔班达边境南部</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-136" data-region="hebra" data-type="谜题"><td class="num-cell">137</td><td><span class="sname-cn">卡图纳克神庙</span><span class="sname-en">Gatakis Shrine</span></td><td><span class="coord">-3647, 1807, 0168</span></td><td><span class="rbadge rbadge-rito">利特</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">利特村附近气流谜题神庙</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+  <!-- ═══════════════════════ 格鲁德 ═══════════════════════ -->
+  <tr><td colspan="7" style="padding:4px 0"><div class="shrine-section-header" id="sec-gerudo" style="margin:0">
+    <img class="shrine-section-img" src="https://cdn.wikimg.net/en/zeldawiki/images/8/84/TotK_Lightning_Temple.png" alt="格鲁德" loading="lazy">
+    <div class="shrine-section-info"><div class="shrine-section-title">⚡ 格鲁德沙漠·高地</div><div class="shrine-section-sub">Gerudo Desert &amp; Highlands · 西南沙漠区</div></div>
+    <span class="shrine-section-count">18 座</span>
+  </div></td></tr>
+
+<tr id="shrine-row-137" data-region="gerudo" data-type="祝福"><td class="num-cell">138</td><td><span class="sname-cn">奇奇姆神庙</span><span class="sname-en">Chichim Shrine</span></td><td><span class="coord">-3211, -3007, -0049</span></td><td><span class="rbadge rbadge-gerudo">格鲁德沙漠</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">格鲁德沙漠南部</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-138" data-region="gerudo" data-type="谜题"><td class="num-cell">139</td><td><span class="sname-cn">卡拉哈塔格神庙</span><span class="sname-en">Karahatag Shrine</span></td><td><span class="coord">-3726, -3625, 0043</span></td><td><span class="rbadge rbadge-gerudo">格鲁德沙漠</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">格鲁德沙漠南端，沙漠谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-139" data-region="gerudo" data-type="谜题"><td class="num-cell">140</td><td><span class="sname-cn">库达尼萨尔神庙</span><span class="sname-en">Kudanisar Shrine</span></td><td><span class="coord">-4159, -2145, 0048</span></td><td><span class="rbadge rbadge-gerudo">格鲁德沙漠</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">格鲁德沙漠西侧，流沙谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-140" data-region="gerudo" data-type="祝福"><td class="num-cell">141</td><td><span class="sname-cn">伊拉萨克神庙</span><span class="sname-en">Irasak Shrine</span></td><td><span class="coord">-4159, -3824, 0028</span></td><td><span class="rbadge rbadge-gerudo">格鲁德沙漠</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">格鲁德沙漠西南端</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-141" data-region="gerudo" data-type="谜题"><td class="num-cell">142</td><td><span class="sname-cn">玛雅塔特神庙</span><span class="sname-en">Mayatat Shrine</span></td><td><span class="coord">-3290, -2512, 0024</span></td><td><span class="rbadge rbadge-gerudo">格鲁德沙漠</span></td><td><span class="tag tag-blue">教学</span></td><td class="snote">格鲁德沙漠中部，载具教学</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-142" data-region="gerudo" data-type="试炼"><td class="num-cell">143</td><td><span class="sname-cn">米利约塔诺格神庙</span><span class="sname-en">Miryotanog Shrine</span></td><td><span class="coord">-4679, -3086, 0054</span></td><td><span class="rbadge rbadge-gerudo">格鲁德沙漠</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">格鲁德沙漠最西端</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-143" data-region="gerudo" data-type="谜题"><td class="num-cell">144</td><td><span class="sname-cn">拉卡库达吉神庙</span><span class="sname-en">Rakakudaj Shrine</span></td><td><span class="coord">-2036, -1854, 0065</span></td><td><span class="rbadge rbadge-gerudo">格鲁德高地</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">格鲁德高地东侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-144" data-region="gerudo" data-type="谜题"><td class="num-cell">145</td><td><span class="sname-cn">洛苏慕慕神庙</span><span class="sname-en">Rotsumamu Shrine</span></td><td><span class="coord">-3405, -1356, 0335</span></td><td><span class="rbadge rbadge-gerudo">格鲁德高地</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">格鲁德高地中部，弓箭谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-145" data-region="gerudo" data-type="谜题"><td class="num-cell">146</td><td><span class="sname-cn">西瓦卡玛神庙</span><span class="sname-en">Siwakama Shrine</span></td><td><span class="coord">-2445, -3345, 0041</span></td><td><span class="rbadge rbadge-gerudo">格鲁德沙漠</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">格鲁德沙漠东南部</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-146" data-region="gerudo" data-type="谜题"><td class="num-cell">147</td><td><span class="sname-cn">索雷亚塔诺格神庙</span><span class="sname-en">Soryotanog Shrine</span></td><td><span class="coord">-3881, -2961, 0123</span></td><td><span class="rbadge rbadge-gerudo">格鲁德沙漠</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">格鲁德沙漠中部偏西</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-147" data-region="gerudo" data-type="祝福"><td class="num-cell">148</td><td><span class="sname-cn">苏阿里瓦克神庙</span><span class="sname-en">Suariwak Shrine</span></td><td><span class="coord">-2523, -1770, 0131</span></td><td><span class="rbadge rbadge-gerudo">格鲁德高地</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">格鲁德高地西侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-148" data-region="gerudo" data-type="谜题"><td class="num-cell">149</td><td><span class="sname-cn">图拉卡米克神庙</span><span class="sname-en">Turakamik Shrine</span></td><td><span class="coord">-2658, -2236, 0067</span></td><td><span class="rbadge rbadge-gerudo">格鲁德沙漠</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">格鲁德沙漠北侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-149" data-region="gerudo" data-type="谜题"><td class="num-cell">150</td><td><span class="sname-cn">玛亚马兹神庙</span><span class="sname-en">Mayamats Shrine</span></td><td><span class="coord">-4637, -1514, 0452</span></td><td><span class="rbadge rbadge-gerudo">格鲁德高地</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">格鲁德高地最西端</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-150" data-region="gerudo" data-type="祝福"><td class="num-cell">151</td><td><span class="sname-cn">欧特苏姆神庙</span><span class="sname-en">Otutsum Shrine</span></td><td><span class="coord">-4468, -0670, 0509</span></td><td><span class="rbadge rbadge-gerudo">格鲁德高地</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">格鲁德高地西北悬崖</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+  <!-- ═══════════════════════ 大海拉鲁森林 ═══════════════════════ -->
+  <tr><td colspan="7" style="padding:4px 0"><div class="shrine-section-header" id="sec-forest" style="margin:0">
+    <img class="shrine-section-img" src="https://cdn.wikimg.net/en/zeldawiki/images/c/c5/TotK_Thyphlo_Ruins.png" alt="大海拉鲁森林" loading="lazy">
+    <div class="shrine-section-info"><div class="shrine-section-title">🌲 大海拉鲁森林</div><div class="shrine-section-sub">Great Hyrule Forest · 提弗洛遗迹周边</div></div>
+    <span class="shrine-section-count">9 座</span>
+  </div></td></tr>
+
+<tr id="shrine-row-151" data-region="forest" data-type="谜题"><td class="num-cell">152</td><td><span class="sname-cn">艾柯丘神庙</span><span class="sname-en">Ekochiu Shrine</span></td><td><span class="coord">1063, 1283, 0045</span></td><td><span class="rbadge rbadge-central">大森林</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">大海拉鲁森林南侧入口附近</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-152" data-region="forest" data-type="谜题"><td class="num-cell">+1</td><td><span class="sname-cn">基卡金神庙</span><span class="sname-en">Kikakin Shrine</span></td><td><span class="coord">-0397, 2738, 0287</span></td><td><span class="rbadge rbadge-central">大森林</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">大海拉鲁森林西北部</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-153" data-region="forest" data-type="谜题"><td class="num-cell">+2</td><td><span class="sname-cn">基尤佑佑神庙</span><span class="sname-en">Kiuyoyou Shrine</span></td><td><span class="coord">-1106, 2086, 0104</span></td><td><span class="rbadge rbadge-central">大森林</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">大海拉鲁森林西侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-154" data-region="forest" data-type="谜题"><td class="num-cell">+3</td><td><span class="sname-cn">穆萨诺基尔神庙</span><span class="sname-en">Musanokir Shrine</span></td><td><span class="coord">0408, 2133, 0144</span></td><td><span class="rbadge rbadge-central">大森林</span></td><td><span class="tag tag-gold">谜题</span></td><td class="snote">大海拉鲁森林中心，提弗洛遗迹旁</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-155" data-region="forest" data-type="祝福"><td class="num-cell">+4</td><td><span class="sname-cn">宁吉斯神庙</span><span class="sname-en">Ninjis Shrine</span></td><td><span class="coord">0353, 1891, 0178</span></td><td><span class="rbadge rbadge-central">大森林</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">大海拉鲁森林南部，外部星形谜题</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-156" data-region="forest" data-type="祝福"><td class="num-cell">+5</td><td><span class="sname-cn">普普恩克神庙</span><span class="sname-en">Pupunke Shrine</span></td><td><span class="coord">0611, 2216, 0163</span></td><td><span class="rbadge rbadge-central">大森林</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">大海拉鲁森林东侧</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-157" data-region="forest" data-type="祝福"><td class="num-cell">+6</td><td><span class="sname-cn">萨库恩博玛尔神庙</span><span class="sname-en">Sakunbomar Shrine</span></td><td><span class="coord">0164, 2310, 0179</span></td><td><span class="rbadge rbadge-central">大森林</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">大海拉鲁森林北部</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-158" data-region="forest" data-type="试炼"><td class="num-cell">+7</td><td><span class="sname-cn">希莫希瓦克神庙（天空）</span><span class="sname-en">Simosiwak Shrine</span></td><td><span class="coord">0163, 1972, 0759</span></td><td><span class="rbadge rbadge-sky">森林·天</span></td><td><span class="tag tag-purple">试炼</span></td><td class="snote">大海拉鲁森林上方天空岛</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+<tr id="shrine-row-159" data-region="forest" data-type="祝福"><td class="num-cell">+8</td><td><span class="sname-cn">玛雅姆神庙（天空）</span><span class="sname-en">Mayam Shrine</span></td><td><span class="coord">0344, 2816, 1820</span></td><td><span class="rbadge rbadge-sky">森林·天</span></td><td><span class="tag tag-green">祝福</span></td><td class="snote">大海拉鲁森林天空最高处</td><td><button class="shrine-check" onclick="toggleShrineCheck(this)">✓</button></td></tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tip-box" style="margin-top:24px">
+    <strong>📍 光球兑换建议：</strong>每 4 颗光球可在女神雕像处兑换 1 颗心之容器或耐力容器。<br>
+    优先兑换心容器至 <strong>13 颗</strong>（取大师之剑的条件），再按需补充耐力。全 152 座神庙完成可获得 152 颗光球，总共兑换 38 个容器。
+  </div>
+  <div class="highlight-box">
+    <strong>📌 更多地图资源：</strong>如需查看完整物品标注地图，可使用 <a href="https://mapgenie.io/zelda-tears-of-the-kingdom" target="_blank" style="color:var(--gold)">MapGenie 交互地图</a> 定位各神庙精确位置。本页坐标来源：thonky.com（Non-commercial game guide）
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">
+      本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。神庙坐标数据来源：thonky.com。<br>
+      《塞尔达传说 王国之泪》版权归任天堂株式会社所有。
+    </p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+/* ====== 海拉鲁神庙互动地图 - 三层真实地图版 ====== */
+/* 地图素材来源：vguzman812/totk-coordinates-map (MIT License)
+   通过 jsDelivr CDN 加载真实游戏地图：地表 / 天空 / 深界 三层 */
+window.addEventListener('load', function() {
+  if (typeof L === 'undefined') {
+    document.getElementById('hyrule-map').innerHTML =
+      '<div style="color:#c9a227;padding:40px;text-align:center">地图库加载失败，请检查网络连接后刷新页面</div>';
+    return;
+  }
+
+  // ─── 地图坐标系 ────────────────────────────────────────────
+  // 游戏世界坐标范围约 [-6000, 6000] × [-5000, 5000]
+  // 使用 Leaflet CRS.Simple，让 latlng 直接对应游戏 (Y, X)
+  // 注：游戏内 Y 正方向朝北，但屏幕坐标 Y 朝下，所以 lat = -gy
+  function g2ll(gx, gy) {
+    return [-gy, gx];
+  }
+
+  var hmap = L.map('hyrule-map', {
+    crs: L.CRS.Simple,
+    minZoom: -4,
+    maxZoom: 3,
+    zoomSnap: 0.25,
+    zoomDelta: 0.5,
+    wheelPxPerZoomLevel: 120,
+    attributionControl: true,
+    zoomControl: true
+  });
+
+  // 地图覆盖范围（与三张底图同尺寸对应）
+  var leftBottom = hmap.unproject([-6000, 5000], 0);
+  var topRight   = hmap.unproject([ 6000,-5000], 0);
+  var mapBounds  = new L.LatLngBounds(leftBottom, topRight);
+  hmap.setMaxBounds(mapBounds.pad(0.1));
+
+  // ─── 三层地图（地表/天空/深界） ──────────────────────────
+  var CDN = 'https://cdn.jsdelivr.net/gh/vguzman812/totk-coordinates-map@main/images/';
+  var LAYERS = {
+    surface: L.imageOverlay(CDN + 'surface.jpg', mapBounds, { attribution: 'Map: TotK · vguzman812 (MIT)' }),
+    sky:     L.imageOverlay(CDN + 'sky.jpg',     mapBounds, { attribution: 'Map: TotK · vguzman812 (MIT)' }),
+    depths:  L.imageOverlay(CDN + 'depths.jpg',  mapBounds, { attribution: 'Map: TotK · vguzman812 (MIT)' })
+  };
+  var currentLayer = 'surface';
+  LAYERS.surface.addTo(hmap);
+
+  // 初始视图：聚焦在海拉鲁中央
+  hmap.setView([0, 0], -3);
+
+  L.control.attribution({ prefix: false, position: 'bottomleft' }).addTo(hmap);
+
+  // ─── 暗色弹窗主题 + 地名标签样式 ────────────────────────
+  var st = document.createElement('style');
+  st.textContent =
+    '.sdark .leaflet-popup-content-wrapper{background:#111;color:#ddd;border:1px solid #c9a227;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,.9)}' +
+    '.sdark .leaflet-popup-tip{background:#111;border-color:#c9a227}' +
+    '.sdark .leaflet-popup-close-button{color:#aaa!important}' +
+    '.leaflet-container{background:#0a1410}' +
+    '.leaflet-container .leaflet-control-attribution{background:rgba(0,0,0,.6);color:#999;font-size:10px}' +
+    '.leaflet-container .leaflet-control-attribution a{color:#c9a227}' +
+    /* 地名标签 */
+    '.pl{background:transparent!important;border:none!important;text-align:center;pointer-events:none;white-space:nowrap;font-family:"Noto Serif SC","Noto Sans SC",serif;font-weight:700;text-shadow:0 0 8px #000,0 0 5px #000,0 1px 3px #000;letter-spacing:.05em}' +
+    '.pl-region{color:rgba(201,162,39,0.88);font-size:14px}' +
+    '.pl-region-big{color:rgba(232,180,0,0.97);font-size:17px;letter-spacing:.18em}' +
+    '.pl-town{color:#a0e4ff;font-size:11px}' +
+    '.pl-point{color:rgba(255,255,255,0.7);font-size:10px;font-weight:500}' +
+    '.pl-sky{color:rgba(160,228,255,0.9);font-size:13px}' +
+    '.pl-sky-big{color:rgba(140,210,255,0.97);font-size:16px;letter-spacing:.12em}' +
+    '.pl-sky-island{color:rgba(255,255,255,0.85);font-size:11px}' +
+    '.pl-depth{color:rgba(167,139,250,0.88);font-size:13px}' +
+    '.pl-depth-big{color:rgba(190,160,255,0.97);font-size:16px;letter-spacing:.12em}';
+  document.head.appendChild(st);
+
+  // ─── 地名标签数据（三层） ───────────────────────────────────
+  // 地表层（官方简体中文地名 · 来源：zeldawiki.wiki）
+  var LABELS_SURFACE = [
+    // 城镇 / 村落
+    {x:-200,y:-500,n:'监视堡垒',c:'pl-town'},
+    {x:1810,y:-1230,n:'卡卡利科村',c:'pl-town'},
+    {x:3280,y:-2500,n:'哈特诺村',c:'pl-town'},
+    {x:3220,y:600,n:'卓拉领地',c:'pl-town'},
+    {x:1880,y:2200,n:'鼓隆城',c:'pl-town'},
+    {x:-1080,y:2800,n:'利特村',c:'pl-town'},
+    {x:-3970,y:-2940,n:'格鲁德小镇',c:'pl-town'},
+    {x:1200,y:1750,n:'沃托里村',c:'pl-town'},
+    {x:3400,y:3300,n:'一始村',c:'pl-town'},
+    {x:-3070,y:1620,n:'塔邦挞大桥驿站',c:'pl-point'},
+    // 主要大区
+    {x:-200,y:200,n:'海拉鲁城堡',c:'pl-region-big'},
+    {x:0,y:-1100,n:'海拉鲁平原',c:'pl-region'},
+    {x:2200,y:-2200,n:'东海拉鲁平原',c:'pl-region'},
+    {x:-1800,y:-1600,n:'格鲁德高地',c:'pl-region'},
+    {x:-3500,y:-3200,n:'格鲁德沙漠',c:'pl-region-big'},
+    {x:-3000,y:2400,n:'海布拉山脉',c:'pl-region-big'},
+    {x:2400,y:2700,n:'死亡之山',c:'pl-region-big'},
+    {x:0,y:2600,n:'海拉鲁大森林',c:'pl-region-big'},
+    {x:3800,y:2100,n:'阿卡莱高地',c:'pl-region'},
+    {x:3100,y:-100,n:'拉聂尔山',c:'pl-region'},
+    {x:1200,y:-3400,n:'费罗尼草原',c:'pl-region'},
+    {x:-2200,y:400,n:'海拉鲁丘陵',c:'pl-region'},
+    // 地理特征
+    {x:1700,y:-800,n:'双峰山',c:'pl-point'},
+    {x:3460,y:-1000,n:'拉聂耳大水源',c:'pl-point'},
+    {x:2600,y:50,n:'拉聂尔湿地',c:'pl-point'},
+    {x:-800,y:3500,n:'克洛格森林',c:'pl-point'},
+    {x:4100,y:3400,n:'洛梅天空迷宫',c:'pl-point'},
+    {x:-3900,y:3400,n:'伊纳里斯天空迷宫',c:'pl-point'},
+    {x:-2400,y:-3600,n:'诺奈苏天空迷宫',c:'pl-point'},
+  ];
+
+  // 天空层（官方简体中文地名 · 来源：zeldawiki.wiki）
+  var LABELS_SKY = [
+    // 初始空岛
+    {x:400,y:-1400,n:'大天空岛（初始空岛）',c:'pl-sky-big'},
+    {x:400,y:-1200,n:'神祠教学起点',c:'pl-sky-island'},
+    // 各地天空群岛（官方：地名+上空/天空群岛）
+    {x:-3500,y:700,n:'塔班达边境上空',c:'pl-sky'},
+    {x:-3000,y:3100,n:'海布拉山脉上空',c:'pl-sky'},
+    {x:-2500,y:0,n:'山脊天空群岛',c:'pl-sky'},
+    {x:-1800,y:-3200,n:'格鲁德高地上空',c:'pl-sky'},
+    {x:-1200,y:-1500,n:'中央海拉鲁天空群岛',c:'pl-sky'},
+    {x:1000,y:-3300,n:'费罗尼草原上空',c:'pl-sky'},
+    {x:1500,y:-2100,n:'西哈特尔天空',c:'pl-sky'},
+    {x:2400,y:-1800,n:'东哈特尔天空',c:'pl-sky'},
+    {x:1900,y:1200,n:'奥尔汀峡谷上空',c:'pl-sky'},
+    {x:2900,y:500,n:'拉聂耳大水源上空',c:'pl-sky'},
+    {x:4600,y:-900,n:'拉聂尔海上空',c:'pl-sky'},
+    {x:4500,y:2200,n:'阿卡莱海上空',c:'pl-sky'},
+    {x:300,y:2800,n:'海拉鲁大森林上空',c:'pl-sky'},
+    // 天空迷宫
+    {x:4600,y:3500,n:'洛梅天空迷宫',c:'pl-sky'},
+    {x:-3900,y:3400,n:'伊纳里斯天空迷宫',c:'pl-sky'},
+    {x:-2400,y:-3600,n:'诺奈苏天空迷宫',c:'pl-sky'},
+    // 视野塔（Skyview Tower）
+    {x:0,y:200,n:'监视堡垒视野塔',c:'pl-sky-island'},
+    {x:1800,y:2700,n:'奥尔汀峡谷视野塔',c:'pl-sky-island'},
+    {x:-3000,y:3600,n:'海布拉山脉视野塔',c:'pl-sky-island'},
+    {x:-3800,y:-2500,n:'格鲁德高地视野塔',c:'pl-sky-island'},
+    {x:3700,y:-2600,n:'东哈特尔视野塔',c:'pl-sky-island'},
+    {x:3500,y:200,n:'拉聂尔视野塔',c:'pl-sky-island'},
+  ];
+
+  // 地底层（官方简体中文地名 · 来源：zeldawiki.wiki）
+  var LABELS_DEPTHS = [
+    // 主要深穴大区（来源：各 Depths 页面 Chinese SI Simplified）
+    {x:-800,y:0,n:'中央海拉鲁地底',c:'pl-depth-big'},
+    {x:2200,y:-2000,n:'东聂尔鲁达地底',c:'pl-depth-big'},
+    {x:-1000,y:-2000,n:'西聂尔鲁达地底',c:'pl-depth-big'},
+    {x:3500,y:100,n:'拉聂尔山地底',c:'pl-depth-big'},
+    {x:2400,y:2400,n:'奥尔汀峡谷地底',c:'pl-depth-big'},
+    {x:-3000,y:2400,n:'海布拉山脉地底',c:'pl-depth-big'},
+    {x:-3200,y:-2800,n:'格鲁德沙漠地底',c:'pl-depth-big'},
+    {x:0,y:2500,n:'海拉鲁大森林地底',c:'pl-depth-big'},
+    {x:4000,y:2400,n:'阿卡莱高地地底',c:'pl-depth-big'},
+    {x:0,y:-3200,n:'费罗尼草原地底',c:'pl-depth-big'},
+    {x:2400,y:2700,n:'死亡之山地底',c:'pl-depth'},
+    // 地底重要遗迹
+    {x:-1200,y:-100,n:'左纳尼乌姆遗迹',c:'pl-depth'},
+    {x:200,y:-1100,n:'王族密道',c:'pl-depth'},
+    {x:1500,y:1500,n:'风之神殿（地底）',c:'pl-depth'},
+    {x:-3500,y:2700,n:'雷之神殿（地底）',c:'pl-depth'},
+    {x:2500,y:2600,n:'火之神殿（地底）',c:'pl-depth'},
+    {x:3400,y:-900,n:'水之神殿（地底）',c:'pl-depth'},
+    {x:1500,y:-3500,n:'米涅鲁工坊',c:'pl-depth'},
+  ];
+
+  // ─── 构建地名标签 LayerGroup ────────────────────────────────
+  function buildLabelLayer(data) {
+    var group = L.layerGroup();
+    data.forEach(function(p) {
+      var icon = L.divIcon({
+        className: 'pl ' + p.c,
+        html: p.n,
+        iconSize: [0, 0],
+        iconAnchor: [0, 0]
+      });
+      L.marker(g2ll(p.x, p.y), { icon: icon, interactive: false, keyboard: false })
+        .addTo(group);
+    });
+    return group;
+  }
+
+  var labelGroups = {
+    surface: buildLabelLayer(LABELS_SURFACE),
+    sky:     buildLabelLayer(LABELS_SKY),
+    depths:  buildLabelLayer(LABELS_DEPTHS)
+  };
+
+  // 默认显示地表标签
+  labelGroups.surface.addTo(hmap);
+
+  // ─── 类型颜色 ─────────────────────────────────────────────
+  var TC = {
+    '\u795d\u798f': '#4caf50',
+    '\u8c1c\u9898': '#c9a227',
+    '\u6218\u6597': '#e53935',
+    '\u6559\u5b66': '#2196f3',
+    '\u8bd5\u70bc': '#9c27b0'
+  };
+
+  function makeIcon(type, done) {
+    var c = TC[type] || '#aaa';
+    return L.divIcon({
+      className: 'shrine-pin-wrap',
+      html: '<div style="width:14px;height:14px;border-radius:50%;background:' + c +
+            ';border:2px solid rgba(255,255,255,0.92);' +
+            'box-shadow:0 0 6px rgba(0,0,0,.85),0 0 4px ' + c + ';' +
+            'opacity:' + (done ? 0.3 : 1) + ';transition:transform .15s">' +
+            '</div>',
+      iconSize: [14, 14],
+      iconAnchor: [7, 7]
+    });
+  }
+
+  function makePopup(s, idx) {
+    var c = TC[s.type] || '#aaa';
+    return '<div style="padding:4px 2px;min-width:185px">' +
+      '<div style="font-weight:700;color:' + c + ';font-size:0.95rem;margin-bottom:2px">' + s.cn + '</div>' +
+      '<div style="color:#777;font-size:0.72rem;margin-bottom:5px">' + s.en + '</div>' +
+      '<div style="font-family:monospace;color:#4caf50;font-size:0.75rem">X: ' + s.gx + '  Y: ' + s.gy + '  Z: ' + s.gz + '</div>' +
+      '<div style="margin-top:4px">' +
+        '<span style="border:1px solid ' + c + ';color:' + c + ';padding:1px 7px;border-radius:3px;font-size:0.72rem">' + s.type + '</span>' +
+        '&nbsp;<span style="color:#888;font-size:0.72rem">' + s.region + '</span>' +
+      '</div>' +
+      '<div style="margin-top:5px;color:#bbb;font-size:0.75rem">' + s.note + '</div>' +
+      '<div style="margin-top:8px;border-top:1px solid rgba(201,162,39,0.2);padding-top:7px">' +
+        '<a href="javascript:void(0)" onclick="scrollToShrineRow(' + idx + ')" ' +
+           'style="color:#c9a227;font-size:0.78rem;text-decoration:none;' +
+                  'display:inline-flex;align-items:center;gap:4px">' +
+          '↓ 定位到列表' +
+        '</a>' +
+      '</div>' +
+      '</div>';
+  }
+
+  // 神庙数据
+  var SD = [
+    // 初始空岛
+    {cn:'\u4e4c\u53ef\u4e4c\u4faf\u795e\u5e99',en:'Ukouh Shrine',gx:274,gy:-913,gz:1460,region:'\u521d\u59cb\u7a7a\u5c9b',type:'\u8c1c\u9898',note:'\u4e3b\u7ebf\u6559\u5b66\u00b7\u7a76\u6781\u624b'},
+    {cn:'\u56e0\u00b7\u4f0a\u8428\u795e\u5e99',en:'In-Isa Shrine',gx:27,gy:-1503,gz:1408,region:'\u521d\u59cb\u7a7a\u5c9b',type:'\u8c1c\u9898',note:'\u4f59\u6599\u5efa\u9020'},
+    {cn:'\u53e4\u5766\u5df4\u514b\u795e\u5e99',en:'Gutanbac Shrine',gx:709,gy:-1381,gz:1584,region:'\u521d\u59cb\u7a7a\u5c9b',type:'\u8c1c\u9898',note:'\u901a\u5929\u672f'},
+    {cn:'\u7eb3\u4e18\u4e9a\u795e\u5e99',en:'Nachoyah Shrine',gx:388,gy:-1660,gz:2299,region:'\u521d\u59cb\u7a7a\u5c9b',type:'\u8c1c\u9898',note:'\u5012\u8f6c\u5e72\u5764'},
+    // 天空群岛
+    {cn:'\u5685\u00b7\u963f\u5e0c\u8428\u65af\u795e\u5e99',en:'Ga-ahisas Shrine',gx:-3596,gy:961,gz:1699,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u5854\u73ed\u8fbe\u5929\u7a7a\u7fa4\u5c9b\u897f\u4fa7'},
+    {cn:'\u5685\u8bfa\u65af\u795e\u5e99',en:'Ganos Shrine',gx:-3370,gy:466,gz:1695,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u5854\u73ed\u8fbe\u5929\u7a7a\u7fa4\u5c9b\u5357\u4fa7'},
+    {cn:'\u5409\u5361\u5e93\u795e\u5e99',en:'Gikaku Shrine',gx:4506,gy:2164,gz:1155,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u963f\u5361\u62c9\u6d77\u4e1c\u5317\u5929\u7a7a'},
+    {cn:'\u4f0a\u6208\u4fee\u6069\u795e\u5e99',en:'Igoshon Shrine',gx:3480,gy:667,gz:1325,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u8c1c\u9898',note:'\u62c9\u7eb3\u5c24\u5927\u6cc9\u5929\u7a7a'},
+    {cn:'\u4f0a\u7ea6\u00b7\u6b27\u795e\u5e99',en:'Ijo-o Shrine',gx:-3860,gy:2682,gz:702,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u8c1c\u9898',note:'\u8d6b\u5e03\u62c9\u5c71\u5929\u7a7a'},
+    {cn:'\u5409\u8bfa\u591a\u514b\u795e\u5e99',en:'Jinodok Shrine',gx:-1257,gy:-1487,gz:1008,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u4e2d\u592e\u5929\u7a7a\u7fa4\u5c9b'},
+    {cn:'\u5409\u9c81\u5854\u53e4\u739b\u514b\u795e\u5e99',en:'Jirutagumac Shrine',gx:2916,gy:533,gz:951,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u6559\u5b66',note:'\u62c9\u7eb3\u5c24\u5929\u7a7a\u5c9b\u5317\u4fa7'},
+    {cn:'\u82e5\u5e93\u00b7\u4e4c\u795e\u5e99',en:'Joku-u Shrine',gx:1375,gy:-3339,gz:429,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u6cd5\u7f57\u5c3c\u5929\u7a7a\u4e1c\u4fa7'},
+    {cn:'\u82e5\u5e93\u00b7\u4e4c\u5e0c\u6069\u795e\u5e99',en:'Joku-usin Shrine',gx:1074,gy:-3347,gz:786,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u8bd5\u70bc',note:'\u6cd5\u7f57\u5c3c\u5929\u7a7a\u897f\u4fa7'},
+    {cn:'\u82e5\u4fee\u795e\u5e99',en:'Josiu Shrine',gx:1759,gy:-1208,gz:924,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u897f\u5948\u514b\u9c81\u8fbe\u5929\u7a7a'},
+    {cn:'\u5361\u9053\u7eb3\u5c14\u795e\u5e99',en:'Kadaunar Shrine',gx:1879,gy:1202,gz:1251,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u8c1c\u9898',note:'\u827e\u5c14\u4e01\u5ce1\u8c37\u5929\u7a7a\u5c9b'},
+    {cn:'\u5361\u54c8\u5854\u52aa\u59c6\u795e\u5e99',en:'Kahatanaum Shrine',gx:-3286,gy:3425,gz:1347,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u8d6b\u5e03\u62c9\u5317\u4fa7\u5929\u7a7a'},
+    {cn:'\u5e93\u73db\u66fc\u795e\u5e99',en:'Kumamayn Shrine',gx:2855,gy:-2856,gz:1212,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u4e1c\u5948\u514b\u9c81\u8fbe\u5929\u7a7a'},
+    {cn:'\u739b\u96c5\u59c6\u795e\u5e99',en:'Mayam Shrine',gx:344,gy:2816,gz:1820,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u5927\u68ee\u6797\u5929\u7a7a\u5c9b'},
+    {cn:'\u739b\u96c5\u7eb3\u65af\u795e\u5e99',en:'Mayanas Shrine',gx:4613,gy:-947,gz:1790,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u8c1c\u9898',note:'\u62c9\u7eb3\u5c24\u6d77\u5929\u7a7a'},
+    {cn:'\u739b\u96c5\u897f\u4e9a\u5c14\u795e\u5e99',en:'Mayasiar Shrine',gx:-3545,gy:-320,gz:1965,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u683c\u9c81\u5fb7\u5929\u7a7a'},
+    {cn:'\u739b\u96c5\u4e4c\u6885\u57fa\u65af\u795e\u5e99',en:'Mayaumekis Shrine',gx:-2947,gy:3051,gz:897,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u8c1c\u9898',note:'\u8d6b\u5e03\u62c9\u5929\u7a7a\u5c9b'},
+    {cn:'\u83ab\u57fa\u8428\u91cc\u795e\u5e99',en:'Mogisari Shrine',gx:4656,gy:3509,gz:1010,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u8c1c\u9898',note:'\u6d1b\u6885\u5929\u7a7a\u8ff7\u5bab\u65c1'},
+    {cn:'\u7eb3\u5854\u514b\u795e\u5e99',en:'Natak Shrine',gx:3671,gy:1484,gz:1158,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u963f\u5361\u62c9\u5929\u7a7a\u5c9b'},
+    {cn:'\u62c9\u5361\u4fee\u683c\u795e\u5e99',en:'Rakashog Shrine',gx:-1716,gy:-2118,gz:1149,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u6559\u5b66',note:'\u683c\u9c81\u5fb7\u5929\u7a7a\u5357\u4fa7'},
+    {cn:'\u5e0c\u54c8\u7ea6\u683c\u795e\u5e99',en:'Sihajog Shrine',gx:4544,gy:-845,gz:1121,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u62c9\u7eb3\u5c24\u5929\u7a7a\u5c9b\u4e1c\u4fa7'},
+    {cn:'\u5e0c\u83ab\u5e0c\u74e6\u514b\u795e\u5e99',en:'Simosiwak Shrine',gx:163,gy:1972,gz:759,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u8bd5\u70bc',note:'\u5927\u68ee\u6797\u4e0a\u65b9'},
+    {cn:'\u5e0c\u96c5\u83ab\u82cf\u65af\u795e\u5e99',en:'Siyamotsus Shrine',gx:-1794,gy:-3295,gz:1011,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u683c\u9c81\u5fb7\u5929\u7a7a'},
+    {cn:'\u5854\u5c3c\u8bfa\u5fb7\u795e\u5e99',en:'Taninoud Shrine',gx:-1801,gy:3406,gz:949,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u8d6b\u5e03\u62c9\u5929\u7a7a\u5c9b'},
+    {cn:'\u9640\u6069\u5e0c\u795e\u5e99',en:'Taunhiy Shrine',gx:-2400,gy:824,gz:615,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u6218\u6597',note:'\u5c71\u810a\u5929\u7a7a'},
+    {cn:'\u6ed5\u8d1d\u5179\u795e\u5e99',en:'Tenbez Shrine',gx:-964,gy:3540,gz:1011,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u8c1c\u9898',note:'\u8d6b\u5e03\u62c9\u4e1c\u5317\u5929\u7a7a'},
+    {cn:'\u4e4c\u79d1\u6b27\u5409\u5e0c\u795e\u5e99',en:'Ukoojisi Shrine',gx:1458,gy:-2164,gz:585,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u795d\u798f',note:'\u897f\u5948\u514b\u9c81\u8fbe\u5929\u7a7a\u5c9b'},
+    {cn:'\u5ef6\u8428\u660e\u795e\u5e99',en:'Yansamin Shrine',gx:2350,gy:-1782,gz:1475,region:'\u5929\u7a7a\u7fa4\u5c9b',type:'\u8bd5\u70bc',note:'\u4e1c\u5948\u514b\u9c81\u8fbe\u5929\u7a7a'},
+    // 中央平原
+    {cn:'\u7126\u8f9b\u795e\u5e99',en:'Jiosin Shrine',gx:-240,gy:-370,gz:27,region:'\u4e2d\u592e\u5e73\u539f',type:'\u8c1c\u9898',note:'\u76d1\u89c6\u5821\u5792\u897f\u5357'},
+    {cn:'\u82e5\u8bfa\u795e\u5e99',en:'Jojon Shrine',gx:1209,gy:322,gz:27,region:'\u4e2d\u592e\u5e73\u539f',type:'\u8bd5\u70bc',note:'\u76d1\u89c6\u5821\u5792\u4e1c\u4fa7'},
+    {cn:'\u5361\u7c73\u7956\u6069\u795e\u5e99',en:'Kamizun Shrine',gx:-177,gy:-1557,gz:23,region:'\u4e2d\u592e\u5e73\u539f',type:'\u8bd5\u70bc',note:'\u4e2d\u592e\u5e73\u539f\u5357\u4fa7'},
+    {cn:'\u4e54\u5e93\u8d21\u795e\u5e99',en:'Kyokugon Shrine',gx:710,gy:-1550,gz:6,region:'\u4e2d\u592e\u5e73\u539f',type:'\u8c1c\u9898',note:'\u4e2d\u592e\u5e73\u539f\u4e1c\u5357'},
+    {cn:'\u4e54\u8bfa\u5c3c\u65af\u795e\u5e99',en:'Kyononis Shrine',gx:-205,gy:451,gz:21,region:'\u4e2d\u592e\u5e73\u539f',type:'\u6218\u6597',note:'\u76d1\u89c6\u5821\u5792\u6b63\u5317'},
+    {cn:'\u4f0a\u4fee\u8fbe\u683c\u795e\u5e99',en:'Ishodag Shrine',gx:-880,gy:419,gz:49,region:'\u4e2d\u592e\u5e73\u539f',type:'\u6559\u5b66',note:'\u4e2d\u592e\u5e73\u539f\u897f\u5317'},
+    {cn:'\u739b\u96c5\u6b23\u795e\u5e99',en:'Mayachin Shrine',gx:-705,gy:-869,gz:31,region:'\u4e2d\u592e\u5e73\u539f',type:'\u6559\u5b66',note:'\u673a\u68b0\u7403\u6559\u5b66'},
+    {cn:'\u6717\u00b7\u4f0a\u5179\u795e\u5e99',en:'Ren-iz Shrine',gx:744,gy:823,gz:81,region:'\u4e2d\u592e\u5e73\u539f',type:'\u8c1c\u9898',note:'\u4e2d\u592e\u5e73\u539f\u4e1c\u5317'},
+    {cn:'\u91cc\u6b27\u6208\u514b\u795e\u5e99',en:'Riogok Shrine',gx:-1440,gy:-1616,gz:89,region:'\u4e2d\u592e\u5e73\u539f',type:'\u8c1c\u9898',note:'\u4e2d\u592e\u5e73\u539f\u897f\u5357'},
+    {cn:'\u585e\u5e15\u5e15\u795e\u5e99',en:'Sepapa Shrine',gx:219,gy:1082,gz:28,region:'\u4e2d\u592e\u5e73\u539f',type:'\u8c1c\u9898',note:'\u76d1\u89c6\u5821\u5792\u6b63\u5317\u5c71\u4e18'},
+    {cn:'\u585e\u9c81\u5854\u535a\u739b\u514b\u795e\u5e99',en:'Serutabomac Shrine',gx:-179,gy:1170,gz:280,region:'\u4e2d\u592e\u5e73\u539f',type:'\u8c1c\u9898',note:'\u76d1\u89c6\u5821\u5792\u5317\u4fa7\u60ac\u5d16'},
+    {cn:'\u82cf\u82cf\u4e9a\u4f0a\u795e\u5e99',en:'Susuyai Shrine',gx:-785,gy:-434,gz:18,region:'\u4e2d\u592e\u5e73\u539f',type:'\u6559\u5b66',note:'\u4e2d\u592e\u5e73\u539f\u897f\u4fa7'},
+    {cn:'\u5854\u8fbe\u6d1b\u514b\u795e\u5e99',en:'Tadarok Shrine',gx:-1082,gy:-2187,gz:129,region:'\u4e2d\u592e\u5e73\u539f',type:'\u8c1c\u9898',note:'\u4e2d\u592e\u5e73\u539f\u897f\u5357'},
+    {cn:'\u5854\u5409\u5361\u5179\u795e\u5e99',en:'Tajikats Shrine',gx:346,gy:-1013,gz:16,region:'\u4e2d\u592e\u5e73\u539f',type:'\u8c1c\u9898',note:'\u76d1\u89c6\u5821\u5792\u6b63\u5357'},
+    {cn:'\u5929\u739b\u6ed5\u795e\u5e99',en:'Tenmaten Shrine',gx:-602,gy:1553,gz:-14,region:'\u4e2d\u592e\u5e73\u539f',type:'\u795d\u798f',note:'\u4e2d\u592e\u5e73\u539f\u5317\u4fa7'},
+    {cn:'\u6ed5\u5c3c\u6ed5\u795e\u5e99',en:'Teniten Shrine',gx:-75,gy:-1115,gz:21,region:'\u4e2d\u592e\u5e73\u539f',type:'\u6218\u6597',note:'\u76d1\u89c6\u5821\u5792\u5357\u4fa7'},
+    {cn:'\u5179\u5179\u00b7\u4e4c\u59c6\u795e\u5e99',en:'Tsutsu-um Shrine',gx:-1423,gy:-1349,gz:68,region:'\u4e2d\u592e\u5e73\u539f',type:'\u8c1c\u9898',note:'\u4e2d\u592e\u5e73\u539f\u897f\u4fa7'},
+    {cn:'\u4e9a\u7c73\u7ea6\u795e\u5e99',en:'Yamiyo Shrine',gx:322,gy:464,gz:28,region:'\u4e2d\u592e\u5e73\u539f',type:'\u6218\u6597',note:'\u76d1\u89c6\u5821\u5792\u9644\u8fd1'},
+    {cn:'\u56fe\u5361\u6d1b\u514b\u795e\u5e99',en:'Tukarok Shrine',gx:916,gy:-253,gz:34,region:'\u4e2d\u592e\u5e73\u539f',type:'\u8c1c\u9898',note:'\u4e2d\u592e\u5e73\u539f\u4e1c\u4fa7'},
+    // 海拉鲁丘陵
+    {cn:'\u739b\u5e93\u9c81\u57fa\u65af\u795e\u5e99',en:'Makurukis Shrine',gx:-2847,gy:629,gz:233,region:'\u5c71\u810a',type:'\u6218\u6597',note:'\u5c71\u810a\u4e2d\u6bb5'},
+    {cn:'\u9c81\u7eb3\u57fa\u7279\u795e\u5e99',en:'Runakit Shrine',gx:-2532,gy:1169,gz:177,region:'\u5c71\u810a',type:'\u8c1c\u9898',note:'\u5c71\u810a\u5317\u6bb5'},
+    {cn:'\u5e0c\u7eb3\u5361\u74e6\u514b\u795e\u5e99',en:'Sinakawak Shrine',gx:-1413,gy:756,gz:89,region:'\u5c71\u810a',type:'\u6559\u5b66',note:'\u5c71\u810a\u4e1c\u4fa7'},
+    {cn:'\u7d22\u7eb3\u6f58\u795e\u5e99',en:'Sonapan Shrine',gx:-1921,gy:-357,gz:228,region:'\u5c71\u810a',type:'\u8c1c\u9898',note:'\u5c71\u810a\u5357\u6bb5'},
+    {cn:'\u5854\u57fa\u00b7\u4f0a\u54c8\u73ed\u795e\u5e99',en:'Taki-ihaban Shrine',gx:-1816,gy:1190,gz:147,region:'\u5c71\u810a',type:'\u795d\u798f',note:'\u5c71\u810a\u5317\u6bb5'},
+    {cn:'\u4e4c\u8428\u6731\u59c6\u795e\u5e99',en:'Usazum Shrine',gx:-2139,gy:-873,gz:93,region:'\u5c71\u810a',type:'\u795d\u798f',note:'\u5c71\u810a\u897f\u5357\u8c37\u5730'},
+    // 奈克鲁达
+    {cn:'\u5b89\u5185\u8fbe\u7c73\u7c73\u514b\u795e\u5e99',en:'Anedamimik Shrine',gx:4224,gy:-2191,gz:-9,region:'\u5948\u514b\u9c81\u8fbe',type:'\u8c1c\u9898',note:'\u4e1c\u5948\u514b\u9c81\u8fbe\u6d77\u5cb8'},
+    {cn:'\u827e\u4fee\u65af\u795e\u5e99',en:'Eshos Shrine',gx:1562,gy:-1944,gz:82,region:'\u5948\u514b\u9c81\u8fbe',type:'\u6218\u6597',note:'\u897f\u5948\u514b\u9c81\u8fbe\u5e73\u539f'},
+    {cn:'\u739b\u5361\u82cf\u62c9\u795e\u5e99',en:'Makasura Shrine',gx:1770,gy:-1050,gz:157,region:'\u5948\u514b\u9c81\u8fbe',type:'\u6559\u5b66',note:'\u5361\u5361\u91cc\u79d1\u6751'},
+    {cn:'\u739b\u96c5\u5e0c\u5e0c\u514b\u795e\u5e99',en:'Mayahisik Shrine',gx:3731,gy:-2058,gz:29,region:'\u5948\u514b\u9c81\u8fbe',type:'\u795d\u798f',note:'\u4e1c\u5948\u514b\u9c81\u8fbe\u4e2d\u90e8'},
+    {cn:'\u739b\u62c9\u91cc\u00b7\u56e0\u795e\u5e99',en:'Marari-in Shrine',gx:4634,gy:-3713,gz:166,region:'\u5948\u514b\u9c81\u8fbe',type:'\u795d\u798f',note:'\u5c0f\u5c9b'},
+    {cn:'\u6b27\u00b7\u6b27\u5409\u59c6\u795e\u5e99',en:'O-ogim Shrine',gx:2754,gy:-1102,gz:189,region:'\u5948\u514b\u9c81\u8fbe',type:'\u795d\u798f',note:'\u4e1c\u5948\u514b\u9c81\u8fbe\u897f\u5317'},
+    {cn:'\u897f\u798f\u660e\u795e\u5e99',en:'Sifumim Shrine',gx:2826,gy:-3271,gz:18,region:'\u5948\u514b\u9c81\u8fbe',type:'\u8bd5\u70bc',note:'\u4e1c\u5948\u514b\u9c81\u8fbe\u5357\u90e8'},
+    {cn:'\u82cf\u82cf\u5e03\u795e\u5e99',en:'Susub Shrine',gx:348,gy:-2051,gz:99,region:'\u5948\u514b\u9c81\u8fbe',type:'\u795d\u798f',note:'\u897f\u5948\u514b\u9c81\u8fbe'},
+    {cn:'\u6258\u57fa\u795e\u5e99',en:'Tokiy Shrine',gx:2312,gy:-2372,gz:78,region:'\u5948\u514b\u9c81\u8fbe',type:'\u795d\u798f',note:'\u4e1c\u5948\u514b\u9c81\u8fbe\u5357\u90e8'},
+    {cn:'\u4e4c\u6258\u5409\u65af\u795e\u5e99',en:'Utojis Shrine',gx:1217,gy:-2530,gz:-26,region:'\u5948\u514b\u9c81\u8fbe',type:'\u795d\u798f',note:'\u4e1c\u5948\u514b\u9c81\u8fbe\u4e18\u9675'},
+    {cn:'\u624e\u5357\u7c73\u514b\u795e\u5e99',en:'Zanmik Shrine',gx:3469,gy:-2182,gz:-29,region:'\u5948\u514b\u9c81\u8fbe',type:'\u8c1c\u9898',note:'\u4e1c\u5948\u514b\u9c81\u8fbe\u4e2d\u90e8'},
+    {cn:'\u5409\u5361\u4f0a\u65af\u795e\u5e99',en:'Jikais Shrine',gx:4263,gy:-1666,gz:95,region:'\u5948\u514b\u9c81\u8fbe',type:'\u8c1c\u9898',note:'\u62c9\u7eb3\u5c24\u5c71\u4e1c\u4fa7'},
+    // 法罗尼
+    {cn:'\u4f0a\u4fee\u91d1\u795e\u5e99',en:'Ishokin Shrine',gx:-566,gy:-3524,gz:148,region:'\u6cd5\u7f57\u5c3c',type:'\u795d\u798f',note:'\u6cd5\u7f57\u5c3c\u897f\u4fa7'},
+    {cn:'\u5409\u4e4c\u5e93\u59c6\u795e\u5e99',en:'Jiukoum Shrine',gx:867,gy:-2279,gz:29,region:'\u6cd5\u7f57\u5c3c',type:'\u8c1c\u9898',note:'\u6cd5\u7f57\u5c3c\u5317\u90e8'},
+    {cn:'\u82e5\u6731\u00b7\u4e4c\u00b7\u4e4c\u795e\u5e99',en:'Joju-u-u Shrine',gx:1516,gy:-3576,gz:57,region:'\u6cd5\u7f57\u5c3c',type:'\u8c1c\u9898',note:'\u6cd5\u7f57\u5c3c\u5357\u90e8'},
+    {cn:'\u57fa\u5854\u74e6\u514b\u795e\u5e99',en:'Kitawak Shrine',gx:-1527,gy:-2927,gz:181,region:'\u6cd5\u7f57\u5c3c',type:'\u8c1c\u9898',note:'\u683c\u9c81\u5fb7\u5357\u4fa7'},
+    {cn:'\u83ab\u82cf\u5e0c\u65af\u795e\u5e99',en:'Motsusis Shrine',gx:-1795,gy:-3485,gz:129,region:'\u6cd5\u7f57\u5c3c',type:'\u795d\u798f',note:'\u683c\u9c81\u5fb7\u4e1c\u5357\u4fa7'},
+    {cn:'\u4e4c\u6b21\u82cf\u970d\u514b\u795e\u5e99',en:'Utsushok Shrine',gx:669,gy:-3358,gz:141,region:'\u6cd5\u7f57\u5c3c',type:'\u8c1c\u9898',note:'\u6cd5\u7f57\u5c3c\u4e1c\u4fa7'},
+    {cn:'\u6069\u00b7\u6b27\u739b\u795e\u5e99',en:'En-oma Shrine',gx:111,gy:-2511,gz:142,region:'\u6cd5\u7f57\u5c3c',type:'\u795d\u798f',note:'\u6797\u5a1c\u5c24\u6e56\u5317\u4fa7'},
+    // 拉纳尤
+    {cn:'\u963f\u6ce2\u76d6\u514b\u795e\u5e99',en:'Apogek Shrine',gx:3889,gy:-220,gz:321,region:'\u62c9\u7eb3\u5c24',type:'\u8c1c\u9898',note:'\u62c9\u7eb3\u5c24\u5927\u6cc9\u4e1c\u4fa7'},
+    {cn:'\u4f0a\u6c49\u00b7\u963f\u795e\u5e99',en:'Ihen-a Shrine',gx:3787,gy:577,gz:45,region:'\u62c9\u7eb3\u5c24',type:'\u8c1c\u9898',note:'\u62c9\u7eb3\u5c24\u5927\u6cc9\u9ad8\u53f0'},
+    {cn:'\u82e5\u6069\u7d22\u795e\u5e99',en:'Jonsau Shrine',gx:1744,gy:17,gz:72,region:'\u62c9\u7eb3\u5c24',type:'\u8c1c\u9898',note:'\u5170\u5a1c\u5c24\u6e7f\u5730'},
+    {cn:'\u82e5\u5c3c\u4e4c\u795e\u5e99',en:'Joniu Shrine',gx:2918,gy:494,gz:-88,region:'\u62c9\u7eb3\u5c24',type:'\u795d\u798f',note:'\u62c9\u7eb3\u5c24\u5927\u6cc9\u5317\u90e8'},
+    {cn:'\u5e93\u62c9\u5361\u7279\u795e\u5e99',en:'Kurakat Shrine',gx:2358,gy:-509,gz:163,region:'\u62c9\u7eb3\u5c24',type:'\u795d\u798f',note:'\u62c9\u7eb3\u5c24\u5927\u6cc9\u897f\u4fa7'},
+    {cn:'\u739b\u6b27\u4f0a\u67ef\u65af\u795e\u5e99',en:'Maoikes Shrine',gx:2277,gy:150,gz:486,region:'\u62c9\u7eb3\u5c24',type:'\u795d\u798f',note:'\u62c9\u7eb3\u5c24\u6e7f\u5730\u4e1c\u4fa7'},
+    {cn:'\u83ab\u683c\u74e6\u514b\u795e\u5e99',en:'Mogawak Shrine',gx:3299,gy:424,gz:25,region:'\u62c9\u7eb3\u5c24',type:'\u8c1c\u9898',note:'\u62c9\u7eb3\u5c24\u5927\u6cc9\u4e1c\u5357'},
+    {cn:'\u83ab\u6d1b\u514b\u795e\u5e99',en:'Morok Shrine',gx:1179,gy:-778,gz:152,region:'\u62c9\u7eb3\u5c24',type:'\u6559\u5b66',note:'\u5170\u5a1c\u5c24\u6e7f\u5730\u4e2d\u5fc3'},
+    {cn:'\u7ea6\u7c73\u7956\u514b\u795e\u5e99',en:'Yomizuk Shrine',gx:4414,gy:-612,gz:156,region:'\u62c9\u7eb3\u5c24',type:'\u795d\u798f',note:'\u62c9\u7eb3\u5c24\u5927\u6cc9\u6700\u4e1c\u4fa7'},
+    {cn:'\u624e\u5e93\u82cf\u795e\u5e99',en:'Zakusu Shrine',gx:3527,gy:-1482,gz:79,region:'\u62c9\u7eb3\u5c24',type:'\u8bd5\u70bc',note:'\u62c9\u7eb3\u5c24\u5c71\u897f\u4fa7'},
+    // 艾尔丁
+    {cn:'\u5409\u6b27\u5854\u514b\u795e\u5e99',en:'Jiotak Shrine',gx:1833,gy:3179,gz:112,region:'\u827e\u5c14\u4e01',type:'\u795d\u798f',note:'\u827e\u5c14\u4e01\u5ce1\u8c37\u5317\u90e8'},
+    {cn:'\u4f0a\u5e0c\u5e0c\u59c6\u795e\u5e99',en:'Isisim Shrine',gx:1842,gy:2844,gz:133,region:'\u827e\u5c14\u4e01',type:'\u8bd5\u70bc',note:'\u827e\u5c14\u4e01\u4e2d\u90e8\u9ad8\u53f0'},
+    {cn:'\u57fa\u5e0c\u8bfa\u7eb3\u795e\u5e99',en:'Kisinona Shrine',gx:2567,gy:1245,gz:34,region:'\u827e\u5c14\u4e01',type:'\u8c1c\u9898',note:'\u827e\u5c14\u4e01\u5ce1\u8c37\u5357\u90e8'},
+    {cn:'\u57fa\u9a6c\u4e9a\u7279\u795e\u5e99',en:'Kimayat Shrine',gx:2855,gy:3629,gz:168,region:'\u827e\u5c14\u4e01',type:'\u8bd5\u70bc',note:'\u827e\u5c14\u4e01\u5ce1\u8c37\u5317\u7aef'},
+    {cn:'\u739b\u62c9\u5e93\u53e4\u514b\u795e\u5e99',en:'Marakuguc Shrine',gx:1761,gy:2508,gz:165,region:'\u827e\u5c14\u4e01',type:'\u8c1c\u9898',note:'\u827e\u5c14\u4e01\u5ce1\u8c37\u4e2d\u6bb5'},
+    {cn:'\u739b\u4e9a\u514b\u795e\u5e99',en:'Mayak Shrine',gx:1270,gy:3720,gz:2,region:'\u827e\u5c14\u4e01',type:'\u8c1c\u9898',note:'\u827e\u5c14\u4e01\u5c71\u9876'},
+    {cn:'\u739b\u96c5\u6b23\u6234\u683c\u795e\u5e99',en:'Mayachideg Shrine',gx:3061,gy:1823,gz:131,region:'\u827e\u5c14\u4e01',type:'\u8bd5\u70bc',note:'\u827e\u5c14\u4e01\u5ce1\u8c37\u4e1c\u4fa7'},
+    {cn:'\u7c73\u5185\u5854\u514b\u795e\u5e99',en:'Minetak Shrine',gx:388,gy:3495,gz:71,region:'\u827e\u5c14\u4e01',type:'\u795d\u798f',note:'\u827e\u5c14\u4e01\u5c71\u897f\u4fa7'},
+    {cn:'\u83ab\u83ab\u897f\u514b\u795e\u5e99',en:'Momosik Shrine',gx:2959,gy:2758,gz:57,region:'\u827e\u5c14\u4e01',type:'\u795d\u798f',note:'\u827e\u5c14\u4e01\u5ce1\u8c37\u4e1c\u5317'},
+    {cn:'\u83ab\u6c99\u5e73\u795e\u5e99',en:'Moshapin Shrine',gx:2680,gy:1902,gz:257,region:'\u827e\u5c14\u4e01',type:'\u795d\u798f',note:'\u827e\u5c14\u4e01\u5ce1\u8c37\u4e1c\u4fa7'},
+    {cn:'\u897f\u5df4\u5409\u5854\u514b\u795e\u5e99',en:'Sibajitak Shrine',gx:2399,gy:3274,gz:363,region:'\u827e\u5c14\u4e01',type:'\u8c1c\u9898',note:'\u827e\u5c14\u4e01\u5ce1\u8c37\u9ad8\u5730'},
+    {cn:'\u5e0c\u5e93\u5e93\u795e\u5e99',en:'Sikukuu Shrine',gx:699,gy:2793,gz:173,region:'\u827e\u5c14\u4e01',type:'\u8c1c\u9898',note:'\u827e\u5c14\u4e01\u5c71\u897f\u9e93'},
+    {cn:'\u5e0c\u56fe\u82cf\u59c6\u795e\u5e99',en:'Sitsum Shrine',gx:2369,gy:2595,gz:238,region:'\u827e\u5c14\u4e01',type:'\u6559\u5b66',note:'\u6b7b\u4ea1\u5c71\u9876\u90e8'},
+    {cn:'\u63d0\u739b\u74e6\u514b\u795e\u5e99',en:'Timawak Shrine',gx:1800,gy:1642,gz:437,region:'\u827e\u5c14\u4e01',type:'\u8c1c\u9898',note:'\u827e\u5c14\u4e01\u5ce1\u8c37\u5357\u90e8'},
+    // 阿卡拉
+    {cn:'\u591a\u7c73\u7956\u56e0\u795e\u5e99',en:'Domizuin Shrine',gx:3307,gy:1444,gz:106,region:'\u963f\u5361\u62c9',type:'\u8c1c\u9898',note:'\u963f\u5361\u62c9\u9ad8\u5730\u897f\u4fa7'},
+    {cn:'\u5685\u5854\u5c3c\u5e0c\u65af\u795e\u5e99',en:'Gatanisis Shrine',gx:4498,gy:825,gz:216,region:'\u963f\u5361\u62c9',type:'\u8c1c\u9898',note:'\u963f\u5361\u62c9\u9ad8\u5730\u4e1c\u4fa7'},
+    {cn:'\u683c\u7c73\u7c73\u514b\u795e\u5e99',en:'Gemimik Shrine',gx:4513,gy:2116,gz:66,region:'\u963f\u5361\u62c9',type:'\u8c1c\u9898',note:'\u963f\u5361\u62c9\u6700\u4e1c\u5317\u4fa7'},
+    {cn:'\u82e5\u5947\u5e0c\u52a0\u795e\u5e99',en:'Jochi-ihiga Shrine',gx:3809,gy:1220,gz:524,region:'\u963f\u5361\u62c9',type:'\u795d\u798f',note:'\u963f\u5361\u62c9\u9ad8\u5730\u4e2d\u90e8'},
+    {cn:'\u62c9\u5e0c\u5854\u5948\u74e6\u514b\u795e\u5e99',en:'Rasitakiwak Shrine',gx:4166,gy:1323,gz:131,region:'\u963f\u5361\u62c9',type:'\u8bd5\u70bc',note:'\u963f\u5361\u62c9\u9ad8\u5730\u4e1c\u4fa7'},
+    {cn:'\u897f\u7eb3\u5854\u5c3c\u5361\u795e\u5e99',en:'Sinatanika Shrine',gx:3843,gy:2299,gz:402,region:'\u963f\u5361\u62c9',type:'\u6218\u6597',note:'\u963f\u5361\u62c9\u9ad8\u5730\u5317\u4fa7'},
+    {cn:'\u82e5\u5947\u00b7\u4e4c\u795e\u5e99',en:'Jochi-iu Shrine',gx:4346,gy:2875,gz:226,region:'\u963f\u5361\u62c9',type:'\u8c1c\u9898',note:'\u6df1\u963f\u5361\u62c9\u897f\u4fa7'},
+    {cn:'\u5361\u739b\u56fe\u57fa\u65af\u795e\u5e99',en:'Kamatukis Shrine',gx:3429,gy:3356,gz:790,region:'\u963f\u5361\u62c9',type:'\u8c1c\u9898',note:'\u6df1\u963f\u5361\u62c9\u5317\u4fa7'},
+    {cn:'\u62c9\u5e0c\u74e6\u514b\u795e\u5e99',en:'Rasiwak Shrine',gx:4664,gy:3262,gz:311,region:'\u963f\u5361\u62c9',type:'\u8c1c\u9898',note:'\u963f\u5361\u62c9\u6d77\u5357\u5cb8'},
+    {cn:'\u4f0a\u683c\u8212\u514b\u795e\u5e99',en:'Igashuk Shrine',gx:4654,gy:3712,gz:426,region:'\u963f\u5361\u62c9',type:'\u795d\u798f',note:'\u963f\u5361\u62c9\u6d77\u4e1c\u5317\u5cb8'},
+    // 赫布拉
+    {cn:'\u5c24\u6258\u4e4c\u59c6\u795e\u5e99',en:'Eutoum Shrine',gx:-3506,gy:3570,gz:95,region:'\u8d6b\u5e03\u62c9',type:'\u8bd5\u70bc',note:'\u8d6b\u5e03\u62c9\u5c71\u9876\u5317\u4fa7'},
+    {cn:'\u5685\u8428\u65af\u795e\u5e99',en:'Gasas Shrine',gx:-4155,gy:97,gz:1,region:'\u8d6b\u5e03\u62c9',type:'\u8c1c\u9898',note:'\u5854\u73ed\u8fbe\u8fb9\u5883\u897f\u4fa7'},
+    {cn:'\u5685\u5854\u514b\u65af\u795e\u5e99',en:'Gatakis Shrine',gx:-3647,gy:1807,gz:92,region:'\u8d6b\u5e03\u62c9',type:'\u8c1c\u9898',note:'\u767d\u8bc2\u62a5\u793e\u9644\u8fd1'},
+    {cn:'\u4f0a\u4e4c\u6069\u00b7\u6b27\u6d1b\u514b\u795e\u5e99',en:'Iun-orok Shrine',gx:-3538,gy:853,gz:229,region:'\u8d6b\u5e03\u62c9',type:'\u8c1c\u9898',note:'\u5854\u73ed\u8fbe\u5357\u90e8'},
+    {cn:'\u4f0a\u5361\u5854\u514b\u795e\u5e99',en:'Ikatak Shrine',gx:-3950,gy:1138,gz:48,region:'\u8d6b\u5e03\u62c9',type:'\u795d\u798f',note:'\u5854\u73ed\u8fbe\u897f\u4fa7\u9ad8\u53f0'},
+    {cn:'\u739b\u96c5\u4e4c\u897f\u795e\u5e99',en:'Mayausiy Shrine',gx:-1169,gy:2602,gz:165,region:'\u8d6b\u5e03\u62c9',type:'\u8c1c\u9898',note:'\u8d6b\u5e03\u62c9\u5c71\u5357\u4fa7'},
+    {cn:'\u739b\u4e9a\u5965\u5854\u57fa\u795e\u5e99',en:'Mayaotaki Shrine',gx:-825,gy:3534,gz:71,region:'\u8d6b\u5e03\u62c9',type:'\u795d\u798f',note:'\u8d6b\u5e03\u62c9\u5c71\u4e1c\u5317\u4fa7'},
+    {cn:'\u8bfa\u4e4c\u8fbe\u795e\u5e99',en:'Nouda Shrine',gx:-2318,gy:2201,gz:2,region:'\u8d6b\u5e03\u62c9',type:'\u8bd5\u70bc',note:'\u8d6b\u5e03\u62c9\u5c71\u4e2d\u90e8'},
+    {cn:'\u6b27\u6d1b\u6155\u74e6\u514b\u795e\u5e99',en:'Oromuwak Shrine',gx:-3061,gy:1623,gz:131,region:'\u8d6b\u5e03\u62c9',type:'\u6559\u5b66',note:'\u8d6b\u5e03\u62c9\u5c71\u897f\u4fa7'},
+    {cn:'\u6b27\u7ecd\u5360\u00b7\u4e4c\u795e\u5e99',en:'Oshozan-u Shrine',gx:-1402,gy:3677,gz:387,region:'\u8d6b\u5e03\u62c9',type:'\u8c1c\u9898',note:'\u8d6b\u5e03\u62c9\u5c71\u4e1c\u5317\u9ad8\u5730'},
+    {cn:'\u6b27\u5854\u514b\u795e\u5e99',en:'Otak Shrine',gx:-4392,gy:3714,gz:40,region:'\u8d6b\u5e03\u62c9',type:'\u8bd5\u70bc',note:'\u8d6b\u5e03\u62c9\u5c71\u6700\u897f\u5317\u89d2'},
+    {cn:'\u9c81\u5854\u4f5b\u00b7\u4e4c\u59c6\u795e\u5e99',en:'Rutafu-um Shrine',gx:-2997,gy:3107,gz:168,region:'\u8d6b\u5e03\u62c9',type:'\u795d\u798f',note:'\u8d6b\u5e03\u62c9\u5c71\u5317\u4fa7'},
+    {cn:'\u8428\u5e0c\u6d1b\u795e\u5e99',en:'Sahirow Shrine',gx:-3352,gy:2384,gz:-133,region:'\u8d6b\u5e03\u62c9',type:'\u8c1c\u9898',note:'\u8d6b\u5e03\u62c9\u5c71\u897f\u4fa7\u9ad8\u5730'},
+    {cn:'\u897f\u82cf\u5170\u795e\u5e99',en:'Sisuran Shrine',gx:-2570,gy:3352,gz:112,region:'\u8d6b\u5e03\u62c9',type:'\u795d\u798f',note:'\u8d6b\u5e03\u62c9\u5c71\u5317\u90e8'},
+    {cn:'\u9053\u4e8e\u897f\u84ec\u795e\u5e99',en:'Tauyosipun Shrine',gx:-4539,gy:2881,gz:-83,region:'\u8d6b\u5e03\u62c9',type:'\u8c1c\u9898',note:'\u8d6b\u5e03\u62c9\u5c71\u6700\u897f\u4fa7'},
+    {cn:'\u74e6\u6b27\u00b7\u6b27\u65af\u795e\u5e99',en:'Wao-os Shrine',gx:-4053,gy:2002,gz:234,region:'\u8d6b\u5e03\u62c9',type:'\u8c1c\u9898',note:'\u5854\u73ed\u8fbe\u5317\u4fa7'},
+    {cn:'\u56fe\u62c9\u5361\u74e6\u514b\u795e\u5e99',en:'Turakawak Shrine',gx:-3497,gy:-197,gz:173,region:'\u8d6b\u5e03\u62c9',type:'\u8c1c\u9898',note:'\u5854\u73ed\u8fbe\u5357\u90e8'},
+    // 格鲁德
+    {cn:'\u5947\u5947\u59c6\u795e\u5e99',en:'Chichim Shrine',gx:-3211,gy:-3007,gz:244,region:'\u683c\u9c81\u5fb7',type:'\u795d\u798f',note:'\u683c\u9c81\u5fb7\u6c99\u6f20\u5357\u90e8'},
+    {cn:'\u5361\u62c9\u54c8\u5854\u683c\u795e\u5e99',en:'Karahatag Shrine',gx:-3726,gy:-3625,gz:287,region:'\u683c\u9c81\u5fb7',type:'\u8c1c\u9898',note:'\u683c\u9c81\u5fb7\u6c99\u6f20\u5357\u7aef'},
+    {cn:'\u5e93\u8fbe\u5c3c\u8428\u5c14\u795e\u5e99',en:'Kudanisar Shrine',gx:-4159,gy:-2145,gz:212,region:'\u683c\u9c81\u5fb7',type:'\u8c1c\u9898',note:'\u683c\u9c81\u5fb7\u6c99\u6f20\u897f\u4fa7'},
+    {cn:'\u4f0a\u62c9\u8428\u514b\u795e\u5e99',en:'Irasak Shrine',gx:-4159,gy:-3824,gz:513,region:'\u683c\u9c81\u5fb7',type:'\u795d\u798f',note:'\u683c\u9c81\u5fb7\u6c99\u6f20\u897f\u5357\u7aef'},
+    {cn:'\u739b\u96c5\u5854\u7279\u795e\u5e99',en:'Mayatat Shrine',gx:-3290,gy:-2512,gz:360,region:'\u683c\u9c81\u5fb7',type:'\u6559\u5b66',note:'\u683c\u9c81\u5fb7\u6c99\u6f20\u4e2d\u90e8'},
+    {cn:'\u7c73\u5229\u7ea6\u5854\u8bfa\u683c\u795e\u5e99',en:'Miryotanog Shrine',gx:-4679,gy:-3086,gz:242,region:'\u683c\u9c81\u5fb7',type:'\u8bd5\u70bc',note:'\u683c\u9c81\u5fb7\u6c99\u6f20\u6700\u897f\u7aef'},
+    {cn:'\u62c9\u5361\u5e93\u8fbe\u5409\u795e\u5e99',en:'Rakakudaj Shrine',gx:-2036,gy:-1854,gz:262,region:'\u683c\u9c81\u5fb7',type:'\u8c1c\u9898',note:'\u683c\u9c81\u5fb7\u9ad8\u5730\u4e1c\u4fa7'},
+    {cn:'\u6d1b\u82cf\u6155\u6155\u795e\u5e99',en:'Rotsumamu Shrine',gx:-3405,gy:-1356,gz:183,region:'\u683c\u9c81\u5fb7',type:'\u8c1c\u9898',note:'\u683c\u9c81\u5fb7\u9ad8\u5730\u4e2d\u90e8'},
+    {cn:'\u897f\u74e6\u5361\u739b\u795e\u5e99',en:'Siwakama Shrine',gx:-2445,gy:-3345,gz:66,region:'\u683c\u9c81\u5fb7',type:'\u8c1c\u9898',note:'\u683c\u9c81\u5fb7\u6c99\u6f20\u4e1c\u5357\u90e8'},
+    {cn:'\u7d22\u96f7\u4e9a\u5854\u8bfa\u683c\u795e\u5e99',en:'Soryotanog Shrine',gx:-3881,gy:-2961,gz:168,region:'\u683c\u9c81\u5fb7',type:'\u8c1c\u9898',note:'\u683c\u9c81\u5fb7\u6c99\u6f20\u4e2d\u90e8\u504f\u897f'},
+    {cn:'\u82cf\u963f\u91cc\u74e6\u514b\u795e\u5e99',en:'Suariwak Shrine',gx:-2523,gy:-1770,gz:-49,region:'\u683c\u9c81\u5fb7',type:'\u795d\u798f',note:'\u683c\u9c81\u5fb7\u9ad8\u5730\u897f\u4fa7'},
+    {cn:'\u56fe\u62c9\u5361\u7c73\u514b\u795e\u5e99',en:'Turakamik Shrine',gx:-2658,gy:-2236,gz:43,region:'\u683c\u9c81\u5fb7',type:'\u8c1c\u9898',note:'\u683c\u9c81\u5fb7\u6c99\u6f20\u5317\u4fa7'},
+    {cn:'\u739b\u4e9a\u9a6c\u5179\u795e\u5e99',en:'Mayamats Shrine',gx:-4637,gy:-1514,gz:48,region:'\u683c\u9c81\u5fb7',type:'\u8c1c\u9898',note:'\u683c\u9c81\u5fb7\u9ad8\u5730\u6700\u897f\u7aef'},
+    {cn:'\u6b27\u7279\u82cf\u59c6\u795e\u5e99',en:'Otutsum Shrine',gx:-4468,gy:-670,gz:28,region:'\u683c\u9c81\u5fb7',type:'\u795d\u798f',note:'\u683c\u9c81\u5fb7\u9ad8\u5730\u897f\u5317\u60ac\u5d16'},
+    // 大森林
+    {cn:'\u827e\u67ef\u4e18\u795e\u5e99',en:'Ekochiu Shrine',gx:1063,gy:1283,gz:24,region:'\u5927\u68ee\u6797',type:'\u8c1c\u9898',note:'\u5927\u68ee\u6797\u5357\u4fa7'},
+    {cn:'\u57fa\u5361\u91d1\u795e\u5e99',en:'Kikakin Shrine',gx:-397,gy:2738,gz:54,region:'\u5927\u68ee\u6797',type:'\u8c1c\u9898',note:'\u5927\u68ee\u6797\u897f\u5317'},
+    {cn:'\u57fa\u5c24\u4f51\u4f51\u795e\u5e99',en:'Kiuyoyou Shrine',gx:-1106,gy:2086,gz:65,region:'\u5927\u68ee\u6797',type:'\u8c1c\u9898',note:'\u5927\u68ee\u6797\u897f\u4fa7'},
+    {cn:'\u7a46\u8428\u8bfa\u57fa\u5c14\u795e\u5e99',en:'Musanokir Shrine',gx:408,gy:2133,gz:335,region:'\u5927\u68ee\u6797',type:'\u8c1c\u9898',note:'\u5927\u68ee\u6797\u4e2d\u5fc3'},
+    {cn:'\u5b81\u5409\u65af\u795e\u5e99',en:'Ninjis Shrine',gx:353,gy:1891,gz:41,region:'\u5927\u68ee\u6797',type:'\u795d\u798f',note:'\u5927\u68ee\u6797\u5357\u90e8'},
+    {cn:'\u666e\u666e\u6069\u514b\u795e\u5e99',en:'Pupunke Shrine',gx:611,gy:2216,gz:123,region:'\u5927\u68ee\u6797',type:'\u795d\u798f',note:'\u5927\u68ee\u6797\u4e1c\u4fa7'},
+    {cn:'\u8428\u5e93\u6069\u535a\u739b\u5c14\u795e\u5e99',en:'Sakunbomar Shrine',gx:164,gy:2310,gz:131,region:'\u5927\u68ee\u6797',type:'\u795d\u798f',note:'\u5927\u68ee\u6797\u5317\u90e8'},
+  ];
+
+  var currentFilter = 'all';
+  var hideDone = false;
+  var markers = [];
+  var base = window.location.pathname;
+
+  // 判断神庙在哪个层级显示：region 含"天空" 或 "空岛" 归天空层
+  function shrineLayer(s) {
+    if (s.region.indexOf('\u5929\u7a7a') >= 0 || s.region.indexOf('\u7a7a\u5c9b') >= 0) {
+      return 'sky';
+    }
+    return 'surface';
+  }
+
+  SD.forEach(function(s, idx) {
+    var isDone = localStorage.getItem(base + '_shrine_' + idx) === 'done';
+    var m = L.marker(g2ll(s.gx, s.gy), {
+      icon: makeIcon(s.type, isDone),
+      title: s.cn,
+      riseOnHover: true
+    });
+    m.bindPopup(makePopup(s, idx), { maxWidth: 260, className: 'sdark' });
+    markers.push({ m: m, type: s.type, done: isDone, layer: shrineLayer(s), data: s });
+  });
+
+  // ─── 定位到列表行 ───────────────────────────────────────────
+  window.scrollToShrineRow = function(idx) {
+    var row = document.getElementById('shrine-row-' + idx);
+    if (!row) return;
+    // 确保该行可见（不被过滤器隐藏）
+    row.style.display = '';
+    // 平滑滚动到行
+    row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // 金色高亮动画
+    row.style.transition = 'background 0.3s';
+    row.style.background = 'rgba(201,162,39,0.18)';
+    setTimeout(function() {
+      row.style.background = '';
+      setTimeout(function() { row.style.transition = ''; }, 400);
+    }, 1800);
+  };
+
+  function applyFilter() {
+    markers.forEach(function(item) {
+      var layerOk = (currentLayer === 'depths') ? false : (item.layer === currentLayer);
+      var show = layerOk &&
+                 (currentFilter === 'all' || item.type === currentFilter) &&
+                 !(hideDone && item.done);
+      if (show && !hmap.hasLayer(item.m)) item.m.addTo(hmap);
+      if (!show && hmap.hasLayer(item.m)) hmap.removeLayer(item.m);
+    });
+  }
+  applyFilter();
+
+  // ─── 类型筛选 ─────────────────────────────────────────────
+  window.mapFilterType = function(type, btn) {
+    currentFilter = type;
+    document.querySelectorAll('#shrine-map-controls-row .map-ctrl-btn').forEach(function(b){
+      if (!b.classList.contains('map-done-btn')) b.classList.remove('active');
+    });
+    btn.classList.add('active');
+    applyFilter();
+  };
+
+  window.mapToggleDone = function(btn) {
+    hideDone = !hideDone;
+    if (btn) btn.classList.toggle('active', hideDone);
+    applyFilter();
+  };
+
+  // ─── 层级切换：地表/天空/地底 ─────────────────────────────
+  window.shrineSwitchLayer = function(layerName, btn) {
+    if (!LAYERS[layerName]) return;
+    // 切换底图
+    Object.keys(LAYERS).forEach(function(k){
+      if (hmap.hasLayer(LAYERS[k])) hmap.removeLayer(LAYERS[k]);
+    });
+    LAYERS[layerName].addTo(hmap);
+
+    // 切换地名标签层
+    Object.keys(labelGroups).forEach(function(k){
+      if (hmap.hasLayer(labelGroups[k])) hmap.removeLayer(labelGroups[k]);
+    });
+    if (labelGroups[layerName]) labelGroups[layerName].addTo(hmap);
+    currentLayer = layerName;
+
+    document.querySelectorAll('.map-layer-btn').forEach(function(b){
+      if (b.dataset.layer) b.classList.remove('active');
+    });
+    if (btn) btn.classList.add('active');
+
+    applyFilter();
+  };
+
+  // ─── 网格线 ───────────────────────────────────────────────
+  var gridLines = [];
+  window.shrineToggleGrid = function(btn) {
+    if (gridLines.length) {
+      gridLines.forEach(function(ln){ hmap.removeLayer(ln); });
+      gridLines = [];
+      if (btn) btn.classList.remove('active');
+      return;
+    }
+    if (btn) btn.classList.add('active');
+    var step = 1000;
+    for (var x = -6000; x <= 6000; x += step) {
+      gridLines.push(L.polyline([[-5000, x],[5000, x]],
+        { color: 'rgba(255,255,255,0.18)', weight: 1, interactive: false }).addTo(hmap));
+    }
+    for (var y = -5000; y <= 5000; y += step) {
+      gridLines.push(L.polyline([[y, -6000],[y, 6000]],
+        { color: 'rgba(255,255,255,0.18)', weight: 1, interactive: false }).addTo(hmap));
+    }
+    // 标注每条网格线的坐标值
+    for (var lx = -5000; lx <= 5000; lx += step) {
+      gridLines.push(L.marker([0, lx], {
+        icon: L.divIcon({
+          className: '',
+          html: '<div style="color:rgba(255,255,255,0.5);font-family:monospace;font-size:10px;text-shadow:0 0 3px #000;white-space:nowrap">X:' + lx + '</div>',
+          iconSize: [0,0]
+        }),
+        interactive: false
+      }).addTo(hmap));
+    }
+  };
+
+  // ─── 鼠标坐标实时显示 ────────────────────────────────────
+  var coordEl = document.getElementById('map-cursor-coord');
+  hmap.on('mousemove', function(e) {
+    if (!coordEl) return;
+    var x = Math.round(e.latlng.lng);
+    var y = Math.round(-e.latlng.lat);
+    coordEl.textContent = 'X: ' + x + '  Y: ' + y;
+  });
+  hmap.on('mouseout', function() {
+    if (coordEl) coordEl.textContent = 'X: ---  Y: ---';
+  });
+
+  hmap.invalidateSize();
+});
+</script>
+<script>
+let activeRegion = 'all';
+let activeType   = 'all';
+
+function filterRegion(region, btn) {
+  document.querySelectorAll('#regionTabs .filter-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  activeRegion = region;
+  applyFilters();
+}
+function filterType(type, btn) {
+  document.querySelectorAll('#typeTabs .filter-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  activeType = type;
+  applyFilters();
+}
+function applyFilters() {
+  // 先显示/隐藏数据行
+  document.querySelectorAll('#shrineTableBody tr[data-region]').forEach(tr => {
+    const rMatch = activeRegion === 'all' || tr.dataset.region === activeRegion;
+    const tMatch = activeType   === 'all' || tr.dataset.type   === activeType;
+    tr.style.display = (rMatch && tMatch) ? '' : 'none';
+  });
+  // 区块标题行：检查其后的数据行是否有可见条目
+  document.querySelectorAll('#shrineTableBody tr:not([data-region])').forEach(hdr => {
+    let el = hdr.nextElementSibling;
+    let hasVisible = false;
+    while (el) {
+      if (!el.dataset.region) break; // 遇到下一个标题行则停止
+      if (el.style.display !== 'none') { hasVisible = true; break; }
+      el = el.nextElementSibling;
+    }
+    hdr.style.display = hasVisible ? '' : 'none';
+  });
+}
+function searchShrines(val) {
+  const q = val.toLowerCase().trim();
+  if (!q) { applyFilters(); return; }
+  document.querySelectorAll('#shrineTableBody tr[data-region]').forEach(tr => {
+    tr.style.display = tr.textContent.toLowerCase().includes(q) ? '' : 'none';
+  });
+  document.querySelectorAll('#shrineTableBody tr:not([data-region])').forEach(hdr => {
+    hdr.style.display = 'none';
+  });
+}
+function toggleShrineCheck(btn) {
+  btn.classList.toggle('done');
+  const allBtns = [...document.querySelectorAll('#shrineTableBody .shrine-check')];
+  const idx = allBtns.indexOf(btn);
+  const key = window.location.pathname + '_shrine_' + idx;
+  localStorage.setItem(key, btn.classList.contains('done') ? 'done' : '');
+  updateProgress();
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const allBtns = [...document.querySelectorAll('#shrineTableBody .shrine-check')];
+  const base = window.location.pathname;
+  allBtns.forEach((btn, i) => {
+    if (localStorage.getItem(base + '_shrine_' + i) === 'done') btn.classList.add('done');
+  });
+  updateProgress();
+});
+</script>
+</body>
+</html>
+
+
+

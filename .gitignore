@@ -1,0 +1,51 @@
+﻿# ── 图片资源（体积太大，通过 Cloudflare Pages 直接上传）──
+images/
+Items/
+
+# ── Python 工具脚本 ──
+*.py
+__pycache__/
+*.pyc
+
+# ── 调试和临时文件 ──
+col2_test/
+compare_view/
+debug_cells/
+grid_cells/
+grid_cells2/
+pixel_match_debug/
+true_match_debug/
+src/
+tools/
+docs/
+config/
+
+# ── 中间数据文件 ──
+bg_match_result.json
+bg_match_result.txt
+final_true_match.txt
+item_cook_mapping.txt
+item_cook_mapping.xlsx
+true_match_result.txt
+pixel_match_result.json
+true_match_result.json
+final_true_match.json
+correct_dishes_mapping.json
+MAPPING_REPORT.md
+BUG_CHECK_REPORT_2026-05-28.md
+BUG_FIXES.md
+ORGANIZATION_SUMMARY.md
+PROJECT_STRUCTURE.md
+QUICK_REFERENCE.md
+UPDATE_PATHS.md
+cooking照片命名说明.txt
+DEPLOY_GUIDE.md
+set-domain.ps1
+
+# ── 编辑器 ──
+.vscode/
+*.xlsx
+
+# ── 系统文件 ──
+.DS_Store
+Thumbs.db

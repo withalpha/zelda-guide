@@ -1,0 +1,985 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- ═══ 安全与版权 meta ═══ -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="withalpha@proton.me">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="王国之泪31个神庙挑战完整攻略，涵盖水晶神庙、洞窟神庙与特殊任务触发，详解开启路线。">
+  <meta name="keywords" content="王国之泪,神庙挑战,水晶神庙,攻略,塞尔达">
+  <meta property="og:title" content="神庙挑战攻略 · 王国之泪">
+  <meta property="og:description" content="王国之泪31个神庙挑战完整攻略，涵盖水晶神庙、洞窟神庙与特殊任务触发，详解开启路线。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="神庙挑战攻略 · 王国之泪">
+  <meta name="twitter:description" content="王国之泪31个神庙挑战完整攻略，涵盖水晶神庙、洞窟神庙与特殊任务触发，详解开启路线。">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>神庙挑战 · 王国之泪攻略</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .sq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 18px;
+    }
+    .sq-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: var(--transition);
+      position: relative;
+    }
+    .sq-card:hover {
+      border-color: rgba(201,162,39,0.55);
+      box-shadow: var(--glow-gold);
+      transform: translateY(-4px);
+    }
+    .sq-card-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      display: block;
+      background: linear-gradient(135deg, #111128 0%, #1a1a35 100%);
+    }
+    .sq-card-body { padding: 16px 18px 18px; }
+    .sq-card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .sq-num {
+      min-width: 30px; height: 30px;
+      background: rgba(201,162,39,0.1);
+      border: 1px solid var(--border-gold);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.68rem; color: var(--gold); font-weight: 700; flex-shrink: 0;
+    }
+    .sq-quest-name {
+      font-size: 0.78rem;
+      color: var(--green);
+      font-weight: 600;
+      flex: 1;
+    }
+    .sq-shrine-name {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 5px;
+    }
+    .sq-coords {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(56,189,248,0.08);
+      border: 1px solid rgba(56,189,248,0.25);
+      border-radius: 6px;
+      padding: 3px 9px;
+      font-size: 0.72rem;
+      color: var(--blue);
+      font-family: monospace;
+      margin-bottom: 10px;
+    }
+    .sq-walkthrough {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      border-top: 1px solid var(--border-gold);
+      padding-top: 10px;
+      margin-top: 4px;
+    }
+    .sq-walkthrough ol {
+      padding-left: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 0;
+    }
+    .sq-walkthrough ol li strong { color: var(--text-primary); }
+    .sq-region-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 0.68rem;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .sq-card .sq-check-btn {
+      position: absolute;
+      top: 10px; right: 10px;
+      width: 28px; height: 28px;
+      border: 2px solid rgba(74,222,128,0.5);
+      border-radius: 50%;
+      background: rgba(7,7,15,0.7);
+      color: transparent;
+      cursor: pointer;
+      font-size: 0.75rem;
+      display: flex; align-items: center; justify-content: center;
+      transition: var(--transition);
+      backdrop-filter: blur(4px);
+      z-index: 2;
+    }
+    .sq-card .sq-check-btn:hover { border-color: var(--green); color: var(--green); }
+    .sq-card .sq-check-btn.done {
+      background: rgba(74,222,128,0.18);
+      border-color: var(--green);
+      color: var(--green);
+    }
+    .sq-card.done-card { opacity: 0.55 !important; }
+    @media (max-width: 768px) {
+      .sq-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html" class="active">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a><ul class="nav-dropdown-menu"><li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li><li><a href="sage-will.html" class="disabled">贤者的遗志</a></li></ul></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <span class="page-hero-eyebrow">SHRINE QUESTS</span>
+  <h1 class="page-hero-title">🏛 神庙挑战</h1>
+  <p class="page-hero-subtitle">全部 31 个隐藏神庙挑战 · 含地图坐标与完整开启攻略</p>
+</div>
+
+<div class="page-body">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span><span class="cur">神庙挑战</span>
+  </nav>
+
+  <div class="progress-section">
+    <div class="progress-info">
+      <p class="progress-label">神庙挑战完成进度</p>
+      <div class="progress-bar"><div class="progress-fill" id="sqProgressFill" style="width:0%"></div></div>
+    </div>
+    <div class="progress-stats">
+      <div class="progress-stat"><span class="progress-stat-val" id="sqDoneCount">0</span><span class="progress-stat-lbl">已完成</span></div>
+      <div class="progress-stat"><span class="progress-stat-val">31</span><span class="progress-stat-lbl">全部挑战</span></div>
+    </div>
+  </div>
+
+  <div class="filter-tabs" id="sqFilters">
+    <button class="filter-tab active" onclick="filterSQ('all',this)">全部 (31)</button>
+    <button class="filter-tab" onclick="filterSQ('surface',this)">陆地水晶</button>
+    <button class="filter-tab" onclick="filterSQ('cave',this)">洞窟水晶</button>
+    <button class="filter-tab" onclick="filterSQ('sky',this)">天空水晶</button>
+    <button class="filter-tab" onclick="filterSQ('special',this)">特殊任务</button>
+  </div>
+
+  <div class="sq-grid" id="sqGrid">
+
+    <!-- ══ 01: 萨托利山的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="cave">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/乌萨诸马神庙.png" alt="乌萨诸马神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">01</div>
+          <span class="sq-quest-name">萨托利山的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(201,162,39,0.1);color:var(--gold);border:1px solid rgba(201,162,39,0.3)">中央</span>
+        </div>
+        <div class="sq-shrine-name">乌萨诸马神庙</div>
+        <div class="sq-coords">📍 -2139, -0873, 0093</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>前往<strong>达利特森林（Dalite Forest）北端</strong>，找到地面上残破的神庙底座，接受挑战任务。</li>
+            <li>神庙底座发出光柱，指向西侧<strong>萨托利山（Mount Satori）山麓洞窟</strong>，洞口在神庙正西方山脚处。</li>
+            <li>进入洞窟后，深处有一只<strong>石巨人（Hinox）</strong>，水晶挂在它的颈上——击败或绕过石巨人取得水晶。</li>
+            <li>使用<strong>究极手</strong>抱起水晶，原路运出洞窟，放置在神庙底座上即可激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 02: 白鸟所指引的洞窟 ══ -->
+    <div class="sq-card fade-in" data-type="special">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/瓦欧欧萨神庙.png" alt="瓦欧欧萨神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">02</div>
+          <span class="sq-quest-name">白鸟所指引的洞窟</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">利特</span>
+        </div>
+        <div class="sq-shrine-name">瓦欧欧萨神庙</div>
+        <div class="sq-coords">📍 -4059, 1990, 0183</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>前往<strong>托托利湖（Totori Lake）</strong>西侧湖岸，找到一处<strong>白鸟形石雕</strong>，与其旁边的 NPC 对话接取任务。</li>
+            <li>白鸟目视方向指向西侧山壁上的洞窟入口——进入<strong>西托托利湖洞窟</strong>。</li>
+            <li>洞内需要跨越水面：使用<strong>余料建造</strong>将木板拼合成简易桥梁或竹筏通行，到达深处取得水晶。</li>
+            <li>将水晶带出洞窟，搬运至神庙底座放置即可激活神庙，完成后进入直接领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 03: 沉睡于吉萨的环形山的水晶 ══ -->
+    <div class="sq-card fade-in" data-type="cave">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/伊卡塔克神庙.png" alt="伊卡塔克神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">03</div>
+          <span class="sq-quest-name">沉睡于吉萨的环形山的水晶</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">利特·塔邦挞</span>
+        </div>
+        <div class="sq-shrine-name">伊卡塔克神庙</div>
+        <div class="sq-coords">📍 -3950, 1138, 0112</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>吉萨环形山（Gisa Crater）</strong>西侧边缘找到残破神庙底座，接取挑战。</li>
+            <li>光柱指向环形山内部中央岩石洞穴——进入洞穴，水晶被岩石和碎石封锁在深处。</li>
+            <li>使用<strong>余料建造</strong>组合构造物推开大石块，或使用爆炸果清除障碍后抵达水晶。</li>
+            <li>用究极手抱起水晶，原路运出并放入神庙底座完成激活。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 04: 海布拉山北方的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="surface">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/希斯拉纳神庙.png" alt="希斯拉纳神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">04</div>
+          <span class="sq-quest-name">海布拉山北方的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">海布拉</span>
+        </div>
+        <div class="sq-shrine-name">希斯拉纳神庙</div>
+        <div class="sq-coords">📍 -2556, 3354, 0245</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>皮基达石林（Pikida Stonegrove）视野塔</strong>东南方的雪地平原找到残破神庙底座，接取挑战。</li>
+            <li>光柱指向神庙北方雪坡高处——前往雪坡找到一块被<strong>冰封的水晶</strong>。</li>
+            <li>使用<strong>火焰武器、火把或炎热食材</strong>融化冰块解放水晶，再利用究极手将水晶沿坡运至神庙处。</li>
+            <li>将水晶放入底座激活神庙，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 05: 沉睡于海布拉山西北的洞窟中的水晶 ══ -->
+    <div class="sq-card fade-in" data-type="cave">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/鲁塔富乌每神庙.png" alt="鲁塔富乌每神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">05</div>
+          <span class="sq-quest-name">沉睡于海布拉山西北的洞窟中的水晶</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">海布拉</span>
+        </div>
+        <div class="sq-shrine-name">鲁塔富乌每神庙</div>
+        <div class="sq-coords">📍 -2998, 3105, 0514</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>海布拉山西北角</strong>找到残破神庙底座，光柱指向附近山壁上的洞窟入口。</li>
+            <li>进入洞窟后地面结冰，水晶在深处冰雪平台上——需跨越结冰水面前进。</li>
+            <li>使用<strong>余料建造</strong>拼接木板做成浮桥，或踩着冰块跳跃通行，抵达水晶处。</li>
+            <li>取得水晶后带出洞窟，放入神庙底座激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 06: 漂亮的石头与金苹果 ══ -->
+    <div class="sq-card fade-in" data-type="special">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/普普恩凯神庙.png" alt="普普恩凯神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">06</div>
+          <span class="sq-quest-name">漂亮的石头与金苹果</span>
+          <span class="sq-region-tag" style="background:rgba(74,222,128,0.1);color:var(--green);border:1px solid rgba(74,222,128,0.3)">科洛克森林</span>
+        </div>
+        <div class="sq-shrine-name">普普恩凯神庙</div>
+        <div class="sq-coords">📍 0615, 2213, 0163</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>前往<strong>科洛克森林（Korok Forest）</strong>内部，找到在树干附近游荡的科洛克 NPC，与其对话接取挑战。</li>
+            <li>任务要求同时献上<strong>1 块矿石（普通矿石即可）</strong>和<strong>5 个金苹果</strong>放置在神庙底座前。</li>
+            <li>金苹果在科洛克森林内金色苹果树上采摘，矿石可在森林边缘敲击岩脉获取。</li>
+            <li>将两种物品同时放好后神庙显现，进入直接领取<strong>祝福之光</strong>（祝福神殿）。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 07: 前方禁止进入？ ══ -->
+    <div class="sq-card fade-in" data-type="special">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/世克恩波马拉神庙.png" alt="世克恩波马拉神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">07</div>
+          <span class="sq-quest-name">前方禁止进入？</span>
+          <span class="sq-region-tag" style="background:rgba(74,222,128,0.1);color:var(--green);border:1px solid rgba(74,222,128,0.3)">科洛克森林</span>
+        </div>
+        <div class="sq-shrine-name">世克恩波马拉神庙</div>
+        <div class="sq-coords">📍 0165, 2314, 0178</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>科洛克森林</strong>深处找到被<strong>骷髅守卫</strong>把守的神庙入口，与守卫对话后触发挑战。</li>
+            <li>守卫声称禁止进入，实际上需要绕开守卫的视野，利用树木遮挡或<strong>隐身药剂</strong>接近神庙底座。</li>
+            <li>抵达神庙底座处后激活装置，神庙随即显现开启。</li>
+            <li>进入神庙直接领取<strong>祝福之光</strong>（祝福神殿）。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 08: 玛卡玛喀的珍藏地点 ══ -->
+    <div class="sq-card fade-in" data-type="special">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/尼恩吉希神庙.png" alt="尼恩吉希神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">08</div>
+          <span class="sq-quest-name">玛卡玛喀的珍藏地点</span>
+          <span class="sq-region-tag" style="background:rgba(74,222,128,0.1);color:var(--green);border:1px solid rgba(74,222,128,0.3)">科洛克森林</span>
+        </div>
+        <div class="sq-shrine-name">尼恩吉希神庙</div>
+        <div class="sq-coords">📍 0353, 1891, 0178</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在科洛克森林中找到科洛克 <strong>玛卡玛喀（Makami）</strong>，与其对话获知它藏宝藏的线索。</li>
+            <li>根据玛卡玛喀指引，在森林内特定树丛或树根间找到隐藏的<strong>发光水晶</strong>。</li>
+            <li>使用究极手抱起水晶，将其搬运至神庙底座处放置激活。</li>
+            <li>进入神庙领取<strong>祝福之光</strong>（祝福神殿）。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 09: 死亡破火山口的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="surface">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/摩摩希卡神庙.png" alt="摩摩希卡神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">09</div>
+          <span class="sq-quest-name">死亡破火山口的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(251,146,60,0.1);color:#fb923c;border:1px solid rgba(251,146,60,0.3)">艾勒纳塔克</span>
+        </div>
+        <div class="sq-shrine-name">摩摩希卡神庙</div>
+        <div class="sq-coords">📍 2959, 2758, 0524</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>前往<strong>死亡破火山口（Death Caldera）</strong>，此区域极度高温，必须穿戴<strong>防火套装</strong>或饮用防热药剂。</li>
+            <li>在破火山口内侧边缘找到残破神庙底座，光柱指向火山口中央熔岩高台。</li>
+            <li>使用<strong>余料建造</strong>组合金属板搭建跨越熔岩的桥梁，抵达高台取得水晶。</li>
+            <li>携带水晶沿桥梁返回，放入神庙底座激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 10: 沉睡于幽芬湖的洞窟中的水晶 ══ -->
+    <div class="sq-card fade-in" data-type="cave">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/摩夏皮恩神庙.png" alt="摩夏皮恩神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">10</div>
+          <span class="sq-quest-name">沉睡于幽芬湖的洞窟中的水晶</span>
+          <span class="sq-region-tag" style="background:rgba(251,146,60,0.1);color:#fb923c;border:1px solid rgba(251,146,60,0.3)">艾尔丁</span>
+        </div>
+        <div class="sq-shrine-name">摩夏皮恩神庙</div>
+        <div class="sq-coords">📍 2678, 1905, 0131</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>因特诺奇湖（Lake Intenoch）</strong>北侧洞窟附近找到残破神庙底座，接取挑战。</li>
+            <li>进入洞窟后水晶漂浮在洞内水面中央——使用<strong>究极手</strong>直接从水中抓起水晶。</li>
+            <li>水晶体积较大，建议使用余料建造制作简单水上漂浮物运载水晶出洞。</li>
+            <li>将水晶带至神庙底座放置激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 11: 卖了这块石头 ══ -->
+    <div class="sq-card fade-in" data-type="special">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/乔奇伊喜嘎神庙.png" alt="乔奇伊喜嘎神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">11</div>
+          <span class="sq-quest-name">卖了这块石头</span>
+          <span class="sq-region-tag" style="background:rgba(251,146,60,0.1);color:#fb923c;border:1px solid rgba(251,146,60,0.3)">阿卡莱</span>
+        </div>
+        <div class="sq-shrine-name">乔奇伊喜嘎神庙</div>
+        <div class="sq-coords">📍 3809, 1219, 0090</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>阿卡莱瀑布（Akkala Falls）</strong>附近找到 NPC 商人，与其对话了解他需要一块特定矿石来换取神庙开启线索。</li>
+            <li>前往附近岩脉采集<strong>亮石（Luminous Stone）</strong>，带回交给商人。</li>
+            <li>商人收到矿石后满意，指引你前往附近的神庙底座位置，神庙随即激活显现。</li>
+            <li>进入神庙领取<strong>祝福之光</strong>（祝福神殿）。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 12: 染作漆黑 ══ -->
+    <div class="sq-card fade-in" data-type="special">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/克拉卡塔神庙.png" alt="克拉卡塔神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">12</div>
+          <span class="sq-quest-name">染作漆黑</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">拉纳鲁</span>
+        </div>
+        <div class="sq-shrine-name">克拉卡塔神庙</div>
+        <div class="sq-coords">📍 2362, -0511, 0156</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>夸塔架台（Quatta's Shelf）</strong>附近找到残破神庙底座，附近有一汪黑色染料液体池。</li>
+            <li>与附近 NPC 对话，得知需要将一颗<strong>白色球形石块</strong>染黑后放入神庙底座锁孔。</li>
+            <li>找到区域内的白色圆球，用究极手将其推入黑色染料池彻底染色，再将染黑后的石球推至神庙前。</li>
+            <li>将黑色球放入底座凹槽激活神庙，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 13: 高天之泉与光环的传说 ══ -->
+    <div class="sq-card fade-in" data-type="special">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/扎克斯克神庙.png" alt="扎克斯克神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">13</div>
+          <span class="sq-quest-name">高天之泉与光环的传说</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">拉纳鲁</span>
+        </div>
+        <div class="sq-shrine-name">扎克斯克神庙</div>
+        <div class="sq-coords">📍 3527, -1482, 0168</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>前往<strong>奈卓拉雪原（Naydra Snowfield）</strong>高处的泉眼旁，找到残破神庙底座，接取挑战。</li>
+            <li>任务要求驾驶滑翔伞<strong>依次穿越空中悬浮的所有发光圆环</strong>——利用泉眼附近的上升气流飞升后开始穿越。</li>
+            <li>按圆环指引的顺序逐一飞过，全部通过后神庙底座激活显现。</li>
+            <li>进入神庙领取<strong>祝福之光</strong>（此为上升飞行类特殊挑战神庙）。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 14: 拉聂尔参道的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="surface">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/欧欧基恩神庙.png" alt="欧欧基恩神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">14</div>
+          <span class="sq-quest-name">拉聂尔参道的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">拉纳鲁</span>
+        </div>
+        <div class="sq-shrine-name">欧欧基恩神庙</div>
+        <div class="sq-coords">📍 2918, 0509, 0155</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>拉利斯水脉（Ralis Channel）</strong>旁的拉聂尔参道附近找到残破神庙底座，接取挑战。</li>
+            <li>光柱指向东侧河道中央的小岛——小岛被水流和巨石阻挡，无法直接涉水。</li>
+            <li>使用<strong>余料建造</strong>在岸边拼合木板或金属板搭出简易桥梁跨越水脉，抵达岛上取得水晶。</li>
+            <li>将水晶原路运回，放入神庙底座激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 15: 沉睡于拉尔斯水脉的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="surface">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/乔尼乌神庙.png" alt="乔尼乌神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">15</div>
+          <span class="sq-quest-name">沉睡于拉尔斯水脉的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">拉纳鲁</span>
+        </div>
+        <div class="sq-shrine-name">乔尼乌神庙</div>
+        <div class="sq-coords">📍 2755, -1090, 0100</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>拉纳鲁高地（Lanayru Heights）</strong>附近的水脉边找到残破神庙底座，接取挑战。</li>
+            <li>光柱指向附近的水域——水晶沉入湖底较深处，无法直接用究极手抓到。</li>
+            <li>潜入水中接近水晶后用<strong>究极手</strong>抓起，或使用余料建造制作带钩爪的打捞构造物从岸上将水晶拖出水面。</li>
+            <li>将水晶搬运至神庙底座放置激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 16: 由水而生的钥匙 ══ -->
+    <div class="sq-card fade-in" data-type="special">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/乔奇希乌神庙.png" alt="乔奇希乌神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">16</div>
+          <span class="sq-quest-name">由水而生的钥匙</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">内克鲁达</span>
+        </div>
+        <div class="sq-shrine-name">乔奇希乌神庙</div>
+        <div class="sq-coords">📍 0931, -1902, 0030</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>斯夸布尔河（Squabble River）</strong>附近找到残破神庙底座，底座上有一个特殊形状的凹槽锁孔。</li>
+            <li>任务提示"用水生成钥匙"——使用<strong>余料建造</strong>将水边的木料、树枝等拼合成与锁孔匹配的形状构造物。</li>
+            <li>将拼好的钥匙形木构放入神庙底座锁孔，榫合后神庙自动开启。</li>
+            <li>进入领取<strong>祝福之光</strong>（此为建造解谜类特殊挑战）。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 17: 沉睡于拉纳湖的洞窟中的水晶 ══ -->
+    <div class="sq-card fade-in" data-type="cave">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/拖奇悠乌神庙.png" alt="拖奇悠乌神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">17</div>
+          <span class="sq-quest-name">沉睡于拉纳湖的洞窟中的水晶</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">内克鲁达</span>
+        </div>
+        <div class="sq-shrine-name">拖奇悠乌神庙</div>
+        <div class="sq-coords">📍 2304, -2377, -0028</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>奥克尔肚脐（Oakle's Navel）</strong>洞窟附近找到残破神庙底座，光柱指向洞窟深处。</li>
+            <li>进入黑暗洞窟，水晶被放置在深处的石台上，有<strong>蝙蝠妖（Keese）</strong>群守卫。</li>
+            <li>消灭蝙蝠妖后，用<strong>究极手</strong>抓取高台上的水晶拉下来，或攀爬高台后取得。</li>
+            <li>抱着水晶出洞，放入神庙底座激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 18: 带来巨大的马匹 ══ -->
+    <div class="sq-card fade-in" data-type="special">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/伊修奇恩神庙.png" alt="伊修奇恩神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">18</div>
+          <span class="sq-quest-name">带来巨大的马匹</span>
+          <span class="sq-region-tag" style="background:rgba(74,222,128,0.1);color:var(--green);border:1px solid rgba(74,222,128,0.3)">法隆</span>
+        </div>
+        <div class="sq-shrine-name">伊修奇恩神庙</div>
+        <div class="sq-coords">📍 -0565, -3524, 0129</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>前往<strong>奥谢拉平原（Oseira Plains）</strong>南部，找到一名 NPC 马术师，与其对话接取任务。</li>
+            <li>任务要求驯服并骑乘<strong>体型特大的白色巨马</strong>来到神庙前——此类大马在附近平原马群中游荡。</li>
+            <li>使用<strong>潜行</strong>靠近大马后按 A 骑上，快速按 L 安抚至驯服，骑马前往神庙底座前触发感应。</li>
+            <li>神庙随即显现，进入领取<strong>祝福之光</strong>（祝福神殿）。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 19: 海利亚湖的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="cave">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/艾恩欧马神庙.png" alt="艾恩欧马神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">19</div>
+          <span class="sq-quest-name">海利亚湖的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(201,162,39,0.1);color:var(--gold);border:1px solid rgba(201,162,39,0.3)">中央·法隆</span>
+        </div>
+        <div class="sq-shrine-name">艾恩欧马神庙</div>
+        <div class="sq-coords">📍 0104, -2517, -0087</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>海利亚湖（Lake Hylia）</strong>西南侧岸边找到残破神庙底座，光柱指向湖底的漩涡洞窟入口。</li>
+            <li>潜入湖水进入<strong>海利亚湖漩涡洞窟</strong>，水晶藏在洞穴最深处。</li>
+            <li>注意洞内有<strong>章鱼怪（Like Like）</strong>会吞噬装备，建议先击败后再取水晶，避免损失武器。</li>
+            <li>取得水晶后游出洞窟，搬运至神庙底座放置激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 20: 投枪的传说 ══ -->
+    <div class="sq-card fade-in" data-type="special">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/乌托吉希神庙.png" alt="乌托吉希神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">20</div>
+          <span class="sq-quest-name">投枪的传说</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">内克鲁达</span>
+        </div>
+        <div class="sq-shrine-name">乌托吉希神庙</div>
+        <div class="sq-coords">📍 1217, -2542, 0096</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>托比奥空洞（Tobio's Hollow）</strong>附近找到 NPC，与其对话得知传说中将长枪投掷插入神庙底座可将其开启。</li>
+            <li>神庙底座中央有一个圆形插槽——手持<strong>长柄武器（如长枪、棍棒）</strong>，站在远处对准底座投掷。</li>
+            <li>武器插入底座插槽后神庙随即显现激活。</li>
+            <li>进入神庙领取<strong>祝福之光</strong>（祝福神殿）。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 21: 格鲁德峡谷的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="surface">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/拉卡克达吉托神庙.png" alt="拉卡克达吉托神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">21</div>
+          <span class="sq-quest-name">格鲁德峡谷的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(255,179,71,0.1);color:#ffb347;border:1px solid rgba(255,179,71,0.3)">格鲁德</span>
+        </div>
+        <div class="sq-shrine-name">拉卡克达吉托神庙</div>
+        <div class="sq-coords">📍 -2037, -1851, 0064</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>在<strong>库科特高原（Koukot Plateau）</strong>峡谷地带找到残破神庙底座，光柱指向峡谷深处。</li>
+            <li>水晶位于峡谷底部被厚厚沙石掩埋——使用<strong>究极手</strong>拨开沙石或使用爆炸物炸出水晶。</li>
+            <li>使用余料建造组合成带轮沙漠车辆，将水晶从峡谷运出，注意途中<strong>强风</strong>会吹偏方向。</li>
+            <li>将水晶放入神庙底座激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 22: 北海拉鲁天空诸岛的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="sky">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/马亚米伊神庙.png" alt="马亚米伊神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">22</div>
+          <span class="sq-quest-name">北海拉鲁天空诸岛的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(147,197,253,0.1);color:#93c5fd;border:1px solid rgba(147,197,253,0.3)">天空</span>
+        </div>
+        <div class="sq-shrine-name">马亚米伊神庙</div>
+        <div class="sq-coords">📍 0340, 2815, 1821</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>使用<strong>视野塔升空</strong>或借助飞龙，抵达北海拉鲁上空海拔约 1821 的<strong>北海拉鲁天空群岛</strong>。</li>
+            <li>在岛链中找到残破神庙底座，水晶位于相邻悬浮岛的高台上。</li>
+            <li>使用<strong>余料建造+飞行构造物</strong>（螺旋桨+平台）或开滑翔伞跨越岛屿间隙抵达水晶所在岛。</li>
+            <li>取得水晶后飞回神庙底座放置激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 23: 南海拉鲁天空诸岛的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="sky">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/吉诺多卡欧神庙.png" alt="吉诺多卡欧神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">23</div>
+          <span class="sq-quest-name">南海拉鲁天空诸岛的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(147,197,253,0.1);color:#93c5fd;border:1px solid rgba(147,197,253,0.3)">天空</span>
+        </div>
+        <div class="sq-shrine-name">吉诺多卡欧神庙</div>
+        <div class="sq-coords">📍 -1257, -1488, 1008</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>从<strong>海拉鲁平原视野塔</strong>向南升空，滑翔至海拔约 1008 的<strong>南海拉鲁天空群岛</strong>。</li>
+            <li>在岛群中找到残破神庙底座，水晶位于一系列空中跳台路线的终点处。</li>
+            <li>按顺序经过所有<strong>空中圆台</strong>，每踩一个圆台会短暂升空助力，最终抵达水晶位置取得。</li>
+            <li>携水晶飞回神庙底座放置激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 24: 塔邦挞天空诸岛的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="sky">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/嘎诺萨神庙.png" alt="嘎诺萨神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">24</div>
+          <span class="sq-quest-name">塔邦挞天空诸岛的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(147,197,253,0.1);color:#93c5fd;border:1px solid rgba(147,197,253,0.3)">天空</span>
+        </div>
+        <div class="sq-shrine-name">嘎诺萨神庙</div>
+        <div class="sq-coords">📍 -3370, 0466, 1695</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>从<strong>利特荒野视野塔</strong>升空或乘气球抵达海拔约 1695 的<strong>塔邦挞天空群岛</strong>。</li>
+            <li>在岛群西侧找到残破神庙底座，水晶飘浮在强风区域中央——强风会不断将人和物体吹偏。</li>
+            <li>使用<strong>余料建造</strong>制作带两侧螺旋桨的稳定飞行台来对抗强风，将水晶抓起运回神庙。</li>
+            <li>将水晶放入底座激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 25: 东海布拉天空诸岛的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="sky">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/塔尼诺乌达神庙.png" alt="塔尼诺乌达神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">25</div>
+          <span class="sq-quest-name">东海布拉天空诸岛的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(147,197,253,0.1);color:#93c5fd;border:1px solid rgba(147,197,253,0.3)">海布拉·天空</span>
+        </div>
+        <div class="sq-shrine-name">塔尼诺乌达神庙</div>
+        <div class="sq-coords">📍 -1801, 3406, 0949</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>从<strong>皮基达石林视野塔</strong>升空向东飞行，抵达海拔约 949 的<strong>东海布拉天空群岛</strong>。</li>
+            <li>在冰雪覆盖的浮空岛群中找到残破神庙底座，水晶被冰封在浮空岩石上。</li>
+            <li>使用<strong>火焰武器或火果融化</strong>冰封水晶，再利用余料建造的桥梁或飞行构造物运送水晶至神庙。</li>
+            <li>将水晶放入底座激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 26: 采石之岛的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="sky">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/基卡克恩神庙.png" alt="基卡克恩神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">26</div>
+          <span class="sq-quest-name">采石之岛的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(251,146,60,0.1);color:#fb923c;border:1px solid rgba(251,146,60,0.3)">阿卡莱·天空</span>
+        </div>
+        <div class="sq-shrine-name">基卡克恩神庙</div>
+        <div class="sq-coords">📍 4506, 2165, 1155</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>从阿卡莱地区视野塔升空向东北飞行，抵达海拔约 1155 的<strong>天空矿山岛（Sky Mine）</strong>。</li>
+            <li>在矿山岛上找到残破神庙底座，水晶被嵌入一块<strong>巨型矿石</strong>中央。</li>
+            <li>使用<strong>武器攻击或爆炸果</strong>击碎矿石，释放出内部的水晶。</li>
+            <li>取出水晶放入神庙底座激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 27: 南阿卡莱天空诸岛的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="sky">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/纳塔卡卡神庙.png" alt="纳塔卡卡神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">27</div>
+          <span class="sq-quest-name">南阿卡莱天空诸岛的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(251,146,60,0.1);color:#fb923c;border:1px solid rgba(251,146,60,0.3)">阿卡莱·天空</span>
+        </div>
+        <div class="sq-shrine-name">纳塔卡卡神庙</div>
+        <div class="sq-coords">📍 3671, 1484, 1158</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>从阿卡莱高地视野塔升空，向南偏西飞行抵达海拔约 1158 的<strong>索卡拉天空群岛</strong>。</li>
+            <li>在群岛中找到残破神庙底座，水晶位于一处需要解锁<strong>齿轮机关</strong>的封闭平台内。</li>
+            <li>观察齿轮结构，使用<strong>究极手</strong>旋转连杆打开封闭通道，进入取得水晶。</li>
+            <li>携水晶飞回神庙底座放置激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 28: 南拉聂尔天空诸岛的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="sky">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/马亚纳希神庙.png" alt="马亚纳希神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">28</div>
+          <span class="sq-quest-name">南拉聂尔天空诸岛的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">内克鲁达·天空</span>
+        </div>
+        <div class="sq-shrine-name">马亚纳希神庙</div>
+        <div class="sq-coords">📍 2856, -2857, 1212</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>从<strong>内克鲁达东部视野塔</strong>升空，飞向海拔约 1212 的<strong>内克鲁达天空群岛</strong>。</li>
+            <li>水晶被置于需要连续<strong>跳岛飞行</strong>路线的终点——岛与岛之间距离较远，需精确控制滑翔轨迹。</li>
+            <li>利用<strong>余料建造气球构造物</strong>在低空辅助升高后滑翔，或使用龙鳞升空穿越岛间缝隙到达终点。</li>
+            <li>取得水晶后搭建空中运载平台带回神庙底座激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 29: 北哈特尔天空诸岛的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="sky">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/乔希乌神庙.png" alt="乔希乌神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">29</div>
+          <span class="sq-quest-name">北哈特尔天空诸岛的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(201,162,39,0.1);color:var(--gold);border:1px solid rgba(201,162,39,0.3)">中央·天空</span>
+        </div>
+        <div class="sq-shrine-name">乔希乌神庙</div>
+        <div class="sq-coords">📍 1759, -1209, 0924</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>从<strong>法隆/内克鲁达边境视野塔</strong>升空，向北飞行至海拔约 924 的<strong>北内克鲁达天空群岛</strong>。</li>
+            <li>在岛群北侧找到残破神庙底座，水晶分散在几块不同的悬浮石台上。</li>
+            <li>依次飞到各石台，用<strong>究极手</strong>收集每块<strong>水晶碎片</strong>，合并拼成完整水晶。</li>
+            <li>将完整水晶放入神庙底座激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 30: 西哈特尔天空诸岛的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="sky">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/乌可欧吉希神庙.png" alt="乌可欧吉希神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">30</div>
+          <span class="sq-quest-name">西哈特尔天空诸岛的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(201,162,39,0.1);color:var(--gold);border:1px solid rgba(201,162,39,0.3)">中央·天空</span>
+        </div>
+        <div class="sq-shrine-name">乌可欧吉希神庙</div>
+        <div class="sq-coords">📍 1464, -2165, 0585</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>从<strong>海利亚湖东侧视野塔</strong>升空，向西北飞行至海拔约 585 的<strong>西内克鲁达低海拔天空岛群</strong>。</li>
+            <li>在岛群中找到残破神庙底座，水晶锁在需要依次激活<strong>压力踩踏板</strong>解锁的封闭区域。</li>
+            <li>按正确顺序踩踏各踩踏板（留意颜色或数字提示），解锁通道后进入取得水晶。</li>
+            <li>将水晶放入神庙底座激活，进入领取<strong>祝福之光</strong>。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 31: 哈特尔天空诸岛的神庙与水晶 ══ -->
+    <div class="sq-card fade-in" data-type="sky">
+      <button class="sq-check-btn" onclick="toggleSQ(this)" title="标记完成">✓</button>
+      <img class="sq-card-img" src="images/shrines/克马马伊诺神庙.png" alt="克马马伊诺神庙" loading="lazy">
+      <div class="sq-card-body">
+        <div class="sq-card-top">
+          <div class="sq-num">31</div>
+          <span class="sq-quest-name">哈特尔天空诸岛的神庙与水晶</span>
+          <span class="sq-region-tag" style="background:rgba(56,189,248,0.1);color:var(--blue);border:1px solid rgba(56,189,248,0.3)">拉纳鲁·天空</span>
+        </div>
+        <div class="sq-shrine-name">克马马伊诺神庙</div>
+        <div class="sq-coords">📍 4613, -0947, 1790</div>
+        <div class="sq-walkthrough">
+          <ol>
+            <li>这是海拔最高的天空神庙之一，位于<strong>拉纳鲁东部上空孤立高空岛（海拔约 1790）</strong>。</li>
+            <li>从拉纳鲁高地视野塔升空后借助<strong>上升气流或飞龙坐骑</strong>抵达此孤岛，普通滑翔伞无法直接到达。</li>
+            <li>岛上水晶被封在冰雪机关中——使用<strong>火焰武器融化冰封</strong>，再操控冰块方向引导水晶滚至底座区域。</li>
+            <li>水晶就位后神庙自动激活，进入直接领取<strong>祝福之光</strong>（祝福神殿）。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end sq-grid -->
+
+  <div class="divider"></div>
+
+  <div class="highlight-box">
+    <strong>💡 神庙挑战通用技巧：</strong>
+    大多数水晶搬运任务中，善用<strong>究极手抱着水晶再使用通天术</strong>是穿越地形障碍的最快捷方式。天空群岛水晶任务建议优先解锁<strong>飞龙坐骑路线</strong>以便快速抵达高海拔岛屿。洞窟水晶通常有 Boss 守卫，备足攻击武器和料理药剂再进入。使用<strong>余料建造</strong>的车辆或飞行构造物可以大幅简化水晶运输难度。
+  </div>
+
+  <div class="tip-box">
+    <strong>🗺 坐标使用方法：</strong>游戏内按 <kbd style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);padding:1px 6px;border-radius:4px;font-family:monospace;">-</kbd> 打开地图，将光标悬停在任意地点，屏幕左下角即显示实时坐标 (X, Y)。按攻略中的坐标对照地图即可精准定位神庙位置。
+  </div>
+
+</div><!-- end page-body -->
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  // ── 神庙挑战专用逻辑 ──
+  const SQ_KEY_PREFIX = window.location.pathname + '_shrines_check_';
+  const SQ_TOTAL = 31;
+
+  function toggleSQ(btn) {
+    btn.classList.toggle('done');
+    const card = btn.closest('.sq-card');
+    if (card) card.classList.toggle('done-card', btn.classList.contains('done'));
+    const idx = [...document.querySelectorAll('.sq-check-btn')].indexOf(btn);
+    localStorage.setItem(SQ_KEY_PREFIX + idx, btn.classList.contains('done') ? 'done' : '');
+    updateSQProgress();
+  }
+
+  function updateSQProgress() {
+    const done = document.querySelectorAll('.sq-check-btn.done').length;
+    const fill = document.getElementById('sqProgressFill');
+    const cnt  = document.getElementById('sqDoneCount');
+    if (fill) fill.style.width = (done / SQ_TOTAL * 100) + '%';
+    if (cnt)  cnt.textContent = done;
+  }
+
+  function filterSQ(type, btn) {
+    document.querySelectorAll('#sqFilters .filter-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.sq-card').forEach(card => {
+      card.style.display = (type === 'all' || card.dataset.type === type) ? '' : 'none';
+    });
+  }
+
+  // ── 初始化：恢复本地存储状态 ──
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.sq-check-btn').forEach(function(btn, i) {
+      if (localStorage.getItem(SQ_KEY_PREFIX + i) === 'done') {
+        btn.classList.add('done');
+        var card = btn.closest('.sq-card');
+        if (card) card.classList.add('done-card');
+      }
+    });
+    updateSQProgress();
+  });
+</script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,48 @@
+# Netlify 部署配置
+# 上传整个文件夹到 Netlify 即可一键部署
+
+[build]
+  publish = "."
+
+# ── 安全响应头（防点击劫持、XSS、内容嗅探）──
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# ── 隐藏工具和数据目录（不允许直接访问）──
+[[headers]]
+  for = "/_tools/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/_data/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+# ── 静态资源长期缓存（提升加载速度）──
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# ── 404 页面 ──
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

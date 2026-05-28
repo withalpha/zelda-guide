@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- ═══ 安全与版权 meta ═══ -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="withalpha@proton.me">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="关于本攻略站，非官方个人制作的塞尔达传说王国之泪游戏攻略指南。">
+  <meta name="keywords" content="王国之泪,攻略,关于,联系">
+  <meta property="og:title" content="关于我们 · 王国之泪攻略">
+  <meta property="og:description" content="关于本攻略站，非官方个人制作的塞尔达传说王国之泪游戏攻略指南。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="关于我们 · 王国之泪攻略">
+  <meta name="twitter:description" content="关于本攻略站，非官方个人制作的塞尔达传说王国之泪游戏攻略指南。">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我们 · 王国之泪攻略</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ══════════════════════════════════════
+       关于我们页面专属样式
+    ══════════════════════════════════════ */
+
+    /* ── 个人卡片 ── */
+    .about-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+      position: relative;
+      overflow: hidden;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    /* 顶部金色装饰线 */
+    .about-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg,
+        transparent, var(--gold-dim), var(--gold), var(--gold-dim), transparent);
+    }
+    /* 背景光晕 */
+    .about-card::after {
+      content: '';
+      position: absolute; bottom: -40px; right: -40px;
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, rgba(201,162,39,0.06) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    /* ── 头像区 ── */
+    .about-avatar {
+      width: 96px; height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(201,162,39,0.15), rgba(50,195,140,0.10));
+      border: 2px solid var(--border-gold);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.8rem;
+      box-shadow: 0 0 28px rgba(201,162,39,0.18);
+      flex-shrink: 0;
+    }
+
+    /* ── 名称 ── */
+    .about-name {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.5rem; font-weight: 800;
+      color: var(--text-primary);
+    }
+    .about-role {
+      font-size: 0.75rem;
+      color: var(--gold);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-top: -12px;
+    }
+
+    /* ── 简介文字 ── */
+    .about-bio {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.9;
+      max-width: 420px;
+    }
+
+    /* ── 分割线 ── */
+    .about-sep {
+      width: 100%; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-gold), transparent);
+    }
+
+    /* ── 联系方式块 ── */
+    .about-contact-label {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    .about-email-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(201,162,39,0.05);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      padding: 12px 20px;
+      width: 100%;
+      justify-content: center;
+      transition: var(--transition);
+    }
+    .about-email-wrap:hover {
+      border-color: rgba(201,162,39,0.5);
+      background: rgba(201,162,39,0.09);
+      box-shadow: var(--glow-gold);
+    }
+    .about-email-icon { font-size: 1.1rem; }
+    .about-email-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+    }
+    .about-email-link:hover { color: #fff; }
+
+    /* ── 站点信息区 ── */
+    .about-site-section {
+      max-width: 860px;
+      margin: 52px auto 0;
+    }
+    .about-site-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .about-site-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: var(--transition);
+    }
+    .about-site-item:hover {
+      border-color: rgba(201,162,39,0.45);
+      transform: translateY(-3px);
+      box-shadow: var(--glow-gold);
+    }
+    .about-site-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+    .about-site-title {
+      font-size: 0.88rem; font-weight: 700;
+      color: var(--text-primary); margin-bottom: 4px;
+    }
+    .about-site-desc {
+      font-size: 0.76rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ── 免责声明 ── */
+    .about-disclaimer {
+      max-width: 680px;
+      margin: 48px auto 0;
+      background: rgba(201,162,39,0.04);
+      border: 1px solid var(--border-gold);
+      border-left: 3px solid var(--gold-dim);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.85;
+      text-align: center;
+    }
+    .about-disclaimer strong { color: var(--gold); }
+
+    @media (max-width: 600px) {
+      .about-card { padding: 28px 20px; }
+      .about-site-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a><ul class="nav-dropdown-menu"><li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li><li><a href="sage-will.html" class="disabled">贤者的遗志</a></li></ul></li>
+      <li><a href="about.html" class="active">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ══ PAGE HERO ══ -->
+<div class="page-hero">
+  <span class="page-hero-eyebrow">ABOUT US</span>
+  <h1 class="page-hero-title">👤 关于我们</h1>
+</div>
+
+<div class="page-body">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span><span class="cur">关于我们</span>
+  </nav>
+
+  <!-- ── 个人卡片 ── -->
+  <div class="about-card">
+    <div class="about-avatar">🗡️</div>
+
+    <div>
+      <div class="about-name">我想对大家说</div>
+    </div>
+
+    <div class="about-bio">
+      本游戏攻略由本人独立制作，图片素材均来自于游戏截图，未经本人许可，请勿转载！更多内容，尽请期待~
+    </div>
+
+    <div class="about-sep"></div>
+
+    <div class="about-contact-label">📬 联系方式</div>
+    <div class="about-email-wrap">
+      <span class="about-email-icon">✉️</span>
+      <a class="about-email-link" href="mailto:withalpha@proton.me">withalpha@proton.me</a>
+    </div>
+
+    <p style="font-size:0.72rem; color:var(--text-muted); margin-top:-6px;">
+      有任何攻略错误、建议或交流，欢迎发邮件联系
+    </p>
+  </div>
+
+
+
+  <!-- ── 免责声明 ── -->
+  <div class="about-disclaimer">
+    <strong>免责声明</strong><br>
+    本网站为非官方个人攻略指南，与任天堂株式会社无任何关联。<br>
+    《塞尔达传说：王国之泪》及相关游戏内容的版权归
+    <strong>Nintendo Co., Ltd.</strong> 所有。<br>
+    © 2023 Nintendo. All Rights Reserved.
+  </div>
+
+  <!-- ── 隐私政策入口 ── -->
+  <div style="text-align:center; margin-top:28px;">
+    <a href="privacy.html"
+       style="display:inline-flex;align-items:center;gap:8px;
+              padding:10px 24px;border-radius:var(--radius);
+              border:1px solid var(--border-gold);
+              background:rgba(201,162,39,0.05);
+              color:var(--gold-light);font-size:0.82rem;
+              text-decoration:none;transition:var(--transition);"
+       onmouseover="this.style.background='rgba(201,162,39,0.12)';this.style.borderColor='rgba(201,162,39,0.6)'"
+       onmouseout="this.style.background='rgba(201,162,39,0.05)';this.style.borderColor='var(--border-gold)'">
+      🔒 查看隐私政策
+    </a>
+    <p style="font-size:0.72rem;color:var(--text-muted);margin-top:10px;">
+      了解本站如何处理您的数据及版权声明
+    </p>
+  </div>
+
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">
+      本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。<br>
+      《塞尔达传说 王国之泪》版权归任天堂株式会社所有。<br>
+      © 2023 Nintendo. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+

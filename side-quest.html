@@ -1,0 +1,2436 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- ═══ 安全与版权 meta ═══ -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="withalpha@proton.me">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="王国之泪60个情节挑战（Side Adventure）全收录，含触发条件、奖励道具与完成建议。">
+  <meta name="keywords" content="王国之泪,情节挑战,Side Adventure,支线,攻略">
+  <meta property="og:title" content="情节挑战攻略 · 王国之泪">
+  <meta property="og:description" content="王国之泪60个情节挑战（Side Adventure）全收录，含触发条件、奖励道具与完成建议。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="情节挑战攻略 · 王国之泪">
+  <meta name="twitter:description" content="王国之泪60个情节挑战（Side Adventure）全收录，含触发条件、奖励道具与完成建议。">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>情节挑战 · 王国之泪攻略</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html" class="active">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a><ul class="nav-dropdown-menu"><li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li><li><a href="sage-will.html" class="disabled">贤者的遗志</a></li></ul></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <span class="page-hero-eyebrow">SIDE ADVENTURES</span>
+  <h1 class="page-hero-title">💬 情节挑战</h1>
+  <p class="page-hero-subtitle">全 60 个情节挑战完整攻略 · 点击展开图文步骤</p>
+</div>
+
+<div class="page-body">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span><span class="cur">情节挑战</span>
+  </nav>
+
+  <!-- 进度 -->
+  <div class="progress-section">
+    <div class="progress-info">
+      <p class="progress-label">情节挑战完成进度</p>
+      <div class="progress-bar"><div class="progress-fill" id="sqProgressFill" style="width:0%"></div></div>
+    </div>
+    <div class="progress-stats">
+      <div class="progress-stat"><span class="progress-stat-val" id="sqDoneCount">0</span><span class="progress-stat-lbl">已完成</span></div>
+      <div class="progress-stat"><span class="progress-stat-val">60</span><span class="progress-stat-lbl">全部挑战</span></div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <strong>什么是情节挑战？</strong>情节挑战（Side Adventure）是王国之泪中规模较大的支线任务，通常有多个子任务且拥有更丰厚奖励，与普通支线任务（Side Quest）区分。共 60 个，全部完成可解锁相关收集成就。
+  </div>
+
+  <div class="filter-tabs">
+    <button class="filter-tab active" onclick="filterSQ('all',this)">全部 (60)</button>
+    <button class="filter-tab" onclick="filterSQ('hateno',this)">哈特诺村</button>
+    <button class="filter-tab" onclick="filterSQ('lurelin',this)">卢雷林村</button>
+    <button class="filter-tab" onclick="filterSQ('gazette',this)">白诘报社</button>
+    <button class="filter-tab" onclick="filterSQ('music',this)">音乐线</button>
+    <button class="filter-tab" onclick="filterSQ('peace',this)">和平守护</button>
+    <button class="filter-tab" onclick="filterSQ('collect',this)">收集线</button>
+    <button class="filter-tab" onclick="filterSQ('world',this)">世界探索</button>
+    <button class="filter-tab" onclick="filterSQ('yiga',this)">伊卡族线</button>
+  </div>
+
+  <!-- ────────── 搜索 ────────── -->
+  <div class="search-wrap" style="margin-bottom:20px">
+    <input class="search-input" id="sqSearch" type="text" placeholder="搜索情节挑战名称..." oninput="searchSQ(this.value)">
+    <span class="search-icon">🔍</span>
+  </div>
+
+  <div class="quest-list" id="sqList">
+
+  <!-- ═══════════════════════════════════
+       哈特诺村线 · Q01–Q12
+  ═══════════════════════════════════ -->
+  <div class="section-label" style="margin-top:8px">🏡 哈特诺村线</div>
+
+  <!-- Q01 -->
+  <div class="quest-item expandable" data-cat="hateno">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">01</div>
+      <div class="quest-body">
+        <div class="quest-title">哈特诺村古代技术研究室</div>
+        <div class="quest-desc">在监视堡垒找到普鲁亚的老师罗比，将他送往哈特诺村古代技术研究室，解锁普鲁亚手机高级功能。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：监视堡垒</span>
+          <span class="rbadge rbadge-central">中央→东部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="监视堡垒罗比" loading="lazy">
+          <p class="quest-screenshot-caption">监视堡垒内的罗比，等待前往哈特诺村</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>到达<strong>监视堡垒</strong>后，在研究室内与<strong>罗比</strong>对话，他提到想回哈特诺村。</li>
+              <li>前往<strong>哈特诺村古代技术研究室</strong>（东部，坐标约 3422, -2198, 0238）。</li>
+              <li>与研究室内的普鲁亚对话，触发罗比正式返回研究室的剧情。</li>
+              <li>回到监视堡垒再次与罗比交谈，任务完成，解锁后续 4 个功能挑战。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 提示：</strong>此任务是解锁「旅行奖章」「英雄足迹」「传感器+」「图鉴」等功能的前提，建议游戏初期就先触发。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q02 -->
+  <div class="quest-item expandable" data-cat="hateno">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">02</div>
+      <div class="quest-body">
+        <div class="quest-title">填充图鉴</div>
+        <div class="quest-desc">帮助罗比用普鲁亚手机拍摄未收录的生物/植物/矿物/武器/怪物照片，补全海拉鲁图鉴。</div>
+        <div class="quest-meta">
+          <span class="tag tag-green">触发点：哈特诺古研究室</span>
+          <span class="rbadge rbadge-necluda">东部地区</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="图鉴拍摄" loading="lazy">
+          <p class="quest-screenshot-caption">普鲁亚手机图鉴功能——拍摄海拉鲁全部生物</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>完成「哈特诺村古代技术研究室」后，在研究室与<strong>罗比</strong>交谈触发此任务。</li>
+              <li>目标：用手机相机功能对准<strong>未收录的生物</strong>拍照，上传到图鉴数据库。</li>
+              <li>图鉴分 5 类：<strong>生物、植物、材料、武器、怪物</strong>，每类各需拍摄所有条目。</li>
+              <li>拍摄完成后可使用「<strong>传感器</strong>」功能，设定任意图鉴条目让手机震动提示附近存在该物品。</li>
+              <li>全图鉴完成后与罗比报告，获得特殊奖励道具。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 提示：</strong>怪物需在活着时拍摄，死亡后无法入册。地底生物需下地底拍摄。莱乃尔等稀有怪建议先完成，普通怪随时可拍。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q03 -->
+  <div class="quest-item expandable" data-cat="hateno">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">03</div>
+      <div class="quest-body">
+        <div class="quest-title">登场！旅行奖章！</div>
+        <div class="quest-desc">从罗比处获得旅行奖章功能，可在地图上设置自定义传送点，方便快速返回特定位置。</div>
+        <div class="quest-meta">
+          <span class="tag tag-blue">奖励：旅行奖章功能</span>
+          <span class="rbadge rbadge-necluda">哈特诺</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="旅行奖章" loading="lazy">
+          <p class="quest-screenshot-caption">旅行奖章可设置 1 个自定义传送点</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>哈特诺古代技术研究室</strong>与罗比对话，触发任务。</li>
+              <li>罗比交给链克一枚<strong>旅行奖章</strong>，教学如何放置自定义传送点。</li>
+              <li>打开地图，选择任意位置按「放置旅行奖章」，即可将该坐标设为传送点。</li>
+              <li>只能同时存在 <strong>1 个</strong>旅行奖章传送点，覆盖时旧的会消失。</li>
+              <li>完成放置教学后任务结束，获得额外奖励道具。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 建议：</strong>旅行奖章最适合放在<strong>没有神庙的偏远地区</strong>或正在反复跑的任务地点，节省大量跑图时间。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q04 -->
+  <div class="quest-item expandable" data-cat="hateno">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">04</div>
+      <div class="quest-body">
+        <div class="quest-title">登场！英雄足迹模式！</div>
+        <div class="quest-desc">解锁英雄足迹功能，可在地图上显示链克过去 24 小时的移动轨迹，辅助确认未探索区域。</div>
+        <div class="quest-meta">
+          <span class="tag tag-blue">奖励：英雄足迹模式</span>
+          <span class="rbadge rbadge-necluda">哈特诺</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="英雄足迹" loading="lazy">
+          <p class="quest-screenshot-caption">地图上以黄色轨迹显示过去行动路径</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在哈特诺古代技术研究室与<strong>罗比</strong>对话，他提到新功能「英雄足迹」。</li>
+              <li>罗比指导链克如何在地图界面切换到<strong>足迹模式</strong>（按 L/R 键切换地图图层）。</li>
+              <li>开启后地图显示近 24 小时内链克走过的所有路线（以线条标记）。</li>
+              <li>完成教学与罗比确认后任务结束。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 用途：</strong>英雄足迹最适合<strong>全收集玩家</strong>确认「哪片区域还没去过」，结合传感器功能可高效完成克洛格种子等收集。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q05 -->
+  <div class="quest-item expandable" data-cat="hateno">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">05</div>
+      <div class="quest-body">
+        <div class="quest-title">登场！传感器+！</div>
+        <div class="quest-desc">解锁传感器+功能，可将图鉴中任意条目设定为搜索目标，靠近时手机振动提示。</div>
+        <div class="quest-meta">
+          <span class="tag tag-blue">奖励：传感器+功能</span>
+          <span class="rbadge rbadge-necluda">哈特诺</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="传感器+" loading="lazy">
+          <p class="quest-screenshot-caption">传感器+可追踪图鉴中任意已记录的目标</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在哈特诺古代技术研究室与<strong>罗比</strong>对话，触发传感器+教学任务。</li>
+              <li>罗比解释新版传感器可追踪<strong>任何图鉴已有照片的目标</strong>（旧版只能追踪神庙）。</li>
+              <li>通过手机菜单→普鲁亚手机→传感器，选择图鉴中已有照片的条目设定追踪。</li>
+              <li>靠近目标时手机振动频率变快，表示距离更近。</li>
+              <li>完成一次实际追踪演示后，任务结束。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 推荐用途：</strong>追踪<strong>神庙附近的珍稀食材</strong>或<strong>稀有矿物</strong>最高效，也可追踪「克洛格种子」辅助全收集。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q06 -->
+  <div class="quest-item expandable" data-cat="hateno">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">06</div>
+      <div class="quest-body">
+        <div class="quest-title">马提森独立</div>
+        <div class="quest-desc">在塔雷镇帮助哈德森的女儿马提森顺利出发去格鲁德，帮助她完成独立旅程的准备。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：塔雷镇</span>
+          <span class="rbadge rbadge-necluda">东部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="马提森" loading="lazy">
+          <p class="quest-screenshot-caption">塔雷镇——哈德森一家的新家园</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>前往<strong>塔雷镇</strong>（东部湖区），找到建筑商<strong>哈德森</strong>和他的女儿<strong>马提森</strong>。</li>
+              <li>马提森已成年，想独自出发去<strong>格鲁德沙漠</strong>学习，但哈德森舍不得。</li>
+              <li>与镇上各 NPC 收集对马提森的评价，说服哈德森相信她已经准备好了。</li>
+              <li>找到马提森的朋友们证明她的能力，一共要与 <strong>4 位 NPC</strong> 对话取得认可信息。</li>
+              <li>将所有评价汇报给哈德森，触发感人的父女告别剧情。</li>
+              <li>马提森出发，任务完成，获得<strong>卢比奖励</strong>。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q07 -->
+  <div class="quest-item expandable" data-cat="hateno">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">07</div>
+      <div class="quest-body">
+        <div class="quest-title">写给可音的信</div>
+        <div class="quest-desc">将散落在哈特诺村附近的一封情书送到牧场主可音手中，揭开一段隐秘的恋情。</div>
+        <div class="quest-meta">
+          <span class="tag tag-green">触发点：哈特诺村</span>
+          <span class="rbadge rbadge-necluda">东部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="可音的信" loading="lazy">
+          <p class="quest-screenshot-caption">哈特诺村东侧牧场的可音</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在哈特诺村附近的<strong>农场小屋</strong>内找到一封未送达的信件，拾取。</li>
+              <li>信件地址写着「<strong>可音</strong>」，她在哈特诺村东侧的<strong>克拉尔牛场</strong>工作。</li>
+              <li>将信送到可音手中，她打开后露出惊喜表情，触发剧情对话。</li>
+              <li>可音感谢链克，任务完成，获得<strong>奶酪 ×3</strong> 作为回报。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 提示：</strong>可音在牧场看守奶牛，<strong>白天才在</strong>，夜晚她会回到村内小屋休息，找不到时可以等到白天。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q08 -->
+  <div class="quest-item expandable" data-cat="hateno">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">08</div>
+      <div class="quest-body">
+        <div class="quest-title">新招牌料理</div>
+        <div class="quest-desc">协助村长里德研发新的哈特诺村招牌料理，寻找特定食材完成新菜肴。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：哈特诺村</span>
+          <span class="rbadge rbadge-necluda">东部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="新招牌料理" loading="lazy">
+          <p class="quest-screenshot-caption">哈特诺村长里德正在策划新的村庄特色料理</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在哈特诺村中心找到<strong>里德村长</strong>，他想打造一道新的招牌菜吸引旅客。</li>
+              <li>他需要 3 种食材：<strong>哈特诺奶酪 ×1、稀有蘑菇 ×3、新鲜鱼肉 ×2</strong>。</li>
+              <li>哈特诺奶酪从<strong>可音牧场</strong>购买，蘑菇在哈特诺村后山采集，鱼肉在<strong>林娜尤湖</strong>捕捞。</li>
+              <li>食材全部收集后交给里德，他亲自下厨制作新菜，任务完成。</li>
+              <li>奖励：<strong>哈特诺特制套餐料理 ×5</strong>（高回复效果）。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q09 -->
+  <div class="quest-item expandable" data-cat="hateno">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">09</div>
+      <div class="quest-body">
+        <div class="quest-title">里德的秘密</div>
+        <div class="quest-desc">村民克拉薇娅怀疑里德村长有秘密，委托链克调查。结果发现他在偷偷学帽子设计。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：哈特诺村</span>
+          <span class="rbadge rbadge-necluda">东部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="里德的秘密" loading="lazy">
+          <p class="quest-screenshot-caption">村长里德和时装设计师塞西的隐秘互动</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>与村民<strong>克拉薇娅</strong>对话，她表示里德最近行为神秘，请链克调查。</li>
+              <li>在夜晚跟踪里德，发现他悄悄前往<strong>塞西的帽子工坊</strong>。</li>
+              <li>里德其实是在偷偷学帽子制作，想给妻子做一顶帽子作为惊喜礼物。</li>
+              <li>将调查结果告诉克拉薇娅，她温柔感叹了一番，任务结束。</li>
+              <li>奖励：<strong>强力卢比道具</strong>。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="quest-item expandable" data-cat="hateno">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">10</div>
+      <div class="quest-body">
+        <div class="quest-title">塞西的秘密</div>
+        <div class="quest-desc">时装设计师塞西有个秘密——她其实是哈特诺村的前任候选村长，正在策划竞选连任。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：哈特诺村</span>
+          <span class="rbadge rbadge-necluda">东部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="塞西的秘密" loading="lazy">
+          <p class="quest-screenshot-caption">哈特诺村时装设计师塞西的帽子工坊</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>和塞西的助手<strong>苏菲</strong>对话，她担心塞西有什么秘密，请链克调查。</li>
+              <li>跟踪塞西前往村子东侧的<strong>秘密会议室</strong>，发现她正在开竞选会议。</li>
+              <li>塞西原是村长候选人，被里德击败后转行做帽子，但仍想再次参选。</li>
+              <li>调查结果汇报给苏菲，触发「支持塞西还是里德？」这条连续任务。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q11 -->
+  <div class="quest-item expandable" data-cat="hateno">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">11</div>
+      <div class="quest-body">
+        <div class="quest-title">支持塞西还是里德？</div>
+        <div class="quest-desc">村长选举开始，链克需要帮助某一方拉票并收集村民支持。两条路线都可完成任务。</div>
+        <div class="quest-meta">
+          <span class="tag tag-blue">触发点：哈特诺村</span>
+          <span class="rbadge rbadge-necluda">东部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="村长选举" loading="lazy">
+          <p class="quest-screenshot-caption">哈特诺村长选举——里德 vs 塞西</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>与<strong>塞西</strong>和<strong>里德</strong>分别对话，了解两人的竞选政策。</li>
+              <li>选择支持一方后，帮助他/她在村子里拉票（与指定 NPC 对话并表达支持）。</li>
+              <li>需要说服至少 <strong>3 位村民</strong>投票给目标候选人。</li>
+              <li>拉票完成后返回报告，等待选举日（游戏内等待 1 天）。</li>
+              <li>无论谁胜选任务均完成，导入后续「村长选举」任务。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 注意：</strong>两位候选人获胜后村子的商店开放品项不同，<strong>塞西胜选开放时装帽子</strong>，<strong>里德胜选开放特产料理</strong>，可按需求选择。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q12 -->
+  <div class="quest-item expandable" data-cat="hateno">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">12</div>
+      <div class="quest-body">
+        <div class="quest-title">村长选举</div>
+        <div class="quest-desc">见证哈特诺村村长选举的最终结果，完成整条哈特诺村剧情线的收尾。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：哈特诺村</span>
+          <span class="rbadge rbadge-necluda">东部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="村长选举结果" loading="lazy">
+          <p class="quest-screenshot-caption">哈特诺村广场宣布选举结果的盛大集会</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>完成「支持塞西还是里德？」后等待，前往哈特诺村<strong>中央广场</strong>。</li>
+              <li>全村集会宣布投票结果，获胜方发表就职演说。</li>
+              <li>链克与获胜的村长对话，任务完成。</li>
+              <li>奖励：获胜方候选人给予<strong>独家物品</strong>（塞西→头盔订制权，里德→特制料理一批）。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       卢雷林村线 · Q13–Q14
+  ═══════════════════════════════════ -->
+  <div class="section-label">🏝 卢雷林村线</div>
+
+  <!-- Q13 -->
+  <div class="quest-item expandable" data-cat="lurelin">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">13</div>
+      <div class="quest-body">
+        <div class="quest-title">被流氓占领的村子</div>
+        <div class="quest-desc">卢雷林村被波克布林占领，居民流离失所。帮助老渔夫罗泽尔收复家园。</div>
+        <div class="quest-meta">
+          <span class="tag tag-red">触发点：卢雷林村</span>
+          <span class="rbadge rbadge-faron">法罗尼</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/1/1d/TotK_Lurelin_Village.png" alt="卢雷林村" loading="lazy">
+          <p class="quest-screenshot-caption">法罗尼海岸边的渔村——卢雷林村</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>前往法罗尼东南海岸的<strong>卢雷林村</strong>（坐标约 2803, -3294, 0001）。</li>
+              <li>在村子外遇到老渔夫<strong>罗泽尔</strong>，他无力赶走占据村子的<strong>波克布林</strong>。</li>
+              <li>进入村子，扫清全部波克布林：<strong>约 3 波，包含 1 名精英头目</strong>，头目在最深处的房屋前。</li>
+              <li>击败所有波克布林，全村干净后，罗泽尔和居民自动返村。</li>
+              <li>与罗泽尔对话完成此任务，解锁「卢雷林村复兴计划」。</li>
+            </ol>
+          </div>
+          <div class="wt-boss">
+            <strong>⚠ 战斗建议：</strong>村内地形狭窄，避免在房屋间被包围。优先用弓箭从屋顶射击头目，再近战清理小怪。带 3~5 颗炸弹果可快速清场。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q14 -->
+  <div class="quest-item expandable" data-cat="lurelin">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">14</div>
+      <div class="quest-body">
+        <div class="quest-title">卢雷林村复兴计划</div>
+        <div class="quest-desc">帮助建筑商博尔森募集资金和材料重建被毁的卢雷林村，恢复这座渔村的往日风貌。</div>
+        <div class="quest-meta">
+          <span class="tag tag-green">触发点：卢雷林村</span>
+          <span class="tag tag-gold">奖励：村庄复原</span>
+          <span class="rbadge rbadge-faron">法罗尼</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/1/1d/TotK_Lurelin_Village.png" alt="卢雷林村复兴" loading="lazy">
+          <p class="quest-screenshot-caption">复兴后的卢雷林村——热带风情重现</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>完成「被流氓占领的村子」后，建筑商<strong>博尔森</strong>出现在村口。</li>
+              <li>博尔森说明重建需要大量卢比，需要链克<strong>捐款 500 卢比</strong>作为启动资金。</li>
+              <li>支付 500 卢比后，博尔森开始组织施工，需等待<strong>游戏内 3 天</strong>。</li>
+              <li>3 天后返回，村子已恢复大部分原貌，博尔森报告进展。</li>
+              <li>全部建设完成后与<strong>罗泽尔</strong>对话，获得感谢礼物：<strong>珍珠 ×5 + 稀有鱼料</strong>。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 提示：</strong>复兴完成后，村内<strong>幸运宝箱小屋</strong>重新开放（押 10 卢比赌三倍奖励），是游戏内稳定获取卢比的小游戏。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       白诘报社线 · Q15–Q26
+  ═══════════════════════════════════ -->
+  <div class="section-label">📰 白诘报社·公主目击线</div>
+
+  <!-- Q15 -->
+  <div class="quest-item expandable" data-cat="gazette">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">15</div>
+      <div class="quest-body">
+        <div class="quest-title">公主目击情报！</div>
+        <div class="quest-desc">白诘报社主编特雷西委托链克，与记者潘恩一同调查全国各地的泽尔达公主目击报告。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：白诘报社（西北）</span>
+          <span class="rbadge rbadge-rito">利特荒野</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="白诘报社" loading="lazy">
+          <p class="quest-screenshot-caption">白诘报社——利特荒野附近的报社总部</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>前往西北部<strong>白诘报社</strong>（利特稳定附近，坐标约 -3251, 1787, 0115）。</li>
+              <li>与主编<strong>特雷西</strong>对话，她提到各地马厩都有目击泽尔达公主的报告。</li>
+              <li>特雷西委托链克以自由撰稿人身份，与记者<strong>潘恩</strong>合作调查全部目击事件。</li>
+              <li>触发后，全海拉鲁 <strong>11 个马厩</strong>各有一个「目击调查」子任务。</li>
+              <li>完成所有子任务后，回报特雷西获得终极奖励。</li>
+            </ol>
+          </div>
+          <div class="highlight-box"><strong>触发条件：</strong>需要先到达监视堡垒并完成开头剧情，白诘报社总部才会激活。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q16 -->
+  <div class="quest-item expandable" data-cat="gazette">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">16</div>
+      <div class="quest-body">
+        <div class="quest-title">招手的女人</div>
+        <div class="quest-desc">外环马厩附近有女人在招手，调查发现是伊卡族忍者乔装扮演「泽尔达公主」行骗。</div>
+        <div class="quest-meta">
+          <span class="tag tag-red">触发点：外环马厩</span>
+          <span class="rbadge rbadge-central">海拉鲁中央</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/1/1c/TotK_The_Beckoning_Woman.png" alt="招手的女人" loading="lazy">
+          <p class="quest-screenshot-caption">伪装成女性的伊卡族忍者在路边招手</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>到达<strong>外环马厩</strong>（中央平原西侧），与记者<strong>潘恩</strong>对话触发任务。</li>
+              <li>马厩附近路口有一名<strong>神秘女性向链克招手</strong>，跟随她前往森林深处。</li>
+              <li>靠近后她现出真形——是乔装的<strong>伊卡族忍者</strong>，立刻发动突袭！</li>
+              <li>击败伊卡族忍者，搜身取得线索文件，上面提到「上头命令散布假情报」。</li>
+              <li>回报潘恩，两人得出结论：伊卡族在全国散布假泽尔达目击信息迷惑海拉鲁军。</li>
+            </ol>
+          </div>
+          <div class="wt-boss"><strong>⚔ 战斗：</strong>伊卡族忍者战斗力中等，会使用分身术制造幻象，攻击<strong>没有阴影</strong>的那个是本体。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q17 -->
+  <div class="quest-item expandable" data-cat="gazette">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">17</div>
+      <div class="quest-body">
+        <div class="quest-title">失踪的美食家</div>
+        <div class="quest-desc">河边马厩附近有美食家追寻公主的踪迹后失踪，调查发现与伊卡族的食物陷阱有关。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：河边马厩</span>
+          <span class="rbadge rbadge-necluda">东部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="失踪的美食家" loading="lazy">
+          <p class="quest-screenshot-caption">河边马厩——东部平原主要休息驿站</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>河边马厩</strong>（东部平原）找到潘恩，他正在调查美食家失踪事件。</li>
+              <li>跟踪美食家留下的脚印，进入附近的<strong>山洞</strong>。</li>
+              <li>洞中有伊卡族人搭设的<strong>香味陷阱</strong>（摆放精美料理引诱），美食家已被困。</li>
+              <li>击败洞中的伊卡族忍者，解救美食家，取得一瓶「泽尔达公主专属香水」道具。</li>
+              <li>回报潘恩，香水原来是假的，是伊卡族制造的假证据。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q18 -->
+  <div class="quest-item expandable" data-cat="gazette">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">18</div>
+      <div class="quest-body">
+        <div class="quest-title">怪物和公主</div>
+        <div class="quest-desc">新塞雷内马厩有目击者称看到公主骑着怪物飞行，调查后发现是骑驾了魔改佐纳依飞行器的伊卡族。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：新塞雷内马厩</span>
+          <span class="rbadge rbadge-central">中央北部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="怪物和公主" loading="lazy">
+          <p class="quest-screenshot-caption">新塞雷内马厩附近的目击者</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>新塞雷内马厩</strong>（中央平原北侧）找到潘恩，触发任务。</li>
+              <li>目击者指向附近天空中一个<strong>移动发光体</strong>，链克用滑翔伞追上。</li>
+              <li>飞行体是伊卡族人驾驶的<strong>佐纳依飞行器</strong>，上面悬挂着假泽尔达模型。</li>
+              <li>在飞行器上击败伊卡族人，飞行器坠毁，获得道具。</li>
+              <li>回报潘恩，潘恩感叹「伊卡族真是无处不在」。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q19 -->
+  <div class="quest-item expandable" data-cat="gazette">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">19</div>
+      <div class="quest-body">
+        <div class="quest-title">泽尔达的金色骏马</div>
+        <div class="quest-desc">雪原马厩有传言「泽尔达的金色骏马逃跑了」，找到金色马并带回马厩，揭开背后真相。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：雪原马厩</span>
+          <span class="rbadge rbadge-rito">西北部赫布拉</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="泽尔达的金色骏马" loading="lazy">
+          <p class="quest-screenshot-caption">雪原马厩——传言金色骏马出没的西北荒野</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>雪原马厩</strong>（赫布拉山脉南侧）找到潘恩，传言附近有金色骏马出没。</li>
+              <li>前往马厩东北方的<strong>赫布拉山谷</strong>，需要耐寒料理（建议 3 颗辣椒+肉）。</li>
+              <li>发现一匹<strong>全身金色的骏马</strong>，野性极强，需要高耐力才能驯服（建议 2 个耐力轮以上）。</li>
+              <li>驯服金色骏马，骑乘它返回雪原马厩登记。</li>
+              <li>马厩老板确认这确实是王室马厩的马，潘恩完成报道，任务完成。</li>
+              <li>奖励：金色骏马可永久保留，性能<strong>速度 ★★★★★</strong>，攻击力 ★★★。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 提示：</strong>驯马时需<strong>骑上后反复安抚（按A）</strong>，耐力不足就会被甩下。推荐在驯马前吃一碗「耐力蘑菇 ×5」料理。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q20 -->
+  <div class="quest-item expandable" data-cat="gazette">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">20</div>
+      <div class="quest-body">
+        <div class="quest-title">失踪的白山羊</div>
+        <div class="quest-desc">塔班达桥马厩附近的白山羊全部失踪，目击者说被「公主」带走了，追查发现又是伊卡族所为。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：塔班达桥马厩</span>
+          <span class="rbadge rbadge-rito">西部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="失踪的白山羊" loading="lazy">
+          <p class="quest-screenshot-caption">塔班达桥马厩——西部高原的重要中转站</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>塔班达桥马厩</strong>（西部高原）找到潘恩，山羊牧场主来报案。</li>
+              <li>沿蹄印追踪山羊踪迹，进入附近山谷的<strong>伊卡族临时营地</strong>。</li>
+              <li>伊卡族人正在把山羊放入笼中，击败营地内全部伊卡族人。</li>
+              <li>打开笼子，<strong>5 只白山羊</strong>自动跑回牧场，任务完成。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q21 -->
+  <div class="quest-item expandable" data-cat="gazette">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">21</div>
+      <div class="quest-body">
+        <div class="quest-title">为了公主！</div>
+        <div class="quest-desc">山麓马厩有爱国士兵说为寻找公主出征，调查发现他其实在追求一名女性村民。</div>
+        <div class="quest-meta">
+          <span class="tag tag-green">触发点：山麓马厩</span>
+          <span class="rbadge rbadge-goron">东北部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="为了公主" loading="lazy">
+          <p class="quest-screenshot-caption">山麓马厩——艾勒纳塔克火山山麓处</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>山麓马厩</strong>找到潘恩，附近有士兵高喊「为了公主出征」。</li>
+              <li>跟踪士兵，发现他其实在追一名普通女村民，根本不是找公主。</li>
+              <li>与女村民和士兵分别对话，收集他们的证词。</li>
+              <li>回报潘恩，潘恩苦笑着记录「又一次误报」，任务结束。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q22 -->
+  <div class="quest-item expandable" data-cat="gazette">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">22</div>
+      <div class="quest-body">
+        <div class="quest-title">全能的咕咕鸡</div>
+        <div class="quest-desc">南阿卡拉马厩有人声称公主用神力让咕咕鸡变大，调查发现是喝了特殊药水的普通咕咕鸡。</div>
+        <div class="quest-meta">
+          <span class="tag tag-blue">触发点：南阿卡拉马厩</span>
+          <span class="rbadge rbadge-akkala">阿卡拉</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="全能的咕咕鸡" loading="lazy">
+          <p class="quest-screenshot-caption">南阿卡拉马厩附近，传说中的巨型咕咕鸡</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>南阿卡拉马厩</strong>找到潘恩，马厩老板说见到了巨型咕咕鸡。</li>
+              <li>在马厩附近寻找，找到一只体型异常巨大的<strong>咕咕鸡</strong>（触怒后会引来鸡群攻击）。</li>
+              <li>调查附近地面，发现散落的<strong>佐纳依药水空瓶</strong>，正是放大药水导致咕咕鸡变大。</li>
+              <li>追查药水来源，是附近的<strong>伊卡族秘密实验站</strong>，击败研究员，取得配方。</li>
+              <li>回报潘恩，任务结束，获得放大药水配方道具。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q23 -->
+  <div class="quest-item expandable" data-cat="gazette">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">23</div>
+      <div class="quest-body">
+        <div class="quest-title">消失的农具</div>
+        <div class="quest-desc">湿地马厩的农具全部消失，有人说「公主来过并带走了农具」，调查后发现是伊卡族的心理战。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：湿地马厩</span>
+          <span class="rbadge rbadge-necluda">东部湿地</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="消失的农具" loading="lazy">
+          <p class="quest-screenshot-caption">湿地马厩——兰娜尤湿地边的驿站</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>湿地马厩</strong>找到潘恩，农夫们的农具全数失踪。</li>
+              <li>在附近湿地调查，找到农具被扔进沼泽中（用究极手打捞回来）。</li>
+              <li>追踪脚印到一处<strong>伊卡族临时基地</strong>，他们正打算用这批农具伪造「泽尔达遗留物品」。</li>
+              <li>击败伊卡族人，回收全部<strong>5 件农具</strong>，交还给农夫。</li>
+              <li>回报潘恩，任务完成，获得卢比奖励。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q24 -->
+  <div class="quest-item expandable" data-cat="gazette">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">24</div>
+      <div class="quest-body">
+        <div class="quest-title">泽尔达公主被绑架？！</div>
+        <div class="quest-desc">双峰马厩有人目击公主被绑架，追踪后发现整件事是伊卡族的障眼法，用来引开调查视线。</div>
+        <div class="quest-meta">
+          <span class="tag tag-red">触发点：双峰马厩</span>
+          <span class="rbadge rbadge-necluda">东南部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="公主被绑架" loading="lazy">
+          <p class="quest-screenshot-caption">双峰马厩——双峰山脚下的驿站</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>双峰马厩</strong>（东南双峰山附近）与潘恩对话，有人声称目睹公主被蒙布绑架。</li>
+              <li>追踪绑架者的踪迹进入<strong>双峰山东侧山洞</strong>。</li>
+              <li>洞内发现「泽尔达」其实是<strong>伊卡族人穿公主服装</strong>，正在等待增援。</li>
+              <li>与 3 名伊卡族忍者战斗，击败后取得行动命令文件。</li>
+              <li>文件显示此事是为转移链克的调查注意力，回报潘恩，任务结束。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q25 -->
+  <div class="quest-item expandable" data-cat="gazette">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">25</div>
+      <div class="quest-body">
+        <div class="quest-title">诡异的声音</div>
+        <div class="quest-desc">高地马厩附近夜晚有诡异歌声出现，目击者认为是泽尔达在呼唤。调查发现是另有隐情。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：高地马厩</span>
+          <span class="rbadge rbadge-gerudo">南部高地</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="诡异的声音" loading="lazy">
+          <p class="quest-screenshot-caption">高地马厩——法罗尼高地的南部驿站</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>高地马厩</strong>（法罗尼高地南部）与潘恩对话，夜晚有歌声从山丘传来。</li>
+              <li>等到夜晚，沿歌声方向前进，发现是一名<strong>自弹自唱的流浪吟游诗人</strong>。</li>
+              <li>诗人唱的是一首失传的古老赞美诗，歌词中有泽尔达公主的名字。</li>
+              <li>与诗人对话，他说这首歌是祖传，与伊卡族无关，目击事件只是误会。</li>
+              <li>回报潘恩，任务完成，同时解锁「竖笛演奏者的计划」支线。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q26 -->
+  <div class="quest-item expandable" data-cat="gazette">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">26</div>
+      <div class="quest-body">
+        <div class="quest-title">被堵住的井</div>
+        <div class="quest-desc">格鲁德峡谷马厩的水井被异物堵塞，目击者说是泽尔达公主扔进去了奇怪的东西。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：格鲁德峡谷马厩</span>
+          <span class="rbadge rbadge-gerudo">西南部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="被堵住的井" loading="lazy">
+          <p class="quest-screenshot-caption">格鲁德峡谷马厩——沙漠边缘的休息据点</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>格鲁德峡谷马厩</strong>与潘恩对话，水井无水流出。</li>
+              <li>用通天术或倒转乾坤进入水井深处检查，发现被<strong>巨大岩石</strong>堵住。</li>
+              <li>用究极手将岩石搬走，水流恢复正常。</li>
+              <li>调查岩石来源，发现是附近山坡上<strong>伊卡族人扔下来</strong>的，目的是制造混乱。</li>
+              <li>回报潘恩，完成调查。这是白诘报社线的最后一个马厩任务，触发特雷西的最终奖励剧情。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 完成全部 11 个马厩调查后</strong>，返回白诘报社向特雷西汇报，获得<strong>银制里奥尼骑马装</strong>（高防御精英套装）。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       音乐线 · Q27–Q33
+  ═══════════════════════════════════ -->
+  <div class="section-label">🎵 大妖精音乐线</div>
+
+  <!-- Q27 -->
+  <div class="quest-item expandable" data-cat="music">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">27</div>
+      <div class="quest-body">
+        <div class="quest-title">竖笛演奏者的计划</div>
+        <div class="quest-desc">高地马厩的竖笛少年派珀想组建乐队，拜托链克帮忙收集失散的乐手，开启大妖精复活音乐线。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：高地马厩</span>
+          <span class="rbadge rbadge-gerudo">南部高地</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="竖笛演奏者" loading="lazy">
+          <p class="quest-screenshot-caption">高地马厩的竖笛少年派珀，梦想组建完整乐队</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>高地马厩</strong>与竖笛少年<strong>派珀</strong>对话，他说想让大妖精们重新活动起来。</li>
+              <li>派珀的乐队需要：鼓手（贝兹）、小号手（尤斯图斯）、指挥（玛斯特罗）。</li>
+              <li>依次完成以下 3 个招募任务，把乐手集合到出发地点。</li>
+              <li>全员集合后，派珀宣布准备前往第一座大妖精泉演奏。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q28 -->
+  <div class="quest-item expandable" data-cat="music">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">28</div>
+      <div class="quest-body">
+        <div class="quest-title">蜂蜜，成为我的</div>
+        <div class="quest-desc">鼓手贝兹被蜜蜂蜇伤陷在西奈克鲁达，帮他收集蜂蜜制成解毒料理，把他带回乐队。</div>
+        <div class="quest-meta">
+          <span class="tag tag-green">触发点：西奈克鲁达</span>
+          <span class="rbadge rbadge-necluda">东部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="蜂蜜" loading="lazy">
+          <p class="quest-screenshot-caption">西奈克鲁达树林中——鼓手贝兹被困蜂巢旁</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>前往<strong>西奈克鲁达</strong>（双峰山以西树林），找到鼓手<strong>贝兹</strong>坐在蜂巢树下。</li>
+              <li>他被蜜蜂蜇伤无法移动，需要 3 罐特殊蜂蜜才能制作解毒料理。</li>
+              <li>在附近树林找到 <strong>3 处蜂巢</strong>，用火或冰箭驱散蜜蜂后取得蜂蜜。</li>
+              <li>在料理锅制作「<strong>蜂蜜蛋糕</strong>」（蜂蜜 ×3）给贝兹吃，他恢复。</li>
+              <li>将贝兹带回高地马厩乐队集合地点，完成此任务。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q29 -->
+  <div class="quest-item expandable" data-cat="music">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">29</div>
+      <div class="quest-body">
+        <div class="quest-title">小号手的戏剧性逃跑</div>
+        <div class="quest-desc">小号手尤斯图斯在塔班达高地被巨型岩石怪追赶，帮助他脱险后请他加入乐队。</div>
+        <div class="quest-meta">
+          <span class="tag tag-red">触发点：塔班达高地</span>
+          <span class="rbadge rbadge-rito">西部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="小号手" loading="lazy">
+          <p class="quest-screenshot-caption">塔班达高地——正被石像鬼追赶的小号手尤斯图斯</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>前往<strong>塔班达高地</strong>（塔班达桥马厩以北），发现小号手<strong>尤斯图斯</strong>被<strong>石头人（魔岩石）</strong>追赶。</li>
+              <li>击败魔岩石（弱点：脑袋上的宝石，弓箭一箭命中即可破碎）救下尤斯图斯。</li>
+              <li>尤斯图斯感谢链克，链克邀请他加入派珀的乐队，他欣然同意。</li>
+              <li>带他回到集合地点，完成此任务。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 魔岩石弱点：</strong>用弓箭<strong>射击石头人头顶的发光宝石</strong>一击即可使其倒地，倒地后近战攻击 3~4 下即可击败。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q30 -->
+  <div class="quest-item expandable" data-cat="music">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">30</div>
+      <div class="quest-body">
+        <div class="quest-title">给大妖精的小夜曲（林地马厩）</div>
+        <div class="quest-desc">乐队在林地马厩旁的大妖精泉演奏，唤醒沉睡的大妖精卡萨，让她重新开放铠甲强化服务。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：林地马厩</span>
+          <span class="rbadge rbadge-central">中央北部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="大妖精小夜曲" loading="lazy">
+          <p class="quest-screenshot-caption">乐队在大妖精泉前演奏，等待大妖精觉醒</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>林地马厩</strong>与记者潘恩对话，得知附近大妖精泉已干涸封锁。</li>
+              <li>前往<strong>拉乌鲁森林附近的大妖精泉</strong>，玛斯特罗乐队集合完毕。</li>
+              <li>支付<strong>100 卢比</strong>作为「演奏邀请费」，乐队开始演奏。</li>
+              <li>音乐声中大妖精<strong>卡萨</strong>从泉中升起，感谢乐队并重新开放<strong>铠甲强化</strong>服务。</li>
+              <li>任务完成，解锁大妖精卡萨（最高可将铠甲强化至 ★★★★）。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 重要：</strong>大妖精强化铠甲需要各种材料，<strong>4 位大妖精各自强化的上限不同</strong>（森林→沼泽→山岳→雪地），建议全部唤醒后才进行 ★★★★ 强化。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q31 -->
+  <div class="quest-item expandable" data-cat="music">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">31</div>
+      <div class="quest-body">
+        <div class="quest-title">给卡萨的小夜曲</div>
+        <div class="quest-desc">在外环马厩旁的大妖精泉演奏，唤醒大妖精卡萨（西部大妖精）。</div>
+        <div class="quest-meta">
+          <span class="tag tag-green">触发点：外环马厩</span>
+          <span class="rbadge rbadge-central">中央</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="给卡萨的小夜曲" loading="lazy">
+          <p class="quest-screenshot-caption">外环马厩旁的大妖精泉，等待复活的卡萨</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>完成第一次大妖精演奏后，玛斯特罗移动至<strong>外环马厩</strong>旁。</li>
+              <li>前往外环马厩西侧小山丘上的<strong>大妖精泉</strong>，支付 <strong>100 卢比</strong> 演奏。</li>
+              <li>大妖精<strong>卡萨</strong>（西部）从泉中升起，开放铠甲 ★★ 强化服务。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q32 -->
+  <div class="quest-item expandable" data-cat="music">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">32</div>
+      <div class="quest-body">
+        <div class="quest-title">给可特拉的小夜曲</div>
+        <div class="quest-desc">在双峰马厩旁的大妖精泉演奏，唤醒大妖精可特拉（南部大妖精），开放高阶铠甲强化。</div>
+        <div class="quest-meta">
+          <span class="tag tag-blue">触发点：双峰马厩</span>
+          <span class="rbadge rbadge-necluda">东南</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b7/TotK_Lucky_Clover_Gazette.png" alt="给可特拉的小夜曲" loading="lazy">
+          <p class="quest-screenshot-caption">双峰马厩旁大妖精泉，唤醒可特拉</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>玛斯特罗乐队移至<strong>双峰马厩</strong>附近。</li>
+              <li>前往双峰马厩东南侧山谷的<strong>大妖精泉</strong>，支付 <strong>500 卢比</strong>演奏。</li>
+              <li>大妖精<strong>可特拉</strong>（南部）觉醒，开放铠甲 ★★★ 强化服务。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 注意：</strong>解锁可特拉需要 500 卢比，是四大妖精中费用最高的之一，建议先存够卢比再来。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q33 -->
+  <div class="quest-item expandable" data-cat="music">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">33</div>
+      <div class="quest-body">
+        <div class="quest-title">给米雅的小夜曲</div>
+        <div class="quest-desc">在雪原马厩旁的大妖精泉演奏，唤醒大妖精米雅（北部大妖精），完成四大妖精全复活。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：雪原马厩</span>
+          <span class="tag tag-green">奖励：四妖精全开放</span>
+          <span class="rbadge rbadge-rito">西北部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/2/24/TotK_Wind_Temple.png" alt="给米雅的小夜曲" loading="lazy">
+          <p class="quest-screenshot-caption">北部雪原的大妖精泉，寒冷中等待米雅觉醒</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>玛斯特罗乐队移至<strong>雪原马厩</strong>，这是第四个大妖精泉。</li>
+              <li>穿着耐寒装备，前往雪原马厩东北山谷的<strong>米雅之泉</strong>，支付 <strong>1000 卢比</strong>演奏。</li>
+              <li>大妖精<strong>米雅</strong>（北部）觉醒，开放最高阶<strong>★★★★ 铠甲强化</strong>。</li>
+              <li>四大妖精全部复活，任务完成，获得玛斯特罗特制道具作为礼物。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 四妖精全开放后</strong>，可同时选择四位强化，实现最高 <strong>★★★★ 套装完全体</strong>。建议优先强化防御最高的「战士套」或「古代英雄套」。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       和平守护线 · Q34–Q39
+  ═══════════════════════════════════ -->
+  <div class="section-label">⚔️ 各地区和平守护线</div>
+
+  <!-- Q34 -->
+  <div class="quest-item expandable" data-cat="peace">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">34</div>
+      <div class="quest-body">
+        <div class="quest-title">守护海拉鲁平原的和平！</div>
+        <div class="quest-desc">协助霍兹队长带领士兵清剿海拉鲁平原的怪物营地，恢复中央平原的安全秩序。</div>
+        <div class="quest-meta">
+          <span class="tag tag-red">触发点：海拉鲁中央</span>
+          <span class="rbadge rbadge-central">中央平原</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/3/30/TotK_Crisis_at_Hyrule_Castle.png" alt="守护海拉鲁平原" loading="lazy">
+          <p class="quest-screenshot-caption">海拉鲁中央平原——怪物营地遍布，待清剿</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在海拉鲁中央遇到<strong>霍兹队长</strong>，他说明平原上有多个波克布林与魔布林营地需要清剿。</li>
+              <li>目标：清剿中央平原<strong>3 处怪物营地</strong>（可在地图上查看标记）。</li>
+              <li>每处营地约有 5~8 名怪物，攻营之前可先用弓箭远程点燃火把制造优势。</li>
+              <li>清剿完成后回报霍兹，他确认区域安全，任务完成。</li>
+              <li>奖励：<strong>30 支箭矢 + 强力武器 ×1</strong>。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q35 -->
+  <div class="quest-item expandable" data-cat="peace">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">35</div>
+      <div class="quest-body">
+        <div class="quest-title">守护奈克鲁达的和平！</div>
+        <div class="quest-desc">协助霍兹队长清剿奈克鲁达地区的怪物巢穴，保卫双峰山与林娜尤湖区的安全。</div>
+        <div class="quest-meta">
+          <span class="tag tag-red">触发点：奈克鲁达</span>
+          <span class="rbadge rbadge-necluda">东南</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/1/1d/TotK_Lurelin_Village.png" alt="守护奈克鲁达" loading="lazy">
+          <p class="quest-screenshot-caption">奈克鲁达地区，林娜尤湖周边的清剿目标</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在奈克鲁达遇到<strong>霍兹</strong>，清剿该地区的 <strong>3 处怪物营地</strong>。</li>
+              <li>奈克鲁达水系发达，注意营地可能设在水边——利用<strong>卓拉铠甲</strong>在水中快速机动。</li>
+              <li>全部清剿后回报霍兹完成任务。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q36 -->
+  <div class="quest-item expandable" data-cat="peace">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">36</div>
+      <div class="quest-body">
+        <div class="quest-title">守护艾尔丁的和平！</div>
+        <div class="quest-desc">协助托伦清剿艾尔丁火山区周边的怪物，保护前往鼓隆城的商队路线安全。</div>
+        <div class="quest-meta">
+          <span class="tag tag-red">触发点：艾尔丁峡谷</span>
+          <span class="rbadge rbadge-goron">东北部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/2/22/TotK_Fire_Temple.png" alt="守护艾尔丁" loading="lazy">
+          <p class="quest-screenshot-caption">艾尔丁火山区——岩浆地形的清剿作战</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>艾尔丁峡谷</strong>遇到骑士<strong>托伦</strong>，艾尔丁地区火系怪物猖獗。</li>
+              <li>穿戴<strong>防火铠甲</strong>或持续服用耐热药水，清剿 3 处营地（含火系波克布林和火巨人）。</li>
+              <li>注意地面岩浆，勿踩入，建议用余料建造搭桥。</li>
+              <li>清剿完成报告托伦，奖励火系材料 + 卢比。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q37 -->
+  <div class="quest-item expandable" data-cat="peace">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">37</div>
+      <div class="quest-body">
+        <div class="quest-title">守护阿卡拉的和平！</div>
+        <div class="quest-desc">协助托伦清剿阿卡拉地区的怪物，保护东北部商路和扎纳那岛屿的安全。</div>
+        <div class="quest-meta">
+          <span class="tag tag-red">触发点：阿卡拉高原</span>
+          <span class="rbadge rbadge-akkala">东北</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/3/30/TotK_Crisis_at_Hyrule_Castle.png" alt="守护阿卡拉" loading="lazy">
+          <p class="quest-screenshot-caption">阿卡拉高原的怪物营地</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>阿卡拉高原</strong>遇到托伦，清剿该地区 3 处营地。</li>
+              <li>阿卡拉地形多悬崖，善用<strong>滑翔伞+弓箭</strong>从高处清除营地弓手。</li>
+              <li>营地清空后回报托伦，奖励阿卡拉特产材料。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q38 -->
+  <div class="quest-item expandable" data-cat="peace">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">38</div>
+      <div class="quest-body">
+        <div class="quest-title">守护法罗尼的和平！</div>
+        <div class="quest-desc">协助弗拉克斯清剿法罗尼热带雨林的怪物，保护南部卢雷林村周边的安全环境。</div>
+        <div class="quest-meta">
+          <span class="tag tag-green">触发点：法罗尼草原</span>
+          <span class="rbadge rbadge-faron">南部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/1/1d/TotK_Lurelin_Village.png" alt="守护法罗尼" loading="lazy">
+          <p class="quest-screenshot-caption">法罗尼草原——热带地区的清剿任务</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>法罗尼草原</strong>遇到骑士<strong>弗拉克斯</strong>，清剿 3 处怪物营地。</li>
+              <li>法罗尼地形开阔，但有大量莱乃尔出没——避开莱乃尔，集中清剿波克布林营地。</li>
+              <li>清剿完成回报弗拉克斯，奖励南部特有材料。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q39 -->
+  <div class="quest-item expandable" data-cat="peace">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">39</div>
+      <div class="quest-body">
+        <div class="quest-title">守护赫布拉的和平！</div>
+        <div class="quest-desc">协助弗拉克斯清剿赫布拉山脉积雪地带的冰系怪物，保护利特村到外界的道路。</div>
+        <div class="quest-meta">
+          <span class="tag tag-blue">触发点：法罗尼草原（弗拉克斯）</span>
+          <span class="rbadge rbadge-rito">西北赫布拉</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/2/24/TotK_Wind_Temple.png" alt="守护赫布拉" loading="lazy">
+          <p class="quest-screenshot-caption">赫布拉山脉——冰天雪地的怪物清剿</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在弗拉克斯处追加任务，目标转移到<strong>赫布拉山脉</strong>冰雪地区。</li>
+              <li>穿戴<strong>耐寒装备</strong>，清剿 3 处冰系怪物营地（含冰系波克布林和冰巨人）。</li>
+              <li>冰巨人弱点：用<strong>火焰箭</strong>射击冰块护甲，使其裸露后近战攻击。</li>
+              <li>清剿完成回报弗拉克斯，六大区域全部完成，获得<strong>终极和平守护奖励</strong>（高性能武器+装备一套）。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       收集线 · Q40–Q49
+  ═══════════════════════════════════ -->
+  <div class="section-label">🫙 收集线（赫斯图 · 科尔廷 · 基尔顿）</div>
+
+  <!-- Q40 -->
+  <div class="quest-item expandable" data-cat="collect">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">40</div>
+      <div class="quest-body">
+        <div class="quest-title">赫斯图的烦恼</div>
+        <div class="quest-desc">大树精赫斯图因为被怪物攻击而无法聆听克洛格种子之声，帮他驱走怪物恢复道具扩充服务。</div>
+        <div class="quest-meta">
+          <span class="tag tag-green">触发点：全地图（赫斯图移动）</span>
+          <span class="tag tag-gold">奖励：道具栏扩充</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="赫斯图" loading="lazy">
+          <p class="quest-screenshot-caption">大树精赫斯图——克洛格种子的管理者</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在海拉鲁各处随机找到大树精<strong>赫斯图</strong>（地图上有绿色图标），与他对话。</li>
+              <li>他说最近被波克布林骚扰，无法专心工作，请链克帮忙驱赶。</li>
+              <li>击败赫斯图周围<strong>3~5 名波克布林</strong>，任务完成。</li>
+              <li>赫斯图恢复服务，可用<strong>克洛格种子</strong>扩充武器、弓箭、盾牌道具栏（每种最多扩充 +40 格）。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 克洛格种子兑换率：</strong>第 1 格需 1 颗种子，之后每格逐步增加到需 4 颗，全扩充共需 900 颗种子。建议优先扩充<strong>武器栏</strong>。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q41 -->
+  <div class="quest-item expandable" data-cat="collect">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">41</div>
+      <div class="quest-body">
+        <div class="quest-title">泡泡果的狩猎！</div>
+        <div class="quest-desc">变身魔法狂热者科尔廷用泡泡果换取各种变身皮肤，帮他收集泡泡果换得特殊外观。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：艾尔丁峡谷</span>
+          <span class="tag tag-gold">奖励：怪物变身皮肤</span>
+          <span class="rbadge rbadge-goron">东北部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/2/22/TotK_Fire_Temple.png" alt="泡泡果狩猎" loading="lazy">
+          <p class="quest-screenshot-caption">艾尔丁峡谷——初次遇到科尔廷的地点</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>艾尔丁峡谷山麓马厩</strong>附近找到<strong>科尔廷</strong>（黄绿色毛茸茸生物）。</li>
+              <li>科尔廷痴迷怪物变身，只要给他<strong>泡泡果（Bubbul Gem）</strong>就可以交换变身道具。</li>
+              <li>泡泡果从击败<strong>泡泡蟾蜍</strong>（住在洞穴中的发光蟾蜍）获得，每只掉 1 颗。</li>
+              <li>按科尔廷的等级制，依次兑换：1 颗→5 颗→10 颗→20 颗→40 颗……不同等级换不同怪物皮肤。</li>
+              <li>此任务完成后进入「寻找科尔廷」任务线，他每次换地图随机出现。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 泡泡蟾蜍位置：</strong>全海拉鲁约有 147 只泡泡蟾蜍，藏在<strong>洞穴</strong>内发出蓝色荧光，优先找洞穴入口即可。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q42 -->
+  <div class="quest-item expandable" data-cat="collect">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">42</div>
+      <div class="quest-body">
+        <div class="quest-title">寻找科尔廷</div>
+        <div class="quest-desc">科尔廷换完当前库存后会移动到新位置，需要在全图各处追找他兑换更高级的变身道具。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：随机位置</span>
+          <span class="tag tag-gold">奖励：全套怪物变身</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/2/22/TotK_Fire_Temple.png" alt="寻找科尔廷" loading="lazy">
+          <p class="quest-screenshot-caption">科尔廷每次兑换后会移动到新地点</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 科尔廷出没地点列表</div>
+            <ol class="wt-steps">
+              <li><strong>艾尔丁峡谷</strong>（初始触发）→ 完成后移动</li>
+              <li><strong>萨托利山</strong>（佐纳依神器平台旁）</li>
+              <li><strong>卓拉领地</strong>（斯科皮奥高地）</li>
+              <li><strong>林娜尤湿地</strong>（湿地马厩附近）</li>
+              <li><strong>法罗尼草原</strong>（草原中心）</li>
+              <li><strong>格鲁德荒野</strong>（沙漠边缘）</li>
+              <li><strong>阿卡拉高地</strong>（塔前广场）</li>
+              <li>最终地点：<strong>萨托利山顶</strong>，与哥哥<strong>基尔顿</strong>会合</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 提示：</strong>科尔廷每次见面只兑换一种道具，需要积累<strong>足够数量泡泡果</strong>再去找他，避免白跑一趟。建议先收集 60+ 颗果再开始追踪。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q43-Q47: 基尔顿怪物图鉴线 -->
+  <div class="quest-item expandable" data-cat="collect">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">43-47</div>
+      <div class="quest-body">
+        <div class="quest-title">怪物图鉴收集 I～V</div>
+        <div class="quest-desc">帮助怪物研究家基尔顿完成五阶段怪物图鉴，每阶段需提交指定怪物材料，奖励怪物商店优惠道具。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：塔雷镇</span>
+          <span class="tag tag-blue">奖励：怪物道具系列</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="怪物图鉴" loading="lazy">
+          <p class="quest-screenshot-caption">塔雷镇的基尔顿——专注怪物研究的学者</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 五阶段图鉴要求</div>
+            <ol class="wt-steps">
+              <li><strong>图鉴 I</strong>：提交波克布林、魔布林、莫里布林系怪物材料各 3 份 → 奖励：怪物腌肉 ×5</li>
+              <li><strong>图鉴 II</strong>：提交飞行怪（Keese/Chuchu）材料各 3 份 → 奖励：怪物萃取液 ×5</li>
+              <li><strong>图鉴 III</strong>：提交丽兹拉佛斯、基布德、莱乃尔材料各 1 份 → 奖励：怪物马鞍套装</li>
+              <li><strong>图鉴 IV</strong>：提交稀有精英怪材料（银色莱乃尔+骷髅系） → 奖励：怪物盔甲套装（特效）</li>
+              <li><strong>图鉴 V</strong>：提交全类怪物图鉴完成凭证 → 奖励：终极怪物道具全套</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 提示：</strong>基尔顿的<strong>怪物商店</strong>会随图鉴进度解锁更多道具，包括「怪物抑制喷雾」（令怪物无法察觉链克）等实用道具。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       世界探索线 · Q48–Q55
+  ═══════════════════════════════════ -->
+  <div class="section-label">🌍 世界探索线</div>
+
+  <!-- Q48 -->
+  <div class="quest-item expandable" data-cat="world">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">48</div>
+      <div class="quest-body">
+        <div class="quest-title">调查提弗洛遗迹</div>
+        <div class="quest-desc">调查大海拉鲁森林中被永久黑暗笼罩的提弗洛遗迹，解开龙灵之谜，照亮整片遗迹。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：提弗洛遗迹</span>
+          <span class="rbadge rbadge-central">中央北部森林</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/c/c5/TotK_Thyphlo_Ruins.png" alt="提弗洛遗迹" loading="lazy">
+          <p class="quest-screenshot-caption">提弗洛遗迹——大海拉鲁森林中永久漆黑的神秘遗址</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>进入<strong>大海拉鲁森林</strong>（中央北部），找到研究员<strong>卡祖尔</strong>站在遗迹入口。</li>
+              <li>遗迹内部完全黑暗，卡祖尔说明遗迹受诅咒，需要用发光物体照路。</li>
+              <li>进入遗迹，携带大量<strong>发光果</strong>或装备「发光果+盾牌」的发光盾。</li>
+              <li>在遗迹内部找到<strong>5 座熄灭的石灯</strong>，点火（用火箭或打火石）将其全部点亮。</li>
+              <li>5 盏石灯全亮后，遗迹中央的<strong>大型神木</strong>发光，诅咒解除。</li>
+              <li>回报卡祖尔，完成初始调查，触发后续「受龙守护的猫头鹰」任务线。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 暗夜导航：</strong>在漆黑的遗迹中，使用<strong>瞄准模式</strong>可以稍微看清轮廓。弓箭发光材料融合后在瞄准时会产生光晕，辅助照明效果极佳。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q49 -->
+  <div class="quest-item expandable" data-cat="world">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">49</div>
+      <div class="quest-body">
+        <div class="quest-title">受龙守护的猫头鹰</div>
+        <div class="quest-desc">提弗洛遗迹内有一只被两条龙守护的石猫头鹰雕像，找出进入路径并解开机关谜题。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：提弗洛遗迹</span>
+          <span class="rbadge rbadge-central">中央北部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/c/c5/TotK_Thyphlo_Ruins.png" alt="受龙守护的猫头鹰" loading="lazy">
+          <p class="quest-screenshot-caption">遗迹深处被两条龙石像守护的猫头鹰雕像</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>完成「调查提弗洛遗迹」后，卡祖尔指出遗迹内有两条<strong>石龙围绕猫头鹰</strong>的古迹。</li>
+              <li>前往遗迹中央区域，找到被<strong>两条龙形围墙</strong>包围的猫头鹰神像。</li>
+              <li>两条龙形围墙各有一个<strong>缺口</strong>，需要找到正确的绕行路线进入核心区。</li>
+              <li>在猫头鹰雕像前解开「<strong>旋转平台谜题</strong>」——用究极手旋转猫头鹰头部对准龙嘴方向。</li>
+              <li>谜题完成后，遗迹中央升起古代光柱，回报卡祖尔触发后续任务。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q50 -->
+  <div class="quest-item expandable" data-cat="world">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">50</div>
+      <div class="quest-body">
+        <div class="quest-title">两龙之间的走廊</div>
+        <div class="quest-desc">在提弗洛遗迹中找到被两条石龙夹道的神秘走廊，穿越机关到达另一端的秘宝。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：提弗洛遗迹</span>
+          <span class="rbadge rbadge-central">中央北部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/c/c5/TotK_Thyphlo_Ruins.png" alt="两龙走廊" loading="lazy">
+          <p class="quest-screenshot-caption">提弗洛遗迹中被两条龙夹道的神秘走廊</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>继续探索遗迹，找到东西两侧各一条<strong>石龙形状的围墙</strong>夹成的狭长走廊。</li>
+              <li>走廊内有<strong>滚石陷阱</strong>和古代机关，按正确节奏穿越（倒转乾坤可反转滚石）。</li>
+              <li>穿越走廊抵达另一端的<strong>古代宝箱</strong>，取得稀有材料。</li>
+              <li>回报卡祖尔，触发终章任务「六条龙」。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q51 -->
+  <div class="quest-item expandable" data-cat="world">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">51</div>
+      <div class="quest-body">
+        <div class="quest-title">六条龙</div>
+        <div class="quest-desc">提弗洛遗迹的终极谜题——激活六条石龙全部朝向正确方向，解开遗迹核心的封印获得传说报酬。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：提弗洛遗迹</span>
+          <span class="tag tag-green">奖励：龙骨碎片 ×3</span>
+          <span class="rbadge rbadge-central">中央北部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/c/c5/TotK_Thyphlo_Ruins.png" alt="六条龙" loading="lazy">
+          <p class="quest-screenshot-caption">提弗洛遗迹核心——六条龙全部朝向中央猫头鹰</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>完成前三个提弗洛任务后，卡祖尔说明遗迹中有<strong>6 条石龙</strong>散布各处，需全部激活并对准中央。</li>
+              <li>找到 6 条石龙的位置（分布在遗迹的 6 个方向），每条龙有<strong>旋转基座</strong>。</li>
+              <li>用究极手旋转每条龙，使其<strong>龙头对准中央猫头鹰神像</strong>。</li>
+              <li>6 条龙全部就位后，遗迹地面发光，中央出现<strong>古代宝箱</strong>。</li>
+              <li>宝箱内获得<strong>龙骨碎片 ×3</strong>（武器融合材料，攻击力+55）。</li>
+              <li>这是提弗洛线的最终任务，完成后卡祖尔感谢链克彻底解开了古代谜题。</li>
+            </ol>
+          </div>
+          <div class="highlight-box"><strong>⭐ 龙骨碎片价值：</strong>融合到武器上可提升 +55 攻击力，是游戏内<strong>最高攻击力材料之一</strong>，非常值得花时间解开此谜题。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q52 -->
+  <div class="quest-item expandable" data-cat="world">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">52</div>
+      <div class="quest-body">
+        <div class="quest-title">长龙</div>
+        <div class="quest-desc">提弗洛遗迹内有一条蜿蜒极长的石龙迷宫，从头走到尾找到隐藏在龙尾的秘密宝箱。</div>
+        <div class="quest-meta">
+          <span class="tag tag-blue">触发点：提弗洛遗迹</span>
+          <span class="rbadge rbadge-central">中央北部</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/c/c5/TotK_Thyphlo_Ruins.png" alt="长龙" loading="lazy">
+          <p class="quest-screenshot-caption">提弗洛遗迹中蜿蜒的超长石龙迷宫</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在遗迹北侧找到一条<strong>极度蜿蜒的石龙形走廊</strong>，入口在龙头处。</li>
+              <li>沿走廊一路行进，内有分叉路和机关，不走错路需靠地面图案辨别方向。</li>
+              <li>抵达走廊最末端的<strong>龙尾</strong>，找到隐藏宝箱取得装备。</li>
+              <li>回报卡祖尔，完成此子任务。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q53 -->
+  <div class="quest-item expandable" data-cat="world">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">53</div>
+      <div class="quest-body">
+        <div class="quest-title">大天空岛的传说</div>
+        <div class="quest-desc">在大天空岛上找到已休眠的守护构装体，听它讲述上古时代大天空岛的历史传说。</div>
+        <div class="quest-meta">
+          <span class="tag tag-gold">触发点：大天空岛</span>
+          <span class="rbadge rbadge-sky">天空群岛</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/92/TotK_The_Closed_Door.png" alt="大天空岛的传说" loading="lazy">
+          <p class="quest-screenshot-caption">大天空岛上的守护构装体——上古历史的见证者</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>返回大天空岛（通过天空塔飞上去），在岛屿东南角找到一具<strong>守护构装体</strong>，它处于休眠状态。</li>
+              <li>触摸构装体，它自动激活，开始讲述关于大天空岛与佐纳依族的<strong>上古历史</strong>。</li>
+              <li>听完全部叙述（约 3 分钟），构装体再次休眠，任务完成。</li>
+              <li>奖励：古代零件材料包 ×1，以及对佐纳依文明的深入了解（提示「来自太古的指引」任务线）。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q54 -->
+  <div class="quest-item expandable" data-cat="world">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">54</div>
+      <div class="quest-body">
+        <div class="quest-title">来自远古时代的讯息</div>
+        <div class="quest-desc">在监视堡垒找到研究员沃兹沃斯，帮他寻找散落各处的古代佐纳依石板，解读远古文明的秘密。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：监视堡垒</span>
+          <span class="rbadge rbadge-central">中央</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="远古时代的讯息" loading="lazy">
+          <p class="quest-screenshot-caption">监视堡垒的研究员沃兹沃斯，专注解读古代石板</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>监视堡垒</strong>地下室找到语言学家<strong>沃兹沃斯</strong>，他在研究佐纳依古文字。</li>
+              <li>沃兹沃斯需要链克帮忙在全国找到 <strong>4 块古代石板</strong>（分别在天空群岛、地底和地表）。</li>
+              <li>石板 1：<strong>大天空岛</strong>中央广场古代祭坛旁。</li>
+              <li>石板 2：<strong>海拉鲁城堡地底</strong>古代通道中。</li>
+              <li>石板 3：<strong>阿卡拉高地</strong>古代塔旁。</li>
+              <li>石板 4：<strong>格鲁德沙漠</strong>遗迹地底。</li>
+              <li>4 块全带回交给沃兹沃斯，他翻译出上古的建国誓言，任务完成。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q55 -->
+  <div class="quest-item expandable" data-cat="world">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">55</div>
+      <div class="quest-body">
+        <div class="quest-title">与雕像的交易</div>
+        <div class="quest-desc">在王室秘道内找到神秘的恶魔雕像，它提出以心换体力的危险交易——谨慎决定是否答应。</div>
+        <div class="quest-meta">
+          <span class="tag tag-red">触发点：王室秘道（监视堡垒地下）</span>
+          <span class="rbadge rbadge-central">中央地下</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="与雕像的交易" loading="lazy">
+          <p class="quest-screenshot-caption">王室秘道深处的神秘恶魔雕像</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>进入<strong>监视堡垒地下</strong>的「王室秘道」（从地下室找到隐秘入口）。</li>
+              <li>深处有一尊<strong>恶魔雕像</strong>，它提出可以「交换」心之容器与耐力容器。</li>
+              <li>每次交换：减少 1 颗心→获得 1 颗耐力，反之亦然（手续费：20 卢比）。</li>
+              <li>与它对话完成首次交易后任务结束。之后可随时回来继续调整心耐比例。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 最佳用法：</strong>先把多余的<strong>耐力换成心</strong>（满足大师之剑 13 颗心要求），取剑后再换回耐力。每次手续费 20 卢比，性价比极高。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q56 -->
+  <div class="quest-item expandable" data-cat="world">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">56</div>
+      <div class="quest-body">
+        <div class="quest-title">是谁在那里？</div>
+        <div class="quest-desc">监视堡垒地下密室有奇怪的声音，调查后发现是一位被困的研究员，帮她脱困并解开谜题。</div>
+        <div class="quest-meta">
+          <span class="tag tag-blue">触发点：监视堡垒地下</span>
+          <span class="rbadge rbadge-central">中央</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/9/94/TotK_Lookout_Landing.png" alt="是谁在那里" loading="lazy">
+          <p class="quest-screenshot-caption">监视堡垒地下密室中传来奇怪的呼救声</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>监视堡垒</strong>地下室听到从墙壁内传来的微弱声音。</li>
+              <li>用究极手移开堵塞入口的巨石，发现研究员<strong>杰琳</strong>被困其中。</li>
+              <li>帮杰琳搬开封堵物，她成功脱困并感谢链克。</li>
+              <li>杰琳加入研究室团队，后续会提供探索地底的情报和特殊道具。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q57 -->
+  <div class="quest-item expandable" data-cat="world">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">57</div>
+      <div class="quest-body">
+        <div class="quest-title">来自深渊的呼唤</div>
+        <div class="quest-desc">在时之神殿废墟附近听到从地底传来的神秘呼声，追踪后发现古代构装体正在向链克发出求救信号。</div>
+        <div class="quest-meta">
+          <span class="tag tag-purple">触发点：时之神殿废墟</span>
+          <span class="tag tag-gold">奖励：地底探索道具</span>
+          <span class="rbadge rbadge-central">中央</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b8/TotK_Spirit_Temple.png" alt="来自深渊的呼唤" loading="lazy">
+          <p class="quest-screenshot-caption">时之神殿废墟地底——构装体被深渊缠绕困住</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在<strong>时之神殿废墟</strong>（海拉鲁城堡西南方）附近，地面上有一处<strong>发光裂缝</strong>。</li>
+              <li>用通天术从裂缝穿下，或找到旁边的地底入口跳入。</li>
+              <li>地底深处发现一台<strong>古代守护构装体</strong>被淤泥困住无法动弹。</li>
+              <li>用泼水果清除构装体周围的淤泥，构装体复活，向链克致谢并留下道具。</li>
+              <li>获得<strong>古代零件 ×5 + 发光果 ×10</strong>，任务完成。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       伊卡族线 · Q58–Q60
+  ═══════════════════════════════════ -->
+  <div class="section-label">🥷 伊卡族线</div>
+
+  <!-- Q58 -->
+  <div class="quest-item expandable" data-cat="yiga">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">58</div>
+      <div class="quest-body">
+        <div class="quest-title">潜入伊卡族</div>
+        <div class="quest-desc">伪装成伊卡族成员渗透进伊卡族总部，取得内部情报并搞清楚他们的行动计划。</div>
+        <div class="quest-meta">
+          <span class="tag tag-red">触发点：伊卡族基地（格鲁德沙漠）</span>
+          <span class="rbadge rbadge-gerudo">西南</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/8/84/TotK_Lightning_Temple.png" alt="潜入伊卡族" loading="lazy">
+          <p class="quest-screenshot-caption">隐藏在格鲁德荒野地底的伊卡族总部</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 攻略步骤</div>
+            <ol class="wt-steps">
+              <li>在格鲁德荒野找到<strong>迷路的伊卡族成员米莫斯</strong>，他厌倦了组织，愿意帮链克潜入。</li>
+              <li>米莫斯提供伊卡族制服，穿上后可以假扮成伊卡族成员进入基地。</li>
+              <li>抵达<strong>伊卡族基地</strong>（格鲁德荒野地底），门卫用暗号检查：回答「香蕉」即可通过。</li>
+              <li>基地内不能战斗，必须以<strong>潜行方式</strong>收集 5 份情报文件（散落在各个房间）。</li>
+              <li>取得全部情报后悄悄撤退，回报米莫斯，任务完成，触发后续「伊卡族考试」。</li>
+            </ol>
+          </div>
+          <div class="tip-box"><strong>💡 潜行技巧：</strong>装备<strong>暗影套装</strong>（潜行+3 效果）可减少被发现概率。蹲行速度较慢但不易触发警报，遇到巡逻时躲在家具后等待视线离开。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q59 -->
+  <div class="quest-item expandable" data-cat="yiga">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">59</div>
+      <div class="quest-body">
+        <div class="quest-title">伊卡族的考试</div>
+        <div class="quest-desc">以伊卡族成员身份通过三关考试，取得正式成员资格，进一步混入组织核心获得更多情报。</div>
+        <div class="quest-meta">
+          <span class="tag tag-red">触发点：伊卡族基地</span>
+          <span class="rbadge rbadge-gerudo">西南地底</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/8/84/TotK_Lightning_Temple.png" alt="伊卡族的考试" loading="lazy">
+          <p class="quest-screenshot-caption">伊卡族基地考场——三关考试的所在地</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 三关考试详解</div>
+            <ol class="wt-steps">
+              <li><strong>第一关：香蕉知识测验</strong>——回答出「伊卡族三大香蕉食谱」，答案在基地内书架上的食谱书中。</li>
+              <li><strong>第二关：潜行穿越</strong>——在不被发现的情况下穿越 3 名巡逻忍者的视野范围，抵达终点。</li>
+              <li><strong>第三关：格斗测试</strong>——与伊卡族刀剑大师进行「友好切磋」（实际是正式战斗），将其击败。</li>
+              <li>三关全过，获得<strong>伊卡族正式成员徽章</strong>，并解锁最终任务「科哈加的伊卡族」。</li>
+            </ol>
+          </div>
+          <div class="wt-boss"><strong>⚔ 第三关刀剑大师：</strong>使用伊卡族大刀，攻击方式与链克相同，善用<strong>完美格挡</strong>反击，消耗他的耐力后大幅输出。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q60 -->
+  <div class="quest-item expandable" data-cat="yiga">
+    <div class="quest-row" onclick="toggleQuest(this)">
+      <div class="quest-num">60</div>
+      <div class="quest-body">
+        <div class="quest-title">伊卡族的科哈加</div>
+        <div class="quest-desc">在地底各处追击伊卡族首领科哈加，完成五场机关对决，最终一举摧毁他的巨型武器计划。</div>
+        <div class="quest-meta">
+          <span class="tag tag-red">触发点：地底中央废矿</span>
+          <span class="tag tag-gold">奖励：伊卡族特供装备</span>
+          <span class="rbadge rbadge-depth">地底世界</span>
+        </div>
+      </div>
+      <div class="quest-actions">
+        <button class="quest-check" onclick="event.stopPropagation();toggleSQCheck(this)">✓</button>
+        <span class="expand-chevron">▼</span>
+      </div>
+    </div>
+    <div class="quest-detail">
+      <div class="quest-detail-inner">
+        <div>
+          <img class="quest-screenshot" src="https://cdn.wikimg.net/en/zeldawiki/images/b/b8/TotK_Spirit_Temple.png" alt="科哈加" loading="lazy">
+          <p class="quest-screenshot-caption">科哈加在地底各处摆下机关等待链克挑战</p>
+        </div>
+        <div>
+          <div class="wt-section">
+            <div class="wt-title">📋 五场对决攻略</div>
+            <ol class="wt-steps">
+              <li><strong>第一战（中央废矿）</strong>：科哈加驾驶一台磁力提升机，用余料建造把铁块砸向链克。<br>
+                → <strong>破解：</strong>用究极手抓起他扔过来的铁块反砸他的机器。</li>
+              <li><strong>第二战（鼓隆地底）</strong>：科哈加改装了矿车武器，从四面八方冲过来。<br>
+                → <strong>破解：</strong>用余料建造做一堵墙挡住矿车，趁他维修时攻击。</li>
+              <li><strong>第三战（卓拉地底）</strong>：科哈加控制多台水球炮台，地面有水流妨碍移动。<br>
+                → <strong>破解：</strong>用倒转乾坤反转炮台方向，让他被自己的炮击中。</li>
+              <li><strong>第四战（格鲁德地底）</strong>：科哈加升上高台俯视，用沙尘炮轰炸。<br>
+                → <strong>破解：</strong>用通天术快速升上高台，在他机关开炮前先攻击。</li>
+              <li><strong>第五战（最终决战）</strong>：科哈加开出终极佐纳依战车，多重武装。<br>
+                → <strong>破解：</strong>拆解战车零件削弱他，最终以大师之剑一击终结。</li>
+            </ol>
+          </div>
+          <div class="wt-boss"><strong>🎁 全部击败奖励：</strong>科哈加的终极武器设计图纸 + 伊卡族特供大刀 × 1 + 大量稀有材料。这是全 60 个情节挑战中规模最大、战斗最精彩的任务线。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div><!-- end sqList -->
+</div><!-- end page-body -->
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">
+      本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。<br>
+      《塞尔达传说 王国之泪》版权归任天堂株式会社所有。
+    </p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+function filterSQ(cat, btn) {
+  document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const items = document.querySelectorAll('#sqList .quest-item[data-cat]');
+  items.forEach(el => {
+    el.style.display = (cat === 'all' || el.dataset.cat === cat) ? 'flex' : 'none';
+  });
+  // 重新显示/隐藏分区标签
+  document.querySelectorAll('#sqList .section-label').forEach(lbl => {
+    if (cat === 'all') { lbl.style.display = 'flex'; return; }
+    const next = lbl.nextElementSibling;
+    let hasVisible = false;
+    let el = lbl.nextElementSibling;
+    while (el && !el.classList.contains('section-label')) {
+      if (el.dataset && el.dataset.cat === cat) hasVisible = true;
+      el = el.nextElementSibling;
+    }
+    lbl.style.display = hasVisible ? 'flex' : 'none';
+  });
+}
+
+function searchSQ(val) {
+  const q = val.toLowerCase().trim();
+  if (!q) { filterSQ('all', document.querySelector('.filter-tab.active')); return; }
+  document.querySelectorAll('#sqList .quest-item[data-cat]').forEach(el => {
+    el.style.display = el.textContent.toLowerCase().includes(q) ? 'flex' : 'none';
+  });
+  document.querySelectorAll('#sqList .section-label').forEach(lbl => {
+    lbl.style.display = 'none';
+  });
+}
+
+function toggleSQCheck(btn) {
+  btn.classList.toggle('done');
+  const pageKey = window.location.pathname;
+  const allBtns = [...document.querySelectorAll('#sqList .quest-check')];
+  const idx = allBtns.indexOf(btn);
+  if (idx !== -1) {
+    localStorage.setItem(pageKey + '_sq_' + idx, btn.classList.contains('done') ? 'done' : '');
+  }
+  updateSQProgress();
+}
+
+function updateSQProgress() {
+  const done  = document.querySelectorAll('#sqList .quest-check.done').length;
+  const fill  = document.getElementById('sqProgressFill');
+  const count = document.getElementById('sqDoneCount');
+  if (fill)  fill.style.width = (done / 60 * 100) + '%';
+  if (count) count.textContent = done;
+}
+
+// 展开/收起
+function toggleQuest(rowEl) {
+  const item    = rowEl.parentElement;
+  const detail  = item.querySelector('.quest-detail');
+  const chevron = rowEl.querySelector('.expand-chevron');
+  if (!detail) return;
+  const isOpen = detail.classList.contains('open');
+  detail.classList.toggle('open', !isOpen);
+  if (chevron) chevron.classList.toggle('open', !isOpen);
+}
+
+// 恢复 localStorage 状态
+document.addEventListener('DOMContentLoaded', () => {
+  const pageKey = window.location.pathname;
+  document.querySelectorAll('#sqList .quest-check').forEach((btn, i) => {
+    if (localStorage.getItem(pageKey + '_sq_' + i) === 'done') {
+      btn.classList.add('done');
+    }
+  });
+  updateSQProgress();
+});
+</script>
+
+</body>
+</html>
+
+
+

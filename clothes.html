@@ -1,0 +1,939 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- ═══ 安全与版权 meta ═══ -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="withalpha@proton.me">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="王国之泪全38套套装完整图鉴，含获取方式、套装加成与大妖精强化素材。">
+  <meta name="keywords" content="王国之泪,套装,防具,图鉴,攻略,塞尔达">
+  <meta property="og:title" content="套装获取图鉴 · 王国之泪">
+  <meta property="og:description" content="王国之泪全38套套装完整图鉴，含获取方式、套装加成与大妖精强化素材。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="套装获取图鉴 · 王国之泪">
+  <meta name="twitter:description" content="王国之泪全38套套装完整图鉴，含获取方式、套装加成与大妖精强化素材。">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>套装获取 · 王国之泪攻略</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── 套装卡片网格 ── */
+    .clothes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .clothes-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+    .clothes-card:hover {
+      border-color: rgba(201,162,39,0.55);
+      box-shadow: var(--glow-gold);
+      transform: translateY(-4px);
+    }
+    /* 图片区域 */
+    .clothes-img-wrap {
+      background: rgba(0,0,0,0.4);
+      border-bottom: 1px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      overflow: hidden;
+    }
+    .clothes-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 16px;
+      filter: drop-shadow(0 4px 18px rgba(201,162,39,0.3));
+      transition: transform 0.35s ease;
+    }
+    .clothes-card:hover .clothes-img-wrap img { transform: scale(1.06); }
+    .clothes-img-placeholder { font-size: 4rem; opacity: 0.35; }
+    /* 卡片内容 */
+    .clothes-body { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; }
+    .clothes-name { font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px; }
+    .clothes-set-bonus {
+      font-size: 0.73rem; color: var(--green); font-weight: 600;
+      margin-bottom: 10px; display: flex; align-items: center; gap: 5px;
+    }
+    .clothes-desc { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 12px; flex: 1; }
+    .clothes-obtain {
+      font-size: 0.76rem; color: var(--text-muted); line-height: 1.75;
+      border-top: 1px solid var(--border-gold); padding-top: 11px; margin-top: auto;
+    }
+    .clothes-obtain strong { color: var(--gold-light); }
+    /* 套装强化徽章 */
+    .upgrade-badges { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 11px; }
+    .ubadge {
+      padding: 2px 8px; border-radius: 20px; font-size: 0.68rem; font-weight: 600;
+      border: 1px solid; display: inline-flex; align-items: center; gap: 3px;
+    }
+    .ubadge-def  { color: #34d399; border-color: rgba(52,211,153,0.4);  background: rgba(52,211,153,0.08); }
+    .ubadge-set  { color: var(--gold); border-color: var(--border-gold); background: rgba(201,162,39,0.08); }
+    .ubadge-env  { color: #60a5fa;  border-color: rgba(96,165,250,0.4);  background: rgba(96,165,250,0.08); }
+    .ubadge-stealth { color: #a78bfa; border-color: rgba(167,139,250,0.4); background: rgba(167,139,250,0.08); }
+    .ubadge-atk  { color: #f87171;  border-color: rgba(248,113,113,0.4); background: rgba(248,113,113,0.08); }
+    .ubadge-shop { color: #fbbf24;  border-color: rgba(251,191,36,0.4);  background: rgba(251,191,36,0.08); }
+    /* 区块标题 */
+    .section-wrap { margin-bottom: 52px; }
+    /* 响应式 */
+    @media(max-width: 600px) { .clothes-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html" class="active">套装获取</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a><ul class="nav-dropdown-menu"><li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li><li><a href="sage-will.html" class="disabled">贤者的遗志</a></li></ul></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ══ PAGE HERO ══ -->
+<div class="page-hero">
+  <span class="page-hero-eyebrow">ARMOR & OUTFITS</span>
+  <h1 class="page-hero-title">🧥 套装完全图鉴</h1>
+  <p class="page-hero-subtitle">防御力 · 套装加成 · 强化素材 · 全部 38 套套装获取攻略</p>
+</div>
+
+<div class="page-body">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span><span class="cur">套装获取</span>
+  </nav>
+
+  <div class="highlight-box">
+    <strong>套装系统：</strong>每套套装由头部、上身、腿部三件组成，穿齐三件可解锁<strong>套装加成效果</strong>。在大妖精泉强化后，防御力大幅提升，部分套装 4 星强化后还可解锁额外加成。建议优先强化常用套装至 ★★。
+  </div>
+
+  <!-- 筛选标签 -->
+  <div class="filter-tabs" id="filterTabs">
+    <button class="filter-tab active" onclick="filterC('all',this)">全部</button>
+    <button class="filter-tab" onclick="filterC('env',this)">🌿 环境适应</button>
+    <button class="filter-tab" onclick="filterC('stealth',this)">🌙 潜行</button>
+    <button class="filter-tab" onclick="filterC('combat',this)">⚔ 战斗强化</button>
+    <button class="filter-tab" onclick="filterC('hero',this)">✨ 勇者套装</button>
+    <button class="filter-tab" onclick="filterC('special',this)">🏅 特殊获取</button>
+  </div>
+
+  <script>
+    function ci(e){ e.style.display='none'; e.nextElementSibling.style.display='flex'; }
+    function filterC(type, btn){
+      document.querySelectorAll('#filterTabs .filter-tab').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.clothes-card').forEach(card=>{
+        card.style.display = (type==='all' || card.dataset.type===type) ? '' : 'none';
+      });
+      // 隐藏没有可见卡片的 section 包装器（避免留下孤立的区块标题）
+      document.querySelectorAll('.section-wrap').forEach(section=>{
+        const hasVisible = Array.from(section.querySelectorAll('.clothes-card'))
+          .some(card => card.style.display !== 'none');
+        section.style.display = hasVisible ? '' : 'none';
+      });
+      // 隐藏空 section 前后的分割线
+      document.querySelectorAll('.divider').forEach(divider=>{
+        const next = divider.nextElementSibling;
+        divider.style.display = (next && next.style.display === 'none') ? 'none' : '';
+      });
+    }
+  </script>
+
+
+  <!-- ══════════════════════════════════════
+       环境适应类套装
+  ══════════════════════════════════════ -->
+  <div class="section-wrap">
+    <div class="section-label">🌿 环境适应套装</div>
+    <div class="clothes-grid">
+
+      <!-- 耐火套装 -->
+      <div class="clothes-card" data-type="env">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/耐火套装.png" alt="耐火套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🔥</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">耐火套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-env">🔥 火焰免疫</span>
+            <span class="ubadge ubadge-set">套装加成：急速</span>
+          </div>
+          <div class="clothes-desc">穿戴后可在火山、熔岩地区自由活动，不受灼热伤害。三件齐穿解锁急速套装加成，移动速度大幅提升。前往鼓隆城及格鲁德火山必备。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>前往鼓隆城（骨狂人之火）杂货店购买，需先完成进城任务。三件合计约 2400 卢比。</div>
+        </div>
+      </div>
+
+      <!-- 橡胶套装 -->
+      <div class="clothes-card" data-type="env">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/橡胶套装.png" alt="橡胶套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">⚡</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">橡胶套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-env">⚡ 雷击免疫</span>
+            <span class="ubadge ubadge-set">套装加成：静电</span>
+          </div>
+          <div class="clothes-desc">穿戴后免疫雷击伤害，不会被闪电击落武器。三件齐穿解锁静电加成，攻击可传导雷电。雷电神庙及雷击平原探索必备。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成三座「奥鲁克神庙」（雷型神庙）任务。头部：雷电山脉区域神庙；上身：法罗尼高原神庙；腿部：雷击平原神庙。</div>
+        </div>
+      </div>
+
+      <!-- 暴风雪套装 -->
+      <div class="clothes-card" data-type="env">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/暴风雪套装.png" alt="暴风雪套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">❄</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">暴风雪套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-env">❄ 耐寒强化</span>
+            <span class="ubadge ubadge-set">套装加成：雪地急速</span>
+          </div>
+          <div class="clothes-desc">强力耐寒套装，穿戴后可在极寒地区活动无需进食热食。三件齐穿解锁雪地急速，在雪地中移动速度大幅加快。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>利达尔山脉山顶商店购买，需在极寒环境下抵达（建议先有耐寒食物）。三件合计约 2100 卢比。</div>
+        </div>
+      </div>
+
+      <!-- 热沙套装 -->
+      <div class="clothes-card" data-type="env">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/热沙套装.png" alt="热沙套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🏜</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">热沙套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-env">☀ 耐热强化</span>
+            <span class="ubadge ubadge-set">套装加成：沙地急速</span>
+          </div>
+          <div class="clothes-desc">保护身体免受灼热沙漠气候影响，可在杰鲁多沙漠白天自由行动。三件齐穿在沙地中移动速度提升。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>杰鲁多城服装店购买，需以女性身份（穿着女装）入城。三件合计约 1800 卢比。</div>
+        </div>
+      </div>
+
+      <!-- 蛙之套装 -->
+      <div class="clothes-card" data-type="env">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/蛙之套装.png" alt="蛙之套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🐸</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">蛙之套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-env">🌧 雨天不滑</span>
+            <span class="ubadge ubadge-set">套装加成：雨天急速</span>
+          </div>
+          <div class="clothes-desc">模仿青蛙皮肤的套装，穿戴后在雨天攀爬不会滑落，与普通套装下雨效果完全相反。三件齐穿雨天移动极速。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成支线「卡卡利科村青蛙任务」系列，找到并帮助三只青蛙 NPC 后各获得一件。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+
+  <!-- ══════════════════════════════════════
+       移动能力类套装
+  ══════════════════════════════════════ -->
+  <div class="section-wrap">
+    <div class="section-label">🏃 移动能力套装</div>
+    <div class="clothes-grid">
+
+      <!-- 攀登套装 -->
+      <div class="clothes-card" data-type="env">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/攀登套装.png" alt="攀登套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🧗</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">攀登套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-env">🧗 攀爬速度↑</span>
+            <span class="ubadge ubadge-set">套装加成：攀爬急速</span>
+          </div>
+          <div class="clothes-desc">专为攀爬设计的轻量化套装，每件都能提升攀爬速度。三件齐穿后攀爬速度接近疾跑，是探索高地和天空岛的最佳搭档。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>三件分别藏于特定神庙宝箱中。头部：罗吉鲁神庙；上身：纳贝坎努神庙；腿部：特定天空岛神庙。</div>
+        </div>
+      </div>
+
+      <!-- 滑翔套装 -->
+      <div class="clothes-card" data-type="env">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/滑翔套装.png" alt="滑翔套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🪂</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">滑翔套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-env">🪂 滑翔速度↑</span>
+            <span class="ubadge ubadge-set">套装加成：空中跳跃</span>
+          </div>
+          <div class="clothes-desc">专为滑翔伞使用者设计，穿戴后滑翔速度加快，方向控制更灵活。三件齐穿可在滑翔中额外跳跃一次，探索天空岛极为实用。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成天空岛挑战（四个地区天空岛各一件）：头部在利特天空岛；上身在卓拉天空岛；腿部在鼓隆天空岛。</div>
+        </div>
+      </div>
+
+      <!-- 潜行套装 -->
+      <div class="clothes-card" data-type="stealth">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/潜行套装.png" alt="潜行套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🌙</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">潜行套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-stealth">🌙 降低噪音</span>
+            <span class="ubadge ubadge-set">套装加成：极致潜行</span>
+          </div>
+          <div class="clothes-desc">谢卡族传统潜行服，穿戴后移动声音极小，不易被敌人察觉。三件齐穿后几乎完全隐身（不含视觉）。是偷袭和绕过敌人的首选套装。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>卡卡利科村夜间商店（夜晚才开门）购买。三件合计约 1500 卢比，需在夜晚前往村子的服装店。</div>
+        </div>
+      </div>
+
+      <!-- 夜光套装 -->
+      <div class="clothes-card" data-type="stealth">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/夜光套装.png" alt="夜光套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🌟</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">夜光套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-stealth">✨ 夜间发光</span>
+            <span class="ubadge ubadge-set">套装加成：暗中加速</span>
+          </div>
+          <div class="clothes-desc">夜晚会散发柔和光芒的神秘套装，在地底黑暗区域照亮周围，减少用火把的需求。三件齐穿夜间移动速度加快。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>三件分别位于地底世界的特定宝箱中，对应地表三个区域的地底版本宝箱。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+
+  <!-- ══════════════════════════════════════
+       战斗强化类套装
+  ══════════════════════════════════════ -->
+  <div class="section-wrap">
+    <div class="section-label">⚔ 战斗强化套装</div>
+    <div class="clothes-grid">
+
+      <!-- 蛮族套装 -->
+      <div class="clothes-card" data-type="combat">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/蛮族套装.png" alt="蛮族套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🪓</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">蛮族套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-atk">⚔ 攻击力↑</span>
+            <span class="ubadge ubadge-set">套装加成：破防双倍</span>
+          </div>
+          <div class="clothes-desc">野蛮骑士穿戴的战斗套装，每件提升攻击力，三件齐穿后攻击伤害翻倍。是打莱乃尔、BOSS 战的核心战斗套装，后期必备。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>三件分别位于三处骷髅遗迹宝箱：头部在阿库拉遗迹；上身在科加遗迹；腿部在克洛格森林附近遗迹宝箱。</div>
+        </div>
+      </div>
+
+      <!-- 暗黑套装 -->
+      <div class="clothes-card" data-type="combat">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/暗黑套装.png" alt="暗黑套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🖤</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">暗黑套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-atk">🖤 暗夜攻击↑</span>
+            <span class="ubadge ubadge-set">套装加成：幽影结界</span>
+          </div>
+          <div class="clothes-desc">夜晚攻击力明显提升的战斗套装，外观暗色系，三件齐穿后夜间或黑暗地区可为自身增加幽影结界减少受击伤害。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>三件均来自地底世界深层宝箱，分布在不同地底区域，需点亮破魔树根扩大地图后探索。</div>
+        </div>
+      </div>
+
+      <!-- 黑暗套装 -->
+      <div class="clothes-card" data-type="combat">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/黑暗套装.png" alt="黑暗套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">👤</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">黑暗套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-atk">🌑 暗影攻击</span>
+            <span class="ubadge ubadge-set">套装加成：影分身</span>
+          </div>
+          <div class="clothes-desc">与暗黑套装外观相似但效果不同，穿戴后会出现「暗影链接」效果，三件齐穿偶尔触发影分身协助攻击。是最稀有的套装之一。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成隐藏支线「黑暗林克」系列（三个地区各一任务），击败暗影林克后获得对应部位套装。</div>
+        </div>
+      </div>
+
+      <!-- 鬼神套装 -->
+      <div class="clothes-card" data-type="combat">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/鬼神套装.png" alt="鬼神套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">👹</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">鬼神套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-atk">💥 重击强化</span>
+            <span class="ubadge ubadge-set">套装加成：震地冲击</span>
+          </div>
+          <div class="clothes-desc">充满古代力量的鬼神战甲，穿戴后蓄力攻击（重击）伤害提升，破盾效果增强。三件齐穿蓄力攻击触发地震冲击波，对多敌群战极有效。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>依序完成「古代战场」系列支线任务，三件分别作为三个阶段的任务奖励。</div>
+        </div>
+      </div>
+
+      <!-- 幻影套装 -->
+      <div class="clothes-card" data-type="combat">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/幻影套装.png" alt="幻影套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">👻</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">幻影套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-stealth">👻 幻影移动</span>
+            <span class="ubadge ubadge-set">套装加成：无声刺杀</span>
+          </div>
+          <div class="clothes-desc">外观宛如幽灵的神秘套装，穿戴后移动轨迹对敌人更难追踪，潜行偷袭伤害提升。三件齐穿后偷袭必定一击必杀普通敌人。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>三件分别藏于海拉鲁大地三处隐秘神庙宝箱（不在主流神庙路线上），需解开特殊谜题才能进入。</div>
+        </div>
+      </div>
+
+      <!-- 近卫兵套装 -->
+      <div class="clothes-card" data-type="combat">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/近卫兵套装.png" alt="近卫兵套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🛡</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">近卫兵套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-def">🛡 防御力最高</span>
+            <span class="ubadge ubadge-set">套装加成：盾反强化</span>
+          </div>
+          <div class="clothes-desc">谢卡族古代技术铸造的终极防具，未强化时防御力已为全游戏最高。三件齐穿后盾反（完美格挡）造成更高反伤。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>三件均在海拉鲁城堡深处宝箱（需深入城堡内部）。头部在城堡西翼；上身在城堡地下；腿部在城堡塔顶。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+
+  <!-- ══════════════════════════════════════
+       勇者系列套装
+  ══════════════════════════════════════ -->
+  <div class="section-wrap">
+    <div class="section-label">✨ 勇者传承套装</div>
+    <div class="highlight-box" style="margin-bottom:20px">
+      <strong>勇者套装：</strong>来自历代塞尔达传说作品的经典服装，多数需通过 <strong>amiibo</strong> 扫描获得，部分可在游戏内隐藏宝箱取得。这些套装提供独特的战斗加成或特殊效果。
+    </div>
+    <div class="clothes-grid">
+
+      <!-- 旷野之勇者套装 -->
+      <div class="clothes-card" data-type="hero">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/旷野之勇者套装.png" alt="旷野之勇者套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🌾</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">旷野之勇者套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-set">✨ 来自《旷野之息》</span>
+            <span class="ubadge ubadge-atk">⚔ 攀爬攻击↑</span>
+          </div>
+          <div class="clothes-desc">《旷野之息》林克的经典蓝色冒险服。穿戴后攀爬途中发动的攻击伤害提升，跳跃斩击强化。是探索高低起伏地形时的优选。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>扫描《旷野之息》林克 amiibo 随机获得，或在游戏内特定天空岛神庙宝箱（需特殊条件解锁）。</div>
+        </div>
+      </div>
+
+      <!-- 时之勇者套装 -->
+      <div class="clothes-card" data-type="hero">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/时之勇者套装.png" alt="时之勇者套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">⏰</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">时之勇者套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-set">✨ 来自《时之笛》</span>
+            <span class="ubadge ubadge-atk">⚔ 骑马攻击↑</span>
+          </div>
+          <div class="clothes-desc">《时之笛》时代勇者的深色铠甲，穿戴后骑乘坐骑时攻击力提升，马背上挥剑范围更广。适合骑马决斗场景。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>扫描《时之笛》林克 amiibo 随机获得，三件分别通过不同扫描获取。</div>
+        </div>
+      </div>
+
+      <!-- 风之勇者套装 -->
+      <div class="clothes-card" data-type="hero">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/风之勇者套装.png" alt="风之勇者套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">💨</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">风之勇者套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-set">✨ 来自《风之律动》</span>
+            <span class="ubadge ubadge-env">🌊 海上速度↑</span>
+          </div>
+          <div class="clothes-desc">《风之律动》海洋冒险版林克的绿色水手装，穿戴后在水面和海洋地形移动速度提升，乘船速度加快。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>扫描《风之律动》林克 amiibo 随机获得。</div>
+        </div>
+      </div>
+
+      <!-- 黄昏之勇者套装 -->
+      <div class="clothes-card" data-type="hero">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/黄昏之勇者套装.png" alt="黄昏之勇者套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🌆</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">黄昏之勇者套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-set">✨ 来自《黄昏公主》</span>
+            <span class="ubadge ubadge-atk">⚔ 受伤反伤</span>
+          </div>
+          <div class="clothes-desc">《黄昏公主》骑士林克的深蓝铠甲，穿戴后受到伤害时有概率触发反伤效果，将伤害反弹给攻击者。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>扫描《黄昏公主》林克 amiibo 随机获得。</div>
+        </div>
+      </div>
+
+      <!-- 天空之勇者套装 -->
+      <div class="clothes-card" data-type="hero">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/天空之勇者套装.png" alt="天空之勇者套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">☁</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">天空之勇者套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-set">✨ 来自《御天之剑》</span>
+            <span class="ubadge ubadge-env">☁ 天空岛加速</span>
+          </div>
+          <div class="clothes-desc">《御天之剑》飞行冒险版林克服装，穿戴后在天空岛地形的各种动作速度提升，如同原作中驾驭凌风鸟般轻盈。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>扫描《御天之剑》林克 amiibo 随机获得。</div>
+        </div>
+      </div>
+
+      <!-- 织梦之勇者套装 -->
+      <div class="clothes-card" data-type="hero">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/织梦之勇者套装.png" alt="织梦之勇者套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🌙</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">织梦之勇者套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-set">✨ 来自《梦见岛》</span>
+            <span class="ubadge ubadge-atk">⚔ 盾反强化</span>
+          </div>
+          <div class="clothes-desc">《梦见岛》像素风格林克的经典绿色服装（高清版），穿戴后盾反（完美格挡）的判定时间略微延长，更容易触发。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>扫描《梦见岛》林克 amiibo 随机获得。</div>
+        </div>
+      </div>
+
+      <!-- 初始之勇者套装 -->
+      <div class="clothes-card" data-type="hero">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/初始之勇者套装.png" alt="初始之勇者套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">💚</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">初始之勇者套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-set">✨ 经典绿色服装</span>
+            <span class="ubadge ubadge-def">🛡 均衡防御</span>
+          </div>
+          <div class="clothes-desc">塞尔达系列标志性的绿色精灵服，整体属性均衡，穿戴时具有回忆历代勇者的特殊加成光环，对魔法类敌人伤害略微提升。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>扫描王国之泪版林克 amiibo 获得，或在主线后期特定区域的隐藏宝箱中找到。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+
+  <!-- ══════════════════════════════════════
+       特殊获取套装（任务奖励、神殿等）
+  ══════════════════════════════════════ -->
+  <div class="section-wrap">
+    <div class="section-label">🏅 特殊套装（任务 · 神殿 · 商店）</div>
+    <div class="clothes-grid">
+
+      <!-- 海利亚套装 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/海利亚套装.png" alt="海利亚套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">👗</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">海利亚套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-shop">🛒 商店购买</span>
+            <span class="ubadge ubadge-def">🛡 基础防御</span>
+          </div>
+          <div class="clothes-desc">海拉鲁王国的平民服装，外观典雅，防御均衡。没有特殊加成效果，但作为城镇内穿着或早期防具是不错的选择。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>海拉鲁城镇服装店购买，三件合计约 600 卢比，游戏开始不久即可购得。</div>
+        </div>
+      </div>
+
+      <!-- 海利亚士兵套装 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/海力亚士兵套装.png" alt="海力亚士兵套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">⚔</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">海力亚士兵套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-def">🛡 士兵防御</span>
+            <span class="ubadge ubadge-set">套装加成：无</span>
+          </div>
+          <div class="clothes-desc">海拉鲁王国士兵的标准战甲，防御力比海利亚套装更高，外观威武。适合中早期作为主战防具使用。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>海拉鲁城镇士兵装备铺购买，或在城堡周边击败士兵偶尔掉落（掉落率低）。</div>
+        </div>
+      </div>
+
+      <!-- 精灵套装 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/精灵套装.png" alt="精灵套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🧚</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">精灵套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-env">🌿 大妖精庇护</span>
+            <span class="ubadge ubadge-set">套装加成：强化加成↑</span>
+          </div>
+          <div class="clothes-desc">受大妖精祝福的精灵服，穿戴后在大妖精泉强化其他套装时所需素材数量减少。三件齐穿效果叠加，是高效强化套装的辅助搭配。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>激活游戏内四处大妖精泉后，完成大妖精系列支线任务，分别获得三件套装部位。</div>
+        </div>
+      </div>
+
+      <!-- 采矿套装 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/采矿套装.png" alt="采矿套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">⛏</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">采矿套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-set">套装加成：矿石双倍</span>
+            <span class="ubadge ubadge-shop">🛒 任务奖励</span>
+          </div>
+          <div class="clothes-desc">鼓隆族矿工专用套装，穿戴后敲击矿石获得的素材数量提升。三件齐穿后矿物掉落双倍，是刷材料强化套装的最佳帮手。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成鼓隆城「矿工的心愿」系列支线任务（共三个），每个任务奖励一件套装部位。</div>
+        </div>
+      </div>
+
+      <!-- 汀空套装 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/汀空套装.png" alt="汀空套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">💎</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">汀空套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-env">💎 古代力量</span>
+            <span class="ubadge ubadge-set">套装加成：余料加速</span>
+          </div>
+          <div class="clothes-desc">融合佐纳依古代技术的神秘套装，穿戴后使用余料建造（融合、建造）的速度加快。三件齐穿后建造动作几乎瞬间完成。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>三件分别位于地底世界的佐纳依遗迹宝箱，需解开佐纳依机关谜题后才能开启。</div>
+        </div>
+      </div>
+
+      <!-- 火焰套装 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/火焰套装.png" alt="火焰套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🔥</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">火焰套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-atk">🔥 火焰攻击</span>
+            <span class="ubadge ubadge-set">套装加成：炎爆</span>
+          </div>
+          <div class="clothes-desc">穿戴后近战攻击附带火焰伤害，可自动点燃敌人。三件齐穿后攻击触发炎爆效果，对周围敌人造成范围火焰伤害。与耐火套装不同，此套装着重进攻。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>三件均在格鲁德火山地区宝箱（包括地底对应区域），需耐火保护才能进入获取。</div>
+        </div>
+      </div>
+
+      <!-- 雷光套装 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/雷光套装.png" alt="雷光套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">⚡</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">雷光套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-atk">⚡ 雷电攻击</span>
+            <span class="ubadge ubadge-set">套装加成：雷链</span>
+          </div>
+          <div class="clothes-desc">穿戴后近战攻击附带雷电，命中可传导至附近敌人。三件齐穿触发雷链效果，攻击同时传导至最多三个目标，对群战极为有效。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成卓拉领地「雷电研究」支线任务系列，三个任务分别获得一件。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+
+  <!-- ══════════════════════════════════════
+       四神兽兵装 & 种族套装
+  ══════════════════════════════════════ -->
+  <div class="section-wrap">
+    <div class="section-label">🏰 种族套装 · 神兽兵装</div>
+    <div class="highlight-box" style="margin-bottom:20px">
+      <strong>神兽兵装：</strong>完成四大神殿主线后，于对应城镇可以获得或购买各英杰专属兵装。每套兵装只有<strong>一件</strong>（上身），无套装加成，但防御力较高且外观独特。
+    </div>
+    <div class="clothes-grid">
+
+      <!-- 卓拉套装 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/卓拉套装.png" alt="卓拉套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">💧</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">卓拉套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-env">💧 水中速度↑</span>
+            <span class="ubadge ubadge-set">套装加成：瀑布逆行</span>
+          </div>
+          <div class="clothes-desc">卓拉族礼服，穿戴后在水中游泳速度大幅提升。三件齐穿解锁瀑布逆行能力，可沿瀑布向上冲浪攀升。探索卓拉领地必备套装。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成水之神殿后，卓拉领地商店全套开放购买。头部、上身、腿部各约 500 卢比。</div>
+        </div>
+      </div>
+
+      <!-- 利特套装 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/利特套装.png" alt="利特套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🪶</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">利特套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-env">❄ 耐寒↑</span>
+            <span class="ubadge ubadge-set">套装加成：顺风加速</span>
+          </div>
+          <div class="clothes-desc">利特族羽毛编织的保暖套装，穿戴后在寒冷地区不受冻伤。三件齐穿顺风滑翔时速度额外加快，是雪山和利特村探索的舒适选择。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成风之神殿后，利特村服装店开放购买。三件合计约 2400 卢比。</div>
+        </div>
+      </div>
+
+      <!-- 神兽兵装-露塔 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/神兽兵装-露塔.png" alt="神兽兵装-露塔" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">💧</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">神兽兵装 · 露塔</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-def">🛡 高防御</span>
+            <span class="ubadge ubadge-env">💧 水属性强化</span>
+          </div>
+          <div class="clothes-desc">卓拉英杰米法的神兽兵装（上身），外观为卓拉族水蓝色甲胄，穿戴后在水中战斗时攻击附带水属性效果，防御力优秀。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成水之神殿主线后，在卓拉领地特定 NPC 处以宝石素材兑换，或作为支线任务奖励获得。</div>
+        </div>
+      </div>
+
+      <!-- 神兽兵装-梅德 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/神兽兵装-梅德.png" alt="神兽兵装-梅德" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">⚡</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">神兽兵装 · 梅德</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-def">🛡 高防御</span>
+            <span class="ubadge ubadge-atk">⚡ 雷属性强化</span>
+          </div>
+          <div class="clothes-desc">杰鲁多英杰乌尔波萨的神兽兵装（上身），金色杰鲁多甲胄，穿戴后攻击附带雷电，免疫自身雷击，与杰鲁多沙漠探索完美搭配。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成雷之神殿主线后，杰鲁多城特定 NPC 处兑换，或支线奖励获得。</div>
+        </div>
+      </div>
+
+      <!-- 神兽兵装-鲁达尼亚 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/神兽兵装-鲁达尼亚.png" alt="神兽兵装-鲁达尼亚" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🔥</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">神兽兵装 · 鲁达尼亚</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-def">🛡 高防御</span>
+            <span class="ubadge ubadge-atk">🔥 火属性强化</span>
+          </div>
+          <div class="clothes-desc">鼓隆英杰达鲁克的神兽兵装（上身），厚重红色岩石甲胄，穿戴后攻击附带火焰，并提供耐火保护，在火山地区战斗时如虎添翼。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成火之神殿主线后，鼓隆城铁匠铺 NPC 处兑换，或支线奖励获得。</div>
+        </div>
+      </div>
+
+      <!-- 神兽兵装-娜波力斯 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/神兽兵裝‧娜波力斯.png" alt="神兽兵裝-娜波力斯" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🪶</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">神兽兵装 · 娜波力斯</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-def">🛡 高防御</span>
+            <span class="ubadge ubadge-env">🌬 风属性强化</span>
+          </div>
+          <div class="clothes-desc">利特英杰莱乃博的神兽兵装（上身），白色羽翼甲胄，穿戴后滑翔时攻击力提升，风属性攻击伤害加成，飞行战斗风格极佳。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成风之神殿主线后，利特村特定 NPC 处兑换，或支线奖励获得。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+
+  <!-- ══════════════════════════════════════
+       异次元 · 幽暗 · 隐藏套装
+  ══════════════════════════════════════ -->
+  <div class="section-wrap">
+    <div class="section-label">🌀 隐藏 · 特殊套装</div>
+    <div class="clothes-grid">
+
+      <!-- 异次元恶灵套装 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/异次元恶灵套装.png" alt="异次元恶灵套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🌀</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">异次元恶灵套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-atk">🌀 混沌攻击</span>
+            <span class="ubadge ubadge-set">套装加成：异次元破防</span>
+          </div>
+          <div class="clothes-desc">来自异次元空间的恶灵战甲，外观扭曲诡异，穿戴后攻击有概率无视敌人防御。三件齐穿对高防御目标（如将军骑士）伤害大幅提升。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>完成地底「异界裂缝」系列支线（需先收集三个异次元碎片），三件作为最终奖励获得。</div>
+        </div>
+      </div>
+
+      <!-- 左纳尼乌姆之套装 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/左纳尼乌姆之套装.png" alt="左纳尼乌姆之套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🔮</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">左纳尼乌姆之套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-env">🔮 佐纳依共鸣</span>
+            <span class="ubadge ubadge-set">套装加成：建造加速</span>
+          </div>
+          <div class="clothes-desc">以稀有左纳尼乌姆矿石铸造的古代套装，对佐纳依机关有共鸣效果，使其运作效率提升。三件齐穿建造类动作加速且耗能减少。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>在地底深层收集 999 个左纳尼乌姆晶体（小型矿石），于地底兑换商人处各换取一件。</div>
+        </div>
+      </div>
+
+      <!-- 依盖队套装 -->
+      <div class="clothes-card" data-type="special">
+        <div class="clothes-img-wrap">
+          <img src="images/clothes/依盖队套装.png" alt="依盖队套装" onerror="ci(this)">
+          <div class="clothes-img-placeholder" style="display:none">🏴</div>
+        </div>
+        <div class="clothes-body">
+          <div class="clothes-name">依盖队套装</div>
+          <div class="upgrade-badges">
+            <span class="ubadge ubadge-stealth">🏴 伪装</span>
+            <span class="ubadge ubadge-set">套装加成：敌方混淆</span>
+          </div>
+          <div class="clothes-desc">依盖族（加侬多夫手下部队）的制服，穿戴后在野外移动时敌方依盖族不会主动攻击。三件齐穿可进入依盖据点而不被发现，是支线任务神器。</div>
+          <div class="clothes-obtain"><strong>获取：</strong>击败三处依盖族大营的营地队长，分别掉落头部、上身、腿部套装。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 强化指南提示 -->
+  <div class="tip-box">
+    <strong>💡 强化建议：</strong>所有套装均可在<strong>大妖精泉</strong>进行最多 4 次强化，防御力从 3 提升至最高 28（每件）。强化需要收集对应的素材（怪物材料、矿石等）。优先强化你最常用的 2～3 套套装，刷材料时搭配<strong>采矿套装</strong>可事半功倍。
+  </div>
+
+</div><!-- /.page-body -->
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">
+      本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。<br>
+      《塞尔达传说 王国之泪》版权归任天堂株式会社所有。<br>
+      © 2023 Nintendo. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+

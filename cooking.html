@@ -1,0 +1,678 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- ═══ 安全与版权 meta ═══ -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="withalpha@proton.me">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="王国之泪料理合成全收录，含回血、强化、耐寒耐热效果的最优食谱推荐。">
+  <meta name="keywords" content="王国之泪,料理,合成,食谱,攻略,塞尔达">
+  <meta property="og:title" content="料理合成大全 · 王国之泪">
+  <meta property="og:description" content="王国之泪料理合成全收录，含回血、强化、耐寒耐热效果的最优食谱推荐。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="料理合成大全 · 王国之泪">
+  <meta name="twitter:description" content="王国之泪料理合成全收录，含回血、强化、耐寒耐热效果的最优食谱推荐。">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>料理图鉴 · 王国之泪攻略</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ══════════════════════════════════
+       料理图鉴专属样式
+    ══════════════════════════════════ */
+
+    /* ── 顶部统计栏 ── */
+    .cook-stats {
+      display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px;
+    }
+    .cook-stat {
+      flex: 1; min-width: 100px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      text-align: center;
+    }
+    .cook-stat-val {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.6rem; font-weight: 900;
+      color: var(--gold); display: block;
+      text-shadow: 0 0 18px rgba(201,162,39,0.4);
+    }
+    .cook-stat-lbl { font-size: 0.68rem; color: var(--text-muted); margin-top: 3px; }
+
+    /* ── 筛选栏 ── */
+    .cat-bar {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px;
+    }
+    .cat-btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 5px 13px; border-radius: 20px; cursor: pointer;
+      border: 1px solid var(--border-gold); background: transparent;
+      color: var(--text-secondary); font-size: 0.78rem;
+      font-family: inherit; transition: var(--transition); white-space: nowrap;
+    }
+    .cat-btn:hover  { color: var(--gold); border-color: var(--gold); background: rgba(201,162,39,0.07); }
+    .cat-btn.active { color: var(--gold); border-color: var(--gold); background: rgba(201,162,39,0.14);
+                      box-shadow: 0 0 12px rgba(201,162,39,0.15); }
+    .cat-btn .cat-em { font-size: 1rem; }
+
+    /* ── 搜索栏 ── */
+    .search-row {
+      display: flex; gap: 10px; margin-bottom: 24px; align-items: center;
+    }
+    .search-row .search-wrap { flex: 1; margin-bottom: 0; }
+
+    /* ── 分类 Section ── */
+    .cat-section { margin-bottom: 40px; }
+    .cat-header {
+      display: flex; align-items: center; gap: 12px;
+      padding: 0 0 12px; margin-bottom: 16px;
+      border-bottom: 1px solid var(--border-gold);
+    }
+    .cat-icon  { font-size: 1.4rem; }
+    .cat-label {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.05rem; font-weight: 700; color: var(--gold);
+    }
+    .cat-badge {
+      margin-left: auto;
+      background: rgba(201,162,39,0.1); border: 1px solid var(--border-gold);
+      border-radius: 20px; padding: 2px 10px;
+      font-size: 0.7rem; color: var(--text-muted);
+    }
+
+    /* ── 料理卡片网格 ── */
+    .dish-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+      gap: 10px;
+    }
+
+    /* ── 料理卡片（纯图片） ── */
+    .dish-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(201,162,39,0.18);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.28s cubic-bezier(0.4,0,0.2,1);
+      cursor: pointer;
+      position: relative;
+      aspect-ratio: 1 / 1;
+    }
+    .dish-card::before {
+      content: ''; position: absolute; inset: 0; border-radius: 10px;
+      background: linear-gradient(135deg, rgba(201,162,39,0.07) 0%, transparent 60%);
+      opacity: 0; transition: opacity 0.3s; pointer-events: none;
+    }
+    .dish-card:hover {
+      border-color: rgba(201,162,39,0.55);
+      box-shadow: 0 8px 32px rgba(201,162,39,0.18), 0 2px 8px rgba(0,0,0,0.5);
+      transform: translateY(-3px) scale(1.04);
+    }
+    .dish-card:hover::before { opacity: 1; }
+
+    /* 图片区（占满整个卡片） */
+    .dish-img-wrap {
+      position: absolute; inset: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 70% 70% at 50% 45%,
+          rgba(201,162,39,0.10) 0%,
+          rgba(30,24,8,0.95)    55%,
+          rgba(10,8,2,1)        100%);
+    }
+    .dish-img-wrap img {
+      width: 100%; height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      image-rendering: crisp-edges;
+      padding: 8%;
+    }
+    .dish-card:hover .dish-img-wrap img {
+      transform: scale(1.14);
+      filter: drop-shadow(0 4px 18px rgba(201,162,39,0.5));
+    }
+
+    /* 编号徽章 */
+    .dish-no {
+      position: absolute; top: 5px; left: 6px; z-index: 2;
+      background: rgba(7,7,15,0.78);
+      border: 1px solid rgba(201,162,39,0.4);
+      border-radius: 4px;
+      font-size: 0.55rem; color: var(--gold);
+      padding: 1px 4px; font-weight: 700;
+      font-family: 'Noto Serif SC', serif;
+      backdrop-filter: blur(4px);
+    }
+
+
+
+    /* 弹出详情 */
+    .dish-modal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 2000;
+      background: rgba(0,0,0,0.72); backdrop-filter: blur(8px);
+      align-items: center; justify-content: center;
+    }
+    .dish-modal-overlay.open { display: flex; }
+    .dish-modal {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: 18px;
+      max-width: 440px; width: 90vw;
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.7), var(--glow-gold);
+      animation: modal-in 0.22s ease;
+    }
+    @keyframes modal-in {
+      from { opacity: 0; transform: scale(0.92) translateY(16px); }
+      to   { opacity: 1; transform: scale(1)    translateY(0); }
+    }
+    .modal-img-wrap {
+      width: 100%; aspect-ratio: 1 / 1;
+      background:
+        radial-gradient(ellipse 70% 70% at 50% 45%,
+          rgba(201,162,39,0.12) 0%,
+          rgba(20,16,5,0.98)    60%,
+          rgba(8,6,2,1)         100%);
+      overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .modal-img-wrap img {
+      width: 80%; height: 80%; object-fit: contain;
+      image-rendering: crisp-edges;
+      filter: drop-shadow(0 6px 24px rgba(201,162,39,0.35));
+    }
+    .modal-body {
+      padding: 14px 20px 18px;
+      text-align: center;
+    }
+    .modal-no {
+      font-size: 0.75rem; color: var(--text-muted);
+    }
+    .modal-close {
+      width: 100%; padding: 10px;
+      background: rgba(201,162,39,0.1); border: 1px solid var(--border-gold);
+      border-radius: 8px; color: var(--text-secondary);
+      font-size: 0.82rem; cursor: pointer; font-family: inherit;
+      transition: var(--transition);
+    }
+    .modal-close:hover { background: rgba(201,162,39,0.2); color: var(--gold); }
+
+
+    @media (max-width: 600px) {
+      .dish-grid { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+    }
+    @media (max-width: 400px) {
+      .dish-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html" class="active">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a><ul class="nav-dropdown-menu"><li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li><li><a href="sage-will.html" class="disabled">贤者的遗志</a></li></ul></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="page-hero">
+  <span class="page-hero-eyebrow">COOKING RECIPES · 图鉴 No.001–228</span>
+  <h1 class="page-hero-title">🍲 料理图鉴</h1>
+  <p class="page-hero-subtitle">全 228 种料理完整收录 · 游戏原图 · 烹饪配方一览</p>
+</div>
+
+<div class="page-body">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span><span class="cur">料理图鉴</span>
+  </nav>
+
+  <!-- 统计栏 -->
+  <div class="cook-stats">
+    <div class="cook-stat"><span class="cook-stat-val">228</span><div class="cook-stat-lbl">料理总数</div></div>
+    <div class="cook-stat"><span class="cook-stat-val">7</span><div class="cook-stat-lbl">料理分类</div></div>
+    <div class="cook-stat"><span class="cook-stat-val" id="visCount">228</span><div class="cook-stat-lbl">当前显示</div></div>
+  </div>
+
+  <div class="highlight-box">
+    <strong>烹饪基础：</strong>在篝火旁按 <kbd style="background:rgba(201,162,39,0.15);border:1px solid var(--border-gold);padding:0 5px;border-radius:3px;font-size:0.8em">A</kbd> 键打开锅，放入 1~5 种食材即可烹饪。同类效果食材叠加效果更强，混合不同效果的食材会互相抵消。满月之夜有概率触发「暴击烹饪」，效果翻倍。点击卡片可查看详情。
+  </div>
+
+  <!-- 分类筛选 -->
+  <div class="cat-bar" id="catBar">
+    <button class="cat-btn active" data-cat="all"><span class="cat-em">🍽️</span>全部</button>
+    <button class="cat-btn" data-cat="串炒煎炸"><span class="cat-em">🍢</span>串炒煎炸</button>
+    <button class="cat-btn" data-cat="汤品炖菜"><span class="cat-em">🍲</span>汤品炖菜</button>
+    <button class="cat-btn" data-cat="饭食"><span class="cat-em">🍛</span>饭食</button>
+    <button class="cat-btn" data-cat="特殊料理"><span class="cat-em">⚗️</span>特殊料理</button>
+    <button class="cat-btn" data-cat="烤食"><span class="cat-em">🔥</span>烤食</button>
+    <button class="cat-btn" data-cat="冷冻"><span class="cat-em">❄️</span>冷冻食品</button>
+    <button class="cat-btn" data-cat="药水"><span class="cat-em">🧪</span>药水</button>
+  </div>
+
+  <!-- 料理内容区 -->
+  <div id="dishContainer"></div>
+
+  <div class="tip-box" style="margin-top:28px">
+    <strong>🍳 实用要点：</strong><br>
+    ① 同类食材叠加效果更强，混合不同效果的食材会互相抵消。<br>
+    ② 满月之夜（游戏内每 7 天一次）烹饪有概率暴击，效果和时间翻倍。<br>
+    ③ 食材品质越高（兽肉→高级兽肉→顶级兽肉）效果越强。<br>
+    ④ 药水类（编号 215–228）需要昆虫 / 青蛙 / 蜥蜴 + 怪物素材，不能用食材替代。
+  </div>
+</div>
+
+<!-- 详情弹窗 -->
+<div class="dish-modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="dish-modal" id="modal">
+    <div class="modal-img-wrap">
+      <img id="modalImg" src="" alt="">
+    </div>
+    <div class="modal-body">
+      <div class="modal-no" id="modalNo"></div>
+      <button class="modal-close" onclick="document.getElementById('modalOverlay').classList.remove('open')">关闭</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+// ══════════════════════════════════════════
+// 料理编号 → Items 高清图片映射表
+// ══════════════════════════════════════════
+const DISH_IMG = {
+  1:"Item_Cook_A_01",   2:"Item_Cook_A_02",   3:"Item_Cook_A_03",   4:"Item_Cook_A_04",   5:"Item_Cook_A_05",   6:"Item_Cook_A_07",   7:"Item_Cook_A_08",   8:"Item_Cook_A_09",
+  9:"Item_Cook_A_10",   10:"Item_Cook_A_11",   11:"Item_Cook_A_12",   12:"Item_Cook_A_13",   13:"Item_Cook_A_14",   14:"Item_Cook_B_01",   15:"Item_Cook_B_02",   16:"Item_Cook_B_05",
+  17:"Item_Cook_B_06",   18:"Item_Cook_B_11",   19:"Item_Cook_B_12",   20:"Item_Cook_B_13",   21:"Item_Cook_B_15",   22:"Item_Cook_B_16",   23:"Item_Cook_B_17",   24:"Item_Cook_B_18",
+  25:"Item_Cook_B_19",   26:"Item_Cook_B_20",   27:"Item_Cook_B_21",   28:"Item_Cook_B_22",   29:"Item_Cook_B_23",   30:"Item_Cook_C_16",   31:"Item_Cook_D_01",   32:"Item_Cook_D_02",
+  33:"Item_Cook_D_03",   34:"Item_Cook_D_04",   35:"Item_Cook_D_05",   36:"Item_Cook_D_06",   37:"Item_Cook_D_07",   38:"Item_Cook_D_08",   39:"Item_Cook_D_09",   40:"Item_Cook_D_10",
+  41:"Item_Cook_E_01",   42:"Item_Cook_E_02",   43:"Item_Cook_E_03",   44:"Item_Cook_E_04",   45:"Item_Cook_F_01",   46:"Item_Cook_F_02",   47:"Item_Cook_F_03",   48:"Item_Cook_F_04",
+  49:"Item_Cook_G_02",   50:"Item_Cook_G_03",   51:"Item_Cook_G_04",   52:"Item_Cook_G_05",   53:"Item_Cook_G_06",   54:"Item_Cook_G_09",   55:"Item_Cook_G_10",   56:"Item_Cook_G_11",
+  57:"Item_Cook_G_12",   58:"Item_Cook_G_13",   59:"Item_Cook_G_14",   60:"Item_Cook_G_15",   61:"Item_Cook_G_16",   62:"Item_Cook_G_17",   63:"Item_Cook_H_01",   64:"Item_Cook_H_02",
+  65:"Item_Cook_H_03",   66:"Item_Cook_I_01",   67:"Item_Cook_I_02",   68:"Item_Cook_I_03",   69:"Item_Cook_I_04",   70:"Item_Cook_I_05",   71:"Item_Cook_I_06",   72:"Item_Cook_I_07",
+  73:"Item_Cook_I_08",   74:"Item_Cook_I_09",   75:"Item_Cook_I_10",   76:"Item_Cook_I_11",   77:"Item_Cook_I_12",   78:"Item_Cook_I_13",   79:"Item_Cook_I_14",   80:"Item_Cook_I_15",
+  81:"Item_Cook_I_16",   82:"Item_Cook_I_17",   83:"Item_Cook_J_01",   84:"Item_Cook_J_02",   85:"Item_Cook_J_03",   86:"Item_Cook_J_04",   87:"Item_Cook_J_05",   88:"Item_Cook_J_06",
+  89:"Item_Cook_J_07",   90:"Item_Cook_J_08",   91:"Item_Cook_J_09",   92:"Item_Cook_K_01",   93:"Item_Cook_K_02",   94:"Item_Cook_K_03",   95:"Item_Cook_K_04",   96:"Item_Cook_K_05",
+  97:"Item_Cook_K_06",   98:"Item_Cook_K_07",   99:"Item_Cook_K_08",   100:"Item_Cook_K_09",   101:"Item_Cook_L_01",   102:"Item_Cook_L_02",   103:"Item_Cook_L_03",   104:"Item_Cook_L_04",
+  105:"Item_Cook_L_05",   106:"Item_Cook_M_01",   107:"Item_Cook_N_01",   108:"Item_Cook_N_02",   109:"Item_Cook_N_03",   110:"Item_Cook_N_04",   111:"Item_Cook_O_01",   112:"Item_Cook_O_02",
+  113:"Item_Cook_P_01",   114:"Item_Cook_P_02",   115:"Item_Cook_P_03",   116:"Item_Cook_P_04",   117:"Item_Cook_P_05",   118:"Item_Cook_Q_01",   119:"Item_Cook_Q_02",   120:"Item_Cook_Q_03",
+  121:"Item_Cook_Q_04",   122:"Item_Cook_Q_05",   123:"Item_Cook_Q_06",   124:"Item_Cook_Q_07",   125:"Item_Cook_Q_08",   126:"Item_Cook_Q_09",   127:"Item_Cook_Q_10",   128:"Item_Cook_R_01",
+  129:"Item_Cook_R_02",   130:"Item_Cook_R_03",   131:"Item_Cook_R_04",   132:"Item_Cook_R_05",   133:"Item_Cook_R_06",   134:"Item_Cook_R_07",   135:"Item_Cook_R_08",   136:"Item_Cook_R_09",
+  137:"Item_Cook_R_10",   138:"Item_Cook_S_01",   139:"Item_Cook_S_02",   140:"Item_Cook_S_03",   141:"Item_Cook_S_04",   142:"Item_Cook_S_05",   143:"Item_Cook_S_06",   144:"Item_Cook_S_07",
+  145:"Item_Cook_S_08",   146:"Item_Cook_S_09",   147:"Item_Roast_01",   148:"Item_Roast_02",   149:"Item_Roast_03",   150:"Item_Roast_04",   151:"Item_Roast_05",   152:"Item_Roast_06",
+  153:"Item_Roast_07",   154:"Item_Roast_08",   155:"Item_Roast_10",   156:"Item_Roast_11",   157:"Item_Roast_12",   158:"Item_Roast_13",   159:"Item_Roast_15",   160:"Item_Roast_16",
+  161:"Item_Roast_18",   162:"Item_Roast_19",   163:"Item_Roast_24",   164:"Item_Roast_27",   165:"Item_Roast_28",   166:"Item_Roast_31",   167:"Item_Roast_32",   168:"Item_Roast_33",
+  169:"Item_Roast_36",   170:"Item_Roast_37",   171:"Item_Roast_38",   172:"Item_Roast_39",   173:"Item_Roast_40",   174:"Item_Roast_41",   175:"Item_Roast_45",   176:"Item_Roast_46",
+  177:"Item_Roast_48",   178:"Item_Roast_49",   179:"Item_Roast_50",   180:"Item_Roast_51",   181:"Item_Roast_52",   182:"Item_Roast_53",   183:"Item_Roast_54",   184:"Item_Roast_55",
+  185:"Item_Roast_56",   186:"Item_RoastFish_01",   187:"Item_RoastFish_02",   188:"Item_RoastFish_03",   189:"Item_RoastFish_04",   190:"Item_RoastFish_07",   191:"Item_RoastFish_09",   192:"Item_Roast_58",
+  193:"Item_Roast_59",   194:"Item_RoastFish_13",   195:"Item_RoastFish_15",   196:"Item_RoastFish_16",   197:"Item_RoastFish_18",   198:"Item_Boiled_01",   199:"Item_Chilled_01",   200:"Item_Chilled_02",
+  201:"Item_Chilled_03",   202:"Item_Chilled_04",   203:"Item_Chilled_05",   204:"Item_Chilled_06",   205:"Item_ChilledFish_01",   206:"Item_ChilledFish_02",   207:"Item_ChilledFish_03",   208:"Item_ChilledFish_04",
+  209:"Item_ChilledFish_05",   210:"Item_ChilledFish_06",   211:"Item_ChilledFish_07",   212:"Item_ChilledFish_08",   213:"Item_ChilledFish_16",   214:"Item_ChilledFish_18",   215:"Item_Cook_C_17_StaminaRecover",   216:"Item_Cook_C_17_AllSpeed",
+  217:"Item_Cook_C_17_ResistCold",   218:"Item_Cook_C_17_ResistHot",   219:"Item_Cook_C_17_ResistElectric",   220:"Item_Cook_C_17_ResistBurn",   221:"Item_Cook_C_17_AttackUp",   222:"Item_Cook_C_17_DefenseUp",   223:"Item_Cook_C_17_QuietnessUp",   224:"Item_Cook_C_17_NotSlippy",
+  225:"Item_Cook_C_17_LightEmission",   226:"Item_Cook_C_17_ExStaminaMaxUp",   227:"Item_Cook_C_17_LifeMaxUp",   228:"Item_Cook_S_10" 
+};
+
+function getDishImg(no) {
+  const fname = DISH_IMG[no];
+  return fname ? `Items/${fname}.png` : `images/cooking/dishes/dish_${String(no).padStart(3,"0")}.png`;
+}
+
+// ══════════════════════════════════════════
+// 228 道料理数据（含食材数量）
+// ══════════════════════════════════════════
+const DISHES = [
+  {no:1, cat:"串炒煎炸", name:"烤蘑菇串", method:"Cookpot", ing:["Mushroom"]},
+  {no:2, cat:"串炒煎炸", name:"烤肉蘑菇串", method:"Cookpot", ing:["Meat + Mushroom"]},
+  {no:3, cat:"串炒煎炸", name:"烤鱼蘑菇串", method:"Cookpot", ing:["Fish + Mushroom"]},
+  {no:4, cat:"串炒煎炸", name:"烤肉串", method:"Cookpot", ing:["Meat"]},
+  {no:5, cat:"串炒煎炸", name:"烤鱼", method:"Cookpot", ing:["Fish"]},
+  {no:6, cat:"串炒煎炸", name:"串烤海鲜", method:"Cookpot", ing:["Crab or Snail"]},
+  {no:7, cat:"串炒煎炸", name:"大份烤肉串", method:"Cookpot", ing:["4 different kinds of meat"]},
+  {no:8, cat:"串炒煎炸", name:"大份烤鱼", method:"Cookpot", ing:["4 different kinds of seafood (fish/crab/snail)"]},
+  {no:9, cat:"串炒煎炸", name:"蒸水果", method:"Cookpot", ing:["Fruit + Plant"]},
+  {no:10, cat:"串炒煎炸", name:"蒸野菜番茄", method:"Cookpot", ing:["Tomato + Plant"]},
+  {no:11, cat:"串炒煎炸", name:"蒸蘑菇", method:"Cookpot", ing:["Mushroom + Plant"]},
+  {no:12, cat:"串炒煎炸", name:"蒸肉", method:"Cookpot", ing:["Meat + Plant"]},
+  {no:13, cat:"串炒煎炸", name:"蒸鱼", method:"Cookpot", ing:["Fish + Plant"]},
+  {no:14, cat:"串炒煎炸", name:"炒暖暖草果", method:"Cookpot", ing:["Spicy Pepper"]},
+  {no:15, cat:"串炒煎炸", name:"炒坚果", method:"Cookpot", ing:["Chickaloo Tree Nut or Acorn"]},
+  {no:16, cat:"串炒煎炸", name:"炒野菜", method:"Cookpot", ing:["Plant"]},
+  {no:17, cat:"串炒煎炸", name:"大份炒野菜", method:"Cookpot", ing:["4 different kinds of vegetables"]},
+  {no:18, cat:"串炒煎炸", name:"原烧", method:"Cookpot", ing:["Stambulb"]},
+  {no:19, cat:"串炒煎炸", name:"炒黄油", method:"Cookpot", ing:["Stambulb + Butter"]},
+  {no:20, cat:"串炒煎炸", name:"大份烤蘑菇串", method:"Cookpot", ing:["4 different kinds of mushrooms"]},
+  {no:21, cat:"串炒煎炸", name:"烤兽肉串", method:"Cookpot", ing:["Meat + Goron Spice"]},
+  {no:22, cat:"串炒煎炸", name:"高级烤兽肉串", method:"Cookpot", ing:["Prime Meat + Goron Spice"]},
+  {no:23, cat:"串炒煎炸", name:"顶级烤兽肉串", method:"Cookpot", ing:["Gourmet Meat + Goron Spice"]},
+  {no:24, cat:"串炒煎炸", name:"炒螃蟹", method:"Cookpot", ing:["Crab + Goron Spice"]},
+  {no:25, cat:"串炒煎炸", name:"海陆煎烤", method:"Cookpot", ing:["Fish + Meat"]},
+  {no:26, cat:"串炒煎炸", name:"高级海陆煎烤", method:"Cookpot", ing:["Prime Meat + Seafood"]},
+  {no:27, cat:"串炒煎炸", name:"顶级海陆煎烤", method:"Cookpot", ing:["Gourmet Meat + Fish"]},
+  {no:28, cat:"串炒煎炸", name:"盐烤野菜", method:"Cookpot", ing:["Salt + Vegetable"]},
+  {no:29, cat:"串炒煎炸", name:"盐烤蘑菇", method:"Cookpot", ing:["Mushroom + Salt"]},
+  {no:30, cat:"串炒煎炸", name:"岩盐烤肉", method:"Cookpot", ing:["Meat + Salt"]},
+  {no:31, cat:"串炒煎炸", name:"高级岩盐烤肉", method:"Cookpot", ing:["Prime Meat + Salt"]},
+  {no:32, cat:"串炒煎炸", name:"顶级岩盐烤肉", method:"Cookpot", ing:["Gourmet Meat + Salt"]},
+  {no:33, cat:"串炒煎炸", name:"盐烤鱼", method:"Cookpot", ing:["Fish or Snail + Salt"]},
+  {no:34, cat:"串炒煎炸", name:"岩盐烤蟹", method:"Cookpot", ing:["Crab + Salt"]},
+  {no:35, cat:"串炒煎炸", name:"炒香草", method:"Cookpot", ing:["Herb + Goron Spice"]},
+  {no:36, cat:"串炒煎炸", name:"炒香蘑菇", method:"Cookpot", ing:["Mushroom + Goron Spice"]},
+  {no:37, cat:"串炒煎炸", name:"香辣煎肉", method:"Cookpot", ing:["Meat + Spicy Pepper"]},
+  {no:38, cat:"串炒煎炸", name:"香辣煎鱼", method:"Cookpot", ing:["Fish + Spicy Pepper"]},
+  {no:39, cat:"串炒煎炸", name:"油炖海鲜", method:"Cookpot", ing:["Seafood + Stambulb + Oil"]},
+  {no:40, cat:"串炒煎炸", name:"油炸禽肉", method:"Cookpot", ing:["Raw Bird Drumstick + Oil"]},
+  {no:41, cat:"串炒煎炸", name:"油炸高级禽肉", method:"Cookpot", ing:["Raw Bird Thigh + Oil"]},
+  {no:42, cat:"串炒煎炸", name:"油炸顶级禽肉", method:"Cookpot", ing:["Raw Whole Bird + Oil"]},
+  {no:43, cat:"串炒煎炸", name:"干煎鱼", method:"Cookpot", ing:["Fish + Butter + Wheat"]},
+  {no:44, cat:"串炒煎炸", name:"干煎鲷鱼", method:"Cookpot", ing:["Porgy + Butter + Wheat"]},
+  {no:45, cat:"汤品炖菜", name:"干煎鲑鱼", method:"Cookpot", ing:["Salmon + Butter + Wheat"]},
+  {no:46, cat:"汤品炖菜", name:"水果拌蘑菇", method:"Cookpot", ing:["Mushroom + Fruit"]},
+  {no:47, cat:"汤品炖菜", name:"炖水果", method:"Cookpot", ing:["Fruit"]},
+  {no:48, cat:"汤品炖菜", name:"大份炖水果", method:"Cookpot", ing:["4 different kinds of fruit"]},
+  {no:49, cat:"汤品炖菜", name:"炖番茄", method:"Cookpot", ing:["Tomato"]},
+  {no:50, cat:"汤品炖菜", name:"番茄汤", method:"Cookpot", ing:["Salt + Milk + Tomato"]},
+  {no:51, cat:"汤品炖菜", name:"炖蘑菇番茄", method:"Cookpot", ing:["Tomato + Mushroom"]},
+  {no:52, cat:"汤品炖菜", name:"海鲜番茄汤", method:"Cookpot", ing:["Tomato + Seafood"]},
+  {no:53, cat:"汤品炖菜", name:"蔬菜牛奶汤", method:"Cookpot", ing:["2 Vegetables + Milk + Salt"]},
+  {no:54, cat:"汤品炖菜", name:"蔬菜浓汤", method:"Cookpot", ing:["Milk + Salt + Endura/Swift Carrot or Fortified Pumpkin"]},
+  {no:55, cat:"汤品炖菜", name:"蘑菇牛奶汤", method:"Cookpot", ing:["Mushroom + Vegetable + Salt + Milk"]},
+  {no:56, cat:"汤品炖菜", name:"鲜肉牛奶汤", method:"Cookpot", ing:["Meat + Vegetable + Salt + Milk"]},
+  {no:57, cat:"汤品炖菜", name:"海鲜牛奶汤", method:"Cookpot", ing:["Fish/Crab/Snail + Vegetable + Salt + Milk"]},
+  {no:58, cat:"汤品炖菜", name:"贝肉杂烩", method:"Cookpot", ing:["Snail + Wheat + Milk + Butter"]},
+  {no:59, cat:"汤品炖菜", name:"心心牛奶汤", method:"Cookpot", ing:["Hydromelon + Voltfruit + Hearty Radish + Milk"]},
+  {no:60, cat:"汤品炖菜", name:"甘露炖蔬菜", method:"Cookpot", ing:["Vegetable + Honey"]},
+  {no:61, cat:"汤品炖菜", name:"甘露炖蘑菇", method:"Cookpot", ing:["Mushroom + Honey"]},
+  {no:62, cat:"汤品炖菜", name:"甘露炖肉", method:"Cookpot", ing:["Meat + Honey"]},
+  {no:63, cat:"汤品炖菜", name:"甘露炖鱼", method:"Cookpot", ing:["Honey + Seafood"]},
+  {no:64, cat:"汤品炖菜", name:"咖喱饭", method:"Cookpot", ing:["Rice + Goron Spice"]},
+  {no:65, cat:"汤品炖菜", name:"蔬菜咖喱饭", method:"Cookpot", ing:["Rice + Vegetable + Goron Spice"]},
+  {no:66, cat:"汤品炖菜", name:"兽肉咖喱饭", method:"Cookpot", ing:["Rice + Meat + Goron Spice"]},
+  {no:67, cat:"汤品炖菜", name:"高级兽肉咖喱饭", method:"Cookpot", ing:["Rice + Prime Meat + Goron Spice"]},
+  {no:68, cat:"汤品炖菜", name:"顶级兽肉咖喱饭", method:"Cookpot", ing:["Rice + Gourmet Meat + Goron Spice"]},
+  {no:69, cat:"汤品炖菜", name:"禽肉咖喱饭", method:"Cookpot", ing:["Rice + Poultry + Goron Spice"]},
+  {no:70, cat:"汤品炖菜", name:"高级禽肉咖喱饭", method:"Cookpot", ing:["Rice + Prime Poultry + Goron Spice"]},
+  {no:71, cat:"汤品炖菜", name:"顶级禽肉咖喱饭", method:"Cookpot", ing:["Rice + Gourmet Poultry + Goron Spice"]},
+  {no:72, cat:"汤品炖菜", name:"海鲜咖喱饭", method:"Cookpot", ing:["Rice + Fish + Goron Spice"]},
+  {no:73, cat:"汤品炖菜", name:"起司咖喱", method:"Cookpot", ing:["Rice + Cheese + Goron Spice"]},
+  {no:74, cat:"汤品炖菜", name:"胡萝卜炖菜", method:"Cookpot", ing:["Carrot + Wheat + Milk + Butter"]},
+  {no:75, cat:"汤品炖菜", name:"南瓜炖菜", method:"Cookpot", ing:["Pumpkin + Wheat + Milk + Butter"]},
+  {no:76, cat:"汤品炖菜", name:"炖肉", method:"Cookpot", ing:["Meat + Wheat + Milk + Butter"]},
+  {no:77, cat:"汤品炖菜", name:"高级炖肉", method:"Cookpot", ing:["Prime Meat + Wheat + Milk + Butter"]},
+  {no:78, cat:"汤品炖菜", name:"顶级炖肉", method:"Cookpot", ing:["Gourmet Meat + Wheat + Milk + Butter"]},
+  {no:79, cat:"汤品炖菜", name:"南瓜酿肉", method:"Cookpot", ing:["Meat + Pumpkin"]},
+  {no:80, cat:"饭食", name:"蔬菜烩饭", method:"Cookpot", ing:["Vegetable + Rice + Salt + Butter"]},
+  {no:81, cat:"饭食", name:"蘑菇烩饭", method:"Cookpot", ing:["Mushroom + Rice + Butter + Salt"]},
+  {no:82, cat:"饭食", name:"鲑鱼烩饭", method:"Cookpot", ing:["Salmon + Rice + Salt + Butter"]},
+  {no:83, cat:"饭食", name:"蟹肉烩饭", method:"Cookpot", ing:["Crab + Butter + Salt + Rice"]},
+  {no:84, cat:"饭食", name:"起司烩饭", method:"Cookpot", ing:["Fish or Mushroom + Cheese + Rice + Salt"]},
+  {no:85, cat:"饭食", name:"禽肉菜饭", method:"Cookpot", ing:["Raw Bird Drumstick + Egg + Rice + Butter"]},
+  {no:86, cat:"饭食", name:"高级禽肉菜饭", method:"Cookpot", ing:["Raw Bird Thigh + Rice + Egg + Butter"]},
+  {no:87, cat:"饭食", name:"顶级禽肉菜饭", method:"Cookpot", ing:["Raw Whole Bird + Egg + Rice + Butter"]},
+  {no:88, cat:"饭食", name:"海鲜杂烩饭", method:"Cookpot", ing:["Seafood + Rice + Butter + Salt"]},
+  {no:89, cat:"饭食", name:"咖喱菜饭", method:"Cookpot", ing:["Goron Spice + Rice + Butter"]},
+  {no:90, cat:"饭食", name:"煎蛋饭", method:"Cookpot", ing:["Egg + Rice"]},
+  {no:91, cat:"饭食", name:"啪啦啪啦炒饭", method:"Cookpot", ing:["Rice + Meat + Egg + Oil"]},
+  {no:92, cat:"饭食", name:"海鲜炒饭", method:"Cookpot", ing:["Seafood + Rice + Salt"]},
+  {no:93, cat:"饭食", name:"蟹肉蛋炒饭", method:"Cookpot", ing:["Crab + Egg + Rice + Salt"]},
+  {no:94, cat:"饭食", name:"兽肉盖饭", method:"Cookpot", ing:["Rice + Meat + Salt"]},
+  {no:95, cat:"饭食", name:"高级兽肉盖饭", method:"Cookpot", ing:["Prime Meat + Rice + Salt"]},
+  {no:96, cat:"饭食", name:"顶级兽肉盖饭", method:"Cookpot", ing:["Gourmet Meat + Rice + Salt"]},
+  {no:97, cat:"饭食", name:"起司兽肉盖饭", method:"Cookpot", ing:["Meat + Rice + Cheese + Salt"]},
+  {no:98, cat:"饭食", name:"起司高级兽肉盖饭", method:"Cookpot", ing:["Prime Meat + Rice + Cheese + Salt"]},
+  {no:99, cat:"饭食", name:"起司顶级兽肉盖饭", method:"Cookpot", ing:["Gourmet Meat + Cheese + Rice + Salt"]},
+  {no:100, cat:"饭食", name:"野菜饭团", method:"Cookpot", ing:["Rice + Vegetable"]},
+  {no:101, cat:"饭食", name:"蘑菇饭团", method:"Cookpot", ing:["Rice + Mushroom"]},
+  {no:102, cat:"饭食", name:"鲜肉饭团", method:"Cookpot", ing:["Rice + Meat"]},
+  {no:103, cat:"饭食", name:"海鲜饭团", method:"Cookpot", ing:["Rice + Fish"]},
+  {no:104, cat:"饭食", name:"野菜牛奶粥", method:"Cookpot", ing:["Rice + Milk + Vegetable"]},
+  {no:105, cat:"饭食", name:"小麦面包", method:"Cookpot", ing:["Wheat + Oil + Salt"]},
+  {no:106, cat:"饭食", name:"黏糊糊起司面包", method:"Cookpot", ing:["Wheat + Cheese + Oil + Salt"]},
+  {no:107, cat:"饭食", name:"番茄披萨", method:"Cookpot", ing:["Cheese + Tomato + Wheat"]},
+  {no:108, cat:"饭食", name:"鲜肉派", method:"Cookpot", ing:["Wheat + Butter + Salt + Meat"]},
+  {no:109, cat:"饭食", name:"鱼肉派", method:"Cookpot", ing:["Wheat + Butter + Salt + Fish"]},
+  {no:110, cat:"饭食", name:"起司番茄", method:"Cookpot", ing:["Cheese + Tomato"]},
+  {no:111, cat:"饭食", name:"鲜鱼起司焗烤", method:"Cookpot", ing:["Cheese + Fish"]},
+  {no:112, cat:"饭食", name:"煎蛋卷", method:"Cookpot", ing:["Egg + Salt"]},
+  {no:113, cat:"饭食", name:"蔬菜煎蛋卷", method:"Cookpot", ing:["Vegetable + Egg + Butter + Salt"]},
+  {no:114, cat:"饭食", name:"蘑菇煎蛋卷", method:"Cookpot", ing:["Mushroom + Egg + Salt + Butter"]},
+  {no:115, cat:"饭食", name:"起司煎蛋卷", method:"Cookpot", ing:["Vegetable + Cheese + Egg + Salt"]},
+  {no:116, cat:"饭食", name:"黄油苹果", method:"Cookpot", ing:["Apple + Butter"]},
+  {no:117, cat:"饭食", name:"蜂蜜水果", method:"Cookpot", ing:["Fruit (not apple) + Honey"]},
+  {no:118, cat:"饭食", name:"蜂蜜苹果", method:"Cookpot", ing:["Honey + Apple"]},
+  {no:119, cat:"饭食", name:"蜂蜜糖", method:"Cookpot", ing:["Honey"]},
+  {no:120, cat:"饭食", name:"炸香蕉", method:"Cookpot", ing:["Banana + Wheat + Sugar"]},
+  {no:121, cat:"饭食", name:"鲜蛋布丁", method:"Cookpot", ing:["Egg + Milk + Sugar"]},
+  {no:122, cat:"饭食", name:"原味可丽饼", method:"Cookpot", ing:["Wheat + Egg + Milk + Sugar"]},
+  {no:123, cat:"饭食", name:"草莓可丽饼", method:"Cookpot", ing:["Wheat + Milk + Egg + Sugar + Wildberry"]},
+  {no:124, cat:"饭食", name:"蜂蜜可丽饼", method:"Cookpot", ing:["Wheat + Sugar + Honey + Egg + Milk"]},
+  {no:125, cat:"饭食", name:"坚果蛋糕", method:"Cookpot", ing:["Wheat + Butter + Sugar + Nut"]},
+  {no:126, cat:"饭食", name:"水果蛋糕", method:"Cookpot", ing:["Apple + Wheat + Sugar + Wildberry"]},
+  {no:127, cat:"饭食", name:"胡萝卜蛋糕", method:"Cookpot", ing:["Carrot + Wheat + Sugar + Butter"]},
+  {no:128, cat:"饭食", name:"南瓜蛋糕", method:"Cookpot", ing:["Pumpkin + Wheat + Sugar + Butter"]},
+  {no:129, cat:"饭食", name:"起司蛋糕", method:"Cookpot", ing:["Cheese + Wheat + Sugar"]},
+  {no:130, cat:"饭食", name:"水果派", method:"Cookpot", ing:["Fruit + Wheat + Sugar + Butter"]},
+  {no:131, cat:"饭食", name:"苹果派", method:"Cookpot", ing:["Apple + Wheat + Sugar + Butter"]},
+  {no:132, cat:"饭食", name:"蛋挞", method:"Cookpot", ing:["Egg + Butter + Sugar + Wheat"]},
+  {no:133, cat:"饭食", name:"热牛奶", method:"Cookpot", ing:["Milk"]},
+  {no:134, cat:"饭食", name:"芭伊遇上伯伊", method:"Cookpot", ing:["Palm Fruit + Hydromelon + Voltfruit + Salt"]},
+  {no:135, cat:"特殊料理", name:"炖怪物", method:"Cookpot", ing:["Monster Extract + Meat + Seafood"]},
+  {no:136, cat:"特殊料理", name:"怪物汤", method:"Cookpot", ing:["Monster Extract + Wheat + Milk + Butter"]},
+  {no:137, cat:"特殊料理", name:"怪物咖喱饭", method:"Cookpot", ing:["Monster Extract + Rice + Goron Spice"]},
+  {no:138, cat:"特殊料理", name:"怪物饭团", method:"Cookpot", ing:["Monster Extract + Rice + Salt"]},
+  {no:139, cat:"特殊料理", name:"怪物蛋糕", method:"Cookpot", ing:["Monster Extract + Sugar + Wheat + Butter"]},
+  {no:140, cat:"特殊料理", name:"魔人炖煮", method:"Cookpot", ing:["Dark Clump + Meat + Seafood"]},
+  {no:141, cat:"特殊料理", name:"魔人汤", method:"Cookpot", ing:["Dark Clump + Wheat + Butter + Milk"]},
+  {no:142, cat:"特殊料理", name:"魔人咖喱饭", method:"Cookpot", ing:["Dark Clump + Goron Spice + Rice"]},
+  {no:143, cat:"特殊料理", name:"魔人饭团", method:"Cookpot", ing:["Dark Clump + Rice + Salt"]},
+  {no:144, cat:"特殊料理", name:"魔人蛋糕", method:"Cookpot", ing:["Dark Clump + Wheat + Butter + Sugar"]},
+  {no:145, cat:"特殊料理", name:"奇异的菜肴", method:"Cookpot", ing:["Non-food items or incompatible ingredients"]},
+  {no:146, cat:"特殊料理", name:"过硬的菜肴", method:"Cookpot", ing:["Ore"]},
+  {no:147, cat:"烤食", name:"烤苹果", method:"Campfire", ing:["Apple"]},
+  {no:148, cat:"烤食", name:"烤金苹果", method:"Campfire", ing:["Golden Apple"]},
+  {no:149, cat:"烤食", name:"烤暖暖草果", method:"Campfire", ing:["Spicy Pepper"]},
+  {no:150, cat:"烤食", name:"烤海拉鲁番茄", method:"Campfire", ing:["Hylian Tomato"]},
+  {no:151, cat:"烤食", name:"烤草莓", method:"Campfire", ing:["Wildberry"]},
+  {no:152, cat:"烤食", name:"烤酥麻水果", method:"Campfire", ing:["Voltfruit"]},
+  {no:153, cat:"烤食", name:"烤冰冷蜜瓜", method:"Campfire", ing:["Hydromelon"]},
+  {no:154, cat:"烤食", name:"烤椰子", method:"Campfire", ing:["Palm Fruit"]},
+  {no:155, cat:"烤食", name:"烤大剑香蕉", method:"Campfire", ing:["Mighty Bananas"]},
+  {no:156, cat:"烤食", name:"烤速速莲蓬", method:"Campfire", ing:["Fleet-Lotus Seeds"]},
+  {no:157, cat:"烤食", name:"烤大剑草", method:"Campfire", ing:["Mighty Thistle"]},
+  {no:158, cat:"烤食", name:"烤铠甲草", method:"Campfire", ing:["Armoranth"]},
+  {no:159, cat:"烤食", name:"烤速速胡萝卜", method:"Campfire", ing:["Swift Carrot"]},
+  {no:160, cat:"烤食", name:"烤毅力胡萝卜", method:"Campfire", ing:["Endura Carrot"]},
+  {no:161, cat:"烤食", name:"烤铠甲南瓜", method:"Campfire", ing:["Fortified Pumpkin"]},
+  {no:162, cat:"烤食", name:"烤向阳南瓜", method:"Campfire", ing:["Sun Pumpkin"]},
+  {no:163, cat:"烤食", name:"烤小萝卜", method:"Campfire", ing:["Hearty Radish"]},
+  {no:164, cat:"烤食", name:"烤大萝卜", method:"Campfire", ing:["Big Hearty Radish"]},
+  {no:165, cat:"烤食", name:"烤天空蘑菇", method:"Campfire", ing:["Skyshroom"]},
+  {no:166, cat:"烤食", name:"烤海拉鲁蘑菇", method:"Campfire", ing:["Hylian Shroom"]},
+  {no:167, cat:"烤食", name:"烤精力蘑菇", method:"Campfire", ing:["Stamella Shroom"]},
+  {no:168, cat:"烤食", name:"烤速速蘑菇", method:"Campfire", ing:["Rushroom"]},
+  {no:169, cat:"烤食", name:"烤暖暖蘑菇", method:"Campfire", ing:["Sunshroom"]},
+  {no:170, cat:"烤食", name:"烤冰冷蘑菇", method:"Campfire", ing:["Chillshroom"]},
+  {no:171, cat:"烤食", name:"烤酥麻蘑菇", method:"Campfire", ing:["Zapshroom"]},
+  {no:172, cat:"烤食", name:"烤大剑蘑菇", method:"Campfire", ing:["Razorshroom"]},
+  {no:173, cat:"烤食", name:"烤铠甲蘑菇", method:"Campfire", ing:["Ironshroom"]},
+  {no:174, cat:"烤食", name:"烤潜行蘑菇", method:"Campfire", ing:["Silent Shroom"]},
+  {no:175, cat:"烤食", name:"烤光亮蘑菇", method:"Campfire", ing:["Brightcap"]},
+  {no:176, cat:"烤食", name:"烤毅力蘑菇", method:"Campfire", ing:["Endura Shroom"]},
+  {no:177, cat:"烤食", name:"烤生命松露", method:"Campfire", ing:["Hearty Truffle"]},
+  {no:178, cat:"烤食", name:"烤大生命松露", method:"Campfire", ing:["Big Hearty Truffle"]},
+  {no:179, cat:"烤食", name:"烤兽肉", method:"Campfire", ing:["Raw Meat"]},
+  {no:180, cat:"烤食", name:"烤高级兽肉", method:"Campfire", ing:["Prime Meat"]},
+  {no:181, cat:"烤食", name:"烤顶级兽肉", method:"Campfire", ing:["Gourmet Meat"]},
+  {no:182, cat:"烤食", name:"烤禽肉", method:"Campfire", ing:["Raw Bird Drumstick"]},
+  {no:183, cat:"烤食", name:"烤高级禽肉", method:"Campfire", ing:["Raw Bird Thigh"]},
+  {no:184, cat:"烤食", name:"烤顶级禽肉", method:"Campfire", ing:["Raw Whole Bird"]},
+  {no:185, cat:"烤食", name:"烤骨舌鱼", method:"Campfire", ing:["Ancient Arowana"]},
+  {no:186, cat:"烤食", name:"烤鲈鱼", method:"Campfire", ing:["Bass (not Hearty Bass)"]},
+  {no:187, cat:"烤食", name:"烤鳟鱼", method:"Campfire", ing:["Trout"]},
+  {no:188, cat:"烤食", name:"烤鲤鱼", method:"Campfire", ing:["Carp"]},
+  {no:189, cat:"烤食", name:"烤鲷鱼", method:"Campfire", ing:["Porgy"]},
+  {no:190, cat:"烤食", name:"烤霍拉鱼", method:"Campfire", ing:["Glowing Cave Fish"]},
+  {no:191, cat:"烤食", name:"烤生命鲈鱼", method:"Campfire", ing:["Hearty Bass"]},
+  {no:192, cat:"烤食", name:"烤生命鲑鱼", method:"Campfire", ing:["Hearty Salmon"]},
+  {no:193, cat:"烤食", name:"烤螃蟹", method:"Campfire", ing:["Crab"]},
+  {no:194, cat:"烤食", name:"烤潜行田螺", method:"Campfire", ing:["River Snail"]},
+  {no:195, cat:"烤食", name:"烤树果", method:"Campfire", ing:["Chickaloo Tree Nut"]},
+  {no:196, cat:"烤食", name:"烤橡子", method:"Campfire", ing:["Acorn"]},
+  {no:197, cat:"烤食", name:"烤蛋", method:"Campfire", ing:["Bird Egg"]},
+  {no:198, cat:"特殊料理", name:"水煮蛋", method:"Hot Spring", ing:["Bird Egg"]},
+  {no:199, cat:"冷冻", name:"冰冻兽肉", method:"Extreme Cold", ing:["Raw Meat"]},
+  {no:200, cat:"冷冻", name:"高级冰冻兽肉", method:"Extreme Cold", ing:["Prime Meat"]},
+  {no:201, cat:"冷冻", name:"顶级冰冻兽肉", method:"Extreme Cold", ing:["Gourmet Meat"]},
+  {no:202, cat:"冷冻", name:"冰冻禽肉", method:"Extreme Cold", ing:["Raw Bird Drumstick"]},
+  {no:203, cat:"冷冻", name:"高级冰冻禽肉", method:"Extreme Cold", ing:["Raw Bird Thigh"]},
+  {no:204, cat:"冷冻", name:"顶级冰冻禽肉", method:"Extreme Cold", ing:["Raw Whole Bird"]},
+  {no:205, cat:"冷冻", name:"冰冻骨舌鱼", method:"Extreme Cold", ing:["Ancient Arowana"]},
+  {no:206, cat:"冷冻", name:"冰冻鲈鱼", method:"Extreme Cold", ing:["Bass (not Hearty Bass)"]},
+  {no:207, cat:"冷冻", name:"冰冻鳟鱼", method:"Extreme Cold", ing:["Trout"]},
+  {no:208, cat:"冷冻", name:"冰冻鲤鱼", method:"Extreme Cold", ing:["Carp"]},
+  {no:209, cat:"冷冻", name:"冰冻鲷鱼", method:"Extreme Cold", ing:["Porgy"]},
+  {no:210, cat:"冷冻", name:"冰冻霍拉鱼", method:"Extreme Cold", ing:["Glowing Cave Fish"]},
+  {no:211, cat:"冷冻", name:"冰冻生命鲈鱼", method:"Extreme Cold", ing:["Hearty Bass"]},
+  {no:212, cat:"冷冻", name:"冰冻生命鲑鱼", method:"Extreme Cold", ing:["Hearty Salmon"]},
+  {no:213, cat:"冷冻", name:"冰冻螃蟹", method:"Extreme Cold", ing:["Crab"]},
+  {no:214, cat:"冷冻", name:"冰冻田螺", method:"Extreme Cold", ing:["River Snail"]},
+  {no:215, cat:"药水", name:"精力药", method:"Cookpot", ing:["Restless Cricket + Monster Part"]},
+  {no:216, cat:"药水", name:"速速药", method:"Cookpot", ing:["Hot-Footed Frog / Hightail Lizard + Monster Part"]},
+  {no:217, cat:"药水", name:"辛辣药", method:"Cookpot", ing:["Summerwing Butterfly / Warm Darner + Monster Part"]},
+  {no:218, cat:"药水", name:"冰冷药", method:"Cookpot", ing:["Winterwing Butterfly / Cold Darner + Monster Part"]},
+  {no:219, cat:"药水", name:"电麻药", method:"Cookpot", ing:["Electric Darner / Thunderwing Butterfly + Monster Part"]},
+  {no:220, cat:"药水", name:"防火药", method:"Cookpot", ing:["Smotherwing Butterfly / Fireproof Lizard + Monster Part"]},
+  {no:221, cat:"药水", name:"力量药", method:"Cookpot", ing:["Bladed Rhino Beetle + Monster Part"]},
+  {no:222, cat:"药水", name:"坚硬药", method:"Cookpot", ing:["Beetle + Monster Part"]},
+  {no:223, cat:"药水", name:"潜行药", method:"Cookpot", ing:["Sunset Firefly / Silent Shroom / Silent Princess + Monster Part"]},
+  {no:224, cat:"药水", name:"防滑药", method:"Cookpot", ing:["Sticky Frog / Sticky Lizard + Monster Part"]},
+  {no:225, cat:"药水", name:"光亮药", method:"Cookpot", ing:["Deep Firefly + Monster Part"]},
+  {no:226, cat:"药水", name:"能量药", method:"Cookpot", ing:["Tireless Frog + Monster Part"]},
+  {no:227, cat:"药水", name:"生命药", method:"Cookpot", ing:["Hearty Lizard / Hearty Bass + Monster Part"]},
+  {no:228, cat:"药水", name:"妖精回力水", method:"Cookpot", ing:["Fairy"]}
+];
+
+const CAT_META = {
+  "all":      {label:"全部",     icon:"🍽️"},
+  "串炒煎炸": {label:"串炒煎炸", icon:"🍢"},
+  "汤品炖菜": {label:"汤品炖菜", icon:"🍲"},
+  "饭食":     {label:"饭食",     icon:"🍛"},
+  "特殊料理": {label:"特殊料理", icon:"⚗️"},
+  "烤食":     {label:"烤食",     icon:"🔥"},
+  "冷冻":     {label:"冷冻食品", icon:"❄️"},
+  "药水":     {label:"药水",     icon:"🧪"},
+};
+
+let activeCat = "all";
+
+// ── 渲染 ──────────────────────────────────────────
+function render() {
+  const container = document.getElementById("dishContainer");
+  container.innerHTML = "";
+
+  const cats = activeCat === "all"
+    ? Object.keys(CAT_META).filter(k => k !== "all")
+    : [activeCat];
+
+  let total = 0;
+  for (const cat of cats) {
+    const items = DISHES.filter(d => d.cat === cat);
+    if (!items.length) continue;
+    total += items.length;
+
+    const m = CAT_META[cat] || {label: cat, icon:"🍽️"};
+    const sec = document.createElement("div");
+    sec.className = "cat-section";
+    sec.innerHTML = `
+      <div class="cat-header">
+        <span class="cat-icon">${m.icon}</span>
+        <span class="cat-label">${m.label}</span>
+        <span class="cat-badge">${items.length} 种</span>
+      </div>
+      <div class="dish-grid"></div>`;
+    container.appendChild(sec);
+
+    const grid = sec.querySelector(".dish-grid");
+    for (const d of items) {
+      const card = document.createElement("div");
+      card.className = "dish-card";
+      card.dataset.no = d.no;
+      card.innerHTML = `
+        <div class="dish-img-wrap">
+          <img src="${getDishImg(d.no)}" alt="${d.name}" loading="lazy">
+          <span class="dish-no">#${d.no}</span>
+        </div>`;
+      card.addEventListener("click", () => openModal(d));
+      grid.appendChild(card);
+    }
+  }
+
+  document.getElementById("visCount").textContent = total;
+}
+
+// ── 弹窗 ──────────────────────────────────────────
+function openModal(d) {
+  document.getElementById("modalImg").src = getDishImg(d.no);
+  document.getElementById("modalImg").alt = d.name;
+  document.getElementById("modalNo").textContent = `No.${d.no}`;
+  document.getElementById("modalOverlay").classList.add("open");
+}
+function closeModal(e) {
+  if (e.target === document.getElementById("modalOverlay"))
+    document.getElementById("modalOverlay").classList.remove("open");
+}
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") document.getElementById("modalOverlay").classList.remove("open");
+});
+
+// ── 分类筛选 ──────────────────────────────────────
+document.getElementById("catBar").addEventListener("click", e => {
+  const btn = e.target.closest(".cat-btn");
+  if (!btn) return;
+  activeCat = btn.dataset.cat;
+  document.querySelectorAll(".cat-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  render();
+});
+
+// ── 初始渲染 ──────────────────────────────────────
+render();
+</script>
+</body>
+</html>
+
+
+
