@@ -21,5 +21,4 @@ Disallow: /
 User-agent: Bytespider
 Disallow: /
 
-# ⚠️ 买好域名后把下面的 YOUR_DOMAIN 替换掉
-Sitemap: https://YOUR_DOMAIN/sitemap.xml
+Sitemap: https://zelda-guide.pages.dev/sitemap.xml
