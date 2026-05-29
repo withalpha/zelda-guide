@@ -27,8 +27,8 @@
   X-DNS-Prefetch-Control: off
 
   # ── 跨域资源策略 ──
-  Cross-Origin-Resource-Policy: same-origin
-  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: cross-origin
+  Cross-Origin-Opener-Policy: unsafe-none
   Cross-Origin-Embedder-Policy: unsafe-none
 
 # ── 图片和静态资源：长期缓存 ──
