@@ -1,8 +1,4 @@
-﻿# ── 图片资源（体积太大，通过 Cloudflare Pages 直接上传）──
-images/
-Items/
-
-# ── Python 工具脚本 ──
+﻿# ── Python 工具脚本 ──
 *.py
 __pycache__/
 *.pyc
@@ -49,3 +45,4 @@ set-domain.ps1
 # ── 系统文件 ──
 .DS_Store
 Thumbs.db
+

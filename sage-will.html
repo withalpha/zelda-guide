@@ -1,0 +1,669 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="zelda-guide">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="王国之泪全20个贤者的遗志位置坐标攻略，含互动地图、Boss击败条件与收集进度追踪。">
+  <meta name="keywords" content="王国之泪,贤者的遗志,Sage's Will,坐标,Boss,攻略,地图">
+  <meta property="og:title" content="贤者的遗志 · 王国之泪">
+  <meta property="og:description" content="王国之泪全20个贤者的遗志位置坐标攻略，含互动地图、Boss击败条件与收集进度追踪。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="贤者的遗志 · 王国之泪">
+  <meta name="twitter:description" content="王国之泪全20个贤者的遗志位置坐标攻略，含互动地图、Boss击败条件与收集进度追踪。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>贤者的遗志 · 王国之泪攻略</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    /* ─── 贤者卡片 ─── */
+    .sage-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px; margin: 16px 0 24px;
+    }
+    .sage-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      display: flex; align-items: center; gap: 12px;
+      cursor: pointer; transition: background .2s;
+    }
+    .sage-card:hover { background: rgba(201,162,39,0.08); }
+    .sage-card img {
+      width: 56px; height: 56px; border-radius: 50%;
+      object-fit: cover; border: 2px solid var(--border-gold);
+      flex-shrink: 0;
+    }
+    .sage-card-name { font-weight: 700; color: var(--gold); font-size: 0.95rem; }
+    .sage-card-role { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+    .sage-card-count { font-size: 0.78rem; color: var(--green); font-weight: 600; margin-top: 4px; }
+    /* ─── 互动地图 ─── */
+    #sage-map-section {
+      margin: 24px 0;
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      background: #0a0f0a;
+    }
+    #sage-map-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 18px;
+      background: rgba(201,162,39,0.06);
+      border-bottom: 1px solid var(--border-gold);
+      flex-wrap: wrap; gap: 10px;
+    }
+    #sage-map-header h3 {
+      font-family: 'Noto Serif SC', serif;
+      color: var(--gold); margin: 0; font-size: 1rem;
+    }
+    #sage-map-controls-row {
+      display: flex; gap: 6px; flex-wrap: wrap; align-items: center;
+      padding: 8px 18px;
+      background: rgba(0,0,0,0.25);
+      border-bottom: 1px solid rgba(201,162,39,0.18);
+    }
+    .map-ctrl-lbl { color: var(--text-muted); font-size: 0.75rem; margin-right: 4px; }
+    .map-ctrl-btn {
+      padding: 5px 12px; font-size: 0.78rem; cursor: pointer; border-radius: 4px;
+      border: 1px solid var(--border-gold);
+      background: rgba(201,162,39,0.08);
+      color: var(--gold); transition: background .2s;
+    }
+    .map-ctrl-btn:hover, .map-ctrl-btn.active { background: rgba(201,162,39,0.25); }
+    .map-done-btn { border-color: #4caf50!important; color: #4caf50!important; }
+    .map-done-btn.active { background: rgba(76,175,80,0.3)!important; }
+    #sage-map { width: 100%; height: 600px; cursor: grab; }
+    #sage-map:active { cursor: grabbing; }
+    #sage-map-cursor-coord {
+      position: absolute; bottom: 8px; right: 14px; z-index: 500;
+      background: rgba(0,0,0,0.78); color: var(--gold);
+      padding: 4px 10px; border-radius: 4px;
+      font-family: monospace; font-size: 0.78rem;
+      border: 1px solid var(--border-gold); pointer-events: none;
+    }
+    #sage-map-legend {
+      display: flex; gap: 12px; flex-wrap: wrap; padding: 8px 18px;
+      border-top: 1px solid rgba(201,162,39,.2);
+      background: rgba(0,0,0,.3);
+      font-size: 0.75rem;
+    }
+    .sage-legend-item { display: flex; align-items: center; gap: 5px; color: var(--text-secondary); }
+    .sage-legend-dot {
+      width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid #fff; flex-shrink: 0;
+    }
+    /* ─── 表格样式 ─── */
+    .will-num-cell { color: var(--text-muted); font-size: 0.76rem; text-align: center; width: 36px; }
+    .wname-cn { font-weight: 600; color: var(--text-primary); font-size: 0.85rem; }
+    .wname-en { font-size: 0.7rem; color: var(--text-muted); display: block; margin-top: 1px; }
+    .coord { color: var(--green); font-family: monospace; font-size: 0.75rem; white-space: nowrap; }
+    .wnote { font-size: 0.74rem; color: var(--text-secondary); }
+    #willTableBody tr:hover td { background: rgba(201,162,39,0.04); }
+    /* ─── 区块标题 ─── */
+    .will-section-header {
+      display: flex; align-items: center; gap: 14px;
+      background: rgba(201,162,39,0.06); border: 1px solid var(--border-gold);
+      border-radius: var(--radius); padding: 14px 18px; margin: 20px 0 8px;
+    }
+    .will-section-img {
+      width: 56px; height: 56px; border-radius: 50%;
+      object-fit: cover; border: 2px solid var(--border-gold); flex-shrink: 0;
+    }
+    .will-section-title { font-family: 'Noto Serif SC', serif; font-size: 1rem; font-weight: 700; color: var(--gold); }
+    .will-section-sub { font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+    .will-section-count { font-size: 0.78rem; color: var(--green); font-weight: 600; }
+    /* ─── Boss 徽章 ─── */
+    .boss-badge {
+      display: inline-block; padding: 1px 7px; border-radius: 3px;
+      font-size: 0.72rem; font-weight: 600; white-space: nowrap;
+    }
+    .boss-gleeok { background: rgba(229,57,53,0.18); border: 1px solid #e53935; color: #ff6b6b; }
+    .boss-hinox  { background: rgba(255,152,0,0.18); border: 1px solid #ff9800; color: #ffb74d; }
+    .boss-lynel  { background: rgba(156,39,176,0.18); border: 1px solid #9c27b0; color: #ce93d8; }
+    .boss-frox   { background: rgba(33,150,243,0.18); border: 1px solid #2196f3; color: #64b5f6; }
+    .boss-talus  { background: rgba(76,175,80,0.18); border: 1px solid #4caf50; color: #81c784; }
+    .boss-none   { background: rgba(120,120,120,0.18); border: 1px solid #666; color: #aaa; }
+    /* ─── 勾选按钮 ─── */
+    .will-check {
+      padding: 4px 10px; font-size: 0.78rem; cursor: pointer; border-radius: 4px;
+      border: 1px solid var(--border-gold);
+      background: rgba(201,162,39,0.08);
+      color: var(--gold); transition: all .2s;
+    }
+    .will-check:hover { background: rgba(201,162,39,0.22); }
+    .will-check.done {
+      background: rgba(76,175,80,0.25);
+      border-color: #4caf50; color: #4caf50;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li class="nav-dropdown">
+        <a href="#" onclick="return false" class="active">物品收集</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li>
+          <li><a href="sage-will.html" class="active">贤者的遗志</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <span class="page-hero-eyebrow">SAGE'S WILL · ALL 20</span>
+  <h1 class="page-hero-title" style="display:flex;align-items:center;justify-content:center;gap:14px">
+    <img src="images/xianzhe/贤者的遗志.png" alt="贤者的遗志" style="width:52px;height:52px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(201,162,39,0.7))" loading="lazy">
+    贤者的遗志
+  </h1>
+  <p class="page-hero-subtitle">全 20 个天空遗志坐标 · 互动地图 · Boss 击败条件 · 收集进度追踪</p>
+</div>
+
+<div class="page-body">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span>
+    <a href="#">物品收集</a><span class="sep">›</span>
+    <span class="cur">贤者的遗志</span>
+  </nav>
+
+  <!-- 进度追踪 -->
+  <div class="progress-section">
+    <div class="progress-info">
+      <p class="progress-label">贤者的遗志收集进度</p>
+      <div class="progress-bar"><div class="progress-fill" id="willProgressFill" style="width:0%"></div></div>
+    </div>
+    <div class="progress-stats">
+      <div class="progress-stat"><span class="progress-stat-val" id="willDoneCount">0</span><span class="progress-stat-lbl">已收集</span></div>
+      <div class="progress-stat"><span class="progress-stat-val">20</span><span class="progress-stat-lbl">总数</span></div>
+      <div class="progress-stat"><span class="progress-stat-val">5</span><span class="progress-stat-lbl">每位贤者</span></div>
+      <div class="progress-stat"><span class="progress-stat-val">4</span><span class="progress-stat-lbl">贤者数量</span></div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <strong>贤者的遗志说明：</strong>全游戏共 <strong>20 个贤者的遗志（Sage's Will）</strong>，分布于天空群岛的宝箱中，每位贤者对应 5 个。
+    收集后可在<strong>神庙</strong>内的雕像处兑换，每 4 个可提升一位贤者的能力等级（最高 2 级）。
+    部分遗志需要<strong>击败特定 Boss</strong>（方块魔像 II/III、王者古栗欧克）才能开启宝箱，其余通过解谜或直接开箱获得。
+    <br><strong>坐标说明：</strong>游戏内按 <strong>M</strong> 打开地图，右下角显示当前坐标（X, Y, Z）。天空群岛 Z 高度通常在 800 以上。
+  </div>
+
+  <!-- 贤者卡片 -->
+  <div class="section-label">🧙 五位贤者</div>
+  <div class="sage-cards">
+    <div class="sage-card" onclick="filterWillSage('tulin',this)">
+      <img src="images/xianzhe/阿沅.png" alt="阿沅" loading="lazy">
+      <div>
+        <div class="sage-card-name">阿沅</div>
+        <div class="sage-card-role">火之贤者 · 鼓隆族</div>
+        <div class="sage-card-count" id="count-tulin">0 / 5</div>
+      </div>
+    </div>
+    <div class="sage-card" onclick="filterWillSage('sidon',this)">
+      <img src="images/xianzhe/露珠.png" alt="露珠" loading="lazy">
+      <div>
+        <div class="sage-card-name">露珠</div>
+        <div class="sage-card-role">雷之贤者 · 格鲁德族</div>
+        <div class="sage-card-count" id="count-sidon">0 / 5</div>
+      </div>
+    </div>
+    <div class="sage-card" onclick="filterWillSage('yunobo',this)">
+      <img src="images/xianzhe/丘栗.png" alt="丘栗" loading="lazy">
+      <div>
+        <div class="sage-card-name">丘栗</div>
+        <div class="sage-card-role">风之贤者 · 利特族</div>
+        <div class="sage-card-count" id="count-yunobo">0 / 5</div>
+      </div>
+    </div>
+    <div class="sage-card" onclick="filterWillSage('riju',this)">
+      <img src="images/xianzhe/希多.png" alt="希多" loading="lazy">
+      <div>
+        <div class="sage-card-name">希多</div>
+        <div class="sage-card-role">水之贤者 · 卓拉族</div>
+        <div class="sage-card-count" id="count-riju">0 / 5</div>
+      </div>
+    </div>
+    <div class="sage-card" onclick="filterWillSage('mineru',this)">
+      <img src="images/xianzhe/米涅鲁.png" alt="米涅鲁" loading="lazy">
+      <div>
+        <div class="sage-card-name">米涅鲁</div>
+        <div class="sage-card-role">魂之贤者 · 左纳乌族</div>
+        <div class="sage-card-count" id="count-mineru">— / —</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 搜索 -->
+  <div class="search-wrap" style="margin-bottom:14px">
+    <input class="search-input" id="willSearch" type="text" placeholder="搜索遗志位置名称或坐标..." oninput="searchWills(this.value)">
+    <span class="search-icon">🔍</span>
+  </div>
+
+  <!-- 互动地图 -->
+  <div id="sage-map-section">
+    <div id="sage-map-header">
+      <h3>🗺 天空群岛 · 贤者遗志互动地图</h3>
+    </div>
+    <div id="sage-map-controls-row">
+      <span class="map-ctrl-lbl">贤者筛选：</span>
+      <button class="map-ctrl-btn active" id="mapWillAll" onclick="mapWillFilter('all',this)">全部</button>
+      <button class="map-ctrl-btn" onclick="mapWillFilter('tulin',this)">阿沅·火</button>
+      <button class="map-ctrl-btn" onclick="mapWillFilter('sidon',this)">露珠·雷</button>
+      <button class="map-ctrl-btn" onclick="mapWillFilter('yunobo',this)">丘栗·风</button>
+      <button class="map-ctrl-btn" onclick="mapWillFilter('riju',this)">希多·水</button>
+      <button class="map-ctrl-btn map-done-btn" id="mapWillHideDone" onclick="mapWillToggleDone(this)">隐藏已完成</button>
+    </div>
+    <div id="sage-map-wrap" style="position:relative">
+      <div id="sage-map"></div>
+      <div id="sage-map-cursor-coord">X: ---  Y: ---</div>
+    </div>
+    <div id="sage-map-legend">
+      <span style="color:var(--text-muted);font-size:0.75rem;align-self:center">图例：</span>
+      <div class="sage-legend-item"><div class="sage-legend-dot" style="background:#ff6a2a"></div>阿沅·火</div>
+      <div class="sage-legend-item"><div class="sage-legend-dot" style="background:#3a9bff"></div>露珠·雷</div>
+      <div class="sage-legend-item"><div class="sage-legend-dot" style="background:#ff4400"></div>丘栗·风</div>
+      <div class="sage-legend-item"><div class="sage-legend-dot" style="background:#e8b400"></div>希多·水</div>
+      <div class="sage-legend-item" style="margin-left:auto;color:var(--text-muted)">点击标记查看详情 · 滚轮缩放</div>
+    </div>
+  </div>
+
+  <!-- 遗志列表表格 -->
+  <div class="section-label">📍 全部贤者遗志坐标列表（20个）</div>
+  <div class="table-wrap">
+    <table class="data-tbl">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>遗志位置</th>
+          <th>坐标 (X, Y, Z)</th>
+          <th>地区</th>
+          <th>需击败 Boss</th>
+          <th>备注</th>
+          <th>✓</th>
+        </tr>
+      </thead>
+      <tbody id="willTableBody">
+
+<!-- ===== 阿沅 (Tulin) - 风之贤者 ===== -->
+<tr><td colspan="7" style="padding:4px 0"><div class="will-section-header" style="margin:0">
+  <img class="will-section-img" src="images/xianzhe/阿沅.png" alt="阿沅" loading="lazy">
+  <div style="flex:1">
+    <div class="will-section-title">🔥 阿沅 — 火之贤者</div>
+    <div class="will-section-sub">鼓隆族 · Fire Sage · 5 个遗志</div>
+  </div>
+  <span class="will-section-count" id="sec-count-tulin">0 / 5</span>
+</div></td></tr>
+<tr id="will-row-0" data-sage="tulin"><td class="will-num-cell">001</td><td><span class="wname-cn">南奥尔汀天空群岛</span><span class="wname-en">South Eldin Sky Archipelago</span></td><td><span class="coord">1879, 1202, 1251</span></td><td>艾尔丁天空</td><td><span class="boss-badge boss-frox">方块魔像II</span></td><td class="wnote">击败方块魔像II，宝箱从其身上掉落</td><td><button class="will-check" onclick="toggleWillCheck(this,0)">✓</button></td></tr>
+<tr id="will-row-1" data-sage="tulin"><td class="will-num-cell">002</td><td><span class="wname-cn">奥尔汀天空群岛</span><span class="wname-en">Eldin Sky Archipelago</span></td><td><span class="coord">1800, 1642, 1437</span></td><td>艾尔丁天空</td><td><span class="boss-badge boss-none">宝箱（解谜）</span></td><td class="wnote">奥尔汀天空群岛，使用矿车穿越轨道后开箱</td><td><button class="will-check" onclick="toggleWillCheck(this,1)">✓</button></td></tr>
+<tr id="will-row-2" data-sage="tulin"><td class="will-num-cell">003</td><td><span class="wname-cn">索卡拉天空群岛</span><span class="wname-en">Sokkala Sky Archipelago</span></td><td><span class="coord">3671, 1484, 1158</span></td><td>阿卡拉天空</td><td><span class="boss-badge boss-none">宝箱（解谜）</span></td><td class="wnote">球形岛内操控入口朝下，用通天术进入后开箱</td><td><button class="will-check" onclick="toggleWillCheck(this,2)">✓</button></td></tr>
+<tr id="will-row-3" data-sage="tulin"><td class="will-num-cell">004</td><td><span class="wname-cn">拉聂尔天空群岛</span><span class="wname-en">Lanayru Sky Archipelago</span></td><td><span class="coord">2999, -251, 894</span></td><td>拉纳尤天空</td><td><span class="boss-badge boss-frox">方块魔像II</span></td><td class="wnote">击败方块魔像II，宝箱从其身上掉落</td><td><button class="will-check" onclick="toggleWillCheck(this,3)">✓</button></td></tr>
+<tr id="will-row-4" data-sage="tulin"><td class="will-num-cell">005</td><td><span class="wname-cn">拉聂尔大水源天空</span><span class="wname-en">Lanayru Great Spring Sky</span></td><td><span class="coord">2911, 525, 929</span></td><td>拉纳尤天空</td><td><span class="boss-badge boss-none">宝箱（解谜）</span></td><td class="wnote">球形旋转天空岛，停止旋转后进入下层开箱</td><td><button class="will-check" onclick="toggleWillCheck(this,4)">✓</button></td></tr>
+
+<!-- ===== 露珠 (Sidon) - 水之贤者 ===== -->
+<tr><td colspan="7" style="padding:4px 0"><div class="will-section-header" style="margin:0">
+  <img class="will-section-img" src="images/xianzhe/露珠.png" alt="露珠" loading="lazy">
+  <div style="flex:1">
+    <div class="will-section-title">⚡ 露珠 — 雷之贤者</div>
+    <div class="will-section-sub">格鲁德族 · Thunder Sage · 5 个遗志</div>
+  </div>
+  <span class="will-section-count" id="sec-count-sidon">0 / 5</span>
+</div></td></tr>
+<tr id="will-row-5" data-sage="sidon"><td class="will-num-cell">006</td><td><span class="wname-cn">西格鲁德天空</span><span class="wname-en">West Gerudo Sky</span></td><td><span class="coord">-4447, -2731, 1419</span></td><td>格鲁德天空</td><td><span class="boss-badge boss-gleeok">王者古栗欧克</span></td><td class="wnote">击败王者古栗欧克后，南侧祭坛宝箱解锁</td><td><button class="will-check" onclick="toggleWillCheck(this,5)">✓</button></td></tr>
+<tr id="will-row-6" data-sage="sidon"><td class="will-num-cell">007</td><td><span class="wname-cn">东格鲁德天空群岛</span><span class="wname-en">East Gerudo Sky Archipelago</span></td><td><span class="coord">-1958, -1812, 1140</span></td><td>格鲁德天空</td><td><span class="boss-badge boss-none">宝箱（解谜）</span></td><td class="wnote">用镜子反射阳光点亮六边形面板，开启锁门宝箱</td><td><button class="will-check" onclick="toggleWillCheck(this,6)">✓</button></td></tr>
+<tr id="will-row-7" data-sage="sidon"><td class="will-num-cell">008</td><td><span class="wname-cn">星望岛（北格鲁德天空）</span><span class="wname-en">Starview Island</span></td><td><span class="coord">-3457, -264, 1938</span></td><td>格鲁德天空</td><td><span class="boss-badge boss-none">宝箱（解谜）</span></td><td class="wnote">星望岛内用镜子反射光线点亮面板，开启宝箱</td><td><button class="will-check" onclick="toggleWillCheck(this,7)">✓</button></td></tr>
+<tr id="will-row-8" data-sage="sidon"><td class="will-num-cell">009</td><td><span class="wname-cn">西海拉鲁天空群岛</span><span class="wname-en">West Hyrule Sky Archipelago</span></td><td><span class="coord">-2290, -411, 894</span></td><td>中央天空</td><td><span class="boss-badge boss-frox">方块魔像III</span></td><td class="wnote">击败方块魔像III，宝箱从其身上掉落</td><td><button class="will-check" onclick="toggleWillCheck(this,8)">✓</button></td></tr>
+<tr id="will-row-9" data-sage="sidon"><td class="will-num-cell">010</td><td><span class="wname-cn">法罗尼天空群岛</span><span class="wname-en">Faron Sky Archipelago</span></td><td><span class="coord">-324, -2591, 894</span></td><td>法罗尼天空</td><td><span class="boss-badge boss-frox">方块魔像III</span></td><td class="wnote">击败方块魔像III，宝箱从其身上掉落</td><td><button class="will-check" onclick="toggleWillCheck(this,9)">✓</button></td></tr>
+
+<!-- ===== 丘栗 (Yunobo) - 火之贤者 ===== -->
+<tr><td colspan="7" style="padding:4px 0"><div class="will-section-header" style="margin:0">
+  <img class="will-section-img" src="images/xianzhe/丘栗.png" alt="丘栗" loading="lazy">
+  <div style="flex:1">
+    <div class="will-section-title">🌬 丘栗 — 风之贤者</div>
+    <div class="will-section-sub">利特族 · Wind Sage · 5 个遗志</div>
+  </div>
+  <span class="will-section-count" id="sec-count-yunobo">0 / 5</span>
+</div></td></tr>
+<tr id="will-row-10" data-sage="yunobo"><td class="will-num-cell">011</td><td><span class="wname-cn">西海布拉天空群岛</span><span class="wname-en">West Hebra Sky Archipelago</span></td><td><span class="coord">-4470, 2171, 1253</span></td><td>赫布拉天空</td><td><span class="boss-badge boss-gleeok">王者古栗欧克</span></td><td class="wnote">击败王者古栗欧克后，南侧祭坛宝箱解锁</td><td><button class="will-check" onclick="toggleWillCheck(this,10)">✓</button></td></tr>
+<tr id="will-row-11" data-sage="yunobo"><td class="will-num-cell">012</td><td><span class="wname-cn">南海布拉天空群岛</span><span class="wname-en">South Hebra Sky Archipelago</span></td><td><span class="coord">-3075, 2151, 648</span></td><td>赫布拉天空</td><td><span class="boss-badge boss-none">宝箱（开放）</span></td><td class="wnote">南海布拉天空群岛废墟中央，直接开箱</td><td><button class="will-check" onclick="toggleWillCheck(this,11)">✓</button></td></tr>
+<tr id="will-row-12" data-sage="yunobo"><td class="will-num-cell">013</td><td><span class="wname-cn">北塔班达天空群岛</span><span class="wname-en">North Tabantha Sky Archipelago</span></td><td><span class="coord">-3780, 1572, 1237</span></td><td>塔班达天空</td><td><span class="boss-badge boss-none">宝箱（开放）</span></td><td class="wnote">北塔班达天空群岛西侧岛屿，直接开箱</td><td><button class="will-check" onclick="toggleWillCheck(this,12)">✓</button></td></tr>
+<tr id="will-row-13" data-sage="yunobo"><td class="will-num-cell">014</td><td><span class="wname-cn">雷鸣岛（法罗尼天空）</span><span class="wname-en">Thunderhead Isles</span></td><td><span class="coord">967, -3306, 846</span></td><td>法罗尼天空</td><td><span class="boss-badge boss-none">宝箱（解谜）</span></td><td class="wnote">雷鸣岛，用弹射器发射后破石取箱</td><td><button class="will-check" onclick="toggleWillCheck(this,13)">✓</button></td></tr>
+<tr id="will-row-14" data-sage="yunobo"><td class="will-num-cell">015</td><td><span class="wname-cn">龙首岛（法罗尼天空）</span><span class="wname-en">Dragonhead Island</span></td><td><span class="coord">1309, -3210, 459</span></td><td>法罗尼天空</td><td><span class="boss-badge boss-none">宝箱（开放）</span></td><td class="wnote">龙首岛西北角祭坛，直接开箱</td><td><button class="will-check" onclick="toggleWillCheck(this,14)">✓</button></td></tr>
+
+<!-- ===== 希多 (Riju) - 雷之贤者 ===== -->
+<tr><td colspan="7" style="padding:4px 0"><div class="will-section-header" style="margin:0">
+  <img class="will-section-img" src="images/xianzhe/希多.png" alt="希多" loading="lazy">
+  <div style="flex:1">
+    <div class="will-section-title">💧 希多 — 水之贤者</div>
+    <div class="will-section-sub">卓拉族 · Water Sage · 5 个遗志</div>
+  </div>
+  <span class="will-section-count" id="sec-count-riju">0 / 5</span>
+</div></td></tr>
+<tr id="will-row-15" data-sage="riju"><td class="will-num-cell">016</td><td><span class="wname-cn">南海拉鲁天空群岛</span><span class="wname-en">South Hyrule Sky Archipelago</span></td><td><span class="coord">-950, -1736, 1008</span></td><td>中央天空</td><td><span class="boss-badge boss-none">宝箱（解谜）</span></td><td class="wnote">双水池岛，用究极手抬起闸门排水后开箱</td><td><button class="will-check" onclick="toggleWillCheck(this,15)">✓</button></td></tr>
+<tr id="will-row-16" data-sage="riju"><td class="will-num-cell">017</td><td><span class="wname-cn">北奈克鲁达天空群岛</span><span class="wname-en">North Necluda Sky Archipelago</span></td><td><span class="coord">1934, -1063, 961</span></td><td>奈克鲁达天空</td><td><span class="boss-badge boss-none">宝箱（开放）</span></td><td class="wnote">北奈克鲁达天空群岛发光石岛屿，直接开箱</td><td><button class="will-check" onclick="toggleWillCheck(this,16)">✓</button></td></tr>
+<tr id="will-row-17" data-sage="riju"><td class="will-num-cell">018</td><td><span class="wname-cn">东南奈克鲁达天空</span><span class="wname-en">Southeast Necluda Sky</span></td><td><span class="coord">4652, -3828, 1065</span></td><td>奈克鲁达天空</td><td><span class="boss-badge boss-gleeok">王者古栗欧克</span></td><td class="wnote">击败王者古栗欧克后，南侧祭坛宝箱解锁</td><td><button class="will-check" onclick="toggleWillCheck(this,17)">✓</button></td></tr>
+<tr id="will-row-18" data-sage="riju"><td class="will-num-cell">019</td><td><span class="wname-cn">南奈克鲁达天空群岛</span><span class="wname-en">South Necluda Sky Archipelago</span></td><td><span class="coord">2559, -3601, 894</span></td><td>奈克鲁达天空</td><td><span class="boss-badge boss-frox">方块魔像III</span></td><td class="wnote">击败方块魔像III，宝箱从其身上掉落</td><td><button class="will-check" onclick="toggleWillCheck(this,18)">✓</button></td></tr>
+<tr id="will-row-19" data-sage="riju"><td class="will-num-cell">020</td><td><span class="wname-cn">涌泉岛（拉聂尔天空）</span><span class="wname-en">Wellspring Island</span></td><td><span class="coord">3480, 667, 1325</span></td><td>拉纳尤天空</td><td><span class="boss-badge boss-frox">方块魔像II</span></td><td class="wnote">涌泉岛，击败方块魔像II后开箱</td><td><button class="will-check" onclick="toggleWillCheck(this,19)">✓</button></td></tr>
+
+      </tbody>
+    </table>
+  </div>
+</div><!-- end page-body -->
+
+<script src="main.js"></script>
+
+<script>
+/* ====== 贤者遗志互动地图 ====== */
+window.addEventListener('load', function() {
+  if (typeof L === 'undefined') {
+    document.getElementById('sage-map').innerHTML =
+      '<div style="color:#c9a227;padding:40px;text-align:center">地图库加载失败，请检查网络连接后刷新页面</div>';
+    return;
+  }
+
+  function g2ll(gx, gy) { return [-gy, gx]; }
+
+  var smap = L.map('sage-map', {
+    crs: L.CRS.Simple,
+    minZoom: -4,
+    maxZoom: 3,
+    zoomSnap: 0.25,
+    zoomDelta: 0.5,
+    wheelPxPerZoomLevel: 120,
+    attributionControl: true,
+    zoomControl: true
+  });
+
+  var leftBottom = smap.unproject([-6000, 5000], 0);
+  var topRight   = smap.unproject([ 6000,-5000], 0);
+  var mapBounds  = new L.LatLngBounds(leftBottom, topRight);
+  smap.setMaxBounds(mapBounds.pad(0.1));
+
+  var CDN = 'https://cdn.jsdelivr.net/gh/vguzman812/totk-coordinates-map@main/images/';
+  L.imageOverlay(CDN + 'sky.jpg', mapBounds, { attribution: 'Map: TotK · vguzman812 (MIT)' }).addTo(smap);
+  smap.setView([0, 0], -3);
+
+  L.control.attribution({ prefix: false, position: 'bottomleft' }).addTo(smap);
+
+  var st = document.createElement('style');
+  st.textContent =
+    '.sdark2 .leaflet-popup-content-wrapper{background:#111;color:#ddd;border:1px solid #c9a227;border-radius:6px;box-shadow:0 4px 20px rgba(0,0,0,.9)}' +
+    '.sdark2 .leaflet-popup-tip{background:#111}' +
+    '.sdark2 .leaflet-popup-close-button{color:#aaa!important}' +
+    '.leaflet-container{background:#0a1410}' +
+    '.leaflet-container .leaflet-control-attribution{background:rgba(0,0,0,.6);color:#999;font-size:10px}' +
+    '.leaflet-container .leaflet-control-attribution a{color:#c9a227}';
+  document.head.appendChild(st);
+
+  var SAGE_COLORS = {
+    tulin:  '#ff6a2a',
+    sidon:  '#3a9bff',
+    yunobo: '#ff4400',
+    riju:   '#e8b400'
+  };
+
+  var WILL_DATA = [
+    {id:0,  sage:'tulin',  cn:'南奥尔汀天空群岛',       en:'South Eldin Sky Archipelago',       gx:1879,  gy:1202,  gz:1251, region:'艾尔丁天空',  boss:'方块魔像II',   note:'击败方块魔像II，宝箱从其身上掉落'},
+    {id:1,  sage:'tulin',  cn:'奥尔汀天空群岛',         en:'Eldin Sky Archipelago',             gx:1800,  gy:1642,  gz:1437, region:'艾尔丁天空',  boss:'宝箱（解谜）', note:'使用矿车穿越轨道后开箱'},
+    {id:2,  sage:'tulin',  cn:'索卡拉天空群岛',         en:'Sokkala Sky Archipelago',           gx:3671,  gy:1484,  gz:1158, region:'阿卡拉天空',  boss:'宝箱（解谜）', note:'球形岛内操控入口朝下，用通天术进入后开箱'},
+    {id:3,  sage:'tulin',  cn:'拉聂尔天空群岛',         en:'Lanayru Sky Archipelago',           gx:2999,  gy:-251,  gz:894,  region:'拉纳尤天空',  boss:'方块魔像II',   note:'击败方块魔像II，宝箱从其身上掉落'},
+    {id:4,  sage:'tulin',  cn:'拉聂尔大水源天空',       en:'Lanayru Great Spring Sky',          gx:2911,  gy:525,   gz:929,  region:'拉纳尤天空',  boss:'宝箱（解谜）', note:'球形旋转天空岛，停止旋转后进入下层开箱'},
+    {id:5,  sage:'sidon',  cn:'西格鲁德天空',           en:'West Gerudo Sky',                   gx:-4447, gy:-2731, gz:1419, region:'格鲁德天空',  boss:'王者古栗欧克', note:'击败王者古栗欧克后，南侧祭坛宝箱解锁'},
+    {id:6,  sage:'sidon',  cn:'东格鲁德天空群岛',       en:'East Gerudo Sky Archipelago',       gx:-1958, gy:-1812, gz:1140, region:'格鲁德天空',  boss:'宝箱（解谜）', note:'用镜子反射阳光点亮六边形面板，开启锁门宝箱'},
+    {id:7,  sage:'sidon',  cn:'星望岛（北格鲁德天空）', en:'Starview Island',                   gx:-3457, gy:-264,  gz:1938, region:'格鲁德天空',  boss:'宝箱（解谜）', note:'星望岛内用镜子反射光线点亮面板，开启宝箱'},
+    {id:8,  sage:'sidon',  cn:'西海拉鲁天空群岛',       en:'West Hyrule Sky Archipelago',       gx:-2290, gy:-411,  gz:894,  region:'中央天空',    boss:'方块魔像III',  note:'击败方块魔像III，宝箱从其身上掉落'},
+    {id:9,  sage:'sidon',  cn:'法罗尼天空群岛',         en:'Faron Sky Archipelago',             gx:-324,  gy:-2591, gz:894,  region:'法罗尼天空',  boss:'方块魔像III',  note:'击败方块魔像III，宝箱从其身上掉落'},
+    {id:10, sage:'yunobo', cn:'西海布拉天空群岛',       en:'West Hebra Sky Archipelago',        gx:-4470, gy:2171,  gz:1253, region:'赫布拉天空',  boss:'王者古栗欧克', note:'击败王者古栗欧克后，南侧祭坛宝箱解锁'},
+    {id:11, sage:'yunobo', cn:'南海布拉天空群岛',       en:'South Hebra Sky Archipelago',       gx:-3075, gy:2151,  gz:648,  region:'赫布拉天空',  boss:'宝箱（开放）', note:'南海布拉天空群岛废墟中央，直接开箱'},
+    {id:12, sage:'yunobo', cn:'北塔班达天空群岛',       en:'North Tabantha Sky Archipelago',    gx:-3780, gy:1572,  gz:1237, region:'塔班达天空',  boss:'宝箱（开放）', note:'北塔班达天空群岛西侧岛屿，直接开箱'},
+    {id:13, sage:'yunobo', cn:'雷鸣岛（法罗尼天空）',   en:'Thunderhead Isles',                 gx:967,   gy:-3306, gz:846,  region:'法罗尼天空',  boss:'宝箱（解谜）', note:'雷鸣岛，用弹射器发射后破石取箱'},
+    {id:14, sage:'yunobo', cn:'龙首岛（法罗尼天空）',   en:'Dragonhead Island',                 gx:1309,  gy:-3210, gz:459,  region:'法罗尼天空',  boss:'宝箱（开放）', note:'龙首岛西北角祭坛，直接开箱'},
+    {id:15, sage:'riju',   cn:'南海拉鲁天空群岛',       en:'South Hyrule Sky Archipelago',      gx:-950,  gy:-1736, gz:1008, region:'中央天空',    boss:'宝箱（解谜）', note:'双水池岛，用究极手抬起闸门排水后开箱'},
+    {id:16, sage:'riju',   cn:'北奈克鲁达天空群岛',     en:'North Necluda Sky Archipelago',     gx:1934,  gy:-1063, gz:961,  region:'奈克鲁达天空',boss:'宝箱（开放）', note:'北奈克鲁达天空群岛发光石岛屿，直接开箱'},
+    {id:17, sage:'riju',   cn:'东南奈克鲁达天空',       en:'Southeast Necluda Sky',             gx:4652,  gy:-3828, gz:1065, region:'奈克鲁达天空',boss:'王者古栗欧克', note:'击败王者古栗欧克后，南侧祭坛宝箱解锁'},
+    {id:18, sage:'riju',   cn:'南奈克鲁达天空群岛',     en:'South Necluda Sky Archipelago',     gx:2559,  gy:-3601, gz:894,  region:'奈克鲁达天空',boss:'方块魔像III',  note:'击败方块魔像III，宝箱从其身上掉落'},
+    {id:19, sage:'riju',   cn:'涌泉岛（拉聂尔天空）',   en:'Wellspring Island',                 gx:3480,  gy:667,   gz:1325, region:'拉纳尤天空',  boss:'方块魔像II',   note:'涌泉岛，击败方块魔像II后开箱'}
+  ];
+
+  var LS_KEY = 'totk_sage_will_done';
+  function getDoneSet() {
+    try { return new Set(JSON.parse(localStorage.getItem(LS_KEY) || '[]')); }
+    catch(e) { return new Set(); }
+  }
+  function saveDoneSet(s) {
+    localStorage.setItem(LS_KEY, JSON.stringify([...s]));
+  }
+
+  var currentMapFilter = 'all';
+  var mapHideDone = false;
+  var mapMarkers = [];
+
+  function makeWillIcon(sage, done) {
+    var c = SAGE_COLORS[sage] || '#aaa';
+    return L.divIcon({
+      className: '',
+      html: '<div style="width:14px;height:14px;border-radius:50%;background:' + c +
+            ';border:2px solid rgba(255,255,255,0.92);' +
+            'box-shadow:0 0 6px rgba(0,0,0,.85),0 0 4px ' + c + ';' +
+            'opacity:' + (done ? 0.3 : 1) + ';transition:transform .15s"></div>',
+      iconSize: [14, 14],
+      iconAnchor: [7, 7]
+    });
+  }
+
+  function makeWillPopup(w, done) {
+    var c = SAGE_COLORS[w.sage] || '#aaa';
+    var sageNames = {tulin:'阿沅·火之贤者', sidon:'露珠·雷之贤者', yunobo:'丘栗·风之贤者', riju:'希多·水之贤者'};
+    return '<div style="padding:4px 2px;min-width:200px">' +
+      '<div style="font-weight:700;color:' + c + ';font-size:0.95rem;margin-bottom:2px">' + w.cn + '</div>' +
+      '<div style="color:#777;font-size:0.72rem;margin-bottom:5px">' + w.en + '</div>' +
+      '<div style="font-family:monospace;color:#4caf50;font-size:0.75rem">X: ' + w.gx + '  Y: ' + w.gy + '  Z: ' + w.gz + '</div>' +
+      '<div style="margin-top:4px">' +
+        '<span style="border:1px solid ' + c + ';color:' + c + ';padding:1px 7px;border-radius:3px;font-size:0.72rem">' + (sageNames[w.sage]||w.sage) + '</span>' +
+        '&nbsp;<span style="color:#888;font-size:0.72rem">' + w.region + '</span>' +
+      '</div>' +
+      '<div style="margin-top:5px;color:#bbb;font-size:0.75rem"><strong style="color:#e8b400">Boss：</strong>' + w.boss + '</div>' +
+      '<div style="margin-top:3px;color:#bbb;font-size:0.75rem">' + w.note + '</div>' +
+      '<div style="margin-top:8px;border-top:1px solid rgba(201,162,39,0.2);padding-top:7px">' +
+        '<a href="javascript:void(0)" onclick="scrollToWillRow(' + w.id + ')" ' +
+           'style="color:#c9a227;font-size:0.78rem;text-decoration:none">↓ 定位到列表</a>' +
+      '</div>' +
+      '</div>';
+  }
+
+  var doneSet = getDoneSet();
+  WILL_DATA.forEach(function(w) {
+    var isDone = doneSet.has(w.id);
+    var m = L.marker(g2ll(w.gx, w.gy), {
+      icon: makeWillIcon(w.sage, isDone),
+      title: w.cn,
+      riseOnHover: true
+    });
+    m.bindPopup(makeWillPopup(w, isDone), { maxWidth: 280, className: 'sdark2' });
+    mapMarkers.push({ m: m, sage: w.sage, done: isDone, data: w });
+  });
+
+  function applyMapFilter() {
+    mapMarkers.forEach(function(item) {
+      var show = (currentMapFilter === 'all' || item.sage === currentMapFilter) &&
+                 !(mapHideDone && item.done);
+      if (show && !smap.hasLayer(item.m)) item.m.addTo(smap);
+      if (!show && smap.hasLayer(item.m)) smap.removeLayer(item.m);
+    });
+  }
+  applyMapFilter();
+
+  window.mapWillFilter = function(sage, btn) {
+    currentMapFilter = sage;
+    document.querySelectorAll('#sage-map-controls-row .map-ctrl-btn').forEach(function(b){
+      if (!b.classList.contains('map-done-btn')) b.classList.remove('active');
+    });
+    btn.classList.add('active');
+    applyMapFilter();
+  };
+
+  window.mapWillToggleDone = function(btn) {
+    mapHideDone = !mapHideDone;
+    if (btn) btn.classList.toggle('active', mapHideDone);
+    applyMapFilter();
+  };
+
+  window.scrollToWillRow = function(idx) {
+    var row = document.getElementById('will-row-' + idx);
+    if (!row) return;
+    row.style.display = '';
+    row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    row.style.transition = 'background 0.3s';
+    row.style.background = 'rgba(201,162,39,0.18)';
+    setTimeout(function() {
+      row.style.background = '';
+      setTimeout(function() { row.style.transition = ''; }, 400);
+    }, 1800);
+  };
+
+  var coordEl = document.getElementById('sage-map-cursor-coord');
+  smap.on('mousemove', function(e) {
+    if (!coordEl) return;
+    var x = Math.round(e.latlng.lng);
+    var y = Math.round(-e.latlng.lat);
+    coordEl.textContent = 'X: ' + x + '  Y: ' + y;
+  });
+  smap.on('mouseout', function() {
+    if (coordEl) coordEl.textContent = 'X: ---  Y: ---';
+  });
+
+  smap.invalidateSize();
+});
+</script>
+
+<script>
+/* ====== 进度追踪 & 表格交互 ====== */
+var LS_KEY = 'totk_sage_will_done';
+
+function getDoneIds() {
+  try { return new Set(JSON.parse(localStorage.getItem(LS_KEY) || '[]')); }
+  catch(e) { return new Set(); }
+}
+function saveDoneIds(s) {
+  localStorage.setItem(LS_KEY, JSON.stringify([...s]));
+}
+
+function updateProgress() {
+  var done = getDoneIds();
+  var total = 20;
+  var count = done.size;
+  var pct = Math.round(count / total * 100);
+  var fill = document.getElementById('willProgressFill');
+  var cnt  = document.getElementById('willDoneCount');
+  if (fill) fill.style.width = pct + '%';
+  if (cnt)  cnt.textContent = count;
+
+  // 更新各贤者计数
+  var sages = ['tulin','sidon','yunobo','riju'];
+  var sageIds = {tulin:[0,1,2,3,4], sidon:[5,6,7,8,9], yunobo:[10,11,12,13,14], riju:[15,16,17,18,19]};
+  sages.forEach(function(s) {
+    var ids = sageIds[s];
+    var c = ids.filter(function(id){ return done.has(id); }).length;
+    var el = document.getElementById('count-' + s);
+    if (el) el.textContent = c + ' / 5';
+    var sec = document.getElementById('sec-count-' + s);
+    if (sec) sec.textContent = c + ' / 5';
+  });
+}
+
+window.toggleWillCheck = function(btn, id) {
+  var done = getDoneIds();
+  if (done.has(id)) {
+    done.delete(id);
+    btn.classList.remove('done');
+  } else {
+    done.add(id);
+    btn.classList.add('done');
+  }
+  saveDoneIds(done);
+  updateProgress();
+  // 同步地图标记透明度
+  if (window._willMapMarkers) {
+    window._willMapMarkers.forEach(function(item) {
+      if (item.data.id === id) {
+        item.done = done.has(id);
+        var c = {tulin:'#ff6a2a',sidon:'#3a9bff',yunobo:'#ff4400',riju:'#e8b400'}[item.data.sage] || '#aaa';
+        item.m.setIcon(L.divIcon({
+          className: '',
+          html: '<div style="width:14px;height:14px;border-radius:50%;background:' + c +
+                ';border:2px solid rgba(255,255,255,0.92);' +
+                'box-shadow:0 0 6px rgba(0,0,0,.85),0 0 4px ' + c + ';' +
+                'opacity:' + (item.done ? 0.3 : 1) + ';transition:transform .15s"></div>',
+          iconSize: [14, 14], iconAnchor: [7, 7]
+        }));
+      }
+    });
+  }
+};
+
+function searchWills(val) {
+  var q = val.toLowerCase().trim();
+  if (!q) {
+    document.querySelectorAll('#willTableBody tr[data-sage]').forEach(function(tr){ tr.style.display = ''; });
+    document.querySelectorAll('#willTableBody tr:not([data-sage])').forEach(function(tr){ tr.style.display = ''; });
+    return;
+  }
+  document.querySelectorAll('#willTableBody tr[data-sage]').forEach(function(tr){
+    tr.style.display = tr.textContent.toLowerCase().includes(q) ? '' : 'none';
+  });
+  document.querySelectorAll('#willTableBody tr:not([data-sage])').forEach(function(tr){
+    tr.style.display = 'none';
+  });
+}
+
+window.filterWillSage = function(sage, card) {
+  document.querySelectorAll('.sage-card').forEach(function(c){ c.style.borderColor = ''; });
+  var colors = {tulin:'#ff6a2a',sidon:'#3a9bff',yunobo:'#ff4400',riju:'#e8b400'};
+  if (card) card.style.borderColor = colors[sage] || 'var(--border-gold)';
+  document.querySelectorAll('#willTableBody tr[data-sage]').forEach(function(tr){
+    tr.style.display = (tr.dataset.sage === sage) ? '' : 'none';
+  });
+  document.querySelectorAll('#willTableBody tr:not([data-sage])').forEach(function(tr){
+    var next = tr.nextElementSibling;
+    var hasVisible = false;
+    while (next && next.dataset.sage) {
+      if (next.style.display !== 'none') { hasVisible = true; break; }
+      next = next.nextElementSibling;
+    }
+    tr.style.display = hasVisible ? '' : 'none';
+  });
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+  var done = getDoneIds();
+  document.querySelectorAll('#willTableBody .will-check').forEach(function(btn) {
+    var id = parseInt(btn.getAttribute('onclick').match(/\d+/)[0]);
+    if (done.has(id)) btn.classList.add('done');
+  });
+  updateProgress();
+});
+</script>
+</body>
+</html>
