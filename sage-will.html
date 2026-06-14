@@ -182,7 +182,7 @@
       </li>
       <li><a href="about.html">关于我们</a></li>
     </ul>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
@@ -295,9 +295,9 @@
     <div id="sage-map-legend">
       <span style="color:var(--text-muted);font-size:0.75rem;align-self:center">图例：</span>
       <div class="sage-legend-item"><div class="sage-legend-dot" style="background:#ff6a2a"></div>阿沅·火</div>
-      <div class="sage-legend-item"><div class="sage-legend-dot" style="background:#3a9bff"></div>露珠·雷</div>
+      <div class="sage-legend-item"><div class="sage-legend-dot" style="background:#e8b400"></div>露珠·雷</div>
       <div class="sage-legend-item"><div class="sage-legend-dot" style="background:#ff4400"></div>丘栗·风</div>
-      <div class="sage-legend-item"><div class="sage-legend-dot" style="background:#e8b400"></div>希多·水</div>
+      <div class="sage-legend-item"><div class="sage-legend-dot" style="background:#3a9bff"></div>希多·水</div>
       <div class="sage-legend-item" style="margin-left:auto;color:var(--text-muted)">点击标记查看详情 · 滚轮缩放</div>
     </div>
   </div>
@@ -431,9 +431,9 @@ window.addEventListener('load', function() {
 
   var SAGE_COLORS = {
     tulin:  '#ff6a2a',
-    sidon:  '#3a9bff',
+    sidon:  '#e8b400',
     yunobo: '#ff4400',
-    riju:   '#e8b400'
+    riju:   '#3a9bff'
   };
 
   var WILL_DATA = [
@@ -621,7 +621,7 @@ window.toggleWillCheck = function(btn, id) {
     window._willMapMarkers.forEach(function(item) {
       if (item.data.id === id) {
         item.done = done.has(id);
-        var c = {tulin:'#ff6a2a',sidon:'#3a9bff',yunobo:'#ff4400',riju:'#e8b400'}[item.data.sage] || '#aaa';
+        var c = {tulin:'#ff6a2a',sidon:'#e8b400',yunobo:'#ff4400',riju:'#3a9bff'}[item.data.sage] || '#aaa';
         item.m.setIcon(L.divIcon({
           className: '',
           html: '<div style="width:14px;height:14px;border-radius:50%;background:' + c +
@@ -652,7 +652,7 @@ function searchWills(val) {
 
 window.filterWillSage = function(sage, card) {
   document.querySelectorAll('.sage-card').forEach(function(c){ c.style.borderColor = ''; });
-  var colors = {tulin:'#ff6a2a',sidon:'#3a9bff',yunobo:'#ff4400',riju:'#e8b400'};
+  var colors = {tulin:'#ff6a2a',sidon:'#e8b400',yunobo:'#ff4400',riju:'#3a9bff'};
   if (card) card.style.borderColor = colors[sage] || 'var(--border-gold)';
   document.querySelectorAll('#willTableBody tr[data-sage]').forEach(function(tr){
     tr.style.display = (tr.dataset.sage === sage) ? '' : 'none';
