@@ -36,9 +36,7 @@
   <title>塞尔达传说：王国之泪 · 全攻略</title>
   <link rel="stylesheet" href="style.css">
   <!-- 预加载背景图 -->
-  <link rel="preload" as="image" href="images/characters/20192200rsab.png">
-  <link rel="preload" as="image" href="images/characters/desktop1.jpg">
-  <link rel="preload" as="image" href="images/characters/desktop2.jpg">
+  <link rel="preload" as="image" href="images/desktop/ui.jpg">
   <style>
   /* ══════════════════════════════════════════════════
      TOTK Hero —— 三图轮播背景 · 电影虚化风
@@ -65,62 +63,45 @@
   .hero-slide {
     position: absolute; inset: 0;
     background-size: cover;
-    background-position: center;
-    /* 虚化 + 压暗 + 去饱和，保留隐约轮廓 */
-    filter: blur(18px) brightness(0.22) saturate(0.5);
-    /* 稍微放大防止虚化边缘露出 */
-    transform: scale(1.08);
-    opacity: 0;
-    /* 单张完整时间：3s淡入 + 5s停留 + 3s淡出 = 11s × 3 = 33s循环 */
-    animation: slide-cycle 33s infinite;
-    will-change: opacity, transform;
+    background-position: center 30%;
+    /* 轻度压暗，保留插画色彩层次 */
+    filter: blur(0px) brightness(0.55) saturate(0.85);
+    transform: scale(1.0);
+    opacity: 1;
+    will-change: transform;
+    /* 极慢 Ken Burns 效果 */
+    animation: hero-slow-zoom 30s ease-in-out infinite alternate;
   }
 
-  /* 三张图依次延迟 11s */
+  @keyframes hero-slow-zoom {
+    from { transform: scale(1.00); }
+    to   { transform: scale(1.06); }
+  }
+
+  /* 单张图 */
   .hero-slide:nth-child(1) {
-    background-image: url('images/characters/20192200rsab.png');
-    animation-delay: 0s;
+    background-image: url('images/desktop/ui.jpg');
   }
-  .hero-slide:nth-child(2) {
-    background-image: url('images/characters/desktop1.jpg');
-    animation-delay: 11s;
-  }
+  .hero-slide:nth-child(2),
   .hero-slide:nth-child(3) {
-    background-image: url('images/characters/desktop2.jpg');
-    animation-delay: 22s;
-  }
-
-  /*
-    关键帧：
-    0%   → 淡出完毕（不可见）
-    9%   → 淡入完成（33%/11s * 3s ≈ 9%）
-    63%  → 保持可见到下一张开始（约 7/11s）
-    73%  → 淡出完成
-    100% → 依然不可见，等下一轮
-  */
-  @keyframes slide-cycle {
-    0%         { opacity: 0; transform: scale(1.08); }
-    9%         { opacity: 1; transform: scale(1.04); }
-    63%        { opacity: 1; transform: scale(1.00); }
-    73%, 100%  { opacity: 0; transform: scale(1.08); }
+    display: none;
   }
 
   /* ══════════════════════
      颜色叠加层
   ══════════════════════ */
 
-  /* 深色渐变：顶部海蓝 → 中段黑 → 底部暖橙 */
+  /* 深色渐变：顶部保留天空色 → 底部压暗让文字清晰 */
   .hero-color-overlay {
     position: absolute; inset: 0; z-index: 1; pointer-events: none;
     background: linear-gradient(
       180deg,
-      rgba(4,   8,  20, 0.82)  0%,
-      rgba(8,  14,  32, 0.72) 18%,
-      rgba(10, 12,  28, 0.60) 38%,
-      rgba(6,   8,  18, 0.55) 55%,
-      rgba(18, 12,   4, 0.72) 72%,
-      rgba(30, 16,   2, 0.88) 86%,
-      rgba(8,   4,   2, 0.97) 100%
+      rgba(2,   8,  20, 0.45)  0%,
+      rgba(4,  10,  24, 0.30) 25%,
+      rgba(6,  10,  20, 0.25) 45%,
+      rgba(6,   8,  16, 0.45) 65%,
+      rgba(4,   4,   8, 0.75) 82%,
+      rgba(2,   2,   6, 0.92) 100%
     );
   }
 
@@ -355,6 +336,7 @@
       <li><a href="weapons.html">武器图鉴</a></li>
       <li><a href="cooking.html">料理合成</a></li>
       <li><a href="clothes.html">套装获取</a></li>
+      <li><a href="boss.html">Boss图鉴</a></li>
       <li class="nav-dropdown">
         <a href="#" onclick="return false">物品收集</a>
         <ul class="nav-dropdown-menu">
@@ -432,16 +414,10 @@
   </div>
 
   <div class="totk-scroll-hint">
-    <span>向下探索</span>
     <span>▼</span>
   </div>
 
-  <!-- 轮播指示点 -->
-  <div class="hero-dots">
-    <span class="hero-dot"></span>
-    <span class="hero-dot"></span>
-    <span class="hero-dot"></span>
-  </div>
+  <!-- 轮播指示点已移除 -->
 
 </section>
 
@@ -524,6 +500,15 @@
       <h3 class="card-title">套装获取</h3>
       <p class="card-desc">全 38 套套装完整图鉴，含获取方式、套装加成、大妖精强化素材与使用建议，助你打造最强防具。</p>
       <span class="card-count">🛡 共 38 套套装</span>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a href="boss.html" class="category-card">
+      <span class="card-icon">👹</span>
+      <p class="card-number">CHAPTER 09</p>
+      <h3 class="card-title">Boss 图鉴</h3>
+      <p class="card-desc">全 16 个 Boss 完整攻略，含方块魔像、巨霸迦马、吉波得女王、魔王加侬多夫等，详解弱点、阶段打法、推荐装备与掉落物品。</p>
+      <span class="card-count">👹 共 16 个 Boss</span>
       <span class="card-arrow">→</span>
     </a>
 

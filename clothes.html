@@ -123,6 +123,7 @@
       <li><a href="weapons.html">武器图鉴</a></li>
       <li><a href="cooking.html">料理合成</a></li>
       <li><a href="clothes.html" class="active">套装获取</a></li>
+      <li><a href="boss.html">Boss图鉴</a></li>
       <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a><ul class="nav-dropdown-menu"><li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li><li><a href="sage-will.html">贤者的遗志</a></li></ul></li>
       <li><a href="about.html">关于我们</a></li>
     </ul>
@@ -924,6 +925,64 @@
   <!-- 强化指南提示 -->
   <div class="tip-box">
     <strong>💡 强化建议：</strong>所有套装均可在<strong>大妖精泉</strong>进行最多 4 次强化，防御力从 3 提升至最高 28（每件）。强化需要收集对应的素材（怪物材料、矿石等）。优先强化你最常用的 2～3 套套装，刷材料时搭配<strong>采矿套装</strong>可事半功倍。
+  </div><!-- /.clothes-grid 或末尾套装列表结束 -->
+
+  <!-- ══ 套装升级素材表格 ══ -->
+  <div style="margin-top:56px" id="upgrade-table">
+    <!-- 大妖精说明 -->
+    <div class="tip-box" style="margin-bottom:20px">
+      <strong>🧚 四位大妖精位置：</strong>
+      忒拉（森林驿站附近）· 弥佳（雪原驿站附近）· 西莎（双子驿站附近）· 可秋拉（平原外围驿站附近）<br>
+      解锁越多大妖精，可升级的星级上限越高（满4星需全部解锁）。需先完成白诘报社「沛恩」系列前置任务。<br>
+      <strong>卢比消耗（单件）：</strong>★1 = 10卢比 · ★2 = 50卢比 · ★3 = 200卢比 · ★4 = 500卢比
+    </div>
+    <div class="section-header" style="margin-bottom:28px">
+      <span class="section-tag">GREAT FAIRY UPGRADE</span>
+      <h2 class="section-title">套装<span>强化升级一览</span></h2>
+      <p class="section-subtitle">在大妖精处可将防具升级至 ★1～★4，升级星级越高防御越强，部分套装集齐三件可激活套装效果</p>
+    </div>
+
+    <!-- 升级规则说明 -->
+    <div class="highlight-box" style="margin-bottom:24px">
+      <strong>升级规则：</strong>
+      ① 需先完成解锁大妖精的情节挑战。每解锁一位大妖精，可解锁的升级上限 +1 颗星（共 4 位，上限 ★4）。<br>
+      ② 防具单件升级需卢比 + 素材，升级越高消耗越多。<br>
+      ③ 升级至 ★2 后防具获得基础套装效果，★4 获得强化套装效果。<br>
+      ④ 表格中「各件 ×N」表示套装每一件单独升级所需数量。
+    </div>
+
+    <!-- 搜索筛选 -->
+    <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;align-items:center">
+      <input type="text" id="upgradeSearch" class="search-input" placeholder="🔍 搜索套装名称或素材…" style="max-width:320px;margin-bottom:0" oninput="filterUpgrade()">
+      <div class="filter-tabs" id="upgradeFilters" style="margin-bottom:0">
+        <button class="filter-tab active" onclick="filterUpgradeType('all',this)">全部</button>
+        <button class="filter-tab" onclick="filterUpgradeType('env',this)">🌿 环境适应</button>
+        <button class="filter-tab" onclick="filterUpgradeType('move',this)">🏃 移动能力</button>
+        <button class="filter-tab" onclick="filterUpgradeType('stealth',this)">🌙 潜行</button>
+        <button class="filter-tab" onclick="filterUpgradeType('combat',this)">⚔ 战斗强化</button>
+        <button class="filter-tab" onclick="filterUpgradeType('special',this)">🏅 特殊</button>
+        <button class="filter-tab" onclick="filterUpgradeType('hero',this)">✨ 勇者/英杰</button>
+        <button class="filter-tab" onclick="filterUpgradeType('accessory',this)">💎 饰品</button>
+      </div>
+    </div>
+
+    <!-- 表格容器 -->
+    <div class="table-wrap" style="border-radius:var(--radius-lg);overflow-x:auto">
+      <table class="data-tbl" id="upgradeTable" style="min-width:860px">
+        <thead>
+          <tr>
+            <th style="min-width:150px">套装名称</th>
+            <th style="min-width:200px;color:#4ade80">⭐ 一星素材 <span style="font-weight:400;font-size:0.7em;color:var(--text-muted)">（单件）</span></th>
+            <th style="min-width:200px;color:#38bdf8">⭐⭐ 二星素材 <span style="font-weight:400;font-size:0.7em;color:var(--text-muted)">（单件）</span></th>
+            <th style="min-width:200px;color:#f59e0b">⭐⭐⭐ 三星素材 <span style="font-weight:400;font-size:0.7em;color:var(--text-muted)">（单件）</span></th>
+            <th style="min-width:200px;color:#f87171">⭐⭐⭐⭐ 四星素材 <span style="font-weight:400;font-size:0.7em;color:var(--text-muted)">（单件）</span></th>
+          </tr>
+        </thead>
+        <tbody id="upgradeBody">
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.72rem;color:var(--text-muted);margin-top:10px;text-align:right">* 数据来源：gamertw.com/zelda/totk/armor | 表格为单件所需素材，套装共3件需 ×3。卢比：★1=10 · ★2=50 · ★3=200 · ★4=500（单件）</p>
   </div>
 
 </div><!-- /.page-body -->
@@ -943,8 +1002,302 @@
 </footer>
 
 <script src="main.js"></script>
+<script>
+/* ══ 套装升级数据表（数据来源：gamertw.com/zelda/totk/armor）══ */
+const UPGRADE_DATA = [
+  // ── 环境适应 ──
+  {name:'海利亚套装',        cat:'env',
+   s1:'波克布林角 ×5',
+   s2:'蓝波克布林角 ×5\n波克布林的牙齿 ×3',
+   s3:'黑波克布林角 ×5\n琥珀 ×20',
+   s4:'白银波克布林角 ×5\n琥珀 ×30'},
+  {name:'防雪套装（利特）',  cat:'env',
+   s1:'红色丘丘胶 ×3',
+   s2:'红色丘丘胶 ×5\n暖暖草果 ×3',
+   s3:'火蝙蝠的翅膀 ×5\n火蝙蝠的眼珠 ×3\n暖暖蘑菇 ×5',
+   s4:'吐火蜥蜴的尾巴 ×5\n红宝石 ×5\n暖暖凤蝶 ×5'},
+  {name:'防火套装（鼓隆）',  cat:'env',
+   s1:'莫力布林的角 ×3',
+   s2:'莫力布林的牙齿 ×5\n耐火蜥蜴 ×5',
+   s3:'蓝莫力布林的角 ×5\n打火石 ×15\n耐火凤蝶 ×3',
+   s4:'黑莫力布林的角 ×5\n打火石 ×30\n耐火凤蝶 ×5'},
+  {name:'防热套装（格鲁德）',cat:'env',
+   s1:'白色丘丘胶 ×3',
+   s2:'白色丘丘胶 ×5\n冰冷蜜瓜 ×3',
+   s3:'冰蝙蝠的翅膀 ×5\n冰蝙蝠的眼珠 ×3\n冰冷蘑菇 ×5',
+   s4:'吐冰蜥蜴的尾巴 ×5\n蓝宝石 ×5\n冰冷凤蝶 ×5'},
+  {name:'橡胶套装',          cat:'env',
+   s1:'黄色丘丘胶 ×3',
+   s2:'黄色丘丘胶 ×5\n酥麻水果 ×3',
+   s3:'电蝙蝠的翅膀 ×5\n电蝙蝠的眼珠 ×3\n酥麻蘑菇 ×5',
+   s4:'吐电蜥蜴的尾巴 ×5\n黄玉 ×5\n酥麻凤蝶 ×5'},
+  {name:'暴风雪套装',        cat:'env',
+   s1:'冷气果 ×3',
+   s2:'吐冰蜥蜴的角 ×5\n冰冷蜜瓜 ×5',
+   s3:'冰蝙蝠的角 ×5\n冰冷蘑菇 ×5\n冰龙头 ×5',
+   s4:'冰龙的角 ×3\n冰冷凤蝶 ×10\n蓝宝石 ×5'},
+  {name:'火焰套装',          cat:'env',
+   s1:'火焰果 ×3',
+   s2:'吐火蜥蜴的角 ×5\n暖暖草果 ×5',
+   s3:'火蝙蝠的角 ×5\n暖暖蘑菇 ×5\n火龙头 ×5',
+   s4:'火龙的角 ×3\n暖暖凤蝶 ×10\n红宝石 ×5'},
+  {name:'雷光套装',          cat:'env',
+   s1:'电流果 ×3',
+   s2:'吐电蜥蜴的角 ×5\n酥麻水果 ×5',
+   s3:'电蝙蝠的角 ×5\n酥麻蘑菇 ×5\n雷龙头 ×5',
+   s4:'雷龙的角 ×3\n酥麻凤蝶 ×10\n黄玉 ×5'},
+  {name:'蛙之套装',          cat:'env',
+   s1:'贴贴青蛙 ×3',
+   s2:'霍拉布林的角 ×5\n贴贴青蛙 ×5',
+   s3:'蓝霍拉布林的角 ×5\n贴贴蜥蜴 ×5',
+   s4:'黑霍拉布林的角 ×5\n霍拉布林的肝脏 ×5\n蛋白石 ×10'},
+  // ── 移动能力 ──
+  {name:'攀登套装',          cat:'move',
+   s1:'蝙蝠的翅膀 ×3\n速速蘑菇 ×3',
+   s2:'电蝙蝠的翅膀 ×5\n贴贴蜥蜴 ×5',
+   s3:'冰蝙蝠的翅膀 ×5\n霍拉布林的角 ×5\n速速青蛙 ×10',
+   s4:'火蝙蝠的翅膀 ×5\n蜥蜴战士的尾巴 ×10\n速速紫罗兰 ×20'},
+  {name:'滑翔套装',          cat:'move',
+   s1:'蝙蝠的翅膀 ×3',
+   s2:'卡库达的眼珠 ×6\n蝙蝠的翅膀 ×5',
+   s3:'卡库达的翅膀 ×6\n卡库达的眼珠 ×8',
+   s4:'古栗欧克的翅膀 ×12\n卡库达的翅膀 ×10'},
+  // ── 潜行 ──
+  {name:'潜行套装',          cat:'stealth',
+   s1:'宁静公主 ×3',
+   s2:'宁静公主 ×3\n潜行草 ×5',
+   s3:'宁静公主 ×5\n潜行蘑菇 ×5\n潜行田螺 ×5',
+   s4:'宁静公主 ×10\n潜行鳟鱼 ×10\n静谧凤蝶 ×5'},
+  {name:'夜光套装',          cat:'stealth',
+   s1:'夜光石 ×10\n波克布林肝脏 ×1',
+   s2:'夜光石 ×15\n莫力布林肝脏 ×2',
+   s3:'夜光石 ×20\n西诺克斯的肝脏 ×3',
+   s4:'夜光石 ×30\n莱尼尔的肝脏 ×3\n吉波得的骨头 ×10'},
+  // ── 战斗强化 ──
+  {name:'士兵套装',          cat:'combat',
+   s1:'丘丘胶 ×5\n波克布林肝脏 ×3',
+   s2:'蝙蝠的眼珠 ×5\n莫力布林肝脏 ×3',
+   s3:'蜥蜴战士的尾巴 ×3\n西诺克斯的肝脏 ×3\n打火石 ×30',
+   s4:'莱尼尔的蹄子 ×5\n莱尼尔的肝脏 ×5\n琥珀 ×30'},
+  {name:'蛮族套装',          cat:'combat',
+   s1:'大剑草 ×3',
+   s2:'莱尼尔的角 ×2\n莱尼尔的蹄子 ×2\n大剑草 ×5',
+   s3:'蓝鬃莱尼尔的角 ×3\n莱尼尔的蹄子 ×3\n大剑蘑菇 ×3',
+   s4:'白鬃莱尼尔的角 ×3\n莱尼尔的肝脏 ×3\n大剑独角仙 ×3'},
+  {name:'暗黑套装',          cat:'combat',
+   s1:'暗之萤火虫 ×3',
+   s2:'暗之块 ×5\n巨霸伽马的牙齿 ×3',
+   s3:'左纳乌能源 ×20\n巨霸伽马的指甲 ×3',
+   s4:'蓝白巨霸伽马的牙 ×5\n大容量左纳乌能源 ×10\n巨霸伽马的肝脏 ×3'},
+  {name:'鬼神套装',          cat:'combat',
+   s1:'西诺克斯的指甲 ×5\n奥尔龙的鳞片 ×1',
+   s2:'西诺克斯的牙齿 ×5\n奥尔龙的爪子 ×1',
+   s3:'西诺克斯的肝脏 ×2\n奥尔龙的牙齿碎片 ×1',
+   s4:'莱尼尔的肝脏 ×2\n奥尔龙的角 ×1'},
+  {name:'幻影套装',          cat:'combat',
+   s1:'宁静公主 ×3\n白龙的鳞片 ×2',
+   s2:'宁静公主 ×3\n向阳草 ×10\n白龙的爪子 ×2',
+   s3:'宁静公主 ×5\n向阳草 ×15\n白龙的牙齿碎片 ×2',
+   s4:'宁静公主 ×10\n向阳草 ×20\n白龙的角 ×2'},
+  {name:'近卫兵套装',        cat:'combat',
+   s1:'首领波克布林的角 ×3\n波克布林的肝脏 ×3',
+   s2:'蓝首领波克布林角 ×3\n首领波克布林牙齿 ×3',
+   s3:'黑首领波克布林角 ×3\n首领波克布林肝脏 ×3',
+   s4:'白银首领波克布林角 ×3\n莱尼尔的肝脏 ×3'},
+  // ── 特殊 ──
+  {name:'卓拉套装',          cat:'special',
+   s1:'蜥蜴战士的角 ×3',
+   s2:'蜥蜴战士的爪子 ×5\n海拉鲁鲈鱼 ×5',
+   s3:'蓝蜥蜴战士的角 ×5\n蜥蜴战士的尾巴 ×3\n生命鲈鱼 ×3',
+   s4:'黑蜥蜴战士的角 ×5\n蓝蜥蜴战士的尾巴 ×5\n蛋白石 ×20'},
+  {name:'利特套装',          cat:'special',
+   s1:'防雪套装共享数据 —— 见防雪套装行',
+   s2:'',s3:'',s4:''},
+  {name:'采矿套装',          cat:'special',
+   s1:'光亮花种子 ×10',
+   s2:'光亮花种子 ×20\n光亮蘑菇 ×5',
+   s3:'巨大光亮花种子 ×15\n暗萤火虫 ×5',
+   s4:'巨大光亮花种子 ×20\n钻石 ×3\n暗萤火虫 ×10'},
+  {name:'汀空套装（左纳尼乌姆）',cat:'special',
+   s1:'队长魔像的角 ×5',
+   s2:'队长魔像的角(中) ×5\n左纳尼乌姆 ×10',
+   s3:'队长魔像的角(上) ×5\n大左纳尼乌姆 ×10',
+   s4:'队长魔像的角(极) ×5\n大左纳尼乌姆 ×15\n大容量左纳乌能源 ×10'},
+  {name:'依盖队套装',         cat:'special',
+   s1:'大剑香蕉 ×10\n八爪怪的眼珠 ×5',
+   s2:'大剑香蕉 ×15\n八爪怪的脚 ×5',
+   s3:'大剑香蕉 ×20\n八爪怪气球 ×5',
+   s4:'大剑香蕉 ×30\n八爪怪的肝脏 ×5'},
+  // ── 勇者 ──
+  {name:'旷野勇者套装',       cat:'hero',
+   s1:'橡子 ×10\n龙的鳞片 ×2',
+   s2:'精力蜂的蜂蜜 ×5\n龙的爪子 ×2',
+   s3:'精力独角仙 ×3\n龙的牙齿碎片 ×2',
+   s4:'星星碎片 ×1\n龙的角 ×2'},
+  {name:'觉醒勇者套装',       cat:'hero',
+   s1:'夜光石 ×10\n星星碎片 ×1',
+   s2:'夜光石 ×15\n星星碎片 ×1',
+   s3:'夜光石 ×20\n星星碎片 ×1',
+   s4:'夜光石 ×30\n星星碎片 ×1'},
+  {name:'初始勇者套装',       cat:'hero',
+   s1:'红宝石 ×1\n星星碎片 ×1',
+   s2:'红宝石 ×4\n星星碎片 ×1',
+   s3:'红宝石 ×6\n星星碎片 ×1',
+   s4:'红宝石 ×10\n星星碎片 ×1'},
+  {name:'时间勇者套装',       cat:'hero',
+   s1:'琥珀 ×10\n星星碎片 ×1',
+   s2:'琥珀 ×20\n星星碎片 ×1',
+   s3:'琥珀 ×30\n星星碎片 ×1',
+   s4:'琥珀 ×40\n星星碎片 ×1'},
+  {name:'风之勇者套装',       cat:'hero',
+   s1:'蛋白石 ×5\n星星碎片 ×1',
+   s2:'蛋白石 ×10\n星星碎片 ×1',
+   s3:'蛋白石 ×15\n星星碎片 ×1',
+   s4:'蛋白石 ×25\n星星碎片 ×1'},
+  {name:'黄昏勇者套装',       cat:'hero',
+   s1:'黄玉 ×1\n星星碎片 ×1',
+   s2:'黄玉 ×4\n星星碎片 ×1',
+   s3:'黄玉 ×6\n星星碎片 ×1',
+   s4:'黄玉 ×10\n星星碎片 ×1'},
+  {name:'天空勇者套装',       cat:'hero',
+   s1:'蓝宝石 ×1\n星星碎片 ×1',
+   s2:'蓝宝石 ×4\n星星碎片 ×1',
+   s3:'蓝宝石 ×6\n星星碎片 ×1',
+   s4:'蓝宝石 ×10\n星星碎片 ×1'},
+  // ── 单件饰品 ──
+  {name:'琥珀耳坠（单件）',   cat:'accessory',
+   s1:'琥珀 ×10\n打火石 ×5',
+   s2:'琥珀 ×20\n打火石 ×10',
+   s3:'琥珀 ×35\n打火石 ×15',
+   s4:'琥珀 ×60\n打火石 ×25'},
+  {name:'钻石头饰（单件）',   cat:'accessory',
+   s1:'钻石 ×2\n打火石 ×3',
+   s2:'钻石 ×3\n打火石 ×5',
+   s3:'钻石 ×5\n星星碎片 ×1',
+   s4:'钻石 ×8\n星星碎片 ×2'},
+  {name:'红宝石头饰（单件）', cat:'accessory',
+   s1:'红宝石 ×2\n打火石 ×3',
+   s2:'红宝石 ×4\n打火石 ×5',
+   s3:'红宝石 ×6\n星星碎片 ×1',
+   s4:'红宝石 ×10\n星星碎片 ×2'},
+  {name:'蓝宝石头饰（单件）', cat:'accessory',
+   s1:'蓝宝石 ×2\n打火石 ×3',
+   s2:'蓝宝石 ×4\n打火石 ×5',
+   s3:'蓝宝石 ×6\n星星碎片 ×1',
+   s4:'蓝宝石 ×10\n星星碎片 ×2'},
+  {name:'黄玉耳坠（单件）',   cat:'accessory',
+   s1:'黄玉 ×2\n打火石 ×3',
+   s2:'黄玉 ×4\n打火石 ×5',
+   s3:'黄玉 ×6\n星星碎片 ×1',
+   s4:'黄玉 ×10\n星星碎片 ×2'},
+  {name:'蛋白石耳坠（单件）', cat:'accessory',
+   s1:'蛋白石 ×8\n打火石 ×5',
+   s2:'蛋白石 ×16\n打火石 ×10',
+   s3:'蛋白石 ×24\n打火石 ×15',
+   s4:'蛋白石 ×32\n打火石 ×25'},
+  {name:'沙地靴/雪地靴（单件）',cat:'accessory',
+   s1:'速速蜥蜴 ×3\n吉波得的骨头 ×10',
+   s2:'速速胡萝卜 ×5\n吉波得的肝脏 ×5',
+   s3:'速速蘑菇 ×10\n莫尔德拉吉克的颚骨 ×5',
+   s4:'速速紫罗兰 ×10\n莫尔德拉吉克的肝脏 ×5'},
+  {name:'新英杰服（单件）',   cat:'hero',
+   s1:'宁静公主 ×3\n白龙的鳞片 ×2',
+   s2:'宁静公主 ×3\n向阳草 ×10\n白龙的爪子 ×2',
+   s3:'宁静公主 ×5\n向阳草 ×15\n白龙的牙齿碎片 ×2',
+   s4:'宁静公主 ×10\n向阳草 ×20\n白龙的角 ×2'},
+  {name:'古代勇者之魂（单件）',cat:'hero',
+   s1:'白银波克布林角 ×9\n西诺克斯肝脏 ×9\n左纳尼乌姆 ×15',
+   s2:'白银莫力布林角 ×9\n巨霸伽马肝脏 ×9\n大左纳尼乌姆 ×10',
+   s3:'白银蜥蜴角 ×9\n莫尔德拉吉克肝脏 ×9\n大左纳尼乌姆 ×15',
+   s4:'白银莱尼尔刃角 ×9\n白银莱尼尔碎角 ×9\n古栗欧克肝脏 ×9'},
+];
+
+/* ── 分类标签映射 ── */
+const CAT_LABEL = {
+  env:'🌿 环境适应', move:'🏃 移动能力', stealth:'🌙 潜行',
+  combat:'⚔ 战斗强化', special:'🏅 特殊', hero:'✨ 勇者/英杰', accessory:'💎 饰品'
+};
+
+/* ── 渲染素材格（换行 → <br>）── */
+function fmt(s){ return s ? s.replace(/\n/g,'<br>') : '—'; }
+
+/* ── 渲染表格 ── */
+function buildUpgradeTable(data){
+  const tbody = document.getElementById('upgradeBody');
+  if(!tbody) return;
+  tbody.innerHTML = '';
+
+  // 按分类分组
+  const groups = {};
+  data.forEach(function(row){
+    if(!groups[row.cat]) groups[row.cat]=[];
+    groups[row.cat].push(row);
+  });
+
+  Object.keys(groups).forEach(function(cat){
+    // 分类标题行
+    const htr = document.createElement('tr');
+    htr.innerHTML = '<td colspan="5" style="background:rgba(201,162,39,0.10);color:var(--gold);font-weight:700;font-family:\'Noto Serif SC\',serif;letter-spacing:0.05em;padding:10px 15px">'+(CAT_LABEL[cat]||cat)+'</td>';
+    tbody.appendChild(htr);
+
+    groups[cat].forEach(function(row){
+      const tr = document.createElement('tr');
+      tr.setAttribute('data-cat', row.cat);
+      tr.setAttribute('data-name', row.name);
+      tr.innerHTML =
+        '<td style="font-weight:700;color:var(--text-primary);white-space:nowrap">'+row.name+'</td>'+
+        '<td style="color:#4ade80;font-size:0.8rem;line-height:1.7">'+fmt(row.s1)+'</td>'+
+        '<td style="color:#38bdf8;font-size:0.8rem;line-height:1.7">'+fmt(row.s2)+'</td>'+
+        '<td style="color:#f59e0b;font-size:0.8rem;line-height:1.7">'+fmt(row.s3)+'</td>'+
+        '<td style="color:#f87171;font-size:0.8rem;line-height:1.7">'+fmt(row.s4)+'</td>';
+      tbody.appendChild(tr);
+    });
+  });
+}
+
+/* ── 筛选 ── */
+let currentCat = 'all';
+function filterUpgradeType(cat, btn){
+  currentCat = cat;
+  document.querySelectorAll('#upgradeFilters .filter-tab').forEach(function(b){ b.classList.remove('active'); });
+  if(btn) btn.classList.add('active');
+  filterUpgrade();
+}
+
+function filterUpgrade(){
+  const q = (document.getElementById('upgradeSearch').value||'').toLowerCase();
+  let lastGroup = null;
+  document.querySelectorAll('#upgradeBody tr').forEach(function(tr){
+    const cat  = tr.getAttribute('data-cat');
+    const name = tr.getAttribute('data-name');
+    if(!cat && !name){ // 分类标题行
+      lastGroup = tr;
+      tr.style.display = '';
+      return;
+    }
+    const catOk  = currentCat==='all' || cat===currentCat;
+    const textOk = !q || (name&&name.toLowerCase().includes(q)) || tr.textContent.toLowerCase().includes(q);
+    tr.style.display = (catOk && textOk) ? '' : 'none';
+  });
+  // 隐藏没有可见数据行的标题行
+  let rows = Array.from(document.querySelectorAll('#upgradeBody tr'));
+  for(let i=0;i<rows.length;i++){
+    const r = rows[i];
+    if(!r.getAttribute('data-cat') && !r.getAttribute('data-name')){
+      // 找下一个标题行之前的所有数据行
+      let hasVisible = false;
+      for(let j=i+1; j<rows.length; j++){
+        const rr = rows[j];
+        if(!rr.getAttribute('data-cat') && !rr.getAttribute('data-name')) break;
+        if(rr.style.display !== 'none'){ hasVisible=true; break; }
+      }
+      r.style.display = hasVisible ? '' : 'none';
+    }
+  }
+}
+
+// 初始化
+buildUpgradeTable(UPGRADE_DATA);
+</script>
 </body>
 </html>
-
-
-

@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="zelda-guide">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="塞尔达传说王国之泪全Boss图鉴与攻略，含方块魔像、莫尔德拉吉克、巨霸迦马、急冻盖拉、吉波得女王、魔王加侬多夫等16个Boss的弱点、打法与推荐装备。">
+  <meta name="keywords" content="王国之泪,Boss攻略,加侬多夫,莱尼尔,急冻盖拉,吉波得女王,幻影加侬,塞尔达传说Boss">
+  <meta property="og:title" content="Boss图鉴与攻略 · 王国之泪">
+  <meta property="og:description" content="王国之泪全Boss图鉴，含16个Boss的弱点、打法与推荐装备。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Boss图鉴与攻略 · 王国之泪">
+  <meta name="twitter:description" content="王国之泪全Boss图鉴，含16个Boss的弱点、打法与推荐装备。">
+  <meta name="google-site-verification" content="fODg6Pzs-XG-Lwe8510pkLAOSTUjkV1iyWn4U0Dgj-s">
+  <meta name="msvalidate.01" content="52B659FD637CE3F4640DB7323AAB6C27">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-53T0MJB9XW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-53T0MJB9XW');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1659892986478027" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boss图鉴与攻略 · 王国之泪全攻略</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ══════════════════════════════════════
+       Boss图鉴页面专属样式
+    ══════════════════════════════════════ */
+
+    /* ── 分类标签页 ── */
+    .boss-tabs {
+      display: flex; gap: 8px; flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .boss-tab {
+      padding: 7px 18px; border-radius: 20px; cursor: pointer;
+      border: 1px solid var(--border-gold);
+      background: transparent; color: var(--text-secondary);
+      font-size: 0.8rem; font-family: inherit;
+      transition: var(--transition); white-space: nowrap;
+    }
+    .boss-tab:hover  { color: var(--gold); border-color: var(--gold); }
+    .boss-tab.active {
+      background: rgba(201,162,39,0.14);
+      border-color: var(--gold); color: var(--gold);
+      box-shadow: 0 0 12px rgba(201,162,39,0.15);
+    }
+
+    /* ── Boss卡片布局 ── */
+    .boss-list { display: flex; flex-direction: column; gap: 32px; }
+
+    .boss-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: var(--transition);
+      position: relative;
+    }
+    .boss-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .boss-card:hover { box-shadow: 0 12px 48px rgba(201,162,39,0.14); }
+    .boss-card:hover::before { opacity: 1; }
+
+    /* 难度颜色条 */
+    .boss-card[data-diff="normal"]::before  { background: linear-gradient(90deg, #22c55e, #4ade80); }
+    .boss-card[data-diff="hard"]::before    { background: linear-gradient(90deg, #f59e0b, #fde68a); }
+    .boss-card[data-diff="extreme"]::before { background: linear-gradient(90deg, #ef4444, #f87171); }
+    .boss-card[data-diff="final"]::before   { background: linear-gradient(90deg, #7c3aed, #c084fc, #f59e0b); }
+
+    /* ── 主体两栏布局 ── */
+    .boss-inner {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 0;
+    }
+
+    /* ── 左侧图片区 ── */
+    .boss-gallery {
+      position: relative;
+      background: #05050e;
+      border-right: 1px solid var(--border-gold);
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+    }
+    .boss-img-main {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .boss-img-main img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      transition: transform 0.5s ease;
+      min-height: 240px;
+    }
+    .boss-card:hover .boss-img-main img { transform: scale(1.04); }
+
+    /* 图片渐变遮罩 */
+    .boss-img-main::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        180deg,
+        transparent 40%,
+        rgba(5,5,14,0.6) 80%,
+        rgba(5,5,14,0.9) 100%
+      );
+      pointer-events: none;
+    }
+
+    /* 难度徽章 */
+    .boss-diff-badge {
+      position: absolute; top: 12px; left: 12px; z-index: 2;
+      padding: 4px 12px; border-radius: 20px;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      backdrop-filter: blur(6px);
+      border: 1px solid;
+    }
+    .diff-normal  { background: rgba(34,197,94,0.15);  color: #4ade80; border-color: rgba(74,222,128,0.4); }
+    .diff-hard    { background: rgba(245,158,11,0.15); color: #fbbf24; border-color: rgba(251,191,36,0.4); }
+    .diff-extreme { background: rgba(239,68,68,0.15);  color: #f87171; border-color: rgba(248,113,113,0.4); }
+    .diff-final   { background: rgba(124,58,237,0.15); color: #c084fc; border-color: rgba(192,132,252,0.4); }
+
+    /* 缩略图条 */
+    .boss-thumbs {
+      display: flex; gap: 4px; padding: 8px;
+      background: rgba(0,0,0,0.5);
+      border-top: 1px solid var(--border-gold);
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .boss-thumbs::-webkit-scrollbar { display: none; }
+    .boss-thumb {
+      width: 52px; height: 40px; flex-shrink: 0;
+      border-radius: 4px; overflow: hidden;
+      border: 2px solid transparent;
+      cursor: pointer; transition: border-color 0.2s;
+    }
+    .boss-thumb.active { border-color: var(--gold); }
+    .boss-thumb img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+    }
+
+    /* ── 右侧内容区 ── */
+    .boss-content {
+      padding: 24px 28px;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+
+    /* Boss 标题区 */
+    .boss-en-name {
+      font-size: 0.68rem; color: var(--text-muted);
+      letter-spacing: 0.2em; text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .boss-cn-name {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.7rem; font-weight: 900;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    .boss-tags {
+      display: flex; gap: 6px; flex-wrap: wrap;
+    }
+
+    /* 属性数值条 */
+    .boss-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .bstat {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      padding: 10px 12px;
+      text-align: center;
+    }
+    .bstat-val {
+      font-size: 1.15rem; font-weight: 800;
+      color: var(--gold); display: block;
+      font-family: 'Noto Serif SC', serif;
+    }
+    .bstat-lbl {
+      font-size: 0.62rem; color: var(--text-muted);
+      margin-top: 2px; display: block;
+    }
+
+    /* 分区标题 */
+    .boss-section-title {
+      font-size: 0.7rem; font-weight: 700;
+      color: var(--gold); letter-spacing: 0.12em;
+      text-transform: uppercase;
+      display: flex; align-items: center; gap: 6px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(201,162,39,0.2);
+      margin-bottom: 8px;
+    }
+
+    /* 弱点格子 */
+    .weakness-row {
+      display: flex; gap: 8px; flex-wrap: wrap;
+    }
+    .weakness-tag {
+      padding: 5px 12px; border-radius: 6px;
+      font-size: 0.75rem; font-weight: 600;
+      display: inline-flex; align-items: center; gap: 5px;
+      border: 1px solid;
+    }
+    .wk-fire   { color: #fb923c; border-color: rgba(251,146,60,0.4);  background: rgba(251,146,60,0.08); }
+    .wk-ice    { color: #7dd3fc; border-color: rgba(125,211,252,0.4); background: rgba(125,211,252,0.08); }
+    .wk-elec   { color: #fde047; border-color: rgba(253,224,71,0.4);  background: rgba(253,224,71,0.08); }
+    .wk-water  { color: #38bdf8; border-color: rgba(56,189,248,0.4);  background: rgba(56,189,248,0.08); }
+    .wk-light  { color: #fef08a; border-color: rgba(254,240,138,0.4); background: rgba(254,240,138,0.06); }
+    .wk-bomb   { color: #f87171; border-color: rgba(248,113,113,0.4); background: rgba(248,113,113,0.08); }
+    .wk-arrow  { color: #a5b4fc; border-color: rgba(165,180,252,0.4); background: rgba(165,180,252,0.08); }
+    .wk-master { color: #f0d060; border-color: rgba(240,208,96,0.4);  background: rgba(240,208,96,0.08); }
+    .wk-sage   { color: #4ade80; border-color: rgba(74,222,128,0.4);  background: rgba(74,222,128,0.08); }
+    .wk-melee  { color: #e8e4d4; border-color: rgba(232,228,212,0.3); background: rgba(232,228,212,0.05); }
+
+    /* 攻略步骤 */
+    .boss-steps {
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .boss-step {
+      display: flex; gap: 12px; align-items: flex-start;
+    }
+    .step-num {
+      min-width: 26px; height: 26px; flex-shrink: 0;
+      background: rgba(201,162,39,0.12);
+      border: 1px solid var(--border-gold);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.7rem; font-weight: 800; color: var(--gold);
+      margin-top: 1px;
+    }
+    .step-text {
+      font-size: 0.82rem; color: var(--text-secondary);
+      line-height: 1.75;
+    }
+    .step-text strong { color: var(--text-primary); }
+    .step-text em { color: var(--gold); font-style: normal; }
+
+    /* 推荐装备 */
+    .gear-grid {
+      display: flex; flex-wrap: wrap; gap: 6px;
+    }
+    .gear-tag {
+      padding: 4px 11px; border-radius: 6px;
+      font-size: 0.73rem;
+      background: rgba(74,222,128,0.07);
+      border: 1px solid rgba(74,222,128,0.25);
+      color: var(--green);
+    }
+
+    /* 警告提示 */
+    .boss-warning {
+      background: rgba(248,113,113,0.06);
+      border: 1px solid rgba(248,113,113,0.25);
+      border-left: 3px solid #f87171;
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .boss-warning strong { color: #f87171; }
+
+    /* 小提示 */
+    .boss-tip {
+      background: rgba(74,222,128,0.05);
+      border: 1px solid rgba(74,222,128,0.2);
+      border-left: 3px solid var(--green);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .boss-tip strong { color: var(--green); }
+
+    /* 奖励区 */
+    .boss-reward {
+      display: flex; gap: 8px; flex-wrap: wrap;
+      align-items: center;
+    }
+    .reward-item {
+      padding: 5px 13px; border-radius: 20px;
+      font-size: 0.73rem; font-weight: 600;
+      background: rgba(201,162,39,0.08);
+      border: 1px solid var(--border-gold);
+      color: var(--gold);
+    }
+
+    /* Boss 序号 */
+    .boss-index {
+      position: absolute; bottom: 12px; right: 12px; z-index: 2;
+      font-size: 3.5rem; font-weight: 900;
+      color: rgba(255,255,255,0.04);
+      font-family: 'Noto Serif SC', serif;
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* ── 隐藏 ── */
+    .boss-card.hidden { display: none; }
+
+    /* ── 响应式 ── */
+    @media (max-width: 860px) {
+      .boss-inner { grid-template-columns: 1fr; }
+      .boss-gallery { border-right: none; border-bottom: 1px solid var(--border-gold); }
+      .boss-img-main { min-height: 220px; }
+      .boss-stats { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 500px) {
+      .boss-content { padding: 16px; }
+      .boss-cn-name { font-size: 1.4rem; }
+      .boss-stats { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li><a href="boss.html" class="active">Boss图鉴</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li>
+          <li><a href="sage-will.html">贤者的遗志</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ══ PAGE HERO ══ -->
+<div class="page-hero" style="background: radial-gradient(ellipse at 50% 0%, rgba(239,68,68,0.10) 0%, transparent 55%);">
+  <span class="page-hero-eyebrow">BOSS ENCYCLOPEDIA</span>
+  <h1 class="page-hero-title" style="color: #f87171; text-shadow: 0 0 40px rgba(239,68,68,0.4);">👹 Boss 图鉴</h1>
+  <p class="page-hero-subtitle">全 16 个 Boss · 弱点分析 · 阶段打法 · 推荐装备</p>
+</div>
+
+<div class="page-body">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span><span class="cur">Boss图鉴</span>
+  </nav>
+
+  <!-- 概览统计 -->
+  <div class="progress-section" style="margin-bottom:28px">
+    <div class="progress-info">
+      <p class="progress-label" style="margin-bottom:4px">共收录</p>
+      <p style="font-size:1.6rem;font-weight:900;color:var(--gold);font-family:'Noto Serif SC',serif;margin:0">16 个 Boss</p>
+    </div>
+    <div class="progress-stats">
+      <div class="progress-stat"><span class="progress-stat-val" style="color:#4ade80">5</span><span class="progress-stat-lbl">普通难度</span></div>
+      <div class="progress-stat"><span class="progress-stat-val" style="color:#fbbf24">6</span><span class="progress-stat-lbl">困难</span></div>
+      <div class="progress-stat"><span class="progress-stat-val" style="color:#f87171">4</span><span class="progress-stat-lbl">极难</span></div>
+      <div class="progress-stat"><span class="progress-stat-val" style="color:#c084fc">1</span><span class="progress-stat-lbl">最终Boss</span></div>
+    </div>
+  </div>
+
+  <!-- 分类筛选 -->
+  <div class="boss-tabs" id="bossTabs">
+    <button class="boss-tab active" onclick="filterBoss('all',this)">全部 (16)</button>
+    <button class="boss-tab" onclick="filterBoss('dungeon',this)">🏛 神殿Boss</button>
+    <button class="boss-tab" onclick="filterBoss('field',this)">🌍 野外强敌</button>
+    <button class="boss-tab" onclick="filterBoss('story',this)">📜 剧情Boss</button>
+    <button class="boss-tab" onclick="filterBoss('final',this)">👑 最终Boss</button>
+  </div>
+
+  <!-- Boss 列表 -->
+  <div class="boss-list" id="bossList">
+
+    <!-- ══════ 01 方块魔像 Flux Construct ══════ -->
+    <div class="boss-card" data-cat="field" data-diff="normal">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-normal">普通</span>
+            <img src="images/bosses/方块魔像.jpg" alt="方块魔像 Flux Construct" loading="lazy">
+            <span class="boss-index">01</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/方块魔像.jpg" alt="方块魔像 初级"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/方块魔像（中等）.png" alt="方块魔像 中等"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/方块魔像（上等）.png" alt="方块魔像 上等"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">FLUX CONSTRUCT</div>
+            <div class="boss-cn-name">方块魔像</div>
+            <div class="boss-tags">
+              <span class="tag tag-gold">野外强敌</span>
+              <span class="tag tag-blue">天空 / 地表</span>
+              <span class="tag tag-green">初/中/上 三阶</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">天空岛</span><span class="bstat-lbl">主要出没</span></div>
+            <div class="bstat"><span class="bstat-val">★★☆</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">物理</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-melee">🟦 发光核心方块</span>
+              <span class="weakness-tag wk-arrow">🏹 究极手拔取</span>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-steps">
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text">魔像由许多方块拼成，身上有一块<strong>颜色不同、会发光的核心方块</strong>，那是它的唯一弱点。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text">用 <em>究极手</em> 直接把核心方块从身体里<strong>抽出来</strong>，魔像会瞬间瘫散，趁机疯狂攻击核心。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text">当它变成<strong>地面滚动形态</strong>或竖立成高塔时，攀爬上去靠近核心；它趴下变平面时核心最好打。</span></div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text">上等魔像（中等/上等）血更厚、会浮空与释放电击，建议用<em>左纳乌火炮 / 重武器</em> 速攻核心。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎁 掉落物品</div>
+            <div class="boss-reward">
+              <span class="reward-item">🔩 左纳乌矿</span>
+              <span class="reward-item">💎 大型左纳乌矿</span>
+              <span class="reward-item">⚙ 左纳乌精炼石</span>
+              <span class="reward-item">🔋 大型结晶充能</span>
+            </div>
+          </div>
+          <div class="boss-tip"><strong>提示：</strong>究极手拔核心是最快解法，省去逐块拆解的时间。掉落的左纳乌矿可拿去交换电池容量。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 02 岩石巨人 Stone Talus ══════ -->
+    <div class="boss-card" data-cat="field" data-diff="normal">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-normal">普通</span>
+            <img src="images/bosses/岩石巨人.jpg" alt="岩石巨人 Stone Talus" loading="lazy">
+            <span class="boss-index">02</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/岩石巨人.jpg" alt="岩石巨人 普通"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/岩石巨人（稀有）.jpeg" alt="岩石巨人 稀有"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/岩石巨人（夜光）.png" alt="岩石巨人 夜光"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/岩家巨人.png" alt="岩家巨人"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/熔岩巨人.png" alt="熔岩巨人 Igneo Talus"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/冰岩巨人.png" alt="冰岩巨人 Frost Talus"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">STONE TALUS</div>
+            <div class="boss-cn-name">岩石巨人</div>
+            <div class="boss-tags">
+              <span class="tag tag-gold">野外强敌</span>
+              <span class="tag tag-red">熔岩 / 冰岩 / 稀有变种</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">全地图</span><span class="bstat-lbl">主要出没</span></div>
+            <div class="bstat"><span class="bstat-val">★★☆</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">物理/元素</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-melee">⛏ 背部矿石核心</span>
+              <span class="weakness-tag wk-fire">❄ 熔岩巨人怕冰</span>
+              <span class="weakness-tag wk-ice">🔥 冰岩巨人怕火</span>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-steps">
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text">巨人的弱点是<strong>背上突出的黑色矿石块</strong>，普通攻击身体几乎无效。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text">爬到它身上（趁它挥拳砸地时跳上去），用 <em>融合岩石锤 / 重武器</em> 猛敲背部矿石核心。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>熔岩巨人</strong>全身高温，需先用<em>冰属性武器/冰雪果</em>降温再攀爬；<strong>冰岩巨人</strong>则用<em>火属性</em>融化。</span></div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text">击碎核心即可击败。<strong>夜光/稀有巨人</strong>会掉落大量宝石，性价比极高。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎁 掉落物品</div>
+            <div class="boss-reward">
+              <span class="reward-item">💎 各类宝石（蓝/红宝石、黄玉、钻石）</span>
+              <span class="reward-item">🪨 火打石</span>
+              <span class="reward-item">✨ 夜光石</span>
+              <span class="reward-item">🧡 巨人之心（稀有）</span>
+            </div>
+          </div>
+          <div class="boss-tip"><strong>刷钱推荐：</strong>夜光岩石巨人会掉落成堆夜光石与宝石，是前期赚卢比的优质目标。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 03 莫尔德拉吉克 Molduga ══════ -->
+    <div class="boss-card" data-cat="field" data-diff="normal">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-normal">普通</span>
+            <img src="images/bosses/莫尔德拉吉克.jpg" alt="莫尔德拉吉克 Molduga" loading="lazy">
+            <span class="boss-index">03</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/莫尔德拉吉克.jpg" alt="莫尔德拉吉克"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">MOLDUGA</div>
+            <div class="boss-cn-name">莫尔德拉吉克</div>
+            <div class="boss-tags">
+              <span class="tag tag-gold">野外强敌</span>
+              <span class="tag tag-blue">杰鲁多沙漠</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">沙漠地带</span><span class="bstat-lbl">主要出没</span></div>
+            <div class="bstat"><span class="bstat-val">★★☆</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">物理</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-bomb">💣 爆弹花（震晕）</span>
+              <span class="weakness-tag wk-melee">⚔ 出土后的身体</span>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-steps">
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text">它潜在<strong>沙子下游动</strong>，会循着你的脚步震动追踪。<strong>站在岩石上</strong>可避免被它感知。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text">朝沙面<strong>投掷爆弹花</strong>（或用余料建造的炸弹箭），它会冲上来吞食并被炸出沙面、翻倒震晕。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text">趁它翻肚朝天的<strong>硬直时间</strong>冲上去用最强武器全力输出。</span></div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text">重复「炸弹诱出 → 震晕 → 输出」循环数次即可击杀。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎁 掉落物品</div>
+            <div class="boss-reward">
+              <span class="reward-item">🐟 莫尔德拉吉克的鳍</span>
+              <span class="reward-item">🫀 莫尔德拉吉克的内脏</span>
+            </div>
+          </div>
+          <div class="boss-warning"><strong>注意：</strong>它的吞食与跃起攻击伤害极高，没有岩石掩体时务必准备好闪避翻滚。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 04 巨霸迦马 Colgera ══════ -->
+    <div class="boss-card" data-cat="field" data-diff="hard">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-hard">困难</span>
+            <img src="images/bosses/巨霸迦马.jpg" alt="巨霸迦马 Colgera" loading="lazy">
+            <span class="boss-index">04</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/巨霸迦马.jpg" alt="巨霸迦马"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/白苍巨霸迦马.jpg" alt="白苍巨霸迦马"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/黑曜巨霸迦马.jpg" alt="黑曜巨霸迦马"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">COLGERA</div>
+            <div class="boss-cn-name">巨霸迦马</div>
+            <div class="boss-tags">
+              <span class="tag tag-gold">野外强敌</span>
+              <span class="tag tag-blue">普通 / 白苍 / 黑曜</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">全地图</span><span class="bstat-lbl">出现地点</span></div>
+            <div class="bstat"><span class="bstat-val">★★★</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">物理 / 吸引</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-arrow">👁 眼睛（弓箭射击）</span>
+              <span class="weakness-tag wk-bomb">💣 嘴里投炸弹花</span>
+              <span class="weakness-tag wk-melee">🪓 背部黑色矿石（重武器）</span>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-tip" style="margin-bottom:10px"><strong>核心思路：</strong>炸弹断吸、射眼出硬直、爬背狂输出。</div>
+            <div class="boss-steps">
+              <div class="boss-step">
+                <span class="step-num">1</span>
+                <span class="step-text">
+                  <strong>破招瘫痪（二选一）</strong><br>
+                  · <em>射击弱点：</em>用弓箭瞄准它的<strong>眼睛（发光部位）</strong>射击数次，或附加<em>【蝙蝠的眼珠】</em>自动追踪，可直接让它倒地瘫痪。<br>
+                  · <em>炸弹诱饵：</em>当它张大嘴巴准备吸气时，朝嘴里扔一颗<em>【炸弹花】</em>，它吞下后立刻炸出大硬直。
+                </span>
+              </div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>上背输出：</strong>趁巨霸迦马倒地硬直，迅速跑到它身体下方，<strong>攀爬上去来到背部</strong>。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>狂砍矿石：</strong>站在背部中央，用<em>大剑 / 锤子 / 岩石锤</em>等高爆发钝器<strong>疯狂砍击背上的黑色矿石</strong>。</span></div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text"><strong>无限循环：</strong>它甩开林克时会触发滞空，利用<em>【林克时间】</em>再次射击眼睛，如此循环几轮即可击杀。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎁 掉落物品</div>
+            <div class="boss-reward">
+              <span class="reward-item">� 巨霸迦马的牙</span>
+              <span class="reward-item">🫀 巨霸迦马的内脏</span>
+              <span class="reward-item">💎 矿石素材</span>
+            </div>
+          </div>
+          <div class="boss-tip"><strong>推荐装备：</strong>附加蝙蝠眼珠的弓（自动追踪）+ 高攻击力双手重武器 / 岩石锤，战前备好回血料理。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 05 急冻盖拉 Frost Gleeok（风之神殿）══════ -->
+    <div class="boss-card" data-cat="dungeon" data-diff="hard">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-hard">困难</span>
+            <img src="images/bosses/急冻盖拉.jpg" alt="急冻盖拉 Frost Gleeok" loading="lazy">
+            <span class="boss-index">05</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/急冻盖拉.jpg" alt="急冻盖拉"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">FROST GLEEOK · WIND TEMPLE</div>
+            <div class="boss-cn-name">急冻盖拉</div>
+            <div class="boss-tags">
+              <span class="tag tag-purple">神殿Boss</span>
+              <span class="tag tag-blue">风之神殿</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">风之神殿</span><span class="bstat-lbl">出现地点</span></div>
+            <div class="bstat"><span class="bstat-val">★★★★</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">冰冻</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-melee">💥 林克身体直接撞击冰晶</span>
+              <span class="weakness-tag wk-bomb">💣 炸弹花附魔箭（远程）</span>
+              <span class="weakness-tag wk-ice">🔵 背部紫色结晶</span>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-tip" style="margin-bottom:10px"><strong>两套核心打法可自由选择，推荐优先使用「林克肉弹冲击」。</strong></div>
+            <div class="boss-steps">
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(125,211,252,0.15);border-color:rgba(125,211,252,0.4);color:#7dd3fc">🧊</span>
+                <span class="step-text"><strong>打法一：林克肉弹冲击（最推荐）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text"><strong>空中盘旋：</strong>利用<em>考林族丘栗</em>产生的上升气流在空中持续飞行。无限气流无需担心精力消耗。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>引诱攻击：</strong>等待 BOSS 从下方<strong>垂直向上冲撞</strong>，或它<strong>射出背上冰刺</strong>，此时冰晶弱点会直接暴露。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>俯冲撞击：</strong>按 <em>R 键俯冲</em>（也可直接收翼自由落体），用<strong>林克的身体直接撞碎冰晶</strong>！</span></div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text"><strong>循环操作：</strong>撞碎一处后立刻展开滑翔翼重回高空，寻找下一个弱点，如此循环直至击败。</span></div>
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(125,211,252,0.15);border-color:rgba(125,211,252,0.4);color:#7dd3fc">🏹</span>
+                <span class="step-text"><strong>打法二：远程弓箭打法</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">5</span><span class="step-text"><strong>暴露弱点：</strong>等待 BOSS <strong>射出背部的角</strong>，底下的<em>紫色结晶弱点</em>随之暴露。</span></div>
+              <div class="boss-step"><span class="step-num">6</span><span class="step-text"><strong>开启林克时间：</strong>在空中掏出弓箭，触发<em>慢动作</em>精准瞄准。</span></div>
+              <div class="boss-step"><span class="step-num">7</span><span class="step-text"><strong>合成炸弹箭：</strong>附魔<em>炸弹花</em>（或直接使用多发弓、强力弓），<strong>连续射击同一处冰晶 2～3 次</strong>将其炸碎。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎁 掉落 / 奖励</div>
+            <div class="boss-reward">
+              <span class="reward-item">🧡 心之容器</span>
+              <span class="reward-item">🐦 图弓力的祝福（顺风能力）</span>
+              <span class="reward-item">🪶 盖拉的羽翼</span>
+              <span class="reward-item">❄ 急冻盖拉之角</span>
+              <span class="reward-item">🫀 盖拉的内脏</span>
+            </div>
+          </div>
+          <div class="boss-tip"><strong>提示：</strong>盖拉之角是顶级融合素材，融合至武器或箭上可附带强力冰属性。肉弹打法全程不消耗箭矢，适合箭不够多的情况。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 06 伊尔巴基亚 Moragia（火之神殿前置剧情）══════ -->
+    <div class="boss-card" data-cat="story" data-diff="hard">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-hard">困难</span>
+            <img src="images/bosses/伊尔巴基亚.jpg" alt="伊尔巴基亚 Moragia" loading="lazy">
+            <span class="boss-index">06</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/伊尔巴基亚.jpg" alt="伊尔巴基亚"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">MORAGIA · FIRE TEMPLE PRELUDE</div>
+            <div class="boss-cn-name">伊尔巴基亚</div>
+            <div class="boss-tags">
+              <span class="tag tag-red">剧情Boss</span>
+              <span class="tag tag-red">火之神殿 前置</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">死亡火山</span><span class="bstat-lbl">出现地点</span></div>
+            <div class="bstat"><span class="bstat-val">★★★</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">火焰 / 熔岩</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-sage">🔥 阿沅的冲撞（击碎龙头）</span>
+              <span class="weakness-tag wk-melee">🐉 三个红色脑袋</span>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-tip" style="margin-bottom:10px"><strong>核心思路：</strong>驾驶左纳乌飞翼在空中机动，操控阿沅逐一击碎巨龙的三个红色脑袋。</div>
+            <div class="boss-steps">
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text"><strong>登上飞翼：</strong>战斗触发后立刻跑向<em>阿沅身边的空地</em>，那里停放着一架<strong>已组装好操纵杆和风扇的左纳乌飞翼</strong>。站上去控住操纵杆起飞——此飞翼拥有<em>无限电池</em>，不必担心坠落。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>空中索敌与锁定：</strong>驾驶飞翼在空中盘旋，调整高度和方向靠近巨龙。巨龙共有<strong>3 个红色脑袋</strong>，准星对准其中一个后按 <em>A 键</em> 释放阿沅蓄力猛冲。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>规避火球攻击：</strong><br>
+                · <em>躲避：</em>轻拨左摇杆调转飞翼方向避开熔岩火石。<br>
+                · <em>强攻：</em>也可直接对着飞来的<strong>火球发射阿沅</strong>，阿沅能直接将火球撞碎。</span></div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text"><strong>逐个击破：</strong>阿沅成功撞中后该脑袋<strong>直接被破坏</strong>。调转机头寻找剩余 2 个脑袋，依次用同样方法击碎，3 个全部打掉后 BOSS 彻底死亡，<em>暴露出火山口入口</em>并触发剧情。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎁 掉落 / 奖励</div>
+            <div class="boss-reward">
+              <span class="reward-item">🌋 暴露火山口入口（剧情推进）</span>
+              <span class="reward-item">🔥 解锁进入火之神殿</span>
+            </div>
+          </div>
+          <div class="boss-tip"><strong>提示：</strong>全程在飞翼上无需落地，专注调整飞翼方向对准下一个龙头，用阿沅对抗来袭火球可节省躲避精力。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 07 巨砾哥马 Marbled Gohma（火之神殿）══════ -->
+    <div class="boss-card" data-cat="dungeon" data-diff="hard">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-hard">困难</span>
+            <img src="images/bosses/巨砾哥马.png" alt="巨砾哥马 Marbled Gohma" loading="lazy">
+            <span class="boss-index">07</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/巨砾哥马.png" alt="巨砾哥马"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">MARBLED GOHMA · FIRE TEMPLE</div>
+            <div class="boss-cn-name">巨砾哥马</div>
+            <div class="boss-tags">
+              <span class="tag tag-purple">神殿Boss</span>
+              <span class="tag tag-red">火之神殿</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">火之神殿</span><span class="bstat-lbl">出现地点</span></div>
+            <div class="bstat"><span class="bstat-val">★★★</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">岩石 / 爆炸</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-melee">👁 本体独眼（近战输出）</span>
+              <span class="weakness-tag wk-sage">🔥 阿沅的冲撞技能</span>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-tip" style="margin-bottom:10px"><strong>核心思路：</strong>利用火之贤者阿沅（Yunobo）的冲撞技能瘫痪 Boss，再近战猛攻核心独眼，分两个阶段击败。</div>
+            <div class="boss-steps">
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(251,146,60,0.15);border-color:rgba(251,146,60,0.4);color:#fb923c">🧱</span>
+                <span class="step-text"><strong>第一阶段：断腿倒地</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text"><strong>发射阿沅：</strong>控制火之贤者阿沅，瞄准巨砾哥马的<strong>岩石前腿</strong>发射冲撞技能。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>破除双腿：</strong>连续炸断它的两条前腿，BOSS 的本体（<em>核心独眼</em>）就会掉落在地上。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>近战输出：</strong>迅速冲上去，使用<em>高攻击力武器</em>猛砍暴露在地的核心独眼。</span></div>
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(251,146,60,0.15);border-color:rgba(251,146,60,0.4);color:#fb923c">🕷</span>
+                <span class="step-text"><strong>第二阶段：天花板轰炸</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text"><strong>躲避包围：</strong>BOSS 会爬上天花板，向下投掷<strong>大量爆炸岩石</strong>将你团团包围。</span></div>
+              <div class="boss-step"><span class="step-num">5</span><span class="step-text"><strong>寻找缺口：</strong>在包围圈中寻找缝隙，向外发射<em>阿沅</em>炸开一条路，或用<em>弓箭</em>射击清理出通道。</span></div>
+              <div class="boss-step"><span class="step-num">6</span><span class="step-text"><strong>锁定弱点：</strong>趁 BOSS 在天花板上<strong>蓄力投掷巨石</strong>时，用阿沅撞击它的<em>眼睛</em>，它会直接从天花板重重摔落并瘫痪。</span></div>
+              <div class="boss-step"><span class="step-num">7</span><span class="step-text"><strong>尽情输出：</strong>趁它摔落硬直冲上去疯狂输出，循环几轮即可将其击杀。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎁 掉落 / 奖励</div>
+            <div class="boss-reward">
+              <span class="reward-item">🧡 心之容器</span>
+              <span class="reward-item">🔥 阿沅的祝福（冲撞能力）</span>
+              <span class="reward-item">🏛 净化火之神殿</span>
+            </div>
+          </div>
+          <div class="boss-tip"><strong>提示：</strong>阿沅冷却期间专注走位躲避落石，切勿硬接。第二阶段清理包围圈时弓箭比阿沅更省时，留阿沅冲撞用于击落 BOSS。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 08 淤泥莱克 Sludge Like（水之神殿）══════ -->
+    <div class="boss-card" data-cat="dungeon" data-diff="hard">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-hard">困难</span>
+            <img src="images/bosses/淤泥莱克.png" alt="淤泥莱克 Sludge Like" loading="lazy">
+            <span class="boss-index">08</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/淤泥莱克.png" alt="淤泥莱克"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">SLUDGE LIKE · WATER TEMPLE</div>
+            <div class="boss-cn-name">淤泥莱克</div>
+            <div class="boss-tags">
+              <span class="tag tag-purple">神殿Boss</span>
+              <span class="tag tag-blue">水之神殿</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">水之神殿</span><span class="bstat-lbl">出现地点</span></div>
+            <div class="bstat"><span class="bstat-val">★★★</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">淤泥</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-water">💧 水属性（洗净泥浆）</span>
+              <span class="weakness-tag wk-arrow">🏹 嘴里紫色核心（弓箭射击）</span>
+              <span class="weakness-tag wk-melee">⚔ 核心暴露后近战输出</span>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-tip" style="margin-bottom:10px"><strong>核心机制：</strong>水属性洗掉淤泥破除无敌 → 引诱张嘴暴露紫色核心 → 射击核心触发硬直 → 近战疯狂输出，循环 2～3 轮击杀。</div>
+            <div class="boss-steps">
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(56,189,248,0.15);border-color:rgba(56,189,248,0.4);color:#38bdf8">①</span>
+                <span class="step-text"><strong>洗净泥浆（破除无敌）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text">
+                BOSS 全身裹淤泥时处于<strong>无敌状态</strong>，必须先洗净。<br>
+                · <em>方法 A（最推荐）：</em>靠近<strong>希多（米法弟弟）</strong>按 A 键包裹水盾，对着 BOSS 挥动武器砍出水波清除淤泥。<br>
+                · <em>方法 B（远程）：</em>弓箭附魔<em>水之果 / 丘丘胶（蓝色）/ 水龙头胶囊</em>，一箭命中即可瞬间洗净。
+              </span></div>
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(56,189,248,0.15);border-color:rgba(56,189,248,0.4);color:#38bdf8">②</span>
+                <span class="step-text"><strong>引诱张嘴</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text">泥浆洗净后 BOSS 现出原形（<strong>白色大蠕虫</strong>）。<strong>不要盲目冲上去砍</strong>，保持距离引诱它张嘴——张嘴左右摇晃时，嘴里<em>红紫色发光球体（核心）</em>随之暴露。</span></div>
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(56,189,248,0.15);border-color:rgba(56,189,248,0.4);color:#38bdf8">③</span>
+                <span class="step-text"><strong>击晕并疯狂输出</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>射击核心：</strong>张嘴瞬间立刻用弓箭直接射击嘴里的<em>紫色核心</em>。</span></div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text"><strong>近战输出：</strong>核心中弹后 BOSS 陷入<strong>大硬直瘫倒在地</strong>，立刻冲上去用<em>双手重武器</em>对着核心疯狂输出。</span></div>
+              <div class="boss-step"><span class="step-num">5</span><span class="step-text"><strong>无限循环：</strong>起身后它缩回地下并重刷淤泥，重复「洗泥浆 → 等张嘴 → 射核心 → 输出」，一般 <em>2～3 轮</em>即可击杀。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">⚠ 战场生存要点</div>
+            <div class="boss-steps">
+              <div class="boss-step"><span class="step-num">💧</span><span class="step-text"><strong>水盾走位：</strong>希多水盾不仅能攻击，还能抵挡一次任意伤害，CD好了就补盾。</span></div>
+              <div class="boss-step"><span class="step-num">🧹</span><span class="step-text"><strong>清除地面淤泥：</strong>战场淤泥会严重减速，用希多水波或水之果清理出一条干净跑道。</span></div>
+              <div class="boss-step"><span class="step-num">↔</span><span class="step-text"><strong>躲避泥浆弹：</strong>洗净后若长时间不射核心，BOSS 会向前方吐出<strong>三发高威力泥浆弹</strong>，横向奔跑躲避。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎁 掉落物品</div>
+            <div class="boss-reward">
+              <span class="reward-item">💎 蛋白石</span>
+              <span class="reward-item">🟢 怪物素材</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 09 八爪怪章 Mucktorok（水之神殿）══════ -->
+    <div class="boss-card" data-cat="dungeon" data-diff="hard">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-hard">困难</span>
+            <img src="images/bosses/八爪怪章.png" alt="八爪怪章 Mucktorok" loading="lazy">
+            <span class="boss-index">09</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/八爪怪章.png" alt="八爪怪章"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">MUCKTOROK · WATER TEMPLE</div>
+            <div class="boss-cn-name">八爪怪章</div>
+            <div class="boss-tags">
+              <span class="tag tag-purple">神殿Boss</span>
+              <span class="tag tag-blue">水之神殿</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">水之神殿</span><span class="bstat-lbl">出现地点</span></div>
+            <div class="bstat"><span class="bstat-val">★★★</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">淤泥</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-water">💧 水属性（逼出本体）</span>
+              <span class="weakness-tag wk-melee">🐙 小章鱼本体（近战击晕）</span>
+              <span class="weakness-tag wk-arrow">🏹 空中林克时间（二阶段）</span>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-tip" style="margin-bottom:10px"><strong>核心机制：</strong>水属性逼出小章鱼本体 → 近战击晕翻倒 → 疯狂输出。二阶段满地淤泥，用空中林克时间远程洗澡解决。</div>
+
+            <div class="boss-steps">
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(56,189,248,0.15);border-color:rgba(56,189,248,0.4);color:#38bdf8">一</span>
+                <span class="step-text"><strong>一阶段：轻松压制</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text"><strong>破除泥浆鲨鱼：</strong>BOSS 裹着泥浆像鲨鱼在地下游动。靠近<em>希多</em>对话套上水盾后挥武器砍出水波，或弓箭附魔<em>水之果 / 丘丘胶</em>射它，直接把它从泥浆里洗出来。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>追击小章鱼：</strong>失去泥浆后它变成<strong>慌乱逃跑的小章鱼</strong>，立刻追上去砍一刀，它会陷入<em>大硬直（肚皮朝天翻倒）</em>。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>疯狂输出：</strong>趁它倒地换上<em>面板最高的双手武器</em>大风车疯狂输出。重复 2 次左右即可进入二阶段。</span></div>
+
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(56,189,248,0.15);border-color:rgba(56,189,248,0.4);color:#38bdf8">二</span>
+                <span class="step-text"><strong>二阶段：全屏淤泥（核心难点）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text"><strong>局面说明：</strong>血量过半后 BOSS 跳回中央并在<strong>全场铺满淤泥</strong>，移动速度极快且疯狂跳跃，地面行动受到严重限制。</span></div>
+              <div class="boss-step"><span class="step-num">5</span><span class="step-text">
+                <strong>空中林克时间（强烈推荐）：</strong><br>
+                · 盾牌融合<em>炸弹花 / 火箭</em>，按住 ZL 盾防并起跳，<strong>直接飞向高空</strong>。<br>
+                · 在空中拉弓触发<em>慢动作（林克时间）</em>，弓箭附魔<em>水之果 / 丘丘胶 / 多发弓</em>，从空中往下<strong>连续射击</strong>。<br>
+                · 可瞬间清理周围泥浆并把 BOSS 射回小章鱼原形。
+              </span></div>
+              <div class="boss-step"><span class="step-num">6</span><span class="step-text"><strong>定身输出：</strong>落地后再次用林克时间射击逃跑中的小章鱼，倒地后冲上去近战补刀。</span></div>
+
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(56,189,248,0.15);border-color:rgba(56,189,248,0.4);color:#38bdf8">💡</span>
+                <span class="step-text"><strong>局势掌控技巧</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">🧹</span><span class="step-text"><strong>不要盲目追希多：</strong>二阶段希多可能被泥浆卡住，用弓箭 + 水之果比找希多效率高得多。</span></div>
+              <div class="boss-step"><span class="step-num">💧</span><span class="step-text"><strong>清理脚下：</strong>被泥浆严重减速时，往自己脚下扔一颗<em>水之果</em>，瞬间清出一片空地。</span></div>
+              <div class="boss-step"><span class="step-num">🔧</span><span class="step-text"><strong>左纳乌科技：</strong>背包里有<em>水龙头胶囊</em>的话，放在战场中央，它会自动喷水持续清理周围泥浆。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎁 掉落 / 奖励</div>
+            <div class="boss-reward">
+              <span class="reward-item">🧡 心之容器</span>
+              <span class="reward-item">🦈 希多的祝福（水球攻击）</span>
+              <span class="reward-item">🏛 净化水之神殿</span>
+            </div>
+          </div>
+          <div class="boss-tip"><strong>提示：</strong>希多的水之力全程既能攻击又能护身，二阶段优先飞到空中用林克时间清场，是最省力的稳定打法。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 10 吉波得女王 Queen Gibdo（雷之神殿）══════ -->
+    <div class="boss-card" data-cat="dungeon" data-diff="extreme">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-extreme">极难</span>
+            <img src="images/bosses/吉波得女王.png" alt="吉波得女王 Queen Gibdo" loading="lazy">
+            <span class="boss-index">10</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/吉波得女王.png" alt="吉波得女王"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">QUEEN GIBDO · LIGHTNING TEMPLE</div>
+            <div class="boss-cn-name">吉波得女王</div>
+            <div class="boss-tags">
+              <span class="tag tag-purple">神殿Boss</span>
+              <span class="tag tag-gold">雷之神殿</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">雷之神殿</span><span class="bstat-lbl">出现地点</span></div>
+            <div class="bstat"><span class="bstat-val">★★★★</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">风沙 / 飞行</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-elec">⚡ 雷属性沙化（露珠技能 / 雷击果）</span>
+              <span class="weakness-tag wk-fire">🔥 火属性沙化（炸弹花 / 火之果）</span>
+              <span class="weakness-tag wk-melee">⚔ 沙化变白后近战输出</span>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-tip" style="margin-bottom:10px"><strong>核心机制：</strong>BOSS 和小怪常态下极高免伤，必须先用<em>雷属性或火属性</em>攻击使其全身变白（沙化），才能造成正常伤害。</div>
+
+            <div class="boss-steps">
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(253,224,71,0.15);border-color:rgba(253,224,71,0.4);color:#fde047">一</span>
+                <span class="step-text"><strong>一阶段：风筝输出</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text"><strong>雷电破防：</strong>BOSS 在地上冲锋或发射龙卷风时，一边<strong>侧向奔跑躲避</strong>，一边靠近露珠。等她的<em>雷电圈扩大包裹住 BOSS</em> 时，用弓箭射击 BOSS 任意部位触发落雷。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>变白硬直：</strong>受到雷击后女王<strong>全身变白瘫倒在地</strong>。立刻冲上去用伤害最高的武器疯狂输出。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>循环：</strong>起身后女王扇翅飞走，重复「露珠雷电破防 → 变白 → 输出」2～3 次，即可将其打入二阶段（血量过半）。</span></div>
+
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(253,224,71,0.15);border-color:rgba(253,224,71,0.4);color:#fde047">二</span>
+                <span class="step-text"><strong>二阶段：拆除巢穴（核心难点）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text"><strong>局面说明：</strong>战场四周 <em>4 个紫色吉波得巢穴（柱子）</em> 开始发光并不断孵化大量爬行和飞行吉波得，场面极度混乱。</span></div>
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(253,224,71,0.15);border-color:rgba(253,224,71,0.4);color:#fde047">🏗</span>
+                <span class="step-text"><strong>拆迁流打法（强烈推荐）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">5</span><span class="step-text"><strong>优先拆柱子：</strong><strong>无视 BOSS！</strong>等巢穴柱子中心发出<em>紫红色光</em>（可破坏状态）时，开启露珠雷电用弓箭射击发光中心，或弓箭附魔<em>炸弹花</em>射击——<strong>一击即可彻底炸毁巢穴</strong>。</span></div>
+              <div class="boss-step"><span class="step-num">6</span><span class="step-text"><strong>利用光柱杀怪：</strong>巢穴被炸毁后天花板漏下<em>圣洁光柱</em>。普通吉波得小怪走近光柱会<strong>直接沙化自焚</strong>，站在光柱里小怪根本不敢靠近。</span></div>
+              <div class="boss-step"><span class="step-num">7</span><span class="step-text"><strong>决战女王：</strong>拆完 4 个柱子清完杂兵后，女王孤立无援。她会频繁释放<strong>激光和多个龙卷风</strong>，走位绕到侧面，继续用露珠雷电 + 弓箭打进硬直，上去补刀即可收尾。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎁 掉落 / 奖励</div>
+            <div class="boss-reward">
+              <span class="reward-item">🧡 心之容器</span>
+              <span class="reward-item">⚡ 露珠的祝福（雷电能力）</span>
+              <span class="reward-item">🏛 净化雷之神殿</span>
+            </div>
+          </div>
+          <div class="boss-warning"><strong>注意：</strong>二阶段切勿被小怪群围攻——拆柱子优先级高于一切，光柱是最好的防守阵地。金属武器在雷电场景下会引雷，飞行阶段备足箭矢。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 11 被夺之魔像 Seized Construct（魂之神殿）══════ -->
+    <div class="boss-card" data-cat="dungeon" data-diff="extreme">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-extreme">极难</span>
+            <img src="images/bosses/被夺之魔像.png" alt="被夺之魔像 Seized Construct" loading="lazy">
+            <span class="boss-index">11</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/被夺之魔像.png" alt="被夺之魔像"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">SEIZED CONSTRUCT · SOUL TEMPLE</div>
+            <div class="boss-cn-name">被夺之魔像</div>
+            <div class="boss-tags">
+              <span class="tag tag-purple">神殿Boss</span>
+              <span class="tag tag-green">魂之神殿</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">魂之神殿</span><span class="bstat-lbl">出现地点</span></div>
+            <div class="bstat"><span class="bstat-val">★★★★</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">物理 / 瘴气</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-elec">⚡ 场地四周通电铁丝网</span>
+              <span class="weakness-tag wk-melee">🛡 盾反后组合拳推入电网</span>
+              <span class="weakness-tag wk-bomb">💣 大炮（直接轰入电网）</span>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-tip" style="margin-bottom:10px"><strong>核心机制：</strong>普通攻击无法有效伤害 BOSS。必须通过<em>连续攻击或盾反</em>不断将其往后推，直到撞上场地四周的<strong>通电铁丝网</strong>，触电造成极高伤害并使其瘫痪。</div>
+
+            <div class="boss-steps">
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(74,222,128,0.12);border-color:rgba(74,222,128,0.35);color:#4ade80">⚙</span>
+                <span class="step-text"><strong>战前极速组装（非常关键）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">0</span><span class="step-text">
+                开局前务必给魔像装好以下配件：<br>
+                · <em>左手 / 右手：</em>强烈建议安装<strong>大炮</strong>或<strong>铁球 / 刺球</strong>。<br>
+                · <em>后背：</em>安装<strong>火箭</strong>或<strong>风扇</strong>（用于二阶段起飞或快速位移）。
+              </span></div>
+
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(74,222,128,0.12);border-color:rgba(74,222,128,0.35);color:#4ade80">一</span>
+                <span class="step-text"><strong>一阶段：无脑盾反流</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text"><strong>按住 ZL 防御：</strong>开局<strong>不要主动乱出拳</strong>，按住 ZL 摆出防御姿势，稳步向 BOSS 靠近。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>完美格挡（盾反）：</strong>BOSS 抬手挥拳瞬间按下 A 键盾反，成功后 BOSS 陷入<em>身体失衡短暂硬直</em>。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>组合拳推入电网：</strong>趁硬直立刻<em>左拳→右拳→左拳（L→R→L）</em>交替连击，最后一击强力推击直接将 BOSS 打飞撞上电网，<strong>起步扣约 1/4 血</strong>。</span></div>
+              <div class="boss-step"><span class="step-num">💣</span><span class="step-text"><strong>大炮偷鸡法：</strong>手有大炮时可直接拉开距离轰一炮，BOSS 直接被轰到电网上，无脑高效。</span></div>
+
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(74,222,128,0.12);border-color:rgba(74,222,128,0.35);color:#4ade80">二</span>
+                <span class="step-text"><strong>二阶段：空中飞袭</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text"><strong>局面说明：</strong>血量过半后 BOSS 后背组装风扇并<strong>直接飞到半空中</strong>。</span></div>
+              <div class="boss-step"><span class="step-num">5</span><span class="step-text">
+                <strong>打落长空（二选一）：</strong><br>
+                · <em>方法 A（最省事）：</em>手有大炮直接在地面<strong>瞄准空中轰一炮</strong>，BOSS 直接坠机摔倒。<br>
+                · <em>方法 B（滞空对决）：</em>启动背上<strong>火箭或风扇</strong>跟着飞上天，在空中飞过去给它一拳砸下来。
+              </span></div>
+              <div class="boss-step"><span class="step-num">6</span><span class="step-text"><strong>躲避激光：</strong>它在空中发射激光时，<em>保持横向移动</em>或按住防御即可。</span></div>
+              <div class="boss-step"><span class="step-num">7</span><span class="step-text"><strong>落地痛扁：</strong>从空中打落后必定大硬直，立刻冲上去继续组合拳推入电网。<strong>重复 2 次</strong>即可彻底拆毁叛变魔像。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎁 掉落 / 奖励</div>
+            <div class="boss-reward">
+              <span class="reward-item">🧡 心之容器</span>
+              <span class="reward-item">🤖 米涅鲁的祝福（魔像之力）</span>
+              <span class="reward-item">🏛 净化魂之神殿</span>
+            </div>
+          </div>
+          <div class="boss-tip"><strong>提示：</strong>战前组装配件是胜负关键——大炮让两个阶段都变得简单无脑。盾反节奏不熟时可先用大炮偷鸡，熟悉后再练盾反组合拳。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 12 幻影加侬 Phantom Ganon ══════ -->
+    <div class="boss-card" data-cat="story" data-diff="hard">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-hard">困难</span>
+            <img src="images/bosses/幻影加侬.png" alt="幻影加侬 Phantom Ganon" loading="lazy">
+            <span class="boss-index">12</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/幻影加侬.png" alt="幻影加侬"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">PHANTOM GANON</div>
+            <div class="boss-cn-name">幻影加侬</div>
+            <div class="boss-tags">
+              <span class="tag tag-red">剧情Boss</span>
+              <span class="tag tag-purple">城堡 1打5 / 野外单挑</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">城堡/野外</span><span class="bstat-lbl">出现地点</span></div>
+            <div class="bstat"><span class="bstat-val">★★★</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">瘴气</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-bomb">💣 炸弹花附魔箭（城堡群战）</span>
+              <span class="weakness-tag wk-master">🗡 完美闪避突击（单挑）</span>
+              <span class="weakness-tag wk-arrow">🏹 弓箭爆头打断蓄力</span>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+
+            <div class="boss-steps">
+              <!-- 情景一 -->
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.35);color:#f87171">一</span>
+                <span class="step-text"><strong>城堡主线：1打5分身流（海拉鲁城堡）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">⚠</span><span class="step-text">同时面对 5 个手持不同武器的幻影加侬，<strong>千万不要在地面硬刚</strong>，会被围殴到死。</span></div>
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.35);color:#f87171">🚀</span>
+                <span class="step-text"><strong>逃票打法：高空爆头流（最推荐）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text"><strong>准备：</strong>带上<em>多发弓（兽神弓 / 大鹫弓）</em>，背包装满炸弹花。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>起飞：</strong>用<em>火箭盾 / 炸弹花盾</em>，或踩梯子 / 高台跳下，<strong>直接飞向半空</strong>。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>空中林克时间：</strong>掏出弓箭触发慢动作，附魔<em>炸弹花</em>对着挤堆的 5 个分身<strong>疯狂连射</strong>，范围伤害将他们全部炸飞炸晕、完全无法还手。</span></div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text"><strong>循环：</strong>落地后立刻换一面火箭盾再次升空，重复 2～3 轮即可轻松清场。</span></div>
+
+              <!-- 情景二 -->
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.35);color:#f87171">二</span>
+                <span class="step-text"><strong>野外单挑：完美闪避突击流</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">⚔</span><span class="step-text">击败野外瘴气之手后蹦出的单个幻影加侬，<strong>完美闪避触发突击</strong>是最优雅省武器的打法。他会根据手中武器交替使用三种攻击：</span></div>
+
+              <div class="boss-step"><span class="step-num">剑</span><span class="step-text">
+                <strong>剑形态：瞬移突刺 / 横劈</strong><br>
+                前兆：微微低头后瞬间消失。<br>
+                · 现身时<em>剑架腰间横摆</em>：按住 ZL + 连按两下<em>【后跳】</em>触发突击。<br>
+                · 现身时<em>高举下劈</em>：按住 ZL + 连按两下<em>【侧跳】</em>触发突击。
+              </span></div>
+
+              <div class="boss-step"><span class="step-num">枪</span><span class="step-text">
+                <strong>长枪形态：直线冲锋</strong><br>
+                前兆：长枪横于身后、身体前倾，拉出红色瘴气残影直线冲刺。<br>
+                应对：冲到面前瞬间按住 ZL + 向左/右<em>【侧跳】</em>——<strong>最容易触发突击的一招</strong>。
+              </span></div>
+
+              <div class="boss-step"><span class="step-num">斧</span><span class="step-text">
+                <strong>大剑形态：蓄力大风车</strong><br>
+                前兆：高举大剑原地蓄力，准备 360° 瘴气旋风斩。<br>
+                应对：判定范围极大，<strong>不建议尝试闪避</strong>。看到蓄力立刻向后跑拉开距离，或弓箭附魔<em>吉波得之骨 / 炸弹花</em>直接<strong>射脸打断蓄力</strong>并让他跪地。
+              </span></div>
+
+              <!-- 生存要点 -->
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.35);color:#f87171">💡</span>
+                <span class="step-text"><strong>必备生存要点</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">🌿</span><span class="step-text"><strong>驱散瘴气：</strong>幻影加侬走过的地方留有瘴气，提前烹饪<em>向阳草料理（3个向阳草+2个苹果）</em>用于回复被瘴气扣除的心心上限。</span></div>
+              <div class="boss-step"><span class="step-num">🤝</span><span class="step-text"><strong>贤者干扰：</strong>召唤全部五位贤者，虽然输出不高，但能吸引 2～3 个分身仇恨，极大缓解生存压力。</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎁 掉落物品</div>
+            <div class="boss-reward">
+              <span class="reward-item">🏹 魔王之弓（血量越高面板伤害越高）</span>
+              <span class="reward-item">🗡 瘴气之剑 / 大剑</span>
+            </div>
+          </div>
+          <div class="boss-tip"><strong>瘴气武器使用技巧：</strong>瘴气武器直接使用会扣血，但可用<em>余料建造</em>把它们融在普通武器枪头上——既获得高攻击力又不扣血！</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 13 魔王加侬多夫 Demon King Ganondorf（最终Boss）══════ -->
+    <div class="boss-card" data-cat="final" data-diff="final">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-final">最终Boss</span>
+            <img src="images/bosses/魔王加侬多夫.png" alt="魔王加侬多夫 Demon King Ganondorf" loading="lazy">
+            <span class="boss-index">13</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/魔王加侬多夫.png" alt="魔王加侬多夫"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">DEMON KING GANONDORF</div>
+            <div class="boss-cn-name">魔王加侬多夫</div>
+            <div class="boss-tags">
+              <span class="tag tag-purple">最终Boss</span>
+              <span class="tag tag-red">三阶段</span>
+              <span class="tag tag-gold">人形 / 秘石 / 黑龙</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">海拉鲁地底</span><span class="bstat-lbl">出现地点</span></div>
+            <div class="bstat"><span class="bstat-val">★★★★★</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">瘴气 / 全属性</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">⚠ 战前绝对核心准备</div>
+            <div class="boss-steps">
+              <div class="boss-step"><span class="step-num">🌿</span><span class="step-text"><strong>向阳草料理：</strong>加侬的瘴气攻击会打碎心心上限。用<em>向阳草 + 金苹果 / 肉</em>大量烹饪「恢复被碎心心」料理，备足全程消耗。</span></div>
+              <div class="boss-step"><span class="step-num">⚔</span><span class="step-text"><strong>高攻武器：</strong>多准备几把<em>白银莱尼尔刃角余料建造</em>的武器。大师之剑此战不增伤但绝不破损，是稳定主力。</span></div>
+              <div class="boss-step"><span class="step-num">🛡</span><span class="step-text"><strong>升级防具：</strong>建议蛮族套装 / 鬼神套装 / 兵士套装升至 <em>3～4 星</em>，否则加侬一刀秒杀。</span></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-steps">
+
+              <!-- 第一阶段 -->
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(201,162,39,0.12);border-color:rgba(201,162,39,0.4);color:#f0d060">一</span>
+                <span class="step-text"><strong>第一阶段：黑发黑衣人形态（单挑试水）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">剑</span><span class="step-text">
+                <strong>单手剑形态（瞬移冲刺）：</strong><br>
+                · <em>横劈（剑放腰间）：</em>按住 ZL + 向后跳触发突击。<br>
+                · <em>竖劈（高举过头）：</em>按住 ZL + 向左/右侧跳触发突击。
+              </span></div>
+              <div class="boss-step"><span class="step-num">枪</span><span class="step-text">
+                <strong>长枪形态（直线突刺）：</strong>看到他前倾冲来瞬间，按住 ZL + 向左/右<em>侧跳</em>触发突击——<strong>最容易抓的一招</strong>。
+              </span></div>
+              <div class="boss-step"><span class="step-num">锤</span><span class="step-text">
+                <strong>大锤形态（跳跃下劈）：</strong>判定极大，<strong>不要闪避</strong>。看到他跳起立刻向后跑拉距离，或在落地前用弓箭爆头打断。
+              </span></div>
+
+              <!-- 第二阶段 -->
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(201,162,39,0.12);border-color:rgba(201,162,39,0.4);color:#f0d060">二</span>
+                <span class="step-text"><strong>第二阶段：秘石解放形态（分身围殴）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">前</span><span class="step-text">
+                <strong>前半段：分身乱战</strong><br>
+                · 五位贤者加入战场，<em>让贤者缠住分身</em>，你直接冲向本体（真身血条与其他分身不同）。<br>
+                · 用第一阶段的闪避打法（抓长枪冲刺或单手剑横劈）强行压低本体血量。
+              </span></div>
+              <div class="boss-step"><span class="step-num">后</span><span class="step-text">
+                <strong>后半段：红发魔王单挑（核心难点：他也会闪避！）</strong><br>
+                分身消失后加侬获得超长血条，并<strong>学会了完美闪避</strong>。
+              </span></div>
+              <div class="boss-step"><span class="step-num">A</span><span class="step-text">
+                <strong>二次闪避打法（最优雅）：</strong>他闪避你的攻击后向你挥刀时，<strong>立刻再次闪避（后跳/侧跳）</strong>触发第二次突击——此时他无法再闪避，可直接一套带走。
+              </span></div>
+              <div class="boss-step"><span class="step-num">B</span><span class="step-text">
+                <strong>无脑盾反流（最安全）：</strong>按住 ZL 盾防，砍中盾牌瞬间按 A 键完美格挡（盾反）。盾反成功后他陷入大硬直，直接连击输出——<strong>他绝对无法闪避盾反后的攻击</strong>。
+              </span></div>
+
+              <!-- 第三阶段 -->
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(201,162,39,0.12);border-color:rgba(201,162,39,0.4);color:#f0d060">三</span>
+                <span class="step-text"><strong>第三阶段：黑龙形态（空战剧情杀）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text"><strong>空中俯冲：</strong>骑在白龙（塞尔达）头上，从龙背跳下用滑翔翼调整方向，<em>躲避黑龙吐出的红色光球</em>。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>摧毁外壳：</strong>黑龙背上有 <em>4 处粉红色秘石弱点</em>，直接俯冲降落到弱点上，用普通武器砍 2～3 下破坏一处。每破坏一处会被弹飞，<strong>白龙必定从下方接住你</strong>。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>终结一击：</strong>破坏全部 4 个弱点后，黑龙头部彻底暴露。俯冲到额头上对着<em>巨大秘石</em>疯狂按 A 键，用<strong>大师之剑</strong>将其击碎，迎来通关 CG！</span></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">🎁 通关奖励</div>
+            <div class="boss-reward">
+              <span class="reward-item">🏆 通关游戏 · 真结局</span>
+              <span class="reward-item">⭐ 通关存档标记</span>
+            </div>
+          </div>
+          <div class="boss-warning"><strong>终极提示：</strong>满心心、大量向阳草料理、白银莱尼尔角武器、防具3～4星——做好这四件事，魔王加侬多夫就没有你打不过的理由。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 14 莱尼尔 Lynel ══════ -->
+    <div class="boss-card" data-cat="field" data-diff="extreme">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-extreme">极难</span>
+            <img src="images/bosses/莱尼尔.png" alt="莱尼尔 Lynel" loading="lazy">
+            <span class="boss-index">14</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/莱尼尔.png" alt="莱尼尔 普通"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/白鬃莱尼尔.png" alt="白鬃莱尼尔"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/蓝鬃莱尼尔.png" alt="蓝鬃莱尼尔"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/白银莱尼尔.png" alt="白银莱尼尔"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">LYNEL</div>
+            <div class="boss-cn-name">莱尼尔</div>
+            <div class="boss-tags">
+              <span class="tag tag-gold">野外强敌</span>
+              <span class="tag tag-red">红褐/青/白鬃/白银</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">全地图</span><span class="bstat-lbl">主要出没</span></div>
+            <div class="bstat"><span class="bstat-val">★★★★★</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">物理 / 元素</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-arrow">🏹 脸部爆头（跪地硬直）</span>
+              <span class="weakness-tag wk-master">🐎 骑马白嫖输出</span>
+              <span class="weakness-tag wk-melee">🛡 盾反后近距爆头</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">⚙ 战前最强骑马专用武器准备</div>
+            <div class="boss-steps">
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text"><strong>准备武器：</strong>找一把<em>近卫双手剑</em>，在武器前端余料建造面板最高的材料（白银莱尼尔刃角 / 吉波得之骨 / 独眼巨人肝脏）。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>故意用坏：</strong>在地上乱砍直到屏幕提示<em>「武器快要破损了」</em>——此时近卫双手剑触发特殊效果，<strong>伤害直接翻倍</strong>。</span></div>
+              <div class="boss-step"><span class="step-num">⚠</span><span class="step-text">此武器<strong>只能在骑马时使用</strong>，在地面砍到任何东西都会立刻折断！</span></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">📖 核心打法：无脑骑马流</div>
+            <div class="boss-steps">
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.35);color:#f87171">🚀</span>
+                <span class="step-text"><strong>空中爆头（最简单）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text"><strong>飞天：</strong>地上放弹簧，或用<em>火箭盾 / 炸弹花盾</em>原地飞天。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>空中爆头：</strong>在空中掏出弓箭触发林克时间，<strong>瞄准人马脸部（胡须和眼睛附近）射击</strong>。听到「叮」的脆响，人马双膝跪地瘫痪数秒。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>上马白嫖：</strong>收弓落地解除锁定，冲到人马身侧按 <em>A 键骑上</em>，掏出那把快要折断的近卫双手剑，<strong>疯狂按 Y 键连砍 3～6 刀</strong>。</span></div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text"><strong>下马补刀：</strong>被甩下时系统触发空中慢动作，立刻拉弓对着后脑勺<em>再补 2～3 发爆头箭</em>。</span></div>
+              <div class="boss-step"><span class="step-num">5</span><span class="step-text"><strong>循环：</strong>落地后立刻再次飞天，重复整套流程直至击杀。</span></div>
+
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.35);color:#f87171">🗡</span>
+                <span class="step-text"><strong>地面招式应对（无飞天道具时）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">盾</span><span class="step-text">
+                <strong>盾反爆头（抓近战）：</strong>横劈 / 砸地 / 冲撞时按住 ZL 防御，武器快砸中盾的瞬间按 A 键<em>完美格挡</em>。盾反后立刻掏弓近距离爆头，人马直接跪倒，可骑马输出。
+              </span></div>
+              <div class="boss-step"><span class="step-num">侧</span><span class="step-text">
+                <strong>侧跳突击（抓冲锋）：</strong>人马四足着地直线冲来时，按住 ZL + 连按两下<em>【侧跳】</em>触发突击连击。（建议盾反爆头骑马，更省武器耐久）
+              </span></div>
+              <div class="boss-step"><span class="step-num">跑</span><span class="step-text">
+                <strong>躲避火球：</strong>人马后跳蓄力吐出 3 发大火球时，<strong>不要盾反或闪避</strong>，直接<em>朝左或右疯狂奔跑</em>——火球飞行慢，横向跑绝对砸不中。3 发吐完后原地喘气，是<strong>拉弓爆头的绝佳时机</strong>。
+              </span></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">🎁 掉落物品</div>
+            <div class="boss-reward">
+              <span class="reward-item">🦄 莱尼尔的刃角（高攻融合素材）</span>
+              <span class="reward-item">🦷 莱尼尔的蹄</span>
+              <span class="reward-item">🫀 莱尼尔的肝</span>
+            </div>
+          </div>
+          <div class="boss-tip"><strong>强度排序：</strong>红褐色 → 青色 → 白鬃 → 白银。地底竞技场需连续挑战 5 只不同颜色的莱尼尔（最后一只为白银装甲），是全游戏最高难度的战斗挑战。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 15 西诺克斯 Hinox ══════ -->
+    <div class="boss-card" data-cat="field" data-diff="normal">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-normal">普通</span>
+            <img src="images/bosses/西诺克斯.png" alt="西诺克斯 Hinox" loading="lazy">
+            <span class="boss-index">15</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/西诺克斯.png" alt="西诺克斯 普通"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/蓝色西诺克斯.png" alt="蓝色西诺克斯"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/黑色西诺克斯.png" alt="黑色西诺克斯"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/骷髅西诺克斯.png" alt="骷髅西诺克斯 Stalnox"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">HINOX</div>
+            <div class="boss-cn-name">西诺克斯</div>
+            <div class="boss-tags">
+              <span class="tag tag-gold">野外强敌</span>
+              <span class="tag tag-blue">红/蓝/黑 · 骷髅变种</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">全地图</span><span class="bstat-lbl">主要出没</span></div>
+            <div class="bstat"><span class="bstat-val">★★☆</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">物理</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-arrow">👁 独眼（任意弓箭即可跪倒）</span>
+              <span class="weakness-tag wk-melee">⚔ 倒地后脚踝近战大风车</span>
+              <span class="weakness-tag wk-bomb">💣 护腿弱点（木质用火/黑色用雷）</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-tip" style="margin-bottom:10px"><strong>核心机制：</strong>独眼是唯一绝对弱点，哪怕极低攻击力的箭命中都能触发极长瘫痪硬直，让它捂眼坐倒在地。</div>
+            <div class="boss-steps">
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text">
+                <strong>弓箭爆眼：</strong>拉开距离，它走近或举起树木时直接瞄准脸部中央的<strong>大眼睛</strong>射一箭，听到「叮」声它就往后坐倒。<br>
+                · <em>逃票技巧：</em>弓箭附魔<strong>蝙蝠的眼睛</strong>（或任意怪物眼球），自带自动追踪，朝头顶瞎射一箭就能精准命中独眼。
+              </span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>近战修脚：</strong>它坐倒捂眼后立刻收弓，冲到两腿之间，换上<em>双手大剑 / 重武器</em>，按住 Y 键「大风车」蓄力回旋斩，顺着脚踝疯狂输出直至血条见底。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>顺手牵羊：</strong>它坐倒瘫痪时，爬到胸口或在身边连按 A 键，可<strong>直接偷走项链上挂着的高品质武器</strong>，拿它的武器打它效率更高。</span></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">⚠ 高级变种与避坑</div>
+            <div class="boss-steps">
+              <div class="boss-step"><span class="step-num">🪵</span><span class="step-text">
+                <strong>带木质护腿（蓝色/黑色常见）：</strong>近战弹刀无法伤害。<br>
+                解法：弓箭附魔<em>炸弹花 / 火之果 / 红丘丘胶</em>射木护腿，木板遇火燃烧并触发二次输出硬直。
+              </span></div>
+              <div class="boss-step"><span class="step-num">🔩</span><span class="step-text">
+                <strong>带铁质护腿（黑色常见）：</strong>砍不动也烧不掉。<br>
+                解法：弓箭附魔<em>雷击果 / 黄丘丘胶</em>射铁护腿，电击通过铁板传遍全身触发大范围触电硬直。
+              </span></div>
+              <div class="boss-step"><span class="step-num">👁</span><span class="step-text">
+                <strong>后期学会「捂眼睛」（黑色高等级）：</strong>拉弓时它会用手死死捂眼。<br>
+                解法：收起弓箭，等它弯腰捡石头或拔树<strong>抬手露眼的瞬间</strong>立刻拉弓爆头。
+              </span></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">💀 骷髅西诺克斯（夜间限定）</div>
+            <div class="boss-steps">
+              <div class="boss-step"><span class="step-num">🌙</span><span class="step-text"><strong>夜间才会复活：</strong>白天只是一堆散落骨头，游戏时间<em>晚上 9:00 后</em>才会重新成形。</span></div>
+              <div class="boss-step"><span class="step-num">👁</span><span class="step-text"><strong>眼球会掉落：</strong>血量降至约一半以下时，<strong>独眼直接从眼眶里脱落滚到地上</strong>。此时攻击身体无法击杀！</span></div>
+              <div class="boss-step"><span class="step-num">⚔</span><span class="step-text"><strong>锁定眼球输出：</strong>立刻转火冲向地上滚动的眼球，疯狂砍击直到<strong>眼球血条清空</strong>才算彻底击杀。</span></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">🎁 掉落物品</div>
+            <div class="boss-reward">
+              <span class="reward-item">🦶 西诺克斯的脚趾甲</span>
+              <span class="reward-item">🦷 西诺克斯的牙</span>
+              <span class="reward-item">🫀 西诺克斯的肝</span>
+              <span class="reward-item">🎁 项链上的高品质武器</span>
+            </div>
+          </div>
+          <div class="boss-tip"><strong>提示：</strong>优先附魔蝙蝠眼球箭省时省力；骷髅种眼球落地后必须砍眼球而非身体，这是最常被忽略的坑。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ 16 古栗欧克 Gleeok / King Gleeok ══════ -->
+    <div class="boss-card" data-cat="field" data-diff="extreme">
+      <div class="boss-inner">
+        <div class="boss-gallery">
+          <div class="boss-img-main">
+            <span class="boss-diff-badge diff-extreme">极难</span>
+            <img src="images/bosses/古栗欧克王.png" alt="古栗欧克王 King Gleeok" loading="lazy">
+            <span class="boss-index">16</span>
+          </div>
+          <div class="boss-thumbs">
+            <div class="boss-thumb active" onclick="switchBossImg(this)"><img src="images/bosses/古栗欧克王.png" alt="古栗欧克王"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/火焰古栗欧克.png" alt="火焰古栗欧克"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/冰雪古栗欧克.png" alt="冰雪古栗欧克"></div>
+            <div class="boss-thumb" onclick="switchBossImg(this)"><img src="images/bosses/雷电古栗欧克.png" alt="雷电古栗欧克"></div>
+          </div>
+        </div>
+        <div class="boss-content">
+          <div class="boss-header">
+            <div class="boss-en-name">GLEEOK / KING GLEEOK</div>
+            <div class="boss-cn-name">古栗欧克</div>
+            <div class="boss-tags">
+              <span class="tag tag-gold">野外强敌</span>
+              <span class="tag tag-red">火 / 冰 / 雷 · 三首王</span>
+            </div>
+          </div>
+          <div class="boss-stats">
+            <div class="bstat"><span class="bstat-val">天空 / 地表</span><span class="bstat-lbl">主要出没</span></div>
+            <div class="bstat"><span class="bstat-val">★★★★★</span><span class="bstat-lbl">危险度</span></div>
+            <div class="bstat"><span class="bstat-val">火 / 冰 / 雷</span><span class="bstat-lbl">攻击属性</span></div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">⚙ 战前核心准备</div>
+            <div class="boss-steps">
+              <div class="boss-step"><span class="step-num">🏹</span><span class="step-text"><strong>多发弓（最关键）：</strong>带 2～3 把<em>兽神弓（人马弓）</em>或<em>大鹫弓</em>（3发或5发扩散）。单发弓容错率极低。</span></div>
+              <div class="boss-step"><span class="step-num">👁</span><span class="step-text"><strong>怪物眼睛（自动外挂）：</strong>大量备好<em>蝙蝠的眼睛</em>或<em>卡克达（飞怪）的眼睛</em>，任何属性均可，是无脑通关的灵丹妙药。</span></div>
+              <div class="boss-step"><span class="step-num">🚀</span><span class="step-text"><strong>起飞工具：</strong>几面<em>火箭盾 / 炸弹花盾</em>，或弹簧胶囊备用。</span></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">🎯 弱点</div>
+            <div class="weakness-row">
+              <span class="weakness-tag wk-arrow">👁 三颗龙头（多发弓+眼球箭同时爆）</span>
+              <span class="weakness-tag wk-melee">⚔ 三头倒地后近战大风车</span>
+              <span class="weakness-tag wk-fire">🔥 属性克制（火克冰头 / 冰克火头）</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">📖 击败方法</div>
+            <div class="boss-tip" style="margin-bottom:10px"><strong>核心逻辑：</strong>在短时间内将 3 个头的血条全部射空，三头同时垂下后产生冲击波摔倒，触发 <em>10～15 秒</em>瘫痪大硬直，趁机近战疯狂输出。</div>
+            <div class="boss-steps">
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.35);color:#f87171">🐉</span>
+                <span class="step-text"><strong>极致压制流（从头到尾下不来）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">1</span><span class="step-text"><strong>开局飞天：</strong>战斗触发瞬间按住 ZL 防御并起跳，利用<em>火箭盾或弹簧</em>冲上高空。</span></div>
+              <div class="boss-step"><span class="step-num">2</span><span class="step-text"><strong>无脑自动爆头：</strong>空中掏弓触发林克时间，附魔<em>任意怪物眼睛</em>配合多发弓，<strong>朝龙的大体方向瞎射 2～3 箭</strong>，3 个头在 2 秒内瞬间全部被射爆。</span></div>
+              <div class="boss-step"><span class="step-num">3</span><span class="step-text"><strong>地面大风车：</strong>三头龙轰然倒地，立刻收翼俯冲落地，换上最高攻击武器，对着垂地的头<strong>按住 Y 键大风车蓄力回旋斩</strong>疯狂输出。</span></div>
+              <div class="boss-step"><span class="step-num">4</span><span class="step-text"><strong>循环锁死：</strong>它站起瞬间强风吹飞，立刻再次飞天（掏第二面火箭盾或踩弹簧），空中再射眼睛，重复「爆头 → 倒地 → 输出」，一般 <em>3 个回合</em>可无伤带走。</span></div>
+
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.35);color:#f87171">🌩</span>
+                <span class="step-text"><strong>终极阶段应对（血量低于 1/4 飞入云层）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">🔥</span><span class="step-text"><strong>火三头龙（乱石流星雨）：</strong>巨大火球砸地产生上升气流，<em>立刻开伞顺气流飞上高空</em>与它平齐，一箭射落。从高处摔落会扣巨额血量甚至直接摔死。</span></div>
+              <div class="boss-step"><span class="step-num">⚡</span><span class="step-text"><strong>雷三头龙（雷暴闪电阵）：</strong>落雷劈地留下持续上升气流，<em>立刻开伞顺气流飞上去</em>爆头。</span></div>
+              <div class="boss-step"><span class="step-num">❄</span><span class="step-text"><strong>冰三头龙（绝对零度冰雹）：</strong>被冰柱砸中冻结秒杀。等冰柱落地后<strong>跳到冰柱顶端使用「倒转乾坤」</strong>，冰柱带你升空，解除后拉弓爆头。</span></div>
+
+              <div class="boss-step">
+                <span class="step-num" style="background:rgba(248,113,113,0.12);border-color:rgba(248,113,113,0.35);color:#f87171">👑</span>
+                <span class="step-text"><strong>王之古栗欧克（地底竞技场）</strong></span>
+              </div>
+              <div class="boss-step"><span class="step-num">💡</span><span class="step-text">三头分别为<strong>火 / 冰 / 雷</strong>属性，血量极厚。属性克制：<em>火之果射冰头</em>、<em>冰之果射火头</em>可一击秒杀该头防御。</span></div>
+              <div class="boss-step"><span class="step-num">🛡</span><span class="step-text">挑战前推荐拿到<em>卓拉水蛭之王头盔（免疫冻结）</em>或<em>雷鸣头盔（免疫雷击）</em>，彻底废掉两个头的威胁。</span></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="boss-section-title">🎁 掉落物品</div>
+            <div class="boss-reward">
+              <span class="reward-item">🪶 盖拉的羽翼</span>
+              <span class="reward-item">🔥 火焰 / 冰雪 / 雷电盖拉之角</span>
+              <span class="reward-item">🫀 盖拉的内脏</span>
+            </div>
+          </div>
+          <div class="boss-tip"><strong>提示：</strong>多发弓 + 怪物眼睛是最省力的通关方案，全程无需精准瞄准。盖拉之角是制作最强元素弓箭与融合武器的核心素材。</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /.boss-list -->
+
+  <div class="tip-box" style="margin-top:36px">
+    <strong>⚔ 通用 Boss 攻略要点：</strong><br>
+    ① 战前备齐<strong>回血 / 攻击强化 / 元素抗性料理</strong>，对应 Boss 属性携带克制装备。<br>
+    ② 多数大型 Boss 都有「<strong>击晕 → 倒地 → 集火弱点</strong>」的循环节奏，耐心找破绽比硬刚更高效。<br>
+    ③ <strong>瞬闪（横向闪避）</strong>与<strong>盾反</strong>是应对高速攻击的关键，练熟后能大幅降低难度。<br>
+    ④ Boss 掉落的<strong>角 / 牙 / 内脏</strong>多为顶级融合素材，是打造最强武器的核心来源。
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">
+      本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。<br>
+      《塞尔达传说 王国之泪》版权归任天堂株式会社所有。<br>
+      © 2023 Nintendo. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  // ── Boss 分类筛选 ──
+  function filterBoss(cat, btn) {
+    document.querySelectorAll('.boss-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.boss-card').forEach(card => {
+      const show = (cat === 'all') || (card.dataset.cat === cat);
+      card.classList.toggle('hidden', !show);
+    });
+  }
+
+  // ── Boss 多形态图片切换 ──
+  function switchBossImg(thumb) {
+    const gallery = thumb.closest('.boss-gallery');
+    const mainImg = gallery.querySelector('.boss-img-main img');
+    const thumbImg = thumb.querySelector('img');
+    mainImg.src = thumbImg.getAttribute('src');
+    mainImg.alt = thumbImg.getAttribute('alt');
+    gallery.querySelectorAll('.boss-thumb').forEach(t => t.classList.remove('active'));
+    thumb.classList.add('active');
+  }
+</script>
+</body>
+</html>

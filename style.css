@@ -201,7 +201,7 @@ body::before {
 .category-card::after  { content:''; position:absolute; bottom:0; right:0; width:110px; height:110px; background:radial-gradient(circle at 100% 100%,rgba(201,162,39,0.06) 0%,transparent 70%); pointer-events:none; }
 .category-card:hover {
   border-color:rgba(201,162,39,0.55); background:var(--bg-card-hover);
-  transform:translateY(-5px); box-shadow:0 12px 40px rgba(201,162,39,0.12),var(--glow-gold);
+  box-shadow:0 12px 40px rgba(201,162,39,0.12),var(--glow-gold);
 }
 .category-card:hover::before { opacity:1; }
 
@@ -1916,4 +1916,710 @@ table.data-tbl tbody tr:hover td { background:rgba(201,162,39,0.04); color:var(-
   .weapon-card:hover { transform: none; }
   .quest-item:hover,
   .shrine-item:hover { transform: none; }
+}
+
+/* ════════════════════════════════════════════════════
+   社交分享 · 悬浮侧边栏
+════════════════════════════════════════════════════ */
+
+/* ── 侧边栏容器 ── */
+.share-sidebar {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  /* 整体向右隐藏，只露出按钮左侧 */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── 每个按钮 ── */
+.share-btn {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(225, 220, 210, 0.10);
+  border: 1px solid rgba(200, 190, 170, 0.18);
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  transform: translateX(0);
+}
+
+.share-btn:hover {
+  background: rgba(225, 220, 210, 0.20);
+  border-color: rgba(200, 185, 140, 0.45);
+  transform: translateX(-6px);
+  box-shadow: -4px 0 16px rgba(200, 185, 140, 0.15);
+}
+
+/* ── 按钮内的 SVG 图标 ── */
+.share-btn svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: transform 0.25s, opacity 0.25s;
+}
+
+.share-btn:hover svg {
+  transform: scale(1.15);
+}
+
+/* ── 各平台颜色 ── */
+.share-btn--weibo  svg { fill: #e6162d; }
+.share-btn--wechat svg { fill: #07c160; }
+.share-btn--qq     svg { fill: #12b7f5; }
+.share-btn--facebook svg { fill: #1877f2; }
+.share-btn--twitter svg { fill: #e8e4d4; }
+.share-btn--copy   svg { fill: var(--gold); }
+
+.share-btn--copy.copied svg { fill: var(--green); }
+
+/* ── 悬浮 tooltip ── */
+.share-btn::before {
+  content: attr(data-tip);
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(7, 7, 15, 0.96);
+  border: 1px solid var(--border-gold);
+  color: var(--text-primary);
+  font-size: 0.72rem;
+  white-space: nowrap;
+  padding: 4px 10px;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  letter-spacing: 0.04em;
+}
+
+.share-btn:hover::before {
+  opacity: 1;
+}
+
+/* ── 微信二维码弹窗 ── */
+.wechat-qr-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}
+
+.wechat-qr-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wechat-qr-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px 28px;
+  text-align: center;
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.8), var(--glow-gold);
+  transform: scale(0.9);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  max-width: 300px;
+  width: 90%;
+}
+
+.wechat-qr-overlay.open .wechat-qr-box {
+  transform: scale(1);
+}
+
+.wechat-qr-box .qr-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.wechat-qr-box .qr-sub {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.wechat-qr-box .qr-img-wrap {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 16px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.wechat-qr-box .qr-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* 没有二维码图时显示的占位 */
+.wechat-qr-box .qr-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.wechat-qr-box .qr-placeholder svg {
+  width: 80px;
+  height: 80px;
+  fill: #07c160;
+  opacity: 0.7;
+}
+
+.wechat-qr-box .qr-url {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  word-break: break-all;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border-gold);
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.wechat-qr-box .qr-close {
+  background: rgba(201, 162, 39, 0.1);
+  border: 1px solid var(--border-gold);
+  border-radius: 6px;
+  color: var(--gold);
+  font-size: 0.8rem;
+  padding: 7px 22px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: inherit;
+}
+
+.wechat-qr-box .qr-close:hover {
+  background: rgba(201, 162, 39, 0.2);
+  box-shadow: var(--glow-gold);
+}
+
+/* ── 复制成功提示 ── */
+.share-copy-toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: rgba(12, 12, 28, 0.96);
+  border: 1px solid var(--green);
+  color: var(--green);
+  font-size: 0.8rem;
+  padding: 9px 22px;
+  border-radius: 8px;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s, transform 0.25s;
+  letter-spacing: 0.06em;
+  box-shadow: 0 4px 20px rgba(74, 222, 128, 0.15);
+}
+
+.share-copy-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ── 响应式：小屏改为底部横排 ── */
+@media (max-width: 768px) {
+  .share-sidebar {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    flex-direction: row;
+    transform: none;
+    justify-content: center;
+    gap: 0;
+    border-top: 1px solid var(--border-gold);
+    background: rgba(7, 7, 15, 0.96);
+    backdrop-filter: blur(12px);
+  }
+
+  .share-btn {
+    flex: 1;
+    max-width: 72px;
+    height: 52px;
+    border-radius: 0;
+    border: none;
+    border-right: 1px solid rgba(200, 190, 170, 0.18);
+    background: rgba(225, 220, 210, 0.10);
+    backdrop-filter: blur(12px);
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .share-btn:last-child {
+    border-right: none;
+  }
+
+  .share-btn::before {
+    /* 移动端 tooltip 显示在上方 */
+    right: auto;
+    left: 50%;
+    top: auto;
+    bottom: calc(100% + 8px);
+    transform: translateX(-50%);
+  }
+
+  /* 移动端底部栏需要给 body 留出空间 */
+  body {
+    padding-bottom: 52px;
+  }
+}
+
+
+/* ════════════════════════════════════════════════════
+   UI 动画升级 · 高级层次感系统
+   ════════════════════════════════════════════════════ */
+
+/* ── 全局过渡增强 ── */
+:root {
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in-out-circ: cubic-bezier(0.85, 0, 0.15, 1);
+  --transition-slow: all 0.6s var(--ease-out-expo);
+  --transition-bounce: all 0.5s var(--ease-out-back);
+}
+
+/* ── 光标跟随光晕 ── */
+#cursor-glow {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(201, 162, 39, 0.06) 0%,
+    rgba(74, 222, 128, 0.03) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 9990;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s ease;
+  mix-blend-mode: screen;
+}
+
+/* ── 页面加载入场 ── */
+.page-load-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-primary);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: opacity 0.8s var(--ease-out-expo), visibility 0.8s;
+}
+
+.page-load-overlay.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.page-load-logo {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.2rem;
+  color: var(--gold);
+  letter-spacing: 0.3em;
+  animation: load-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes load-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.97); }
+  50%       { opacity: 1;   transform: scale(1); }
+}
+
+/* ── 滚动入场动画基础 ── */
+.scroll-reveal {
+  opacity: 0;
+  transition: opacity 0.8s var(--ease-out-expo),
+              transform 0.8s var(--ease-out-expo);
+}
+
+.scroll-reveal.from-bottom { transform: translateY(48px); }
+.scroll-reveal.from-left   { transform: translateX(-48px); }
+.scroll-reveal.from-right  { transform: translateX(48px); }
+.scroll-reveal.from-scale  { transform: scale(0.92); }
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: none !important;
+}
+
+/* 延迟梯次 */
+.scroll-reveal.delay-1 { transition-delay: 0.1s; }
+.scroll-reveal.delay-2 { transition-delay: 0.2s; }
+.scroll-reveal.delay-3 { transition-delay: 0.3s; }
+.scroll-reveal.delay-4 { transition-delay: 0.4s; }
+.scroll-reveal.delay-5 { transition-delay: 0.5s; }
+
+/* ── 卡片扫光效果 ── */
+.category-card,
+.info-card,
+.recipe-card,
+.weapon-card,
+.sq-card,
+.boss-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::after,
+.info-card::after,
+.sq-card::after,
+.boss-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    rgba(201, 162, 39, 0.07) 50%,
+    transparent 70%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.7s var(--ease-out-expo);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.category-card:hover::after,
+.info-card:hover::after,
+.sq-card:hover::after,
+.boss-card:hover::after {
+  transform: translateX(100%);
+}
+
+/* ── 卡片 3D 倾斜感（仅 hover，不干扰 scroll-reveal transform）── */
+.category-card,
+.sq-card {
+  transition: var(--transition), box-shadow 0.4s ease;
+  will-change: transform;
+}
+
+.category-card:hover {
+  box-shadow:
+    0 20px 60px rgba(201, 162, 39, 0.15),
+    0 8px 24px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(201, 162, 39, 0.3);
+}
+
+/* ── 导航栏升级：激活下划线动画 ── */
+.navbar-nav a {
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  width: 0;
+  height: 1.5px;
+  background: var(--gold);
+  transition: width 0.3s var(--ease-out-expo),
+              left   0.3s var(--ease-out-expo);
+  border-radius: 1px;
+}
+
+.navbar-nav a:hover::after,
+.navbar-nav a.active::after {
+  width: 70%;
+  left: 15%;
+}
+
+/* ── Navbar 滚动后玻璃强化 ── */
+.navbar.scrolled {
+  background: rgba(5, 5, 12, 0.97);
+  border-bottom-color: rgba(201, 162, 39, 0.38);
+  box-shadow:
+    0 4px 32px rgba(0, 0, 0, 0.7),
+    0 1px 0 rgba(201, 162, 39, 0.12);
+}
+
+/* ── 统计数字光泽（仅非 JS 控制的元素）── */
+.bstat-val,
+.progress-stat-val {
+  background: linear-gradient(135deg, #f5e090 0%, #c9a227 45%, #f0d060 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 8px rgba(240, 208, 96, 0.4));
+}
+
+/* totk 和 hero 统计数字由 JS 计数器控制，只加发光不用渐变文字 */
+.totk-stat-num,
+.hero-stat-number {
+  color: var(--gold-light);
+  text-shadow: 0 0 24px rgba(240, 208, 96, 0.55);
+}
+
+/* ── 分隔线波动动画 ── */
+.totk-divider,
+.footer-divider,
+.divider {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold-dim),
+    var(--gold),
+    var(--green-mid),
+    var(--gold),
+    var(--gold-dim),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: divider-flow 4s linear infinite;
+}
+
+@keyframes divider-flow {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── 英雄区标题字体光效 ── */
+.totk-cjk-l,
+.totk-cjk-r {
+  animation: title-glow 6s ease-in-out infinite;
+}
+
+@keyframes title-glow {
+  0%, 100% {
+    text-shadow:
+      0 0 60px rgba(50, 195, 140, 0.20),
+      2px 3px 0 rgba(0, 0, 0, 0.92);
+  }
+  50% {
+    text-shadow:
+      0 0 80px rgba(50, 195, 140, 0.45),
+      0 0 120px rgba(201, 162, 39, 0.20),
+      2px 3px 0 rgba(0, 0, 0, 0.92);
+  }
+}
+
+/* ── 按钮/标签 ripple 效果 ── */
+.filter-tab,
+.boss-tab,
+.cat-btn,
+.filter-tab,
+.fb-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.filter-tab::before,
+.boss-tab::before,
+.cat-btn::before,
+.fb-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--rx, 50%) var(--ry, 50%),
+    rgba(201, 162, 39, 0.25) 0%,
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.filter-tab:hover::before,
+.boss-tab:hover::before,
+.cat-btn:hover::before,
+.fb-btn:hover::before {
+  opacity: 1;
+}
+
+/* ── 弱点标签入场 ── */
+.weakness-tag {
+  opacity: 0;
+  transform: translateY(6px) scale(0.95);
+  transition: opacity 0.4s ease, transform 0.4s var(--ease-out-back);
+}
+
+.weakness-tag.tag-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── 进度条动画 ── */
+.progress-fill {
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  animation: progress-shine 2.5s ease-in-out infinite;
+}
+
+@keyframes progress-shine {
+  0%   { left: -60%; }
+  100% { left: 110%; }
+}
+
+/* ── Boss 卡片序号动画 ── */
+.boss-index {
+  animation: index-breathe 8s ease-in-out infinite;
+}
+
+@keyframes index-breathe {
+  0%, 100% { opacity: 0.04; }
+  50%       { opacity: 0.09; }
+}
+
+/* ── 页脚粒子背景 ── */
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 100%,
+      rgba(201, 162, 39, 0.06) 0%,
+      transparent 60%);
+  pointer-events: none;
+  animation: footer-pulse 6s ease-in-out infinite;
+}
+
+@keyframes footer-pulse {
+  0%, 100% { opacity: 0.5; }
+  50%       { opacity: 1; }
+}
+
+/* ── section-tag 打字闪烁 ── */
+.section-tag,
+.page-hero-eyebrow,
+.boss-en-name {
+  position: relative;
+  display: inline-block;
+}
+
+/* ── 卡片网格错落入场 ── */
+.categories-grid .category-card:nth-child(odd)  { --reveal-dir: translateY(40px); }
+.categories-grid .category-card:nth-child(even) { --reveal-dir: translateY(60px); }
+
+/* ── 背景流动粒子画布 ── */
+#particles-canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+}
+
+/* ── boss 缩略图 hover 动画 ── */
+.boss-thumb {
+  transition: transform 0.25s var(--ease-out-back),
+              border-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.boss-thumb:hover {
+  transform: scale(1.12) translateY(-2px);
+  box-shadow: 0 4px 14px rgba(201, 162, 39, 0.35);
+}
+
+/* ── 主图切换淡入 ── */
+.boss-img-main img {
+  transition: opacity 0.35s ease, transform 0.5s var(--ease-out-expo);
+}
+
+.boss-img-main img.switching {
+  opacity: 0;
+  transform: scale(1.03);
+}
+
+/* ── 攻略步骤交错入场 ── */
+.boss-step {
+  opacity: 0;
+  transform: translateX(-16px);
+  transition: opacity 0.5s ease, transform 0.5s var(--ease-out-expo);
+}
+
+.boss-step.step-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── 奖励徽章弹跳入场 ── */
+.reward-item {
+  display: inline-flex;
+  opacity: 0;
+  transform: scale(0.8) translateY(8px);
+  transition: opacity 0.4s ease,
+              transform 0.4s var(--ease-out-back);
+}
+
+.reward-item.item-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── 响应式：移动端减少动效 ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-card:hover {
+    transform: none !important;
+  }
+  #cursor-glow { display: none; }
 }
