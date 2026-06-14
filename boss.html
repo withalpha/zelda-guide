@@ -333,10 +333,16 @@
       .boss-img-main { min-height: 220px; }
       .boss-stats { grid-template-columns: repeat(3, 1fr); }
     }
+    @media (max-width: 700px) {
+      /* 专题卡片在平板以下变双列 */
+      #featured-guides-grid { grid-template-columns: repeat(2,1fr) !important; }
+    }
     @media (max-width: 500px) {
       .boss-content { padding: 16px; }
       .boss-cn-name { font-size: 1.4rem; }
       .boss-stats { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+      /* 专题卡片在手机下变单列 */
+      #featured-guides-grid { grid-template-columns: 1fr !important; }
     }
   </style>
 </head>
@@ -392,6 +398,73 @@
       <div class="progress-stat"><span class="progress-stat-val" style="color:#fbbf24">6</span><span class="progress-stat-lbl">困难</span></div>
       <div class="progress-stat"><span class="progress-stat-val" style="color:#f87171">4</span><span class="progress-stat-lbl">极难</span></div>
       <div class="progress-stat"><span class="progress-stat-val" style="color:#c084fc">1</span><span class="progress-stat-lbl">最终Boss</span></div>
+    </div>
+  </div>
+
+  <!-- 专题深度攻略入口 -->
+  <div style="margin-bottom:32px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px;">
+      <div>
+        <div style="font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;">FEATURED GUIDES · 专题深度攻略</div>
+        <h2 style="font-family:'Noto Serif SC',serif;font-size:1.15rem;font-weight:900;color:var(--text-primary);margin:0;">热门 Boss 专题页</h2>
+      </div>
+      <div style="font-size:0.75rem;color:var(--text-muted);">含完整打法 · 招式解析 · 掉落说明</div>
+    </div>
+
+    <!-- 专题卡片网格 -->
+    <div id="featured-guides-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+
+      <!-- 魔王加侬多夫 -->
+      <a href="boss-ganondorf.html" style="text-decoration:none;display:block;background:var(--bg-card);border:1px solid rgba(124,58,237,0.35);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition);position:relative;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(124,58,237,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="height:130px;background:radial-gradient(ellipse at 60% 30%,rgba(124,58,237,0.25) 0%,rgba(5,5,14,0.9) 70%),url('images/bosses/魔王加侬多夫.png') center/cover no-repeat;"></div>
+        <div style="padding:14px 16px;">
+          <div style="font-size:0.6rem;letter-spacing:0.2em;color:#c084fc;text-transform:uppercase;margin-bottom:4px;">FINAL BOSS · 三阶段</div>
+          <div style="font-family:'Noto Serif SC',serif;font-size:1rem;font-weight:900;color:var(--text-primary);margin-bottom:6px;">👑 魔王加侬多夫</div>
+          <div style="font-size:0.73rem;color:var(--text-muted);line-height:1.6;">人形 / 秘石 / 黑龙三阶段全解，战前满配指南，盾反与二次闪避打法。</div>
+          <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;">
+            <span style="font-size:0.62rem;padding:2px 8px;border-radius:20px;background:rgba(124,58,237,0.12);border:1px solid rgba(124,58,237,0.3);color:#c084fc;">最终Boss</span>
+            <span style="font-size:0.62rem;padding:2px 8px;border-radius:20px;background:rgba(201,162,39,0.08);border:1px solid var(--border-gold);color:var(--gold);">向阳草料理</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 幻影加侬 -->
+      <a href="boss-phantom-ganon.html" style="text-decoration:none;display:block;background:var(--bg-card);border:1px solid rgba(239,68,68,0.3);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition);position:relative;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(239,68,68,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="height:130px;background:radial-gradient(ellipse at 60% 30%,rgba(239,68,68,0.2) 0%,rgba(5,5,14,0.9) 70%),url('images/bosses/幻影加侬.png') center/cover no-repeat;"></div>
+        <div style="padding:14px 16px;">
+          <div style="font-size:0.6rem;letter-spacing:0.2em;color:#f87171;text-transform:uppercase;margin-bottom:4px;">STORY BOSS · 剧情</div>
+          <div style="font-family:'Noto Serif SC',serif;font-size:1rem;font-weight:900;color:var(--text-primary);margin-bottom:6px;">👻 幻影加侬</div>
+          <div style="font-size:0.73rem;color:var(--text-muted);line-height:1.6;">城堡 1 打 5 高空轰炸流，野外单挑三形态完美闪避，瘴气武器使用技巧。</div>
+          <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;">
+            <span style="font-size:0.62rem;padding:2px 8px;border-radius:20px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);color:#f87171;">剧情Boss</span>
+            <span style="font-size:0.62rem;padding:2px 8px;border-radius:20px;background:rgba(201,162,39,0.08);border:1px solid var(--border-gold);color:var(--gold);">炸弹花齐射</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 莱尼尔系列 -->
+      <a href="boss-lynel.html" style="text-decoration:none;display:block;background:var(--bg-card);border:1px solid rgba(234,88,12,0.3);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition);position:relative;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(234,88,12,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="height:130px;background:radial-gradient(ellipse at 60% 30%,rgba(234,88,12,0.22) 0%,rgba(5,5,14,0.9) 70%),url('images/bosses/莱尼尔.png') center/cover no-repeat;"></div>
+        <div style="padding:14px 16px;">
+          <div style="font-size:0.6rem;letter-spacing:0.2em;color:#fb923c;text-transform:uppercase;margin-bottom:4px;">FIELD BOSS · 四色变体</div>
+          <div style="font-family:'Noto Serif SC',serif;font-size:1rem;font-weight:900;color:var(--text-primary);margin-bottom:6px;">🦁 莱尼尔系列</div>
+          <div style="font-size:0.73rem;color:var(--text-muted);line-height:1.6;">爆头骑乘流全解，红→蓝→白→白银四色强度递进，逐级专题页面。</div>
+          <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;">
+            <span style="font-size:0.62rem;padding:2px 8px;border-radius:20px;background:rgba(234,88,12,0.1);border:1px solid rgba(234,88,12,0.3);color:#fb923c;">野外最强</span>
+            <span style="font-size:0.62rem;padding:2px 8px;border-radius:20px;background:rgba(201,162,39,0.08);border:1px solid var(--border-gold);color:var(--gold);">4 页深度攻略</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- 莱尼尔四色子导航 -->
+    <div style="margin-top:10px;background:rgba(0,0,0,0.2);border:1px solid var(--border-gold);border-radius:var(--radius-lg);padding:12px 16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+      <span style="font-size:0.72rem;color:var(--text-muted);flex-shrink:0;">莱尼尔变体：</span>
+      <a href="boss-lynel.html" style="text-decoration:none;font-size:0.75rem;padding:4px 14px;border-radius:20px;background:rgba(234,88,12,0.1);border:1px solid rgba(234,88,12,0.3);color:#fb923c;transition:var(--transition);" onmouseover="this.style.background='rgba(234,88,12,0.2)'" onmouseout="this.style.background='rgba(234,88,12,0.1)'">🦁 红鬃 · 2000血</a>
+      <a href="boss-lynel-blue.html" style="text-decoration:none;font-size:0.75rem;padding:4px 14px;border-radius:20px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.3);color:#38bdf8;transition:var(--transition);" onmouseover="this.style.background='rgba(56,189,248,0.18)'" onmouseout="this.style.background='rgba(56,189,248,0.08)'">🔵 蓝鬃 · 3000血</a>
+      <a href="boss-lynel-white.html" style="text-decoration:none;font-size:0.75rem;padding:4px 14px;border-radius:20px;background:rgba(232,228,212,0.06);border:1px solid rgba(232,228,212,0.25);color:#e8e4d4;transition:var(--transition);" onmouseover="this.style.background='rgba(232,228,212,0.14)'" onmouseout="this.style.background='rgba(232,228,212,0.06)'">⚪ 白鬃 · 4000血</a>
+      <a href="boss-lynel-silver.html" style="text-decoration:none;font-size:0.75rem;padding:4px 14px;border-radius:20px;background:rgba(240,208,96,0.08);border:1px solid rgba(240,208,96,0.35);color:#f0d060;transition:var(--transition);" onmouseover="this.style.background='rgba(240,208,96,0.18)'" onmouseout="this.style.background='rgba(240,208,96,0.08)'">⚔️ 白银 · 5000血</a>
     </div>
   </div>
 
