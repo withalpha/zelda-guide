@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="zelda-guide">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="塞尔达传说王国之泪魔王加侬多夫完全攻略，含人形/秘石/黑龙三阶段详细打法、推荐装备、向阳草料理准备，附幻影加侬分身打法。">
+  <meta name="keywords" content="魔王加侬多夫,加侬多夫攻略,王国之泪最终Boss,黑龙形态,秘石形态,幻影加侬,向阳草料理">
+  <meta property="og:title" content="魔王加侬多夫攻略 · 三阶段完全解说 · 王国之泪Boss攻略">
+  <meta property="og:description" content="塞尔达传说王国之泪魔王加侬多夫完全攻略，含人形/秘石/黑龙三阶段详细打法、推荐装备、向阳草料理准备，附幻影加侬分身打法。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="魔王加侬多夫攻略 · 三阶段完全解说 · 王国之泪Boss攻略">
+  <meta name="twitter:description" content="塞尔达传说王国之泪魔王加侬多夫完全攻略，含人形/秘石/黑龙三阶段详细打法、推荐装备、向阳草料理准备，附幻影加侬分身打法。">
+  <meta name="google-site-verification" content="fODg6Pzs-XG-Lwe8510pkLAOSTUjkV1iyWn4U0Dgj-s">
+  <meta name="msvalidate.01" content="52B659FD637CE3F4640DB7323AAB6C27">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-53T0MJB9XW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-53T0MJB9XW');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1659892986478027" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>魔王加侬多夫攻略 · 三阶段完全解说 · 王国之泪Boss攻略</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ══════════════════════════════════════
+       魔王加侬多夫专题页 专属样式
+    ══════════════════════════════════════ */
+
+    /* ── Boss单页核心布局 ── */
+    .boss-detail-layout {
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      gap: 32px;
+      margin-bottom: 36px;
+    }
+
+    /* ── 左侧图片区 ── */
+    .boss-detail-gallery {
+      position: sticky;
+      top: 80px;
+      align-self: start;
+    }
+    .boss-detail-img-wrap {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-gold);
+      background: #05050e;
+      position: relative;
+    }
+    .boss-detail-img-wrap img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      max-height: 420px;
+    }
+    .boss-detail-img-wrap::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(5,5,14,0.75) 100%);
+      pointer-events: none;
+    }
+
+    /* 难度徽章 */
+    .detail-diff-badge {
+      position: absolute; top: 14px; left: 14px; z-index: 2;
+      padding: 5px 14px; border-radius: 20px;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+      backdrop-filter: blur(6px);
+      background: rgba(124,58,237,0.2);
+      color: #c084fc;
+      border: 1px solid rgba(192,132,252,0.5);
+    }
+
+    /* 概览信息卡 */
+    .boss-overview-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 20px 22px;
+      margin-top: 16px;
+    }
+    .boss-overview-en {
+      font-size: 0.65rem; color: var(--text-muted);
+      letter-spacing: 0.2em; text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .boss-overview-cn {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.6rem; font-weight: 900;
+      color: var(--text-primary); line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .boss-overview-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .bov-stat {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      padding: 9px 12px;
+    }
+    .bov-stat-lbl {
+      font-size: 0.6rem; color: var(--text-muted);
+      letter-spacing: 0.08em; display: block;
+      margin-bottom: 3px;
+    }
+    .bov-stat-val {
+      font-size: 0.82rem; color: var(--text-primary);
+      font-weight: 700; display: block;
+    }
+
+    /* ── 右侧内容区 ── */
+    .boss-detail-content {
+      display: flex; flex-direction: column; gap: 24px;
+    }
+
+    /* ── 战前准备大卡片 ── */
+    .prep-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 24px 28px;
+    }
+    .prep-card-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.1rem; font-weight: 900;
+      color: var(--gold); margin-bottom: 16px;
+      display: flex; align-items: center; gap: 8px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-gold);
+    }
+    .prep-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      margin-bottom: 12px;
+    }
+    .prep-icon {
+      font-size: 1.1rem; margin-top: 1px; flex-shrink: 0;
+    }
+    .prep-text {
+      font-size: 0.83rem; color: var(--text-secondary); line-height: 1.75;
+    }
+    .prep-text strong { color: var(--text-primary); }
+    .prep-text em { color: var(--gold); font-style: normal; }
+
+    /* ── 阶段攻略卡片 ── */
+    .phase-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .phase-header {
+      padding: 16px 24px;
+      display: flex; align-items: center; gap: 14px;
+      border-bottom: 1px solid var(--border-gold);
+    }
+    .phase-num {
+      width: 36px; height: 36px; flex-shrink: 0;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem; font-weight: 900;
+    }
+    .phase-num-1 { background: rgba(201,162,39,0.15); color: var(--gold); border: 1px solid rgba(201,162,39,0.4); }
+    .phase-num-2 { background: rgba(167,139,250,0.15); color: #c084fc; border: 1px solid rgba(167,139,250,0.4); }
+    .phase-num-3 { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.4); }
+    .phase-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1rem; font-weight: 900; color: var(--text-primary);
+    }
+    .phase-subtitle {
+      font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;
+    }
+    .phase-body {
+      padding: 20px 24px;
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    /* 阶段左侧彩色 border */
+    .phase-card-1 { border-left: 3px solid var(--gold); }
+    .phase-card-2 { border-left: 3px solid #a78bfa; }
+    .phase-card-3 { border-left: 3px solid #ef4444; }
+
+    /* 招式行 */
+    .move-row {
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+    }
+    .move-name {
+      font-size: 0.78rem; font-weight: 700;
+      color: var(--text-primary); margin-bottom: 5px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .move-desc {
+      font-size: 0.78rem; color: var(--text-secondary); line-height: 1.7;
+    }
+    .move-desc em { color: var(--gold); font-style: normal; }
+    .move-desc strong { color: var(--text-primary); }
+
+    /* 阶段内步骤 */
+    .phase-steps { display: flex; flex-direction: column; gap: 9px; }
+    .phase-step { display: flex; gap: 11px; align-items: flex-start; }
+    .pstep-num-1 {
+      min-width: 24px; height: 24px; flex-shrink: 0;
+      background: rgba(201,162,39,0.12); border: 1px solid rgba(201,162,39,0.35);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 800; color: var(--gold); margin-top: 1px;
+    }
+    .pstep-num-2 {
+      min-width: 24px; height: 24px; flex-shrink: 0;
+      background: rgba(167,139,250,0.12); border: 1px solid rgba(167,139,250,0.35);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 800; color: #c084fc; margin-top: 1px;
+    }
+    .pstep-num-3 {
+      min-width: 24px; height: 24px; flex-shrink: 0;
+      background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.35);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 800; color: #f87171; margin-top: 1px;
+    }
+    .pstep-text {
+      font-size: 0.81rem; color: var(--text-secondary); line-height: 1.75;
+    }
+    .pstep-text strong { color: var(--text-primary); }
+    .pstep-text em { color: var(--gold); font-style: normal; }
+
+    /* ── 提示框 / 警告框 ── */
+    .detail-tip {
+      background: rgba(74,222,128,0.05);
+      border: 1px solid rgba(74,222,128,0.2);
+      border-left: 3px solid var(--green);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      font-size: 0.78rem; color: var(--text-secondary); line-height: 1.7;
+    }
+    .detail-tip strong { color: var(--green); }
+    .detail-warning {
+      background: rgba(248,113,113,0.06);
+      border: 1px solid rgba(248,113,113,0.25);
+      border-left: 3px solid #f87171;
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      font-size: 0.78rem; color: var(--text-secondary); line-height: 1.7;
+    }
+    .detail-warning strong { color: #f87171; }
+
+    /* ── 掉落奖励 ── */
+    .drop-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+    }
+    .drop-section-title {
+      font-size: 0.7rem; font-weight: 700; color: var(--gold);
+      letter-spacing: 0.12em; text-transform: uppercase;
+      display: flex; align-items: center; gap: 6px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(201,162,39,0.2);
+      margin-bottom: 12px;
+    }
+    .drop-list { display: flex; gap: 8px; flex-wrap: wrap; }
+    .drop-item {
+      padding: 5px 14px; border-radius: 20px;
+      font-size: 0.73rem; font-weight: 600;
+      background: rgba(201,162,39,0.08);
+      border: 1px solid var(--border-gold);
+      color: var(--gold);
+    }
+
+    /* ── 相关阅读 ── */
+    .related-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+    }
+    .related-title {
+      font-size: 0.7rem; font-weight: 700; color: var(--gold);
+      letter-spacing: 0.12em; text-transform: uppercase;
+      display: flex; align-items: center; gap: 6px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(201,162,39,0.2);
+      margin-bottom: 14px;
+    }
+    .related-links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .related-link {
+      padding: 9px 18px;
+      background: rgba(201,162,39,0.06);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.8rem; font-weight: 600;
+      transition: var(--transition);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .related-link:hover {
+      background: rgba(201,162,39,0.14);
+      box-shadow: 0 0 14px rgba(201,162,39,0.15);
+    }
+
+    /* ── 响应式 ── */
+    @media (max-width: 860px) {
+      .boss-detail-layout {
+        grid-template-columns: 1fr;
+      }
+      .boss-detail-gallery { position: static; }
+    }
+    @media (max-width: 500px) {
+      .prep-card, .phase-body { padding: 16px; }
+      .phase-header { padding: 14px 16px; }
+      .boss-overview-cn { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li><a href="boss.html" class="active">Boss图鉴</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li>
+          <li><a href="sage-will.html">贤者的遗志</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ══ PAGE HERO ══ -->
+<div class="page-hero" style="background: radial-gradient(ellipse at 50% 0%, rgba(147,51,234,0.15) 0%, rgba(239,68,68,0.08) 40%, transparent 65%);">
+  <span class="page-hero-eyebrow">FINAL BOSS · GANONDORF</span>
+  <h1 class="page-hero-title" style="color: #c084fc; text-shadow: 0 0 40px rgba(147,51,234,0.5);">👑 魔王加侬多夫</h1>
+  <p class="page-hero-subtitle">最终Boss · 三阶段全图解 · 推荐满配装备</p>
+</div>
+
+<div class="page-body">
+
+  <!-- 面包屑 -->
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span>
+    <a href="boss.html">Boss图鉴</a><span class="sep">›</span>
+    <span class="cur">魔王加侬多夫</span>
+  </nav>
+
+  <!-- ══ 主体布局 ══ -->
+  <div class="boss-detail-layout">
+
+    <!-- ── 左侧：图片 + 概览 ── -->
+    <div class="boss-detail-gallery">
+      <div class="boss-detail-img-wrap">
+        <span class="detail-diff-badge">最终Boss</span>
+        <img src="images/bosses/魔王加侬多夫.png" alt="魔王加侬多夫 Ganondorf" loading="eager">
+      </div>
+      <div class="boss-overview-card">
+        <div class="boss-overview-en">DEMON KING GANONDORF</div>
+        <div class="boss-overview-cn">魔王加侬多夫</div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+          <span class="tag tag-red">最终Boss</span>
+          <span class="tag tag-purple">三阶段</span>
+          <span class="tag tag-gold">地底秘境</span>
+        </div>
+        <div class="boss-overview-stats">
+          <div class="bov-stat">
+            <span class="bov-stat-lbl">出现地点</span>
+            <span class="bov-stat-val">海拉鲁地底</span>
+          </div>
+          <div class="bov-stat">
+            <span class="bov-stat-lbl">危险度</span>
+            <span class="bov-stat-val" style="color:#f87171">★★★★★</span>
+          </div>
+          <div class="bov-stat">
+            <span class="bov-stat-lbl">攻击属性</span>
+            <span class="bov-stat-val">瘴气 / 全属性</span>
+          </div>
+          <div class="bov-stat">
+            <span class="bov-stat-lbl">阶段数</span>
+            <span class="bov-stat-val">三阶段</span>
+          </div>
+        </div>
+        <div class="detail-warning" style="margin-top:14px">
+          <strong>⚠ 注意：</strong>加侬多夫的瘴气攻击会<strong>永久扣除心心上限</strong>，备好向阳草料理是通关必要条件。
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 右侧：战前准备 + 三阶段攻略 ── -->
+    <div class="boss-detail-content">
+
+      <!-- 战前准备 -->
+      <div class="prep-card">
+        <div class="prep-card-title">🛡 战前准备专区</div>
+        <div class="prep-item">
+          <div class="prep-icon">🧥</div>
+          <div class="prep-text">
+            <strong>推荐防具：</strong><em>蛮族套装</em>或<em>鬼神套装</em>升至 3～4 星。加侬多夫输出极高，防具不够强化他一刀就能秒杀林克。
+          </div>
+        </div>
+        <div class="prep-item">
+          <div class="prep-icon">⚔</div>
+          <div class="prep-text">
+            <strong>推荐武器：</strong>用<em>白银莱尼尔刃角</em>余料建造的双手重武器（攻击力120+），以及<strong>大师之剑</strong>（不可破损，是第三阶段击碎秘石的唯一选择）。
+          </div>
+        </div>
+        <div class="prep-item">
+          <div class="prep-icon">🌿</div>
+          <div class="prep-text">
+            <strong>消耗品：</strong><em>向阳草料理</em>（向阳草×3 + 金苹果或肉）<strong>大量备齐</strong>，用于回复被瘴气攻击打碎的心心上限。建议备齐 10 份以上再进场。
+          </div>
+        </div>
+        <div class="prep-item">
+          <div class="prep-icon">✨</div>
+          <div class="prep-text">
+            <strong>贤者状态：</strong>确保<em>五位贤者（水/火/风/雷/魂）</em>均已解锁。第二阶段需要贤者牵制五个分身，贤者缺席会让战斗难度倍增。
+          </div>
+        </div>
+        <div class="detail-tip" style="margin-top:6px">
+          <strong>小提示：</strong>在进入最终Boss战之前，可以在地底附近的地图区域提前吃好所有增益料理（攻击+料理持续时间至少覆盖整场战斗）。
+        </div>
+      </div>
+
+      <!-- 第一阶段 -->
+      <div class="phase-card phase-card-1">
+        <div class="phase-header">
+          <div class="phase-num phase-num-1">01</div>
+          <div>
+            <div class="phase-title">第一阶段 · 黑发黑衣人形态</div>
+            <div class="phase-subtitle">三种武器形态交替出现，以完美闪避为核心</div>
+          </div>
+        </div>
+        <div class="phase-body">
+          <div class="move-row">
+            <div class="move-name">🗡 剑形态（瞬移突刺）</div>
+            <div class="move-desc">
+              加侬多夫手持单剑高速突刺。<br>
+              · <em>横劈</em>：ZL 锁定 + <strong>向后跳</strong>触发突击回避<br>
+              · <em>竖劈</em>：ZL 锁定 + <strong>向侧方跳</strong>触发突击回避
+            </div>
+          </div>
+          <div class="move-row">
+            <div class="move-name">🔱 长枪形态（直线冲锋）</div>
+            <div class="move-desc">
+              他手持长枪低身前倾，直线高速冲来。<br>
+              · 前倾动作出现<strong>瞬间</strong>：ZL + <em>侧跳</em>，时机最好把握，也是最容易触发突击的招式。
+            </div>
+          </div>
+          <div class="move-row">
+            <div class="move-name">🔨 大锤形态（跳跃下劈）</div>
+            <div class="move-desc">
+              他举起巨锤跳跃后垂直下劈，范围大、冲击波扩散。<br>
+              · <strong>不建议闪避</strong>，范围过大容错率低。建议<em>向后拉开距离</em>，或趁蓄力时<em>弓箭爆头</em>打断动作。
+            </div>
+          </div>
+          <div class="detail-tip">
+            <strong>阶段一要点：</strong>耐心等待每次招式起手动作，专注完美闪避换取突击输出。建议优先打第一血条的 1/3 后他会进入过场动画进入第二阶段。
+          </div>
+        </div>
+      </div>
+
+      <!-- 第二阶段 -->
+      <div class="phase-card phase-card-2">
+        <div class="phase-header">
+          <div class="phase-num phase-num-2">02</div>
+          <div>
+            <div class="phase-title">第二阶段 · 秘石解放形态</div>
+            <div class="phase-subtitle">五个幻影加侬分身登场，后半段学会完美闪避</div>
+          </div>
+        </div>
+        <div class="phase-body">
+          <div class="detail-warning">
+            <strong>⚠ 阶段开局：</strong>加侬多夫召唤五个幻影加侬分身同时围攻。<strong>不要在地面被围，</strong>立刻召唤五位贤者！
+          </div>
+          <div>
+            <div style="font-size:0.78rem;font-weight:700;color:var(--text-primary);margin-bottom:8px">前半段：贤者牵制 → 直攻本体</div>
+            <div class="phase-steps">
+              <div class="phase-step">
+                <div class="pstep-num-2">1</div>
+                <div class="pstep-text">
+                  让<em>五位贤者</em>分别缠住五个分身，自己无视分身<strong>直接冲向本体</strong>（红发魔王本体，站在最后方）。
+                </div>
+              </div>
+              <div class="phase-step">
+                <div class="pstep-num-2">2</div>
+                <div class="pstep-text">
+                  本体此时与第一阶段招式相同，继续用<em>完美闪避</em>打突击，大幅消耗血量。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:0.78rem;font-weight:700;color:var(--text-primary);margin-bottom:8px">后半段：魔王学会完美闪避！两种破解方法</div>
+            <div class="move-row">
+              <div class="move-name" style="color:#c084fc">方法 A · 二次闪避打法</div>
+              <div class="move-desc">
+                他在你攻击时触发完美闪避，并在闪避后<strong>立刻反刺</strong>。此时你<em>立刻再次进行完美闪避</em>，触发第二次突击——他无法对第二次突击再行回避，此招必中。
+              </div>
+            </div>
+            <div class="move-row" style="margin-top:8px">
+              <div class="move-name" style="color:#4ade80">方法 B · 盾反流（最安全）</div>
+              <div class="move-desc">
+                <strong>ZL 举盾防御</strong>，等他的武器砍中盾牌的<em>瞬间</em>按 A 键盾反。盾反触发后他<strong>绝对无法再次闪避</strong>，必定进入僵直，趁机疯狂输出。
+              </div>
+            </div>
+          </div>
+          <div class="detail-tip">
+            <strong>阶段二要点：</strong>方法 B（盾反）是最稳定的打法，一旦掌握节奏几乎可以无伤通过后半段。推荐携带高耐久盾牌（骑士盾/皇家护盾）。
+          </div>
+        </div>
+      </div>
+
+      <!-- 第三阶段 -->
+      <div class="phase-card phase-card-3">
+        <div class="phase-header">
+          <div class="phase-num phase-num-3">03</div>
+          <div>
+            <div class="phase-title">第三阶段 · 黑龙形态（空战）</div>
+            <div class="phase-subtitle">骑乘白龙背上，空中破坏四处秘石弱点</div>
+          </div>
+        </div>
+        <div class="phase-body">
+          <div class="phase-steps">
+            <div class="phase-step">
+              <div class="pstep-num-3">1</div>
+              <div class="pstep-text">
+                加侬多夫吞下秘石化为<strong>黑龙</strong>，塞尔达也化为<em>白龙</em>出现。跳上白龙背部，扶稳后开始空战。
+              </div>
+            </div>
+            <div class="phase-step">
+              <div class="pstep-num-3">2</div>
+              <div class="pstep-text">
+                黑龙会不断吐出<strong>红色光球</strong>，乘白龙时注意<em>左右移动躲避</em>，被直接命中大幅扣血。
+              </div>
+            </div>
+            <div class="phase-step">
+              <div class="pstep-num-3">3</div>
+              <div class="pstep-text">
+                黑龙背上共有 <strong>4 处粉红色秘石弱点</strong>（发光凸起）。白龙向黑龙俯冲接近时，<em>跳上黑龙背部对准弱点</em>连续按 Y 砍 2～3 下破坏一处。
+              </div>
+            </div>
+            <div class="phase-step">
+              <div class="pstep-num-3">4</div>
+              <div class="pstep-text">
+                每破坏一处弱点后，林克会被弹飞，白龙会<em>自动飞来接住</em>你——不用担心坠落。重新骑上白龙继续下一个弱点。
+              </div>
+            </div>
+            <div class="phase-step">
+              <div class="pstep-num-3">5</div>
+              <div class="pstep-text">
+                全部 4 个弱点破坏完毕后，白龙会驮着林克俯冲至黑龙<strong>头部位置</strong>。对着头顶巨大秘石<em>疯狂按 A</em>，用大师之剑将其击碎，触发通关过场动画。
+              </div>
+            </div>
+          </div>
+          <div class="detail-tip">
+            <strong>阶段三要点：</strong>此阶段大师之剑是最佳武器（不会损坏），其他强力武器也可以使用。弱点破坏顺序随机，建议优先攻击距离最近的。
+          </div>
+          <div class="detail-warning">
+            <strong>注意：</strong>如果在黑龙背上被甩落，白龙会接住——<strong>请不要提前开伞</strong>，开伞后白龙无法接你，可能坠入云层导致扣血。
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.boss-detail-content -->
+  </div><!-- /.boss-detail-layout -->
+
+  <!-- ══ 掉落物品 ══ -->
+  <div class="drop-section" style="margin-bottom:24px">
+    <div class="drop-section-title">🎁 各阶段武器掉落</div>
+    <div class="drop-list">
+      <span class="drop-item">💀 瘴气之剑（第一阶段掉落）</span>
+      <span class="drop-item">🔱 瘴气之枪（第一阶段掉落）</span>
+      <span class="drop-item">🔨 瘴气之锤（第一阶段掉落）</span>
+      <span class="drop-item">👑 魔王之弓（第二阶段掉落）</span>
+      <span class="drop-item">🐉 魔王骨骼（第三阶段通关奖励）</span>
+    </div>
+  </div>
+
+  <!-- ══ 相关 Boss 推荐阅读 ══ -->
+  <div class="related-section" style="margin-bottom:24px">
+    <div class="related-title">📖 相关 Boss 推荐阅读</div>
+    <div class="related-links">
+      <a class="related-link" href="boss-phantom-ganon.html">👻 幻影加侬攻略 →</a>
+      <a class="related-link" href="boss-lynel.html">🦁 莱尼尔攻略 →</a>
+      <a class="related-link" href="boss.html">⚔ 返回 Boss 图鉴 →</a>
+    </div>
+  </div>
+
+  <!-- 底部面包屑返回 -->
+  <nav class="breadcrumb" style="margin-top:8px">
+    <a href="index.html">首页</a><span class="sep">›</span>
+    <a href="boss.html">Boss图鉴</a><span class="sep">›</span>
+    <span class="cur">魔王加侬多夫</span>
+  </nav>
+
+</div><!-- /.page-body -->
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">
+      本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。<br>
+      《塞尔达传说 王国之泪》版权归任天堂株式会社所有。<br>
+      © 2023 Nintendo. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

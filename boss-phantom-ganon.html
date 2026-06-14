@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="zelda-guide">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="王国之泪幻影加侬完全攻略，详解海拉鲁城堡1打5分身流与野外单挑完美闪避打法，含瘴气武器使用技巧、向阳草驱散方法。">
+  <meta name="keywords" content="幻影加侬,Phantom Ganon,幻影加侬攻略,王国之泪,瘴气,1打5打法,完美闪避">
+  <meta property="og:title" content="幻影加侬攻略 · 城堡1打5与野外单挑完全解说 · 王国之泪">
+  <meta property="og:description" content="王国之泪幻影加侬完全攻略，详解海拉鲁城堡1打5分身流与野外单挑完美闪避打法，含瘴气武器使用技巧、向阳草驱散方法。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="幻影加侬攻略 · 城堡1打5与野外单挑完全解说 · 王国之泪">
+  <meta name="twitter:description" content="王国之泪幻影加侬完全攻略，详解海拉鲁城堡1打5分身流与野外单挑完美闪避打法，含瘴气武器使用技巧、向阳草驱散方法。">
+  <meta name="google-site-verification" content="fODg6Pzs-XG-Lwe8510pkLAOSTUjkV1iyWn4U0Dgj-s">
+  <meta name="msvalidate.01" content="52B659FD637CE3F4640DB7323AAB6C27">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-53T0MJB9XW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-53T0MJB9XW');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1659892986478027" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>幻影加侬攻略 · 城堡1打5与野外单挑完全解说 · 王国之泪</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ══════════════════════════════════════
+       幻影加侬专题页 专属样式
+    ══════════════════════════════════════ */
+
+    /* ── Boss单页核心布局 ── */
+    .boss-detail-layout {
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      gap: 32px;
+      margin-bottom: 36px;
+    }
+
+    /* ── 左侧图片区 ── */
+    .boss-detail-gallery {
+      position: sticky;
+      top: 80px;
+      align-self: start;
+    }
+    .boss-detail-img-wrap {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-gold);
+      background: #05050e;
+      position: relative;
+    }
+    .boss-detail-img-wrap img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      max-height: 420px;
+    }
+    .boss-detail-img-wrap::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(5,5,14,0.75) 100%);
+      pointer-events: none;
+    }
+
+    /* 难度徽章 */
+    .detail-diff-badge {
+      position: absolute; top: 14px; left: 14px; z-index: 2;
+      padding: 5px 14px; border-radius: 20px;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+      backdrop-filter: blur(6px);
+      background: rgba(245,158,11,0.18);
+      color: #fbbf24;
+      border: 1px solid rgba(251,191,36,0.45);
+    }
+
+    /* 概览信息卡 */
+    .boss-overview-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 20px 22px;
+      margin-top: 16px;
+    }
+    .boss-overview-en {
+      font-size: 0.65rem; color: var(--text-muted);
+      letter-spacing: 0.2em; text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .boss-overview-cn {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.6rem; font-weight: 900;
+      color: var(--text-primary); line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .boss-overview-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .bov-stat {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      padding: 9px 12px;
+    }
+    .bov-stat-lbl {
+      font-size: 0.6rem; color: var(--text-muted);
+      letter-spacing: 0.08em; display: block;
+      margin-bottom: 3px;
+    }
+    .bov-stat-val {
+      font-size: 0.82rem; color: var(--text-primary);
+      font-weight: 700; display: block;
+    }
+
+    /* ── 右侧内容区 ── */
+    .boss-detail-content {
+      display: flex; flex-direction: column; gap: 24px;
+    }
+
+    /* ── 场景攻略大卡片 ── */
+    .scene-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .scene-header {
+      padding: 16px 24px;
+      display: flex; align-items: center; gap: 14px;
+      border-bottom: 1px solid var(--border-gold);
+    }
+    .scene-num {
+      width: 36px; height: 36px; flex-shrink: 0;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem; font-weight: 900;
+    }
+    .scene-num-1 { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.4); }
+    .scene-num-2 { background: rgba(201,162,39,0.15); color: var(--gold); border: 1px solid rgba(201,162,39,0.4); }
+    .scene-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1rem; font-weight: 900; color: var(--text-primary);
+    }
+    .scene-subtitle {
+      font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;
+    }
+    .scene-body {
+      padding: 20px 24px;
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    /* 场景左侧彩色 border */
+    .scene-card-1 { border-left: 3px solid #ef4444; }
+    .scene-card-2 { border-left: 3px solid var(--gold); }
+
+    /* 步骤列表 */
+    .phase-steps { display: flex; flex-direction: column; gap: 9px; }
+    .phase-step { display: flex; gap: 11px; align-items: flex-start; }
+    .pstep-num-red {
+      min-width: 24px; height: 24px; flex-shrink: 0;
+      background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.35);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 800; color: #f87171; margin-top: 1px;
+    }
+    .pstep-num-gold {
+      min-width: 24px; height: 24px; flex-shrink: 0;
+      background: rgba(201,162,39,0.12); border: 1px solid rgba(201,162,39,0.35);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 800; color: var(--gold); margin-top: 1px;
+    }
+    .pstep-text {
+      font-size: 0.81rem; color: var(--text-secondary); line-height: 1.75;
+    }
+    .pstep-text strong { color: var(--text-primary); }
+    .pstep-text em { color: var(--gold); font-style: normal; }
+
+    /* 招式行 */
+    .move-row {
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+    }
+    .move-name {
+      font-size: 0.78rem; font-weight: 700;
+      color: var(--text-primary); margin-bottom: 5px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .move-desc {
+      font-size: 0.78rem; color: var(--text-secondary); line-height: 1.7;
+    }
+    .move-desc em { color: var(--gold); font-style: normal; }
+    .move-desc strong { color: var(--text-primary); }
+
+    /* ── 提示框 / 警告框 ── */
+    .detail-tip {
+      background: rgba(74,222,128,0.05);
+      border: 1px solid rgba(74,222,128,0.2);
+      border-left: 3px solid var(--green);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      font-size: 0.78rem; color: var(--text-secondary); line-height: 1.7;
+    }
+    .detail-tip strong { color: var(--green); }
+    .detail-warning {
+      background: rgba(248,113,113,0.06);
+      border: 1px solid rgba(248,113,113,0.25);
+      border-left: 3px solid #f87171;
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      font-size: 0.78rem; color: var(--text-secondary); line-height: 1.7;
+    }
+    .detail-warning strong { color: #f87171; }
+
+    /* ── 生存要点 ── */
+    .survival-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-left: 3px solid var(--purple);
+      border-radius: var(--radius-lg);
+      padding: 22px 26px;
+    }
+    .survival-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.05rem; font-weight: 900;
+      color: var(--purple); margin-bottom: 16px;
+      display: flex; align-items: center; gap: 8px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(167,139,250,0.2);
+    }
+    .survival-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      margin-bottom: 14px;
+    }
+    .survival-item:last-child { margin-bottom: 0; }
+    .survival-icon { font-size: 1.1rem; margin-top: 1px; flex-shrink: 0; }
+    .survival-text {
+      font-size: 0.82rem; color: var(--text-secondary); line-height: 1.75;
+    }
+    .survival-text strong { color: var(--text-primary); }
+    .survival-text em { color: var(--gold); font-style: normal; }
+
+    /* ── 掉落奖励 ── */
+    .drop-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+    }
+    .drop-section-title {
+      font-size: 0.7rem; font-weight: 700; color: var(--gold);
+      letter-spacing: 0.12em; text-transform: uppercase;
+      display: flex; align-items: center; gap: 6px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(201,162,39,0.2);
+      margin-bottom: 12px;
+    }
+    .drop-list { display: flex; gap: 8px; flex-wrap: wrap; }
+    .drop-item {
+      padding: 5px 14px; border-radius: 20px;
+      font-size: 0.73rem; font-weight: 600;
+      background: rgba(201,162,39,0.08);
+      border: 1px solid var(--border-gold);
+      color: var(--gold);
+    }
+
+    /* ── 相关阅读 ── */
+    .related-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+    }
+    .related-title {
+      font-size: 0.7rem; font-weight: 700; color: var(--gold);
+      letter-spacing: 0.12em; text-transform: uppercase;
+      display: flex; align-items: center; gap: 6px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(201,162,39,0.2);
+      margin-bottom: 14px;
+    }
+    .related-links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .related-link {
+      padding: 9px 18px;
+      background: rgba(201,162,39,0.06);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.8rem; font-weight: 600;
+      transition: var(--transition);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .related-link:hover {
+      background: rgba(201,162,39,0.14);
+      box-shadow: 0 0 14px rgba(201,162,39,0.15);
+    }
+
+    /* ── 响应式 ── */
+    @media (max-width: 860px) {
+      .boss-detail-layout {
+        grid-template-columns: 1fr;
+      }
+      .boss-detail-gallery { position: static; }
+    }
+    @media (max-width: 500px) {
+      .scene-body { padding: 16px; }
+      .scene-header { padding: 14px 16px; }
+      .boss-overview-cn { font-size: 1.3rem; }
+      .survival-card { padding: 16px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li><a href="boss.html" class="active">Boss图鉴</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li>
+          <li><a href="sage-will.html">贤者的遗志</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ══ PAGE HERO ══ -->
+<div class="page-hero" style="background: radial-gradient(ellipse at 50% 0%, rgba(239,68,68,0.12) 0%, rgba(180,0,50,0.06) 40%, transparent 65%);">
+  <span class="page-hero-eyebrow">STORY BOSS · PHANTOM GANON</span>
+  <h1 class="page-hero-title" style="color: #f87171; text-shadow: 0 0 40px rgba(239,68,68,0.45);">👻 幻影加侬</h1>
+  <p class="page-hero-subtitle">剧情Boss · 城堡1打5 &amp; 野外单挑 · 完整打法</p>
+</div>
+
+<div class="page-body">
+
+  <!-- 面包屑 -->
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span>
+    <a href="boss.html">Boss图鉴</a><span class="sep">›</span>
+    <span class="cur">幻影加侬</span>
+  </nav>
+
+  <!-- ══ 主体布局 ══ -->
+  <div class="boss-detail-layout">
+
+    <!-- ── 左侧：图片 + 概览 ── -->
+    <div class="boss-detail-gallery">
+      <div class="boss-detail-img-wrap">
+        <span class="detail-diff-badge">困难</span>
+        <img src="images/bosses/幻影加侬.png" alt="幻影加侬 Phantom Ganon" loading="eager">
+      </div>
+      <div class="boss-overview-card">
+        <div class="boss-overview-en">PHANTOM GANON</div>
+        <div class="boss-overview-cn">幻影加侬</div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+          <span class="tag tag-red">剧情Boss</span>
+          <span class="tag tag-gold">城堡 / 野外</span>
+          <span class="tag tag-purple">多分身</span>
+        </div>
+        <div class="boss-overview-stats">
+          <div class="bov-stat">
+            <span class="bov-stat-lbl">出现地点</span>
+            <span class="bov-stat-val">城堡 / 野外</span>
+          </div>
+          <div class="bov-stat">
+            <span class="bov-stat-lbl">危险度</span>
+            <span class="bov-stat-val" style="color:#fbbf24">★★★☆☆</span>
+          </div>
+          <div class="bov-stat">
+            <span class="bov-stat-lbl">攻击属性</span>
+            <span class="bov-stat-val">瘴气</span>
+          </div>
+          <div class="bov-stat">
+            <span class="bov-stat-lbl">最多分身数</span>
+            <span class="bov-stat-val">5 个分身</span>
+          </div>
+        </div>
+        <div class="detail-warning" style="margin-top:14px">
+          <strong>⚠ 瘴气伤害：</strong>幻影加侬的攻击带有瘴气效果，<strong>会永久扣除心心上限</strong>。务必备好向阳草料理。
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 右侧：两套场景攻略 ── -->
+    <div class="boss-detail-content">
+
+      <!-- 场景一：海拉鲁城堡 1打5 -->
+      <div class="scene-card scene-card-1">
+        <div class="scene-header">
+          <div class="scene-num scene-num-1">01</div>
+          <div>
+            <div class="scene-title">场景一 · 海拉鲁城堡 1打5</div>
+            <div class="scene-subtitle">同时对抗五个幻影加侬分身，高空清场是最优解</div>
+          </div>
+        </div>
+        <div class="scene-body">
+          <div class="detail-warning">
+            <strong>⚠ 严重警告：</strong>同时面对 5 个分身，如果在<strong>地面硬刚</strong>会被团团围住轮流围殴。瞬间死亡风险极高，<strong>绝对不要在地面正面应战！</strong>
+          </div>
+
+          <div>
+            <div style="font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-bottom:10px;display:flex;align-items:center;gap:6px">
+              🚀 逃票打法（高空爆头清场流）
+            </div>
+            <div class="phase-steps">
+              <div class="phase-step">
+                <div class="pstep-num-red">1</div>
+                <div class="pstep-text">
+                  <strong>战前准备：</strong>备齐多把<em>兽神弓（人马弓）</em>或<em>大鹫弓</em>（三连发 / 五连发），以及大量<em>炸弹花</em>。射程与爆炸范围是此战核心。
+                </div>
+              </div>
+              <div class="phase-step">
+                <div class="pstep-num-red">2</div>
+                <div class="pstep-text">
+                  <strong>开局立刻升空：</strong>用<em>火箭盾</em>（举盾后按 A 起飞）或<em>炸弹花盾</em>瞬间飞向半空，脱离地面包围圈。
+                </div>
+              </div>
+              <div class="phase-step">
+                <div class="pstep-num-red">3</div>
+                <div class="pstep-text">
+                  <strong>空中林克时间 · 炸弹花扫射：</strong>掏弓进入慢动作，对着 5 个分身密集区域<em>连发炸弹花箭</em>。炸弹花爆炸有范围伤害，可<strong>同时炸晕所有分身</strong>，触发大硬直。
+                </div>
+              </div>
+              <div class="phase-step">
+                <div class="pstep-num-red">4</div>
+                <div class="pstep-text">
+                  <strong>落地补刀 → 再次升空：</strong>落地后趁分身还在硬直，用强力武器快速输出。一旦分身开始起身，<em>立刻换一面火箭盾</em>再次飞天，开始下一轮轰炸。
+                </div>
+              </div>
+              <div class="phase-step">
+                <div class="pstep-num-red">5</div>
+                <div class="pstep-text">
+                  循环 <em>2～3 轮</em>空中轰炸即可清场。全程几乎不会被分身碰到。
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-bottom:8px;display:flex;align-items:center;gap:6px">
+              🌿 辅助策略
+            </div>
+            <div class="move-row">
+              <div class="move-name">✨ 贤者分担仇恨</div>
+              <div class="move-desc">
+                召唤<em>五位贤者</em>后，他们会主动攻击分身并吸引仇恨，让你获得更多空档在地面直接输出。适合武器充足但火箭盾不够的情况。
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-tip">
+            <strong>推荐装备：</strong>兽神弓或大鹫弓 × 2 把以上、炸弹花 × 20 颗以上、火箭盾 × 3 面以上。火箭盾可从路边的左纳乌装置余料建造。
+          </div>
+        </div>
+      </div>
+
+      <!-- 场景二：野外单挑 -->
+      <div class="scene-card scene-card-2">
+        <div class="scene-header">
+          <div class="scene-num scene-num-2">02</div>
+          <div>
+            <div class="scene-title">场景二 · 野外单挑</div>
+            <div class="scene-subtitle">打倒瘴气之手后幻影加侬登场，三种武器形态循环</div>
+          </div>
+        </div>
+        <div class="scene-body">
+          <div class="detail-tip" style="margin-bottom:4px">
+            <strong>触发条件：</strong>野外的<em>瘴气之手</em>被击败后，幻影加侬会从瘴气中现身挑战玩家。此时为 1 对 1 单挑，难度大幅降低。
+          </div>
+
+          <div class="move-row">
+            <div class="move-name">🗡 剑形态（瞬移突刺）</div>
+            <div class="move-desc">
+              幻影加侬手持单剑高速突刺，与加侬多夫第一阶段剑形态相同。<br>
+              · <em>横劈</em>：ZL 锁定 + <strong>向后跳</strong>触发突击<br>
+              · <em>竖劈</em>：ZL 锁定 + <strong>向侧方跳</strong>触发突击
+            </div>
+          </div>
+          <div class="move-row">
+            <div class="move-name">🔱 长枪形态（直线冲锋）</div>
+            <div class="move-desc">
+              低身前倾蓄力，直线冲刺。<br>
+              · 前倾动作出现<strong>瞬间</strong>：ZL + <em>侧跳</em>，这是三种招式中最好闪避的一招，几乎百发百中触发突击。
+            </div>
+          </div>
+          <div class="move-row">
+            <div class="move-name">⚔ 大剑形态（蓄力大风车）</div>
+            <div class="move-desc">
+              举起大剑开始旋转蓄力，命中范围极大。<br>
+              · <strong>不建议闪避</strong>，蓄力期间范围广、容错率低。建议<em>向后拉开距离</em>保持安全，或趁蓄力时用<em>弓箭射脸</em>打断蓄力动作。
+            </div>
+          </div>
+
+          <div class="detail-tip">
+            <strong>野外单挑要点：</strong>三种形态有明显的起手动作，耐心等待出手瞬间触发完美闪避。长枪冲锋是最稳定的突击时机，优先练熟。
+          </div>
+        </div>
+      </div>
+
+      <!-- 生存要点 -->
+      <div class="survival-card">
+        <div class="survival-title">💊 生存要点专区</div>
+        <div class="survival-item">
+          <div class="survival-icon">🌿</div>
+          <div class="survival-text">
+            <strong>驱散瘴气（必备）：</strong>幻影加侬的攻击带有瘴气，每次被命中都会<strong>永久减少心心上限</strong>。战前备好<em>向阳草料理</em>（向阳草×3 + 苹果×2），可以恢复被瘴气扣除的上限。建议带 5～8 份。
+          </div>
+        </div>
+        <div class="survival-item">
+          <div class="survival-icon">☣</div>
+          <div class="survival-text">
+            <strong>瘴气武器使用技巧：</strong>捡到的幻影加侬武器（瘴气之剑/大剑）<strong>直接使用会持续扣血</strong>。正确用法是将其作为<em>余料建造素材</em>，融合在普通武器的枪头或刀刃上——既保留高攻击力，又完全<strong>不触发扣血效果</strong>。
+          </div>
+        </div>
+        <div class="survival-item">
+          <div class="survival-icon">✨</div>
+          <div class="survival-text">
+            <strong>贤者干扰（城堡战必用）：</strong>城堡 1 打 5 场景中，召唤贤者是分散分身仇恨的最有效手段。野外单挑时贤者辅助输出，加速战斗结束。
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.boss-detail-content -->
+  </div><!-- /.boss-detail-layout -->
+
+  <!-- ══ 掉落物品 ══ -->
+  <div class="drop-section" style="margin-bottom:24px">
+    <div class="drop-section-title">🎁 掉落物品</div>
+    <div class="drop-list">
+      <span class="drop-item">🏹 魔王之弓</span>
+      <span class="drop-item">🗡 瘴气之剑</span>
+      <span class="drop-item">⚔ 瘴气之大剑</span>
+      <span class="drop-item">🔱 瘴气之枪</span>
+    </div>
+    <div class="detail-tip" style="margin-top:12px">
+      <strong>提示：</strong>瘴气武器直接装备会扣血，建议全部拿来做<em>余料建造</em>素材融合到普通武器上，打造高攻击力无副作用的强力武器。
+    </div>
+  </div>
+
+  <!-- ══ 相关 Boss 推荐阅读 ══ -->
+  <div class="related-section" style="margin-bottom:24px">
+    <div class="related-title">📖 相关 Boss 推荐阅读</div>
+    <div class="related-links">
+      <a class="related-link" href="boss-ganondorf.html">👑 魔王加侬多夫攻略 →</a>
+      <a class="related-link" href="boss-lynel.html">🦁 莱尼尔攻略 →</a>
+      <a class="related-link" href="boss.html">⚔ 返回 Boss 图鉴 →</a>
+    </div>
+  </div>
+
+  <!-- 底部面包屑返回 -->
+  <nav class="breadcrumb" style="margin-top:8px">
+    <a href="index.html">首页</a><span class="sep">›</span>
+    <a href="boss.html">Boss图鉴</a><span class="sep">›</span>
+    <span class="cur">幻影加侬</span>
+  </nav>
+
+</div><!-- /.page-body -->
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">
+      本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。<br>
+      《塞尔达传说 王国之泪》版权归任天堂株式会社所有。<br>
+      © 2023 Nintendo. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

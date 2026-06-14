@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="zelda-guide">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="王国之泪蓝鬃莱尼尔出没地点、强度分析及完整打法攻略，含骑马白嫖流详细步骤与掉落物品一览。">
+  <meta name="keywords" content="蓝鬃莱尼尔,蓝色莱尼尔,莱尼尔攻略,王国之泪强敌">
+  <meta property="og:title" content="蓝鬃莱尼尔攻略 · 出没地点与高效打法 · 王国之泪">
+  <meta property="og:description" content="王国之泪蓝鬃莱尼尔出没地点、强度分析及完整打法攻略，含骑马白嫖流详细步骤与掉落物品一览。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="蓝鬃莱尼尔攻略 · 出没地点与高效打法 · 王国之泪">
+  <meta name="twitter:description" content="王国之泪蓝鬃莱尼尔出没地点、强度分析及完整打法攻略，含骑马白嫖流详细步骤与掉落物品一览。">
+  <meta name="google-site-verification" content="fODg6Pzs-XG-Lwe8510pkLAOSTUjkV1iyWn4U0Dgj-s">
+  <meta name="msvalidate.01" content="52B659FD637CE3F4640DB7323AAB6C27">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-53T0MJB9XW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-53T0MJB9XW');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1659892986478027" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>蓝鬃莱尼尔攻略 · 出没地点与高效打法 · 王国之泪</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Boss专题页样式 */
+    .boss-detail-wrap {
+      max-width: 1100px; margin: 0 auto; padding: 32px 24px 80px;
+    }
+    .boss-overview-card {
+      display: grid; grid-template-columns: 420px 1fr; gap: 0;
+      background: var(--bg-card); border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 40px;
+    }
+    .boss-overview-img { position: relative; background: #05050e; min-height: 320px; }
+    .boss-overview-img img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 320px; }
+    .boss-overview-info { padding: 32px; display: flex; flex-direction: column; gap: 20px; }
+    .section-card {
+      background: var(--bg-card); border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg); padding: 28px; margin-bottom: 24px;
+    }
+    .section-card.phase-1 { border-left: 4px solid #38bdf8; }
+    .section-card.phase-2 { border-left: 4px solid #a78bfa; }
+    .section-card.phase-3 { border-left: 4px solid #ef4444; }
+    .section-card.tips { border-left: 4px solid var(--green); }
+    .section-card.warning { border-left: 4px solid #f87171; }
+    .phase-title {
+      font-family: 'Noto Serif SC', serif; font-size: 1.3rem;
+      font-weight: 900; margin-bottom: 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .step-list { display: flex; flex-direction: column; gap: 12px; }
+    .step-item { display: flex; gap: 14px; align-items: flex-start; }
+    .step-badge {
+      min-width: 28px; height: 28px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.72rem; font-weight: 800; flex-shrink: 0;
+      border: 1px solid; margin-top: 2px;
+    }
+    .step-badge.blue { background: rgba(56,189,248,0.12); border-color: rgba(56,189,248,0.4); color: #38bdf8; }
+    .step-badge.purple { background: rgba(167,139,250,0.12); border-color: rgba(167,139,250,0.4); color: #a78bfa; }
+    .step-badge.red { background: rgba(239,68,68,0.12); border-color: rgba(239,68,68,0.4); color: #f87171; }
+    .step-badge.green { background: rgba(74,222,128,0.12); border-color: rgba(74,222,128,0.4); color: var(--green); }
+    .step-badge.gold { background: rgba(201,162,39,0.12); border-color: rgba(201,162,39,0.4); color: var(--gold); }
+    .step-text-block { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.8; }
+    .step-text-block strong { color: var(--text-primary); }
+    .step-text-block em { color: #38bdf8; font-style: normal; }
+    .info-tip {
+      background: rgba(74,222,128,0.05); border: 1px solid rgba(74,222,128,0.2);
+      border-left: 3px solid var(--green); border-radius: var(--radius);
+      padding: 12px 16px; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.7;
+    }
+    .info-tip strong { color: var(--green); }
+    .info-warning {
+      background: rgba(248,113,113,0.06); border: 1px solid rgba(248,113,113,0.25);
+      border-left: 3px solid #f87171; border-radius: var(--radius);
+      padding: 12px 16px; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.7;
+    }
+    .info-warning strong { color: #f87171; }
+    .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .stat-box { background: rgba(0,0,0,0.3); border: 1px solid var(--border-gold); border-radius: var(--radius); padding: 12px; text-align: center; }
+    .stat-val { font-size: 1.1rem; font-weight: 800; color: var(--gold); display: block; }
+    .stat-lbl { font-size: 0.62rem; color: var(--text-muted); margin-top: 2px; display: block; }
+    .weakness-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+    .weakness-tag { padding: 5px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; display: inline-flex; align-items: center; gap: 5px; border: 1px solid; }
+    .wk-fire { color: #fb923c; border-color: rgba(251,146,60,0.4); background: rgba(251,146,60,0.08); }
+    .wk-ice { color: #7dd3fc; border-color: rgba(125,211,252,0.4); background: rgba(125,211,252,0.08); }
+    .wk-elec { color: #fde047; border-color: rgba(253,224,71,0.4); background: rgba(253,224,71,0.08); }
+    .wk-arrow { color: #a5b4fc; border-color: rgba(165,180,252,0.4); background: rgba(165,180,252,0.08); }
+    .wk-melee { color: #e8e4d4; border-color: rgba(232,228,212,0.3); background: rgba(232,228,212,0.05); }
+    .wk-master { color: #f0d060; border-color: rgba(240,208,96,0.4); background: rgba(240,208,96,0.08); }
+    .wk-bomb { color: #f87171; border-color: rgba(248,113,113,0.4); background: rgba(248,113,113,0.08); }
+    .wk-sage { color: #4ade80; border-color: rgba(74,222,128,0.4); background: rgba(74,222,128,0.08); }
+    .reward-row { display: flex; gap: 8px; flex-wrap: wrap; }
+    .reward-chip { padding: 5px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; background: rgba(201,162,39,0.08); border: 1px solid var(--border-gold); color: var(--gold); }
+    .related-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+    .related-link { padding: 10px 20px; border-radius: var(--radius); background: rgba(201,162,39,0.08); border: 1px solid var(--border-gold); color: var(--gold); text-decoration: none; font-size: 0.82rem; transition: var(--transition); }
+    .related-link:hover { background: rgba(201,162,39,0.15); }
+
+    /* 出没地点 */
+    .location-list { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+    .location-item { display: flex; align-items: center; gap: 10px; font-size: 0.84rem; color: var(--text-secondary); padding: 8px 12px; background: rgba(0,0,0,0.2); border-radius: var(--radius); border: 1px solid var(--border-gold); }
+    .location-item::before { content: '📍'; flex-shrink: 0; }
+
+    /* 差异对比卡 */
+    .diff-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-top: 12px; }
+    .diff-item { padding: 12px 14px; border-radius: var(--radius); background: rgba(56,189,248,0.05); border: 1px solid rgba(56,189,248,0.2); }
+    .diff-label { font-size: 0.65rem; color: #38bdf8; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; display: block; }
+    .diff-value { font-size: 0.82rem; color: var(--text-primary); }
+
+    /* Hero区 蓝色主题 */
+    .boss-hero {
+      padding: 100px 24px 48px;
+      background: radial-gradient(ellipse at 50% 0%, rgba(56,189,248,0.15) 0%, transparent 60%);
+      text-align: center;
+    }
+    .boss-hero-eyebrow { font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; color: #38bdf8; margin-bottom: 14px; display: block; }
+    .boss-hero-title { font-family: 'Noto Serif SC', serif; font-size: clamp(2rem,6vw,3.4rem); font-weight: 900; color: #38bdf8; text-shadow: 0 0 40px rgba(56,189,248,0.5); margin-bottom: 12px; }
+    .boss-hero-sub { font-size: 1rem; color: var(--text-secondary); letter-spacing: 0.1em; }
+
+    /* 变体导航按钮 */
+    .variant-nav { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+    .variant-btn { padding: 9px 22px; border-radius: 20px; border: 1px solid var(--border-gold); background: transparent; color: var(--text-secondary); font-size: 0.82rem; cursor: pointer; font-family: inherit; transition: var(--transition); text-decoration: none; display: inline-block; }
+    .variant-btn:hover { background: rgba(201,162,39,0.14); border-color: var(--gold); color: var(--gold); }
+    .variant-btn.active { background: rgba(56,189,248,0.12); border-color: #38bdf8; color: #38bdf8; }
+
+    @media (max-width: 768px) {
+      .boss-overview-card { grid-template-columns: 1fr; }
+      .boss-detail-wrap { padding: 20px 16px 60px; }
+      .stat-row { grid-template-columns: repeat(3,1fr); }
+      .diff-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li><a href="boss.html" class="active">Boss图鉴</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li>
+          <li><a href="sage-will.html">贤者的遗志</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<div class="boss-hero">
+  <span class="boss-hero-eyebrow">FIELD BOSS · BLUE-MANED LYNEL</span>
+  <h1 class="boss-hero-title">🔵 蓝鬃莱尼尔</h1>
+  <p class="boss-hero-sub">中级强敌 · 强于红褐 · 打法与红褐莱尼尔完全相同</p>
+</div>
+
+<div class="page-body">
+  <!-- 面包屑 -->
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span>
+    <a href="boss.html">Boss图鉴</a><span class="sep">›</span>
+    <a href="boss-lynel.html">莱尼尔</a><span class="sep">›</span>
+    <span class="cur">蓝鬃莱尼尔</span>
+  </nav>
+
+  <div class="boss-detail-wrap">
+
+    <!-- 四色变体导航 -->
+    <div class="variant-nav">
+      <a href="boss-lynel.html" class="variant-btn">🦁 莱尼尔（红褐/青色）</a>
+      <a href="boss-lynel-blue.html" class="variant-btn active">🔵 蓝鬃莱尼尔</a>
+      <a href="boss-lynel-white.html" class="variant-btn">⚪ 白鬃莱尼尔</a>
+      <a href="boss-lynel-silver.html" class="variant-btn">⚔️ 白银莱尼尔</a>
+    </div>
+
+    <!-- 概览卡 -->
+    <div class="boss-overview-card">
+      <div class="boss-overview-img">
+        <img src="images/bosses/蓝鬃莱尼尔.png" alt="蓝鬃莱尼尔 Blue-Maned Lynel" loading="lazy">
+      </div>
+      <div class="boss-overview-info">
+        <div>
+          <div class="boss-section-title" style="font-size:0.7rem;font-weight:700;color:#38bdf8;letter-spacing:0.12em;text-transform:uppercase;border-bottom:1px solid rgba(56,189,248,0.2);padding-bottom:6px;margin-bottom:12px;">📋 基本信息</div>
+          <div class="stat-row">
+            <div class="stat-box"><span class="stat-val" style="color:#38bdf8;">极难</span><span class="stat-lbl">难度</span></div>
+            <div class="stat-box"><span class="stat-val">★★★★☆</span><span class="stat-lbl">危险度</span></div>
+            <div class="stat-box"><span class="stat-val" style="color:#38bdf8;">Tier 2</span><span class="stat-lbl">强度等级</span></div>
+          </div>
+          <div style="margin-top:8px;padding:8px 12px;background:rgba(56,189,248,0.06);border:1px solid rgba(56,189,248,0.2);border-radius:var(--radius);font-size:0.78rem;color:var(--text-secondary);">
+            四色中第二弱，比红褐/青色莱尼尔强约 30%
+          </div>
+        </div>
+        <div>
+          <div class="boss-section-title" style="font-size:0.7rem;font-weight:700;color:#38bdf8;letter-spacing:0.12em;text-transform:uppercase;border-bottom:1px solid rgba(56,189,248,0.2);padding-bottom:6px;margin-bottom:12px;">📍 出没地点</div>
+          <div class="location-list">
+            <div class="location-item">海拉鲁平原南部</div>
+            <div class="location-item">海拉鲁山地区域</div>
+            <div class="location-item">洛克利耶地区</div>
+          </div>
+        </div>
+        <div>
+          <div class="boss-section-title" style="font-size:0.7rem;font-weight:700;color:#38bdf8;letter-spacing:0.12em;text-transform:uppercase;border-bottom:1px solid rgba(56,189,248,0.2);padding-bottom:6px;margin-bottom:8px;">🎯 弱点</div>
+          <div class="weakness-row">
+            <span class="weakness-tag wk-arrow">🏹 脸部爆头</span>
+            <span class="weakness-tag wk-melee">🐴 骑马背部输出</span>
+            <span class="weakness-tag wk-bomb">💣 融合炸弹箭</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 与红褐莱尼尔的区别 -->
+    <div class="section-card phase-1" id="differences">
+      <div class="phase-title">🔵 与红褐莱尼尔的核心区别</div>
+      <div class="diff-grid">
+        <div class="diff-item">
+          <span class="diff-label">血量</span>
+          <span class="diff-value">更厚，约提升 <strong>30%</strong>，同等打法需要更多轮输出</span>
+        </div>
+        <div class="diff-item">
+          <span class="diff-label">动作速度</span>
+          <span class="diff-value">整体动作略快，盾反时机窗口变窄，需要更精确</span>
+        </div>
+        <div class="diff-item">
+          <span class="diff-label">元素攻击</span>
+          <span class="diff-value">部分攻击新增元素属性加成，注意携带相应抗性料理</span>
+        </div>
+        <div class="diff-item">
+          <span class="diff-label">掉落品质</span>
+          <span class="diff-value">掉落物品品质更高，蓝鬃刃角攻击力加成强于红褐版</span>
+        </div>
+      </div>
+      <div class="info-tip" style="margin-top:14px;">
+        <strong>💡 总结：</strong>打法完全相同，只是需要更多轮骑马输出循环。战前多备几把弓箭和飞天道具。
+      </div>
+    </div>
+
+    <!-- 参考打法卡 -->
+    <div class="section-card phase-2" id="strategy-ref">
+      <div class="phase-title">🐎 完整打法 · 骑马白嫖流（与红褐莱尼尔完全相同）</div>
+      <div class="info-tip" style="margin-bottom:16px;">
+        <strong>💡 核心思路：</strong>蓝鬃莱尼尔的骑马白嫖流与普通莱尼尔完全一致，请参考主攻略页面的详细步骤。本节仅列出关键要点。
+      </div>
+      <div class="step-list">
+        <div class="step-item">
+          <span class="step-badge blue">1</span>
+          <div class="step-text-block"><strong>飞天：</strong>用弹簧或火箭盾将林克弹射升空，触发空中慢动作。</div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge blue">2</span>
+          <div class="step-text-block"><strong>爆头：</strong>空中拉弓瞄准脸部，听到「叮」声表示爆头成功，蓝鬃莱尼尔跪地约5秒。</div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge blue">3</span>
+          <div class="step-text-block"><strong>解锁骑马：</strong>落地后<em>解除 ZL 锁定</em>，冲到身侧按 A 骑上，掏出快折断武器疯狂砍击，可砍 3～6 刀。</div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge blue">4</span>
+          <div class="step-text-block"><strong>被甩补射：</strong>被甩下触发慢动作时立刻补 2～3 发爆头箭，再次跪倒后继续骑马。</div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge blue">5</span>
+          <div class="step-text-block"><strong>重复循环：</strong>落地再飞天，因血量更厚，蓝鬃需要比红褐多 1～2 轮。</div>
+        </div>
+      </div>
+      <div style="margin-top:16px;">
+        <a href="boss-lynel.html#core-strategy" class="related-link">📖 查看完整骑马白嫖流详细说明 →</a>
+      </div>
+    </div>
+
+    <!-- 招式应对 -->
+    <div class="section-card phase-3" id="moves">
+      <div class="phase-title">🛡️ 招式应对详解</div>
+      <div class="step-list">
+        <div class="step-item">
+          <span class="step-badge red">①</span>
+          <div class="step-text-block">
+            <strong>剑形态 · 瞬移突刺：</strong>蓝鬃莱尼尔会高速瞬移到林克身前发动突刺，反应窗口极短。建议 ZL 锁定 + 侧跳触发突击，或提前读取动作预判跳跃方向。
+          </div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge red">②</span>
+          <div class="step-text-block">
+            <strong>长枪冲锋：</strong>莱尼尔持枪发动直线冲锋，蓝鬃版速度比红褐快，闪避时机更严格。ZL 锁定 + 后跳触发完美闪避，或直接用盾反迎击。
+          </div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge red">③</span>
+          <div class="step-text-block">
+            <strong>火球连射：</strong>莱尼尔后退蓄力吐出 3 发大火球，<strong>不要翻滚</strong>，横向奔跑躲避。3 发全部吐完后莱尼尔有约1.5秒喘气间隙，立刻拉弓爆头。
+          </div>
+        </div>
+        <div class="step-item">
+          <span class="step-badge red">④</span>
+          <div class="step-text-block">
+            <strong>大风车旋转：</strong>莱尼尔原地高速旋转近战攻击，向后跑拉开距离完全规避，或趁旋转间隙用弓箭射击打断动作。
+          </div>
+        </div>
+      </div>
+      <div class="info-tip" style="margin-top:14px;">
+        <strong>💡 经验：</strong>蓝鬃莱尼尔的招式种类与红褐完全相同，差别仅在速度和判定范围略有扩大。习惯了红褐版后，只需适应更快的节奏即可。
+      </div>
+    </div>
+
+    <!-- 掉落物品 -->
+    <div class="section-card tips" id="drops">
+      <div class="phase-title">🎁 掉落物品</div>
+      <div class="reward-row">
+        <span class="reward-chip">🗡️ 蓝鬃莱尼尔的刃角</span>
+        <span class="reward-chip">🐾 蓝鬃莱尼尔的蹄</span>
+        <span class="reward-chip">🫀 蓝鬃莱尼尔的肝</span>
+        <span class="reward-chip">🏹 莱尼尔弓（三发/五发）</span>
+      </div>
+      <div class="info-tip" style="margin-top:14px;">
+        <strong>💡 素材用途：</strong>蓝鬃莱尼尔的刃角融合攻击力加成比普通版更高，是制作中期最强武器的重要素材。蹄和肝可用于烹饪攻击强化料理。
+      </div>
+    </div>
+
+    <!-- 导航 -->
+    <div class="section-card" id="nav-links">
+      <div class="phase-title">🔗 莱尼尔系列攻略导航</div>
+      <div class="related-links">
+        <a href="boss-lynel.html" class="related-link">← 返回莱尼尔总页</a>
+        <a href="boss-lynel-white.html" class="related-link">⚪ 白鬃莱尼尔攻略 →</a>
+        <a href="boss-lynel-silver.html" class="related-link">⚔️ 白银莱尼尔攻略 →</a>
+        <a href="boss.html" class="related-link">← Boss 图鉴</a>
+      </div>
+    </div>
+
+  </div><!-- /.boss-detail-wrap -->
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">
+      本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。<br>
+      《塞尔达传说 王国之泪》版权归任天堂株式会社所有。<br>
+      © 2023 Nintendo. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  // ── Boss 多形态图片切换 ──
+  function switchBossImg(thumb) {
+    const gallery = thumb.closest('.boss-gallery');
+    const mainImg = gallery.querySelector('.boss-img-main img');
+    const thumbImg = thumb.querySelector('img');
+    mainImg.src = thumbImg.getAttribute('src');
+    mainImg.alt = thumbImg.getAttribute('alt');
+    gallery.querySelectorAll('.boss-thumb').forEach(t => t.classList.remove('active'));
+    thumb.classList.add('active');
+  }
+</script>
+</body>
+</html>

@@ -51,6 +51,36 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://zelda-guide.pages.dev/boss-ganondorf.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zelda-guide.pages.dev/boss-phantom-ganon.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zelda-guide.pages.dev/boss-lynel.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zelda-guide.pages.dev/boss-lynel-blue.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zelda-guide.pages.dev/boss-lynel-white.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zelda-guide.pages.dev/boss-lynel-silver.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zelda-guide.pages.dev/mauyu-lost.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
