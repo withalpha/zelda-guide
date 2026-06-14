@@ -12,7 +12,7 @@
   <meta property="og:site_name" content="王国之泪全攻略">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
-  <meta name="description" content="王国之泪幻影加侬完全攻略，详解海拉鲁城堡1打5分身流与野外单挑完美闪避打法，含瘴气武器使用技巧、向阳草驱散方法。">
+  <meta name="description" content="王国之泪幻影加侬完全攻略，含战前准备、无伤清瘴气触手、真身三武器完美闪避打法、城堡五连战贤者战术，附魔王之弓与瘴气武器余料建造技巧。">
   <meta name="keywords" content="幻影加侬,Phantom Ganon,幻影加侬攻略,王国之泪,瘴气,1打5打法,完美闪避">
   <meta property="og:title" content="幻影加侬攻略 · 城堡1打5与野外单挑完全解说 · 王国之泪">
   <meta property="og:description" content="王国之泪幻影加侬完全攻略，详解海拉鲁城堡1打5分身流与野外单挑完美闪避打法，含瘴气武器使用技巧、向阳草驱散方法。">
@@ -148,6 +148,8 @@
     }
     .scene-num-1 { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.4); }
     .scene-num-2 { background: rgba(201,162,39,0.15); color: var(--gold); border: 1px solid rgba(201,162,39,0.4); }
+    .scene-num-3 { background: rgba(74,222,128,0.15); color: #4ade80; border: 1px solid rgba(74,222,128,0.4); }
+    .scene-num-4 { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.4); }
     .scene-title {
       font-family: 'Noto Serif SC', serif;
       font-size: 1rem; font-weight: 900; color: var(--text-primary);
@@ -162,6 +164,8 @@
     /* 场景左侧彩色 border */
     .scene-card-1 { border-left: 3px solid #ef4444; }
     .scene-card-2 { border-left: 3px solid var(--gold); }
+    .scene-card-3 { border-left: 3px solid #4ade80; }
+    .scene-card-4 { border-left: 3px solid #fbbf24; }
 
     /* 步骤列表 */
     .phase-steps { display: flex; flex-direction: column; gap: 9px; }
@@ -222,33 +226,79 @@
     }
     .detail-warning strong { color: #f87171; }
 
-    /* ── 生存要点 ── */
-    .survival-card {
+    /* ── 战前准备大卡片（步骤式） ── */
+    .prep-card {
       background: var(--bg-card);
       border: 1px solid var(--border-gold);
-      border-left: 3px solid var(--purple);
+      border-radius: var(--radius-lg);
+      padding: 24px 28px;
+    }
+    .prep-card-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.1rem; font-weight: 900;
+      color: var(--gold); margin-bottom: 16px;
+      display: flex; align-items: center; gap: 8px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-gold);
+    }
+    .prep-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      margin-bottom: 12px;
+    }
+    .prep-item:last-child { margin-bottom: 0; }
+    .prep-icon { font-size: 1.1rem; margin-top: 1px; flex-shrink: 0; }
+    .prep-text {
+      font-size: 0.83rem; color: var(--text-secondary); line-height: 1.75;
+    }
+    .prep-text strong { color: var(--text-primary); }
+    .prep-text em { color: var(--gold); font-style: normal; }
+
+    /* ── 方案对比行 ── */
+    .method-label {
+      font-size: 0.72rem; font-weight: 800;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 3px 10px; border-radius: 12px;
+      display: inline-flex; align-items: center; gap: 4px;
+      margin-bottom: 8px;
+    }
+    .method-a {
+      background: rgba(201,162,39,0.12);
+      border: 1px solid rgba(201,162,39,0.35);
+      color: var(--gold);
+    }
+    .method-b {
+      background: rgba(74,222,128,0.08);
+      border: 1px solid rgba(74,222,128,0.25);
+      color: #4ade80;
+    }
+
+    /* ── 战利品高亮卡 ── */
+    .loot-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-left: 3px solid var(--gold);
       border-radius: var(--radius-lg);
       padding: 22px 26px;
     }
-    .survival-title {
+    .loot-card-title {
       font-family: 'Noto Serif SC', serif;
       font-size: 1.05rem; font-weight: 900;
-      color: var(--purple); margin-bottom: 16px;
+      color: var(--gold); margin-bottom: 14px;
       display: flex; align-items: center; gap: 8px;
       padding-bottom: 10px;
-      border-bottom: 1px solid rgba(167,139,250,0.2);
+      border-bottom: 1px solid rgba(201,162,39,0.2);
     }
-    .survival-item {
+    .loot-item {
       display: flex; gap: 12px; align-items: flex-start;
-      margin-bottom: 14px;
+      margin-bottom: 13px;
     }
-    .survival-item:last-child { margin-bottom: 0; }
-    .survival-icon { font-size: 1.1rem; margin-top: 1px; flex-shrink: 0; }
-    .survival-text {
+    .loot-item:last-child { margin-bottom: 0; }
+    .loot-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 1px; }
+    .loot-text {
       font-size: 0.82rem; color: var(--text-secondary); line-height: 1.75;
     }
-    .survival-text strong { color: var(--text-primary); }
-    .survival-text em { color: var(--gold); font-style: normal; }
+    .loot-text strong { color: var(--text-primary); }
+    .loot-text em { color: var(--gold); font-style: normal; }
 
     /* ── 掉落奖励 ── */
     .drop-section {
@@ -354,7 +404,7 @@
 <div class="page-hero" style="background: radial-gradient(ellipse at 50% 0%, rgba(239,68,68,0.12) 0%, rgba(180,0,50,0.06) 40%, transparent 65%);">
   <span class="page-hero-eyebrow">STORY BOSS · PHANTOM GANON</span>
   <h1 class="page-hero-title" style="color: #f87171; text-shadow: 0 0 40px rgba(239,68,68,0.45);">👻 幻影加侬</h1>
-  <p class="page-hero-subtitle">剧情Boss · 城堡1打5 &amp; 野外单挑 · 完整打法</p>
+  <p class="page-hero-subtitle">剧情Boss · 三步流程拆解 · 完美闪避与逃课双方案</p>
 </div>
 
 <div class="page-body">
@@ -407,161 +457,181 @@
       </div>
     </div>
 
-    <!-- ── 右侧：两套场景攻略 ── -->
+    <!-- ── 右侧：四步攻略 + 战利品 ── -->
     <div class="boss-detail-content">
 
-      <!-- 场景一：海拉鲁城堡 1打5 -->
+      <!-- 第一步：战前准备 -->
+      <div class="prep-card">
+        <div class="prep-card-title">⚔️ 第一步：战前准备</div>
+        <div class="prep-item">
+          <div class="prep-icon">🌿</div>
+          <div class="prep-text">
+            <strong>准备料理（向阳草）：</strong>采集<em>向阳草</em>（空岛很多）和肉类/蔬菜一起煮，做成带有"恢复瘴气"图标的料理。这能<strong>治好你碎掉的心心上限</strong>。
+          </div>
+        </div>
+        <div class="prep-item">
+          <div class="prep-icon">🏹</div>
+          <div class="prep-text">
+            <strong>准备武器：</strong>准备一把弓（如果有<em>三连弓、五连弓</em>更好）以及大量的<em>炸弹花</em>、<em>吉布得骨头</em>（堆面板伤害）。
+          </div>
+        </div>
+        <div class="prep-item">
+          <div class="prep-icon">🛡️</div>
+          <div class="prep-text">
+            <strong>抗瘴气装备：</strong>如果有在地下兑换的<em>"暗黑套装"</em>或<em>"瘴气防护服"</em>，可以穿上增加容错率。
+          </div>
+        </div>
+      </div>
+
+      <!-- 第二步：无伤清触手 -->
       <div class="scene-card scene-card-1">
         <div class="scene-header">
-          <div class="scene-num scene-num-1">01</div>
+          <div class="scene-num scene-num-1">02</div>
           <div>
-            <div class="scene-title">场景一 · 海拉鲁城堡 1打5</div>
-            <div class="scene-subtitle">同时对抗五个幻影加侬分身，高空清场是最优解</div>
+            <div class="scene-title">🛑 第二步：白送的第一阶段——无伤清触手</div>
+            <div class="scene-subtitle">掌握"空对地"原则，瘴气之手就是白送的</div>
           </div>
         </div>
         <div class="scene-body">
           <div class="detail-warning">
-            <strong>⚠ 严重警告：</strong>同时面对 5 个分身，如果在<strong>地面硬刚</strong>会被团团围住轮流围殴。瞬间死亡风险极高，<strong>绝对不要在地面正面应战！</strong>
+            <strong>⚠ 很多人死在幻影加侬面前，其实是被瘴气之手抓死了。</strong>只要掌握空对地原则，触手就是白送的。
           </div>
-
-          <div>
-            <div style="font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-bottom:10px;display:flex;align-items:center;gap:6px">
-              🚀 逃票打法（高空爆头清场流）
+          <div class="phase-steps">
+            <div class="phase-step">
+              <div class="pstep-num-red">1</div>
+              <div class="pstep-text">
+                <strong>寻找高地：</strong>进场看到地上冒黑泥，<em>立刻找附近的台阶、石头、废墟或者墙壁往上爬</em>。
+              </div>
             </div>
-            <div class="phase-steps">
-              <div class="phase-step">
-                <div class="pstep-num-red">1</div>
-                <div class="pstep-text">
-                  <strong>战前准备：</strong>备齐多把<em>兽神弓（人马弓）</em>或<em>大鹫弓</em>（三连发 / 五连发），以及大量<em>炸弹花</em>。射程与爆炸范围是此战核心。
-                </div>
+            <div class="phase-step">
+              <div class="pstep-num-red">2</div>
+              <div class="pstep-text">
+                <strong>触发林克时间（Bullet Time）：</strong>从高处跳下来，在<em>半空中按住 ZR 拔弓</em>，世界变慢。
               </div>
-              <div class="phase-step">
-                <div class="pstep-num-red">2</div>
-                <div class="pstep-text">
-                  <strong>开局立刻升空：</strong>用<em>火箭盾</em>（举盾后按 A 起飞）或<em>炸弹花盾</em>瞬间飞向半空，脱离地面包围圈。
-                </div>
-              </div>
-              <div class="phase-step">
-                <div class="pstep-num-red">3</div>
-                <div class="pstep-text">
-                  <strong>空中林克时间 · 炸弹花扫射：</strong>掏弓进入慢动作，对着 5 个分身密集区域<em>连发炸弹花箭</em>。炸弹花爆炸有范围伤害，可<strong>同时炸晕所有分身</strong>，触发大硬直。
-                </div>
-              </div>
-              <div class="phase-step">
-                <div class="pstep-num-red">4</div>
-                <div class="pstep-text">
-                  <strong>落地补刀 → 再次升空：</strong>落地后趁分身还在硬直，用强力武器快速输出。一旦分身开始起身，<em>立刻换一面火箭盾</em>再次飞天，开始下一轮轰炸。
-                </div>
-              </div>
-              <div class="phase-step">
-                <div class="pstep-num-red">5</div>
-                <div class="pstep-text">
-                  循环 <em>2～3 轮</em>空中轰炸即可清场。全程几乎不会被分身碰到。
-                </div>
+            </div>
+            <div class="phase-step">
+              <div class="pstep-num-red">3</div>
+              <div class="pstep-text">
+                <strong>疯狂轰炸：</strong>把<em>炸弹花</em>或者宝石（红宝石/蓝宝石）附魔在箭上，往<strong>触手堆的中心疯狂输出</strong>。
               </div>
             </div>
           </div>
-
-          <div>
-            <div style="font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-bottom:8px;display:flex;align-items:center;gap:6px">
-              🌿 辅助策略
-            </div>
-            <div class="move-row">
-              <div class="move-name">✨ 贤者分担仇恨</div>
-              <div class="move-desc">
-                召唤<em>五位贤者</em>后，他们会主动攻击分身并吸引仇恨，让你获得更多空档在地面直接输出。适合武器充足但火箭盾不够的情况。
-              </div>
-            </div>
-          </div>
-
-          <div class="detail-tip">
-            <strong>推荐装备：</strong>兽神弓或大鹫弓 × 2 把以上、炸弹花 × 20 颗以上、火箭盾 × 3 面以上。火箭盾可从路边的左纳乌装置余料建造。
+          <div class="detail-warning">
+            <strong>⚠ 注意：</strong>必须要在短时间内把所有触手<strong>全部炸死</strong>，如果留一只太久，死掉的触手会<em>复活</em>。
           </div>
         </div>
       </div>
 
-      <!-- 场景二：野外单挑 -->
+      <!-- 第三步：真身实战 -->
       <div class="scene-card scene-card-2">
         <div class="scene-header">
-          <div class="scene-num scene-num-2">02</div>
+          <div class="scene-num scene-num-2">03</div>
           <div>
-            <div class="scene-title">场景二 · 野外单挑</div>
-            <div class="scene-subtitle">打倒瘴气之手后幻影加侬登场，三种武器形态循环</div>
+            <div class="scene-title">⚔️ 第三步：幻影加侬真身实战</div>
+            <div class="scene-subtitle">三种武器形态（剑/长枪/大棒）——两种方案任选其一</div>
           </div>
         </div>
         <div class="scene-body">
-          <div class="detail-tip" style="margin-bottom:4px">
-            <strong>触发条件：</strong>野外的<em>瘴气之手</em>被击败后，幻影加侬会从瘴气中现身挑战玩家。此时为 1 对 1 单挑，难度大幅降低。
+          <!-- 方案A -->
+          <div class="move-row">
+            <div class="move-name">
+              <span class="method-label method-a">方案 A · 推荐</span>
+              老实人打法——完美闪避（Flurry Rush）
+            </div>
+            <div class="move-desc" style="margin-top:6px">
+              幻影加侬的攻击前摇非常明显，按住 ZL 注视他，根据动作闪避即可：
+            </div>
+          </div>
+          <div class="phase-steps" style="margin-top:2px">
+            <div class="phase-step">
+              <div class="pstep-num-gold">剑</div>
+              <div class="pstep-text">
+                <strong>持剑形态：</strong>横着举剑（蓄力斩）→ <em>ZL + 摇杆后拉 + 跳（后跳）</em>，触发突击。<br>
+                竖着举剑或冲刺 → <em>ZL + 摇杆左/右 + 跳（侧跳）</em>，触发突击。
+              </div>
+            </div>
+            <div class="phase-step">
+              <div class="pstep-num-gold">枪</div>
+              <div class="pstep-text">
+                <strong>长枪形态：</strong>他会大跨步向前突刺。判定范围窄，直接 <em>ZL + 向左或向右侧跳</em>，<strong>必出突击</strong>。
+              </div>
+            </div>
+            <div class="phase-step">
+              <div class="pstep-num-gold">棒</div>
+              <div class="pstep-text">
+                <strong>大棒（双手剑）形态：</strong>攻击力极高还会跳起来砸地。<strong>千万别用盾牌硬挡</strong>（会在地上产生瘴气）。砸下来的瞬间<em>向后跳</em>，躲开冲击波并触发突击。
+              </div>
+            </div>
           </div>
 
-          <div class="move-row">
-            <div class="move-name">🗡 剑形态（瞬移突刺）</div>
-            <div class="move-desc">
-              幻影加侬手持单剑高速突刺，与加侬多夫第一阶段剑形态相同。<br>
-              · <em>横劈</em>：ZL 锁定 + <strong>向后跳</strong>触发突击<br>
-              · <em>竖劈</em>：ZL 锁定 + <strong>向侧方跳</strong>触发突击
+          <!-- 方案B -->
+          <div class="move-row" style="margin-top:6px">
+            <div class="move-name">
+              <span class="method-label method-b">方案 B</span>
+              纯无脑逃课法——空中飞人流
             </div>
-          </div>
-          <div class="move-row">
-            <div class="move-name">🔱 长枪形态（直线冲锋）</div>
-            <div class="move-desc">
-              低身前倾蓄力，直线冲刺。<br>
-              · 前倾动作出现<strong>瞬间</strong>：ZL + <em>侧跳</em>，这是三种招式中最好闪避的一招，几乎百发百中触发突击。
+            <div class="move-desc" style="margin-top:6px">
+              如果实在掌握不好闪避节奏，继续用对付触手的那招：<br><br>
+              爬到高处（或用<em>通天术</em>到二楼平台），跳下来，<strong>空中拔弓进入子弹时间</strong>，把<em>吉布得骨头</em>或<em>人马角</em>附魔在箭上，疯狂爆他的头。<br><br>
+              <strong>连续爆头会让他陷入硬直，根本还不了手。</strong>
             </div>
-          </div>
-          <div class="move-row">
-            <div class="move-name">⚔ 大剑形态（蓄力大风车）</div>
-            <div class="move-desc">
-              举起大剑开始旋转蓄力，命中范围极大。<br>
-              · <strong>不建议闪避</strong>，蓄力期间范围广、容错率低。建议<em>向后拉开距离</em>保持安全，或趁蓄力时用<em>弓箭射脸</em>打断蓄力动作。
-            </div>
-          </div>
-
-          <div class="detail-tip">
-            <strong>野外单挑要点：</strong>三种形态有明显的起手动作，耐心等待出手瞬间触发完美闪避。长枪冲锋是最稳定的突击时机，优先练熟。
           </div>
         </div>
       </div>
 
-      <!-- 生存要点 -->
-      <div class="survival-card">
-        <div class="survival-title">💊 生存要点专区</div>
-        <div class="survival-item">
-          <div class="survival-icon">🌿</div>
-          <div class="survival-text">
-            <strong>驱散瘴气（必备）：</strong>幻影加侬的攻击带有瘴气，每次被命中都会<strong>永久减少心心上限</strong>。战前备好<em>向阳草料理</em>（向阳草×3 + 苹果×2），可以恢复被瘴气扣除的上限。建议带 5～8 份。
+      <!-- 城堡五连战 -->
+      <div class="scene-card scene-card-3">
+        <div class="scene-header">
+          <div class="scene-num scene-num-3">04</div>
+          <div>
+            <div class="scene-title">⚠️ 城堡五连战（主线）特殊技巧</div>
+            <div class="scene-subtitle">海拉鲁城堡主线"幻影加侬五连战"——同时出现多个分身</div>
           </div>
         </div>
-        <div class="survival-item">
-          <div class="survival-icon">☣</div>
-          <div class="survival-text">
-            <strong>瘴气武器使用技巧：</strong>捡到的幻影加侬武器（瘴气之剑/大剑）<strong>直接使用会持续扣血</strong>。正确用法是将其作为<em>余料建造素材</em>，融合在普通武器的枪头或刀刃上——既保留高攻击力，又完全<strong>不触发扣血效果</strong>。
+        <div class="scene-body">
+          <div class="phase-steps">
+            <div class="phase-step">
+              <div class="pstep-num-red">1</div>
+              <div class="pstep-text">
+                <strong>让贤者当肉盾：</strong>进场直接把<em>阿布莱克（雷）、丘栗（风）、米法（水）、云坊（火）</em>等贤者分身全部召唤出来，让他们去<strong>分散幻影加侬的注意力</strong>。
+              </div>
+            </div>
+            <div class="phase-step">
+              <div class="pstep-num-red">2</div>
+              <div class="pstep-text">
+                <strong>逐个击破：</strong>你只需要盯着<em>一个没有防备的</em>，或者正在释放地场瘴气的分身疯狂输出。
+              </div>
+            </div>
+            <div class="phase-step">
+              <div class="pstep-num-red">3</div>
+              <div class="pstep-text">
+                <strong>射击施法者：</strong>第二阶段有的分身会在地上扩散瘴气，<em>只要用箭射一下他的头</em>，他的施法就会被<strong>打断</strong>。
+              </div>
+            </div>
           </div>
         </div>
-        <div class="survival-item">
-          <div class="survival-icon">✨</div>
-          <div class="survival-text">
-            <strong>贤者干扰（城堡战必用）：</strong>城堡 1 打 5 场景中，召唤贤者是分散分身仇恨的最有效手段。野外单挑时贤者辅助输出，加速战斗结束。
+      </div>
+
+      <!-- 战利品 -->
+      <div class="loot-card">
+        <div class="loot-card-title">🎁 珍贵战利品</div>
+        <div class="loot-item">
+          <div class="loot-icon">🏹</div>
+          <div class="loot-text">
+            <strong>魔王之弓：</strong>你的<em>心心上限越多，这把弓的攻击力就越高</em>（后期能达到 <strong>60 点面板攻击</strong>），前期堪称神级武器。
+          </div>
+        </div>
+        <div class="loot-item">
+          <div class="loot-icon">⚔️</div>
+          <div class="loot-text">
+            <strong>瘴气武器（剑/枪/大棒）：</strong>攻击力非常高（通常在 40 左右）。虽然握在手里攻击会<em>腐蚀自己的心心</em>，但完美的解决方法是：<br>
+            用<strong>余料建造</strong>把瘴气武器合到其他普通武器上，既能获得高攻击力，又<strong>完全不会扣血</strong>！
           </div>
         </div>
       </div>
 
     </div><!-- /.boss-detail-content -->
   </div><!-- /.boss-detail-layout -->
-
-  <!-- ══ 掉落物品 ══ -->
-  <div class="drop-section" style="margin-bottom:24px">
-    <div class="drop-section-title">🎁 掉落物品</div>
-    <div class="drop-list">
-      <span class="drop-item">🏹 魔王之弓</span>
-      <span class="drop-item">🗡 瘴气之剑</span>
-      <span class="drop-item">⚔ 瘴气之大剑</span>
-      <span class="drop-item">🔱 瘴气之枪</span>
-    </div>
-    <div class="detail-tip" style="margin-top:12px">
-      <strong>提示：</strong>瘴气武器直接装备会扣血，建议全部拿来做<em>余料建造</em>素材融合到普通武器上，打造高攻击力无副作用的强力武器。
-    </div>
-  </div>
 
   <!-- ══ 相关 Boss 推荐阅读 ══ -->
   <div class="related-section" style="margin-bottom:24px">

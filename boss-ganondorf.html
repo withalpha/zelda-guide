@@ -12,7 +12,7 @@
   <meta property="og:site_name" content="王国之泪全攻略">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
-  <meta name="description" content="塞尔达传说王国之泪魔王加侬多夫完全攻略，含人形/秘石/黑龙三阶段详细打法、推荐装备、向阳草料理准备，附幻影加侬分身打法。">
+  <meta name="description" content="塞尔达传说王国之泪魔王加侬多夫完全攻略，含四大阶段详细打法（秘石解放/魔王分身/真魔王博弈/黑龙空战）、推荐装备、向阳草料理准备。">
   <meta name="keywords" content="魔王加侬多夫,加侬多夫攻略,王国之泪最终Boss,黑龙形态,秘石形态,幻影加侬,向阳草料理">
   <meta property="og:title" content="魔王加侬多夫攻略 · 三阶段完全解说 · 王国之泪Boss攻略">
   <meta property="og:description" content="塞尔达传说王国之泪魔王加侬多夫完全攻略，含人形/秘石/黑龙三阶段详细打法、推荐装备、向阳草料理准备，附幻影加侬分身打法。">
@@ -156,6 +156,40 @@
     .prep-text strong { color: var(--text-primary); }
     .prep-text em { color: var(--gold); font-style: normal; }
 
+    /* ── 战前物资表格 ── */
+    .prep-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 4px;
+    }
+    .prep-table thead tr {
+      background: rgba(201,162,39,0.08);
+    }
+    .prep-table th {
+      font-size: 0.68rem; font-weight: 800;
+      color: var(--gold); letter-spacing: 0.1em;
+      padding: 9px 14px; text-align: left;
+      border-bottom: 1px solid var(--border-gold);
+    }
+    .prep-table td {
+      font-size: 0.79rem; color: var(--text-secondary); line-height: 1.65;
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      vertical-align: top;
+    }
+    .prep-table tr:last-child td { border-bottom: none; }
+    .prep-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .prep-table td strong { color: var(--text-primary); }
+    .prep-table td em { color: var(--gold); font-style: normal; }
+    .prep-table .td-type {
+      font-weight: 700; color: var(--text-primary);
+      white-space: nowrap; width: 72px;
+    }
+    .prep-table .td-name {
+      color: var(--gold); font-weight: 700;
+      width: 170px;
+    }
+
     /* ── 阶段攻略卡片 ── */
     .phase-card {
       background: var(--bg-card);
@@ -176,7 +210,8 @@
     }
     .phase-num-1 { background: rgba(201,162,39,0.15); color: var(--gold); border: 1px solid rgba(201,162,39,0.4); }
     .phase-num-2 { background: rgba(167,139,250,0.15); color: #c084fc; border: 1px solid rgba(167,139,250,0.4); }
-    .phase-num-3 { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.4); }
+    .phase-num-2b { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.4); }
+    .phase-num-3 { background: rgba(34,211,238,0.15); color: #22d3ee; border: 1px solid rgba(34,211,238,0.4); }
     .phase-title {
       font-family: 'Noto Serif SC', serif;
       font-size: 1rem; font-weight: 900; color: var(--text-primary);
@@ -191,7 +226,8 @@
     /* 阶段左侧彩色 border */
     .phase-card-1 { border-left: 3px solid var(--gold); }
     .phase-card-2 { border-left: 3px solid #a78bfa; }
-    .phase-card-3 { border-left: 3px solid #ef4444; }
+    .phase-card-2b { border-left: 3px solid #ef4444; }
+    .phase-card-3 { border-left: 3px solid #22d3ee; }
 
     /* 招式行 */
     .move-row {
@@ -226,11 +262,17 @@
       border-radius: 50%; display: flex; align-items: center; justify-content: center;
       font-size: 0.65rem; font-weight: 800; color: #c084fc; margin-top: 1px;
     }
-    .pstep-num-3 {
+    .pstep-num-2b {
       min-width: 24px; height: 24px; flex-shrink: 0;
       background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.35);
       border-radius: 50%; display: flex; align-items: center; justify-content: center;
       font-size: 0.65rem; font-weight: 800; color: #f87171; margin-top: 1px;
+    }
+    .pstep-num-3 {
+      min-width: 24px; height: 24px; flex-shrink: 0;
+      background: rgba(34,211,238,0.12); border: 1px solid rgba(34,211,238,0.35);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 800; color: #22d3ee; margin-top: 1px;
     }
     .pstep-text {
       font-size: 0.81rem; color: var(--text-secondary); line-height: 1.75;
@@ -361,7 +403,7 @@
 <div class="page-hero" style="background: radial-gradient(ellipse at 50% 0%, rgba(147,51,234,0.15) 0%, rgba(239,68,68,0.08) 40%, transparent 65%);">
   <span class="page-hero-eyebrow">FINAL BOSS · GANONDORF</span>
   <h1 class="page-hero-title" style="color: #c084fc; text-shadow: 0 0 40px rgba(147,51,234,0.5);">👑 魔王加侬多夫</h1>
-  <p class="page-hero-subtitle">最终Boss · 三阶段全图解 · 推荐满配装备</p>
+  <p class="page-hero-subtitle">最终Boss · 四大阶段全图解 · 推荐满配装备</p>
 </div>
 
 <div class="page-body">
@@ -387,7 +429,7 @@
         <div class="boss-overview-cn">魔王加侬多夫</div>
         <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
           <span class="tag tag-red">最终Boss</span>
-          <span class="tag tag-purple">三阶段</span>
+          <span class="tag tag-purple">四大阶段</span>
           <span class="tag tag-gold">地底秘境</span>
         </div>
         <div class="boss-overview-stats">
@@ -405,7 +447,7 @@
           </div>
           <div class="bov-stat">
             <span class="bov-stat-lbl">阶段数</span>
-            <span class="bov-stat-val">三阶段</span>
+            <span class="bov-stat-val">四大阶段</span>
           </div>
         </div>
         <div class="detail-warning" style="margin-top:14px">
@@ -419,34 +461,43 @@
 
       <!-- 战前准备 -->
       <div class="prep-card">
-        <div class="prep-card-title">🛡 战前准备专区</div>
-        <div class="prep-item">
-          <div class="prep-icon">🧥</div>
-          <div class="prep-text">
-            <strong>推荐防具：</strong><em>蛮族套装</em>或<em>鬼神套装</em>升至 3～4 星。加侬多夫输出极高，防具不够强化他一刀就能秒杀林克。
-          </div>
-        </div>
-        <div class="prep-item">
-          <div class="prep-icon">⚔</div>
-          <div class="prep-text">
-            <strong>推荐武器：</strong>用<em>白银莱尼尔刃角</em>余料建造的双手重武器（攻击力120+），以及<strong>大师之剑</strong>（不可破损，是第三阶段击碎秘石的唯一选择）。
-          </div>
-        </div>
-        <div class="prep-item">
-          <div class="prep-icon">🌿</div>
-          <div class="prep-text">
-            <strong>消耗品：</strong><em>向阳草料理</em>（向阳草×3 + 金苹果或肉）<strong>大量备齐</strong>，用于回复被瘴气攻击打碎的心心上限。建议备齐 10 份以上再进场。
-          </div>
-        </div>
-        <div class="prep-item">
-          <div class="prep-icon">✨</div>
-          <div class="prep-text">
-            <strong>贤者状态：</strong>确保<em>五位贤者（水/火/风/雷/魂）</em>均已解锁。第二阶段需要贤者牵制五个分身，贤者缺席会让战斗难度倍增。
-          </div>
-        </div>
-        <div class="detail-tip" style="margin-top:6px">
-          <strong>小提示：</strong>在进入最终Boss战之前，可以在地底附近的地图区域提前吃好所有增益料理（攻击+料理持续时间至少覆盖整场战斗）。
-        </div>
+        <div class="prep-card-title">�️ 战前核心整备</div>
+        <table class="prep-table">
+          <thead>
+            <tr>
+              <th>物资类型</th>
+              <th>推荐携带</th>
+              <th>核心作用</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-type">武器</td>
+              <td class="td-name"><em>大师之剑</em>（自带高额面板且不耗耐久）</td>
+              <td>核心近战输出，第三阶段击碎秘石的必备之选</td>
+            </tr>
+            <tr>
+              <td class="td-type">弓</td>
+              <td class="td-name"><em>兽神弓</em>（3连发/5连发）</td>
+              <td>核心输出与远程压制</td>
+            </tr>
+            <tr>
+              <td class="td-type">盾牌</td>
+              <td class="td-name"><em>海拉鲁盾</em>（高耐久度）<br><em>融合【火箭】或【炸弹花】的备用盾</em></td>
+              <td>强行起飞，开启空中"子弹时间"</td>
+            </tr>
+            <tr>
+              <td class="td-type">料理</td>
+              <td class="td-name"><em>5个向阳草</em>制作的料理（5~10份）</td>
+              <td>大生命/大活力料理<br>修复被瘴气侵蚀的心心上限</td>
+            </tr>
+            <tr>
+              <td class="td-type">防具</td>
+              <td class="td-name"><em>鬼神套装</em> 或 <em>蛮族套装</em>（吃满3级攻击加成）</td>
+              <td>大幅缩短战线，降低容错压力</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <!-- 第一阶段 -->
@@ -454,86 +505,96 @@
         <div class="phase-header">
           <div class="phase-num phase-num-1">01</div>
           <div>
-            <div class="phase-title">第一阶段 · 黑发黑衣人形态</div>
-            <div class="phase-subtitle">三种武器形态交替出现，以完美闪避为核心</div>
-          </div>
-        </div>
-        <div class="phase-body">
-          <div class="move-row">
-            <div class="move-name">🗡 剑形态（瞬移突刺）</div>
-            <div class="move-desc">
-              加侬多夫手持单剑高速突刺。<br>
-              · <em>横劈</em>：ZL 锁定 + <strong>向后跳</strong>触发突击回避<br>
-              · <em>竖劈</em>：ZL 锁定 + <strong>向侧方跳</strong>触发突击回避
-            </div>
-          </div>
-          <div class="move-row">
-            <div class="move-name">🔱 长枪形态（直线冲锋）</div>
-            <div class="move-desc">
-              他手持长枪低身前倾，直线高速冲来。<br>
-              · 前倾动作出现<strong>瞬间</strong>：ZL + <em>侧跳</em>，时机最好把握，也是最容易触发突击的招式。
-            </div>
-          </div>
-          <div class="move-row">
-            <div class="move-name">🔨 大锤形态（跳跃下劈）</div>
-            <div class="move-desc">
-              他举起巨锤跳跃后垂直下劈，范围大、冲击波扩散。<br>
-              · <strong>不建议闪避</strong>，范围过大容错率低。建议<em>向后拉开距离</em>，或趁蓄力时<em>弓箭爆头</em>打断动作。
-            </div>
-          </div>
-          <div class="detail-tip">
-            <strong>阶段一要点：</strong>耐心等待每次招式起手动作，专注完美闪避换取突击输出。建议优先打第一血条的 1/3 后他会进入过场动画进入第二阶段。
-          </div>
-        </div>
-      </div>
-
-      <!-- 第二阶段 -->
-      <div class="phase-card phase-card-2">
-        <div class="phase-header">
-          <div class="phase-num phase-num-2">02</div>
-          <div>
-            <div class="phase-title">第二阶段 · 秘石解放形态</div>
-            <div class="phase-subtitle">五个幻影加侬分身登场，后半段学会完美闪避</div>
+            <div class="phase-title">🔹 第一阶段：秘石解放 · 武器大师</div>
+            <div class="phase-subtitle">加侬多夫频繁切换三种武器，以完美闪避为核心的纯剑术对决</div>
           </div>
         </div>
         <div class="phase-body">
           <div class="detail-warning">
-            <strong>⚠ 阶段开局：</strong>加侬多夫召唤五个幻影加侬分身同时围攻。<strong>不要在地面被围，</strong>立刻召唤五位贤者！
+            <strong>⚠ 被动机制：</strong>如果你直接上去平砍，他会<strong>百分之百触发后撤闪避并反击</strong>。不要主动攻击！拉开1到2个身位，观察他的武器起手式。
           </div>
-          <div>
-            <div style="font-size:0.78rem;font-weight:700;color:var(--text-primary);margin-bottom:8px">前半段：贤者牵制 → 直攻本体</div>
-            <div class="phase-steps">
-              <div class="phase-step">
-                <div class="pstep-num-2">1</div>
-                <div class="pstep-text">
-                  让<em>五位贤者</em>分别缠住五个分身，自己无视分身<strong>直接冲向本体</strong>（红发魔王本体，站在最后方）。
-                </div>
-              </div>
-              <div class="phase-step">
-                <div class="pstep-num-2">2</div>
-                <div class="pstep-text">
-                  本体此时与第一阶段招式相同，继续用<em>完美闪避</em>打突击，大幅消耗血量。
-                </div>
-              </div>
+          <div class="move-row">
+            <div class="move-name">🗡 单手剑 · 横劈</div>
+            <div class="move-desc">
+              看到他横劈，<em>立刻向后跳</em>（按住ZL + 摇杆后 + X）触发<strong>完美闪避（林克时间）</strong>。
             </div>
           </div>
-          <div>
-            <div style="font-size:0.78rem;font-weight:700;color:var(--text-primary);margin-bottom:8px">后半段：魔王学会完美闪避！两种破解方法</div>
-            <div class="move-row">
-              <div class="move-name" style="color:#c084fc">方法 A · 二次闪避打法</div>
-              <div class="move-desc">
-                他在你攻击时触发完美闪避，并在闪避后<strong>立刻反刺</strong>。此时你<em>立刻再次进行完美闪避</em>，触发第二次突击——他无法对第二次突击再行回避，此招必中。
-              </div>
+          <div class="move-row">
+            <div class="move-name">⚔ 大剑 · 蓄力下砸</div>
+            <div class="move-desc">
+              看到他蓄力下砸，<em>立刻向左右侧跳</em>躲避冲击波。
             </div>
-            <div class="move-row" style="margin-top:8px">
-              <div class="move-name" style="color:#4ade80">方法 B · 盾反流（最安全）</div>
-              <div class="move-desc">
-                <strong>ZL 举盾防御</strong>，等他的武器砍中盾牌的<em>瞬间</em>按 A 键盾反。盾反触发后他<strong>绝对无法再次闪避</strong>，必定进入僵直，趁机疯狂输出。
-              </div>
+          </div>
+          <div class="move-row">
+            <div class="move-name">� 长枪 · 突刺冲锋</div>
+            <div class="move-desc">
+              看到他持枪突刺，<em>立刻向左右侧跳</em>。
             </div>
           </div>
           <div class="detail-tip">
-            <strong>阶段二要点：</strong>方法 B（盾反）是最稳定的打法，一旦掌握节奏几乎可以无伤通过后半段。推荐携带高耐久盾牌（骑士盾/皇家护盾）。
+            <strong>💡 无脑逃课法：</strong>掏出<em>融合了火箭的盾牌</em>直接飞天，在空中用多发弓箭黏上"吉布得的骨头"，<strong>疯狂爆头</strong>。
+          </div>
+        </div>
+      </div>
+
+      <!-- 第二阶段前半 -->
+      <div class="phase-card phase-card-2">
+        <div class="phase-header">
+          <div class="phase-num phase-num-2">02</div>
+          <div>
+            <div class="phase-title">🔹 第二阶段（前半）：魔王形态 · 分身围殴</div>
+            <div class="phase-subtitle">加侬多夫血条第一次拉长，召唤4个黑影分身，海拉鲁五贤者全员加入</div>
+          </div>
+        </div>
+        <div class="phase-body">
+          <div class="phase-steps">
+            <div class="phase-step">
+              <div class="pstep-num-2">1</div>
+              <div class="pstep-text">
+                <strong>绝对不要去管分身</strong>，把他们交给<em>贤者</em>去牵制。
+              </div>
+            </div>
+            <div class="phase-step">
+              <div class="pstep-num-2">2</div>
+              <div class="pstep-text">
+                你只需要在战场边缘游走，<em>锁定血条最长、头顶有名字的本体</em>。
+              </div>
+            </div>
+            <div class="phase-step">
+              <div class="pstep-num-2">3</div>
+              <div class="pstep-text">
+                绕到他身后，用<strong>高攻武器疯狂偷刀</strong>。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第二阶段后半 -->
+      <div class="phase-card phase-card-2b">
+        <div class="phase-header">
+          <div class="phase-num phase-num-2b">02+</div>
+          <div>
+            <div class="phase-title">🔹 第二阶段（后半）：真·魔王形态 · 终极博弈</div>
+            <div class="phase-subtitle">分身消失，血条彻底拉满突破屏幕边界——全游戏难度最高阶段</div>
+          </div>
+        </div>
+        <div class="phase-body">
+          <div class="detail-warning">
+            <strong>⚠ 核心危机：</strong>他的部分瘴气攻击会<strong>直接粉碎你的心心</strong>（碎掉的心心无法用向阳草料理恢复）。
+          </div>
+          <div class="move-row">
+            <div class="move-name" style="color:#f87171">🔄 神技防反（博弈核心）</div>
+            <div class="move-desc">
+              当你对他触发"完美闪避"并疯狂砍他时，他会同样触发"林克时间"闪避掉你的攻击，并对你展开<strong>致命反击</strong>！<br><br>
+              <strong>【破解方法】：</strong>当你看到他闪避了你的林克时间并出招时，不要慌，<em>立刻再次按下闪避键（二段闪避）</em>！ 只要你成功闪避了他的"反闪避"，就能真正触发属于你的<em>终极林克时间</em>。
+            </div>
+          </div>
+          <div class="move-row">
+            <div class="move-name" style="color:#f87171">🌑 全屏瘴气流</div>
+            <div class="move-desc">
+              当他释放扩散的瘴气圆环时，<em>立刻踩在火箭盾上升空</em>，在空中拉弓用"子弹时间"<strong>射爆他的头部</strong>将其打断。
+            </div>
           </div>
         </div>
       </div>
@@ -543,45 +604,45 @@
         <div class="phase-header">
           <div class="phase-num phase-num-3">03</div>
           <div>
-            <div class="phase-title">第三阶段 · 黑龙形态（空战）</div>
-            <div class="phase-subtitle">骑乘白龙背上，空中破坏四处秘石弱点</div>
+            <div class="phase-title">🔹 第三阶段：黑龙形态 · 机制空战</div>
+            <div class="phase-subtitle">加侬多夫吞下秘石化身黑龙，林克与白龙展开高空配合</div>
           </div>
         </div>
         <div class="phase-body">
+          <div class="detail-tip">
+            <strong>✨ 纯机制福利关卡：</strong>BGM极燃，只要不失误绝对稳过。
+          </div>
           <div class="phase-steps">
             <div class="phase-step">
               <div class="pstep-num-3">1</div>
               <div class="pstep-text">
-                加侬多夫吞下秘石化为<strong>黑龙</strong>，塞尔达也化为<em>白龙</em>出现。跳上白龙背部，扶稳后开始空战。
+                从<em>白龙背上跃下</em>，利用滑翔伞调整方向，朝着<strong>黑龙背上的发光红肿弱点</strong>俯冲。
               </div>
             </div>
             <div class="phase-step">
               <div class="pstep-num-3">2</div>
               <div class="pstep-text">
-                黑龙会不断吐出<strong>红色光球</strong>，乘白龙时注意<em>左右移动躲避</em>，被直接命中大幅扣血。
+                降落到弱点附近，用<em>大师之剑</em>疯狂砍碎<strong>发光晶体</strong>。
               </div>
             </div>
             <div class="phase-step">
               <div class="pstep-num-3">3</div>
               <div class="pstep-text">
-                黑龙背上共有 <strong>4 处粉红色秘石弱点</strong>（发光凸起）。白龙向黑龙俯冲接近时，<em>跳上黑龙背部对准弱点</em>连续按 Y 砍 2～3 下破坏一处。
+                每砍碎一个，黑龙会把你弹飞。<em>被弹飞后不用慌</em>，白龙会准时飞过来在半空中接住你，带你重新升空。
               </div>
             </div>
             <div class="phase-step">
               <div class="pstep-num-3">4</div>
               <div class="pstep-text">
-                每破坏一处弱点后，林克会被弹飞，白龙会<em>自动飞来接住</em>你——不用担心坠落。重新骑上白龙继续下一个弱点。
+                依次破坏掉背部 <strong>4 个弱点</strong>后，黑龙头部会汇聚红光。
               </div>
             </div>
             <div class="phase-step">
               <div class="pstep-num-3">5</div>
               <div class="pstep-text">
-                全部 4 个弱点破坏完毕后，白龙会驮着林克俯冲至黑龙<strong>头部位置</strong>。对着头顶巨大秘石<em>疯狂按 A</em>，用大师之剑将其击碎，触发通关过场动画。
+                直接俯冲降落到它脑门上的<strong>秘石处</strong>，一刀插碎秘石，即可迎来<em>通关CG</em>！
               </div>
             </div>
-          </div>
-          <div class="detail-tip">
-            <strong>阶段三要点：</strong>此阶段大师之剑是最佳武器（不会损坏），其他强力武器也可以使用。弱点破坏顺序随机，建议优先攻击距离最近的。
           </div>
           <div class="detail-warning">
             <strong>注意：</strong>如果在黑龙背上被甩落，白龙会接住——<strong>请不要提前开伞</strong>，开伞后白龙无法接你，可能坠入云层导致扣血。
