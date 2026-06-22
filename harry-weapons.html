@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="王国之泪七宝匕首终极攻略——138攻击力合成方法、无限续航秘籍，海拉鲁日常最强单手剑完整图文教学。">
+  <meta name="keywords" content="王国之泪,七宝匕首,终极武器,余料建造,138攻击力,无限续航">
+  <title>七宝匕首终极攻略 · 哈里的终极秘籍 · 王国之泪</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .article-header {
+      background: linear-gradient(135deg, rgba(255,106,42,0.12), rgba(201,162,39,0.06));
+      border: 1px solid rgba(255,106,42,0.3);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 28px;
+    }
+    .article-tag {
+      display: inline-block;
+      background: rgba(255,106,42,0.15);
+      border: 1px solid #ff6a2a;
+      color: #ff6a2a;
+      padding: 3px 12px;
+      border-radius: 12px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .article-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #c9a227;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .article-subtitle {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.6;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(201,162,39,0.15);
+      font-size: 0.75rem;
+      color: rgba(201,162,39,0.55);
+    }
+    .article-body {
+      font-size: 0.93rem;
+      line-height: 1.85;
+      color: rgba(255,255,255,0.82);
+    }
+    .article-body h2 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #c9a227;
+      margin: 32px 0 14px;
+      padding-left: 12px;
+      border-left: 3px solid #ff6a2a;
+    }
+    .article-body h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: rgba(255,200,100,0.9);
+      margin: 22px 0 10px;
+    }
+    .article-body p { margin-bottom: 14px; }
+    .article-body ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 16px;
+    }
+    .article-body ul li {
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-bottom: 1px solid rgba(201,162,39,0.06);
+    }
+    .article-body ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #ff6a2a;
+    }
+    .tip-box {
+      background: rgba(255,106,42,0.08);
+      border: 1px solid rgba(255,106,42,0.3);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 18px 0;
+      font-size: 0.87rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.75);
+    }
+    .tip-box .tip-title {
+      font-weight: 700;
+      color: #ff6a2a;
+      margin-bottom: 6px;
+    }
+    .step-box {
+      background: rgba(201,162,39,0.05);
+      border: 1px solid rgba(201,162,39,0.2);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 16px 0;
+    }
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: #c9a227;
+      color: #0a0a14;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    .stat-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .stat-item {
+      background: rgba(201,162,39,0.07);
+      border: 1px solid rgba(201,162,39,0.22);
+      border-radius: 8px;
+      padding: 12px 16px;
+      text-align: center;
+    }
+    .stat-val {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #c9a227;
+      display: block;
+    }
+    .stat-lbl {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.5);
+      margin-top: 3px;
+    }
+    .warn-box {
+      background: rgba(255,193,7,0.07);
+      border: 1px solid rgba(255,193,7,0.35);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.75);
+    }
+    .article-nav {
+      display: flex;
+      gap: 12px;
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(201,162,39,0.18);
+      flex-wrap: wrap;
+    }
+    .article-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid rgba(201,162,39,0.35);
+      color: rgba(201,162,39,0.8);
+      background: rgba(201,162,39,0.06);
+      transition: all .2s;
+    }
+    .article-nav a:hover { background: rgba(201,162,39,0.14); color: #c9a227; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li><a href="boss.html">Boss图鉴</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li>
+          <li><a href="sage-will.html">贤者的遗志</a></li>
+        </ul>
+      </li>
+      <li><a href="harry-tips.html" class="active">哈里的终极秘籍</a></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-body" style="max-width:860px">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span>
+    <a href="harry-tips.html">哈里的终极秘籍</a><span class="sep">›</span>
+    <span class="cur">七宝匕首终极攻略</span>
+  </nav>
+
+  <!-- 文章头部 -->
+  <div class="article-header">
+    <span class="article-tag">⚔ 武器攻略</span>
+    <div class="article-title">海拉鲁无脑砍王！<br>《王国之泪》无可争议的日常终极神器——七宝匕首</div>
+    <div class="article-subtitle">单手剑138攻击力、强力组合词条、耐久几乎不损耗，还能无限续航——这才是真正的海拉鲁日常战神</div>
+    <div class="article-meta">
+      <span>🧙 作者：哈里</span>
+      <span>⚔ 武器合成 · 余料建造</span>
+      <span>📖 深度攻略</span>
+    </div>
+  </div>
+
+  <div class="article-body">
+
+    <p>在《塞尔达传说：王国之泪》中，因为"余料建造"玩法的加入，武器系统迎来了大洗牌。很多萌新可能会盲目追求面板攻击力极高的"近卫双手剑"，但老司机都知道，近卫双手剑那是留给"人马搓背"专用的。如果论<strong style="color:#c9a227">日常跑图、越级打怪、砍树割草、持久输出</strong>的综合性价比之王，那绝对非乌尔波扎的遗物——<strong style="color:#ff6a2a">「七宝匕首」</strong>莫属！今天这篇硬核图文攻略，就手把手带你把这把"海拉鲁续航流天花板"做出来！</p>
+
+    <!-- 核心数据 -->
+    <div class="stat-box">
+      <div class="stat-item">
+        <span class="stat-val">28</span>
+        <span class="stat-lbl">基础攻击力</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">138</span>
+        <span class="stat-lbl">终极形态攻击力</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">60</span>
+        <span class="stat-lbl">基础耐久度</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">×2</span>
+        <span class="stat-lbl">强力组合余料加成</span>
+      </div>
+    </div>
+
+    <h2>一、为什么七宝匕首是当之无愧的"日常战神"？</h2>
+
+    <p>普通的格鲁德武器虽然也有"强力组合"词条（让装上去的材料攻击力翻倍），但是有一个致命的负面 BUFF——<strong>掉耐久掉得极快</strong>，砍两下就碎了。然而，作为英杰武器的「七宝匕首」却完美避开了这个坑！</p>
+
+    <p>它不仅拥有【强力组合】词条，而且<strong style="color:#ff6a2a">完全不扣除基础耐久</strong>！基础耐久高达60点，不仅面板攻击高，而且极其耐操，是全游戏最完美的单手剑胚子。</p>
+
+    <ul>
+      <li>基础攻击力：<strong>28点</strong></li>
+      <li>武器特效【强力组合】：附加的余料攻击力直接<strong>翻倍</strong>！</li>
+      <li>终极形态面板：<strong>28 + (55 × 2) = 138点</strong>——单手剑攻速极快，一秒万伤不是梦！</li>
+    </ul>
+
+    <!-- 七宝匕首武器图片 -->
+    <div style="text-align:center;margin:28px 0;">
+      <img src="images/weapons/七宝匕首.jpg"
+           alt="七宝匕首——《王国之泪》日常终极神器"
+           style="max-width:280px;width:60%;border-radius:12px;
+                  border:1px solid rgba(201,162,39,0.35);
+                  box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);
+                  background:rgba(10,10,20,0.5);"
+           loading="lazy">
+      <div style="margin-top:10px;font-size:0.78rem;color:rgba(201,162,39,0.55);letter-spacing:.06em;">
+        ▲ 七宝匕首——海拉鲁日常续航神器
+      </div>
+    </div>
+
+    <h2>二、合成神兵需要哪些原材料？</h2>
+
+    <p>想要获得七宝匕首，我们需要走一趟<strong>格鲁德小镇（女儿国）</strong>完成特定任务，并准备好以下"重工业材料"：</p>
+
+    <div class="tip-box">
+      <div class="tip-title">📦 所需材料清单</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:14px;margin-top:14px;">
+        <div style="text-align:center;">
+          <img src="images/items/gerudo-sword.png" alt="格鲁德之剑"
+               style="width:72px;height:72px;object-fit:contain;border-radius:8px;
+                      background:rgba(255,255,255,0.05);border:1px solid rgba(201,162,39,0.2);
+                      padding:6px;" loading="lazy">
+          <div style="margin-top:6px;font-size:0.78rem;color:rgba(255,255,255,0.75);">格鲁德之剑</div>
+          <div style="font-size:0.72rem;color:#c9a227;font-weight:700;">× 1</div>
+        </div>
+        <div style="text-align:center;">
+          <img src="images/items/gerudo-shield.png" alt="格鲁德盾"
+               style="width:72px;height:72px;object-fit:contain;border-radius:8px;
+                      background:rgba(255,255,255,0.05);border:1px solid rgba(201,162,39,0.2);
+                      padding:6px;" loading="lazy">
+          <div style="margin-top:6px;font-size:0.78rem;color:rgba(255,255,255,0.75);">格鲁德盾</div>
+          <div style="font-size:0.72rem;color:#c9a227;font-weight:700;">× 1</div>
+        </div>
+        <div style="text-align:center;">
+          <img src="images/items/diamond.png" alt="钻石"
+               style="width:72px;height:72px;object-fit:contain;border-radius:8px;
+                      background:rgba(255,255,255,0.05);border:1px solid rgba(201,162,39,0.2);
+                      padding:6px;" loading="lazy">
+          <div style="margin-top:6px;font-size:0.78rem;color:rgba(255,255,255,0.75);">钻石</div>
+          <div style="font-size:0.72rem;color:#c9a227;font-weight:700;">× 4</div>
+        </div>
+        <div style="text-align:center;">
+          <img src="images/items/flint.png" alt="打火石"
+               style="width:72px;height:72px;object-fit:contain;border-radius:8px;
+                      background:rgba(255,255,255,0.05);border:1px solid rgba(201,162,39,0.2);
+                      padding:6px;" loading="lazy">
+          <div style="margin-top:6px;font-size:0.78rem;color:rgba(255,255,255,0.75);">打火石</div>
+          <div style="font-size:0.72rem;color:#c9a227;font-weight:700;">× 10</div>
+        </div>
+      </div>
+      <div style="margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,106,42,0.2);">
+        <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+          <div style="text-align:center;">
+            <img src="images/items/silver-lynel-horn.png" alt="白银人马的刃角"
+                 style="width:80px;height:80px;object-fit:contain;border-radius:8px;
+                        background:rgba(255,255,255,0.05);border:1px solid rgba(255,106,42,0.35);
+                        padding:6px;" loading="lazy">
+            <div style="margin-top:6px;font-size:0.78rem;color:rgba(255,255,255,0.75);">白银人马的刃角</div>
+            <div style="font-size:0.72rem;color:#ff6a2a;font-weight:700;">× 1</div>
+          </div>
+          <div style="flex:1;font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.7;">
+            合成后追加：<strong style="color:#ff6a2a">白银人马的刃角 × 1</strong><br>
+            （余料建造用，攻击力+55）
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>三、详细获取与合成步骤（手把手保姆级教学）</h2>
+
+    <div class="step-box">
+      <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px">
+        <span class="step-num">1</span>
+        <div>
+          <strong style="color:#c9a227">解锁"英杰武器铸造资格"</strong>
+          <p style="margin-top:8px;margin-bottom:0">首先必须通关主线任务【格鲁德小镇的雷之神殿】，帮露珠女王解决木乃伊危机。随后前往格鲁德小镇的珠宝店，接取支线任务【行踪不定的老板】。带上几支炸弹箭，前往小镇西边的卢玛琳沙地，把"莫尔德拉吉克"（沙兽）干掉，救出珠宝店老板。回到小镇，找工匠玛卡利萨对话，正式开启英杰武器铸造服务。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 莫尔德拉吉克图片 -->
+    <div style="text-align:center;margin:20px 0;">
+      <img src="images/items/molduga.jpeg"
+           alt="莫尔德拉吉克（沙兽）——格鲁德沙漠的守门人"
+           style="max-width:100%;width:580px;border-radius:12px;
+                  border:1px solid rgba(201,162,39,0.3);
+                  box-shadow:0 4px 24px rgba(0,0,0,0.7),0 0 20px rgba(201,162,39,0.1);"
+           loading="lazy">
+      <div style="margin-top:10px;font-size:0.78rem;color:rgba(201,162,39,0.55);letter-spacing:.06em;">
+        ▲ 莫尔德拉吉克——格鲁德沙漠卢玛琳沙地的沙兽，击败它才能解锁英杰武器铸造
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px">
+        <span class="step-num">2</span>
+        <div>
+          <strong style="color:#c9a227">交付材料，打造基础胚子</strong>
+          <p style="margin-top:8px;margin-bottom:0">把准备好的1把格鲁德之剑、1面格鲁德盾、4颗钻石和10个打火石拍在工匠桌上。一阵密集的打铁声后，基础面板28攻击力的<strong>【七宝匕首】</strong>正式入手！</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div style="display:flex;align-items:flex-start;gap:10px">
+        <span class="step-num">3</span>
+        <div>
+          <strong style="color:#c9a227">灵魂注入！余料建造合成138神兵</strong>
+          <p style="margin-top:8px;margin-bottom:0">此时的七宝匕首还只是个半成品。立刻把<strong>【白银人马的刃角】</strong>（攻击力+55）丢在地上，开启林克的【余料建造】技能，对准人马角狠狠一吸！伴随着清脆特效音，七宝匕首面板将瞬间飙升至<strong style="color:#ff6a2a;font-size:1.1em">138点</strong>！</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>独家秘笈：七宝匕首快碎了怎么办？（无限续航流）</h2>
+
+    <p>这个方法利用普通武器可以被章鱼修复的特性，把七宝匕首伪装成"配件"一起打包修复。请务必严格按顺序操作，步骤错一步可能导致武器损毁！</p>
+
+    <div class="warn-box">
+      ⚠️ <strong>操作前提醒：</strong>由于步骤复杂，强烈建议先在游戏中存档，操作失败可以即时读档重来。
+    </div>
+
+    <div class="step-box">
+      <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:14px">
+        <span class="step-num">1</span>
+        <div>
+          <strong style="color:#c9a227">拆下昂贵材料（可选）— 前往塔尔里镇</strong>
+          <p style="margin-top:8px;margin-bottom:0">如果七宝匕首上已经粘了白银人马的刃角，直接修复会将其覆盖。建议先去塔尔里镇（一卡拉村）找小鼓隆族NPC<strong>帕黎恩</strong>，花<strong>20卢比</strong>把材料完好地拆下来放进背包。</p>
+        </div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:14px">
+        <span class="step-num">2</span>
+        <div>
+          <strong style="color:#c9a227">余料建造：张冠李戴 — 背包操作</strong>
+          <p style="margin-top:8px;margin-bottom:0">装备一把普通武器在手（旅人剑、骑士盾等）。把红血快碎的七宝匕首<strong>丢在地上</strong>，使用"余料建造"技能，将七宝匕首作为配件粘在普通武器上。</p>
+          <div class="tip-box" style="margin-top:8px">
+            <div class="tip-title">🔑 核心铁律</div>
+            必须是<strong>普通武器在手</strong>，七宝匕首在地上当配件！反过来操作就失败了。
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:14px">
+        <span class="step-num">3</span>
+        <div>
+          <strong style="color:#c9a227">喂给岩石章鱼 — 前往奥尔汀地区</strong>
+          <p style="margin-top:8px;margin-bottom:0">带着组合好的"连体武器"前往死亡山脉寻找<strong>岩石章鱼</strong>。把武器丢在它面前，等它吸入并冒出亮晶晶修复特效后，在它吐出来时立刻捡起。此时，基础武器和上面的七宝匕首会<strong>同时回满耐久</strong>！</p>
+        </div>
+      </div>
+      <!-- 岩石章鱼图片 -->
+      <div style="text-align:center;margin:18px 0 22px;">
+        <img src="images/items/章鱼.jpg"
+             alt="岩石章鱼修复武器——喂给它连体武器即可回满耐久"
+             style="max-width:100%;width:540px;border-radius:12px;
+                    border:1px solid rgba(201,162,39,0.3);
+                    box-shadow:0 4px 24px rgba(0,0,0,0.7),0 0 20px rgba(201,162,39,0.1);"
+             loading="lazy">
+        <div style="margin-top:9px;font-size:0.78rem;color:rgba(201,162,39,0.55);letter-spacing:.06em;">
+          ▲ 岩石章鱼——把"连体武器"丢在它面前，吐出来时就回满耐久了
+        </div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:10px">
+        <span class="step-num">4</span>
+        <div>
+          <strong style="color:#c9a227">回村拆解，完美复活 — 大功告成</strong>
+          <p style="margin-top:8px;margin-bottom:0">再次回到塔尔里镇找帕黎恩，花20卢比把修复好的组合武器拆开。你会得到一把<strong>全新满耐久七宝匕首</strong>！最后把之前拆下来的人马角重新合上去即可。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tip-box" style="margin-top:24px">
+      <div class="tip-title">🏆 老司机终极心得</div>
+      七宝匕首 + 白银人马的刃角 + 三级攻击料理 + 蛮族/鬼神套装，这是对抗白银人马的最优解。
+      拿白银人马的刃角打白银人马，属于是"以彼之道还施彼身"，非常有快感！
+    </div>
+
+    <!-- 文章导航 -->
+    <div class="article-nav">
+      <a href="harry-tips.html">← 返回秘籍专栏</a>
+      <a href="harry-cooking.html">下一篇：神级料理攻略 →</a>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

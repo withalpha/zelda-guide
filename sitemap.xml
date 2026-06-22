@@ -1,103 +1,154 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- 棣栭〉 -->
   <url>
-    <loc>https://zelda-guide.pages.dev/index.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://zelda-guide.pages.dev/main-quest.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/index.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
   </url>
+
+  <!-- 涓荤嚎浠诲姟 -->
   <url>
-    <loc>https://zelda-guide.pages.dev/side-quest.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zelda-guide.pages.dev/shrines.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zelda-guide.pages.dev/shrine-unlock.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/main-quest.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- 鎯呰妭鎸戞垬 -->
   <url>
-    <loc>https://zelda-guide.pages.dev/roots.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/side-quest.html</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 绁炲簷鎸戞垬 -->
+  <url>
+    <loc>https://zeldaguide.ccwu.cc/shrines.html</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 绁炲簷寮€鍚?-->
+  <url>
+    <loc>https://zeldaguide.ccwu.cc/shrine-unlock.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- 鐮撮瓟鏍戞牴 -->
   <url>
-    <loc>https://zelda-guide.pages.dev/weapons.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/roots.html</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 姝﹀櫒鍥鹃壌 -->
+  <url>
+    <loc>https://zeldaguide.ccwu.cc/weapons.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- 鏂欑悊鍚堟垚 -->
   <url>
-    <loc>https://zelda-guide.pages.dev/cooking.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/cooking.html</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 濂楄鑾峰彇 -->
+  <url>
+    <loc>https://zeldaguide.ccwu.cc/clothes.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Boss 鍥鹃壌 -->
   <url>
-    <loc>https://zelda-guide.pages.dev/clothes.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zelda-guide.pages.dev/boss.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/boss.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zelda-guide.pages.dev/boss-ganondorf.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/boss-ganondorf.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zelda-guide.pages.dev/boss-phantom-ganon.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/boss-phantom-ganon.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zelda-guide.pages.dev/boss-lynel.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/boss-lynel.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zelda-guide.pages.dev/boss-lynel-blue.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/boss-lynel-blue.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zelda-guide.pages.dev/boss-lynel-white.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/boss-lynel-white.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zelda-guide.pages.dev/boss-lynel-silver.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/boss-lynel-silver.html</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 鐗╁搧鏀堕泦 -->
+  <url>
+    <loc>https://zeldaguide.ccwu.cc/mauyu-lost.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zelda-guide.pages.dev/mauyu-lost.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/sage-will.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- 鍏充簬 / 闅愮鏀跨瓥 -->
   <url>
-    <loc>https://zelda-guide.pages.dev/sage-will.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zelda-guide.pages.dev/about.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/about.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://zelda-guide.pages.dev/privacy.html</loc>
+    <loc>https://zeldaguide.ccwu.cc/privacy.html</loc>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
 </urlset>

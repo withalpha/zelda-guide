@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="王国之泪最值得合成的料理攻略——四大神级配方详解，大剑蒸水果3级加攻、生命蒸水果满血复活、向阳牛奶粥恢复瘴气、毅力胡萝卜糕补精力，附核心食材高效采集路线。">
+  <meta name="keywords" content="王国之泪,料理攻略,神级配方,大剑蒸水果,生命蒸水果,向阳牛奶粥,毅力胡萝卜糕,食材采集">
+  <title>最值得合成的料理 · 哈里的终极秘籍 · 王国之泪</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .article-header {
+      background: linear-gradient(135deg, rgba(76,175,80,0.12), rgba(201,162,39,0.06));
+      border: 1px solid rgba(76,175,80,0.3);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 28px;
+    }
+    .article-tag {
+      display: inline-block;
+      background: rgba(76,175,80,0.15);
+      border: 1px solid #4caf50;
+      color: #4caf50;
+      padding: 3px 12px;
+      border-radius: 12px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .article-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #c9a227;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .article-subtitle {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.6;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(201,162,39,0.15);
+      font-size: 0.75rem;
+      color: rgba(201,162,39,0.55);
+    }
+    .article-body {
+      font-size: 0.93rem;
+      line-height: 1.85;
+      color: rgba(255,255,255,0.82);
+    }
+    .article-body h2 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #c9a227;
+      margin: 32px 0 14px;
+      padding-left: 12px;
+      border-left: 3px solid #4caf50;
+    }
+    .article-body p { margin-bottom: 14px; }
+    .recipe-card {
+      background: rgba(76,175,80,0.07);
+      border: 1px solid rgba(76,175,80,0.25);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    .recipe-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #81c784;
+      margin-bottom: 8px;
+    }
+    .recipe-effect {
+      color: rgba(201,162,39,0.9);
+      font-size: 0.85rem;
+      margin-bottom: 4px;
+    }
+    .recipe-ingredients {
+      font-family: monospace;
+      color: #4caf50;
+      font-size: 0.85rem;
+      margin: 8px 0;
+      padding: 8px 12px;
+      background: rgba(76,175,80,0.08);
+      border-radius: 6px;
+    }
+    .tip-box {
+      background: rgba(76,175,80,0.08);
+      border: 1px solid rgba(76,175,80,0.3);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 18px 0;
+      font-size: 0.87rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.75);
+    }
+    .tip-box .tip-title {
+      font-weight: 700;
+      color: #4caf50;
+      margin-bottom: 6px;
+    }
+    .ingredient-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+    .ingredient-table th {
+      background: rgba(201,162,39,0.12);
+      color: #c9a227;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.8rem;
+    }
+    .ingredient-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(201,162,39,0.1);
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.75);
+    }
+    .ingredient-table tr:hover td {
+      background: rgba(201,162,39,0.04);
+    }
+    .warn-box {
+      background: rgba(255,193,7,0.07);
+      border: 1px solid rgba(255,193,7,0.35);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.75);
+    }
+    .article-nav {
+      display: flex;
+      gap: 12px;
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(201,162,39,0.18);
+      flex-wrap: wrap;
+    }
+    .article-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid rgba(201,162,39,0.35);
+      color: rgba(201,162,39,0.8);
+      background: rgba(201,162,39,0.06);
+      transition: all .2s;
+    }
+    .article-nav a:hover { background: rgba(201,162,39,0.14); color: #c9a227; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li><a href="boss.html">Boss图鉴</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li>
+          <li><a href="sage-will.html">贤者的遗志</a></li>
+        </ul>
+      </li>
+      <li><a href="harry-tips.html" class="active">哈里的终极秘籍</a></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-body" style="max-width:860px">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span>
+    <a href="harry-tips.html">哈里的终极秘籍</a><span class="sep">›</span>
+    <span class="cur">最值得合成的料理</span>
+  </nav>
+
+  <!-- 文章头部 -->
+  <div class="article-header">
+    <span class="article-tag">🍳 料理攻略</span>
+    <div class="article-title">最值得合成的料理<br>——四大神级配方与食材批发攻略</div>
+    <div class="article-subtitle">瞬间满血、三级加攻、瘴气恢复、补满精力……告别那些乱七八糟的废菜谱，直接上最实用的核心配方</div>
+    <div class="article-meta">
+      <span>🧙 作者：哈里</span>
+      <span>🍳 烹饪系统 · 食材采集</span>
+      <span>📖 深度攻略</span>
+    </div>
+  </div>
+
+  <div class="article-body">
+
+    <p>在《塞尔达传说：王国之泪》里，海拉鲁大陆的烹饪系统极其自由，你可以把各种奇奇怪怪的东西丢进锅里。但讲真，通关或者开荒过程中，你真正需要频繁放进快捷栏的料理也就那么几种。通关大佬和速通玩家们基本都在用以下几款高性价比的"神级料理"。</p>
+
+    <p>下面直接给你干货，省去那些花里胡哨的菜谱，只看最实用、性价比最高的几种搭配，以及它们的素材该去哪里顺手薅一波。</p>
+
+    <div style="text-align:center;margin:22px 0;">
+      <img src="images/cooking_tips/image1.jpeg"
+           alt="王国之泪料理系统"
+           style="max-width:100%;width:580px;border-radius:12px;
+                  border:1px solid rgba(76,175,80,0.3);
+                  box-shadow:0 4px 24px rgba(0,0,0,0.7);"
+           loading="lazy">
+    </div>
+
+    <p><strong>核心必备：</strong></p>
+
+    <div class="warn-box">
+      ⚠️ <strong>四大神级料理配方</strong>——在《王国之泪》里，烹饪有一个隐藏的大原则：带特殊词条的食材（比如"大剑"、"生命"）绝对不要混搭，否则效果会互相抵消，变成一盘毫无卵用的普通回血菜。
+    </div>
+
+    <h2>四大神级料理详解</h2>
+
+    <div class="recipe-card">
+      <div class="recipe-name">🍎 瞬间满血神器：蒸水果</div>
+      <div class="recipe-ingredients">大生命萝卜 ×1 或者 生命松露 ×1</div>
+      <div style="display:flex;gap:14px;justify-content:center;margin:14px 0;">
+        <div style="text-align:center;">
+          <img src="images/cooking_tips/image2.png" alt="大生命萝卜"
+               style="width:80px;height:80px;object-fit:contain;border-radius:8px;
+                      background:rgba(255,255,255,0.05);border:1px solid rgba(76,175,80,0.25);
+                      padding:6px;" loading="lazy">
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.6);margin-top:4px;">大生命萝卜</div>
+        </div>
+        <div style="text-align:center;">
+          <img src="images/cooking_tips/image3.png" alt="生命松露"
+               style="width:80px;height:80px;object-fit:contain;border-radius:8px;
+                      background:rgba(255,255,255,0.05);border:1px solid rgba(76,175,80,0.25);
+                      padding:6px;" loading="lazy">
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.6);margin-top:4px;">生命松露</div>
+        </div>
+      </div>
+      <div class="recipe-effect">效果：无论你残血到什么程度，吃一个直接全血补满，并额外赠送若干黄金额外心心（黄心）。</div>
+      <div class="tip-box">
+        <div class="tip-title">💡 老司机心得</div>
+        千万别把 5 个生命萝卜一起煮！在本作中，只要带"生命"前缀的食材，哪怕只放一个，也能触发"完全恢复"的隐藏保底。单炒一个萝卜的性价比，比攒一锅高出太多。
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <div class="recipe-name">🍌 人人必备的伤害药：大剑蒸水果（3级加攻）</div>
+      <div class="recipe-ingredients">大剑香蕉 ×5</div>
+      <div style="text-align:center;margin:12px 0;">
+        <img src="images/cooking_tips/image4.png" alt="大剑香蕉"
+             style="width:80px;height:80px;object-fit:contain;border-radius:8px;
+                    background:rgba(255,255,255,0.05);border:1px solid rgba(76,175,80,0.25);
+                    padding:6px;" loading="lazy">
+        <div style="font-size:0.72rem;color:rgba(255,255,255,0.6);margin-top:4px;">大剑香蕉</div>
+      </div>
+      <div class="recipe-effect">效果：攻击力提升 3 级（最高级），持续 4分10秒。</div>
+      <div class="tip-box">
+        <div class="tip-title">💡 老司机心得</div>
+        打人马、打幻影加侬或者各种BOSS前的标准起手式。如果你手头有"大剑草"，也可以用 4 个香蕉 + 1 个大剑草替换，效果一样是3级加攻。
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <div class="recipe-name">🌿 地底救命稻草：野菜牛奶粥（恢复瘴气）</div>
+      <div class="recipe-ingredients">向阳草 + 鲜奶 + 海拉鲁米</div>
+      <div style="text-align:center;margin:12px 0;">
+        <img src="images/cooking_tips/image5.png" alt="野菜牛奶粥"
+             style="width:80px;height:80px;object-fit:contain;border-radius:8px;
+                    background:rgba(255,255,255,0.05);border:1px solid rgba(76,175,80,0.25);
+                    padding:6px;" loading="lazy">
+        <div style="font-size:0.72rem;color:rgba(255,255,255,0.6);margin-top:4px;">野菜牛奶粥</div>
+      </div>
+      <div class="recipe-effect">效果：恢复 3 到 4 个被瘴气封锁的"破碎心心"，并顺便回血。</div>
+      <div class="tip-box">
+        <div class="tip-title">💡 老司机心得</div>
+        地底开荒必带。纯用 5 个向阳草煮只能恢复瘴气不回血，稍微丢一块垃圾肉或者海拉鲁米进去，就能兼顾回血，非常划算。
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <div class="recipe-name">🥕 跑图飞檐走壁：胡萝卜蛋糕（额外精力）</div>
+      <div class="recipe-ingredients">速速胡萝卜✖1，毅力胡萝卜✖1，塔邦挞小麦✖1，蔗糖✖1，山羊奶油✖1</div>
+      <div style="text-align:center;margin:12px 0;">
+        <img src="images/cooking_tips/image6.jpeg" alt="胡萝卜蛋糕"
+             style="width:80px;height:80px;object-fit:contain;border-radius:8px;
+                    background:rgba(255,255,255,0.05);border:1px solid rgba(76,175,80,0.25);
+                    padding:6px;" loading="lazy">
+        <div style="font-size:0.72rem;color:rgba(255,255,255,0.6);margin-top:4px;">胡萝卜蛋糕</div>
+      </div>
+      <div class="recipe-effect">效果：瞬间补满你所有的精力槽（绿圈），并额外赠送一小段黄金圈（额外精力）。</div>
+      <div class="tip-box">
+        <div class="tip-title">💡 老司机心得</div>
+        爬大峭壁或者空中长途滑翔时，精力和体力快见底了？别慌，磕一个这个，直接原地复活还能飞得更远。
+      </div>
+    </div>
+
+    <h2>核心食材去哪捞？</h2>
+
+    <p>知道了配方，去哪儿高效进货才是关键。海拉鲁大陆有几个著名的"大自然批发市场"，传送过去拔腿就捞，几分钟就能装满背包。</p>
+
+    <table class="ingredient-table">
+      <thead>
+        <tr>
+          <th>食材名称</th>
+          <th>核心效果</th>
+          <th>最优采集地点与路线</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>大剑香蕉</td>
+          <td>3级攻击</td>
+          <td>费罗尼地区（地图右下角热带雨林）。尤其是湖畔驿站周边、乌尔利山附近的树林里遍地都是，顺便端了依盖队基地也能搜刮一堆。</td>
+        </tr>
+        <tr>
+          <td>向阳草</td>
+          <td>瘴气恢复</td>
+          <td>所有天空群岛（空岛）。比如初始空岛、或者有各种弹跳机关的空岛，只要在地上看到金黄色像向日葵一样的植物，拔就完了。地底极少。</td>
+        </tr>
+        <tr>
+          <td>大生命萝卜</td>
+          <td>完全复活</td>
+          <td>北哈特尔天空群岛、或者其他高级空岛的残垣断壁旁。这东西比较稀有，看到了一定要用图鉴拍照功能开启"寻找探测器"。</td>
+        </tr>
+        <tr>
+          <td>金苹果</td>
+          <td>料理暴击</td>
+          <td>萨托利山（监视堡垒西南方）的苹果园。山上有一片巨大的苹果林，里面混生着好几颗金苹果，拿来当引子可以让料理效果大成功。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="tip-box">
+      <div class="tip-title">🏆 老司机终极心得</div>
+      快捷栏建议常备：蒸水果×5 + 大剑蒸水果×10 + 野菜牛奶粥×5 + 胡萝卜蛋糕×5。这套组合可以应对90%的战斗和探索场景，从此告别手忙脚乱翻背包的窘境！
+    </div>
+
+    <div class="article-nav">
+      <a href="harry-weapons.html">← 上一篇：七宝匕首终极攻略</a>
+      <a href="harry-tips.html">返回秘籍专栏</a>
+      <a href="harry-armor.html">下一篇：套装全解析 →</a>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

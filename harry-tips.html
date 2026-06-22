@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="哈里的终极秘籍——王国之泪硬核攻略专栏，含终极武器、神级料理、最强套装深度解析。">
+  <meta name="keywords" content="王国之泪,哈里的终极秘籍,攻略,七宝匕首,套装,料理">
+  <title>哈里的终极秘籍 · 王国之泪攻略</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .harry-hero-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(201,162,39,0.2), rgba(201,162,39,0.05));
+      border: 1px solid rgba(201,162,39,0.5);
+      color: #c9a227;
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      letter-spacing: .15em;
+      margin-bottom: 12px;
+    }
+    .harry-author-card {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: linear-gradient(135deg, rgba(201,162,39,0.08), rgba(201,162,39,0.03));
+      border: 1px solid rgba(201,162,39,0.35);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .harry-author-avatar {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: linear-gradient(135deg, #c9a227, #8b6914);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; flex-shrink: 0;
+      border: 2px solid rgba(201,162,39,0.5);
+      box-shadow: 0 0 20px rgba(201,162,39,0.3);
+    }
+    .harry-author-name { font-size: 1.1rem; font-weight: 700; color: #c9a227; }
+    .harry-author-title { font-size: 0.78rem; color: rgba(201,162,39,0.6); margin-top: 2px; }
+    .harry-author-desc { font-size: 0.85rem; color: rgba(255,255,255,0.65); margin-top: 6px; line-height: 1.6; }
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .article-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: transform .2s, box-shadow .2s;
+      text-decoration: none;
+      display: block;
+    }
+    .article-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(201,162,39,0.2);
+    }
+    .article-card-banner {
+      height: 120px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem;
+    }
+    .article-card-body { padding: 18px 20px; }
+    .article-card-tag {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 12px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .tag-weapon { background: rgba(255,106,42,0.15); border: 1px solid #ff6a2a; color: #ff6a2a; }
+    .tag-cook   { background: rgba(76,175,80,0.15);  border: 1px solid #4caf50; color: #81c784; }
+    .tag-armor  { background: rgba(167,139,250,0.15);border: 1px solid #a78bfa; color: #a78bfa; }
+    .article-card-title {
+      font-size: 1rem; font-weight: 700; color: var(--text-primary);
+      line-height: 1.4; margin-bottom: 8px;
+    }
+    .article-card-desc {
+      font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;
+    }
+    .article-card-footer {
+      padding: 12px 20px;
+      border-top: 1px solid rgba(201,162,39,0.12);
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 0.75rem; color: rgba(201,162,39,0.6);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li><a href="boss.html">Boss图鉴</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li>
+          <li><a href="sage-will.html">贤者的遗志</a></li>
+        </ul>
+      </li>
+      <li><a href="harry-tips.html" class="active">哈里的终极秘籍</a></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="harry-hero-badge">HARRY'S ULTIMATE TIPS</div>
+  <h1 class="page-hero-title">🏆 哈里的终极秘籍</h1>
+  <p class="page-hero-subtitle">硬核老司机带你解锁王国之泪的隐藏玩法 · 4篇精选攻略</p>
+</div>
+
+<div class="page-body">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span><span class="cur">哈里的终极秘籍</span>
+  </nav>
+
+  <!-- 作者卡片 -->
+  <div class="harry-author-card">
+    <div class="harry-author-avatar">🧙</div>
+    <div>
+      <div class="harry-author-name">哈里</div>
+      <div class="harry-author-title">王国之泪硬核攻略作者 · 海拉鲁老司机</div>
+      <div class="harry-author-desc">
+        通关时间超过800小时，专注于研究王国之泪的机制深层玩法。
+        在这里分享那些教程视频不会告诉你的"老司机心得"——
+        真正能改变你游戏体验的秘籍与套路。
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <strong>📌 栏目说明：</strong>本栏目为哈里原创游戏攻略专栏，所有内容经过实际游戏验证，
+    涵盖武器合成、料理配方、套装搭配等核心玩法深度解析。
+    如果你不满足于只是"通关"，想要真正制霸海拉鲁，这里的内容正是为你准备的。
+  </div>
+
+  <!-- 文章列表 -->
+  <div class="section-label">📚 精选攻略文章（共4篇）</div>
+
+  <div class="article-grid">
+
+    <!-- 文章1：终极武器 -->
+    <a class="article-card" href="harry-weapons.html">
+      <div class="article-card-banner" style="background:linear-gradient(135deg,rgba(255,106,42,0.15),rgba(201,162,39,0.08))">⚔️</div>
+      <div class="article-card-body">
+        <span class="article-card-tag tag-weapon">武器攻略</span>
+        <div class="article-card-title">海拉鲁无脑砍王！《王国之泪》无可争议的日常终极神器——七宝匕首</div>
+        <div class="article-card-desc">单手剑138攻击力、耐久满满还能无限续航？格鲁德女工匠打造的七宝匕首才是真正的全能日常战神！</div>
+      </div>
+      <div class="article-card-footer">
+        <span>⚔ 武器合成 · 余料建造</span>
+        <span style="color:#c9a227">阅读全文 →</span>
+      </div>
+    </a>
+
+    <!-- 文章2：神级料理 -->
+    <a class="article-card" href="harry-cooking.html">
+      <div class="article-card-banner" style="background:linear-gradient(135deg,rgba(76,175,80,0.15),rgba(201,162,39,0.08))">🍳</div>
+      <div class="article-card-body">
+        <span class="article-card-tag tag-cook">料理攻略</span>
+        <div class="article-card-title">最值得合成的料理——四大神级配方与食材批发攻略</div>
+        <div class="article-card-desc">瞬间满血、三级加攻、瘴气恢复、补满精力……老司机精选4款核心料理，附高效食材采集路线！</div>
+      </div>
+      <div class="article-card-footer">
+        <span>🍳 烹饪系统 · 食材采集</span>
+        <span style="color:#c9a227">阅读全文 →</span>
+      </div>
+    </a>
+
+    <!-- 文章3：套装推荐 -->
+    <a class="article-card" href="harry-armor.html">
+      <div class="article-card-banner" style="background:linear-gradient(135deg,rgba(167,139,250,0.15),rgba(201,162,39,0.08))">🛡️</div>
+      <div class="article-card-body">
+        <span class="article-card-tag tag-armor">套装攻略</span>
+        <div class="article-card-title">《王国之泪》最强套装与隐藏特效全解析——三梯队完全推荐</div>
+        <div class="article-card-desc">输出流、功能流、环境应对……8套神装二星隐藏特效全解析，升完二星才是真正开始！</div>
+      </div>
+      <div class="article-card-footer">
+        <span>🛡 套装系统 · 升级特效</span>
+        <span style="color:#c9a227">阅读全文 →</span>
+      </div>
+    </a>
+
+    <!-- 文章4：神庙攻略 -->
+    <a class="article-card" href="harry-shrine-usazum.html">
+      <div class="article-card-banner" style="background:linear-gradient(135deg,rgba(0,188,212,0.15),rgba(201,162,39,0.08))">⛩️</div>
+      <div class="article-card-body">
+        <span class="article-card-tag" style="background:rgba(0,188,212,0.15);border:1px solid #00bcd4;color:#00bcd4;">神庙攻略</span>
+        <div class="article-card-title">乌萨诸马神庙（Usazum Shrine）零基础包教包会攻略</div>
+        <div class="article-card-desc">找到萨托利山麓底座 → 进洞智取西诺克斯 → 搬运水晶激活神庙，剑圣流和潜行流两种方法全解析！</div>
+      </div>
+      <div class="article-card-footer">
+        <span>⛩ 神庙开启 · 萨托利山麓</span>
+        <span style="color:#c9a227">阅读全文 →</span>
+      </div>
+    </a>
+
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

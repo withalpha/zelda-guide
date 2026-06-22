@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="王国之泪乌萨诸马神庙攻略——如何找到水晶、对付西诺克斯、激活神庙，含剑圣流和潜行流两种方法详解。">
+  <meta name="keywords" content="王国之泪,乌萨诸马神庙,Usazum Shrine,神庙攻略,西诺克斯,水晶">
+  <title>乌萨诸马神庙攻略 · 哈里的终极秘籍 · 王国之泪</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .article-header {
+      background: linear-gradient(135deg, rgba(0,188,212,0.12), rgba(201,162,39,0.06));
+      border: 1px solid rgba(0,188,212,0.3);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 28px;
+    }
+    .article-tag {
+      display: inline-block;
+      background: rgba(0,188,212,0.15);
+      border: 1px solid #00bcd4;
+      color: #00bcd4;
+      padding: 3px 12px;
+      border-radius: 12px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .article-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #c9a227;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .article-subtitle {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.6;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(201,162,39,0.15);
+      font-size: 0.75rem;
+      color: rgba(201,162,39,0.55);
+      flex-wrap: wrap;
+    }
+    .article-body {
+      font-size: 0.93rem;
+      line-height: 1.85;
+      color: rgba(255,255,255,0.82);
+    }
+    .article-body h2 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #c9a227;
+      margin: 32px 0 14px;
+      padding-left: 12px;
+      border-left: 3px solid #00bcd4;
+    }
+    .article-body h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: rgba(0,230,200,0.9);
+      margin: 20px 0 10px;
+      padding-left: 8px;
+    }
+    .article-body p { margin-bottom: 14px; }
+    .scene-box {
+      background: rgba(0,0,0,0.35);
+      border: 1px dashed rgba(0,188,212,0.3);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      font-style: italic;
+      line-height: 1.7;
+    }
+    .scene-box::before {
+      content: '🎬 ';
+    }
+    .method-card {
+      background: rgba(0,188,212,0.06);
+      border: 1px solid rgba(0,188,212,0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    .method-card.stealth {
+      background: rgba(103,58,183,0.06);
+      border-color: rgba(103,58,183,0.25);
+    }
+    .method-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #00bcd4;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .method-card.stealth .method-title { color: #b39ddb; }
+    .method-steps {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .method-steps li {
+      padding: 7px 0 7px 24px;
+      position: relative;
+      border-bottom: 1px solid rgba(0,188,212,0.08);
+      font-size: 0.88rem;
+      line-height: 1.65;
+    }
+    .method-card.stealth .method-steps li { border-color: rgba(103,58,183,0.08); }
+    .method-steps li::before {
+      content: '▸';
+      position: absolute;
+      left: 4px;
+      color: #00bcd4;
+    }
+    .method-card.stealth .method-steps li::before { color: #b39ddb; }
+    .tip-box {
+      background: rgba(0,188,212,0.07);
+      border: 1px solid rgba(0,188,212,0.28);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 18px 0;
+      font-size: 0.87rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.75);
+    }
+    .tip-title {
+      font-weight: 700;
+      color: #00bcd4;
+      margin-bottom: 6px;
+    }
+    .reward-box {
+      background: linear-gradient(135deg, rgba(201,162,39,0.1), rgba(201,162,39,0.04));
+      border: 1px solid rgba(201,162,39,0.35);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin: 20px 0;
+    }
+    .reward-title {
+      font-weight: 700;
+      color: #c9a227;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    .reward-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 0;
+      font-size: 0.87rem;
+      color: rgba(255,255,255,0.75);
+      border-bottom: 1px solid rgba(201,162,39,0.08);
+    }
+    .reward-item:last-child { border-bottom: none; }
+    .article-nav {
+      display: flex;
+      gap: 12px;
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(201,162,39,0.18);
+      flex-wrap: wrap;
+    }
+    .article-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid rgba(201,162,39,0.35);
+      color: rgba(201,162,39,0.8);
+      background: rgba(201,162,39,0.06);
+      transition: all .2s;
+    }
+    .article-nav a:hover { background: rgba(201,162,39,0.14); color: #c9a227; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li><a href="boss.html">Boss图鉴</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li>
+          <li><a href="sage-will.html">贤者的遗志</a></li>
+        </ul>
+      </li>
+      <li><a href="harry-tips.html" class="active">哈里的终极秘籍</a></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-body" style="max-width:860px">
+  <nav class="breadcrumb">
+    <a href="index.html">首页</a><span class="sep">›</span>
+    <a href="harry-tips.html">哈里的终极秘籍</a><span class="sep">›</span>
+    <span class="cur">乌萨诸马神庙攻略</span>
+  </nav>
+
+  <div class="article-header">
+    <span class="article-tag">⛩ 神庙攻略</span>
+    <div class="article-title">乌萨诸马神庙（Usazum Shrine）零基础包教包会攻略</div>
+    <div class="article-subtitle">找位置 → 进洞窟 → 搞定西诺克斯 → 搬水晶 → 激活神庙 · 全流程详解</div>
+    <div class="article-meta">
+      <span>🧙 作者：哈里</span>
+      <span>⛩ 神庙开启类</span>
+      <span>📍 萨托利山麓</span>
+      <span>📖 零基础攻略</span>
+    </div>
+  </div>
+
+  <div class="article-body">
+
+    <p>各位海拉鲁的居民们，今天咱们来聊聊这个让不少人摸不着头脑的<strong style="color:#00bcd4">乌萨诸马神庙（Usazum Shrine）</strong>。</p>
+
+    <p>废话不多说，直接上这篇"零基础、包教包会"的实况图文攻略。</p>
+
+    <h2>第一步：找到神庙底座</h2>
+
+    <p>神庙的位置在<strong>萨托利山麓（海拉鲁平原的西边一点）</strong>。当你哼着小曲儿溜达过去的时候，会发现那里只有一个光秃秃的神庙底座。</p>
+
+    <div class="scene-box">
+      林克站在一个圆环底座前，按 A 键互动后，一道绿油油的激光冲天而起，直指远方的一座山崖——这就是在告诉你："兄弟，去顺着光把我的水晶搬回来。"
+    </div>
+
+    <p>别犹豫，<strong>顺着这道绿光走</strong>。你会发现绿光指引你来到了一个洞窟——<strong>萨托利山麓的洞窟</strong>。</p>
+
+    <h2>⚔️ 第二步：进洞寻宝，遇到"熟人"</h2>
+
+    <p>刚进洞窟的时候，环境有点暗，走两步你就会听到一阵震耳欲聋的呼噜声。顺着绿光往里走，你会看到一个无比熟悉的身影——一只巨大的<strong style="color:#ff6a6a">西诺克斯（独眼巨怪）</strong>正在呼呼大睡。</p>
+
+    <p>而我们要找的绿色水晶，好巧不巧，正作为一条"项链"挂在这位大哥的脖子上！</p>
+
+    <div class="scene-box">
+      一只巨大的西诺克斯肚皮朝上躺在地上睡大觉，鼻涕泡忽大忽小。它脖子上的绿色大水晶在昏暗的洞穴里闪闪发光，绿光刚好连着外面的神庙底座。
+    </div>
+
+    <p>这时候，摆在你面前的有<strong>两条路</strong>。请根据你的"海拉鲁恶霸指数"自行选择：</p>
+
+    <div class="method-card">
+      <div class="method-title">⚔ 方案A：海拉鲁剑圣流 <span style="font-size:0.78rem;color:rgba(255,255,255,0.5);font-weight:400;">（推荐指数：⭐⭐⭐⭐⭐）</span></div>
+      <ul class="method-steps">
+        <li>既然都碰面了，不打个招呼怎么行？</li>
+        <li>掏出你的<strong>弓箭</strong>，装上<strong>蝙蝠的眼珠</strong>（自动追踪，手残党福音）。</li>
+        <li>对着它那只卡姿兰大眼睛就是一箭。</li>
+        <li>趁它捂着眼睛痛苦倒地的时候，掏出你<strong>攻击力最高的双手武器</strong>（比如装了白银人马大角的武器）。</li>
+        <li>按住攻击键，开始<strong>大风车转起来（蓄力攻击）</strong>！</li>
+        <li>一套带走，不仅水晶掉落了，还能白嫖一堆西诺克斯的爪子、牙齿和水果。美滋滋！</li>
+      </ul>
+    </div>
+
+    <div class="method-card stealth">
+      <div class="method-title">🥷 方案B：极致潜行流 <span style="font-size:0.78rem;color:rgba(255,255,255,0.5);font-weight:400;">（推荐指数：⭐⭐⭐）</span></div>
+      <ul class="method-steps">
+        <li>如果你是个和平主义者，或者手里实在没好武器，咱们可以"智取"。</li>
+        <li>穿上你的<strong>潜行套装</strong>（或者吃个潜行料理）。</li>
+        <li>悄咪地走到西诺克斯<strong>平放在地上的大手</strong>旁边。</li>
+        <li>站在它的手心里，<strong>不要乱动</strong>。</li>
+        <li>等它挠痒痒或者翻身的时候，它会把手抬起来，顺便把你送到它的肚皮上。</li>
+        <li>站在肚皮上，直接按 A 键<strong>把水晶拿起来</strong>，然后立刻跳下去，撒腿就跑！（它醒了也不要管，头也不回地跑出洞窟就行）</li>
+      </ul>
+    </div>
+
+    <h2>第三步：搬运水晶，激活神庙</h2>
+
+    <p>拿到水晶之后，就没啥技术含量了，纯纯的体力活。</p>
+
+    <div class="scene-box">
+      林克双手举着一块比自己上半身还大的绿色水晶，步履蹒跚地走出洞穴。要是嫌走得慢，直接用"究极手"把水晶抓在半空中往前跑。
+    </div>
+
+    <p>把水晶一路搬回神庙底座，靠近底座的时候，水晶会自动触发动画，飞到天上，随后"哐当"一声——<strong style="color:#00bcd4">完整的乌萨诸马神庙拔地而起！</strong></p>
+
+    <h2>第四步：进庙领奖</h2>
+
+    <p>现在，大摇大摆地走进神庙吧。里面没有任何烦人的方块、弹簧或者轨道，<strong>地上铺着红地毯</strong>，直接走向正中央的宝箱。</p>
+
+    <div class="reward-box">
+      <div class="reward-title">🎁 神庙奖励</div>
+      <div class="reward-item"><span>🗡</span><span><strong>宝箱奖励：</strong>结实的左纳乌武器 或 大能源（白嫖的总是最香的）</span></div>
+      <div class="reward-item"><span>✨</span><span><strong>最终奖励：</strong>走上台阶，跟劳鲁的幻影打个招呼，拿下你的<strong style="color:#c9a227">祝福之光</strong></span></div>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-title">🏆 老司机终极心得</div>
+      方案A的奖励远比方案B丰厚——打掉西诺克斯不仅能拿到水晶，还能白赚一堆稀有材料。如果装备允许，永远优先选剑圣流，不要浪费这个白嫖机会！
+    </div>
+
+    <div class="article-nav">
+      <a href="harry-tips.html">← 返回秘籍专栏</a>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
