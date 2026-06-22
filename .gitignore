@@ -68,3 +68,10 @@ README_如何使用.txt
 .DS_Store
 Thumbs.db
 
+
+# 视频文件（超过 Cloudflare Pages 25MB 限制）
+video/
+*.avi
+*.mp4
+*.mov
+*.mkv
