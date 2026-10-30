@@ -391,8 +391,7 @@
   </section>
 
   <p class="oldmap-footnote">
-    数据来源：坐标与宝藏名以 <a href="https://www.gamertw.com/zh-CN/zelda/totk/old-map" target="_blank" rel="noopener">gamertw《31 个残旧的地图位置总整理》</a>为准，交互地图底图与魔犹伊页面相同（天空层）。第 14 张在 gamertw 原表未标注宝藏名，按坐标与另一来源交叉核对为采矿面罩。进度只保存在你当前浏览器的 localStorage 里，换设备或清缓存后需要重新勾选；导出的 Excel 只包含你已勾选的项目。
-    参考：<a href="https://www.gamertw.com/zh-CN/zelda/totk/map?x=191.6493&y=-283.6467&z=1&l=sky" target="_blank" rel="noopener">gamertw 王国之泪互动地图（天空层）</a>。
+    交互地图为天空层，31 张残旧的地图均位于天空。第 14 张原表未标注宝藏名，按坐标交叉核对为采矿面罩。进度只保存在你当前浏览器的 localStorage 里，换设备或清缓存后需要重新勾选；导出的 Excel 只包含你已勾选的项目。
   </p>
 </main>
 
@@ -531,7 +530,7 @@
       '<p>导出时间：' + dateStr + '　已收集：' + doneItems.length + ' / ' + TOTAL + ' 张</p>' +
       '<table border="1"><tr><th>编号</th><th>残旧的地图（对应宝藏）</th><th>X</th><th>Y</th><th>Z</th><th>图层</th><th>状态</th></tr>' +
       rowsHtml + '</table>' +
-      '<p>坐标为 gamertw 互动地图坐标（天空层）。未勾选的 ' + (TOTAL - doneItems.length) + ' 张未包含在本表内。</p>' +
+      '<p>坐标为天空层游戏内坐标（X, Y, Z）。未勾选的 ' + (TOTAL - doneItems.length) + ' 张未包含在本表内。</p>' +
       '</body></html>';
     var blob = new Blob(['\ufeff' + tableHtml], { type: 'application/vnd.ms-excel' });
     var a = document.createElement('a');
