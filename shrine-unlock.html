@@ -72,6 +72,8 @@
   </script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- SheetJS for Excel export -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
   <style>
     .shrine-section-header {
       display:flex; align-items:center; gap:14px;
@@ -203,6 +205,38 @@
     .map-lang-btn.en-active { border-color:#64b5f6; color:#64b5f6; background:rgba(100,181,246,0.12); }
     /* ── 神庙 SVG 水晶图标 ── */
     .shrine-svgpin { background:transparent!important; border:none!important; }
+    
+    /* ── 导出按钮样式 ── */
+    .export-btn {
+      padding: 10px 24px;
+      background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+    }
+    .export-btn:hover {
+      background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+    }
+    .export-btn:active {
+      transform: translateY(0);
+    }
+    .export-controls {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
   </style>
 </head>
 <body>
@@ -258,6 +292,14 @@
       <div class="progress-stat"><span class="progress-stat-val">120</span><span class="progress-stat-lbl">地面</span></div>
       <div class="progress-stat"><span class="progress-stat-val">32</span><span class="progress-stat-lbl">天空</span></div>
     </div>
+  </div>
+
+  <!-- 导出控制按钮 -->
+  <div class="export-controls">
+    <button class="export-btn" onclick="exportShrineListToExcel()">
+      <span>📊</span>
+      <span>导出Excel清单</span>
+    </button>
   </div>
 
   <div class="highlight-box">
@@ -1173,6 +1215,97 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   updateProgress();
 });
+
+// ═════════════════════════════════════════════════════════════
+// 导出Excel功能
+// ═════════════════════════════════════════════════════════════
+function exportShrineListToExcel() {
+  try {
+    // 获取所有神庙数据
+    const shrineData = [];
+    const rows = document.querySelectorAll('#shrineTableBody tr[data-region]');
+    
+    rows.forEach(row => {
+      // 获取神庙信息
+      const nameCell = row.querySelector('.sname-cn');
+      const coordCell = row.querySelector('.coord');
+      const regionBadge = row.querySelector('[class*="rbadge"]');
+      const checkBtn = row.querySelector('.shrine-check');
+      
+      if (nameCell && coordCell && regionBadge) {
+        const shrineName = nameCell.textContent.trim();
+        const coords = coordCell.textContent.trim();
+        const region = regionBadge.textContent.trim();
+        const isCompleted = checkBtn && checkBtn.classList.contains('done') ? '✓ 已完成' : '未完成';
+        
+        shrineData.push({
+          '序号': shrineData.length + 1,
+          '神庙名称': shrineName,
+          '坐标': coords,
+          '地区': region,
+          '完成状态': isCompleted
+        });
+      }
+    });
+    
+    if (shrineData.length === 0) {
+      alert('没有找到神庙数据，请刷新页面后重试。');
+      return;
+    }
+    
+    // 创建工作簿
+    const wb = XLSX.utils.book_new();
+    
+    // 创建工作表
+    const ws = XLSX.utils.json_to_sheet(shrineData);
+    
+    // 设置列宽
+    ws['!cols'] = [
+      { wch: 8 },  // 序号
+      { wch: 20 }, // 神庙名称
+      { wch: 20 }, // 坐标
+      { wch: 12 }, // 地区
+      { wch: 12 }  // 完成状态
+    ];
+    
+    // 添加工作表到工作簿
+    XLSX.utils.book_append_sheet(wb, ws, '神庙清单');
+    
+    // 生成统计信息工作表
+    const completedCount = shrineData.filter(s => s['完成状态'] === '✓ 已完成').length;
+    const totalCount = shrineData.length;
+    const completionRate = ((completedCount / totalCount) * 100).toFixed(1);
+    
+    const statsData = [
+      { '统计项目': '总神庙数', '数值': totalCount },
+      { '统计项目': '已完成', '数值': completedCount },
+      { '统计项目': '未完成', '数值': totalCount - completedCount },
+      { '统计项目': '完成率', '数值': completionRate + '%' },
+      { '统计项目': '导出时间', '数值': new Date().toLocaleString('zh-CN') }
+    ];
+    
+    const statsWs = XLSX.utils.json_to_sheet(statsData);
+    statsWs['!cols'] = [{ wch: 15 }, { wch: 20 }];
+    XLSX.utils.book_append_sheet(wb, statsWs, '统计信息');
+    
+    // 导出文件
+    const fileName = `王国之泪神庙清单_${new Date().toISOString().slice(0,10)}.xlsx`;
+    XLSX.writeFile(wb, fileName);
+    
+    // 显示成功提示
+    const successMsg = `✓ 导出成功！\n\n` +
+      `文件名：${fileName}\n` +
+      `总神庙数：${totalCount}\n` +
+      `已完成：${completedCount}\n` +
+      `完成率：${completionRate}%`;
+    
+    alert(successMsg);
+    
+  } catch (error) {
+    console.error('导出Excel时出错：', error);
+    alert('导出失败，请确保浏览器支持下载功能。\n错误信息：' + error.message);
+  }
+}
 </script>
 <!-- 相关攻略推荐 -->
 <section class="related-guides-section">
