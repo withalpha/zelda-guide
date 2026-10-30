@@ -380,6 +380,25 @@
       #featured-guides-grid { grid-template-columns: 1fr !important; }
     }
   </style>
+<style>
+  .bnav { margin: 36px 0 8px; max-width: 860px; margin-left: auto; margin-right: auto; }
+  .bnav-series { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+  .bnav-series a, .bnav-series span.bnav-dis { flex: 1; text-align: center; padding: 10px 12px; border: 1px solid rgba(201,162,39,0.35); border-radius: 10px; color: #c9a227; text-decoration: none; font-size: 0.85rem; min-width: 120px; }
+  .bnav-series span.bnav-dis { color: rgba(255,255,255,0.35); border-color: rgba(255,255,255,0.12); }
+  .bnav-rel, .bnav-idx { background: rgba(201,162,39,0.06); border: 1px solid rgba(201,162,39,0.25); border-radius: 12px; padding: 16px 20px; margin-bottom: 18px; }
+  .bnav-title { font-weight: 700; color: #c9a227; margin-bottom: 10px; }
+  .bnav-rel ul, .bnav-idx ul { list-style: none; padding: 0; margin: 0; }
+  .bnav-rel li, .bnav-idx li { padding: 4px 0; font-size: 0.87rem; }
+  .bnav-rel a, .bnav-idx a { color: rgba(255,255,255,0.82); text-decoration: none; }
+  .bnav-rel a:hover, .bnav-idx a:hover { color: #c9a227; }
+  .bnav-idx ul { columns: 2; column-gap: 24px; }
+  .bnav-grp { font-weight: 700; color: rgba(255,255,255,0.6); margin: 12px 0 2px; font-size: 0.85rem; }
+  .bnav-cur { color: #c9a227; }
+  @media (max-width: 640px) {
+    .bnav-idx ul { columns: 1; }
+    .bnav-series a, .bnav-series span.bnav-dis { flex: none; width: 100%; }
+  }
+</style>
 </head>
 <body>
 
@@ -1783,6 +1802,10 @@
 </div>
 
 <!-- ══ FOOTER ══ -->
+<div class="bnav">
+  <div class="bnav-rel"><div class="bnav-title">🔗 相关攻略</div><ul><li><a href="boss-ganondorf.html">› 加农多夫</a></li><li><a href="boss-lynel.html">› 人马</a></li><li><a href="boss-phantom-ganon.html">› 幻影加农</a></li></ul></div>
+  <div class="bnav-idx"><div class="bnav-title">📚 更多攻略</div><ul><li><a href="harry-tips.html">› 哈里的终极秘籍（13篇）</a></li><li><a href="sitemap-page.html">› 全部页面索引</a></li></ul></div>
+</div>
 <footer class="footer">
   <div class="footer-inner">
     <p class="footer-logo">⚔ 王国之泪 全攻略</p>

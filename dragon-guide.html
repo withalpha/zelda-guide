@@ -275,6 +275,25 @@
       .data-table { font-size: 0.8rem; }
     }
   </style>
+<style>
+  .bnav { margin: 36px 0 8px; max-width: 860px; margin-left: auto; margin-right: auto; }
+  .bnav-series { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+  .bnav-series a, .bnav-series span.bnav-dis { flex: 1; text-align: center; padding: 10px 12px; border: 1px solid rgba(201,162,39,0.35); border-radius: 10px; color: #c9a227; text-decoration: none; font-size: 0.85rem; min-width: 120px; }
+  .bnav-series span.bnav-dis { color: rgba(255,255,255,0.35); border-color: rgba(255,255,255,0.12); }
+  .bnav-rel, .bnav-idx { background: rgba(201,162,39,0.06); border: 1px solid rgba(201,162,39,0.25); border-radius: 12px; padding: 16px 20px; margin-bottom: 18px; }
+  .bnav-title { font-weight: 700; color: #c9a227; margin-bottom: 10px; }
+  .bnav-rel ul, .bnav-idx ul { list-style: none; padding: 0; margin: 0; }
+  .bnav-rel li, .bnav-idx li { padding: 4px 0; font-size: 0.87rem; }
+  .bnav-rel a, .bnav-idx a { color: rgba(255,255,255,0.82); text-decoration: none; }
+  .bnav-rel a:hover, .bnav-idx a:hover { color: #c9a227; }
+  .bnav-idx ul { columns: 2; column-gap: 24px; }
+  .bnav-grp { font-weight: 700; color: rgba(255,255,255,0.6); margin: 12px 0 2px; font-size: 0.85rem; }
+  .bnav-cur { color: #c9a227; }
+  @media (max-width: 640px) {
+    .bnav-idx ul { columns: 1; }
+    .bnav-series a, .bnav-series span.bnav-dis { flex: none; width: 100%; }
+  }
+</style>
 </head>
 <body>
 <nav class="navbar">
@@ -374,10 +393,13 @@
       <li><strong>白龙为什么总找不到？</strong>它只在高空外圈飞，不钻地底。去龙之泪点附近的天空岛或用鸟望台弹射后滑翔，别在地面干等。</li>
     </ul>
     <p>相关攻略：<a href="harry-master-sword.html">白龙寻踪与大师之剑攻略</a>、<a href="depths-guide.html">地底世界生存与探索完全指南</a>。</p>
-    <div class="article-nav">
-      <a href="harry-tips.html">← 返回秘籍专栏</a>
-      <a href="depths-guide.html">← 上一篇：地底世界生存指南</a>
-    </div>
+    <div class="bnav">
+  <div class="bnav-series"><a href="fairy-guide.html">← 上一篇：大妖精四姐妹与防具强化完全指南</a>
+    <a href="harry-tips.html">返回秘籍专栏</a>
+    <span class="bnav-dis">已经是最后一篇</span></div>
+  <div class="bnav-rel"><div class="bnav-title">🔗 相关攻略</div><ul><li><a href="harry-master-sword.html">› 白龙寻踪与大师之剑</a></li><li><a href="depths-guide.html">› 地底世界生存与探索完全指南</a></li><li><a href="harry-weapons.html">› 七宝匕首终极攻略</a></li></ul></div>
+  <div class="bnav-idx"><div class="bnav-title">📚 全部攻略索引</div><div class="bnav-grp">🏆 哈里的终极秘籍</div><ul><li><a href="harry-weapons.html">› 七宝匕首终极攻略</a></li><li><a href="harry-cooking.html">› 四大神级料理配方</a></li><li><a href="harry-armor.html">› 最强套装三梯队全解析</a></li><li><a href="harry-shrine-usazum.html">› 乌萨诸马神庙零基础包教包会</a></li><li><a href="harry-master-sword.html">› 白龙寻踪与大师之剑</a></li><li><a href="harry-hover-bike.html">› 马克兔飞行器调校</a></li><li><a href="harry-battery-fairy.html">› 地底电池扩充与大妖精</a></li></ul><div class="bnav-grp">🆕 每日新攻略</div><ul><li><a href="shrine-checklist.html">› 152座神庙全收集自查指南</a></li><li><a href="beginner-guide.html">› 新手开荒指南：落地先做的10件事</a></li><li><a href="korok-guide.html">› 呀哈哈种子全指南</a></li><li><a href="depths-guide.html">› 地底世界生存与探索完全指南</a></li><li><a href="fairy-guide.html">› 大妖精四姐妹与防具强化完全指南</a></li><li><span class="bnav-cur">› 四条龙素材刷取指南（本篇）</span></li></ul></div>
+</div>
   </div>
 </div>
 <footer class="footer">
