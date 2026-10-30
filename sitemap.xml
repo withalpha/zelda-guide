@@ -175,13 +175,6 @@
   
   <!-- 工具与互动页面 -->
   <url>
-    <loc>https://zeldaguide.ccwu.cc/shrine-checklist.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
     <loc>https://zeldaguide.ccwu.cc/faq.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>

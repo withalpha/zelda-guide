@@ -1,26 +1,23 @@
-﻿# Robots.txt for zeldaguide.ccwu.cc
-# 塞尔达传说：王国之泪全攻略站
+﻿# 王国之泪攻略站 - Robots.txt
+# https://zeldaguide.ccwu.cc/robots.txt
 
 User-agent: *
 Allow: /
-Disallow: /doc/
-Disallow: /tools/
+
+# 允许所有页面被索引
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+Allow: /images/
+
+# 禁止索引的路径（如有）
+Disallow: /.git/
+Disallow: /.github/
 Disallow: /.wrangler/
 Disallow: /*.py$
-Disallow: /*.json$
 
-# Sitemap
+# Sitemap 位置
 Sitemap: https://zeldaguide.ccwu.cc/sitemap.xml
 
-# 主要爬虫特殊规则
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-# 爬取频率建议（可选）
+# 爬取延迟（可选，避免服务器压力）
 Crawl-delay: 1
