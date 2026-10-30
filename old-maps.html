@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="zelda-guide">
+  <meta name="copyright" content="© 2025 本站原创内容版权归作者所有，游戏人物著作权归任天堂株式会社所有">
+  <meta property="og:site_name" content="王国之泪全攻略">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="description" content="王国之泪残旧的地图全收集：全 31 张残旧的地图天空坐标，含天空交互地图、分布地点列表与收集进度追踪，勾选后可导出已收集 Excel 汇总表，助你集齐全部地底宝藏。">
+  <meta name="keywords" content="王国之泪,残旧的地图,Old Map,天空,坐标,互动地图,收集,Excel,攻略">
+  <meta property="og:title" content="残旧的地图 · 王国之泪">
+  <meta property="og:description" content="王国之泪残旧的地图全收集：全 31 张残旧的地图天空坐标，含天空交互地图、分布地点列表与收集进度追踪，勾选后可导出已收集 Excel 汇总表。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="残旧的地图 · 王国之泪">
+  <meta name="twitter:description" content="王国之泪残旧的地图全收集：全 31 张残旧的地图天空坐标，含天空交互地图与收集进度追踪。">
+  <link rel="canonical" href="https://zeldaguide.ccwu.cc/old-maps.html">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/images/characters/图标.png">
+  <link rel="apple-touch-icon" href="/images/characters/图标.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-53T0MJB9XW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-53T0MJB9XW');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1659892986478027" crossorigin="anonymous"></script>
+  <title>残旧的地图 · 王国之泪全攻略</title>
+  <style>
+    .oldmap-wrap{max-width:1100px;margin:0 auto;padding:24px 20px 60px;}
+    .oldmap-hero{text-align:center;margin:10px 0 22px;}
+    .oldmap-hero h1{font-family:'Noto Serif SC',serif;font-size:2rem;color:var(--gold);margin:8px 0;}
+    .oldmap-hero p{color:var(--text-secondary);line-height:1.8;margin:6px auto;max-width:820px;}
+    .oldmap-hero .hero-note{font-size:.9rem;}
+    .progress-box{border:1px solid var(--border-gold);border-radius:var(--radius);background:var(--bg-card);padding:16px 18px;margin:0 0 18px;}
+    .progress-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+    .progress-top strong{color:var(--gold);}
+    .progress-bar{height:12px;border-radius:6px;background:rgba(255,255,255,.08);overflow:hidden;margin:12px 0 4px;}
+    .progress-fill{height:100%;width:0%;background:linear-gradient(90deg,#c9a227,#e8c766);transition:width .3s;}
+    .progress-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
+    .progress-actions button,.locate-btn,.popup-toggle-btn,.popup-row-btn{cursor:pointer;border:1px solid var(--border-gold);background:rgba(0,0,0,.4);color:var(--text);border-radius:6px;padding:7px 14px;font-size:.85rem;}
+    .progress-actions button:hover,.locate-btn:hover,.popup-toggle-btn:hover,.popup-row-btn:hover{background:rgba(201,162,39,.15);}
+    .progress-actions .btn-primary{background:rgba(201,162,39,.2);color:#ffe9a8;font-weight:700;}
+    .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 14px;}
+    .toolbar input[type="search"]{flex:1;min-width:220px;padding:9px 12px;border-radius:6px;border:1px solid var(--border-gold);background:rgba(0,0,0,.4);color:var(--text);}
+    .toolbar label{font-size:.9rem;color:var(--text-secondary);cursor:pointer;}
+    #oldmap-map-section{border:1px solid var(--border-gold);border-radius:var(--radius);background:#0a0f0a;overflow:hidden;margin:0 0 22px;}
+    #oldmap-map-header{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 18px;background:rgba(201,162,39,.06);border-bottom:1px solid var(--border-gold);}
+    #oldmap-map-header h3{font-family:'Noto Serif SC',serif;color:var(--gold);margin:0;font-size:1rem;}
+    #oldmap-map-header span{font-size:.85rem;color:var(--text-secondary);}
+    #oldmap-map{height:560px;width:100%;background:#0a0f0a;}
+    .oldmap-pin{width:26px;height:26px;border-radius:50%;background:#e8b400;border:2px solid #fff;color:#111;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,.6);}
+    .oldmap-pin.done{background:#2e9e5b;color:#fff;border-color:#b8ffd6;}
+    .oldmap-table-wrap{border:1px solid var(--border-gold);border-radius:var(--radius);background:var(--bg-card);overflow:hidden;}
+    .oldmap-table-wrap h3{font-family:'Noto Serif SC',serif;color:var(--gold);margin:0;padding:14px 18px;border-bottom:1px solid var(--border-gold);font-size:1.05rem;}
+    .oldmap-table-scroll{overflow-x:auto;}
+    table.oldmap-table{width:100%;border-collapse:collapse;min-width:640px;}
+    table.oldmap-table th{position:sticky;top:0;background:rgba(201,162,39,.12);color:var(--gold);text-align:left;padding:11px 14px;font-size:.9rem;border-bottom:1px solid var(--border-gold);white-space:nowrap;}
+    table.oldmap-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.07);vertical-align:middle;}
+    table.oldmap-table tbody tr:hover{background:rgba(201,162,39,.07);}
+    table.oldmap-table tr.row-done td{color:#9be8b8;}
+    table.oldmap-table tr.row-highlight td{background:rgba(201,162,39,.22);}
+    .col-no{width:52px;text-align:center;color:var(--text-secondary);font-variant-numeric:tabular-nums;}
+    .col-treasure strong{display:block;}
+    .treasure-sub{font-size:.8rem;color:var(--text-secondary);}
+    .col-coord{white-space:nowrap;font-variant-numeric:tabular-nums;}
+    .col-done label{cursor:pointer;white-space:nowrap;}
+    .col-done input{accent-color:#2e9e5b;width:16px;height:16px;vertical-align:-2px;}
+    .col-locate{white-space:nowrap;}
+    .oldmap-footnote{color:var(--text-secondary);font-size:.88rem;line-height:1.9;margin-top:16px;}
+    .oldmap-footnote a{color:var(--gold);}
+    .leaflet-popup-content{font-size:.9rem;line-height:1.7;}
+    .leaflet-popup-content strong{color:#111;}
+    .popup-actions{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;}
+    .popup-actions button{cursor:pointer;border:1px solid #c9a227;background:#fff7dd;border-radius:6px;padding:6px 12px;}
+    @media (max-width:640px){
+      #oldmap-map{height:420px;}
+      .oldmap-hero h1{font-size:1.6rem;}
+    }
+  </style>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-logo" href="index.html"><div class="logo-icon">⚔</div>王国之泪 攻略</a>
+    <ul class="navbar-nav" id="mainNav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="main-quest.html">主线任务</a></li>
+      <li><a href="side-quest.html">情节挑战</a></li>
+      <li><a href="shrines.html">神庙挑战</a></li>
+      <li><a href="shrine-unlock.html">神庙开启</a></li>
+      <li><a href="roots.html">破魔树根</a></li>
+      <li><a href="weapons.html">武器图鉴</a></li>
+      <li><a href="cooking.html">料理合成</a></li>
+      <li><a href="clothes.html">套装获取</a></li>
+      <li><a href="boss.html">Boss图鉴</a></li>
+      <li class="nav-dropdown">
+        <a href="#" onclick="return false" class="active">物品收集</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="mauyu-lost.html">魔犹伊的遗失物</a></li>
+          <li><a href="sage-will.html">贤者的遗志</a></li>
+          <li><a href="old-maps.html" class="active">残旧的地图</a></li>
+        </ul>
+      </li>
+      <li><a href="harry-tips.html">哈里的终极秘籍</a></li>
+      <li class="nav-dropdown"><a href="#" onclick="return false">关于我们</a><ul class="nav-dropdown-menu"><li><a href="about.html">关于我们</a></li><li><a href="faq.html">常见问题</a></li><li><a href="sitemap-page.html">网站地图</a></li><li><a href="privacy.html">隐私政策</a></li></ul></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <a href="index.html">首页</a> <span>›</span> <a href="index.html#collectibles">物品收集</a> <span>›</span> <span>残旧的地图</span>
+</nav>
+
+<main class="oldmap-wrap">
+  <div class="oldmap-hero">
+    <span class="section-tag">COLLECTIBLES</span>
+    <h1>残旧的地图</h1>
+    <p>全 31 张残旧的地图都在天空层的宝箱里。拿到一张，游戏就会在地底对应位置标出宝藏（套装、武器与面具等），按图索骥即可取回。</p>
+    <p class="hero-note">下面地图只显示“残旧的地图”这一种搜集品（天空层）。点地图标记打开弹窗可直接标记已收集；在列表里勾选也一样，进度会自动同步并保存在你的浏览器里。</p>
+  </div>
+
+  <div class="progress-box">
+    <div class="progress-top">
+      <span>收集进度：<strong id="progressText">0 / 31</strong></span>
+      <span id="progressPct">0%</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="progress-actions">
+      <button type="button" class="btn-primary" id="exportBtn">📊 导出已收集 Excel 汇总表</button>
+      <button type="button" id="resetViewBtn">🗺️ 回到全图</button>
+      <button type="button" id="clearBtn">🗑️ 清除全部进度</button>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <input type="search" id="oldmapSearch" placeholder="搜索宝藏名，例如：天空之勇者、采矿、海风…" aria-label="搜索残旧的地图">
+    <label><input type="checkbox" id="hideDoneCheck"> 只看未收集</label>
+  </div>
+
+  <section id="oldmap-map-section">
+    <div id="oldmap-map-header">
+      <h3>🗺️ 天空交互地图 · 残旧的地图（31 张）</h3>
+      <span>鼠标位置：<span id="oldmap-cursor-coord">X: —　Y: —</span></span>
+    </div>
+    <div id="oldmap-map"></div>
+  </section>
+
+  <section class="oldmap-table-wrap">
+    <h3>📍 残旧的地图分布地点列表（共 31 张）</h3>
+    <div class="oldmap-table-scroll">
+      <table class="oldmap-table">
+        <thead>
+          <tr><th>#</th><th>对应宝藏</th><th>天空坐标 (X, Y, Z)</th><th>已收集</th><th>地图定位</th></tr>
+        </thead>
+        <tbody id="oldmapTableBody">
+      <tr id="oldmap-row-01" data-id="oldmap-01" data-no="1" data-x="952" data-y="-3113" data-z="756">
+        <td class="col-no">1</td>
+        <td class="col-treasure"><strong>天空之勇者裤子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">952, -3113, 756</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-01" aria-label="第1张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-01">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-02" data-id="oldmap-02" data-no="2" data-x="3693" data-y="593" data-z="1235">
+        <td class="col-no">2</td>
+        <td class="col-treasure"><strong>风之勇者裤子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">3693, 593, 1235</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-02" aria-label="第2张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-02">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-03" data-id="oldmap-03" data-no="3" data-x="3200" data-y="598" data-z="1404">
+        <td class="col-no">3</td>
+        <td class="col-treasure"><strong>风之勇者帽子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">3200, 598, 1404</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-03" aria-label="第3张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-03">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-04" data-id="oldmap-04" data-no="4" data-x="4269" data-y="3108" data-z="782">
+        <td class="col-no">4</td>
+        <td class="col-treasure"><strong>黄昏之勇者裤子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">4269, 3108, 782</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-04" aria-label="第4张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-04">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-05" data-id="oldmap-05" data-no="5" data-x="2160" data-y="-2592" data-z="1253">
+        <td class="col-no">5</td>
+        <td class="col-treasure"><strong>海风回旋镖</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">2160, -2592, 1253</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-05" aria-label="第5张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-05">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-06" data-id="oldmap-06" data-no="6" data-x="-3377" data-y="-21" data-z="2257">
+        <td class="col-no">6</td>
+        <td class="col-treasure"><strong>魔吉拉的面具</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-3377, -21, 2257</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-06" aria-label="第6张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-06">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-07" data-id="oldmap-07" data-no="7" data-x="-1956" data-y="-1810" data-z="1159">
+        <td class="col-no">7</td>
+        <td class="col-treasure"><strong>初始之剑</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-1956, -1810, 1159</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-07" aria-label="第7张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-07">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-08" data-id="oldmap-08" data-no="8" data-x="435" data-y="2196" data-z="2216">
+        <td class="col-no">8</td>
+        <td class="col-treasure"><strong>克洛格的面具</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">435, 2196, 2216</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-08" aria-label="第8张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-08">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-09" data-id="oldmap-09" data-no="9" data-x="1663" data-y="-353" data-z="406">
+        <td class="col-no">9</td>
+        <td class="col-treasure"><strong>时之勇者帽子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">1663, -353, 406</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-09" aria-label="第9张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-09">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-10" data-id="oldmap-10" data-no="10" data-x="-3861" data-y="2923" data-z="747">
+        <td class="col-no">10</td>
+        <td class="col-treasure"><strong>采矿服</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-3861, 2923, 747</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-10" aria-label="第10张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-10">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-11" data-id="oldmap-11" data-no="11" data-x="-3962" data-y="608" data-z="1690">
+        <td class="col-no">11</td>
+        <td class="col-treasure"><strong>旷野之勇者裤子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-3962, 608, 1690</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-11" aria-label="第11张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-11">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-12" data-id="oldmap-12" data-no="12" data-x="3168" data-y="459" data-z="931">
+        <td class="col-no">12</td>
+        <td class="col-treasure"><strong>风之勇者服</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">3168, 459, 931</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-12" aria-label="第12张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-12">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-13" data-id="oldmap-13" data-no="13" data-x="1126" data-y="-3274" data-z="756">
+        <td class="col-no">13</td>
+        <td class="col-treasure"><strong>天空之勇者帽子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">1126, -3274, 756</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-13" aria-label="第13张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-13">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-14" data-id="oldmap-14" data-no="14" data-x="-3476" data-y="3514" data-z="926">
+        <td class="col-no">14</td>
+        <td class="col-treasure"><strong>采矿面罩</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-3476, 3514, 926</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-14" aria-label="第14张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-14">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-15" data-id="oldmap-15" data-no="15" data-x="3665" data-y="1795" data-z="984">
+        <td class="col-no">15</td>
+        <td class="col-treasure"><strong>黄昏之勇者服</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">3665, 1795, 984</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-15" aria-label="第15张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-15">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-16" data-id="oldmap-16" data-no="16" data-x="-1233" data-y="-1400" data-z="983">
+        <td class="col-no">16</td>
+        <td class="col-treasure"><strong>初始之勇者服</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-1233, -1400, 983</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-16" aria-label="第16张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-16">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-17" data-id="oldmap-17" data-no="17" data-x="-1457" data-y="-1584" data-z="1211">
+        <td class="col-no">17</td>
+        <td class="col-treasure"><strong>初始之勇者裤子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-1457, -1584, 1211</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-17" aria-label="第17张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-17">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-18" data-id="oldmap-18" data-no="18" data-x="-816" data-y="-1591" data-z="911">
+        <td class="col-no">18</td>
+        <td class="col-treasure"><strong>希克面罩</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-816, -1591, 911</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-18" aria-label="第18张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-18">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-19" data-id="oldmap-19" data-no="19" data-x="-1348" data-y="-1542" data-z="800">
+        <td class="col-no">19</td>
+        <td class="col-treasure"><strong>初始之勇者帽子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-1348, -1542, 800</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-19" aria-label="第19张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-19">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-20" data-id="oldmap-20" data-no="20" data-x="1811" data-y="1014" data-z="1195">
+        <td class="col-no">20</td>
+        <td class="col-treasure"><strong>大鼓隆之剑</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">1811, 1014, 1195</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-20" aria-label="第20张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-20">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-21" data-id="oldmap-21" data-no="21" data-x="3295" data-y="3434" data-z="793">
+        <td class="col-no">21</td>
+        <td class="col-treasure"><strong>黄昏之勇者帽子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">3295, 3434, 793</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-21" aria-label="第21张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-21">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-22" data-id="oldmap-22" data-no="22" data-x="1652" data-y="-2191" data-z="576">
+        <td class="col-no">22</td>
+        <td class="col-treasure"><strong>天空之勇者服</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">1652, -2191, 576</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-22" aria-label="第22张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-22">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-23" data-id="oldmap-23" data-no="23" data-x="2645" data-y="-1414" data-z="1462">
+        <td class="col-no">23</td>
+        <td class="col-treasure"><strong>海风盾</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">2645, -1414, 1462</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-23" aria-label="第23张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-23">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-24" data-id="oldmap-24" data-no="24" data-x="-1649" data-y="3513" data-z="960">
+        <td class="col-no">24</td>
+        <td class="col-treasure"><strong>罗维奥的头巾</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-1649, 3513, 960</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-24" aria-label="第24张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-24">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-25" data-id="oldmap-25" data-no="25" data-x="1766" data-y="-1311" data-z="898">
+        <td class="col-no">25</td>
+        <td class="col-treasure"><strong>时之勇者裤子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">1766, -1311, 898</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-25" aria-label="第25张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-25">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-26" data-id="oldmap-26" data-no="26" data-x="1852" data-y="-979" data-z="934">
+        <td class="col-no">26</td>
+        <td class="col-treasure"><strong>时之勇者服</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">1852, -979, 934</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-26" aria-label="第26张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-26">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-27" data-id="oldmap-27" data-no="27" data-x="4752" data-y="-778" data-z="1895">
+        <td class="col-no">27</td>
+        <td class="col-treasure"><strong>藏特头盔</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">4752, -778, 1895</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-27" aria-label="第27张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-27">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-28" data-id="oldmap-28" data-no="28" data-x="4659" data-y="-870" data-z="1749">
+        <td class="col-no">28</td>
+        <td class="col-treasure"><strong>米多娜的王冠</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">4659, -870, 1749</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-28" aria-label="第28张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-28">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-29" data-id="oldmap-29" data-no="29" data-x="-3830" data-y="2715" data-z="547">
+        <td class="col-no">29</td>
+        <td class="col-treasure"><strong>采矿裤子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-3830, 2715, 547</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-29" aria-label="第29张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-29">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-30" data-id="oldmap-30" data-no="30" data-x="-3438" data-y="1431" data-z="1182">
+        <td class="col-no">30</td>
+        <td class="col-treasure"><strong>旷野之勇者服</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-3438, 1431, 1182</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-30" aria-label="第30张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-30">📍 定位</button></td>
+      </tr>
+      <tr id="oldmap-row-31" data-id="oldmap-31" data-no="31" data-x="-3635" data-y="467" data-z="1653">
+        <td class="col-no">31</td>
+        <td class="col-treasure"><strong>旷野之勇者帽子</strong><span class="treasure-sub">残旧的地图</span></td>
+        <td class="col-coord"><span class="coord">-3635, 467, 1653</span></td>
+        <td class="col-done"><label><input type="checkbox" class="done-check" data-id="oldmap-31" aria-label="第31张已收集"> <span>已收集</span></label></td>
+        <td class="col-locate"><button type="button" class="locate-btn" data-id="oldmap-31">📍 定位</button></td>
+      </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="oldmap-footnote">
+    数据来源：坐标与宝藏名以 <a href="https://www.gamertw.com/zh-CN/zelda/totk/old-map" target="_blank" rel="noopener">gamertw《31 个残旧的地图位置总整理》</a>为准，交互地图底图与魔犹伊页面相同（天空层）。第 14 张在 gamertw 原表未标注宝藏名，按坐标与另一来源交叉核对为采矿面罩。进度只保存在你当前浏览器的 localStorage 里，换设备或清缓存后需要重新勾选；导出的 Excel 只包含你已勾选的项目。
+    参考：<a href="https://www.gamertw.com/zh-CN/zelda/totk/map?x=191.6493&y=-283.6467&z=1&l=sky" target="_blank" rel="noopener">gamertw 王国之泪互动地图（天空层）</a>。
+  </p>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">⚔ 王国之泪 全攻略</p>
+    <p class="footer-tagline">THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">
+      本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。<br>
+      《塞尔达传说 王国之泪》版权归任天堂株式会社所有。<br>
+      © 2023 Nintendo. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var TOTAL = 31;
+  var hideDone = false;
+  var currentSearch = '';
+  var oldmap = null;
+  var markersById = {};
+  var mapBounds = null;
+
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function g2ll(gx, gy){ return oldmap.unproject([gx, -gy], 0); }
+  function isDone(id){ return localStorage.getItem('oldmap_' + id) === '1'; }
+  function setDone(id, done){
+    if (done) localStorage.setItem('oldmap_' + id, '1');
+    else localStorage.removeItem('oldmap_' + id);
+  }
+  function readRows(){
+    var rows = [];
+    document.querySelectorAll('#oldmapTableBody tr').forEach(function(row){
+      var cells = row.querySelectorAll('td');
+      if (cells.length < 5) return;
+      rows.push({
+        id: row.dataset.id, no: parseInt(row.dataset.no, 10),
+        treasure: (row.querySelector('.col-treasure strong') || {}).textContent || '',
+        x: parseInt(row.dataset.x, 10), y: parseInt(row.dataset.y, 10), z: parseInt(row.dataset.z, 10),
+        row: row
+      });
+    });
+    return rows;
+  }
+  var items = [];
+  function updateProgress(){
+    var doneCount = items.filter(function(it){ return isDone(it.id); }).length;
+    document.getElementById('progressText').textContent = doneCount + ' / ' + TOTAL;
+    document.getElementById('progressPct').textContent = Math.round(doneCount / TOTAL * 100) + '%';
+    document.getElementById('progressFill').style.width = (doneCount / TOTAL * 100) + '%';
+  }
+  function applyRowStates(){
+    items.forEach(function(it){
+      var done = isDone(it.id);
+      var check = it.row.querySelector('.done-check');
+      if (check) check.checked = done;
+      it.row.classList.toggle('row-done', done);
+      var visible = true;
+      if (hideDone && done) visible = false;
+      if (currentSearch && it.treasure.indexOf(currentSearch) === -1 && String(it.no).indexOf(currentSearch) === -1) visible = false;
+      it.row.style.display = visible ? '' : 'none';
+    });
+    updateProgress();
+  }
+  function toggleDone(id){
+    setDone(id, !isDone(id));
+    applyRowStates();
+    renderMarkers();
+  }
+  function highlightRow(id){
+    items.forEach(function(it){ it.row.classList.remove('row-highlight'); });
+    var it = items.filter(function(x){ return x.id === id; })[0];
+    if (it){
+      it.row.classList.add('row-highlight');
+      setTimeout(function(){ it.row.classList.remove('row-highlight'); }, 3000);
+    }
+  }
+  function renderMarkers(){
+    Object.keys(markersById).forEach(function(id){ oldmap.removeLayer(markersById[id]); });
+    markersById = {};
+    items.forEach(function(it){
+      if (hideDone && isDone(it.id)) return;
+      if (currentSearch && it.treasure.indexOf(currentSearch) === -1 && String(it.no).indexOf(currentSearch) === -1) return;
+      var done = isDone(it.id);
+      var icon = L.divIcon({
+        className: '',
+        html: '<div class="oldmap-pin' + (done ? ' done' : '') + '">' + (done ? '✓' : it.no) + '</div>',
+        iconSize: [26, 26], iconAnchor: [13, 13]
+      });
+      var marker = L.marker(g2ll(it.x, it.y), { icon: icon }).addTo(oldmap);
+      marker.bindTooltip(it.no + '. 残旧的地图（' + it.treasure + '）· ' + it.x + ', ' + it.y + ', ' + it.z, { direction: 'top', offset: [0, -14] });
+      marker.bindPopup(
+        '<strong>第 ' + it.no + ' 张 · 残旧的地图</strong><br>对应宝藏：' + esc(it.treasure) +
+        '<br>天空坐标：' + it.x + ', ' + it.y + ', ' + it.z +
+        '<div class="popup-actions">' +
+          '<button type="button" class="popup-toggle-btn" data-id="' + it.id + '">' + (done ? '↩ 取消已收集' : '✓ 标记已收集') + '</button>' +
+          '<button type="button" class="popup-row-btn" data-id="' + it.id + '">📋 查看列表行</button>' +
+        '</div>'
+      );
+      markersById[it.id] = marker;
+    });
+  }
+  function locateItem(id){
+    var it = items.filter(function(x){ return x.id === id; })[0];
+    if (!it) return;
+    var ll = g2ll(it.x, it.y);
+    oldmap.setView(ll, Math.max(oldmap.getZoom(), -1));
+    var marker = markersById[id];
+    if (marker) marker.openPopup();
+    else {
+      currentSearch = ''; hideDone = false;
+      var hs = document.getElementById('hideDoneCheck'); if (hs) hs.checked = false;
+      var si = document.getElementById('oldmapSearch'); if (si) si.value = '';
+      applyRowStates(); renderMarkers();
+      var m2 = markersById[id];
+      if (m2){ oldmap.setView(ll, Math.max(oldmap.getZoom(), -1)); m2.openPopup(); }
+    }
+    document.getElementById('oldmap-map-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  function exportExcel(){
+    var doneItems = items.filter(function(it){ return isDone(it.id); });
+    if (!doneItems.length){
+      alert('还没有勾选任何一张残旧的地图。先在地图弹窗或列表里勾选已收集，再导出。');
+      return;
+    }
+    var now = new Date();
+    var dateStr = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0') + '-' + String(now.getDate()).padStart(2,'0') + ' ' + String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0');
+    var rowsHtml = doneItems.map(function(it){
+      return '<tr><td>' + it.no + '</td><td>残旧的地图（' + esc(it.treasure) + '）</td><td>' + it.x + '</td><td>' + it.y + '</td><td>' + it.z + '</td><td>天空层</td><td>已收集</td></tr>';
+    }).join('');
+    var tableHtml =
+      '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="UTF-8"></head><body>' +
+      '<h2>王国之泪 · 残旧的地图已收集汇总表</h2>' +
+      '<p>导出时间：' + dateStr + '　已收集：' + doneItems.length + ' / ' + TOTAL + ' 张</p>' +
+      '<table border="1"><tr><th>编号</th><th>残旧的地图（对应宝藏）</th><th>X</th><th>Y</th><th>Z</th><th>图层</th><th>状态</th></tr>' +
+      rowsHtml + '</table>' +
+      '<p>坐标为 gamertw 互动地图坐标（天空层）。未勾选的 ' + (TOTAL - doneItems.length) + ' 张未包含在本表内。</p>' +
+      '</body></html>';
+    var blob = new Blob(['\ufeff' + tableHtml], { type: 'application/vnd.ms-excel' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = '残旧的地图_已收集汇总.xls';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(a.href); }, 1000);
+  }
+  function initMap(){
+    items = readRows();
+    oldmap = L.map('oldmap-map', { crs: L.CRS.Simple, minZoom: -4, maxZoom: 3, zoom: -3, center: [0, 0], zoomControl: true });
+    var leftBottom = oldmap.unproject([-6000, 5000], 0);
+    var topRight = oldmap.unproject([6000, -5000], 0);
+    mapBounds = new L.LatLngBounds(leftBottom, topRight);
+    oldmap.setMaxBounds(mapBounds.pad(0.1));
+    oldmap.fitBounds(mapBounds);
+    var CDN = 'https://cdn.jsdelivr.net/gh/vguzman812/totk-coordinates-map@main/images/';
+    L.imageOverlay(CDN + 'sky.jpg', mapBounds, { attribution: '© Nintendo · Map: vguzman812 (MIT)' }).addTo(oldmap);
+    oldmap.on('mousemove', function(e){
+      document.getElementById('oldmap-cursor-coord').textContent = 'X: ' + Math.round(e.latlng.lng) + '　Y: ' + Math.round(e.latlng.lat);
+    });
+    oldmap.on('popupopen', function(e){
+      var el = e.popup.getElement();
+      if (!el) return;
+      var tb = el.querySelector('.popup-toggle-btn');
+      if (tb) tb.addEventListener('click', function(){ toggleDone(tb.dataset.id); oldmap.closePopup(); });
+      var rb = el.querySelector('.popup-row-btn');
+      if (rb) rb.addEventListener('click', function(){
+        oldmap.closePopup();
+        var row = document.getElementById('oldmap-row-' + String(rb.dataset.id.split('-')[1]).padStart(2, '0'));
+        if (row){ highlightRow(rb.dataset.id); row.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      });
+    });
+    document.querySelectorAll('.done-check').forEach(function(cb){
+      cb.addEventListener('change', function(){ setDone(cb.dataset.id, cb.checked); applyRowStates(); renderMarkers(); });
+    });
+    document.querySelectorAll('.locate-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){ locateItem(btn.dataset.id); });
+    });
+    document.getElementById('oldmapSearch').addEventListener('input', function(e){
+      currentSearch = e.target.value.trim();
+      applyRowStates(); renderMarkers();
+    });
+    document.getElementById('hideDoneCheck').addEventListener('change', function(e){
+      hideDone = e.target.checked;
+      applyRowStates(); renderMarkers();
+    });
+    document.getElementById('resetViewBtn').addEventListener('click', function(){ oldmap.fitBounds(mapBounds); });
+    document.getElementById('clearBtn').addEventListener('click', function(){
+      if (!confirm('确定要清除全部 31 张的收集进度吗？此操作不可撤销。')) return;
+      items.forEach(function(it){ localStorage.removeItem('oldmap_' + it.id); });
+      applyRowStates(); renderMarkers();
+    });
+    document.getElementById('exportBtn').addEventListener('click', exportExcel);
+    applyRowStates();
+    renderMarkers();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initMap);
+  else initMap();
+})();
+</script>
+<script src="main.js"></script>
+</body>
+</html>
