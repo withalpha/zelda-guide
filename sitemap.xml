@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
@@ -83,7 +83,7 @@
   <url>
     <loc>https://zeldaguide.ccwu.cc/harry-tips.html</loc>
     <lastmod>2026-10-30</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
@@ -203,22 +203,4 @@
     <priority>0.2</priority>
   </url>
 
-  <url>
-    <loc>https://zeldaguide.ccwu.cc/daily-2026-10-30-sky-island.html</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zeldaguide.ccwu.cc/daily-2026-10-30-depths.html</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zeldaguide.ccwu.cc/daily-2026-10-30-battery.html</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
 </urlset>
