@@ -899,37 +899,9 @@ function scrollToTop() {
   };
 
   /* ─── 10. 平滑页面跳转 ─── */
+  /* 已移除（2026-10-30）：旧的转场遮罩会在前进/后退（bfcache 恢复）时卡在不透明状态，
+     盖住整个页面且无法点击。改回浏览器默认导航，不再拦截链接、不再创建遮罩。 */
   function initPageTransition() {
-    var overlay = document.createElement('div');
-    overlay.style.cssText = [
-      'position:fixed', 'inset:0', 'background:var(--bg-primary)',
-      'z-index:99998', 'opacity:0', 'pointer-events:none',
-      'transition:opacity 0.3s ease'
-    ].join(';');
-    document.body.appendChild(overlay);
-
-    document.querySelectorAll('a[href]').forEach(function (link) {
-      var href = link.getAttribute('href');
-      // 仅对站内 .html 链接生效
-      if (!href || href.startsWith('#') || href.startsWith('http') ||
-          href.startsWith('mailto') || !href.endsWith('.html')) return;
-
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        overlay.style.pointerEvents = 'auto';
-        overlay.style.opacity = '1';
-        setTimeout(function () {
-          window.location.href = href;
-        }, 300);
-      });
-    });
-
-    // 页面从其他页跳来时淡入
-    overlay.style.opacity = '1';
-    overlay.style.pointerEvents = 'none';
-    requestAnimationFrame(function () {
-      overlay.style.opacity = '0';
-    });
   }
 
   /* ─── 11. 卡片 3D 微倾斜 (mousemove) ─── */
