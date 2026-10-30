@@ -7,6 +7,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+  <!-- 移动端标题字体预载：仅 ≤768px 生效，桌面端完全忽略 -->
+  <style media="screen and (max-width: 768px)">
+  @font-face{font-family:'Noto Serif SC';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqOcaThrVMcaeccjhXXDsOyAEEmuIi6j7j64sLjgBtMI1z49XW4.111.woff2) format('woff2');unicode-range:U+585E}
+  @font-face{font-family:'Noto Serif SC';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqOcaThrVMcaeccjhXXDsOyAEEmuIi6j7j64sLjgBtMI1z49XW4.115.woff2) format('woff2');unicode-range:U+5C14}
+  @font-face{font-family:'Noto Serif SC';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqOcaThrVMcaeccjhXXDsOyAEEmuIi6j7j64sLjgBtMI1z49XW4.116.woff2) format('woff2');unicode-range:U+8FBE,U+738B}
+  @font-face{font-family:'Noto Serif SC';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqOcaThrVMcaeccjhXXDsOyAEEmuIi6j7j64sLjgBtMI1z49XW4.117.woff2) format('woff2');unicode-range:U+4F20}
+  @font-face{font-family:'Noto Serif SC';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqOcaThrVMcaeccjhXXDsOyAEEmuIi6j7j64sLjgBtMI1z49XW4.118.woff2) format('woff2');unicode-range:U+8BF4,U+56FD,U+4E4B}
+  @font-face{font-family:'Noto Serif SC';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqOcaThrVMcaeccjhXXDsOyAEEmuIi6j7j64sLjgBtMI1z49XW4.110.woff2) format('woff2');unicode-range:U+6CEA}
+  </style>
+  <link rel="preload" as="font" type="font/woff2" crossorigin media="screen and (max-width: 768px)" href="https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqOcaThrVMcaeccjhXXDsOyAEEmuIi6j7j64sLjgBtMI1z49XW4.111.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin media="screen and (max-width: 768px)" href="https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqOcaThrVMcaeccjhXXDsOyAEEmuIi6j7j64sLjgBtMI1z49XW4.115.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin media="screen and (max-width: 768px)" href="https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqOcaThrVMcaeccjhXXDsOyAEEmuIi6j7j64sLjgBtMI1z49XW4.116.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin media="screen and (max-width: 768px)" href="https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqOcaThrVMcaeccjhXXDsOyAEEmuIi6j7j64sLjgBtMI1z49XW4.117.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin media="screen and (max-width: 768px)" href="https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqOcaThrVMcaeccjhXXDsOyAEEmuIi6j7j64sLjgBtMI1z49XW4.118.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin media="screen and (max-width: 768px)" href="https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqOcaThrVMcaeccjhXXDsOyAEEmuIi6j7j64sLjgBtMI1z49XW4.110.woff2">
   <!-- ═══ 安全与版权 meta ═══ -->
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <meta name="robots" content="index, follow">
@@ -42,7 +57,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#020814">
   <title>塞尔达传说王国之泪全攻略 | TotK完整攻略站</title>
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
   <link rel="icon" type="image/png" href="/images/characters/图标.png">
   <link rel="apple-touch-icon" href="/images/characters/图标.png">
   <!-- 预加载背景图 -->
