@@ -2341,30 +2341,8 @@ table.data-tbl tbody tr:hover td { background:rgba(201,162,39,0.04); color:var(-
     inset 0 1px 0 rgba(201, 162, 39, 0.3);
 }
 
-/* ── 导航栏升级：激活下划线动画 ── */
-.navbar-nav a {
-  position: relative;
-  overflow: hidden;
-}
-
-.navbar-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: 2px;
-  left: 50%;
-  width: 0;
-  height: 1.5px;
-  background: var(--gold);
-  transition: width 0.3s var(--ease-out-expo),
-              left   0.3s var(--ease-out-expo);
-  border-radius: 1px;
-}
-
-.navbar-nav a:hover::after,
-.navbar-nav a.active::after {
-  width: 70%;
-  left: 15%;
-}
+/* ── 导航栏下划线动画已移除（2026-10-30）：激活项底部的金色横线在移动端菜单里很显眼，
+   用户要求完全去除。保留激活项的文字颜色与背景高亮，只去掉横线。 */
 
 /* ── Navbar 滚动后玻璃强化 ── */
 .navbar.scrolled {
