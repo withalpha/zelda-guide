@@ -792,6 +792,7 @@ function buildCaveData() {
     var coordText = (cells[2].querySelector('.coord') || {}).textContent || '';
     var region = row.dataset.region || 'central';
     var layer = row.dataset.layer || (region === 'sky' ? 'sky' : 'surface');
+    var key = row.dataset.gamertw || row.id;
     var note = cells[5].textContent.trim();
     var parts = coordText.split(',').map(function(s){ return parseFloat(s.trim()); });
     if (parts.length >= 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
@@ -800,7 +801,7 @@ function buildCaveData() {
         nameCn: nameCn.trim(), nameEn: nameEn.trim(),
         coord: coordText.trim(),
         gx: parts[0], gy: parts[1], gz: parts[2] || 0,
-        region: region, layer: layer, note: note
+        region: region, layer: layer, key: key, note: note
       });
     }
   });
@@ -862,7 +863,7 @@ function renderCaveMarkers() {
     if (!isSky && isSkyRegion) return;
     if (currentRegionFilter !== 'all' && cave.region !== currentRegionFilter) return;
 
-    var isDone = localStorage.getItem('cave_' + cave.id) === '1';
+    var isDone = localStorage.getItem('cave_' + (cave.key || cave.id)) === '1';
     if (hideDone && isDone) return;
 
     var color = REGION_COLOR[cave.region] || '#aaa';
@@ -1001,7 +1002,7 @@ function applyTableFilter() {
 // ── 进度追踪 ──
 function toggleCaveCheck(btn) {
   var row = btn.closest('tr');
-  var id = row.id;
+  var id = row.dataset.gamertw || row.id;
   var isDone = localStorage.getItem('cave_' + id) === '1';
   localStorage.setItem('cave_' + id, isDone ? '0' : '1');
   btn.classList.toggle('done', !isDone);
@@ -1014,7 +1015,7 @@ function updateCaveProgress() {
   var total = 147;
   var done = 0;
   document.querySelectorAll('#caveTableBody tr[id^="cave-row-"]').forEach(function(row) {
-    if (localStorage.getItem('cave_' + row.id) === '1') done++;
+    if (localStorage.getItem('cave_' + (row.dataset.gamertw || row.id)) === '1') done++;
   });
   document.getElementById('caveDoneCount').textContent = done;
   document.getElementById('caveProgressFill').style.width = (done / total * 100) + '%';
@@ -1022,7 +1023,7 @@ function updateCaveProgress() {
 
 function restoreCheckState() {
   document.querySelectorAll('#caveTableBody tr[id^="cave-row-"]').forEach(function(row) {
-    var isDone = localStorage.getItem('cave_' + row.id) === '1';
+    var isDone = localStorage.getItem('cave_' + (row.dataset.gamertw || row.id)) === '1';
     var btn = row.querySelector('.cave-check');
     if (btn && isDone) {
       btn.classList.add('done');
