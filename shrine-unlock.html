@@ -296,9 +296,9 @@
 
   <!-- 导出控制按钮 -->
   <div class="export-controls">
-    <button class="export-btn" onclick="exportShrineListToExcel()">
-      <span>📊</span>
-      <span>导出Excel清单</span>
+    <button class="export-btn" id="exportBtn" onclick="exportShrineListToExcel()" disabled style="opacity:0.5;cursor:not-allowed;">
+      <span>⏳</span>
+      <span>加载导出功能中...</span>
     </button>
   </div>
 
@@ -1214,31 +1214,34 @@ document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem(base + '_shrine_' + i) === 'done') btn.classList.add('done');
   });
   updateProgress();
+  
+  // ═══ 检查 XLSX 库加载状态并激活导出按钮 ═══
+  const exportBtn = document.getElementById('exportBtn');
+  
+  function activateExportButton() {
+    if (typeof XLSX !== 'undefined') {
+      // XLSX 库已加载，激活按钮
+      exportBtn.disabled = false;
+      exportBtn.style.opacity = '1';
+      exportBtn.style.cursor = 'pointer';
+      exportBtn.innerHTML = '<span>📊</span><span>导出Excel清单</span>';
+    } else {
+      // XLSX 库未加载，继续等待
+      setTimeout(activateExportButton, 200);
+    }
+  }
+  
+  // 开始检查
+  activateExportButton();
 });
 
 // ═════════════════════════════════════════════════════════════
 // 导出Excel功能
 // ═════════════════════════════════════════════════════════════
-// 导出Excel功能
-// ═════════════════════════════════════════════════════════════
 function exportShrineListToExcel() {
-  // 检查 XLSX 库是否已加载
+  // 双重保险：再次检查 XLSX 库
   if (typeof XLSX === 'undefined') {
-    alert('导出功能正在加载中，请稍后再试...\n\n如果持续出现此提示，请刷新页面后重试。');
-    
-    // 尝试动态加载 XLSX 库（备用方案）
-    if (!window.xlsxLoadAttempted) {
-      window.xlsxLoadAttempted = true;
-      const script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js';
-      script.onload = () => {
-        alert('✓ 导出功能已就绪，请再次点击导出按钮。');
-      };
-      script.onerror = () => {
-        alert('❌ 导出功能加载失败，请检查网络连接后刷新页面重试。');
-      };
-      document.head.appendChild(script);
-    }
+    alert('❌ 导出功能尚未就绪，请刷新页面后重试。');
     return;
   }
   
