@@ -72,8 +72,8 @@
   </script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <!-- SheetJS for Excel export -->
-  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <!-- SheetJS for Excel export - 必须同步加载 -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js" defer></script>
   <style>
     .shrine-section-header {
       display:flex; align-items:center; gap:14px;
@@ -1219,7 +1219,29 @@ document.addEventListener('DOMContentLoaded', () => {
 // ═════════════════════════════════════════════════════════════
 // 导出Excel功能
 // ═════════════════════════════════════════════════════════════
+// 导出Excel功能
+// ═════════════════════════════════════════════════════════════
 function exportShrineListToExcel() {
+  // 检查 XLSX 库是否已加载
+  if (typeof XLSX === 'undefined') {
+    alert('导出功能正在加载中，请稍后再试...\n\n如果持续出现此提示，请刷新页面后重试。');
+    
+    // 尝试动态加载 XLSX 库（备用方案）
+    if (!window.xlsxLoadAttempted) {
+      window.xlsxLoadAttempted = true;
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js';
+      script.onload = () => {
+        alert('✓ 导出功能已就绪，请再次点击导出按钮。');
+      };
+      script.onerror = () => {
+        alert('❌ 导出功能加载失败，请检查网络连接后刷新页面重试。');
+      };
+      document.head.appendChild(script);
+    }
+    return;
+  }
+  
   try {
     // 获取所有神庙数据
     const shrineData = [];
