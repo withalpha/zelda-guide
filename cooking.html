@@ -378,6 +378,10 @@
         <div class="modal-effect" id="modalEffect"></div>
         <p class="modal-note" id="modalEffectNote"></p>
       </div>
+      <div class="modal-section">
+        <div class="modal-h">❤️ 回血</div>
+        <div class="modal-effect" id="modalHearts"></div>
+      </div>
       <button class="modal-close" onclick="document.getElementById('modalOverlay').classList.remove('open')">关闭</button>
     </div>
   </div>
@@ -438,234 +442,234 @@ function getDishImg(no) {
 // 228 道料理数据（含食材数量）
 // ══════════════════════════════════════════
 const DISHES = [
-  {no:1, cat:"串炒煎炸", name:"烤蘑菇串", method:"Cookpot", ing:["Mushroom"]},
-  {no:2, cat:"串炒煎炸", name:"烤肉蘑菇串", method:"Cookpot", ing:["Meat + Mushroom"]},
-  {no:3, cat:"串炒煎炸", name:"烤鱼蘑菇串", method:"Cookpot", ing:["Fish + Mushroom"]},
-  {no:4, cat:"串炒煎炸", name:"烤肉串", method:"Cookpot", ing:["Meat"]},
-  {no:5, cat:"串炒煎炸", name:"烤鱼", method:"Cookpot", ing:["Fish"]},
-  {no:6, cat:"串炒煎炸", name:"串烤海鲜", method:"Cookpot", ing:["Crab or Snail"]},
-  {no:7, cat:"串炒煎炸", name:"大份烤肉串", method:"Cookpot", ing:["4 different kinds of meat"]},
-  {no:8, cat:"串炒煎炸", name:"大份烤鱼", method:"Cookpot", ing:["4 different kinds of seafood (fish/crab/snail)"]},
-  {no:9, cat:"串炒煎炸", name:"蒸水果", method:"Cookpot", ing:["Fruit + Plant"]},
-  {no:10, cat:"串炒煎炸", name:"蒸野菜番茄", method:"Cookpot", ing:["Tomato + Plant"]},
-  {no:11, cat:"串炒煎炸", name:"蒸蘑菇", method:"Cookpot", ing:["Mushroom + Plant"]},
-  {no:12, cat:"串炒煎炸", name:"蒸肉", method:"Cookpot", ing:["Meat + Plant"]},
-  {no:13, cat:"串炒煎炸", name:"蒸鱼", method:"Cookpot", ing:["Fish + Plant"]},
-  {no:14, cat:"串炒煎炸", name:"炒暖暖草果", method:"Cookpot", ing:["Spicy Pepper"]},
-  {no:15, cat:"串炒煎炸", name:"炒坚果", method:"Cookpot", ing:["Chickaloo Tree Nut or Acorn"]},
-  {no:16, cat:"串炒煎炸", name:"炒野菜", method:"Cookpot", ing:["Plant"]},
-  {no:17, cat:"串炒煎炸", name:"大份炒野菜", method:"Cookpot", ing:["4 different kinds of vegetables"]},
-  {no:18, cat:"串炒煎炸", name:"原烧", method:"Cookpot", ing:["Stambulb"]},
-  {no:19, cat:"串炒煎炸", name:"炒黄油", method:"Cookpot", ing:["Stambulb + Butter"]},
-  {no:20, cat:"串炒煎炸", name:"大份烤蘑菇串", method:"Cookpot", ing:["4 different kinds of mushrooms"]},
-  {no:21, cat:"串炒煎炸", name:"烤兽肉串", method:"Cookpot", ing:["Meat + Goron Spice"]},
-  {no:22, cat:"串炒煎炸", name:"高级烤兽肉串", method:"Cookpot", ing:["Prime Meat + Goron Spice"]},
-  {no:23, cat:"串炒煎炸", name:"顶级烤兽肉串", method:"Cookpot", ing:["Gourmet Meat + Goron Spice"]},
-  {no:24, cat:"串炒煎炸", name:"炒螃蟹", method:"Cookpot", ing:["Crab + Goron Spice"]},
-  {no:25, cat:"串炒煎炸", name:"海陆煎烤", method:"Cookpot", ing:["Fish + Meat"]},
-  {no:26, cat:"串炒煎炸", name:"高级海陆煎烤", method:"Cookpot", ing:["Prime Meat + Seafood"]},
-  {no:27, cat:"串炒煎炸", name:"顶级海陆煎烤", method:"Cookpot", ing:["Gourmet Meat + Fish"]},
-  {no:28, cat:"串炒煎炸", name:"盐烤野菜", method:"Cookpot", ing:["Salt + Vegetable"]},
-  {no:29, cat:"串炒煎炸", name:"盐烤蘑菇", method:"Cookpot", ing:["Mushroom + Salt"]},
-  {no:30, cat:"串炒煎炸", name:"岩盐烤肉", method:"Cookpot", ing:["Meat + Salt"]},
-  {no:31, cat:"串炒煎炸", name:"高级岩盐烤肉", method:"Cookpot", ing:["Prime Meat + Salt"]},
-  {no:32, cat:"串炒煎炸", name:"顶级岩盐烤肉", method:"Cookpot", ing:["Gourmet Meat + Salt"]},
-  {no:33, cat:"串炒煎炸", name:"盐烤鱼", method:"Cookpot", ing:["Fish or Snail + Salt"]},
-  {no:34, cat:"串炒煎炸", name:"岩盐烤蟹", method:"Cookpot", ing:["Crab + Salt"]},
-  {no:35, cat:"串炒煎炸", name:"炒香草", method:"Cookpot", ing:["Herb + Goron Spice"]},
-  {no:36, cat:"串炒煎炸", name:"炒香蘑菇", method:"Cookpot", ing:["Mushroom + Goron Spice"]},
-  {no:37, cat:"串炒煎炸", name:"香辣煎肉", method:"Cookpot", ing:["Meat + Spicy Pepper"]},
-  {no:38, cat:"串炒煎炸", name:"香辣煎鱼", method:"Cookpot", ing:["Fish + Spicy Pepper"]},
-  {no:39, cat:"串炒煎炸", name:"油炖海鲜", method:"Cookpot", ing:["Seafood + Stambulb + Oil"]},
-  {no:40, cat:"串炒煎炸", name:"油炸禽肉", method:"Cookpot", ing:["Raw Bird Drumstick + Oil"]},
-  {no:41, cat:"串炒煎炸", name:"油炸高级禽肉", method:"Cookpot", ing:["Raw Bird Thigh + Oil"]},
-  {no:42, cat:"串炒煎炸", name:"油炸顶级禽肉", method:"Cookpot", ing:["Raw Whole Bird + Oil"]},
-  {no:43, cat:"串炒煎炸", name:"干煎鱼", method:"Cookpot", ing:["Fish + Butter + Wheat"]},
-  {no:44, cat:"串炒煎炸", name:"干煎鲷鱼", method:"Cookpot", ing:["Porgy + Butter + Wheat"]},
-  {no:45, cat:"汤品炖菜", name:"干煎鲑鱼", method:"Cookpot", ing:["Salmon + Butter + Wheat"]},
-  {no:46, cat:"汤品炖菜", name:"水果拌蘑菇", method:"Cookpot", ing:["Mushroom + Fruit"]},
-  {no:47, cat:"汤品炖菜", name:"炖水果", method:"Cookpot", ing:["Fruit"]},
-  {no:48, cat:"汤品炖菜", name:"大份炖水果", method:"Cookpot", ing:["4 different kinds of fruit"]},
-  {no:49, cat:"汤品炖菜", name:"炖番茄", method:"Cookpot", ing:["Tomato"]},
-  {no:50, cat:"汤品炖菜", name:"番茄汤", method:"Cookpot", ing:["Salt + Milk + Tomato"]},
-  {no:51, cat:"汤品炖菜", name:"炖蘑菇番茄", method:"Cookpot", ing:["Tomato + Mushroom"]},
-  {no:52, cat:"汤品炖菜", name:"海鲜番茄汤", method:"Cookpot", ing:["Tomato + Seafood"]},
-  {no:53, cat:"汤品炖菜", name:"蔬菜牛奶汤", method:"Cookpot", ing:["2 Vegetables + Milk + Salt"]},
-  {no:54, cat:"汤品炖菜", name:"蔬菜浓汤", method:"Cookpot", ing:["Milk + Salt + Endura/Swift Carrot or Fortified Pumpkin"]},
-  {no:55, cat:"汤品炖菜", name:"蘑菇牛奶汤", method:"Cookpot", ing:["Mushroom + Vegetable + Salt + Milk"]},
-  {no:56, cat:"汤品炖菜", name:"鲜肉牛奶汤", method:"Cookpot", ing:["Meat + Vegetable + Salt + Milk"]},
-  {no:57, cat:"汤品炖菜", name:"海鲜牛奶汤", method:"Cookpot", ing:["Fish/Crab/Snail + Vegetable + Salt + Milk"]},
-  {no:58, cat:"汤品炖菜", name:"贝肉杂烩", method:"Cookpot", ing:["Snail + Wheat + Milk + Butter"]},
-  {no:59, cat:"汤品炖菜", name:"心心牛奶汤", method:"Cookpot", ing:["Hydromelon + Voltfruit + Hearty Radish + Milk"]},
-  {no:60, cat:"汤品炖菜", name:"甘露炖蔬菜", method:"Cookpot", ing:["Vegetable + Honey"]},
-  {no:61, cat:"汤品炖菜", name:"甘露炖蘑菇", method:"Cookpot", ing:["Mushroom + Honey"]},
-  {no:62, cat:"汤品炖菜", name:"甘露炖肉", method:"Cookpot", ing:["Meat + Honey"]},
-  {no:63, cat:"汤品炖菜", name:"甘露炖鱼", method:"Cookpot", ing:["Honey + Seafood"]},
-  {no:64, cat:"汤品炖菜", name:"咖喱饭", method:"Cookpot", ing:["Rice + Goron Spice"]},
-  {no:65, cat:"汤品炖菜", name:"蔬菜咖喱饭", method:"Cookpot", ing:["Rice + Vegetable + Goron Spice"]},
-  {no:66, cat:"汤品炖菜", name:"兽肉咖喱饭", method:"Cookpot", ing:["Rice + Meat + Goron Spice"]},
-  {no:67, cat:"汤品炖菜", name:"高级兽肉咖喱饭", method:"Cookpot", ing:["Rice + Prime Meat + Goron Spice"]},
-  {no:68, cat:"汤品炖菜", name:"顶级兽肉咖喱饭", method:"Cookpot", ing:["Rice + Gourmet Meat + Goron Spice"]},
-  {no:69, cat:"汤品炖菜", name:"禽肉咖喱饭", method:"Cookpot", ing:["Rice + Poultry + Goron Spice"]},
-  {no:70, cat:"汤品炖菜", name:"高级禽肉咖喱饭", method:"Cookpot", ing:["Rice + Prime Poultry + Goron Spice"]},
-  {no:71, cat:"汤品炖菜", name:"顶级禽肉咖喱饭", method:"Cookpot", ing:["Rice + Gourmet Poultry + Goron Spice"]},
-  {no:72, cat:"汤品炖菜", name:"海鲜咖喱饭", method:"Cookpot", ing:["Rice + Fish + Goron Spice"]},
-  {no:73, cat:"汤品炖菜", name:"起司咖喱", method:"Cookpot", ing:["Rice + Cheese + Goron Spice"]},
-  {no:74, cat:"汤品炖菜", name:"胡萝卜炖菜", method:"Cookpot", ing:["Carrot + Wheat + Milk + Butter"]},
-  {no:75, cat:"汤品炖菜", name:"南瓜炖菜", method:"Cookpot", ing:["Pumpkin + Wheat + Milk + Butter"]},
-  {no:76, cat:"汤品炖菜", name:"炖肉", method:"Cookpot", ing:["Meat + Wheat + Milk + Butter"]},
-  {no:77, cat:"汤品炖菜", name:"高级炖肉", method:"Cookpot", ing:["Prime Meat + Wheat + Milk + Butter"]},
-  {no:78, cat:"汤品炖菜", name:"顶级炖肉", method:"Cookpot", ing:["Gourmet Meat + Wheat + Milk + Butter"]},
-  {no:79, cat:"汤品炖菜", name:"南瓜酿肉", method:"Cookpot", ing:["Meat + Pumpkin"]},
-  {no:80, cat:"饭食", name:"蔬菜烩饭", method:"Cookpot", ing:["Vegetable + Rice + Salt + Butter"]},
-  {no:81, cat:"饭食", name:"蘑菇烩饭", method:"Cookpot", ing:["Mushroom + Rice + Butter + Salt"]},
-  {no:82, cat:"饭食", name:"鲑鱼烩饭", method:"Cookpot", ing:["Salmon + Rice + Salt + Butter"]},
-  {no:83, cat:"饭食", name:"蟹肉烩饭", method:"Cookpot", ing:["Crab + Butter + Salt + Rice"]},
-  {no:84, cat:"饭食", name:"起司烩饭", method:"Cookpot", ing:["Fish or Mushroom + Cheese + Rice + Salt"]},
-  {no:85, cat:"饭食", name:"禽肉菜饭", method:"Cookpot", ing:["Raw Bird Drumstick + Egg + Rice + Butter"]},
-  {no:86, cat:"饭食", name:"高级禽肉菜饭", method:"Cookpot", ing:["Raw Bird Thigh + Rice + Egg + Butter"]},
-  {no:87, cat:"饭食", name:"顶级禽肉菜饭", method:"Cookpot", ing:["Raw Whole Bird + Egg + Rice + Butter"]},
-  {no:88, cat:"饭食", name:"海鲜杂烩饭", method:"Cookpot", ing:["Seafood + Rice + Butter + Salt"]},
-  {no:89, cat:"饭食", name:"咖喱菜饭", method:"Cookpot", ing:["Goron Spice + Rice + Butter"]},
-  {no:90, cat:"饭食", name:"煎蛋饭", method:"Cookpot", ing:["Egg + Rice"]},
-  {no:91, cat:"饭食", name:"啪啦啪啦炒饭", method:"Cookpot", ing:["Rice + Meat + Egg + Oil"]},
-  {no:92, cat:"饭食", name:"海鲜炒饭", method:"Cookpot", ing:["Seafood + Rice + Salt"]},
-  {no:93, cat:"饭食", name:"蟹肉蛋炒饭", method:"Cookpot", ing:["Crab + Egg + Rice + Salt"]},
-  {no:94, cat:"饭食", name:"兽肉盖饭", method:"Cookpot", ing:["Rice + Meat + Salt"]},
-  {no:95, cat:"饭食", name:"高级兽肉盖饭", method:"Cookpot", ing:["Prime Meat + Rice + Salt"]},
-  {no:96, cat:"饭食", name:"顶级兽肉盖饭", method:"Cookpot", ing:["Gourmet Meat + Rice + Salt"]},
-  {no:97, cat:"饭食", name:"起司兽肉盖饭", method:"Cookpot", ing:["Meat + Rice + Cheese + Salt"]},
-  {no:98, cat:"饭食", name:"起司高级兽肉盖饭", method:"Cookpot", ing:["Prime Meat + Rice + Cheese + Salt"]},
-  {no:99, cat:"饭食", name:"起司顶级兽肉盖饭", method:"Cookpot", ing:["Gourmet Meat + Cheese + Rice + Salt"]},
-  {no:100, cat:"饭食", name:"野菜饭团", method:"Cookpot", ing:["Rice + Vegetable"]},
-  {no:101, cat:"饭食", name:"蘑菇饭团", method:"Cookpot", ing:["Rice + Mushroom"]},
-  {no:102, cat:"饭食", name:"鲜肉饭团", method:"Cookpot", ing:["Rice + Meat"]},
-  {no:103, cat:"饭食", name:"海鲜饭团", method:"Cookpot", ing:["Rice + Fish"]},
-  {no:104, cat:"饭食", name:"野菜牛奶粥", method:"Cookpot", ing:["Rice + Milk + Vegetable"]},
-  {no:105, cat:"饭食", name:"小麦面包", method:"Cookpot", ing:["Wheat + Oil + Salt"]},
-  {no:106, cat:"饭食", name:"黏糊糊起司面包", method:"Cookpot", ing:["Wheat + Cheese + Oil + Salt"]},
-  {no:107, cat:"饭食", name:"番茄披萨", method:"Cookpot", ing:["Cheese + Tomato + Wheat"]},
-  {no:108, cat:"饭食", name:"鲜肉派", method:"Cookpot", ing:["Wheat + Butter + Salt + Meat"]},
-  {no:109, cat:"饭食", name:"鱼肉派", method:"Cookpot", ing:["Wheat + Butter + Salt + Fish"]},
-  {no:110, cat:"饭食", name:"起司番茄", method:"Cookpot", ing:["Cheese + Tomato"]},
-  {no:111, cat:"饭食", name:"鲜鱼起司焗烤", method:"Cookpot", ing:["Cheese + Fish"]},
-  {no:112, cat:"饭食", name:"煎蛋卷", method:"Cookpot", ing:["Egg + Salt"]},
-  {no:113, cat:"饭食", name:"蔬菜煎蛋卷", method:"Cookpot", ing:["Vegetable + Egg + Butter + Salt"]},
-  {no:114, cat:"饭食", name:"蘑菇煎蛋卷", method:"Cookpot", ing:["Mushroom + Egg + Salt + Butter"]},
-  {no:115, cat:"饭食", name:"起司煎蛋卷", method:"Cookpot", ing:["Vegetable + Cheese + Egg + Salt"]},
-  {no:116, cat:"饭食", name:"黄油苹果", method:"Cookpot", ing:["Apple + Butter"]},
-  {no:117, cat:"饭食", name:"蜂蜜水果", method:"Cookpot", ing:["Fruit (not apple) + Honey"]},
-  {no:118, cat:"饭食", name:"蜂蜜苹果", method:"Cookpot", ing:["Honey + Apple"]},
-  {no:119, cat:"饭食", name:"蜂蜜糖", method:"Cookpot", ing:["Honey"]},
-  {no:120, cat:"饭食", name:"炸香蕉", method:"Cookpot", ing:["Banana + Wheat + Sugar"]},
-  {no:121, cat:"饭食", name:"鲜蛋布丁", method:"Cookpot", ing:["Egg + Milk + Sugar"]},
-  {no:122, cat:"饭食", name:"原味可丽饼", method:"Cookpot", ing:["Wheat + Egg + Milk + Sugar"]},
-  {no:123, cat:"饭食", name:"草莓可丽饼", method:"Cookpot", ing:["Wheat + Milk + Egg + Sugar + Wildberry"]},
-  {no:124, cat:"饭食", name:"蜂蜜可丽饼", method:"Cookpot", ing:["Wheat + Sugar + Honey + Egg + Milk"]},
-  {no:125, cat:"饭食", name:"坚果蛋糕", method:"Cookpot", ing:["Wheat + Butter + Sugar + Nut"]},
-  {no:126, cat:"饭食", name:"水果蛋糕", method:"Cookpot", ing:["Apple + Wheat + Sugar + Wildberry"]},
-  {no:127, cat:"饭食", name:"胡萝卜蛋糕", method:"Cookpot", ing:["Carrot + Wheat + Sugar + Butter"]},
-  {no:128, cat:"饭食", name:"南瓜蛋糕", method:"Cookpot", ing:["Pumpkin + Wheat + Sugar + Butter"]},
-  {no:129, cat:"饭食", name:"起司蛋糕", method:"Cookpot", ing:["Cheese + Wheat + Sugar"]},
-  {no:130, cat:"饭食", name:"水果派", method:"Cookpot", ing:["Fruit + Wheat + Sugar + Butter"]},
-  {no:131, cat:"饭食", name:"苹果派", method:"Cookpot", ing:["Apple + Wheat + Sugar + Butter"]},
-  {no:132, cat:"饭食", name:"蛋挞", method:"Cookpot", ing:["Egg + Butter + Sugar + Wheat"]},
-  {no:133, cat:"饭食", name:"热牛奶", method:"Cookpot", ing:["Milk"]},
-  {no:134, cat:"饭食", name:"芭伊遇上伯伊", method:"Cookpot", ing:["Palm Fruit + Hydromelon + Voltfruit + Salt"]},
-  {no:135, cat:"特殊料理", name:"炖怪物", method:"Cookpot", ing:["Monster Extract + Meat + Seafood"]},
-  {no:136, cat:"特殊料理", name:"怪物汤", method:"Cookpot", ing:["Monster Extract + Wheat + Milk + Butter"]},
-  {no:137, cat:"特殊料理", name:"怪物咖喱饭", method:"Cookpot", ing:["Monster Extract + Rice + Goron Spice"]},
-  {no:138, cat:"特殊料理", name:"怪物饭团", method:"Cookpot", ing:["Monster Extract + Rice + Salt"]},
-  {no:139, cat:"特殊料理", name:"怪物蛋糕", method:"Cookpot", ing:["Monster Extract + Sugar + Wheat + Butter"]},
-  {no:140, cat:"特殊料理", name:"魔人炖煮", method:"Cookpot", ing:["Dark Clump + Meat + Seafood"]},
-  {no:141, cat:"特殊料理", name:"魔人汤", method:"Cookpot", ing:["Dark Clump + Wheat + Butter + Milk"]},
-  {no:142, cat:"特殊料理", name:"魔人咖喱饭", method:"Cookpot", ing:["Dark Clump + Goron Spice + Rice"]},
-  {no:143, cat:"特殊料理", name:"魔人饭团", method:"Cookpot", ing:["Dark Clump + Rice + Salt"]},
-  {no:144, cat:"特殊料理", name:"魔人蛋糕", method:"Cookpot", ing:["Dark Clump + Wheat + Butter + Sugar"]},
-  {no:145, cat:"特殊料理", name:"奇异的菜肴", method:"Cookpot", ing:["Non-food items or incompatible ingredients"]},
-  {no:146, cat:"特殊料理", name:"过硬的菜肴", method:"Cookpot", ing:["Ore"]},
-  {no:147, cat:"烤食", name:"烤苹果", method:"Campfire", ing:["Apple"]},
-  {no:148, cat:"烤食", name:"烤金苹果", method:"Campfire", ing:["Golden Apple"]},
-  {no:149, cat:"烤食", name:"烤暖暖草果", method:"Campfire", ing:["Spicy Pepper"]},
-  {no:150, cat:"烤食", name:"烤海拉鲁番茄", method:"Campfire", ing:["Hylian Tomato"]},
-  {no:151, cat:"烤食", name:"烤草莓", method:"Campfire", ing:["Wildberry"]},
-  {no:152, cat:"烤食", name:"烤酥麻水果", method:"Campfire", ing:["Voltfruit"]},
-  {no:153, cat:"烤食", name:"烤冰冷蜜瓜", method:"Campfire", ing:["Hydromelon"]},
-  {no:154, cat:"烤食", name:"烤椰子", method:"Campfire", ing:["Palm Fruit"]},
-  {no:155, cat:"烤食", name:"烤大剑香蕉", method:"Campfire", ing:["Mighty Bananas"]},
-  {no:156, cat:"烤食", name:"烤速速莲蓬", method:"Campfire", ing:["Fleet-Lotus Seeds"]},
-  {no:157, cat:"烤食", name:"烤大剑草", method:"Campfire", ing:["Mighty Thistle"]},
-  {no:158, cat:"烤食", name:"烤铠甲草", method:"Campfire", ing:["Armoranth"]},
-  {no:159, cat:"烤食", name:"烤速速胡萝卜", method:"Campfire", ing:["Swift Carrot"]},
-  {no:160, cat:"烤食", name:"烤毅力胡萝卜", method:"Campfire", ing:["Endura Carrot"]},
-  {no:161, cat:"烤食", name:"烤铠甲南瓜", method:"Campfire", ing:["Fortified Pumpkin"]},
-  {no:162, cat:"烤食", name:"烤向阳南瓜", method:"Campfire", ing:["Sun Pumpkin"]},
-  {no:163, cat:"烤食", name:"烤小萝卜", method:"Campfire", ing:["Hearty Radish"]},
-  {no:164, cat:"烤食", name:"烤大萝卜", method:"Campfire", ing:["Big Hearty Radish"]},
-  {no:165, cat:"烤食", name:"烤天空蘑菇", method:"Campfire", ing:["Skyshroom"]},
-  {no:166, cat:"烤食", name:"烤海拉鲁蘑菇", method:"Campfire", ing:["Hylian Shroom"]},
-  {no:167, cat:"烤食", name:"烤精力蘑菇", method:"Campfire", ing:["Stamella Shroom"]},
-  {no:168, cat:"烤食", name:"烤速速蘑菇", method:"Campfire", ing:["Rushroom"]},
-  {no:169, cat:"烤食", name:"烤暖暖蘑菇", method:"Campfire", ing:["Sunshroom"]},
-  {no:170, cat:"烤食", name:"烤冰冷蘑菇", method:"Campfire", ing:["Chillshroom"]},
-  {no:171, cat:"烤食", name:"烤酥麻蘑菇", method:"Campfire", ing:["Zapshroom"]},
-  {no:172, cat:"烤食", name:"烤大剑蘑菇", method:"Campfire", ing:["Razorshroom"]},
-  {no:173, cat:"烤食", name:"烤铠甲蘑菇", method:"Campfire", ing:["Ironshroom"]},
-  {no:174, cat:"烤食", name:"烤潜行蘑菇", method:"Campfire", ing:["Silent Shroom"]},
-  {no:175, cat:"烤食", name:"烤光亮蘑菇", method:"Campfire", ing:["Brightcap"]},
-  {no:176, cat:"烤食", name:"烤毅力蘑菇", method:"Campfire", ing:["Endura Shroom"]},
-  {no:177, cat:"烤食", name:"烤生命松露", method:"Campfire", ing:["Hearty Truffle"]},
-  {no:178, cat:"烤食", name:"烤大生命松露", method:"Campfire", ing:["Big Hearty Truffle"]},
-  {no:179, cat:"烤食", name:"烤兽肉", method:"Campfire", ing:["Raw Meat"]},
-  {no:180, cat:"烤食", name:"烤高级兽肉", method:"Campfire", ing:["Prime Meat"]},
-  {no:181, cat:"烤食", name:"烤顶级兽肉", method:"Campfire", ing:["Gourmet Meat"]},
-  {no:182, cat:"烤食", name:"烤禽肉", method:"Campfire", ing:["Raw Bird Drumstick"]},
-  {no:183, cat:"烤食", name:"烤高级禽肉", method:"Campfire", ing:["Raw Bird Thigh"]},
-  {no:184, cat:"烤食", name:"烤顶级禽肉", method:"Campfire", ing:["Raw Whole Bird"]},
-  {no:185, cat:"烤食", name:"烤骨舌鱼", method:"Campfire", ing:["Ancient Arowana"]},
-  {no:186, cat:"烤食", name:"烤鲈鱼", method:"Campfire", ing:["Bass (not Hearty Bass)"]},
-  {no:187, cat:"烤食", name:"烤鳟鱼", method:"Campfire", ing:["Trout"]},
-  {no:188, cat:"烤食", name:"烤鲤鱼", method:"Campfire", ing:["Carp"]},
-  {no:189, cat:"烤食", name:"烤鲷鱼", method:"Campfire", ing:["Porgy"]},
-  {no:190, cat:"烤食", name:"烤霍拉鱼", method:"Campfire", ing:["Glowing Cave Fish"]},
-  {no:191, cat:"烤食", name:"烤生命鲈鱼", method:"Campfire", ing:["Hearty Bass"]},
-  {no:192, cat:"烤食", name:"烤生命鲑鱼", method:"Campfire", ing:["Hearty Salmon"]},
-  {no:193, cat:"烤食", name:"烤螃蟹", method:"Campfire", ing:["Crab"]},
-  {no:194, cat:"烤食", name:"烤潜行田螺", method:"Campfire", ing:["River Snail"]},
-  {no:195, cat:"烤食", name:"烤树果", method:"Campfire", ing:["Chickaloo Tree Nut"]},
-  {no:196, cat:"烤食", name:"烤橡子", method:"Campfire", ing:["Acorn"]},
-  {no:197, cat:"烤食", name:"烤蛋", method:"Campfire", ing:["Bird Egg"]},
-  {no:198, cat:"特殊料理", name:"水煮蛋", method:"Hot Spring", ing:["Bird Egg"]},
-  {no:199, cat:"冷冻", name:"冰冻兽肉", method:"Extreme Cold", ing:["Raw Meat"]},
-  {no:200, cat:"冷冻", name:"高级冰冻兽肉", method:"Extreme Cold", ing:["Prime Meat"]},
-  {no:201, cat:"冷冻", name:"顶级冰冻兽肉", method:"Extreme Cold", ing:["Gourmet Meat"]},
-  {no:202, cat:"冷冻", name:"冰冻禽肉", method:"Extreme Cold", ing:["Raw Bird Drumstick"]},
-  {no:203, cat:"冷冻", name:"高级冰冻禽肉", method:"Extreme Cold", ing:["Raw Bird Thigh"]},
-  {no:204, cat:"冷冻", name:"顶级冰冻禽肉", method:"Extreme Cold", ing:["Raw Whole Bird"]},
-  {no:205, cat:"冷冻", name:"冰冻骨舌鱼", method:"Extreme Cold", ing:["Ancient Arowana"]},
-  {no:206, cat:"冷冻", name:"冰冻鲈鱼", method:"Extreme Cold", ing:["Bass (not Hearty Bass)"]},
-  {no:207, cat:"冷冻", name:"冰冻鳟鱼", method:"Extreme Cold", ing:["Trout"]},
-  {no:208, cat:"冷冻", name:"冰冻鲤鱼", method:"Extreme Cold", ing:["Carp"]},
-  {no:209, cat:"冷冻", name:"冰冻鲷鱼", method:"Extreme Cold", ing:["Porgy"]},
-  {no:210, cat:"冷冻", name:"冰冻霍拉鱼", method:"Extreme Cold", ing:["Glowing Cave Fish"]},
-  {no:211, cat:"冷冻", name:"冰冻生命鲈鱼", method:"Extreme Cold", ing:["Hearty Bass"]},
-  {no:212, cat:"冷冻", name:"冰冻生命鲑鱼", method:"Extreme Cold", ing:["Hearty Salmon"]},
-  {no:213, cat:"冷冻", name:"冰冻螃蟹", method:"Extreme Cold", ing:["Crab"]},
-  {no:214, cat:"冷冻", name:"冰冻田螺", method:"Extreme Cold", ing:["River Snail"]},
-  {no:215, cat:"药水", name:"精力药", method:"Cookpot", ing:["Restless Cricket + Monster Part"]},
-  {no:216, cat:"药水", name:"速速药", method:"Cookpot", ing:["Hot-Footed Frog / Hightail Lizard + Monster Part"]},
-  {no:217, cat:"药水", name:"辛辣药", method:"Cookpot", ing:["Summerwing Butterfly / Warm Darner + Monster Part"]},
-  {no:218, cat:"药水", name:"冰冷药", method:"Cookpot", ing:["Winterwing Butterfly / Cold Darner + Monster Part"]},
-  {no:219, cat:"药水", name:"电麻药", method:"Cookpot", ing:["Electric Darner / Thunderwing Butterfly + Monster Part"]},
-  {no:220, cat:"药水", name:"防火药", method:"Cookpot", ing:["Smotherwing Butterfly / Fireproof Lizard + Monster Part"]},
-  {no:221, cat:"药水", name:"力量药", method:"Cookpot", ing:["Bladed Rhino Beetle + Monster Part"]},
-  {no:222, cat:"药水", name:"坚硬药", method:"Cookpot", ing:["Beetle + Monster Part"]},
-  {no:223, cat:"药水", name:"潜行药", method:"Cookpot", ing:["Sunset Firefly / Silent Shroom / Silent Princess + Monster Part"]},
-  {no:224, cat:"药水", name:"防滑药", method:"Cookpot", ing:["Sticky Frog / Sticky Lizard + Monster Part"]},
-  {no:225, cat:"药水", name:"光亮药", method:"Cookpot", ing:["Deep Firefly + Monster Part"]},
-  {no:226, cat:"药水", name:"能量药", method:"Cookpot", ing:["Tireless Frog + Monster Part"]},
-  {no:227, cat:"药水", name:"生命药", method:"Cookpot", ing:["Hearty Lizard / Hearty Bass + Monster Part"]},
-  {no:228, cat:"药水", name:"妖精回力水", method:"Cookpot", ing:["Fairy"]}
+  {no:1, cat:"串炒煎炸", name:"烤蘑菇串", en:"Mushroom Skewer", method:"Cookpot", ing:["Mushroom"], effect:"—", hearts:"—"},
+  {no:2, cat:"串炒煎炸", name:"烤肉蘑菇串", en:"Meat and Mushroom Skewer", method:"Cookpot", ing:["Mushroom + Meat"], effect:"—", hearts:"—"},
+  {no:3, cat:"串炒煎炸", name:"烤鱼蘑菇串", en:"Fish and Mushroom Skewer", method:"Cookpot", ing:["Mushroom + Fish"], effect:"—", hearts:"—"},
+  {no:4, cat:"串炒煎炸", name:"烤肉串", en:"Meat Skewer", method:"Cookpot", ing:["Meat"], effect:"—", hearts:"—"},
+  {no:5, cat:"串炒煎炸", name:"烤鱼", en:"Fish Skewer", method:"Cookpot", ing:["Fish"], effect:"—", hearts:"—"},
+  {no:6, cat:"串炒煎炸", name:"串烤海鲜", en:"Seafood Skewer", method:"Cookpot", ing:["Seafood"], effect:"—", hearts:"—"},
+  {no:7, cat:"串炒煎炸", name:"大份烤肉串", en:"Copious Meat Skewers", method:"Cookpot", ing:["Meat + Meat + Meat + Meat"], effect:"—", hearts:"—"},
+  {no:8, cat:"串炒煎炸", name:"大份烤鱼", en:"Copious Seafood Skewers", method:"Cookpot", ing:["Fish + Fish + Fish + Fish"], effect:"—", hearts:"—"},
+  {no:9, cat:"串炒煎炸", name:"蒸水果", en:"Steamed Fruit", method:"Cookpot", ing:["Plant + Fruit"], effect:"—", hearts:"—"},
+  {no:10, cat:"串炒煎炸", name:"蒸野菜番茄", en:"Steamed Tomatoes", method:"Cookpot", ing:["Plant + Hylian Tomato"], effect:"—", hearts:"—"},
+  {no:11, cat:"串炒煎炸", name:"蒸蘑菇", en:"Steamed Mushrooms", method:"Cookpot", ing:["Plant + Mushroom"], effect:"—", hearts:"—"},
+  {no:12, cat:"串炒煎炸", name:"蒸肉", en:"Steamed Meat", method:"Cookpot", ing:["Plant + Meat"], effect:"—", hearts:"—"},
+  {no:13, cat:"串炒煎炸", name:"蒸鱼", en:"Steamed Fish", method:"Cookpot", ing:["Plant + Fish"], effect:"—", hearts:"—"},
+  {no:14, cat:"串炒煎炸", name:"炒暖暖草果", en:"Sautéed Peppers", method:"Cookpot", ing:["Spicy Pepper"], effect:"Cold Resistance", hearts:"—"},
+  {no:15, cat:"串炒煎炸", name:"炒坚果", en:"Sautéed Nuts", method:"Cookpot", ing:["Nut"], effect:"—", hearts:"—"},
+  {no:16, cat:"串炒煎炸", name:"炒野菜", en:"Fried Wild Greens", method:"Cookpot", ing:["Plant"], effect:"—", hearts:"—"},
+  {no:17, cat:"串炒煎炸", name:"大份炒野菜", en:"Copious Fried Wild Greens", method:"Cookpot", ing:["Plant + Plant + Plant + Plant"], effect:"—", hearts:"—"},
+  {no:18, cat:"串炒煎炸", name:"原烧灯笼花", en:"Cooked Stambulb", method:"Cookpot", ing:["Stambulb"], effect:"Stamina Recovery", hearts:"—"},
+  {no:19, cat:"串炒煎炸", name:"黄油灯笼花", en:"Buttered Stambulb", method:"Cookpot", ing:["Stambulb + Goat Butter"], effect:"Stamina Recovery", hearts:"—"},
+  {no:20, cat:"串炒煎炸", name:"大份烤蘑菇串", en:"Copious Mushroom Skewers", method:"Cookpot", ing:["Mushroom + Mushroom + Mushroom + Mushroom"], effect:"—", hearts:"—"},
+  {no:21, cat:"串炒煎炸", name:"烤兽肉串", en:"Spiced Meat Skewer", method:"Cookpot", ing:["Raw Meat + Goron Spice"], effect:"—", hearts:"—"},
+  {no:22, cat:"串炒煎炸", name:"高级烤兽肉串", en:"Prime Spiced Meat Skewer", method:"Cookpot", ing:["Raw Prime Meat + Goron Spice"], effect:"—", hearts:"—"},
+  {no:23, cat:"串炒煎炸", name:"顶级烤兽肉串", en:"Gourmet Spiced Meat Skewer", method:"Cookpot", ing:["Raw Gourmet Meat + Goron Spice"], effect:"—", hearts:"—"},
+  {no:24, cat:"串炒煎炸", name:"炒螃蟹", en:"Crab Stir-Fry", method:"Cookpot", ing:["Crab + Goron Spice"], effect:"—", hearts:"—"},
+  {no:25, cat:"串炒煎炸", name:"海陆煎烤", en:"Meat and Seafood Fry", method:"Cookpot", ing:["Meat + Fish"], effect:"—", hearts:"—"},
+  {no:26, cat:"串炒煎炸", name:"高级海陆煎烤", en:"Prime Meat and Seafood Fry", method:"Cookpot", ing:["Tier 2 Meat + Fish"], effect:"—", hearts:"—"},
+  {no:27, cat:"串炒煎炸", name:"顶级海陆煎烤", en:"Gourmet Meat and Seafood Fry", method:"Cookpot", ing:["Tier 3 Meat + Fish"], effect:"—", hearts:"—"},
+  {no:28, cat:"串炒煎炸", name:"盐烤野菜", en:"Salt-Grilled Greens", method:"Cookpot", ing:["Plant + Rock Salt"], effect:"—", hearts:"—"},
+  {no:29, cat:"串炒煎炸", name:"盐烤蘑菇", en:"Salt-Grilled Mushrooms", method:"Cookpot", ing:["Mushroom + Rock Salt"], effect:"—", hearts:"—"},
+  {no:30, cat:"串炒煎炸", name:"岩盐烤肉", en:"Salt-Grilled Meat", method:"Cookpot", ing:["Tier 1 Meat + Rock Salt"], effect:"—", hearts:"—"},
+  {no:31, cat:"串炒煎炸", name:"高级岩盐烤肉", en:"Salt-Grilled Prime Meat", method:"Cookpot", ing:["Tier 2 Meat + Rock Salt"], effect:"—", hearts:"—"},
+  {no:32, cat:"串炒煎炸", name:"顶级岩盐烤肉", en:"Salt-Grilled Gourmet Meat", method:"Cookpot", ing:["Tier 3 Meat + Rock Salt"], effect:"—", hearts:"—"},
+  {no:33, cat:"串炒煎炸", name:"盐烤鱼", en:"Salt-Grilled Fish", method:"Cookpot", ing:["Fish + Rock Salt"], effect:"—", hearts:"—"},
+  {no:34, cat:"串炒煎炸", name:"岩盐烤蟹", en:"Salt-Grilled Crab", method:"Cookpot", ing:["Crab + Rock Salt"], effect:"—", hearts:"—"},
+  {no:35, cat:"串炒煎炸", name:"炒香草", en:"Herb Sauté", method:"Cookpot", ing:["Plant + Goron Spice"], effect:"—", hearts:"—"},
+  {no:36, cat:"串炒煎炸", name:"炒香蘑菇", en:"Fragrant Mushroom Sauté", method:"Cookpot", ing:["Mushroom + Goron Spice"], effect:"—", hearts:"—"},
+  {no:37, cat:"串炒煎炸", name:"香辣煎肉", en:"Pepper Steak", method:"Cookpot", ing:["Meat + Spicy Pepper"], effect:"—", hearts:"—"},
+  {no:38, cat:"串炒煎炸", name:"香辣煎鱼", en:"Pepper Seafood", method:"Cookpot", ing:["Fish + Spicy Pepper"], effect:"—", hearts:"—"},
+  {no:39, cat:"串炒煎炸", name:"油炖海鲜", en:"Fragrant Seafood Stew", method:"Cookpot", ing:["Fish + Stambulb + Oil Jar"], effect:"—", hearts:"—"},
+  {no:40, cat:"串炒煎炸", name:"油炸禽肉", en:"Deep-Fried Drumstick", method:"Cookpot", ing:["Raw Bird Drumstick + Oil Jar"], effect:"—", hearts:"—"},
+  {no:41, cat:"串炒煎炸", name:"油炸高级禽肉", en:"Deep-Fried Thigh", method:"Cookpot", ing:["Raw Bird Thigh + Oil Jar"], effect:"—", hearts:"—"},
+  {no:42, cat:"串炒煎炸", name:"油炸顶级禽肉", en:"Deep-Fried Bird Roast", method:"Cookpot", ing:["Raw Whole Bird + Oil Jar"], effect:"—", hearts:"—"},
+  {no:43, cat:"串炒煎炸", name:"干煎鱼", en:"Seafood Meunière", method:"Cookpot", ing:["Fish + Goat Butter + Tabantha Wheat"], effect:"—", hearts:"—"},
+  {no:44, cat:"串炒煎炸", name:"干煎鲷鱼", en:"Porgy Meunière", method:"Cookpot", ing:["Porgy + Goat Butter + Tabantha Wheat"], effect:"—", hearts:"—"},
+  {no:45, cat:"汤品炖菜", name:"干煎鲑鱼", en:"Salmon Meunière", method:"Cookpot", ing:["Hearty Salmon + Goat Butter + Tabantha Wheat"], effect:"—", hearts:"—"},
+  {no:46, cat:"汤品炖菜", name:"水果拌蘑菇", en:"Fruit and Mushroom Mix", method:"Cookpot", ing:["Mushroom + Fruit"], effect:"—", hearts:"—"},
+  {no:47, cat:"汤品炖菜", name:"炖水果", en:"Simmered Fruit", method:"Cookpot", ing:["Fruit"], effect:"—", hearts:"—"},
+  {no:48, cat:"汤品炖菜", name:"大份炖水果", en:"Copious Simmered Fruit", method:"Cookpot", ing:["Fruit + Fruit + Fruit + Fruit"], effect:"—", hearts:"—"},
+  {no:49, cat:"汤品炖菜", name:"炖番茄", en:"Simmered Tomato", method:"Cookpot", ing:["Hylian Tomato"], effect:"—", hearts:"—"},
+  {no:50, cat:"汤品炖菜", name:"番茄汤", en:"Fruity Tomato Stew", method:"Cookpot", ing:["Hylian Tomato + Fresh Milk + Rock Salt"], effect:"—", hearts:"—"},
+  {no:51, cat:"汤品炖菜", name:"炖蘑菇番茄", en:"Tomato Mushroom Stew", method:"Cookpot", ing:["Mushroom + Hylian Tomato"], effect:"—", hearts:"—"},
+  {no:52, cat:"汤品炖菜", name:"海鲜番茄汤", en:"Tomato Seafood Soup", method:"Cookpot", ing:["Fish + Hylian Tomato"], effect:"—", hearts:"—"},
+  {no:53, cat:"汤品炖菜", name:"蔬菜牛奶汤", en:"Cream of Vegetable Soup", method:"Cookpot", ing:["Plant + Rock Salt + Fresh Milk"], effect:"—", hearts:"—"},
+  {no:54, cat:"汤品炖菜", name:"蔬菜浓汤", en:"Veggie Cream Soup", method:"Cookpot", ing:["Pumpkin or Carrot + Rock Salt + Fresh Milk"], effect:"—", hearts:"—"},
+  {no:55, cat:"汤品炖菜", name:"蘑菇牛奶汤", en:"Cream of Mushroom Soup", method:"Cookpot", ing:["Mushroom + Plant + Rock Salt + Fresh Milk"], effect:"—", hearts:"—"},
+  {no:56, cat:"汤品炖菜", name:"鲜肉牛奶汤", en:"Creamy Meat Soup", method:"Cookpot", ing:["Meat + Plant + Rock Salt + Fresh Milk"], effect:"—", hearts:"—"},
+  {no:57, cat:"汤品炖菜", name:"海鲜牛奶汤", en:"Creamy Seafood Soup", method:"Cookpot", ing:["Fish + Plant + Rock Salt + Fresh Milk"], effect:"—", hearts:"—"},
+  {no:58, cat:"汤品炖菜", name:"贝肉杂烩", en:"Snail Chowder", method:"Cookpot", ing:["Sneaky River Snail + Tabantha Wheat + Fresh Milk + Goat Butter"], effect:"—", hearts:"—"},
+  {no:59, cat:"汤品炖菜", name:"心心牛奶汤", en:"Creamy Heart Soup", method:"Cookpot", ing:["Radish + Voltfruit + Hydromelon + Fresh Milk"], effect:"—", hearts:"—"},
+  {no:60, cat:"汤品炖菜", name:"甘露炖蔬菜", en:"Glazed Veggies", method:"Cookpot", ing:["Plant + Courser Bee Honey"], effect:"—", hearts:"—"},
+  {no:61, cat:"汤品炖菜", name:"甘露炖蘑菇", en:"Glazed Mushrooms", method:"Cookpot", ing:["Mushroom + Courser Bee Honey"], effect:"—", hearts:"—"},
+  {no:62, cat:"汤品炖菜", name:"甘露炖肉", en:"Glazed Meat", method:"Cookpot", ing:["Meat + Courser Bee Honey"], effect:"—", hearts:"—"},
+  {no:63, cat:"汤品炖菜", name:"甘露炖鱼", en:"Glazed Seafood", method:"Cookpot", ing:["Fish + Courser Bee Honey"], effect:"—", hearts:"—"},
+  {no:64, cat:"汤品炖菜", name:"咖喱饭", en:"Curry Rice", method:"Cookpot", ing:["Hylian Rice + Goron Spice"], effect:"—", hearts:"—"},
+  {no:65, cat:"汤品炖菜", name:"蔬菜咖喱饭", en:"Vegetable Curry", method:"Cookpot", ing:["Pumpkin or Carrot + Hylian Rice + Goron Spice"], effect:"—", hearts:"—"},
+  {no:66, cat:"汤品炖菜", name:"兽肉咖喱饭", en:"Meat Curry", method:"Cookpot", ing:["Raw Meat + Hylian Rice + Goron Spice"], effect:"—", hearts:"—"},
+  {no:67, cat:"汤品炖菜", name:"高级兽肉咖喱饭", en:"Prime Meat Curry", method:"Cookpot", ing:["Raw Prime Meat + Hylian Rice + Goron Spice"], effect:"—", hearts:"—"},
+  {no:68, cat:"汤品炖菜", name:"顶级兽肉咖喱饭", en:"Gourmet Meat Curry", method:"Cookpot", ing:["Raw Gourmet Meat + Hylian Rice + Goron Spice"], effect:"—", hearts:"—"},
+  {no:69, cat:"汤品炖菜", name:"禽肉咖喱饭", en:"Poultry Curry", method:"Cookpot", ing:["Raw Bird Drumstick + Hylian Rice + Goron Spice"], effect:"—", hearts:"—"},
+  {no:70, cat:"汤品炖菜", name:"高级禽肉咖喱饭", en:"Prime Poultry Curry", method:"Cookpot", ing:["Raw Bird Thigh + Hylian Rice + Goron Spice"], effect:"—", hearts:"—"},
+  {no:71, cat:"汤品炖菜", name:"顶级禽肉咖喱饭", en:"Gourmet Poultry Curry", method:"Cookpot", ing:["Raw Whole Bird + Hylian Rice + Goron Spice"], effect:"—", hearts:"—"},
+  {no:72, cat:"汤品炖菜", name:"海鲜咖喱饭", en:"Seafood Curry", method:"Cookpot", ing:["Porgy + Hylian Rice + Goron Spice"], effect:"—", hearts:"—"},
+  {no:73, cat:"汤品炖菜", name:"起司咖喱", en:"Cheesy Curry", method:"Cookpot", ing:["Hylian Rice + Hateno Cheese + Goron Spice"], effect:"—", hearts:"—"},
+  {no:74, cat:"汤品炖菜", name:"胡萝卜炖菜", en:"Carrot Stew", method:"Cookpot", ing:["Carrot + Goat Butter + Fresh Milk + Tabantha Wheat"], effect:"—", hearts:"—"},
+  {no:75, cat:"汤品炖菜", name:"南瓜炖菜", en:"Pumpkin Stew", method:"Cookpot", ing:["Pumpkin + Tabantha Wheat + Fresh Milk + Goat Butter"], effect:"—", hearts:"—"},
+  {no:76, cat:"汤品炖菜", name:"炖肉", en:"Meat Stew", method:"Cookpot", ing:["Tier 1 Meat + Tabantha Wheat + Fresh Milk + Goat Butter"], effect:"—", hearts:"—"},
+  {no:77, cat:"汤品炖菜", name:"高级炖肉", en:"Prime Meat Stew", method:"Cookpot", ing:["Tier 2 Meat + Tabantha Wheat + Fresh Milk + Goat Butter"], effect:"—", hearts:"—"},
+  {no:78, cat:"汤品炖菜", name:"顶级炖肉", en:"Gourmet Meat Stew", method:"Cookpot", ing:["Tier 3 Meat + Tabantha Wheat + Fresh Milk + Goat Butter"], effect:"—", hearts:"—"},
+  {no:79, cat:"汤品炖菜", name:"南瓜酿肉", en:"Meat-Stuffed Pumpkin", method:"Cookpot", ing:["Pumpkin + Meat"], effect:"—", hearts:"—"},
+  {no:80, cat:"饭食", name:"蔬菜烩饭", en:"Vegetable Risotto", method:"Cookpot", ing:["Pumpkin or Carrot + Hylian Rice + Rock Salt + Goat Butter"], effect:"—", hearts:"—"},
+  {no:81, cat:"饭食", name:"蘑菇烩饭", en:"Mushroom Risotto", method:"Cookpot", ing:["Mushroom + Hylian Rice + Rock Salt + Goat Butter"], effect:"—", hearts:"—"},
+  {no:82, cat:"饭食", name:"鲑鱼烩饭", en:"Salmon Risotto", method:"Cookpot", ing:["Hearty Salmon + Hylian Rice + Rock Salt + Goat Butter"], effect:"—", hearts:"—"},
+  {no:83, cat:"饭食", name:"蟹肉烩饭", en:"Crab Risotto", method:"Cookpot", ing:["Crab + Hylian Rice + Rock Salt + Goat Butter"], effect:"—", hearts:"—"},
+  {no:84, cat:"饭食", name:"起司烩饭", en:"Cheesy Risotto", method:"Cookpot", ing:["Fish / Mushroom / Plant + Hateno Cheese + Hylian Rice + Rock Salt"], effect:"—", hearts:"—"},
+  {no:85, cat:"饭食", name:"禽肉菜饭", en:"Poultry Pilaf", method:"Cookpot", ing:["Raw Bird Drumstick + Bird Egg + Hylian Rice + Goat Butter"], effect:"—", hearts:"—"},
+  {no:86, cat:"饭食", name:"高级禽肉菜饭", en:"Prime Poultry Pilaf", method:"Cookpot", ing:["Raw Bird Thigh + Bird Egg + Hylian Rice + Goat Butter"], effect:"—", hearts:"—"},
+  {no:87, cat:"饭食", name:"顶级禽肉菜饭", en:"Gourmet Poultry Pilaf", method:"Cookpot", ing:["Raw Whole Bird + Bird Egg + Hylian Rice + Goat Butter"], effect:"—", hearts:"—"},
+  {no:88, cat:"饭食", name:"海鲜杂烩饭", en:"Seafood Paella", method:"Cookpot", ing:["Porgy + Crab + Hylian Rice + Goat Butter + Rock Salt"], effect:"—", hearts:"—"},
+  {no:89, cat:"饭食", name:"咖喱菜饭", en:"Curry Pilaf", method:"Cookpot", ing:["Goron Spice + Hylian Rice + Goat Butter"], effect:"—", hearts:"—"},
+  {no:90, cat:"饭食", name:"煎蛋饭", en:"Fried Egg and Rice", method:"Cookpot", ing:["Hylian Rice + Bird Egg"], effect:"—", hearts:"—"},
+  {no:91, cat:"饭食", name:"啪啦啪啦炒饭", en:"Crunchy Fried Rice", method:"Cookpot", ing:["Meat + Oil Jar + Hylian Rice + Bird Egg"], effect:"—", hearts:"—"},
+  {no:92, cat:"饭食", name:"海鲜炒饭", en:"Seafood Fried Rice", method:"Cookpot", ing:["Porgy + Hylian Rice + Rock Salt"], effect:"—", hearts:"—"},
+  {no:93, cat:"饭食", name:"蟹肉蛋炒饭", en:"Crab Omelet with Rice", method:"Cookpot", ing:["Crab + Bird Egg + Hylian Rice + Rock Salt"], effect:"—", hearts:"—"},
+  {no:94, cat:"饭食", name:"兽肉盖饭", en:"Meat and Rice Bowl", method:"Cookpot", ing:["Raw Meat + Hylian Rice + Rock Salt"], effect:"—", hearts:"—"},
+  {no:95, cat:"饭食", name:"高级兽肉盖饭", en:"Prime Meat and Rice Bowl", method:"Cookpot", ing:["Raw Prime Meat + Hylian Rice + Rock Salt"], effect:"—", hearts:"—"},
+  {no:96, cat:"饭食", name:"顶级兽肉盖饭", en:"Gourmet Meat and Rice Bowl", method:"Cookpot", ing:["Raw Gourmet Meat + Hylian Rice + Rock Salt"], effect:"—", hearts:"—"},
+  {no:97, cat:"饭食", name:"起司兽肉盖饭", en:"Cheesy Meat Bowl", method:"Cookpot", ing:["Raw Meat + Hylian Rice + Hateno Cheese + Rock Salt"], effect:"—", hearts:"—"},
+  {no:98, cat:"饭食", name:"起司高级兽肉盖饭", en:"Prime Cheesy Meat Bowl", method:"Cookpot", ing:["Raw Prime Meat + Hylian Rice + Hateno Cheese + Rock Salt"], effect:"—", hearts:"—"},
+  {no:99, cat:"饭食", name:"起司顶级兽肉盖饭", en:"Gourmet Cheesy Meat Bowl", method:"Cookpot", ing:["Raw Gourmet Meat + Hylian Rice + Hateno Cheese + Rock Salt"], effect:"—", hearts:"—"},
+  {no:100, cat:"饭食", name:"野菜饭团", en:"Veggie Rice Balls", method:"Cookpot", ing:["Plant + Hylian Rice"], effect:"—", hearts:"—"},
+  {no:101, cat:"饭食", name:"蘑菇饭团", en:"Mushroom Rice Balls", method:"Cookpot", ing:["Mushroom + Hylian Rice"], effect:"—", hearts:"—"},
+  {no:102, cat:"饭食", name:"鲜肉饭团", en:"Meaty Rice Balls", method:"Cookpot", ing:["Meat + Hylian Rice"], effect:"—", hearts:"—"},
+  {no:103, cat:"饭食", name:"海鲜饭团", en:"Seafood Rice Balls", method:"Cookpot", ing:["Fish + Hylian Rice"], effect:"—", hearts:"—"},
+  {no:104, cat:"饭食", name:"野菜牛奶粥", en:"Veggie Porridge", method:"Cookpot", ing:["Plant + Hylian Rice + Fresh Milk"], effect:"—", hearts:"—"},
+  {no:105, cat:"饭食", name:"小麦面包", en:"Wheat Bread", method:"Cookpot", ing:["Tabantha Wheat + Rock Salt"], effect:"—", hearts:"—"},
+  {no:106, cat:"饭食", name:"黏糊糊起司面包", en:"Melty Cheesy Bread", method:"Cookpot", ing:["Tabantha Wheat + Hateno Cheese"], effect:"—", hearts:"—"},
+  {no:107, cat:"饭食", name:"番茄披萨", en:"Hylian Tomato Pizza", method:"Cookpot", ing:["Hylian Tomato + Tabantha Wheat + Hateno Cheese"], effect:"—", hearts:"—"},
+  {no:108, cat:"饭食", name:"鲜肉派", en:"Meat Pie", method:"Cookpot", ing:["Meat + Tabantha Wheat + Goat Butter + Rock Salt"], effect:"—", hearts:"—"},
+  {no:109, cat:"饭食", name:"鱼肉派", en:"Fish Pie", method:"Cookpot", ing:["Fish + Tabantha Wheat + Goat Butter + Rock Salt"], effect:"—", hearts:"—"},
+  {no:110, cat:"饭食", name:"起司番茄", en:"Cheesy Tomato", method:"Cookpot", ing:["Hylian Tomato + Hateno Cheese"], effect:"—", hearts:"—"},
+  {no:111, cat:"饭食", name:"鲜鱼起司焗烤", en:"Cheesy Baked Fish", method:"Cookpot", ing:["Fish + Hateno Cheese"], effect:"—", hearts:"—"},
+  {no:112, cat:"饭食", name:"煎蛋卷", en:"Omelet", method:"Cookpot", ing:["Bird Egg"], effect:"—", hearts:"—"},
+  {no:113, cat:"饭食", name:"蔬菜煎蛋卷", en:"Vegetable Omelet", method:"Cookpot", ing:["Plant + Bird Egg + Goat Butter + Rock Salt"], effect:"—", hearts:"—"},
+  {no:114, cat:"饭食", name:"蘑菇煎蛋卷", en:"Mushroom Omelet", method:"Cookpot", ing:["Mushroom + Bird Egg + Rock Salt + Goat Butter"], effect:"—", hearts:"—"},
+  {no:115, cat:"饭食", name:"起司煎蛋卷", en:"Cheesy Omelet", method:"Cookpot", ing:["Mushroom / Plant + Hateno Cheese + Bird Egg + Rock Salt"], effect:"—", hearts:"—"},
+  {no:116, cat:"饭食", name:"黄油苹果", en:"Hot Buttered Apple", method:"Cookpot", ing:["Apple / Golden Apple + Goat Butter"], effect:"—", hearts:"—"},
+  {no:117, cat:"饭食", name:"蜂蜜水果", en:"Honeyed Fruits", method:"Cookpot", ing:["Fruit + Courser Bee Honey"], effect:"—", hearts:"—"},
+  {no:118, cat:"饭食", name:"蜂蜜苹果", en:"Honeyed Apple", method:"Cookpot", ing:["Apple / Golden Apple + Courser Bee Honey"], effect:"Stamina Recovery", hearts:"—"},
+  {no:119, cat:"饭食", name:"蜂蜜糖", en:"Honey Candy", method:"Cookpot", ing:["Courser Bee Honey"], effect:"Stamina Recovery", hearts:"—"},
+  {no:120, cat:"饭食", name:"炸香蕉", en:"Fried Bananas", method:"Cookpot", ing:["Mighty Bananas + Tabantha Wheat + Cane Sugar"], effect:"—", hearts:"—"},
+  {no:121, cat:"饭食", name:"鲜蛋布丁", en:"Egg Pudding", method:"Cookpot", ing:["Bird Egg + Fresh Milk + Cane Sugar"], effect:"—", hearts:"—"},
+  {no:122, cat:"饭食", name:"原味可丽饼", en:"Plain Crepe", method:"Cookpot", ing:["Tabantha Wheat + Fresh Milk + Bird Egg + Cane Sugar"], effect:"—", hearts:"—"},
+  {no:123, cat:"饭食", name:"草莓可丽饼", en:"Wildberry Crepe", method:"Cookpot", ing:["Tabantha Wheat + Fresh Milk + Bird Egg + Cane Sugar + Wildberry"], effect:"—", hearts:"—"},
+  {no:124, cat:"饭食", name:"蜂蜜可丽饼", en:"Honey Crepe", method:"Cookpot", ing:["Tabantha Wheat + Fresh Milk + Bird Egg + Cane Sugar + Courser Bee Honey"], effect:"Stamina Recovery", hearts:"—"},
+  {no:125, cat:"饭食", name:"坚果蛋糕", en:"Nutcake", method:"Cookpot", ing:["Tabantha Wheat + Goat Butter + Cane Sugar + Nut"], effect:"—", hearts:"—"},
+  {no:126, cat:"饭食", name:"水果蛋糕", en:"Fruitcake", method:"Cookpot", ing:["Dessert Fruit + Apple or Wildberry + Tabantha Wheat + Cane Sugar"], effect:"—", hearts:"—"},
+  {no:127, cat:"饭食", name:"胡萝卜蛋糕", en:"Carrot Cake", method:"Cookpot", ing:["Carrot + Tabantha Wheat + Cane Sugar + Goat Butter"], effect:"—", hearts:"—"},
+  {no:128, cat:"饭食", name:"南瓜蛋糕", en:"Pumpkin Pie", method:"Cookpot", ing:["Pumpkin + Tabantha Wheat + Cane Sugar + Goat Butter"], effect:"—", hearts:"—"},
+  {no:129, cat:"饭食", name:"起司蛋糕", en:"Cheesecake", method:"Cookpot", ing:["Hateno Cheese + Tabantha Wheat + Cane Sugar"], effect:"—", hearts:"—"},
+  {no:130, cat:"饭食", name:"水果派", en:"Fruit Pie", method:"Cookpot", ing:["Fruit + Tabantha Wheat + Goat Butter + Cane Sugar"], effect:"—", hearts:"—"},
+  {no:131, cat:"饭食", name:"苹果派", en:"Apple Pie", method:"Cookpot", ing:["Apple / Golden Apple + Tabantha Wheat + Goat Butter + Cane Sugar"], effect:"—", hearts:"—"},
+  {no:132, cat:"饭食", name:"蛋挞", en:"Egg Tart", method:"Cookpot", ing:["Bird Egg + Tabantha Wheat + Goat Butter + Cane Sugar"], effect:"—", hearts:"—"},
+  {no:133, cat:"饭食", name:"热牛奶", en:"Milk", method:"Cookpot", ing:["Fresh Milk"], effect:"—", hearts:"—"},
+  {no:134, cat:"饭食", name:"芭伊遇上伯伊", en:"Noble Pursuit", method:"Cookpot", ing:["Palm Fruit + Hydromelon + Voltfruit + Rock Salt"], effect:"—", hearts:"—"},
+  {no:135, cat:"特殊料理", name:"炖怪物", en:"Monster Stew", method:"Cookpot", ing:["Meat + Fish + Monster Extract"], effect:"—", hearts:"—"},
+  {no:136, cat:"特殊料理", name:"怪物汤", en:"Monster Soup", method:"Cookpot", ing:["Tabantha Wheat + Goat Butter + Fresh Milk + Monster Extract"], effect:"—", hearts:"—"},
+  {no:137, cat:"特殊料理", name:"怪物咖喱饭", en:"Monster Curry", method:"Cookpot", ing:["Hylian Rice + Goron Spice + Monster Extract"], effect:"—", hearts:"—"},
+  {no:138, cat:"特殊料理", name:"怪物饭团", en:"Monster Rice Balls", method:"Cookpot", ing:["Hylian Rice + Rock Salt + Monster Extract"], effect:"—", hearts:"—"},
+  {no:139, cat:"特殊料理", name:"怪物蛋糕", en:"Monster Cake", method:"Cookpot", ing:["Tabantha Wheat + Cane Sugar + Monster Extract + Goat Butter"], effect:"—", hearts:"—"},
+  {no:140, cat:"特殊料理", name:"魔人炖煮", en:"Dark Stew", method:"Cookpot", ing:["Dark Clump + Meat + Fish"], effect:"—", hearts:"—"},
+  {no:141, cat:"特殊料理", name:"魔人汤", en:"Dark Soup", method:"Cookpot", ing:["Dark Clump + Tabantha Wheat + Goat Butter + Fresh Milk"], effect:"—", hearts:"—"},
+  {no:142, cat:"特殊料理", name:"魔人咖喱饭", en:"Dark Curry", method:"Cookpot", ing:["Dark Clump + Goron Spice + Hylian Rice"], effect:"—", hearts:"—"},
+  {no:143, cat:"特殊料理", name:"魔人饭团", en:"Dark Rice Ball", method:"Cookpot", ing:["Dark Clump + Rock Salt + Hylian Rice"], effect:"—", hearts:"—"},
+  {no:144, cat:"特殊料理", name:"魔人蛋糕", en:"Dark Cake", method:"Cookpot", ing:["Dark Clump + Cane Sugar + Tabantha Wheat + Goat Butter"], effect:"—", hearts:"—"},
+  {no:145, cat:"特殊料理", name:"奇异的菜肴", en:"Dubious Food", method:"Cookpot", ing:["Invalid Recipe"], effect:"—", hearts:"—"},
+  {no:146, cat:"特殊料理", name:"过硬的菜肴", en:"Rock-Hard Food", method:"Cookpot", ing:["Ore"], effect:"—", hearts:"—"},
+  {no:147, cat:"烤食", name:"烤苹果", en:"Baked Apple", method:"Campfire", ing:["Apple"], effect:"—", hearts:"3"},
+  {no:148, cat:"烤食", name:"烤金苹果", en:"Baked Golden Apple", method:"Campfire", ing:["Golden Apple"], effect:"—", hearts:"9"},
+  {no:149, cat:"烤食", name:"烤暖暖草果", en:"Charred Pepper", method:"Campfire", ing:["Spicy Pepper"], effect:"—", hearts:"3"},
+  {no:150, cat:"烤食", name:"烤海拉鲁番茄", en:"Roasted Hylian Tomato", method:"Campfire", ing:["Hylian Tomato"], effect:"—", hearts:"6"},
+  {no:151, cat:"烤食", name:"烤草莓", en:"Roasted Wildberry", method:"Campfire", ing:["Wildberry"], effect:"—", hearts:"3"},
+  {no:152, cat:"烤食", name:"烤酥麻水果", en:"Roasted Voltfruit", method:"Campfire", ing:["Voltfruit"], effect:"—", hearts:"3"},
+  {no:153, cat:"烤食", name:"烤冰冷蜜瓜", en:"Roasted Hydromelon", method:"Campfire", ing:["Hydromelon"], effect:"—", hearts:"3"},
+  {no:154, cat:"烤食", name:"烤椰子", en:"Baked Palm Fruit", method:"Campfire", ing:["Palm Fruit"], effect:"—", hearts:"6"},
+  {no:155, cat:"烤食", name:"烤大剑香蕉", en:"Roasted Mighty Bananas", method:"Campfire", ing:["Mighty Bananas"], effect:"—", hearts:"3"},
+  {no:156, cat:"烤食", name:"烤速速莲蓬", en:"Roasted Lotus Seeds", method:"Campfire", ing:["Fleet-Lotus Seeds"], effect:"—", hearts:"3"},
+  {no:157, cat:"烤食", name:"烤大剑草", en:"Roasted Mighty Thistle", method:"Campfire", ing:["Mighty Thistle"], effect:"—", hearts:"2"},
+  {no:158, cat:"烤食", name:"烤铠甲草", en:"Roasted Armoranth", method:"Campfire", ing:["Armoranth"], effect:"—", hearts:"2"},
+  {no:159, cat:"烤食", name:"烤速速胡萝卜", en:"Roasted Swift Carrot", method:"Campfire", ing:["Swift Carrot"], effect:"—", hearts:"3"},
+  {no:160, cat:"烤食", name:"烤毅力胡萝卜", en:"Roasted Endura Carrot", method:"Campfire", ing:["Endura Carrot"], effect:"—", hearts:"12"},
+  {no:161, cat:"烤食", name:"烤铠甲南瓜", en:"Baked Fortified Pumpkin", method:"Campfire", ing:["Fortified Pumpkin"], effect:"—", hearts:"3"},
+  {no:162, cat:"烤食", name:"烤向阳南瓜", en:"Baked Sun Pumpkin", method:"Campfire", ing:["Sun Pumpkin"], effect:"—", hearts:"3"},
+  {no:163, cat:"烤食", name:"烤小萝卜", en:"Roasted Radish", method:"Campfire", ing:["Hearty Radish"], effect:"—", hearts:"15"},
+  {no:164, cat:"烤食", name:"烤大萝卜", en:"Roasted Big Radish", method:"Campfire", ing:["Big Hearty Radish"], effect:"—", hearts:"24"},
+  {no:165, cat:"烤食", name:"烤天空蘑菇", en:"Toasty Skyshroom", method:"Campfire", ing:["Skyshroom"], effect:"—", hearts:"2"},
+  {no:166, cat:"烤食", name:"烤海拉鲁蘑菇", en:"Toasty Hylian Shroom", method:"Campfire", ing:["Hylian Shroom"], effect:"—", hearts:"3"},
+  {no:167, cat:"烤食", name:"烤精力蘑菇", en:"Toasty Stamella Shroom", method:"Campfire", ing:["Stamella Shroom"], effect:"—", hearts:"3"},
+  {no:168, cat:"烤食", name:"烤速速蘑菇", en:"Toasty Rushroom", method:"Campfire", ing:["Rushroom"], effect:"—", hearts:"3"},
+  {no:169, cat:"烤食", name:"烤暖暖蘑菇", en:"Toasty Sunshroom", method:"Campfire", ing:["Sunshroom"], effect:"—", hearts:"3"},
+  {no:170, cat:"烤食", name:"烤冰冷蘑菇", en:"Toasty Chillshroom", method:"Campfire", ing:["Chillshroom"], effect:"—", hearts:"3"},
+  {no:171, cat:"烤食", name:"烤酥麻蘑菇", en:"Toasty Zapshroom", method:"Campfire", ing:["Zapshroom"], effect:"—", hearts:"3"},
+  {no:172, cat:"烤食", name:"烤大剑蘑菇", en:"Toasty Razorshroom", method:"Campfire", ing:["Razorshroom"], effect:"—", hearts:"3"},
+  {no:173, cat:"烤食", name:"烤铠甲蘑菇", en:"Toasty Ironshroom", method:"Campfire", ing:["Ironshroom"], effect:"—", hearts:"3"},
+  {no:174, cat:"烤食", name:"烤潜行蘑菇", en:"Toasty Silent Shroom", method:"Campfire", ing:["Silent Shroom"], effect:"—", hearts:"3"},
+  {no:175, cat:"烤食", name:"烤光亮蘑菇", en:"Toasty Brightcap", method:"Campfire", ing:["Brightcap"], effect:"—", hearts:"3"},
+  {no:176, cat:"烤食", name:"烤毅力蘑菇", en:"Toasty Endura Shroom", method:"Campfire", ing:["Endura Shroom"], effect:"—", hearts:"6"},
+  {no:177, cat:"烤食", name:"烤生命松露", en:"Toasted Hearty Truffle", method:"Campfire", ing:["Hearty Truffle"], effect:"—", hearts:"12"},
+  {no:178, cat:"烤食", name:"烤大生命松露", en:"Toasted Big Hearty Truffle", method:"Campfire", ing:["Big Hearty Truffle"], effect:"—", hearts:"18"},
+  {no:179, cat:"烤食", name:"烤兽肉", en:"Seared Steak", method:"Campfire", ing:["Raw Meat"], effect:"—", hearts:"6"},
+  {no:180, cat:"烤食", name:"烤高级兽肉", en:"Seared Prime Steak", method:"Campfire", ing:["Raw Prime Meat"], effect:"—", hearts:"9"},
+  {no:181, cat:"烤食", name:"烤顶级兽肉", en:"Seared Gourmet Steak", method:"Campfire", ing:["Raw Gourmet Meat"], effect:"—", hearts:"18"},
+  {no:182, cat:"烤食", name:"烤禽肉", en:"Roasted Bird Drumstick", method:"Campfire", ing:["Raw Bird Drumstick"], effect:"—", hearts:"6"},
+  {no:183, cat:"烤食", name:"烤高级禽肉", en:"Roasted Bird Thigh", method:"Campfire", ing:["Raw Bird Thigh"], effect:"—", hearts:"9"},
+  {no:184, cat:"烤食", name:"烤顶级禽肉", en:"Roasted Whole Bird", method:"Campfire", ing:["Raw Whole Bird"], effect:"—", hearts:"18"},
+  {no:185, cat:"烤食", name:"烤骨舌鱼", en:"Roasted Arowana", method:"Campfire", ing:["Ancient Arowana"], effect:"—", hearts:"6"},
+  {no:186, cat:"烤食", name:"烤鲈鱼", en:"Roasted Bass", method:"Campfire", ing:["Bass"], effect:"—", hearts:"6"},
+  {no:187, cat:"烤食", name:"烤鳟鱼", en:"Roasted Trout", method:"Campfire", ing:["Trout"], effect:"—", hearts:"6"},
+  {no:188, cat:"烤食", name:"烤鲤鱼", en:"Roasted Carp", method:"Campfire", ing:["Carp"], effect:"—", hearts:"6"},
+  {no:189, cat:"烤食", name:"烤鲷鱼", en:"Roasted Porgy", method:"Campfire", ing:["Porgy"], effect:"—", hearts:"6"},
+  {no:190, cat:"烤食", name:"烤霍拉鱼", en:"Roasted Cave Fish", method:"Campfire", ing:["Glowing Cave Fish"], effect:"—", hearts:"6"},
+  {no:191, cat:"烤食", name:"烤生命鲈鱼", en:"Roasted Hearty Bass", method:"Campfire", ing:["Hearty Bass"], effect:"—", hearts:"12"},
+  {no:192, cat:"烤食", name:"烤生命鲑鱼", en:"Roasted Hearty Salmon", method:"Campfire", ing:["Hearty Salmon"], effect:"—", hearts:"18"},
+  {no:193, cat:"烤食", name:"烤螃蟹", en:"Blackened Crab", method:"Campfire", ing:["Crab"], effect:"—", hearts:"6"},
+  {no:194, cat:"烤食", name:"烤潜行田螺", en:"Sneaky River Escargot", method:"Campfire", ing:["Sneaky River Snail"], effect:"—", hearts:"6"},
+  {no:195, cat:"烤食", name:"烤树果", en:"Roasted Tree Nut", method:"Campfire", ing:["Chickaloo Tree Nut"], effect:"—", hearts:"2"},
+  {no:196, cat:"烤食", name:"烤橡子", en:"Roasted Acorn", method:"Campfire", ing:["Acorn"], effect:"—", hearts:"2"},
+  {no:197, cat:"烤食", name:"烤蛋", en:"Campfire Egg", method:"Campfire", ing:["Bird Egg"], effect:"—", hearts:"6"},
+  {no:198, cat:"特殊料理", name:"水煮蛋", en:"Hard-Boiled Egg", method:"Hot Spring", ing:["Bird Egg"], effect:"—", hearts:"6"},
+  {no:199, cat:"冷冻", name:"冰冻兽肉", en:"Icy Meat", method:"Extreme Cold", ing:["Raw Meat"], effect:"Heat Resistance (Lv 1)", hearts:"4"},
+  {no:200, cat:"冷冻", name:"高级冰冻兽肉", en:"Icy Prime Meat", method:"Extreme Cold", ing:["Raw Prime Meat"], effect:"Heat Resistance (Lv 1)", hearts:"6"},
+  {no:201, cat:"冷冻", name:"顶级冰冻兽肉", en:"Icy Gourmet Meat", method:"Extreme Cold", ing:["Raw Gourmet Meat"], effect:"Heat Resistance (Lv 1)", hearts:"12"},
+  {no:202, cat:"冷冻", name:"冰冻禽肉", en:"Frozen Bird Drumstick", method:"Extreme Cold", ing:["Raw Bird Drumstick"], effect:"Heat Resistance (Lv 1)", hearts:"4"},
+  {no:203, cat:"冷冻", name:"高级冰冻禽肉", en:"Frozen Bird Thigh", method:"Extreme Cold", ing:["Raw Bird Thigh"], effect:"Heat Resistance (Lv 1)", hearts:"6"},
+  {no:204, cat:"冷冻", name:"顶级冰冻禽肉", en:"Frozen Whole Bird", method:"Extreme Cold", ing:["Raw Whole Bird"], effect:"Heat Resistance (Lv 1)", hearts:"12"},
+  {no:205, cat:"冷冻", name:"冰冻骨舌鱼", en:"Frozen Arowana", method:"Extreme Cold", ing:["Ancient Arowana"], effect:"Heat Resistance (Lv 1)", hearts:"8"},
+  {no:206, cat:"冷冻", name:"冰冻鲈鱼", en:"Frozen Bass", method:"Extreme Cold", ing:["Bass"], effect:"Heat Resistance (Lv 1)", hearts:"8"},
+  {no:207, cat:"冷冻", name:"冰冻鳟鱼", en:"Frozen Trout", method:"Extreme Cold", ing:["Trout"], effect:"Heat Resistance (Lv 1)", hearts:"4"},
+  {no:208, cat:"冷冻", name:"冰冻鲤鱼", en:"Frozen Carp", method:"Extreme Cold", ing:["Carp"], effect:"Heat Resistance (Lv 1)", hearts:"4"},
+  {no:209, cat:"冷冻", name:"冰冻鲷鱼", en:"Frozen Porgy", method:"Extreme Cold", ing:["Porgy"], effect:"Heat Resistance (Lv 1)", hearts:"4"},
+  {no:210, cat:"冷冻", name:"冰冻霍拉鱼", en:"Frozen Cave Fish", method:"Extreme Cold", ing:["Glowing Cave Fish"], effect:"Heat Resistance (Lv 1)", hearts:"8"},
+  {no:211, cat:"冷冻", name:"冰冻生命鲈鱼", en:"Frozen Hearty Bass", method:"Extreme Cold", ing:["Hearty Bass"], effect:"Heat Resistance (Lv 1)", hearts:"8"},
+  {no:212, cat:"冷冻", name:"冰冻生命鲑鱼", en:"Frozen Hearty Salmon", method:"Extreme Cold", ing:["Hearty Salmon"], effect:"Heat Resistance (Lv 1)", hearts:"16"},
+  {no:213, cat:"冷冻", name:"冰冻螃蟹", en:"Frozen Crab", method:"Extreme Cold", ing:["Bright-Eyed Crab"], effect:"Heat Resistance (Lv 1)", hearts:"8"},
+  {no:214, cat:"冷冻", name:"冰冻田螺", en:"Frozen River Snail", method:"Extreme Cold", ing:["Sneaky River Snail"], effect:"Heat Resistance (Lv 1)", hearts:"4"},
+  {no:215, cat:"药水", name:"精力药", en:"Energizing Elixir", method:"Cookpot", ing:["Enemy + Energetic Rhino Beetle / Restless Cricket"], effect:"Stamina Recovery (Lv 1 – 2)", hearts:"—"},
+  {no:216, cat:"药水", name:"速速药", en:"Hasty Elixir", method:"Cookpot", ing:["Enemy + Hot-Footed Frog / Hightail Lizard"], effect:"Speed Up (Lv 1 – 3)", hearts:"—"},
+  {no:217, cat:"药水", name:"辛辣药", en:"Spicy Elixir", method:"Cookpot", ing:["Enemy + Summerwing Butterfly / Warm Darner"], effect:"Cold Resistance (Lv 1 – 2)", hearts:"—"},
+  {no:218, cat:"药水", name:"冰冷药", en:"Chilly Elixir", method:"Cookpot", ing:["Enemy + Winterwing Butterfly / Cold Darner"], effect:"Heat Resistance (Lv 1 – 2)", hearts:"—"},
+  {no:219, cat:"药水", name:"电麻药", en:"Electro Elixir", method:"Cookpot", ing:["Enemy + Thunderwing Butterfly / Electric Darner"], effect:"Shock Resistance (Lv 1 – 3)", hearts:"—"},
+  {no:220, cat:"药水", name:"防火药", en:"Fireproof Elixir", method:"Cookpot", ing:["Enemy + Smotherwing Butterfly / Fireproof Lizard"], effect:"Flame Guard (Lv 1 – 2)", hearts:"—"},
+  {no:221, cat:"药水", name:"力量药", en:"Mighty Elixir", method:"Cookpot", ing:["Enemy + Bladed Rhino Beetle"], effect:"Attack Up (Lv 1 – 3)", hearts:"—"},
+  {no:222, cat:"药水", name:"坚硬药", en:"Tough Elixir", method:"Cookpot", ing:["Enemy + Rugged Rhino Beetle"], effect:"Defense Up (Lv 1 – 3)", hearts:"—"},
+  {no:223, cat:"药水", name:"潜行药", en:"Sneaky Elixir", method:"Cookpot", ing:["Enemy + Sunset Firefly"], effect:"Stealth Up (Lv 1 – 3)", hearts:"—"},
+  {no:224, cat:"药水", name:"防滑药", en:"Sticky Elixir", method:"Cookpot", ing:["Enemy + Sticky Frog / Sticky Lizard"], effect:"Slip Resistance (Lv 1 – 3)", hearts:"—"},
+  {no:225, cat:"药水", name:"光亮药", en:"Bright Elixir", method:"Cookpot", ing:["Enemy + Deep Firefly"], effect:"Glow (Lv 1 – 3)", hearts:"—"},
+  {no:226, cat:"药水", name:"能量药", en:"Enduring Elixir", method:"Cookpot", ing:["Enemy + Tireless Frog"], effect:"Extra Stamina", hearts:"—"},
+  {no:227, cat:"药水", name:"生命药", en:"Hearty Elixir", method:"Cookpot", ing:["Enemy + Hearty Lizard"], effect:"Extra Hearts", hearts:"All"},
+  {no:228, cat:"药水", name:"妖精回力水", en:"Fairy Tonic", method:"Cookpot", ing:["Fairy"], effect:"—", hearts:"—"},
 ];
 
 const CAT_META = {
@@ -731,43 +735,47 @@ function render() {
 // 锅最多放 5 个材料；同效果叠加提等级和时长；不同效果混用会抵消。
 // 烤食不保留加成；冷冻固定带 1 分钟耐热；怪物精华随机化结果。
 const METHOD_ZH = { Cookpot: "锅煮", Campfire: "篝火烤", "Hot Spring": "温泉", "Extreme Cold": "极寒冷冻" };
+// 食材英文 → 中文（按 ZeldaCentral 配方表原词翻译；类别词表示任选该类任意一种）
 const ING_ZH = {
-  "Mushroom": "蘑菇", "Meat": "兽肉", "Fish": "鱼", "Crab": "螃蟹", "Snail": "田螺",
-  "Fruit": "水果", "Plant": "野菜", "Tomato": "番茄", "Spicy Pepper": "暖暖草果",
-  "Chickaloo Tree Nut": "树果", "Acorn": "橡子", "Stambulb": "灯笼花（Stambulb）",
-  "Butter": "黄油", "Goron Spice": "戈隆香料", "Prime Meat": "高级兽肉",
-  "Gourmet Meat": "顶级兽肉", "Salt": "岩盐", "Vegetable": "蔬菜", "Herb": "香草",
-  "Oil": "油", "Wheat": "塔邦挞小麦", "Milk": "鲜奶", "Cheese": "奶酪",
-  "Rice": "海拉鲁米", "Sugar": "蔗糖", "Egg": "鸟蛋", "Bird Egg": "鸟蛋", "Seafood": "海鲜",
-  "Carrot": "胡萝卜", "Pumpkin": "南瓜", "Honey": "蜂蜜", "Apple": "苹果",
-  "Wildberry": "草莓", "Nut": "坚果", "Banana": "大剑香蕉", "Porgy": "鲷鱼",
-  "Salmon": "鲑鱼", "Trout": "鳟鱼", "Carp": "鲤鱼", "Bass": "鲈鱼",
-  "River Snail": "潜行田螺", "Ancient Arowana": "骨舌鱼", "Glowing Cave Fish": "霍拉鱼",
-  "Golden Apple": "金苹果", "Hylian Tomato": "海拉鲁番茄", "Hylian Shroom": "海拉鲁蘑菇",
-  "Skyshroom": "天空蘑菇", "Stamella Shroom": "精力蘑菇", "Rushroom": "速速蘑菇",
-  "Sunshroom": "暖暖蘑菇", "Chillshroom": "冰冷蘑菇", "Zapshroom": "酥麻蘑菇",
-  "Razorshroom": "大剑蘑菇", "Ironshroom": "铠甲蘑菇", "Silent Shroom": "潜行蘑菇",
-  "Brightcap": "光亮蘑菇", "Endura Shroom": "毅力蘑菇", "Hearty Truffle": "生命松露",
+  "Mushroom": "蘑菇", "Meat": "肉", "Fish": "鱼", "Crab": "螃蟹", "Seafood": "海鲜",
+  "Plant": "野菜", "Nut": "坚果", "Fruit": "水果", "Pumpkin": "南瓜", "Carrot": "胡萝卜",
+  "Radish": "萝卜", "Acorn": "橡子", "Chickaloo Tree Nut": "树果",
+  "Spicy Pepper": "暖暖草果", "Stambulb": "灯笼花", "Sunshroom": "暖暖蘑菇",
+  "Chillshroom": "冰冷蘑菇", "Zapshroom": "酥麻蘑菇", "Razorshroom": "大剑蘑菇",
+  "Ironshroom": "铠甲蘑菇", "Silent Shroom": "潜行蘑菇", "Brightcap": "光亮蘑菇",
+  "Endura Shroom": "毅力蘑菇", "Stamella Shroom": "精力蘑菇", "Rushroom": "速速蘑菇",
+  "Skyshroom": "天空蘑菇", "Hylian Shroom": "海拉鲁蘑菇", "Hearty Truffle": "生命松露",
   "Big Hearty Truffle": "大生命松露", "Hearty Radish": "小萝卜", "Big Hearty Radish": "大萝卜",
   "Armoranth": "铠甲草", "Mighty Thistle": "大剑草", "Swift Carrot": "速速胡萝卜",
   "Endura Carrot": "毅力胡萝卜", "Fortified Pumpkin": "铠甲南瓜", "Sun Pumpkin": "向阳南瓜",
   "Hydromelon": "冰冷蜜瓜", "Voltfruit": "酥麻水果", "Palm Fruit": "椰子",
-  "Fleet-Lotus Seeds": "速速莲蓬", "Mighty Bananas": "大剑香蕉",
-  "Raw Meat": "生兽肉", "Raw Bird Drumstick": "生禽腿肉", "Raw Bird Thigh": "生高级禽腿肉",
-  "Raw Whole Bird": "生整只禽肉", "Poultry": "禽肉", "Prime Poultry": "高级禽肉",
-  "Gourmet Poultry": "顶级禽肉", "Monster Extract": "怪物精华", "Monster Part": "怪物素材",
-  "Dark Clump": "暗黑团块", "Restless Cricket": "不安蟋蟀", "Hot-Footed Frog": "速速蛙",
-  "Hightail Lizard": "长尾蜥蜴", "Summerwing Butterfly": "夏翅蝴蝶", "Warm Darner": "暖蜻蜓",
-  "Winterwing Butterfly": "冬翅蝴蝶", "Cold Darner": "冰冷蜻蜓", "Electric Darner": "电蜻蜓",
-  "Thunderwing Butterfly": "雷翅蝴蝶", "Smotherwing Butterfly": "闷燃蝴蝶",
-  "Fireproof Lizard": "防火蜥蜴", "Bladed Rhino Beetle": "刀刃犀牛甲虫", "Beetle": "甲虫",
-  "Sunset Firefly": "黄昏萤火虫", "Silent Princess": "潜行公主花", "Sticky Frog": "粘粘蛙",
-  "Sticky Lizard": "粘粘蜥蜴", "Deep Firefly": "深渊萤火虫", "Tireless Frog": "不倦蛙",
-  "Hearty Lizard": "生命蜥蜴", "Hearty Bass": "生命鲈鱼", "Hearty Salmon": "生命鲑鱼",
-  "Fairy": "妖精", "Ore": "矿石",
-  "Non-food items or incompatible ingredients": "非食材或不兼容材料",
-  "Endura/Swift Carrot": "毅力胡萝卜／速速胡萝卜"
+  "Fleet-Lotus Seeds": "速速莲蓬", "Mighty Bananas": "大剑香蕉", "Wildberry": "草莓",
+  "Apple": "苹果", "Golden Apple": "金苹果", "Dessert Fruit": "甜点水果",
+  "Bass": "鲈鱼", "Carp": "鲤鱼", "Trout": "鳟鱼", "Porgy": "鲷鱼",
+  "Hearty Bass": "生命鲈鱼", "Hearty Salmon": "生命鲑鱼", "Glowing Cave Fish": "霍拉鱼",
+  "Ancient Arowana": "骨舌鱼", "Sneaky River Snail": "潜行田螺", "Bright-Eyed Crab": "明眸蟹",
+  "Raw Meat": "生兽肉", "Raw Prime Meat": "生高级兽肉", "Raw Gourmet Meat": "生顶级兽肉",
+  "Raw Bird Drumstick": "生禽腿肉", "Raw Bird Thigh": "生高级禽腿肉", "Raw Whole Bird": "生整只禽肉",
+  "Tier 1 Meat": "一档肉", "Tier 2 Meat": "二档肉", "Tier 3 Meat": "三档肉",
+  "Goat Butter": "山羊黄油", "Rock Salt": "岩盐", "Tabantha Wheat": "塔邦挞小麦",
+  "Fresh Milk": "鲜奶", "Oil Jar": "油壶", "Hylian Rice": "海拉鲁米",
+  "Hateno Cheese": "哈特诺奶酪", "Cane Sugar": "蔗糖", "Bird Egg": "鸟蛋",
+  "Goron Spice": "戈隆香料", "Courser Bee Honey": "速速蜂蜂蜜",
+  "Hylian Tomato": "海拉鲁番茄", "Monster Extract": "怪物精华", "Dark Clump": "暗黑团块",
+  "Enemy": "怪物素材", "Fairy": "妖精", "Ore": "矿石",
+  "Invalid Recipe": "无效配方",
+  "Restless Cricket": "不安蟋蟀", "Energetic Rhino Beetle": "精力犀牛甲虫",
+  "Hot-Footed Frog": "速速蛙", "Hightail Lizard": "长尾蜥蜴",
+  "Summerwing Butterfly": "夏翅蝴蝶", "Warm Darner": "暖蜻蜓",
+  "Winterwing Butterfly": "冬翅蝴蝶", "Cold Darner": "冰冷蜻蜓",
+  "Electric Darner": "电蜻蜓", "Thunderwing Butterfly": "雷翅蝴蝶",
+  "Smotherwing Butterfly": "闷燃蝴蝶", "Fireproof Lizard": "防火蜥蜴",
+  "Bladed Rhino Beetle": "刀刃犀牛甲虫", "Rugged Rhino Beetle": "坚硬犀牛甲虫",
+  "Sunset Firefly": "黄昏萤火虫", "Silent Princess": "潜行公主花",
+  "Sticky Frog": "粘粘蛙", "Sticky Lizard": "粘粘蜥蜴", "Deep Firefly": "深渊萤火虫",
+  "Tireless Frog": "不倦蛙", "Hearty Lizard": "生命蜥蜴"
 };
+// 具体食材 → 加成（ZeldaCentral 配方表固定加成 + 食材自身加成）
 const ING_EFFECT = {
   "Spicy Pepper": "耐寒", "Sunshroom": "耐寒",
   "Hydromelon": "耐热", "Chillshroom": "耐热",
@@ -775,109 +783,97 @@ const ING_EFFECT = {
   "Mighty Bananas": "攻击力提升", "Razorshroom": "攻击力提升", "Mighty Thistle": "攻击力提升",
   "Armoranth": "防御力提升", "Ironshroom": "防御力提升", "Fortified Pumpkin": "防御力提升",
   "Swift Carrot": "移动速度提升", "Rushroom": "移动速度提升", "Fleet-Lotus Seeds": "移动速度提升",
-  "Stamella Shroom": "精力恢复", "Honey": "精力恢复",
-  "Hearty Radish": "生命上限提升", "Big Hearty Radish": "生命上限提升",
+  "Stamella Shroom": "精力恢复", "Stambulb": "精力恢复", "Courser Bee Honey": "精力恢复",
+  "Hearty Radish": "生命上限提升", "Big Hearty Radish": "生命上限提升", "Radish": "生命上限提升",
   "Hearty Truffle": "生命上限提升", "Big Hearty Truffle": "生命上限提升",
   "Hearty Bass": "生命上限提升", "Hearty Salmon": "生命上限提升",
   "Endura Carrot": "精力上限提升", "Endura Shroom": "精力上限提升",
-  "Silent Shroom": "潜行提升",
-  "Brightcap": "发光", "Glowing Cave Fish": "发光",
-  "Sun Pumpkin": "瘴气恢复",
-  "Dark Clump": "瘴气抗性"
+  "Silent Shroom": "潜行提升", "Brightcap": "发光", "Glowing Cave Fish": "发光",
+  "Sun Pumpkin": "瘴气恢复", "Dark Clump": "瘴气抗性",
+  "Energetic Rhino Beetle": "精力恢复", "Rugged Rhino Beetle": "防御力提升"
 };
 const CRITTER_EFFECT = {
-  "Restless Cricket": "精力恢复",
+  "Restless Cricket": "精力恢复", "Energetic Rhino Beetle": "精力恢复",
   "Hot-Footed Frog": "移动速度提升", "Hightail Lizard": "移动速度提升",
   "Summerwing Butterfly": "耐寒", "Warm Darner": "耐寒",
   "Winterwing Butterfly": "耐热", "Cold Darner": "耐热",
   "Electric Darner": "电气抗性", "Thunderwing Butterfly": "电气抗性",
   "Smotherwing Butterfly": "防火", "Fireproof Lizard": "防火",
-  "Bladed Rhino Beetle": "攻击力提升", "Beetle": "防御力提升",
-  "Sunset Firefly": "潜行提升", "Silent Shroom": "潜行提升", "Silent Princess": "潜行提升",
+  "Bladed Rhino Beetle": "攻击力提升", "Rugged Rhino Beetle": "防御力提升",
+  "Sunset Firefly": "潜行提升",
   "Sticky Frog": "防滑", "Sticky Lizard": "防滑",
-  "Deep Firefly": "发光",
-  "Tireless Frog": "精力上限提升",
-  "Hearty Lizard": "生命上限提升", "Hearty Bass": "生命上限提升"
+  "Deep Firefly": "发光", "Tireless Frog": "精力上限提升", "Hearty Lizard": "生命上限提升"
 };
 const GENERIC_EFFECTS = {
   "Mushroom": "蘑菇：暖暖蘑菇→耐寒；冰冷蘑菇→耐热；酥麻蘑菇→电气抗性；大剑蘑菇→攻击力提升；铠甲蘑菇→防御力提升；速速蘑菇→移动速度提升；精力蘑菇→精力恢复；生命松露→生命上限提升；毅力蘑菇→精力上限提升；潜行蘑菇→潜行提升；光亮蘑菇→发光；普通蘑菇（海拉鲁蘑菇、天空蘑菇）→仅回血",
-  "Vegetable": "蔬菜：速速胡萝卜→移动速度提升；毅力胡萝卜→精力上限提升；铠甲南瓜→防御力提升；向阳南瓜→瘴气恢复；小萝卜→生命上限提升；大剑草→攻击力提升；铠甲草→防御力提升；普通蔬菜→仅回血",
+  "Plant": "野菜：大剑草→攻击力提升；铠甲草→防御力提升；速速紫罗兰→移动速度提升；普通野菜→仅回血",
   "Fruit": "水果：暖暖草果→耐寒；冰冷蜜瓜→耐热；酥麻水果→电气抗性；大剑香蕉→攻击力提升；普通水果（苹果、草莓、椰子等）→仅回血",
   "Fish": "鱼：生命鲈鱼／生命鲑鱼→生命上限提升；大剑鲤鱼→攻击力提升；铠甲鲷鱼→防御力提升；速速鲤鱼→移动速度提升；精力鲈鱼→精力恢复；其他普通鱼→仅回血",
   "Seafood": "海鲜：利爪蟹→攻击力提升；铁壳蟹→防御力提升；潜行田螺→潜行提升；其他海鲜→仅回血",
   "Crab": "螃蟹：利爪蟹→攻击力提升；铁壳蟹→防御力提升；普通蟹→仅回血",
-  "Snail": "田螺：潜行田螺→潜行提升；其他田螺→仅回血",
-  "Plant": "野菜：大剑草→攻击力提升；铠甲草→防御力提升；速速紫罗兰→移动速度提升；普通野菜→仅回血",
-  "Carrot": "胡萝卜：速速胡萝卜→移动速度提升；毅力胡萝卜→精力上限提升",
   "Pumpkin": "南瓜：铠甲南瓜→防御力提升；向阳南瓜→瘴气恢复",
+  "Carrot": "胡萝卜：速速胡萝卜→移动速度提升；毅力胡萝卜→精力上限提升",
   "Porgy": "鲷鱼：大剑鲷鱼→攻击力提升；铠甲鲷鱼→防御力提升",
-  "Salmon": "鲑鱼：生命鲑鱼→生命上限提升",
   "Trout": "鳟鱼：暖暖鳟鱼→耐寒；冰冷鳟鱼→耐热；酥麻鳟鱼→电气抗性；潜行鳟鱼→潜行提升",
   "Carp": "鲤鱼：大剑鲤鱼→攻击力提升；铠甲鲤鱼→防御力提升；速速鲤鱼→移动速度提升",
-  "Bass": "鲈鱼：生命鲈鱼→生命上限提升；精力鲈鱼→精力恢复；普通鲈鱼→仅回血"
+  "Bass": "鲈鱼：生命鲈鱼→生命上限提升；精力鲈鱼→精力恢复；普通鲈鱼→仅回血",
+  "Nut": "坚果：树果、橡子均仅回血"
 };
+// ZeldaCentral 固定加成英文 → 中文
+const EFFECT_ZH = {
+  "Cold Resistance": "耐寒", "Heat Resistance": "耐热", "Stamina Recovery": "精力恢复",
+  "Speed Up": "移动速度提升", "Shock Resistance": "电气抗性", "Flame Guard": "防火",
+  "Attack Up": "攻击力提升", "Defense Up": "防御力提升", "Stealth Up": "潜行提升",
+  "Slip Resistance": "防滑", "Glow": "发光", "Extra Stamina": "精力上限提升", "Extra Hearts": "生命上限提升"
+};
+function translateEffect(eff) {
+  const m = eff.match(/^(.*?)\s*\(Lv\s*([^)]+)\)$/);
+  if (m && EFFECT_ZH[m[1].trim()]) return EFFECT_ZH[m[1].trim()] + " Lv" + m[2].trim();
+  if (EFFECT_ZH[eff.trim()]) return EFFECT_ZH[eff.trim()];
+  return eff;
+}
+function formatHearts(h) {
+  if (h === "All") return "恢复全部红心";
+  const q = parseInt(h, 10);
+  if (isNaN(q)) return "取决于食材";
+  if (q % 4 === 0) return (q / 4) + " 颗红心";
+  if (q % 2 === 0) return (q / 4) + " 颗红心";
+  return q + "/4 颗红心";
+}
 function escapeHtml(s) {
   return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 function trBase(x) {
   x = x.trim();
   if (ING_ZH[x]) return ING_ZH[x];
-  const cap = x.charAt(0).toUpperCase() + x.slice(1);
-  if (ING_ZH[cap]) return ING_ZH[cap];
-  const low = x.toLowerCase();
-  if (ING_ZH[low]) return ING_ZH[low];
-  for (const cand of [x, cap, low]) {
-    if (cand.endsWith("s") && ING_ZH[cand.slice(0, -1)]) return ING_ZH[cand.slice(0, -1)];
-    if (cand.endsWith("es") && ING_ZH[cand.slice(0, -2)]) return ING_ZH[cand.slice(0, -2)];
-  }
   return x;
 }
-function trList(s) {
+function trSeg(s) {
+  s = s.trim();
+  if (ING_ZH[s]) return ING_ZH[s];
   if (s.includes(" or ")) return s.split(" or ").map(trSeg).join("或");
   if (s.includes(" / ")) return s.split(" / ").map(trSeg).join("／");
   if (s.includes("/")) return s.split("/").map(trBase).join("／");
   return trBase(s);
 }
-function trSeg(s) {
-  s = s.trim();
-  if (ING_ZH[s]) return ING_ZH[s];
-  const pm = s.match(/^(.*)\s+\(([^)]+)\)$/);
-  if (pm) {
-    const base = trSeg(pm[1]);
-    const par = pm[2].trim();
-    if (/^not\s+/i.test(par)) return base + "（不含" + trList(par.replace(/^not\s+/i, "")) + "）";
-    return base + "（" + trList(par) + "）";
-  }
-  return trList(s);
-}
-function stripCount(s) {
-  return s.trim().replace(/^\d+\s+/, "").replace(/^different kinds of\s+/i, "");
-}
+// 解析 ZeldaCentral 配方：按 " + " 分开，相同材料重复出现则合并为数量
 function parseDishIng(d) {
   const rawParts = d.ing.join(" + ").split(" + ").map(s => s.trim());
-  return rawParts.map(raw => {
-    let qty = 1, different = false, s = raw;
-    const m = s.match(/^(\d+)\s+(.*)$/);
-    if (m) { qty = parseInt(m[1], 10); s = m[2]; }
-    if (/^different kinds of\s+/i.test(s)) { different = true; s = s.replace(/^different kinds of\s+/i, ""); }
-    return { qty, different, zh: trSeg(s) };
-  });
+  const grouped = [];
+  for (const raw of rawParts) {
+    const prev = grouped[grouped.length - 1];
+    if (prev && prev.raw === raw) { prev.qty += 1; continue; }
+    grouped.push({ raw, qty: 1, zh: trSeg(raw) });
+  }
+  return grouped;
 }
 function expandAlternatives(s) {
-  s = stripCount(s).replace(/^different kinds of\s+/i, "");
   const out = [];
   for (const seg of s.split(" or ")) {
     const t = seg.trim();
-    if (t === "Endura/Swift Carrot") { out.push("Endura Carrot", "Swift Carrot"); continue; }
-    const pm = t.match(/^(.*)\s+\(([^)]+)\)$/);
-    if (pm && !/^not\s+/i.test(pm[2].trim())) {
-      out.push(pm[1].trim());
-      out.push(...pm[2].split("/").map(x => x.trim()));
-      continue;
-    }
     if (t.includes(" / ")) { out.push(...t.split(" / ").map(x => x.trim())); continue; }
     if (t.includes("/") && !ING_ZH[t]) { out.push(...t.split("/").map(x => x.trim())); continue; }
-    out.push(t.replace(/\s+\([^)]+\)$/, "").trim());
+    out.push(t);
   }
   return out;
 }
@@ -894,10 +890,15 @@ function partEffects(partRaw) {
   return map;
 }
 function getDishEffect(d) {
-  const method = d.method;
-  if (method === "Campfire") return { title: "无加成", warn: false, desc: "烤食不保留食材的加成效果，只恢复生命（烤后回血约为生食材的 1.5 倍）。" };
-  if (method === "Extreme Cold") return { title: "耐热 Lv1（持续 1 分钟）", warn: false, desc: "所有冷冻食品固定带 1 分钟低级耐热加成，代价是回血略低于生食材。" };
-  if (method === "Hot Spring") return { title: "无加成", warn: false, desc: "温泉水煮蛋仅恢复生命，无额外加成。" };
+  // 1) ZeldaCentral 配方表给出的固定加成，优先采用
+  if (d.effect && d.effect !== "—") {
+    let desc = "ZeldaCentral 配方表给出的固定加成。";
+    if (d.cat === "药水") desc += "药水加成由昆虫／青蛙／蜥蜴决定，怪物素材只影响持续时间，不改变加成种类；怪物素材越高级，持续时间越长。";
+    else if (d.method === "Extreme Cold") desc += "所有冷冻食品固定带耐热加成，代价是回血略低于生食材。";
+    return { title: translateEffect(d.effect), warn: false, desc };
+  }
+  if (d.method === "Campfire") return { title: "无加成", warn: false, desc: "烤食不保留食材的加成效果，只恢复生命（烤后回血约为生食材的 1.5 倍）。" };
+  if (d.method === "Hot Spring") return { title: "无加成", warn: false, desc: "温泉水煮蛋仅恢复生命，无额外加成。" };
   if (d.no === 145) return { title: "无加成（失败料理）", warn: true, desc: "用非食材或不兼容材料煮出，回血极少，无加成。" };
   if (d.no === 146) return { title: "无加成（失败料理）", warn: true, desc: "只用矿石煮出，又硬又难吃，回血极少，无加成。" };
   if (d.no === 228) return { title: "恢复全部红心", warn: false, desc: "单独用妖精煮出，喝下恢复全部生命。" };
@@ -927,10 +928,7 @@ function getDishEffect(d) {
   const seenGen = new Set();
   for (const partRaw of rawParts) {
     for (const alt of expandAlternatives(partRaw)) {
-      const capAlt = alt.charAt(0).toUpperCase() + alt.slice(1);
-      const cands = [alt, alt.slice(0, -1), capAlt, capAlt.slice(0, -1)];
-      const key = cands.find(c => GENERIC_EFFECTS[c]);
-      if (key && !seenGen.has(key)) { seenGen.add(key); generics.push(GENERIC_EFFECTS[key]); }
+      if (GENERIC_EFFECTS[alt] && !seenGen.has(alt)) { seenGen.add(alt); generics.push(GENERIC_EFFECTS[alt]); }
     }
   }
   if (generics.length) {
@@ -944,22 +942,26 @@ function ingNoteFor(d) {
   if (d.method === "Hot Spring") return "温泉：放 1 个鸟蛋进温泉即可。";
   if (d.cat === "药水") return "药水：昆虫／青蛙／蜥蜴至少 1 只 + 怪物素材至少 1 个，锅最多放 5 个；怪物素材越多、越高级，持续时间越长。";
   if (d.no === 145 || d.no === 146) return "失败料理：按上面材料煮出即为失败品。";
-  return "锅最多放 5 个材料；上面是做成这道菜的必需材料和最少数量，剩余空位可补同类或同效果食材（不要补不同效果食材）。同效果叠加可提升等级和持续时间。";
+  let note = "锅最多放 5 个材料；上面是 ZeldaCentral 配方表的原配方，重复出现的材料已合并为数量（如肉×4 表示 4 份）。剩余空位可补同类或同效果食材（不要补不同效果食材）。";
+  if (d.ing.join(" ").includes("Tier")) note += "一档肉 = 兽肉／禽腿肉类，二档肉 = 高级兽肉／高级禽腿肉类，三档肉 = 顶级兽肉／整只禽肉类。";
+  return note;
 }
 function openModal(d) {
   document.getElementById("modalImg").src = getDishImg(d.no);
   document.getElementById("modalImg").alt = d.name;
   document.getElementById("modalNo").textContent = `No.${d.no}`;
   document.getElementById("modalName").textContent = d.name;
-  document.getElementById("modalCat").textContent = d.cat + " · " + (METHOD_ZH[d.method] || d.method);
+  document.getElementById("modalCat").textContent = d.cat + " · " + (METHOD_ZH[d.method] || d.method) + " · " + (d.en || "");
   const parts = parseDishIng(d);
-  document.getElementById("modalIng").innerHTML = parts.map(p => `<li><span>${escapeHtml(p.zh)}</span><span class="ing-qty">×${p.qty}${p.different ? "（不同种类，各 1）" : ""}</span></li>`).join("");
+  document.getElementById("modalIng").innerHTML = parts.map(p => `<li><span>${escapeHtml(p.zh)}</span><span class="ing-qty">×${p.qty}</span></li>`).join("");
   document.getElementById("modalIngNote").textContent = ingNoteFor(d);
   const eff = getDishEffect(d);
   const effEl = document.getElementById("modalEffect");
   effEl.className = "modal-effect" + (eff.warn ? " warn" : "");
   effEl.innerHTML = `<strong>${escapeHtml(eff.title)}</strong><br>${escapeHtml(eff.desc)}`;
-  document.getElementById("modalEffectNote").textContent = "加成由食材决定，不是菜名自带的固定值：同一道菜换不同食材，加成会跟着变；回血量也随食材和数量变化，本页不写死数字。";
+  document.getElementById("modalEffectNote").textContent = "加成优先采用 ZeldaCentral 配方表的固定加成；配方表未给固定加成的锅煮料理，加成由食材决定（同一道菜换不同食材，加成会跟着变）。回血量：锅煮料理取决于食材，烤食／冷冻／温泉为固定值。";
+  const heartsEl = document.getElementById("modalHearts");
+  if (heartsEl) heartsEl.textContent = d.no === 228 ? "恢复全部红心" : (d.hearts === "—" ? "取决于食材：回血量 = 各食材回血之和，锅煮有加成；满月夜暴击可翻倍。" : formatHearts(d.hearts));
   document.getElementById("modalOverlay").classList.add("open");
 }
 function closeModal(e) {
