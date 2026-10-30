@@ -1,0 +1,508 @@
+[
+  {
+    "file": "404.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（941字符），建议移到外部CSS文件",
+      "⚠️  Open Graph标签不完整（0个）",
+      "⚠️  缺少结构化数据（Schema.org）"
+    ],
+    "info": [
+      "✓ title长度合适: 404页面未找到 - 返回首页继续探索王国之泪攻略 | 塞尔达传说",
+      "✓ description长度合适（56字符）",
+      "✓ H1标签正常",
+      "✓ 内部链接: 7个, 外部链接: 0个",
+      "✓ 有canonical标签"
+    ],
+    "internal_links_count": 7,
+    "images_count": 0,
+    "images_without_alt": 0
+  },
+  {
+    "file": "about.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（4650字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 关于我们 - 王国之泪攻略站创建理念与内容来源 | 塞尔达传说",
+      "✓ description长度合适（65字符）",
+      "✓ H1标签正常",
+      "✓ 内部链接: 17个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 17,
+    "images_count": 0,
+    "images_without_alt": 0
+  },
+  {
+    "file": "boss-ganondorf.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（11262字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 魔王加侬多夫攻略 · 三阶段完全解说 · 王国之泪Boss攻略",
+      "✓ description长度合适（65字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 22个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 22,
+    "images_count": 1,
+    "images_without_alt": 0
+  },
+  {
+    "file": "boss-lynel-blue.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（7681字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 蓝鬃莱尼尔攻略 · 爆头骑乘流升级版 · 新招式应对 · 王国之泪",
+      "✓ description长度合适（80字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 26个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 26,
+    "images_count": 1,
+    "images_without_alt": 0
+  },
+  {
+    "file": "boss-lynel-silver.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（10092字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 白银莱尼尔攻略 · 5000血流水线无伤伐木打法 · 王国之泪",
+      "✓ description长度合适（81字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 26个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 26,
+    "images_count": 1,
+    "images_without_alt": 0
+  },
+  {
+    "file": "boss-lynel-white.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（8076字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 白鬃莱尼尔攻略 · 4000血怒吼火圈应对 · 破甲与空中林克时间 · 王国之泪",
+      "✓ description长度合适（70字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 26个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 26,
+    "images_count": 1,
+    "images_without_alt": 0
+  },
+  {
+    "file": "boss-lynel.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（7404字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 红鬃莱尼尔（人马）攻略 · 爆头骑乘流完全解说 · 王国之泪强敌",
+      "✓ description长度合适（72字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 25个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 25,
+    "images_count": 1,
+    "images_without_alt": 0
+  },
+  {
+    "file": "boss-phantom-ganon.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（11111字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 幻影加侬攻略 · 城堡1打5与野外单挑完全解说 · 王国之泪",
+      "✓ description长度合适（66字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 22个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 22,
+    "images_count": 1,
+    "images_without_alt": 0
+  },
+  {
+    "file": "boss.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（10236字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 王国之泪全16个Boss完整图鉴与打法攻略 | 塞尔达传说TotK",
+      "✓ description长度合适（75字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 23个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 23,
+    "images_count": 50,
+    "images_without_alt": 0
+  },
+  {
+    "file": "clothes.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（3018字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 王国之泪全38套套装图鉴与获取攻略 防具强化素材 | 塞尔达传说",
+      "✓ description长度合适（68字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 16个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 16,
+    "images_count": 38,
+    "images_without_alt": 0
+  },
+  {
+    "file": "cooking.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（6340字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 王国之泪料理合成大全 最优食谱与特效料理攻略 | 塞尔达传说",
+      "✓ description长度合适（67字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 16个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 16,
+    "images_count": 1,
+    "images_without_alt": 0
+  },
+  {
+    "file": "harry-armor.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（4585字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 最强套装全解析 · 哈里的终极秘籍 · 王国之泪",
+      "✓ description长度合适（53字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 19个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 19,
+    "images_count": 10,
+    "images_without_alt": 0
+  },
+  {
+    "file": "harry-cooking.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（3916字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 最值得合成的料理 · 哈里的终极秘籍 · 王国之泪",
+      "✓ description长度合适（77字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 20个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 20,
+    "images_count": 6,
+    "images_without_alt": 0
+  },
+  {
+    "file": "harry-shrine-usazum.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（4752字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 乌萨诸马神庙攻略 · 哈里的终极秘籍 · 王国之泪",
+      "✓ description长度合适（65字符）",
+      "✓ H1标签正常",
+      "✓ 内部链接: 18个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 18,
+    "images_count": 0,
+    "images_without_alt": 0
+  },
+  {
+    "file": "harry-tips.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（2976字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 哈里的终极秘籍 - 王国之泪最强武器、套装、料理攻略 | 塞尔达传说",
+      "✓ description长度合适（64字符）",
+      "✓ H1标签正常",
+      "✓ 内部链接: 20个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 20,
+    "images_count": 0,
+    "images_without_alt": 0
+  },
+  {
+    "file": "harry-weapons.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（4305字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 七宝匕首终极攻略 · 哈里的终极秘籍 · 王国之泪",
+      "✓ description长度合适（65字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 19个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 19,
+    "images_count": 8,
+    "images_without_alt": 0
+  },
+  {
+    "file": "index.html",
+    "issues": [],
+    "warnings": [],
+    "info": [
+      "✓ title长度合适: 塞尔达传说王国之泪全攻略 | TotK完整攻略站",
+      "✓ description长度合适（71字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 26个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 26,
+    "images_count": 1,
+    "images_without_alt": 0
+  },
+  {
+    "file": "main-quest.html",
+    "issues": [],
+    "warnings": [],
+    "info": [
+      "✓ title长度合适: 王国之泪主线任务全攻略 23条完整解说 | 塞尔达传说",
+      "✓ description长度合适（66字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 16个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 16,
+    "images_count": 23,
+    "images_without_alt": 0
+  },
+  {
+    "file": "mauyu-lost.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（6983字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 魔犹伊的遗失物全收集攻略 - 坐标位置与奖励详解 | 王国之泪",
+      "✓ description长度合适（74字符）",
+      "✓ H1标签正常",
+      "✓ 内部链接: 16个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 16,
+    "images_count": 0,
+    "images_without_alt": 0
+  },
+  {
+    "file": "privacy.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（2113字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 隐私政策 - 用户数据保护说明 | 王国之泪攻略站",
+      "✓ description长度合适（68字符）",
+      "✓ H1标签正常",
+      "✓ 内部链接: 17个, 外部链接: 5个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 17,
+    "images_count": 0,
+    "images_without_alt": 0
+  },
+  {
+    "file": "roots.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（872字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 王国之泪全120个破魔树根位置与攻略 地底地图完整版 | 塞尔达传说",
+      "✓ description长度合适（64字符）",
+      "✓ H1标签正常",
+      "✓ 内部链接: 16个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 16,
+    "images_count": 0,
+    "images_without_alt": 0
+  },
+  {
+    "file": "sage-will.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（5616字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 贤者的遗志全20个收集攻略 - 坐标位置与奖励 | 王国之泪",
+      "✓ description长度合适（66字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 16个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 16,
+    "images_count": 10,
+    "images_without_alt": 0
+  },
+  {
+    "file": "shrine-unlock.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（6310字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 王国之泪全152座神庙位置坐标与开启指南 | 塞尔达传说",
+      "✓ description长度合适（66字符）",
+      "✓ H1标签正常",
+      "✓ 内部链接: 16个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 16,
+    "images_count": 0,
+    "images_without_alt": 0
+  },
+  {
+    "file": "shrines.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（3266字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 王国之泪神庙挑战全攻略 31个神庙图文解说 | 塞尔达传说",
+      "✓ description长度合适（61字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 16个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 16,
+    "images_count": 31,
+    "images_without_alt": 0
+  },
+  {
+    "file": "side-quest.html",
+    "issues": [],
+    "warnings": [],
+    "info": [
+      "✓ title长度合适: 王国之泪情节挑战全攻略 Side Adventure全收录 | 塞尔达传说",
+      "✓ description长度合适（75字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 16个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 16,
+    "images_count": 56,
+    "images_without_alt": 0
+  },
+  {
+    "file": "weapons.html",
+    "issues": [],
+    "warnings": [
+      "⚠️  有内联CSS（5153字符），建议移到外部CSS文件"
+    ],
+    "info": [
+      "✓ title长度合适: 王国之泪武器图鉴与融合攻略 最强合成配方推荐 | 塞尔达传说",
+      "✓ description长度合适（59字符）",
+      "✓ H1标签正常",
+      "✓ 所有图片都有alt属性",
+      "✓ 内部链接: 16个, 外部链接: 0个",
+      "✓ 有canonical标签",
+      "✓ Open Graph标签完整（9个）",
+      "✓ 有结构化数据"
+    ],
+    "internal_links_count": 16,
+    "images_count": 20,
+    "images_without_alt": 0
+  }
+]

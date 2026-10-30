@@ -2,7 +2,7 @@
 Allow: /
 Disallow: /404.html
 
-# 鈹€鈹€ 灞忚斀 AI 璁粌鐖櫕 鈹€鈹€
+# ── 屏蔽 AI 训练爬虫 ──
 User-agent: GPTBot
 Disallow: /
 
