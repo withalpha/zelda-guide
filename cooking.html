@@ -288,6 +288,13 @@
   </div>
 </nav>
 
+
+<!-- 面包屑导航 -->
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <a href="index.html">首页</a>
+  <span class="breadcrumb-sep">›</span>
+  <span class="breadcrumb-current">料理合成</span>
+</nav>
 <!-- Hero -->
 <div class="page-hero">
   <span class="page-hero-eyebrow">COOKING RECIPES · 图鉴 No.001–228</span>
@@ -720,6 +727,28 @@ document.getElementById("catBar").addEventListener("click", e => {
 // ── 初始渲染 ──────────────────────────────────────
 render();
 </script>
+<!-- 相关攻略推荐 -->
+<section class="related-guides-section">
+  <h2 class="related-guides-title">📌 相关攻略推荐</h2>
+  <div class="related-guides-grid">
+    <a href="weapons.html" class="related-guide-card">
+      <span class="related-guide-icon">⚔️</span>
+      <span class="related-guide-text">武器图鉴</span>
+      <span class="related-guide-arrow">→</span>
+    </a>
+    <a href="clothes.html" class="related-guide-card">
+      <span class="related-guide-icon">⚔️</span>
+      <span class="related-guide-text">套装获取</span>
+      <span class="related-guide-arrow">→</span>
+    </a>
+    <a href="main-quest.html" class="related-guide-card">
+      <span class="related-guide-icon">⚔️</span>
+      <span class="related-guide-text">主线任务</span>
+      <span class="related-guide-arrow">→</span>
+    </a>
+  </div>
+</section>
+
 </body>
 </html>
 

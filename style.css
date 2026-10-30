@@ -2917,3 +2917,134 @@ table.data-tbl tbody tr:hover td { background:rgba(201,162,39,0.04); color:var(-
   white-space: nowrap;
   border: 0;
 }
+
+
+/* ════════════════════════════════════════
+   SEO 优化相关样式
+   ════════════════════════════════════════ */
+
+/* 面包屑导航 */
+.breadcrumb-nav {
+  padding: 80px 24px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb-nav a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.breadcrumb-nav a:hover {
+  color: var(--gold-light);
+  text-decoration: underline;
+}
+
+.breadcrumb-sep {
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.breadcrumb-current {
+  color: var(--text-secondary);
+}
+
+/* 相关攻略推荐区块 */
+.related-guides-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 24px 80px;
+}
+
+.related-guides-title {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Noto Serif SC', serif;
+}
+
+.related-guides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.related-guide-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.related-guide-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent, rgba(201,162,39,0.05));
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.related-guide-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201,162,39,0.15);
+}
+
+.related-guide-card:hover::before {
+  opacity: 1;
+}
+
+.related-guide-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.related-guide-text {
+  flex: 1;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.related-guide-arrow {
+  color: var(--gold);
+  font-size: 1.2rem;
+  opacity: 0.6;
+  transition: var(--transition);
+}
+
+.related-guide-card:hover .related-guide-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .breadcrumb-nav {
+    padding-top: 70px;
+    font-size: 0.8rem;
+  }
+  
+  .related-guides-section {
+    padding-bottom: 60px;
+  }
+  
+  .related-guides-grid {
+    grid-template-columns: 1fr;
+  }
+}
