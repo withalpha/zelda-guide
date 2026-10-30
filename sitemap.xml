@@ -4,40 +4,40 @@
   
   <!-- 首页 - 最高优先级 -->
   <url>
-    <loc>https://zeldaguide.ccwu.cc/</loc>
+    <loc>https://zelda-guide.pages.dev/</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://zeldaguide.ccwu.cc/images/desktop/ui.jpg</image:loc>
+      <image:loc>https://zelda-guide.pages.dev/images/desktop/ui.jpg</image:loc>
       <image:title>塞尔达传说王国之泪全攻略</image:title>
     </image:image>
   </url>
   
   <!-- 核心攻略页面 - 高优先级 -->
   <url>
-    <loc>https://zeldaguide.ccwu.cc/main-quest.html</loc>
+    <loc>https://zelda-guide.pages.dev/main-quest.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/shrines.html</loc>
+    <loc>https://zelda-guide.pages.dev/shrines.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/weapons.html</loc>
+    <loc>https://zelda-guide.pages.dev/weapons.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/cooking.html</loc>
+    <loc>https://zelda-guide.pages.dev/cooking.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -45,41 +45,41 @@
   
   <!-- 重要攻略页面 - 中高优先级 -->
   <url>
-    <loc>https://zeldaguide.ccwu.cc/side-quest.html</loc>
+    <loc>https://zelda-guide.pages.dev/side-quest.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zeldaguide.ccwu.cc/quest-order.html</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://zeldaguide.ccwu.cc/clothes.html</loc>
+    <loc>https://zelda-guide.pages.dev/quest-order.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/shrine-unlock.html</loc>
+    <loc>https://zelda-guide.pages.dev/clothes.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/roots.html</loc>
+    <loc>https://zelda-guide.pages.dev/shrine-unlock.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/boss.html</loc>
+    <loc>https://zelda-guide.pages.dev/roots.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://zelda-guide.pages.dev/boss.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -87,89 +87,89 @@
   
   <!-- 专项攻略页面 -->
   <url>
-    <loc>https://zeldaguide.ccwu.cc/harry-tips.html</loc>
+    <loc>https://zelda-guide.pages.dev/harry-tips.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/harry-weapons.html</loc>
+    <loc>https://zelda-guide.pages.dev/harry-weapons.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/harry-cooking.html</loc>
+    <loc>https://zelda-guide.pages.dev/harry-cooking.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/harry-armor.html</loc>
+    <loc>https://zelda-guide.pages.dev/harry-armor.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/harry-shrine-usazum.html</loc>
+    <loc>https://zelda-guide.pages.dev/harry-shrine-usazum.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zeldaguide.ccwu.cc/harry-master-sword.html</loc>
+    <loc>https://zelda-guide.pages.dev/harry-master-sword.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zeldaguide.ccwu.cc/harry-hover-bike.html</loc>
+    <loc>https://zelda-guide.pages.dev/harry-hover-bike.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zeldaguide.ccwu.cc/harry-battery-fairy.html</loc>
+    <loc>https://zelda-guide.pages.dev/harry-battery-fairy.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zeldaguide.ccwu.cc/shrine-checklist.html</loc>
+    <loc>https://zelda-guide.pages.dev/shrine-checklist.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zeldaguide.ccwu.cc/beginner-guide.html</loc>
+    <loc>https://zelda-guide.pages.dev/beginner-guide.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zeldaguide.ccwu.cc/korok-guide.html</loc>
+    <loc>https://zelda-guide.pages.dev/korok-guide.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zeldaguide.ccwu.cc/depths-guide.html</loc>
+    <loc>https://zelda-guide.pages.dev/depths-guide.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zeldaguide.ccwu.cc/fairy-guide.html</loc>
+    <loc>https://zelda-guide.pages.dev/fairy-guide.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zeldaguide.ccwu.cc/dragon-guide.html</loc>
+    <loc>https://zelda-guide.pages.dev/dragon-guide.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -180,21 +180,21 @@
   
   <!-- 收集物品页面 -->
   <url>
-    <loc>https://zeldaguide.ccwu.cc/sage-will.html</loc>
+    <loc>https://zelda-guide.pages.dev/sage-will.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/old-maps.html</loc>
+    <loc>https://zelda-guide.pages.dev/old-maps.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/mauyu-lost.html</loc>
+    <loc>https://zelda-guide.pages.dev/mauyu-lost.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -202,42 +202,42 @@
   
   <!-- Boss 详情页面 -->
   <url>
-    <loc>https://zeldaguide.ccwu.cc/boss-ganondorf.html</loc>
+    <loc>https://zelda-guide.pages.dev/boss-ganondorf.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/boss-phantom-ganon.html</loc>
+    <loc>https://zelda-guide.pages.dev/boss-phantom-ganon.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/boss-lynel.html</loc>
+    <loc>https://zelda-guide.pages.dev/boss-lynel.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/boss-lynel-blue.html</loc>
+    <loc>https://zelda-guide.pages.dev/boss-lynel-blue.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/boss-lynel-white.html</loc>
+    <loc>https://zelda-guide.pages.dev/boss-lynel-white.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/boss-lynel-silver.html</loc>
+    <loc>https://zelda-guide.pages.dev/boss-lynel-silver.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -245,14 +245,14 @@
   
   <!-- 工具与互动页面 -->
   <url>
-    <loc>https://zeldaguide.ccwu.cc/faq.html</loc>
-    <lastmod>2026-06-22</lastmod>
+    <loc>https://zelda-guide.pages.dev/faq.html</loc>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/sitemap-page.html</loc>
+    <loc>https://zelda-guide.pages.dev/sitemap-page.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -260,14 +260,14 @@
   
   <!-- 其他页面 -->
   <url>
-    <loc>https://zeldaguide.ccwu.cc/about.html</loc>
-    <lastmod>2026-06-22</lastmod>
+    <loc>https://zelda-guide.pages.dev/about.html</loc>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://zeldaguide.ccwu.cc/privacy.html</loc>
+    <loc>https://zelda-guide.pages.dev/privacy.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>

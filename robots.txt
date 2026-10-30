@@ -17,7 +17,7 @@ Disallow: /.wrangler/
 Disallow: /*.py$
 
 # Sitemap 位置
-Sitemap: https://zeldaguide.ccwu.cc/sitemap.xml
+Sitemap: https://zelda-guide.pages.dev/sitemap.xml
 
 # 爬取延迟（可选，避免服务器压力）
 Crawl-delay: 1
