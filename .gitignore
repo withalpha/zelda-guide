@@ -27,16 +27,12 @@ pixel_match_result.json
 true_match_result.json
 final_true_match.json
 correct_dishes_mapping.json
-MAPPING_REPORT.md
-BUG_CHECK_REPORT_2026-05-28.md
-BUG_FIXES.md
-ORGANIZATION_SUMMARY.md
-PROJECT_STRUCTURE.md
-QUICK_REFERENCE.md
-UPDATE_PATHS.md
 cooking照片命名说明.txt
-DEPLOY_GUIDE.md
 set-domain.ps1
+
+# ── Markdown文档（开发文档，无需部署）──
+*.md
+!README.md
 
 # ── 网络/VPN 配置（不应上传）──
 clash_config.yaml
