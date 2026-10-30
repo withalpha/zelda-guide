@@ -72,8 +72,41 @@
   </script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <!-- SheetJS for Excel export - 必须同步加载 -->
-  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js" defer></script>
+  <!-- SheetJS for Excel export - 多CDN备用方案 -->
+  <script>
+    // 尝试多个CDN源加载XLSX库
+    (function() {
+      const cdns = [
+        'https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js',
+        'https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js'
+      ];
+      
+      let currentIndex = 0;
+      
+      function loadScript() {
+        if (currentIndex >= cdns.length) {
+          console.error('所有CDN源均加载失败');
+          return;
+        }
+        
+        const script = document.createElement('script');
+        script.src = cdns[currentIndex];
+        script.onload = function() {
+          console.log('XLSX库加载成功，来源：' + cdns[currentIndex]);
+          window.xlsxLoaded = true;
+        };
+        script.onerror = function() {
+          console.warn('CDN加载失败：' + cdns[currentIndex]);
+          currentIndex++;
+          loadScript();
+        };
+        document.head.appendChild(script);
+      }
+      
+      loadScript();
+    })();
+  </script>
   <style>
     .shrine-section-header {
       display:flex; align-items:center; gap:14px;
@@ -1217,22 +1250,38 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // ═══ 检查 XLSX 库加载状态并激活导出按钮 ═══
   const exportBtn = document.getElementById('exportBtn');
+  let checkCount = 0;
+  const maxChecks = 100; // 最多检测20秒（100 * 200ms）
   
   function activateExportButton() {
+    checkCount++;
+    
     if (typeof XLSX !== 'undefined') {
       // XLSX 库已加载，激活按钮
       exportBtn.disabled = false;
       exportBtn.style.opacity = '1';
       exportBtn.style.cursor = 'pointer';
+      exportBtn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
       exportBtn.innerHTML = '<span>📊</span><span>导出Excel清单</span>';
+      console.log('✓ XLSX库加载成功，按钮已激活');
+    } else if (checkCount >= maxChecks) {
+      // 超时，加载失败
+      exportBtn.disabled = true;
+      exportBtn.style.opacity = '0.6';
+      exportBtn.style.cursor = 'not-allowed';
+      exportBtn.style.background = '#dc2626';
+      exportBtn.innerHTML = '<span>❌</span><span>加载失败，请刷新页面</span>';
+      console.error('✗ XLSX库加载超时，请检查网络连接');
     } else {
-      // XLSX 库未加载，继续等待
+      // 继续等待
+      const progress = Math.min(Math.round((checkCount / maxChecks) * 100), 99);
+      exportBtn.innerHTML = `<span>⏳</span><span>加载中 ${progress}%</span>`;
       setTimeout(activateExportButton, 200);
     }
   }
   
   // 开始检查
-  activateExportButton();
+  setTimeout(activateExportButton, 500); // 延迟500ms开始检测，给脚本加载时间
 });
 
 // ═════════════════════════════════════════════════════════════
