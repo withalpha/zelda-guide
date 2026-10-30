@@ -1,0 +1,12 @@
+---- Servers and domain names check
+
+Getting IP for ELMER.DNSPOD.NET: 129.211.176.239 111.206.98.235 1.12.0.1 36.155.149.176 101.227.168.35
+Getting IP for ELMER.DNSPOD.NET: 2402:4e00:111:fff::c
+Getting IP for MANY.DNSPOD.NET: 111.13.13.35 1.14.119.35 220.196.136.35 117.89.178.173 1.12.0.4
+Getting IP for MANY.DNSPOD.NET: 2402:4e00:1470:2::e
+
+
+No error, storing for validation...
+Saved as request 20260614142949-arf-44974
+
+Done
