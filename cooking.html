@@ -256,6 +256,20 @@
     .modal-close:hover { background: rgba(201,162,39,0.2); color: var(--gold); }
 
 
+    .cook-hint { text-align: center; color: var(--text-secondary); font-size: 0.85rem; margin: 0 0 14px; }
+    .modal-name { font-size: 1.15rem; font-weight: 700; color: var(--gold); margin-top: 2px; text-align: center; }
+    .modal-cat { font-size: 0.78rem; color: var(--text-muted); margin: 2px 0 12px; text-align: center; }
+    .modal-section { text-align: left; margin-top: 12px; }
+    .modal-h { font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; }
+    .modal-ing { list-style: none; margin: 0; padding: 0; }
+    .modal-ing li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px dashed rgba(201,162,39,0.25); font-size: 0.86rem; }
+    .modal-ing li:last-child { border-bottom: none; }
+    .modal-ing .ing-qty { color: var(--green); font-weight: 700; white-space: nowrap; }
+    .modal-effect { background: rgba(201,162,39,0.08); border: 1px solid var(--border-gold); border-radius: 10px; padding: 10px 12px; font-size: 0.86rem; line-height: 1.6; }
+    .modal-effect.warn { border-color: rgba(255,170,0,0.6); background: rgba(255,170,0,0.08); }
+    .modal-note { font-size: 0.76rem; color: var(--text-muted); line-height: 1.6; margin: 6px 0 0; }
+    .dish-modal { max-width: 480px; }
+    .modal-body { max-height: 62vh; overflow-y: auto; }
     @media (max-width: 600px) {
       .dish-grid { grid-template-columns: repeat(4, 1fr); gap: 6px; }
     }
@@ -332,6 +346,7 @@
   </div>
 
   <!-- 料理内容区 -->
+  <p class="cook-hint">👆 点击任意料理图片，查看所需材料、数量与加成效果</p>
   <div id="dishContainer"></div>
 
   <div class="tip-box" style="margin-top:28px">
@@ -351,6 +366,18 @@
     </div>
     <div class="modal-body">
       <div class="modal-no" id="modalNo"></div>
+      <div class="modal-name" id="modalName"></div>
+      <div class="modal-cat" id="modalCat"></div>
+      <div class="modal-section">
+        <div class="modal-h">🧂 所需材料</div>
+        <ul class="modal-ing" id="modalIng"></ul>
+        <p class="modal-note" id="modalIngNote"></p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-h">✨ 加成效果</div>
+        <div class="modal-effect" id="modalEffect"></div>
+        <p class="modal-note" id="modalEffectNote"></p>
+      </div>
       <button class="modal-close" onclick="document.getElementById('modalOverlay').classList.remove('open')">关闭</button>
     </div>
   </div>
@@ -699,11 +726,240 @@ function render() {
   document.getElementById("visCount").textContent = total;
 }
 
-// ── 弹窗 ──────────────────────────────────────────
+// ── 弹窗：材料（中文名 + 数量）与加成效果 ──────────
+// 重要机制（王国之泪）：菜名不决定加成，加成由食材决定。
+// 锅最多放 5 个材料；同效果叠加提等级和时长；不同效果混用会抵消。
+// 烤食不保留加成；冷冻固定带 1 分钟耐热；怪物精华随机化结果。
+const METHOD_ZH = { Cookpot: "锅煮", Campfire: "篝火烤", "Hot Spring": "温泉", "Extreme Cold": "极寒冷冻" };
+const ING_ZH = {
+  "Mushroom": "蘑菇", "Meat": "兽肉", "Fish": "鱼", "Crab": "螃蟹", "Snail": "田螺",
+  "Fruit": "水果", "Plant": "野菜", "Tomato": "番茄", "Spicy Pepper": "暖暖草果",
+  "Chickaloo Tree Nut": "树果", "Acorn": "橡子", "Stambulb": "灯笼花（Stambulb）",
+  "Butter": "黄油", "Goron Spice": "戈隆香料", "Prime Meat": "高级兽肉",
+  "Gourmet Meat": "顶级兽肉", "Salt": "岩盐", "Vegetable": "蔬菜", "Herb": "香草",
+  "Oil": "油", "Wheat": "塔邦挞小麦", "Milk": "鲜奶", "Cheese": "奶酪",
+  "Rice": "海拉鲁米", "Sugar": "蔗糖", "Egg": "鸟蛋", "Bird Egg": "鸟蛋", "Seafood": "海鲜",
+  "Carrot": "胡萝卜", "Pumpkin": "南瓜", "Honey": "蜂蜜", "Apple": "苹果",
+  "Wildberry": "草莓", "Nut": "坚果", "Banana": "大剑香蕉", "Porgy": "鲷鱼",
+  "Salmon": "鲑鱼", "Trout": "鳟鱼", "Carp": "鲤鱼", "Bass": "鲈鱼",
+  "River Snail": "潜行田螺", "Ancient Arowana": "骨舌鱼", "Glowing Cave Fish": "霍拉鱼",
+  "Golden Apple": "金苹果", "Hylian Tomato": "海拉鲁番茄", "Hylian Shroom": "海拉鲁蘑菇",
+  "Skyshroom": "天空蘑菇", "Stamella Shroom": "精力蘑菇", "Rushroom": "速速蘑菇",
+  "Sunshroom": "暖暖蘑菇", "Chillshroom": "冰冷蘑菇", "Zapshroom": "酥麻蘑菇",
+  "Razorshroom": "大剑蘑菇", "Ironshroom": "铠甲蘑菇", "Silent Shroom": "潜行蘑菇",
+  "Brightcap": "光亮蘑菇", "Endura Shroom": "毅力蘑菇", "Hearty Truffle": "生命松露",
+  "Big Hearty Truffle": "大生命松露", "Hearty Radish": "小萝卜", "Big Hearty Radish": "大萝卜",
+  "Armoranth": "铠甲草", "Mighty Thistle": "大剑草", "Swift Carrot": "速速胡萝卜",
+  "Endura Carrot": "毅力胡萝卜", "Fortified Pumpkin": "铠甲南瓜", "Sun Pumpkin": "向阳南瓜",
+  "Hydromelon": "冰冷蜜瓜", "Voltfruit": "酥麻水果", "Palm Fruit": "椰子",
+  "Fleet-Lotus Seeds": "速速莲蓬", "Mighty Bananas": "大剑香蕉",
+  "Raw Meat": "生兽肉", "Raw Bird Drumstick": "生禽腿肉", "Raw Bird Thigh": "生高级禽腿肉",
+  "Raw Whole Bird": "生整只禽肉", "Poultry": "禽肉", "Prime Poultry": "高级禽肉",
+  "Gourmet Poultry": "顶级禽肉", "Monster Extract": "怪物精华", "Monster Part": "怪物素材",
+  "Dark Clump": "暗黑团块", "Restless Cricket": "不安蟋蟀", "Hot-Footed Frog": "速速蛙",
+  "Hightail Lizard": "长尾蜥蜴", "Summerwing Butterfly": "夏翅蝴蝶", "Warm Darner": "暖蜻蜓",
+  "Winterwing Butterfly": "冬翅蝴蝶", "Cold Darner": "冰冷蜻蜓", "Electric Darner": "电蜻蜓",
+  "Thunderwing Butterfly": "雷翅蝴蝶", "Smotherwing Butterfly": "闷燃蝴蝶",
+  "Fireproof Lizard": "防火蜥蜴", "Bladed Rhino Beetle": "刀刃犀牛甲虫", "Beetle": "甲虫",
+  "Sunset Firefly": "黄昏萤火虫", "Silent Princess": "潜行公主花", "Sticky Frog": "粘粘蛙",
+  "Sticky Lizard": "粘粘蜥蜴", "Deep Firefly": "深渊萤火虫", "Tireless Frog": "不倦蛙",
+  "Hearty Lizard": "生命蜥蜴", "Hearty Bass": "生命鲈鱼", "Hearty Salmon": "生命鲑鱼",
+  "Fairy": "妖精", "Ore": "矿石",
+  "Non-food items or incompatible ingredients": "非食材或不兼容材料",
+  "Endura/Swift Carrot": "毅力胡萝卜／速速胡萝卜"
+};
+const ING_EFFECT = {
+  "Spicy Pepper": "耐寒", "Sunshroom": "耐寒",
+  "Hydromelon": "耐热", "Chillshroom": "耐热",
+  "Voltfruit": "电气抗性", "Zapshroom": "电气抗性",
+  "Mighty Bananas": "攻击力提升", "Razorshroom": "攻击力提升", "Mighty Thistle": "攻击力提升",
+  "Armoranth": "防御力提升", "Ironshroom": "防御力提升", "Fortified Pumpkin": "防御力提升",
+  "Swift Carrot": "移动速度提升", "Rushroom": "移动速度提升", "Fleet-Lotus Seeds": "移动速度提升",
+  "Stamella Shroom": "精力恢复", "Honey": "精力恢复",
+  "Hearty Radish": "生命上限提升", "Big Hearty Radish": "生命上限提升",
+  "Hearty Truffle": "生命上限提升", "Big Hearty Truffle": "生命上限提升",
+  "Hearty Bass": "生命上限提升", "Hearty Salmon": "生命上限提升",
+  "Endura Carrot": "精力上限提升", "Endura Shroom": "精力上限提升",
+  "Silent Shroom": "潜行提升",
+  "Brightcap": "发光", "Glowing Cave Fish": "发光",
+  "Sun Pumpkin": "瘴气恢复",
+  "Dark Clump": "瘴气抗性"
+};
+const CRITTER_EFFECT = {
+  "Restless Cricket": "精力恢复",
+  "Hot-Footed Frog": "移动速度提升", "Hightail Lizard": "移动速度提升",
+  "Summerwing Butterfly": "耐寒", "Warm Darner": "耐寒",
+  "Winterwing Butterfly": "耐热", "Cold Darner": "耐热",
+  "Electric Darner": "电气抗性", "Thunderwing Butterfly": "电气抗性",
+  "Smotherwing Butterfly": "防火", "Fireproof Lizard": "防火",
+  "Bladed Rhino Beetle": "攻击力提升", "Beetle": "防御力提升",
+  "Sunset Firefly": "潜行提升", "Silent Shroom": "潜行提升", "Silent Princess": "潜行提升",
+  "Sticky Frog": "防滑", "Sticky Lizard": "防滑",
+  "Deep Firefly": "发光",
+  "Tireless Frog": "精力上限提升",
+  "Hearty Lizard": "生命上限提升", "Hearty Bass": "生命上限提升"
+};
+const GENERIC_EFFECTS = {
+  "Mushroom": "蘑菇：暖暖蘑菇→耐寒；冰冷蘑菇→耐热；酥麻蘑菇→电气抗性；大剑蘑菇→攻击力提升；铠甲蘑菇→防御力提升；速速蘑菇→移动速度提升；精力蘑菇→精力恢复；生命松露→生命上限提升；毅力蘑菇→精力上限提升；潜行蘑菇→潜行提升；光亮蘑菇→发光；普通蘑菇（海拉鲁蘑菇、天空蘑菇）→仅回血",
+  "Vegetable": "蔬菜：速速胡萝卜→移动速度提升；毅力胡萝卜→精力上限提升；铠甲南瓜→防御力提升；向阳南瓜→瘴气恢复；小萝卜→生命上限提升；大剑草→攻击力提升；铠甲草→防御力提升；普通蔬菜→仅回血",
+  "Fruit": "水果：暖暖草果→耐寒；冰冷蜜瓜→耐热；酥麻水果→电气抗性；大剑香蕉→攻击力提升；普通水果（苹果、草莓、椰子等）→仅回血",
+  "Fish": "鱼：生命鲈鱼／生命鲑鱼→生命上限提升；大剑鲤鱼→攻击力提升；铠甲鲷鱼→防御力提升；速速鲤鱼→移动速度提升；精力鲈鱼→精力恢复；其他普通鱼→仅回血",
+  "Seafood": "海鲜：利爪蟹→攻击力提升；铁壳蟹→防御力提升；潜行田螺→潜行提升；其他海鲜→仅回血",
+  "Crab": "螃蟹：利爪蟹→攻击力提升；铁壳蟹→防御力提升；普通蟹→仅回血",
+  "Snail": "田螺：潜行田螺→潜行提升；其他田螺→仅回血",
+  "Plant": "野菜：大剑草→攻击力提升；铠甲草→防御力提升；速速紫罗兰→移动速度提升；普通野菜→仅回血",
+  "Carrot": "胡萝卜：速速胡萝卜→移动速度提升；毅力胡萝卜→精力上限提升",
+  "Pumpkin": "南瓜：铠甲南瓜→防御力提升；向阳南瓜→瘴气恢复",
+  "Porgy": "鲷鱼：大剑鲷鱼→攻击力提升；铠甲鲷鱼→防御力提升",
+  "Salmon": "鲑鱼：生命鲑鱼→生命上限提升",
+  "Trout": "鳟鱼：暖暖鳟鱼→耐寒；冰冷鳟鱼→耐热；酥麻鳟鱼→电气抗性；潜行鳟鱼→潜行提升",
+  "Carp": "鲤鱼：大剑鲤鱼→攻击力提升；铠甲鲤鱼→防御力提升；速速鲤鱼→移动速度提升",
+  "Bass": "鲈鱼：生命鲈鱼→生命上限提升；精力鲈鱼→精力恢复；普通鲈鱼→仅回血"
+};
+function escapeHtml(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+function trBase(x) {
+  x = x.trim();
+  if (ING_ZH[x]) return ING_ZH[x];
+  const cap = x.charAt(0).toUpperCase() + x.slice(1);
+  if (ING_ZH[cap]) return ING_ZH[cap];
+  const low = x.toLowerCase();
+  if (ING_ZH[low]) return ING_ZH[low];
+  for (const cand of [x, cap, low]) {
+    if (cand.endsWith("s") && ING_ZH[cand.slice(0, -1)]) return ING_ZH[cand.slice(0, -1)];
+    if (cand.endsWith("es") && ING_ZH[cand.slice(0, -2)]) return ING_ZH[cand.slice(0, -2)];
+  }
+  return x;
+}
+function trList(s) {
+  if (s.includes(" or ")) return s.split(" or ").map(trSeg).join("或");
+  if (s.includes(" / ")) return s.split(" / ").map(trSeg).join("／");
+  if (s.includes("/")) return s.split("/").map(trBase).join("／");
+  return trBase(s);
+}
+function trSeg(s) {
+  s = s.trim();
+  if (ING_ZH[s]) return ING_ZH[s];
+  const pm = s.match(/^(.*)\s+\(([^)]+)\)$/);
+  if (pm) {
+    const base = trSeg(pm[1]);
+    const par = pm[2].trim();
+    if (/^not\s+/i.test(par)) return base + "（不含" + trList(par.replace(/^not\s+/i, "")) + "）";
+    return base + "（" + trList(par) + "）";
+  }
+  return trList(s);
+}
+function stripCount(s) {
+  return s.trim().replace(/^\d+\s+/, "").replace(/^different kinds of\s+/i, "");
+}
+function parseDishIng(d) {
+  const rawParts = d.ing.join(" + ").split(" + ").map(s => s.trim());
+  return rawParts.map(raw => {
+    let qty = 1, different = false, s = raw;
+    const m = s.match(/^(\d+)\s+(.*)$/);
+    if (m) { qty = parseInt(m[1], 10); s = m[2]; }
+    if (/^different kinds of\s+/i.test(s)) { different = true; s = s.replace(/^different kinds of\s+/i, ""); }
+    return { qty, different, zh: trSeg(s) };
+  });
+}
+function expandAlternatives(s) {
+  s = stripCount(s).replace(/^different kinds of\s+/i, "");
+  const out = [];
+  for (const seg of s.split(" or ")) {
+    const t = seg.trim();
+    if (t === "Endura/Swift Carrot") { out.push("Endura Carrot", "Swift Carrot"); continue; }
+    const pm = t.match(/^(.*)\s+\(([^)]+)\)$/);
+    if (pm && !/^not\s+/i.test(pm[2].trim())) {
+      out.push(pm[1].trim());
+      out.push(...pm[2].split("/").map(x => x.trim()));
+      continue;
+    }
+    if (t.includes(" / ")) { out.push(...t.split(" / ").map(x => x.trim())); continue; }
+    if (t.includes("/") && !ING_ZH[t]) { out.push(...t.split("/").map(x => x.trim())); continue; }
+    out.push(t.replace(/\s+\([^)]+\)$/, "").trim());
+  }
+  return out;
+}
+function partEffects(partRaw) {
+  const map = new Map();
+  for (const alt of expandAlternatives(partRaw)) {
+    const eff = ING_EFFECT[alt] || CRITTER_EFFECT[alt];
+    if (eff) {
+      if (!map.has(eff)) map.set(eff, []);
+      const zh = trSeg(alt);
+      if (!map.get(eff).includes(zh)) map.get(eff).push(zh);
+    }
+  }
+  return map;
+}
+function getDishEffect(d) {
+  const method = d.method;
+  if (method === "Campfire") return { title: "无加成", warn: false, desc: "烤食不保留食材的加成效果，只恢复生命（烤后回血约为生食材的 1.5 倍）。" };
+  if (method === "Extreme Cold") return { title: "耐热 Lv1（持续 1 分钟）", warn: false, desc: "所有冷冻食品固定带 1 分钟低级耐热加成，代价是回血略低于生食材。" };
+  if (method === "Hot Spring") return { title: "无加成", warn: false, desc: "温泉水煮蛋仅恢复生命，无额外加成。" };
+  if (d.no === 145) return { title: "无加成（失败料理）", warn: true, desc: "用非食材或不兼容材料煮出，回血极少，无加成。" };
+  if (d.no === 146) return { title: "无加成（失败料理）", warn: true, desc: "只用矿石煮出，又硬又难吃，回血极少，无加成。" };
+  if (d.no === 228) return { title: "恢复全部红心", warn: false, desc: "单独用妖精煮出，喝下恢复全部生命。" };
+  const rawParts = d.ing.join(" + ").split(" + ").map(s => s.trim());
+  if (rawParts.some(p => /Dark Clump/.test(p))) return { title: "瘴气抗性", warn: false, desc: "暗黑团块提供瘴气抗性，每份提供 1 点抗性点数，放得越多抗性越强。注意：暗黑团块单独煮会失败，必须按配方搭配其他食材。" };
+  if (rawParts.some(p => /Monster Extract/.test(p))) return { title: "随机加成（怪物精华）", warn: true, desc: "怪物精华会随机化结果：持续时间固定为 1 分钟、10 分钟或 30 分钟三档之一；回血或加成强度随机增强或减弱；且无法获得暴击加成。本配方本身无固定加成，随机结果主要影响回血量。" };
+  const perPart = rawParts.map(partEffects);
+  const allEffects = new Map();
+  perPart.forEach(m => { m.forEach((ings, eff) => { if (!allEffects.has(eff)) allEffects.set(eff, []); ings.forEach(i => { if (!allEffects.get(eff).includes(i)) allEffects.get(eff).push(i); }); }); });
+  if (allEffects.size === 1) {
+    const eff = [...allEffects.keys()][0];
+    let desc = "由" + allEffects.get(eff).join("、") + "提供。同效果食材叠加可提升加成等级和持续时间；不同效果食材混用会互相抵消。";
+    if (d.cat === "药水") desc += "药水加成由昆虫／青蛙／蜥蜴决定，怪物素材只影响持续时间，不改变加成种类；怪物素材越高级，持续时间越长。";
+    return { title: eff, warn: false, desc };
+  }
+  if (allEffects.size > 1) {
+    const multiParts = perPart.filter(m => m.size > 1);
+    const otherHasEffect = perPart.some(m => m !== multiParts[0] && m.size > 0);
+    if (multiParts.length === 1 && !otherHasEffect) {
+      const lines = [];
+      multiParts[0].forEach((ings, eff) => { lines.push(ings.join("／") + "→" + eff); });
+      return { title: "取决于你选哪一种食材", warn: false, desc: "这道菜的配方里有任选材料，加成随你的选择而变：" + lines.join("；") + "。选定一种后，不要再混入其他效果食材。" };
+    }
+    return { title: "效果不稳定（不同效果混用）", warn: true, desc: "配方里同时有" + [...allEffects.keys()].join("、") + "等不同效果食材，按游戏规则一锅只能有一种加成，不同效果混用会互相抵消或只保留最强的一种，做出来大概率只有回血，没有稳定加成。想稳定出加成，请只放同一种效果的食材。" };
+  }
+  const generics = [];
+  const seenGen = new Set();
+  for (const partRaw of rawParts) {
+    for (const alt of expandAlternatives(partRaw)) {
+      const capAlt = alt.charAt(0).toUpperCase() + alt.slice(1);
+      const cands = [alt, alt.slice(0, -1), capAlt, capAlt.slice(0, -1)];
+      const key = cands.find(c => GENERIC_EFFECTS[c]);
+      if (key && !seenGen.has(key)) { seenGen.add(key); generics.push(GENERIC_EFFECTS[key]); }
+    }
+  }
+  if (generics.length) {
+    return { title: "取决于你选的具体食材", warn: false, desc: generics.join("；") + "。选普通食材则仅回血；同效果食材叠加可提升等级和持续时间。" };
+  }
+  return { title: "无加成，仅回血", warn: false, desc: "这道菜的配方里没有带加成的食材，吃下只恢复生命；回血量随食材品质和数量提升，满月夜烹饪有概率暴击翻倍。" };
+}
+function ingNoteFor(d) {
+  if (d.method === "Campfire") return "篝火烤食：一次只用 1 个食材，直接扔进火里即可。";
+  if (d.method === "Extreme Cold") return "极寒冷冻：一次冻 1 个食材，放在冰雪上即可。";
+  if (d.method === "Hot Spring") return "温泉：放 1 个鸟蛋进温泉即可。";
+  if (d.cat === "药水") return "药水：昆虫／青蛙／蜥蜴至少 1 只 + 怪物素材至少 1 个，锅最多放 5 个；怪物素材越多、越高级，持续时间越长。";
+  if (d.no === 145 || d.no === 146) return "失败料理：按上面材料煮出即为失败品。";
+  return "锅最多放 5 个材料；上面是做成这道菜的必需材料和最少数量，剩余空位可补同类或同效果食材（不要补不同效果食材）。同效果叠加可提升等级和持续时间。";
+}
 function openModal(d) {
   document.getElementById("modalImg").src = getDishImg(d.no);
   document.getElementById("modalImg").alt = d.name;
   document.getElementById("modalNo").textContent = `No.${d.no}`;
+  document.getElementById("modalName").textContent = d.name;
+  document.getElementById("modalCat").textContent = d.cat + " · " + (METHOD_ZH[d.method] || d.method);
+  const parts = parseDishIng(d);
+  document.getElementById("modalIng").innerHTML = parts.map(p => `<li><span>${escapeHtml(p.zh)}</span><span class="ing-qty">×${p.qty}${p.different ? "（不同种类，各 1）" : ""}</span></li>`).join("");
+  document.getElementById("modalIngNote").textContent = ingNoteFor(d);
+  const eff = getDishEffect(d);
+  const effEl = document.getElementById("modalEffect");
+  effEl.className = "modal-effect" + (eff.warn ? " warn" : "");
+  effEl.innerHTML = `<strong>${escapeHtml(eff.title)}</strong><br>${escapeHtml(eff.desc)}`;
+  document.getElementById("modalEffectNote").textContent = "加成由食材决定，不是菜名自带的固定值：同一道菜换不同食材，加成会跟着变；回血量也随食材和数量变化，本页不写死数字。";
   document.getElementById("modalOverlay").classList.add("open");
 }
 function closeModal(e) {
