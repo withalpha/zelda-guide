@@ -898,25 +898,33 @@ function renderCaveMarkers() {
         '<div class="cp-en">' + (cave.nameEn || '') + '</div>' +
         '<div class="cp-coord">入口: ' + cave.coord + '</div>' +
         '<div class="cp-meta">' + cave.note + '</div>' +
-        '<div class="cp-meta" style="margin-top:6px">' +
+        '<div class="cp-meta" style="margin-top:6px;display:flex;gap:6px">' +
           '<button onclick="markCaveDone(\'' + cave.id + '\',this)" style="padding:3px 10px;border-radius:4px;border:1px solid #4caf50;background:rgba(76,175,80,0.15);color:#4caf50;cursor:pointer;font-size:0.75rem">' +
             (isDone ? '✓ 已收集' : '标记已收集') +
           '</button>' +
+          '<button onclick="scrollToCaveRow(\'' + cave.id + '\')" style="padding:3px 10px;border-radius:4px;border:1px solid #c9a227;background:rgba(201,162,39,0.15);color:#c9a227;cursor:pointer;font-size:0.75rem">📍 定位到列表</button>' +
         '</div>' +
       '</div>',
-      { maxWidth: 240 }
+      { maxWidth: 280 }
     );
-
-    (function(caveId) {
-      marker.on('click', function() {
-        var el = document.getElementById(caveId);
-        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      });
-    })(cave.id);
 
     caveMarkers.push(marker);
   });
   updateLabelVisibility();
+}
+
+// 滚动到指定山洞行
+function scrollToCaveRow(caveId) {
+  var el = document.getElementById(caveId);
+  if (el) {
+    // 先高亮显示
+    el.style.background = 'rgba(201,162,39,0.25)';
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // 3秒后取消高亮
+    setTimeout(function() {
+      el.style.background = '';
+    }, 3000);
+  }
 }
 
 function markCaveDone(id, btn) {
