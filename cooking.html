@@ -961,7 +961,7 @@ function openModal(d) {
   effEl.innerHTML = `<strong>${escapeHtml(eff.title)}</strong><br>${escapeHtml(eff.desc)}`;
   document.getElementById("modalEffectNote").textContent = "加成优先采用 ZeldaCentral 配方表的固定加成；配方表未给固定加成的锅煮料理，加成由食材决定（同一道菜换不同食材，加成会跟着变）。回血量：锅煮料理取决于食材，烤食／冷冻／温泉为固定值。";
   const heartsEl = document.getElementById("modalHearts");
-  if (heartsEl) heartsEl.textContent = d.no === 228 ? "恢复全部红心" : (d.hearts === "—" ? "取决于食材：回血量 = 各食材回血之和，锅煮有加成；满月夜暴击可翻倍。" : formatHearts(d.hearts));
+  if (heartsEl) heartsEl.textContent = d.no === 228 ? "恢复全部红心" : (d.hearts === "—" ? "取决于食材：回血量 = 各食材回血之和 ×2；满月夜暴击可再翻倍。" : formatHearts(d.hearts));
   document.getElementById("modalOverlay").classList.add("open");
 }
 function closeModal(e) {
