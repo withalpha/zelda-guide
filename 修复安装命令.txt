@@ -1,0 +1,29 @@
+=====================================================
+修复并完成安装（复制执行）
+=====================================================
+
+# 查看下载的文件
+ls -lh /tmp/*.ipk*
+
+# 找到并重命名文件
+cd /tmp
+mv *luci-app-passwall2* luci-app-passwall2_26.6.3-r1_all.ipk 2>/dev/null
+mv *luci-i18n-passwall2* luci-i18n-passwall2-zh-cn_26.6.3_all.ipk 2>/dev/null
+
+# 再次查看文件
+ls -lh *.ipk
+
+# 安装主程序（忽略缺少的依赖）
+opkg install --force-depends luci-app-passwall2_26.6.3-r1_all.ipk
+
+# 安装语言包
+opkg install luci-i18n-passwall2-zh-cn_26.6.3_all.ipk
+
+# 重启服务
+/etc/init.d/uhttpd restart
+
+echo ""
+echo "====================================="
+echo "✅ 安装完成！"
+echo "====================================="
+echo "刷新路由器管理页面即可看到 PassWall2"

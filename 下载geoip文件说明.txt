@@ -1,0 +1,43 @@
+=====================================================
+手动下载 GeoIP 和 GeoSite 文件
+=====================================================
+
+由于路由器无法直接访问 GitHub，需要手动下载后上传。
+
+## 下载地址（在电脑浏览器打开）：
+
+1. GeoIP 数据文件（IP 地址分流规则）
+   https://github.com/v2fly/geoip/releases/latest/download/geoip.dat
+   
+2. GeoSite 数据文件（域名分流规则）  
+   https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat
+
+## 国内镜像下载（如果 GitHub 打不开）：
+
+1. GeoIP 镜像：
+   https://mirror.ghproxy.com/https://github.com/v2fly/geoip/releases/latest/download/geoip.dat
+
+2. GeoSite 镜像：
+   https://mirror.ghproxy.com/https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat
+
+## 下载后上传到路由器：
+
+方法1：使用 WinSCP
+  - 连接到 192.168.8.1
+  - 用户名：root
+  - 上传 geoip.dat 到 /usr/share/xray/
+  - 将 dlc.dat 重命名为 geosite.dat 并上传到 /usr/share/xray/
+
+方法2：使用路由器网页界面
+  - 系统 → 文件传输（如果有）
+  - 上传到 /usr/share/xray/ 目录
+
+方法3：使用 SSH 命令（需要先在电脑下载好文件）
+  在路由器 SSH 中执行：
+  cd /usr/share/xray
+  # 然后用 rz 命令上传（如果支持）
+
+## 注意：
+- geoip.dat 文件大约 5-10MB
+- geosite.dat 文件大约 2-5MB
+- 这两个文件不是必须的，没有也能用，只是无法智能分流

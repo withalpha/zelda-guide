@@ -1,0 +1,46 @@
+# OpenClash 配置文件
+# 上传到路由器：/etc/openclash/config/
+
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 0.0.0.0:9090
+
+proxies:
+  - name: "AWS-VLESS"
+    type: vless
+    server: YOUR_AWS_IP  # 替换为你的AWS服务器IP
+    port: 443
+    uuid: 7199492d-9966-4488-bf79-0e75491a1a53
+    network: xhttp
+    tls: true
+    udp: true
+    xhttp-opts:
+      path: "/openai"
+      mode: stream-one
+    reality-opts:
+      public-key: fSP6Wj1ZUNEH0phGXh79t8c_DUewMfIuT5x_tC6BkGs
+      short-id: 7b
+    client-fingerprint: firefox
+    servername: www.amd.com
+
+proxy-groups:
+  - name: "Proxy"
+    type: select
+    proxies:
+      - AWS-VLESS
+
+rules:
+  - GEOIP,CN,DIRECT
+  - MATCH,Proxy
+
+# ============================================
+# 使用方法：
+# ============================================
+# 1. 将 YOUR_AWS_IP 替换为实际IP
+# 2. 登录路由器SSH或WinSCP
+# 3. 上传此文件到：/etc/openclash/config/
+# 4. 在OpenClash面板选择此配置文件
+# 5. 启动OpenClash

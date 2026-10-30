@@ -1,0 +1,25 @@
+=====================================================
+强制安装 Passwall2（跳过所有检查）
+=====================================================
+
+cd /tmp
+
+# 使用多个 force 参数强制安装
+opkg install --force-depends --force-maintainer --force-overwrite --force-checksum luci-app-passwall2_26.6.3-r1_all.ipk
+
+# 如果还不行，添加 nodeps 参数
+opkg install --nodeps --force-overwrite luci-app-passwall2_26.6.3-r1_all.ipk
+
+# 安装语言包
+opkg install --nodeps --force-overwrite luci-i18n-passwall2-zh-cn_26.6.3_all.ipk
+
+# 清理缓存
+rm -rf /tmp/opkg-lists/*
+
+# 重新刷新
+opkg update
+
+# 重启 LuCI
+/etc/init.d/uhttpd restart
+
+echo "✅ 强制安装完成！"

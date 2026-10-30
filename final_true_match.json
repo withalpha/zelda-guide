@@ -1,0 +1,1442 @@
+[
+  {
+    "filename": "Item_Cook_A_01.png",
+    "img_key": "Item_Cook_A_01",
+    "name": "烤肉蘑菇串",
+    "ref_img": 1,
+    "ref_row": 1,
+    "img_score": 0.3138,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_A_02.png",
+    "img_key": "Item_Cook_A_02",
+    "name": "顶级兽肉咖喱饭",
+    "ref_img": 2,
+    "ref_row": 17,
+    "img_score": 0.3726,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_A_03.png",
+    "img_key": "Item_Cook_A_03",
+    "name": "蒸水果",
+    "ref_img": 1,
+    "ref_row": 8,
+    "img_score": 0.3426,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_A_04.png",
+    "img_key": "Item_Cook_A_04",
+    "name": "蒸肉",
+    "ref_img": 1,
+    "ref_row": 11,
+    "img_score": 0.3395,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_A_05.png",
+    "img_key": "Item_Cook_A_05",
+    "name": "蒸肉",
+    "ref_img": 1,
+    "ref_row": 11,
+    "img_score": 0.3459,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_A_07.png",
+    "img_key": "Item_Cook_A_07",
+    "name": "顶级海陆煎烤",
+    "ref_img": 1,
+    "ref_row": 26,
+    "img_score": 0.358,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_A_08.png",
+    "img_key": "Item_Cook_A_08",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.2986,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_A_09.png",
+    "img_key": "Item_Cook_A_09",
+    "name": "烤肉蘑菇串",
+    "ref_img": 1,
+    "ref_row": 1,
+    "img_score": 0.3393,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_A_10.png",
+    "img_key": "Item_Cook_A_10",
+    "name": "魔人汤",
+    "ref_img": 3,
+    "ref_row": 40,
+    "img_score": 0.2935,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_A_11.png",
+    "img_key": "Item_Cook_A_11",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3645,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_A_12.png",
+    "img_key": "Item_Cook_A_12",
+    "name": "顶级兽肉咖喱饭",
+    "ref_img": 2,
+    "ref_row": 17,
+    "img_score": 0.3468,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_A_13.png",
+    "img_key": "Item_Cook_A_13",
+    "name": "胡萝卜蛋糕",
+    "ref_img": 3,
+    "ref_row": 26,
+    "img_score": 0.3288,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_A_14.png",
+    "img_key": "Item_Cook_A_14",
+    "name": "起司蛋糕",
+    "ref_img": 3,
+    "ref_row": 28,
+    "img_score": 0.3228,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_01.png",
+    "img_key": "Item_Cook_B_01",
+    "name": "炒野菜",
+    "ref_img": 1,
+    "ref_row": 15,
+    "img_score": 0.3265,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_02.png",
+    "img_key": "Item_Cook_B_02",
+    "name": "甘露炖肉",
+    "ref_img": 2,
+    "ref_row": 11,
+    "img_score": 0.3618,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_05.png",
+    "img_key": "Item_Cook_B_05",
+    "name": "(4.jpg行29)",
+    "ref_img": 4,
+    "ref_row": 29,
+    "img_score": 0.2904,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_06.png",
+    "img_key": "Item_Cook_B_06",
+    "name": "烤肉蘑菇串",
+    "ref_img": 1,
+    "ref_row": 1,
+    "img_score": 0.3206,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_11.png",
+    "img_key": "Item_Cook_B_11",
+    "name": "盐烤野菜",
+    "ref_img": 1,
+    "ref_row": 27,
+    "img_score": 0.3654,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_12.png",
+    "img_key": "Item_Cook_B_12",
+    "name": "炒暖暖草果",
+    "ref_img": 1,
+    "ref_row": 13,
+    "img_score": 0.3464,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_13.png",
+    "img_key": "Item_Cook_B_13",
+    "name": "蒸肉",
+    "ref_img": 1,
+    "ref_row": 11,
+    "img_score": 0.3524,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_15.png",
+    "img_key": "Item_Cook_B_15",
+    "name": "(4.jpg行29)",
+    "ref_img": 4,
+    "ref_row": 29,
+    "img_score": 0.3285,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_16.png",
+    "img_key": "Item_Cook_B_16",
+    "name": "大份烤肉串",
+    "ref_img": 1,
+    "ref_row": 6,
+    "img_score": 0.3431,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_17.png",
+    "img_key": "Item_Cook_B_17",
+    "name": "香辣煎鱼",
+    "ref_img": 1,
+    "ref_row": 37,
+    "img_score": 0.3919,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_18.png",
+    "img_key": "Item_Cook_B_18",
+    "name": "高级海陆煎烤",
+    "ref_img": 1,
+    "ref_row": 25,
+    "img_score": 0.3994,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_19.png",
+    "img_key": "Item_Cook_B_19",
+    "name": "顶级海陆煎烤",
+    "ref_img": 1,
+    "ref_row": 26,
+    "img_score": 0.3933,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_20.png",
+    "img_key": "Item_Cook_B_20",
+    "name": "南瓜炖菜",
+    "ref_img": 2,
+    "ref_row": 24,
+    "img_score": 0.3452,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_21.png",
+    "img_key": "Item_Cook_B_21",
+    "name": "甘露炖肉",
+    "ref_img": 2,
+    "ref_row": 11,
+    "img_score": 0.3264,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_22.png",
+    "img_key": "Item_Cook_B_22",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3609,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_B_23.png",
+    "img_key": "Item_Cook_B_23",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3318,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_16.png",
+    "img_key": "Item_Cook_C_16",
+    "name": "妖精回力水",
+    "ref_img": 5,
+    "ref_row": 27,
+    "img_score": 0.2881,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_AllSpeed.png",
+    "img_key": "Item_Cook_C_17_AllSpeed",
+    "name": "速速药",
+    "ref_img": 5,
+    "ref_row": 15,
+    "img_score": 0.3043,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_AttackUp.png",
+    "img_key": "Item_Cook_C_17_AttackUp",
+    "name": "防火药",
+    "ref_img": 5,
+    "ref_row": 19,
+    "img_score": 0.2919,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_DefenseUp.png",
+    "img_key": "Item_Cook_C_17_DefenseUp",
+    "name": "防火药",
+    "ref_img": 5,
+    "ref_row": 19,
+    "img_score": 0.2973,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_ExStaminaMaxUp.png",
+    "img_key": "Item_Cook_C_17_ExStaminaMaxUp",
+    "name": "防火药",
+    "ref_img": 5,
+    "ref_row": 19,
+    "img_score": 0.2877,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_LifeMaxUp.png",
+    "img_key": "Item_Cook_C_17_LifeMaxUp",
+    "name": "防火药",
+    "ref_img": 5,
+    "ref_row": 19,
+    "img_score": 0.3162,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_LightEmission.png",
+    "img_key": "Item_Cook_C_17_LightEmission",
+    "name": "光亮药",
+    "ref_img": 5,
+    "ref_row": 24,
+    "img_score": 0.286,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_NotSlippy.png",
+    "img_key": "Item_Cook_C_17_NotSlippy",
+    "name": "防滑药",
+    "ref_img": 5,
+    "ref_row": 23,
+    "img_score": 0.2962,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_QuietnessUp.png",
+    "img_key": "Item_Cook_C_17_QuietnessUp",
+    "name": "潜行药",
+    "ref_img": 5,
+    "ref_row": 22,
+    "img_score": 0.3112,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_ResistBurn.png",
+    "img_key": "Item_Cook_C_17_ResistBurn",
+    "name": "防火药",
+    "ref_img": 5,
+    "ref_row": 19,
+    "img_score": 0.3216,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_ResistCold.png",
+    "img_key": "Item_Cook_C_17_ResistCold",
+    "name": "防火药",
+    "ref_img": 5,
+    "ref_row": 19,
+    "img_score": 0.2975,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_ResistElectric.png",
+    "img_key": "Item_Cook_C_17_ResistElectric",
+    "name": "光亮药",
+    "ref_img": 5,
+    "ref_row": 24,
+    "img_score": 0.2901,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_ResistHot.png",
+    "img_key": "Item_Cook_C_17_ResistHot",
+    "name": "冰冷药",
+    "ref_img": 5,
+    "ref_row": 17,
+    "img_score": 0.2546,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_C_17_StaminaRecover.png",
+    "img_key": "Item_Cook_C_17_StaminaRecover",
+    "name": "防火药",
+    "ref_img": 5,
+    "ref_row": 19,
+    "img_score": 0.3089,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_D_01.png",
+    "img_key": "Item_Cook_D_01",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3462,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_D_02.png",
+    "img_key": "Item_Cook_D_02",
+    "name": "蒸肉",
+    "ref_img": 1,
+    "ref_row": 11,
+    "img_score": 0.335,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_D_03.png",
+    "img_key": "Item_Cook_D_03",
+    "name": "顶级兽肉咖喱饭",
+    "ref_img": 2,
+    "ref_row": 17,
+    "img_score": 0.337,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_D_04.png",
+    "img_key": "Item_Cook_D_04",
+    "name": "甘露炖肉",
+    "ref_img": 2,
+    "ref_row": 11,
+    "img_score": 0.3368,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_D_05.png",
+    "img_key": "Item_Cook_D_05",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3455,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_D_06.png",
+    "img_key": "Item_Cook_D_06",
+    "name": "顶级岩盐烤肉",
+    "ref_img": 1,
+    "ref_row": 31,
+    "img_score": 0.3508,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_D_07.png",
+    "img_key": "Item_Cook_D_07",
+    "name": "香辣煎鱼",
+    "ref_img": 1,
+    "ref_row": 37,
+    "img_score": 0.3674,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_D_08.png",
+    "img_key": "Item_Cook_D_08",
+    "name": "香辣煎鱼",
+    "ref_img": 1,
+    "ref_row": 37,
+    "img_score": 0.3981,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_D_09.png",
+    "img_key": "Item_Cook_D_09",
+    "name": "岩盐烤蟹",
+    "ref_img": 1,
+    "ref_row": 33,
+    "img_score": 0.3202,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_D_10.png",
+    "img_key": "Item_Cook_D_10",
+    "name": "炒螃蟹",
+    "ref_img": 1,
+    "ref_row": 23,
+    "img_score": 0.3572,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_E_01.png",
+    "img_key": "Item_Cook_E_01",
+    "name": "咖喱菜饭",
+    "ref_img": 2,
+    "ref_row": 38,
+    "img_score": 0.3737,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_E_02.png",
+    "img_key": "Item_Cook_E_02",
+    "name": "咖喱菜饭",
+    "ref_img": 2,
+    "ref_row": 38,
+    "img_score": 0.3755,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_E_03.png",
+    "img_key": "Item_Cook_E_03",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3859,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_E_04.png",
+    "img_key": "Item_Cook_E_04",
+    "name": "海鲜炒饭",
+    "ref_img": 2,
+    "ref_row": 41,
+    "img_score": 0.2836,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_F_01.png",
+    "img_key": "Item_Cook_F_01",
+    "name": "顶级兽肉咖喱饭",
+    "ref_img": 2,
+    "ref_row": 17,
+    "img_score": 0.3178,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_F_02.png",
+    "img_key": "Item_Cook_F_02",
+    "name": "魔人咖喱饭",
+    "ref_img": 3,
+    "ref_row": 41,
+    "img_score": 0.3196,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_F_03.png",
+    "img_key": "Item_Cook_F_03",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3235,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_F_04.png",
+    "img_key": "Item_Cook_F_04",
+    "name": "心心牛奶汤",
+    "ref_img": 2,
+    "ref_row": 8,
+    "img_score": 0.2658,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_02.png",
+    "img_key": "Item_Cook_G_02",
+    "name": "海鲜饭团",
+    "ref_img": 3,
+    "ref_row": 2,
+    "img_score": 0.3195,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_03.png",
+    "img_key": "Item_Cook_G_03",
+    "name": "蘑菇饭团",
+    "ref_img": 3,
+    "ref_row": 0,
+    "img_score": 0.3673,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_04.png",
+    "img_key": "Item_Cook_G_04",
+    "name": "蘑菇饭团",
+    "ref_img": 3,
+    "ref_row": 0,
+    "img_score": 0.3716,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_05.png",
+    "img_key": "Item_Cook_G_05",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3489,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_06.png",
+    "img_key": "Item_Cook_G_06",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3301,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_09.png",
+    "img_key": "Item_Cook_G_09",
+    "name": "顶级炖肉",
+    "ref_img": 2,
+    "ref_row": 27,
+    "img_score": 0.3137,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_10.png",
+    "img_key": "Item_Cook_G_10",
+    "name": "海鲜炒饭",
+    "ref_img": 2,
+    "ref_row": 41,
+    "img_score": 0.2805,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_11.png",
+    "img_key": "Item_Cook_G_11",
+    "name": "咖喱菜饭",
+    "ref_img": 2,
+    "ref_row": 38,
+    "img_score": 0.3522,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_12.png",
+    "img_key": "Item_Cook_G_12",
+    "name": "甘露炖肉",
+    "ref_img": 2,
+    "ref_row": 11,
+    "img_score": 0.2877,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_13.png",
+    "img_key": "Item_Cook_G_13",
+    "name": "起司蛋糕",
+    "ref_img": 3,
+    "ref_row": 28,
+    "img_score": 0.3153,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_14.png",
+    "img_key": "Item_Cook_G_14",
+    "name": "起司蛋糕",
+    "ref_img": 3,
+    "ref_row": 28,
+    "img_score": 0.3211,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_15.png",
+    "img_key": "Item_Cook_G_15",
+    "name": "鲜肉饭团",
+    "ref_img": 3,
+    "ref_row": 1,
+    "img_score": 0.3647,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_16.png",
+    "img_key": "Item_Cook_G_16",
+    "name": "蒸鱼",
+    "ref_img": 1,
+    "ref_row": 12,
+    "img_score": 0.3126,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_G_17.png",
+    "img_key": "Item_Cook_G_17",
+    "name": "高级海陆煎烤",
+    "ref_img": 1,
+    "ref_row": 25,
+    "img_score": 0.3153,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_H_01.png",
+    "img_key": "Item_Cook_H_01",
+    "name": "魔人汤",
+    "ref_img": 3,
+    "ref_row": 40,
+    "img_score": 0.2905,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_H_02.png",
+    "img_key": "Item_Cook_H_02",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3279,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_H_03.png",
+    "img_key": "Item_Cook_H_03",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3128,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_01.png",
+    "img_key": "Item_Cook_I_01",
+    "name": "南瓜蛋糕",
+    "ref_img": 3,
+    "ref_row": 27,
+    "img_score": 0.3269,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_02.png",
+    "img_key": "Item_Cook_I_02",
+    "name": "起司蛋糕",
+    "ref_img": 3,
+    "ref_row": 28,
+    "img_score": 0.3317,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_03.png",
+    "img_key": "Item_Cook_I_03",
+    "name": "胡萝卜蛋糕",
+    "ref_img": 3,
+    "ref_row": 26,
+    "img_score": 0.3275,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_04.png",
+    "img_key": "Item_Cook_I_04",
+    "name": "起司蛋糕",
+    "ref_img": 3,
+    "ref_row": 28,
+    "img_score": 0.3288,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_05.png",
+    "img_key": "Item_Cook_I_05",
+    "name": "胡萝卜蛋糕",
+    "ref_img": 3,
+    "ref_row": 26,
+    "img_score": 0.353,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_06.png",
+    "img_key": "Item_Cook_I_06",
+    "name": "胡萝卜蛋糕",
+    "ref_img": 3,
+    "ref_row": 26,
+    "img_score": 0.3473,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_07.png",
+    "img_key": "Item_Cook_I_07",
+    "name": "黄油苹果",
+    "ref_img": 3,
+    "ref_row": 15,
+    "img_score": 0.3198,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_08.png",
+    "img_key": "Item_Cook_I_08",
+    "name": "苹果派",
+    "ref_img": 3,
+    "ref_row": 30,
+    "img_score": 0.3203,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_09.png",
+    "img_key": "Item_Cook_I_09",
+    "name": "蜂蜜水果",
+    "ref_img": 3,
+    "ref_row": 16,
+    "img_score": 0.3006,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_10.png",
+    "img_key": "Item_Cook_I_10",
+    "name": "原味可丽饼",
+    "ref_img": 3,
+    "ref_row": 21,
+    "img_score": 0.333,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_11.png",
+    "img_key": "Item_Cook_I_11",
+    "name": "高级海陆煎烤",
+    "ref_img": 1,
+    "ref_row": 25,
+    "img_score": 0.2984,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_12.png",
+    "img_key": "Item_Cook_I_12",
+    "name": "坚果蛋糕",
+    "ref_img": 3,
+    "ref_row": 24,
+    "img_score": 0.3463,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_13.png",
+    "img_key": "Item_Cook_I_13",
+    "name": "油炸顶级禽肉",
+    "ref_img": 1,
+    "ref_row": 41,
+    "img_score": 0.2909,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_14.png",
+    "img_key": "Item_Cook_I_14",
+    "name": "鲜蛋布丁",
+    "ref_img": 3,
+    "ref_row": 20,
+    "img_score": 0.3435,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_15.png",
+    "img_key": "Item_Cook_I_15",
+    "name": "鱼肉派",
+    "ref_img": 3,
+    "ref_row": 8,
+    "img_score": 0.3174,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_16.png",
+    "img_key": "Item_Cook_I_16",
+    "name": "炖番茄",
+    "ref_img": 1,
+    "ref_row": 48,
+    "img_score": 0.3324,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_I_17.png",
+    "img_key": "Item_Cook_I_17",
+    "name": "原味可丽饼",
+    "ref_img": 3,
+    "ref_row": 21,
+    "img_score": 0.2836,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_J_01.png",
+    "img_key": "Item_Cook_J_01",
+    "name": "兽肉咖喱饭",
+    "ref_img": 2,
+    "ref_row": 15,
+    "img_score": 0.3173,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_J_02.png",
+    "img_key": "Item_Cook_J_02",
+    "name": "蔬菜咖喱饭",
+    "ref_img": 2,
+    "ref_row": 14,
+    "img_score": 0.2987,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_J_03.png",
+    "img_key": "Item_Cook_J_03",
+    "name": "高级兽肉咖喱饭",
+    "ref_img": 2,
+    "ref_row": 16,
+    "img_score": 0.3136,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_J_04.png",
+    "img_key": "Item_Cook_J_04",
+    "name": "高级禽肉咖喱饭",
+    "ref_img": 2,
+    "ref_row": 19,
+    "img_score": 0.3202,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_J_05.png",
+    "img_key": "Item_Cook_J_05",
+    "name": "香辣煎肉",
+    "ref_img": 1,
+    "ref_row": 36,
+    "img_score": 0.3262,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_J_06.png",
+    "img_key": "Item_Cook_J_06",
+    "name": "兽肉咖喱饭",
+    "ref_img": 2,
+    "ref_row": 15,
+    "img_score": 0.3533,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_J_07.png",
+    "img_key": "Item_Cook_J_07",
+    "name": "高级兽肉咖喱饭",
+    "ref_img": 2,
+    "ref_row": 16,
+    "img_score": 0.3419,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_J_08.png",
+    "img_key": "Item_Cook_J_08",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3434,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_J_09.png",
+    "img_key": "Item_Cook_J_09",
+    "name": "顶级兽肉咖喱饭",
+    "ref_img": 2,
+    "ref_row": 17,
+    "img_score": 0.3594,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_K_01.png",
+    "img_key": "Item_Cook_K_01",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3915,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_K_02.png",
+    "img_key": "Item_Cook_K_02",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3836,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_K_03.png",
+    "img_key": "Item_Cook_K_03",
+    "name": "鲜肉派",
+    "ref_img": 3,
+    "ref_row": 7,
+    "img_score": 0.3347,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_K_04.png",
+    "img_key": "Item_Cook_K_04",
+    "name": "黄油苹果",
+    "ref_img": 3,
+    "ref_row": 15,
+    "img_score": 0.3322,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_K_05.png",
+    "img_key": "Item_Cook_K_05",
+    "name": "顶级兽肉咖喱饭",
+    "ref_img": 2,
+    "ref_row": 17,
+    "img_score": 0.3891,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_K_06.png",
+    "img_key": "Item_Cook_K_06",
+    "name": "南瓜蛋糕",
+    "ref_img": 3,
+    "ref_row": 27,
+    "img_score": 0.3222,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_K_07.png",
+    "img_key": "Item_Cook_K_07",
+    "name": "魔人咖喱饭",
+    "ref_img": 3,
+    "ref_row": 41,
+    "img_score": 0.3057,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_K_08.png",
+    "img_key": "Item_Cook_K_08",
+    "name": "高级海陆煎烤",
+    "ref_img": 1,
+    "ref_row": 25,
+    "img_score": 0.3224,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_K_09.png",
+    "img_key": "Item_Cook_K_09",
+    "name": "热牛奶",
+    "ref_img": 3,
+    "ref_row": 32,
+    "img_score": 0.3173,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_L_01.png",
+    "img_key": "Item_Cook_L_01",
+    "name": "怪物饭团",
+    "ref_img": 3,
+    "ref_row": 37,
+    "img_score": 0.3554,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_L_02.png",
+    "img_key": "Item_Cook_L_02",
+    "name": "怪物汤",
+    "ref_img": 3,
+    "ref_row": 35,
+    "img_score": 0.3236,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_L_03.png",
+    "img_key": "Item_Cook_L_03",
+    "name": "怪物蛋糕",
+    "ref_img": 3,
+    "ref_row": 38,
+    "img_score": 0.3585,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_L_04.png",
+    "img_key": "Item_Cook_L_04",
+    "name": "怪物饭团",
+    "ref_img": 3,
+    "ref_row": 37,
+    "img_score": 0.3999,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_L_05.png",
+    "img_key": "Item_Cook_L_05",
+    "name": "怪物咖喱饭",
+    "ref_img": 3,
+    "ref_row": 36,
+    "img_score": 0.3055,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_M_01.png",
+    "img_key": "Item_Cook_M_01",
+    "name": "盐烤鱼",
+    "ref_img": 1,
+    "ref_row": 32,
+    "img_score": 0.2989,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_N_01.png",
+    "img_key": "Item_Cook_N_01",
+    "name": "起司蛋糕",
+    "ref_img": 3,
+    "ref_row": 28,
+    "img_score": 0.3118,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_N_02.png",
+    "img_key": "Item_Cook_N_02",
+    "name": "水果蛋糕",
+    "ref_img": 3,
+    "ref_row": 25,
+    "img_score": 0.2935,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_N_03.png",
+    "img_key": "Item_Cook_N_03",
+    "name": "蔬菜烩饭",
+    "ref_img": 2,
+    "ref_row": 29,
+    "img_score": 0.3332,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_N_04.png",
+    "img_key": "Item_Cook_N_04",
+    "name": "黄油苹果",
+    "ref_img": 3,
+    "ref_row": 15,
+    "img_score": 0.3105,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_O_01.png",
+    "img_key": "Item_Cook_O_01",
+    "name": "奇异的菜肴",
+    "ref_img": 3,
+    "ref_row": 44,
+    "img_score": 0.3551,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_O_02.png",
+    "img_key": "Item_Cook_O_02",
+    "name": "怪物汤",
+    "ref_img": 3,
+    "ref_row": 35,
+    "img_score": 0.3421,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_P_01.png",
+    "img_key": "Item_Cook_P_01",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3522,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_P_02.png",
+    "img_key": "Item_Cook_P_02",
+    "name": "蒸鱼",
+    "ref_img": 1,
+    "ref_row": 12,
+    "img_score": 0.3664,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_P_03.png",
+    "img_key": "Item_Cook_P_03",
+    "name": "烤肉串",
+    "ref_img": 1,
+    "ref_row": 3,
+    "img_score": 0.3177,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_P_04.png",
+    "img_key": "Item_Cook_P_04",
+    "name": "高级烤兽肉串",
+    "ref_img": 1,
+    "ref_row": 21,
+    "img_score": 0.362,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_P_05.png",
+    "img_key": "Item_Cook_P_05",
+    "name": "顶级烤兽肉串",
+    "ref_img": 1,
+    "ref_row": 22,
+    "img_score": 0.3675,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_Q_01.png",
+    "img_key": "Item_Cook_Q_01",
+    "name": "魔人咖喱饭",
+    "ref_img": 3,
+    "ref_row": 41,
+    "img_score": 0.3099,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_Q_02.png",
+    "img_key": "Item_Cook_Q_02",
+    "name": "起司蛋糕",
+    "ref_img": 3,
+    "ref_row": 28,
+    "img_score": 0.3595,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_Q_03.png",
+    "img_key": "Item_Cook_Q_03",
+    "name": "蒸肉",
+    "ref_img": 1,
+    "ref_row": 11,
+    "img_score": 0.323,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_Q_04.png",
+    "img_key": "Item_Cook_Q_04",
+    "name": "炖肉",
+    "ref_img": 2,
+    "ref_row": 25,
+    "img_score": 0.3306,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_Q_05.png",
+    "img_key": "Item_Cook_Q_05",
+    "name": "鱼肉派",
+    "ref_img": 3,
+    "ref_row": 8,
+    "img_score": 0.3235,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_Q_06.png",
+    "img_key": "Item_Cook_Q_06",
+    "name": "原烧",
+    "ref_img": 1,
+    "ref_row": 17,
+    "img_score": 0.3791,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_Q_07.png",
+    "img_key": "Item_Cook_Q_07",
+    "name": "炒黄油",
+    "ref_img": 1,
+    "ref_row": 18,
+    "img_score": 0.3395,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_Q_08.png",
+    "img_key": "Item_Cook_Q_08",
+    "name": "咖喱菜饭",
+    "ref_img": 2,
+    "ref_row": 38,
+    "img_score": 0.2912,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_Q_09.png",
+    "img_key": "Item_Cook_Q_09",
+    "name": "起司蛋糕",
+    "ref_img": 3,
+    "ref_row": 28,
+    "img_score": 0.3588,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_Q_10.png",
+    "img_key": "Item_Cook_Q_10",
+    "name": "原味可丽饼",
+    "ref_img": 3,
+    "ref_row": 21,
+    "img_score": 0.2871,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_R_01.png",
+    "img_key": "Item_Cook_R_01",
+    "name": "炖番茄",
+    "ref_img": 1,
+    "ref_row": 48,
+    "img_score": 0.2913,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_R_02.png",
+    "img_key": "Item_Cook_R_02",
+    "name": "番茄披萨",
+    "ref_img": 3,
+    "ref_row": 6,
+    "img_score": 0.2627,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_R_03.png",
+    "img_key": "Item_Cook_R_03",
+    "name": "(4.jpg行39)",
+    "ref_img": 4,
+    "ref_row": 39,
+    "img_score": 0.2275,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_R_04.png",
+    "img_key": "Item_Cook_R_04",
+    "name": "油炖海鲜",
+    "ref_img": 1,
+    "ref_row": 38,
+    "img_score": 0.3033,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_R_05.png",
+    "img_key": "Item_Cook_R_05",
+    "name": "香辣煎鱼",
+    "ref_img": 1,
+    "ref_row": 37,
+    "img_score": 0.3667,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_R_06.png",
+    "img_key": "Item_Cook_R_06",
+    "name": "油炸禽肉",
+    "ref_img": 1,
+    "ref_row": 39,
+    "img_score": 0.3189,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_R_07.png",
+    "img_key": "Item_Cook_R_07",
+    "name": "咖喱菜饭",
+    "ref_img": 2,
+    "ref_row": 38,
+    "img_score": 0.3341,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_R_08.png",
+    "img_key": "Item_Cook_R_08",
+    "name": "油炸顶级禽肉",
+    "ref_img": 1,
+    "ref_row": 41,
+    "img_score": 0.3769,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_R_09.png",
+    "img_key": "Item_Cook_R_09",
+    "name": "蛋挞",
+    "ref_img": 3,
+    "ref_row": 31,
+    "img_score": 0.3005,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_R_10.png",
+    "img_key": "Item_Cook_R_10",
+    "name": "盐烤鱼",
+    "ref_img": 1,
+    "ref_row": 32,
+    "img_score": 0.316,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_S_01.png",
+    "img_key": "Item_Cook_S_01",
+    "name": "香辣煎鱼",
+    "ref_img": 1,
+    "ref_row": 37,
+    "img_score": 0.3399,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_S_02.png",
+    "img_key": "Item_Cook_S_02",
+    "name": "炒香草",
+    "ref_img": 1,
+    "ref_row": 34,
+    "img_score": 0.2981,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_S_03.png",
+    "img_key": "Item_Cook_S_03",
+    "name": "油炖海鲜",
+    "ref_img": 1,
+    "ref_row": 38,
+    "img_score": 0.2801,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_S_04.png",
+    "img_key": "Item_Cook_S_04",
+    "name": "顶级海陆煎烤",
+    "ref_img": 1,
+    "ref_row": 26,
+    "img_score": 0.3094,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_S_05.png",
+    "img_key": "Item_Cook_S_05",
+    "name": "魔人炖煮",
+    "ref_img": 3,
+    "ref_row": 39,
+    "img_score": 0.3653,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_S_06.png",
+    "img_key": "Item_Cook_S_06",
+    "name": "魔人饭团",
+    "ref_img": 3,
+    "ref_row": 42,
+    "img_score": 0.3814,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_S_07.png",
+    "img_key": "Item_Cook_S_07",
+    "name": "魔人汤",
+    "ref_img": 3,
+    "ref_row": 40,
+    "img_score": 0.338,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_S_08.png",
+    "img_key": "Item_Cook_S_08",
+    "name": "魔人咖喱饭",
+    "ref_img": 3,
+    "ref_row": 41,
+    "img_score": 0.3688,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_S_09.png",
+    "img_key": "Item_Cook_S_09",
+    "name": "魔人咖喱饭",
+    "ref_img": 3,
+    "ref_row": 41,
+    "img_score": 0.369,
+    "confidence": "低"
+  },
+  {
+    "filename": "Item_Cook_S_10.png",
+    "img_key": "Item_Cook_S_10",
+    "name": "炒香草",
+    "ref_img": 1,
+    "ref_row": 34,
+    "img_score": 0.2749,
+    "confidence": "低"
+  }
+]

@@ -1,0 +1,70 @@
+=====================================================
+Passwall2 一键安装命令
+复制下面所有命令，粘贴到路由器 SSH 终端中执行
+=====================================================
+
+# ===== 第一步：检测架构并配置源 =====
+echo "正在检测设备架构..."
+ARCH=$(opkg print-architecture | grep -v "all\|noarch" | awk '{print $2}' | head -n 1)
+echo "设备架构: $ARCH"
+
+# 更新软件源
+echo "更新软件源..."
+opkg update
+
+# 备份配置
+cp /etc/opkg/customfeeds.conf /etc/opkg/customfeeds.conf.bak 2>/dev/null
+
+# 添加 Passwall 源
+echo "添加 Passwall 软件源..."
+cat >> /etc/opkg/customfeeds.conf << 'EOF'
+
+# Passwall2 依赖源
+src/gz passwall_packages https://mirror.ghproxy.com/https://github.com/xiaorouji/openwrt-passwall-packages/releases/download/latest
+EOF
+
+# 再次更新
+opkg update
+
+# ===== 第二步：安装依赖包 =====
+echo "安装依赖包..."
+
+# 基础工具
+opkg install coreutils coreutils-base64 coreutils-nohup
+
+# Passwall 依赖
+opkg install lyaml tcping geoview v2ray-geoip v2ray-geosite
+
+# ===== 第三步：下载 Passwall2 主程序 =====
+cd /tmp
+
+# 如果之前没下载，用 wget 下载
+if [ ! -f "luci-app-passwall2_26.6.3-r1_all.ipk" ]; then
+    echo "下载 Passwall2 主程序..."
+    wget https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.6.3-1/luci-app-passwall2_26.6.3-r1_all.ipk
+fi
+
+if [ ! -f "luci-i18n-passwall2-zh-cn_26.6.3_all.ipk" ]; then
+    echo "下载中文语言包..."
+    wget https://github.com/Openwrt-Passwall/openwrt-passwall2/releases/download/26.6.3-1/luci-i18n-passwall2-zh-cn_26.6.3_all.ipk
+fi
+
+# ===== 第四步：安装 Passwall2 =====
+echo "安装 Passwall2 主程序..."
+opkg install luci-app-passwall2_26.6.3-r1_all.ipk
+
+echo "安装中文语言包..."
+opkg install luci-i18n-passwall2-zh-cn_26.6.3_all.ipk
+
+# ===== 第五步：重启服务 =====
+echo "重启 LuCI 服务..."
+/etc/init.d/uhttpd restart
+
+echo ""
+echo "====================================="
+echo "✅ 安装完成！"
+echo "====================================="
+echo ""
+echo "请在浏览器中访问路由器管理界面"
+echo "在 服务 -> PassWall2 中进行配置"
+echo ""
