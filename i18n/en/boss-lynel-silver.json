@@ -294,10 +294,6 @@
       "✨ Silver (final)"
     ],
     [
-      "每只之间不能回复 ——血量和状态完整保持到下一场。",
-      "No automatic recovery between bouts — your HP and status carry over fully into the next fight. — your HP and status carry over fully into the next fight."
-    ],
-    [
       "武器不会自动补充 ——只能捡地上掉落的武器。前 4 只全程用地上武器，把自己携带的 近卫红血剑和兽神弓 完整留给白银莱尼尔。",
       "Weapons are not restocked automatically — you can only pick up weapons dropped on the ground. Use ground weapons for the first 4 fights, and save your own low-HP Royal Guard's sword and Savage Lynel Bow intact for the Silver Lynel."
     ],
@@ -843,11 +839,11 @@
     ],
     [
       "每只之间不能回复",
-      "No recovery between bouts "
+      "No automatic recovery between bouts"
     ],
     [
       "——血量和状态完整保持到下一场。",
-      "— HP and status carry over fully to the next bout."
+      "— your HP and status carry over fully into the next fight."
     ],
     [
       "武器不会自动补充",
