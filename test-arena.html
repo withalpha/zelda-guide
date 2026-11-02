@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>临时诊断页2：英文长名换行重叠对照（诊断完删除）</title>
+<title>临时诊断页3：英文药丸水平重叠隔离对照（诊断完删除）</title>
 <link rel="stylesheet" href="style.css?v=10">
 <style>
   body { padding: 40px 24px; }
@@ -18,36 +18,77 @@
   .arena-step.t3 { color: #e8e4d4; border-color: rgba(232,228,212,0.3); background: rgba(232,228,212,0.04); }
   .arena-step.t4 { color: #f0d060; border-color: rgba(240,208,96,0.4); background: rgba(240,208,96,0.08); }
   .arena-arrow { display: inline; color: #8a8468; font-size: 0.8rem; }
-  .v4-order { line-height: 3; }
-  .v5-order .arena-step { margin: 6px 3px; }
+  .v7-order .arena-step { display: inline-block; }
+  .v8-order .arena-step { width: max-content; }
+  .v9-order .arena-step { white-space: normal; }
 </style>
 </head>
 <body>
-<p class="note">临时诊断页2：英文长名在手机宽度（360px 框）下换行时是否重叠。诊断完删除，不链接到站内任何位置。</p>
+<p class="note">临时诊断页3：隔离英文药丸水平重叠的变量。诊断完删除，不链接到站内任何位置。</p>
 
-<h2>V1-EN 全宽（对照：桌面宽应无换行）</h2>
-<div class="box"><div class="arena-order">
-<div class="arena-step t1">Red-Maned</div><div class="arena-arrow">→</div><div class="arena-step t2">Blue-Maned</div><div class="arena-arrow">→</div><div class="arena-step t3">White-Maned</div><div class="arena-arrow">→</div><div class="arena-step t4">✨ Silver</div><div class="arena-arrow">→</div><div class="arena-step t5">⚔️ Armored Silver (final)</div>
-</div></div>
-
-<h2>V1-EN 手机宽 360px（复现英文溢出/重叠？）</h2>
+<h2>V6-EN 真页翻版（V1 布局 + 药丸间有换行空白，如真页缩进）</h2>
 <div class="box phone"><div class="arena-order">
-<div class="arena-step t1">Red-Maned</div><div class="arena-arrow">→</div><div class="arena-step t2">Blue-Maned</div><div class="arena-arrow">→</div><div class="arena-step t3">White-Maned</div><div class="arena-arrow">→</div><div class="arena-step t4">✨ Silver</div><div class="arena-arrow">→</div><div class="arena-step t5">⚔️ Armored Silver (final)</div>
+        <div class="arena-step t1">Red-Maned</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t2">Blue-Maned</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t3">White-Maned</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t4">✨ Silver</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t5">⚔️ Armored Silver (final)</div>
 </div></div>
 
-<h2>V4-EN 手机宽 360px（行高改 3）</h2>
-<div class="box phone"><div class="arena-order v4-order">
-<div class="arena-step t1">Red-Maned</div><div class="arena-arrow">→</div><div class="arena-step t2">Blue-Maned</div><div class="arena-arrow">→</div><div class="arena-step t3">White-Maned</div><div class="arena-arrow">→</div><div class="arena-step t4">✨ Silver</div><div class="arena-arrow">→</div><div class="arena-step t5">⚔️ Armored Silver (final)</div>
+<h2>V7-EN 药丸改 inline-block（余同 V1）</h2>
+<div class="box phone"><div class="arena-order v7-order">
+        <div class="arena-step t1">Red-Maned</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t2">Blue-Maned</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t3">White-Maned</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t4">✨ Silver</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t5">⚔️ Armored Silver (final)</div>
 </div></div>
 
-<h2>V5-EN 手机宽 360px（药丸加上下 6px 边距）</h2>
-<div class="box phone"><div class="arena-order v5-order">
-<div class="arena-step t1">Red-Maned</div><div class="arena-arrow">→</div><div class="arena-step t2">Blue-Maned</div><div class="arena-arrow">→</div><div class="arena-step t3">White-Maned</div><div class="arena-arrow">→</div><div class="arena-step t4">✨ Silver</div><div class="arena-arrow">→</div><div class="arena-step t5">⚔️ Armored Silver (final)</div>
+<h2>V8-EN 药丸加 width: max-content（余同 V1）</h2>
+<div class="box phone"><div class="arena-order v8-order">
+        <div class="arena-step t1">Red-Maned</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t2">Blue-Maned</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t3">White-Maned</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t4">✨ Silver</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t5">⚔️ Armored Silver (final)</div>
 </div></div>
 
-<h2>V1-ZH 手机宽 360px（对照：中文应通过）</h2>
+<h2>V9-EN 药丸取消 nowrap（允许圈内换行，余同 V1）</h2>
+<div class="box phone"><div class="arena-order v9-order">
+        <div class="arena-step t1">Red-Maned</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t2">Blue-Maned</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t3">White-Maned</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t4">✨ Silver</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t5">⚔️ Armored Silver (final)</div>
+</div></div>
+
+<h2>V1-ZH 对照（中文应通过）</h2>
 <div class="box phone"><div class="arena-order">
-<div class="arena-step t1">红鬃</div><div class="arena-arrow">→</div><div class="arena-step t2">蓝鬃</div><div class="arena-arrow">→</div><div class="arena-step t3">白鬃</div><div class="arena-arrow">→</div><div class="arena-step t4">✨ 白银</div><div class="arena-arrow">→</div><div class="arena-step t5">⚔️ 铠甲白银（最终）</div>
+        <div class="arena-step t1">红鬃</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t2">蓝鬃</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t3">白鬃</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t4">✨ 白银</div>
+        <div class="arena-arrow">→</div>
+        <div class="arena-step t5">⚔️ 铠甲白银（最终）</div>
 </div></div>
 </body>
 </html>
