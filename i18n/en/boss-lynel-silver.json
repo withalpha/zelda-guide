@@ -1,996 +1,988 @@
 {
- "title": "Silver Lynel Guide · 5000 HP No-Damage Assembly-Line Logging Strategy · Tears of the Kingdom Guide",
- "pairs": [
-  [
-   "王国之泪白银莱尼尔完全攻略，血量5000点全游戏最强野外强敌，详解流水线无伤伐木打法、战前神装准备、地面缠斗盾反爆头、怒吼火圈反杀处理，附白银刃角+55攻击说明。",
-   "Complete guide to the Silver Lynel in Tears of the Kingdom: 5000 HP, the strongest overworld enemy in the game, with the no-damage assembly-line \"logging\" strategy, best pre-fight gear, ground-combat Perfect Guard-to-headshot tactics, countering its roar fire-ring, and notes on the Silver Blade Horn's +55 attack."
-  ],
-  [
-   "⚔️ 白银莱尼尔",
-   "⚔️ Silver Lynel"
-  ],
-  [
-   "血量 5000 · 全游戏最强野外强敌 · 流水线无伤伐木打法",
-   "5000 HP · The strongest overworld enemy in the game · No-damage assembly-line logging strategy"
-  ],
-  [
-   "🏆 终极提款机 · 白银刃角 +55 攻击力",
-   "🏆 The ultimate farming machine · Silver Blade Horn +55 attack"
-  ],
-  [
-   "首页 ›",
-   "Home ›"
-  ],
-  [
-   "Boss图鉴 ›",
-   "Boss Compendium ›"
-  ],
-  [
-   "莱尼尔 ›",
-   "Lynel ›"
-  ],
-  [
-   "白银莱尼尔",
-   "Silver Lynel"
-  ],
-  [
-   "🦁 莱尼尔（红褐/青色）",
-   "🦁 Lynel (brown/teal)"
-  ],
-  [
-   "🔵 蓝鬃莱尼尔",
-   "🔵 Blue-Maned Lynel"
-  ],
-  [
-   "⚪ 白鬃莱尼尔",
-   "⚪ White-Maned Lynel"
-  ],
-  [
-   "白银莱尼尔 Silver Lynel",
-   "Silver Lynel"
-  ],
-  [
-   "📋 基本信息",
-   "📋 Basic Info"
-  ],
-  [
-   "5000 血量",
-   "5000 HP"
-  ],
-  [
-   "★★★★★+ 危险度",
-   "★★★★★+ Danger Level"
-  ],
-  [
-   "Tier 4 最终强度",
-   "Tier 4, final strength tier"
-  ],
-  [
-   "继承白鬃的 怒吼流星爆破 ，AI 变招速度极快，伤害高到能直接 一击秒杀防具未升级的林克 。单纯靠闪避刮痧效率太低，消耗巨大——必须使用 流水线无伤伐木打法 。",
-   "It inherits the White-Maned Lynel's roar-triggered fiery explosion, its AI switches moves extremely fast, and its damage is high enough to one-shot Link in unupgraded armor. Simply dodging and chipping away is too inefficient and costly — you must use the no-damage assembly-line logging strategy."
-  ],
-  [
-   "📍 出没地点",
-   "📍 Where It Appears"
-  ],
-  [
-   "地底竞技场（连续第 5 只，最终关卡）",
-   "The Depths Colosseum (the 5th in a row, the final bout)"
-  ],
-  [
-   "游戏后期特定地底区域",
-   "Specific Depths areas in the late game"
-  ],
-  [
-   "王国之泪带甲版血量更厚，需先破甲",
-   "The armored Tears of the Kingdom variant has even more HP — break its armor first"
-  ],
-  [
-   "🎯 弱点",
-   "🎯 Weaknesses"
-  ],
-  [
-   "🏹 兽神弓齐射爆头",
-   "🏹 Savage Lynel Bow volley headshots"
-  ],
-  [
-   "🐴 骑乘近卫红血剑（不耗耐久）",
-   "🐴 Mounted Royal Guard's low-HP sword (no durability loss)"
-  ],
-  [
-   "🛡 盾反→近距爆头→跪地",
-   "🛡 Perfect Guard → close-range headshot → kneeling"
-  ],
-  [
-   "⚙️ 战前神装准备（核心）",
-   "⚙️ Best Pre-Fight Gear (Core)"
-  ],
-  [
-   "想要高效击杀白银人马，你需要提前准备以下两套专门装备。装备对了，白银莱尼尔就是一台可以稳定刷素材的「提款机」；装备不对，5000 血会让你消耗大量武器和料理。",
-   "To kill a Silver Lynel efficiently, you need to prepare the following two specialized loadouts in advance. With the right gear, a Silver Lynel is a \"cash machine\" that reliably farms materials; with the wrong gear, its 5000 HP will eat through your weapons and meals."
-  ],
-  [
-   "弓",
-   "Bow"
-  ],
-  [
-   "兽神弓（3 连发或 5 连发）· 必须：",
-   "Savage Lynel Bow (3-shot or 5-shot) · Required:"
-  ],
-  [
-   "这是击败前几只人马后掉落的多发弓。 齐射的箭雨可以同时命中脸部多个判定点 ，瞬间触发暴击跪地，比单发弓效率高出数倍。没有兽神弓就先去打蓝鬃/白鬃拿弓。",
-   "This multi-shot bow drops from earlier Lynels. A volley's rain of arrows can hit multiple hit zones on its face at once, instantly triggering a staggering it to its knees — several times more efficient than a single-shot bow. If you don't have a Savage Lynel Bow yet, go fight Blue-Maned / White-Maned Lynels to get one first."
-  ],
-  [
-   "骑乘专属武器（背上输出，不扣耐久）：",
-   "Mount-only weapon (damage from its back, no durability loss):"
-  ],
-  [
-   "《荒野之息》： 面板攻击力最高的近卫双手剑或兽神大剑（最好有 +攻击词条，堆到 100 伤害以上）。",
-   "Breath of the Wild: the Royal Guard's Claymore or Savage Lynel Crusher with the highest listed attack (ideally with an +Attack bonus, stacked above 100 damage)."
-  ],
-  [
-   "《王国之泪》： 处于 红血（即将报废）状态 的近卫双手剑，融合白银莱尼尔的刃角。红血状态伤害翻倍 + 骑乘不扣耐久，一刀能砍出几百伤害， 上马 5 刀直接蒸发人马半管血 。",
-   "Tears of the Kingdom: a Royal Guard's Claymore in low-HP (about to break) state, fused with a Silver Lynel's blade horn. Low-HP state doubles damage, and mounted attacks cost no durability — one swing can deal several hundred damage, and 5 mounted hits can wipe out half the Lynel's HP bar."
-  ],
-  [
-   "3 级攻击料理：",
-   "Level 3 attack meals:"
-  ],
-  [
-   "用 5 个大剑香蕉 烹饪，或穿戴满级的 蛮族套装 / 鬼神套装 。攻击加成可以显著减少击杀所需的循环轮数。",
-   "Cooked from 5 Mighty Bananas, or wear a fully upgraded Barbarian Armor set / Fierce Deity Armor set. The attack boost significantly reduces the number of cycles needed for the kill."
-  ],
-  [
-   "🪓 顶配高效击杀 · 流水线无伤伐木打法",
-   "🪓 Top-Tier Efficient Kill · No-Damage Assembly-Line Logging Strategy"
-  ],
-  [
-   "无论你在哪个版本，下面这套流程都是最稳妥、最快速的无伤解法。 把它练成肌肉记忆，白银莱尼尔就是一棵会掉宝的树。",
-   "Whichever version you play, the routine below is the safest, fastest no-damage solution. Drill it into muscle memory, and a Silver Lynel is just a tree that drops treasure."
-  ],
-  [
-   "飞天起手——强行制造制空权",
-   "Step 1 — Take to the sky: force air superiority"
-  ],
-  [
-   "《荒野之息》： 使用力巴尔的勇猛（鸟神兽起风技能）原地起飞。",
-   "Breath of the Wild: use Revali's Gale (the Rito Champion's updraft skill) to launch from a standstill."
-  ],
-  [
-   "《王国之泪》： 举着附魔了 火箭或弹簧 的盾牌，按住 ZL 原地飞上高空。",
-   "Tears of the Kingdom: hold up a shield fused with a Rocket or Spring, hold ZL, and fly straight up from a standstill."
-  ],
-  [
-   "制空权是整套流水线的前提，脱离地面后白银莱尼尔的所有招式都奈何不了你。",
-   "Air superiority is the premise of the whole assembly line — once you're off the ground, none of the Silver Lynel's moves can touch you."
-  ],
-  [
-   "空中三连爆头——拉弓触发林克时间",
-   "Step 2 — Triple aerial headshots: draw your bow to trigger bullet time"
-  ],
-  [
-   "在空中掏出 兽神弓 ，进入林克时间。由于兽神弓是 多发齐射 ，你只需要大致瞄准人马的 下巴和胡子部位 ，连续射击。",
-   "Draw your Savage Lynel Bow in midair to enter bullet time. Since the Savage Lynel Bow fires a multi-shot volley, you only need to roughly aim at the Lynel's chin and beard area and keep shooting."
-  ],
-  [
-   "齐射的箭雨会瞬间触发暴击， 让人马直接跪地 ——不需要精确瞄准，命中率极高。",
-   "The volley's rain of arrows instantly triggers a staggerical hit that makes the Lynel kneel — no precise aiming needed, and the hit rate is extremely high."
-  ],
-  [
-   "近卫红血武器切菜——白嫖最高伤害",
-   "Step 3 — Low-HP Royal Guard's weapon: free maximum damage"
-  ],
-  [
-   "落地后立刻 解除锁定冲到它身边 ，按 A 键骑乘。换上你那把特制的快要报废的高攻双手剑， 疯狂砍 5 下 。骑乘不耗耐久，红血状态伤害翻倍，这 5 刀是整套流程伤害最高的输出阶段。",
-   "After landing, immediately unlock and rush to its side, press A to mount it. Switch to your specially prepared, nearly broken high-attack two-handed sword and slash wildly 5 times. Mounted attacks cost no durability, and low-HP state doubles damage — these 5 hits are the highest-damage phase of the whole routine."
-  ],
-  [
-   "甩飞反手补刀——空中二次输出",
-   "Step 4 — Follow-up after being thrown: second aerial damage phase"
-  ],
-  [
-   "被甩到空中的瞬间， 视角立刻往后拉对准人马后脑勺 ，按住 ZR 进入林克时间。用弓箭对着后脑勺 补射 3～4 轮 ，追加额外伤害并有机会再次触发跪地。",
-   "The instant you're thrown into the air, pull the camera back to aim at the back of the Lynel's head and hold ZR to enter bullet time. Fire 3–4 more volleys at the back of its head for extra damage, with a chance to trigger another kneel."
-  ],
-  [
-   "🔁 流水线口诀",
-   "🔁 Assembly-Line Mnemonic"
-  ],
-  [
-   "飞天",
-   "Fly up"
-  ],
-  [
-   "兽神弓齐射爆头",
-   "Savage Lynel Bow volley headshot"
-  ],
-  [
-   "骑乘红血剑砍 5 刀",
-   "Mounted low-HP sword: 5 hits"
-  ],
-  [
-   "被甩空中补射后脑",
-   "Thrown into the air: volley the back of its head"
-  ],
-  [
-   "落地再飞天",
-   "Land, then fly up again"
-  ],
-  [
-   "重复 5～8 轮",
-   "Repeat for 5–8 rounds"
-  ],
-  [
-   "🛡️ 落地缠斗时的「神级处理」",
-   "🛡️ \"God-Tier\" Handling When Forced Into Ground Combat"
-  ],
-  [
-   "如果不小心在地面被白银莱尼尔站起来了， 千万别慌 。它只要做出以下两个动作，就是你重新掌控战局的最佳时机：",
-   "If you accidentally end up on the ground with the Silver Lynel standing, don't panic. If it makes either of the following two moves, that's your best chance to retake control:"
-  ],
-  [
-   "处理 1",
-   "Counter 1"
-  ],
-  [
-   "它收刀准备「四足冲锋」时",
-   "When it sheathes its weapon to prepare a \"four-legged charge\""
-  ],
-  [
-   "前兆： 把武器收起来，像马一样四脚着地向你全速冲来。",
-   "Tell: it puts its weapon away and charges at you at full speed on all fours, like a horse."
-  ],
-  [
-   "❌ 不要闪避： 白银版冲锋速度极快，侧跳的窗口非常小，容错率低。",
-   "❌ Don't dodge: the Silver version's charge is extremely fast, the side-hop window is tiny, and the margin for error is low."
-  ],
-  [
-   "✅ 正确操作： 站在原地 举盾 ，等它快撞到你的瞬间按下 A 键进行完美盾反（Parry） 。",
-   "✅ Correct move: stand your ground with your shield raised, and press A the instant before it hits you for a perfect Perfect Guard."
-  ],
-  [
-   "后续： 盾反成功后人马原地眩晕 1 秒，此时距离 极近 ，直接掏出弓箭 盲射脸部 ——根本不需要仔细瞄准，它会再次跪地，立刻上马骑乘输出。",
-   "Follow-up: after a successful Perfect Guard the Lynel is stunned in place for 1 second, and at this extremely close range you can just draw your bow and blind-fire at its face — no careful aiming needed at all — it will kneel again, so mount it immediately for mounted damage."
-  ],
-  [
-   "处理 2",
-   "Counter 2"
-  ],
-  [
-   "它仰头准备「怒吼放火圈」时",
-   "When it rears its head back to prepare its \"roar fire-ring\""
-  ],
-  [
-   "前兆： 白银人马血量掉到一定程度后会高频使用怒吼流星大范围爆炸。",
-   "Tell: once the Silver Lynel's HP drops to a certain point, it will frequently use its roaring meteor large-area explosion."
-  ],
-  [
-   "❌ 不要跑： 范围极大，跑不跑都很危险，白跑还错过了反击机会。",
-   "❌ Don't run: the area is huge, so running is dangerous anyway, and you waste a counterattack opportunity."
-  ],
-  [
-   "✅ 正确操作： 只要听到它怒吼， 立刻切出兽神弓 。它全身站立不动，是活靶子。对着脸部射出一发齐射， 爆炸直接被你的箭矢打断，它跪倒在原地 ——危机瞬间变成免费骑乘机会。",
-   "✅ Correct move: the moment you hear it roar, immediately switch to your Savage Lynel Bow. It stands fully upright and motionless — a sitting target. Fire a volley at its face and your arrows directly interrupt the explosion, making it collapse on the spot — the crisis instantly becomes a free mounting opportunity."
-  ],
-  [
-   "💡 要点： 白银莱尼尔越低血越频繁怒吼，这反而意味着你获得的免费跪地机会越来越多。低血阶段其实比高血阶段更好打。",
-   "💡 Key point: the lower the Silver Lynel's HP, the more often it roars — which actually means you get more and more free kneeling opportunities. The low-HP phase is actually easier than the high-HP phase."
-  ],
-  [
-   "🏟️ 地底竞技场 · 第 5 只连战说明",
-   "🏟️ Depths Colosseum · The 5th Bout in a Row"
-  ],
-  [
-   "挑战竞技场需要 连续击败 5 只莱尼尔 ，按以下顺序出现：",
-   "The Colosseum challenge requires defeating 5 Lynels in a row, appearing in this order:"
-  ],
-  [
-   "🟤 红褐/青色",
-   "🟤 Brown/teal (standard)"
-  ],
-  [
-   "🔵 蓝鬃",
-   "🔵 Blue-Maned"
-  ],
-  [
-   "⚪ 白鬃",
-   "⚪ White-Maned"
-  ],
-  [
-   "⚪ 白鬃 #2",
-   "⚪ White-Maned #2"
-  ],
-  [
-   "✨ 白银（最终）",
-   "✨ Silver (final)"
-  ],
-  [
-   "每只之间不能回复 ——血量和状态完整保持到下一场。",
-   "No automatic recovery between bouts — your HP and status carry over fully into the next fight. — your HP and status carry over fully into the next fight."
-  ],
-  [
-   "武器不会自动补充 ——只能捡地上掉落的武器。前 4 只全程用地上武器，把自己携带的 近卫红血剑和兽神弓 完整留给白银莱尼尔。",
-   "Weapons are not restocked automatically — you can only pick up weapons dropped on the ground. Use ground weapons for the first 4 fights, and save your own low-HP Royal Guard's sword and Savage Lynel Bow intact for the Silver Lynel."
-  ],
-  [
-   "前 4 只用骑乘流消耗最小，基本不受伤就能满状态进入白银关卡。",
-   "Using the mounted strategy for the first 4 costs the least, letting you enter the Silver bout at full strength with barely any damage taken."
-  ],
-  [
-   "🎁 战后战利品 · 游戏中后期提款机",
-   "🎁 Post-Fight Loot · Mid-to-Late-Game Farming Machine"
-  ],
-  [
-   "击败白银莱尼尔后，除了顶级武器外，还会掉落以下 游戏中后期不可或缺的素材 ：",
-   "After defeating a Silver Lynel, besides top-tier weapons, it also drops the following materials that are indispensable in the mid-to-late game:"
-  ],
-  [
-   "⭐ 白银莱尼尔的刃角（最重要）",
-   "⭐ Silver Lynel Blade Horn (most important)"
-  ],
-  [
-   "《王国之泪》中加 +55 点攻击力 的最强通用余料素材之一。余料建造到近卫双手剑上，直接打造出本游戏攻击力最高的武器。这把剑进入红血状态后骑乘输出，一刀的伤害可以超过 500。",
-   "In Tears of the Kingdom, one of the strongest universal Fuse materials, adding +55 attack. Fused onto a Royal Guard's Claymore, it directly creates the highest-attack weapon in the game. Once that sword enters low-HP state, a single mounted hit can deal over 500 damage."
-  ],
-  [
-   "🗡️ 白银莱尼尔的刃角（+55攻击）",
-   "🗡️ Silver Lynel Blade Horn (+55 attack)"
-  ],
-  [
-   "🐾 白银莱尼尔的蹄",
-   "🐾 Silver Lynel Hoof"
-  ],
-  [
-   "🫀 白银莱尼尔的肝",
-   "🫀 Silver Lynel Guts"
-  ],
-  [
-   "🏹 兽神弓（三发/五发）",
-   "🏹 Savage Lynel Bow (3-shot / 5-shot)"
-  ],
-  [
-   "✨ 星之碎片 / 大容量能源",
-   "✨ Silver Lynel Mace Horn (+51)"
-  ],
-  [
-   "星之碎片 用于强化顶级防具（如鬼神套装、英雄套装）至最高等级。",
-   "Silver Lynel Mace Horns (+51) are a top-tier Fuse material and armor-upgrade material."
-  ],
-  [
-   "大容量能源 用于扩充林克的电池上限，让火箭盾飞更久。",
-   "Large Zonaite is used to expand Link's Energy Cell capacity, letting rocket shields fly longer."
-  ],
-  [
-   "白银莱尼尔是这两种素材的 最稳定来源 ，是游戏中后期必须定期刷取的对象。",
-   "The Silver Lynel is the most reliable source of both materials, making it a target you must farm regularly in the mid-to-late game."
-  ],
-  [
-   "🔗 莱尼尔系列攻略导航",
-   "🔗 Lynel Guide Series Navigation"
-  ],
-  [
-   "← 红鬃莱尼尔攻略",
-   "← Red-Maned Lynel Guide"
-  ],
-  [
-   "🔵 蓝鬃莱尼尔攻略",
-   "🔵 Blue-Maned Lynel Guide"
-  ],
-  [
-   "⚪ 白鬃莱尼尔攻略",
-   "⚪ White-Maned Lynel Guide"
-  ],
-  [
-   "← Boss 图鉴",
-   "← Boss Compendium"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 人马",
-   "› Lynel"
-  ],
-  [
-   "› 白鬃人马",
-   "› White-Maned Lynel"
-  ],
-  [
-   "› Boss攻略",
-   "› Boss Guides"
-  ],
-  [
-   "📚 更多攻略",
-   "📚 More Guides"
-  ],
-  [
-   "› 哈里的终极秘籍（13篇）",
-   "› Harry's Ultimate Tips Column (13 articles)"
-  ],
-  [
-   "› 全部页面索引",
-   "› Full Page Index"
-  ],
-  [
-   "继承白鬃的 怒吼流星爆破 ，AI 变招速度极快，伤害高到能直接 一击秒杀防具未升级的林克 。",
-   "It inherits the White-Maned Lynel's roar-triggered fiery explosion, its AI switches moves extremely fast, and its damage is high enough to one-shot Link in unupgraded armor."
-  ],
-  [
-   "单纯靠闪避刮痧效率太低，消耗巨大——必须使用 流水线无伤伐木打法 。",
-   "Simply dodging and chipping away is too inefficient and costly — you must use the no-damage assembly-line logging strategy."
-  ],
-  [
-   "想要高效击杀白银人马，你需要提前准备以下两套专门装备。",
-   "To kill a Silver Lynel efficiently, you need to prepare the following two specialized loadouts in advance."
-  ],
-  [
-   "装备对了，白银莱尼尔就是一台可以稳定刷素材的「提款机」；",
-   "With the right gear, a Silver Lynel is a \"cash machine\" that reliably farms materials;"
-  ],
-  [
-   "装备不对，5000 血会让你消耗大量武器和料理。",
-   "with the wrong gear, its 5000 HP will eat through your weapons and meals."
-  ],
-  [
-   "这是击败前几只人马后掉落的多发弓。",
-   "This multi-shot bow drops from earlier Lynels."
-  ],
-  [
-   " 齐射的箭雨可以同时命中脸部多个判定点 ，瞬间触发暴击跪地，比单发弓效率高出数倍。",
-   "A volley's rain of arrows can hit multiple hit zones on its face at once, instantly triggering a staggering it to its knees — several times more efficient than a single-shot bow."
-  ],
-  [
-   "没有兽神弓就先去打蓝鬃/白鬃拿弓。",
-   "If you don't have a Savage Lynel Bow yet, go fight Blue-Maned / White-Maned Lynels to get one first."
-  ],
-  [
-   "《王国之泪》： 处于 红血（即将报废）状态 的近卫双手剑，融合白银莱尼尔的刃角。",
-   "Tears of the Kingdom: a Royal Guard's Claymore in low-HP (about to break) state, fused with a Silver Lynel's blade horn."
-  ],
-  [
-   "红血状态伤害翻倍 + 骑乘不扣耐久，一刀能砍出几百伤害， 上马 5 刀直接蒸发人马半管血 。",
-   "Low-HP state doubles damage, and mounted attacks cost no durability — one swing can deal several hundred damage, and 5 mounted hits can wipe out half the Lynel's HP bar."
-  ],
-  [
-   "用 5 个大剑香蕉 烹饪，或穿戴满级的 蛮族套装 / 鬼神套装 。",
-   "Cooked from 5 Mighty Bananas, or wear a fully upgraded Barbarian Armor set / Fierce Deity Armor set."
-  ],
-  [
-   "攻击加成可以显著减少击杀所需的循环轮数。",
-   "The attack boost significantly reduces the number of cycles needed for the kill."
-  ],
-  [
-   "无论你在哪个版本，下面这套流程都是最稳妥、最快速的无伤解法。",
-   "Whichever version you play, the routine below is the safest, fastest no-damage solution."
-  ],
-  [
-   " 把它练成肌肉记忆，白银莱尼尔就是一棵会掉宝的树。",
-   "Drill it into muscle memory, and a Silver Lynel is just a tree that drops treasure."
-  ],
-  [
-   "在空中掏出 兽神弓 ，进入林克时间。",
-   "Draw your Savage Lynel Bow in midair to enter bullet time."
-  ],
-  [
-   "由于兽神弓是 多发齐射 ，你只需要大致瞄准人马的 下巴和胡子部位 ，连续射击。",
-   "Since the Savage Lynel Bow fires a multi-shot volley, you only need to roughly aim at the Lynel's chin and beard area and keep shooting."
-  ],
-  [
-   "落地后立刻 解除锁定冲到它身边 ，按 A 键骑乘。",
-   "After landing, immediately unlock and rush to its side, press A to mount it."
-  ],
-  [
-   "换上你那把特制的快要报废的高攻双手剑， 疯狂砍 5 下 。",
-   "Switch to your specially prepared, nearly broken high-attack two-handed sword and slash wildly 5 times."
-  ],
-  [
-   "骑乘不耗耐久，红血状态伤害翻倍，这 5 刀是整套流程伤害最高的输出阶段。",
-   "Mounted attacks cost no durability, and low-HP state doubles damage — these 5 hits are the highest-damage phase of the whole routine."
-  ],
-  [
-   "被甩到空中的瞬间， 视角立刻往后拉对准人马后脑勺 ，按住 ZR 进入林克时间。",
-   "The instant you're thrown into the air, pull the camera back to aim at the back of the Lynel's head and hold ZR to enter bullet time."
-  ],
-  [
-   "用弓箭对着后脑勺 补射 3～4 轮 ，追加额外伤害并有机会再次触发跪地。",
-   "Fire 3–4 more volleys at the back of its head for extra damage, with a chance to trigger another kneel."
-  ],
-  [
-   "如果不小心在地面被白银莱尼尔站起来了， 千万别慌 。",
-   "If you accidentally end up on the ground with the Silver Lynel standing, don't panic."
-  ],
-  [
-   "它只要做出以下两个动作，就是你重新掌控战局的最佳时机：",
-   "If it makes either of the following two moves, that's your best chance to retake control:"
-  ],
-  [
-   "✅ 正确操作： 只要听到它怒吼， 立刻切出兽神弓 。",
-   "✅ Correct move: the moment you hear it roar, immediately switch to your Savage Lynel Bow."
-  ],
-  [
-   "它全身站立不动，是活靶子。",
-   "It stands fully upright and motionless — a sitting target."
-  ],
-  [
-   "对着脸部射出一发齐射， 爆炸直接被你的箭矢打断，它跪倒在原地 ——危机瞬间变成免费骑乘机会。",
-   "Fire a volley at its face and your arrows directly interrupt the explosion, making it collapse on the spot — the crisis instantly becomes a free mounting opportunity."
-  ],
-  [
-   "💡 要点： 白银莱尼尔越低血越频繁怒吼，这反而意味着你获得的免费跪地机会越来越多。",
-   "💡 Key point: the lower the Silver Lynel's HP, the more often it roars — which actually means you get more and more free kneeling opportunities."
-  ],
-  [
-   "低血阶段其实比高血阶段更好打。",
-   "The low-HP phase is actually easier than the high-HP phase."
-  ],
-  [
-   "武器不会自动补充 ——只能捡地上掉落的武器。",
-   "Weapons are not restocked automatically — you can only pick up weapons dropped on the ground."
-  ],
-  [
-   "前 4 只全程用地上武器，把自己携带的 近卫红血剑和兽神弓 完整留给白银莱尼尔。",
-   "Use ground weapons for the first 4 fights, and save your own low-HP Royal Guard's sword and Savage Lynel Bow intact for the Silver Lynel."
-  ],
-  [
-   "《王国之泪》中加 +55 点攻击力 的最强通用余料素材之一。",
-   "In Tears of the Kingdom, one of the strongest universal Fuse materials, adding +55 attack."
-  ],
-  [
-   "余料建造到近卫双手剑上，直接打造出本游戏攻击力最高的武器。",
-   "Fused onto a Royal Guard's Claymore, it directly creates the highest-attack weapon in the game."
-  ],
-  [
-   "这把剑进入红血状态后骑乘输出，一刀的伤害可以超过 500。",
-   "Once that sword enters low-HP state, a single mounted hit can deal over 500 damage."
-  ],
-  [
-   "想要高效击杀白银人马，你需要提前准备以下两套专门装备。装备对了，白银莱尼尔就是一台 可以稳定刷素材的「提款机」；装备不对，5000 血会让你消耗大量武器和料理。",
-   "To farm Silver Lynels efficiently, prepare the following two dedicated gear sets in advance. With the right gear, a Silver Lynel is an ATM that reliably drops materials; with the wrong gear, its 5,000 HP will burn through your weapons and dishes."
-  ],
-  [
-   "无论你在哪个版本，下面这套流程都是最稳妥、最快速的无伤解法。把它练成肌肉记忆，白银莱尼尔就是一棵会掉宝的树。",
-   "Whatever version you play, the flow below is the safest and fastest no-damage solution. Drill it into muscle memory, and a Silver Lynel becomes a tree that drops loot."
-  ],
-  [
-   "如果不小心在地面被白银莱尼尔站起来了，千万别慌。它只要做出以下两个动作，就是你重新掌控战局的最佳时机：",
-   "If a Silver Lynel gets back up while you're on the ground, don't panic. The moment it does either of the following two moves is your best chance to retake control:"
-  ],
-  [
-   "挑战竞技场需要连续击败 5 只莱尼尔，按以下顺序出现：",
-   "The arena challenge requires defeating 5 Lynels in a row, appearing in the following order:"
-  ],
-  [
-   "击败白银莱尼尔后，除了顶级武器外，还会掉落以下游戏中后期不可或缺的素材：",
-   "After defeating a Silver Lynel, besides top-tier weapons, it also drops the following materials that are essential in the mid-to-late game:"
-  ],
-  [
-   "Boss图鉴",
-   "Bosses"
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "莱尼尔",
-   "Lynel"
-  ],
-  [
-   "血量",
-   "HP"
-  ],
-  [
-   "最终强度",
-   "Final strength"
-  ],
-  [
-   "继承白鬃的",
-   "Inheriting White-Maned's "
-  ],
-  [
-   "，AI 变招速度极快，伤害高到能直接",
-   ", its AI switches moves extremely fast, and its damage is high enough to "
-  ],
-  [
-   "。单纯靠闪避刮痧效率太低，消耗巨大——必须使用",
-   ". Relying purely on dodging to chip away is far too inefficient and costly — you must use the "
-  ],
-  [
-   "怒吼流星爆破",
-   "Roar-triggered fiery explosion"
-  ],
-  [
-   "一击秒杀防具未升级的林克",
-   "one-shot Link whose armor is not upgraded"
-  ],
-  [
-   "流水线无伤伐木打法",
-   "assembly-line no-damage lumberjack strategy"
-  ],
-  [
-   "齐射的箭雨可以同时命中脸部多个判定点",
-   "A volley of arrows can hit multiple hit zones on its face at once"
-  ],
-  [
-   "，瞬间触发暴击跪地，比单发弓效率高出数倍。没有兽神弓就先去打蓝鬃/白鬃拿弓。",
-   ", instantly triggering a staggering it to its knees, several times more efficient than a single-shot bow. Without a Savage Lynel Bow, go fight Blue-Maned / White-Maned Lynels for one first."
-  ],
-  [
-   "《荒野之息》：",
-   "Breath of the Wild: "
-  ],
-  [
-   "面板攻击力最高的近卫双手剑或兽神大剑（最好有 +攻击词条，堆到 100 伤害以上）。",
-   "The Royal Guard's Claymore or Savage Lynel Sword with the highest base attack (preferably with an attack-up modifier, stacked above 100 damage). "
-  ],
-  [
-   "处于",
-   "the Royal Guard's Claymore in a "
-  ],
-  [
-   "的近卫双手剑，融合白银莱尼尔的刃角。红血状态伤害翻倍 + 骑乘不扣耐久，一刀能砍出几百伤害，",
-   ", fused with a Silver Lynel's blade horn. Low-HP state doubles damage + mounting costs no durability, and one hit can deal hundreds of damage, "
-  ],
-  [
-   "《王国之泪》：",
-   "Tears of the Kingdom: "
-  ],
-  [
-   "红血（即将报废）状态",
-   "low-HP (nearly broken) state"
-  ],
-  [
-   "上马 5 刀直接蒸发人马半管血",
-   "5 mounted hits directly vaporize half of the Lynel's HP"
-  ],
-  [
-   "用",
-   "Use "
-  ],
-  [
-   "烹饪，或穿戴满级的",
-   "to cook, or wear fully upgraded "
-  ],
-  [
-   "5 个大剑香蕉",
-   "5 Mighty Bananas "
-  ],
-  [
-   "蛮族套装 / 鬼神套装",
-   "Barbarian Set / Fierce Deity Set"
-  ],
-  [
-   "使用力巴尔的勇猛（鸟神兽起风技能）原地起飞。",
-   "Use Revali's Gale (the bird Divine Beast's wind skill) to take off in place. "
-  ],
-  [
-   "举着附魔了",
-   "Holding a shield fused with "
-  ],
-  [
-   "的盾牌，按住 ZL 原地飞上高空。",
-   ", hold ZL to fly straight up into the sky."
-  ],
-  [
-   "火箭或弹簧",
-   "a Rocket or Spring"
-  ],
-  [
-   "在空中掏出",
-   "Draw "
-  ],
-  [
-   "，进入林克时间。由于兽神弓是",
-   ", entering bullet time. Since the Savage Lynel Bow fires a "
-  ],
-  [
-   "，你只需要大致瞄准人马的",
-   ", you only need to roughly aim at the Lynel's "
-  ],
-  [
-   "，连续射击。",
-   ", then keep shooting. "
-  ],
-  [
-   "齐射的箭雨会瞬间触发暴击，",
-   "The volley of arrows instantly triggers a stagger, "
-  ],
-  [
-   "——不需要精确瞄准，命中率极高。",
-   "— no precise aiming needed, with an extremely high hit rate."
-  ],
-  [
-   "兽神弓",
-   "your Savage Lynel Bow"
-  ],
-  [
-   "多发齐射",
-   "multi-shot volley"
-  ],
-  [
-   "下巴和胡子部位",
-   "chin and beard area"
-  ],
-  [
-   "让人马直接跪地",
-   "making the Lynel kneel directly "
-  ],
-  [
-   "落地后立刻",
-   "After landing, immediately "
-  ],
-  [
-   "，按 A 键骑乘。换上你那把特制的快要报废的高攻双手剑，",
-   ", press A to mount. Switch to your custom nearly broken high-attack two-handed sword, "
-  ],
-  [
-   "解除锁定冲到它身边",
-   "release the lock and rush to its side"
-  ],
-  [
-   "疯狂砍 5 下",
-   "and slash wildly 5 times"
-  ],
-  [
-   "被甩到空中的瞬间，",
-   "The instant you are thrown into the air, "
-  ],
-  [
-   "，按住 ZR 进入林克时间。用弓箭对着后脑勺",
-   ", hold ZR to enter bullet time. Use your bow to shoot at the back of its head for "
-  ],
-  [
-   "，追加额外伤害并有机会再次触发跪地。",
-   ", dealing extra damage with a chance to trigger the kneel again."
-  ],
-  [
-   "视角立刻往后拉对准人马后脑勺",
-   "immediately pull the camera back to aim at the back of the Lynel's head"
-  ],
-  [
-   "补射 3～4 轮",
-   "3–4 more rounds"
-  ],
-  [
-   "前兆：",
-   "Tell: "
-  ],
-  [
-   "把武器收起来，像马一样四脚着地向你全速冲来。",
-   "It puts its weapon away and charges at you at full speed on all fours like a horse. "
-  ],
-  [
-   "白银版冲锋速度极快，侧跳的窗口非常小，容错率低。",
-   "The Silver version charges extremely fast, the side-hop window is tiny, and the margin for error is low. "
-  ],
-  [
-   "站在原地",
-   "Stand in place and "
-  ],
-  [
-   "，等它快撞到你的瞬间按下",
-   ", and the instant it is about to hit you, press "
-  ],
-  [
-   "盾反成功后人马原地眩晕 1 秒，此时距离",
-   "After a successful Perfect Guard, the Lynel is stunned in place for 1 second, and at this point the distance is "
-  ],
-  [
-   "，直接掏出弓箭",
-   ", so draw your bow directly and "
-  ],
-  [
-   "——根本不需要仔细瞄准，它会再次跪地，立刻上马骑乘输出。",
-   "— no careful aiming needed at all; it will kneel again, so mount it immediately and deal damage."
-  ],
-  [
-   "❌ 不要闪避：",
-   "❌ Do not dodge: "
-  ],
-  [
-   "✅ 正确操作：",
-   "✅ Correct move: "
-  ],
-  [
-   "举盾",
-   "raise your shield"
-  ],
-  [
-   "A 键进行完美盾反（Parry）",
-   "A for a Perfect Guard (Perfect Guard) "
-  ],
-  [
-   "后续：",
-   "Follow-up: "
-  ],
-  [
-   "极近",
-   "extremely close"
-  ],
-  [
-   "盲射脸部",
-   "blind-shoot its face "
-  ],
-  [
-   "白银人马血量掉到一定程度后会高频使用怒吼流星大范围爆炸。",
-   "Once a Silver Lynel's HP drops to a certain level, it will frequently use the Roar Meteor large-area explosion. "
-  ],
-  [
-   "范围极大，跑不跑都很危险，白跑还错过了反击机会。",
-   "The range is enormous, and running or not, it is dangerous either way — running for nothing also wastes a counterattack chance. "
-  ],
-  [
-   "只要听到它怒吼，",
-   "The moment you hear it roar, "
-  ],
-  [
-   "。它全身站立不动，是活靶子。对着脸部射出一发齐射，",
-   ". It stands completely still, a sitting duck. Fire a volley at its face, "
-  ],
-  [
-   "——危机瞬间变成免费骑乘机会。",
-   "— danger instantly becomes a free mounting opportunity."
-  ],
-  [
-   "❌ 不要跑：",
-   "❌ Do not run: "
-  ],
-  [
-   "立刻切出兽神弓",
-   "immediately switch to your Savage Lynel Bow"
-  ],
-  [
-   "爆炸直接被你的箭矢打断，它跪倒在原地",
-   "and the explosion is interrupted directly by your arrows as it collapses to its knees on the spot "
-  ],
-  [
-   "💡 要点：",
-   "💡 Key point: "
-  ],
-  [
-   "白银莱尼尔越低血越频繁怒吼，这反而意味着你获得的免费跪地机会越来越多。低血阶段其实比高血阶段更好打。",
-   "The lower a Silver Lynel's HP, the more frequently it roars — which actually means you get more and more free kneeling opportunities. The low-HP phase is actually easier to fight than the high-HP phase."
-  ],
-  [
-   "每只之间不能回复",
-   "No recovery between bouts "
-  ],
-  [
-   "——血量和状态完整保持到下一场。",
-   "— HP and status carry over fully to the next bout."
-  ],
-  [
-   "武器不会自动补充",
-   "Weapons do not replenish automatically "
-  ],
-  [
-   "——只能捡地上掉落的武器。前 4 只全程用地上武器，把自己携带的",
-   "— you can only pick up weapons dropped on the ground. For the first 4 bouts, use only ground weapons, and keep your own "
-  ],
-  [
-   "完整留给白银莱尼尔。",
-   "fully intact for the Silver Lynel."
-  ],
-  [
-   "近卫红血剑和兽神弓",
-   "low-HP Royal Guard's sword and Savage Lynel Bow "
-  ],
-  [
-   "《王国之泪》中加",
-   "In Tears of the Kingdom, "
-  ],
-  [
-   "的最强通用余料素材之一。余料建造到近卫双手剑上，直接打造出本游戏攻击力最高的武器。这把剑进入红血状态后骑乘输出，一刀的伤害可以超过 500。",
-   "one of the strongest universal Fuse materials. Fused onto a Royal Guard's Claymore, it directly creates the highest-attack weapon in the game. Once this sword enters low-HP state, mounted attacks can deal over 500 damage in a single hit."
-  ],
-  [
-   "+55 点攻击力",
-   "it adds +55 attack, making it "
-  ],
-  [
-   "星之碎片",
-   "Star Fragment "
-  ],
-  [
-   "用于强化顶级防具（如鬼神套装、英雄套装）至最高等级。",
-   "is used to upgrade top-tier armor (such as the Fierce Deity Set and Hero Set) to max level. "
-  ],
-  [
-   "用于扩充林克的电池上限，让火箭盾飞更久。",
-   "is used to expand Link's Energy Cell capacity, letting the Rocket Shield fly longer. "
-  ],
-  [
-   "白银莱尼尔是这两种素材的",
-   "The Silver Lynel is the "
-  ],
-  [
-   "，是游戏中后期必须定期刷取的对象。",
-   "of these two materials, and a target you must farm regularly in the mid-to-late game."
-  ],
-  [
-   "大容量能源",
-   "Large Zonaite "
-  ],
-  [
-   "最稳定来源",
-   "most reliable source"
-  ],
-  [
-   "。攻击加成可以显著减少击杀所需的循环轮数。",
-   "The attack boost significantly reduces the number of cycles needed for the kill."
-  ],
-  [
-   "。骑乘不耗耐久，红血状态伤害翻倍，这 5 刀是整套流程伤害最高的输出阶段。",
-   "Mounted attacks cost no durability, and low-HP state doubles damage — these 5 hits are the highest-damage phase of the whole routine."
-  ],
-  [
-   "🦁 莱尼尔（红鬃）",
-   "🦁 Lynel (Red-Maned)"
-  ],
-  [
-   "浮岛斗技场（第 4 只）",
-   "Floating Colosseum (4th fight)"
-  ],
-  [
-   "🏟️ 浮岛斗技场 · 五连战说明",
-   "🏟️ Floating Colosseum · Five-Fight Gauntlet"
-  ],
-  [
-   "🟤 红鬃",
-   "🟤 Red-Maned"
-  ],
-  [
-   "✨ 白银",
-   "✨ Silver"
-  ],
-  [
-   "⚔️ 铠甲白银（最终）",
-   "⚔️ Armored Silver (final)"
-  ],
-  [
-   "完整留给铠甲白银莱尼尔。",
-   "save them intact for the Armored Silver Lynel."
-  ],
-  [
-   "前 4 只用骑乘流消耗最小，基本不受伤就能满状态进入铠甲白银关卡。",
-   "Mount combat on the first 4 uses the fewest resources — you can enter the Armored Silver fight nearly unhurt and at full health."
-  ],
-  [
-   "蓝鬃莱尼尔",
-   "Blue-Maned Lynel"
-  ],
-  [
-   "白鬃莱尼尔",
-   "White-Maned Lynel"
-  ],
-  [
-   "红鬃",
-   "Red-Maned"
-  ],
-  [
-   "蓝鬃",
-   "Blue-Maned"
-  ],
-  [
-   "白鬃",
-   "White-Maned"
-  ],
-  [
-   "蓝鬃莱尼尔攻略",
-   "Blue-Maned Lynel Guide"
-  ],
-  [
-   "白鬃莱尼尔攻略",
-   "White-Maned Lynel Guide"
+  "title": "Silver Lynel Guide · 5000 HP No-Damage Assembly-Line Logging Strategy · Tears of the Kingdom Guide",
+  "pairs": [
+    [
+      "王国之泪白银莱尼尔完全攻略，血量5000点全游戏最强野外强敌，详解流水线无伤伐木打法、战前神装准备、地面缠斗盾反爆头、怒吼火圈反杀处理，附白银刃角+55攻击说明。",
+      "Complete guide to the Silver Lynel in Tears of the Kingdom: 5000 HP, the strongest overworld enemy in the game, with the no-damage assembly-line \"logging\" strategy, best pre-fight gear, ground-combat Perfect Guard-to-headshot tactics, countering its roar fire-ring, and notes on the Silver Blade Horn's +55 attack."
+    ],
+    [
+      "⚔️ 白银莱尼尔",
+      "⚔️ Silver Lynel"
+    ],
+    [
+      "血量 5000 · 全游戏最强野外强敌 · 流水线无伤伐木打法",
+      "5000 HP · The strongest overworld enemy in the game · No-damage assembly-line logging strategy"
+    ],
+    [
+      "🏆 终极提款机 · 白银刃角 +55 攻击力",
+      "🏆 The ultimate farming machine · Silver Blade Horn +55 attack"
+    ],
+    [
+      "首页 ›",
+      "Home ›"
+    ],
+    [
+      "Boss图鉴 ›",
+      "Boss Compendium ›"
+    ],
+    [
+      "莱尼尔 ›",
+      "Lynel ›"
+    ],
+    [
+      "白银莱尼尔",
+      "Silver Lynel"
+    ],
+    [
+      "🦁 莱尼尔（红褐/青色）",
+      "🦁 Lynel (brown/teal)"
+    ],
+    [
+      "🔵 蓝鬃莱尼尔",
+      "🔵 Blue-Maned Lynel"
+    ],
+    [
+      "⚪ 白鬃莱尼尔",
+      "⚪ White-Maned Lynel"
+    ],
+    [
+      "白银莱尼尔 Silver Lynel",
+      "Silver Lynel"
+    ],
+    [
+      "📋 基本信息",
+      "📋 Basic Info"
+    ],
+    [
+      "继承白鬃的 怒吼流星爆破 ，AI 变招速度极快，伤害高到能直接 一击秒杀防具未升级的林克 。单纯靠闪避刮痧效率太低，消耗巨大——必须使用 流水线无伤伐木打法 。",
+      "It inherits the White-Maned Lynel's roar-triggered fiery explosion, its AI switches moves extremely fast, and its damage is high enough to one-shot Link in unupgraded armor. Simply dodging and chipping away is too inefficient and costly — you must use the no-damage assembly-line logging strategy."
+    ],
+    [
+      "📍 出没地点",
+      "📍 Where It Appears"
+    ],
+    [
+      "地底竞技场（连续第 5 只，最终关卡）",
+      "The Depths Colosseum (the 5th in a row, the final bout)"
+    ],
+    [
+      "游戏后期特定地底区域",
+      "Specific Depths areas in the late game"
+    ],
+    [
+      "王国之泪带甲版血量更厚，需先破甲",
+      "The armored Tears of the Kingdom variant has even more HP — break its armor first"
+    ],
+    [
+      "🎯 弱点",
+      "🎯 Weaknesses"
+    ],
+    [
+      "🏹 兽神弓齐射爆头",
+      "🏹 Savage Lynel Bow volley headshots"
+    ],
+    [
+      "🐴 骑乘近卫红血剑（不耗耐久）",
+      "🐴 Mounted Royal Guard's low-HP sword (no durability loss)"
+    ],
+    [
+      "🛡 盾反→近距爆头→跪地",
+      "🛡 Perfect Guard → close-range headshot → kneeling"
+    ],
+    [
+      "⚙️ 战前神装准备（核心）",
+      "⚙️ Best Pre-Fight Gear (Core)"
+    ],
+    [
+      "想要高效击杀白银人马，你需要提前准备以下两套专门装备。装备对了，白银莱尼尔就是一台可以稳定刷素材的「提款机」；装备不对，5000 血会让你消耗大量武器和料理。",
+      "To kill a Silver Lynel efficiently, you need to prepare the following two specialized loadouts in advance. With the right gear, a Silver Lynel is a \"cash machine\" that reliably farms materials; with the wrong gear, its 5000 HP will eat through your weapons and meals."
+    ],
+    [
+      "弓",
+      "Bow"
+    ],
+    [
+      "兽神弓（3 连发或 5 连发）· 必须：",
+      "Savage Lynel Bow (3-shot or 5-shot) · Required:"
+    ],
+    [
+      "这是击败前几只人马后掉落的多发弓。 齐射的箭雨可以同时命中脸部多个判定点 ，瞬间触发暴击跪地，比单发弓效率高出数倍。没有兽神弓就先去打蓝鬃/白鬃拿弓。",
+      "This multi-shot bow drops from earlier Lynels. A volley's rain of arrows can hit multiple hit zones on its face at once, instantly triggering a staggering it to its knees — several times more efficient than a single-shot bow. If you don't have a Savage Lynel Bow yet, go fight Blue-Maned / White-Maned Lynels to get one first."
+    ],
+    [
+      "骑乘专属武器（背上输出，不扣耐久）：",
+      "Mount-only weapon (damage from its back, no durability loss):"
+    ],
+    [
+      "《荒野之息》： 面板攻击力最高的近卫双手剑或兽神大剑（最好有 +攻击词条，堆到 100 伤害以上）。",
+      "Breath of the Wild: the Royal Guard's Claymore or Savage Lynel Crusher with the highest listed attack (ideally with an +Attack bonus, stacked above 100 damage)."
+    ],
+    [
+      "《王国之泪》： 处于 红血（即将报废）状态 的近卫双手剑，融合白银莱尼尔的刃角。红血状态伤害翻倍 + 骑乘不扣耐久，一刀能砍出几百伤害， 上马 5 刀直接蒸发人马半管血 。",
+      "Tears of the Kingdom: a Royal Guard's Claymore in low-HP (about to break) state, fused with a Silver Lynel's blade horn. Low-HP state doubles damage, and mounted attacks cost no durability — one swing can deal several hundred damage, and 5 mounted hits can wipe out half the Lynel's HP bar."
+    ],
+    [
+      "3 级攻击料理：",
+      "Level 3 attack meals:"
+    ],
+    [
+      "用 5 个大剑香蕉 烹饪，或穿戴满级的 蛮族套装 / 鬼神套装 。攻击加成可以显著减少击杀所需的循环轮数。",
+      "Cooked from 5 Mighty Bananas, or wear a fully upgraded Barbarian Armor set / Fierce Deity Armor set. The attack boost significantly reduces the number of cycles needed for the kill."
+    ],
+    [
+      "🪓 顶配高效击杀 · 流水线无伤伐木打法",
+      "🪓 Top-Tier Efficient Kill · No-Damage Assembly-Line Logging Strategy"
+    ],
+    [
+      "无论你在哪个版本，下面这套流程都是最稳妥、最快速的无伤解法。 把它练成肌肉记忆，白银莱尼尔就是一棵会掉宝的树。",
+      "Whichever version you play, the routine below is the safest, fastest no-damage solution. Drill it into muscle memory, and a Silver Lynel is just a tree that drops treasure."
+    ],
+    [
+      "飞天起手——强行制造制空权",
+      "Step 1 — Take to the sky: force air superiority"
+    ],
+    [
+      "《荒野之息》： 使用力巴尔的勇猛（鸟神兽起风技能）原地起飞。",
+      "Breath of the Wild: use Revali's Gale (the Rito Champion's updraft skill) to launch from a standstill."
+    ],
+    [
+      "《王国之泪》： 举着附魔了 火箭或弹簧 的盾牌，按住 ZL 原地飞上高空。",
+      "Tears of the Kingdom: hold up a shield fused with a Rocket or Spring, hold ZL, and fly straight up from a standstill."
+    ],
+    [
+      "制空权是整套流水线的前提，脱离地面后白银莱尼尔的所有招式都奈何不了你。",
+      "Air superiority is the premise of the whole assembly line — once you're off the ground, none of the Silver Lynel's moves can touch you."
+    ],
+    [
+      "空中三连爆头——拉弓触发林克时间",
+      "Step 2 — Triple aerial headshots: draw your bow to trigger bullet time"
+    ],
+    [
+      "在空中掏出 兽神弓 ，进入林克时间。由于兽神弓是 多发齐射 ，你只需要大致瞄准人马的 下巴和胡子部位 ，连续射击。",
+      "Draw your Savage Lynel Bow in midair to enter bullet time. Since the Savage Lynel Bow fires a multi-shot volley, you only need to roughly aim at the Lynel's chin and beard area and keep shooting."
+    ],
+    [
+      "齐射的箭雨会瞬间触发暴击， 让人马直接跪地 ——不需要精确瞄准，命中率极高。",
+      "The volley's rain of arrows instantly triggers a staggerical hit that makes the Lynel kneel — no precise aiming needed, and the hit rate is extremely high."
+    ],
+    [
+      "近卫红血武器切菜——白嫖最高伤害",
+      "Step 3 — Low-HP Royal Guard's weapon: free maximum damage"
+    ],
+    [
+      "落地后立刻 解除锁定冲到它身边 ，按 A 键骑乘。换上你那把特制的快要报废的高攻双手剑， 疯狂砍 5 下 。骑乘不耗耐久，红血状态伤害翻倍，这 5 刀是整套流程伤害最高的输出阶段。",
+      "After landing, immediately unlock and rush to its side, press A to mount it. Switch to your specially prepared, nearly broken high-attack two-handed sword and slash wildly 5 times. Mounted attacks cost no durability, and low-HP state doubles damage — these 5 hits are the highest-damage phase of the whole routine."
+    ],
+    [
+      "甩飞反手补刀——空中二次输出",
+      "Step 4 — Follow-up after being thrown: second aerial damage phase"
+    ],
+    [
+      "被甩到空中的瞬间， 视角立刻往后拉对准人马后脑勺 ，按住 ZR 进入林克时间。用弓箭对着后脑勺 补射 3～4 轮 ，追加额外伤害并有机会再次触发跪地。",
+      "The instant you're thrown into the air, pull the camera back to aim at the back of the Lynel's head and hold ZR to enter bullet time. Fire 3–4 more volleys at the back of its head for extra damage, with a chance to trigger another kneel."
+    ],
+    [
+      "🔁 流水线口诀",
+      "🔁 Assembly-Line Mnemonic"
+    ],
+    [
+      "飞天",
+      "Fly up"
+    ],
+    [
+      "兽神弓齐射爆头",
+      "Savage Lynel Bow volley headshot"
+    ],
+    [
+      "骑乘红血剑砍 5 刀",
+      "Mounted low-HP sword: 5 hits"
+    ],
+    [
+      "被甩空中补射后脑",
+      "Thrown into the air: volley the back of its head"
+    ],
+    [
+      "落地再飞天",
+      "Land, then fly up again"
+    ],
+    [
+      "重复 5～8 轮",
+      "Repeat for 5–8 rounds"
+    ],
+    [
+      "🛡️ 落地缠斗时的「神级处理」",
+      "🛡️ \"God-Tier\" Handling When Forced Into Ground Combat"
+    ],
+    [
+      "如果不小心在地面被白银莱尼尔站起来了， 千万别慌 。它只要做出以下两个动作，就是你重新掌控战局的最佳时机：",
+      "If you accidentally end up on the ground with the Silver Lynel standing, don't panic. If it makes either of the following two moves, that's your best chance to retake control:"
+    ],
+    [
+      "处理 1",
+      "Counter 1"
+    ],
+    [
+      "它收刀准备「四足冲锋」时",
+      "When it sheathes its weapon to prepare a \"four-legged charge\""
+    ],
+    [
+      "前兆： 把武器收起来，像马一样四脚着地向你全速冲来。",
+      "Tell: it puts its weapon away and charges at you at full speed on all fours, like a horse."
+    ],
+    [
+      "❌ 不要闪避： 白银版冲锋速度极快，侧跳的窗口非常小，容错率低。",
+      "❌ Don't dodge: the Silver version's charge is extremely fast, the side-hop window is tiny, and the margin for error is low."
+    ],
+    [
+      "✅ 正确操作： 站在原地 举盾 ，等它快撞到你的瞬间按下 A 键进行完美盾反（Parry） 。",
+      "✅ Correct move: stand your ground with your shield raised, and press A the instant before it hits you for a perfect Perfect Guard."
+    ],
+    [
+      "后续： 盾反成功后人马原地眩晕 1 秒，此时距离 极近 ，直接掏出弓箭 盲射脸部 ——根本不需要仔细瞄准，它会再次跪地，立刻上马骑乘输出。",
+      "Follow-up: after a successful Perfect Guard the Lynel is stunned in place for 1 second, and at this extremely close range you can just draw your bow and blind-fire at its face — no careful aiming needed at all — it will kneel again, so mount it immediately for mounted damage."
+    ],
+    [
+      "处理 2",
+      "Counter 2"
+    ],
+    [
+      "它仰头准备「怒吼放火圈」时",
+      "When it rears its head back to prepare its \"roar fire-ring\""
+    ],
+    [
+      "前兆： 白银人马血量掉到一定程度后会高频使用怒吼流星大范围爆炸。",
+      "Tell: once the Silver Lynel's HP drops to a certain point, it will frequently use its roaring meteor large-area explosion."
+    ],
+    [
+      "❌ 不要跑： 范围极大，跑不跑都很危险，白跑还错过了反击机会。",
+      "❌ Don't run: the area is huge, so running is dangerous anyway, and you waste a counterattack opportunity."
+    ],
+    [
+      "✅ 正确操作： 只要听到它怒吼， 立刻切出兽神弓 。它全身站立不动，是活靶子。对着脸部射出一发齐射， 爆炸直接被你的箭矢打断，它跪倒在原地 ——危机瞬间变成免费骑乘机会。",
+      "✅ Correct move: the moment you hear it roar, immediately switch to your Savage Lynel Bow. It stands fully upright and motionless — a sitting target. Fire a volley at its face and your arrows directly interrupt the explosion, making it collapse on the spot — the crisis instantly becomes a free mounting opportunity."
+    ],
+    [
+      "💡 要点： 白银莱尼尔越低血越频繁怒吼，这反而意味着你获得的免费跪地机会越来越多。低血阶段其实比高血阶段更好打。",
+      "💡 Key point: the lower the Silver Lynel's HP, the more often it roars — which actually means you get more and more free kneeling opportunities. The low-HP phase is actually easier than the high-HP phase."
+    ],
+    [
+      "🏟️ 地底竞技场 · 第 5 只连战说明",
+      "🏟️ Depths Colosseum · The 5th Bout in a Row"
+    ],
+    [
+      "挑战竞技场需要 连续击败 5 只莱尼尔 ，按以下顺序出现：",
+      "The Colosseum challenge requires defeating 5 Lynels in a row, appearing in this order:"
+    ],
+    [
+      "🟤 红褐/青色",
+      "🟤 Brown/teal (standard)"
+    ],
+    [
+      "🔵 蓝鬃",
+      "🔵 Blue-Maned"
+    ],
+    [
+      "⚪ 白鬃",
+      "⚪ White-Maned"
+    ],
+    [
+      "⚪ 白鬃 #2",
+      "⚪ White-Maned #2"
+    ],
+    [
+      "✨ 白银（最终）",
+      "✨ Silver (final)"
+    ],
+    [
+      "每只之间不能回复 ——血量和状态完整保持到下一场。",
+      "No automatic recovery between bouts — your HP and status carry over fully into the next fight. — your HP and status carry over fully into the next fight."
+    ],
+    [
+      "武器不会自动补充 ——只能捡地上掉落的武器。前 4 只全程用地上武器，把自己携带的 近卫红血剑和兽神弓 完整留给白银莱尼尔。",
+      "Weapons are not restocked automatically — you can only pick up weapons dropped on the ground. Use ground weapons for the first 4 fights, and save your own low-HP Royal Guard's sword and Savage Lynel Bow intact for the Silver Lynel."
+    ],
+    [
+      "前 4 只用骑乘流消耗最小，基本不受伤就能满状态进入白银关卡。",
+      "Using the mounted strategy for the first 4 costs the least, letting you enter the Silver bout at full strength with barely any damage taken."
+    ],
+    [
+      "🎁 战后战利品 · 游戏中后期提款机",
+      "🎁 Post-Fight Loot · Mid-to-Late-Game Farming Machine"
+    ],
+    [
+      "击败白银莱尼尔后，除了顶级武器外，还会掉落以下 游戏中后期不可或缺的素材 ：",
+      "After defeating a Silver Lynel, besides top-tier weapons, it also drops the following materials that are indispensable in the mid-to-late game:"
+    ],
+    [
+      "⭐ 白银莱尼尔的刃角（最重要）",
+      "⭐ Silver Lynel Blade Horn (most important)"
+    ],
+    [
+      "《王国之泪》中加 +55 点攻击力 的最强通用余料素材之一。余料建造到近卫双手剑上，直接打造出本游戏攻击力最高的武器。这把剑进入红血状态后骑乘输出，一刀的伤害可以超过 500。",
+      "In Tears of the Kingdom, one of the strongest universal Fuse materials, adding +55 attack. Fused onto a Royal Guard's Claymore, it directly creates the highest-attack weapon in the game. Once that sword enters low-HP state, a single mounted hit can deal over 500 damage."
+    ],
+    [
+      "🗡️ 白银莱尼尔的刃角（+55攻击）",
+      "🗡️ Silver Lynel Blade Horn (+55 attack)"
+    ],
+    [
+      "🐾 白银莱尼尔的蹄",
+      "🐾 Silver Lynel Hoof"
+    ],
+    [
+      "🫀 白银莱尼尔的肝",
+      "🫀 Silver Lynel Guts"
+    ],
+    [
+      "🏹 兽神弓（三发/五发）",
+      "🏹 Savage Lynel Bow (3-shot / 5-shot)"
+    ],
+    [
+      "✨ 星之碎片 / 大容量能源",
+      "✨ Silver Lynel Mace Horn (+51)"
+    ],
+    [
+      "星之碎片 用于强化顶级防具（如鬼神套装、英雄套装）至最高等级。",
+      "Silver Lynel Mace Horns (+51) are a top-tier Fuse material and armor-upgrade material."
+    ],
+    [
+      "大容量能源 用于扩充林克的电池上限，让火箭盾飞更久。",
+      "Large Zonaite is used to expand Link's Energy Cell capacity, letting rocket shields fly longer."
+    ],
+    [
+      "白银莱尼尔是这两种素材的 最稳定来源 ，是游戏中后期必须定期刷取的对象。",
+      "The Silver Lynel is the most reliable source of both materials, making it a target you must farm regularly in the mid-to-late game."
+    ],
+    [
+      "🔗 莱尼尔系列攻略导航",
+      "🔗 Lynel Guide Series Navigation"
+    ],
+    [
+      "← 红鬃莱尼尔攻略",
+      "← Red-Maned Lynel Guide"
+    ],
+    [
+      "🔵 蓝鬃莱尼尔攻略",
+      "🔵 Blue-Maned Lynel Guide"
+    ],
+    [
+      "⚪ 白鬃莱尼尔攻略",
+      "⚪ White-Maned Lynel Guide"
+    ],
+    [
+      "← Boss 图鉴",
+      "← Boss Compendium"
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 人马",
+      "› Lynel"
+    ],
+    [
+      "› 白鬃人马",
+      "› White-Maned Lynel"
+    ],
+    [
+      "› Boss攻略",
+      "› Boss Guides"
+    ],
+    [
+      "📚 更多攻略",
+      "📚 More Guides"
+    ],
+    [
+      "› 哈里的终极秘籍（13篇）",
+      "› Harry's Ultimate Tips Column (13 articles)"
+    ],
+    [
+      "› 全部页面索引",
+      "› Full Page Index"
+    ],
+    [
+      "继承白鬃的 怒吼流星爆破 ，AI 变招速度极快，伤害高到能直接 一击秒杀防具未升级的林克 。",
+      "It inherits the White-Maned Lynel's roar-triggered fiery explosion, its AI switches moves extremely fast, and its damage is high enough to one-shot Link in unupgraded armor."
+    ],
+    [
+      "单纯靠闪避刮痧效率太低，消耗巨大——必须使用 流水线无伤伐木打法 。",
+      "Simply dodging and chipping away is too inefficient and costly — you must use the no-damage assembly-line logging strategy."
+    ],
+    [
+      "想要高效击杀白银人马，你需要提前准备以下两套专门装备。",
+      "To kill a Silver Lynel efficiently, you need to prepare the following two specialized loadouts in advance."
+    ],
+    [
+      "装备对了，白银莱尼尔就是一台可以稳定刷素材的「提款机」；",
+      "With the right gear, a Silver Lynel is a \"cash machine\" that reliably farms materials;"
+    ],
+    [
+      "装备不对，5000 血会让你消耗大量武器和料理。",
+      "with the wrong gear, its 5000 HP will eat through your weapons and meals."
+    ],
+    [
+      "这是击败前几只人马后掉落的多发弓。",
+      "This multi-shot bow drops from earlier Lynels."
+    ],
+    [
+      " 齐射的箭雨可以同时命中脸部多个判定点 ，瞬间触发暴击跪地，比单发弓效率高出数倍。",
+      "A volley's rain of arrows can hit multiple hit zones on its face at once, instantly triggering a staggering it to its knees — several times more efficient than a single-shot bow."
+    ],
+    [
+      "没有兽神弓就先去打蓝鬃/白鬃拿弓。",
+      "If you don't have a Savage Lynel Bow yet, go fight Blue-Maned / White-Maned Lynels to get one first."
+    ],
+    [
+      "《王国之泪》： 处于 红血（即将报废）状态 的近卫双手剑，融合白银莱尼尔的刃角。",
+      "Tears of the Kingdom: a Royal Guard's Claymore in low-HP (about to break) state, fused with a Silver Lynel's blade horn."
+    ],
+    [
+      "红血状态伤害翻倍 + 骑乘不扣耐久，一刀能砍出几百伤害， 上马 5 刀直接蒸发人马半管血 。",
+      "Low-HP state doubles damage, and mounted attacks cost no durability — one swing can deal several hundred damage, and 5 mounted hits can wipe out half the Lynel's HP bar."
+    ],
+    [
+      "用 5 个大剑香蕉 烹饪，或穿戴满级的 蛮族套装 / 鬼神套装 。",
+      "Cooked from 5 Mighty Bananas, or wear a fully upgraded Barbarian Armor set / Fierce Deity Armor set."
+    ],
+    [
+      "攻击加成可以显著减少击杀所需的循环轮数。",
+      "The attack boost significantly reduces the number of cycles needed for the kill."
+    ],
+    [
+      "无论你在哪个版本，下面这套流程都是最稳妥、最快速的无伤解法。",
+      "Whichever version you play, the routine below is the safest, fastest no-damage solution."
+    ],
+    [
+      " 把它练成肌肉记忆，白银莱尼尔就是一棵会掉宝的树。",
+      "Drill it into muscle memory, and a Silver Lynel is just a tree that drops treasure."
+    ],
+    [
+      "在空中掏出 兽神弓 ，进入林克时间。",
+      "Draw your Savage Lynel Bow in midair to enter bullet time."
+    ],
+    [
+      "由于兽神弓是 多发齐射 ，你只需要大致瞄准人马的 下巴和胡子部位 ，连续射击。",
+      "Since the Savage Lynel Bow fires a multi-shot volley, you only need to roughly aim at the Lynel's chin and beard area and keep shooting."
+    ],
+    [
+      "落地后立刻 解除锁定冲到它身边 ，按 A 键骑乘。",
+      "After landing, immediately unlock and rush to its side, press A to mount it."
+    ],
+    [
+      "换上你那把特制的快要报废的高攻双手剑， 疯狂砍 5 下 。",
+      "Switch to your specially prepared, nearly broken high-attack two-handed sword and slash wildly 5 times."
+    ],
+    [
+      "骑乘不耗耐久，红血状态伤害翻倍，这 5 刀是整套流程伤害最高的输出阶段。",
+      "Mounted attacks cost no durability, and low-HP state doubles damage — these 5 hits are the highest-damage phase of the whole routine."
+    ],
+    [
+      "被甩到空中的瞬间， 视角立刻往后拉对准人马后脑勺 ，按住 ZR 进入林克时间。",
+      "The instant you're thrown into the air, pull the camera back to aim at the back of the Lynel's head and hold ZR to enter bullet time."
+    ],
+    [
+      "用弓箭对着后脑勺 补射 3～4 轮 ，追加额外伤害并有机会再次触发跪地。",
+      "Fire 3–4 more volleys at the back of its head for extra damage, with a chance to trigger another kneel."
+    ],
+    [
+      "如果不小心在地面被白银莱尼尔站起来了， 千万别慌 。",
+      "If you accidentally end up on the ground with the Silver Lynel standing, don't panic."
+    ],
+    [
+      "它只要做出以下两个动作，就是你重新掌控战局的最佳时机：",
+      "If it makes either of the following two moves, that's your best chance to retake control:"
+    ],
+    [
+      "✅ 正确操作： 只要听到它怒吼， 立刻切出兽神弓 。",
+      "✅ Correct move: the moment you hear it roar, immediately switch to your Savage Lynel Bow."
+    ],
+    [
+      "它全身站立不动，是活靶子。",
+      "It stands fully upright and motionless — a sitting target."
+    ],
+    [
+      "对着脸部射出一发齐射， 爆炸直接被你的箭矢打断，它跪倒在原地 ——危机瞬间变成免费骑乘机会。",
+      "Fire a volley at its face and your arrows directly interrupt the explosion, making it collapse on the spot — the crisis instantly becomes a free mounting opportunity."
+    ],
+    [
+      "💡 要点： 白银莱尼尔越低血越频繁怒吼，这反而意味着你获得的免费跪地机会越来越多。",
+      "💡 Key point: the lower the Silver Lynel's HP, the more often it roars — which actually means you get more and more free kneeling opportunities."
+    ],
+    [
+      "低血阶段其实比高血阶段更好打。",
+      "The low-HP phase is actually easier than the high-HP phase."
+    ],
+    [
+      "武器不会自动补充 ——只能捡地上掉落的武器。",
+      "Weapons are not restocked automatically — you can only pick up weapons dropped on the ground."
+    ],
+    [
+      "前 4 只全程用地上武器，把自己携带的 近卫红血剑和兽神弓 完整留给白银莱尼尔。",
+      "Use ground weapons for the first 4 fights, and save your own low-HP Royal Guard's sword and Savage Lynel Bow intact for the Silver Lynel."
+    ],
+    [
+      "《王国之泪》中加 +55 点攻击力 的最强通用余料素材之一。",
+      "In Tears of the Kingdom, one of the strongest universal Fuse materials, adding +55 attack."
+    ],
+    [
+      "余料建造到近卫双手剑上，直接打造出本游戏攻击力最高的武器。",
+      "Fused onto a Royal Guard's Claymore, it directly creates the highest-attack weapon in the game."
+    ],
+    [
+      "这把剑进入红血状态后骑乘输出，一刀的伤害可以超过 500。",
+      "Once that sword enters low-HP state, a single mounted hit can deal over 500 damage."
+    ],
+    [
+      "想要高效击杀白银人马，你需要提前准备以下两套专门装备。装备对了，白银莱尼尔就是一台 可以稳定刷素材的「提款机」；装备不对，5000 血会让你消耗大量武器和料理。",
+      "To farm Silver Lynels efficiently, prepare the following two dedicated gear sets in advance. With the right gear, a Silver Lynel is an ATM that reliably drops materials; with the wrong gear, its 5,000 HP will burn through your weapons and dishes."
+    ],
+    [
+      "无论你在哪个版本，下面这套流程都是最稳妥、最快速的无伤解法。把它练成肌肉记忆，白银莱尼尔就是一棵会掉宝的树。",
+      "Whatever version you play, the flow below is the safest and fastest no-damage solution. Drill it into muscle memory, and a Silver Lynel becomes a tree that drops loot."
+    ],
+    [
+      "如果不小心在地面被白银莱尼尔站起来了，千万别慌。它只要做出以下两个动作，就是你重新掌控战局的最佳时机：",
+      "If a Silver Lynel gets back up while you're on the ground, don't panic. The moment it does either of the following two moves is your best chance to retake control:"
+    ],
+    [
+      "挑战竞技场需要连续击败 5 只莱尼尔，按以下顺序出现：",
+      "The arena challenge requires defeating 5 Lynels in a row, appearing in the following order:"
+    ],
+    [
+      "击败白银莱尼尔后，除了顶级武器外，还会掉落以下游戏中后期不可或缺的素材：",
+      "After defeating a Silver Lynel, besides top-tier weapons, it also drops the following materials that are essential in the mid-to-late game:"
+    ],
+    [
+      "Boss图鉴",
+      "Bosses"
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "莱尼尔",
+      "Lynel"
+    ],
+    [
+      "血量",
+      "HP"
+    ],
+    [
+      "最终强度",
+      "Final strength"
+    ],
+    [
+      "继承白鬃的",
+      "Inheriting White-Maned's "
+    ],
+    [
+      "，AI 变招速度极快，伤害高到能直接",
+      ", its AI switches moves extremely fast, and its damage is high enough to "
+    ],
+    [
+      "。单纯靠闪避刮痧效率太低，消耗巨大——必须使用",
+      ". Relying purely on dodging to chip away is far too inefficient and costly — you must use the "
+    ],
+    [
+      "怒吼流星爆破",
+      "Roar-triggered fiery explosion"
+    ],
+    [
+      "一击秒杀防具未升级的林克",
+      "one-shot Link whose armor is not upgraded"
+    ],
+    [
+      "流水线无伤伐木打法",
+      "assembly-line no-damage lumberjack strategy"
+    ],
+    [
+      "齐射的箭雨可以同时命中脸部多个判定点",
+      "A volley of arrows can hit multiple hit zones on its face at once"
+    ],
+    [
+      "，瞬间触发暴击跪地，比单发弓效率高出数倍。没有兽神弓就先去打蓝鬃/白鬃拿弓。",
+      ", instantly triggering a staggering it to its knees, several times more efficient than a single-shot bow. Without a Savage Lynel Bow, go fight Blue-Maned / White-Maned Lynels for one first."
+    ],
+    [
+      "《荒野之息》：",
+      "Breath of the Wild: "
+    ],
+    [
+      "面板攻击力最高的近卫双手剑或兽神大剑（最好有 +攻击词条，堆到 100 伤害以上）。",
+      "The Royal Guard's Claymore or Savage Lynel Sword with the highest base attack (preferably with an attack-up modifier, stacked above 100 damage). "
+    ],
+    [
+      "处于",
+      "the Royal Guard's Claymore in a "
+    ],
+    [
+      "的近卫双手剑，融合白银莱尼尔的刃角。红血状态伤害翻倍 + 骑乘不扣耐久，一刀能砍出几百伤害，",
+      ", fused with a Silver Lynel's blade horn. Low-HP state doubles damage + mounting costs no durability, and one hit can deal hundreds of damage, "
+    ],
+    [
+      "《王国之泪》：",
+      "Tears of the Kingdom: "
+    ],
+    [
+      "红血（即将报废）状态",
+      "low-HP (nearly broken) state"
+    ],
+    [
+      "上马 5 刀直接蒸发人马半管血",
+      "5 mounted hits directly vaporize half of the Lynel's HP"
+    ],
+    [
+      "用",
+      "Use "
+    ],
+    [
+      "烹饪，或穿戴满级的",
+      "to cook, or wear fully upgraded "
+    ],
+    [
+      "5 个大剑香蕉",
+      "5 Mighty Bananas "
+    ],
+    [
+      "蛮族套装 / 鬼神套装",
+      "Barbarian Set / Fierce Deity Set"
+    ],
+    [
+      "使用力巴尔的勇猛（鸟神兽起风技能）原地起飞。",
+      "Use Revali's Gale (the bird Divine Beast's wind skill) to take off in place. "
+    ],
+    [
+      "举着附魔了",
+      "Holding a shield fused with "
+    ],
+    [
+      "的盾牌，按住 ZL 原地飞上高空。",
+      ", hold ZL to fly straight up into the sky."
+    ],
+    [
+      "火箭或弹簧",
+      "a Rocket or Spring"
+    ],
+    [
+      "在空中掏出",
+      "Draw "
+    ],
+    [
+      "，进入林克时间。由于兽神弓是",
+      ", entering bullet time. Since the Savage Lynel Bow fires a "
+    ],
+    [
+      "，你只需要大致瞄准人马的",
+      ", you only need to roughly aim at the Lynel's "
+    ],
+    [
+      "，连续射击。",
+      ", then keep shooting. "
+    ],
+    [
+      "齐射的箭雨会瞬间触发暴击，",
+      "The volley of arrows instantly triggers a stagger, "
+    ],
+    [
+      "——不需要精确瞄准，命中率极高。",
+      "— no precise aiming needed, with an extremely high hit rate."
+    ],
+    [
+      "兽神弓",
+      "your Savage Lynel Bow"
+    ],
+    [
+      "多发齐射",
+      "multi-shot volley"
+    ],
+    [
+      "下巴和胡子部位",
+      "chin and beard area"
+    ],
+    [
+      "让人马直接跪地",
+      "making the Lynel kneel directly "
+    ],
+    [
+      "落地后立刻",
+      "After landing, immediately "
+    ],
+    [
+      "，按 A 键骑乘。换上你那把特制的快要报废的高攻双手剑，",
+      ", press A to mount. Switch to your custom nearly broken high-attack two-handed sword, "
+    ],
+    [
+      "解除锁定冲到它身边",
+      "release the lock and rush to its side"
+    ],
+    [
+      "疯狂砍 5 下",
+      "and slash wildly 5 times"
+    ],
+    [
+      "被甩到空中的瞬间，",
+      "The instant you are thrown into the air, "
+    ],
+    [
+      "，按住 ZR 进入林克时间。用弓箭对着后脑勺",
+      ", hold ZR to enter bullet time. Use your bow to shoot at the back of its head for "
+    ],
+    [
+      "，追加额外伤害并有机会再次触发跪地。",
+      ", dealing extra damage with a chance to trigger the kneel again."
+    ],
+    [
+      "视角立刻往后拉对准人马后脑勺",
+      "immediately pull the camera back to aim at the back of the Lynel's head"
+    ],
+    [
+      "补射 3～4 轮",
+      "3–4 more rounds"
+    ],
+    [
+      "前兆：",
+      "Tell: "
+    ],
+    [
+      "把武器收起来，像马一样四脚着地向你全速冲来。",
+      "It puts its weapon away and charges at you at full speed on all fours like a horse. "
+    ],
+    [
+      "白银版冲锋速度极快，侧跳的窗口非常小，容错率低。",
+      "The Silver version charges extremely fast, the side-hop window is tiny, and the margin for error is low. "
+    ],
+    [
+      "站在原地",
+      "Stand in place and "
+    ],
+    [
+      "，等它快撞到你的瞬间按下",
+      ", and the instant it is about to hit you, press "
+    ],
+    [
+      "盾反成功后人马原地眩晕 1 秒，此时距离",
+      "After a successful Perfect Guard, the Lynel is stunned in place for 1 second, and at this point the distance is "
+    ],
+    [
+      "，直接掏出弓箭",
+      ", so draw your bow directly and "
+    ],
+    [
+      "——根本不需要仔细瞄准，它会再次跪地，立刻上马骑乘输出。",
+      "— no careful aiming needed at all; it will kneel again, so mount it immediately and deal damage."
+    ],
+    [
+      "❌ 不要闪避：",
+      "❌ Do not dodge: "
+    ],
+    [
+      "✅ 正确操作：",
+      "✅ Correct move: "
+    ],
+    [
+      "举盾",
+      "raise your shield"
+    ],
+    [
+      "A 键进行完美盾反（Parry）",
+      "A for a Perfect Guard (Perfect Guard) "
+    ],
+    [
+      "后续：",
+      "Follow-up: "
+    ],
+    [
+      "极近",
+      "extremely close"
+    ],
+    [
+      "盲射脸部",
+      "blind-shoot its face "
+    ],
+    [
+      "白银人马血量掉到一定程度后会高频使用怒吼流星大范围爆炸。",
+      "Once a Silver Lynel's HP drops to a certain level, it will frequently use the Roar Meteor large-area explosion. "
+    ],
+    [
+      "范围极大，跑不跑都很危险，白跑还错过了反击机会。",
+      "The range is enormous, and running or not, it is dangerous either way — running for nothing also wastes a counterattack chance. "
+    ],
+    [
+      "只要听到它怒吼，",
+      "The moment you hear it roar, "
+    ],
+    [
+      "。它全身站立不动，是活靶子。对着脸部射出一发齐射，",
+      ". It stands completely still, a sitting duck. Fire a volley at its face, "
+    ],
+    [
+      "——危机瞬间变成免费骑乘机会。",
+      "— danger instantly becomes a free mounting opportunity."
+    ],
+    [
+      "❌ 不要跑：",
+      "❌ Do not run: "
+    ],
+    [
+      "立刻切出兽神弓",
+      "immediately switch to your Savage Lynel Bow"
+    ],
+    [
+      "爆炸直接被你的箭矢打断，它跪倒在原地",
+      "and the explosion is interrupted directly by your arrows as it collapses to its knees on the spot "
+    ],
+    [
+      "💡 要点：",
+      "💡 Key point: "
+    ],
+    [
+      "白银莱尼尔越低血越频繁怒吼，这反而意味着你获得的免费跪地机会越来越多。低血阶段其实比高血阶段更好打。",
+      "The lower a Silver Lynel's HP, the more frequently it roars — which actually means you get more and more free kneeling opportunities. The low-HP phase is actually easier to fight than the high-HP phase."
+    ],
+    [
+      "每只之间不能回复",
+      "No recovery between bouts "
+    ],
+    [
+      "——血量和状态完整保持到下一场。",
+      "— HP and status carry over fully to the next bout."
+    ],
+    [
+      "武器不会自动补充",
+      "Weapons do not replenish automatically "
+    ],
+    [
+      "——只能捡地上掉落的武器。前 4 只全程用地上武器，把自己携带的",
+      "— you can only pick up weapons dropped on the ground. For the first 4 bouts, use only ground weapons, and keep your own "
+    ],
+    [
+      "完整留给白银莱尼尔。",
+      "fully intact for the Silver Lynel."
+    ],
+    [
+      "近卫红血剑和兽神弓",
+      "low-HP Royal Guard's sword and Savage Lynel Bow "
+    ],
+    [
+      "《王国之泪》中加",
+      "In Tears of the Kingdom, "
+    ],
+    [
+      "的最强通用余料素材之一。余料建造到近卫双手剑上，直接打造出本游戏攻击力最高的武器。这把剑进入红血状态后骑乘输出，一刀的伤害可以超过 500。",
+      "one of the strongest universal Fuse materials. Fused onto a Royal Guard's Claymore, it directly creates the highest-attack weapon in the game. Once this sword enters low-HP state, mounted attacks can deal over 500 damage in a single hit."
+    ],
+    [
+      "+55 点攻击力",
+      "it adds +55 attack, making it "
+    ],
+    [
+      "星之碎片",
+      "Star Fragment "
+    ],
+    [
+      "用于强化顶级防具（如鬼神套装、英雄套装）至最高等级。",
+      "is used to upgrade top-tier armor (such as the Fierce Deity Set and Hero Set) to max level. "
+    ],
+    [
+      "用于扩充林克的电池上限，让火箭盾飞更久。",
+      "is used to expand Link's Energy Cell capacity, letting the Rocket Shield fly longer. "
+    ],
+    [
+      "白银莱尼尔是这两种素材的",
+      "The Silver Lynel is the "
+    ],
+    [
+      "，是游戏中后期必须定期刷取的对象。",
+      "of these two materials, and a target you must farm regularly in the mid-to-late game."
+    ],
+    [
+      "大容量能源",
+      "Large Zonaite "
+    ],
+    [
+      "最稳定来源",
+      "most reliable source"
+    ],
+    [
+      "。攻击加成可以显著减少击杀所需的循环轮数。",
+      "The attack boost significantly reduces the number of cycles needed for the kill."
+    ],
+    [
+      "。骑乘不耗耐久，红血状态伤害翻倍，这 5 刀是整套流程伤害最高的输出阶段。",
+      "Mounted attacks cost no durability, and low-HP state doubles damage — these 5 hits are the highest-damage phase of the whole routine."
+    ],
+    [
+      "🦁 莱尼尔（红鬃）",
+      "🦁 Lynel (Red-Maned)"
+    ],
+    [
+      "浮岛斗技场（第 4 只）",
+      "Floating Colosseum (4th fight)"
+    ],
+    [
+      "🏟️ 浮岛斗技场 · 五连战说明",
+      "🏟️ Floating Colosseum · Five-Fight Gauntlet"
+    ],
+    [
+      "🟤 红鬃",
+      "🟤 Red-Maned"
+    ],
+    [
+      "✨ 白银",
+      "✨ Silver"
+    ],
+    [
+      "⚔️ 铠甲白银（最终）",
+      "⚔️ Armored Silver (final)"
+    ],
+    [
+      "完整留给铠甲白银莱尼尔。",
+      "save them intact for the Armored Silver Lynel."
+    ],
+    [
+      "前 4 只用骑乘流消耗最小，基本不受伤就能满状态进入铠甲白银关卡。",
+      "Mount combat on the first 4 uses the fewest resources — you can enter the Armored Silver fight nearly unhurt and at full health."
+    ],
+    [
+      "蓝鬃莱尼尔",
+      "Blue-Maned Lynel"
+    ],
+    [
+      "白鬃莱尼尔",
+      "White-Maned Lynel"
+    ],
+    [
+      "红鬃",
+      "Red-Maned"
+    ],
+    [
+      "蓝鬃",
+      "Blue-Maned"
+    ],
+    [
+      "白鬃",
+      "White-Maned"
+    ],
+    [
+      "蓝鬃莱尼尔攻略",
+      "Blue-Maned Lynel Guide"
+    ],
+    [
+      "白鬃莱尼尔攻略",
+      "White-Maned Lynel Guide"
+    ],
+    [
+      "危险度",
+      "Danger Level"
+    ]
+  ],
+  "notes": [
+    "刃角/碎角 rendered descriptively as blade horn/shattered horn; official item-name mapping not confirmed from the glossary.",
+    "红褐/青色 (brown/teal) for the standard Lynel is descriptive, not an official tier name.",
+    "大容量能源 rendered as Large Zonaite (used to expand Energy Cell capacity); could also be read as a large energy item.",
+    "鬼神套装 rendered as Evil Spirit Armor set.",
+    "Fragment pass: Roar Meteor blast rendered descriptively; 流水线无伤伐木打法 as assembly-line no-damage lumberjack strategy; 大容量能源 as Large Zonaite."
   ]
- ],
- "notes": [
-  "刃角/碎角 rendered descriptively as blade horn/shattered horn; official item-name mapping not confirmed from the glossary.",
-  "红褐/青色 (brown/teal) for the standard Lynel is descriptive, not an official tier name.",
-  "大容量能源 rendered as Large Zonaite (used to expand Energy Cell capacity); could also be read as a large energy item.",
-  "鬼神套装 rendered as Evil Spirit Armor set.",
-  "Fragment pass: Roar Meteor blast rendered descriptively; 流水线无伤伐木打法 as assembly-line no-damage lumberjack strategy; 大容量能源 as Large Zonaite."
- ]
 }
