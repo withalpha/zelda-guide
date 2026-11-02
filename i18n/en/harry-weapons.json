@@ -1,500 +1,504 @@
 {
- "notes": [
-  "玛卡利萨 (the Gerudo artisan) transliterated as Makalisa — no confident official English name found in the glossary or page context.",
-  "卢玛琳沙地 rendered as Toruma Dunes — official English name not confirmed from the glossary or page context.",
-  "人马搓背 rendered descriptively as mounting a Lynel (riding on a Lynel's back to attack).",
-  "鬼神套装 rendered as the Phantom armor set (descriptive; official English set name not in glossary).",
-  "Emoji/symbol prefixes (⚔, 🧙, 📖, ▲, ›, →) stripped from pair keys; the Chinese text itself is translated in full."
- ],
- "pairs": [
-  [
-   "七宝匕首终极攻略：138攻击力单手剑，强力组合词条，耐久几乎不损耗还能无限续航，海拉鲁日常战神武器的获取、融合与实战应用完全指南。",
-   "The ultimate Scimitar of the Seven guide: a 138-attack one-handed sword with the Powerful Fuse trait, durability that barely drops, and infinite upkeep — a complete guide to obtaining, fusing, and using Hyrule's everyday war-god weapon in combat."
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "哈里的终极秘籍",
-   "Harry's Ultimate Tips"
-  ],
-  [
-   "七宝匕首终极攻略",
-   "Scimitar of the Seven Ultimate Guide"
-  ],
-  [
-   "武器攻略",
-   "Weapon Guide"
-  ],
-  [
-   "海拉鲁无脑砍王！《王国之泪》无可争议的日常终极神器——七宝匕首",
-   "Hyrule's No-Brainer Slashing King! The Undisputed Everyday Ultimate Weapon in Tears of the Kingdom — the Scimitar of the Seven"
-  ],
-  [
-   "海拉鲁无脑砍王！",
-   "Hyrule's No-Brainer Slashing King!"
-  ],
-  [
-   "《王国之泪》无可争议的日常终极神器——七宝匕首",
-   "The undisputed everyday ultimate weapon in Tears of the Kingdom — the Scimitar of the Seven"
-  ],
-  [
-   "单手剑138攻击力、强力组合词条、耐久几乎不损耗，还能无限续航——这才是真正的海拉鲁日常战神",
-   "138 attack on a one-handed sword, the Powerful Fuse trait, durability that barely drops, and infinite upkeep — this is the true everyday war god of Hyrule"
-  ],
-  [
-   "作者：哈里",
-   "Author: Harry"
-  ],
-  [
-   "武器合成 · 余料建造",
-   "Weapon Crafting · Fuse"
-  ],
-  [
-   "深度攻略",
-   "In-Depth Guide"
-  ],
-  [
-   "在《塞尔达传说：王国之泪》中，因为\"余料建造\"玩法的加入，武器系统迎来了大洗牌。很多萌新可能会盲目追求面板攻击力极高的\"近卫双手剑\"，但老司机都知道，近卫双手剑那是留给\"人马搓背\"专用的。如果论日常跑图、越级打怪、砍树割草、持久输出的综合性价比之王，那绝对非乌尔波扎的遗物——「七宝匕首」莫属！今天这篇硬核图文攻略，就手把手带你把这把\"海拉鲁续航流天花板\"做出来！",
-   "In The Legend of Zelda: Tears of the Kingdom, the arrival of the Fuse mechanic completely reshuffled the weapon system. Many newcomers may blindly chase the Royal Guard's Claymore for its sky-high listed attack, but veterans know that blade is reserved for mounting a Lynel's back to attack (which costs no durability). When it comes to the best all-round value for everyday overworld travel, fighting above your level, chopping trees and cutting grass, and sustained damage, nothing beats Urbosa's keepsake — the Scimitar of the Seven! This hardcore illustrated guide will walk you through crafting this pinnacle of Hyrule's infinite-upkeep playstyle, step by step!"
-  ],
-  [
-   "在《塞尔达传说：王国之泪》中，因为\"余料建造\"玩法的加入，武器系统迎来了大洗牌。",
-   "In The Legend of Zelda: Tears of the Kingdom, the arrival of the Fuse mechanic completely reshuffled the weapon system."
-  ],
-  [
-   "很多萌新可能会盲目追求面板攻击力极高的\"近卫双手剑\"，但老司机都知道，近卫双手剑那是留给\"人马搓背\"专用的。",
-   "Many newcomers may blindly chase the Royal Guard's Claymore for its sky-high listed attack, but veterans know that blade is reserved for mounting a Lynel's back to attack (which costs no durability)."
-  ],
-  [
-   "如果论日常跑图、越级打怪、砍树割草、持久输出的综合性价比之王，那绝对非乌尔波扎的遗物——「七宝匕首」莫属！",
-   "When it comes to the best all-round value for everyday overworld travel, fighting above your level, chopping trees and cutting grass, and sustained damage, nothing beats Urbosa's keepsake — the Scimitar of the Seven!"
-  ],
-  [
-   "今天这篇硬核图文攻略，就手把手带你把这把\"海拉鲁续航流天花板\"做出来！",
-   "This hardcore illustrated guide will walk you through crafting this pinnacle of Hyrule's infinite-upkeep playstyle, step by step!"
-  ],
-  [
-   "基础攻击力",
-   "Base Attack"
-  ],
-  [
-   "终极形态攻击力",
-   "Final-Form Attack"
-  ],
-  [
-   "基础耐久度",
-   "Base Durability"
-  ],
-  [
-   "强力组合余料加成",
-   "Powerful Fuse Material Bonus"
-  ],
-  [
-   "一、为什么七宝匕首是当之无愧的\"日常战神\"？",
-   "1. Why Is the Scimitar of the Seven the Undisputed “Everyday War God”?"
-  ],
-  [
-   "普通的格鲁德武器虽然也有\"强力组合\"词条（让装上去的材料攻击力翻倍），但是有一个致命的负面 BUFF——掉耐久掉得极快，砍两下就碎了。然而，作为英杰武器的「七宝匕首」却完美避开了这个坑！",
-   "Ordinary Gerudo weapons also carry the “Powerful Fuse” trait (which doubles the attack of the fused material), but they have a fatal downside — their durability drains extremely fast, and they shatter after a couple of swings. The Scimitar of the Seven, however, as a Champion's weapon, sidesteps that pitfall completely!"
-  ],
-  [
-   "普通的格鲁德武器虽然也有\"强力组合\"词条（让装上去的材料攻击力翻倍），但是有一个致命的负面 BUFF——掉耐久掉得极快，砍两下就碎了。",
-   "Ordinary Gerudo weapons also carry the “Powerful Fuse” trait (which doubles the attack of the fused material), but they have a fatal downside — their durability drains extremely fast, and they shatter after a couple of swings."
-  ],
-  [
-   "然而，作为英杰武器的「七宝匕首」却完美避开了这个坑！",
-   "The Scimitar of the Seven, however, as a Champion's weapon, sidesteps that pitfall completely!"
-  ],
-  [
-   "它不仅拥有【强力组合】词条，而且完全不扣除基础耐久！基础耐久高达60点，不仅面板攻击高，而且极其耐操，是全游戏最完美的单手剑胚子。",
-   "It not only carries the [Powerful Fuse] trait, it also never deducts base durability! With a base durability of 60, high listed attack, and extreme toughness, it is the most perfect one-handed sword base in the entire game."
-  ],
-  [
-   "它不仅拥有【强力组合】词条，而且完全不扣除基础耐久！",
-   "It not only carries the [Powerful Fuse] trait, it also never deducts base durability!"
-  ],
-  [
-   "基础耐久高达60点，不仅面板攻击高，而且极其耐操，是全游戏最完美的单手剑胚子。",
-   "With a base durability of 60, high listed attack, and extreme toughness, it is the most perfect one-handed sword base in the entire game."
-  ],
-  [
-   "基础攻击力：28点",
-   "Base attack: 28"
-  ],
-  [
-   "武器特效【强力组合】：附加的余料攻击力直接翻倍！",
-   "Weapon effect [Powerful Fuse]: the fused material's attack is doubled outright!"
-  ],
-  [
-   "终极形态面板：28 + (55 × 2) = 138点——单手剑攻速极快，一秒万伤不是梦！",
-   "Final-form listed stats: 28 + (55 × 2) = 138 — a one-handed sword with blazing attack speed; ten thousand damage per second is no dream!"
-  ],
-  [
-   "七宝匕首——《王国之泪》日常终极神器",
-   "Scimitar of the Seven — the everyday ultimate weapon in Tears of the Kingdom"
-  ],
-  [
-   "七宝匕首——海拉鲁日常续航神器（游戏实机截图）",
-   "Scimitar of the Seven — Hyrule's everyday infinite-upkeep weapon (in-game screenshot)"
-  ],
-  [
-   "二、合成神兵需要哪些原材料？",
-   "2. What Materials Do You Need to Forge This Divine Weapon?"
-  ],
-  [
-   "想要获得七宝匕首，我们需要走一趟格鲁德小镇（女儿国）完成特定任务，并准备好以下\"重工业材料\"：",
-   "To obtain the Scimitar of the Seven, we need to make a trip to Gerudo Town (the all-female town) to complete a specific quest, and prepare the following “heavy-industry materials”:"
-  ],
-  [
-   "所需材料清单",
-   "Required Materials Checklist"
-  ],
-  [
-   "格鲁德之剑",
-   "Gerudo Scimitar"
-  ],
-  [
-   "格鲁德盾",
-   "Gerudo Shield"
-  ],
-  [
-   "钻石",
-   "Diamond"
-  ],
-  [
-   "打火石",
-   "Flint"
-  ],
-  [
-   "白银人马的刃角",
-   "Silver Lynel Saber Horn"
-  ],
-  [
-   "合成后追加：白银人马的刃角 × 1",
-   "Fuse afterwards: Silver Lynel Saber Horn × 1"
-  ],
-  [
-   "（余料建造用，攻击力+55）",
-   "(For Fuse, attack +55)"
-  ],
-  [
-   "三、详细获取与合成步骤（手把手保姆级教学）",
-   "3. Detailed Steps to Obtain and Forge It (A Hand-Holding, Nanny-Level Tutorial)"
-  ],
-  [
-   "解锁\"英杰武器铸造资格\"",
-   "Unlock “Champion Weapon Forging Access”"
-  ],
-  [
-   "首先必须通关主线任务【格鲁德小镇的雷之神殿】，帮露珠女王解决木乃伊危机。随后前往格鲁德小镇的珠宝店，接取支线任务【行踪不定的老板】。带上几支炸弹箭，前往小镇西边的卢玛琳沙地，把\"莫尔德拉吉克\"（沙兽）干掉，救出珠宝店老板。回到小镇，找工匠玛卡利萨对话，正式开启英杰武器铸造服务。",
-   "First, you must clear the main quest [Lightning Temple of Gerudo Town] and help Queen Riju resolve the mummy crisis. Then head to the jewelry shop in Gerudo Town and accept the side quest [The Missing Owner]. Bring a few Bomb Arrows, go to the Toruma Dunes west of town, take down the Molduga (the sand beast), and rescue the jewelry shop owner. Return to town and talk to the artisan Makalisa to officially unlock Champion weapon forging."
-  ],
-  [
-   "首先必须通关主线任务【格鲁德小镇的雷之神殿】，帮露珠女王解决木乃伊危机。",
-   "First, you must clear the main quest [Lightning Temple of Gerudo Town] and help Queen Riju resolve the mummy crisis."
-  ],
-  [
-   "随后前往格鲁德小镇的珠宝店，接取支线任务【行踪不定的老板】。",
-   "Then head to the jewelry shop in Gerudo Town and accept the side quest [The Missing Owner]."
-  ],
-  [
-   "带上几支炸弹箭，前往小镇西边的卢玛琳沙地，把\"莫尔德拉吉克\"（沙兽）干掉，救出珠宝店老板。",
-   "Bring a few Bomb Arrows, go to the Toruma Dunes west of town, take down the Molduga (the sand beast), and rescue the jewelry shop owner."
-  ],
-  [
-   "回到小镇，找工匠玛卡利萨对话，正式开启英杰武器铸造服务。",
-   "Return to town and talk to the artisan Makalisa to officially unlock Champion weapon forging."
-  ],
-  [
-   "莫尔德拉吉克（沙兽）——格鲁德沙漠的守门人",
-   "Molduga (Sand Beast) — Gatekeeper of the Gerudo Desert"
-  ],
-  [
-   "莫尔德拉吉克——格鲁德沙漠卢玛琳沙地的沙兽，击败它才能解锁英杰武器铸造",
-   "Molduga — the sand beast of the Toruma Dunes in the Gerudo Desert; defeating it is what unlocks Champion weapon forging"
-  ],
-  [
-   "交付材料，打造基础胚子",
-   "Hand Over the Materials and Forge the Base Blade"
-  ],
-  [
-   "把准备好的1把格鲁德之剑、1面格鲁德盾、4颗钻石和10个打火石拍在工匠桌上。一阵密集的打铁声后，基础面板28攻击力的【七宝匕首】正式入手！",
-   "Slap the prepared 1 Gerudo Scimitar, 1 Gerudo Shield, 4 Diamonds, and 10 Flint down on the artisan's table. After a burst of hammering, the Scimitar of the Seven, with a base listed attack of 28, is officially yours!"
-  ],
-  [
-   "把准备好的1把格鲁德之剑、1面格鲁德盾、4颗钻石和10个打火石拍在工匠桌上。",
-   "Slap the prepared 1 Gerudo Scimitar, 1 Gerudo Shield, 4 Diamonds, and 10 Flint down on the artisan's table."
-  ],
-  [
-   "一阵密集的打铁声后，基础面板28攻击力的【七宝匕首】正式入手！",
-   "After a burst of hammering, the Scimitar of the Seven, with a base listed attack of 28, is officially yours!"
-  ],
-  [
-   "灵魂注入！余料建造合成138神兵",
-   "Soul Infusion! Fuse Your Way to the 138-Attack Divine Weapon"
-  ],
-  [
-   "此时的七宝匕首还只是个半成品。立刻把【白银人马的刃角】（攻击力+55）丢在地上，开启林克的【余料建造】技能，对准人马角狠狠一吸！伴随着清脆特效音，七宝匕首面板将瞬间飙升至138点！",
-   "At this point the Scimitar of the Seven is still only a half-finished product. Immediately drop the [Silver Lynel Saber Horn] (attack +55) on the ground, activate Link's [Fuse] ability, and suck the Lynel horn right onto it! With a crisp sound effect, the Scimitar of the Seven's listed stats will instantly soar to 138!"
-  ],
-  [
-   "此时的七宝匕首还只是个半成品。",
-   "At this point the Scimitar of the Seven is still only a half-finished product."
-  ],
-  [
-   "立刻把【白银人马的刃角】（攻击力+55）丢在地上，开启林克的【余料建造】技能，对准人马角狠狠一吸！",
-   "Immediately drop the [Silver Lynel Saber Horn] (attack +55) on the ground, activate Link's [Fuse] ability, and suck the Lynel horn right onto it!"
-  ],
-  [
-   "伴随着清脆特效音，七宝匕首面板将瞬间飙升至138点！",
-   "With a crisp sound effect, the Scimitar of the Seven's listed stats will instantly soar to 138!"
-  ],
-  [
-   "独家秘笈：七宝匕首快碎了怎么办？（无限续航流）",
-   "Exclusive Secret: What to Do When Your Scimitar of the Seven Is About to Break? (Infinite-Upkeep Method)"
-  ],
-  [
-   "这个方法利用普通武器可以被章鱼修复的特性，把七宝匕首伪装成\"配件\"一起打包修复。请务必严格按顺序操作，步骤错一步可能导致武器损毁！",
-   "This method exploits the fact that ordinary weapons can be repaired by Octoroks, disguising the Scimitar of the Seven as an “attachment” to get it repaired in the same package. Be sure to follow the order strictly — one wrong step can destroy the weapon!"
-  ],
-  [
-   "这个方法利用普通武器可以被章鱼修复的特性，把七宝匕首伪装成\"配件\"一起打包修复。",
-   "This method exploits the fact that ordinary weapons can be repaired by Octoroks, disguising the Scimitar of the Seven as an “attachment” to get it repaired in the same package."
-  ],
-  [
-   "请务必严格按顺序操作，步骤错一步可能导致武器损毁！",
-   "Be sure to follow the order strictly — one wrong step can destroy the weapon!"
-  ],
-  [
-   "操作前提醒：由于步骤复杂，强烈建议先在游戏中存档，操作失败可以即时读档重来。",
-   "Before you start: because the steps are complex, it is strongly recommended to save in-game first, so you can reload immediately if an attempt fails."
-  ],
-  [
-   "拆下昂贵材料（可选）— 前往塔尔里镇",
-   "Remove the Expensive Material (Optional) — Head to Tarrey Town"
-  ],
-  [
-   "如果七宝匕首上已经粘了白银人马的刃角，直接修复会将其覆盖。建议先去塔尔里镇（一卡拉村）找小鼓隆族NPC帕黎恩，花20卢比把材料完好地拆下来放进背包。",
-   "If a Silver Lynel Saber Horn is already fused to your Scimitar of the Seven, repairing it directly will overwrite it. First go to Tarrey Town (in the Akkala region) and find Pelison, the young Goron NPC, and spend 20 Rupees to have the material removed intact into your inventory."
-  ],
-  [
-   "如果七宝匕首上已经粘了白银人马的刃角，直接修复会将其覆盖。",
-   "If a Silver Lynel Saber Horn is already fused to your Scimitar of the Seven, repairing it directly will overwrite it."
-  ],
-  [
-   "建议先去塔尔里镇（一卡拉村）找小鼓隆族NPC帕黎恩，花20卢比把材料完好地拆下来放进背包。",
-   "First go to Tarrey Town (in the Akkala region) and find Pelison, the young Goron NPC, and spend 20 Rupees to have the material removed intact into your inventory."
-  ],
-  [
-   "余料建造：张冠李戴 — 背包操作",
-   "Fuse: A Mix-Up — Inventory Operation"
-  ],
-  [
-   "装备一把普通武器在手（旅人剑、骑士盾等）。把红血快碎的七宝匕首丢在地上，使用\"余料建造\"技能，将七宝匕首作为配件粘在普通武器上。",
-   "Equip an ordinary weapon in hand (a Traveler's Sword, a Knight's Shield, etc.). Drop the red-health, nearly broken Scimitar of the Seven on the ground, use the “Fuse” ability, and fuse the Scimitar of the Seven onto the ordinary weapon as an attachment."
-  ],
-  [
-   "装备一把普通武器在手（旅人剑、骑士盾等）。",
-   "Equip an ordinary weapon in hand (a Traveler's Sword, a Knight's Shield, etc.)."
-  ],
-  [
-   "把红血快碎的七宝匕首丢在地上，使用\"余料建造\"技能，将七宝匕首作为配件粘在普通武器上。",
-   "Drop the red-health, nearly broken Scimitar of the Seven on the ground, use the “Fuse” ability, and fuse the Scimitar of the Seven onto the ordinary weapon as an attachment."
-  ],
-  [
-   "核心铁律",
-   "Core Iron Rule"
-  ],
-  [
-   "必须是普通武器在手，七宝匕首在地上当配件！反过来操作就失败了。",
-   "The ordinary weapon must be in hand, with the Scimitar of the Seven on the ground as the attachment! Doing it the other way round fails."
-  ],
-  [
-   "必须是普通武器在手，七宝匕首在地上当配件！",
-   "The ordinary weapon must be in hand, with the Scimitar of the Seven on the ground as the attachment!"
-  ],
-  [
-   "反过来操作就失败了。",
-   "Doing it the other way round fails."
-  ],
-  [
-   "喂给岩石章鱼 — 前往奥尔汀地区",
-   "Feed It to a Rock Octorok — Head to the Eldin Region"
-  ],
-  [
-   "带着组合好的\"连体武器\"前往死亡山脉寻找岩石章鱼。把武器丢在它面前，等它吸入并冒出亮晶晶修复特效后，在它吐出来时立刻捡起。此时，基础武器和上面的七宝匕首会同时回满耐久！",
-   "Carry the combined “fused-together weapon” to Death Mountain to find a Rock Octorok. Drop the weapon in front of it, wait for it to suck it in and produce a sparkling repair effect, then pick it up the moment it spits it out. At that point, both the base weapon and the Scimitar of the Seven on top will have their durability fully restored at the same time!"
-  ],
-  [
-   "带着组合好的\"连体武器\"前往死亡山脉寻找岩石章鱼。",
-   "Carry the combined “fused-together weapon” to Death Mountain to find a Rock Octorok."
-  ],
-  [
-   "把武器丢在它面前，等它吸入并冒出亮晶晶修复特效后，在它吐出来时立刻捡起。",
-   "Drop the weapon in front of it, wait for it to suck it in and produce a sparkling repair effect, then pick it up the moment it spits it out."
-  ],
-  [
-   "此时，基础武器和上面的七宝匕首会同时回满耐久！",
-   "At that point, both the base weapon and the Scimitar of the Seven on top will have their durability fully restored at the same time!"
-  ],
-  [
-   "岩石章鱼修复武器——喂给它连体武器即可回满耐久",
-   "Rock Octorok Repairs Weapons — Feed It the Conjoined Weapon to Fully Restore Durability"
-  ],
-  [
-   "岩石章鱼——把\"连体武器\"丢在它面前，吐出来时就回满耐久了",
-   "Rock Octorok — Drop the “fused-together weapon” in front of it, and its durability is fully restored when it spits it out"
-  ],
-  [
-   "回村拆解，完美复活 — 大功告成",
-   "Return to Town, Separate Them, Perfect Revival — Job Done"
-  ],
-  [
-   "再次回到塔尔里镇找帕黎恩，花20卢比把修复好的组合武器拆开。你会得到一把全新满耐久七宝匕首！最后把之前拆下来的人马角重新合上去即可。",
-   "Go back to Tarrey Town to see Pelison again and spend 20 Rupees to separate the repaired combined weapon. You will get a brand-new, full-durability Scimitar of the Seven! Finally, just fuse the Lynel horn you removed earlier back on."
-  ],
-  [
-   "再次回到塔尔里镇找帕黎恩，花20卢比把修复好的组合武器拆开。",
-   "Go back to Tarrey Town to see Pelison again and spend 20 Rupees to separate the repaired combined weapon."
-  ],
-  [
-   "你会得到一把全新满耐久七宝匕首！",
-   "You will get a brand-new, full-durability Scimitar of the Seven!"
-  ],
-  [
-   "最后把之前拆下来的人马角重新合上去即可。",
-   "Finally, just fuse the Lynel horn you removed earlier back on."
-  ],
-  [
-   "老司机终极心得",
-   "Veteran's Ultimate Takeaway"
-  ],
-  [
-   "七宝匕首 + 白银人马的刃角 + 三级攻击料理 + 蛮族/鬼神套装，这是对抗白银人马的最优解。拿白银人马的刃角打白银人马，属于是\"以彼之道还施彼身\"，非常有快感！",
-   "Scimitar of the Seven + Silver Lynel Saber Horn + a level-3 attack-boost dish + the Barbarian / Phantom armor sets — this is the optimal solution against Silver Lynels. Beating a Silver Lynel with a Silver Lynel's saber horn is a case of “giving them a taste of their own medicine,” and it feels great!"
-  ],
-  [
-   "七宝匕首 + 白银人马的刃角 + 三级攻击料理 + 蛮族/鬼神套装，这是对抗白银人马的最优解。",
-   "Scimitar of the Seven + Silver Lynel Saber Horn + a level-3 attack-boost dish + the Barbarian / Phantom armor sets — this is the optimal solution against Silver Lynels."
-  ],
-  [
-   "拿白银人马的刃角打白银人马，属于是\"以彼之道还施彼身\"，非常有快感！",
-   "Beating a Silver Lynel with a Silver Lynel's saber horn is a case of “giving them a taste of their own medicine,” and it feels great!"
-  ],
-  [
-   "已经是第一篇",
-   "This is the first article"
-  ],
-  [
-   "返回秘籍专栏",
-   "Back to the Tips Column"
-  ],
-  [
-   "下一篇：四大神级料理配方",
-   "Next: Four God-Tier Recipes"
-  ],
-  [
-   "相关攻略",
-   "Related Guides"
-  ],
-  [
-   "白龙寻踪与大师之剑",
-   "Tracking the Light Dragon and the Master Sword"
-  ],
-  [
-   "最强套装三梯队全解析",
-   "Full Breakdown of the Three Tiers of Strongest Armor Sets"
-  ],
-  [
-   "四条龙素材刷取指南",
-   "Four Dragons Material Farming Guide"
-  ],
-  [
-   "全部攻略索引",
-   "Full Guide Index"
-  ],
-  [
-   "七宝匕首终极攻略（本篇）",
-   "Scimitar of the Seven Ultimate Guide (This Article)"
-  ],
-  [
-   "四大神级料理配方",
-   "Four God-Tier Recipes"
-  ],
-  [
-   "乌萨诸马神庙零基础包教包会",
-   "Usazum Shrine: A Zero-Basics, Guaranteed-to-Learn Walkthrough"
-  ],
-  [
-   "马克兔飞行器调校",
-   "Hover Bike Tuning"
-  ],
-  [
-   "地底电池扩充与大妖精",
-   "Depths Battery Expansion and the Great Fairies"
-  ],
-  [
-   "每日新攻略",
-   "Daily New Guides"
-  ],
-  [
-   "152座神庙全收集自查指南",
-   "152-Shrine Full-Collection Self-Check Guide"
-  ],
-  [
-   "新手开荒指南：落地先做的10件事",
-   "Beginner's Pioneering Guide: The First 10 Things to Do After Landing"
-  ],
-  [
-   "呀哈哈种子全指南",
-   "Korok Seed Complete Guide"
-  ],
-  [
-   "地底世界生存与探索完全指南",
-   "Depths Survival and Exploration Complete Guide"
-  ],
-  [
-   "大妖精四姐妹与防具强化完全指南",
-   "The Four Great Fairy Sisters and Armor Enhancement Complete Guide"
-  ],
-  [
-   "⚔ 武器攻略",
-   "⚔ Weapon Guide"
-  ],
-  [
-   "合成后追加：",
-   "After fusing, add:"
-  ],
-  [
-   "操作前提醒：",
-   "Before you start:"
-  ],
-  [
-   "由于步骤复杂，强烈建议先在游戏中存档，操作失败可以即时读档重来。",
-   "These steps are complex, so save in-game first — if a step fails, you can reload immediately and retry."
-  ],
-  [
-   "🔑 核心铁律",
-   "🔑 Iron Rule"
-  ],
-  [
-   "必须是",
-   "You must be"
-  ],
-  [
-   "，七宝匕首在地上当配件！反过来操作就失败了。",
-   ", with the Scimitar of the Seven on the ground as the part! Do it the other way around and it fails."
-  ],
-  [
-   "普通武器在手",
-   "holding a normal weapon"
-  ],
-  [
-   "首先必须通关主线任务【格鲁德小镇的雷之神殿】，帮露珠女王解决木乃伊危机。随后前往格鲁德小镇的珠宝店，接取支线任务【行踪不定的老板】。带上几支炸弹箭，前往小镇西边的卢玛琳沙地，把\"莫尔德拉吉克\"（沙兽）干掉，救出珠宝店老板。回到小镇，找工匠伊莎（Isha）对话，正式开启英杰武器铸造服务。",
-   "First you must clear the main quest [Lightning Temple of Gerudo Town] and help Queen Riju resolve the Gibdo crisis. Then head to the jewelry shop in Gerudo Town and take the side quest [The Missing Owner]. Bring a few Bomb Arrows, go to the Toruma Dunes west of town, defeat the Molduga, and rescue the shop owner. Back in town, talk to the craftswoman Isha to unlock Champion weapon forging."
-  ]
- ],
- "title": "Scimitar of the Seven Ultimate Guide · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+  "notes": [
+    "玛卡利萨 (the Gerudo artisan) transliterated as Makalisa — no confident official English name found in the glossary or page context.",
+    "卢玛琳沙地 rendered as Toruma Dunes — official English name not confirmed from the glossary or page context.",
+    "人马搓背 rendered descriptively as mounting a Lynel (riding on a Lynel's back to attack).",
+    "鬼神套装 rendered as the Phantom armor set (descriptive; official English set name not in glossary).",
+    "Emoji/symbol prefixes (⚔, 🧙, 📖, ▲, ›, →) stripped from pair keys; the Chinese text itself is translated in full."
+  ],
+  "pairs": [
+    [
+      "七宝匕首终极攻略：138攻击力单手剑，强力组合词条，耐久几乎不损耗还能无限续航，海拉鲁日常战神武器的获取、融合与实战应用完全指南。",
+      "The ultimate Scimitar of the Seven guide: a 138-attack one-handed sword with the Powerful Fuse trait, durability that barely drops, and infinite upkeep — a complete guide to obtaining, fusing, and using Hyrule's everyday war-god weapon in combat."
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "哈里的终极秘籍",
+      "Harry's Ultimate Tips"
+    ],
+    [
+      "七宝匕首终极攻略",
+      "Scimitar of the Seven Ultimate Guide"
+    ],
+    [
+      "武器攻略",
+      "Weapon Guide"
+    ],
+    [
+      "海拉鲁无脑砍王！《王国之泪》无可争议的日常终极神器——七宝匕首",
+      "Hyrule's No-Brainer Slashing King! The Undisputed Everyday Ultimate Weapon in Tears of the Kingdom — the Scimitar of the Seven"
+    ],
+    [
+      "海拉鲁无脑砍王！",
+      "Hyrule's No-Brainer Slashing King!"
+    ],
+    [
+      "《王国之泪》无可争议的日常终极神器——七宝匕首",
+      "The undisputed everyday ultimate weapon in Tears of the Kingdom — the Scimitar of the Seven"
+    ],
+    [
+      "单手剑138攻击力、强力组合词条、耐久几乎不损耗，还能无限续航——这才是真正的海拉鲁日常战神",
+      "138 attack on a one-handed sword, the Powerful Fuse trait, durability that barely drops, and infinite upkeep — this is the true everyday war god of Hyrule"
+    ],
+    [
+      "作者：哈里",
+      "Author: Harry"
+    ],
+    [
+      "武器合成 · 余料建造",
+      "Weapon Crafting · Fuse"
+    ],
+    [
+      "深度攻略",
+      "In-Depth Guide"
+    ],
+    [
+      "在《塞尔达传说：王国之泪》中，因为\"余料建造\"玩法的加入，武器系统迎来了大洗牌。很多萌新可能会盲目追求面板攻击力极高的\"近卫双手剑\"，但老司机都知道，近卫双手剑那是留给\"人马搓背\"专用的。如果论日常跑图、越级打怪、砍树割草、持久输出的综合性价比之王，那绝对非乌尔波扎的遗物——「七宝匕首」莫属！今天这篇硬核图文攻略，就手把手带你把这把\"海拉鲁续航流天花板\"做出来！",
+      "In The Legend of Zelda: Tears of the Kingdom, the arrival of the Fuse mechanic completely reshuffled the weapon system. Many newcomers may blindly chase the Royal Guard's Claymore for its sky-high listed attack, but veterans know that blade is reserved for mounting a Lynel's back to attack (which costs no durability). When it comes to the best all-round value for everyday overworld travel, fighting above your level, chopping trees and cutting grass, and sustained damage, nothing beats Urbosa's keepsake — the Scimitar of the Seven! This hardcore illustrated guide will walk you through crafting this pinnacle of Hyrule's infinite-upkeep playstyle, step by step!"
+    ],
+    [
+      "在《塞尔达传说：王国之泪》中，因为\"余料建造\"玩法的加入，武器系统迎来了大洗牌。",
+      "In The Legend of Zelda: Tears of the Kingdom, the arrival of the Fuse mechanic completely reshuffled the weapon system."
+    ],
+    [
+      "很多萌新可能会盲目追求面板攻击力极高的\"近卫双手剑\"，但老司机都知道，近卫双手剑那是留给\"人马搓背\"专用的。",
+      "Many newcomers may blindly chase the Royal Guard's Claymore for its sky-high listed attack, but veterans know that blade is reserved for mounting a Lynel's back to attack (which costs no durability)."
+    ],
+    [
+      "如果论日常跑图、越级打怪、砍树割草、持久输出的综合性价比之王，那绝对非乌尔波扎的遗物——「七宝匕首」莫属！",
+      "When it comes to the best all-round value for everyday overworld travel, fighting above your level, chopping trees and cutting grass, and sustained damage, nothing beats Urbosa's keepsake — the Scimitar of the Seven!"
+    ],
+    [
+      "今天这篇硬核图文攻略，就手把手带你把这把\"海拉鲁续航流天花板\"做出来！",
+      "This hardcore illustrated guide will walk you through crafting this pinnacle of Hyrule's infinite-upkeep playstyle, step by step!"
+    ],
+    [
+      "基础攻击力",
+      "Base Attack"
+    ],
+    [
+      "终极形态攻击力",
+      "Final-Form Attack"
+    ],
+    [
+      "基础耐久度",
+      "Base Durability"
+    ],
+    [
+      "强力组合余料加成",
+      "Powerful Fuse Material Bonus"
+    ],
+    [
+      "一、为什么七宝匕首是当之无愧的\"日常战神\"？",
+      "1. Why Is the Scimitar of the Seven the Undisputed “Everyday War God”?"
+    ],
+    [
+      "普通的格鲁德武器虽然也有\"强力组合\"词条（让装上去的材料攻击力翻倍），但是有一个致命的负面 BUFF——掉耐久掉得极快，砍两下就碎了。然而，作为英杰武器的「七宝匕首」却完美避开了这个坑！",
+      "Ordinary Gerudo weapons also carry the “Powerful Fuse” trait (which doubles the attack of the fused material), but they have a fatal downside — their durability drains extremely fast, and they shatter after a couple of swings. The Scimitar of the Seven, however, as a Champion's weapon, sidesteps that pitfall completely!"
+    ],
+    [
+      "普通的格鲁德武器虽然也有\"强力组合\"词条（让装上去的材料攻击力翻倍），但是有一个致命的负面 BUFF——掉耐久掉得极快，砍两下就碎了。",
+      "Ordinary Gerudo weapons also carry the “Powerful Fuse” trait (which doubles the attack of the fused material), but they have a fatal downside — their durability drains extremely fast, and they shatter after a couple of swings."
+    ],
+    [
+      "然而，作为英杰武器的「七宝匕首」却完美避开了这个坑！",
+      "The Scimitar of the Seven, however, as a Champion's weapon, sidesteps that pitfall completely!"
+    ],
+    [
+      "它不仅拥有【强力组合】词条，而且完全不扣除基础耐久！基础耐久高达60点，不仅面板攻击高，而且极其耐操，是全游戏最完美的单手剑胚子。",
+      "It not only carries the [Powerful Fuse] trait, it also never deducts base durability! With a base durability of 60, high listed attack, and extreme toughness, it is the most perfect one-handed sword base in the entire game."
+    ],
+    [
+      "它不仅拥有【强力组合】词条，而且完全不扣除基础耐久！",
+      "It not only carries the [Powerful Fuse] trait, it also never deducts base durability!"
+    ],
+    [
+      "基础耐久高达60点，不仅面板攻击高，而且极其耐操，是全游戏最完美的单手剑胚子。",
+      "With a base durability of 60, high listed attack, and extreme toughness, it is the most perfect one-handed sword base in the entire game."
+    ],
+    [
+      "基础攻击力：28点",
+      "Base attack: 28"
+    ],
+    [
+      "武器特效【强力组合】：附加的余料攻击力直接翻倍！",
+      "Weapon effect [Powerful Fuse]: the fused material's attack is doubled outright!"
+    ],
+    [
+      "终极形态面板：28 + (55 × 2) = 138点——单手剑攻速极快，一秒万伤不是梦！",
+      "Final-form listed stats: 28 + (55 × 2) = 138 — a one-handed sword with blazing attack speed; ten thousand damage per second is no dream!"
+    ],
+    [
+      "七宝匕首——《王国之泪》日常终极神器",
+      "Scimitar of the Seven — the everyday ultimate weapon in Tears of the Kingdom"
+    ],
+    [
+      "七宝匕首——海拉鲁日常续航神器（游戏实机截图）",
+      "Scimitar of the Seven — Hyrule's everyday infinite-upkeep weapon (in-game screenshot)"
+    ],
+    [
+      "二、合成神兵需要哪些原材料？",
+      "2. What Materials Do You Need to Forge This Divine Weapon?"
+    ],
+    [
+      "想要获得七宝匕首，我们需要走一趟格鲁德小镇（女儿国）完成特定任务，并准备好以下\"重工业材料\"：",
+      "To obtain the Scimitar of the Seven, we need to make a trip to Gerudo Town (the all-female town) to complete a specific quest, and prepare the following “heavy-industry materials”:"
+    ],
+    [
+      "所需材料清单",
+      "Required Materials Checklist"
+    ],
+    [
+      "格鲁德之剑",
+      "Gerudo Scimitar"
+    ],
+    [
+      "格鲁德盾",
+      "Gerudo Shield"
+    ],
+    [
+      "钻石",
+      "Diamond"
+    ],
+    [
+      "打火石",
+      "Flint"
+    ],
+    [
+      "白银人马的刃角",
+      "Silver Lynel Saber Horn"
+    ],
+    [
+      "合成后追加：白银人马的刃角 × 1",
+      "Fuse afterwards: Silver Lynel Saber Horn × 1"
+    ],
+    [
+      "（余料建造用，攻击力+55）",
+      "(For Fuse, attack +55)"
+    ],
+    [
+      "三、详细获取与合成步骤（手把手保姆级教学）",
+      "3. Detailed Steps to Obtain and Forge It (A Hand-Holding, Nanny-Level Tutorial)"
+    ],
+    [
+      "解锁\"英杰武器铸造资格\"",
+      "Unlock “Champion Weapon Forging Access”"
+    ],
+    [
+      "首先必须通关主线任务【格鲁德小镇的雷之神殿】，帮露珠女王解决木乃伊危机。随后前往格鲁德小镇的珠宝店，接取支线任务【行踪不定的老板】。带上几支炸弹箭，前往小镇西边的卢玛琳沙地，把\"莫尔德拉吉克\"（沙兽）干掉，救出珠宝店老板。回到小镇，找工匠玛卡利萨对话，正式开启英杰武器铸造服务。",
+      "First, you must clear the main quest [Lightning Temple of Gerudo Town] and help Queen Riju resolve the mummy crisis. Then head to the jewelry shop in Gerudo Town and accept the side quest [The Missing Owner]. Bring a few Bomb Arrows, go to the Toruma Dunes west of town, take down the Molduga (the sand beast), and rescue the jewelry shop owner. Return to town and talk to the artisan Makalisa to officially unlock Champion weapon forging."
+    ],
+    [
+      "首先必须通关主线任务【格鲁德小镇的雷之神殿】，帮露珠女王解决木乃伊危机。",
+      "First, you must clear the main quest [Lightning Temple of Gerudo Town] and help Queen Riju resolve the mummy crisis."
+    ],
+    [
+      "随后前往格鲁德小镇的珠宝店，接取支线任务【行踪不定的老板】。",
+      "Then head to the jewelry shop in Gerudo Town and accept the side quest [The Missing Owner]."
+    ],
+    [
+      "带上几支炸弹箭，前往小镇西边的卢玛琳沙地，把\"莫尔德拉吉克\"（沙兽）干掉，救出珠宝店老板。",
+      "Bring a few Bomb Arrows, go to the Toruma Dunes west of town, take down the Molduga (the sand beast), and rescue the jewelry shop owner."
+    ],
+    [
+      "回到小镇，找工匠玛卡利萨对话，正式开启英杰武器铸造服务。",
+      "Return to town and talk to the artisan Makalisa to officially unlock Champion weapon forging."
+    ],
+    [
+      "莫尔德拉吉克（沙兽）——格鲁德沙漠的守门人",
+      "Molduga (Sand Beast) — Gatekeeper of the Gerudo Desert"
+    ],
+    [
+      "莫尔德拉吉克——格鲁德沙漠卢玛琳沙地的沙兽，击败它才能解锁英杰武器铸造",
+      "Molduga — the sand beast of the Toruma Dunes in the Gerudo Desert; defeating it is what unlocks Champion weapon forging"
+    ],
+    [
+      "交付材料，打造基础胚子",
+      "Hand Over the Materials and Forge the Base Blade"
+    ],
+    [
+      "把准备好的1把格鲁德之剑、1面格鲁德盾、4颗钻石和10个打火石拍在工匠桌上。一阵密集的打铁声后，基础面板28攻击力的【七宝匕首】正式入手！",
+      "Slap the prepared 1 Gerudo Scimitar, 1 Gerudo Shield, 4 Diamonds, and 10 Flint down on the artisan's table. After a burst of hammering, the Scimitar of the Seven, with a base listed attack of 28, is officially yours!"
+    ],
+    [
+      "把准备好的1把格鲁德之剑、1面格鲁德盾、4颗钻石和10个打火石拍在工匠桌上。",
+      "Slap the prepared 1 Gerudo Scimitar, 1 Gerudo Shield, 4 Diamonds, and 10 Flint down on the artisan's table."
+    ],
+    [
+      "一阵密集的打铁声后，基础面板28攻击力的【七宝匕首】正式入手！",
+      "After a burst of hammering, the Scimitar of the Seven, with a base listed attack of 28, is officially yours!"
+    ],
+    [
+      "灵魂注入！余料建造合成138神兵",
+      "Soul Infusion! Fuse Your Way to the 138-Attack Divine Weapon"
+    ],
+    [
+      "此时的七宝匕首还只是个半成品。立刻把【白银人马的刃角】（攻击力+55）丢在地上，开启林克的【余料建造】技能，对准人马角狠狠一吸！伴随着清脆特效音，七宝匕首面板将瞬间飙升至138点！",
+      "At this point the Scimitar of the Seven is still only a half-finished product. Immediately drop the [Silver Lynel Saber Horn] (attack +55) on the ground, activate Link's [Fuse] ability, and suck the Lynel horn right onto it! With a crisp sound effect, the Scimitar of the Seven's listed stats will instantly soar to 138!"
+    ],
+    [
+      "此时的七宝匕首还只是个半成品。",
+      "At this point the Scimitar of the Seven is still only a half-finished product."
+    ],
+    [
+      "立刻把【白银人马的刃角】（攻击力+55）丢在地上，开启林克的【余料建造】技能，对准人马角狠狠一吸！",
+      "Immediately drop the [Silver Lynel Saber Horn] (attack +55) on the ground, activate Link's [Fuse] ability, and suck the Lynel horn right onto it!"
+    ],
+    [
+      "伴随着清脆特效音，七宝匕首面板将瞬间飙升至138点！",
+      "With a crisp sound effect, the Scimitar of the Seven's listed stats will instantly soar to 138!"
+    ],
+    [
+      "独家秘笈：七宝匕首快碎了怎么办？（无限续航流）",
+      "Exclusive Secret: What to Do When Your Scimitar of the Seven Is About to Break? (Infinite-Upkeep Method)"
+    ],
+    [
+      "这个方法利用普通武器可以被章鱼修复的特性，把七宝匕首伪装成\"配件\"一起打包修复。请务必严格按顺序操作，步骤错一步可能导致武器损毁！",
+      "This method exploits the fact that ordinary weapons can be repaired by Octoroks, disguising the Scimitar of the Seven as an “attachment” to get it repaired in the same package. Be sure to follow the order strictly — one wrong step can destroy the weapon!"
+    ],
+    [
+      "这个方法利用普通武器可以被章鱼修复的特性，把七宝匕首伪装成\"配件\"一起打包修复。",
+      "This method exploits the fact that ordinary weapons can be repaired by Octoroks, disguising the Scimitar of the Seven as an “attachment” to get it repaired in the same package."
+    ],
+    [
+      "请务必严格按顺序操作，步骤错一步可能导致武器损毁！",
+      "Be sure to follow the order strictly — one wrong step can destroy the weapon!"
+    ],
+    [
+      "操作前提醒：由于步骤复杂，强烈建议先在游戏中存档，操作失败可以即时读档重来。",
+      "Before you start: because the steps are complex, it is strongly recommended to save in-game first, so you can reload immediately if an attempt fails."
+    ],
+    [
+      "拆下昂贵材料（可选）— 前往塔尔里镇",
+      "Remove the Expensive Material (Optional) — Head to Tarrey Town"
+    ],
+    [
+      "如果七宝匕首上已经粘了白银人马的刃角，直接修复会将其覆盖。建议先去塔尔里镇（一卡拉村）找小鼓隆族NPC帕黎恩，花20卢比把材料完好地拆下来放进背包。",
+      "If a Silver Lynel Saber Horn is already fused to your Scimitar of the Seven, repairing it directly will overwrite it. First go to Tarrey Town (in the Akkala region) and find Pelison, the young Goron NPC, and spend 20 Rupees to have the material removed intact into your inventory."
+    ],
+    [
+      "如果七宝匕首上已经粘了白银人马的刃角，直接修复会将其覆盖。",
+      "If a Silver Lynel Saber Horn is already fused to your Scimitar of the Seven, repairing it directly will overwrite it."
+    ],
+    [
+      "建议先去塔尔里镇（一卡拉村）找小鼓隆族NPC帕黎恩，花20卢比把材料完好地拆下来放进背包。",
+      "First go to Tarrey Town (in the Akkala region) and find Pelison, the young Goron NPC, and spend 20 Rupees to have the material removed intact into your inventory."
+    ],
+    [
+      "余料建造：张冠李戴 — 背包操作",
+      "Fuse: A Mix-Up — Inventory Operation"
+    ],
+    [
+      "装备一把普通武器在手（旅人剑、骑士盾等）。把红血快碎的七宝匕首丢在地上，使用\"余料建造\"技能，将七宝匕首作为配件粘在普通武器上。",
+      "Equip an ordinary weapon in hand (a Traveler's Sword, a Knight's Shield, etc.). Drop the red-health, nearly broken Scimitar of the Seven on the ground, use the “Fuse” ability, and fuse the Scimitar of the Seven onto the ordinary weapon as an attachment."
+    ],
+    [
+      "装备一把普通武器在手（旅人剑、骑士盾等）。",
+      "Equip an ordinary weapon in hand (a Traveler's Sword, a Knight's Shield, etc.)."
+    ],
+    [
+      "把红血快碎的七宝匕首丢在地上，使用\"余料建造\"技能，将七宝匕首作为配件粘在普通武器上。",
+      "Drop the red-health, nearly broken Scimitar of the Seven on the ground, use the “Fuse” ability, and fuse the Scimitar of the Seven onto the ordinary weapon as an attachment."
+    ],
+    [
+      "核心铁律",
+      "Core Iron Rule"
+    ],
+    [
+      "必须是普通武器在手，七宝匕首在地上当配件！反过来操作就失败了。",
+      "The ordinary weapon must be in hand, with the Scimitar of the Seven on the ground as the attachment! Doing it the other way round fails."
+    ],
+    [
+      "必须是普通武器在手，七宝匕首在地上当配件！",
+      "The ordinary weapon must be in hand, with the Scimitar of the Seven on the ground as the attachment!"
+    ],
+    [
+      "反过来操作就失败了。",
+      "Doing it the other way round fails."
+    ],
+    [
+      "喂给岩石章鱼 — 前往奥尔汀地区",
+      "Feed It to a Rock Octorok — Head to the Eldin Region"
+    ],
+    [
+      "带着组合好的\"连体武器\"前往死亡山脉寻找岩石章鱼。把武器丢在它面前，等它吸入并冒出亮晶晶修复特效后，在它吐出来时立刻捡起。此时，基础武器和上面的七宝匕首会同时回满耐久！",
+      "Carry the combined “fused-together weapon” to Death Mountain to find a Rock Octorok. Drop the weapon in front of it, wait for it to suck it in and produce a sparkling repair effect, then pick it up the moment it spits it out. At that point, both the base weapon and the Scimitar of the Seven on top will have their durability fully restored at the same time!"
+    ],
+    [
+      "带着组合好的\"连体武器\"前往死亡山脉寻找岩石章鱼。",
+      "Carry the combined “fused-together weapon” to Death Mountain to find a Rock Octorok."
+    ],
+    [
+      "把武器丢在它面前，等它吸入并冒出亮晶晶修复特效后，在它吐出来时立刻捡起。",
+      "Drop the weapon in front of it, wait for it to suck it in and produce a sparkling repair effect, then pick it up the moment it spits it out."
+    ],
+    [
+      "此时，基础武器和上面的七宝匕首会同时回满耐久！",
+      "At that point, both the base weapon and the Scimitar of the Seven on top will have their durability fully restored at the same time!"
+    ],
+    [
+      "岩石章鱼修复武器——喂给它连体武器即可回满耐久",
+      "Rock Octorok Repairs Weapons — Feed It the Conjoined Weapon to Fully Restore Durability"
+    ],
+    [
+      "岩石章鱼——把\"连体武器\"丢在它面前，吐出来时就回满耐久了",
+      "Rock Octorok — Drop the “fused-together weapon” in front of it, and its durability is fully restored when it spits it out"
+    ],
+    [
+      "回村拆解，完美复活 — 大功告成",
+      "Return to Town, Separate Them, Perfect Revival — Job Done"
+    ],
+    [
+      "再次回到塔尔里镇找帕黎恩，花20卢比把修复好的组合武器拆开。你会得到一把全新满耐久七宝匕首！最后把之前拆下来的人马角重新合上去即可。",
+      "Go back to Tarrey Town to see Pelison again and spend 20 Rupees to separate the repaired combined weapon. You will get a brand-new, full-durability Scimitar of the Seven! Finally, just fuse the Lynel horn you removed earlier back on."
+    ],
+    [
+      "再次回到塔尔里镇找帕黎恩，花20卢比把修复好的组合武器拆开。",
+      "Go back to Tarrey Town to see Pelison again and spend 20 Rupees to separate the repaired combined weapon."
+    ],
+    [
+      "你会得到一把全新满耐久七宝匕首！",
+      "You will get a brand-new, full-durability Scimitar of the Seven!"
+    ],
+    [
+      "最后把之前拆下来的人马角重新合上去即可。",
+      "Finally, just fuse the Lynel horn you removed earlier back on."
+    ],
+    [
+      "老司机终极心得",
+      "Veteran's Ultimate Takeaway"
+    ],
+    [
+      "七宝匕首 + 白银人马的刃角 + 三级攻击料理 + 蛮族/鬼神套装，这是对抗白银人马的最优解。拿白银人马的刃角打白银人马，属于是\"以彼之道还施彼身\"，非常有快感！",
+      "Scimitar of the Seven + Silver Lynel Saber Horn + a level-3 attack-boost dish + the Barbarian / Phantom armor sets — this is the optimal solution against Silver Lynels. Beating a Silver Lynel with a Silver Lynel's saber horn is a case of “giving them a taste of their own medicine,” and it feels great!"
+    ],
+    [
+      "七宝匕首 + 白银人马的刃角 + 三级攻击料理 + 蛮族/鬼神套装，这是对抗白银人马的最优解。",
+      "Scimitar of the Seven + Silver Lynel Saber Horn + a level-3 attack-boost dish + the Barbarian / Phantom armor sets — this is the optimal solution against Silver Lynels."
+    ],
+    [
+      "拿白银人马的刃角打白银人马，属于是\"以彼之道还施彼身\"，非常有快感！",
+      "Beating a Silver Lynel with a Silver Lynel's saber horn is a case of “giving them a taste of their own medicine,” and it feels great!"
+    ],
+    [
+      "已经是第一篇",
+      "This is the first article"
+    ],
+    [
+      "返回秘籍专栏",
+      "Back to the Tips Column"
+    ],
+    [
+      "下一篇：四大神级料理配方",
+      "Next: Four God-Tier Recipes"
+    ],
+    [
+      "相关攻略",
+      "Related Guides"
+    ],
+    [
+      "白龙寻踪与大师之剑",
+      "Tracking the Light Dragon and the Master Sword"
+    ],
+    [
+      "最强套装三梯队全解析",
+      "Full Breakdown of the Three Tiers of Strongest Armor Sets"
+    ],
+    [
+      "四条龙素材刷取指南",
+      "Four Dragons Material Farming Guide"
+    ],
+    [
+      "全部攻略索引",
+      "Full Guide Index"
+    ],
+    [
+      "七宝匕首终极攻略（本篇）",
+      "Scimitar of the Seven Ultimate Guide (This Article)"
+    ],
+    [
+      "四大神级料理配方",
+      "Four God-Tier Recipes"
+    ],
+    [
+      "乌萨诸马神庙零基础包教包会",
+      "Usazum Shrine: A Zero-Basics, Guaranteed-to-Learn Walkthrough"
+    ],
+    [
+      "马克兔飞行器调校",
+      "Hover Bike Tuning"
+    ],
+    [
+      "地底电池扩充与大妖精",
+      "Depths Battery Expansion and the Great Fairies"
+    ],
+    [
+      "每日新攻略",
+      "Daily New Guides"
+    ],
+    [
+      "152座神庙全收集自查指南",
+      "152-Shrine Full-Collection Self-Check Guide"
+    ],
+    [
+      "新手开荒指南：落地先做的10件事",
+      "Beginner's Pioneering Guide: The First 10 Things to Do After Landing"
+    ],
+    [
+      "呀哈哈种子全指南",
+      "Korok Seed Complete Guide"
+    ],
+    [
+      "地底世界生存与探索完全指南",
+      "Depths Survival and Exploration Complete Guide"
+    ],
+    [
+      "大妖精四姐妹与防具强化完全指南",
+      "The Four Great Fairy Sisters and Armor Enhancement Complete Guide"
+    ],
+    [
+      "⚔ 武器攻略",
+      "⚔ Weapon Guide"
+    ],
+    [
+      "合成后追加：",
+      "After fusing, add:"
+    ],
+    [
+      "操作前提醒：",
+      "Before you start:"
+    ],
+    [
+      "由于步骤复杂，强烈建议先在游戏中存档，操作失败可以即时读档重来。",
+      "These steps are complex, so save in-game first — if a step fails, you can reload immediately and retry."
+    ],
+    [
+      "🔑 核心铁律",
+      "🔑 Iron Rule"
+    ],
+    [
+      "必须是",
+      "You must be"
+    ],
+    [
+      "，七宝匕首在地上当配件！反过来操作就失败了。",
+      ", with the Scimitar of the Seven on the ground as the part! Do it the other way around and it fails."
+    ],
+    [
+      "普通武器在手",
+      "holding a normal weapon"
+    ],
+    [
+      "首先必须通关主线任务【格鲁德小镇的雷之神殿】，帮露珠女王解决木乃伊危机。随后前往格鲁德小镇的珠宝店，接取支线任务【行踪不定的老板】。带上几支炸弹箭，前往小镇西边的卢玛琳沙地，把\"莫尔德拉吉克\"（沙兽）干掉，救出珠宝店老板。回到小镇，找工匠伊莎（Isha）对话，正式开启英杰武器铸造服务。",
+      "First you must clear the main quest [Lightning Temple of Gerudo Town] and help Queen Riju resolve the Gibdo crisis. Then head to the jewelry shop in Gerudo Town and take the side quest [The Missing Owner]. Bring a few Bomb Arrows, go to the Toruma Dunes west of town, defeat the Molduga, and rescue the shop owner. Back in town, talk to the craftswoman Isha to unlock Champion weapon forging."
+    ],
+    [
+      "下一篇：四大神级料理配方 →",
+      "Next: Four God-Tier Recipes →"
+    ]
+  ],
+  "title": "Scimitar of the Seven Ultimate Guide · Harry's Ultimate Tips · Tears of the Kingdom Guide"
 }
