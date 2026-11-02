@@ -1,0 +1,596 @@
+{
+ "title": "Shield Complete Guide: Hylian Shield, Perfect Guard, and Shield Surfing · Harry's Ultimate Guide · Tears of the Kingdom Guide",
+ "pairs": [
+  [
+   "王国之泪盾牌完全指南：海利亚盾城堡码头获取路线（防御90、耐久800、碎后3000卢比回购）、盾反时机、地形耐久表与矿车盾等余料盾冲浪花活。",
+   "Tears of the Kingdom shield complete guide: the Hylian Shield castle docks route (90 defense, 800 durability, buyback for 3000 Rupees after it breaks), Perfect Guard timing, terrain durability table, and Fuse shield surfing tricks like mine cart shields."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Guide"
+  ],
+  [
+   "洞窟探险完全指南",
+   "Cave Exploration Complete Guide"
+  ],
+  [
+   "盾牌完全指南：海利亚盾、盾反与盾冲浪",
+   "Shield Complete Guide: Hylian Shield, Perfect Guard, and Shield Surfing"
+  ],
+  [
+   "盾不是消耗品栏里的一格摆设：拿对海利亚盾、练会盾反、懂得在雪地上滑而不是在岩石上磨，一面好盾能陪你打完整场冒险。",
+   "A shield is not just a slot in your consumables: with the right Hylian Shield, a mastered Perfect Guard, and the knowledge to slide on snow instead of grinding on rock, one good shield can carry you through the whole adventure."
+  ],
+  [
+   "🧙 作者：哈里 🛡️ 盾牌 · 获取与打法 📖 深度攻略",
+   "🧙 Author: Harry 🛡️ Shields · Obtaining and Combat Use 📖 In-Depth Guide"
+  ],
+  [
+   "📑 本篇目录",
+   "📑 Contents of This Article"
+  ],
+  [
+   "适用人群与前置条件",
+   "Who This Is For and Prerequisites"
+  ],
+  [
+   "盾牌基础：格挡、耐久与材质",
+   "Shield Basics: Blocking, Durability, and Materials"
+  ],
+  [
+   "海利亚盾获取：城堡码头的完整路线",
+   "Obtaining the Hylian Shield: The Complete Castle Docks Route"
+  ],
+  [
+   "盾碎了怎么办：3000卢比买回来",
+   "What to Do When Your Shield Breaks: Buy It Back for 3000 Rupees"
+  ],
+  [
+   "盾反：最省盾的打法",
+   "Perfect Guard: The Most Shield-Saving Technique"
+  ],
+  [
+   "盾冲浪：操作、地形与余料花活",
+   "Shield Surfing: Controls, Terrain, and Fuse Tricks"
+  ],
+  [
+   "耐久管理：好盾留给战斗",
+   "Durability Management: Save Good Shields for Combat"
+  ],
+  [
+   "三个最常见的翻车点",
+   "The Three Most Common Mistakes"
+  ],
+  [
+   "哈里的取舍：盾牌优先级",
+   "Harry's Trade-Offs: Shield Priority"
+  ],
+  [
+   "图：海利亚盾（游戏模型图，图片来源：Zelda Wiki），防御力90、耐久800，是本作最硬的一面盾。",
+   "Image: Hylian Shield (in-game model image, image source: Zelda Wiki), with 90 defense and 800 durability, the toughest shield in the game."
+  ],
+  [
+   "这篇写给三类玩家：一是刚拿到滑翔伞、想早点把毕业盾拿到手的新手；二是总被人马、精英怪追着打，觉得格挡“扛不住、掉耐久太快”的玩家；三是喜欢盾冲浪下山、却总把好盾滑碎的玩家。前置条件只有一个：拿到滑翔伞。海利亚盾开局不久就能拿，不需要先通任何神殿，但城堡码头一带有幽暗之手出没，红心太少时别贪战，绕过去就是。",
+   "This article is written for three kinds of players: first, newcomers who have just obtained the Paraglider and want to get the endgame shield early; second, players who keep getting chased by Lynels and elite monsters and feel that blocking cannot hold up and drains durability too fast; third, players who love surfing down mountains on shields but keep breaking good shields. There is only one prerequisite: obtaining the Paraglider. The Hylian Shield can be obtained not long after the start, with no need to clear any temple first, but Gloom Hands prowl around the castle docks, so if you have too few Hearts, do not seek a fight, and just go around."
+  ],
+  [
+   "盾牌的操作只有一套：按住ZL举盾，松开ZL收盾。举盾能挡下正面来的近战与大部分投射物，但挡是有代价的：每一次格挡都会消耗耐久，盾的耐久耗尽就会碎。防御力决定你能挡多硬的攻击，耐久决定你能挡多少次——两个数值要一起看，只看防御力会吃亏。",
+   "Shield controls come in only one set: hold ZL to raise your shield, and release ZL to lower it. Raising your shield blocks melee attacks from the front and most projectiles, but blocking has a cost: every block consumes durability, and a shield breaks once its durability runs out. Defense decides how hard an attack you can block, and durability decides how many times you can block, so the two numbers must be read together, and looking only at defense will cost you."
+  ],
+  [
+   "材质同样影响用法。木盾怕火，沾上火焰会烧起来；金属盾不怕火，但在雷雨天举着金属盾容易引雷，雷暴天气要格外小心。海利亚盾是金属盾，不怕火、防御与耐久双高，这就是它被称为毕业盾的原因：它没有明显的材质短板。",
+   "Material also affects how a shield is used. Wooden shields fear fire and will catch alight when touched by flame; metal shields do not fear fire, but holding up a metal shield in a thunderstorm easily attracts lightning, so be extra careful in stormy weather. The Hylian Shield is a metal shield, unafraid of fire and high in both defense and durability, which is why it is called the endgame shield: it has no obvious material weakness."
+  ],
+  [
+   "💡 一句话记住盾牌的定位",
+   "💡 Remember the Shield's Role in One Sentence"
+  ],
+  [
+   "盾是“容错工具”不是“城墙”：它的任务是帮你在失误时少掉血、创造反击窗口，而不是让你站在原地硬扛一整场战斗。抱着“站撸”心态用盾，再好的盾也扛不住。",
+   "A shield is a mistake-forgiveness tool, not a city wall: its job is to help you lose less health when you slip up and to create counterattack windows, not to let you stand in place and tank a whole battle. Using a shield with a stand-and-trade mindset will break even the best shield."
+  ],
+  [
+   "海利亚盾在海拉鲁城堡北侧护城河下方的城堡码头，图鉴编号471，防御力90，耐久800，余料攻击力22。它的位置不在飘浮的城堡本体里，而在水面下方的码头洞窟中，按下面五步走，不用打任何必打的Boss：",
+   "The Hylian Shield is found at the castle docks below the moat on the north side of Hyrule Castle, compendium number 471, with 90 defense, 800 durability, and 22 Fuse attack. Its location is not inside the floating castle itself, but in the dock cavern below the water, and following the five steps below requires no mandatory Boss fight:"
+  ],
+  [
+   "1到城堡北侧护城河。从瞭望台一带向东北飞往海拉鲁城堡，目标是城堡北侧水面上的洞口（码头一带坐标约-0161, 1159, 0037）。可以滑翔过去，也可以在水边造一艘简易木筏划过去。",
+   "Step 1: Head to the north moat of Hyrule Castle. Fly northeast from the Lookout Landing area toward Hyrule Castle, aiming for the opening on the water north of the castle (dock area, coordinates about -0161, 1159, 0037). You can glide there, or build a simple wooden raft at the water's edge and row across."
+  ],
+  [
+   "1到城堡北侧护城河。",
+   "Step 1: Head to the north moat of Hyrule Castle."
+  ],
+  [
+   "从瞭望台一带向东北飞往海拉鲁城堡，目标是城堡北侧水面上的洞口（码头一带坐标约-0161, 1159, 0037）。",
+   "Fly northeast from the Lookout Landing area toward Hyrule Castle, aiming for the opening on the water north of the castle (dock area, coordinates about -0161, 1159, 0037)."
+  ],
+  [
+   "可以滑翔过去，也可以在水边造一艘简易木筏划过去。",
+   "You can glide there, or build a simple wooden raft at the water's edge and row across."
+  ],
+  [
+   "2进水洞、上楼梯。从水面洞口进入码头内部，沿着楼梯一路向上。沿途有幽暗瘴气与巡逻的敌人，红心不多时不要恋战，跑过去即可。",
+   "Step 2: Enter the water cave and climb the stairs. Enter the docks interior through the opening on the water and follow the stairs all the way up. Gloom and patrolling enemies line the way, so if you do not have many Hearts, do not linger in combat, and just run through."
+  ],
+  [
+   "2进水洞、上楼梯。",
+   "Step 2: Enter the water cave and climb the stairs."
+  ],
+  [
+   "从水面洞口进入码头内部，沿着楼梯一路向上。",
+   "Enter the docks interior through the opening on the water and follow the stairs all the way up."
+  ],
+  [
+   "沿途有幽暗瘴气与巡逻的敌人，红心不多时不要恋战，跑过去即可。",
+   "Gloom and patrolling enemies line the way, so if you do not have many Hearts, do not linger in combat, and just run through."
+  ],
+  [
+   "3幽暗之手可以绕。上楼梯途中可能触发幽暗之手：它会抓握并挤压林克、削减红心上限。早期伤害不够时不必硬打，拉开距离、脱离它的视线后它会消失，绕过去继续上楼。",
+   "Step 3: You can go around the Gloom Hands. While climbing the stairs you may trigger the Gloom Hands: they will grab and squeeze Link, reducing your maximum Hearts. If your damage is too low early on, there is no need to fight them head-on, pull away and break line of sight, and they will vanish, letting you go around and keep climbing."
+  ],
+  [
+   "3幽暗之手可以绕。",
+   "Step 3: You can go around the Gloom Hands."
+  ],
+  [
+   "上楼梯途中可能触发幽暗之手：它会抓握并挤压林克、削减红心上限。",
+   "While climbing the stairs you may trigger the Gloom Hands: they will grab and squeeze Link, reducing your maximum Hearts."
+  ],
+  [
+   "早期伤害不够时不必硬打，拉开距离、脱离它的视线后它会消失，绕过去继续上楼。",
+   "If your damage is too low early on, there is no need to fight them head-on, pull away and break line of sight, and they will vanish, letting you go around and keep climbing."
+  ],
+  [
+   "4点燃大火盆。楼梯尽头有一座未点燃的大火盆，周围有小火把。用火焰果、火丘丘胶冻、火箭，或把木质武器在小火把上点着后引火，点燃大火盆。",
+   "Step 4: Light the large brazier. At the top of the stairs stands a large unlit brazier, surrounded by small torches. Use a Fire Fruit, a Fire Chuchu Jelly, or a Rocket, or light a wooden weapon on a small torch and carry the flame over to light the large brazier."
+  ],
+  [
+   "4点燃大火盆。",
+   "Step 4: Light the large brazier."
+  ],
+  [
+   "楼梯尽头有一座未点燃的大火盆，周围有小火把。",
+   "At the top of the stairs stands a large unlit brazier, surrounded by small torches."
+  ],
+  [
+   "用火焰果、火丘丘胶冻、火箭，或把木质武器在小火把上点着后引火，点燃大火盆。",
+   "Use a Fire Fruit, a Fire Chuchu Jelly, or a Rocket, or light a wooden weapon on a small torch and carry the flame over to light the large brazier."
+  ],
+  [
+   "5开宝箱拿盾。点火后幽暗之手会消失，身后的地面上会升起一只宝箱，里面就是海利亚盾。这只宝箱只出现一次，拿完就不会再刷。",
+   "Step 5: Open the chest and take the shield. Once the fire is lit, the Gloom Hands will vanish, and a chest will rise from the ground behind you containing the Hylian Shield. This chest appears only once, and will not respawn after you take it."
+  ],
+  [
+   "5开宝箱拿盾。",
+   "Step 5: Open the chest and take the shield."
+  ],
+  [
+   "点火后幽暗之手会消失，身后的地面上会升起一只宝箱，里面就是海利亚盾。",
+   "Once the fire is lit, the Gloom Hands will vanish, and a chest will rise from the ground behind you containing the Hylian Shield."
+  ],
+  [
+   "这只宝箱只出现一次，拿完就不会再刷。",
+   "This chest appears only once, and will not respawn after you take it."
+  ],
+  [
+   "这条路线真正的门槛不是战斗力，而是“敢不敢进城堡”。护城河一带敌人等级不低，但全程都可以跑酷绕过：带几颗明亮花种子照亮洞内、带一把弓远程清理挡路的敌人，比带一身高级装备更管用。",
+   "The real barrier on this route is not combat power, but whether you dare to enter the castle. Enemies around the moat are not low-level, but the whole route can be bypassed by running and climbing: bringing a few Brightbloom Seeds to light the cave interior and a bow to clear blocking enemies from range works better than bringing a full set of high-end gear."
+  ],
+  [
+   "海利亚盾不是无限耐久的，800耐久用完一样会碎，这一点要先说清楚，免得拿着它去岩石上长滑、硬扛人马冲锋，把它当无敌盾用。碎了也不用慌：完成哈特诺村的“市长选举”情节挑战后，瑟瑟的商店会出售稀有装备，其中就包括海利亚盾，售价3000卢比。只有一个限制：只有在你的海利亚盾已经碎掉的情况下她才会卖，没碎时买不到第二面，所以不存在“囤两面”的操作。",
+   "The Hylian Shield does not have infinite durability, and its 800 durability will break all the same once used up, which must be stated first, so you do not take it for long slides on rock or head-on blocks against Lynel charges as if it were an invincible shield. If it breaks, do not panic: after completing the Mayoral Election side adventure in Hateno Village, Cece's shop sells rare equipment, including the Hylian Shield, for 3000 Rupees. There is only one restriction: she will only sell it if your Hylian Shield has already broken, and you cannot buy a second one while it is intact, so stockpiling two is not possible."
+  ],
+  [
+   "作者视角的判断：3000卢比在后期不算大钱，但前期是一笔巨款。前期拿到海利亚盾后，最好的策略是“省着用”：平时用捡来的普通盾，硬仗、打人马、挑战精英怪时再换上海利亚盾。等到卢比来源稳定（参考本站卢比速刷指南），碎了再买的心理负担就小多了。",
+   "The author's verdict: 3000 Rupees is not much money in the late game, but it is a huge sum early on. After getting the Hylian Shield early, the best strategy is to use it sparingly: use picked-up ordinary shields day to day, and switch to the Hylian Shield only for hard fights, Lynels, and elite monsters. Once your Rupee income is stable (see this site's Rupee Farming Guide), the mental burden of buying a replacement after it breaks is much smaller."
+  ],
+  [
+   "作者视角的判断：3000卢比在后期不算大钱，但前期是一笔巨款。",
+   "The author's verdict: 3000 Rupees is not much money in the late game, but it is a huge sum early on."
+  ],
+  [
+   "前期拿到海利亚盾后，最好的策略是“省着用”：平时用捡来的普通盾，硬仗、打人马、挑战精英怪时再换上海利亚盾。",
+   "After getting the Hylian Shield early, the best strategy is to use it sparingly: use picked-up ordinary shields day to day, and switch to the Hylian Shield only for hard fights, Lynels, and elite monsters."
+  ],
+  [
+   "等到卢比来源稳定（参考本站卢比速刷指南），碎了再买的心理负担就小多了。",
+   "Once your Rupee income is stable (see this site's Rupee Farming Guide), the mental burden of buying a replacement after it breaks is much smaller."
+  ],
+  [
+   "盾反（完美格挡）是本作最值得练的操作：举盾状态下，在敌方攻击命中前一刻按A，林克会用盾把攻击弹开，对方陷入硬直，你获得一次免费的反击窗口。练盾反不是为了耍帅，而是为了省盾：硬扛消耗耐久、还可能被击退，而一次成功的盾反把攻守直接颠倒过来。",
+   "Perfect Guard is the most worthwhile technique to practice in this game: while holding up your shield, press A at the very moment before an enemy attack lands, and Link will deflect the attack with his shield, leaving the enemy stunned and giving you a free counterattack window. Practicing Perfect Guard is not about showing off, but about saving shields: blocking head-on costs durability and may knock you back, while one successful Perfect Guard flips offense and defense outright."
+  ],
+  [
+   "练手对象：先拿行动慢的敌人练，例如持棒的波克布林、骷髅怪，看清抬手动作再按A，不要凭感觉乱按。",
+   "Practice targets: start with slow-moving enemies, such as club-wielding Bokoblins and skeleton monsters, watch their wind-up motion clearly before pressing A, and do not mash blindly by feel."
+  ],
+  [
+   "进阶对象：人马的冲锋与挥砍、精英怪的重击，都是盾反收益最高的场景——弹开一次，等于白赚一轮输出。",
+   "Advanced targets: Lynel charges and slashes, and elite monsters' heavy blows, are the scenarios with the highest Perfect Guard payoff, since one deflection earns a free round of damage."
+  ],
+  [
+   "投射物同样能弹：敌人的箭、投掷物也可以盾反，远程敌人多的营地，盾反比举盾硬扛省事得多。",
+   "Projectiles can be deflected too: enemy arrows and thrown objects can also be Perfect Guarded, and in camps with many ranged enemies, Perfect Guard is far less trouble than blocking head-on with your shield raised."
+  ],
+  [
+   "失误的代价：按早了等于普通格挡，照样耗耐久；按晚了就直接吃伤害。练的时候别穿最怕掉血的装备，用普通盾练，练熟了再上海利亚盾实战。",
+   "The cost of a mistake: pressing too early counts as an ordinary block and still costs durability; pressing too late means taking the hit directly. When practicing, do not wear the gear you least want to lose Hearts in, practice with an ordinary shield, and only take the Hylian Shield into real combat once you are proficient."
+  ],
+  [
+   "失误的代价：按早了等于普通格挡，照样耗耐久；",
+   "The cost of a mistake: pressing too early counts as an ordinary block and still costs durability;"
+  ],
+  [
+   "按晚了就直接吃伤害。",
+   "pressing too late means taking the hit directly."
+  ],
+  [
+   "练的时候别穿最怕掉血的装备，用普通盾练，练熟了再上海利亚盾实战。",
+   "When practicing, do not wear the gear you least want to lose Hearts in, practice with an ordinary shield, and only take the Hylian Shield into real combat once you are proficient."
+  ],
+  [
+   "一个常见的误解是“盾反必须用好盾”。其实正好相反：盾反练熟之前，用破烂盾练最划算——反正碎了不心疼；盾反熟练之后，好盾的耐久消耗自然就降下来了，因为你不再硬扛。",
+   "A common misconception is that Perfect Guard requires a good shield. In fact it is the opposite: before you have mastered Perfect Guard, practicing with a battered shield is the most economical choice, since it does not matter if it breaks; once you are proficient, a good shield's durability drain naturally drops, because you no longer block head-on."
+  ],
+  [
+   "盾冲浪的操作是：举盾（ZL）＋跳跃（X），在空中按A，林克会翻身踩上盾牌开始滑行。滑行中可以用摇杆控制方向，按Y还能在滑行中攻击敌人。想滑得远，坡度是前提：平地上滑两步就停，陡坡才能一路冲下去。赫布拉山脉的塞尔米小屋一带是公认的练滑场地，雪坡又长又缓，适合新手。",
+   "Shield surfing works like this: hold up your shield (ZL) plus jump (X), then press A in midair, and Link will flip onto his shield and start sliding. While sliding, use the stick to steer, and press Y to attack enemies mid-slide. To slide far, a slope is a prerequisite: on flat ground you stop after two slides, while a steep slope lets you rush all the way down. The area around Selmie's Spot in the Hebra Mountains is a recognized practice ground for surfing, with long, gentle snow slopes that suit beginners."
+  ],
+  [
+   "地形",
+   "Terrain"
+  ],
+  [
+   "速度",
+   "Speed"
+  ],
+  [
+   "耐久损耗",
+   "Durability Loss"
+  ],
+  [
+   "哈里的建议",
+   "Harry's Advice"
+  ],
+  [
+   "雪地、沙地",
+   "Snow and sand"
+  ],
+  [
+   "快",
+   "Fast"
+  ],
+  [
+   "最友好，几乎不伤盾",
+   "Most forgiving, barely damages shields"
+  ],
+  [
+   "日常赶路、练滑的首选地形",
+   "The first-choice terrain for daily travel and practice surfing"
+  ],
+  [
+   "草地、泥土路",
+   "Grass and dirt roads"
+  ],
+  [
+   "中等",
+   "Medium"
+  ],
+  [
+   "中等损耗",
+   "Medium wear"
+  ],
+  [
+   "短途滑行可以，长途不划算",
+   "Fine for short slides, not worth it for long distances"
+  ],
+  [
+   "岩石山地",
+   "Rocky mountains"
+  ],
+  [
+   "快但颠簸",
+   "Fast but bumpy"
+  ],
+  [
+   "损耗最快",
+   "Fastest wear"
+  ],
+  [
+   "别用好盾在岩石上长滑，滑一半碎盾会摔伤",
+   "Do not take a good shield for a long slide on rock; a shield breaking halfway will throw you and hurt you"
+  ],
+  [
+   "矿车轨道（余料矿车盾）",
+   "Mine cart tracks (Fuse mine cart shield)"
+  ],
+  [
+   "按余料规则消耗",
+   "Consumed per Fuse rules"
+  ],
+  [
+   "天空岛轨道赶路的神器",
+   "A godsend for traveling Sky Island tracks"
+  ],
+  [
+   "余料让盾冲浪多了很多花活，但要先知道一条规则：大多数余料盾因为形状变了，根本没法冲浪，游戏尝试时会直接提示。只有少数搭配是为冲浪而生的：",
+   "Fuse gives shield surfing many more tricks, but first know one rule: most fused shields cannot surf at all because their shape has changed, and the game will say so directly when you try. Only a few combos are made for surfing:"
+  ],
+  [
+   "矿车盾：盾＋矿车左纳乌装置，相当于一块滑板，能在平地与轨道上滑行，天空岛的矿车轨道就是为它准备的。",
+   "Mine cart shield: shield plus a Zonai Mine Cart device, equivalent to a skateboard, able to slide on flat ground and tracks, and the Sky Island mine cart tracks were made for it."
+  ],
+  [
+   "雪橇盾：盾＋雪橇装置，在沙漠里比矿车盾顺手，格鲁德沙漠赶路可以靠它。",
+   "Sled shield: shield plus a Sled device, handier than a mine cart shield in the desert, and a reliable way to travel the Gerudo Desert."
+  ],
+  [
+   "冰肉盾：盾＋冰冻肉，滑起来像冰面一样顺滑，而且不会融化，是不用左纳乌装置的平替方案。",
+   "Frozen meat shield: shield plus Frozen Meat, sliding as smoothly as an ice surface, and it never melts, making it a substitute that needs no Zonai device."
+  ],
+  [
+   "炸弹花盾：盾＋炸弹花，冲浪中引爆可以把林克炸上天，但盾要承受爆炸损耗，属于玩花活的代价。",
+   "Bomb Flower shield: shield plus a Bomb Flower, whose mid-surf detonation can blast Link into the sky, but the shield takes explosion wear, which is the price of showing off."
+  ],
+  [
+   "火箭盾：盾＋火箭，能短暂飞空，但耐久消耗极大，只适合“就差一点高度”的场合，别当常规交通工具。",
+   "Rocket shield: shield plus a Rocket, able to fly briefly, but with enormous durability cost, suited only to just-short-of-enough-height situations, and not to be used as regular transport."
+  ],
+  [
+   "盾冲浪的另一条铁律：盾在滑行中碎掉，林克会直接摔出去，在陡坡上摔一下的伤害不低。所以冲浪前先看一眼盾的耐久状态——快碎的盾只适合在雪地上滑最后一段，千万别拿它下陡坡。更多余料搭配的通用规则，见本站余料建造完全指南。",
+   "Another iron rule of shield surfing: if your shield breaks mid-slide, Link will be thrown straight off, and a fall on a steep slope deals no small amount of damage. So check your shield's durability before surfing: a nearly broken shield is only fit for a final stretch on snow, and must never be taken down a steep slope. For the general rules of more Fuse combos, see this site's Fuse Complete Guide."
+  ],
+  [
+   "盾冲浪的另一条铁律：盾在滑行中碎掉，林克会直接摔出去，在陡坡上摔一下的伤害不低。",
+   "Another iron rule of shield surfing: if your shield breaks mid-slide, Link will be thrown straight off, and a fall on a steep slope deals no small amount of damage."
+  ],
+  [
+   "所以冲浪前先看一眼盾的耐久状态——快碎的盾只适合在雪地上滑最后一段，千万别拿它下陡坡。",
+   "So check your shield's durability before surfing: a nearly broken shield is only fit for a final stretch on snow, and must never be taken down a steep slope."
+  ],
+  [
+   "更多余料搭配的通用规则，见本站余料建造完全指南。",
+   "For the general rules of more Fuse combos, see this site's Fuse Complete Guide."
+  ],
+  [
+   "盾牌管理的核心就一句话：按用途分盾。背包里同时留三类盾：战斗盾（海利亚盾或高防御盾，只打硬仗）、冲浪盾（捡来的普通盾，碎了不心疼）、备用盾（路上随手捡的，营地战利品）。这个分法的好处是，任何一种用法都不会把另一类用途的盾提前耗光。",
+   "Shield management comes down to one sentence: divide shields by use. Keep three kinds of shields in your inventory at once: combat shields (the Hylian Shield or high-defense shields, for hard fights only), surfing shields (picked-up ordinary shields, no great loss when they break), and spare shields (picked up along the road, as camp loot). The benefit of this split is that no one use will wear out the shields meant for another use early."
+  ],
+  [
+   "另外两个省盾习惯：一是营地战优先用弓箭与环境杀（炸弹桶、落石），少举盾硬扛；二是打人马这类高强度敌人时，盾反与闪避优先于举盾（详见本站人马完全指南）。盾反练出来后，你会发现海利亚盾的800耐久比想象中耐用得多。",
+   "Two more shield-saving habits: first, in camp battles prioritize bows and environmental kills (bomb barrels, falling rocks) and block head-on less often; second, against high-intensity enemies like Lynels, prioritize Perfect Guard and dodging over holding up your shield (see this site's Lynel Complete Guide for details). Once you have mastered Perfect Guard, you will find the Hylian Shield's 800 durability lasts much longer than you imagined."
+  ],
+  [
+   "另外两个省盾习惯：一是营地战优先用弓箭与环境杀（炸弹桶、落石），少举盾硬扛；",
+   "Two more shield-saving habits: first, in camp battles prioritize bows and environmental kills (bomb barrels, falling rocks) and block head-on less often;"
+  ],
+  [
+   "二是打人马这类高强度敌人时，盾反与闪避优先于举盾（详见本站人马完全指南）。",
+   "second, against high-intensity enemies like Lynels, prioritize Perfect Guard and dodging over holding up your shield (see this site's Lynel Complete Guide for details)."
+  ],
+  [
+   "盾反练出来后，你会发现海利亚盾的800耐久比想象中耐用得多。",
+   "Once you have mastered Perfect Guard, you will find the Hylian Shield's 800 durability lasts much longer than you imagined."
+  ],
+  [
+   "⚠️ 坑一：拿海利亚盾在岩石上长滑。岩石地形是盾冲浪里最伤盾的，海利亚盾也会被磨掉大量耐久。想滑山先去雪地，岩石坡只短滑、不用好盾。",
+   "⚠️ Pitfall 1: Taking the Hylian Shield for a long slide on rock. Rocky terrain is the most shield-damaging terrain in shield surfing, and even the Hylian Shield will lose a large amount of durability to grinding. If you want to slide down a mountain, go to snow first, and only take short slides on rocky slopes, never with a good shield."
+  ],
+  [
+   "⚠️ 坑一：拿海利亚盾在岩石上长滑。",
+   "⚠️ Pitfall 1: Taking the Hylian Shield for a long slide on rock."
+  ],
+  [
+   "岩石地形是盾冲浪里最伤盾的，海利亚盾也会被磨掉大量耐久。",
+   "Rocky terrain is the most shield-damaging terrain in shield surfing, and even the Hylian Shield will lose a large amount of durability to grinding."
+  ],
+  [
+   "想滑山先去雪地，岩石坡只短滑、不用好盾。",
+   "If you want to slide down a mountain, go to snow first, and only take short slides on rocky slopes, never with a good shield."
+  ],
+  [
+   "⚠️ 坑二：把盾反练成“乱按A”。盾反看的是敌方抬手节奏，不是按得快。乱按只会变成普通格挡，白白耗耐久还吃不到反击窗口。",
+   "⚠️ Pitfall 2: Practicing Perfect Guard as mashing A. Perfect Guard depends on the enemy's wind-up rhythm, not on pressing fast. Mashing only turns into ordinary blocks, wasting durability for nothing and earning no counterattack window."
+  ],
+  [
+   "⚠️ 坑二：把盾反练成“乱按A”。",
+   "⚠️ Pitfall 2: Practicing Perfect Guard as mashing A."
+  ],
+  [
+   "盾反看的是敌方抬手节奏，不是按得快。",
+   "Perfect Guard depends on the enemy's wind-up rhythm, not on pressing fast."
+  ],
+  [
+   "乱按只会变成普通格挡，白白耗耐久还吃不到反击窗口。",
+   "Mashing only turns into ordinary blocks, wasting durability for nothing and earning no counterattack window."
+  ],
+  [
+   "⚠️ 坑三：盾碎了不知道能买回来。不少玩家以为海利亚盾碎了就绝版，其实完成市长选举后花3000卢比就能在瑟瑟店里买回。碎了别灰心，先去攒卢比。",
+   "⚠️ Pitfall 3: Not knowing a broken shield can be bought back. Many players assume the Hylian Shield is gone for good once broken, when in fact completing the Mayoral Election lets you buy it back at Cece's shop for 3000 Rupees. Do not lose heart over a break, and go save up Rupees first."
+  ],
+  [
+   "⚠️ 坑三：盾碎了不知道能买回来。",
+   "⚠️ Pitfall 3: Not knowing a broken shield can be bought back."
+  ],
+  [
+   "不少玩家以为海利亚盾碎了就绝版，其实完成市长选举后花3000卢比就能在瑟瑟店里买回。",
+   "Many players assume the Hylian Shield is gone for good once broken, when in fact completing the Mayoral Election lets you buy it back at Cece's shop for 3000 Rupees."
+  ],
+  [
+   "碎了别灰心，先去攒卢比。",
+   "Do not lose heart over a break, and go save up Rupees first."
+  ],
+  [
+   "盾牌的优先级分三档：第一档是尽早拿海利亚盾——滑翔伞一到手就去城堡码头跑一趟，绕过幽暗之手、点火开箱，全程不到半小时，收益却是一整局；第二档是练盾反——这是唯一能同时提升生存与输出、还省耐久的操作，值得花一个晚上专门练；第三档才是盾冲浪花活——矿车盾、雪橇盾、炸弹花盾都很好玩，但它们是赶路与娱乐的调剂，别让花活吃掉你的战斗盾。",
+   "Shield priority comes in three tiers: the first tier is getting the Hylian Shield as early as possible, since one trip to the castle docks as soon as the Paraglider is in hand, going around the Gloom Hands and lighting the fire to open the chest, takes under half an hour and pays off for the whole game; the second tier is practicing Perfect Guard, the only technique that improves survivability and damage output while also saving durability, and worth a whole evening of dedicated practice; the third tier is shield surfing tricks, since mine cart shields, sled shields, and Bomb Flower shields are all fun, but they are seasoning for travel and entertainment, and must not eat into your combat shields."
+  ],
+  [
+   "一句话总结：盾的强弱不在面板，而在用法。海利亚盾解决“扛不扛得住”，盾反解决“耗不耗得起”，盾冲浪解决“下山快不快”——三件事分开练，盾牌系统才算真正毕业。",
+   "In one sentence: a shield's strength is not in its stat panel, but in how it is used. The Hylian Shield answers whether you can hold up, Perfect Guard answers whether you can afford the cost, and shield surfing answers how fast you get down the mountain; practice the three separately, and the shield system is truly mastered."
+  ],
+  [
+   "← 上一篇：洞窟探险完全指南 返回秘籍专栏 下一篇：天空岛完全指南 →",
+   "← Previous: Cave Exploration Complete Guide | Back to the Guide Column | Next: Sky Islands Complete Guide →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 弓箭完全指南：选弓、箭矢搭配与五连兽神弓",
+   "› Bow Complete Guide: Choosing Bows, Arrow Combos, and the Five-Shot Savage Lynel Bow"
+  ],
+  [
+   "› 余料建造完全指南",
+   "› Fuse Complete Guide"
+  ],
+  [
+   "› 人马（莱尼尔）完全指南",
+   "› Lynel Complete Guide"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Complete Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Guide"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Scimitar of the Seven Ultimate Guide"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Cooking Recipes"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Strongest Armor Sets: Full Three-Tier Breakdown"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine: Zero-Basics Walkthrough"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Mark Rabbit Flyer Tuning"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Depths Battery Expansion and the Great Fairies"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 Daily New Guides"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› All 152 Shrines: Complete Collection Checklist"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Guide: The First 10 Things to Do After Landing"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Korok Seed Complete Guide"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Depths Survival and Exploration Complete Guide"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› The Four Great Fairies and Armor Enhancement Complete Guide"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Four Dragons Material Farming Guide"
+  ],
+  [
+   "› 卢比速刷指南：从前期到后期",
+   "› Rupee Farming Guide: From Early to Late Game"
+  ],
+  [
+   "› 马匹捕捉与稀有马完全指南",
+   "› Horse Taming and Rare Horses Complete Guide"
+  ],
+  [
+   "› 五位贤者能力全解",
+   "› All Five Sages' Abilities Explained"
+  ],
+  [
+   "› 料理机制全解：效果、时长与暴击",
+   "› Cooking Mechanics Explained: Effects, Duration, and Critical Hits"
+  ],
+  [
+   "› 海拉鲁城堡探索完全指南",
+   "› Hyrule Castle Exploration Complete Guide"
+  ],
+  [
+   "› 海拉鲁图鉴509项收集指南",
+   "› Hyrule Compendium: All 509 Entries Collection Guide"
+  ],
+  [
+   "› 左纳乌装置实用造物指南",
+   "› Practical Zonai Device Builds Guide"
+  ],
+  [
+   "› 血月机制全解",
+   "› Blood Moon Mechanics Explained"
+  ],
+  [
+   "› 祝福之光兑换完全指南",
+   "› Light of Blessing Exchange Complete Guide"
+  ],
+  [
+   "› 15座鸟望塔开图完全指南",
+   "› All 15 Skyview Towers Map-Unlock Complete Guide"
+  ],
+  [
+   "› 洞窟探险完全指南：樱花树、魔犹伊与柯尔天",
+   "› Cave Exploration Complete Guide: Cherry Blossom Trees, Bubbulfrogs, and Koltin"
+  ],
+  [
+   "› 盾牌完全指南：海利亚盾、盾反与盾冲浪（本篇）",
+   "› Shield Complete Guide: Hylian Shield, Perfect Guard, and Shield Surfing (This Article)"
+  ],
+  [
+   "› 天空岛完全指南：上岛四法、贤者遗志与残旧地图",
+   "› Sky Islands Complete Guide: Four Ways Up, Sage's Wills, and Old Maps"
+  ],
+  [
+   "← 上一篇：洞窟探险完全指南",
+   "← Previous: Cave Exploration Complete Guide"
+  ],
+  [
+   "下一篇：天空岛完全指南 →",
+   "Next: Sky Islands Complete Guide →"
+  ],
+  [
+   "海利亚盾：蓝色盾面、金色三角力量纹章与红色海利亚纹章",
+   "Hylian Shield: blue shield face, golden Triforce emblem, and red Hylian crest"
+  ],
+  [
+   "🛡️ 盾牌攻略",
+   "🛡️ Shield Guide"
+  ],
+  [
+   "🛡️ 盾牌 · 获取与打法",
+   "🛡️ Shields · How to Get & Use Them"
+  ]
+ ],
+ "notes": [
+  "Cece is the English name for 瑟瑟, the Hateno Village shopkeeper; the shield page footer leaked into extraction due to a malformed footer tag in the source file and was excluded per the spec."
+ ]
+}

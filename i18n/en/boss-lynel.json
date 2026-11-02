@@ -1,0 +1,769 @@
+{
+ "notes": [
+  "林克时间 rendered as 'bullet time' (the slow-motion aiming state); no official glossary term was given for it.",
+  "人马 rendered as Lynel throughout, matching the glossary's Lynel entry."
+ ],
+ "pairs": [
+  [
+   "王国之泪红鬃莱尼尔（人马）完全攻略，血量2000点的入门强敌，详解爆头骑乘流全步骤、盾反创造跪地机会、三连火球躲避技巧，适合新手与装备较差玩家。",
+   "Complete guide to the Red-Maned Lynel in Tears of the Kingdom: a beginner-friendly boss with 2,000 HP. Covers every step of the headshot-and-mount strategy, creating kneeling openings with parries, and dodging the triple fireball attack — ideal for new players and those with weaker gear."
+  ],
+  [
+   "红鬃莱尼尔 Red-Maned Lynel",
+   "Red-Maned Lynel"
+  ],
+  [
+   "🦁 红鬃莱尼尔（人马）",
+   "🦁 Red-Maned Lynel (Lynel)"
+  ],
+  [
+   "最低等级强敌 · 血量 2000 · 爆头骑乘流 · 新手友好",
+   "Lowest-tier boss · 2,000 HP · Headshot-and-mount strategy · Beginner-friendly"
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "Boss图鉴",
+   "Boss Encyclopedia"
+  ],
+  [
+   "莱尼尔",
+   "Lynel"
+  ],
+  [
+   "🦁 莱尼尔（红褐/青色）",
+   "🦁 Lynel (Red / Blue)"
+  ],
+  [
+   "🔵 蓝鬃莱尼尔",
+   "🔵 Blue-Maned Lynel"
+  ],
+  [
+   "⚪ 白鬃莱尼尔",
+   "⚪ White-Maned Lynel"
+  ],
+  [
+   "⚔️ 白银莱尼尔",
+   "⚔️ Silver Lynel"
+  ],
+  [
+   "📋 基本信息",
+   "📋 Basic Information"
+  ],
+  [
+   "极难",
+   "Extreme"
+  ],
+  [
+   "难度感受",
+   "Difficulty"
+  ],
+  [
+   "血量（最低级）",
+   "HP (lowest tier)"
+  ],
+  [
+   "全地图",
+   "All over the map"
+  ],
+  [
+   "出现地点",
+   "Locations"
+  ],
+  [
+   "攻击属性",
+   "Attack Attributes"
+  ],
+  [
+   "物理 / 火焰（三连火球）",
+   "Physical / Fire (triple fireball)"
+  ],
+  [
+   "💡 新手教练：红鬃莱尼尔是所有莱尼尔中血量最低、动作最慢的版本。外表虽有压迫感，但 AI 规律固定，掌握爆头骑乘流后往往 3～4 个回合就能击倒。",
+   "💡 Beginner's coach: the Red-Maned Lynel has the lowest HP and the slowest moves of all Lynels. It looks intimidating, but its AI follows fixed patterns — once you master the headshot-and-mount strategy, you can usually bring it down in 3–4 rounds."
+  ],
+  [
+   "新手教练：红鬃莱尼尔是所有莱尼尔中血量最低、动作最慢的版本。",
+   "Beginner's coach: the Red-Maned Lynel has the lowest HP and the slowest moves of all Lynels."
+  ],
+  [
+   "外表虽有压迫感，但 AI 规律固定，掌握爆头骑乘流后往往 3～4 个回合就能击倒。",
+   "It looks intimidating, but its AI follows fixed patterns — once you master the headshot-and-mount strategy, you can usually bring it down in 3–4 rounds."
+  ],
+  [
+   "🎖 四色强度排序",
+   "🎖 Strength Ranking of the Four Colors"
+  ],
+  [
+   "🟠 红鬃",
+   "🟠 Red-Maned"
+  ],
+  [
+   "Tier 1 · 当前页面",
+   "Tier 1 · This page"
+  ],
+  [
+   "Tier 2 · 中弱",
+   "Tier 2 · Mid-low"
+  ],
+  [
+   "⚪ 白鬃",
+   "⚪ White-Maned"
+  ],
+  [
+   "Tier 3 · 中强",
+   "Tier 3 · Mid-high"
+  ],
+  [
+   "✨ 白银",
+   "✨ Silver"
+  ],
+  [
+   "Tier 4 · 最强",
+   "Tier 4 · Strongest"
+  ],
+  [
+   "红鬃 < 青色 < 蓝鬃 < 白鬃 < 白银 · 本页专注红鬃版攻略",
+   "Red-Maned < Blue < Blue-Maned < White-Maned < Silver · This page focuses on the Red-Maned version"
+  ],
+  [
+   "🎯 弱点",
+   "🎯 Weaknesses"
+  ],
+  [
+   "🏹 脸部爆头→跪地",
+   "🏹 Headshot to the face → kneeling"
+  ],
+  [
+   "🐴 骑乘背部输出（不耗耐久）",
+   "🐴 Mount its back to attack (no durability cost)"
+  ],
+  [
+   "🛡 盾反→近距爆头→跪地",
+   "🛡 Parry → close-range headshot → kneeling"
+  ],
+  [
+   "🎒 战前准备",
+   "🎒 Preparations"
+  ],
+  [
+   "弓",
+   "Bow"
+  ],
+  [
+   "弓箭：准备 20 支以上的普通箭。红鬃莱尼尔血量低，普通箭足以完成多次爆头，不需要特殊箭矢。",
+   "Arrows: bring 20 or more regular arrows. The Red-Maned Lynel has low HP, so regular arrows are enough for multiple headshots — no special arrows needed."
+  ],
+  [
+   "弓箭：准备 20 支以上的普通箭。",
+   "Arrows: bring 20 or more regular arrows."
+  ],
+  [
+   "红鬃莱尼尔血量低，普通箭足以完成多次爆头，不需要特殊箭矢。",
+   "The Red-Maned Lynel has low HP, so regular arrows are enough for multiple headshots — no special arrows needed."
+  ],
+  [
+   "高攻击力武器：准备一把当前面板攻击力最高的武器（单手剑、双手剑、长枪均可）。骑乘时使用这把武器输出，骑乘背上不消耗武器耐久，大可放心使用快报废的高攻武器。",
+   "High-attack weapon: bring your highest-attack weapon (one-handed sword, two-handed sword, or spear all work). Use it while mounted — attacking from its back costs no weapon durability, so feel free to use a high-attack weapon that is almost broken."
+  ],
+  [
+   "高攻击力武器：准备一把当前面板攻击力最高的武器（单手剑、双手剑、长枪均可）。",
+   "High-attack weapon: bring your highest-attack weapon (one-handed sword, two-handed sword, or spear all work)."
+  ],
+  [
+   "骑乘时使用这把武器输出，骑乘背上不消耗武器耐久，大可放心使用快报废的高攻武器。",
+   "Use it while mounted — attacking from its back costs no weapon durability, so feel free to use a high-attack weapon that is almost broken."
+  ],
+  [
+   "防御药 / 攻击料理：用 5 个大剑草或大剑香蕉熬制 3 级攻击料理，可大幅提升本次战斗的输出。或直接穿上蛮族套装，激活攻击加成套装效果。",
+   "Defense elixir / attack meals: cook a level-3 attack meal with 5 Mighty Thistles or Mighty Bananas to greatly boost your damage in this fight. Or wear the Barbarian Armor set to activate its attack-up set bonus."
+  ],
+  [
+   "防御药 / 攻击料理：用 5 个大剑草或大剑香蕉熬制 3 级攻击料理，可大幅提升本次战斗的输出。",
+   "Defense elixir / attack meals: cook a level-3 attack meal with 5 Mighty Thistles or Mighty Bananas to greatly boost your damage in this fight."
+  ],
+  [
+   "或直接穿上蛮族套装，激活攻击加成套装效果。",
+   "Or wear the Barbarian Armor set to activate its attack-up set bonus."
+  ],
+  [
+   "💡 核心概念：骑在莱尼尔背上攻击时，绝对不消耗武器耐久度！ 所以可以把快报废、面板极高的武器专门留着上马用——这就是\"爆头骑乘流\"省武器的秘密。",
+   "💡 Core concept: attacking while riding on a Lynel's back costs absolutely no weapon durability! So save your nearly broken, highest-attack weapons for mounting — that is the secret to how the \"headshot-and-mount strategy\" saves weapons."
+  ],
+  [
+   "核心概念：骑在莱尼尔背上攻击时，绝对不消耗武器耐久度！",
+   "Core concept: attacking while riding on a Lynel's back costs absolutely no weapon durability!"
+  ],
+  [
+   "所以可以把快报废、面板极高的武器专门留着上马用——这就是\"爆头骑乘流\"省武器的秘密。",
+   "So save your nearly broken, highest-attack weapons for mounting — that is the secret to how the \"headshot-and-mount strategy\" saves weapons."
+  ],
+  [
+   "🐎 核心逃票打法 · 爆头骑乘流",
+   "🐎 Core Cheese Strategy · Headshot-and-Mount"
+  ],
+  [
+   "这个打法的核心在于：骑在人马背上攻击时，绝对不消耗武器耐久度！ 也就是说，你可以拿一把快要报废的、攻击力极高的武器专门用来在它背上输出。 不断重复以下四个步骤，红鬃人马往往撑不过 3～4 个回合就会倒下。",
+   "The core of this strategy: attacking while riding on a Lynel's back costs absolutely no weapon durability! In other words, you can take a nearly broken, extremely high-attack weapon and use it exclusively for damage from its back. Repeat the following four steps, and a Red-Maned Lynel usually falls within 3–4 rounds."
+  ],
+  [
+   "这个打法的核心在于：骑在人马背上攻击时，绝对不消耗武器耐久度！",
+   "The core of this strategy: attacking while riding on a Lynel's back costs absolutely no weapon durability!"
+  ],
+  [
+   "也就是说，你可以拿一把快要报废的、攻击力极高的武器专门用来在它背上输出。",
+   "In other words, you can take a nearly broken, extremely high-attack weapon and use it exclusively for damage from its back."
+  ],
+  [
+   "不断重复以下四个步骤，红鬃人马往往撑不过 3～4 个回合就会倒下。",
+   "Repeat the following four steps, and a Red-Maned Lynel usually falls within 3–4 rounds."
+  ],
+  [
+   "寻找射击时机（让它跪地） 拉开一点距离，在人马准备向你冲锋或吐火球的间隙，用弓箭瞄准它的脸部（胡子到嘴巴附近的位置）射击。 如果听到「叮」的清脆暴击声，人马会双手撑地，陷入几秒钟的瘫痪（跪地）状态。",
+   "Find your shot (make it kneel). Keep a little distance, and in the gap as the Lynel prepares to charge or spit fireballs, shoot it in the face with your bow (around the beard and mouth). If you hear a crisp \"ding\" critical-hit sound, the Lynel will brace itself on its hands and fall into a few seconds of paralysis (kneeling)."
+  ],
+  [
+   "寻找射击时机（让它跪地）",
+   "Find your shot (make it kneel)"
+  ],
+  [
+   "拉开一点距离，在人马准备向你冲锋或吐火球的间隙，用弓箭瞄准它的脸部（胡子到嘴巴附近的位置）射击。",
+   "Keep a little distance, and in the gap as the Lynel prepares to charge or spit fireballs, shoot it in the face with your bow (around the beard and mouth)."
+  ],
+  [
+   "如果听到「叮」的清脆暴击声，人马会双手撑地，陷入几秒钟的瘫痪（跪地）状态。",
+   "If you hear a crisp \"ding\" critical-hit sound, the Lynel will brace itself on its hands and fall into a few seconds of paralysis (kneeling)."
+  ],
+  [
+   "收刀冲过去（别迟疑） 人马跪地后，立刻收起弓箭，用最快速度跑到它的身侧。跪地状态只有几秒，错过就要重新制造机会。",
+   "Put your bow away and rush over (don't hesitate). Once the Lynel is kneeling, immediately put your bow away and run to its side as fast as you can. The kneeling state lasts only a few seconds — miss it and you will have to create another opening."
+  ],
+  [
+   "收刀冲过去（别迟疑）",
+   "Put your bow away and rush over (don't hesitate)"
+  ],
+  [
+   "人马跪地后，立刻收起弓箭，用最快速度跑到它的身侧。",
+   "Once the Lynel is kneeling, immediately put your bow away and run to its side as fast as you can."
+  ],
+  [
+   "跪地状态只有几秒，错过就要重新制造机会。",
+   "The kneeling state lasts only a few seconds — miss it and you will have to create another opening."
+  ],
+  [
+   "骑乘输出（不扣耐久的白嫖伤害） 走到它身边时，屏幕上会出现「骑乘（Mount）」提示。立刻按下 A 键跳上人马的背，换上你攻击力最高的武器，疯狂按下攻击键。",
+   "Mounted damage (free damage with no durability cost). When you walk up to it, a \"Mount\" prompt appears on screen. Immediately press A to jump onto the Lynel's back, switch to your highest-attack weapon, and mash the attack button."
+  ],
+  [
+   "骑乘输出（不扣耐久的白嫖伤害）",
+   "Mounted damage (free damage with no durability cost)"
+  ],
+  [
+   "走到它身边时，屏幕上会出现「骑乘（Mount）」提示。",
+   "When you walk up to it, a \"Mount\" prompt appears on screen."
+  ],
+  [
+   "立刻按下 A 键跳上人马的背，换上你攻击力最高的武器，疯狂按下攻击键。",
+   "Immediately press A to jump onto the Lynel's back, switch to your highest-attack weapon, and mash the attack button."
+  ],
+  [
+   "注意：",
+   "Note:"
+  ],
+  [
+   "无论什么武器，在背上最多只能砍 5 下，第 5 下时林克会被自动甩下来。",
+   "No matter the weapon, you can land at most 5 hits from its back — on the 5th hit, Link is automatically thrown off."
+  ],
+  [
+   "空中补刀（林克时间）· 白赚额外伤害 被甩到空中的瞬间，立刻按住 ZL 键并按下 ZR 键触发空中拉弓（林克时间）。此时时间变慢，你可以在空中从背后用弓箭对着它的后脑勺再补射 2～3 箭。",
+   "Midair follow-up shots (bullet time) · free bonus damage. The instant you are thrown into the air, hold ZL and press ZR to draw your bow midair (bullet time). Time slows down, and from behind in midair you can shoot 2–3 more arrows at the back of its head."
+  ],
+  [
+   "空中补刀（林克时间）· 白赚额外伤害",
+   "Midair follow-up shots (bullet time) · free bonus damage"
+  ],
+  [
+   "被甩到空中的瞬间，立刻按住 ZL 键并按下 ZR 键触发空中拉弓（林克时间）。",
+   "The instant you are thrown into the air, hold ZL and press ZR to draw your bow midair (bullet time)."
+  ],
+  [
+   "此时时间变慢，你可以在空中从背后用弓箭对着它的后脑勺再补射 2～3 箭。",
+   "Time slows down, and from behind in midair you can shoot 2–3 more arrows at the back of its head."
+  ],
+  [
+   "🔁 循环口诀：「爆头→跑过去→骑乘砍5刀→被甩→空中补射后脑勺→落地再爆头」，重复 3～4 轮，红鬃莱尼尔必倒。",
+   "🔁 Loop mantra: \"Headshot → run over → mount and land 5 hits → get thrown off → midair shots to the back of the head → land and headshot again.\" Repeat 3–4 rounds and the Red-Maned Lynel will fall."
+  ],
+  [
+   "🛡️ 招式拆解与应对方案",
+   "🛡️ Move Breakdown and Counters"
+  ],
+  [
+   "如果你无法直接用弓箭射中它的脸，可以通过观察它的动作，用盾牌或闪避来创造跪地机会：",
+   "If you can't hit its face directly with arrows, watch its moves and use your shield or dodges to create a kneeling opening:"
+  ],
+  [
+   "三连挥刀 / 蓄力横扫",
+   "Triple slash / charged sweep"
+  ],
+  [
+   "前兆：人马举刀向你连续挥击。 应对：在它挥刀的瞬间，按住 ZL 锁定，同时向后跳（后翻滚）。如果时机准确，会触发「林克时间」，直接上去用单手剑或双手剑疯狂乱舞。",
+   "Tell: the Lynel raises its blade and slashes at you repeatedly. Counter: the instant it swings, hold ZL to lock on and jump backward (backflip). With good timing, this triggers bullet time — then rush in and flail away with a one-handed or two-handed sword."
+  ],
+  [
+   "前兆：人马举刀向你连续挥击。",
+   "Tell: the Lynel raises its blade and slashes at you repeatedly."
+  ],
+  [
+   "应对：在它挥刀的瞬间，按住 ZL 锁定，同时向后跳（后翻滚）。",
+   "Counter: the instant it swings, hold ZL to lock on and jump backward (backflip)."
+  ],
+  [
+   "如果时机准确，会触发「林克时间」，直接上去用单手剑或双手剑疯狂乱舞。",
+   "With good timing, this triggers bullet time — then rush in and flail away with a one-handed or two-handed sword."
+  ],
+  [
+   "四足飞奔冲撞",
+   "Four-legged charging rush"
+  ],
+  [
+   "前兆：它收起武器，像一匹真正的马一样四脚着地向你全速冲来。 方案 A（闪避流）：在它快撞到你的瞬间，向左或向右侧跳，可以触发林克时间，然后输出。 方案 B · 盾反（更推荐）：举盾迎着它，在它撞到你的瞬间按下 A 键进行盾反。盾反成功后它会原地愣神 1～2 秒，此时距离极近，直接拉弓盲射它的脸，它就会跪地。然后直接转入骑乘流。",
+   "Tell: it puts its weapon away and charges at you at full speed on all fours, like a real horse. Option A (dodge style): sidestep left or right the instant before it hits you to trigger bullet time, then attack. Option B · Parry (recommended): raise your shield to meet it and press A the instant it hits you to parry. After a successful parry it stands stunned for 1–2 seconds; at such close range, draw your bow and blind-fire at its face and it will kneel. Then go straight into the mounting strategy."
+  ],
+  [
+   "前兆：它收起武器，像一匹真正的马一样四脚着地向你全速冲来。",
+   "Tell: it puts its weapon away and charges at you at full speed on all fours, like a real horse."
+  ],
+  [
+   "方案 A（闪避流）：在它快撞到你的瞬间，向左或向右侧跳，可以触发林克时间，然后输出。",
+   "Option A (dodge style): sidestep left or right the instant before it hits you to trigger bullet time, then attack."
+  ],
+  [
+   "方案 B · 盾反（更推荐）：举盾迎着它，在它撞到你的瞬间按下 A 键进行盾反。",
+   "Option B · Parry (recommended): raise your shield to meet it and press A the instant it hits you to parry."
+  ],
+  [
+   "盾反成功后它会原地愣神 1～2 秒，此时距离极近，直接拉弓盲射它的脸，它就会跪地。",
+   "After a successful parry it stands stunned for 1–2 seconds; at such close range, draw your bow and blind-fire at its face and it will kneel."
+  ],
+  [
+   "然后直接转入骑乘流。",
+   "Then go straight into the mounting strategy."
+  ],
+  [
+   "💡 推荐方案 B：盾反成功后距离极近，爆头几乎 100% 命中，是最高效创造骑乘机会的手段。",
+   "💡 Option B is recommended: after a successful parry you are extremely close, so headshots land almost 100% of the time — the most efficient way to create a mounting opportunity."
+  ],
+  [
+   "喷吐三连火球",
+   "Triple fireball spit"
+  ],
+  [
+   "前兆：它拉开距离，连续向你吐出三个火球。 最省力办法：绕着人马做大半径的横向奔跑，火球绝对砸不到你。 反击时机：等它吐完第三个火球时，它会有短暂的收招硬直。此时可以气定神闲地停下来，拉弓瞄准它的脸射击，使其跪地，然后冲过去骑乘。",
+   "Tell: it backs away and spits three fireballs at you in a row. Easiest counter: run sideways around the Lynel in a wide circle — the fireballs absolutely cannot hit you. Counterattack window: after it spits the third fireball, it has a brief recovery stagger. Calmly stop, draw your bow, aim at its face, make it kneel, then rush over and mount."
+  ],
+  [
+   "前兆：它拉开距离，连续向你吐出三个火球。",
+   "Tell: it backs away and spits three fireballs at you in a row."
+  ],
+  [
+   "最省力办法：绕着人马做大半径的横向奔跑，火球绝对砸不到你。",
+   "Easiest counter: run sideways around the Lynel in a wide circle — the fireballs absolutely cannot hit you."
+  ],
+  [
+   "反击时机：等它吐完第三个火球时，它会有短暂的收招硬直。",
+   "Counterattack window: after it spits the third fireball, it has a brief recovery stagger."
+  ],
+  [
+   "此时可以气定神闲地停下来，拉弓瞄准它的脸射击，使其跪地，然后冲过去骑乘。",
+   "Calmly stop, draw your bow, aim at its face, make it kneel, then rush over and mount."
+  ],
+  [
+   "💡 要点：三连火球是最好的爆头机会，横向跑完全躲避后，吐完的收招硬直就是免费爆头时间窗口。",
+   "💡 Key point: the triple fireball is the best headshot opportunity — after dodging it completely by running sideways, the recovery stagger after the spit is a free headshot window."
+  ],
+  [
+   "🎁 掉落物品",
+   "🎁 Drops"
+  ],
+  [
+   "🗡️ 莱尼尔的刃角",
+   "🗡️ Lynel Saber Horn"
+  ],
+  [
+   "🐾 莱尼尔的蹄",
+   "🐾 Lynel Hoof"
+  ],
+  [
+   "🫀 莱尼尔的肝",
+   "🫀 Lynel Guts"
+  ],
+  [
+   "🏹 莱尼尔弓（三发）",
+   "🏹 Lynel Bow (triple-shot)"
+  ],
+  [
+   "⚔️ 莱尼尔剑",
+   "⚔️ Lynel Sword"
+  ],
+  [
+   "💡 素材用途：莱尼尔的刃角是优质融合素材，余料建造到武器上可大幅提升攻击力。莱尼尔弓（三发散弹）是空中爆头的利器，多储备几把备用。",
+   "💡 Material uses: the Lynel Saber Horn is a high-quality Fuse material that greatly raises a weapon's attack when fused. The Lynel Bow (triple-shot spread) is a great tool for midair headshots — stock up on several."
+  ],
+  [
+   "素材用途：莱尼尔的刃角是优质融合素材，余料建造到武器上可大幅提升攻击力。",
+   "Material uses: the Lynel Saber Horn is a high-quality Fuse material that greatly raises a weapon's attack when fused."
+  ],
+  [
+   "莱尼尔弓（三发散弹）是空中爆头的利器，多储备几把备用。",
+   "The Lynel Bow (triple-shot spread) is a great tool for midair headshots — stock up on several."
+  ],
+  [
+   "🔗 其他变体攻略",
+   "🔗 Other Variant Guides"
+  ],
+  [
+   "爆头骑乘流对所有颜色的莱尼尔均有效，但高级变体血量更厚、动作更快，部分变体有独特招式需要特别应对。",
+   "The headshot-and-mount strategy works on Lynels of every color, but higher-tier variants have more HP and faster moves, and some have unique moves that need special counters."
+  ],
+  [
+   "🔵 蓝鬃莱尼尔攻略 →",
+   "🔵 Blue-Maned Lynel Guide →"
+  ],
+  [
+   "⚪ 白鬃莱尼尔攻略 →",
+   "⚪ White-Maned Lynel Guide →"
+  ],
+  [
+   "⚔️ 白银莱尼尔攻略 →",
+   "⚔️ Silver Lynel Guide →"
+  ],
+  [
+   "← 返回 Boss 图鉴",
+   "← Back to Boss Encyclopedia"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 蓝鬃人马",
+   "› Blue-Maned Lynel"
+  ],
+  [
+   "› 白鬃人马",
+   "› White-Maned Lynel"
+  ],
+  [
+   "› 白银人马",
+   "› Silver Lynel"
+  ],
+  [
+   "📚 更多攻略",
+   "📚 More Guides"
+  ],
+  [
+   "› 哈里的终极秘籍（13篇）",
+   "› Harry's Ultimate Secrets (13 articles)"
+  ],
+  [
+   "› 全部页面索引",
+   "› Full Page Index"
+  ],
+  [
+   "🔵 蓝鬃",
+   "🔵 Blue-Maned"
+  ],
+  [
+   "莱尼尔攻略",
+   "Lynel Guide"
+  ],
+  [
+   "弓箭：",
+   "Bows: "
+  ],
+  [
+   "准备",
+   "Prepare "
+  ],
+  [
+   "20 支以上的普通箭",
+   "20 or more regular arrows"
+  ],
+  [
+   "防御药 / 攻击料理：",
+   "Defense elixirs / attack meals: "
+  ],
+  [
+   "用",
+   "Use "
+  ],
+  [
+   "熬制 3 级攻击料理，可大幅提升本次战斗的输出。或直接穿上",
+   "to brew a level 3 attack meal, greatly boosting your damage output for this fight. Or just wear "
+  ],
+  [
+   "，激活攻击加成套装效果。",
+   ", activating the attack-boost set bonus."
+  ],
+  [
+   "5 个大剑草或大剑香蕉",
+   "5 Mighty Thistles or Mighty Bananas "
+  ],
+  [
+   "蛮族套装",
+   "Barbarian Set"
+  ],
+  [
+   "💡 核心概念：",
+   "💡 Core concept: "
+  ],
+  [
+   "骑在莱尼尔背上攻击时，",
+   "When attacking while riding on a Lynel's back, "
+  ],
+  [
+   "绝对不消耗武器耐久度！",
+   "it costs absolutely no weapon durability! "
+  ],
+  [
+   "这个打法的核心在于：",
+   "The core of this strategy is: "
+  ],
+  [
+   "也就是说，你可以拿一把快要报废的、攻击力极高的武器专门用来在它背上输出。\n        不断重复以下四个步骤，红鬃人马往往撑不过",
+   "That is, you can take a nearly broken, extremely high-attack weapon and save it specifically for dealing damage on its back. Repeat the following four steps, and a Red-Maned Lynel usually cannot survive more than "
+  ],
+  [
+   "就会倒下。",
+   "before going down."
+  ],
+  [
+   "骑在人马背上攻击时，绝对不消耗武器耐久度！",
+   "Attacking while riding on a Lynel's back costs absolutely no weapon durability! "
+  ],
+  [
+   "3～4 个回合",
+   "3–4 rounds "
+  ],
+  [
+   "拉开一点距离，在人马",
+   "Keep a little distance, and when the Lynel "
+  ],
+  [
+   "，用弓箭",
+   ", use your bow to "
+  ],
+  [
+   "射击。",
+   "and shoot. "
+  ],
+  [
+   "如果听到「",
+   "If you hear a crisp \""
+  ],
+  [
+   "」的清脆暴击声，人马会双手撑地，陷入几秒钟的",
+   "\" critical-hit sound, the Lynel will brace itself on its hands and fall into a few seconds of "
+  ],
+  [
+   "状态。",
+   "state."
+  ],
+  [
+   "准备向你冲锋或吐火球的间隙",
+   "is about to charge at you or spit fireballs"
+  ],
+  [
+   "瞄准它的脸部（胡子到嘴巴附近的位置）",
+   "aim at its face (around the beard-to-mouth area) "
+  ],
+  [
+   "叮",
+   "ding"
+  ],
+  [
+   "瘫痪（跪地）",
+   "paralysis (kneeling) "
+  ],
+  [
+   "人马跪地后，",
+   "Once the Lynel is kneeling, "
+  ],
+  [
+   "，用最快速度跑到它的身侧。跪地状态只有几秒，错过就要重新制造机会。",
+   ", run to its side as fast as you can. The kneeling state lasts only a few seconds — miss it and you must create another opening."
+  ],
+  [
+   "立刻收起弓箭",
+   "put your bow away immediately"
+  ],
+  [
+   "走到它身边时，屏幕上会出现「",
+   "When you walk up beside it, a \""
+  ],
+  [
+   "」提示。立刻按下",
+   "\" prompt will appear. Immediately press "
+  ],
+  [
+   "跳上人马的背，换上你攻击力最高的武器，疯狂按下攻击键。",
+   "to jump onto the Lynel's back, switch to your highest-attack weapon, and mash the attack button. "
+  ],
+  [
+   "无论什么武器，在背上",
+   " No matter the weapon, on its back "
+  ],
+  [
+   "，第 5 下时林克会被自动甩下来。",
+   ", and on the 5th hit Link is automatically thrown off."
+  ],
+  [
+   "骑乘（Mount）",
+   "Mount"
+  ],
+  [
+   "A 键",
+   "the A button "
+  ],
+  [
+   "最多只能砍 5 下",
+   "you can land at most 5 hits"
+  ],
+  [
+   "被甩到空中的瞬间，立刻",
+   "The instant you are thrown into the air, immediately "
+  ],
+  [
+   "触发空中拉弓（林克时间）。此时时间变慢，你可以在空中从背后用弓箭",
+   "trigger midair bow-drawing (bullet time). Time slows down, and from behind in midair you can use your bow to "
+  ],
+  [
+   "按住 ZL 键并按下 ZR 键",
+   "hold ZL and press ZR "
+  ],
+  [
+   "对着它的后脑勺再补射 2～3 箭",
+   "shoot it in the back of the head 2–3 more times."
+  ],
+  [
+   "前兆：",
+   "Tell: "
+  ],
+  [
+   "人马举刀向你连续挥击。",
+   "The Lynel swings its blade at you repeatedly. "
+  ],
+  [
+   "在它挥刀的瞬间，",
+   "The instant it swings, "
+  ],
+  [
+   "。如果时机准确，会触发",
+   ". With good timing, this triggers "
+  ],
+  [
+   "，直接上去用单手剑或双手剑疯狂乱舞。",
+   ", then rush in and flail away with a one-handed or two-handed sword."
+  ],
+  [
+   "应对：",
+   "Counter: "
+  ],
+  [
+   "按住 ZL 锁定，同时向后跳（后翻滚）",
+   "hold ZL to lock on and jump backward (backflip)"
+  ],
+  [
+   "「林克时间」",
+   "\"bullet time\""
+  ],
+  [
+   "它收起武器，像一匹真正的马一样四脚着地向你全速冲来。",
+   "It sheathes its weapon and charges at you at full speed on all fours like a real horse. "
+  ],
+  [
+   "在它快撞到你的瞬间，",
+   "The instant it is about to hit you, "
+  ],
+  [
+   "，可以触发林克时间，然后输出。",
+   ", which can trigger bullet time, letting you deal damage. "
+  ],
+  [
+   "举盾迎着它，在它撞到你的瞬间",
+   "Raise your shield to meet it, and the instant it hits you "
+  ],
+  [
+   "。盾反成功后它会原地愣神 1～2 秒，此时",
+   ". After a successful Perfect Guard, it stands stunned for 1–2 seconds; at this point "
+  ],
+  [
+   "方案 A（闪避流）：",
+   "Option A (dodge strategy): "
+  ],
+  [
+   "向左或向右侧跳",
+   "jump left or right"
+  ],
+  [
+   "方案 B · 盾反（更推荐）：",
+   "Option B · Perfect Guard (recommended): "
+  ],
+  [
+   "按下 A 键进行盾反",
+   "press A to Perfect Guard"
+  ],
+  [
+   "距离极近，直接拉弓盲射它的脸，它就会跪地",
+   "you are extremely close, so draw your bow and blind-shoot its face to make it kneel"
+  ],
+  [
+   "它拉开距离，连续向你吐出三个火球。",
+   "It backs away and spits three fireballs at you in a row. "
+  ],
+  [
+   "绕着人马做",
+   "run sideways around the Lynel in a "
+  ],
+  [
+   "，火球绝对砸不到你。",
+   ", and the fireballs absolutely cannot hit you. "
+  ],
+  [
+   "等它吐完第三个火球时，它会有",
+   "After it spits the third fireball, it will have "
+  ],
+  [
+   "。此时可以气定神闲地停下来，",
+   ". At this point you can calmly stop, "
+  ],
+  [
+   "，使其跪地，然后冲过去骑乘。",
+   ", making it kneel, then rush over and mount it."
+  ],
+  [
+   "最省力办法：",
+   "Easiest counter: "
+  ],
+  [
+   "大半径的横向奔跑",
+   "wide circle"
+  ],
+  [
+   "反击时机：",
+   "Counterattack window: "
+  ],
+  [
+   "短暂的收招硬直",
+   "a brief recovery stagger"
+  ],
+  [
+   "拉弓瞄准它的脸射击",
+   "draw your bow and shoot its face"
+  ]
+ ],
+ "title": "Red-Maned Lynel (Lynel) Guide · Headshot Mount Strategy Fully Explained · Tears of the Kingdom Boss"
+}

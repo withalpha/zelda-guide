@@ -1,0 +1,990 @@
+{
+ "title": "The Legend of Zelda: Tears of the Kingdom — Shrine Quest Complete Guide: 31 Shrines Explained with Pictures | Tears of the Kingdom Guide",
+ "notes": [
+  "Shrine proper names are phonetic transliterations of the Chinese names (except Usazum, which matches this site's own article slug); they were not verified against the official English in-game name list, so a few may differ from the official names.",
+  "The region tag “艾勒纳塔克” on the Momoshika card is rendered as Eldin (the Death Caldera area); this is a descriptive rendering, not a verified official place name.",
+  "Fragment pass: shrine quest titles are descriptive translations, not verified against the official English in-game quest list (notably 幽芬湖 → Youfen Lake, 拉纳湖 → Lake Rana, 拉尔斯水脉 → Ralsus Waterways, 哈特尔 → Necluda region, 死亡破火山口 → Death Caldera); verify before treating as official names."
+ ],
+ "pairs": [
+  [
+   "王国之泪神庙挑战完整攻略，31个神庙挑战详细图文解说，涵盖水晶神庙、洞窟神庙、特殊任务触发型，找寻路线与开启条件完全指南。",
+   "Complete guide to Tears of the Kingdom Shrine Quests: detailed illustrated walkthroughs for all 31 Shrine Quests, covering crystal shrines, cave shrines, and special task-triggered types — a complete guide to finding routes and unlock conditions."
+  ],
+  [
+   "🏛 神庙挑战",
+   "🏛 Shrine Quests"
+  ],
+  [
+   "全部 31 个隐藏神庙挑战 · 含地图坐标与完整开启攻略",
+   "All 31 hidden Shrine Quests · with map coordinates and complete unlock walkthroughs"
+  ],
+  [
+   "神庙挑战完成进度",
+   "Shrine Quest completion progress"
+  ],
+  [
+   "0已完成",
+   "0 completed"
+  ],
+  [
+   "31全部挑战",
+   "31 total quests"
+  ],
+  [
+   "全部 (31)",
+   "All (31)"
+  ],
+  [
+   "陆地水晶",
+   "Surface Crystals"
+  ],
+  [
+   "洞窟水晶",
+   "Cave Crystals"
+  ],
+  [
+   "天空水晶",
+   "Sky Crystals"
+  ],
+  [
+   "特殊任务",
+   "Special Tasks"
+  ],
+  [
+   "乌萨诸马神庙",
+   "Usazum Shrine"
+  ],
+  [
+   "中央",
+   "Central Hyrule"
+  ],
+  [
+   "前往达利特森林（Dalite Forest）北端，找到地面上残破的神庙底座，接受挑战任务。",
+   "Head to the northern end of Dalite Forest, find the ruined shrine pedestal on the ground, and accept the quest."
+  ],
+  [
+   "神庙底座发出光柱，指向西侧萨托利山（Mount Satori）山麓洞窟，洞口在神庙正西方山脚处。",
+   "The shrine pedestal emits a beam of light pointing toward a cave at the foot of Mount Satori to the west; the cave entrance is due west of the shrine, at the foot of the mountain."
+  ],
+  [
+   "进入洞窟后，深处有一只石巨人（Hinox），水晶挂在它的颈上——击败或绕过石巨人取得水晶。",
+   "After entering the cave, deep inside there is a Hinox, with the crystal hanging from its neck — defeat or slip past the Hinox to obtain the crystal."
+  ],
+  [
+   "使用究极手抱起水晶，原路运出洞窟，放置在神庙底座上即可激活，进入领取祝福之光。",
+   "Use Ultrahand to pick up the crystal, carry it back out of the cave the way you came, and place it on the shrine pedestal to activate it, then enter to claim the Light of Blessing."
+  ],
+  [
+   "瓦欧欧萨神庙",
+   "Waoosa Shrine"
+  ],
+  [
+   "利特",
+   "Rito"
+  ],
+  [
+   "前往托托利湖（Totori Lake）西侧湖岸，找到一处白鸟形石雕，与其旁边的 NPC 对话接取任务。",
+   "Go to the west shore of Totori Lake, find a white bird-shaped stone carving, and talk to the NPC beside it to pick up the quest."
+  ],
+  [
+   "白鸟目视方向指向西侧山壁上的洞窟入口——进入西托托利湖洞窟。",
+   "The direction the white bird is looking points to a cave entrance in the mountain wall to the west — enter the West Totori Lake Cave."
+  ],
+  [
+   "洞内需要跨越水面：使用余料建造将木板拼合成简易桥梁或竹筏通行，到达深处取得水晶。",
+   "Inside the cave you need to cross water: use Fuse to join planks into a simple bridge or raft to get across, and reach the depths to obtain the crystal."
+  ],
+  [
+   "将水晶带出洞窟，搬运至神庙底座放置即可激活神庙，完成后进入直接领取祝福之光。",
+   "Carry the crystal out of the cave and place it on the shrine pedestal to activate the shrine; once done, enter to claim the Light of Blessing directly."
+  ],
+  [
+   "伊卡塔克神庙",
+   "Ikatak Shrine"
+  ],
+  [
+   "利特·塔邦挞",
+   "Rito · Tabantha"
+  ],
+  [
+   "在吉萨环形山（Gisa Crater）西侧边缘找到残破神庙底座，接取挑战。",
+   "Find the ruined shrine pedestal on the western edge of Gisa Crater and pick up the quest."
+  ],
+  [
+   "光柱指向环形山内部中央岩石洞穴——进入洞穴，水晶被岩石和碎石封锁在深处。",
+   "The beam of light points to a rocky cave in the center of the crater — enter the cave, where the crystal is sealed deep inside behind rock and rubble."
+  ],
+  [
+   "使用余料建造组合构造物推开大石块，或使用爆炸果清除障碍后抵达水晶。",
+   "Use Fuse to assemble a construct that pushes the large boulders aside, or use Bomb Flowers to clear the obstacles and reach the crystal."
+  ],
+  [
+   "用究极手抱起水晶，原路运出并放入神庙底座完成激活。",
+   "Use Ultrahand to pick up the crystal, carry it back out the way you came, and place it in the shrine pedestal to complete the activation."
+  ],
+  [
+   "希斯拉纳神庙",
+   "Shisurana Shrine"
+  ],
+  [
+   "海布拉",
+   "Hebra"
+  ],
+  [
+   "在皮基达石林（Pikida Stonegrove）视野塔东南方的雪地平原找到残破神庙底座，接取挑战。",
+   "Find the ruined shrine pedestal on the snowy plain southeast of the Pikida Stonegrove Skyview Tower and pick up the quest."
+  ],
+  [
+   "光柱指向神庙北方雪坡高处——前往雪坡找到一块被冰封的水晶。",
+   "The beam of light points to high ground on the snowy slope north of the shrine — head to the slope to find a crystal frozen in ice."
+  ],
+  [
+   "使用火焰武器、火把或炎热食材融化冰块解放水晶，再利用究极手将水晶沿坡运至神庙处。",
+   "Use a fire weapon, a torch, or spicy ingredients to melt the ice and free the crystal, then use Ultrahand to carry the crystal down the slope to the shrine."
+  ],
+  [
+   "将水晶放入底座激活神庙，进入领取祝福之光。",
+   "Place the crystal in the pedestal to activate the shrine, then enter to claim the Light of Blessing."
+  ],
+  [
+   "鲁塔富乌每神庙",
+   "Rutafuumai Shrine"
+  ],
+  [
+   "进入洞窟后地面结冰，水晶在深处冰雪平台上——需跨越结冰水面前进。",
+   "Inside the cave the ground is frozen, and the crystal sits on an icy platform deep inside — you need to cross frozen water to advance."
+  ],
+  [
+   "使用余料建造拼接木板做成浮桥，或踩着冰块跳跃通行，抵达水晶处。",
+   "Use Fuse to join planks into a floating bridge, or hop across the ice blocks, to reach the crystal."
+  ],
+  [
+   "取得水晶后带出洞窟，放入神庙底座激活，进入领取祝福之光。",
+   "After obtaining the crystal, carry it out of the cave, place it in the shrine pedestal to activate it, and enter to claim the Light of Blessing."
+  ],
+  [
+   "在海布拉山西北角找到残破神庙底座，光柱指向附近山壁上的洞窟入口。",
+   "Find the ruined shrine pedestal at the northwest corner of the Hebra Mountains; the beam of light points to a cave entrance in a nearby mountain wall."
+  ],
+  [
+   "普普恩凯神庙",
+   "Pupuenkai Shrine"
+  ],
+  [
+   "科洛克森林",
+   "Korok Forest"
+  ],
+  [
+   "前往科洛克森林（Korok Forest）内部，找到在树干附近游荡的科洛克 NPC，与其对话接取挑战。",
+   "Head inside Korok Forest, find the Korok NPC wandering near the tree trunks, and talk to it to pick up the quest."
+  ],
+  [
+   "任务要求同时献上1 块矿石（普通矿石即可）和5 个金苹果放置在神庙底座前。",
+   "The quest requires offering 1 ore (an ordinary ore will do) and 5 Golden Apples placed in front of the shrine pedestal at the same time."
+  ],
+  [
+   "金苹果在科洛克森林内金色苹果树上采摘，矿石可在森林边缘敲击岩脉获取。",
+   "Golden Apples can be picked from the golden apple trees inside Korok Forest, and ore can be obtained by striking ore deposits at the forest's edge."
+  ],
+  [
+   "将两种物品同时放好后神庙显现，进入直接领取祝福之光（祝福神殿）。",
+   "Once both items are placed at the same time, the shrine appears; enter to claim the Light of Blessing directly (a blessing shrine)."
+  ],
+  [
+   "世克恩波马拉神庙",
+   "Shikuenbomara Shrine"
+  ],
+  [
+   "在科洛克森林深处找到被骷髅守卫把守的神庙入口，与守卫对话后触发挑战。",
+   "Deep inside Korok Forest, find the shrine entrance guarded by skeleton guards, and talk to a guard to trigger the quest."
+  ],
+  [
+   "守卫声称禁止进入，实际上需要绕开守卫的视野，利用树木遮挡或隐身药剂接近神庙底座。",
+   "The guards claim entry is forbidden, but you actually need to slip around their line of sight, using trees for cover or a stealth elixir to approach the shrine pedestal."
+  ],
+  [
+   "抵达神庙底座处后激活装置，神庙随即显现开启。",
+   "Once you reach the shrine pedestal, activate the device and the shrine immediately appears and opens."
+  ],
+  [
+   "进入神庙直接领取祝福之光（祝福神殿）。",
+   "Enter the shrine to claim the Light of Blessing directly (a blessing shrine)."
+  ],
+  [
+   "尼恩吉希神庙",
+   "Niengishi Shrine"
+  ],
+  [
+   "在科洛克森林中找到科洛克 玛卡玛喀（Makami），与其对话获知它藏宝藏的线索。",
+   "In Korok Forest, find the Korok Makami and talk to it to learn clues about where it hid its treasure."
+  ],
+  [
+   "根据玛卡玛喀指引，在森林内特定树丛或树根间找到隐藏的发光水晶。",
+   "Following Makami's guidance, find the hidden glowing crystal among particular bushes or tree roots in the forest."
+  ],
+  [
+   "使用究极手抱起水晶，将其搬运至神庙底座处放置激活。",
+   "Use Ultrahand to pick up the crystal and carry it to the shrine pedestal, where placing it activates the shrine."
+  ],
+  [
+   "进入神庙领取祝福之光（祝福神殿）。",
+   "Enter the shrine to claim the Light of Blessing (a blessing shrine)."
+  ],
+  [
+   "摩摩希卡神庙",
+   "Momoshika Shrine"
+  ],
+  [
+   "艾勒纳塔克",
+   "Eldin"
+  ],
+  [
+   "前往死亡破火山口（Death Caldera），此区域极度高温，必须穿戴防火套装或饮用防热药剂。",
+   "Head to the Death Caldera; this area is extremely hot, so you must wear Fireproof armor or drink a heat-resistance elixir."
+  ],
+  [
+   "在破火山口内侧边缘找到残破神庙底座，光柱指向火山口中央熔岩高台。",
+   "Find the ruined shrine pedestal on the inner edge of the caldera; the beam of light points to a lava platform in the center of the crater."
+  ],
+  [
+   "使用余料建造组合金属板搭建跨越熔岩的桥梁，抵达高台取得水晶。",
+   "Use Fuse to join metal plates into a bridge across the lava and reach the platform to obtain the crystal."
+  ],
+  [
+   "携带水晶沿桥梁返回，放入神庙底座激活，进入领取祝福之光。",
+   "Carry the crystal back across the bridge, place it in the shrine pedestal to activate it, and enter to claim the Light of Blessing."
+  ],
+  [
+   "摩夏皮恩神庙",
+   "Moshapien Shrine"
+  ],
+  [
+   "艾尔丁",
+   "Eldin"
+  ],
+  [
+   "在因特诺奇湖（Lake Intenoch）北侧洞窟附近找到残破神庙底座，接取挑战。",
+   "Find the ruined shrine pedestal near a cave on the north side of Lake Intenoch and pick up the quest."
+  ],
+  [
+   "进入洞窟后水晶漂浮在洞内水面中央——使用究极手直接从水中抓起水晶。",
+   "After entering the cave, the crystal floats in the middle of the water inside — use Ultrahand to grab the crystal directly out of the water."
+  ],
+  [
+   "水晶体积较大，建议使用余料建造制作简单水上漂浮物运载水晶出洞。",
+   "The crystal is large, so it is recommended to use Fuse to make a simple floating device to carry the crystal out of the cave."
+  ],
+  [
+   "将水晶带至神庙底座放置激活，进入领取祝福之光。",
+   "Carry the crystal to the shrine pedestal, place it there to activate it, and enter to claim the Light of Blessing."
+  ],
+  [
+   "乔奇伊喜嘎神庙",
+   "Jochiyixiga Shrine"
+  ],
+  [
+   "阿卡莱",
+   "Akkala"
+  ],
+  [
+   "在阿卡莱瀑布（Akkala Falls）附近找到 NPC 商人，与其对话了解他需要一块特定矿石来换取神庙开启线索。",
+   "Near Akkala Falls, find an NPC merchant and talk to him to learn that he needs a particular ore in exchange for clues to opening the shrine."
+  ],
+  [
+   "前往附近岩脉采集亮石（Luminous Stone），带回交给商人。",
+   "Go to a nearby ore deposit to gather Luminous Stone, and bring it back to the merchant."
+  ],
+  [
+   "商人收到矿石后满意，指引你前往附近的神庙底座位置，神庙随即激活显现。",
+   "Pleased with the ore, the merchant directs you to the nearby shrine pedestal, and the shrine activates and appears."
+  ],
+  [
+   "克拉卡塔神庙",
+   "Karakata Shrine"
+  ],
+  [
+   "拉纳鲁",
+   "Lanayru"
+  ],
+  [
+   "在夸塔架台（Quatta's Shelf）附近找到残破神庙底座，附近有一汪黑色染料液体池。",
+   "Near Quatta's Shelf, find the ruined shrine pedestal, close to a pool of black dye liquid."
+  ],
+  [
+   "与附近 NPC 对话，得知需要将一颗白色球形石块染黑后放入神庙底座锁孔。",
+   "Talk to a nearby NPC to learn that you need to dye a white spherical stone black, then place it in the shrine pedestal's keyhole."
+  ],
+  [
+   "找到区域内的白色圆球，用究极手将其推入黑色染料池彻底染色，再将染黑后的石球推至神庙前。",
+   "Find the white orb in the area, use Ultrahand to push it into the black dye pool to dye it thoroughly, then push the blackened stone ball to the front of the shrine."
+  ],
+  [
+   "将黑色球放入底座凹槽激活神庙，进入领取祝福之光。",
+   "Place the black ball in the pedestal's socket to activate the shrine, then enter to claim the Light of Blessing."
+  ],
+  [
+   "扎克斯克神庙",
+   "Zhakesike Shrine"
+  ],
+  [
+   "前往奈卓拉雪原（Naydra Snowfield）高处的泉眼旁，找到残破神庙底座，接取挑战。",
+   "Go to the spring high up in Naydra Snowfield, find the ruined shrine pedestal there, and pick up the quest."
+  ],
+  [
+   "任务要求驾驶滑翔伞依次穿越空中悬浮的所有发光圆环——利用泉眼附近的上升气流飞升后开始穿越。",
+   "The quest requires paragliding through every glowing ring floating in the air, in order — use the updraft near the spring to rise, then start flying through them."
+  ],
+  [
+   "按圆环指引的顺序逐一飞过，全部通过后神庙底座激活显现。",
+   "Fly through the rings one by one in the order they indicate; once you have passed them all, the shrine pedestal activates and appears."
+  ],
+  [
+   "进入神庙领取祝福之光（此为上升飞行类特殊挑战神庙）。",
+   "Enter the shrine to claim the Light of Blessing (this is a rising-flight special challenge shrine)."
+  ],
+  [
+   "欧欧基恩神庙",
+   "Ooujien Shrine"
+  ],
+  [
+   "在拉利斯水脉（Ralis Channel）旁的拉聂尔参道附近找到残破神庙底座，接取挑战。",
+   "Near the Lanayru Promenade beside Ralis Channel, find the ruined shrine pedestal and pick up the quest."
+  ],
+  [
+   "光柱指向东侧河道中央的小岛——小岛被水流和巨石阻挡，无法直接涉水。",
+   "The beam of light points to a small island in the middle of the channel to the east — the island is blocked by currents and boulders, so you cannot simply wade there."
+  ],
+  [
+   "使用余料建造在岸边拼合木板或金属板搭出简易桥梁跨越水脉，抵达岛上取得水晶。",
+   "Use Fuse on the bank to join planks or metal plates into a simple bridge across the channel, reach the island, and obtain the crystal."
+  ],
+  [
+   "将水晶原路运回，放入神庙底座激活，进入领取祝福之光。",
+   "Carry the crystal back the way you came, place it in the shrine pedestal to activate it, and enter to claim the Light of Blessing."
+  ],
+  [
+   "乔尼乌神庙",
+   "Joniu Shrine"
+  ],
+  [
+   "在拉纳鲁高地（Lanayru Heights）附近的水脉边找到残破神庙底座，接取挑战。",
+   "Beside a waterway near Lanayru Heights, find the ruined shrine pedestal and pick up the quest."
+  ],
+  [
+   "光柱指向附近的水域——水晶沉入湖底较深处，无法直接用究极手抓到。",
+   "The beam of light points to nearby waters — the crystal has sunk deep into the lakebed, where Ultrahand cannot directly reach it."
+  ],
+  [
+   "潜入水中接近水晶后用究极手抓起，或使用余料建造制作带钩爪的打捞构造物从岸上将水晶拖出水面。",
+   "Dive underwater to approach the crystal and grab it with Ultrahand, or use Fuse to build a salvage construct with a grappling hook to drag the crystal out of the water from the bank."
+  ],
+  [
+   "将水晶搬运至神庙底座放置激活，进入领取祝福之光。",
+   "Carry the crystal to the shrine pedestal, place it there to activate it, and enter to claim the Light of Blessing."
+  ],
+  [
+   "乔奇希乌神庙",
+   "Jochixiu Shrine"
+  ],
+  [
+   "内克鲁达",
+   "Necluda"
+  ],
+  [
+   "在斯夸布尔河（Squabble River）附近找到残破神庙底座，底座上有一个特殊形状的凹槽锁孔。",
+   "Near Squabble River, find the ruined shrine pedestal, which has a specially shaped socket keyhole."
+  ],
+  [
+   "任务提示\"用水生成钥匙\"——使用余料建造将水边的木料、树枝等拼合成与锁孔匹配的形状构造物。",
+   "The quest hint is “make a key from water” — use Fuse to join timber, branches, and other materials by the water into a construct shaped to match the keyhole."
+  ],
+  [
+   "将拼好的钥匙形木构放入神庙底座锁孔，榫合后神庙自动开启。",
+   "Place the assembled key-shaped wooden construct in the shrine pedestal's keyhole; once it fits, the shrine opens automatically."
+  ],
+  [
+   "进入领取祝福之光（此为建造解谜类特殊挑战）。",
+   "Enter to claim the Light of Blessing (this is a building-puzzle special challenge)."
+  ],
+  [
+   "拖奇悠乌神庙",
+   "Tuoqiyouwu Shrine"
+  ],
+  [
+   "在奥克尔肚脐（Oakle's Navel）洞窟附近找到残破神庙底座，光柱指向洞窟深处。",
+   "Near the cave at Oakle's Navel, find the ruined shrine pedestal; the beam of light points deep into the cave."
+  ],
+  [
+   "进入黑暗洞窟，水晶被放置在深处的石台上，有蝙蝠妖（Keese）群守卫。",
+   "Enter the dark cave, where the crystal rests on a stone platform deep inside, guarded by a swarm of Keese."
+  ],
+  [
+   "消灭蝙蝠妖后，用究极手抓取高台上的水晶拉下来，或攀爬高台后取得。",
+   "After defeating the Keese, use Ultrahand to grab the crystal from the high platform and pull it down, or climb the platform to obtain it."
+  ],
+  [
+   "抱着水晶出洞，放入神庙底座激活，进入领取祝福之光。",
+   "Carry the crystal out of the cave, place it in the shrine pedestal to activate it, and enter to claim the Light of Blessing."
+  ],
+  [
+   "伊修奇恩神庙",
+   "Yixiuqien Shrine"
+  ],
+  [
+   "法隆",
+   "Faron"
+  ],
+  [
+   "前往奥谢拉平原（Oseira Plains）南部，找到一名 NPC 马术师，与其对话接取任务。",
+   "Go to the south of Oseira Plains, find an NPC horseman, and talk to him to pick up the quest."
+  ],
+  [
+   "任务要求驯服并骑乘体型特大的白色巨马来到神庙前——此类大马在附近平原马群中游荡。",
+   "The quest requires taming and riding an exceptionally large white giant horse to the front of the shrine — such large horses roam among the herds on the nearby plains."
+  ],
+  [
+   "使用潜行靠近大马后按 A 骑上，快速按 L 安抚至驯服，骑马前往神庙底座前触发感应。",
+   "Sneak up to the large horse, press A to mount it, and rapidly press L to soothe it until tamed, then ride to the front of the shrine pedestal to trigger the sensor."
+  ],
+  [
+   "神庙随即显现，进入领取祝福之光（祝福神殿）。",
+   "The shrine immediately appears; enter to claim the Light of Blessing (a blessing shrine)."
+  ],
+  [
+   "艾恩欧马神庙",
+   "Aienouma Shrine"
+  ],
+  [
+   "中央·法隆",
+   "Central Hyrule · Faron"
+  ],
+  [
+   "在海利亚湖（Lake Hylia）西南侧岸边找到残破神庙底座，光柱指向湖底的漩涡洞窟入口。",
+   "On the southwest shore of Lake Hylia, find the ruined shrine pedestal; the beam of light points to a whirlpool cave entrance at the bottom of the lake."
+  ],
+  [
+   "潜入湖水进入海利亚湖漩涡洞窟，水晶藏在洞穴最深处。",
+   "Dive into the lake to enter the Lake Hylia Whirlpool Cave, where the crystal is hidden at the very deepest part of the cavern."
+  ],
+  [
+   "注意洞内有章鱼怪（Like Like）会吞噬装备，建议先击败后再取水晶，避免损失武器。",
+   "Note that Like Likes inside the cave will swallow your equipment, so it is recommended to defeat them before taking the crystal, to avoid losing weapons."
+  ],
+  [
+   "取得水晶后游出洞窟，搬运至神庙底座放置激活，进入领取祝福之光。",
+   "After obtaining the crystal, swim out of the cave, carry it to the shrine pedestal, place it there to activate it, and enter to claim the Light of Blessing."
+  ],
+  [
+   "乌托吉希神庙",
+   "Wutuojixi Shrine"
+  ],
+  [
+   "在托比奥空洞（Tobio's Hollow）附近找到 NPC，与其对话得知传说中将长枪投掷插入神庙底座可将其开启。",
+   "Near Tobio's Hollow, find an NPC and talk to them to learn the legend that throwing a spear into the shrine pedestal will open it."
+  ],
+  [
+   "神庙底座中央有一个圆形插槽——手持长柄武器（如长枪、棍棒），站在远处对准底座投掷。",
+   "There is a round socket in the center of the shrine pedestal — hold a long-handled weapon (such as a spear or club), stand at a distance, and aim and throw at the pedestal."
+  ],
+  [
+   "武器插入底座插槽后神庙随即显现激活。",
+   "Once the weapon is lodged in the pedestal's socket, the shrine immediately appears and activates."
+  ],
+  [
+   "拉卡克达吉托神庙",
+   "Lakakedajituo Shrine"
+  ],
+  [
+   "格鲁德",
+   "Gerudo"
+  ],
+  [
+   "在库科特高原（Koukot Plateau）峡谷地带找到残破神庙底座，光柱指向峡谷深处。",
+   "In the canyon area of Koukot Plateau, find the ruined shrine pedestal; the beam of light points deep into the canyon."
+  ],
+  [
+   "水晶位于峡谷底部被厚厚沙石掩埋——使用究极手拨开沙石或使用爆炸物炸出水晶。",
+   "The crystal lies at the bottom of the canyon, buried under thick sand and gravel — use Ultrahand to brush the sand and gravel aside, or use explosives to blast the crystal out."
+  ],
+  [
+   "使用余料建造组合成带轮沙漠车辆，将水晶从峡谷运出，注意途中强风会吹偏方向。",
+   "Use Fuse to assemble a wheeled desert vehicle to carry the crystal out of the canyon, noting that strong winds along the way will blow you off course."
+  ],
+  [
+   "将水晶放入神庙底座激活，进入领取祝福之光。",
+   "Place the crystal in the shrine pedestal to activate it, then enter to claim the Light of Blessing."
+  ],
+  [
+   "马亚米伊神庙",
+   "Mayamiyi Shrine"
+  ],
+  [
+   "天空",
+   "Sky"
+  ],
+  [
+   "使用视野塔升空或借助飞龙，抵达北海拉鲁上空海拔约 1821 的北海拉鲁天空群岛。",
+   "Use a Skyview Tower to launch into the air, or ride a dragon, to reach the North Hyrule Sky Archipelago at an altitude of about 1821 above northern Hyrule."
+  ],
+  [
+   "在岛链中找到残破神庙底座，水晶位于相邻悬浮岛的高台上。",
+   "Find the ruined shrine pedestal in the island chain; the crystal sits on a high platform on an adjacent floating island."
+  ],
+  [
+   "使用余料建造+飞行构造物（螺旋桨+平台）或开滑翔伞跨越岛屿间隙抵达水晶所在岛。",
+   "Use Fuse plus a flying construct (propeller + platform), or open your paraglider, to cross the gaps between islands and reach the island where the crystal is."
+  ],
+  [
+   "取得水晶后飞回神庙底座放置激活，进入领取祝福之光。",
+   "After obtaining the crystal, fly back to the shrine pedestal, place it there to activate it, and enter to claim the Light of Blessing."
+  ],
+  [
+   "吉诺多卡欧神庙",
+   "Jinuoduokaou Shrine"
+  ],
+  [
+   "从海拉鲁平原视野塔向南升空，滑翔至海拔约 1008 的南海拉鲁天空群岛。",
+   "Launch south from the Hyrule Field Skyview Tower and glide to the South Hyrule Sky Archipelago at an altitude of about 1008."
+  ],
+  [
+   "在岛群中找到残破神庙底座，水晶位于一系列空中跳台路线的终点处。",
+   "Find the ruined shrine pedestal in the island group; the crystal lies at the end of a series of aerial spring-platform routes."
+  ],
+  [
+   "按顺序经过所有空中圆台，每踩一个圆台会短暂升空助力，最终抵达水晶位置取得。",
+   "Pass each aerial round platform in order; stepping on each one briefly boosts you into the air, until you finally reach the crystal's location and obtain it."
+  ],
+  [
+   "携水晶飞回神庙底座放置激活，进入领取祝福之光。",
+   "Carry the crystal back by air to the shrine pedestal, place it there to activate it, and enter to claim the Light of Blessing."
+  ],
+  [
+   "嘎诺萨神庙",
+   "Ganuosa Shrine"
+  ],
+  [
+   "从利特荒野视野塔升空或乘气球抵达海拔约 1695 的塔邦挞天空群岛。",
+   "Launch from the Rito Wilderness Skyview Tower, or ride a balloon, to reach the Tabantha Sky Archipelago at an altitude of about 1695."
+  ],
+  [
+   "在岛群西侧找到残破神庙底座，水晶飘浮在强风区域中央——强风会不断将人和物体吹偏。",
+   "Find the ruined shrine pedestal on the west side of the island group; the crystal floats in the center of a strong-wind zone — the powerful wind will constantly blow people and objects off course."
+  ],
+  [
+   "使用余料建造制作带两侧螺旋桨的稳定飞行台来对抗强风，将水晶抓起运回神庙。",
+   "Use Fuse to build a stable flying platform with propellers on both sides to fight the strong wind, grab the crystal, and carry it back to the shrine."
+  ],
+  [
+   "将水晶放入底座激活，进入领取祝福之光。",
+   "Place the crystal in the pedestal to activate it, then enter to claim the Light of Blessing."
+  ],
+  [
+   "塔尼诺乌达神庙",
+   "Taninuowuda Shrine"
+  ],
+  [
+   "海布拉·天空",
+   "Hebra · Sky"
+  ],
+  [
+   "从皮基达石林视野塔升空向东飞行，抵达海拔约 949 的东海布拉天空群岛。",
+   "Launch from the Pikida Stonegrove Skyview Tower and fly east to reach the East Hebra Sky Archipelago at an altitude of about 949."
+  ],
+  [
+   "在冰雪覆盖的浮空岛群中找到残破神庙底座，水晶被冰封在浮空岩石上。",
+   "Find the ruined shrine pedestal among the snow-covered floating islands; the crystal is frozen inside a floating rock."
+  ],
+  [
+   "使用火焰武器或火果融化冰封水晶，再利用余料建造的桥梁或飞行构造物运送水晶至神庙。",
+   "Use a fire weapon or Fire Fruit to melt the frozen crystal, then use a Fuse-built bridge or flying construct to transport the crystal to the shrine."
+  ],
+  [
+   "基卡克恩神庙",
+   "Jikakeen Shrine"
+  ],
+  [
+   "阿卡莱·天空",
+   "Akkala · Sky"
+  ],
+  [
+   "从阿卡莱地区视野塔升空向东北飞行，抵达海拔约 1155 的天空矿山岛（Sky Mine）。",
+   "Launch from the Akkala region Skyview Tower and fly northeast to reach Sky Mine island at an altitude of about 1155."
+  ],
+  [
+   "在矿山岛上找到残破神庙底座，水晶被嵌入一块巨型矿石中央。",
+   "Find the ruined shrine pedestal on the mine island; the crystal is embedded in the center of a giant ore boulder."
+  ],
+  [
+   "使用武器攻击或爆炸果击碎矿石，释放出内部的水晶。",
+   "Attack with a weapon or use Bomb Flowers to shatter the ore and release the crystal inside."
+  ],
+  [
+   "取出水晶放入神庙底座激活，进入领取祝福之光。",
+   "Take the crystal out, place it in the shrine pedestal to activate it, and enter to claim the Light of Blessing."
+  ],
+  [
+   "纳塔卡卡神庙",
+   "Natakaka Shrine"
+  ],
+  [
+   "从阿卡莱高地视野塔升空，向南偏西飞行抵达海拔约 1158 的索卡拉天空群岛。",
+   "Launch from the Akkala Highlands Skyview Tower and fly south-southwest to reach the Sokkala Sky Archipelago at an altitude of about 1158."
+  ],
+  [
+   "在群岛中找到残破神庙底座，水晶位于一处需要解锁齿轮机关的封闭平台内。",
+   "Find the ruined shrine pedestal in the archipelago; the crystal lies inside an enclosed platform that requires unlocking a gear mechanism."
+  ],
+  [
+   "观察齿轮结构，使用究极手旋转连杆打开封闭通道，进入取得水晶。",
+   "Observe the gear structure and use Ultrahand to rotate the linkage to open the sealed passage, then enter to obtain the crystal."
+  ],
+  [
+   "马亚纳希神庙",
+   "Mayanaxi Shrine"
+  ],
+  [
+   "内克鲁达·天空",
+   "Necluda · Sky"
+  ],
+  [
+   "从内克鲁达东部视野塔升空，飞向海拔约 1212 的内克鲁达天空群岛。",
+   "Launch from the eastern Necluda Skyview Tower and fly to the Necluda Sky Archipelago at an altitude of about 1212."
+  ],
+  [
+   "水晶被置于需要连续跳岛飞行路线的终点——岛与岛之间距离较远，需精确控制滑翔轨迹。",
+   "The crystal sits at the end of a route requiring consecutive island-hopping flights — the islands are far apart, so you need to control your gliding trajectory precisely."
+  ],
+  [
+   "利用余料建造气球构造物在低空辅助升高后滑翔，或使用龙鳞升空穿越岛间缝隙到达终点。",
+   "Use a Fuse-built balloon construct to gain height at low altitude before gliding, or use a dragon's updraft to rise and cross the gaps between islands to reach the end."
+  ],
+  [
+   "取得水晶后搭建空中运载平台带回神庙底座激活，进入领取祝福之光。",
+   "After obtaining the crystal, build an aerial transport platform to carry it back to the shrine pedestal to activate it, and enter to claim the Light of Blessing."
+  ],
+  [
+   "乔希乌神庙",
+   "Joshixiu Shrine"
+  ],
+  [
+   "中央·天空",
+   "Central Hyrule · Sky"
+  ],
+  [
+   "从法隆/内克鲁达边境视野塔升空，向北飞行至海拔约 924 的北内克鲁达天空群岛。",
+   "Launch from the Faron/Necluda border Skyview Tower and fly north to the North Necluda Sky Archipelago at an altitude of about 924."
+  ],
+  [
+   "在岛群北侧找到残破神庙底座，水晶分散在几块不同的悬浮石台上。",
+   "Find the ruined shrine pedestal on the north side of the island group; the crystal is scattered across several different floating stone platforms."
+  ],
+  [
+   "依次飞到各石台，用究极手收集每块水晶碎片，合并拼成完整水晶。",
+   "Fly to each stone platform in turn, use Ultrahand to collect every crystal fragment, and combine them into a complete crystal."
+  ],
+  [
+   "将完整水晶放入神庙底座激活，进入领取祝福之光。",
+   "Place the complete crystal in the shrine pedestal to activate it, then enter to claim the Light of Blessing."
+  ],
+  [
+   "乌可欧吉希神庙",
+   "Ukoujixi Shrine"
+  ],
+  [
+   "从海利亚湖东侧视野塔升空，向西北飞行至海拔约 585 的西内克鲁达低海拔天空岛群。",
+   "Launch from the Skyview Tower east of Lake Hylia and fly northwest to the low-altitude West Necluda Sky Islands at an altitude of about 585."
+  ],
+  [
+   "在岛群中找到残破神庙底座，水晶锁在需要依次激活压力踩踏板解锁的封闭区域。",
+   "Find the ruined shrine pedestal in the island group; the crystal is locked in an enclosed area that requires activating pressure plates in sequence to unlock."
+  ],
+  [
+   "按正确顺序踩踏各踩踏板（留意颜色或数字提示），解锁通道后进入取得水晶。",
+   "Step on the pressure plates in the correct order (watch for color or number hints); once the passage unlocks, enter to obtain the crystal."
+  ],
+  [
+   "克马马伊诺神庙",
+   "Kemamayinuo Shrine"
+  ],
+  [
+   "拉纳鲁·天空",
+   "Lanayru · Sky"
+  ],
+  [
+   "这是海拔最高的天空神庙之一，位于拉纳鲁东部上空孤立高空岛（海拔约 1790）。",
+   "This is one of the highest-altitude sky shrines, on an isolated high-altitude island above eastern Lanayru (altitude about 1790)."
+  ],
+  [
+   "从拉纳鲁高地视野塔升空后借助上升气流或飞龙坐骑抵达此孤岛，普通滑翔伞无法直接到达。",
+   "After launching from the Lanayru Heights Skyview Tower, ride an updraft or a dragon mount to reach this isolated island; an ordinary paraglider cannot get there directly."
+  ],
+  [
+   "岛上水晶被封在冰雪机关中——使用火焰武器融化冰封，再操控冰块方向引导水晶滚至底座区域。",
+   "The island's crystal is sealed in an ice-and-snow mechanism — use a fire weapon to melt the ice, then steer the ice block's direction to guide the crystal rolling to the pedestal area."
+  ],
+  [
+   "水晶就位后神庙自动激活，进入直接领取祝福之光（祝福神殿）。",
+   "Once the crystal is in place, the shrine activates automatically; enter to claim the Light of Blessing directly (a blessing shrine)."
+  ],
+  [
+   "💡 神庙挑战通用技巧： 大多数水晶搬运任务中，善用究极手抱着水晶再使用通天术是穿越地形障碍的最快捷方式。天空群岛水晶任务建议优先解锁飞龙坐骑路线以便快速抵达高海拔岛屿。洞窟水晶通常有 Boss 守卫，备足攻击武器和料理药剂再进入。使用余料建造的车辆或飞行构造物可以大幅简化水晶运输难度。",
+   "💡 General Shrine Quest tips: In most crystal-carrying tasks, the fastest way through terrain obstacles is to hold the crystal with Ultrahand and then use Ascend. For Sky Island crystal tasks, it is recommended to first unlock a dragon-mount route so you can quickly reach high-altitude islands. Cave crystals are usually guarded by a boss, so stock up on attack weapons and food elixirs before entering. Vehicles or flying constructs built with Fuse can greatly simplify crystal transport."
+  ],
+  [
+   "大多数水晶搬运任务中，善用究极手抱着水晶再使用通天术是穿越地形障碍的最快捷方式",
+   "In most crystal-carrying tasks, the fastest way through terrain obstacles is to hold the crystal with Ultrahand and then use Ascend"
+  ],
+  [
+   "天空群岛水晶任务建议优先解锁飞龙坐骑路线以便快速抵达高海拔岛屿",
+   "For Sky Island crystal tasks, it is recommended to first unlock a dragon-mount route so you can quickly reach high-altitude islands"
+  ],
+  [
+   "洞窟水晶通常有 Boss 守卫，备足攻击武器和料理药剂再进入",
+   "Cave crystals are usually guarded by a boss, so stock up on attack weapons and food elixirs before entering"
+  ],
+  [
+   "使用余料建造的车辆或飞行构造物可以大幅简化水晶运输难度",
+   "Vehicles or flying constructs built with Fuse can greatly simplify crystal transport"
+  ],
+  [
+   "🗺 坐标使用方法：游戏内按 - 打开地图，将光标悬停在任意地点，屏幕左下角即显示实时坐标 (X, Y)。按攻略中的坐标对照地图即可精准定位神庙位置。",
+   "🗺 How to use coordinates: in-game, press - to open the map, hover the cursor over any location, and the bottom-left of the screen shows live coordinates (X, Y). Compare them against the coordinates in this guide to pinpoint shrine locations exactly."
+  ],
+  [
+   "游戏内按 - 打开地图，将光标悬停在任意地点，屏幕左下角即显示实时坐标 (X, Y)",
+   "In-game, press - to open the map, hover the cursor over any location, and the bottom-left of the screen shows live coordinates (X, Y)"
+  ],
+  [
+   "按攻略中的坐标对照地图即可精准定位神庙位置",
+   "Compare them against the coordinates in this guide to pinpoint shrine locations exactly"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 神庙开启",
+   "› Shrine Unlocking"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› 152-Shrine Complete Collection Self-Check Guide"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine: A Zero-Basics Step-by-Step Guide"
+  ],
+  [
+   "📚 更多攻略",
+   "📚 More Guides"
+  ],
+  [
+   "› 哈里的终极秘籍（13篇）",
+   "› Harry's Ultimate Tips (13 articles)"
+  ],
+  [
+   "› 全部页面索引",
+   "› Index of All Pages"
+  ],
+  [
+   "📌 相关攻略推荐",
+   "📌 Recommended Related Guides"
+  ],
+  [
+   "⚔️ 神庙开启攻略 → ⚔️ 主线任务 → ⚔️ 武器图鉴 →",
+   "⚔️ Shrine Unlocking Guide → ⚔️ Main Quests → ⚔️ Weapon Compendium →"
+  ],
+  [
+   "神庙开启攻略",
+   "Shrine Unlocking Guide"
+  ],
+  [
+   "主线任务",
+   "Main Quests"
+  ],
+  [
+   "武器图鉴",
+   "Weapon Compendium"
+  ],
+  [
+   "萨托利山的神庙与水晶",
+   "The Shrine and Crystal of Satori Mountain"
+  ],
+  [
+   "白鸟所指引的洞窟",
+   "The Cave Guided by the White Bird"
+  ],
+  [
+   "沉睡于吉萨的环形山的水晶",
+   "The Crystal Slumbering in Gisa Crater"
+  ],
+  [
+   "海布拉山北方的神庙与水晶",
+   "The Shrine and Crystal North of Mount Hebra"
+  ],
+  [
+   "沉睡于海布拉山西北的洞窟中的水晶",
+   "The Crystal Slumbering in the Cave Northwest of Mount Hebra"
+  ],
+  [
+   "漂亮的石头与金苹果",
+   "Beautiful Stones and Golden Apples"
+  ],
+  [
+   "前方禁止进入？",
+   "No Entry Ahead?"
+  ],
+  [
+   "玛卡玛喀的珍藏地点",
+   "Makami's Treasure Spot"
+  ],
+  [
+   "在科洛克森林中找到科洛克",
+   "In Korok Forest, find the Korok"
+  ],
+  [
+   "，与其对话获知它藏宝藏的线索。",
+   "and talk to them to learn clues about their hidden treasure."
+  ],
+  [
+   "玛卡玛喀（Makami）",
+   "Makami"
+  ],
+  [
+   "死亡破火山口的神庙与水晶",
+   "The Shrine and Crystal of Death Caldera"
+  ],
+  [
+   "沉睡于幽芬湖的洞窟中的水晶",
+   "The Crystal Slumbering in the Cave at Youfen Lake"
+  ],
+  [
+   "卖了这块石头",
+   "Sell This Stone"
+  ],
+  [
+   "染作漆黑",
+   "Dyed Pitch Black"
+  ],
+  [
+   "高天之泉与光环的传说",
+   "The Legend of the Sky Spring and the Halo"
+  ],
+  [
+   "拉聂尔参道的神庙与水晶",
+   "The Shrine and Crystal of the Lanayru Promenade"
+  ],
+  [
+   "沉睡于拉尔斯水脉的神庙与水晶",
+   "The Shrine and Crystal of the Ralsus Waterways"
+  ],
+  [
+   "由水而生的钥匙",
+   "The Key Born of Water"
+  ],
+  [
+   "沉睡于拉纳湖的洞窟中的水晶",
+   "The Crystal Slumbering in the Cave at Lake Rana"
+  ],
+  [
+   "带来巨大的马匹",
+   "Bring a Giant Horse"
+  ],
+  [
+   "海利亚湖的神庙与水晶",
+   "The Shrine and Crystal of Lake Hylia"
+  ],
+  [
+   "投枪的传说",
+   "The Legend of the Javelin"
+  ],
+  [
+   "格鲁德峡谷的神庙与水晶",
+   "The Shrine and Crystal of Gerudo Canyon"
+  ],
+  [
+   "北海拉鲁天空诸岛的神庙与水晶",
+   "The Shrine and Crystal of the North Hyrule Sky Archipelago"
+  ],
+  [
+   "南海拉鲁天空诸岛的神庙与水晶",
+   "The Shrine and Crystal of the South Hyrule Sky Archipelago"
+  ],
+  [
+   "塔邦挞天空诸岛的神庙与水晶",
+   "The Shrine and Crystal of the Tabantha Sky Archipelago"
+  ],
+  [
+   "东海布拉天空诸岛的神庙与水晶",
+   "The Shrine and Crystal of the East Hebra Sky Archipelago"
+  ],
+  [
+   "采石之岛的神庙与水晶",
+   "The Shrine and Crystal of Quarry Island"
+  ],
+  [
+   "南阿卡莱天空诸岛的神庙与水晶",
+   "The Shrine and Crystal of the South Akkala Sky Archipelago"
+  ],
+  [
+   "南拉聂尔天空诸岛的神庙与水晶",
+   "The Shrine and Crystal of the South Lanayru Sky Archipelago"
+  ],
+  [
+   "北哈特尔天空诸岛的神庙与水晶",
+   "The Shrine and Crystal of the North Necluda Sky Archipelago"
+  ],
+  [
+   "西哈特尔天空诸岛的神庙与水晶",
+   "The Shrine and Crystal of the West Necluda Sky Archipelago"
+  ],
+  [
+   "哈特尔天空诸岛的神庙与水晶",
+   "The Shrine and Crystal of the Necluda Sky Archipelago"
+  ],
+  [
+   "💡 神庙挑战通用技巧：",
+   "💡 General Shrine Quest Tips:"
+  ],
+  [
+   "大多数水晶搬运任务中，善用",
+   "For most crystal-carrying quests, skillful use of"
+  ],
+  [
+   "是穿越地形障碍的最快捷方式。天空群岛水晶任务建议优先解锁",
+   "is the fastest way through terrain obstacles. For Sky Islands crystal quests, prioritize unlocking the"
+  ],
+  [
+   "以便快速抵达高海拔岛屿。洞窟水晶通常有 Boss 守卫，备足攻击武器和料理药剂再进入。使用",
+   "to quickly reach high-altitude islands. Cave crystals are usually guarded by Bosses, so stock up on attack weapons and food/elixirs before entering. Vehicles or flying constructs built with"
+  ],
+  [
+   "的车辆或飞行构造物可以大幅简化水晶运输难度。",
+   "can greatly simplify crystal transport."
+  ],
+  [
+   "究极手抱着水晶再使用通天术",
+   "carrying the crystal with Ultrahand, then using Ascend"
+  ],
+  [
+   "飞龙坐骑路线",
+   "dragon-riding route"
+  ],
+  [
+   "余料建造",
+   "Fuse"
+  ],
+  [
+   "🗺 坐标使用方法：",
+   "🗺 How to use coordinates:"
+  ],
+  [
+   "打开地图，将光标悬停在任意地点，屏幕左下角即显示实时坐标 (X, Y)。按攻略中的坐标对照地图即可精准定位神庙位置。",
+   "to open the map, hover the cursor over any location, and live coordinates (X, Y) appear at the bottom left of the screen. Match the guide's coordinates against the map to pinpoint shrine locations precisely."
+  ],
+  [
+   "游戏内按",
+   "In-game, press"
+  ]
+ ]
+}

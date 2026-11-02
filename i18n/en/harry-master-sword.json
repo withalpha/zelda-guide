@@ -1,0 +1,219 @@
+{
+ "notes": [
+  "齐罗利森林 (Qiluoli Forest): no confident official English name found in the glossary; translated transliterally.",
+  "阿卡莱玛秋斯半岛 (Akkala Machius Peninsula): no confident official English name found; translated transliterally from the Chinese.",
+  "乌萨诸马神庙 (Usazum Shrine): shrine name rendered transliterally; no confident official English equivalent confirmed.",
+  "马克兔飞行器 (Mark Rabbit hover bike): fan/build nickname rendered transliterally; no confident official English equivalent confirmed."
+ ],
+ "pairs": [
+  [
+   "白龙寻踪与大师之剑永久拔剑全攻略：两圈精力门槛、克洛格森林净化与龙之泪全收集两种降高方案，白龙顶端拔出永不损毁的大师之剑。",
+   "Complete guide to tracking the Light Dragon and permanently drawing the Master Sword: the two-Stamina-Wheel requirement, two ways to bring it down to a lower altitude — purifying Korok Forest and collecting all of the Dragon's Tears — and drawing the unbreakable Master Sword from atop the Light Dragon."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Tips"
+  ],
+  [
+   "白龙寻踪与大师之剑攻略",
+   "Tracking the Light Dragon and the Master Sword Guide"
+  ],
+  [
+   "🗡️ 主线攻略",
+   "🗡️ Main Quest Guide"
+  ],
+  [
+   "白龙寻踪与大师之剑（驱魔之剑）永久拔剑全攻略",
+   "Tracking the Light Dragon and Permanently Drawing the Master Sword (the Sword that Seals the Darkness): Complete Guide"
+  ],
+  [
+   "大师之剑是海拉鲁大陆的灵魂象征，不仅拥有永不损毁（能量耗尽后充能10分钟即可自愈）的特性，在面对瘴气魔物与盖侬时更会自动觉醒圣光状态，攻击力与耐久大幅翻倍。",
+   "The Master Sword is the soul and symbol of Hyrule. It never breaks — once its energy runs out, it restores itself after recharging for 10 minutes — and when facing Gloom-corrupted monsters and Ganondorf, it automatically awakens into its sacred light state, with attack power and durability greatly multiplied."
+  ],
+  [
+   "🧙 作者：哈里",
+   "🧙 Author: Harry"
+  ],
+  [
+   "🗡️ 主线 · 神兵获取",
+   "🗡️ Main Quest · Divine Weapon Acquisition"
+  ],
+  [
+   "📖 深度攻略",
+   "📖 In-Depth Guide"
+  ],
+  [
+   "大师之剑插在白龙头顶（游戏实机截图）",
+   "The Master Sword embedded in the top of the Light Dragon's head (in-game screenshot)"
+  ],
+  [
+   "大师之剑插在白龙头顶（游戏实机截图，图片来源：Zelda Wiki）",
+   "The Master Sword embedded in the top of the Light Dragon's head (in-game screenshot, image source: Zelda Wiki)"
+  ],
+  [
+   "一、核心前置条件（防坑必看）",
+   "1. Core Prerequisites (Must-Read to Avoid Pitfalls)"
+  ],
+  [
+   "精力槽硬性门槛：拔出大师之剑需要整整2整圈精力槽（即在初始1圈的基础上，额外提升4次精力容器，共消耗5次精力升级，累计需完成20座神庙获得20个祝福之光）。",
+   "Hard Stamina Wheel requirement: drawing the Master Sword requires a full 2 Stamina Wheels — that is, on top of the starting 1 wheel, 4 additional Stamina Vessel upgrades, for a total of 5 Stamina upgrades, which requires completing 20 Shrines to obtain 20 Lights of Blessing."
+  ],
+  [
+   "精力槽硬性门槛：拔出大师之剑需要整整2整圈精力槽（即在初始1圈的基础上，额外提升4次精力容器，共消耗5次精力升级，累计需完成20座神庙获得20个祝福之光）",
+   "Hard Stamina Wheel requirement: drawing the Master Sword requires a full 2 Stamina Wheels — that is, on top of the starting 1 wheel, 4 additional Stamina Vessel upgrades, for a total of 5 Stamina upgrades, which requires completing 20 Shrines to obtain 20 Lights of Blessing."
+  ],
+  [
+   "重要禁忌：吃料理烹饪获得的\"黄色额外精力\"在拔剑QTE中完全无效！若精力未达两圈强行拔剑，林克会被白龙甩飞扣血并拔剑失败。",
+   "Important warning: the 'yellow bonus Stamina' gained from eating cooked meals is completely useless in the sword-drawing QTE! If you force the draw without two full Stamina Wheels, Link will be thrown off by the Light Dragon, lose hearts, and fail to draw the sword."
+  ],
+  [
+   "重要禁忌：吃料理烹饪获得的\"黄色额外精力\"在拔剑QTE中完全无效！",
+   "Important warning: the 'yellow bonus Stamina' gained from eating cooked meals is completely useless in the sword-drawing QTE!"
+  ],
+  [
+   "若精力未达两圈强行拔剑，林克会被白龙甩飞扣血并拔剑失败。",
+   "If you force the draw without two full Stamina Wheels, Link will be thrown off by the Light Dragon, lose hearts, and fail to draw the sword."
+  ],
+  [
+   "二、寻找白龙与降低飞行高度的两大方案",
+   "2. Two Ways to Find the Light Dragon and Bring Down Its Flying Altitude"
+  ],
+  [
+   "白龙默认巡航在海拉鲁两千米极高空，普通鸟望台难以企及。推荐以下两种高效追踪与降高机制：",
+   "The Light Dragon normally cruises at an extreme altitude of 2,000 meters over Hyrule, beyond the reach of an ordinary Skyview Tower. The following two efficient tracking and altitude-lowering methods are recommended:"
+  ],
+  [
+   "方案A：克洛格森林净化（强烈推荐）",
+   "Plan A: Purifying Korok Forest (Highly Recommended)"
+  ],
+  [
+   "从齐罗利森林深穴潜入地底，使用通天术穿出进入迷失森林中心。",
+   "Enter the Depths through the chasm in Qiluoli Forest, then use Ascend to emerge into the center of the Lost Woods."
+  ],
+  [
+   "进入德库树长老体内击败瘴气手与幻影加农。",
+   "Enter the Great Deku Tree and defeat the Gloom Hands and Phantom Ganon inside."
+  ],
+  [
+   "成功净化后与德库树长老对话，长老会在大地图上实时点亮大师之剑的移动标记，并将白龙的巡航高度从2000米直接降低至约700米。此时只需传送到就近的鸟望台弹射升空，即可轻松滑翔落到白龙龙头上。",
+   "After successfully purifying it, speak with the Great Deku Tree. The Great Deku Tree will light up a live, moving marker for the Master Sword on the world map, and lower the Light Dragon's cruising altitude directly from 2,000 meters to about 700 meters. At that point, simply warp to a nearby Skyview Tower, launch yourself into the sky, and glide easily down onto the Light Dragon's head."
+  ],
+  [
+   "方案B：龙之泪主线全收集",
+   "Plan B: Collect All of the Dragon's Tears in the Main Quest"
+  ],
+  [
+   "寻访海拉鲁大陆上的全部11个地上图画并观看龙之泪回忆。",
+   "Visit all 11 geoglyphs on the surface of Hyrule and watch the Dragon's Tears memories."
+  ],
+  [
+   "触发阿卡莱玛秋斯半岛的第12个终极回忆剧情。",
+   "Trigger the 12th and final memory scene on the Akkala Machius Peninsula."
+  ],
+  [
+   "剧情播毕后，白龙会直接在近空啼鸣出现并维持低空飞行，直接传送至附近乌尔利山鸟望台即可登龙。",
+   "After the scene ends, the Light Dragon will appear crying out in the nearby sky and remain in low-altitude flight; simply warp to the nearby Ulri Mountain Skyview Tower to board the dragon."
+  ],
+  [
+   "三、拔剑操作与白龙稀有素材采集",
+   "3. Drawing the Sword and Farming the Light Dragon's Rare Materials"
+  ],
+  [
+   "降落到白龙头部后，走向额头闪耀圣光的剑身前，按下A键交互，按住A键消耗两圈精力完成拔剑震撼过场。",
+   "After landing on the Light Dragon's head, walk up to the blade glowing with sacred light on its forehead, press A to interact, and hold A to spend two full Stamina Wheels and complete the dramatic sword-drawing cutscene."
+  ],
+  [
+   "拔剑后勿立即传送：白龙身上的素材具有极高价值！白龙龙角、龙牙、龙鳞、龙爪附魔在武器上时，林克每次攻击命中敌人都将获得红心吸血效果。在龙角处攻击一次拾取龙角后，静待10分钟龙角再次发光即可重复采集。",
+   "Do not warp away immediately after drawing the sword: the materials on the Light Dragon are extremely valuable! When a Light Dragon's Horn, Fang, Scale, or Talon is fused to a weapon, every time Link's attack hits an enemy he will recover hearts. After striking the horn once and picking it up, wait 10 minutes for the horn to glow again, and you can farm it repeatedly."
+  ],
+  [
+   "← 上一篇：乌萨诸马神庙零基础包教包会",
+   "← Previous: Usazum Shrine, Taught Step by Step from Zero Basics"
+  ],
+  [
+   "返回秘籍专栏",
+   "Back to the Tips Column"
+  ],
+  [
+   "下一篇：马克兔飞行器调校 →",
+   "Next: Mark Rabbit Hover Bike Tuning →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Farming Guide for the Four Dragons' Materials"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› Self-Check Guide to Collecting All 152 Shrines"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Guide: The First 10 Things to Do After Landing"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Complete Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Tips"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Scimitar of the Seven Ultimate Guide"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Cooking Recipes"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Full Breakdown of the Three Tiers of the Strongest Armor Sets"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine, Taught Step by Step from Zero Basics"
+  ],
+  [
+   "› 白龙寻踪与大师之剑（本篇）",
+   "› Tracking the Light Dragon and the Master Sword (This Article)"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Mark Rabbit Hover Bike Tuning"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Expanding Energy Cells in the Depths and the Great Fairies"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 Daily New Guides"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Complete Korok Seed Guide"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› Complete Guide to the Four Great Fairy Sisters and Armor Upgrades"
+  ],
+  [
+   "白龙寻踪与大师之剑永久拔剑全攻略：两圈精力、两种降高方案，白龙顶端拔剑完整指南。",
+   "Light Dragon tracking and Master Sword permanent draw guide: two stamina wheels, two descent plans, and the complete guide to drawing the sword atop the Light Dragon."
+  ]
+ ],
+ "title": "Tracking the Light Dragon and Permanently Drawing the Master Sword: Complete Guide · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+}

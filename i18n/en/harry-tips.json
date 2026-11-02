@@ -1,0 +1,557 @@
+{
+ "notes": [
+  "马克兔 (Hover Bike fan nickname): rendered descriptively as 'Hover Bike'; the Chinese nickname itself has no official English equivalent.",
+  "左纳尼乌姆 (Autobuild cost in the Hover Bike card): rendered as Zonaite, the official material name.",
+  "剑圣流 (sword-focused playstyle in the Usazum Shrine card): rendered descriptively as 'swordmaster style'.",
+  "伯库林 (Korok expansion NPC): rendered as Hestu, the official English name.",
+  "拉梅拉 (Gerudo Town jeweler in the Rupee card): rendered as Ramella.",
+  "马神马泷 (Horse God in the horse card): rendered as the Horse God Malanya.",
+  "柯尔天 (Bubbul Gem trader in the cave card): rendered as Koltin.",
+  "兽神弓 (multi-shot Lynel bow): rendered as Savage Lynel Bow.",
+  "老司机 / 老司机心得 (veteran-player slang): rendered descriptively as 'veteran player' / 'veteran tricks'.",
+  "Note: the page itself is inconsistent — hero subtitle says 25 featured guides while the section label says 29 articles; both numbers were kept exactly as written in their respective locations."
+ ],
+ "pairs": [
+  [
+   "哈里的终极秘籍专栏，精选王国之泪最实用的武器、套装、料理与神庙攻略，包含七宝匕首详解、最强套装推荐、神级料理配方等深度解析内容。",
+   "Harry's Ultimate Tips column, featuring the most practical Tears of the Kingdom guides on weapons, armor sets, cooking, and shrines, including an in-depth look at the Scimitar of the Seven, the strongest armor set recommendations, and god-tier cooking recipes."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Tips"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Tips"
+  ],
+  [
+   "硬核老司机带你解锁王国之泪的隐藏玩法 · 25篇精选攻略",
+   "A hardcore veteran player unlocks Tears of the Kingdom's hidden gameplay for you · 25 featured guides"
+  ],
+  [
+   "哈里",
+   "Harry"
+  ],
+  [
+   "王国之泪硬核攻略作者 · 海拉鲁老司机",
+   "Tears of the Kingdom hardcore guide author · Hyrule veteran"
+  ],
+  [
+   "通关时间超过800小时，专注于研究王国之泪的机制深层玩法。在这里分享那些教程视频不会告诉你的\"老司机心得\"——真正能改变你游戏体验的秘籍与套路。",
+   "With over 800 hours of playtime, focused on researching the deeper mechanics of Tears of the Kingdom. Here I share the 'veteran tricks' that tutorial videos won't tell you — secrets and strategies that can truly change your gaming experience."
+  ],
+  [
+   "📌 栏目说明：本栏目为哈里原创游戏攻略专栏，所有内容经过实际游戏验证，涵盖武器合成、料理配方、套装搭配等核心玩法深度解析。如果你不满足于只是\"通关\"，想要真正制霸海拉鲁，这里的内容正是为你准备的。",
+   "📌 About this column: This column is Harry's original game guide column, with all content verified through actual gameplay, offering in-depth analysis of core gameplay including weapon fusion, cooking recipes, and armor set combinations. If you're not satisfied with just 'beating the game' and want to truly dominate Hyrule, this content is made for you."
+  ],
+  [
+   "📌 栏目说明：",
+   "📌 About this column:"
+  ],
+  [
+   "本栏目为哈里原创游戏攻略专栏，所有内容经过实际游戏验证，涵盖武器合成、料理配方、套装搭配等核心玩法深度解析。",
+   "This column is Harry's original game guide column, with all content verified through actual gameplay, offering in-depth analysis of core gameplay including weapon fusion, cooking recipes, and armor set combinations."
+  ],
+  [
+   "如果你不满足于只是\"通关\"，想要真正制霸海拉鲁，这里的内容正是为你准备的。",
+   "If you're not satisfied with just 'beating the game' and want to truly dominate Hyrule, this content is made for you."
+  ],
+  [
+   "📚 精选攻略文章（共29篇）",
+   "📚 Featured Guide Articles (29 total)"
+  ],
+  [
+   "海拉鲁无脑砍王！《王国之泪》无可争议的日常终极神器——七宝匕首",
+   "Hyrule's brainless slashing king! Tears of the Kingdom's undisputed ultimate everyday weapon — the Scimitar of the Seven"
+  ],
+  [
+   "武器攻略",
+   "Weapon Guide"
+  ],
+  [
+   "单手剑138攻击力、耐久满满还能无限续航？格鲁德女工匠打造的七宝匕首才是真正的全能日常战神！",
+   "A one-handed sword with 138 attack power, full durability, and infinite sustain? The Scimitar of the Seven, crafted by Gerudo craftswomen, is the true all-round everyday god of war!"
+  ],
+  [
+   "⚔ 武器合成 · 余料建造",
+   "⚔ Weapon Fusion · Fuse"
+  ],
+  [
+   "阅读全文 →",
+   "Read full article →"
+  ],
+  [
+   "最值得合成的料理——四大神级配方与食材批发攻略",
+   "The most worthwhile dishes to cook — four god-tier recipes and a bulk ingredient guide"
+  ],
+  [
+   "料理攻略",
+   "Cooking Guide"
+  ],
+  [
+   "瞬间满血、三级加攻、瘴气恢复、补满精力……老司机精选4款核心料理，附高效食材采集路线！",
+   "Instant full HP recovery, level-3 attack boost, Gloom recovery, full stamina refill... A veteran's pick of 4 core dishes, plus efficient ingredient gathering routes!"
+  ],
+  [
+   "🍳 烹饪系统 · 食材采集",
+   "🍳 Cooking System · Ingredient Gathering"
+  ],
+  [
+   "《王国之泪》最强套装与隐藏特效全解析——三梯队完全推荐",
+   "Tears of the Kingdom's strongest armor sets and hidden effects fully explained — a complete three-tier recommendation"
+  ],
+  [
+   "套装攻略",
+   "Armor Set Guide"
+  ],
+  [
+   "输出流、功能流、环境应对……8套神装二星隐藏特效全解析，升完二星才是真正开始！",
+   "Damage builds, utility builds, environment counters... Full breakdown of the 2-star hidden effects of 8 god-tier sets — the real game only begins once you've upgraded to 2 stars!"
+  ],
+  [
+   "🛡 套装系统 · 升级特效",
+   "🛡 Armor Set System · Upgrade Effects"
+  ],
+  [
+   "乌萨诸马神庙（Usazum Shrine）零基础包教包会攻略",
+   "Usazum Shrine beginner-friendly guaranteed-to-learn guide"
+  ],
+  [
+   "神庙攻略",
+   "Shrine Guide"
+  ],
+  [
+   "找到萨托利山麓底座 → 进洞智取西诺克斯 → 搬运水晶激活神庙，剑圣流和潜行流两种方法全解析！",
+   "Find the pedestal at the foot of Satori Mountain → outsmart the Hinox in the cave → carry the crystal to activate the shrine, with full breakdowns of both the swordmaster style and stealth style methods!"
+  ],
+  [
+   "⛩ 神庙开启 · 萨托利山麓",
+   "⛩ Shrine Unlocking · Foot of Satori Mountain"
+  ],
+  [
+   "白龙寻踪与大师之剑（驱魔之剑）永久拔剑全攻略",
+   "Tracking the Light Dragon and the complete guide to permanently drawing the Master Sword (the Sword that Seals the Darkness)"
+  ],
+  [
+   "主线攻略",
+   "Main Quest Guide"
+  ],
+  [
+   "两圈精力门槛、两种降高方案：克洛格森林净化或龙之泪全收集，白龙顶端拔出永不损毁的大师之剑！",
+   "A two-wheel stamina threshold and two ways to lower its altitude: purifying Korok Forest or collecting all Dragon's Tears — draw the never-breaking Master Sword from atop the Light Dragon!"
+  ],
+  [
+   "🗡️ 主线 · 神兵获取",
+   "🗡️ Main Quest · Legendary Weapon Acquisition"
+  ],
+  [
+   "神级逃课神器——\"马克兔\"（Hover Bike）极致调校与蓝图指南",
+   "God-tier shortcut device — the 'Hover Bike' ultimate tuning and Autobuild guide"
+  ],
+  [
+   "蓝图攻略",
+   "Autobuild Guide"
+  ],
+  [
+   "两个风扇加一个操纵杆，45度不偏移调校工艺，9个左纳尼乌姆一键生成，地底探照与水晶快递两个神级用法！",
+   "Two fans plus one steering stick, a 45-degree no-drift tuning technique, one-click generation for 9 Zonaite, and two god-tier uses: Depths scouting and crystal delivery!"
+  ],
+  [
+   "🛠️ 蓝图 · 载具搭建",
+   "🛠️ Autobuild · Vehicle Building"
+  ],
+  [
+   "地底矿坑探索、左纳乌电池16格全满扩充与大妖精防具强化指南",
+   "Depths mine exploration, expanding the Zonai Energy Cell to a full 16 segments, and Great Fairy armor enhancement guide"
+  ],
+  [
+   "资源攻略",
+   "Resource Guide"
+  ],
+  [
+   "4500个结晶升满48格电池，三条刷结晶捷径与地底地表镜像法则，告别\"飞三秒断电\"！",
+   "4,500 crystallized charges to max out 48 Energy Cell segments, three shortcuts for farming charges, and the Depths-surface mirroring rule — say goodbye to 'powering out after three seconds of flight'!"
+  ],
+  [
+   "⛏️ 地底探索 · 电池扩充",
+   "⛏️ Depths Exploration · Energy Cell Expansion"
+  ],
+  [
+   "152座神庙全收集自查指南：怎么找出你少的那一座",
+   "Complete self-check guide to all 152 shrines: how to find the one you're missing"
+  ],
+  [
+   "地面120+天空32全区域分布表，三步自查法：区域计数、地底树根镜像、天空逐岛排查，专治151/152卡关！",
+   "A full-region distribution table of 120 on the surface + 32 in the sky, and a three-step self-check: region counting, Depths Lightroot mirroring, and sky island-by-island checks — the cure for being stuck at 151/152!"
+  ],
+  [
+   "⛩️ 神庙 · 全收集自查",
+   "⛩️ Shrines · Full-Collection Self-Check"
+  ],
+  [
+   "新手开荒指南：落地先做的10件事",
+   "Beginner's early-game guide: the 10 things to do first after landing"
+  ],
+  [
+   "新手攻略",
+   "Beginner Guide"
+  ],
+  [
+   "初始空岛四能力、鸟望台、祝福之光、料理、马匹、地底注意事项，开荒不走弯路的10条清单！",
+   "The four abilities on the Great Sky Island, Skyview Towers, Lights of Blessing, cooking, horses, and Depths precautions — a 10-item checklist to start without detours!"
+  ],
+  [
+   "🧭 开荒 · 新手入门",
+   "🧭 Early Game · Beginner Basics"
+  ],
+  [
+   "呀哈哈种子全指南：1000颗的解谜类型与扩充路线",
+   "Complete Korok Seed guide: puzzle types and expansion routes for all 1,000 seeds"
+  ],
+  [
+   "收集攻略",
+   "Collection Guide"
+  ],
+  [
+   "800解谜+100对运送，常见解谜类型、伯库林三处位置、扩满421颗，背包扩充一次讲清！",
+   "800 puzzles + 100 pairs of transport tasks, common puzzle types, Hestu's three locations, and maxing out at 421 seeds — inventory expansion explained all at once!"
+  ],
+  [
+   "🍀 收集 · 背包扩充",
+   "🍀 Collection · Inventory Expansion"
+  ],
+  [
+   "地底世界生存与探索完全指南",
+   "Complete guide to surviving and exploring the Depths"
+  ],
+  [
+   "地底攻略",
+   "Depths Guide"
+  ],
+  [
+   "瘴气机制、向阳草配方、照明三件套、120棵破魔之根镜像法则、废矿与Boss，下地底前必读！",
+   "Gloom mechanics, Sundelion recipes, the three-piece lighting kit, the 120-Lightroot mirroring rule, abandoned mines and bosses — must-read before heading into the Depths!"
+  ],
+  [
+   "🌑 地底 · 瘴气与照明",
+   "🌑 The Depths · Gloom and Lighting"
+  ],
+  [
+   "大妖精四姐妹与防具强化完全指南",
+   "Complete guide to the four Great Fairies and armor enhancement"
+  ],
+  [
+   "大妖精攻略",
+   "Great Fairy Guide"
+  ],
+  [
+   "蒂拉、弥佳、西莎、可秋拉四位位置与乐团任务，星级费用与套装隐藏效果一次讲清！",
+   "Locations and stable troubadour quests for Tera, Mija, Cotera, and Kaysa, plus star-tier costs and hidden set effects — all explained at once!"
+  ],
+  [
+   "🧚 大妖精 · 防具强化",
+   "🧚 Great Fairies · Armor Enhancement"
+  ],
+  [
+   "四条龙素材刷取指南",
+   "Four-dragon material farming guide"
+  ],
+  [
+   "龙素材攻略",
+   "Dragon Material Guide"
+  ],
+  [
+   "冰龙、雷龙、火龙、白龙固定路线与蹲点，部位对应素材与10分钟刷新机制，不用满地图追龙！",
+   "Fixed routes and camping spots for the Ice, Lightning, Fire, and Light Dragons, body-part materials, and the 10-minute respawn mechanic — no more chasing dragons all over the map!"
+  ],
+  [
+   "🐉 龙 · 素材刷取",
+   "🐉 Dragons · Material Farming"
+  ],
+  [
+   "人马（莱尼尔）完全指南",
+   "Complete Lynel Guide"
+  ],
+  [
+   "人马攻略",
+   "Lynel Guide"
+  ],
+  [
+   "白银人马5000血、刃角+55、骑背不耗耐久与地底五连战打法。",
+   "Silver Lynels with 5,000 HP, +55 saber horns, back-riding that costs no durability, and the five-in-a-row Depths battle strategy."
+  ],
+  [
+   "⚔ 人马 · 打法与掉落",
+   "⚔ Lynels · Combat and Drops"
+  ],
+  [
+   "卢比速刷指南：从前期到后期",
+   "Rupee fast-farming guide: from early to late game"
+  ],
+  [
+   "卢比攻略",
+   "Rupee Guide"
+  ],
+  [
+   "宝石售价、拉梅拉钻石回收、料理倍率与雪原烤肉刷钱。",
+   "Gem sale prices, Ramella's diamond buyback, cooking multipliers, and snowfield roast-meat money farming."
+  ],
+  [
+   "💰 卢比 · 刷钱路线",
+   "💰 Rupees · Money-Farming Routes"
+  ],
+  [
+   "马匹捕捉与稀有马完全指南",
+   "Complete guide to catching horses and rare horses"
+  ],
+  [
+   "马匹攻略",
+   "Horse Guide"
+  ],
+  [
+   "金色马坐标与任务、巨马、马神马泷强化复活。",
+   "The golden horse's location and quest, the giant horse, and enhancement and revival by the Horse God Malanya."
+  ],
+  [
+   "🐴 马匹 · 捕捉与稀有马",
+   "🐴 Horses · Catching and Rare Horses"
+  ],
+  [
+   "五位贤者能力全解",
+   "All five Sages' abilities fully explained"
+  ],
+  [
+   "贤者攻略",
+   "Sage Guide"
+  ],
+  [
+   "丘栗疾风、阿沅冲撞、希多水盾、露珠落雷、米涅鲁魔像与贤者之愿。",
+   "Tulin's gust, Yunobo's charge, Sidon's water shield, Riju's lightning strike, Mineru's Construct, and Sage's Will."
+  ],
+  [
+   "✨ 贤者 · 能力与用法",
+   "✨ Sages · Abilities and Usage"
+  ],
+  [
+   "料理机制全解：效果、时长与暴击",
+   "Complete cooking mechanics guide: effects, durations, and critical cooks"
+  ],
+  [
+   "一锅一种效果、30分钟上限、龙角拉满与血月夜必暴击。",
+   "One effect per pot, a 30-minute cap, dragon horns maxing out duration, and guaranteed critical cooks on Blood Moon nights."
+  ],
+  [
+   "🍳 料理 · 机制与暴击",
+   "🍳 Cooking · Mechanics and Critical Cooks"
+  ],
+  [
+   "海拉鲁城堡探索完全指南",
+   "Complete Hyrule Castle exploration guide"
+  ],
+  [
+   "城堡攻略",
+   "Castle Guide"
+  ],
+  [
+   "地面、浮空、地下三条线，幻影加侬与近卫武器刷新。",
+   "Three routes — ground, floating, and underground — plus Phantom Ganon and Royal Guard weapon respawns."
+  ],
+  [
+   "🏰 城堡 · 探索与主线",
+   "🏰 Castle · Exploration and Main Quest"
+  ],
+  [
+   "海拉鲁图鉴509项收集指南",
+   "Hyrule Compendium 509-entry collection guide"
+  ],
+  [
+   "图鉴攻略",
+   "Compendium Guide"
+  ],
+  [
+   "相机解锁、五大分类、研究所补买与全收集奖励。",
+   "Camera unlock, five major categories, buying missing entries at the research lab, and full-collection rewards."
+  ],
+  [
+   "📷 图鉴 · 509项收集",
+   "📷 Compendium · 509-Entry Collection"
+  ],
+  [
+   "左纳乌装置实用造物指南",
+   "Practical Zonai device building guide"
+  ],
+  [
+   "造物攻略",
+   "Zonai Device Guide"
+  ],
+  [
+   "27种装置一览、双风扇飞行车与自动炮台配法。",
+   "An overview of all 27 devices, dual-fan flying vehicles, and automated turret builds."
+  ],
+  [
+   "🔧 左纳乌 · 实用造物",
+   "🔧 Zonai · Practical Builds"
+  ],
+  [
+   "血月机制全解",
+   "Blood Moon mechanics fully explained"
+  ],
+  [
+   "血月攻略",
+   "Blood Moon Guide"
+  ],
+  [
+   "144分钟周期、顺延规则、刷新清单与血月夜做菜窗口。",
+   "The 144-minute cycle, postponement rules, respawn checklist, and the Blood Moon night cooking window."
+  ],
+  [
+   "🌕 血月 · 周期与刷新",
+   "🌕 Blood Moon · Cycle and Respawns"
+  ],
+  [
+   "余料建造完全指南",
+   "Complete Fuse guide"
+  ],
+  [
+   "余料攻略",
+   "Fuse Guide"
+  ],
+  [
+   "余料攻击表、耐久加成、无损拆解与翻倍配合。",
+   "Fuse attack tables, durability bonuses, damage-free dismantling, and doubling combos."
+  ],
+  [
+   "⚔ 余料 · 攻击与耐久",
+   "⚔ Fuse · Attack and Durability"
+  ],
+  [
+   "祝福之光兑换完全指南",
+   "Complete Light of Blessing exchange guide"
+  ],
+  [
+   "祝福之光攻略",
+   "Light of Blessing Guide"
+  ],
+  [
+   "4个换1颗心或1格精力、先精力后生命的路线与恶魔像换回。",
+   "4 for 1 Heart Container or 1 Stamina Vessel, the stamina-first route, and trading back at the Demon Statue."
+  ],
+  [
+   "✨ 祝福之光 · 生命与精力",
+   "✨ Lights of Blessing · Hearts and Stamina"
+  ],
+  [
+   "15座鸟望塔开图完全指南",
+   "Complete guide to unlocking the map with all 15 Skyview Towers"
+  ],
+  [
+   "鸟望台攻略",
+   "Skyview Tower Guide"
+  ],
+  [
+   "五路开塔顺序、15座坐标全表与四座疑难塔解法。",
+   "Five-route tower-unlocking order, a full coordinate table for all 15 towers, and solutions for four tricky towers."
+  ],
+  [
+   "🗼 鸟望台 · 开图与升空",
+   "🗼 Skyview Towers · Map Unlocking and Launching"
+  ],
+  [
+   "弓箭完全指南：选弓、箭矢搭配与五连兽神弓",
+   "Complete bow guide: choosing bows, arrow pairings, and the five-shot Savage Lynel Bow"
+  ],
+  [
+   "弓箭攻略",
+   "Bow Guide"
+  ],
+  [
+   "多连弓只耗1支箭的机制、兽神弓32×3与岩石巨人刷五连词条法。",
+   "The multi-shot bow mechanic that consumes only 1 arrow, the Savage Lynel Bow's 32×3, and farming five-shot modifiers from Stone Taluses."
+  ],
+  [
+   "🏹 弓箭 · 选弓与箭矢搭配",
+   "🏹 Bows · Bow Choice and Arrow Pairings"
+  ],
+  [
+   "洞窟探险完全指南：樱花树、魔犹伊与柯尔天",
+   "Complete cave exploration guide: cherry blossom trees, Bubbulfrogs, and Koltin"
+  ],
+  [
+   "洞窟攻略",
+   "Cave Guide"
+  ],
+  [
+   "147座洞窟的系统玩法：樱花树找洞、一击掉宝石、46颗换齐神秘套装。",
+   "The cave system across 147 caves: finding caves via cherry blossom trees, one-hit gem drops, and trading 46 Bubbul Gems for the full Mystic set."
+  ],
+  [
+   "🕳️ 洞窟 · 找洞与兑换",
+   "🕳️ Caves · Finding Caves and Trading"
+  ],
+  [
+   "盾牌完全指南：海利亚盾、盾反与盾冲浪",
+   "Complete shield guide: the Hylian Shield, shield parries, and shield surfing"
+  ],
+  [
+   "盾牌攻略",
+   "Shield Guide"
+  ],
+  [
+   "海利亚盾码头路线、盾反时机与雪地盾冲浪耐久管理。",
+   "The Hylian Shield dock route, shield-parry timing, and snow shield-surfing durability management."
+  ],
+  [
+   "🛡️ 盾牌 · 获取与打法",
+   "🛡️ Shields · Acquisition and Combat"
+  ],
+  [
+   "天空岛完全指南：上岛四法、贤者遗志与残旧地图",
+   "Complete Sky Islands guide: four ways up, Sage's Wills, and Old Maps"
+  ],
+  [
+   "天空岛攻略",
+   "Sky Islands Guide"
+  ],
+  [
+   "鸟望塔弹射等四种上岛法、20份贤者遗志与31张残旧地图。",
+   "Four ways up including Skyview Tower launches, 20 Sage's Wills, and 31 Old Maps."
+  ],
+  [
+   "☁️ 天空岛 · 上岛与收集",
+   "☁️ Sky Islands · Getting Up and Collecting"
+  ],
+  [
+   "📌 相关攻略推荐",
+   "📌 Related Guide Recommendations"
+  ],
+  [
+   "武器图鉴",
+   "Weapon Compendium"
+  ],
+  [
+   "料理合成",
+   "Cooking Recipes"
+  ],
+  [
+   "套装获取",
+   "Armor Set Acquisition"
+  ],
+  [
+   "王国之泪硬核攻略专栏，含终极武器、神级料理、最强套装深度解析。",
+   "A hardcore Tears of the Kingdom guide column, with in-depth analysis of ultimate weapons, god-tier cooking, and the strongest armor sets."
+  ],
+  [
+   "通关时间超过800小时，专注于研究王国之泪的机制深层玩法。\n        在这里分享那些教程视频不会告诉你的\"老司机心得\"——\n        真正能改变你游戏体验的秘籍与套路。",
+   "Over 800 hours in, focused on the deep mechanics of Tears of the Kingdom. Here I share the \"veteran tips\" tutorial videos never tell you — the secrets and strategies that genuinely change how you play."
+  ],
+  [
+   "本栏目为哈里原创游戏攻略专栏，所有内容经过实际游戏验证，\n    涵盖武器合成、料理配方、套装搭配等核心玩法深度解析。\n    如果你不满足于只是\"通关\"，想要真正制霸海拉鲁，这里的内容正是为你准备的。",
+   "This is Harry's original guide column, with every piece verified through actual gameplay — in-depth analysis of core systems like weapon fusing, cooking recipes, and armor builds. If merely \"finishing the game\" isn't enough for you and you want to truly master Hyrule, this is exactly what you're looking for."
+  ]
+ ],
+ "title": "Harry's Ultimate Tips — Tears of the Kingdom's Strongest Weapons, Armor Sets, and Cooking Guides | Tears of the Kingdom Guide"
+}

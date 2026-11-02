@@ -1,0 +1,671 @@
+{
+ "notes": [
+  "林克时间 rendered as 'bullet time' (the slow-motion aiming state); no official glossary term was given for it.",
+  "人马 rendered as Lynel throughout.",
+  "罗德拉姆半岛 rendered as Lodrum Headland (the Eldin-area headland of that name); if the site meant another landmark, this is the closest official match.",
+  "Fragment pass: 孤岛地底 rendered as Depths below the Great Sky Island (Floating Coliseum)."
+ ],
+ "pairs": [
+  [
+   "王国之泪蓝鬃莱尼尔（蓝人马）完全攻略，血量3000点，详解爆头骑乘流循环、大剑蓄力回旋斩与跳跃下砸应对，王国之泪盾牌火箭+蝙蝠眼球科技逃票打法，附固定刷新地点。",
+   "Complete guide to the Blue-Maned Lynel in Tears of the Kingdom: 3,000 HP. Details the headshot-and-mount loop, counters for the greatsword charged spin slash and the leaping slam, plus the Tears of the Kingdom shield-rocket + Keese eyeball cheese tactics, with fixed spawn locations."
+  ],
+  [
+   "蓝鬃莱尼尔 Blue-Maned Lynel",
+   "Blue-Maned Lynel"
+  ],
+  [
+   "🔵 蓝鬃莱尼尔",
+   "🔵 Blue-Maned Lynel"
+  ],
+  [
+   "血量 3000 · 红鬃升级版 · 新招式应对 · 王国之泪逃票科技",
+   "3,000 HP · Upgraded Red-Maned version · New move counters · Tears of the Kingdom cheese tactics"
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "Boss图鉴",
+   "Boss Encyclopedia"
+  ],
+  [
+   "莱尼尔",
+   "Lynel"
+  ],
+  [
+   "蓝鬃莱尼尔",
+   "Blue-Maned Lynel"
+  ],
+  [
+   "🦁 莱尼尔（红褐/青色）",
+   "🦁 Lynel (Red / Blue)"
+  ],
+  [
+   "⚪ 白鬃莱尼尔",
+   "⚪ White-Maned Lynel"
+  ],
+  [
+   "⚔️ 白银莱尼尔",
+   "⚔️ Silver Lynel"
+  ],
+  [
+   "📋 基本信息",
+   "📋 Basic Information"
+  ],
+  [
+   "血量",
+   "HP"
+  ],
+  [
+   "危险度",
+   "Danger Level"
+  ],
+  [
+   "强度等级",
+   "Strength Tier"
+  ],
+  [
+   "红鬃莱尼尔的直接升级版，血量从 2000 提升到 3000。 AI 逻辑与红鬃完全相同，爆头骑乘流依然是最优解，只需额外注意大剑/长枪形态的新招式。",
+   "A direct upgrade of the Red-Maned Lynel, with HP raised from 2,000 to 3,000. Its AI logic is exactly the same as the Red-Maned version's, so the headshot-and-mount strategy is still the best solution — you only need to watch out for the new moves in greatsword / spear form."
+  ],
+  [
+   "红鬃莱尼尔的直接升级版，血量从 2000 提升到 3000。",
+   "A direct upgrade of the Red-Maned Lynel, with HP raised from 2,000 to 3,000."
+  ],
+  [
+   "AI 逻辑与红鬃完全相同，爆头骑乘流依然是最优解，只需额外注意大剑/长枪形态的新招式。",
+   "Its AI logic is exactly the same as the Red-Maned version's, so the headshot-and-mount strategy is still the best solution — you only need to watch out for the new moves in greatsword / spear form."
+  ],
+  [
+   "📍 固定刷新地点",
+   "📍 Fixed Spawn Locations"
+  ],
+  [
+   "《荒野之息》 奥尔汀山脉 · 北方巨大化石西侧平原",
+   "Breath of the Wild: Eldin Mountains · plains west of the giant fossil to the north"
+  ],
+  [
+   "《荒野之息》 罗德拉姆半岛 · 拉聂尔地区东侧",
+   "Breath of the Wild: Lodrum Headland · east side of the Lanayru region"
+  ],
+  [
+   "《王国之泪》地表 奥尔汀峡谷 · 乌尔利山鸟望台左上方平原",
+   "Tears of the Kingdom (surface): Eldin Canyon · plains above-left of the Ulri Mountain Skyview Tower"
+  ],
+  [
+   "《王国之泪》竞技场 水上竞技场（孤岛地底）第二波",
+   "Tears of the Kingdom (arena): Water Arena (isolated island in the Depths), second wave"
+  ],
+  [
+   "⚠ 注意：随游戏进程和隐藏分提高，部分地表蓝鬃可能升级为白鬃或白银版本。",
+   "⚠ Note: as the game progresses and your hidden scaling score rises, some surface Blue-Maned Lynels may upgrade to White-Maned or Silver versions."
+  ],
+  [
+   "🎯 弱点",
+   "🎯 Weaknesses"
+  ],
+  [
+   "🏹 脸部爆头→跪地",
+   "🏹 Headshot to the face → kneeling"
+  ],
+  [
+   "🐴 骑乘背部（不耗耐久）",
+   "🐴 Mount its back (no durability cost)"
+  ],
+  [
+   "🛡 盾反→近距爆头",
+   "🛡 Parry → close-range headshot"
+  ],
+  [
+   "⬆️ 战术升级：从红鬃到蓝鬃",
+   "⬆️ Tactical Upgrade: From Red-Maned to Blue-Maned"
+  ],
+  [
+   "蓝鬃的基础 AI 逻辑和红鬃是一模一样的。面对 3000 血的蓝鬃，如果直接硬刚会非常消耗武器耐久，依然建议使用爆头骑乘流：",
+   "The Blue-Maned Lynel's basic AI logic is exactly the same as the Red-Maned version's. Against a 3,000 HP Blue-Maned Lynel, fighting head-on will burn through weapon durability fast, so the headshot-and-mount strategy is still recommended:"
+  ],
+  [
+   "🔁 核心循环（与红鬃完全一致）",
+   "🔁 Core Loop (identical to the Red-Maned version)"
+  ],
+  [
+   "盾反或躲招创造机会",
+   "Parry or dodge to create an opening"
+  ],
+  [
+   "弓箭爆头面部",
+   "Bow headshot to the face"
+  ],
+  [
+   "跪地后上马白嫖 5 刀（不耗耐久）",
+   "Mount after it kneels for 5 free hits (no durability cost)"
+  ],
+  [
+   "甩飞后空中拉弓补刀",
+   "After being thrown off, shoot follow-up arrows midair"
+  ],
+  [
+   "重复",
+   "Repeat"
+  ],
+  [
+   "💡 与红鬃的差异：血量更厚（3000 vs 2000），同样的循环需要多打 1～2 轮。伤害也有提升，失误被砍中会更疼，多备回血料理。",
+   "💡 Difference from the Red-Maned version: more HP (3,000 vs 2,000), so the same loop takes 1–2 extra rounds. Its damage is also higher, so a mistimed hit hurts more — bring extra healing meals."
+  ],
+  [
+   "📖 查看红鬃莱尼尔完整爆头骑乘流详细步骤 →",
+   "📖 See the full headshot-and-mount steps for the Red-Maned Lynel →"
+  ],
+  [
+   "⚠️ 必须警惕的新招式",
+   "⚠️ New Moves to Watch Out For"
+  ],
+  [
+   "《荒野之息》中，部分蓝鬃会手持兽王大剑或兽王枪，攻击轨迹与单手剑完全不同，需要特别应对：",
+   "In Breath of the Wild, some Blue-Maned Lynels carry a Savage Lynel Sword (greatsword) or Savage Lynel Spear, whose attack arcs are completely different from a one-handed sword and need special counters:"
+  ],
+  [
+   "大剑",
+   "Greatsword"
+  ],
+  [
+   "蓄力回旋斩",
+   "Charged spin slash"
+  ],
+  [
+   "前兆：把大剑背在身后，原地蓄力，然后像大风车一样原地转圈。 ⚠ 危险：此招判定范围极大，极不推荐尝试硬碰硬闪避。 应对方案 A：看到它蓄力，立刻拔腿往后跑，拉开足够的安全距离，等动作结束后再靠近。 应对方案 B（更推荐）：在它蓄力的瞬间，用弓箭精准爆头打断，不仅规避危险还直接创造骑乘机会。",
+   "Tell: it holds the greatsword behind its back, charges in place, then spins in circles like a whirlwind. ⚠ Danger: this move's hitbox is enormous — dodging it head-on is strongly discouraged. Counter A: the moment you see it charge, run straight back to a safe distance and approach again after the move ends. Counter B (recommended): the instant it charges, land a precise bow headshot to interrupt it — this avoids the danger and directly creates a mounting opportunity."
+  ],
+  [
+   "前兆：把大剑背在身后，原地蓄力，然后像大风车一样原地转圈。",
+   "Tell: it holds the greatsword behind its back, charges in place, then spins in circles like a whirlwind."
+  ],
+  [
+   "危险：此招判定范围极大，极不推荐尝试硬碰硬闪避。",
+   "Danger: this move's hitbox is enormous — dodging it head-on is strongly discouraged."
+  ],
+  [
+   "应对方案 A：看到它蓄力，立刻拔腿往后跑，拉开足够的安全距离，等动作结束后再靠近。",
+   "Counter A: the moment you see it charge, run straight back to a safe distance and approach again after the move ends."
+  ],
+  [
+   "应对方案 B（更推荐）：在它蓄力的瞬间，用弓箭精准爆头打断，不仅规避危险还直接创造骑乘机会。",
+   "Counter B (recommended): the instant it charges, land a precise bow headshot to interrupt it — this avoids the danger and directly creates a mounting opportunity."
+  ],
+  [
+   "长枪",
+   "Spear"
+  ],
+  [
+   "跳跃下砸（冲击波）",
+   "Leaping slam (shockwave)"
+  ],
+  [
+   "前兆：高高跳起，将长枪砸向地面引发范围冲击波。 应对：看到它跳起，立刻往侧方奔跑并接一个跳跃躲开落点冲击波。 反击时机：等它落地后有明显硬直，这是极好的拉弓爆头时机——比任何其他招式都更容易创造跪地机会。",
+   "Tell: it leaps high and slams its spear into the ground, creating an area shockwave. Counter: the moment you see it jump, run sideways and jump to dodge the impact shockwave. Counterattack window: after it lands it has an obvious stagger — an excellent moment to draw your bow for a headshot, easier than any other move for creating a kneeling opening."
+  ],
+  [
+   "前兆：高高跳起，将长枪砸向地面引发范围冲击波。",
+   "Tell: it leaps high and slams its spear into the ground, creating an area shockwave."
+  ],
+  [
+   "应对：看到它跳起，立刻往侧方奔跑并接一个跳跃躲开落点冲击波。",
+   "Counter: the moment you see it jump, run sideways and jump to dodge the impact shockwave."
+  ],
+  [
+   "反击时机：等它落地后有明显硬直，这是极好的拉弓爆头时机——比任何其他招式都更容易创造跪地机会。",
+   "Counterattack window: after it lands it has an obvious stagger — an excellent moment to draw your bow for a headshot, easier than any other move for creating a kneeling opening."
+  ],
+  [
+   "🚀 《王国之泪》专属逃票科技",
+   "🚀 Tears of the Kingdom Exclusive Cheese Tactics"
+  ],
+  [
+   "如果你玩的是《王国之泪》，面对蓝鬃莱尼尔你有更多神奇的\"科技\"可以轻松搞定它：",
+   "If you play Tears of the Kingdom, you have more amazing \"tech\" to deal with a Blue-Maned Lynel easily:"
+  ],
+  [
+   "盾牌火箭——拿回制空权，瞬间起飞 在盾牌上余料建造一个火箭或弹簧。战斗开始时，按住 ZL 举盾直接飞上高空，完全脱离地面危险范围，从天上俯瞰人马。",
+   "Shield rocket — take back the skies and launch instantly. Fuse a rocket or spring to your shield. At the start of the fight, hold ZL to raise your shield and fly straight up, completely leaving the ground danger zone and looking down on the Lynel from above."
+  ],
+  [
+   "盾牌火箭——拿回制空权，瞬间起飞",
+   "Shield rocket — take back the skies and launch instantly"
+  ],
+  [
+   "在盾牌上余料建造一个火箭或弹簧。",
+   "Fuse a rocket or spring to your shield."
+  ],
+  [
+   "战斗开始时，按住 ZL 举盾直接飞上高空，完全脱离地面危险范围，从天上俯瞰人马。",
+   "At the start of the fight, hold ZL to raise your shield and fly straight up, completely leaving the ground danger zone and looking down on the Lynel from above."
+  ],
+  [
+   "林克时间 + 追踪箭——轻松爆头 在空中触发林克时间，拉弓射击。如果没有信心直接瞄准脸部，给箭头附魔蝙蝠的眼睛（基斯的眼球）——它会自动追踪并精准命中人马的脸部，强行让它跪地，完全不需要手动瞄准。",
+   "Bullet time + homing arrows — easy headshots. Trigger bullet time midair and shoot. If you aren't confident aiming at its face directly, fuse a Keese eyeball to your arrow — it will home in and hit the Lynel's face precisely, forcing it to kneel, with no manual aiming needed."
+  ],
+  [
+   "林克时间 + 追踪箭——轻松爆头",
+   "Bullet time + homing arrows — easy headshots"
+  ],
+  [
+   "在空中触发林克时间，拉弓射击。",
+   "Trigger bullet time midair and shoot."
+  ],
+  [
+   "如果没有信心直接瞄准脸部，给箭头附魔蝙蝠的眼睛（基斯的眼球）——它会自动追踪并精准命中人马的脸部，强行让它跪地，完全不需要手动瞄准。",
+   "If you aren't confident aiming at its face directly, fuse a Keese eyeball to your arrow — it will home in and hit the Lynel's face precisely, forcing it to kneel, with no manual aiming needed."
+  ],
+  [
+   "近卫两倍剑——最高骑乘输出 人马跪地后骑上去，换出你特制的近卫双手剑（处于即将报废的红血状态，伤害翻倍），并融合你攻击力最高的材料（如白鬃或白银人马刃角）。 在马背上疯狂输出 5 下，不耗一丝耐久就能切掉它大半管血。",
+   "Royal Guard's double-damage sword — maximum mounted damage. After the Lynel kneels, mount it and switch to your specially prepared Royal Guard's Claymore (in its nearly broken, red-health state, dealing double damage), fused with your highest-attack material (such as a White-Maned or Silver Lynel horn). Unleash 5 hits from its back, costing no durability at all, and you can cut away more than half its health bar."
+  ],
+  [
+   "近卫两倍剑——最高骑乘输出",
+   "Royal Guard's double-damage sword — maximum mounted damage"
+  ],
+  [
+   "人马跪地后骑上去，换出你特制的近卫双手剑（处于即将报废的红血状态，伤害翻倍），并融合你攻击力最高的材料（如白鬃或白银人马刃角）。",
+   "After the Lynel kneels, mount it and switch to your specially prepared Royal Guard's Claymore (in its nearly broken, red-health state, dealing double damage), fused with your highest-attack material (such as a White-Maned or Silver Lynel horn)."
+  ],
+  [
+   "在马背上疯狂输出 5 下，不耗一丝耐久就能切掉它大半管血。",
+   "Unleash 5 hits from its back, costing no durability at all, and you can cut away more than half its health bar."
+  ],
+  [
+   "💡 组合效果：盾牌火箭升空 → 蝙蝠眼球自动爆头 → 骑乘近卫两倍剑砍 5 刀 → 被甩空中补射 → 再次升空，这套流程打 3000 血的蓝鬃只需 4～5 轮即可击倒，几乎全程零风险。",
+   "💡 Combined effect: shield rocket launch → Keese eyeball auto-headshot → mount and land 5 hits with the Royal Guard's double-damage sword → midair follow-up shots after being thrown off → launch again. This routine takes only 4–5 rounds to defeat a 3,000 HP Blue-Maned Lynel, with almost zero risk throughout."
+  ],
+  [
+   "🍖 进场前的强化建议",
+   "🍖 Pre-Fight Buff Recommendations"
+  ],
+  [
+   "3 级防御料理（强烈推荐）：用 4 个铁蘑菇 + 1 个龙角，或者 5 个铠甲草熬制。 这样即使不小心失误被蓝鬃挥中一刀，也只会掉一两颗心，容错率极高，大幅降低新手失误的代价。",
+   "Level-3 defense meals (strongly recommended): cook with 4 Ironshrooms + 1 dragon horn, or 5 Armoranths. Even if you slip up and take a hit from the Blue-Maned Lynel, you will only lose one or two hearts — extremely forgiving, greatly reducing the cost of beginner mistakes."
+  ],
+  [
+   "3 级防御料理（强烈推荐）：用 4 个铁蘑菇 + 1 个龙角，或者 5 个铠甲草熬制。",
+   "Level-3 defense meals (strongly recommended): cook with 4 Ironshrooms + 1 dragon horn, or 5 Armoranths."
+  ],
+  [
+   "这样即使不小心失误被蓝鬃挥中一刀，也只会掉一两颗心，容错率极高，大幅降低新手失误的代价。",
+   "Even if you slip up and take a hit from the Blue-Maned Lynel, you will only lose one or two hearts — extremely forgiving, greatly reducing the cost of beginner mistakes."
+  ],
+  [
+   "弓箭储备：准备 30 支以上普通箭（血量比红鬃多 1000，需要更多爆头次数），加上若干蝙蝠眼球（王国之泪用）用于保险追踪爆头。",
+   "Arrow stockpile: bring 30 or more regular arrows (it has 1,000 more HP than the Red-Maned version, so more headshots are needed), plus some Keese eyeballs (for Tears of the Kingdom) as insurance for homing headshots."
+  ],
+  [
+   "骑乘专用武器：准备一把近卫双手剑融合高攻素材，砍到快折断红血状态后上马使用，伤害翻倍且不消耗耐久，是最高效的骑乘输出武器。",
+   "Dedicated mounted weapon: prepare a Royal Guard's Claymore fused with a high-attack material, worn down to its nearly broken red-health state before mounting — double damage with no durability cost, the most efficient mounted damage weapon."
+  ],
+  [
+   "🎁 掉落物品",
+   "🎁 Drops"
+  ],
+  [
+   "🗡️ 蓝鬃莱尼尔的刃角",
+   "🗡️ Blue-Maned Lynel Saber Horn"
+  ],
+  [
+   "🐾 蓝鬃莱尼尔的蹄",
+   "🐾 Blue-Maned Lynel Hoof"
+  ],
+  [
+   "🫀 蓝鬃莱尼尔的肝",
+   "🫀 Blue-Maned Lynel Guts"
+  ],
+  [
+   "🏹 莱尼尔弓（三发/五发）",
+   "🏹 Lynel Bow (triple / quintuple shot)"
+  ],
+  [
+   "⚔️ 兽王大剑 / 兽王枪",
+   "⚔️ Savage Lynel Sword / Savage Lynel Spear"
+  ],
+  [
+   "💡 素材用途：蓝鬃莱尼尔的刃角是制作中期最强武器的核心素材，融合攻击力加成显著高于红鬃版。蹄和肝可用于烹饪攻击强化料理，进一步提升对付白鬃/白银版的输出效率。",
+   "💡 Material uses: the Blue-Maned Lynel Saber Horn is the core material for crafting the strongest mid-game weapons, with a significantly higher fused attack bonus than the Red-Maned version. The hoof and guts can be cooked into attack-boosting meals, further improving your damage output against White-Maned / Silver versions."
+  ],
+  [
+   "素材用途：蓝鬃莱尼尔的刃角是制作中期最强武器的核心素材，融合攻击力加成显著高于红鬃版。",
+   "Material uses: the Blue-Maned Lynel Saber Horn is the core material for crafting the strongest mid-game weapons, with a significantly higher fused attack bonus than the Red-Maned version."
+  ],
+  [
+   "蹄和肝可用于烹饪攻击强化料理，进一步提升对付白鬃/白银版的输出效率。",
+   "The hoof and guts can be cooked into attack-boosting meals, further improving your damage output against White-Maned / Silver versions."
+  ],
+  [
+   "🔗 莱尼尔系列攻略导航",
+   "🔗 Lynel Guide Series Navigation"
+  ],
+  [
+   "← 红鬃莱尼尔攻略",
+   "← Red-Maned Lynel Guide"
+  ],
+  [
+   "⚪ 白鬃莱尼尔攻略 →",
+   "⚪ White-Maned Lynel Guide →"
+  ],
+  [
+   "⚔️ 白银莱尼尔攻略 →",
+   "⚔️ Silver Lynel Guide →"
+  ],
+  [
+   "← Boss 图鉴",
+   "← Boss Encyclopedia"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 人马",
+   "› Lynel"
+  ],
+  [
+   "› 白鬃人马",
+   "› White-Maned Lynel"
+  ],
+  [
+   "› Boss攻略",
+   "› Boss Guides"
+  ],
+  [
+   "📚 更多攻略",
+   "📚 More Guides"
+  ],
+  [
+   "› 哈里的终极秘籍（13篇）",
+   "› Harry's Ultimate Secrets (13 articles)"
+  ],
+  [
+   "› 全部页面索引",
+   "› Full Page Index"
+  ],
+  [
+   "红鬃莱尼尔的直接升级版，血量从 2000 提升到",
+   "A direct upgrade of the Red-Maned Lynel, with HP raised from 2,000 to "
+  ],
+  [
+   "。\n            AI 逻辑与红鬃完全相同，",
+   ". Its AI logic is exactly the same as the Red-Maned version's, "
+  ],
+  [
+   "，只需额外注意大剑/长枪形态的新招式。",
+   ", you only need to watch out for the new moves in greatsword / spear form."
+  ],
+  [
+   "爆头骑乘流依然是最优解",
+   "the headshot-and-mount strategy remains the optimal solution"
+  ],
+  [
+   "《荒野之息》",
+   "Breath of the Wild "
+  ],
+  [
+   "奥尔汀山脉 · 北方巨大化石西侧平原",
+   "Eldin Mountains · plains west of the giant northern fossil"
+  ],
+  [
+   "罗德拉姆半岛 · 拉聂尔地区东侧",
+   "Lodrum Headland · east side of the Lanayru region"
+  ],
+  [
+   "《王国之泪》地表",
+   "Tears of the Kingdom — Surface "
+  ],
+  [
+   "奥尔汀峡谷 · 乌尔利山鸟望台左上方平原",
+   "Eldin Canyon · plains above-left of the Ulri Mountain Skyview Tower"
+  ],
+  [
+   "《王国之泪》竞技场",
+   "Tears of the Kingdom — Coliseum "
+  ],
+  [
+   "水上竞技场（孤岛地底）第二波",
+   "Floating Coliseum (Depths below the Great Sky Island), second wave"
+  ],
+  [
+   "💡 与红鬃的差异：",
+   "💡 Differences from Red-Maned: "
+  ],
+  [
+   "血量更厚（3000 vs 2000），同样的循环需要多打",
+   "With more HP (3,000 vs 2,000), the same loop needs "
+  ],
+  [
+   "。伤害也有提升，失误被砍中会更疼，多备回血料理。",
+   ". Its damage is higher too, and getting hit when you slip up hurts more — bring extra healing meals."
+  ],
+  [
+   "1～2 轮",
+   "1–2 more rounds"
+  ],
+  [
+   "前兆：",
+   "Tell: "
+  ],
+  [
+   "把大剑背在身后，原地蓄力，然后像大风车一样原地转圈。",
+   "It carries its greatsword on its back, charges up in place, then spins in place like a giant windmill. "
+  ],
+  [
+   "此招判定范围",
+   "This move's hitbox is "
+  ],
+  [
+   "，极不推荐尝试硬碰硬闪避。",
+   ", and trying to dodge it head-on is strongly discouraged. "
+  ],
+  [
+   "看到它蓄力，",
+   "When you see it charging up, "
+  ],
+  [
+   "，拉开足够的安全距离，等动作结束后再靠近。",
+   ", putting enough safe distance between you, then approach again after the move ends. "
+  ],
+  [
+   "在它蓄力的瞬间，",
+   "In the instant it charges up, "
+  ],
+  [
+   "，不仅规避危险还直接创造骑乘机会。",
+   ", which avoids the danger and directly creates a mounting opportunity."
+  ],
+  [
+   "⚠ 危险：",
+   "⚠ Danger: "
+  ],
+  [
+   "极大",
+   "enormous"
+  ],
+  [
+   "应对方案 A：",
+   "Counterplan A: "
+  ],
+  [
+   "立刻拔腿往后跑",
+   "immediately sprint backward"
+  ],
+  [
+   "应对方案 B（更推荐）：",
+   "Counterplan B (recommended): "
+  ],
+  [
+   "用弓箭精准爆头打断",
+   "interrupt it with a precise bow headshot"
+  ],
+  [
+   "高高跳起，将长枪砸向地面引发范围冲击波。",
+   "It leaps high and slams its spear into the ground, triggering an area shockwave. "
+  ],
+  [
+   "看到它跳起，",
+   "When you see it jump, "
+  ],
+  [
+   "躲开落点冲击波。",
+   "to avoid the landing shockwave. "
+  ],
+  [
+   "等它落地后有明显硬直，",
+   "After it lands it has obvious stagger, "
+  ],
+  [
+   "——比任何其他招式都更容易创造跪地机会。",
+   "— far easier than any other move to create a kneeling opening."
+  ],
+  [
+   "应对：",
+   "Counter: "
+  ],
+  [
+   "立刻往侧方奔跑并接一个跳跃",
+   "immediately run sideways and follow with a jump "
+  ],
+  [
+   "反击时机：",
+   "Counterattack window: "
+  ],
+  [
+   "这是极好的拉弓爆头时机",
+   "an excellent chance for a bow headshot "
+  ],
+  [
+   "在盾牌上余料建造一个",
+   "Fuse a "
+  ],
+  [
+   "。战斗开始时，",
+   ". At the start of the fight, "
+  ],
+  [
+   "直接飞上高空，完全脱离地面危险范围，从天上俯瞰人马。",
+   "to fly straight up into the sky, completely leaving the ground danger zone, looking down on the Lynel from above."
+  ],
+  [
+   "火箭或弹簧",
+   "Rocket or Spring"
+  ],
+  [
+   "按住 ZL 举盾",
+   "hold ZL to raise your shield "
+  ],
+  [
+   "在空中触发林克时间，拉弓射击。如果没有信心直接瞄准脸部，给箭头附魔",
+   "Trigger bullet time midair and shoot. If you are not confident aiming directly at its face, fuse your arrows with "
+  ],
+  [
+   "——它会",
+   "— it will "
+  ],
+  [
+   "，强行让它跪地，完全不需要手动瞄准。",
+   ", forcing it to kneel, with no manual aiming needed at all."
+  ],
+  [
+   "蝙蝠的眼睛（基斯的眼球）",
+   "bat eyes (Keese eyeballs) "
+  ],
+  [
+   "自动追踪并精准命中人马的脸部",
+   "automatically track and hit the Lynel's face precisely"
+  ],
+  [
+   "人马跪地后骑上去，换出你特制的",
+   "Once the Lynel kneels, mount it and switch to your custom "
+  ],
+  [
+   "，并融合你攻击力最高的材料（如白鬃或白银人马刃角）。\n            在马背上疯狂输出 5 下，",
+   ", fused with your highest-attack material (such as a White-Maned or Silver Lynel horn). Mash out 5 hits on horseback, "
+  ],
+  [
+   "近卫双手剑（处于即将报废的红血状态，伤害翻倍）",
+   "Royal Guard's Claymore (in near-broken low-HP state, double damage)"
+  ],
+  [
+   "不耗一丝耐久就能切掉它大半管血",
+   "cutting away most of its HP without costing a shred of durability"
+  ],
+  [
+   "💡 组合效果：",
+   "💡 Combo effect: "
+  ],
+  [
+   "盾牌火箭升空 → 蝙蝠眼球自动爆头 → 骑乘近卫两倍剑砍 5 刀 → 被甩空中补射 → 再次升空，这套流程打 3000 血的蓝鬃只需",
+   "Shield-Rocket launch → bat-eye auto headshot → mounted double-damage Royal Guard's sword for 5 hits → follow-up shots after being thrown into the air → launch again. This loop takes only "
+  ],
+  [
+   "即可击倒，几乎全程零风险。",
+   "to take down a 3,000-HP Blue-Maned Lynel, with almost zero risk throughout."
+  ],
+  [
+   "4～5 轮",
+   "4–5 rounds "
+  ],
+  [
+   "3 级防御料理（强烈推荐）：",
+   "Level 3 defense meals (highly recommended): "
+  ],
+  [
+   "用",
+   "Use "
+  ],
+  [
+   "，或者",
+   ", or "
+  ],
+  [
+   "熬制。\n            这样即使不小心失误被蓝鬃挥中一刀，也只会掉一两颗心，",
+   "to brew. Even if you slip up and take a hit from a Blue-Maned Lynel, you will only lose a heart or two, "
+  ],
+  [
+   "，大幅降低新手失误的代价。",
+   ", greatly reducing the cost of beginner mistakes."
+  ],
+  [
+   "4 个铁蘑菇 + 1 个龙角",
+   "4 Ironshrooms + 1 dragon horn"
+  ],
+  [
+   "5 个铠甲草",
+   "5 Armoranths "
+  ],
+  [
+   "容错率极高",
+   "giving an extremely high margin for error"
+  ],
+  [
+   "弓箭储备：",
+   "Arrow reserves: "
+  ],
+  [
+   "准备",
+   "Prepare "
+  ],
+  [
+   "（血量比红鬃多 1000，需要更多爆头次数），加上若干",
+   "(1000 more HP than Red-Maned, requiring more headshots), plus some "
+  ],
+  [
+   "（王国之泪用）用于保险追踪爆头。",
+   "(for use in Tears of the Kingdom) as insurance for tracking headshots."
+  ],
+  [
+   "30 支以上普通箭",
+   "30 or more regular arrows "
+  ],
+  [
+   "蝙蝠眼球",
+   "bat eyes "
+  ]
+ ],
+ "title": "Blue-Maned Lynel Guide · Upgraded Headshot Mount Strategy · New Move Counters · Tears of the Kingdom"
+}

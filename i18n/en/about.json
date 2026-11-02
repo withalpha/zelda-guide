@@ -1,0 +1,113 @@
+{
+ "notes": [
+  "The copyright-contact line in the source contains a Cloudflare-obfuscated email link, so its text nodes read as '如有版权问题，请通过' + link + '联系，本站将立即处理。'; the pair merges the text nodes and renders the link as contact by email, leaving the email address itself untranslated.",
+  "武器融合方案 rendered as 'weapon Fuse builds' (Fuse = 余料建造 per glossary)."
+ ],
+ "pairs": [
+  [
+   "关于王国之泪攻略站：本站致力于提供最全面的塞尔达传说王国之泪攻略内容，所有攻略为原创整理，涵盖主线、神庙、武器、料理等全方位指南。",
+   "About the Tears of the Kingdom Guide site: this site is dedicated to providing the most comprehensive The Legend of Zelda: Tears of the Kingdom guide content. All guides are originally compiled by the author, covering main quests, shrines, weapons, cooking, and guides in every area."
+  ],
+  [
+   "👤 关于我们",
+   "👤 About Us"
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "关于我们",
+   "About Us"
+  ],
+  [
+   "我想对大家说",
+   "A Word to Everyone"
+  ],
+  [
+   "本站是由一位热爱《塞尔达传说：王国之泪》的独立玩家亲手打造的非官方游戏攻略网站。从 2023 年游戏发售起，我便投入大量时间深度游玩这款游戏，自行实测、截图、整理数据，历时数月完成了这套完整攻略。网站内容涵盖全 23 条主线任务、60 个情节挑战、152 座神庙坐标、120 个破魔树根位置、20 件武器融合方案、228 种料理配方、38 套套装强化攻略，以及 16 个 Boss 的完整打法解说。所有截图均为本人亲自游玩所得，坐标数据经过逐一核实，攻略文字由本人原创撰写。本站持续更新，欢迎通过邮件反馈攻略错误或提出建议。",
+   "This site is an unofficial game guide website built by hand by an independent player who loves The Legend of Zelda: Tears of the Kingdom. Since the game's release in 2023, I have poured a great deal of time into playing it in depth, testing things myself, taking screenshots, and organizing data, and spent months completing this full guide set. The site covers all 23 main quests, 60 side adventures, 152 shrine locations, 120 Lightroot locations, 20 weapon Fuse builds, 228 cooking recipes, 38 armor set enhancement guides, and complete strategies for all 16 bosses. All screenshots were taken from my own playthroughs, coordinate data has been verified one by one, and the guide text is my own original writing. This site is updated on an ongoing basis; please feel free to report guide errors or make suggestions by email."
+  ],
+  [
+   "本站是由一位热爱《塞尔达传说：王国之泪》的独立玩家亲手打造的非官方游戏攻略网站。",
+   "This site is an unofficial game guide website built by hand by an independent player who loves The Legend of Zelda: Tears of the Kingdom."
+  ],
+  [
+   "从 2023 年游戏发售起，我便投入大量时间深度游玩这款游戏，自行实测、截图、整理数据，历时数月完成了这套完整攻略。",
+   "Since the game's release in 2023, I have poured a great deal of time into playing it in depth, testing things myself, taking screenshots, and organizing data, and spent months completing this full guide set."
+  ],
+  [
+   "网站内容涵盖全 23 条主线任务、60 个情节挑战、152 座神庙坐标、120 个破魔树根位置、20 件武器融合方案、228 种料理配方、38 套套装强化攻略，以及 16 个 Boss 的完整打法解说。",
+   "The site covers all 23 main quests, 60 side adventures, 152 shrine locations, 120 Lightroot locations, 20 weapon Fuse builds, 228 cooking recipes, 38 armor set enhancement guides, and complete strategies for all 16 bosses."
+  ],
+  [
+   "所有截图均为本人亲自游玩所得，坐标数据经过逐一核实，攻略文字由本人原创撰写。",
+   "All screenshots were taken from my own playthroughs, coordinate data has been verified one by one, and the guide text is my own original writing."
+  ],
+  [
+   "本站持续更新，欢迎通过邮件反馈攻略错误或提出建议。",
+   "This site is updated on an ongoing basis; please feel free to report guide errors or make suggestions by email."
+  ],
+  [
+   "📬 联系方式",
+   "📬 Contact"
+  ],
+  [
+   "有任何攻略错误、建议或交流，欢迎发邮件联系",
+   "If you spot any guide errors, or have suggestions or anything to discuss, feel free to email us"
+  ],
+  [
+   "免责声明",
+   "Disclaimer"
+  ],
+  [
+   "本网站为非官方个人游戏攻略指南，与任天堂株式会社无任何关联。网站内容（包括文字攻略、截图说明）仅供玩家学习、参考和交流使用，属于评论性、教育性非商业用途（合理使用）。本站不提供任何游戏下载，不以任何方式侵害任天堂的商业利益。",
+   "This website is an unofficial, personally made game guide. It has no affiliation with Nintendo Co., Ltd. The site's content (including written guides and screenshot descriptions) is provided only for players to learn from, reference, and discuss, and constitutes commentary and educational, non-commercial use (fair use). This site does not provide any game downloads and does not infringe Nintendo's commercial interests in any way."
+  ],
+  [
+   "本网站为非官方个人游戏攻略指南，与任天堂株式会社无任何关联。",
+   "This website is an unofficial, personally made game guide. It has no affiliation with Nintendo Co., Ltd."
+  ],
+  [
+   "网站内容（包括文字攻略、截图说明）仅供玩家学习、参考和交流使用，属于评论性、教育性非商业用途（合理使用）。",
+   "The site's content (including written guides and screenshot descriptions) is provided only for players to learn from, reference, and discuss, and constitutes commentary and educational, non-commercial use (fair use)."
+  ],
+  [
+   "本站不提供任何游戏下载，不以任何方式侵害任天堂的商业利益。",
+   "This site does not provide any game downloads and does not infringe Nintendo's commercial interests in any way."
+  ],
+  [
+   "《塞尔达传说：王国之泪》及所有相关游戏内容、图像的版权归 Nintendo Co., Ltd. 所有。",
+   "The Legend of Zelda: Tears of the Kingdom and all related game content and images are the copyright of Nintendo Co., Ltd."
+  ],
+  [
+   "如有版权问题，请通过联系，本站将立即处理。",
+   "If you have any copyright concerns, please contact us by email and we will handle it immediately."
+  ],
+  [
+   "🔒 查看隐私政策",
+   "🔒 View Privacy Policy"
+  ],
+  [
+   "了解本站如何处理您的数据及版权声明",
+   "Learn how this site handles your data and its copyright notice"
+  ],
+  [
+   "《塞尔达传说：王国之泪》及所有相关游戏内容、图像的版权归",
+   "The copyright of The Legend of Zelda: Tears of the Kingdom and all related game content and images belongs to"
+  ],
+  [
+   "所有。",
+   " "
+  ],
+  [
+   "如有版权问题，请通过",
+   "If you have any copyright concerns, please reach us through"
+  ],
+  [
+   "联系，本站将立即处理。",
+   "— we will handle it immediately."
+  ]
+ ],
+ "title": "About Us - The Founding Philosophy and Content Sources of the Tears of the Kingdom Guide | The Legend of Zelda"
+}

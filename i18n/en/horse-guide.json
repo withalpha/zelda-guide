@@ -1,0 +1,328 @@
+{
+ "notes": [
+  "马神湖 rendered descriptively as Horse God Lake; the source gives no official in-game location name for it.",
+  "Source writes 用速速红萝卜（毅力胡萝卜）唤醒她, naming two different carrots; translated as Endura Carrots, since waking Malanya in-game requires Endura Carrots.",
+  "传言中的塞尔达公主 rendered as the official questline name 'Potential Princess Sightings!'; the quest 塞尔达所爱的金色的马 rendered as 'Zelda's Golden Horse'.",
+  "冰之三头龙古栗欧克 rendered as Frost Gleeok per the glossary (Gleeok).",
+  "Breadcrumb items (Home / Harry's Ultimate Tips / current title) included as page-specific navigation; global top nav and global footer excluded per spec."
+ ],
+ "pairs": [
+  [
+   "马匹完全指南：金色马位置与坐标、驯服精力准备、巨马与马神马泷，以及驿站登录规则。",
+   "Complete horse guide: Golden Horse location and coordinates, stamina preparation for taming, the Giant Horse and the Horse God Malanya, plus stable registration rules."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Tips"
+  ],
+  [
+   "马匹捕捉与稀有马完全指南",
+   "Complete Guide to Catching Horses and Rare Horses"
+  ],
+  [
+   "🐴 马匹攻略",
+   "🐴 Horse Guide"
+  ],
+  [
+   "野马遍地都是，但真正值得养的只有几匹：金色马、巨马和几匹高属性野马，本篇一次讲清位置和驯法。",
+   "Wild horses are everywhere, but only a few are truly worth raising: the Golden Horse, the Giant Horse, and a few high-stat wild horses. This guide covers their locations and taming methods in one place."
+  ],
+  [
+   "🧙 作者：哈里",
+   "🧙 Author: Harry"
+  ],
+  [
+   "🐴 马匹 · 捕捉与稀有马",
+   "🐴 Horses · Catching and Rare Horses"
+  ],
+  [
+   "📖 深度攻略",
+   "📖 In-Depth Guide"
+  ],
+  [
+   "林克骑着金色马",
+   "Link riding the Golden Horse"
+  ],
+  [
+   "塞尔达的金色马：全游戏最值得专门跑一趟的马（游戏实机截图）",
+   "Zelda's Golden Horse: the horse most worth making a special trip for in the whole game (in-game screenshot)"
+  ],
+  [
+   "马在王国之泪里不只是代步：赶路、拉货、跑图都靠它。普通野马随处可抓，但属性参差不齐；金色马和巨马是固定出现的稀有马，值得专门规划一趟。下面讲清每匹马的位置、驯服要点和后续养护。",
+   "Horses in Tears of the Kingdom are more than just transport: getting around, hauling cargo, and covering the map all depend on them. Ordinary wild horses can be caught anywhere, but their stats vary widely; the Golden Horse and the Giant Horse are rare horses that appear at fixed locations and are worth planning a dedicated trip for. Below, we explain each horse's location, taming tips, and follow-up care."
+  ],
+  [
+   "⭐ 本篇要点",
+   "⭐ Key Points of This Guide"
+  ],
+  [
+   "金色马在北塔邦挞雪原遗迹附近，坐标约（-1818，3380，0236），属性力量四星、速度四星、精力三星、牵引两星，性格温顺。",
+   "The Golden Horse is near the North Tabantha Snowfield ruins, at approximately (-1818, 3380, 0236), with Strength 4 stars, Speed 4 stars, Stamina 3 stars, and Pull 2 stars, and a gentle temperament."
+  ],
+  [
+   "金色马任务在雪原驿站接，须先在白诘报社开启“传言中的塞尔达公主”系列；奖励是王族马鞍和王族缰绳。",
+   "The Golden Horse quest is accepted at Snowfield Stable, but you must first start the 'Potential Princess Sightings!' series at the Lucky Clover Gazette; the rewards are the Royal Saddle and Royal Bridle."
+  ],
+  [
+   "驯服金色马约需两圈精力，提前备好精力料理再去，免得中途被甩下来。",
+   "Taming the Golden Horse takes about two Stamina Wheels, so prepare stamina-restoring dishes in advance to avoid being thrown off midway."
+  ],
+  [
+   "去金色马的路上贴左走，避开附近的冰之三头龙古栗欧克。",
+   "On the way to the Golden Horse, keep to the left to avoid the nearby Frost Gleeok."
+  ],
+  [
+   "巨马在马神湖南边木桥一带的山谷，驯服耗精力极多，要带足精力料理。",
+   "The Giant Horse roams the valley around the wooden bridge south of the Horse God Lake; taming it drains a huge amount of stamina, so bring plenty of stamina dishes."
+  ],
+  [
+   "📑 本篇目录",
+   "📑 Contents of This Guide"
+  ],
+  [
+   "一、抓马基础：潜行、骑乘与安抚",
+   "1. Horse-Catching Basics: Sneaking, Mounting, and Soothing"
+  ],
+  [
+   "二、金色马：位置、任务与奖励",
+   "2. The Golden Horse: Location, Quest, and Rewards"
+  ],
+  [
+   "三、巨马与高属性野马",
+   "3. The Giant Horse and High-Stat Wild Horses"
+  ],
+  [
+   "四、马神马泷：强化与复活",
+   "4. Horse God Malanya: Upgrades and Revival"
+  ],
+  [
+   "五、驿站规则与养马取舍",
+   "5. Stable Rules and Which Horses to Keep"
+  ],
+  [
+   "常见问题",
+   "Frequently Asked Questions"
+  ],
+  [
+   "抓马的流程都一样：蹲下潜行靠近，趁马没发现跳上马背，然后在马挣扎时不停按安抚，直到马平静下来。精力不够会在中途被甩下来，所以出发前先看精力圈数，备好精力料理。马的四维是力量、速度、精力、牵引，星数越高越好，性格温顺的马安抚起来更省精力。",
+   "Catching a horse always follows the same steps: crouch and sneak up, jump onto its back before it notices you, then keep pressing Soothe while it struggles until it calms down. If you run out of stamina, you will be thrown off midway, so check how many Stamina Wheels you have before setting out and prepare stamina dishes. A horse's four stats are Strength, Speed, Stamina, and Pull — the more stars, the better — and a gentle-tempered horse takes less stamina to soothe."
+  ],
+  [
+   "金色马在北塔邦挞雪原遗迹附近，坐标约（-1818，3380，0236）。它的属性是力量四星、速度四星、精力三星、牵引两星，性格温顺，是全游戏综合最值得养的马之一。相关任务“塞尔达所爱的金色的马”在雪原驿站接，但要先在白诘报社开启“传言中的塞尔达公主”系列任务线，否则驿站不会给你这个任务。",
+   "The Golden Horse is near the North Tabantha Snowfield ruins, at approximately (-1818, 3380, 0236). Its stats are Strength 4 stars, Speed 4 stars, Stamina 3 stars, and Pull 2 stars, and with its gentle temperament it is one of the most worthwhile horses to raise in the whole game. The related quest, 'Zelda's Golden Horse,' is accepted at Snowfield Stable, but you must first start the 'Potential Princess Sightings!' questline at the Lucky Clover Gazette, or the stable will not offer you this quest."
+  ],
+  [
+   "驯服约需两圈精力，提前吃精力料理或带足料理再去。去的路上注意附近有冰之三头龙古栗欧克，贴左走可以避开它，别在龙的地盘里跟马纠缠。完成任务后奖励王族马鞍和王族缰绳，都是金色马的专属外观。",
+   "Taming it takes about two Stamina Wheels, so eat stamina dishes in advance or bring enough dishes with you. On the way there, watch out for the nearby Frost Gleeok — keeping to the left lets you avoid it, and do not tangle with a horse on the dragon's turf. After completing the quest, you are rewarded with the Royal Saddle and Royal Bridle, both exclusive looks for the Golden Horse."
+  ],
+  [
+   "金色马的特写",
+   "Close-up of the Golden Horse"
+  ],
+  [
+   "金色马：力量与速度都是四星（游戏实机截图）",
+   "The Golden Horse: both Strength and Speed are 4 stars (in-game screenshot)"
+  ],
+  [
+   "巨马在马神湖南边木桥一带的山谷出没，体型比普通马大得多，力量极高，但驯服耗精力极多，没有三圈以上的精力准备不要硬上。巨马适合拉重物和冲撞，不适合竞速，养之前先想清楚用途。普通野马里也有高属性个体，看到四星速度或力量的马值得抓下来对比，属性比名字更重要。",
+   "The Giant Horse roams the valley around the wooden bridge south of the Horse God Lake. It is much larger than an ordinary horse, with extremely high Strength, but taming it drains a huge amount of stamina — do not try it without more than three Stamina Wheels' worth of preparation. The Giant Horse is good for hauling heavy loads and charging through enemies, but not for racing, so decide what you want it for before raising it. Among ordinary wild horses there are also high-stat individuals; if you see a horse with 4-star Speed or Strength, it is worth catching and comparing, since stats matter more than names."
+  ],
+  [
+   "马神马泷在东阿卡莱驿站附近。用速速红萝卜（毅力胡萝卜）唤醒她之后，她可以强化马匹属性，也能复活死去的马。马死了不用重抓，带上材料找马泷就能复活；想把主力马的属性再往上推，也要来找她。",
+   "The Horse God Malanya is near East Akkala Stable. After waking her with Endura Carrots, she can upgrade horses' stats and revive horses that have died. If a horse dies, you do not need to catch it again — bring the materials to Malanya and she can revive it; and if you want to push your main horse's stats even higher, you need to come to her too."
+  ],
+  [
+   "在任意驿站登录马匹需要 20 卢比，登录后可以在任何驿站取马。养马不用贪多：留一匹速度快的赶路马、一匹力量大的拉货马（巨马）、一匹金色马做主力就够了，马槽满了反而每次取马都要翻半天。",
+   "Registering a horse at any stable costs 20 Rupees, and once registered you can pick it up at any stable. Do not be greedy about how many horses you keep: one fast horse for travel, one strong horse for hauling (the Giant Horse), and one Golden Horse as your main mount are enough — a full stable just means flipping through pages every time you pick up a horse."
+  ],
+  [
+   "林克骑马穿越海拉鲁",
+   "Link riding a horse across Hyrule"
+  ],
+  [
+   "骑马赶路：驿站登录后全图可取（游戏实机截图）",
+   "Traveling on horseback: once registered at a stable, you can pick up your horse anywhere on the map (in-game screenshot)"
+  ],
+  [
+   "金色马任务接不到怎么办？先去白诘报社开启“传言中的塞尔达公主”系列，再去雪原驿站。",
+   "Can not pick up the Golden Horse quest? Go to the Lucky Clover Gazette first to start the 'Potential Princess Sightings!' series, then go to Snowfield Stable."
+  ],
+  [
+   "金色马任务接不到怎么办？",
+   "Can not pick up the Golden Horse quest?"
+  ],
+  [
+   "先去白诘报社开启“传言中的塞尔达公主”系列，再去雪原驿站。",
+   "First go to the Lucky Clover Gazette to start the 'Potential Princess Sightings!' series, then go to Snowfield Stable."
+  ],
+  [
+   "驯服总被甩下来怎么办？精力不够。提前吃精力料理，带足两圈以上的量再去。",
+   "What if you keep getting thrown off while taming? You do not have enough stamina. Eat stamina dishes in advance and bring more than two Stamina Wheels' worth before you go."
+  ],
+  [
+   "驯服总被甩下来怎么办？",
+   "What if you keep getting thrown off while taming?"
+  ],
+  [
+   "精力不够。",
+   "You do not have enough stamina."
+  ],
+  [
+   "提前吃精力料理，带足两圈以上的量再去。",
+   "Eat stamina dishes in advance and bring more than two Stamina Wheels' worth before you go."
+  ],
+  [
+   "马死了怎么办？找东阿卡莱附近的马神马泷复活，不用重抓。",
+   "What if your horse dies? Go to the Horse God Malanya near East Akkala to revive it — no need to catch it again."
+  ],
+  [
+   "马死了怎么办？",
+   "What if your horse dies?"
+  ],
+  [
+   "找东阿卡莱附近的马神马泷复活，不用重抓。",
+   "Go to the Horse God Malanya near East Akkala to revive it — no need to catch it again."
+  ],
+  [
+   "相关攻略：新手开荒指南、大妖精四姐妹与防具强化完全指南、地底世界生存与探索完全指南。",
+   "Related guides: Beginner's Guide to Starting Out, Complete Guide to the Four Great Fairies and Armor Upgrades, Complete Guide to Surviving and Exploring the Depths."
+  ],
+  [
+   "新手开荒指南",
+   "Beginner's Guide to Starting Out"
+  ],
+  [
+   "大妖精四姐妹与防具强化完全指南",
+   "Complete Guide to the Four Great Fairies and Armor Upgrades"
+  ],
+  [
+   "地底世界生存与探索完全指南",
+   "Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "← 上一篇：卢比速刷指南：从前期到后期",
+   "← Previous: Rupee Farming Guide: From Early to Late Game"
+  ],
+  [
+   "返回秘籍专栏",
+   "Back to the Tips Column"
+  ],
+  [
+   "下一篇：五位贤者能力全解 →",
+   "Next: All Five Sages' Abilities Explained →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Guide to Starting Out: 10 Things to Do First After Landing"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› Complete Guide to the Four Great Fairies and Armor Upgrades"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Complete Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Tips"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Ultimate Guide to the Scimitar of the Seven"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Cooking Recipes"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Full Breakdown of the Three Tiers of Strongest Armor Sets"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine: A Beginner-Friendly Walkthrough"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Hover Bike Tuning"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Depths Battery Expansion and the Great Fairies"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 New Daily Guides"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› Self-Check Guide to Collecting All 152 Shrines"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Korok Seed Complete Guide"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Guide to Farming Materials from the Four Dragons"
+  ],
+  [
+   "› 人马（莱尼尔）完全指南",
+   "› Complete Guide to Lynels"
+  ],
+  [
+   "› 卢比速刷指南：从前期到后期",
+   "› Rupee Farming Guide: From Early to Late Game"
+  ],
+  [
+   "› 马匹捕捉与稀有马完全指南（本篇）",
+   "› Complete Guide to Catching Horses and Rare Horses (this guide)"
+  ],
+  [
+   "› 五位贤者能力全解",
+   "› All Five Sages' Abilities Explained"
+  ],
+  [
+   "› 料理机制全解：效果、时长与暴击",
+   "› Cooking Mechanics Explained: Effects, Duration, and Critical Hits"
+  ],
+  [
+   "› 海拉鲁城堡探索完全指南",
+   "› Complete Guide to Exploring Hyrule Castle"
+  ],
+  [
+   "› 海拉鲁图鉴509项收集指南",
+   "› Guide to Collecting All 509 Hyrule Compendium Entries"
+  ],
+  [
+   "› 左纳乌装置实用造物指南",
+   "› Practical Guide to Zonai Device Builds"
+  ],
+  [
+   "› 血月机制全解",
+   "› Blood Moon Mechanics Explained"
+  ],
+  [
+   "› 余料建造完全指南",
+   "› Complete Guide to Fuse"
+  ]
+ ],
+ "title": "Complete Guide to Catching Horses and Rare Horses · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+}

@@ -1,0 +1,340 @@
+{
+ "notes": [
+  "野菜牛奶粥 rendered as the official dish name 'Sunny Veggie Porridge' (Sundelion + Fresh Milk + Hylian Rice); the meta description's 向阳牛奶粥 is the same dish.",
+  "Meta description says 毅力胡萝卜糕 (Enduring Carrot Cake) but the article body recipe is 胡萝卜蛋糕 made with both Swift Carrot and Endura Carrot; both were translated as written, and the body dish is rendered consistently as 'Carrot Cake'.",
+  "乌萨诸马神庙 rendered by transliteration as 'Usazum Shrine' (official English shrine name not confirmed from the glossary).",
+  "马克兔飞行器 is a colloquial fan nickname for the fan-powered flying machine; rendered descriptively as 'Hover Bike'.",
+  "蒸水果 in the full-heal context (Hearty ingredient, full recovery) rendered as 'Hearty Steamed Fruit' for accuracy, consistently in the recipe card and the quick-select tip."
+ ],
+ "pairs": [
+  [
+   "王国之泪最值得合成的料理攻略——四大神级配方详解，大剑蒸水果3级加攻、生命蒸水果满血复活、向阳牛奶粥恢复瘴气、毅力胡萝卜糕补精力，附核心食材高效采集路线。",
+   "A Tears of the Kingdom guide to the most worthwhile dishes to cook — four god-tier recipes explained: Mighty Steamed Fruit for level-3 attack up, Hearty Steamed Fruit for full-health revival, Sunny Veggie Porridge for gloom recovery, and Enduring Carrot Cake for stamina refill, plus efficient gathering routes for the core ingredients."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Guide"
+  ],
+  [
+   "最值得合成的料理",
+   "Best Dishes to Cook"
+  ],
+  [
+   "🍳 料理攻略",
+   "🍳 Cooking Guide"
+  ],
+  [
+   "最值得合成的料理——四大神级配方与食材批发攻略",
+   "Best Dishes to Cook — Four God-Tier Recipes and Ingredient Sourcing Guide"
+  ],
+  [
+   "——四大神级配方与食材批发攻略",
+   "— Four God-Tier Recipes and Ingredient Sourcing Guide"
+  ],
+  [
+   "瞬间满血、三级加攻、瘴气恢复、补满精力……告别那些乱七八糟的废菜谱，直接上最实用的核心配方",
+   "Instant full-heal, level-3 attack boost, gloom recovery, full stamina refill… Forget those messy, useless recipes — here are only the most practical core recipes"
+  ],
+  [
+   "🧙 作者：哈里",
+   "🧙 Author: Harry"
+  ],
+  [
+   "🍳 烹饪系统 · 食材采集",
+   "🍳 Cooking System · Ingredient Gathering"
+  ],
+  [
+   "📖 深度攻略",
+   "📖 In-Depth Guide"
+  ],
+  [
+   "在《塞尔达传说：王国之泪》里，海拉鲁大陆的烹饪系统极其自由，你可以把各种奇奇怪怪的东西丢进锅里。但讲真，通关或者开荒过程中，你真正需要频繁放进快捷栏的料理也就那么几种。通关大佬和速通玩家们基本都在用以下几款高性价比的“神级料理”。",
+   "In The Legend of Zelda: Tears of the Kingdom, Hyrule's cooking system is extremely free — you can throw all sorts of weird things into the pot. But honestly, when clearing the game or exploring early on, there are only a handful of dishes you really need to keep in your quick-select menu. Veteran players and speedrunners basically all rely on the following high-value 'god-tier dishes'."
+  ],
+  [
+   "下面直接给你干货，省去那些花里胡哨的菜谱，只看最实用、性价比最高的几种搭配，以及它们的素材该去哪里顺手薅一波。",
+   "Below is the straight-up useful stuff — no flashy recipes, just the most practical, best-value combinations, and where to grab their ingredients along the way."
+  ],
+  [
+   "林克在锅边料理（游戏实机截图）",
+   "Link cooking by a pot (in-game screenshot)"
+  ],
+  [
+   "林克在锅边料理（游戏实机截图，图片来源：Zelda Wiki）",
+   "Link cooking by a pot (in-game screenshot, image source: Zelda Wiki)"
+  ],
+  [
+   "核心必备：",
+   "Core essentials:"
+  ],
+  [
+   "⚠️ 四大神级料理配方——在《王国之泪》里，烹饪有一个隐藏的大原则：带特殊词条的食材（比如“大剑”、“生命”）绝对不要混搭，否则效果会互相抵消，变成一盘毫无卵用的普通回血菜。",
+   "⚠️ The Four God-Tier Recipes — In Tears of the Kingdom, cooking has one big hidden rule: never mix ingredients with special prefixes (such as 'Mighty' or 'Hearty'), or their effects will cancel each other out and leave you with an ordinary, useless health-restoring dish."
+  ],
+  [
+   "⚠️ 四大神级料理配方——在《王国之泪》里，烹饪有一个隐藏的大原则：带特殊词条的食材（比如“大剑”、“生命”）绝对不要混搭，否则效果会互相抵消，变成一盘毫无卵用的普通回血菜",
+   "⚠️ The Four God-Tier Recipes — In Tears of the Kingdom, cooking has one big hidden rule: never mix ingredients with special prefixes (such as 'Mighty' or 'Hearty'), or their effects will cancel each other out and leave you with an ordinary, useless health-restoring dish"
+  ],
+  [
+   "四大神级料理详解",
+   "Four God-Tier Recipes Explained"
+  ],
+  [
+   "🍎 瞬间满血神器：蒸水果",
+   "🍎 Instant Full-Heal Wonder: Hearty Steamed Fruit"
+  ],
+  [
+   "大生命萝卜 ×1 或者 生命松露 ×1",
+   "Big Hearty Radish ×1 or Hearty Truffle ×1"
+  ],
+  [
+   "大生命萝卜",
+   "Big Hearty Radish"
+  ],
+  [
+   "生命松露",
+   "Hearty Truffle"
+  ],
+  [
+   "效果：无论你残血到什么程度，吃一个直接全血补满，并额外赠送若干黄金额外心心（黄心）。",
+   "Effect: No matter how low your health is, eating one fully restores all your hearts, plus grants several extra yellow bonus hearts."
+  ],
+  [
+   "💡 老司机心得",
+   "💡 Veteran Tips"
+  ],
+  [
+   "千万别把 5 个生命萝卜一起煮！在本作中，只要带“生命”前缀的食材，哪怕只放一个，也能触发“完全恢复”的隐藏保底。单炒一个萝卜的性价比，比攒一锅高出太多。",
+   "Never cook 5 Hearty Radishes together! In this game, any ingredient with the 'Hearty' prefix — even just one — triggers the hidden 'full recovery' guarantee. Cooking a single radish is far better value than saving up a whole pot."
+  ],
+  [
+   "🍌 人人必备的伤害药：大剑蒸水果（3级加攻）",
+   "🍌 Everyone's Must-Have Damage Dish: Mighty Steamed Fruit (Level-3 Attack Up)"
+  ],
+  [
+   "大剑香蕉 ×5",
+   "Mighty Banana ×5"
+  ],
+  [
+   "大剑香蕉",
+   "Mighty Banana"
+  ],
+  [
+   "效果：攻击力提升 3 级（最高级），持续 4分10秒。",
+   "Effect: Attack power increased by 3 levels (the maximum), lasting 4 minutes 10 seconds."
+  ],
+  [
+   "打人马、打幻影加侬或者各种BOSS前的标准起手式。如果你手头有“大剑草”，也可以用 4 个香蕉 + 1 个大剑草替换，效果一样是3级加攻。",
+   "The standard opener before fighting Lynels, Phantom Ganon, or any boss. If you have Mighty Thistle on hand, you can also substitute 4 bananas + 1 Mighty Thistle — the result is still level-3 attack up."
+  ],
+  [
+   "🌿 地底救命稻草：野菜牛奶粥（恢复瘴气）",
+   "🌿 Depths Lifesaver: Sunny Veggie Porridge (Gloom Recovery)"
+  ],
+  [
+   "向阳草 + 鲜奶 + 海拉鲁米",
+   "Sundelion + Fresh Milk + Hylian Rice"
+  ],
+  [
+   "野菜牛奶粥",
+   "Sunny Veggie Porridge"
+  ],
+  [
+   "效果：恢复 3 到 4 个被瘴气封锁的“破碎心心”，并顺便回血。",
+   "Effect: Restores 3 to 4 hearts sealed off by gloom ('broken hearts'), and also restores health."
+  ],
+  [
+   "地底开荒必带。纯用 5 个向阳草煮只能恢复瘴气不回血，稍微丢一块垃圾肉或者海拉鲁米进去，就能兼顾回血，非常划算。",
+   "A must-carry for exploring the Depths. Cooking 5 Sundelions alone only restores gloom, not health — toss in a scrap of meat or some Hylian Rice and you'll restore health too. Great value."
+  ],
+  [
+   "🥕 跑图飞檐走壁：胡萝卜蛋糕（额外精力）",
+   "🥕 Traversal Essential: Carrot Cake (Bonus Stamina)"
+  ],
+  [
+   "速速胡萝卜✖1，毅力胡萝卜✖1，塔邦挞小麦✖1，蔗糖✖1，山羊奶油✖1",
+   "Swift Carrot ×1, Endura Carrot ×1, Tabantha Wheat ×1, Cane Sugar ×1, Goat Butter ×1"
+  ],
+  [
+   "胡萝卜蛋糕",
+   "Carrot Cake"
+  ],
+  [
+   "效果：瞬间补满你所有的精力槽（绿圈），并额外赠送一小段黄金圈（额外精力）。",
+   "Effect: Instantly refills all your stamina (the green wheel), plus grants a small extra golden wheel (bonus stamina)."
+  ],
+  [
+   "爬大峭壁或者空中长途滑翔时，精力和体力快见底了？别慌，磕一个这个，直接原地复活还能飞得更远。",
+   "Climbing a huge cliff or gliding a long distance in the air and your stamina is nearly gone? Don't panic — eat one of these and you'll instantly bounce back and fly even farther."
+  ],
+  [
+   "核心食材去哪捞？",
+   "Where to Get the Core Ingredients?"
+  ],
+  [
+   "知道了配方，去哪儿高效进货才是关键。海拉鲁大陆有几个著名的“大自然批发市场”，传送过去拔腿就捞，几分钟就能装满背包。",
+   "Knowing the recipes is one thing — knowing where to stock up efficiently is the key. Hyrule has several famous 'nature wholesale markets': warp over, grab everything in sight, and your pack will be full within minutes."
+  ],
+  [
+   "食材名称",
+   "Ingredient"
+  ],
+  [
+   "核心效果",
+   "Core Effect"
+  ],
+  [
+   "最优采集地点与路线",
+   "Best Gathering Spots and Routes"
+  ],
+  [
+   "3级攻击",
+   "Level-3 attack up"
+  ],
+  [
+   "费罗尼地区（地图右下角热带雨林）。尤其是湖畔驿站周边、乌尔利山附近的树林里遍地都是，顺便端了依盖队基地也能搜刮一堆。",
+   "Faron region (the tropical rainforest at the bottom-right of the map). Especially common in the woods around Lakeside Stable and near Ulri Mountain; raiding a nearby Yiga Clan hideout can also net you a pile."
+  ],
+  [
+   "向阳草",
+   "Sundelion"
+  ],
+  [
+   "瘴气恢复",
+   "Gloom recovery"
+  ],
+  [
+   "所有天空群岛（空岛）。比如初始空岛、或者有各种弹跳机关的空岛，只要在地上看到金黄色像向日葵一样的植物，拔就完了。地底极少。",
+   "All Sky Islands. For example the Great Sky Island, or any sky island with bouncing contraptions — whenever you see a golden, sunflower-like plant on the ground, just pick it. Very rare in the Depths."
+  ],
+  [
+   "完全复活",
+   "Full recovery"
+  ],
+  [
+   "北哈特尔天空群岛、或者其他高级空岛的残垣断壁旁。这东西比较稀有，看到了一定要用图鉴拍照功能开启“寻找探测器”。",
+   "North Hyrule Sky Archipelago, or beside the ruins of other high-altitude sky islands. This one is fairly rare — when you spot it, be sure to photograph it with the Hyrule Compendium to enable the Sensor."
+  ],
+  [
+   "金苹果",
+   "Golden Apple"
+  ],
+  [
+   "料理暴击",
+   "Cooking critical"
+  ],
+  [
+   "萨托利山（监视堡垒西南方）的苹果园。山上有一片巨大的苹果林，里面混生着好几颗金苹果，拿来当引子可以让料理效果大成功。",
+   "The apple orchard on Satori Mountain (southwest of Lookout Landing). The mountain has a huge apple grove with several Golden Apples mixed in — using one as a catalyst can make a dish a great success."
+  ],
+  [
+   "🏆 老司机终极心得",
+   "🏆 Veteran's Ultimate Tips"
+  ],
+  [
+   "快捷栏建议常备：蒸水果×5 + 大剑蒸水果×10 + 野菜牛奶粥×5 + 胡萝卜蛋糕×5。这套组合可以应对90%的战斗和探索场景，从此告别手忙脚乱翻背包的窘境！",
+   "Suggested quick-select staples: Hearty Steamed Fruit ×5 + Mighty Steamed Fruit ×10 + Sunny Veggie Porridge ×5 + Carrot Cake ×5. This combo covers 90% of combat and exploration scenarios, so you'll never again fumble through your pack in a panic!"
+  ],
+  [
+   "← 上一篇：七宝匕首终极攻略",
+   "← Previous: Scimitar of the Seven Ultimate Guide"
+  ],
+  [
+   "返回秘籍专栏",
+   "Back to the Guide Column"
+  ],
+  [
+   "下一篇：最强套装三梯队全解析 →",
+   "Next: Strongest Armor Sets, Three-Tier Full Breakdown →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Early-Game Guide: 10 Things to Do First After Landing"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Depths Survival and Exploration Complete Guide"
+  ],
+  [
+   "› 料理图鉴",
+   "› Cooking Compendium"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Full Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Guide"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Scimitar of the Seven Ultimate Guide"
+  ],
+  [
+   "› 四大神级料理配方（本篇）",
+   "› Four God-Tier Recipes (This Article)"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Strongest Armor Sets, Three-Tier Full Breakdown"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine Zero-Basis Step-by-Step Guide"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Hover Bike Tuning"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Depths Battery Expansion and the Great Fairies"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 Daily New Guides"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› 152 Shrines Complete Collection Self-Check Guide"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Korok Seeds Complete Guide"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› The Four Great Fairies and Armor Enhancement Complete Guide"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Four Dragons Material Farming Guide"
+  ],
+  [
+   "神级料理配方",
+   "God-Tier Dish Recipes"
+  ],
+  [
+   "四大神级料理配方",
+   "Four God-Tier Recipes"
+  ],
+  [
+   "——在《王国之泪》里，烹饪有一个隐藏的大原则：带特殊词条的食材（比如\"大剑\"、\"生命\"）绝对不要混搭，否则效果会互相抵消，变成一盘毫无卵用的普通回血菜。",
+   "— In Tears of the Kingdom, cooking has a hidden golden rule: never mix ingredients with special keywords (like \"Great Sword\" or \"Life\") — their effects cancel each other out and leave you with a useless plain healing dish."
+  ]
+ ],
+ "title": "Best Dishes to Cook · Harry's Ultimate Guide · Tears of the Kingdom Guide"
+}

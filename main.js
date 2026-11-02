@@ -930,3 +930,397 @@ function scrollToTop() {
   }
 
 })();
+/* ============================================================
+   语言切换 i18n：English / 简体中文 / 繁體中文，全站生效
+   - 简体：原文；繁体：OpenCC s2twp（台湾惯用）词表转换；
+     英文：按页加载翻译包 /i18n/en/<页>.json + 全站标题包。
+   - 选择记入 localStorage，跨页保持；?lang= 参数可直接分享。
+   ============================================================ */
+(function () {
+'use strict';
+var KEY = 'totk-lang';
+var UI_EN = {
+  '首页': 'Home', '主线任务': 'Main Quests', '情节挑战': 'Side Adventures',
+  '神庙挑战': 'Shrines', '神庙开启': 'Unlocking Shrines', '破魔树根': 'Lightroots',
+  '武器图鉴': 'Weapons', '料理合成': 'Cooking', '套装获取': 'Armor Sets',
+  'Boss图鉴': 'Bosses', '物品收集': 'Collectibles', '魔犹伊的遗失物': 'Bubbul Gems',
+  '贤者的遗志': "Sage's Wills", '残旧的地图': 'Old Maps',
+  '⚔ 王国之泪 全攻略': '⚔ Tears of the Kingdom Complete Guide',
+  '王国之泪 攻略': 'Tears of the Kingdom Guide',
+  '本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。': 'All guides on this site are the author\'s original work. All game characters are copyrighted by Nintendo Co., Ltd.',
+  '《塞尔达传说 王国之泪》版权归任天堂株式会社所有。': 'The Legend of Zelda: Tears of the Kingdom is copyrighted by Nintendo Co., Ltd.',
+  '常见问题': 'FAQ', '📋 攻略步骤': '📋 Guide Steps', '📋 任务步骤': '📋 Quest Steps',
+  '🔗 相关攻略': '🔗 Related Guides', '📚 全部攻略索引': '📚 All Guides Index',
+  '📚 更多攻略': '📚 More Guides', '📖 深度攻略': '📖 In-Depth Guides',
+  '阅读全文 →': 'Read More →', '返回秘籍专栏': "Back to Harry's Guides",
+  '🏆 哈里的终极秘籍': "🏆 Harry's Ultimate Guides", '哈里的终极秘籍': "Harry's Ultimate Guides",
+  '🧙 作者：哈里': '🧙 Author: Harry', '🆕 每日新攻略': '🆕 Daily New Guides',
+  '关于我们': 'About Us', '网站地图': 'Sitemap', '隐私政策': 'Privacy Policy',
+  '已收集': 'Collected', '危险度': 'Danger Level', '剧情线': 'Storyline',
+  '地底': 'The Depths', '天空群島': 'Sky Islands', '中央海拉魯': 'Central Hyrule',
+  '赫布拉': 'Hebra', '拉纳尤': 'Lanayru', '格鲁德': 'Gerudo',
+  '页面不存在': 'Page Not Found',
+  /* 独立标点节点：句读被 <strong> 等标签切开时单独成节点，英文下转半角，避免英文句后残留中文句号 */
+  '。': '.', '，': ',', '、': ',', '；': ';', '：': ':', '！': '!', '？': '?',
+  '（': '(', '）': ')', '「': '"', '」': '"', '『': '"', '』': '"', '…': '...',
+  '你寻找的页面已消失在海拉鲁的迷雾中……': 'The page you are looking for has vanished into the mists of Hyrule…',
+  '← 返回首页': '← Back to Home', '🎯 推荐内容': '🎯 Recommended',
+  '📜 主线任务攻略': '📜 Main Quest Guide', '🏛 神庙挑战': '🏛 Shrine Challenges',
+  '⚔ 武器图鉴': '⚔ Weapon Compendium', '🍲 料理合成': '🍲 Cooking Recipes',
+  '👹 Boss图鉴': '👹 Boss Compendium'
+};
+var pageSlug = (function () {
+  var p = location.pathname.replace(/^\//, '').replace(/\.html$/, '');
+  return p === '' ? 'index' : p;
+})();
+function getLang() {
+  var m = /[?&]lang=(en|zh-CN|zh-TW)/.exec(location.search);
+  var l = m ? m[1] : null;
+  if (!l) { try { l = localStorage.getItem(KEY); } catch (e) {} }
+  return (l === 'en' || l === 'zh-TW' || l === 'zh-CN') ? l : 'zh-CN';
+}
+var lang = getLang();
+var textNodes = [], altEls = [], titleEls = [], metaEls = [], origTitle = document.title;
+var obsNodes = []; /* 由 MutationObserver 翻译的后生成文本节点（地图弹窗、JS 表格等），切换语言时一并恢复 */
+
+/* ---------- 繁体转换：OpenCC s2twp 算法移植（词表按需加载） ---------- */
+var TW = null, twLoading = false, twQueue = [];
+function twLoad(cb) {
+  if (TW) { cb(); return; }
+  twQueue.push(cb);
+  if (twLoading) return;
+  twLoading = true;
+  var s = document.createElement('script');
+  s.src = '/i18n/tw-dicts.js';
+  s.onload = function () { TW = window.__TW_DICTS || null; var q = twQueue; twQueue = []; q.forEach(function (f) { f(); }); };
+  s.onerror = function () { twLoading = false; var q = twQueue; twQueue = []; q.forEach(function (f) { f(); }); };
+  document.head.appendChild(s);
+}
+function twFindMatch(str, dict, hint) {
+  var slen = str.length, testLen = Math.min(slen, dict.max);
+  if (hint) testLen = Math.min(testLen, hint);
+  while (testLen >= dict.min) {
+    for (var i = 0; i <= slen - testLen; i++) {
+      var sub = str.slice(i, i + testLen);
+      if (Object.prototype.hasOwnProperty.call(dict.map, sub)) {
+        return { v: dict.map[sub], l: i > 0 ? str.slice(0, i) : null, r: (i + testLen < slen) ? str.slice(i + testLen) : null, len: testLen };
+      }
+    }
+    testLen--;
+  }
+  return null;
+}
+function twParse(root, dictList) {
+  var working = [root], unmatched = [];
+  dictList.forEach(function (dict) {
+    while (working.length) {
+      var cur = working.pop();
+      var m = twFindMatch(cur.value, dict, cur.hint);
+      if (m) {
+        cur.value = m.v; cur.hint = null;
+        if (m.l) { var ln = { value: m.l, left: null, right: null, hint: m.len }; working.push(ln); cur.left = ln; }
+        if (m.r) { var rn = { value: m.r, left: null, right: null, hint: m.len }; working.push(rn); cur.right = rn; }
+      } else { unmatched.push(cur); cur.hint = null; }
+    }
+    var tmp = working; working = unmatched; unmatched = tmp;
+  });
+}
+function twInorder(root) {
+  var out = [], stack = [], cur = root;
+  while (true) {
+    while (cur) { stack.push(cur); cur = cur.left; }
+    if (stack.length) { cur = stack.pop(); out.push(cur.value); cur = cur.right; }
+    else break;
+  }
+  return out;
+}
+var TW_SEP = /(\s+|-|,|\.|\?|!|\*|　|，|。|、|；|：|？|！|…|“|”|‘|’|『|』|「|」|﹁|﹂|—|－|（|）|《|》|〈|〉|～|．|／|＼|︒|︑|︔|︓|︿|﹀|︹|︺|︙|︐|［|﹇|］|﹈|︕|︖|︰|︳|︴|︽|︾|︵|︶|｛|︷|｝|︸|﹃|﹄|【|︻|】|︼)/;
+function twConvert(str) {
+  if (!TW) return str;
+  var chain = [[TW.st_phr, TW.st_chr], [TW.tw_phr], [TW.tw_var]];
+  var parts = str.split(TW_SEP), res = [];
+  for (var i = 0; i < parts.length; i++) {
+    var p = parts[i];
+    if (i % 2 === 0 && p) {
+      var root = { value: p, left: null, right: null, hint: null };
+      chain.forEach(function (step) {
+        twParse(root, step);
+        var t = twInorder(root).join('');
+        root = { value: t, left: null, right: null, hint: null };
+      });
+      res.push(twInorder(root).join(''));
+    } else res.push(p);
+  }
+  return res.join('');
+}
+
+/* ---------- 原文快照与恢复 ---------- */
+function collect() {
+  var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+    acceptNode: function (n) {
+      var p = n.parentNode;
+      if (!p) return NodeFilter.FILTER_REJECT;
+      var tag = p.nodeName;
+      if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'NOSCRIPT') return NodeFilter.FILTER_REJECT;
+      if (p.closest && p.closest('[data-no-i18n],.adsbygoogle')) return NodeFilter.FILTER_REJECT;
+      if (!/\S/.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  var n;
+  while ((n = walker.nextNode())) {
+    if (n._totkOrig === undefined) n._totkOrig = n.nodeValue;
+    textNodes.push(n);
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('img[alt]'), function (el) {
+    if (el._totkOrig === undefined) el._totkOrig = el.getAttribute('alt');
+    altEls.push(el);
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[title]'), function (el) {
+    if (el._totkOrigT === undefined) el._totkOrigT = el.getAttribute('title');
+    titleEls.push(el);
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('meta[name="description"],meta[property="og:description"]'), function (el) {
+    if (el._totkOrig === undefined) el._totkOrig = el.getAttribute('content');
+    metaEls.push(el);
+  });
+}
+function restoreAll() {
+  obsNodes.forEach(function (o) { o.n.nodeValue = o.orig; o.n._totkDone = false; });
+  obsNodes = [];
+  textNodes.forEach(function (n) { n.nodeValue = n._totkOrig; });
+  altEls.forEach(function (el) { el.setAttribute('alt', el._totkOrig); });
+  titleEls.forEach(function (el) { el.setAttribute('title', el._totkOrigT); });
+  metaEls.forEach(function (el) { el.setAttribute('content', el._totkOrig); });
+  document.title = origTitle;
+}
+function splitWS(s) {
+  var m = /^(\s*)([\s\S]*?)(\s*)$/.exec(s);
+  return { pre: m[1], core: m[2], post: m[3] };
+}
+function normWS(s) { return s.replace(/\s+/g, ' ').replace(/[\u201c\u201d]/g, '"').replace(/[\u2018\u2019]/g, "'").trim(); }
+function applyMapToText(map, subKeys) {
+  /* 整块优先：段落/列表/单元格全文匹配时，把译文放进首个文本节点，
+     其余文本节点清空（保留链接等内联元素占位，避免半中半英）。 */
+  var normMap = {};
+  Object.keys(map).forEach(function (k) { normMap[normWS(k)] = map[k]; });
+  /* 整块匹配扩展：所有元素都可作为整块候选（卡片 div、步骤 div 等），
+     按深度从深到浅尝试，内层先命中则外层跳过；含 img/table/ul/ol 的
+     容器跳过（其全文是多项拼接，不会是单条译文）；<br> 不再排除，
+     因 textContent 本来就把 <br> 当空拼接，与翻译包键一致。 */
+  var blockEls = [];
+  Array.prototype.forEach.call(document.body.querySelectorAll('*'), function (el) {
+    if (el.querySelector('img,table,ul,ol')) return;
+    blockEls.push(el);
+  });
+  blockEls.sort(function (a, b) {
+    var da = 0, db = 0, x = a, y = b;
+    while (x) { da++; x = x.parentNode; }
+    while (y) { db++; y = y.parentNode; }
+    return db - da;
+  });
+  blockEls.forEach(function (el) {
+    var full = normWS(el.textContent);
+    if (!full || !Object.prototype.hasOwnProperty.call(normMap, full)) return;
+    var nodes = [];
+    var w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, { acceptNode: function (n) { return /\S/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT; } });
+    var tn;
+    while ((tn = w.nextNode())) nodes.push(tn);
+    if (!nodes.length) return;
+    nodes[0].nodeValue = normMap[full];
+    for (var i = 1; i < nodes.length; i++) nodes[i].nodeValue = '';
+    nodes.forEach(function (n) { n._totkDone = true; });
+  });
+  textNodes.forEach(function (n) {
+    if (n._totkDone) return;
+    var parts = splitWS(n._totkOrig);
+    if (!parts.core) return;
+    if (Object.prototype.hasOwnProperty.call(map, parts.core)) {
+      n.nodeValue = parts.pre + map[parts.core] + parts.post;
+      return;
+    }
+    if (Object.prototype.hasOwnProperty.call(normMap, normWS(parts.core))) {
+      n.nodeValue = parts.pre + normMap[normWS(parts.core)] + parts.post;
+      return;
+    }
+    if (subKeys && !n._totkDone) {
+      var core = parts.core;
+      for (var i = 0; i < subKeys.length; i++) {
+        var k = subKeys[i];
+        if (core.indexOf(k) !== -1) core = core.split(k).join(map[k]);
+      }
+      n.nodeValue = parts.pre + core + parts.post;
+    }
+  });
+  altEls.forEach(function (el) {
+    var v = el._totkOrig;
+    if (Object.prototype.hasOwnProperty.call(map, v)) el.setAttribute('alt', map[v]);
+  });
+  titleEls.forEach(function (el) {
+    var v = el._totkOrigT;
+    if (Object.prototype.hasOwnProperty.call(map, v)) el.setAttribute('title', map[v]);
+  });
+  metaEls.forEach(function (el) {
+    var v = el._totkOrig;
+    if (Object.prototype.hasOwnProperty.call(map, v)) el.setAttribute('content', map[v]);
+  });
+}
+
+/* ---------- 切换器 UI ---------- */
+var switchEl = null, busy = false;
+function setActive() {
+  if (!switchEl) return;
+  Array.prototype.forEach.call(switchEl.querySelectorAll('button'), function (b) {
+    b.classList.toggle('on', b.getAttribute('data-lang') === lang);
+  });
+}
+function injectSwitcher() {
+  var host = document.querySelector('.navbar-inner') || document.querySelector('.navbar');
+  if (!host || document.querySelector('.lang-switch')) return;
+  var st = document.createElement('style');
+  st.textContent = '.lang-switch{display:flex;gap:6px;margin-left:auto;align-items:center;flex-wrap:wrap}' +
+    '.lang-switch button{background:transparent;border:1px solid rgba(201,162,39,.5);color:#e8dcc0;border-radius:20px;padding:4px 10px;font-size:12px;cursor:pointer;line-height:1.4}' +
+    '.lang-switch button.on{background:#c9a227;color:#10131a;border-color:#c9a227;font-weight:700}' +
+    '.lang-switch button:disabled{opacity:.5;cursor:wait}';
+  document.head.appendChild(st);
+  var div = document.createElement('div');
+  div.className = 'lang-switch';
+  div.setAttribute('role', 'group');
+  div.setAttribute('aria-label', 'Language');
+  [['en', 'English'], ['zh-CN', '简体中文'], ['zh-TW', '繁體中文']].forEach(function (item) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('data-lang', item[0]);
+    b.textContent = item[1];
+    b.addEventListener('click', function () { setLang(item[0]); });
+    div.appendChild(b);
+  });
+  host.appendChild(div);
+  switchEl = div;
+  setActive();
+}
+function setLang(l) {
+  if (busy || l === lang) { if (l === lang) return; }
+  lang = l;
+  try { localStorage.setItem(KEY, l); } catch (e) {}
+  try {
+    var url = new URL(location.href);
+    url.searchParams.set('lang', l);
+    history.replaceState(null, '', url.toString());
+  } catch (e) {}
+  setActive();
+  applyLang();
+}
+function applyLang() {
+  restoreAll();
+  document.documentElement.lang = lang === 'en' ? 'en' : lang;
+  if (lang === 'zh-CN') return;
+  if (lang === 'zh-TW') {
+    busy = true; setBusy(true);
+    twLoad(function () {
+      if (TW) {
+        textNodes.forEach(function (n) { n.nodeValue = twConvert(n._totkOrig); });
+        altEls.forEach(function (el) { el.setAttribute('alt', twConvert(el._totkOrig)); });
+        titleEls.forEach(function (el) { el.setAttribute('title', twConvert(el._totkOrigT)); });
+        metaEls.forEach(function (el) { el.setAttribute('content', twConvert(el._totkOrig)); });
+        document.title = twConvert(origTitle);
+      }
+      busy = false; setBusy(false);
+    });
+    return;
+  }
+  if (lang === 'en') {
+    busy = true; setBusy(true);
+    Promise.all([
+      fetch('/i18n/en/' + pageSlug + '.json').then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }),
+      fetch('/i18n/en/titles.json').then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
+    ]).then(function (res) {
+      var pack = res[0], titles = res[1];
+      var map = {};
+      Object.keys(UI_EN).forEach(function (k) { map[k] = UI_EN[k]; });
+      if (titles) {
+        Object.keys(titles).forEach(function (k) {
+          map[k] = titles[k];
+          map['› ' + k] = '› ' + titles[k];
+        });
+      }
+      var subKeys = [];
+      if (pack && pack.pairs) {
+        pack.pairs.forEach(function (pr) {
+          map[pr[0]] = pr[1];
+          if (pr[0].length >= 6) subKeys.push(pr[0]);
+        });
+        subKeys.sort(function (a, b) { return b.length - a.length; });
+      }
+      applyMapToText(map, subKeys);
+      if (pack && pack.title) document.title = pack.title;
+      /* 后生成内容翻译：地图弹窗、JS 渲染表格等在 collect() 之后才出现，
+         靠 MutationObserver 补译；切换出英文时由 restoreAll 恢复。 */
+      if (!window._totkObs) {
+        window._totkObs = true;
+        var obs = new MutationObserver(function (muts) {
+          if (lang !== 'en' && lang !== 'zh-TW') return;
+          function trNode(n) {
+            if (lang === 'zh-TW') {
+              if (!TW || n._totkDone || !/\S/.test(n.nodeValue)) return;
+              var p0 = n.parentNode;
+              if (!p0) return;
+              var tg0 = p0.nodeName;
+              if (tg0 === 'SCRIPT' || tg0 === 'STYLE' || tg0 === 'NOSCRIPT') return;
+              if (p0.closest && p0.closest('[data-no-i18n],.adsbygoogle,.lang-switch')) return;
+              var orig0 = n.nodeValue;
+              n.nodeValue = twConvert(orig0);
+              n._totkDone = true; obsNodes.push({ n: n, orig: orig0 });
+              return;
+            }
+            if (n._totkDone || !/\S/.test(n.nodeValue)) return;
+            var p = n.parentNode;
+            if (!p) return;
+            var tag = p.nodeName;
+            if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'NOSCRIPT') return;
+            if (p.closest && p.closest('[data-no-i18n],.adsbygoogle,.lang-switch')) return;
+            var parts = splitWS(n.nodeValue);
+            if (!parts.core) return;
+            var orig = n.nodeValue, out = null;
+            if (Object.prototype.hasOwnProperty.call(map, parts.core)) out = parts.pre + map[parts.core] + parts.post;
+            else {
+              var normCore = normWS(parts.core), nm = {};
+              Object.keys(map).forEach(function (k) { nm[normWS(k)] = map[k]; });
+              if (Object.prototype.hasOwnProperty.call(nm, normCore)) out = parts.pre + nm[normCore] + parts.post;
+              else {
+                var core = parts.core;
+                for (var i = 0; i < subKeys.length; i++) {
+                  var k = subKeys[i];
+                  if (core.indexOf(k) !== -1) core = core.split(k).join(map[k]);
+                }
+                out = parts.pre + core + parts.post;
+              }
+            }
+            if (out !== orig) { n.nodeValue = out; n._totkDone = true; obsNodes.push({ n: n, orig: orig }); }
+          }
+          muts.forEach(function (mu) {
+            Array.prototype.forEach.call(mu.addedNodes, function (an) {
+              if (an.nodeType === 3) { trNode(an); return; }
+              if (an.nodeType !== 1) return;
+              var w = document.createTreeWalker(an, NodeFilter.SHOW_TEXT, { acceptNode: function (n) { return /\S/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT; } });
+              var tn;
+              while ((tn = w.nextNode())) trNode(tn);
+            });
+          });
+        });
+        obs.observe(document.body, { childList: true, subtree: true });
+      }
+      busy = false; setBusy(false);
+    });
+  }
+}
+function setBusy(b) {
+  if (!switchEl) return;
+  Array.prototype.forEach.call(switchEl.querySelectorAll('button'), function (x) { x.disabled = b; });
+}
+document.addEventListener('DOMContentLoaded', function () {
+  collect();
+  injectSwitcher();
+  if (lang !== 'zh-CN') applyLang();
+});
+})();

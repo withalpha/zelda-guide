@@ -1,0 +1,2119 @@
+{
+ "notes": [
+  "Many set names, set bonuses, locations, and shop/shrine names on this page do not match official Tears of the Kingdom armor; they are translated faithfully and descriptively as written, not corrected to official game data. Where a set matches an official set, the official English name is used (e.g. Flamebreaker, Rubber, Snowquill, Desert Voe, Froggy, Climbing, Glide, Stealth, Radiant, Barbarian, Dark, Evil Spirit, Phantom, Royal Guard, Hylian, Soldier's, Zora, Yiga, Ember, Zonaite).",
+  "Uncertain/descriptive names: 黑暗套装=Shadow Set, 织梦之勇者套装=Hero of Awakening Set, 初始之勇者套装=Classic Hero Set, 精灵套装=Fairy Set, 采矿套装=Miner Set, 雷光套装=Lightning Set, 利特套装=Rito Set, 神兽兵装 (Ruta/Medoh/Rudania/Naboris pieces)=Divine Beast Armor pieces, 异次元恶灵套装=Otherworldly Evil Spirit Set, 汀空套装=Tingkong Set (transliterated; the Chinese name is unclear), 依盖队套装=Yiga Set.",
+  "Fairy names: 忒拉=Tera, 弥佳=Mija are official-style transliterations; 西莎 and 可秋拉 do not match official Great Fairy names and are transliterated as Xisha and Keqiula.",
+  "Place/shop/shrine names that do not match official names (e.g. 骨狂人之火, 奥鲁克神庙, 利达尔山脉, 罗吉鲁神庙, 纳贝坎努神庙, 阿库拉遗迹, 科加遗迹) are transliterated descriptively.",
+  "The upgrade table body on this page is rendered by JavaScript from script data; per the spec's 'exclude script content' rule, only the static table header and footnote are included — the per-set material rows are not in the static HTML.",
+  "Repair pass 2026-11-02: appended missing pairs only; existing pairs/titles untouched.",
+  "Clothes upgrade-data keys are copied verbatim from the source script, including literal \\n separators between material lines; values mirror the same structure.",
+  "左纳乌能源结晶 rendered as Crystallized Charge (the battery-upgrade currency); 左纳乌能源 as Zonaite Charge and 大容量左纳乌能源 as Large Zonaite Charge.",
+  "精力蜂的蜂蜜 rendered as Courser Bee Honey (matches the Wild Set upgrade slot: honey + dragon claw).",
+  "静谧凤蝶 has no confirmed official English item name; rendered descriptively as Tranquil Butterfly.",
+  "冷气果 rendered as Ice Fruit (the game's cold fruit); the site's name has no confirmed official mapping.",
+  "火/冰/电蝙蝠的角 and 火/冰/雷龙头 are the site's own wording with no confirmed official item equivalent; rendered literally (e.g. Fire Keese Horn, Fire Dragon's Head).",
+  "暗萤火虫 and 暗之萤火虫 both rendered as Deep Firefly (two site spellings for the same critter).",
+  "Site set names that are descriptive rather than official are translated descriptively: 汀空套装（左纳尼乌姆） as Depths Set (Zonaite), 防火套装（鼓隆） as Fireproof Set (Goron), 防热套装（格鲁德） as Heat-Resistant Set (Gerudo), 防雪套装（利特） as Snowproof Set (Rito).",
+  "Captain Construct horns: site shorthand （中）/（上）/（极） mapped to official II/III/IV (plain = I), per Zelda Wiki translations (中等/上等/特等).",
+  "Wild Set rows keep the site's generic 龙 (Dragon) wording rather than substituting Farosh/Dinraal/Naydra."
+ ],
+ "pairs": [
+  [
+   "塞尔达传说王国之泪全38套套装完整图鉴，包含获取位置、大妖精强化素材需求、套装加成效果详解，助你打造最强防具配置，轻松应对各种战斗挑战。",
+   "A complete guide to all 38 armor sets in The Legend of Zelda: Tears of the Kingdom, including where to get them, Great Fairy enhancement material requirements, and set bonus effects explained in detail, to help you build the strongest armor setup and handle every combat challenge with ease."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "›",
+   "›"
+  ],
+  [
+   "套装获取",
+   "Armor Set Acquisition"
+  ],
+  [
+   "ARMOR & OUTFITS 🧥 套装完全图鉴 防御力 · 套装加成 · 强化素材 · 全部 38 套套装获取攻略",
+   "ARMOR & OUTFITS 🧥 Complete Armor Set Guide · Defense · Set Bonuses · Enhancement Materials · How to Get All 38 Armor Sets"
+  ],
+  [
+   "首页›套装获取 套装系统：每套套装由头部、上身、腿部三件组成，穿齐三件可解锁套装加成效果。在大妖精泉强化后，防御力大幅提升，部分套装 4 星强化后还可解锁额外加成。建议优先强化常用套装至 ★★。",
+   "Home › Armor Set Acquisition. Armor system: each set consists of three pieces — head, torso, and legs — and wearing all three unlocks a set bonus effect. After enhancement at a Great Fairy Fountain, defense rises greatly, and some sets unlock extra bonuses after 4-star enhancement. It is recommended to prioritize enhancing your most-used sets to ★★."
+  ],
+  [
+   "套装系统：每套套装由头部、上身、腿部三件组成，穿齐三件可解锁套装加成效果。",
+   "Armor system: each set consists of three pieces — head, torso, and legs — and wearing all three unlocks a set bonus effect."
+  ],
+  [
+   "在大妖精泉强化后，防御力大幅提升，部分套装 4 星强化后还可解锁额外加成。",
+   "After enhancement at a Great Fairy Fountain, defense rises greatly, and some sets unlock extra bonuses after 4-star enhancement."
+  ],
+  [
+   "建议优先强化常用套装至 ★★。",
+   "It is recommended to prioritize enhancing your most-used sets to ★★."
+  ],
+  [
+   "全部 🌿 环境适应 🌙 潜行 ⚔ 战斗强化 ✨ 勇者套装 🏅 特殊获取",
+   "All 🌿 Environmental Adaptation 🌙 Stealth ⚔ Combat Enhancement ✨ Hero Sets 🏅 Special Acquisition"
+  ],
+  [
+   "🌿 环境适应套装",
+   "🌿 Environmental Adaptation Sets"
+  ],
+  [
+   "🔥",
+   "🔥"
+  ],
+  [
+   "耐火套装",
+   "Flamebreaker Set"
+  ],
+  [
+   "🔥 火焰免疫 套装加成：急速",
+   "🔥 Fire Immunity · Set bonus: Speed Boost"
+  ],
+  [
+   "穿戴后可在火山、熔岩地区自由活动，不受灼热伤害。三件齐穿解锁急速套装加成，移动速度大幅提升。前往鼓隆城及格鲁德火山必备。",
+   "After wearing it, you can move freely in volcanic and lava areas without taking scorching damage. Wearing all three pieces unlocks the Speed Boost set bonus, greatly increasing movement speed. Essential for heading to Goron City and the Gerudo volcano."
+  ],
+  [
+   "获取：前往鼓隆城（骨狂人之火）杂货店购买，需先完成进城任务。三件合计约 2400 卢比。",
+   "How to get: buy at the general store in Goron City (Bone Madman's Fire); you must first complete the quest to enter the city. All three pieces cost about 2,400 Rupees in total."
+  ],
+  [
+   "获取：前往鼓隆城（骨狂人之火）杂货店购买，需先完成进城任务。",
+   "How to get: buy at the general store in Goron City (Bone Madman's Fire); you must first complete the quest to enter the city."
+  ],
+  [
+   "三件合计约 2400 卢比。",
+   "All three pieces cost about 2,400 Rupees in total."
+  ],
+  [
+   "⚡",
+   "⚡"
+  ],
+  [
+   "橡胶套装",
+   "Rubber Set"
+  ],
+  [
+   "⚡ 雷击免疫 套装加成：静电",
+   "⚡ Lightning Immunity · Set bonus: Static Electricity"
+  ],
+  [
+   "穿戴后免疫雷击伤害，不会被闪电击落武器。三件齐穿解锁静电加成，攻击可传导雷电。雷电神庙及雷击平原探索必备。",
+   "After wearing it, you are immune to lightning damage and lightning won't knock weapons out of your hands. Wearing all three pieces unlocks the Static Electricity bonus, letting attacks conduct lightning. Essential for exploring lightning shrines and lightning plains."
+  ],
+  [
+   "获取：完成三座「奥鲁克神庙」（雷型神庙）任务。头部：雷电山脉区域神庙；上身：法罗尼高原神庙；腿部：雷击平原神庙。",
+   "How to get: complete the three 'Oruk Shrine' (lightning-type shrine) quests. Head: a shrine in the lightning mountain region; torso: a shrine in the Faron Highlands; legs: a shrine in the lightning plains."
+  ],
+  [
+   "❄",
+   "❄"
+  ],
+  [
+   "暴风雪套装",
+   "Snowquill Set"
+  ],
+  [
+   "❄ 耐寒强化 套装加成：雪地急速",
+   "❄ Enhanced Cold Resistance · Set bonus: Snow Speed Boost"
+  ],
+  [
+   "强力耐寒套装，穿戴后可在极寒地区活动无需进食热食。三件齐穿解锁雪地急速，在雪地中移动速度大幅加快。",
+   "A powerful cold-resistant set; after wearing it, you can be active in extremely cold regions without eating hot food. Wearing all three pieces unlocks Snow Speed Boost, greatly increasing movement speed in snow."
+  ],
+  [
+   "获取：利达尔山脉山顶商店购买，需在极寒环境下抵达（建议先有耐寒食物）。三件合计约 2100 卢比。",
+   "How to get: buy at the mountaintop shop in the Lidar Mountains, which must be reached in an extremely cold environment (cold-resistant food is recommended first). All three pieces cost about 2,100 Rupees in total."
+  ],
+  [
+   "获取：利达尔山脉山顶商店购买，需在极寒环境下抵达（建议先有耐寒食物）。",
+   "How to get: buy at the mountaintop shop in the Lidar Mountains, which must be reached in an extremely cold environment (cold-resistant food is recommended first)."
+  ],
+  [
+   "三件合计约 2100 卢比。",
+   "All three pieces cost about 2,100 Rupees in total."
+  ],
+  [
+   "🏜",
+   "🏜"
+  ],
+  [
+   "热沙套装",
+   "Desert Voe Set"
+  ],
+  [
+   "☀ 耐热强化 套装加成：沙地急速",
+   "☀ Enhanced Heat Resistance · Set bonus: Sand Speed Boost"
+  ],
+  [
+   "保护身体免受灼热沙漠气候影响，可在杰鲁多沙漠白天自由行动。三件齐穿在沙地中移动速度提升。",
+   "Protects the body from the scorching desert climate, letting you move freely in the Gerudo Desert during the day. Wearing all three pieces increases movement speed on sand."
+  ],
+  [
+   "获取：杰鲁多城服装店购买，需以女性身份（穿着女装）入城。三件合计约 1800 卢比。",
+   "How to get: buy at the clothing store in Gerudo Town; you must enter the town presenting as a woman (wearing women's clothing). All three pieces cost about 1,800 Rupees in total."
+  ],
+  [
+   "获取：杰鲁多城服装店购买，需以女性身份（穿着女装）入城。",
+   "How to get: buy at the clothing store in Gerudo Town; you must enter the town presenting as a woman (wearing women's clothing)."
+  ],
+  [
+   "三件合计约 1800 卢比。",
+   "All three pieces cost about 1,800 Rupees in total."
+  ],
+  [
+   "🐸",
+   "🐸"
+  ],
+  [
+   "蛙之套装",
+   "Froggy Set"
+  ],
+  [
+   "🌧 雨天不滑 套装加成：雨天急速",
+   "🌧 No Slipping in Rain · Set bonus: Rain Speed Boost"
+  ],
+  [
+   "模仿青蛙皮肤的套装，穿戴后在雨天攀爬不会滑落，与普通套装下雨效果完全相反。三件齐穿雨天移动极速。",
+   "A set modeled on frog skin; after wearing it, climbing in the rain won't make you slip, the complete opposite of ordinary sets' rainy effect. Wearing all three pieces makes movement extremely fast in rain."
+  ],
+  [
+   "获取：完成支线「卡卡利科村青蛙任务」系列，找到并帮助三只青蛙 NPC 后各获得一件。",
+   "How to get: complete the 'Kakariko Village Frog Quests' side quest series; after finding and helping three frog NPCs, you receive one piece from each."
+  ],
+  [
+   "🏃 移动能力套装",
+   "🏃 Movement Ability Sets"
+  ],
+  [
+   "🧗",
+   "🧗"
+  ],
+  [
+   "攀登套装",
+   "Climbing Set"
+  ],
+  [
+   "🧗 攀爬速度↑ 套装加成：攀爬急速",
+   "🧗 Climbing Speed ↑ · Set bonus: Climbing Speed Boost"
+  ],
+  [
+   "专为攀爬设计的轻量化套装，每件都能提升攀爬速度。三件齐穿后攀爬速度接近疾跑，是探索高地和天空岛的最佳搭档。",
+   "A lightweight set designed for climbing; each piece increases climbing speed. With all three pieces worn, climbing speed is close to sprinting, making it the best partner for exploring highlands and Sky Islands."
+  ],
+  [
+   "获取：三件分别藏于特定神庙宝箱中。头部：罗吉鲁神庙；上身：纳贝坎努神庙；腿部：特定天空岛神庙。",
+   "How to get: the three pieces are hidden in specific shrine treasure chests. Head: Luojilu Shrine; torso: Nabeikanu Shrine; legs: a specific Sky Island shrine."
+  ],
+  [
+   "🪂",
+   "🪂"
+  ],
+  [
+   "滑翔套装",
+   "Glide Set"
+  ],
+  [
+   "🪂 滑翔速度↑ 套装加成：空中跳跃",
+   "🪂 Gliding Speed ↑ · Set bonus: Midair Jump"
+  ],
+  [
+   "专为滑翔伞使用者设计，穿戴后滑翔速度加快，方向控制更灵活。三件齐穿可在滑翔中额外跳跃一次，探索天空岛极为实用。",
+   "Designed for paraglider users; after wearing it, gliding speed increases and directional control becomes more flexible. With all three pieces worn, you can jump once more mid-glide, which is extremely useful for exploring Sky Islands."
+  ],
+  [
+   "获取：完成天空岛挑战（四个地区天空岛各一件）：头部在利特天空岛；上身在卓拉天空岛；腿部在鼓隆天空岛。",
+   "How to get: complete the Sky Island challenges (one piece per Sky Island across four regions): head on the Rito Sky Island; torso on the Zora Sky Island; legs on the Goron Sky Island."
+  ],
+  [
+   "🌙",
+   "🌙"
+  ],
+  [
+   "潜行套装",
+   "Stealth Set"
+  ],
+  [
+   "🌙 降低噪音 套装加成：极致潜行",
+   "🌙 Reduced Noise · Set bonus: Ultimate Stealth"
+  ],
+  [
+   "谢卡族传统潜行服，穿戴后移动声音极小，不易被敌人察觉。三件齐穿后几乎完全隐身（不含视觉）。是偷袭和绕过敌人的首选套装。",
+   "A traditional Sheikah stealth outfit; after wearing it, movement sounds are minimal and enemies are less likely to notice you. With all three pieces worn, you are almost completely hidden (excluding visual detection). It is the first-choice set for ambushes and slipping past enemies."
+  ],
+  [
+   "获取：卡卡利科村夜间商店（夜晚才开门）购买。三件合计约 1500 卢比，需在夜晚前往村子的服装店。",
+   "How to get: buy at the Kakariko Village night shop (only open at night). All three pieces cost about 1,500 Rupees in total; you must visit the village clothing store at night."
+  ],
+  [
+   "🌟",
+   "🌟"
+  ],
+  [
+   "夜光套装",
+   "Radiant Set"
+  ],
+  [
+   "✨ 夜间发光 套装加成：暗中加速",
+   "✨ Glows at Night · Set bonus: Speed Boost in Darkness"
+  ],
+  [
+   "夜晚会散发柔和光芒的神秘套装，在地底黑暗区域照亮周围，减少用火把的需求。三件齐穿夜间移动速度加快。",
+   "A mysterious set that gives off a soft glow at night, lighting up the surroundings in the dark Depths and reducing the need for torches. With all three pieces worn, movement speed increases at night."
+  ],
+  [
+   "获取：三件分别位于地底世界的特定宝箱中，对应地表三个区域的地底版本宝箱。",
+   "How to get: the three pieces are located in specific treasure chests in the Depths, corresponding to the Depths versions of chests in three surface regions."
+  ],
+  [
+   "⚔ 战斗强化套装",
+   "⚔ Combat Enhancement Sets"
+  ],
+  [
+   "🪓",
+   "🪓"
+  ],
+  [
+   "蛮族套装",
+   "Barbarian Set"
+  ],
+  [
+   "⚔ 攻击力↑ 套装加成：破防双倍",
+   "⚔ Attack Power ↑ · Set bonus: Double Defense Break"
+  ],
+  [
+   "野蛮骑士穿戴的战斗套装，每件提升攻击力，三件齐穿后攻击伤害翻倍。是打莱乃尔、BOSS 战的核心战斗套装，后期必备。",
+   "A combat set worn by barbarian knights; each piece increases attack power, and with all three pieces worn, attack damage doubles. It is the core combat set for fighting Lynels and bosses, and essential in the late game."
+  ],
+  [
+   "获取：三件分别位于三处骷髅遗迹宝箱：头部在阿库拉遗迹；上身在科加遗迹；腿部在克洛格森林附近遗迹宝箱。",
+   "How to get: the three pieces are located in three skeletal ruin treasure chests: head at the Akula Ruins; torso at the Kega Ruins; legs in a ruin treasure chest near Korok Forest."
+  ],
+  [
+   "🖤",
+   "🖤"
+  ],
+  [
+   "暗黑套装",
+   "Dark Set"
+  ],
+  [
+   "🖤 暗夜攻击↑ 套装加成：幽影结界",
+   "🖤 Night Attack ↑ · Set bonus: Shadow Barrier"
+  ],
+  [
+   "夜晚攻击力明显提升的战斗套装，外观暗色系，三件齐穿后夜间或黑暗地区可为自身增加幽影结界减少受击伤害。",
+   "A combat set whose attack power clearly increases at night, with a dark appearance; with all three pieces worn, at night or in dark areas it adds a shadow barrier to yourself that reduces damage taken."
+  ],
+  [
+   "获取：三件均来自地底世界深层宝箱，分布在不同地底区域，需点亮破魔树根扩大地图后探索。",
+   "How to get: all three pieces come from deep Depths treasure chests, spread across different Depths regions; you must light Lightroots to expand the map before exploring."
+  ],
+  [
+   "👤",
+   "👤"
+  ],
+  [
+   "黑暗套装",
+   "Shadow Set"
+  ],
+  [
+   "🌑 暗影攻击 套装加成：影分身",
+   "🌑 Shadow Attack · Set bonus: Shadow Clone"
+  ],
+  [
+   "与暗黑套装外观相似但效果不同，穿戴后会出现「暗影链接」效果，三件齐穿偶尔触发影分身协助攻击。是最稀有的套装之一。",
+   "Similar in appearance to the Dark Set but with different effects; after wearing it, a 'Shadow Link' effect appears, and with all three pieces worn, a shadow clone is occasionally triggered to assist in attacks. It is one of the rarest sets."
+  ],
+  [
+   "获取：完成隐藏支线「黑暗林克」系列（三个地区各一任务），击败暗影林克后获得对应部位套装。",
+   "How to get: complete the hidden 'Dark Link' side quest series (one quest in each of three regions); after defeating Shadow Link, you receive the corresponding set piece."
+  ],
+  [
+   "👹",
+   "👹"
+  ],
+  [
+   "鬼神套装",
+   "Evil Spirit Set"
+  ],
+  [
+   "💥 重击强化 套装加成：震地冲击",
+   "💥 Heavy Attack Enhancement · Set bonus: Ground-Shaking Impact"
+  ],
+  [
+   "充满古代力量的鬼神战甲，穿戴后蓄力攻击（重击）伤害提升，破盾效果增强。三件齐穿蓄力攻击触发地震冲击波，对多敌群战极有效。",
+   "Fierce deity armor full of ancient power; after wearing it, charged attacks (heavy attacks) deal more damage and shield-breaking is enhanced. With all three pieces worn, charged attacks trigger an earthquake shockwave, extremely effective against groups of enemies."
+  ],
+  [
+   "获取：依序完成「古代战场」系列支线任务，三件分别作为三个阶段的任务奖励。",
+   "How to get: complete the 'Ancient Battlefield' side quest series in order; the three pieces are awarded as rewards for the three stages."
+  ],
+  [
+   "👻",
+   "👻"
+  ],
+  [
+   "幻影套装",
+   "Phantom Set"
+  ],
+  [
+   "👻 幻影移动 套装加成：无声刺杀",
+   "👻 Phantom Movement · Set bonus: Silent Assassination"
+  ],
+  [
+   "外观宛如幽灵的神秘套装，穿戴后移动轨迹对敌人更难追踪，潜行偷袭伤害提升。三件齐穿后偷袭必定一击必杀普通敌人。",
+   "A mysterious set that looks like a ghost; after wearing it, your movement trail is harder for enemies to track, and stealth ambush damage increases. With all three pieces worn, ambushes are guaranteed to kill ordinary enemies in one hit."
+  ],
+  [
+   "获取：三件分别藏于海拉鲁大地三处隐秘神庙宝箱（不在主流神庙路线上），需解开特殊谜题才能进入。",
+   "How to get: the three pieces are hidden in three secret shrine treasure chests across Hyrule (not on the mainstream shrine routes), which require solving special puzzles to enter."
+  ],
+  [
+   "🛡",
+   "🛡"
+  ],
+  [
+   "近卫兵套装",
+   "Royal Guard Set"
+  ],
+  [
+   "🛡 防御力最高 套装加成：盾反强化",
+   "🛡 Highest Defense · Set bonus: Shield Parry Enhancement"
+  ],
+  [
+   "谢卡族古代技术铸造的终极防具，未强化时防御力已为全游戏最高。三件齐穿后盾反（完美格挡）造成更高反伤。",
+   "The ultimate armor forged with ancient Sheikah technology; even unenhanced, its defense is already the highest in the game. With all three pieces worn, shield parries (perfect guards) deal higher counter damage."
+  ],
+  [
+   "获取：三件均在海拉鲁城堡深处宝箱（需深入城堡内部）。头部在城堡西翼；上身在城堡地下；腿部在城堡塔顶。",
+   "How to get: all three pieces are in treasure chests deep inside Hyrule Castle (you must go deep into the castle interior). Head in the castle's west wing; torso in the castle basement; legs at the top of the castle tower."
+  ],
+  [
+   "✨ 勇者传承套装",
+   "✨ Hero Legacy Sets"
+  ],
+  [
+   "勇者套装：来自历代塞尔达传说作品的经典服装，多数需通过 amiibo 扫描获得，部分可在游戏内隐藏宝箱取得。这些套装提供独特的战斗加成或特殊效果。",
+   "Hero Sets: classic outfits from past Legend of Zelda titles, mostly obtained by scanning amiibo, with some available from hidden treasure chests in-game. These sets provide unique combat bonuses or special effects."
+  ],
+  [
+   "勇者套装：来自历代塞尔达传说作品的经典服装，多数需通过 amiibo 扫描获得，部分可在游戏内隐藏宝箱取得。",
+   "Hero Sets: classic outfits from past Legend of Zelda titles, mostly obtained by scanning amiibo, with some available from hidden treasure chests in-game."
+  ],
+  [
+   "这些套装提供独特的战斗加成或特殊效果。",
+   "These sets provide unique combat bonuses or special effects."
+  ],
+  [
+   "🌾",
+   "🌾"
+  ],
+  [
+   "旷野之勇者套装",
+   "Hero of the Wild Set"
+  ],
+  [
+   "✨ 来自《旷野之息》 ⚔ 攀爬攻击↑",
+   "✨ From Breath of the Wild · ⚔ Climbing Attack ↑"
+  ],
+  [
+   "《旷野之息》林克的经典蓝色冒险服。穿戴后攀爬途中发动的攻击伤害提升，跳跃斩击强化。是探索高低起伏地形时的优选。",
+   "Link's classic blue adventuring outfit from Breath of the Wild. After wearing it, attacks launched while climbing deal more damage, and jump slashes are enhanced. It is the preferred choice when exploring uneven terrain."
+  ],
+  [
+   "获取：扫描《旷野之息》林克 amiibo 随机获得，或在游戏内特定天空岛神庙宝箱（需特殊条件解锁）。",
+   "How to get: randomly obtained by scanning the Breath of the Wild Link amiibo, or from a specific Sky Island shrine treasure chest in-game (requires special conditions to unlock)."
+  ],
+  [
+   "⏰",
+   "⏰"
+  ],
+  [
+   "时之勇者套装",
+   "Hero of Time Set"
+  ],
+  [
+   "✨ 来自《时之笛》 ⚔ 骑马攻击↑",
+   "✨ From Ocarina of Time · ⚔ Mounted Attack ↑"
+  ],
+  [
+   "《时之笛》时代勇者的深色铠甲，穿戴后骑乘坐骑时攻击力提升，马背上挥剑范围更广。适合骑马决斗场景。",
+   "The dark armor of the hero from the Ocarina of Time era; after wearing it, attack power increases while riding a mount, and sword swings from horseback cover a wider range. Suits mounted duel scenarios."
+  ],
+  [
+   "获取：扫描《时之笛》林克 amiibo 随机获得，三件分别通过不同扫描获取。",
+   "How to get: randomly obtained by scanning the Ocarina of Time Link amiibo; the three pieces are obtained through separate scans."
+  ],
+  [
+   "💨",
+   "💨"
+  ],
+  [
+   "风之勇者套装",
+   "Hero of Winds Set"
+  ],
+  [
+   "✨ 来自《风之律动》 🌊 海上速度↑",
+   "✨ From The Wind Waker · 🌊 Sea Speed ↑"
+  ],
+  [
+   "《风之律动》海洋冒险版林克的绿色水手装，穿戴后在水面和海洋地形移动速度提升，乘船速度加快。",
+   "Link's green sailor outfit from the seafaring adventure of The Wind Waker; after wearing it, movement speed increases on water and ocean terrain, and sailing speed increases."
+  ],
+  [
+   "获取：扫描《风之律动》林克 amiibo 随机获得。",
+   "How to get: randomly obtained by scanning The Wind Waker Link amiibo."
+  ],
+  [
+   "🌆",
+   "🌆"
+  ],
+  [
+   "黄昏之勇者套装",
+   "Hero of Twilight Set"
+  ],
+  [
+   "✨ 来自《黄昏公主》 ⚔ 受伤反伤",
+   "✨ From Twilight Princess · ⚔ Damage Reflection on Injury"
+  ],
+  [
+   "《黄昏公主》骑士林克的深蓝铠甲，穿戴后受到伤害时有概率触发反伤效果，将伤害反弹给攻击者。",
+   "The deep-blue armor of knight Link from Twilight Princess; after wearing it, taking damage has a chance to trigger a damage-reflection effect, bouncing damage back to the attacker."
+  ],
+  [
+   "获取：扫描《黄昏公主》林克 amiibo 随机获得。",
+   "How to get: randomly obtained by scanning the Twilight Princess Link amiibo."
+  ],
+  [
+   "☁",
+   "☁"
+  ],
+  [
+   "天空之勇者套装",
+   "Hero of the Sky Set"
+  ],
+  [
+   "✨ 来自《御天之剑》 ☁ 天空岛加速",
+   "✨ From Skyward Sword · ☁ Sky Island Speed Boost"
+  ],
+  [
+   "《御天之剑》飞行冒险版林克服装，穿戴后在天空岛地形的各种动作速度提升，如同原作中驾驭凌风鸟般轻盈。",
+   "Link's outfit from the flying adventure of Skyward Sword; after wearing it, all kinds of movement speeds increase on Sky Island terrain, as light as riding a Loftwing in the original game."
+  ],
+  [
+   "获取：扫描《御天之剑》林克 amiibo 随机获得。",
+   "How to get: randomly obtained by scanning the Skyward Sword Link amiibo."
+  ],
+  [
+   "织梦之勇者套装",
+   "Hero of Awakening Set"
+  ],
+  [
+   "✨ 来自《梦见岛》 ⚔ 盾反强化",
+   "✨ From Link's Awakening · ⚔ Shield Parry Enhancement"
+  ],
+  [
+   "《梦见岛》像素风格林克的经典绿色服装（高清版），穿戴后盾反（完美格挡）的判定时间略微延长，更容易触发。",
+   "Link's classic green outfit in pixel style from Link's Awakening (HD version); after wearing it, the timing window for shield parries (perfect guards) is slightly extended, making them easier to trigger."
+  ],
+  [
+   "获取：扫描《梦见岛》林克 amiibo 随机获得。",
+   "How to get: randomly obtained by scanning the Link's Awakening Link amiibo."
+  ],
+  [
+   "💚",
+   "💚"
+  ],
+  [
+   "初始之勇者套装",
+   "Classic Hero Set"
+  ],
+  [
+   "✨ 经典绿色服装 🛡 均衡防御",
+   "✨ Classic Green Outfit · 🛡 Balanced Defense"
+  ],
+  [
+   "塞尔达系列标志性的绿色精灵服，整体属性均衡，穿戴时具有回忆历代勇者的特殊加成光环，对魔法类敌人伤害略微提升。",
+   "The iconic green tunic of the Zelda series, with balanced overall stats; when worn, it carries a special bonus aura recalling heroes of past eras, and damage against magic-type enemies is slightly increased."
+  ],
+  [
+   "获取：扫描王国之泪版林克 amiibo 获得，或在主线后期特定区域的隐藏宝箱中找到。",
+   "How to get: obtained by scanning the Tears of the Kingdom Link amiibo, or found in a hidden treasure chest in a specific region late in the main story."
+  ],
+  [
+   "🏅 特殊套装（任务 · 神殿 · 商店）",
+   "🏅 Special Sets (Quests · Temples · Shops)"
+  ],
+  [
+   "👗",
+   "👗"
+  ],
+  [
+   "海利亚套装",
+   "Hylian Set"
+  ],
+  [
+   "🛒 商店购买 🛡 基础防御",
+   "🛒 Shop Purchase · 🛡 Basic Defense"
+  ],
+  [
+   "海拉鲁王国的平民服装，外观典雅，防御均衡。没有特殊加成效果，但作为城镇内穿着或早期防具是不错的选择。",
+   "The common clothing of the Kingdom of Hyrule, elegant in appearance with balanced defense. It has no special bonus effects, but it is a good choice for wearing around towns or as early-game armor."
+  ],
+  [
+   "获取：海拉鲁城镇服装店购买，三件合计约 600 卢比，游戏开始不久即可购得。",
+   "How to get: buy at a Hyrule town clothing store; all three pieces cost about 600 Rupees in total, and can be bought not long after the game starts."
+  ],
+  [
+   "⚔",
+   "⚔"
+  ],
+  [
+   "海力亚士兵套装",
+   "Soldier's Set"
+  ],
+  [
+   "🛡 士兵防御 套装加成：无",
+   "🛡 Soldier Defense · Set bonus: None"
+  ],
+  [
+   "海拉鲁王国士兵的标准战甲，防御力比海利亚套装更高，外观威武。适合中早期作为主战防具使用。",
+   "The standard armor of Hyrule Kingdom soldiers, with higher defense than the Hylian Set and an imposing appearance. Suitable as main combat armor in the early-to-mid game."
+  ],
+  [
+   "获取：海拉鲁城镇士兵装备铺购买，或在城堡周边击败士兵偶尔掉落（掉落率低）。",
+   "How to get: buy at a Hyrule town soldier equipment shop, or occasionally dropped by soldiers defeated around the castle (low drop rate)."
+  ],
+  [
+   "🧚",
+   "🧚"
+  ],
+  [
+   "精灵套装",
+   "Fairy Set"
+  ],
+  [
+   "🌿 大妖精庇护 套装加成：强化加成↑",
+   "🌿 Great Fairy Blessing · Set bonus: Enhancement Bonus ↑"
+  ],
+  [
+   "受大妖精祝福的精灵服，穿戴后在大妖精泉强化其他套装时所需素材数量减少。三件齐穿效果叠加，是高效强化套装的辅助搭配。",
+   "Fairy clothing blessed by the Great Fairies; after wearing it, fewer materials are needed when enhancing other sets at Great Fairy Fountains. With all three pieces worn, the effect stacks, making it a supporting combination for efficiently enhancing sets."
+  ],
+  [
+   "获取：激活游戏内四处大妖精泉后，完成大妖精系列支线任务，分别获得三件套装部位。",
+   "How to get: after activating the four Great Fairy Fountains in-game, complete the Great Fairy side quest series to receive the three set pieces."
+  ],
+  [
+   "⛏",
+   "⛏"
+  ],
+  [
+   "采矿套装",
+   "Miner Set"
+  ],
+  [
+   "套装加成：矿石双倍 🛒 任务奖励",
+   "Set bonus: Double Ore · 🛒 Quest Reward"
+  ],
+  [
+   "鼓隆族矿工专用套装，穿戴后敲击矿石获得的素材数量提升。三件齐穿后矿物掉落双倍，是刷材料强化套装的最佳帮手。",
+   "A set made for Goron miners; after wearing it, the amount of materials obtained from striking ore increases. With all three pieces worn, mineral drops double, making it the best helper for farming materials to enhance sets."
+  ],
+  [
+   "获取：完成鼓隆城「矿工的心愿」系列支线任务（共三个），每个任务奖励一件套装部位。",
+   "How to get: complete the 'Miner's Wish' side quest series in Goron City (three quests in total); each quest rewards one set piece."
+  ],
+  [
+   "💎",
+   "💎"
+  ],
+  [
+   "汀空套装",
+   "Tingkong Set"
+  ],
+  [
+   "💎 古代力量 套装加成：余料加速",
+   "💎 Ancient Power · Set bonus: Fuse Speed Boost"
+  ],
+  [
+   "融合佐纳依古代技术的神秘套装，穿戴后使用余料建造（融合、建造）的速度加快。三件齐穿后建造动作几乎瞬间完成。",
+   "A mysterious set fusing ancient Zonai technology; after wearing it, using Fuse (fusing and building) becomes faster. With all three pieces worn, building actions are completed almost instantly."
+  ],
+  [
+   "获取：三件分别位于地底世界的佐纳依遗迹宝箱，需解开佐纳依机关谜题后才能开启。",
+   "How to get: the three pieces are located in Zonai ruin treasure chests in the Depths, which can only be opened after solving Zonai mechanism puzzles."
+  ],
+  [
+   "火焰套装",
+   "Ember Set"
+  ],
+  [
+   "🔥 火焰攻击 套装加成：炎爆",
+   "🔥 Fire Attack · Set bonus: Flame Burst"
+  ],
+  [
+   "穿戴后近战攻击附带火焰伤害，可自动点燃敌人。三件齐穿后攻击触发炎爆效果，对周围敌人造成范围火焰伤害。与耐火套装不同，此套装着重进攻。",
+   "After wearing it, melee attacks deal bonus fire damage and can automatically set enemies alight. With all three pieces worn, attacks trigger a flame burst effect, dealing area fire damage to surrounding enemies. Unlike the Flamebreaker Set, this set focuses on offense."
+  ],
+  [
+   "获取：三件均在格鲁德火山地区宝箱（包括地底对应区域），需耐火保护才能进入获取。",
+   "How to get: all three pieces are in treasure chests in the Gerudo volcano region (including the corresponding Depths region); fireproof protection is needed to enter and obtain them."
+  ],
+  [
+   "雷光套装",
+   "Lightning Set"
+  ],
+  [
+   "⚡ 雷电攻击 套装加成：雷链",
+   "⚡ Lightning Attack · Set bonus: Lightning Chain"
+  ],
+  [
+   "穿戴后近战攻击附带雷电，命中可传导至附近敌人。三件齐穿触发雷链效果，攻击同时传导至最多三个目标，对群战极为有效。",
+   "After wearing it, melee attacks deal bonus lightning, and hits can conduct to nearby enemies. With all three pieces worn, the Lightning Chain effect triggers, conducting attacks to up to three targets at once, extremely effective against groups."
+  ],
+  [
+   "获取：完成卓拉领地「雷电研究」支线任务系列，三个任务分别获得一件。",
+   "How to get: complete the 'Lightning Research' side quest series in Zora's Domain; the three quests award one piece each."
+  ],
+  [
+   "🏰 种族套装 · 神兽兵装",
+   "🏰 Racial Sets · Divine Beast Armor"
+  ],
+  [
+   "神兽兵装：完成四大神殿主线后，于对应城镇可以获得或购买各英杰专属兵装。每套兵装只有一件（上身），无套装加成，但防御力较高且外观独特。",
+   "Divine Beast Armor: after completing the four temple main quests, each Champion's exclusive armor can be obtained or purchased in the corresponding town. Each armor set has only one piece (torso), with no set bonus, but high defense and a distinctive appearance."
+  ],
+  [
+   "神兽兵装：完成四大神殿主线后，于对应城镇可以获得或购买各英杰专属兵装。",
+   "Divine Beast Armor: after completing the four temple main quests, each Champion's exclusive armor can be obtained or purchased in the corresponding town."
+  ],
+  [
+   "每套兵装只有一件（上身），无套装加成，但防御力较高且外观独特。",
+   "Each armor set has only one piece (torso), with no set bonus, but high defense and a distinctive appearance."
+  ],
+  [
+   "💧",
+   "💧"
+  ],
+  [
+   "卓拉套装",
+   "Zora Set"
+  ],
+  [
+   "💧 水中速度↑ 套装加成：瀑布逆行",
+   "💧 Water Speed ↑ · Set bonus: Waterfall Ascent"
+  ],
+  [
+   "卓拉族礼服，穿戴后在水中游泳速度大幅提升。三件齐穿解锁瀑布逆行能力，可沿瀑布向上冲浪攀升。探索卓拉领地必备套装。",
+   "Zora ceremonial dress; after wearing it, swimming speed in water increases greatly. With all three pieces worn, the Waterfall Ascent ability unlocks, letting you surf up waterfalls. An essential set for exploring Zora's Domain."
+  ],
+  [
+   "获取：完成水之神殿后，卓拉领地商店全套开放购买。头部、上身、腿部各约 500 卢比。",
+   "How to get: after completing the Water Temple, the full set goes on sale at shops in Zora's Domain. Head, torso, and legs cost about 500 Rupees each."
+  ],
+  [
+   "🪶",
+   "🪶"
+  ],
+  [
+   "利特套装",
+   "Rito Set"
+  ],
+  [
+   "❄ 耐寒↑ 套装加成：顺风加速",
+   "❄ Cold Resistance ↑ · Set bonus: Tailwind Speed Boost"
+  ],
+  [
+   "利特族羽毛编织的保暖套装，穿戴后在寒冷地区不受冻伤。三件齐穿顺风滑翔时速度额外加快，是雪山和利特村探索的舒适选择。",
+   "A warm set woven from Rito feathers; after wearing it, you won't suffer frostbite in cold regions. With all three pieces worn, gliding speed increases further with a tailwind, making it a comfortable choice for exploring snowy mountains and Rito Village."
+  ],
+  [
+   "获取：完成风之神殿后，利特村服装店开放购买。三件合计约 2400 卢比。",
+   "How to get: after completing the Wind Temple, the Rito Village clothing store opens for purchases. All three pieces cost about 2,400 Rupees in total."
+  ],
+  [
+   "获取：完成风之神殿后，利特村服装店开放购买。",
+   "How to get: after completing the Wind Temple, the Rito Village clothing store opens for purchases."
+  ],
+  [
+   "神兽兵装 · 露塔",
+   "Divine Beast Armor · Ruta"
+  ],
+  [
+   "🛡 高防御 💧 水属性强化",
+   "🛡 High Defense · 💧 Water Enhancement"
+  ],
+  [
+   "卓拉英杰米法的神兽兵装（上身），外观为卓拉族水蓝色甲胄，穿戴后在水中战斗时攻击附带水属性效果，防御力优秀。",
+   "The Divine Beast armor (torso) of Zora Champion Mipha, appearing as water-blue Zora armor; after wearing it, attacks while fighting in water deal bonus water-element effects, and its defense is excellent."
+  ],
+  [
+   "获取：完成水之神殿主线后，在卓拉领地特定 NPC 处以宝石素材兑换，或作为支线任务奖励获得。",
+   "How to get: after completing the Water Temple main quest, exchange gem materials with a specific NPC in Zora's Domain, or obtain it as a side quest reward."
+  ],
+  [
+   "神兽兵装 · 梅德",
+   "Divine Beast Armor · Medoh"
+  ],
+  [
+   "🛡 高防御 ⚡ 雷属性强化",
+   "🛡 High Defense · ⚡ Lightning Enhancement"
+  ],
+  [
+   "杰鲁多英杰乌尔波萨的神兽兵装（上身），金色杰鲁多甲胄，穿戴后攻击附带雷电，免疫自身雷击，与杰鲁多沙漠探索完美搭配。",
+   "The Divine Beast armor (torso) of Gerudo Champion Urbosa, golden Gerudo armor; after wearing it, attacks deal bonus lightning and you are immune to your own lightning strikes, pairing perfectly with Gerudo Desert exploration."
+  ],
+  [
+   "获取：完成雷之神殿主线后，杰鲁多城特定 NPC 处兑换，或支线奖励获得。",
+   "How to get: after completing the Lightning Temple main quest, exchange at a specific NPC in Gerudo Town, or obtain it as a side quest reward."
+  ],
+  [
+   "神兽兵装 · 鲁达尼亚",
+   "Divine Beast Armor · Rudania"
+  ],
+  [
+   "🛡 高防御 🔥 火属性强化",
+   "🛡 High Defense · 🔥 Fire Enhancement"
+  ],
+  [
+   "鼓隆英杰达鲁克的神兽兵装（上身），厚重红色岩石甲胄，穿戴后攻击附带火焰，并提供耐火保护，在火山地区战斗时如虎添翼。",
+   "The Divine Beast armor (torso) of Goron Champion Daruk, heavy red rock armor; after wearing it, attacks deal bonus fire and it provides fireproof protection, making fighting in volcanic regions even more effective."
+  ],
+  [
+   "获取：完成火之神殿主线后，鼓隆城铁匠铺 NPC 处兑换，或支线奖励获得。",
+   "How to get: after completing the Fire Temple main quest, exchange with a blacksmith NPC in Goron City, or obtain it as a side quest reward."
+  ],
+  [
+   "神兽兵装 · 娜波力斯",
+   "Divine Beast Armor · Naboris"
+  ],
+  [
+   "🛡 高防御 🌬 风属性强化",
+   "🛡 High Defense · 🌬 Wind Enhancement"
+  ],
+  [
+   "利特英杰莱乃博的神兽兵装（上身），白色羽翼甲胄，穿戴后滑翔时攻击力提升，风属性攻击伤害加成，飞行战斗风格极佳。",
+   "The Divine Beast armor (torso) of Rito Champion Revali, white winged armor; after wearing it, attack power increases while gliding, wind-element attack damage is boosted, and it is excellent for an aerial combat style."
+  ],
+  [
+   "获取：完成风之神殿主线后，利特村特定 NPC 处兑换，或支线奖励获得。",
+   "How to get: after completing the Wind Temple main quest, exchange with a specific NPC in Rito Village, or obtain it as a side quest reward."
+  ],
+  [
+   "🌀 隐藏 · 特殊套装",
+   "🌀 Hidden · Special Sets"
+  ],
+  [
+   "🌀",
+   "🌀"
+  ],
+  [
+   "异次元恶灵套装",
+   "Otherworldly Evil Spirit Set"
+  ],
+  [
+   "🌀 混沌攻击 套装加成：异次元破防",
+   "🌀 Chaos Attack · Set bonus: Otherworldly Defense Break"
+  ],
+  [
+   "来自异次元空间的恶灵战甲，外观扭曲诡异，穿戴后攻击有概率无视敌人防御。三件齐穿对高防御目标（如将军骑士）伤害大幅提升。",
+   "Evil spirit armor from another dimension, twisted and eerie in appearance; after wearing it, attacks have a chance to ignore enemy defense. With all three pieces worn, damage against high-defense targets (such as general knights) increases greatly."
+  ],
+  [
+   "获取：完成地底「异界裂缝」系列支线（需先收集三个异次元碎片），三件作为最终奖励获得。",
+   "How to get: complete the 'Otherworld Rift' side quest series in the Depths (you must first collect three otherworld shards); the three pieces are awarded as the final reward."
+  ],
+  [
+   "🔮",
+   "🔮"
+  ],
+  [
+   "左纳尼乌姆之套装",
+   "Zonaite Set"
+  ],
+  [
+   "🔮 佐纳依共鸣 套装加成：建造加速",
+   "🔮 Zonai Resonance · Set bonus: Building Speed Boost"
+  ],
+  [
+   "以稀有左纳尼乌姆矿石铸造的古代套装，对佐纳依机关有共鸣效果，使其运作效率提升。三件齐穿建造类动作加速且耗能减少。",
+   "An ancient set forged from rare Zonaite ore, with a resonance effect on Zonai mechanisms that improves their operating efficiency. With all three pieces worn, building actions speed up and consume less energy."
+  ],
+  [
+   "获取：在地底深层收集 999 个左纳尼乌姆晶体（小型矿石），于地底兑换商人处各换取一件。",
+   "How to get: collect 999 Zonaite crystals (small ores) in the deep Depths, and exchange them one piece at a time with an exchange merchant in the Depths."
+  ],
+  [
+   "🏴",
+   "🏴"
+  ],
+  [
+   "依盖队套装",
+   "Yiga Set"
+  ],
+  [
+   "🏴 伪装 套装加成：敌方混淆",
+   "🏴 Disguise · Set bonus: Enemy Confusion"
+  ],
+  [
+   "依盖族（加侬多夫手下部队）的制服，穿戴后在野外移动时敌方依盖族不会主动攻击。三件齐穿可进入依盖据点而不被发现，是支线任务神器。",
+   "The uniform of the Yiga Clan (Ganondorf's troops); after wearing it, enemy Yiga in the wild won't attack on sight. With all three pieces worn, you can enter Yiga hideouts without being detected, making it a godsend for side quests."
+  ],
+  [
+   "获取：击败三处依盖族大营的营地队长，分别掉落头部、上身、腿部套装。",
+   "How to get: defeat the camp captains of three large Yiga camps; they drop the head, torso, and leg pieces respectively."
+  ],
+  [
+   "💡 强化建议：所有套装均可在大妖精泉进行最多 4 次强化，防御力从 3 提升至最高 28（每件）。强化需要收集对应的素材（怪物材料、矿石等）。优先强化你最常用的 2～3 套套装，刷材料时搭配采矿套装可事半功倍。",
+   "💡 Enhancement advice: all sets can be enhanced up to 4 times at Great Fairy Fountains, raising defense from 3 to a maximum of 28 (per piece). Enhancement requires collecting the corresponding materials (monster materials, ores, etc.). Prioritize enhancing your 2–3 most-used sets; pairing with the Miner Set while farming materials makes the work twice as effective with half the effort."
+  ],
+  [
+   "💡 强化建议：所有套装均可在大妖精泉进行最多 4 次强化，防御力从 3 提升至最高 28（每件）。",
+   "💡 Enhancement advice: all sets can be enhanced up to 4 times at Great Fairy Fountains, raising defense from 3 to a maximum of 28 (per piece)."
+  ],
+  [
+   "强化需要收集对应的素材（怪物材料、矿石等）。",
+   "Enhancement requires collecting the corresponding materials (monster materials, ores, etc.)."
+  ],
+  [
+   "优先强化你最常用的 2～3 套套装，刷材料时搭配采矿套装可事半功倍。",
+   "Prioritize enhancing your 2–3 most-used sets; pairing with the Miner Set while farming materials makes the work twice as effective with half the effort."
+  ],
+  [
+   "🧚 四位大妖精位置： 忒拉（森林驿站附近）· 弥佳（雪原驿站附近）· 西莎（双子驿站附近）· 可秋拉（平原外围驿站附近） 解锁越多大妖精，可升级的星级上限越高（满4星需全部解锁）。需先完成白诘报社「沛恩」系列前置任务。 卢比消耗（单件）：★1 = 10卢比 · ★2 = 50卢比 · ★3 = 200卢比 · ★4 = 500卢比",
+   "🧚 Four Great Fairy locations: Tera (near Woodland Stable) · Mija (near Snowfield Stable) · Xisha (near Dueling Peaks Stable) · Keqiula (near the outskirts of the plains). The more Great Fairies you unlock, the higher the star cap you can upgrade to (all four must be unlocked for the full 4 stars). You must first complete the Lucky Clover Gazette 'Penn' prerequisite quest series. Rupee cost (per piece): ★1 = 10 Rupees · ★2 = 50 Rupees · ★3 = 200 Rupees · ★4 = 500 Rupees"
+  ],
+  [
+   "🧚 四位大妖精位置： 忒拉（森林驿站附近）· 弥佳（雪原驿站附近）· 西莎（双子驿站附近）· 可秋拉（平原外围驿站附近）",
+   "🧚 Four Great Fairy locations: Tera (near Woodland Stable) · Mija (near Snowfield Stable) · Xisha (near Dueling Peaks Stable) · Keqiula (near the outskirts of the plains)."
+  ],
+  [
+   "解锁越多大妖精，可升级的星级上限越高（满4星需全部解锁）。",
+   "The more Great Fairies you unlock, the higher the star cap you can upgrade to (all four must be unlocked for the full 4 stars)."
+  ],
+  [
+   "需先完成白诘报社「沛恩」系列前置任务。",
+   "You must first complete the Lucky Clover Gazette 'Penn' prerequisite quest series."
+  ],
+  [
+   "卢比消耗（单件）：★1 = 10卢比 · ★2 = 50卢比 · ★3 = 200卢比 · ★4 = 500卢比",
+   "Rupee cost (per piece): ★1 = 10 Rupees · ★2 = 50 Rupees · ★3 = 200 Rupees · ★4 = 500 Rupees"
+  ],
+  [
+   "GREAT FAIRY UPGRADE 套装强化升级一览 在大妖精处可将防具升级至 ★1～★4，升级星级越高防御越强，部分套装集齐三件可激活套装效果",
+   "GREAT FAIRY UPGRADE · Armor Enhancement Upgrade Overview · At a Great Fairy, armor can be upgraded to ★1–★4; the higher the upgrade star level, the stronger the defense, and some sets activate their set effect when all three pieces are collected"
+  ],
+  [
+   "GREAT FAIRY UPGRADE 套装强化升级一览",
+   "GREAT FAIRY UPGRADE · Armor Enhancement Upgrade Overview"
+  ],
+  [
+   "在大妖精处可将防具升级至 ★1～★4，升级星级越高防御越强，部分套装集齐三件可激活套装效果",
+   "At a Great Fairy, armor can be upgraded to ★1–★4; the higher the upgrade star level, the stronger the defense, and some sets activate their set effect when all three pieces are collected"
+  ],
+  [
+   "升级规则： ① 需先完成解锁大妖精的情节挑战。每解锁一位大妖精，可解锁的升级上限 +1 颗星（共 4 位，上限 ★4）。 ② 防具单件升级需卢比 + 素材，升级越高消耗越多。 ③ 升级至 ★2 后防具获得基础套装效果，★4 获得强化套装效果。 ④ 表格中「各件 ×N」表示套装每一件单独升级所需数量。",
+   "Upgrade rules: ① You must first complete the story challenges that unlock the Great Fairies. Each Great Fairy unlocked raises the upgrade cap by +1 star (4 in total, cap ★4). ② Upgrading a single armor piece requires Rupees + materials, and higher upgrades cost more. ③ After upgrading to ★2, the armor gains its basic set effect, and at ★4 it gains the enhanced set effect. ④ In the table, 'per piece ×N' means the quantity needed to upgrade each individual piece of the set."
+  ],
+  [
+   "升级规则：",
+   "Upgrade rules:"
+  ],
+  [
+   "① 需先完成解锁大妖精的情节挑战。",
+   "① You must first complete the story challenges that unlock the Great Fairies."
+  ],
+  [
+   "每解锁一位大妖精，可解锁的升级上限 +1 颗星（共 4 位，上限 ★4）。",
+   "Each Great Fairy unlocked raises the upgrade cap by +1 star (4 in total, cap ★4)."
+  ],
+  [
+   "② 防具单件升级需卢比 + 素材，升级越高消耗越多。",
+   "② Upgrading a single armor piece requires Rupees + materials, and higher upgrades cost more."
+  ],
+  [
+   "③ 升级至 ★2 后防具获得基础套装效果，★4 获得强化套装效果。",
+   "③ After upgrading to ★2, the armor gains its basic set effect, and at ★4 it gains the enhanced set effect."
+  ],
+  [
+   "④ 表格中「各件 ×N」表示套装每一件单独升级所需数量。",
+   "④ In the table, 'per piece ×N' means the quantity needed to upgrade each individual piece of the set."
+  ],
+  [
+   "全部 🌿 环境适应 🏃 移动能力 🌙 潜行 ⚔ 战斗强化 🏅 特殊 ✨ 勇者/英杰 💎 饰品",
+   "All 🌿 Environmental Adaptation 🏃 Movement Ability 🌙 Stealth ⚔ Combat Enhancement 🏅 Special ✨ Hero/Champion 💎 Accessories"
+  ],
+  [
+   "套装名称 ⭐ 一星素材 （单件） ⭐⭐ 二星素材 （单件） ⭐⭐⭐ 三星素材 （单件） ⭐⭐⭐⭐ 四星素材 （单件）",
+   "Set Name · ⭐ 1-Star Materials (per piece) · ⭐⭐ 2-Star Materials (per piece) · ⭐⭐⭐ 3-Star Materials (per piece) · ⭐⭐⭐⭐ 4-Star Materials (per piece)"
+  ],
+  [
+   "* 数据来源：gamertw.com/zelda/totk/armor | 表格为单件所需素材，套装共3件需 ×3。卢比：★1=10 · ★2=50 · ★3=200 · ★4=500（单件）",
+   "* Data source: gamertw.com/zelda/totk/armor | The table lists materials needed per piece; a full 3-piece set requires ×3. Rupees: ★1=10 · ★2=50 · ★3=200 · ★4=500 (per piece)"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related guides"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Strongest Armor Sets: Three-Tier Breakdown"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› Four Great Fairies and Armor Enhancement Complete Guide"
+  ],
+  [
+   "› 哈里的终极秘籍",
+   "› Harry's Ultimate Guide"
+  ],
+  [
+   "📚 更多攻略",
+   "📚 More guides"
+  ],
+  [
+   "› 哈里的终极秘籍（13篇）",
+   "› Harry's Ultimate Guide (13 guides)"
+  ],
+  [
+   "› 全部页面索引",
+   "› Full page index"
+  ],
+  [
+   "📌 相关攻略推荐",
+   "📌 Recommended related guides"
+  ],
+  [
+   "⚔️ 料理合成 → ⚔️ 神庙挑战 → ⚔️ 情节挑战 →",
+   "⚔️ Cooking Combinations → ⚔️ Shrine Challenges → ⚔️ Story Challenges →"
+  ],
+  [
+   "神兽兵装-露塔",
+   "Divine Beast Armor - Ruta"
+  ],
+  [
+   "神兽兵装-梅德",
+   "Divine Beast Armor - Medoh"
+  ],
+  [
+   "神兽兵装-鲁达尼亚",
+   "Divine Beast Armor - Rudania"
+  ],
+  [
+   "神兽兵裝-娜波力斯",
+   "Divine Beast Armor - Naboris"
+  ],
+  [
+   "🧥 套装完全图鉴",
+   "🧥 Complete Armor Set Guide"
+  ],
+  [
+   "防御力 · 套装加成 · 强化素材 · 全部 38 套套装获取攻略",
+   "Defense · Set Bonuses · Upgrade Materials · How to Get All 38 Armor Sets"
+  ],
+  [
+   "套装名称",
+   "Set Name"
+  ],
+  [
+   "⚔ 战斗强化",
+   "⚔ Combat Boost"
+  ],
+  [
+   "✨ 勇者/英杰",
+   "✨ Hero/Champion"
+  ],
+  [
+   "丘丘胶 ×5\\n波克布林肝脏 ×3",
+   "Chuchu Jelly ×5\\nBokoblin Guts ×3"
+  ],
+  [
+   "光亮花种子 ×10",
+   "Brightbloom Seed ×10"
+  ],
+  [
+   "光亮花种子 ×20\\n光亮蘑菇 ×5",
+   "Brightbloom Seed ×20\\nBrightcap ×5"
+  ],
+  [
+   "冰蝙蝠的翅膀 ×5\\n冰蝙蝠的眼珠 ×3\\n冰冷蘑菇 ×5",
+   "Ice Keese Wing ×5\\nIce Keese Eyeball ×3\\nChillshroom ×5"
+  ],
+  [
+   "冰蝙蝠的翅膀 ×5\\n霍拉布林的角 ×5\\n速速青蛙 ×10",
+   "Ice Keese Wing ×5\\nHorriblin Horn ×5\\nHot-Footed Frog ×10"
+  ],
+  [
+   "冰蝙蝠的角 ×5\\n冰冷蘑菇 ×5\\n冰龙头 ×5",
+   "Ice Keese Horn ×5\\nChillshroom ×5\\nIce Dragon's Head ×5"
+  ],
+  [
+   "冰龙的角 ×3\\n冰冷凤蝶 ×10\\n蓝宝石 ×5",
+   "Ice Dragon's Horn ×3\\nWinterwing Butterfly ×10\\nSapphire ×5"
+  ],
+  [
+   "冷气果 ×3",
+   "Ice Fruit ×3"
+  ],
+  [
+   "初始勇者套装",
+   "Archaic Set"
+  ],
+  [
+   "卡库达的眼珠 ×6\\n蝙蝠的翅膀 ×5",
+   "Aerocuda Eyeball ×6\\nKeese Wing ×5"
+  ],
+  [
+   "卡库达的翅膀 ×6\\n卡库达的眼珠 ×8",
+   "Aerocuda Wing ×6\\nAerocuda Eyeball ×8"
+  ],
+  [
+   "古代勇者之魂（单件）",
+   "Ancient Hero's Aspect (single piece)"
+  ],
+  [
+   "古栗欧克的翅膀 ×12\\n卡库达的翅膀 ×10",
+   "Gleeok Wing ×12\\nAerocuda Wing ×10"
+  ],
+  [
+   "吐冰蜥蜴的尾巴 ×5\\n蓝宝石 ×5\\n冰冷凤蝶 ×5",
+   "Ice-Breath Lizalfos Tail ×5\\nSapphire ×5\\nWinterwing Butterfly ×5"
+  ],
+  [
+   "吐冰蜥蜴的角 ×5\\n冰冷蜜瓜 ×5",
+   "Ice-Breath Lizalfos Horn ×5\\nHydromelon ×5"
+  ],
+  [
+   "吐火蜥蜴的尾巴 ×5\\n红宝石 ×5\\n暖暖凤蝶 ×5",
+   "Fire-Breath Lizalfos Tail ×5\\nRuby ×5\\nSummerwing Butterfly ×5"
+  ],
+  [
+   "吐火蜥蜴的角 ×5\\n暖暖草果 ×5",
+   "Fire-Breath Lizalfos Horn ×5\\nSpicy Pepper ×5"
+  ],
+  [
+   "吐电蜥蜴的尾巴 ×5\\n黄玉 ×5\\n酥麻凤蝶 ×5",
+   "Electric Lizalfos Tail ×5\\nTopaz ×5\\nThunderwing Butterfly ×5"
+  ],
+  [
+   "吐电蜥蜴的角 ×5\\n酥麻水果 ×5",
+   "Electric Lizalfos Horn ×5\\nVoltfruit ×5"
+  ],
+  [
+   "士兵套装",
+   "Soldier's Set"
+  ],
+  [
+   "夜光石 ×10\\n星星碎片 ×1",
+   "Luminous Stone ×10\\nStar Fragment ×1"
+  ],
+  [
+   "夜光石 ×10\\n波克布林肝脏 ×1",
+   "Luminous Stone ×10\\nBokoblin Guts ×1"
+  ],
+  [
+   "夜光石 ×15\\n星星碎片 ×1",
+   "Luminous Stone ×15\\nStar Fragment ×1"
+  ],
+  [
+   "夜光石 ×15\\n莫力布林肝脏 ×2",
+   "Luminous Stone ×15\\nMoblin Guts ×2"
+  ],
+  [
+   "夜光石 ×20\\n星星碎片 ×1",
+   "Luminous Stone ×20\\nStar Fragment ×1"
+  ],
+  [
+   "夜光石 ×20\\n西诺克斯的肝脏 ×3",
+   "Luminous Stone ×20\\nHinox Guts ×3"
+  ],
+  [
+   "夜光石 ×30\\n星星碎片 ×1",
+   "Luminous Stone ×30\\nStar Fragment ×1"
+  ],
+  [
+   "夜光石 ×30\\n莱尼尔的肝脏 ×3\\n吉波得的骨头 ×10",
+   "Luminous Stone ×30\\nLynel Guts ×3\\nGibdo Bone ×10"
+  ],
+  [
+   "大剑草 ×3",
+   "Mighty Thistle ×3"
+  ],
+  [
+   "大剑香蕉 ×10\\n八爪怪的眼珠 ×5",
+   "Mighty Bananas ×10\\nOctorok Eyeball ×5"
+  ],
+  [
+   "大剑香蕉 ×15\\n八爪怪的脚 ×5",
+   "Mighty Bananas ×15\\nOctorok Tentacle ×5"
+  ],
+  [
+   "大剑香蕉 ×20\\n八爪怪气球 ×5",
+   "Mighty Bananas ×20\\nOctorok Balloon ×5"
+  ],
+  [
+   "大剑香蕉 ×30\\n八爪怪的肝脏 ×5",
+   "Mighty Bananas ×30\\nOctorok Guts ×5"
+  ],
+  [
+   "天空勇者套装",
+   "Sky Set"
+  ],
+  [
+   "宁静公主 ×10\\n向阳草 ×20\\n白龙的角 ×2",
+   "Silent Princess ×10\\nSundelion ×20\\nLight Dragon's Horn ×2"
+  ],
+  [
+   "宁静公主 ×10\\n潜行鳟鱼 ×10\\n静谧凤蝶 ×5",
+   "Silent Princess ×10\\nStealthfin Trout ×10\\nTranquil Butterfly ×5"
+  ],
+  [
+   "宁静公主 ×3",
+   "Silent Princess ×3"
+  ],
+  [
+   "宁静公主 ×3\\n向阳草 ×10\\n白龙的爪子 ×2",
+   "Silent Princess ×3\\nSundelion ×10\\nLight Dragon's Claw ×2"
+  ],
+  [
+   "宁静公主 ×3\\n潜行草 ×5",
+   "Silent Princess ×3\\nBlue Nightshade ×5"
+  ],
+  [
+   "宁静公主 ×3\\n白龙的鳞片 ×2",
+   "Silent Princess ×3\\nLight Dragon's Scale ×2"
+  ],
+  [
+   "宁静公主 ×5\\n向阳草 ×15\\n白龙的牙齿碎片 ×2",
+   "Silent Princess ×5\\nSundelion ×15\\nLight Dragon's Fang ×2"
+  ],
+  [
+   "宁静公主 ×5\\n潜行蘑菇 ×5\\n潜行田螺 ×5",
+   "Silent Princess ×5\\nSilent Shroom ×5\\nSneaky River Snail ×5"
+  ],
+  [
+   "左纳乌能源 ×20\\n巨霸伽马的指甲 ×3",
+   "Zonaite Charge ×20\\nFrox Fingernail ×3"
+  ],
+  [
+   "巨大光亮花种子 ×15\\n暗萤火虫 ×5",
+   "Giant Brightbloom Seed ×15\\nDeep Firefly ×5"
+  ],
+  [
+   "巨大光亮花种子 ×20\\n钻石 ×3\\n暗萤火虫 ×10",
+   "Giant Brightbloom Seed ×20\\nDiamond ×3\\nDeep Firefly ×10"
+  ],
+  [
+   "新英杰服（单件）",
+   "Champion's Leathers (single piece)"
+  ],
+  [
+   "时间勇者套装",
+   "Time Set"
+  ],
+  [
+   "旷野勇者套装",
+   "Wild Set"
+  ],
+  [
+   "星星碎片 ×1\\n龙的角 ×2",
+   "Star Fragment ×1\\nDragon Horn ×2"
+  ],
+  [
+   "暗之块 ×5\\n巨霸伽马的牙齿 ×3",
+   "Dark Clump ×5\\nFrox Fang ×3"
+  ],
+  [
+   "暗之萤火虫 ×3",
+   "Deep Firefly ×3"
+  ],
+  [
+   "橡子 ×10\\n龙的鳞片 ×2",
+   "Acorn ×10\\nDragon Scale ×2"
+  ],
+  [
+   "汀空套装（左纳尼乌姆）",
+   "Depths Set (Zonaite)"
+  ],
+  [
+   "沙地靴/雪地靴（单件）",
+   "Sand Boots / Snow Boots (single piece)"
+  ],
+  [
+   "波克布林角 ×5",
+   "Bokoblin Horn ×5"
+  ],
+  [
+   "火焰果 ×3",
+   "Fire Fruit ×3"
+  ],
+  [
+   "火蝙蝠的翅膀 ×5\\n火蝙蝠的眼珠 ×3\\n暖暖蘑菇 ×5",
+   "Fire Keese Wing ×5\\nFire Keese Eyeball ×3\\nSunshroom ×5"
+  ],
+  [
+   "火蝙蝠的翅膀 ×5\\n蜥蜴战士的尾巴 ×10\\n速速紫罗兰 ×20",
+   "Fire Keese Wing ×5\\nLizalfos Tail ×10\\nSwift Violet ×20"
+  ],
+  [
+   "火蝙蝠的角 ×5\\n暖暖蘑菇 ×5\\n火龙头 ×5",
+   "Fire Keese Horn ×5\\nSunshroom ×5\\nFire Dragon's Head ×5"
+  ],
+  [
+   "火龙的角 ×3\\n暖暖凤蝶 ×10\\n红宝石 ×5",
+   "Fire Dragon's Horn ×3\\nSummerwing Butterfly ×10\\nRuby ×5"
+  ],
+  [
+   "琥珀 ×10\\n打火石 ×5",
+   "Amber ×10\\nFlint ×5"
+  ],
+  [
+   "琥珀 ×10\\n星星碎片 ×1",
+   "Amber ×10\\nStar Fragment ×1"
+  ],
+  [
+   "琥珀 ×20\\n打火石 ×10",
+   "Amber ×20\\nFlint ×10"
+  ],
+  [
+   "琥珀 ×20\\n星星碎片 ×1",
+   "Amber ×20\\nStar Fragment ×1"
+  ],
+  [
+   "琥珀 ×30\\n星星碎片 ×1",
+   "Amber ×30\\nStar Fragment ×1"
+  ],
+  [
+   "琥珀 ×35\\n打火石 ×15",
+   "Amber ×35\\nFlint ×15"
+  ],
+  [
+   "琥珀 ×40\\n星星碎片 ×1",
+   "Amber ×40\\nStar Fragment ×1"
+  ],
+  [
+   "琥珀 ×60\\n打火石 ×25",
+   "Amber ×60\\nFlint ×25"
+  ],
+  [
+   "琥珀耳坠（单件）",
+   "Amber Earrings (single piece)"
+  ],
+  [
+   "电流果 ×3",
+   "Shock Fruit ×3"
+  ],
+  [
+   "电蝙蝠的翅膀 ×5\\n电蝙蝠的眼珠 ×3\\n酥麻蘑菇 ×5",
+   "Electric Keese Wing ×5\\nElectric Keese Eyeball ×3\\nZapshroom ×5"
+  ],
+  [
+   "电蝙蝠的翅膀 ×5\\n贴贴蜥蜴 ×5",
+   "Electric Keese Wing ×5\\nSticky Lizard ×5"
+  ],
+  [
+   "电蝙蝠的角 ×5\\n酥麻蘑菇 ×5\\n雷龙头 ×5",
+   "Electric Keese Horn ×5\\nZapshroom ×5\\nThunder Dragon's Head ×5"
+  ],
+  [
+   "白色丘丘胶 ×3",
+   "White Chuchu Jelly ×3"
+  ],
+  [
+   "白色丘丘胶 ×5\\n冰冷蜜瓜 ×3",
+   "White Chuchu Jelly ×5\\nHydromelon ×3"
+  ],
+  [
+   "白银波克布林角 ×5\\n琥珀 ×30",
+   "Silver Bokoblin Horn ×5\\nAmber ×30"
+  ],
+  [
+   "白银波克布林角 ×9\\n西诺克斯肝脏 ×9\\n左纳尼乌姆 ×15",
+   "Silver Bokoblin Horn ×9\\nHinox Guts ×9\\nZonaite ×15"
+  ],
+  [
+   "白银莫力布林角 ×9\\n巨霸伽马肝脏 ×9\\n大左纳尼乌姆 ×10",
+   "Silver Moblin Horn ×9\\nFrox Guts ×9\\nLarge Zonaite ×10"
+  ],
+  [
+   "白银莱尼尔刃角 ×9\\n白银莱尼尔碎角 ×9\\n古栗欧克肝脏 ×9",
+   "Silver Lynel Saber Horn ×9\\nSilver Lynel Mace Horn ×9\\nGleeok Guts ×9"
+  ],
+  [
+   "白银蜥蜴角 ×9\\n莫尔德拉吉克肝脏 ×9\\n大左纳尼乌姆 ×15",
+   "Silver Lizalfos Horn ×9\\nMolduga Guts ×9\\nLarge Zonaite ×15"
+  ],
+  [
+   "白银首领波克布林角 ×3\\n莱尼尔的肝脏 ×3",
+   "Silver Boss Bokoblin Horn ×3\\nLynel Guts ×3"
+  ],
+  [
+   "白鬃莱尼尔的角 ×3\\n莱尼尔的肝脏 ×3\\n大剑独角仙 ×3",
+   "White-Maned Lynel Saber Horn ×3\\nLynel Guts ×3\\nBladed Rhino Beetle ×3"
+  ],
+  [
+   "精力独角仙 ×3\\n龙的牙齿碎片 ×2",
+   "Energetic Rhino Beetle ×3\\nDragon Fang ×2"
+  ],
+  [
+   "精力蜂的蜂蜜 ×5\\n龙的爪子 ×2",
+   "Courser Bee Honey ×5\\nDragon Claw ×2"
+  ],
+  [
+   "红宝石 ×10\\n星星碎片 ×1",
+   "Ruby ×10\\nStar Fragment ×1"
+  ],
+  [
+   "红宝石 ×10\\n星星碎片 ×2",
+   "Ruby ×10\\nStar Fragment ×2"
+  ],
+  [
+   "红宝石 ×1\\n星星碎片 ×1",
+   "Ruby ×1\\nStar Fragment ×1"
+  ],
+  [
+   "红宝石 ×2\\n打火石 ×3",
+   "Ruby ×2\\nFlint ×3"
+  ],
+  [
+   "红宝石 ×4\\n打火石 ×5",
+   "Ruby ×4\\nFlint ×5"
+  ],
+  [
+   "红宝石 ×4\\n星星碎片 ×1",
+   "Ruby ×4\\nStar Fragment ×1"
+  ],
+  [
+   "红宝石 ×6\\n星星碎片 ×1",
+   "Ruby ×6\\nStar Fragment ×1"
+  ],
+  [
+   "红宝石头饰（单件）",
+   "Ruby Circlet (single piece)"
+  ],
+  [
+   "红色丘丘胶 ×3",
+   "Red Chuchu Jelly ×3"
+  ],
+  [
+   "红色丘丘胶 ×5\\n暖暖草果 ×3",
+   "Red Chuchu Jelly ×5\\nSpicy Pepper ×3"
+  ],
+  [
+   "莫力布林的牙齿 ×5\\n耐火蜥蜴 ×5",
+   "Moblin Fang ×5\\nFireproof Lizard ×5"
+  ],
+  [
+   "莫力布林的角 ×3",
+   "Moblin Horn ×3"
+  ],
+  [
+   "莱尼尔的肝脏 ×2\\n奥尔龙的角 ×1",
+   "Lynel Guts ×2\\nDinraal's Horn ×1"
+  ],
+  [
+   "莱尼尔的角 ×2\\n莱尼尔的蹄子 ×2\\n大剑草 ×5",
+   "Lynel Horn ×2\\nLynel Hoof ×2\\nMighty Thistle ×5"
+  ],
+  [
+   "莱尼尔的蹄子 ×5\\n莱尼尔的肝脏 ×5\\n琥珀 ×30",
+   "Lynel Hoof ×5\\nLynel Guts ×5\\nAmber ×30"
+  ],
+  [
+   "蓝宝石 ×10\\n星星碎片 ×1",
+   "Sapphire ×10\\nStar Fragment ×1"
+  ],
+  [
+   "蓝宝石 ×10\\n星星碎片 ×2",
+   "Sapphire ×10\\nStar Fragment ×2"
+  ],
+  [
+   "蓝宝石 ×1\\n星星碎片 ×1",
+   "Sapphire ×1\\nStar Fragment ×1"
+  ],
+  [
+   "蓝宝石 ×2\\n打火石 ×3",
+   "Sapphire ×2\\nFlint ×3"
+  ],
+  [
+   "蓝宝石 ×4\\n打火石 ×5",
+   "Sapphire ×4\\nFlint ×5"
+  ],
+  [
+   "蓝宝石 ×4\\n星星碎片 ×1",
+   "Sapphire ×4\\nStar Fragment ×1"
+  ],
+  [
+   "蓝宝石 ×6\\n星星碎片 ×1",
+   "Sapphire ×6\\nStar Fragment ×1"
+  ],
+  [
+   "蓝宝石头饰（单件）",
+   "Sapphire Circlet (single piece)"
+  ],
+  [
+   "蓝波克布林角 ×5\\n波克布林的牙齿 ×3",
+   "Blue Bokoblin Horn ×5\\nBokoblin Fang ×3"
+  ],
+  [
+   "蓝白巨霸伽马的牙 ×5\\n大容量左纳乌能源 ×10\\n巨霸伽马的肝脏 ×3",
+   "Blue-White Frox Fang ×5\\nLarge Zonaite Charge ×10\\nFrox Guts ×3"
+  ],
+  [
+   "蓝莫力布林的角 ×5\\n打火石 ×15\\n耐火凤蝶 ×3",
+   "Blue Moblin Horn ×5\\nFlint ×15\\nSmotherwing Butterfly ×3"
+  ],
+  [
+   "蓝蜥蜴战士的角 ×5\\n蜥蜴战士的尾巴 ×3\\n生命鲈鱼 ×3",
+   "Blue Lizalfos Horn ×5\\nLizalfos Tail ×3\\nHearty Bass ×3"
+  ],
+  [
+   "蓝霍拉布林的角 ×5\\n贴贴蜥蜴 ×5",
+   "Blue Horriblin Horn ×5\\nSticky Lizard ×5"
+  ],
+  [
+   "蓝首领波克布林角 ×3\\n首领波克布林牙齿 ×3",
+   "Blue Boss Bokoblin Horn ×3\\nBoss Bokoblin Fang ×3"
+  ],
+  [
+   "蓝鬃莱尼尔的角 ×3\\n莱尼尔的蹄子 ×3\\n大剑蘑菇 ×3",
+   "Blue-Maned Lynel Saber Horn ×3\\nLynel Hoof ×3\\nRazorshroom ×3"
+  ],
+  [
+   "蛋白石 ×10\\n星星碎片 ×1",
+   "Opal ×10\\nStar Fragment ×1"
+  ],
+  [
+   "蛋白石 ×15\\n星星碎片 ×1",
+   "Opal ×15\\nStar Fragment ×1"
+  ],
+  [
+   "蛋白石 ×16\\n打火石 ×10",
+   "Opal ×16\\nFlint ×10"
+  ],
+  [
+   "蛋白石 ×24\\n打火石 ×15",
+   "Opal ×24\\nFlint ×15"
+  ],
+  [
+   "蛋白石 ×25\\n星星碎片 ×1",
+   "Opal ×25\\nStar Fragment ×1"
+  ],
+  [
+   "蛋白石 ×32\\n打火石 ×25",
+   "Opal ×32\\nFlint ×25"
+  ],
+  [
+   "蛋白石 ×5\\n星星碎片 ×1",
+   "Opal ×5\\nStar Fragment ×1"
+  ],
+  [
+   "蛋白石 ×8\\n打火石 ×5",
+   "Opal ×8\\nFlint ×5"
+  ],
+  [
+   "蛋白石耳坠（单件）",
+   "Opal Earrings (single piece)"
+  ],
+  [
+   "蜥蜴战士的尾巴 ×3\\n西诺克斯的肝脏 ×3\\n打火石 ×30",
+   "Lizalfos Tail ×3\\nHinox Guts ×3\\nFlint ×30"
+  ],
+  [
+   "蜥蜴战士的爪子 ×5\\n海拉鲁鲈鱼 ×5",
+   "Lizalfos Talon ×5\\nHyrule Bass ×5"
+  ],
+  [
+   "蜥蜴战士的角 ×3",
+   "Lizalfos Horn ×3"
+  ],
+  [
+   "蝙蝠的眼珠 ×5\\n莫力布林肝脏 ×3",
+   "Keese Eyeball ×5\\nMoblin Guts ×3"
+  ],
+  [
+   "蝙蝠的翅膀 ×3",
+   "Keese Wing ×3"
+  ],
+  [
+   "蝙蝠的翅膀 ×3\\n速速蘑菇 ×3",
+   "Keese Wing ×3\\nRushroom ×3"
+  ],
+  [
+   "西诺克斯的指甲 ×5\\n奥尔龙的鳞片 ×1",
+   "Hinox Toenail ×5\\nDinraal's Scale ×1"
+  ],
+  [
+   "西诺克斯的牙齿 ×5\\n奥尔龙的爪子 ×1",
+   "Hinox Tooth ×5\\nDinraal's Claw ×1"
+  ],
+  [
+   "西诺克斯的肝脏 ×2\\n奥尔龙的牙齿碎片 ×1",
+   "Hinox Guts ×2\\nDinraal's Fang ×1"
+  ],
+  [
+   "觉醒勇者套装",
+   "Awakening Set"
+  ],
+  [
+   "贴贴青蛙 ×3",
+   "Sticky Frog ×3"
+  ],
+  [
+   "速速紫罗兰 ×10\\n莫尔德拉吉克的肝脏 ×5",
+   "Swift Violet ×10\\nMolduga Guts ×5"
+  ],
+  [
+   "速速胡萝卜 ×5\\n吉波得的肝脏 ×5",
+   "Swift Carrot ×5\\nGibdo Guts ×5"
+  ],
+  [
+   "速速蘑菇 ×10\\n莫尔德拉吉克的颚骨 ×5",
+   "Rushroom ×10\\nMolduga Jaw ×5"
+  ],
+  [
+   "速速蜥蜴 ×3\\n吉波得的骨头 ×10",
+   "Hightail Lizard ×3\\nGibdo Bone ×10"
+  ],
+  [
+   "钻石 ×2\\n打火石 ×3",
+   "Diamond ×2\\nFlint ×3"
+  ],
+  [
+   "钻石 ×3\\n打火石 ×5",
+   "Diamond ×3\\nFlint ×5"
+  ],
+  [
+   "钻石 ×5\\n星星碎片 ×1",
+   "Diamond ×5\\nStar Fragment ×1"
+  ],
+  [
+   "钻石 ×8\\n星星碎片 ×2",
+   "Diamond ×8\\nStar Fragment ×2"
+  ],
+  [
+   "钻石头饰（单件）",
+   "Diamond Circlet (single piece)"
+  ],
+  [
+   "队长魔像的角 ×5",
+   "Captain Construct I Horn ×5"
+  ],
+  [
+   "队长魔像的角(上) ×5\\n大左纳尼乌姆 ×10",
+   "Captain Construct III Horn ×5\\nLarge Zonaite ×10"
+  ],
+  [
+   "队长魔像的角(中) ×5\\n左纳尼乌姆 ×10",
+   "Captain Construct II Horn ×5\\nZonaite ×10"
+  ],
+  [
+   "队长魔像的角(极) ×5\\n大左纳尼乌姆 ×15\\n大容量左纳乌能源 ×10",
+   "Captain Construct IV Horn ×5\\nLarge Zonaite ×15\\nLarge Zonaite Charge ×10"
+  ],
+  [
+   "防火套装（鼓隆）",
+   "Fireproof Set (Goron)"
+  ],
+  [
+   "防热套装（格鲁德）",
+   "Heat-Resistant Set (Gerudo)"
+  ],
+  [
+   "防雪套装共享数据 —— 见防雪套装行",
+   "Snowproof Set shared data — see the Snowproof Set row"
+  ],
+  [
+   "防雪套装（利特）",
+   "Snowproof Set (Rito)"
+  ],
+  [
+   "雷龙的角 ×3\\n酥麻凤蝶 ×10\\n黄玉 ×5",
+   "Thunder Dragon's Horn ×3\\nThunderwing Butterfly ×10\\nTopaz ×5"
+  ],
+  [
+   "霍拉布林的角 ×5\\n贴贴青蛙 ×5",
+   "Horriblin Horn ×5\\nSticky Frog ×5"
+  ],
+  [
+   "黄昏勇者套装",
+   "Twilight Set"
+  ],
+  [
+   "黄玉 ×10\\n星星碎片 ×1",
+   "Topaz ×10\\nStar Fragment ×1"
+  ],
+  [
+   "黄玉 ×10\\n星星碎片 ×2",
+   "Topaz ×10\\nStar Fragment ×2"
+  ],
+  [
+   "黄玉 ×1\\n星星碎片 ×1",
+   "Topaz ×1\\nStar Fragment ×1"
+  ],
+  [
+   "黄玉 ×2\\n打火石 ×3",
+   "Topaz ×2\\nFlint ×3"
+  ],
+  [
+   "黄玉 ×4\\n打火石 ×5",
+   "Topaz ×4\\nFlint ×5"
+  ],
+  [
+   "黄玉 ×4\\n星星碎片 ×1",
+   "Topaz ×4\\nStar Fragment ×1"
+  ],
+  [
+   "黄玉 ×6\\n星星碎片 ×1",
+   "Topaz ×6\\nStar Fragment ×1"
+  ],
+  [
+   "黄玉耳坠（单件）",
+   "Topaz Earrings (single piece)"
+  ],
+  [
+   "黄色丘丘胶 ×3",
+   "Yellow Chuchu Jelly ×3"
+  ],
+  [
+   "黄色丘丘胶 ×5\\n酥麻水果 ×3",
+   "Yellow Chuchu Jelly ×5\\nVoltfruit ×3"
+  ],
+  [
+   "黑波克布林角 ×5\\n琥珀 ×20",
+   "Black Bokoblin Horn ×5\\nAmber ×20"
+  ],
+  [
+   "黑莫力布林的角 ×5\\n打火石 ×30\\n耐火凤蝶 ×5",
+   "Black Moblin Horn ×5\\nFlint ×30\\nSmotherwing Butterfly ×5"
+  ],
+  [
+   "黑蜥蜴战士的角 ×5\\n蓝蜥蜴战士的尾巴 ×5\\n蛋白石 ×20",
+   "Black Lizalfos Horn ×5\\nBlue Lizalfos Tail ×5\\nOpal ×20"
+  ],
+  [
+   "黑霍拉布林的角 ×5\\n霍拉布林的肝脏 ×5\\n蛋白石 ×10",
+   "Black Horriblin Horn ×5\\nHorriblin Guts ×5\\nOpal ×10"
+  ],
+  [
+   "黑首领波克布林角 ×3\\n首领波克布林肝脏 ×3",
+   "Black Boss Bokoblin Horn ×3\\nBoss Bokoblin Guts ×3"
+  ],
+  [
+   "🌙 潜行",
+   "🌙 Stealth"
+  ],
+  [
+   "🌿 环境适应",
+   "🌿 Environment Adaptation"
+  ],
+  [
+   "🏃 移动能力",
+   "🏃 Movement"
+  ],
+  [
+   "🏅 特殊",
+   "🏅 Special"
+  ],
+  [
+   "💎 饰品",
+   "💎 Accessories"
+  ],
+  [
+   "套装强化升级一览",
+   "Armor Set Upgrade Overview"
+  ],
+  [
+   "⭐ 一星素材 （单件）",
+   "⭐ 1-Star Materials (per piece)"
+  ],
+  [
+   "⭐⭐ 二星素材 （单件）",
+   "⭐⭐ 2-Star Materials (per piece)"
+  ],
+  [
+   "⭐⭐⭐ 三星素材 （单件）",
+   "⭐⭐⭐ 3-Star Materials (per piece)"
+  ],
+  [
+   "⭐⭐⭐⭐ 四星素材 （单件）",
+   "⭐⭐⭐⭐ 4-Star Materials (per piece)"
+  ],
+  [
+   "首领波克布林的角 ×3\\n波克布林的肝脏 ×3",
+   "Boss Bokoblin Horn ×3\\nBokoblin Guts ×3"
+  ],
+  [
+   "套装系统：",
+   "Armor Set System:"
+  ],
+  [
+   "每套套装由头部、上身、腿部三件组成，穿齐三件可解锁",
+   "Each set consists of a head piece, a body piece, and legwear; wearing all three unlocks the"
+  ],
+  [
+   "套装加成效果",
+   "Set Bonus"
+  ],
+  [
+   "全部",
+   "All"
+  ],
+  [
+   "✨ 勇者套装",
+   "✨ Hero Set"
+  ],
+  [
+   "🏅 特殊获取",
+   "🏅 Special Acquisition"
+  ],
+  [
+   "🔥 火焰免疫",
+   "🔥 Fire Immunity"
+  ],
+  [
+   "套装加成：急速",
+   "Set Bonus: Speed Up"
+  ],
+  [
+   "⚡ 雷击免疫",
+   "⚡ Lightning Immunity"
+  ],
+  [
+   "套装加成：静电",
+   "Set Bonus: Static"
+  ],
+  [
+   "❄ 耐寒强化",
+   "❄ Cold Resistance Boost"
+  ],
+  [
+   "套装加成：雪地急速",
+   "Set Bonus: Snow Speed Up"
+  ],
+  [
+   "☀ 耐热强化",
+   "☀ Heat Resistance Boost"
+  ],
+  [
+   "套装加成：沙地急速",
+   "Set Bonus: Sand Speed Up"
+  ],
+  [
+   "🌧 雨天不滑",
+   "🌧 No Slipping in Rain"
+  ],
+  [
+   "套装加成：雨天急速",
+   "Set Bonus: Rain Speed Up"
+  ],
+  [
+   "🧗 攀爬速度↑",
+   "🧗 Climb Speed ↑"
+  ],
+  [
+   "套装加成：攀爬急速",
+   "Set Bonus: Climb Speed Up"
+  ],
+  [
+   "🪂 滑翔速度↑",
+   "🪂 Glide Speed ↑"
+  ],
+  [
+   "套装加成：空中跳跃",
+   "Set Bonus: Midair Jump"
+  ],
+  [
+   "🌙 降低噪音",
+   "🌙 Noise Reduction"
+  ],
+  [
+   "套装加成：极致潜行",
+   "Set Bonus: Ultimate Stealth"
+  ],
+  [
+   "✨ 夜间发光",
+   "✨ Night Glow"
+  ],
+  [
+   "套装加成：暗中加速",
+   "Set Bonus: Night Speed Up"
+  ],
+  [
+   "⚔ 攻击力↑",
+   "⚔ Attack ↑"
+  ],
+  [
+   "套装加成：破防双倍",
+   "Set Bonus: Guard Break ×2"
+  ],
+  [
+   "🖤 暗夜攻击↑",
+   "🖤 Night Attack ↑"
+  ],
+  [
+   "套装加成：幽影结界",
+   "Set Bonus: Shadow Barrier"
+  ],
+  [
+   "🌑 暗影攻击",
+   "🌑 Shadow Attack"
+  ],
+  [
+   "套装加成：影分身",
+   "Set Bonus: Shadow Clone"
+  ],
+  [
+   "💥 重击强化",
+   "💥 Heavy Blow Boost"
+  ],
+  [
+   "套装加成：震地冲击",
+   "Set Bonus: Ground Shockwave"
+  ],
+  [
+   "👻 幻影移动",
+   "👻 Phantom Movement"
+  ],
+  [
+   "套装加成：无声刺杀",
+   "Set Bonus: Silent Assassination"
+  ],
+  [
+   "🛡 防御力最高",
+   "🛡 Highest Defense"
+  ],
+  [
+   "套装加成：盾反强化",
+   "Set Bonus: Parry Boost"
+  ],
+  [
+   "勇者套装：",
+   "Hero Set:"
+  ],
+  [
+   "来自历代塞尔达传说作品的经典服装，多数需通过",
+   "Classic outfits from past Legend of Zelda titles, mostly obtained by scanning"
+  ],
+  [
+   "扫描获得，部分可在游戏内隐藏宝箱取得。这些套装提供独特的战斗加成或特殊效果。",
+   ", with some found in hidden in-game chests. These sets offer unique combat bonuses or special effects."
+  ],
+  [
+   "✨ 来自《旷野之息》",
+   "✨ From Breath of the Wild"
+  ],
+  [
+   "⚔ 攀爬攻击↑",
+   "⚔ Climb Attack ↑"
+  ],
+  [
+   "✨ 来自《时之笛》",
+   "✨ From Ocarina of Time"
+  ],
+  [
+   "⚔ 骑马攻击↑",
+   "⚔ Mounted Attack ↑"
+  ],
+  [
+   "✨ 来自《风之律动》",
+   "✨ From The Wind Waker"
+  ],
+  [
+   "🌊 海上速度↑",
+   "🌊 Sea Speed ↑"
+  ],
+  [
+   "✨ 来自《黄昏公主》",
+   "✨ From Twilight Princess"
+  ],
+  [
+   "⚔ 受伤反伤",
+   "⚔ Retaliation Damage"
+  ],
+  [
+   "✨ 来自《御天之剑》",
+   "✨ From Skyward Sword"
+  ],
+  [
+   "☁ 天空岛加速",
+   "☁ Sky Island Speed Boost"
+  ],
+  [
+   "✨ 来自《梦见岛》",
+   "✨ From Link's Awakening"
+  ],
+  [
+   "⚔ 盾反强化",
+   "⚔ Parry Boost"
+  ],
+  [
+   "✨ 经典绿色服装",
+   "✨ Classic Green Outfit"
+  ],
+  [
+   "🛡 均衡防御",
+   "🛡 Balanced Defense"
+  ],
+  [
+   "🛒 商店购买",
+   "🛒 Shop Purchase"
+  ],
+  [
+   "🛡 基础防御",
+   "🛡 Basic Defense"
+  ],
+  [
+   "🛡 士兵防御",
+   "🛡 Soldier's Defense"
+  ],
+  [
+   "套装加成：无",
+   "Set Bonus: None"
+  ],
+  [
+   "🌿 大妖精庇护",
+   "🌿 Great Fairy Protection"
+  ],
+  [
+   "套装加成：强化加成↑",
+   "Set Bonus: Upgrade Bonus ↑"
+  ],
+  [
+   "套装加成：矿石双倍",
+   "Set Bonus: Double Ore Drops"
+  ],
+  [
+   "🛒 任务奖励",
+   "🛒 Quest Reward"
+  ],
+  [
+   "💎 古代力量",
+   "💎 Ancient Power"
+  ],
+  [
+   "套装加成：余料加速",
+   "Set Bonus: Faster Fusing"
+  ],
+  [
+   "🔥 火焰攻击",
+   "🔥 Fire Attack"
+  ],
+  [
+   "套装加成：炎爆",
+   "Set Bonus: Flame Burst"
+  ],
+  [
+   "⚡ 雷电攻击",
+   "⚡ Lightning Attack"
+  ],
+  [
+   "套装加成：雷链",
+   "Set Bonus: Chain Lightning"
+  ],
+  [
+   "💧 水中速度↑",
+   "💧 Swim Speed ↑"
+  ],
+  [
+   "套装加成：瀑布逆行",
+   "Set Bonus: Swim Up Waterfalls"
+  ],
+  [
+   "❄ 耐寒↑",
+   "❄ Cold Resistance ↑"
+  ],
+  [
+   "套装加成：顺风加速",
+   "Set Bonus: Tailwind Boost"
+  ],
+  [
+   "🛡 高防御",
+   "🛡 High Defense"
+  ],
+  [
+   "💧 水属性强化",
+   "💧 Water Boost"
+  ],
+  [
+   "⚡ 雷属性强化",
+   "⚡ Lightning Boost"
+  ],
+  [
+   "🔥 火属性强化",
+   "🔥 Fire Boost"
+  ],
+  [
+   "🌬 风属性强化",
+   "🌬 Wind Boost"
+  ],
+  [
+   "🌀 混沌攻击",
+   "🌀 Chaos Attack"
+  ],
+  [
+   "套装加成：异次元破防",
+   "Set Bonus: Dimensional Guard Break"
+  ],
+  [
+   "🔮 佐纳依共鸣",
+   "🔮 Zonai Resonance"
+  ],
+  [
+   "套装加成：建造加速",
+   "Set Bonus: Faster Building"
+  ],
+  [
+   "🏴 伪装",
+   "🏴 Disguise"
+  ],
+  [
+   "套装加成：敌方混淆",
+   "Set Bonus: Enemy Confusion"
+  ],
+  [
+   "🧚 四位大妖精位置：",
+   "🧚 Four Great Fairy locations:"
+  ],
+  [
+   "忒拉（森林驿站附近）· 弥佳（雪原驿站附近）· 西莎（双子驿站附近）· 可秋拉（平原外围驿站附近）",
+   "Tera (near Woodland Stable) · Mija (near Snowfield Stable) · Kaysa (near Dueling Peaks Stable) · Cotera (near Outskirt Stable)"
+  ],
+  [
+   "★1 = 10卢比 · ★2 = 50卢比 · ★3 = 200卢比 · ★4 = 500卢比",
+   "★1 = 10 Rupees · ★2 = 50 Rupees · ★3 = 200 Rupees · ★4 = 500 Rupees"
+  ],
+  [
+   "卢比消耗（单件）：",
+   "Rupee cost (per piece):"
+  ],
+  [
+   "⭐ 一星素材",
+   "⭐ 1-Star Materials"
+  ],
+  [
+   "（单件）",
+   "(per piece)"
+  ],
+  [
+   "⭐⭐ 二星素材",
+   "⭐⭐ 2-Star Materials"
+  ],
+  [
+   "⭐⭐⭐ 三星素材",
+   "⭐⭐⭐ 3-Star Materials"
+  ],
+  [
+   "⭐⭐⭐⭐ 四星素材",
+   "⭐⭐⭐⭐ 4-Star Materials"
+  ]
+ ],
+ "title": "Tears of the Kingdom Complete 38 Armor Set Guide and Acquisition Guide · Armor Enhancement Materials | Tears of the Kingdom Guide"
+}

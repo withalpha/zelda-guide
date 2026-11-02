@@ -1,0 +1,404 @@
+{
+ "notes": [
+  "卡姿兰大眼睛 (in 对着它那只卡姿兰大眼睛就是一箭): internet slang for big sparkling eyes; translated descriptively as 'big sparkling eye'.",
+  "白嫖 (getting something for free): slang with no official equivalent; translated as 'for free / free loot'.",
+  "马克兔飞行器 (bottom-nav link title): fan nickname for a player-built hover bike; translated descriptively as 'Hover Bike'.",
+  "剑圣流 / 潜行流: playful playstyle labels, not official terms; translated as 'Swordmaster Style' / 'Stealth Style'.",
+  "大能源: not in the glossary; rendered as 'Large Zonaite' (large Zonai energy item)."
+ ],
+ "pairs": [
+  [
+   "乌萨诸马神庙（Usazum Shrine）零基础完整攻略，从找位置、进洞窟、击败西诺克斯、搬运水晶到激活神庙，全流程详细图文指引。",
+   "A complete beginner-friendly guide to the Usazum Shrine: finding its location, entering the cave, defeating the Hinox, carrying the crystal, and activating the shrine, with a detailed illustrated walkthrough."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Cheats"
+  ],
+  [
+   "乌萨诸马神庙攻略",
+   "Usazum Shrine Guide"
+  ],
+  [
+   "⛩ 神庙攻略",
+   "⛩ Shrine Guide"
+  ],
+  [
+   "乌萨诸马神庙（Usazum Shrine）零基础包教包会攻略",
+   "Usazum Shrine Guide for Complete Beginners — We'll Teach You Every Step"
+  ],
+  [
+   "找位置 → 进洞窟 → 搞定西诺克斯 → 搬水晶 → 激活神庙 · 全流程详解",
+   "Find the Location → Enter the Cave → Deal with the Hinox → Carry the Crystal → Activate the Shrine · Full Walkthrough"
+  ],
+  [
+   "🧙 作者：哈里",
+   "🧙 Author: Harry"
+  ],
+  [
+   "⛩ 神庙开启类",
+   "⛩ Shrine Unlocking"
+  ],
+  [
+   "📍 萨托利山麓",
+   "📍 Satori Mountain Foothills"
+  ],
+  [
+   "📖 零基础攻略",
+   "📖 Beginner Guide"
+  ],
+  [
+   "各位海拉鲁的居民们，今天咱们来聊聊这个让不少人摸不着头脑的乌萨诸马神庙（Usazum Shrine）。",
+   "Fellow residents of Hyrule, today let's talk about the Usazum Shrine — a shrine that leaves quite a few people scratching their heads."
+  ],
+  [
+   "各位海拉鲁的居民们",
+   "Fellow residents of Hyrule"
+  ],
+  [
+   "今天咱们来聊聊这个让不少人摸不着头脑的乌萨诸马神庙（Usazum Shrine）",
+   "Today let's talk about the Usazum Shrine, which leaves quite a few people scratching their heads"
+  ],
+  [
+   "废话不多说，直接上这篇“零基础、包教包会”的实况图文攻略。",
+   "No more beating around the bush — here's the hands-on, illustrated “beginner-friendly, teaches-you-everything” guide."
+  ],
+  [
+   "祝福神庙祭坛（游戏实机截图）",
+   "Blessing Shrine altar (in-game screenshot)"
+  ],
+  [
+   "祝福神庙祭坛（游戏实机截图，图片来源：Zelda Dungeon Wiki）",
+   "Blessing Shrine altar (in-game screenshot; image source: Zelda Dungeon Wiki)"
+  ],
+  [
+   "第一步：找到神庙底座",
+   "Step 1: Find the Shrine Pedestal"
+  ],
+  [
+   "神庙的位置在萨托利山麓（海拉鲁平原的西边一点）。当你哼着小曲儿溜达过去的时候，会发现那里只有一个光秃秃的神庙底座。",
+   "The shrine is located at the Satori Mountain Foothills (a little to the west of Hyrule Plain). When you hum a little tune and wander over, you'll find only a bare shrine pedestal there."
+  ],
+  [
+   "神庙的位置在萨托利山麓（海拉鲁平原的西边一点）",
+   "The shrine is located at the Satori Mountain Foothills (a little to the west of Hyrule Plain)"
+  ],
+  [
+   "当你哼着小曲儿溜达过去的时候，会发现那里只有一个光秃秃的神庙底座",
+   "When you hum a little tune and wander over, you'll find only a bare shrine pedestal there"
+  ],
+  [
+   "林克站在一个圆环底座前，按 A 键互动后，一道绿油油的激光冲天而起，直指远方的一座山崖——这就是在告诉你：“兄弟，去顺着光把我的水晶搬回来。”",
+   "Link stands before a ring-shaped pedestal; after pressing A to interact, a bright green beam of light shoots into the sky, pointing at a distant cliff — it's telling you: “Buddy, follow the light and bring my crystal back.”"
+  ],
+  [
+   "别犹豫，顺着这道绿光走。你会发现绿光指引你来到了一个洞窟——萨托利山麓的洞窟。",
+   "Don't hesitate — follow this green light. You'll find the green light leads you to a cave — the Satori Mountain Foothills Cave."
+  ],
+  [
+   "别犹豫，顺着这道绿光走",
+   "Don't hesitate — follow this green light"
+  ],
+  [
+   "你会发现绿光指引你来到了一个洞窟——萨托利山麓的洞窟",
+   "You'll find the green light leads you to a cave — the Satori Mountain Foothills Cave"
+  ],
+  [
+   "⚔️ 第二步：进洞寻宝，遇到“熟人”",
+   "⚔️ Step 2: Enter the Cave for Treasure and Meet an “Old Friend”"
+  ],
+  [
+   "刚进洞窟的时候，环境有点暗，走两步你就会听到一阵震耳欲聋的呼噜声。顺着绿光往里走，你会看到一个无比熟悉的身影——一只巨大的西诺克斯（独眼巨怪）正在呼呼大睡。",
+   "When you first enter the cave, it's a bit dark, and after a few steps you'll hear deafening snoring. Follow the green light deeper in and you'll see an extremely familiar figure — a huge Hinox (the one-eyed giant monster) fast asleep."
+  ],
+  [
+   "刚进洞窟的时候，环境有点暗，走两步你就会听到一阵震耳欲聋的呼噜声",
+   "When you first enter the cave, it's a bit dark, and after a few steps you'll hear deafening snoring"
+  ],
+  [
+   "顺着绿光往里走，你会看到一个无比熟悉的身影——一只巨大的西诺克斯（独眼巨怪）正在呼呼大睡",
+   "Follow the green light deeper in and you'll see an extremely familiar figure — a huge Hinox (the one-eyed giant monster) fast asleep"
+  ],
+  [
+   "而我们要找的绿色水晶，好巧不巧，正作为一条“项链”挂在这位大哥的脖子上！",
+   "And the green crystal we're looking for, as luck would have it, is hanging around this big guy's neck like a “necklace”!"
+  ],
+  [
+   "一只巨大的西诺克斯肚皮朝上躺在地上睡大觉，鼻涕泡忽大忽小。它脖子上的绿色大水晶在昏暗的洞穴里闪闪发光，绿光刚好连着外面的神庙底座。",
+   "A huge Hinox lies on the ground on its back, fast asleep, its snot bubble swelling and shrinking. The big green crystal around its neck glitters in the dim cave, its green light connecting right to the shrine pedestal outside."
+  ],
+  [
+   "这时候，摆在你面前的有两条路。请根据你的“海拉鲁恶霸指数”自行选择：",
+   "At this point, you have two paths in front of you. Choose based on your own “Hyrule Bully Index”:"
+  ],
+  [
+   "这时候，摆在你面前的有两条路",
+   "At this point, you have two paths in front of you"
+  ],
+  [
+   "请根据你的“海拉鲁恶霸指数”自行选择：",
+   "Choose based on your own “Hyrule Bully Index”:"
+  ],
+  [
+   "⚔ 方案A：海拉鲁剑圣流 （推荐指数：⭐⭐⭐⭐⭐）",
+   "⚔ Option A: Hyrule Swordmaster Style (Recommended: ⭐⭐⭐⭐⭐)"
+  ],
+  [
+   "（推荐指数：⭐⭐⭐⭐⭐）",
+   "(Recommended: ⭐⭐⭐⭐⭐)"
+  ],
+  [
+   "既然都碰面了，不打个招呼怎么行？",
+   "Since we've already run into each other, how could we not say hello?"
+  ],
+  [
+   "掏出你的弓箭，装上蝙蝠的眼珠（自动追踪，手残党福音）。",
+   "Take out your bow and attach a Keese eyeball (auto-tracking — a blessing for players with clumsy hands)."
+  ],
+  [
+   "掏出你的弓箭，装上蝙蝠的眼珠（自动追踪，手残党福音）",
+   "Take out your bow and attach a Keese eyeball (auto-tracking — a blessing for players with clumsy hands)"
+  ],
+  [
+   "对着它那只卡姿兰大眼睛就是一箭。",
+   "Fire an arrow right at that big sparkling eye of its."
+  ],
+  [
+   "趁它捂着眼睛痛苦倒地的时候，掏出你攻击力最高的双手武器（比如装了白银人马大角的武器）。",
+   "While it's clutching its eye and collapsing in pain, pull out your highest-attack two-handed weapon (for example, one fused with a Silver Lynel horn)."
+  ],
+  [
+   "趁它捂着眼睛痛苦倒地的时候，掏出你攻击力最高的双手武器（比如装了白银人马大角的武器）",
+   "While it's clutching its eye and collapsing in pain, pull out your highest-attack two-handed weapon (for example, one fused with a Silver Lynel horn)"
+  ],
+  [
+   "按住攻击键，开始大风车转起来（蓄力攻击）！",
+   "Hold the attack button and start spinning like a windmill (charged attack)!"
+  ],
+  [
+   "按住攻击键，开始大风车转起来（蓄力攻击）",
+   "Hold the attack button and start spinning like a windmill (charged attack)"
+  ],
+  [
+   "一套带走，不仅水晶掉落了，还能白嫖一堆西诺克斯的爪子、牙齿和水果。美滋滋！",
+   "One combo finishes it off — not only does the crystal drop, you also get a pile of Hinox toenails, teeth, and fruit for free. Sweet!"
+  ],
+  [
+   "一套带走，不仅水晶掉落了，还能白嫖一堆西诺克斯的爪子、牙齿和水果",
+   "One combo finishes it off — not only does the crystal drop, you also get a pile of Hinox toenails, teeth, and fruit for free"
+  ],
+  [
+   "美滋滋",
+   "Sweet!"
+  ],
+  [
+   "🥷 方案B：极致潜行流 （推荐指数：⭐⭐⭐）",
+   "🥷 Option B: Ultimate Stealth Style (Recommended: ⭐⭐⭐)"
+  ],
+  [
+   "（推荐指数：⭐⭐⭐）",
+   "(Recommended: ⭐⭐⭐)"
+  ],
+  [
+   "如果你是个和平主义者，或者手里实在没好武器，咱们可以“智取”。",
+   "If you're a pacifist, or you really don't have a good weapon on hand, we can “outsmart” it."
+  ],
+  [
+   "穿上你的潜行套装（或者吃个潜行料理）。",
+   "Put on your Stealth Set (or eat a Sneaky dish)."
+  ],
+  [
+   "穿上你的潜行套装（或者吃个潜行料理）",
+   "Put on your Stealth Set (or eat a Sneaky dish)"
+  ],
+  [
+   "悄咪地走到西诺克斯平放在地上的大手旁边。",
+   "Quietly sneak up beside the Hinox's big hand lying flat on the ground."
+  ],
+  [
+   "悄咪地走到西诺克斯平放在地上的大手旁边",
+   "Quietly sneak up beside the Hinox's big hand lying flat on the ground"
+  ],
+  [
+   "站在它的手心里，不要乱动。",
+   "Stand in the palm of its hand and don't move a muscle."
+  ],
+  [
+   "站在它的手心里，不要乱动",
+   "Stand in the palm of its hand and don't move a muscle"
+  ],
+  [
+   "等它挠痒痒或者翻身的时候，它会把手抬起来，顺便把你送到它的肚皮上。",
+   "When it scratches an itch or rolls over, it will lift its hand and carry you right onto its belly."
+  ],
+  [
+   "站在肚皮上，直接按 A 键把水晶拿起来，然后立刻跳下去，撒腿就跑！（它醒了也不要管，头也不回地跑出洞窟就行）",
+   "Standing on its belly, press A to pick up the crystal, then jump straight down and run for it! (Even if it wakes up, ignore it — just run out of the cave without looking back)"
+  ],
+  [
+   "站在肚皮上，直接按 A 键把水晶拿起来，然后立刻跳下去，撒腿就跑",
+   "Standing on its belly, press A to pick up the crystal, then jump straight down and run for it"
+  ],
+  [
+   "（它醒了也不要管，头也不回地跑出洞窟就行）",
+   "(Even if it wakes up, ignore it — just run out of the cave without looking back)"
+  ],
+  [
+   "第三步：搬运水晶，激活神庙",
+   "Step 3: Carry the Crystal and Activate the Shrine"
+  ],
+  [
+   "拿到水晶之后，就没啥技术含量了，纯纯的体力活。",
+   "Once you've got the crystal, there's no skill involved anymore — it's pure manual labor."
+  ],
+  [
+   "林克双手举着一块比自己上半身还大的绿色水晶，步履蹒跚地走出洞穴。要是嫌走得慢，直接用“究极手”把水晶抓在半空中往前跑。",
+   "Link holds a green crystal bigger than his own upper body above his head with both hands and staggers out of the cave. If you think walking is too slow, just use Ultrahand to grab the crystal in midair and run forward with it."
+  ],
+  [
+   "把水晶一路搬回神庙底座，靠近底座的时候，水晶会自动触发动画，飞到天上，随后“哐当”一声——完整的乌萨诸马神庙拔地而起！",
+   "Carry the crystal all the way back to the shrine pedestal; as you get close to the pedestal, the crystal automatically triggers a cutscene, flies up into the sky, and then with a “clang” — the complete Usazum Shrine rises from the ground!"
+  ],
+  [
+   "把水晶一路搬回神庙底座，靠近底座的时候，水晶会自动触发动画，飞到天上，随后“哐当”一声——完整的乌萨诸马神庙拔地而起",
+   "Carry the crystal all the way back to the shrine pedestal; as you get close to the pedestal, the crystal automatically triggers a cutscene, flies up into the sky, and then with a “clang” — the complete Usazum Shrine rises from the ground"
+  ],
+  [
+   "第四步：进庙领奖",
+   "Step 4: Enter the Shrine and Claim Your Reward"
+  ],
+  [
+   "现在，大摇大摆地走进神庙吧。里面没有任何烦人的方块、弹簧或者轨道，地上铺着红地毯，直接走向正中央的宝箱。",
+   "Now, stride boldly into the shrine. There are no annoying blocks, springs, or rails inside — a red carpet is laid on the floor, so just walk straight to the treasure chest in the center."
+  ],
+  [
+   "现在，大摇大摆地走进神庙吧",
+   "Now, stride boldly into the shrine"
+  ],
+  [
+   "里面没有任何烦人的方块、弹簧或者轨道，地上铺着红地毯，直接走向正中央的宝箱",
+   "There are no annoying blocks, springs, or rails inside — a red carpet is laid on the floor, so just walk straight to the treasure chest in the center"
+  ],
+  [
+   "🎁 神庙奖励",
+   "🎁 Shrine Rewards"
+  ],
+  [
+   "宝箱奖励：结实的左纳乌武器 或 大能源（白嫖的总是最香的）",
+   "Chest reward: a sturdy Zonai weapon or a Large Zonaite (free loot is always the sweetest)"
+  ],
+  [
+   "最终奖励：走上台阶，跟劳鲁的幻影打个招呼，拿下你的祝福之光",
+   "Final reward: walk up the steps, say hello to Rauru's apparition, and claim your Light of Blessing"
+  ],
+  [
+   "🏆 老司机终极心得",
+   "🏆 Veteran Player's Ultimate Tips"
+  ],
+  [
+   "方案A的奖励远比方案B丰厚——打掉西诺克斯不仅能拿到水晶，还能白赚一堆稀有材料。如果装备允许，永远优先选剑圣流，不要浪费这个白嫖机会！",
+   "Option A's rewards are far richer than Option B's — defeating the Hinox not only gets you the crystal, it also earns you a pile of rare materials for free. If your gear allows it, always pick the Swordmaster style first — don't waste this free-loot opportunity!"
+  ],
+  [
+   "← 上一篇：最强套装三梯队全解析",
+   "← Previous: Strongest Armor Sets — Three-Tier Full Breakdown"
+  ],
+  [
+   "返回秘籍专栏",
+   "Back to the Cheats Column"
+  ],
+  [
+   "下一篇：白龙寻踪与大师之剑 →",
+   "Next: Tracking the Light Dragon and the Master Sword →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› Checklist Guide to All 152 Shrines"
+  ],
+  [
+   "› 神庙开启",
+   "› Shrine Unlocking"
+  ],
+  [
+   "› 神庙挑战",
+   "› Shrine Challenges"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Full Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Cheats"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Scimitar of the Seven Ultimate Guide"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Cooking Recipes"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Strongest Armor Sets — Three-Tier Full Breakdown"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会（本篇）",
+   "› Usazum Shrine Beginner-Friendly Step-by-Step Guide (This Article)"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Hover Bike Tuning Guide"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Depths Battery Expansion and the Great Fairies"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 Daily New Guides"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Guide: The First 10 Things to Do After Landing"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Complete Korok Seed Guide"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Complete Depths Survival and Exploration Guide"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› Complete Guide to the Four Great Fairies and Armor Upgrades"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Four Dragons Material Farming Guide"
+  ],
+  [
+   "⚔ 方案A：海拉鲁剑圣流",
+   "⚔ Plan A: Hyrule Swordmaster Route"
+  ],
+  [
+   "🥷 方案B：极致潜行流",
+   "🥷 Plan B: Ultimate Stealth Route"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› White Dragon & Master Sword"
+  ]
+ ],
+ "title": "Usazum Shrine Guide · Harry's Ultimate Cheats · Tears of the Kingdom Guide"
+}

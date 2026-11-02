@@ -1,0 +1,408 @@
+{
+ "title": "Fuse Complete Guide · Harry's Ultimate Guide · Tears of the Kingdom Guide",
+ "pairs": [
+  [
+   "余料建造完全指南：余料攻击表、耐久加成规则、无损拆解与格鲁德、卓拉武器的翻倍配合。",
+   "Fuse Complete Guide: Fuse attack table, durability bonus rules, lossless dismantling, and the doubling combos of Gerudo and Zora weapons."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Guide"
+  ],
+  [
+   "余料建造完全指南",
+   "Fuse Complete Guide"
+  ],
+  [
+   "余料建造是王国之泪的武器系统核心：贴什么素材、加多少耐久、怎么无损拆回，本篇一次讲透。",
+   "Fuse is the core of the weapon system in Tears of the Kingdom: what material to fuse, how much durability it adds, and how to take it apart without losing anything, all explained in this article."
+  ],
+  [
+   "🧙 作者：哈里 ⚔ 余料 · 攻击与耐久 📖 深度攻略",
+   "🧙 Author: Harry ⚔ Fuse · Attack and Durability 📖 In-Depth Guide"
+  ],
+  [
+   "余料武器：素材选对了，攻击直接翻倍（游戏实机截图）",
+   "Fused weapons: pick the right material and attack doubles outright (in-game screenshot)"
+  ],
+  [
+   "余料建造在初始空岛的伊萨神庙取得，之后所有武器都能贴素材。贴什么、贴在哪把武器上、贴错了怎么拆回，这三个问题搞懂了，武器库的强度会直接上一个台阶。本站七宝匕首终极攻略讲过一把具体武器，本篇讲整个系统机制。",
+   "Fuse is obtained at the In-isa Shrine on the Great Sky Island, after which every weapon can have materials fused to it. Once you understand what to fuse, which weapon to fuse it to, and how to take a bad fuse apart, your arsenal jumps a whole tier in strength. This site's Scimitar of the Seven ultimate guide already covered one specific weapon, while this article covers the whole system."
+  ],
+  [
+   "余料建造在初始空岛的伊萨神庙取得，之后所有武器都能贴素材。",
+   "Fuse is obtained at the In-isa Shrine on the Great Sky Island, after which every weapon can have materials fused to it."
+  ],
+  [
+   "贴什么、贴在哪把武器上、贴错了怎么拆回，这三个问题搞懂了，武器库的强度会直接上一个台阶。",
+   "Once you understand what to fuse, which weapon to fuse it to, and how to take a bad fuse apart, your arsenal jumps a whole tier in strength."
+  ],
+  [
+   "本站七宝匕首终极攻略讲过一把具体武器，本篇讲整个系统机制。",
+   "This site's Scimitar of the Seven ultimate guide already covered one specific weapon, while this article covers the whole system."
+  ],
+  [
+   "⭐ 本篇要点",
+   "⭐ Key Points of This Article"
+  ],
+  [
+   "余料攻击前列：白银莱尼尔刃角 55、白银莱尼尔碎角 51、古代之刃 50、白银莫力布林犄角 33、费罗龙犄角 26、钻石 25。",
+   "Top Fuse attacks: Silver Lynel Saber Horn 55, Silver Lynel Mace Horn 51, Ancient Blade 50, Silver Moblin Horn 33, Farosh Horn 26, Diamond 25."
+  ],
+  [
+   "融合给武器加额外耐久 +25；例外：近卫与瘴气武器 +10、格鲁德武器 +5、骨武器 +3、锈与木质武器 +10。",
+   "Fusing adds +25 bonus durability to a weapon; exceptions: Royal Guard's and Gloom weapons +10, Gerudo weapons +5, bone weapons +3, rusty and wooden weapons +10."
+  ],
+  [
+   "背包里拆解会销毁素材；去一始村拆解屋找佩里森，花 20 卢比可无损拆回。",
+   "Dismantling from your inventory destroys the material; go to Pelison at the Break-a-Part shop in Tarrey Town and pay 20 Rupees to separate them with nothing lost."
+  ],
+  [
+   "格鲁德武器让素材攻击翻倍：七宝匕首 28 加刃角 55 乘 2 得 138。",
+   "Gerudo weapons double material attack: the Scimitar of the Seven at 28 plus a doubled 55 blade horn gives 138."
+  ],
+  [
+   "卓拉武器沾水翻倍：光鳞之枪 22 加刃角 55 得 77，沾水后 154，配希多水盾。",
+   "Zora weapons double when wet: the Lightscale Trident at 22 plus a 55 blade horn gives 77, rising to 154 when wet, paired with Sidon's water shield."
+  ],
+  [
+   "📑 本篇目录",
+   "📑 Contents of This Article"
+  ],
+  [
+   "一、余料怎么取得",
+   "1. How to Obtain Fuse"
+  ],
+  [
+   "二、余料攻击表",
+   "2. Fuse Attack Table"
+  ],
+  [
+   "三、耐久加成规则",
+   "3. Durability Bonus Rules"
+  ],
+  [
+   "四、拆解：销毁与无损两种",
+   "4. Dismantling: Destructive vs. Lossless"
+  ],
+  [
+   "五、翻倍配合：格鲁德与卓拉",
+   "5. Doubling Combos: Gerudo and Zora"
+  ],
+  [
+   "常见问题",
+   "Frequently Asked Questions"
+  ],
+  [
+   "余料建造在初始空岛的伊萨神庙取得，取得后按住相应按键就能把素材贴到武器或盾上。素材来源遍布全游戏：怪物角、龙角、宝石、骨头，几乎所有能捡的材料都能贴。贴之前先看攻击值，别把高攻素材贴到快坏的低攻武器上浪费。",
+   "Fuse is obtained at the In-isa Shrine on the Great Sky Island, and after that, holding the corresponding button lets you fuse materials onto weapons or shields. Material sources are found all over the game: monster horns, dragon horns, gems, and bones, and almost every material you can pick up can be fused. Check the attack value before fusing, and do not waste a high-attack material on a nearly broken low-attack weapon."
+  ],
+  [
+   "素材",
+   "Material"
+  ],
+  [
+   "余料攻击",
+   "Fuse Attack"
+  ],
+  [
+   "备注",
+   "Notes"
+  ],
+  [
+   "白银莱尼尔刃角",
+   "Silver Lynel Saber Horn"
+  ],
+  [
+   "+55",
+   "+55"
+  ],
+  [
+   "全游戏最高，见人马完全指南",
+   "Highest in the game, see the Lynel Complete Guide"
+  ],
+  [
+   "白银莱尼尔碎角",
+   "Silver Lynel Mace Horn"
+  ],
+  [
+   "+51",
+   "+51"
+  ],
+  [
+   "带粉碎、可破甲",
+   "Comes with shattering and can break armor"
+  ],
+  [
+   "古代之刃",
+   "Ancient Blade"
+  ],
+  [
+   "+50",
+   "+50"
+  ],
+  [
+   "高攻但较稀有",
+   "High attack but fairly rare"
+  ],
+  [
+   "白银莫力布林犄角",
+   "Silver Moblin Horn"
+  ],
+  [
+   "+33",
+   "+33"
+  ],
+  [
+   "中期主力余料",
+   "Mid-game staple Fuse material"
+  ],
+  [
+   "费罗龙犄角",
+   "Farosh Horn"
+  ],
+  [
+   "+26",
+   "+26"
+  ],
+  [
+   "龙素材，见四条龙素材刷取指南",
+   "Dragon material, see the Four Dragons Material Farming Guide"
+  ],
+  [
+   "钻石",
+   "Diamond"
+  ],
+  [
+   "+25",
+   "+25"
+  ],
+  [
+   "能贴但不划算，钻石优先卖钱或强化",
+   "Can be fused but is not worth it; Diamonds are better sold for Rupees or used for enhancement"
+  ],
+  [
+   "怪物角：余料的主要来源（游戏实机截图）",
+   "Monster horns: the main source of Fuse materials (in-game screenshot)"
+  ],
+  [
+   "融合不只加攻击，还给武器加额外耐久，通常是 +25。但有几类武器例外：近卫武器和瘴气武器只加 10，格鲁德武器只加 5，骨武器只加 3，锈武器和木质武器加 10。贴素材前先看武器种类，别指望格鲁德武器靠余料补很多耐久，它的优势在翻倍攻击，不在耐久。",
+   "Fusing adds more than attack: it also gives a weapon bonus durability, usually +25. A few weapon types are exceptions: Royal Guard's and Gloom weapons add only 10, Gerudo weapons only 5, bone weapons only 3, and rusty and wooden weapons 10. Check the weapon type before fusing, and do not expect a Gerudo weapon to gain much durability from Fuse; its advantage is doubled attack, not durability."
+  ],
+  [
+   "贴错了怎么办？在背包里直接拆解会销毁素材，素材就没了。正确做法是去一始村的拆解屋找佩里森，花 20 卢比就能无损拆回，武器和素材都保留。高攻素材一律走拆解屋拆，别在背包里手滑销毁。",
+   "What if you fuse the wrong thing? Dismantling directly from your inventory destroys the material, and it is gone for good. The right way is to go to Pelison at the Break-a-Part shop in Tarrey Town, where 20 Rupees separates them with nothing lost, keeping both weapon and material. Always take high-attack materials to the Break-a-Part shop, and do not accidentally destroy them from your inventory."
+  ],
+  [
+   "余料的上限来自武器特效配合：格鲁德武器让素材攻击翻倍，七宝匕首本身 28，贴刃角 55 后翻倍得 138；卓拉武器沾水翻倍，光鳞之枪 22 贴刃角 55 得 77，沾水后 154，配合希多的水盾使用，见本站五位贤者能力全解。这两个配合是余料系统的毕业玩法，武器和素材要成套准备。",
+   "The ceiling of Fuse comes from weapon-effect combos: Gerudo weapons double material attack, so the Scimitar of the Seven at 28 plus a doubled 55 blade horn reaches 138; Zora weapons double when wet, so the Lightscale Trident at 22 plus a 55 blade horn totals 77 and reaches 154 when wet, used together with Sidon's water shield, as covered in this site's All Five Sages' Abilities Explained. These two combos are the endgame of the Fuse system, and weapons and materials should be prepared as sets."
+  ],
+  [
+   "余料的上限来自武器特效配合：格鲁德武器让素材攻击翻倍，七宝匕首本身 28，贴刃角 55 后翻倍得 138；",
+   "The ceiling of Fuse comes from weapon-effect combos: Gerudo weapons double material attack, so the Scimitar of the Seven at 28 plus a doubled 55 blade horn reaches 138;"
+  ],
+  [
+   "卓拉武器沾水翻倍，光鳞之枪 22 贴刃角 55 得 77，沾水后 154，配合希多的水盾使用，见本站五位贤者能力全解。",
+   "Zora weapons double when wet, so the Lightscale Trident at 22 plus a 55 blade horn totals 77 and reaches 154 when wet, used together with Sidon's water shield, as covered in this site's All Five Sages' Abilities Explained."
+  ],
+  [
+   "这两个配合是余料系统的毕业玩法，武器和素材要成套准备。",
+   "These two combos are the endgame of the Fuse system, and weapons and materials should be prepared as sets."
+  ],
+  [
+   "余料武器：素材贴上去，攻击与耐久一起涨（游戏实机截图）",
+   "Fused weapons: once a material is fused on, attack and durability rise together (in-game screenshot)"
+  ],
+  [
+   "余料攻击最高是多少？白银莱尼尔刃角 +55，全游戏最高。",
+   "What is the highest Fuse attack? The Silver Lynel Saber Horn at +55, the highest in the game."
+  ],
+  [
+   "余料攻击最高是多少？",
+   "What is the highest Fuse attack?"
+  ],
+  [
+   "白银莱尼尔刃角 +55，全游戏最高。",
+   "The Silver Lynel Saber Horn at +55, the highest in the game."
+  ],
+  [
+   "贴错了怎么拆？去一始村拆解屋找佩里森，20 卢比无损拆回；背包拆解会销毁素材。",
+   "How do you take apart a bad fuse? Go to Pelison at the Break-a-Part shop in Tarrey Town and pay 20 Rupees for a lossless separation; dismantling from your inventory destroys the material."
+  ],
+  [
+   "贴错了怎么拆？",
+   "How do you take apart a bad fuse?"
+  ],
+  [
+   "去一始村拆解屋找佩里森，20 卢比无损拆回；",
+   "Go to Pelison at the Break-a-Part shop in Tarrey Town and pay 20 Rupees for a lossless separation;"
+  ],
+  [
+   "背包拆解会销毁素材。",
+   "dismantling from your inventory destroys the material."
+  ],
+  [
+   "格鲁德武器为什么强？素材攻击翻倍，七宝匕首贴刃角可达 138。",
+   "Why are Gerudo weapons strong? Material attack doubles, and the Scimitar of the Seven with a blade horn can reach 138."
+  ],
+  [
+   "格鲁德武器为什么强？",
+   "Why are Gerudo weapons strong?"
+  ],
+  [
+   "素材攻击翻倍，七宝匕首贴刃角可达 138。",
+   "Material attack doubles, and the Scimitar of the Seven with a blade horn can reach 138."
+  ],
+  [
+   "相关攻略：人马完全指南、七宝匕首终极攻略、五位贤者能力全解。",
+   "Related guides: Lynel Complete Guide, Scimitar of the Seven Ultimate Guide, All Five Sages' Abilities Explained."
+  ],
+  [
+   "← 上一篇：血月机制全解 返回秘籍专栏 下一篇：祝福之光兑换完全指南 →",
+   "← Previous: Blood Moon Mechanics Explained | Back to the Guide Column | Next: Light of Blessing Exchange Complete Guide →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 人马（莱尼尔）完全指南",
+   "› Lynel Complete Guide"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Scimitar of the Seven Ultimate Guide"
+  ],
+  [
+   "› 五位贤者能力全解",
+   "› All Five Sages' Abilities Explained"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Complete Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Guide"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Cooking Recipes"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Strongest Armor Sets: Full Three-Tier Breakdown"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine: Zero-Basics Walkthrough"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Mark Rabbit Flyer Tuning"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Depths Battery Expansion and the Great Fairies"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 Daily New Guides"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› All 152 Shrines: Complete Collection Checklist"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Guide: The First 10 Things to Do After Landing"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Korok Seed Complete Guide"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Depths Survival and Exploration Complete Guide"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› The Four Great Fairies and Armor Enhancement Complete Guide"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Four Dragons Material Farming Guide"
+  ],
+  [
+   "› 卢比速刷指南：从前期到后期",
+   "› Rupee Farming Guide: From Early to Late Game"
+  ],
+  [
+   "› 马匹捕捉与稀有马完全指南",
+   "› Horse Taming and Rare Horses Complete Guide"
+  ],
+  [
+   "› 料理机制全解：效果、时长与暴击",
+   "› Cooking Mechanics Explained: Effects, Duration, and Critical Hits"
+  ],
+  [
+   "› 海拉鲁城堡探索完全指南",
+   "› Hyrule Castle Exploration Complete Guide"
+  ],
+  [
+   "› 海拉鲁图鉴509项收集指南",
+   "› Hyrule Compendium: All 509 Entries Collection Guide"
+  ],
+  [
+   "› 左纳乌装置实用造物指南",
+   "› Practical Zonai Device Builds Guide"
+  ],
+  [
+   "› 血月机制全解",
+   "› Blood Moon Mechanics Explained"
+  ],
+  [
+   "› 余料建造完全指南（本篇）",
+   "› Fuse Complete Guide (This Article)"
+  ],
+  [
+   "← 上一篇：血月机制全解",
+   "← Previous: Blood Moon Mechanics Explained"
+  ],
+  [
+   "下一篇：祝福之光兑换完全指南 →",
+   "Next: Light of Blessing Exchange Complete Guide →"
+  ],
+  [
+   "准备余料武器的林克",
+   "Link preparing a fused weapon"
+  ],
+  [
+   "蜥蜴战士的角素材",
+   "Lizalfos horn material"
+  ],
+  [
+   "首领波克布林的角素材",
+   "Boss Bokoblin horn material"
+  ],
+  [
+   "⚔ 余料攻略",
+   "⚔ Fuse Guide"
+  ],
+  [
+   "⚔ 余料 · 攻击与耐久",
+   "⚔ Fuse · Attack & Durability"
+  ]
+ ],
+ "notes": [
+  "Source inconsistency kept as written: this page gives the Scimitar of the Seven a base attack of 28, while the weapons page gives 16."
+ ]
+}

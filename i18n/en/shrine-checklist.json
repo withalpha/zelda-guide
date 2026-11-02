@@ -1,0 +1,285 @@
+{
+ "notes": [
+  "Region names on this page use variant Chinese transliterations (涅克卢达, 埃尔丁, 法隆, 拉纳鲁); all are rendered with the GLOSSARY English region names (Necluda, Eldin, Faron, Lanayru).",
+  "“古代勇者之魂套装” is rendered as the Ancient Hero's Aspect armor set; “马克兔飞行器” (a fan nickname for the Zonai hover bike build) is rendered descriptively as Hover Bike."
+ ],
+ "pairs": [
+  [
+   "152座神庙全收集自查指南：地面120+天空32全区域分布表，三步自查法找出你少的那一座，专治151/152卡关。",
+   "152-Shrine Complete Collection Self-Check Guide: distribution table for all 120 surface shrines + 32 sky shrines, a three-step self-check to find the shrine you are missing, and a cure for being stuck at 151/152."
+  ],
+  [
+   "152座神庙全收集自查指南：怎么找出你少的那一座",
+   "152-Shrine Complete Collection Self-Check Guide: How to Find the Shrine You Are Missing"
+  ],
+  [
+   "全图 152 座神庙，地面 120 + 天空 32。卡在 151/152 的人，缺的往往不是运气，而是一套自查方法。",
+   "152 shrines across the whole map: 120 on the surface + 32 in the sky. For players stuck at 151/152, what is usually missing is not luck, but a self-check method."
+  ],
+  [
+   "🧙 作者：哈里 ⛩️ 神庙 · 全收集自查 📖 深度攻略",
+   "🧙 Author: Harry ⛩️ Shrines · Complete Collection Self-Check 📖 In-Depth Guide"
+  ],
+  [
+   "林克走向神庙入口（游戏实机截图）",
+   "Link walking toward a shrine entrance (in-game screenshot)"
+  ],
+  [
+   "林克走向神庙入口（游戏实机截图，图片来源：PC Invasion）",
+   "Link walking toward a shrine entrance (in-game screenshot, image source: PC Invasion)"
+  ],
+  [
+   "全海拉鲁一共 152 座神庙，每座通关给 1 个祝福之光。很多人最后都卡在同一个地方：明明跑遍了地图，就是差一两座找不到。这篇不贴 152 座的逐座清单，而是给你一套自查方法：先按区域数清楚你缺几座、缺在哪个区域，再用两个游戏内机制锁定漏掉的那一座。",
+   "There are 152 shrines in all of Hyrule, and clearing each one grants 1 Light of Blessing. Many players end up stuck at the same point: they have run all over the map but still cannot find the last one or two. Instead of posting a shrine-by-shrine list of all 152, this guide gives you a self-check method: first count by region to find out how many you are missing and in which region, then use two in-game mechanics to pin down the shrine you missed."
+  ],
+  [
+   "全海拉鲁一共 152 座神庙，每座通关给 1 个祝福之光",
+   "There are 152 shrines in all of Hyrule, and clearing each one grants 1 Light of Blessing"
+  ],
+  [
+   "很多人最后都卡在同一个地方：明明跑遍了地图，就是差一两座找不到",
+   "Many players end up stuck at the same point: they have run all over the map but still cannot find the last one or two"
+  ],
+  [
+   "这篇不贴 152 座的逐座清单，而是给你一套自查方法：先按区域数清楚你缺几座、缺在哪个区域，再用两个游戏内机制锁定漏掉的那一座",
+   "Instead of posting a shrine-by-shrine list of all 152, this guide gives you a self-check method: first count by region to find out how many you are missing and in which region, then use two in-game mechanics to pin down the shrine you missed"
+  ],
+  [
+   "一、先对总数：152 座是怎么分布的",
+   "1. Check the totals first: how the 152 shrines are distributed"
+  ],
+  [
+   "152 座 = 地面 120 座 + 天空 32 座。按区域数，分布如下：",
+   "152 shrines = 120 on the surface + 32 in the sky. Counted by region, the distribution is as follows:"
+  ],
+  [
+   "初始空岛：4 座（天空，教程必做，不做完下不了岛）。",
+   "Great Sky Island: 4 (in the sky; these are required tutorial shrines — you cannot leave the island until you finish them)."
+  ],
+  [
+   "中央海拉鲁：35 座（地面 31 + 天空 4，全区域最多）。",
+   "Central Hyrule: 35 (31 on the surface + 4 in the sky, the most of any region)."
+  ],
+  [
+   "赫布拉：24 座（地面 17 + 天空 7）。",
+   "Hebra: 24 (17 on the surface + 7 in the sky)."
+  ],
+  [
+   "格鲁德：20 座（地面 17 + 天空 3）。",
+   "Gerudo: 20 (17 on the surface + 3 in the sky)."
+  ],
+  [
+   "涅克卢达：18 座（地面 14 + 天空 4）。",
+   "Necluda: 18 (14 on the surface + 4 in the sky)."
+  ],
+  [
+   "拉聂尔：17 座（地面 13 + 天空 4）。",
+   "Lanayru: 17 (13 on the surface + 4 in the sky)."
+  ],
+  [
+   "埃尔丁：15 座（地面 14 + 天空 1）。",
+   "Eldin: 15 (14 on the surface + 1 in the sky)."
+  ],
+  [
+   "阿卡莱：13 座（地面 10 + 天空 3）。",
+   "Akkala: 13 (10 on the surface + 3 in the sky)."
+  ],
+  [
+   "法隆：6 座（地面 4 + 天空 2）。",
+   "Faron: 6 (4 on the surface + 2 in the sky)."
+  ],
+  [
+   "地面加起来 120，天空加起来 32，正好 152。先拿这个表去对你的地图：哪个区域的数字对不上，漏的神庙就在那个区域。",
+   "The surface shrines add up to 120 and the sky shrines to 32, exactly 152 in total. Check this table against your map first: whichever region's numbers do not match is the region where your missing shrine is."
+  ],
+  [
+   "二、三步自查法",
+   "2. The three-step self-check"
+  ],
+  [
+   "第一步：按区域数图标",
+   "Step 1: Count the shrine icons region by region"
+  ],
+  [
+   "打开地图，逐区域数神庙图标，和上面的表核对。差数最大的区域优先排查。法隆只有 6 座，最容易数清；中央海拉鲁 35 座最多，最容易多数或漏数，数的时候放慢一点。",
+   "Open the map and count the shrine icons region by region, checking them against the table above. Investigate the region with the largest discrepancy first. Faron has only 6 shrines, so it is the easiest to count exactly; Central Hyrule has the most at 35, so it is the easiest to over- or under-count — slow down when counting there."
+  ],
+  [
+   "第二步：用地底树根镜像法找地面神庙",
+   "Step 2: Use the Depths Lightroot mirror method to find surface shrines"
+  ],
+  [
+   "地底的光明根和地表的神庙位置是一一对应的：地底点亮一处树根，它的正上方就有一座地面神庙。把地底的树根全部点亮后，对照地表地图——有树根、没神庙的地方，就是你漏掉的地面神庙。这个方法能一次排除地面 120 座里的绝大部分疑问，详见本站破魔树根页。",
+   "Lightroots in the Depths correspond one-to-one with shrines on the surface: light up a Lightroot underground and there is a surface shrine directly above it. Once you have lit every Lightroot in the Depths, compare against the surface map — anywhere with a Lightroot but no shrine is a surface shrine you missed. This method clears up the vast majority of questions about the 120 surface shrines in one go; see this site's Lightroots page for details."
+  ],
+  [
+   "第三步：天空神庙逐岛排查",
+   "Step 3: Check the sky shrines island by island"
+  ],
+  [
+   "天空 32 座最容易漏，因为很多空岛不飞上去根本看不见。先点亮对应区域的鸟望台，地图上会显示天空群岛的位置，再用飞行器或滑翔逐岛排查。特别注意：有些天空神庙不在岛面上，要留意群岛边缘和下方悬空的小岛。",
+   "The 32 sky shrines are the easiest to miss, because many Sky Islands are simply invisible until you fly up to them. First activate the Skyview Tower for the corresponding region so the Sky Islands appear on your map, then check them island by island using flying devices or gliding. Take special note: some sky shrines are not on the islands' surfaces, so watch the edges of island groups and the small islands floating below them."
+  ],
+  [
+   "三、最容易漏的三类神庙",
+   "3. The three types of shrines easiest to miss"
+  ],
+  [
+   "洞窟深处型：神庙藏在洞窟最里面，洞口不起眼。路过洞窟养成进去看一眼的习惯。",
+   "Deep-cave type: the shrine is hidden at the very back of a cave whose entrance is inconspicuous. Get into the habit of popping into caves you pass."
+  ],
+  [
+   "神庙挑战前置型：全 152 座里有 31 座需要先完成对应的神庙挑战才会显形，比如搬运绿色水晶、高空俯冲仪式、击败守着水晶的魔物。地图上没图标不代表这片区域清完了，先看附近有没有没接的神庙挑战。",
+   "Shrine Quest prerequisite type: 31 of the 152 shrines only appear after you complete their corresponding Shrine Quest, such as carrying a green crystal, a high-altitude skydiving ritual, or defeating the monster guarding a crystal. No icon on the map does not mean the area is cleared — first check whether there are any Shrine Quests nearby that you have not picked up."
+  ],
+  [
+   "天空高空型：需要飞行器或足够精力滑翔才能到达的空岛神庙，后期精力充裕了再回头收尾更划算。",
+   "High-sky type: Sky Island shrines that require a flying device or enough stamina to glide to. It is more efficient to come back and finish these later, once your stamina is generous."
+  ],
+  [
+   "四、集齐了有什么奖励",
+   "4. What you get for collecting them all"
+  ],
+  [
+   "通关全部 152 座神庙后，可以获得古代勇者之魂套装。除此之外，每座神庙的祝福之光都能在女神像处换红心或精力，是全游戏最稳定的成长来源——这也是神庙值得一座不漏的原因。",
+   "After clearing all 152 shrines, you receive the Ancient Hero's Aspect armor set. Beyond that, every shrine's Light of Blessing can be exchanged at a Goddess Statue for a Heart Container or Stamina Vessel — the most reliable source of growth in the whole game, and the reason shrines are worth collecting without missing a single one."
+  ],
+  [
+   "五、一个常见误解",
+   "5. A common misunderstanding"
+  ],
+  [
+   "“神庙挑战 31 个”和“神庙 152 座”是两个数字：31 是需要前置挑战的神庙挑战任务数，152 是神庙总数。不要拿 31 去对 152，查漏时按本篇第一节的区域表数。",
+   "“31 Shrine Quests” and “152 shrines” are two different numbers: 31 is the number of Shrine Quest tasks that require a prerequisite challenge, and 152 is the total number of shrines. Do not try to match 31 against 152; when checking for missing shrines, count using the regional table in section 1 of this guide."
+  ],
+  [
+   "相关攻略：神庙挑战、神庙开启、破魔树根。",
+   "Related guides: Shrine Quests, Shrine Unlocking, Lightroots."
+  ],
+  [
+   "相关攻略：神庙挑战",
+   "Related guides: Shrine Quests"
+  ],
+  [
+   "相关攻略：神庙开启",
+   "Related guides: Shrine Unlocking"
+  ],
+  [
+   "相关攻略：破魔树根",
+   "Related guides: Lightroots"
+  ],
+  [
+   "← 上一篇：地底电池扩充与大妖精 返回秘籍专栏 下一篇：新手开荒指南：落地先做的10件事 →",
+   "← Previous: Depths Battery Expansion and the Great Fairies · Back to the Tips Column · Next: Beginner's Landfall Guide: 10 Things to Do First →"
+  ],
+  [
+   "← 上一篇：地底电池扩充与大妖精",
+   "← Previous: Depths Battery Expansion and the Great Fairies"
+  ],
+  [
+   "返回秘籍专栏",
+   "Back to the Tips Column"
+  ],
+  [
+   "下一篇：新手开荒指南：落地先做的10件事 →",
+   "Next: Beginner's Landfall Guide: 10 Things to Do First →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 神庙开启",
+   "› Shrine Unlocking"
+  ],
+  [
+   "› 神庙挑战",
+   "› Shrine Quests"
+  ],
+  [
+   "› 破魔树根",
+   "› Lightroots"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Index of All Guides"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Tips"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Scimitar of the Seven Ultimate Guide"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Dish Recipes"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Strongest Armor Sets: Full Three-Tier Breakdown"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine: A Zero-Basics Step-by-Step Guide"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Hover Bike Tuning"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Depths Battery Expansion and the Great Fairies"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 New Daily Guides"
+  ],
+  [
+   "› 152座神庙全收集自查指南（本篇）",
+   "› 152-Shrine Complete Collection Self-Check Guide (this article)"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Landfall Guide: 10 Things to Do First"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Korok Seed Complete Guide"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Depths Survival and Exploration Complete Guide"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› The Four Great Fairy Sisters and Armor Enhancement Complete Guide"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Four Dragons Material Farming Guide"
+  ],
+  [
+   "152座神庙全收集自查指南",
+   "152-Shrine Complete Collection Self-Check Guide"
+  ],
+  [
+   "152座神庙全收集自查：区域分布表、三步自查法与最容易漏的三类神庙。",
+   "152-shrine complete collection self-check: region distribution table, three-step self-check method, and the three types of shrines most easily missed."
+  ],
+  [
+   "⛩️ 神庙攻略",
+   "⛩️ Shrine Guide"
+  ],
+  [
+   "⛩️ 神庙 · 全收集自查",
+   "⛩️ Shrines · Full-Collection Checklist"
+  ]
+ ],
+ "title": "The Legend of Zelda: Tears of the Kingdom — 152-Shrine Complete Collection Self-Check Guide · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+}

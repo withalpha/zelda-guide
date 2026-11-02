@@ -1,0 +1,645 @@
+{
+ "title": "All 31 Old Maps · Sky Coordinates & Depths Treasure Guide · Tears of the Kingdom Guide",
+ "pairs": [
+  [
+   "王国之泪残旧的地图全收集：全 31 张残旧的地图天空坐标，含天空交互地图、分布地点列表与收集进度追踪，勾选后可导出已收集 Excel 汇总表，助你集齐全部地底宝藏。",
+   "Tears of the Kingdom Old Maps complete collection guide: sky coordinates for all 31 Old Maps, with an interactive sky map, a location list, and collection progress tracking; check items off to export a summary Excel table of collected maps and gather every Depths treasure."
+  ],
+  [
+   "首页 › 物品收集 › 残旧的地图",
+   "Home › Collectibles › Old Maps"
+  ],
+  [
+   "残旧的地图",
+   "Old Maps"
+  ],
+  [
+   "全 31 张残旧的地图都在天空层的宝箱里。拿到一张，游戏就会在地底对应位置标出宝藏（套装、武器与面具等），按图索骥即可取回。",
+   "All 31 Old Maps are inside chests in the Sky layer. When you pick one up, the game marks the corresponding treasure in the Depths (armor sets, weapons, masks, and more), so you can follow the map to retrieve it."
+  ],
+  [
+   "下面地图只显示“残旧的地图”这一种搜集品（天空层）。点地图标记打开弹窗可直接标记已收集；在列表里勾选也一样，进度会自动同步并保存在你的浏览器里。",
+   "The map below shows only one collectible (Sky layer): Old Maps. Click a map marker to open its popup and mark it as collected directly; checking it in the list works the same way, and progress syncs automatically and is saved in your browser."
+  ],
+  [
+   "收集进度：",
+   "Collection progress:"
+  ],
+  [
+   "📊 导出已收集 Excel 汇总表",
+   "📊 Export Collected Maps as Excel Summary"
+  ],
+  [
+   "🗺️ 回到全图",
+   "🗺️ Back to Full Map"
+  ],
+  [
+   "🗑️ 清除全部进度",
+   "🗑️ Clear All Progress"
+  ],
+  [
+   "搜索宝藏名，例如：天空之勇者、采矿、海风…",
+   "Search treasure names, e.g. Sky, Miner, Sea-Breeze…"
+  ],
+  [
+   "搜索残旧的地图",
+   "Search Old Maps"
+  ],
+  [
+   "只看未收集",
+   "Uncollected only"
+  ],
+  [
+   "🗺️ 天空交互地图 · 残旧的地图（31 张）",
+   "🗺️ Interactive Sky Map · Old Maps (31)"
+  ],
+  [
+   "📍 残旧的地图分布地点列表（共 31 张）",
+   "📍 Old Map Location List (31 total)"
+  ],
+  [
+   "对应宝藏",
+   "Treasure"
+  ],
+  [
+   "天空坐标 (X, Y, Z)",
+   "Sky Coordinates (X, Y, Z)"
+  ],
+  [
+   "已收集",
+   "Collected"
+  ],
+  [
+   "地图定位",
+   "Locate on Map"
+  ],
+  [
+   "天空之勇者裤子残旧的地图",
+   "Trousers of the Sky Old Map"
+  ],
+  [
+   "天空之勇者裤子",
+   "Trousers of the Sky"
+  ],
+  [
+   "第1张已收集",
+   "Old Map No. 1 collected"
+  ],
+  [
+   "📍 定位",
+   "📍 Locate"
+  ],
+  [
+   "风之勇者裤子残旧的地图",
+   "Trousers of the Wind Old Map"
+  ],
+  [
+   "风之勇者裤子",
+   "Trousers of the Wind"
+  ],
+  [
+   "第2张已收集",
+   "Old Map No. 2 collected"
+  ],
+  [
+   "风之勇者帽子残旧的地图",
+   "Cap of the Wind Old Map"
+  ],
+  [
+   "风之勇者帽子",
+   "Cap of the Wind"
+  ],
+  [
+   "第3张已收集",
+   "Old Map No. 3 collected"
+  ],
+  [
+   "黄昏之勇者裤子残旧的地图",
+   "Trousers of Twilight Old Map"
+  ],
+  [
+   "黄昏之勇者裤子",
+   "Trousers of Twilight"
+  ],
+  [
+   "第4张已收集",
+   "Old Map No. 4 collected"
+  ],
+  [
+   "海风回旋镖残旧的地图",
+   "Sea-Breeze Boomerang Old Map"
+  ],
+  [
+   "海风回旋镖",
+   "Sea-Breeze Boomerang"
+  ],
+  [
+   "第5张已收集",
+   "Old Map No. 5 collected"
+  ],
+  [
+   "魔吉拉的面具残旧的地图",
+   "Majora's Mask Old Map"
+  ],
+  [
+   "魔吉拉的面具",
+   "Majora's Mask"
+  ],
+  [
+   "第6张已收集",
+   "Old Map No. 6 collected"
+  ],
+  [
+   "初始之剑残旧的地图",
+   "Sword of the Hero Old Map"
+  ],
+  [
+   "初始之剑",
+   "Sword of the Hero"
+  ],
+  [
+   "第7张已收集",
+   "Old Map No. 7 collected"
+  ],
+  [
+   "克洛格的面具残旧的地图",
+   "Korok Mask Old Map"
+  ],
+  [
+   "克洛格的面具",
+   "Korok Mask"
+  ],
+  [
+   "第8张已收集",
+   "Old Map No. 8 collected"
+  ],
+  [
+   "时之勇者帽子残旧的地图",
+   "Cap of Time Old Map"
+  ],
+  [
+   "时之勇者帽子",
+   "Cap of Time"
+  ],
+  [
+   "第9张已收集",
+   "Old Map No. 9 collected"
+  ],
+  [
+   "采矿服残旧的地图",
+   "Miner's Top Old Map"
+  ],
+  [
+   "采矿服",
+   "Miner's Top"
+  ],
+  [
+   "第10张已收集",
+   "Old Map No. 10 collected"
+  ],
+  [
+   "旷野之勇者裤子残旧的地图",
+   "Trousers of the Wild Old Map"
+  ],
+  [
+   "旷野之勇者裤子",
+   "Trousers of the Wild"
+  ],
+  [
+   "第11张已收集",
+   "Old Map No. 11 collected"
+  ],
+  [
+   "风之勇者服残旧的地图",
+   "Tunic of the Wind Old Map"
+  ],
+  [
+   "风之勇者服",
+   "Tunic of the Wind"
+  ],
+  [
+   "第12张已收集",
+   "Old Map No. 12 collected"
+  ],
+  [
+   "天空之勇者帽子残旧的地图",
+   "Cap of the Sky Old Map"
+  ],
+  [
+   "天空之勇者帽子",
+   "Cap of the Sky"
+  ],
+  [
+   "第13张已收集",
+   "Old Map No. 13 collected"
+  ],
+  [
+   "采矿面罩残旧的地图",
+   "Miner's Mask Old Map"
+  ],
+  [
+   "采矿面罩",
+   "Miner's Mask"
+  ],
+  [
+   "第14张已收集",
+   "Old Map No. 14 collected"
+  ],
+  [
+   "黄昏之勇者服残旧的地图",
+   "Tunic of Twilight Old Map"
+  ],
+  [
+   "黄昏之勇者服",
+   "Tunic of Twilight"
+  ],
+  [
+   "第15张已收集",
+   "Old Map No. 15 collected"
+  ],
+  [
+   "初始之勇者服残旧的地图",
+   "Tunic of the Hero Old Map"
+  ],
+  [
+   "初始之勇者服",
+   "Tunic of the Hero"
+  ],
+  [
+   "第16张已收集",
+   "Old Map No. 16 collected"
+  ],
+  [
+   "初始之勇者裤子残旧的地图",
+   "Trousers of the Hero Old Map"
+  ],
+  [
+   "初始之勇者裤子",
+   "Trousers of the Hero"
+  ],
+  [
+   "第17张已收集",
+   "Old Map No. 17 collected"
+  ],
+  [
+   "希克面罩残旧的地图",
+   "Sheik's Mask Old Map"
+  ],
+  [
+   "希克面罩",
+   "Sheik's Mask"
+  ],
+  [
+   "第18张已收集",
+   "Old Map No. 18 collected"
+  ],
+  [
+   "初始之勇者帽子残旧的地图",
+   "Cap of the Hero Old Map"
+  ],
+  [
+   "初始之勇者帽子",
+   "Cap of the Hero"
+  ],
+  [
+   "第19张已收集",
+   "Old Map No. 19 collected"
+  ],
+  [
+   "大鼓隆之剑残旧的地图",
+   "Biggoron's Sword Old Map"
+  ],
+  [
+   "大鼓隆之剑",
+   "Biggoron's Sword"
+  ],
+  [
+   "第20张已收集",
+   "Old Map No. 20 collected"
+  ],
+  [
+   "黄昏之勇者帽子残旧的地图",
+   "Cap of Twilight Old Map"
+  ],
+  [
+   "黄昏之勇者帽子",
+   "Cap of Twilight"
+  ],
+  [
+   "第21张已收集",
+   "Old Map No. 21 collected"
+  ],
+  [
+   "天空之勇者服残旧的地图",
+   "Tunic of the Sky Old Map"
+  ],
+  [
+   "天空之勇者服",
+   "Tunic of the Sky"
+  ],
+  [
+   "第22张已收集",
+   "Old Map No. 22 collected"
+  ],
+  [
+   "海风盾残旧的地图",
+   "Sea-Breeze Shield Old Map"
+  ],
+  [
+   "海风盾",
+   "Sea-Breeze Shield"
+  ],
+  [
+   "第23张已收集",
+   "Old Map No. 23 collected"
+  ],
+  [
+   "罗维奥的头巾残旧的地图",
+   "Ravio's Hood Old Map"
+  ],
+  [
+   "罗维奥的头巾",
+   "Ravio's Hood"
+  ],
+  [
+   "第24张已收集",
+   "Old Map No. 24 collected"
+  ],
+  [
+   "时之勇者裤子残旧的地图",
+   "Trousers of Time Old Map"
+  ],
+  [
+   "时之勇者裤子",
+   "Trousers of Time"
+  ],
+  [
+   "第25张已收集",
+   "Old Map No. 25 collected"
+  ],
+  [
+   "时之勇者服残旧的地图",
+   "Tunic of Time Old Map"
+  ],
+  [
+   "时之勇者服",
+   "Tunic of Time"
+  ],
+  [
+   "第26张已收集",
+   "Old Map No. 26 collected"
+  ],
+  [
+   "藏特头盔残旧的地图",
+   "Zant's Helmet Old Map"
+  ],
+  [
+   "藏特头盔",
+   "Zant's Helmet"
+  ],
+  [
+   "第27张已收集",
+   "Old Map No. 27 collected"
+  ],
+  [
+   "米多娜的王冠残旧的地图",
+   "Midna's Helmet Old Map"
+  ],
+  [
+   "米多娜的王冠",
+   "Midna's Helmet"
+  ],
+  [
+   "第28张已收集",
+   "Old Map No. 28 collected"
+  ],
+  [
+   "采矿裤子残旧的地图",
+   "Miner's Trousers Old Map"
+  ],
+  [
+   "采矿裤子",
+   "Miner's Trousers"
+  ],
+  [
+   "第29张已收集",
+   "Old Map No. 29 collected"
+  ],
+  [
+   "旷野之勇者服残旧的地图",
+   "Tunic of the Wild Old Map"
+  ],
+  [
+   "旷野之勇者服",
+   "Tunic of the Wild"
+  ],
+  [
+   "第30张已收集",
+   "Old Map No. 30 collected"
+  ],
+  [
+   "旷野之勇者帽子残旧的地图",
+   "Cap of the Wild Old Map"
+  ],
+  [
+   "旷野之勇者帽子",
+   "Cap of the Wild"
+  ],
+  [
+   "第31张已收集",
+   "Old Map No. 31 collected"
+  ],
+  [
+   "交互地图为天空层，31 张残旧的地图均位于天空。第 14 张原表未标注宝藏名，按坐标交叉核对为采矿面罩。进度只保存在你当前浏览器的 localStorage 里，换设备或清缓存后需要重新勾选；导出的 Excel 只包含你已勾选的项目。",
+   "The interactive map covers the Sky layer; all 31 Old Maps are in the Sky. The original table did not label a treasure name for No. 14, which was identified as Miner's Mask by cross-checking coordinates. Progress is saved only in your current browser's localStorage, so switching devices or clearing the cache means you will need to check items again; the exported Excel file only includes items you have checked."
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 魔犹伊的遗失物",
+   "› Bubbul Gem"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Complete Depths Survival & Exploration Guide"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› All 152 Shrines Collection Checklist"
+  ],
+  [
+   "📚 更多攻略",
+   "📚 More Guides"
+  ],
+  [
+   "› 哈里的终极秘籍（13篇）",
+   "› Harry's Ultimate Tips (13 Guides)"
+  ],
+  [
+   "› 全部页面索引",
+   "› All Pages Index"
+  ],
+  [
+   "第 {N} 张 · 残旧的地图",
+   "Old Map No. {N}"
+  ],
+  [
+   "对应宝藏：",
+   "Treasure:"
+  ],
+  [
+   "天空坐标：",
+   "Sky coordinates:"
+  ],
+  [
+   "✓ 标记已收集",
+   "✓ Mark as collected"
+  ],
+  [
+   "↩ 取消已收集",
+   "↩ Unmark collected"
+  ],
+  [
+   "📋 查看列表行",
+   "📋 View list row"
+  ],
+  [
+   "{N}. 残旧的地图（{treasure}）",
+   "{N}. Old Map ({treasure})"
+  ],
+  [
+   "确定要清除全部 31 张的收集进度吗？此操作不可撤销。",
+   "Are you sure you want to clear the collection progress for all 31 Old Maps? This cannot be undone."
+  ],
+  [
+   "确定要清除全部 31 张的收集进度吗？",
+   "Are you sure you want to clear the collection progress for all 31 Old Maps?"
+  ],
+  [
+   "此操作不可撤销。",
+   "This cannot be undone."
+  ],
+  [
+   "还没有勾选任何一张残旧的地图。先在地图弹窗或列表里勾选已收集，再导出。",
+   "No Old Map has been checked yet. Check collected maps in the map popup or the list first, then export."
+  ],
+  [
+   "还没有勾选任何一张残旧的地图。",
+   "No Old Map has been checked yet."
+  ],
+  [
+   "先在地图弹窗或列表里勾选已收集，再导出。",
+   "Check collected maps in the map popup or the list first, then export."
+  ],
+  [
+   "王国之泪 · 残旧的地图已收集汇总表",
+   "Tears of the Kingdom · Collected Old Maps Summary"
+  ],
+  [
+   "导出时间：",
+   "Export time:"
+  ],
+  [
+   "已收集：{N} / 31 张",
+   "Collected: {N} / 31 maps"
+  ],
+  [
+   "编号",
+   "No."
+  ],
+  [
+   "残旧的地图（对应宝藏）",
+   "Old Map (treasure)"
+  ],
+  [
+   "图层",
+   "Layer"
+  ],
+  [
+   "状态",
+   "Status"
+  ],
+  [
+   "天空层",
+   "Sky layer"
+  ],
+  [
+   "坐标为天空层游戏内坐标（X, Y, Z）。未勾选的 {N} 张未包含在本表内。",
+   "Coordinates are in-game Sky-layer coordinates (X, Y, Z). The {N} unchecked maps are not included in this table."
+  ],
+  [
+   "坐标为天空层游戏内坐标（X, Y, Z）",
+   "Coordinates are in-game Sky-layer coordinates (X, Y, Z)."
+  ],
+  [
+   "未勾选的 {N} 张未包含在本表内",
+   "The {N} unchecked maps are not included in this table."
+  ],
+  [
+   "\">📋 查看列表行</button>",
+   "\">📋 View List Row</button>"
+  ],
+  [
+   ". 残旧的地图（",
+   ". Old Map ("
+  ],
+  [
+   "</td><td>天空层</td><td>已收集</td></tr>",
+   "</td><td>Sky Layer</td><td>Collected</td></tr>"
+  ],
+  [
+   "</td><td>残旧的地图（",
+   "</td><td>Old Map ("
+  ],
+  [
+   "<br>天空坐标：",
+   "<br>Sky coordinates:"
+  ],
+  [
+   "<h2>王国之泪 · 残旧的地图已收集汇总表</h2>",
+   "<h2>Tears of the Kingdom · Collected Old Maps Summary</h2>"
+  ],
+  [
+   "<p>坐标为天空层游戏内坐标（X, Y, Z）。未勾选的",
+   "<p>Coordinates are Sky-layer in-game coordinates (X, Y, Z). Unchecked"
+  ],
+  [
+   "<p>导出时间：",
+   "<p>Export time:"
+  ],
+  [
+   "<strong>第",
+   "<strong>No."
+  ],
+  [
+   "已收集：",
+   "Collected:"
+  ],
+  [
+   "张 · 残旧的地图</strong><br>对应宝藏：",
+   " Old Map</strong><br>Treasure:"
+  ],
+  [
+   "张</p>",
+   " maps</p>"
+  ],
+  [
+   "张未包含在本表内。</p>",
+   " maps are not included in this table.</p>"
+  ],
+  [
+   "鼠标位置：",
+   "Mouse position:"
+  ]
+ ],
+ "notes": [
+  "Treasure names use official English item names: 初始之勇者 set = Hero set (Cap/Tunic/Trousers of the Hero), 初始之剑 = Sword of the Hero, 米多娜的王冠 = Midna's Helmet, 采矿服/裤子/面罩 = Miner's Top/Trousers/Mask.",
+  "No. 14: the page itself notes the original table had no treasure name and it was identified as Miner's Mask by cross-checking coordinates; translated as given.",
+  "Progress display renders the count and the percent as separate spans (收集进度：0 / 31 and 0%); the pair uses the label 收集进度： so the dynamic values stay untouched.",
+  "Popup/tooltip/dialog/Excel-export pairs use {N}/{treasure} placeholders for dynamic values (map number, treasure name, counts).",
+  "Coordinate cells and row numbers contain no Chinese and are carried over unchanged; the Leaflet © Nintendo attribution is left untranslated per spec.",
+  "Template-fragment pairs preserve the surrounding HTML so the map popup and export document render correctly; 天空层 is rendered as Sky Layer."
+ ]
+}

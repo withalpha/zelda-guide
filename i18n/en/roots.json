@@ -1,0 +1,1346 @@
+{
+ "title": "The Legend of Zelda: Tears of the Kingdom — All 120 Lightroot Locations and Guide, Complete Depths Map Edition | Tears of the Kingdom Guide",
+ "pairs": [
+  [
+   "王国之泪全120个破魔树根位置攻略，地底世界完整地图标注，按区域分类的精确坐标，开启方式与周边资源分布，助你点亮每一寸地底地图。",
+   "Guide to all 120 Lightroot locations in Tears of the Kingdom, with the complete Depths map marked, precise coordinates by region, activation methods, and the distribution of nearby resources — helping you light up every inch of the Depths map."
+  ],
+  [
+   "🌿 破魔树根",
+   "🌿 Lightroots"
+  ],
+  [
+   "120个破魔树根全位置 · 地底世界地图点亮指南",
+   "All 120 Lightroot locations · guide to lighting up the Depths map"
+  ],
+  [
+   "破魔树根收集进度",
+   "Lightroot collection progress"
+  ],
+  [
+   "0 已激活",
+   "0 activated"
+  ],
+  [
+   "120 全部树根",
+   "120 total Lightroots"
+  ],
+  [
+   "破魔树根说明：破魔树根分布在地底世界，激活后可照亮周围区域，并显示在地图上。其名称与地面神庙名称高度对应（反转拼写），可利用此规律快速定位。每个树根正下方通常有对应的地面神庙。共120个，与地面120座神庙一一对应。",
+   "About Lightroots: Lightroots are spread across the Depths; activating one lights up the surrounding area and shows it on the map. Their names correspond closely to the names of surface shrines (reversed spellings), and you can use this pattern to locate them quickly. Directly below each Lightroot there is usually a corresponding surface shrine. There are 120 in total, matching the 120 surface shrines one-to-one."
+  ],
+  [
+   "破魔树根分布在地底世界，激活后可照亮周围区域，并显示在地图上",
+   "Lightroots are spread across the Depths; activating one lights up the surrounding area and shows it on the map"
+  ],
+  [
+   "其名称与地面神庙名称高度对应（反转拼写），可利用此规律快速定位",
+   "Their names correspond closely to the names of surface shrines (reversed spellings), and you can use this pattern to locate them quickly"
+  ],
+  [
+   "每个树根正下方通常有对应的地面神庙",
+   "Directly below each Lightroot there is usually a corresponding surface shrine"
+  ],
+  [
+   "共120个，与地面120座神庙一一对应",
+   "There are 120 in total, matching the 120 surface shrines one-to-one"
+  ],
+  [
+   "搜索树根名称或坐标...",
+   "Search Lightroot names or coordinates..."
+  ],
+  [
+   "🌑 地底区域分布",
+   "🌑 Depths region distribution"
+  ],
+  [
+   "中央海拉鲁地底",
+   "Central Hyrule Depths"
+  ],
+  [
+   "树根数量：23个",
+   "Lightroots: 23"
+  ],
+  [
+   "拉聂尔地底",
+   "Lanayru Depths"
+  ],
+  [
+   "树根数量：13个",
+   "Lightroots: 13"
+  ],
+  [
+   "奥尔汀地底",
+   "Eldin Depths"
+  ],
+  [
+   "格鲁德地底",
+   "Gerudo Depths"
+  ],
+  [
+   "树根数量：16个",
+   "Lightroots: 16"
+  ],
+  [
+   "赫布拉地底",
+   "Hebra Depths"
+  ],
+  [
+   "树根数量：20个",
+   "Lightroots: 20"
+  ],
+  [
+   "海拉鲁大森林地底",
+   "Great Hyrule Forest Depths"
+  ],
+  [
+   "树根数量：8个",
+   "Lightroots: 8"
+  ],
+  [
+   "阿卡莱地底",
+   "Akkala Depths"
+  ],
+  [
+   "树根数量：10个",
+   "Lightroots: 10"
+  ],
+  [
+   "内克鲁达地底",
+   "Necluda Depths"
+  ],
+  [
+   "树根数量：14个",
+   "Lightroots: 14"
+  ],
+  [
+   "费罗尼地底",
+   "Faron Depths"
+  ],
+  [
+   "树根数量：3个",
+   "Lightroots: 3"
+  ],
+  [
+   "🗺 地底世界互动地图",
+   "🗺 Depths interactive map"
+  ],
+  [
+   "🌑 地底世界",
+   "🌑 The Depths"
+  ],
+  [
+   "全部",
+   "All"
+  ],
+  [
+   "中央",
+   "Central"
+  ],
+  [
+   "拉聂尔",
+   "Lanayru"
+  ],
+  [
+   "奥尔汀",
+   "Eldin"
+  ],
+  [
+   "格鲁德",
+   "Gerudo"
+  ],
+  [
+   "赫布拉",
+   "Hebra"
+  ],
+  [
+   "大森林",
+   "Great Hyrule Forest"
+  ],
+  [
+   "阿卡莱",
+   "Akkala"
+  ],
+  [
+   "内克鲁达",
+   "Necluda"
+  ],
+  [
+   "费罗尼",
+   "Faron"
+  ],
+  [
+   "放大",
+   "Zoom in"
+  ],
+  [
+   "缩小",
+   "Zoom out"
+  ],
+  [
+   "复位",
+   "Reset view"
+  ],
+  [
+   "坐标：X — · Y —",
+   "Coordinates: X — · Y —"
+  ],
+  [
+   "图例： 中央 拉聂尔 奥尔汀 格鲁德 赫布拉 大森林 阿卡莱 内克鲁达 费罗尼 已激活 ✓ 拖拽平移 · 滚轮缩放 · 点击树根标记查看坐标",
+   "Legend: Central Hyrule, Lanayru, Eldin, Gerudo, Hebra, Great Hyrule Forest, Akkala, Necluda, Faron, Activated ✓, Drag to pan · Scroll to zoom · Click a Lightroot marker to see coordinates"
+  ],
+  [
+   "图例：",
+   "Legend:"
+  ],
+  [
+   "已激活",
+   "Activated"
+  ],
+  [
+   "拖拽平移 · 滚轮缩放 · 点击树根标记查看坐标",
+   "Drag to pan · Scroll to zoom · Click a Lightroot marker to see coordinates"
+  ],
+  [
+   "📍 破魔树根坐标列表（全120个）",
+   "📍 Lightroot coordinate list (all 120)"
+  ],
+  [
+   "中央海拉鲁(23)",
+   "Central Hyrule (23)"
+  ],
+  [
+   "拉聂尔(13)",
+   "Lanayru (13)"
+  ],
+  [
+   "奥尔汀(13)",
+   "Eldin (13)"
+  ],
+  [
+   "格鲁德(16)",
+   "Gerudo (16)"
+  ],
+  [
+   "赫布拉(20)",
+   "Hebra (20)"
+  ],
+  [
+   "大森林(8)",
+   "Great Hyrule Forest (8)"
+  ],
+  [
+   "阿卡莱(10)",
+   "Akkala (10)"
+  ],
+  [
+   "内克鲁达(14)",
+   "Necluda (14)"
+  ],
+  [
+   "费罗尼(3)",
+   "Faron (3)"
+  ],
+  [
+   "全部(120)",
+   "All (120)"
+  ],
+  [
+   "地底",
+   "Depths"
+  ],
+  [
+   "茲卡吉塔之根",
+   "Zikajita Lightroot"
+  ],
+  [
+   "坐标：343, -1008, -468 · 中央海拉鲁地底",
+   "Coordinates: 343, -1008, -468 · Central Hyrule Depths"
+  ],
+  [
+   "烏伊奇喬之根",
+   "Wuyiqiao Lightroot"
+  ],
+  [
+   "坐标：4347, 2877, -606 · 阿卡莱地底",
+   "Coordinates: 4347, 2877, -606 · Akkala Depths"
+  ],
+  [
+   "伊摩茲希之根",
+   "Yimozixi Lightroot"
+  ],
+  [
+   "坐标：2368, 2597, -940 · 奥尔汀地底",
+   "Coordinates: 2368, 2597, -940 · Eldin Depths"
+  ],
+  [
+   "卡瓦姆羅歐之根",
+   "Kawamuluoou Lightroot"
+  ],
+  [
+   "坐标：-3078, 1617, -683 · 赫布拉地底",
+   "Coordinates: -3078, 1617, -683 · Hebra Depths"
+  ],
+  [
+   "烏諾奇亞馬之根",
+   "Wunuoqiyama Lightroot"
+  ],
+  [
+   "坐标：-706, -868, -481 · 中央海拉鲁地底",
+   "Coordinates: -706, -868, -481 · Central Hyrule Depths"
+  ],
+  [
+   "拉奇諾薩姆之根",
+   "Laqinuosamu Lightroot"
+  ],
+  [
+   "坐标：407, 2134, -590 · 海拉鲁大森林地底",
+   "Coordinates: 407, 2134, -590 · Great Hyrule Forest Depths"
+  ],
+  [
+   "傑伊恩雷之根",
+   "Jieyienlei Lightroot"
+  ],
+  [
+   "坐标：757, 824, -531 · 中央海拉鲁地底",
+   "Coordinates: 757, 824, -531 · Central Hyrule Depths"
+  ],
+  [
+   "瓦羅喜薩之根",
+   "Waluoxisa Lightroot"
+  ],
+  [
+   "坐标：-3354, 2386, -797 · 赫布拉地底",
+   "Coordinates: -3354, 2386, -797 · Hebra Depths"
+  ],
+  [
+   "姆馬茲羅之根",
+   "Mumaziluo Lightroot"
+  ],
+  [
+   "坐标：-3406, -1364, -774 · 格鲁德地底",
+   "Coordinates: -3406, -1364, -774 · Gerudo Depths"
+  ],
+  [
+   "諾茲馬亞馬之根",
+   "Nuozimayama Lightroot"
+  ],
+  [
+   "坐标：-4638, -1512, -883 · 格鲁德地底",
+   "Coordinates: -4638, -1512, -883 · Gerudo Depths"
+  ],
+  [
+   "奇馬波塔魯世之根",
+   "Qimabotalushi Lightroot"
+  ],
+  [
+   "坐标：-178, 1170, -515 · 中央海拉鲁地底",
+   "Coordinates: -178, 1170, -515 · Central Hyrule Depths"
+  ],
+  [
+   "卡瓦嘎摩之根",
+   "Kawagamo Lightroot"
+  ],
+  [
+   "坐标：3298, 420, -744 · 拉聂尔地底",
+   "Coordinates: 3298, 420, -744 · Lanayru Depths"
+  ],
+  [
+   "卡卡米恩扎之根",
+   "Kakamienza Lightroot"
+  ],
+  [
+   "坐标：3470, -2182, -592 · 内克鲁达地底",
+   "Coordinates: 3470, -2182, -592 · Necluda Depths"
+  ],
+  [
+   "每烏可烏吉之根",
+   "Meiwukeuji Lightroot"
+  ],
+  [
+   "坐标：868, -2277, -555 · 费罗尼地底",
+   "Coordinates: 868, -2277, -555 · Faron Depths"
+  ],
+  [
+   "克羅歐恩烏伊之根",
+   "Keluouenwuyi Lightroot"
+  ],
+  [
+   "坐标：-3539, 852, -574 · 赫布拉地底",
+   "Coordinates: -3539, 852, -574 · Hebra Depths"
+  ],
+  [
+   "高尼塔琉索之根",
+   "Gaonitaliusuo Lightroot"
+  ],
+  [
+   "坐标：-3883, -2963, -435 · 格鲁德地底",
+   "Coordinates: -3883, -2963, -435 · Gerudo Depths"
+  ],
+  [
+   "可可亞馬之根",
+   "Kekeyama Lightroot"
+  ],
+  [
+   "坐标：1269, 3733, -552 · 奥尔汀地底",
+   "Coordinates: 1269, 3733, -552 · Eldin Depths"
+  ],
+  [
+   "卡米米蓋之根",
+   "Kamimigai Lightroot"
+  ],
+  [
+   "坐标：4512, 2115, -454 · 阿卡莱地底",
+   "Coordinates: 4512, 2115, -454 · Akkala Depths"
+  ],
+  [
+   "姆烏奇羅歐之根",
+   "Muwuqiluoou Lightroot"
+  ],
+  [
+   "坐标：-1638, 2642, -682 · 赫布拉地底",
+   "Coordinates: -1638, 2642, -682 · Hebra Depths"
+  ],
+  [
+   "卡瓦卡納希之根",
+   "Kawakanaxi Lightroot"
+  ],
+  [
+   "坐标：-1416, 757, -537 · 中央海拉鲁地底",
+   "Coordinates: -1416, 757, -537 · Central Hyrule Depths"
+  ],
+  [
+   "尼普希悠烏塔之根",
+   "Nipuxiyouwuta Lightroot"
+  ],
+  [
+   "坐标：-4538, 2880, -703 · 赫布拉地底",
+   "Coordinates: -4538, 2880, -703 · Hebra Depths"
+  ],
+  [
+   "克羅卡茲之根",
+   "Keluokazi Lightroot"
+  ],
+  [
+   "坐标：916, -252, -481 · 拉聂尔地底",
+   "Coordinates: 916, -252, -481 · Lanayru Depths"
+  ],
+  [
+   "奇克克希之根",
+   "Qikekexi Lightroot"
+  ],
+  [
+   "坐标：698, 2793, -668 · 海拉鲁大森林地底",
+   "Coordinates: 698, 2793, -668 · Great Hyrule Forest Depths"
+  ],
+  [
+   "馬卡瓦希之根",
+   "Makawaxi Lightroot"
+  ],
+  [
+   "坐标：-2440, -3343, -465 · 格鲁德地底",
+   "Coordinates: -2440, -3343, -465 · Gerudo Depths"
+  ],
+  [
+   "卡瓦卡拉茲之根",
+   "Kawakalazi Lightroot"
+  ],
+  [
+   "坐标：-3487, -215, -515 · 中央海拉鲁地底",
+   "Coordinates: -3487, -215, -515 · Central Hyrule Depths"
+  ],
+  [
+   "可高歐里之根",
+   "Kegaouli Lightroot"
+  ],
+  [
+   "坐标：-1442, -1616, -537 · 中央海拉鲁地底",
+   "Coordinates: -1442, -1616, -537 · Central Hyrule Depths"
+  ],
+  [
+   "卡米米達聶阿之根",
+   "Kamimidan iea Lightroot"
+  ],
+  [
+   "坐标：4233, -2177, -521 · 内克鲁达地底",
+   "Coordinates: 4233, -2177, -521 · Necluda Depths"
+  ],
+  [
+   "尤希烏亞馬之根",
+   "Youxiwuyama Lightroot"
+  ],
+  [
+   "坐标：-1168, 2602, -353 · 赫布拉地底",
+   "Coordinates: -1168, 2602, -353 · Hebra Depths"
+  ],
+  [
+   "恩古達修伊之根",
+   "Engudaxiuyi Lightroot"
+  ],
+  [
+   "坐标：-879, 423, -497 · 中央海拉鲁地底",
+   "Coordinates: -879, 423, -497 · Central Hyrule Depths"
+  ],
+  [
+   "烏悠悠烏奇之根",
+   "Wuyouyouwuqi Lightroot"
+  ],
+  [
+   "坐标：-1107, 2089, -552 · 赫布拉地底",
+   "Coordinates: -1107, 2089, -552 · Hebra Depths"
+  ],
+  [
+   "烏奇可艾之根",
+   "Wuqikeai Lightroot"
+  ],
+  [
+   "坐标：1063, 1281, -495 · 奥尔汀地底",
+   "Coordinates: 1063, 1281, -495 · Eldin Depths"
+  ],
+  [
+   "恩克羅達塔之根",
+   "Enkeluodata Lightroot"
+  ],
+  [
+   "坐标：-1081, -2186, -560 · 中央海拉鲁地底",
+   "Coordinates: -1081, -2186, -560 · Central Hyrule Depths"
+  ],
+  [
+   "基塔哈拉卡之根",
+   "Jitahalaka Lightroot"
+  ],
+  [
+   "坐标：-3729, -3625, -494 · 格鲁德地底",
+   "Coordinates: -3729, -3625, -494 · Gerudo Depths"
+  ],
+  [
+   "納諾希奇之根",
+   "Nanuoxiqi Lightroot"
+  ],
+  [
+   "坐标：2568, 1247, -598 · 奥尔汀地底",
+   "Coordinates: 2568, 1247, -598 · Eldin Depths"
+  ],
+  [
+   "烏恩扎修歐之根",
+   "Wuen zhaxiuou Lightroot"
+  ],
+  [
+   "坐标：-1404, 3678, -708 · 赫布拉地底",
+   "Coordinates: -1404, 3678, -708 · Hebra Depths"
+  ],
+  [
+   "薩薩嘎之根",
+   "Sasaga Lightroot"
+  ],
+  [
+   "坐标：-4154, 98, -489 · 赫布拉地底",
+   "Coordinates: -4154, 98, -489 · Hebra Depths"
+  ],
+  [
+   "卡米卡拉茲之根",
+   "Kamikalazi Lightroot"
+  ],
+  [
+   "坐标：-2656, -2238, -488 · 格鲁德地底",
+   "Coordinates: -2656, -2238, -488 · Gerudo Depths"
+  ],
+  [
+   "薩奇塔嘎之根",
+   "Saqitaga Lightroot"
+  ],
+  [
+   "坐标：-3653, 1807, -418 · 赫布拉地底",
+   "Coordinates: -3653, 1807, -418 · Hebra Depths"
+  ],
+  [
+   "阿恩黑伊之根",
+   "Aenheiyi Lightroot"
+  ],
+  [
+   "坐标：3785, 578, -918 · 拉聂尔地底",
+   "Coordinates: 3785, 578, -918 · Lanayru Depths"
+  ],
+  [
+   "每烏茲茲之根",
+   "Meiwuzizi Lightroot"
+  ],
+  [
+   "坐标：-1423, -1352, -517 · 中央海拉鲁地底",
+   "Coordinates: -1423, -1352, -517 · Central Hyrule Depths"
+  ],
+  [
+   "薩奇茲馬卡之根",
+   "Saqizimaka Lightroot"
+  ],
+  [
+   "坐标：3431, 3358, -520 · 阿卡莱地底",
+   "Coordinates: 3431, 3358, -520 · Akkala Depths"
+  ],
+  [
+   "帕帕世之根",
+   "Papashi Lightroot"
+  ],
+  [
+   "坐标：221, 1084, -474 · 中央海拉鲁地底",
+   "Coordinates: 221, 1084, -474 · Central Hyrule Depths"
+  ],
+  [
+   "塔塔亞馬之根",
+   "Tatayama Lightroot"
+  ],
+  [
+   "坐标：-3291, -2511, -476 · 格鲁德地底",
+   "Coordinates: -3291, -2511, -476 · Gerudo Depths"
+  ],
+  [
+   "伊亞斯斯之根",
+   "Yiyasi Lightroot"
+  ],
+  [
+   "坐标：-785, -433, -470 · 中央海拉鲁地底",
+   "Coordinates: -785, -433, -470 · Central Hyrule Depths"
+  ],
+  [
+   "凱蓋珀阿之根",
+   "Kaigeipoa Lightroot"
+  ],
+  [
+   "坐标：3886, -216, -606 · 拉聂尔地底",
+   "Coordinates: 3886, -216, -606 · Lanayru Depths"
+  ],
+  [
+   "諾伊諸米多之根",
+   "Nuoyizhumiduo Lightroot"
+  ],
+  [
+   "坐标：3304, 1443, -785 · 阿卡莱地底",
+   "Coordinates: 3304, 1443, -785 · Akkala Depths"
+  ],
+  [
+   "恩克卡奇之根",
+   "Enkekaqi Lightroot"
+  ],
+  [
+   "坐标：-397, 2735, -721 · 海拉鲁大森林地底",
+   "Coordinates: -397, 2735, -721 · Great Hyrule Forest Depths"
+  ],
+  [
+   "歐奇塔吉巴希之根",
+   "Ouqitajiba xi Lightroot"
+  ],
+  [
+   "坐标：2401, 3276, -838 · 奥尔汀地底",
+   "Coordinates: 2401, 3276, -838 · Eldin Depths"
+  ],
+  [
+   "奇修茲烏之根",
+   "Qixiuzuwu Lightroot"
+  ],
+  [
+   "坐标：671, -3358, -484 · 费罗尼地底",
+   "Coordinates: 671, -3358, -484 · Faron Depths"
+  ],
+  [
+   "恩世伊卡吉之根",
+   "Enshiyikaji Lightroot"
+  ],
+  [
+   "坐标：4267, -1673, -626 · 拉聂尔地底",
+   "Coordinates: 4267, -1673, -626 · Lanayru Depths"
+  ],
+  [
+   "卡瓦塔奇之根",
+   "Kawataqi Lightroot"
+  ],
+  [
+   "坐标：-1531, -2929, -727 · 格鲁德地底",
+   "Coordinates: -1531, -2929, -727 · Gerudo Depths"
+  ],
+  [
+   "諾帕納索之根",
+   "Nuopanasuo Lightroot"
+  ],
+  [
+   "坐标：-1922, -360, -633 · 中央海拉鲁地底",
+   "Coordinates: -1922, -360, -633 · Central Hyrule Depths"
+  ],
+  [
+   "奇古克拉馬之根",
+   "Qigukelama Lightroot"
+  ],
+  [
+   "坐标：1763, 2511, -715 · 奥尔汀地底",
+   "Coordinates: 1763, 2511, -715 · Eldin Depths"
+  ],
+  [
+   "塔奇納魯之根",
+   "Taqinalu Lightroot"
+  ],
+  [
+   "坐标：-2529, 1170, -620 · 赫布拉地底",
+   "Coordinates: -2529, 1170, -620 · Hebra Depths"
+  ],
+  [
+   "薩歐歐瓦之根",
+   "Saououwa Lightroot"
+  ],
+  [
+   "坐标：-4058, 1989, -671 · 赫布拉地底",
+   "Coordinates: -4058, 1989, -671 · Hebra Depths"
+  ],
+  [
+   "尼高克巧之根",
+   "Nigaokeqiao Lightroot"
+  ],
+  [
+   "坐标：-708, -1551, -516 · 中央海拉鲁地底",
+   "Coordinates: -708, -1551, -516 · Central Hyrule Depths"
+  ],
+  [
+   "達烏諾之根",
+   "Daunuo Lightroot"
+  ],
+  [
+   "坐标：-2318, 2201, -776 · 赫布拉地底",
+   "Coordinates: -2318, 2201, -776 · Hebra Depths"
+  ],
+  [
+   "每烏托烏艾之根",
+   "Meiwutuo wuai Lightroot"
+  ],
+  [
+   "坐标：-3508, 3569, -820 · 赫布拉地底",
+   "Coordinates: -3508, 3569, -820 · Hebra Depths"
+  ],
+  [
+   "每希希伊之根",
+   "Meixixiyi Lightroot"
+  ],
+  [
+   "坐标：1842, 2843, -832 · 奥尔汀地底",
+   "Coordinates: 1842, 2843, -832 · Eldin Depths"
+  ],
+  [
+   "納基德奇亞馬之根",
+   "Najideqiyama Lightroot"
+  ],
+  [
+   "坐标：3061, 1825, -660 · 奥尔汀地底",
+   "Coordinates: 3061, 1825, -660 · Eldin Depths"
+  ],
+  [
+   "馬茲茲歐之根",
+   "Maziziou Lightroot"
+  ],
+  [
+   "坐标：-4470, -672, -940 · 格鲁德地底",
+   "Coordinates: -4470, -672, -940 · Gerudo Depths"
+  ],
+  [
+   "希吉托烏之根",
+   "Xijituowu Lightroot"
+  ],
+  [
+   "坐标：1219, -2544, -610 · 内克鲁达地底",
+   "Coordinates: 1219, -2544, -610 · Necluda Depths"
+  ],
+  [
+   "納諸米卡之根",
+   "Nazhumika Lightroot"
+  ],
+  [
+   "坐标：-179, -1559, -474 · 中央海拉鲁地底",
+   "Coordinates: -179, -1559, -474 · Central Hyrule Depths"
+  ],
+  [
+   "卡瓦里阿斯之根",
+   "Kawaliasi Lightroot"
+  ],
+  [
+   "坐标：-2525, -1770, -709 · 格鲁德地底",
+   "Coordinates: -2525, -1770, -709 · Gerudo Depths"
+  ],
+  [
+   "托吉達克卡拉之根",
+   "Tuojidakakala Lightroot"
+  ],
+  [
+   "坐标：-2037, -1852, -504 · 格鲁德地底",
+   "Coordinates: -2037, -1852, -504 · Gerudo Depths"
+  ],
+  [
+   "卡瓦奇塔希拉之根",
+   "Kawaqitaxila Lightroot"
+  ],
+  [
+   "坐标：4167, 1322, -670 · 阿卡莱地底",
+   "Coordinates: 4167, 1322, -670 · Akkala Depths"
+  ],
+  [
+   "克斯克扎之根",
+   "Kesikezha Lightroot"
+  ],
+  [
+   "坐标：3525, -1482, -610 · 拉聂尔地底",
+   "Coordinates: 3525, -1482, -610 · Lanayru Depths"
+  ],
+  [
+   "烏尼喬喬之根",
+   "Wuniqiaoqiao Lightroot"
+  ],
+  [
+   "坐标：1201, 330, -573 · 中央海拉鲁地底",
+   "Coordinates: 1201, 330, -573 · Central Hyrule Depths"
+  ],
+  [
+   "米米富希之根",
+   "Mimifuxi Lightroot"
+  ],
+  [
+   "坐标：2825, -3269, -526 · 内克鲁达地底",
+   "Coordinates: 2825, -3269, -526 · Necluda Depths"
+  ],
+  [
+   "卡卡塔歐之根",
+   "Kakataou Lightroot"
+  ],
+  [
+   "坐标：-4390, 3714, -699 · 赫布拉地底",
+   "Coordinates: -4390, 3714, -699 · Hebra Depths"
+  ],
+  [
+   "高尼塔琉米之根",
+   "Gaonitaliumi Lightroot"
+  ],
+  [
+   "坐标：-4681, -3086, -503 · 格鲁德地底",
+   "Coordinates: -4681, -3086, -503 · Gerudo Depths"
+  ],
+  [
+   "塔亞馬奇之根",
+   "Tayamaqi Lightroot"
+  ],
+  [
+   "坐标：2865, 3639, -681 · 奥尔汀地底",
+   "Coordinates: 2865, 3639, -681 · Eldin Depths"
+  ],
+  [
+   "卡希摩摩之根",
+   "Kaximomo Lightroot"
+  ],
+  [
+   "坐标：2961, 2758, -955 · 奥尔汀地底",
+   "Coordinates: 2961, 2758, -955 · Eldin Depths"
+  ],
+  [
+   "克秀嘎伊之根",
+   "Kexiugayi Lightroot"
+  ],
+  [
+   "坐标：4655, 3732, -382 · 阿卡莱地底",
+   "Coordinates: 4655, 3732, -382 · Akkala Depths"
+  ],
+  [
+   "諾巴哈伊奇塔之根",
+   "Nuobahayiqita Lightroot"
+  ],
+  [
+   "坐标：-1829, 1196, -719 · 中央海拉鲁地底",
+   "Coordinates: -1829, 1196, -719 · Central Hyrule Depths"
+  ],
+  [
+   "馬歐恩艾之根",
+   "Maoenai Lightroot"
+  ],
+  [
+   "坐标：103, -2519, -415 · 中央海拉鲁地底",
+   "Coordinates: 103, -2519, -415 · Central Hyrule Depths"
+  ],
+  [
+   "奇諸米悠之根",
+   "Qizhumiyou Lightroot"
+  ],
+  [
+   "坐标：4413, -612, -513 · 拉聂尔地底",
+   "Coordinates: 4413, -612, -513 · Lanayru Depths"
+  ],
+  [
+   "卡希喜亞馬之根",
+   "Kaxixiyama Lightroot"
+  ],
+  [
+   "坐标：3728, -2059, -662 · 内克鲁达地底",
+   "Coordinates: 3728, -2059, -662 · Necluda Depths"
+  ],
+  [
+   "希希茲摩之根",
+   "Xixizimo Lightroot"
+  ],
+  [
+   "坐标：-1795, -3498, -457 · 格鲁德地底",
+   "Coordinates: -1795, -3498, -457 · Gerudo Depths"
+  ],
+  [
+   "卡斯凱伊歐馬之根",
+   "Kasikaiyouma Lightroot"
+  ],
+  [
+   "坐标：2276, 150, -501 · 拉聂尔地底",
+   "Coordinates: 2276, 150, -501 · Lanayru Depths"
+  ],
+  [
+   "恩皮夏摩之根",
+   "Enpixiamo Lightroot"
+  ],
+  [
+   "坐标：2680, 1904, -685 · 奥尔汀地底",
+   "Coordinates: 2680, 1904, -685 · Eldin Depths"
+  ],
+  [
+   "馬諸薩烏之根",
+   "Mazhusau Lightroot"
+  ],
+  [
+   "坐标：-2138, -875, -541 · 中央海拉鲁地底",
+   "Coordinates: -2138, -875, -541 · Central Hyrule Depths"
+  ],
+  [
+   "烏尼喬之根",
+   "Wuniqiao Lightroot"
+  ],
+  [
+   "坐标：2918, 508, -790 · 拉聂尔地底",
+   "Coordinates: 2918, 508, -790 · Lanayru Depths"
+  ],
+  [
+   "歐奇塔歐吉之根",
+   "Ouqitaouji Lightroot"
+  ],
+  [
+   "坐标：1835, 3181, -831 · 奥尔汀地底",
+   "Coordinates: 1835, 3181, -831 · Eldin Depths"
+  ],
+  [
+   "克塔卡伊之根",
+   "Ketakai Lightroot"
+  ],
+  [
+   "坐标：-3952, 1140, -550 · 赫布拉地底",
+   "Coordinates: -3952, 1140, -550 · Hebra Depths"
+  ],
+  [
+   "烏馬奇奇之根",
+   "Wumaqiqi Lightroot"
+  ],
+  [
+   "坐标：-3211, -3006, -471 · 格鲁德地底",
+   "Coordinates: -3211, -3006, -471 · Gerudo Depths"
+  ],
+  [
+   "希吉恩尼之根",
+   "Xijienni Lightroot"
+  ],
+  [
+   "坐标：355, 1893, -623 · 海拉鲁大森林地底",
+   "Coordinates: 355, 1893, -623 · Great Hyrule Forest Depths"
+  ],
+  [
+   "烏悠奇拖之根",
+   "Wuyouqituo Lightroot"
+  ],
+  [
+   "坐标：2303, -2379, -615 · 内克鲁达地底",
+   "Coordinates: 2303, -2379, -615 · Necluda Depths"
+  ],
+  [
+   "拉馬波恩克世之根",
+   "Lamaboenkeshi Lightroot"
+  ],
+  [
+   "坐标：167, 2321, -623 · 海拉鲁大森林地底",
+   "Coordinates: 167, 2321, -623 · Great Hyrule Forest Depths"
+  ],
+  [
+   "每烏富塔魯之根",
+   "Meiwufutalu Lightroot"
+  ],
+  [
+   "坐标：-2998, 3101, -997 · 赫布拉地底",
+   "Coordinates: -2998, 3101, -997 · Hebra Depths"
+  ],
+  [
+   "恩基歐歐之根",
+   "Enjiouou Lightroot"
+  ],
+  [
+   "坐标：2756, -1088, -548 · 拉聂尔地底",
+   "Coordinates: 2756, -1088, -548 · Lanayru Depths"
+  ],
+  [
+   "烏高喬之根",
+   "Wugaoqiao Lightroot"
+  ],
+  [
+   "坐标：3346, -1186, -608 · 内克鲁达地底",
+   "Coordinates: 3346, -1186, -608 · Necluda Depths"
+  ],
+  [
+   "納伊里亞馬之根",
+   "Nayiliyama Lightroot"
+  ],
+  [
+   "坐标：4630, -3712, -505 · 内克鲁达地底",
+   "Coordinates: 4630, -3712, -505 · Necluda Depths"
+  ],
+  [
+   "凱恩普普之根",
+   "Kaienpupu Lightroot"
+  ],
+  [
+   "坐标：622, 2211, -609 · 海拉鲁大森林地底",
+   "Coordinates: 622, 2211, -609 · Great Hyrule Forest Depths"
+  ],
+  [
+   "卡托米巴之根",
+   "Katuomiba Lightroot"
+  ],
+  [
+   "坐标：3093, -3209, -622 · 内克鲁达地底",
+   "Coordinates: 3093, -3209, -622 · Necluda Depths"
+  ],
+  [
+   "庫薩拉伊之根",
+   "Kusalayi Lightroot"
+  ],
+  [
+   "坐标：-4158, -3826, -478 · 格鲁德地底",
+   "Coordinates: -4158, -3826, -478 · Gerudo Depths"
+  ],
+  [
+   "塔卡拉克之根",
+   "Takalake Lightroot"
+  ],
+  [
+   "坐标：2360, -510, -587 · 拉聂尔地底",
+   "Coordinates: 2360, -510, -587 · Lanayru Depths"
+  ],
+  [
+   "艾畢斯斯之根",
+   "Aibisi Lightroot"
+  ],
+  [
+   "坐标：350, -2052, -471 · 内克鲁达地底",
+   "Coordinates: 350, -2052, -471 · Necluda Depths"
+  ],
+  [
+   "世修艾之根",
+   "Shixiuai Lightroot"
+  ],
+  [
+   "坐标：1563, -1945, -464 · 内克鲁达地底",
+   "Coordinates: 1563, -1945, -464 · Necluda Depths"
+  ],
+  [
+   "歐米亞歐之根",
+   "Oumiyaou Lightroot"
+  ],
+  [
+   "坐标：334, 469, -479 · 中央海拉鲁地底",
+   "Coordinates: 334, 469, -479 · Central Hyrule Depths"
+  ],
+  [
+   "恩帖吉恩帖之根",
+   "Entiejientie Lightroot"
+  ],
+  [
+   "坐标：-74, -1116, -472 · 中央海拉鲁地底",
+   "Coordinates: -74, -1116, -472 · Central Hyrule Depths"
+  ],
+  [
+   "奇塔歐亞馬之根",
+   "Qitaouyama Lightroot"
+  ],
+  [
+   "坐标：-850, 3535, -614 · 赫布拉地底",
+   "Coordinates: -850, 3535, -614 · Hebra Depths"
+  ],
+  [
+   "薩奇魯克馬之根",
+   "Saqilukema Lightroot"
+  ],
+  [
+   "坐标：-2846, 630, -619 · 赫布拉地底",
+   "Coordinates: -2846, 630, -619 · Hebra Depths"
+  ],
+  [
+   "卡卡尼塔納希之根",
+   "Kakanitanaxi Lightroot"
+  ],
+  [
+   "坐标：3841, 2300, -488 · 阿卡莱地底",
+   "Coordinates: 3841, 2300, -488 · Akkala Depths"
+  ],
+  [
+   "烏希奇喬之根",
+   "Wuxiqiao Lightroot"
+  ],
+  [
+   "坐标：930, -1904, -460 · 内克鲁达地底",
+   "Coordinates: 930, -1904, -460 · Necluda Depths"
+  ],
+  [
+   "恩奇修伊之根",
+   "Enqixiuyi Lightroot"
+  ],
+  [
+   "坐标：-564, -3524, -573 · 费罗尼地底",
+   "Coordinates: -564, -3524, -573 · Faron Depths"
+  ],
+  [
+   "納拉斯希之根",
+   "Nalaxishi Lightroot"
+  ],
+  [
+   "坐标：-2559, 3354, -686 · 赫布拉地底",
+   "Coordinates: -2559, 3354, -686 · Hebra Depths"
+  ],
+  [
+   "恩帖馬恩帖之根",
+   "Entiemaentie Lightroot"
+  ],
+  [
+   "坐标：-595, 1550, -597 · 海拉鲁大森林地底",
+   "Coordinates: -595, 1550, -597 · Great Hyrule Forest Depths"
+  ],
+  [
+   "嘎喜伊奇喬之根",
+   "Gaxiyiqiao Lightroot"
+  ],
+  [
+   "坐标：3812, 1219, -536 · 阿卡莱地底",
+   "Coordinates: 3812, 1219, -536 · Akkala Depths"
+  ],
+  [
+   "拉斯卡馬之根",
+   "Lasikama Lightroot"
+  ],
+  [
+   "坐标：1769, -1053, -606 · 内克鲁达地底",
+   "Coordinates: 1769, -1053, -606 · Necluda Depths"
+  ],
+  [
+   "烏希尼諾巧之根",
+   "Wuxininuoqiao Lightroot"
+  ],
+  [
+   "坐标：-204, 451, -472 · 中央海拉鲁地底",
+   "Coordinates: -204, 451, -472 · Central Hyrule Depths"
+  ],
+  [
+   "卡瓦馬提之根",
+   "Kawamati Lightroot"
+  ],
+  [
+   "坐标：1800, 1640, -745 · 奥尔汀地底",
+   "Coordinates: 1800, 1640, -745 · Eldin Depths"
+  ],
+  [
+   "烏薩恩喬之根",
+   "Wusaenqiao Lightroot"
+  ],
+  [
+   "坐标：1743, 18, -460 · 拉聂尔地底",
+   "Coordinates: 1743, 18, -460 · Lanayru Depths"
+  ],
+  [
+   "卡瓦希拉之根",
+   "Kawaxila Lightroot"
+  ],
+  [
+   "坐标：4664, 3264, -454 · 阿卡莱地底",
+   "Coordinates: 4664, 3264, -454 · Akkala Depths"
+  ],
+  [
+   "拉薩尼達克之根",
+   "Lasanidake Lightroot"
+  ],
+  [
+   "坐标：-4169, -2142, -487 · 格鲁德地底",
+   "Coordinates: -4169, -2142, -487 · Gerudo Depths"
+  ],
+  [
+   "烏烏久喬之根",
+   "Wuwujiuqiao Lightroot"
+  ],
+  [
+   "坐标：1514, -3578, -529 · 内克鲁达地底",
+   "Coordinates: 1514, -3578, -529 · Necluda Depths"
+  ],
+  [
+   "歐尼希歐吉之根",
+   "Ounixiouji Lightroot"
+  ],
+  [
+   "坐标：-240, -372, -478 · 中央海拉鲁地底",
+   "Coordinates: -240, -372, -478 · Central Hyrule Depths"
+  ],
+  [
+   "希希尼塔嘎之根",
+   "Xixinitaga Lightroot"
+  ],
+  [
+   "坐标：4497, 827, -534 · 阿卡莱地底",
+   "Coordinates: 4497, 827, -534 · Akkala Depths"
+  ],
+  [
+   "克恩羅摩之根",
+   "Kenluomo Lightroot"
+  ],
+  [
+   "坐标：1181, -779, -500 · 拉聂尔地底",
+   "Coordinates: 1181, -779, -500 · Lanayru Depths"
+  ],
+  [
+   "卡卡塔聶米之根",
+   "Kakataniemi Lightroot"
+  ],
+  [
+   "坐标：394, 3484, -593 · 海拉鲁大森林地底",
+   "Coordinates: 394, 3484, -593 · Great Hyrule Forest Depths"
+  ],
+  [
+   "💡 高效探索地底技巧： ① 携带大量发光果（地底种植或购买），投掷可临时照亮区域。 ② 使用佐纳乌灯具组合余料建造，打造移动光源车。 ③ 地图上神庙位置对应树根位置，先找神庙再下地底即可快速定位。 ④ 破魔树根激活时会回复生命，可作为补血点使用。 ⑤ 每个破魔树根的名称是对应地面神庙名称的反转拼写。",
+   "💡 Efficient Depths exploration tips: ① Carry plenty of Brightbloom Seeds (grown or bought in the Depths); throwing one temporarily lights up an area. ② Use Zonai lights combined with Fuse to build a mobile light vehicle. ③ Shrine positions on the map correspond to Lightroot positions — find the shrine first, then head down to the Depths to locate it quickly. ④ Activating a Lightroot restores health, so Lightroots can serve as healing points. ⑤ Each Lightroot's name is the reversed spelling of its corresponding surface shrine's name."
+  ],
+  [
+   "携带大量发光果（地底种植或购买），投掷可临时照亮区域",
+   "Carry plenty of Brightbloom Seeds (grown or bought in the Depths); throwing one temporarily lights up an area"
+  ],
+  [
+   "使用佐纳乌灯具组合余料建造，打造移动光源车",
+   "Use Zonai lights combined with Fuse to build a mobile light vehicle"
+  ],
+  [
+   "地图上神庙位置对应树根位置，先找神庙再下地底即可快速定位",
+   "Shrine positions on the map correspond to Lightroot positions — find the shrine first, then head down to the Depths to locate it quickly"
+  ],
+  [
+   "破魔树根激活时会回复生命，可作为补血点使用",
+   "Activating a Lightroot restores health, so Lightroots can serve as healing points"
+  ],
+  [
+   "每个破魔树根的名称是对应地面神庙名称的反转拼写",
+   "Each Lightroot's name is the reversed spelling of its corresponding surface shrine's name"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 神庙挑战",
+   "› Shrine Quests"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Depths Survival and Exploration Complete Guide"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› 152-Shrine Complete Collection Self-Check Guide"
+  ],
+  [
+   "📚 更多攻略",
+   "📚 More Guides"
+  ],
+  [
+   "› 哈里的终极秘籍（13篇）",
+   "› Harry's Ultimate Tips (13 articles)"
+  ],
+  [
+   "› 全部页面索引",
+   "› Index of All Pages"
+  ],
+  [
+   "📌 相关攻略推荐",
+   "📌 Recommended Related Guides"
+  ],
+  [
+   "⚔️ 神庙挑战 → ⚔️ 主线任务 → ⚔️ 贤者的遗志 →",
+   "⚔️ Shrine Quests → ⚔️ Main Quests → ⚔️ Sage's Will →"
+  ],
+  [
+   "神庙挑战",
+   "Shrine Quests"
+  ],
+  [
+   "主线任务",
+   "Main Quests"
+  ],
+  [
+   "贤者的遗志",
+   "Sage's Will"
+  ],
+  [
+   "一始废矿",
+   "Abandoned Tarrey Town Mine"
+  ],
+  [
+   "中央大废矿",
+   "Abandoned Central Mine"
+  ],
+  [
+   "中央海拉鲁",
+   "Central Hyrule"
+  ],
+  [
+   "卡卡利科废矿",
+   "Abandoned Kakariko Mine"
+  ],
+  [
+   "卡拉卡拉废矿",
+   "Abandoned Kara Kara Mine"
+  ],
+  [
+   "哈特诺废矿",
+   "Abandoned Hateno Mine"
+  ],
+  [
+   "奥尔汀废矿",
+   "Abandoned Eldin Mine"
+  ],
+  [
+   "拉聂尔废矿",
+   "Abandoned Lanayru Mine"
+  ],
+  [
+   "格鲁德废矿",
+   "Abandoned Gerudo Mine"
+  ],
+  [
+   "沃托里废矿",
+   "Abandoned Lurelin Mine"
+  ],
+  [
+   "赫布拉废矿",
+   "Abandoned Hebra Mine"
+  ],
+  [
+   "全部树根",
+   "All Lightroots"
+  ],
+  [
+   "已激活 ✓",
+   "Activated ✓"
+  ],
+  [
+   "💡 高效探索地底技巧：",
+   "💡 Tips for Exploring the Depths Efficiently:"
+  ]
+ ],
+ "notes": [
+  "Lightroot proper names are phonetic transliterations of the Chinese names (which are themselves reversed-spelling transliterations); they were not verified against the official English in-game Lightroot names, so some may differ from the official names.",
+  "The map zoom button labels (放大/缩小/复位) come from button title attributes, and the “地底” badge label appears on every list item but is listed once here.",
+  "Depths mine names use the in-game Abandoned Mine set (Abandoned Tarrey Town / Central / Kakariko / Kara Kara / Hateno / Eldin / Lanayru / Gerudo / Lurelin / Hebra Mine), matched to the Chinese mine labels by name correspondence."
+ ]
+}

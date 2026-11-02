@@ -1,0 +1,416 @@
+{
+ "notes": [
+  "拉梅拉 rendered as Ramella, the Goron City diamond buyer in-game (not in the glossary).",
+  "莱尼尔 rendered as Lynel, the official English name.",
+  "顶级兽肉 rendered as Raw Gourmet Meat and 高级兽肉 as Raw Prime Meat, per in-game item names.",
+  "蛋白石箭 rendered descriptively as Opal arrows (no glossary entry).",
+  "马匹登录 rendered as horse registration; 拆解 rendered as dismantling (the item-breakdown service)."
+ ],
+ "pairs": [
+  [
+   "卢比速刷指南：宝石售价表、拉梅拉钻石回收、料理售价倍率与烤肉串刷钱，前期后期各有一套稳妥打法。",
+   "Rupee farming guide: gem selling prices, Ramella's diamond buyback, cooking sale-price multipliers, and meat-skewer farming — with a reliable approach for both the early and late game."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Tips"
+  ],
+  [
+   "卢比速刷指南：从前期到后期",
+   "Rupee Farming Guide: From Early to Late Game"
+  ],
+  [
+   "💰 卢比攻略",
+   "💰 Rupee Guide"
+  ],
+  [
+   "缺钱的时候别乱卖素材：宝石、料理和矿石各有各的卖法，卖错一次就亏一截。",
+   "When you're short on cash, don't sell materials at random: gems, dishes, and ores each have their own best way to sell, and one bad sale can cost you a chunk."
+  ],
+  [
+   "🧙 作者：哈里",
+   "🧙 Author: Harry"
+  ],
+  [
+   "💰 卢比 · 刷钱路线",
+   "💰 Rupees · Money-Farming Routes"
+  ],
+  [
+   "📖 深度攻略",
+   "📖 In-Depth Guide"
+  ],
+  [
+   "在商店出售物品换卢比",
+   "Selling items at a shop for Rupees"
+  ],
+  [
+   "卖东西前先对一下价：宝石和料理的卖法不一样（游戏实机截图）",
+   "Check prices before you sell: gems and dishes are sold differently (in-game screenshot)"
+  ],
+  [
+   "王国之泪里花钱的地方很多：防具强化、箭矢、马匹登录、拆解都要卢比。刷钱没有一招通吃，前期靠打猎烤肉，中期靠挖矿卖宝石，后期靠钻石回收和高级料理。下面按阶段讲，每种方法都给出具体数字，照着做就不会亏。",
+   "There are many places to spend money in Tears of the Kingdom: armor upgrades, arrows, horse registration, and dismantling all cost Rupees. No single money-making trick works for everything: hunt and roast meat early on, mine and sell gems in the mid-game, and rely on diamond buyback and high-end dishes late in the game. The sections below go stage by stage, with concrete numbers for each method, so following them means you won't lose out."
+  ],
+  [
+   "⭐ 本篇要点",
+   "⭐ Key Points of This Guide"
+  ],
+  [
+   "宝石售价：钻石500、蓝宝石150、红宝石110、黄玉80、蛋白石30、夜光石20、琥珀10。",
+   "Gem selling prices: Diamond 500, Sapphire 150, Ruby 110, Topaz 80, Opal 30, Luminous Stone 20, Amber 10."
+  ],
+  [
+   "鼓隆城的拉梅拉收钻石：10颗给5500卢比，合550一颗，比直接卖多50。",
+   "Ramella in Goron City buys diamonds: 5,500 Rupees for 10, or 550 each — 50 more per stone than selling directly."
+  ],
+  [
+   "料理售价看食材总价乘倍率：1到5个食材分别乘1.2、1.3、1.4、1.6、1.8。",
+   "A dish's selling price is the total value of its ingredients times a multiplier: 1.2 for 1 ingredient, 1.3 for 2, 1.4 for 3, 1.6 for 4, and 1.8 for 5."
+  ],
+  [
+   "顶级兽肉×5的烤肉串卖315卢比，高级兽肉×5卖135卢比，是前期最稳的刷钱法。",
+   "A skewer made from 5 Raw Gourmet Meats sells for 315 Rupees, and one from 5 Raw Prime Meats sells for 135 Rupees — the most reliable early-game money-making method."
+  ],
+  [
+   "雪原驿站周边打猎是前期经典点：熊和驼鹿出肉多，肉冻住前要快捡。",
+   "Hunting around Snowfield Stable is a classic early-game spot: bears and moose drop a lot of meat, and you need to pick it up quickly before it freezes."
+  ],
+  [
+   "📑 本篇目录",
+   "📑 Contents"
+  ],
+  [
+   "一、宝石售价表：先记住再卖",
+   "1. Gem Price Table: Memorize It Before You Sell"
+  ],
+  [
+   "二、拉梅拉钻石回收",
+   "2. Ramella's Diamond Buyback"
+  ],
+  [
+   "三、料理刷钱：倍率怎么算",
+   "3. Cooking for Cash: How the Multiplier Works"
+  ],
+  [
+   "四、前期路线：雪原打猎烤肉",
+   "4. Early-Game Route: Hunting and Roasting Meat at the Snowfield"
+  ],
+  [
+   "五、卖东西的取舍原则",
+   "5. What to Sell and What to Keep"
+  ],
+  [
+   "常见问题",
+   "FAQ"
+  ],
+  [
+   "挖矿是最稳定的卢比来源，但宝石不要一股脑全卖：有些宝石是防具强化材料，卖之前先看强化清单。只卖富余的，按下面这张表算账就不会吃亏。",
+   "Mining is the most reliable source of Rupees, but don't sell all your gems at once: some gems are armor upgrade materials, so check the upgrade list before selling. Only sell your surplus, and doing the math with the table below means you won't lose out."
+  ],
+  [
+   "宝石",
+   "Gem"
+  ],
+  [
+   "售价（卢比）",
+   "Selling Price (Rupees)"
+  ],
+  [
+   "备注",
+   "Notes"
+  ],
+  [
+   "钻石",
+   "Diamond"
+  ],
+  [
+   "500",
+   "500"
+  ],
+  [
+   "别直接卖，优先给拉梅拉（见下节）",
+   "Don't sell directly; give them to Ramella first (see next section)"
+  ],
+  [
+   "蓝宝石",
+   "Sapphire"
+  ],
+  [
+   "150",
+   "150"
+  ],
+  [
+   "富余可卖",
+   "Sell any surplus"
+  ],
+  [
+   "红宝石",
+   "Ruby"
+  ],
+  [
+   "110",
+   "110"
+  ],
+  [
+   "黄玉",
+   "Topaz"
+  ],
+  [
+   "80",
+   "80"
+  ],
+  [
+   "蛋白石",
+   "Opal"
+  ],
+  [
+   "30",
+   "30"
+  ],
+  [
+   "也可留着做蛋白石箭等特殊用途",
+   "Can also be kept for special uses such as Opal arrows"
+  ],
+  [
+   "夜光石",
+   "Luminous Stone"
+  ],
+  [
+   "20",
+   "20"
+  ],
+  [
+   "低价，缺钱时再卖",
+   "Low price; sell only when short on cash"
+  ],
+  [
+   "琥珀",
+   "Amber"
+  ],
+  [
+   "10",
+   "10"
+  ],
+  [
+   "最便宜，别指望它发财",
+   "The cheapest; don't count on it to make you rich"
+  ],
+  [
+   "鼓隆城的拉梅拉会按 10 颗钻石 5500 卢比回收，折合每颗 550，比商店直接卖的 500 多 50。攒够 10 颗再去找她，一次多赚 500。注意钻石也是部分防具的强化材料，强化清单里的钻石要先留够，剩下的再拿去换钱。",
+   "Ramella in Goron City buys back diamonds at 5,500 Rupees for 10, or 550 each — 50 more per stone than the 500 you get selling directly to a shop. Save up 10 before going to see her, and you earn an extra 500 in one trip. Note that diamonds are also upgrade materials for some armor, so first set aside the diamonds on your upgrade list, and only trade in the rest for cash."
+  ],
+  [
+   "出售素材换取卢比",
+   "Selling materials for Rupees"
+  ],
+  [
+   "攒够数量再卖：批量回收往往更划算（游戏实机截图）",
+   "Save up a batch before selling: bulk buyback is often more profitable (in-game screenshot)"
+  ],
+  [
+   "料理的售价不是食材售价简单相加，而是食材售价合计乘一个倍率：1 个食材乘 1.2，2 个乘 1.3，3 个乘 1.4，4 个乘 1.6，5 个乘 1.8。所以做料理卖钱一定要做满 5 个食材，倍率最高。两个最实用的例子：顶级兽肉×5 的烤肉串卖 315 卢比，高级兽肉×5 卖 135 卢比，肉的来源就是下一节的打猎。",
+   "A dish's selling price is not simply the sum of its ingredients' selling prices; it is the ingredients' total selling price times a multiplier: 1.2 for 1 ingredient, 1.3 for 2, 1.4 for 3, 1.6 for 4, and 1.8 for 5. So when cooking dishes to sell, always use a full 5 ingredients for the highest multiplier. Two of the most practical examples: a skewer of 5 Raw Gourmet Meats sells for 315 Rupees, and a skewer of 5 Raw Prime Meats sells for 135 Rupees, and the meat comes from the hunting described in the next section."
+  ],
+  [
+   "别拿带效果的食材做卖钱料理：效果食材本身贵，做成料理反而可能亏。卖钱料理只用纯回血的肉，效果料理留着自己吃，分开算账最清楚。",
+   "Don't use effect ingredients for dishes you plan to sell: effect ingredients are expensive on their own, and cooking them into a dish can actually lose you money. For dishes to sell, use only plain health-restoring meat, and keep effect dishes for your own use — keeping the two accounts separate is clearest."
+  ],
+  [
+   "前期没矿可挖、没宝石可卖的时候，雪原驿站周边是最经典的刷钱点：那里的熊和驼鹿出肉多，一趟能打不少顶级和高级兽肉。打猎要点是快：肉掉在雪地里会冻住，冻住前赶紧捡，捡回来找锅做成 5 肉烤肉串再卖，一趟就是几百卢比。",
+   "When you have no ore to mine and no gems to sell early on, the area around Snowfield Stable is the classic money-making spot: the bears and moose there drop a lot of meat, and one trip can yield plenty of Raw Gourmet Meat and Raw Prime Meat. The key to hunting is speed: meat dropped on the snow will freeze, so grab it quickly before it does, then find a pot, cook it into 5-meat skewers, and sell them — one trip is worth several hundred Rupees."
+  ],
+  [
+   "三条取舍原则：第一，强化材料不卖，宁可少赚也别回头再刷；第二，钻石攒 10 颗给拉梅拉；第三，肉优先做满 5 个的烤肉串再卖，别直接卖生肉。按这个顺序，卢比会越攒越顺，前期买箭、中期强化防具都不用再为钱发愁。",
+   "Three rules for what to sell and what to keep: first, never sell upgrade materials — better to earn less than to farm them all over again later; second, save up 10 diamonds for Ramella; third, always cook meat into full 5-meat skewers before selling, never sell raw meat directly. Follow this order and your Rupees will pile up smoothly, so you won't have to worry about money when buying arrows early on or upgrading armor in the mid-game."
+  ],
+  [
+   "海拉鲁野外的探索与收集",
+   "Exploring and gathering in the wilds of Hyrule"
+  ],
+  [
+   "野外收集：矿石、肉和宝石都是卢比来源（游戏实机截图）",
+   "Gathering in the wild: ore, meat, and gems are all sources of Rupees (in-game screenshot)"
+  ],
+  [
+   "前期最缺钱怎么办？去雪原驿站周边打猎，做 5 肉烤肉串卖，见效最快。",
+   "What if you're most short on cash early on? Hunt around Snowfield Stable and sell 5-meat skewers — that works fastest."
+  ],
+  [
+   "前期最缺钱怎么办？",
+   "What if you're most short on cash early on?"
+  ],
+  [
+   "去雪原驿站周边打猎，做 5 肉烤肉串卖，见效最快。",
+   "Hunt around Snowfield Stable and sell 5-meat skewers — that works fastest."
+  ],
+  [
+   "钻石直接卖亏吗？亏 50 一颗。攒 10 颗给鼓隆城拉梅拉，一次多赚 500。",
+   "Do you lose out selling diamonds directly? You lose 50 per stone. Save up 10 for Ramella in Goron City and earn an extra 500 in one trip."
+  ],
+  [
+   "钻石直接卖亏吗？",
+   "Do you lose out selling diamonds directly?"
+  ],
+  [
+   "亏 50 一颗。",
+   "You lose 50 per stone."
+  ],
+  [
+   "攒 10 颗给鼓隆城拉梅拉，一次多赚 500。",
+   "Save up 10 for Ramella in Goron City and earn an extra 500 in one trip."
+  ],
+  [
+   "料理卖钱做几个食材？做满 5 个，倍率 1.8 最高，少一个都亏。",
+   "How many ingredients should a dish for sale use? Use a full 5 — the 1.8 multiplier is the highest, and even one fewer loses you money."
+  ],
+  [
+   "料理卖钱做几个食材？",
+   "How many ingredients should a dish for sale use?"
+  ],
+  [
+   "做满 5 个，倍率 1.8 最高，少一个都亏。",
+   "Use a full 5 — the 1.8 multiplier is the highest, and even one fewer loses you money."
+  ],
+  [
+   "相关攻略：地底世界生存与探索完全指南、料理机制全解、新手开荒指南。",
+   "Related guides: Complete Guide to Surviving and Exploring the Depths, Complete Guide to Cooking Mechanics, Beginner's Guide to Starting Out."
+  ],
+  [
+   "地底世界生存与探索完全指南",
+   "Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "料理机制全解",
+   "Complete Guide to Cooking Mechanics"
+  ],
+  [
+   "新手开荒指南",
+   "Beginner's Guide to Starting Out"
+  ],
+  [
+   "← 上一篇：人马（莱尼尔）完全指南",
+   "← Previous: Complete Guide to Lynels"
+  ],
+  [
+   "返回秘籍专栏",
+   "Back to the Tips Column"
+  ],
+  [
+   "下一篇：马匹捕捉与稀有马完全指南 →",
+   "Next: Complete Guide to Catching Horses and Rare Horses →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "› 料理机制全解：效果、时长与暴击",
+   "› Complete Guide to Cooking Mechanics: Effects, Duration, and Critical Success"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Guide to Starting Out: The First 10 Things to Do After Landing"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Full Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Tips"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Ultimate Guide to the Scimitar of the Seven"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Cooking Recipes"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› The Strongest Armor Sets, Explained in Three Tiers"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine: A Beginner-Friendly Walkthrough"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Hover Bike Tuning"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Depths Energy Cell Expansion and the Great Fairies"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 Daily New Guides"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› Self-Check Guide to Collecting All 152 Shrines"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Complete Guide to Korok Seeds"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› Complete Guide to the Four Great Fairies and Armor Upgrades"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Guide to Farming Materials from the Four Dragons"
+  ],
+  [
+   "› 人马（莱尼尔）完全指南",
+   "› Complete Guide to Lynels"
+  ],
+  [
+   "› 卢比速刷指南：从前期到后期（本篇）",
+   "› Rupee Farming Guide: From Early to Late Game (this guide)"
+  ],
+  [
+   "› 马匹捕捉与稀有马完全指南",
+   "› Complete Guide to Catching Horses and Rare Horses"
+  ],
+  [
+   "› 五位贤者能力全解",
+   "› All Five Sages' Abilities Explained"
+  ],
+  [
+   "› 海拉鲁城堡探索完全指南",
+   "› Complete Guide to Exploring Hyrule Castle"
+  ],
+  [
+   "› 海拉鲁图鉴509项收集指南",
+   "› Guide to Collecting All 509 Hyrule Compendium Entries"
+  ],
+  [
+   "› 左纳乌装置实用造物指南",
+   "› Practical Guide to Zonai Device Builds"
+  ],
+  [
+   "› 血月机制全解",
+   "› Complete Guide to the Blood Moon Mechanic"
+  ],
+  [
+   "› 余料建造完全指南",
+   "› Complete Guide to Fuse"
+  ]
+ ],
+ "title": "Rupee Farming Guide: From Early to Late Game · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+}

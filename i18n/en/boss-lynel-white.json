@@ -1,0 +1,659 @@
+{
+ "notes": [
+  "林克时间 rendered as 'bullet time' (the slow-motion aiming state); no official glossary term was given for it.",
+  "人马 rendered as Lynel throughout.",
+  "洛克利耶山脉 rendered by transliteration as 'Luokeliye Mountains' and 威尔多山区 as 'Weierduo mountain area' — neither has a confident official English equivalent; flagged as uncertain rather than matched to an invented official name.",
+  "Fragment pass: Roar Meteor rendered descriptively (large-area explosion); large Energy Cell for 大容量电池; Perfect Guard standardized for 盾反."
+ ],
+ "pairs": [
+  [
+   "王国之泪白鬃莱尼尔完全攻略，血量4000点，详解怒吼流星火圈应对、荒野之息时停流打法、王国之泪破甲+空中林克时间逃票科技，附兽神弓掉落说明。",
+   "Complete guide to the White-Maned Lynel in Tears of the Kingdom: 4,000 HP. Details how to counter the roaring meteor fire ring, the Breath of the Wild time-stop strategy, and the Tears of the Kingdom armor-break + midair bullet time cheese tactics, with notes on the Savage Lynel Bow drop."
+  ],
+  [
+   "白鬃莱尼尔 White-Maned Lynel",
+   "White-Maned Lynel"
+  ],
+  [
+   "⚪ 白鬃莱尼尔",
+   "⚪ White-Maned Lynel"
+  ],
+  [
+   "血量 4000 · 怒吼流星火圈 · 必须贴身或高空压制",
+   "4,000 HP · Roaring meteor fire ring · Must stay close or suppress from high altitude"
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "Boss图鉴",
+   "Boss Encyclopedia"
+  ],
+  [
+   "莱尼尔",
+   "Lynel"
+  ],
+  [
+   "白鬃莱尼尔",
+   "White-Maned Lynel"
+  ],
+  [
+   "🦁 莱尼尔（红褐/青色）",
+   "🦁 Lynel (Red / Blue)"
+  ],
+  [
+   "🔵 蓝鬃莱尼尔",
+   "🔵 Blue-Maned Lynel"
+  ],
+  [
+   "⚔️ 白银莱尼尔",
+   "⚔️ Silver Lynel"
+  ],
+  [
+   "📋 基本信息",
+   "📋 Basic Information"
+  ],
+  [
+   "血量",
+   "HP"
+  ],
+  [
+   "危险度",
+   "Danger Level"
+  ],
+  [
+   "强度等级",
+   "Strength Tier"
+  ],
+  [
+   "血量从蓝鬃的 3000 直接飙升到 4000，伤害极高。最大改变是新增了怒吼流星（大范围爆炸）。若继续在地面拉开距离，极容易被范围伤害秒杀——策略必须全面转向贴身近战或高空压制。",
+   "HP jumps straight from the Blue-Maned version's 3,000 to 4,000, and its damage is extremely high. The biggest change is the new roaring meteor (a large-area explosion). If you keep your distance on the ground, the area damage can easily kill you instantly — your strategy must shift fully to close-range melee or high-altitude suppression."
+  ],
+  [
+   "血量从蓝鬃的 3000 直接飙升到 4000，伤害极高。",
+   "HP jumps straight from the Blue-Maned version's 3,000 to 4,000, and its damage is extremely high."
+  ],
+  [
+   "最大改变是新增了怒吼流星（大范围爆炸）。",
+   "The biggest change is the new roaring meteor (a large-area explosion)."
+  ],
+  [
+   "若继续在地面拉开距离，极容易被范围伤害秒杀——策略必须全面转向贴身近战或高空压制。",
+   "If you keep your distance on the ground, the area damage can easily kill you instantly — your strategy must shift fully to close-range melee or high-altitude suppression."
+  ],
+  [
+   "📍 出没地点",
+   "📍 Locations"
+  ],
+  [
+   "洛克利耶山脉深处",
+   "Deep in the Luokeliye Mountains"
+  ],
+  [
+   "威尔多山区",
+   "Weierduo mountain area"
+  ],
+  [
+   "《王国之泪》地底竞技场（第3～4只）",
+   "Tears of the Kingdom Depths arena (3rd–4th Lynel)"
+  ],
+  [
+   "🎯 弱点",
+   "🎯 Weaknesses"
+  ],
+  [
+   "🏹 蓄力时爆头打断怒吼",
+   "🏹 Headshot during its charge-up to interrupt the roar"
+  ],
+  [
+   "🐴 骑乘背部（不耗耐久）",
+   "🐴 Mount its back (no durability cost)"
+  ],
+  [
+   "🛡 盾反吃掉爆炸冲击波",
+   "🛡 Parry to absorb the explosion shockwave"
+  ],
+  [
+   "🔥 核心新招式 · 怒吼流星（大范围爆破）",
+   "🔥 Core New Move · Roaring Meteor (Large-Area Blast)"
+  ],
+  [
+   "白鬃莱尼尔的标志性新技能，也是与红鬃、蓝鬃最大的不同。一味在地面跑开会被它秒杀，必须学会主动应对。",
+   "The White-Maned Lynel's signature new skill, and the biggest difference from the Red-Maned and Blue-Maned versions. Simply running away on the ground will get you killed instantly — you must learn to deal with it proactively."
+  ],
+  [
+   "🔥 招式：蓄力怒吼 + 砸地火圈",
+   "🔥 The move: charged roar + ground-slam fire ring"
+  ],
+  [
+   "它会突然停在原地，高高仰头发出震耳欲聋的怒吼，随后将武器猛烈砸向地面，以它为中心引发半径巨大的圆形火焰爆炸。离得越远越难逃出去，在地面只靠奔跑几乎必被命中。",
+   "It suddenly stops in place, throws its head high back with a deafening roar, then slams its weapon violently into the ground, triggering a huge-radius circular fire explosion centered on itself. The farther away you are, the harder it is to escape — running on the ground alone will almost certainly get you hit."
+  ],
+  [
+   "它会突然停在原地，高高仰头发出震耳欲聋的怒吼，随后将武器猛烈砸向地面，以它为中心引发半径巨大的圆形火焰爆炸。",
+   "It suddenly stops in place, throws its head high back with a deafening roar, then slams its weapon violently into the ground, triggering a huge-radius circular fire explosion centered on itself."
+  ],
+  [
+   "离得越远越难逃出去，在地面只靠奔跑几乎必被命中。",
+   "The farther away you are, the harder it is to escape — running on the ground alone will almost certainly get you hit."
+  ],
+  [
+   "✅ 方案 A（最推荐）· 蓄力时爆头打断",
+   "✅ Option A (most recommended) · Headshot during charge-up to interrupt"
+  ],
+  [
+   "看到它开始仰头怒吼时，千万不要逃跑！ 它在蓄力时全身都是破绽，立刻掏出弓箭瞄准脸部射击。只要爆头成功： ① 直接打断蓄力，爆炸不会发生 ② 强行让它跪地，白送一次上马机会 → 这是把危机变成输出机会的最优解。",
+   "When you see it start to throw its head back and roar, do NOT run away! While it charges up, its whole body is exposed — immediately draw your bow and shoot it in the face. If the headshot lands: ① it directly interrupts the charge-up, so the explosion never happens; ② it forces the Lynel to kneel, handing you a free mounting opportunity → this is the optimal way to turn danger into damage."
+  ],
+  [
+   "看到它开始仰头怒吼时，千万不要逃跑！",
+   "When you see it start to throw its head back and roar, do NOT run away!"
+  ],
+  [
+   "它在蓄力时全身都是破绽，立刻掏出弓箭瞄准脸部射击。",
+   "While it charges up, its whole body is exposed — immediately draw your bow and shoot it in the face."
+  ],
+  [
+   "只要爆头成功： ① 直接打断蓄力，爆炸不会发生 ② 强行让它跪地，白送一次上马机会 → 这是把危机变成输出机会的最优解。",
+   "If the headshot lands: ① it directly interrupts the charge-up, so the explosion never happens; ② it forces the Lynel to kneel, handing you a free mounting opportunity → this is the optimal way to turn danger into damage."
+  ],
+  [
+   "🛡 方案 B（保险流）· 盾反吃掉冲击波",
+   "🛡 Option B (safe play) · Parry to absorb the shockwave"
+  ],
+  [
+   "如果手速慢没有射中，在它砸地的一瞬间立刻举起盾牌进行盾反（Parry）。盾反可以完美吃掉爆炸的冲击波，化险为夷。 如果连盾反也错过了，只能立刻转身狂奔——此时跑不跑都很危险，所以优先练方案 A。",
+   "If your hands are too slow and you miss the shot, raise your shield and parry (Parry) the instant it slams the ground. A parry perfectly absorbs the explosion's shockwave, turning danger into safety. If you miss the parry too, all you can do is turn and sprint — running or not, you are in danger either way, so practice Option A first."
+  ],
+  [
+   "如果手速慢没有射中，在它砸地的一瞬间立刻举起盾牌进行盾反（Parry）。",
+   "If your hands are too slow and you miss the shot, raise your shield and parry (Parry) the instant it slams the ground."
+  ],
+  [
+   "盾反可以完美吃掉爆炸的冲击波，化险为夷。",
+   "A parry perfectly absorbs the explosion's shockwave, turning danger into safety."
+  ],
+  [
+   "如果连盾反也错过了，只能立刻转身狂奔——此时跑不跑都很危险，所以优先练方案 A。",
+   "If you miss the parry too, all you can do is turn and sprint — running or not, you are in danger either way, so practice Option A first."
+  ],
+  [
+   "🗡️ 《荒野之息》打法 · 时停流与近战盾反",
+   "🗡️ Breath of the Wild Strategy · Time-Stop and Melee Parry"
+  ],
+  [
+   "在《荒野之息》中，善用希卡之石的静止器升级（时停+），可以大幅简化白鬃的战斗流程：",
+   "In Breath of the Wild, good use of the Sheikah Slate's Stasis upgrade (Stasis+) can greatly simplify the White-Maned fight:"
+  ],
+  [
+   "时停+（静止器升级）强制爆头： 只要人马准备冲锋或开始怒吼蓄力，立刻用时停把它定住，然后用弓箭往它脸上射一箭。时停解除后它会摇晃脑袋，等它摇完头、恢复正常的瞬间，再往脸上补一箭，它就会跪地——双箭连射稳定触发跪地。",
+   "Stasis+ (Stasis upgrade) forced headshot: the moment the Lynel prepares to charge or starts its roar charge-up, freeze it with Stasis, then shoot it in the face with your bow. After Stasis ends it shakes its head; the instant it finishes shaking and returns to normal, shoot its face again and it will kneel — two arrows in succession reliably trigger kneeling."
+  ],
+  [
+   "时停+（静止器升级）强制爆头：",
+   "Stasis+ (Stasis upgrade) forced headshot:"
+  ],
+  [
+   "只要人马准备冲锋或开始怒吼蓄力，立刻用时停把它定住，然后用弓箭往它脸上射一箭。",
+   "The moment the Lynel prepares to charge or starts its roar charge-up, freeze it with Stasis, then shoot it in the face with your bow."
+  ],
+  [
+   "时停解除后它会摇晃脑袋，等它摇完头、恢复正常的瞬间，再往脸上补一箭，它就会跪地——双箭连射稳定触发跪地。",
+   "After Stasis ends it shakes its head; the instant it finishes shaking and returns to normal, shoot its face again and it will kneel — two arrows in succession reliably trigger kneeling."
+  ],
+  [
+   "贴身诱导三连挥刀（最高效地面输出）： 尽量贴着它转圈，诱导它使用三连挥刀。这一招非常容易触发后翻滚的「林克时间」，进入慢动作后疯狂输出，是地面战中伤害最高的手段。不要在远处等待——远距离反而更容易被怒吼火圈伤到。",
+   "Bait the triple slash up close (most efficient ground damage): circle as close to it as possible to bait the triple slash. This move very easily triggers a backflip bullet time; once in slow motion, unleash damage freely — the highest-damage ground tactic. Don't wait at a distance — long range actually makes you more likely to be hurt by the roaring fire ring."
+  ],
+  [
+   "贴身诱导三连挥刀（最高效地面输出）：",
+   "Bait the triple slash up close (most efficient ground damage):"
+  ],
+  [
+   "尽量贴着它转圈，诱导它使用三连挥刀。",
+   "Circle as close to it as possible to bait the triple slash."
+  ],
+  [
+   "这一招非常容易触发后翻滚的「林克时间」，进入慢动作后疯狂输出，是地面战中伤害最高的手段。",
+   "This move very easily triggers a backflip bullet time; once in slow motion, unleash damage freely — the highest-damage ground tactic."
+  ],
+  [
+   "不要在远处等待——远距离反而更容易被怒吼火圈伤到。",
+   "Don't wait at a distance — long range actually makes you more likely to be hurt by the roaring fire ring."
+  ],
+  [
+   "盾反补刀循环： 对它的普通近战攻击，举盾等待盾反机会。盾反成功后距离极近，立刻掏弓盲射脸部，命中率极高，触发跪地后上马输出。",
+   "Parry follow-up loop: against its normal melee attacks, raise your shield and wait for a parry opening. After a successful parry you are extremely close — immediately draw your bow and blind-fire at its face for a very high hit rate, then mount for damage once it kneels."
+  ],
+  [
+   "🚀 《王国之泪》打法 · 破甲 + 空中林克时间",
+   "🚀 Tears of the Kingdom Strategy · Armor Break + Midair Bullet Time"
+  ],
+  [
+   "《王国之泪》地底竞技场或部分地表的白鬃莱尼尔出场时自带岩石护甲（血条有一层黄色槽）。破甲之前，它免疫任何上马和硬直，跪地提示不会出现，必须先把黄色槽打掉：",
+   "White-Maned Lynels in the Tears of the Kingdom Depths arenas, or some on the surface, spawn wearing rock armor (a yellow bar over their health). Before the armor is broken, they are immune to mounting and to stagger, and no kneeling prompt appears — you must destroy the yellow bar first:"
+  ],
+  [
+   "破甲（必备前提）： 护甲存在时上马提示不出现。给箭头附魔大炮、炸弹花，或手持融合了莱尼尔蹄子 / 各类钝器素材的双手大剑。利用盾反后的硬直，或趁它冲锋时用重武器持续砸击，直到黄色槽彻底打碎，护甲崩落。",
+   "Armor break (required first step): while the armor is present, no mount prompt appears. Fuse cannons or Bomb Flowers to your arrows, or wield a two-handed greatsword fused with a Lynel hoof / blunt materials. Use the stagger after a parry, or keep smashing with a heavy weapon while it charges, until the yellow bar is fully destroyed and the armor falls off."
+  ],
+  [
+   "破甲（必备前提）：",
+   "Armor break (required first step):"
+  ],
+  [
+   "护甲存在时上马提示不出现。",
+   "While the armor is present, no mount prompt appears."
+  ],
+  [
+   "给箭头附魔大炮、炸弹花，或手持融合了莱尼尔蹄子 / 各类钝器素材的双手大剑。",
+   "Fuse cannons or Bomb Flowers to your arrows, or wield a two-handed greatsword fused with a Lynel hoof / blunt materials."
+  ],
+  [
+   "利用盾反后的硬直，或趁它冲锋时用重武器持续砸击，直到黄色槽彻底打碎，护甲崩落。",
+   "Use the stagger after a parry, or keep smashing with a heavy weapon while it charges, until the yellow bar is fully destroyed and the armor falls off."
+  ],
+  [
+   "强制触发空中林克时间（制造输出环境）： 破甲成功后，立刻使用大容量电池 + 火箭盾飞上高空，或丢出一个「翼」跳上去，让自己处于高空。从天上俯瞰人马，进入最安全的输出环境。",
+   "Force midair bullet time (create a damage environment): after breaking the armor, immediately use a large-capacity battery + rocket shield to fly high, or throw out a Wing and jump onto it, getting yourself airborne. Looking down on the Lynel from above puts you in the safest damage environment."
+  ],
+  [
+   "强制触发空中林克时间（制造输出环境）：",
+   "Force midair bullet time (create a damage environment):"
+  ],
+  [
+   "破甲成功后，立刻使用大容量电池 + 火箭盾飞上高空，或丢出一个「翼」跳上去，让自己处于高空。",
+   "After breaking the armor, immediately use a large-capacity battery + rocket shield to fly high, or throw out a Wing and jump onto it, getting yourself airborne."
+  ],
+  [
+   "从天上俯瞰人马，进入最安全的输出环境。",
+   "Looking down on the Lynel from above puts you in the safest damage environment."
+  ],
+  [
+   "追踪箭强行爆头（无视瞄准难度）： 在空中开弓进入林克时间，给箭头附魔基斯的眼球（蝙蝠眼睛），连续射击。追踪箭会自动修正弹道，精准砸在人马脸上将其击晕——彻底跳过了手动瞄准的难题。",
+   "Homing arrows force headshots (ignoring aim difficulty): draw your bow midair to enter bullet time, fuse Keese eyeballs (bat eyes) to your arrows, and keep shooting. Homing arrows auto-correct their trajectory and land precisely on the Lynel's face to stun it — completely skipping the manual aiming problem."
+  ],
+  [
+   "追踪箭强行爆头（无视瞄准难度）：",
+   "Homing arrows force headshots (ignoring aim difficulty):"
+  ],
+  [
+   "在空中开弓进入林克时间，给箭头附魔基斯的眼球（蝙蝠眼睛），连续射击。",
+   "Draw your bow midair to enter bullet time, fuse Keese eyeballs (bat eyes) to your arrows, and keep shooting."
+  ],
+  [
+   "追踪箭会自动修正弹道，精准砸在人马脸上将其击晕——彻底跳过了手动瞄准的难题。",
+   "Homing arrows auto-correct their trajectory and land precisely on the Lynel's face to stun it — completely skipping the manual aiming problem."
+  ],
+  [
+   "近卫流骑乘带走（终结战斗）： 落地后迅速跑到它身边上马，换上压到最后 1 点耐久的「红血近卫双手剑」（伤害翻倍 + 融合高攻素材），5 刀就能蒸发大几百甚至上千血量，数轮循环可终结战斗。",
+   "Royal Guard mounted finish (end the fight): after landing, quickly run to its side and mount, switching to a \"red-health Royal Guard's Claymore\" worn down to its last 1 durability point (double damage + high-attack fused material). Five hits can vaporize several hundred or even over a thousand HP, and a few loops will end the fight."
+  ],
+  [
+   "近卫流骑乘带走（终结战斗）：",
+   "Royal Guard mounted finish (end the fight):"
+  ],
+  [
+   "落地后迅速跑到它身边上马，换上压到最后 1 点耐久的「红血近卫双手剑」（伤害翻倍 + 融合高攻素材），5 刀就能蒸发大几百甚至上千血量，数轮循环可终结战斗。",
+   "After landing, quickly run to its side and mount, switching to a \"red-health Royal Guard's Claymore\" worn down to its last 1 durability point (double damage + high-attack fused material). Five hits can vaporize several hundred or even over a thousand HP, and a few loops will end the fight."
+  ],
+  [
+   "💡 完整循环：重武器/炸弹箭破甲 → 火箭盾升空 → 基斯眼球追踪爆头 → 骑乘红血近卫剑砍 5 刀 → 被甩空中补射 → 再次升空，循环直至击杀。",
+   "💡 Full loop: heavy weapon / bomb arrow armor break → rocket shield launch → Keese eyeball homing headshot → mount and land 5 hits with the red-health Royal Guard's sword → midair follow-up shots after being thrown off → launch again, repeating until the kill."
+  ],
+  [
+   "🎁 战后战利品",
+   "🎁 Post-Battle Loot"
+  ],
+  [
+   "击败白鬃莱尼尔后，你会获得游戏里性价比极高的素材：",
+   "After defeating a White-Maned Lynel, you will gain extremely cost-effective materials:"
+  ],
+  [
+   "🗡️ 白鬃莱尼尔的刃角 / 碎角",
+   "🗡️ White-Maned Lynel Saber Horn / Shatter Horn"
+  ],
+  [
+   "🐾 白鬃莱尼尔的蹄",
+   "🐾 White-Maned Lynel Hoof"
+  ],
+  [
+   "🫀 白鬃莱尼尔的肝",
+   "🫀 White-Maned Lynel Guts"
+  ],
+  [
+   "🏹 兽神弓（三连/五连发）",
+   "🏹 Savage Lynel Bow (triple / quintuple shot)"
+  ],
+  [
+   "⭐ 兽神弓（最值得期待的掉落）",
+   "⭐ Savage Lynel Bow (the most anticipated drop)"
+  ],
+  [
+   "一次能射出 3 连发（甚至可能附带 5 连发词条）的神器弓。拿到它之后，你再去打白银莱尼尔或者下一只白鬃，爆头会变得像喝水一样简单——每次拉弓就是三发散射直奔脸部，触发跪地的概率大幅提升。",
+   "A legendary bow that fires 3 arrows at once (and may even carry a 5-shot modifier). Once you have it, headshots against Silver Lynels or your next White-Maned Lynel become as easy as drinking water — every draw sends a triple spread straight at its face, greatly raising the chance of triggering a kneel."
+  ],
+  [
+   "一次能射出 3 连发（甚至可能附带 5 连发词条）的神器弓。",
+   "A legendary bow that fires 3 arrows at once (and may even carry a 5-shot modifier)."
+  ],
+  [
+   "拿到它之后，你再去打白银莱尼尔或者下一只白鬃，爆头会变得像喝水一样简单——每次拉弓就是三发散射直奔脸部，触发跪地的概率大幅提升。",
+   "Once you have it, headshots against Silver Lynels or your next White-Maned Lynel become as easy as drinking water — every draw sends a triple spread straight at its face, greatly raising the chance of triggering a kneel."
+  ],
+  [
+   "💡 刃角用途：白鬃莱尼尔的刃角是《王国之泪》中非常强力的纯攻击融合素材，融合到双手大剑上攻击力加成极高，是挑战白银莱尼尔时骑乘输出的核心材料。",
+   "💡 Saber horn uses: the White-Maned Lynel Saber Horn is a very powerful pure-attack Fuse material in Tears of the Kingdom — fused onto a two-handed greatsword its attack bonus is extremely high, making it the core material for mounted damage when challenging Silver Lynels."
+  ],
+  [
+   "🔗 莱尼尔系列攻略导航",
+   "🔗 Lynel Guide Series Navigation"
+  ],
+  [
+   "← 红鬃莱尼尔攻略",
+   "← Red-Maned Lynel Guide"
+  ],
+  [
+   "🔵 蓝鬃莱尼尔攻略",
+   "🔵 Blue-Maned Lynel Guide"
+  ],
+  [
+   "⚔️ 白银莱尼尔攻略 →",
+   "⚔️ Silver Lynel Guide →"
+  ],
+  [
+   "← Boss 图鉴",
+   "← Boss Encyclopedia"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 人马",
+   "› Lynel"
+  ],
+  [
+   "› 蓝鬃人马",
+   "› Blue-Maned Lynel"
+  ],
+  [
+   "› 白银人马",
+   "› Silver Lynel"
+  ],
+  [
+   "📚 更多攻略",
+   "📚 More Guides"
+  ],
+  [
+   "› 哈里的终极秘籍（13篇）",
+   "› Harry's Ultimate Secrets (13 articles)"
+  ],
+  [
+   "› 全部页面索引",
+   "› Full Page Index"
+  ],
+  [
+   "刃角用途：白鬃莱尼尔的刃角是《王国之泪》中非常强力的纯攻击融合素材，融合到双手大剑上攻击加成极高，是挑战白银莱尼尔时骑乘输出的核心材料。",
+   "Saber horn uses: the White-Maned Lynel Saber Horn is a very powerful pure-attack Fuse material in Tears of the Kingdom — fused onto a two-handed greatsword its attack bonus is extremely high, making it the core material for mounted damage when challenging Silver Lynels."
+  ],
+  [
+   "血量从蓝鬃的 3000 直接飙升到",
+   "Its HP soars straight from Blue-Maned's 3,000 to "
+  ],
+  [
+   "，伤害极高。最大改变是新增了",
+   ", with extremely high damage. The biggest change is the addition of "
+  ],
+  [
+   "。若继续在地面拉开距离，极容易被范围伤害秒杀——策略必须全面转向",
+   ". If you keep your distance on the ground, you will easily be one-shot by area damage — your strategy must fully shift to "
+  ],
+  [
+   "怒吼流星（大范围爆炸）",
+   "Roar Meteor (large-area explosion)"
+  ],
+  [
+   "贴身近战或高空压制",
+   "close-quarters melee or high-altitude pressure"
+  ],
+  [
+   "看到它开始仰头怒吼时，",
+   "When you see it start to rear its head back and roar, "
+  ],
+  [
+   "它在蓄力时全身都是破绽，立刻掏出弓箭",
+   "While it charges up, its whole body is exposed — immediately draw your bow and "
+  ],
+  [
+   "。只要爆头成功：",
+   ". If the headshot lands: "
+  ],
+  [
+   "① 直接",
+   "① directly "
+  ],
+  [
+   "，爆炸不会发生",
+   ", and no explosion will happen "
+  ],
+  [
+   "② 强行让它",
+   "② force it to "
+  ],
+  [
+   "，白送一次上马机会",
+   ", a free mounting opportunity "
+  ],
+  [
+   "→ 这是把危机变成输出机会的最优解。",
+   "→ This is the optimal solution for turning danger into a damage opportunity."
+  ],
+  [
+   "千万不要逃跑！",
+   "do NOT run away! "
+  ],
+  [
+   "瞄准脸部射击",
+   "shoot it in the face"
+  ],
+  [
+   "打断蓄力",
+   "interrupt its charge-up"
+  ],
+  [
+   "跪地",
+   "kneel"
+  ],
+  [
+   "如果手速慢没有射中，在它",
+   "If your hands are too slow and you miss, the instant it "
+  ],
+  [
+   "立刻",
+   "immediately "
+  ],
+  [
+   "如果连盾反也错过了，只能立刻转身狂奔——此时跑不跑都很危险，所以",
+   " If you miss the Perfect Guard too, you can only turn and sprint — running or not, it is dangerous either way, so "
+  ],
+  [
+   "砸地的一瞬间",
+   "slams into the ground "
+  ],
+  [
+   "举起盾牌进行盾反（Parry）",
+   "raise your shield and Perfect Guard (Parry)"
+  ],
+  [
+   "优先练方案 A",
+   "prioritize practicing Option A"
+  ],
+  [
+   "只要人马准备冲锋或开始怒吼蓄力，立刻用",
+   "The moment the Lynel prepares to charge or starts its roar charge-up, immediately use "
+  ],
+  [
+   "把它定住，然后用弓箭",
+   "to freeze it in place, then use your bow to "
+  ],
+  [
+   "。时停解除后它会摇晃脑袋，等它摇完头、恢复正常的瞬间，",
+   ". After Stasis wears off, it will shake its head; the instant it finishes shaking and returns to normal, "
+  ],
+  [
+   "，它就会跪地——双箭连射稳定触发跪地。",
+   ", and it will kneel — two consecutive arrows reliably trigger the kneel."
+  ],
+  [
+   "时停",
+   "Stasis "
+  ],
+  [
+   "往它脸上射一箭",
+   "shoot it in the face"
+  ],
+  [
+   "再往脸上补一箭",
+   "shoot it in the face once more"
+  ],
+  [
+   "尽量",
+   "Try to "
+  ],
+  [
+   "，诱导它使用三连挥刀。这一招非常容易触发",
+   ", luring it into its triple slash. This move very easily triggers "
+  ],
+  [
+   "，进入慢动作后疯狂输出，是地面战中伤害最高的手段。不要在远处等待——远距离反而更容易被怒吼火圈伤到。",
+   ", letting you unleash damage freely in slow motion — the highest-damage ground tactic. Do not wait at a distance — from far away you are even more likely to be hurt by the roar fire ring."
+  ],
+  [
+   "贴着它转圈",
+   "circle around it closely"
+  ],
+  [
+   "后翻滚的「林克时间」",
+   "backflip bullet time"
+  ],
+  [
+   "盾反补刀循环：",
+   "Perfect Guard follow-up loop: "
+  ],
+  [
+   "对它的普通近战攻击，举盾等待盾反机会。盾反成功后距离极近，",
+   "Against its normal melee attacks, hold up your shield and wait for a Perfect Guard opening. After a successful Perfect Guard you are extremely close, "
+  ],
+  [
+   "，命中率极高，触发跪地后上马输出。",
+   ", with an extremely high hit rate — trigger the kneel and mount up to deal damage."
+  ],
+  [
+   "立刻掏弓盲射脸部",
+   "immediately draw your bow and blind-shoot its face"
+  ],
+  [
+   "护甲存在时上马提示不出现。给箭头附魔",
+   "While its armor is up, the mount prompt will not appear. Fuse your arrows with "
+  ],
+  [
+   "，或手持",
+   ", or wield a "
+  ],
+  [
+   "。利用盾反后的硬直，或趁它冲锋时用重武器持续砸击，直到",
+   ". Use the stagger after a Perfect Guard, or keep smashing it with a heavy weapon while it charges, until the "
+  ],
+  [
+   "，护甲崩落。",
+   ", and the armor falls off."
+  ],
+  [
+   "大炮、炸弹花",
+   "Cannons or Bomb Flowers"
+  ],
+  [
+   "融合了莱尼尔蹄子 / 各类钝器素材的双手大剑",
+   "two-handed greatsword fused with Lynel hooves / blunt-weapon materials"
+  ],
+  [
+   "黄色槽彻底打碎",
+   "yellow bar is completely destroyed"
+  ],
+  [
+   "破甲成功后，立刻使用",
+   "After breaking its armor, immediately use "
+  ],
+  [
+   "飞上高空，或丢出一个「翼」跳上去，让自己处于高空。从天上俯瞰人马，进入最安全的输出环境。",
+   "to fly high into the air, or toss out a Wing and jump onto it to stay airborne. Looking down on the Lynel from above puts you in the safest damage-dealing position."
+  ],
+  [
+   "大容量电池 + 火箭盾",
+   "a large Energy Cell + Rocket Shield "
+  ],
+  [
+   "在空中开弓进入林克时间，给箭头附魔",
+   "Draw your bow midair to enter bullet time, and fuse your arrows with "
+  ],
+  [
+   "，连续射击。追踪箭会",
+   ", then keep shooting. Homing arrows will "
+  ],
+  [
+   "——彻底跳过了手动瞄准的难题。",
+   "— completely skipping the difficulty of manual aiming."
+  ],
+  [
+   "基斯的眼球（蝙蝠眼睛）",
+   "Keese eyeballs (bat eyes)"
+  ],
+  [
+   "自动修正弹道，精准砸在人马脸上将其击晕",
+   "automatically correct their trajectory and slam precisely into the Lynel's face, stunning it"
+  ],
+  [
+   "落地后迅速跑到它身边上马，换上压到最后 1 点耐久的",
+   "After landing, quickly run up beside it and mount it, switching to the "
+  ],
+  [
+   "（伤害翻倍 + 融合高攻素材），",
+   " (double damage + fused with high-attack materials), and with its durability squeezed to the last point, "
+  ],
+  [
+   "，数轮循环可终结战斗。",
+   ", and a few rounds of this can end the fight."
+  ],
+  [
+   "「红血近卫双手剑」",
+   "\"low-HP Royal Guard's Claymore\" "
+  ],
+  [
+   "5 刀就能蒸发大几百甚至上千血量",
+   "5 hits can vaporize several hundred or even over a thousand HP"
+  ],
+  [
+   "一次能射出",
+   "A divine bow that fires "
+  ],
+  [
+   "的神器弓。拿到它之后，你再去打白银莱尼尔或者下一只白鬃，",
+   ". Once you have it, fighting Silver Lynels or your next White-Maned, "
+  ],
+  [
+   "——每次拉弓就是三发散射直奔脸部，触发跪地的概率大幅提升。",
+   "— every draw sends three scattered shots straight at its face, greatly raising the chance of triggering a kneel."
+  ],
+  [
+   "3 连发（甚至可能附带 5 连发词条）",
+   "3 shots at once (possibly with a 5-shot modifier)"
+  ],
+  [
+   "爆头会变得像喝水一样简单",
+   "headshots become as easy as drinking water "
+  ]
+ ],
+ "title": "White-Maned Lynel Guide · 4,000 HP Roaring Meteor Fire Ring Counters · Armor Break and Midair Bullet Time · Tears of the Kingdom"
+}

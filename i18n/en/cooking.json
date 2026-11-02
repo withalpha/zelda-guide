@@ -1,0 +1,2642 @@
+{
+ "title": "Complete Tears of the Kingdom Cooking Guide: Best Recipes and Special-Effect Dishes | Tears of the Kingdom Guide",
+ "pairs": [
+  [
+   "王国之泪料理合成完整攻略，涵盖回血、加攻、耐寒、耐热等全效果料理配方，星级食材获取方式，最高效实用食谱推荐，让你轻松掌握料理系统精髓。",
+   "A complete Tears of the Kingdom cooking guide covering recipes for every effect — heart recovery, attack up, cold resistance, heat resistance, and more — plus how to obtain high-quality ingredients and the most efficient, practical recipe recommendations, so you can easily master the cooking system."
+  ],
+  [
+   "王国之泪料理合成全收录，含回血、强化、耐寒耐热效果的最优食谱推荐。",
+   "Every Tears of the Kingdom cooking recipe collected, with the best recipe recommendations for heart recovery, buffs, and cold and heat resistance."
+  ],
+  [
+   "图鉴 No.001–228",
+   "Compendium No. 001–228"
+  ],
+  [
+   "🍲 料理图鉴",
+   "🍲 Dish Compendium"
+  ],
+  [
+   "全 228 种料理完整收录 · 游戏原图 · 烹饪配方一览",
+   "All 228 dishes fully collected · In-game artwork · Full cooking recipe list"
+  ],
+  [
+   "料理图鉴",
+   "Dish Compendium"
+  ],
+  [
+   "最后更新：2026年6月",
+   "Last updated: June 2026"
+  ],
+  [
+   "料理总数",
+   "Total Dishes"
+  ],
+  [
+   "料理分类",
+   "Dish Categories"
+  ],
+  [
+   "当前显示",
+   "Currently Shown"
+  ],
+  [
+   "烹饪基础：在篝火旁按 A 键打开锅，放入 1~5 种食材即可烹饪。同类效果食材叠加效果更强，混合不同效果的食材会互相抵消。满月之夜有概率触发「暴击烹饪」，效果翻倍。点击卡片可查看详情。",
+   "Cooking Basics: By a campfire, press A to open the cooking pot, then add 1–5 ingredients to cook. Ingredients with the same effect stack to a stronger effect, while mixing ingredients with different effects cancels them out. On a full-moon night, cooking has a chance to trigger a “critical cook,” doubling the effect. Click a card to see details."
+  ],
+  [
+   "烹饪基础：",
+   "Cooking Basics:"
+  ],
+  [
+   "在篝火旁按 A 键打开锅，放入 1~5 种食材即可烹饪",
+   "By a campfire, press A to open the cooking pot, then add 1–5 ingredients to cook"
+  ],
+  [
+   "同类效果食材叠加效果更强，混合不同效果的食材会互相抵消",
+   "Ingredients with the same effect stack to a stronger effect, while mixing ingredients with different effects cancels them out"
+  ],
+  [
+   "满月之夜有概率触发「暴击烹饪」，效果翻倍",
+   "On a full-moon night, cooking has a chance to trigger a “critical cook,” doubling the effect"
+  ],
+  [
+   "点击卡片可查看详情",
+   "Click a card to see details"
+  ],
+  [
+   "全部",
+   "All"
+  ],
+  [
+   "串炒煎炸",
+   "Skewers, Sautés & Fries"
+  ],
+  [
+   "汤品炖菜",
+   "Soups & Stews"
+  ],
+  [
+   "饭食",
+   "Rice Dishes & Baked Goods"
+  ],
+  [
+   "特殊料理",
+   "Special Dishes"
+  ],
+  [
+   "烤食",
+   "Roasted Foods"
+  ],
+  [
+   "冷冻食品",
+   "Frozen Foods"
+  ],
+  [
+   "冷冻",
+   "Frozen Foods"
+  ],
+  [
+   "药水",
+   "Elixirs"
+  ],
+  [
+   "👆 点击任意料理图片，查看所需材料、数量与加成效果",
+   "👆 Click any dish image to see the required ingredients, quantities, and bonus effects"
+  ],
+  [
+   "🍳 实用要点：",
+   "🍳 Practical Tips:"
+  ],
+  [
+   "同类食材叠加效果更强，混合不同效果的食材会互相抵消。",
+   "Stacking same-effect ingredients gives a stronger effect; mixing ingredients with different effects cancels them out."
+  ],
+  [
+   "满月之夜（游戏内每 7 天一次）烹饪有概率暴击，效果和时间翻倍。",
+   "Cooking on a full-moon night (once every 7 in-game days) has a chance to crit, doubling both effect and duration."
+  ],
+  [
+   "食材品质越高（兽肉→高级兽肉→顶级兽肉）效果越强。",
+   "Higher-quality ingredients (raw meat → raw prime meat → raw gourmet meat) give stronger effects."
+  ],
+  [
+   "药水类（编号 215–228）需要昆虫 / 青蛙 / 蜥蜴 + 怪物素材，不能用食材替代。",
+   "Elixirs (Nos. 215–228) require an insect / frog / lizard + monster parts, and cannot use cooking ingredients as substitutes."
+  ],
+  [
+   "44 种",
+   "44 dishes"
+  ],
+  [
+   "烤蘑菇串",
+   "Mushroom Skewer"
+  ],
+  [
+   "蘑菇",
+   "Mushroom"
+  ],
+  [
+   "烤肉蘑菇串",
+   "Meat and Mushroom Skewer"
+  ],
+  [
+   "蘑菇 + 肉",
+   "Mushroom + Meat"
+  ],
+  [
+   "烤鱼蘑菇串",
+   "Fish and Mushroom Skewer"
+  ],
+  [
+   "蘑菇 + 鱼",
+   "Mushroom + Fish"
+  ],
+  [
+   "烤肉串",
+   "Meat Skewer"
+  ],
+  [
+   "肉",
+   "Meat"
+  ],
+  [
+   "烤鱼",
+   "Fish Skewer"
+  ],
+  [
+   "鱼",
+   "Fish"
+  ],
+  [
+   "串烤海鲜",
+   "Seafood Skewer"
+  ],
+  [
+   "海鲜",
+   "Seafood"
+  ],
+  [
+   "大份烤肉串",
+   "Copious Meat Skewers"
+  ],
+  [
+   "肉×4",
+   "Meat ×4"
+  ],
+  [
+   "大份烤鱼",
+   "Copious Seafood Skewers"
+  ],
+  [
+   "鱼×4",
+   "Fish ×4"
+  ],
+  [
+   "蒸水果",
+   "Steamed Fruit"
+  ],
+  [
+   "野菜 + 水果",
+   "Plant + Fruit"
+  ],
+  [
+   "蒸野菜番茄",
+   "Steamed Tomatoes"
+  ],
+  [
+   "野菜 + 海拉鲁番茄",
+   "Plant + Hylian Tomato"
+  ],
+  [
+   "蒸蘑菇",
+   "Steamed Mushrooms"
+  ],
+  [
+   "野菜 + 蘑菇",
+   "Plant + Mushroom"
+  ],
+  [
+   "蒸肉",
+   "Steamed Meat"
+  ],
+  [
+   "野菜 + 肉",
+   "Plant + Meat"
+  ],
+  [
+   "蒸鱼",
+   "Steamed Fish"
+  ],
+  [
+   "野菜 + 鱼",
+   "Plant + Fish"
+  ],
+  [
+   "炒暖暖草果",
+   "Sautéed Peppers"
+  ],
+  [
+   "暖暖草果",
+   "Spicy Pepper"
+  ],
+  [
+   "炒坚果",
+   "Sautéed Nuts"
+  ],
+  [
+   "坚果",
+   "Nut"
+  ],
+  [
+   "炒野菜",
+   "Fried Wild Greens"
+  ],
+  [
+   "野菜",
+   "Plant"
+  ],
+  [
+   "大份炒野菜",
+   "Copious Fried Wild Greens"
+  ],
+  [
+   "野菜×4",
+   "Plant ×4"
+  ],
+  [
+   "原烧灯笼花",
+   "Cooked Stambulb"
+  ],
+  [
+   "灯笼花",
+   "Stambulb"
+  ],
+  [
+   "炒黄油",
+   "Buttered Stambulb"
+  ],
+  [
+   "灯笼花 + 山羊黄油",
+   "Stambulb + Goat Butter"
+  ],
+  [
+   "大份烤蘑菇串",
+   "Copious Mushroom Skewers"
+  ],
+  [
+   "蘑菇×4",
+   "Mushroom ×4"
+  ],
+  [
+   "烤兽肉串",
+   "Spiced Meat Skewer"
+  ],
+  [
+   "生兽肉 + 戈隆香料",
+   "Raw Meat + Goron Spice"
+  ],
+  [
+   "高级烤兽肉串",
+   "Prime Spiced Meat Skewer"
+  ],
+  [
+   "生高级兽肉 + 戈隆香料",
+   "Raw Prime Meat + Goron Spice"
+  ],
+  [
+   "顶级烤兽肉串",
+   "Gourmet Spiced Meat Skewer"
+  ],
+  [
+   "生顶级兽肉 + 戈隆香料",
+   "Raw Gourmet Meat + Goron Spice"
+  ],
+  [
+   "炒螃蟹",
+   "Crab Stir-Fry"
+  ],
+  [
+   "螃蟹 + 戈隆香料",
+   "Crab + Goron Spice"
+  ],
+  [
+   "海陆煎烤",
+   "Meat and Seafood Fry"
+  ],
+  [
+   "肉 + 鱼",
+   "Meat + Fish"
+  ],
+  [
+   "高级海陆煎烤",
+   "Prime Meat and Seafood Fry"
+  ],
+  [
+   "二档肉 + 鱼",
+   "Tier 2 Meat + Fish"
+  ],
+  [
+   "顶级海陆煎烤",
+   "Gourmet Meat and Seafood Fry"
+  ],
+  [
+   "三档肉 + 鱼",
+   "Tier 3 Meat + Fish"
+  ],
+  [
+   "盐烤野菜",
+   "Salt-Grilled Greens"
+  ],
+  [
+   "野菜 + 岩盐",
+   "Plant + Rock Salt"
+  ],
+  [
+   "盐烤蘑菇",
+   "Salt-Grilled Mushrooms"
+  ],
+  [
+   "蘑菇 + 岩盐",
+   "Mushroom + Rock Salt"
+  ],
+  [
+   "岩盐烤肉",
+   "Salt-Grilled Meat"
+  ],
+  [
+   "一档肉 + 岩盐",
+   "Tier 1 Meat + Rock Salt"
+  ],
+  [
+   "高级岩盐烤肉",
+   "Salt-Grilled Prime Meat"
+  ],
+  [
+   "二档肉 + 岩盐",
+   "Tier 2 Meat + Rock Salt"
+  ],
+  [
+   "顶级岩盐烤肉",
+   "Salt-Grilled Gourmet Meat"
+  ],
+  [
+   "三档肉 + 岩盐",
+   "Tier 3 Meat + Rock Salt"
+  ],
+  [
+   "盐烤鱼",
+   "Salt-Grilled Fish"
+  ],
+  [
+   "鱼 + 岩盐",
+   "Fish + Rock Salt"
+  ],
+  [
+   "岩盐烤蟹",
+   "Salt-Grilled Crab"
+  ],
+  [
+   "螃蟹 + 岩盐",
+   "Crab + Rock Salt"
+  ],
+  [
+   "炒香草",
+   "Herb Sauté"
+  ],
+  [
+   "野菜 + 戈隆香料",
+   "Plant + Goron Spice"
+  ],
+  [
+   "炒香蘑菇",
+   "Fragrant Mushroom Sauté"
+  ],
+  [
+   "蘑菇 + 戈隆香料",
+   "Mushroom + Goron Spice"
+  ],
+  [
+   "香辣煎肉",
+   "Pepper Steak"
+  ],
+  [
+   "肉 + 暖暖草果",
+   "Meat + Spicy Pepper"
+  ],
+  [
+   "香辣煎鱼",
+   "Pepper Seafood"
+  ],
+  [
+   "鱼 + 暖暖草果",
+   "Fish + Spicy Pepper"
+  ],
+  [
+   "油炖海鲜",
+   "Fragrant Seafood Stew"
+  ],
+  [
+   "鱼 + 灯笼花 + 油壶",
+   "Fish + Stambulb + Oil Jar"
+  ],
+  [
+   "油炸禽肉",
+   "Deep-Fried Drumstick"
+  ],
+  [
+   "生禽腿肉 + 油壶",
+   "Raw Bird Drumstick + Oil Jar"
+  ],
+  [
+   "油炸高级禽肉",
+   "Deep-Fried Thigh"
+  ],
+  [
+   "生高级禽腿肉 + 油壶",
+   "Raw Bird Thigh + Oil Jar"
+  ],
+  [
+   "油炸顶级禽肉",
+   "Deep-Fried Bird Roast"
+  ],
+  [
+   "生整只禽肉 + 油壶",
+   "Raw Whole Bird + Oil Jar"
+  ],
+  [
+   "干煎鱼",
+   "Seafood Meunière"
+  ],
+  [
+   "鱼 + 山羊黄油 + 塔邦挞小麦",
+   "Fish + Goat Butter + Tabantha Wheat"
+  ],
+  [
+   "干煎鲷鱼",
+   "Porgy Meunière"
+  ],
+  [
+   "鲷鱼 + 山羊黄油 + 塔邦挞小麦",
+   "Porgy + Goat Butter + Tabantha Wheat"
+  ],
+  [
+   "35 种",
+   "35 dishes"
+  ],
+  [
+   "干煎鲑鱼",
+   "Salmon Meunière"
+  ],
+  [
+   "生命鲑鱼 + 山羊黄油 + 塔邦挞小麦",
+   "Hearty Salmon + Goat Butter + Tabantha Wheat"
+  ],
+  [
+   "水果拌蘑菇",
+   "Fruit and Mushroom Mix"
+  ],
+  [
+   "蘑菇 + 水果",
+   "Mushroom + Fruit"
+  ],
+  [
+   "炖水果",
+   "Simmered Fruit"
+  ],
+  [
+   "水果",
+   "Fruit"
+  ],
+  [
+   "大份炖水果",
+   "Copious Simmered Fruit"
+  ],
+  [
+   "水果×4",
+   "Fruit ×4"
+  ],
+  [
+   "炖番茄",
+   "Simmered Tomato"
+  ],
+  [
+   "海拉鲁番茄",
+   "Hylian Tomato"
+  ],
+  [
+   "番茄汤",
+   "Fruity Tomato Stew"
+  ],
+  [
+   "海拉鲁番茄 + 鲜奶 + 岩盐",
+   "Hylian Tomato + Fresh Milk + Rock Salt"
+  ],
+  [
+   "炖蘑菇番茄",
+   "Tomato Mushroom Stew"
+  ],
+  [
+   "蘑菇 + 海拉鲁番茄",
+   "Mushroom + Hylian Tomato"
+  ],
+  [
+   "海鲜番茄汤",
+   "Tomato Seafood Soup"
+  ],
+  [
+   "鱼 + 海拉鲁番茄",
+   "Fish + Hylian Tomato"
+  ],
+  [
+   "蔬菜牛奶汤",
+   "Cream of Vegetable Soup"
+  ],
+  [
+   "野菜 + 岩盐 + 鲜奶",
+   "Plant + Rock Salt + Fresh Milk"
+  ],
+  [
+   "蔬菜浓汤",
+   "Veggie Cream Soup"
+  ],
+  [
+   "南瓜或胡萝卜 + 岩盐 + 鲜奶",
+   "Pumpkin or Carrot + Rock Salt + Fresh Milk"
+  ],
+  [
+   "蘑菇牛奶汤",
+   "Cream of Mushroom Soup"
+  ],
+  [
+   "蘑菇 + 野菜 + 岩盐 + 鲜奶",
+   "Mushroom + Plant + Rock Salt + Fresh Milk"
+  ],
+  [
+   "鲜肉牛奶汤",
+   "Creamy Meat Soup"
+  ],
+  [
+   "肉 + 野菜 + 岩盐 + 鲜奶",
+   "Meat + Plant + Rock Salt + Fresh Milk"
+  ],
+  [
+   "海鲜牛奶汤",
+   "Creamy Seafood Soup"
+  ],
+  [
+   "鱼 + 野菜 + 岩盐 + 鲜奶",
+   "Fish + Plant + Rock Salt + Fresh Milk"
+  ],
+  [
+   "贝肉杂烩",
+   "Snail Chowder"
+  ],
+  [
+   "潜行田螺 + 塔邦挞小麦 + 鲜奶 + 山羊黄油",
+   "Sneaky River Snail + Tabantha Wheat + Fresh Milk + Goat Butter"
+  ],
+  [
+   "心心牛奶汤",
+   "Creamy Heart Soup"
+  ],
+  [
+   "萝卜 + 酥麻水果 + 冰冷蜜瓜 + 鲜奶",
+   "Radish + Voltfruit + Hydromelon + Fresh Milk"
+  ],
+  [
+   "甘露炖蔬菜",
+   "Glazed Veggies"
+  ],
+  [
+   "野菜 + 速速蜂蜂蜜",
+   "Plant + Courser Bee Honey"
+  ],
+  [
+   "甘露炖蘑菇",
+   "Glazed Mushrooms"
+  ],
+  [
+   "蘑菇 + 速速蜂蜂蜜",
+   "Mushroom + Courser Bee Honey"
+  ],
+  [
+   "甘露炖肉",
+   "Glazed Meat"
+  ],
+  [
+   "肉 + 速速蜂蜂蜜",
+   "Meat + Courser Bee Honey"
+  ],
+  [
+   "甘露炖鱼",
+   "Glazed Seafood"
+  ],
+  [
+   "鱼 + 速速蜂蜂蜜",
+   "Fish + Courser Bee Honey"
+  ],
+  [
+   "咖喱饭",
+   "Curry Rice"
+  ],
+  [
+   "海拉鲁米 + 戈隆香料",
+   "Hylian Rice + Goron Spice"
+  ],
+  [
+   "蔬菜咖喱饭",
+   "Vegetable Curry"
+  ],
+  [
+   "南瓜或胡萝卜 + 海拉鲁米 + 戈隆香料",
+   "Pumpkin or Carrot + Hylian Rice + Goron Spice"
+  ],
+  [
+   "兽肉咖喱饭",
+   "Meat Curry"
+  ],
+  [
+   "生兽肉 + 海拉鲁米 + 戈隆香料",
+   "Raw Meat + Hylian Rice + Goron Spice"
+  ],
+  [
+   "高级兽肉咖喱饭",
+   "Prime Meat Curry"
+  ],
+  [
+   "生高级兽肉 + 海拉鲁米 + 戈隆香料",
+   "Raw Prime Meat + Hylian Rice + Goron Spice"
+  ],
+  [
+   "顶级兽肉咖喱饭",
+   "Gourmet Meat Curry"
+  ],
+  [
+   "生顶级兽肉 + 海拉鲁米 + 戈隆香料",
+   "Raw Gourmet Meat + Hylian Rice + Goron Spice"
+  ],
+  [
+   "禽肉咖喱饭",
+   "Poultry Curry"
+  ],
+  [
+   "生禽腿肉 + 海拉鲁米 + 戈隆香料",
+   "Raw Bird Drumstick + Hylian Rice + Goron Spice"
+  ],
+  [
+   "高级禽肉咖喱饭",
+   "Prime Poultry Curry"
+  ],
+  [
+   "生高级禽腿肉 + 海拉鲁米 + 戈隆香料",
+   "Raw Bird Thigh + Hylian Rice + Goron Spice"
+  ],
+  [
+   "顶级禽肉咖喱饭",
+   "Gourmet Poultry Curry"
+  ],
+  [
+   "生整只禽肉 + 海拉鲁米 + 戈隆香料",
+   "Raw Whole Bird + Hylian Rice + Goron Spice"
+  ],
+  [
+   "海鲜咖喱饭",
+   "Seafood Curry"
+  ],
+  [
+   "鲷鱼 + 海拉鲁米 + 戈隆香料",
+   "Porgy + Hylian Rice + Goron Spice"
+  ],
+  [
+   "起司咖喱",
+   "Cheesy Curry"
+  ],
+  [
+   "海拉鲁米 + 哈特诺奶酪 + 戈隆香料",
+   "Hylian Rice + Hateno Cheese + Goron Spice"
+  ],
+  [
+   "胡萝卜炖菜",
+   "Carrot Stew"
+  ],
+  [
+   "胡萝卜 + 山羊黄油 + 鲜奶 + 塔邦挞小麦",
+   "Carrot + Goat Butter + Fresh Milk + Tabantha Wheat"
+  ],
+  [
+   "南瓜炖菜",
+   "Pumpkin Stew"
+  ],
+  [
+   "南瓜 + 塔邦挞小麦 + 鲜奶 + 山羊黄油",
+   "Pumpkin + Tabantha Wheat + Fresh Milk + Goat Butter"
+  ],
+  [
+   "炖肉",
+   "Meat Stew"
+  ],
+  [
+   "一档肉 + 塔邦挞小麦 + 鲜奶 + 山羊黄油",
+   "Tier 1 Meat + Tabantha Wheat + Fresh Milk + Goat Butter"
+  ],
+  [
+   "高级炖肉",
+   "Prime Meat Stew"
+  ],
+  [
+   "二档肉 + 塔邦挞小麦 + 鲜奶 + 山羊黄油",
+   "Tier 2 Meat + Tabantha Wheat + Fresh Milk + Goat Butter"
+  ],
+  [
+   "顶级炖肉",
+   "Gourmet Meat Stew"
+  ],
+  [
+   "三档肉 + 塔邦挞小麦 + 鲜奶 + 山羊黄油",
+   "Tier 3 Meat + Tabantha Wheat + Fresh Milk + Goat Butter"
+  ],
+  [
+   "南瓜酿肉",
+   "Meat-Stuffed Pumpkin"
+  ],
+  [
+   "南瓜 + 肉",
+   "Pumpkin + Meat"
+  ],
+  [
+   "55 种",
+   "55 dishes"
+  ],
+  [
+   "蔬菜烩饭",
+   "Vegetable Risotto"
+  ],
+  [
+   "南瓜或胡萝卜 + 海拉鲁米 + 岩盐 + 山羊黄油",
+   "Pumpkin or Carrot + Hylian Rice + Rock Salt + Goat Butter"
+  ],
+  [
+   "蘑菇烩饭",
+   "Mushroom Risotto"
+  ],
+  [
+   "蘑菇 + 海拉鲁米 + 岩盐 + 山羊黄油",
+   "Mushroom + Hylian Rice + Rock Salt + Goat Butter"
+  ],
+  [
+   "鲑鱼烩饭",
+   "Salmon Risotto"
+  ],
+  [
+   "生命鲑鱼 + 海拉鲁米 + 岩盐 + 山羊黄油",
+   "Hearty Salmon + Hylian Rice + Rock Salt + Goat Butter"
+  ],
+  [
+   "蟹肉烩饭",
+   "Crab Risotto"
+  ],
+  [
+   "螃蟹 + 海拉鲁米 + 岩盐 + 山羊黄油",
+   "Crab + Hylian Rice + Rock Salt + Goat Butter"
+  ],
+  [
+   "起司烩饭",
+   "Cheesy Risotto"
+  ],
+  [
+   "鱼／蘑菇／野菜 + 哈特诺奶酪 + 海拉鲁米 + 岩盐",
+   "Fish / Mushroom / Plant + Hateno Cheese + Hylian Rice + Rock Salt"
+  ],
+  [
+   "禽肉菜饭",
+   "Poultry Pilaf"
+  ],
+  [
+   "生禽腿肉 + 鸟蛋 + 海拉鲁米 + 山羊黄油",
+   "Raw Bird Drumstick + Bird Egg + Hylian Rice + Goat Butter"
+  ],
+  [
+   "高级禽肉菜饭",
+   "Prime Poultry Pilaf"
+  ],
+  [
+   "生高级禽腿肉 + 鸟蛋 + 海拉鲁米 + 山羊黄油",
+   "Raw Bird Thigh + Bird Egg + Hylian Rice + Goat Butter"
+  ],
+  [
+   "顶级禽肉菜饭",
+   "Gourmet Poultry Pilaf"
+  ],
+  [
+   "生整只禽肉 + 鸟蛋 + 海拉鲁米 + 山羊黄油",
+   "Raw Whole Bird + Bird Egg + Hylian Rice + Goat Butter"
+  ],
+  [
+   "海鲜杂烩饭",
+   "Seafood Paella"
+  ],
+  [
+   "鲷鱼 + 螃蟹 + 海拉鲁米 + 山羊黄油 + 岩盐",
+   "Porgy + Crab + Hylian Rice + Goat Butter + Rock Salt"
+  ],
+  [
+   "咖喱菜饭",
+   "Curry Pilaf"
+  ],
+  [
+   "戈隆香料 + 海拉鲁米 + 山羊黄油",
+   "Goron Spice + Hylian Rice + Goat Butter"
+  ],
+  [
+   "煎蛋饭",
+   "Fried Egg and Rice"
+  ],
+  [
+   "海拉鲁米 + 鸟蛋",
+   "Hylian Rice + Bird Egg"
+  ],
+  [
+   "啪啦啪啦炒饭",
+   "Crunchy Fried Rice"
+  ],
+  [
+   "肉 + 油壶 + 海拉鲁米 + 鸟蛋",
+   "Meat + Oil Jar + Hylian Rice + Bird Egg"
+  ],
+  [
+   "海鲜炒饭",
+   "Seafood Fried Rice"
+  ],
+  [
+   "鲷鱼 + 海拉鲁米 + 岩盐",
+   "Porgy + Hylian Rice + Rock Salt"
+  ],
+  [
+   "蟹肉蛋炒饭",
+   "Crab Omelet with Rice"
+  ],
+  [
+   "螃蟹 + 鸟蛋 + 海拉鲁米 + 岩盐",
+   "Crab + Bird Egg + Hylian Rice + Rock Salt"
+  ],
+  [
+   "兽肉盖饭",
+   "Meat and Rice Bowl"
+  ],
+  [
+   "生兽肉 + 海拉鲁米 + 岩盐",
+   "Raw Meat + Hylian Rice + Rock Salt"
+  ],
+  [
+   "高级兽肉盖饭",
+   "Prime Meat and Rice Bowl"
+  ],
+  [
+   "生高级兽肉 + 海拉鲁米 + 岩盐",
+   "Raw Prime Meat + Hylian Rice + Rock Salt"
+  ],
+  [
+   "顶级兽肉盖饭",
+   "Gourmet Meat and Rice Bowl"
+  ],
+  [
+   "生顶级兽肉 + 海拉鲁米 + 岩盐",
+   "Raw Gourmet Meat + Hylian Rice + Rock Salt"
+  ],
+  [
+   "起司兽肉盖饭",
+   "Cheesy Meat Bowl"
+  ],
+  [
+   "生兽肉 + 海拉鲁米 + 哈特诺奶酪 + 岩盐",
+   "Raw Meat + Hylian Rice + Hateno Cheese + Rock Salt"
+  ],
+  [
+   "起司高级兽肉盖饭",
+   "Prime Cheesy Meat Bowl"
+  ],
+  [
+   "生高级兽肉 + 海拉鲁米 + 哈特诺奶酪 + 岩盐",
+   "Raw Prime Meat + Hylian Rice + Hateno Cheese + Rock Salt"
+  ],
+  [
+   "起司顶级兽肉盖饭",
+   "Gourmet Cheesy Meat Bowl"
+  ],
+  [
+   "生顶级兽肉 + 海拉鲁米 + 哈特诺奶酪 + 岩盐",
+   "Raw Gourmet Meat + Hylian Rice + Hateno Cheese + Rock Salt"
+  ],
+  [
+   "野菜饭团",
+   "Veggie Rice Balls"
+  ],
+  [
+   "野菜 + 海拉鲁米",
+   "Plant + Hylian Rice"
+  ],
+  [
+   "蘑菇饭团",
+   "Mushroom Rice Balls"
+  ],
+  [
+   "蘑菇 + 海拉鲁米",
+   "Mushroom + Hylian Rice"
+  ],
+  [
+   "鲜肉饭团",
+   "Meaty Rice Balls"
+  ],
+  [
+   "肉 + 海拉鲁米",
+   "Meat + Hylian Rice"
+  ],
+  [
+   "海鲜饭团",
+   "Seafood Rice Balls"
+  ],
+  [
+   "鱼 + 海拉鲁米",
+   "Fish + Hylian Rice"
+  ],
+  [
+   "野菜牛奶粥",
+   "Veggie Porridge"
+  ],
+  [
+   "野菜 + 海拉鲁米 + 鲜奶",
+   "Plant + Hylian Rice + Fresh Milk"
+  ],
+  [
+   "小麦面包",
+   "Wheat Bread"
+  ],
+  [
+   "塔邦挞小麦 + 岩盐",
+   "Tabantha Wheat + Rock Salt"
+  ],
+  [
+   "黏糊糊起司面包",
+   "Melty Cheesy Bread"
+  ],
+  [
+   "塔邦挞小麦 + 哈特诺奶酪",
+   "Tabantha Wheat + Hateno Cheese"
+  ],
+  [
+   "番茄披萨",
+   "Hylian Tomato Pizza"
+  ],
+  [
+   "海拉鲁番茄 + 塔邦挞小麦 + 哈特诺奶酪",
+   "Hylian Tomato + Tabantha Wheat + Hateno Cheese"
+  ],
+  [
+   "鲜肉派",
+   "Meat Pie"
+  ],
+  [
+   "肉 + 塔邦挞小麦 + 山羊黄油 + 岩盐",
+   "Meat + Tabantha Wheat + Goat Butter + Rock Salt"
+  ],
+  [
+   "鱼肉派",
+   "Fish Pie"
+  ],
+  [
+   "鱼 + 塔邦挞小麦 + 山羊黄油 + 岩盐",
+   "Fish + Tabantha Wheat + Goat Butter + Rock Salt"
+  ],
+  [
+   "起司番茄",
+   "Cheesy Tomato"
+  ],
+  [
+   "海拉鲁番茄 + 哈特诺奶酪",
+   "Hylian Tomato + Hateno Cheese"
+  ],
+  [
+   "鲜鱼起司焗烤",
+   "Cheesy Baked Fish"
+  ],
+  [
+   "鱼 + 哈特诺奶酪",
+   "Fish + Hateno Cheese"
+  ],
+  [
+   "煎蛋卷",
+   "Omelet"
+  ],
+  [
+   "鸟蛋",
+   "Bird Egg"
+  ],
+  [
+   "蔬菜煎蛋卷",
+   "Vegetable Omelet"
+  ],
+  [
+   "野菜 + 鸟蛋 + 山羊黄油 + 岩盐",
+   "Plant + Bird Egg + Goat Butter + Rock Salt"
+  ],
+  [
+   "蘑菇煎蛋卷",
+   "Mushroom Omelet"
+  ],
+  [
+   "蘑菇 + 鸟蛋 + 岩盐 + 山羊黄油",
+   "Mushroom + Bird Egg + Rock Salt + Goat Butter"
+  ],
+  [
+   "起司煎蛋卷",
+   "Cheesy Omelet"
+  ],
+  [
+   "蘑菇／野菜 + 哈特诺奶酪 + 鸟蛋 + 岩盐",
+   "Mushroom / Plant + Hateno Cheese + Bird Egg + Rock Salt"
+  ],
+  [
+   "黄油苹果",
+   "Hot Buttered Apple"
+  ],
+  [
+   "苹果／金苹果 + 山羊黄油",
+   "Apple / Golden Apple + Goat Butter"
+  ],
+  [
+   "蜂蜜水果",
+   "Honeyed Fruits"
+  ],
+  [
+   "水果 + 速速蜂蜂蜜",
+   "Fruit + Courser Bee Honey"
+  ],
+  [
+   "蜂蜜苹果",
+   "Honeyed Apple"
+  ],
+  [
+   "苹果／金苹果 + 速速蜂蜂蜜",
+   "Apple / Golden Apple + Courser Bee Honey"
+  ],
+  [
+   "蜂蜜糖",
+   "Honey Candy"
+  ],
+  [
+   "速速蜂蜂蜜",
+   "Courser Bee Honey"
+  ],
+  [
+   "炸香蕉",
+   "Fried Bananas"
+  ],
+  [
+   "大剑香蕉 + 塔邦挞小麦 + 蔗糖",
+   "Mighty Bananas + Tabantha Wheat + Cane Sugar"
+  ],
+  [
+   "鲜蛋布丁",
+   "Egg Pudding"
+  ],
+  [
+   "鸟蛋 + 鲜奶 + 蔗糖",
+   "Bird Egg + Fresh Milk + Cane Sugar"
+  ],
+  [
+   "原味可丽饼",
+   "Plain Crepe"
+  ],
+  [
+   "塔邦挞小麦 + 鲜奶 + 鸟蛋 + 蔗糖",
+   "Tabantha Wheat + Fresh Milk + Bird Egg + Cane Sugar"
+  ],
+  [
+   "草莓可丽饼",
+   "Wildberry Crepe"
+  ],
+  [
+   "塔邦挞小麦 + 鲜奶 + 鸟蛋 + 蔗糖 + 草莓",
+   "Tabantha Wheat + Fresh Milk + Bird Egg + Cane Sugar + Wildberry"
+  ],
+  [
+   "蜂蜜可丽饼",
+   "Honey Crepe"
+  ],
+  [
+   "塔邦挞小麦 + 鲜奶 + 鸟蛋 + 蔗糖 + 速速蜂蜂蜜",
+   "Tabantha Wheat + Fresh Milk + Bird Egg + Cane Sugar + Courser Bee Honey"
+  ],
+  [
+   "坚果蛋糕",
+   "Nutcake"
+  ],
+  [
+   "塔邦挞小麦 + 山羊黄油 + 蔗糖 + 坚果",
+   "Tabantha Wheat + Goat Butter + Cane Sugar + Nut"
+  ],
+  [
+   "水果蛋糕",
+   "Fruitcake"
+  ],
+  [
+   "甜点水果 + 苹果或草莓 + 塔邦挞小麦 + 蔗糖",
+   "Dessert Fruit + Apple or Wildberry + Tabantha Wheat + Cane Sugar"
+  ],
+  [
+   "胡萝卜蛋糕",
+   "Carrot Cake"
+  ],
+  [
+   "胡萝卜 + 塔邦挞小麦 + 蔗糖 + 山羊黄油",
+   "Carrot + Tabantha Wheat + Cane Sugar + Goat Butter"
+  ],
+  [
+   "南瓜蛋糕",
+   "Pumpkin Pie"
+  ],
+  [
+   "南瓜 + 塔邦挞小麦 + 蔗糖 + 山羊黄油",
+   "Pumpkin + Tabantha Wheat + Cane Sugar + Goat Butter"
+  ],
+  [
+   "起司蛋糕",
+   "Cheesecake"
+  ],
+  [
+   "哈特诺奶酪 + 塔邦挞小麦 + 蔗糖",
+   "Hateno Cheese + Tabantha Wheat + Cane Sugar"
+  ],
+  [
+   "水果派",
+   "Fruit Pie"
+  ],
+  [
+   "水果 + 塔邦挞小麦 + 山羊黄油 + 蔗糖",
+   "Fruit + Tabantha Wheat + Goat Butter + Cane Sugar"
+  ],
+  [
+   "苹果派",
+   "Apple Pie"
+  ],
+  [
+   "苹果／金苹果 + 塔邦挞小麦 + 山羊黄油 + 蔗糖",
+   "Apple / Golden Apple + Tabantha Wheat + Goat Butter + Cane Sugar"
+  ],
+  [
+   "蛋挞",
+   "Egg Tart"
+  ],
+  [
+   "鸟蛋 + 塔邦挞小麦 + 山羊黄油 + 蔗糖",
+   "Bird Egg + Tabantha Wheat + Goat Butter + Cane Sugar"
+  ],
+  [
+   "热牛奶",
+   "Milk"
+  ],
+  [
+   "鲜奶",
+   "Fresh Milk"
+  ],
+  [
+   "芭伊遇上伯伊",
+   "Noble Pursuit"
+  ],
+  [
+   "椰子 + 冰冷蜜瓜 + 酥麻水果 + 岩盐",
+   "Palm Fruit + Hydromelon + Voltfruit + Rock Salt"
+  ],
+  [
+   "13 种",
+   "13 dishes"
+  ],
+  [
+   "炖怪物",
+   "Monster Stew"
+  ],
+  [
+   "肉 + 鱼 + 怪物精华",
+   "Meat + Fish + Monster Extract"
+  ],
+  [
+   "怪物汤",
+   "Monster Soup"
+  ],
+  [
+   "塔邦挞小麦 + 山羊黄油 + 鲜奶 + 怪物精华",
+   "Tabantha Wheat + Goat Butter + Fresh Milk + Monster Extract"
+  ],
+  [
+   "怪物咖喱饭",
+   "Monster Curry"
+  ],
+  [
+   "海拉鲁米 + 戈隆香料 + 怪物精华",
+   "Hylian Rice + Goron Spice + Monster Extract"
+  ],
+  [
+   "怪物饭团",
+   "Monster Rice Balls"
+  ],
+  [
+   "海拉鲁米 + 岩盐 + 怪物精华",
+   "Hylian Rice + Rock Salt + Monster Extract"
+  ],
+  [
+   "怪物蛋糕",
+   "Monster Cake"
+  ],
+  [
+   "塔邦挞小麦 + 蔗糖 + 怪物精华 + 山羊黄油",
+   "Tabantha Wheat + Cane Sugar + Monster Extract + Goat Butter"
+  ],
+  [
+   "魔人炖煮",
+   "Dark Stew"
+  ],
+  [
+   "暗黑团块 + 肉 + 鱼",
+   "Dark Clump + Meat + Fish"
+  ],
+  [
+   "魔人汤",
+   "Dark Soup"
+  ],
+  [
+   "暗黑团块 + 塔邦挞小麦 + 山羊黄油 + 鲜奶",
+   "Dark Clump + Tabantha Wheat + Goat Butter + Fresh Milk"
+  ],
+  [
+   "魔人咖喱饭",
+   "Dark Curry"
+  ],
+  [
+   "暗黑团块 + 戈隆香料 + 海拉鲁米",
+   "Dark Clump + Goron Spice + Hylian Rice"
+  ],
+  [
+   "魔人饭团",
+   "Dark Rice Ball"
+  ],
+  [
+   "暗黑团块 + 岩盐 + 海拉鲁米",
+   "Dark Clump + Rock Salt + Hylian Rice"
+  ],
+  [
+   "魔人蛋糕",
+   "Dark Cake"
+  ],
+  [
+   "暗黑团块 + 蔗糖 + 塔邦挞小麦 + 山羊黄油",
+   "Dark Clump + Cane Sugar + Tabantha Wheat + Goat Butter"
+  ],
+  [
+   "奇异的菜肴",
+   "Dubious Food"
+  ],
+  [
+   "无效配方",
+   "Invalid Recipe"
+  ],
+  [
+   "过硬的菜肴",
+   "Rock-Hard Food"
+  ],
+  [
+   "矿石",
+   "Ore"
+  ],
+  [
+   "水煮蛋",
+   "Hard-Boiled Egg"
+  ],
+  [
+   "51 种",
+   "51 dishes"
+  ],
+  [
+   "烤苹果",
+   "Baked Apple"
+  ],
+  [
+   "苹果",
+   "Apple"
+  ],
+  [
+   "烤金苹果",
+   "Baked Golden Apple"
+  ],
+  [
+   "金苹果",
+   "Golden Apple"
+  ],
+  [
+   "烤暖暖草果",
+   "Charred Pepper"
+  ],
+  [
+   "烤海拉鲁番茄",
+   "Roasted Hylian Tomato"
+  ],
+  [
+   "烤草莓",
+   "Roasted Wildberry"
+  ],
+  [
+   "草莓",
+   "Wildberry"
+  ],
+  [
+   "烤酥麻水果",
+   "Roasted Voltfruit"
+  ],
+  [
+   "酥麻水果",
+   "Voltfruit"
+  ],
+  [
+   "烤冰冷蜜瓜",
+   "Roasted Hydromelon"
+  ],
+  [
+   "冰冷蜜瓜",
+   "Hydromelon"
+  ],
+  [
+   "烤椰子",
+   "Baked Palm Fruit"
+  ],
+  [
+   "椰子",
+   "Palm Fruit"
+  ],
+  [
+   "烤大剑香蕉",
+   "Roasted Mighty Bananas"
+  ],
+  [
+   "大剑香蕉",
+   "Mighty Bananas"
+  ],
+  [
+   "烤速速莲蓬",
+   "Roasted Lotus Seeds"
+  ],
+  [
+   "速速莲蓬",
+   "Fleet-Lotus Seeds"
+  ],
+  [
+   "烤大剑草",
+   "Roasted Mighty Thistle"
+  ],
+  [
+   "大剑草",
+   "Mighty Thistle"
+  ],
+  [
+   "烤铠甲草",
+   "Roasted Armoranth"
+  ],
+  [
+   "铠甲草",
+   "Armoranth"
+  ],
+  [
+   "烤速速胡萝卜",
+   "Roasted Swift Carrot"
+  ],
+  [
+   "速速胡萝卜",
+   "Swift Carrot"
+  ],
+  [
+   "烤毅力胡萝卜",
+   "Roasted Endura Carrot"
+  ],
+  [
+   "毅力胡萝卜",
+   "Endura Carrot"
+  ],
+  [
+   "烤铠甲南瓜",
+   "Baked Fortified Pumpkin"
+  ],
+  [
+   "铠甲南瓜",
+   "Fortified Pumpkin"
+  ],
+  [
+   "烤向阳南瓜",
+   "Baked Sun Pumpkin"
+  ],
+  [
+   "向阳南瓜",
+   "Sun Pumpkin"
+  ],
+  [
+   "烤小萝卜",
+   "Roasted Radish"
+  ],
+  [
+   "小萝卜",
+   "Hearty Radish"
+  ],
+  [
+   "烤大萝卜",
+   "Roasted Big Radish"
+  ],
+  [
+   "大萝卜",
+   "Big Hearty Radish"
+  ],
+  [
+   "烤天空蘑菇",
+   "Toasty Skyshroom"
+  ],
+  [
+   "天空蘑菇",
+   "Skyshroom"
+  ],
+  [
+   "烤海拉鲁蘑菇",
+   "Toasty Hylian Shroom"
+  ],
+  [
+   "海拉鲁蘑菇",
+   "Hylian Shroom"
+  ],
+  [
+   "烤精力蘑菇",
+   "Toasty Stamella Shroom"
+  ],
+  [
+   "精力蘑菇",
+   "Stamella Shroom"
+  ],
+  [
+   "烤速速蘑菇",
+   "Toasty Rushroom"
+  ],
+  [
+   "速速蘑菇",
+   "Rushroom"
+  ],
+  [
+   "烤暖暖蘑菇",
+   "Toasty Sunshroom"
+  ],
+  [
+   "暖暖蘑菇",
+   "Sunshroom"
+  ],
+  [
+   "烤冰冷蘑菇",
+   "Toasty Chillshroom"
+  ],
+  [
+   "冰冷蘑菇",
+   "Chillshroom"
+  ],
+  [
+   "烤酥麻蘑菇",
+   "Toasty Zapshroom"
+  ],
+  [
+   "酥麻蘑菇",
+   "Zapshroom"
+  ],
+  [
+   "烤大剑蘑菇",
+   "Toasty Razorshroom"
+  ],
+  [
+   "大剑蘑菇",
+   "Razorshroom"
+  ],
+  [
+   "烤铠甲蘑菇",
+   "Toasty Ironshroom"
+  ],
+  [
+   "铠甲蘑菇",
+   "Ironshroom"
+  ],
+  [
+   "烤潜行蘑菇",
+   "Toasty Silent Shroom"
+  ],
+  [
+   "潜行蘑菇",
+   "Silent Shroom"
+  ],
+  [
+   "烤光亮蘑菇",
+   "Toasty Brightcap"
+  ],
+  [
+   "光亮蘑菇",
+   "Brightcap"
+  ],
+  [
+   "烤毅力蘑菇",
+   "Toasty Endura Shroom"
+  ],
+  [
+   "毅力蘑菇",
+   "Endura Shroom"
+  ],
+  [
+   "烤生命松露",
+   "Toasted Hearty Truffle"
+  ],
+  [
+   "生命松露",
+   "Hearty Truffle"
+  ],
+  [
+   "烤大生命松露",
+   "Toasted Big Hearty Truffle"
+  ],
+  [
+   "大生命松露",
+   "Big Hearty Truffle"
+  ],
+  [
+   "烤兽肉",
+   "Seared Steak"
+  ],
+  [
+   "生兽肉",
+   "Raw Meat"
+  ],
+  [
+   "烤高级兽肉",
+   "Seared Prime Steak"
+  ],
+  [
+   "生高级兽肉",
+   "Raw Prime Meat"
+  ],
+  [
+   "烤顶级兽肉",
+   "Seared Gourmet Steak"
+  ],
+  [
+   "生顶级兽肉",
+   "Raw Gourmet Meat"
+  ],
+  [
+   "烤禽肉",
+   "Roasted Bird Drumstick"
+  ],
+  [
+   "生禽腿肉",
+   "Raw Bird Drumstick"
+  ],
+  [
+   "烤高级禽肉",
+   "Roasted Bird Thigh"
+  ],
+  [
+   "生高级禽腿肉",
+   "Raw Bird Thigh"
+  ],
+  [
+   "烤顶级禽肉",
+   "Roasted Whole Bird"
+  ],
+  [
+   "生整只禽肉",
+   "Raw Whole Bird"
+  ],
+  [
+   "烤骨舌鱼",
+   "Roasted Arowana"
+  ],
+  [
+   "骨舌鱼",
+   "Ancient Arowana"
+  ],
+  [
+   "烤鲈鱼",
+   "Roasted Bass"
+  ],
+  [
+   "鲈鱼",
+   "Bass"
+  ],
+  [
+   "烤鳟鱼",
+   "Roasted Trout"
+  ],
+  [
+   "鳟鱼",
+   "Trout"
+  ],
+  [
+   "烤鲤鱼",
+   "Roasted Carp"
+  ],
+  [
+   "鲤鱼",
+   "Carp"
+  ],
+  [
+   "烤鲷鱼",
+   "Roasted Porgy"
+  ],
+  [
+   "鲷鱼",
+   "Porgy"
+  ],
+  [
+   "烤霍拉鱼",
+   "Roasted Cave Fish"
+  ],
+  [
+   "霍拉鱼",
+   "Glowing Cave Fish"
+  ],
+  [
+   "烤生命鲈鱼",
+   "Roasted Hearty Bass"
+  ],
+  [
+   "生命鲈鱼",
+   "Hearty Bass"
+  ],
+  [
+   "烤生命鲑鱼",
+   "Roasted Hearty Salmon"
+  ],
+  [
+   "生命鲑鱼",
+   "Hearty Salmon"
+  ],
+  [
+   "烤螃蟹",
+   "Blackened Crab"
+  ],
+  [
+   "螃蟹",
+   "Crab"
+  ],
+  [
+   "烤潜行田螺",
+   "Sneaky River Escargot"
+  ],
+  [
+   "潜行田螺",
+   "Sneaky River Snail"
+  ],
+  [
+   "烤树果",
+   "Roasted Tree Nut"
+  ],
+  [
+   "树果",
+   "Chickaloo Tree Nut"
+  ],
+  [
+   "烤橡子",
+   "Roasted Acorn"
+  ],
+  [
+   "橡子",
+   "Acorn"
+  ],
+  [
+   "烤蛋",
+   "Campfire Egg"
+  ],
+  [
+   "16 种",
+   "16 dishes"
+  ],
+  [
+   "冰冻兽肉",
+   "Icy Meat"
+  ],
+  [
+   "高级冰冻兽肉",
+   "Icy Prime Meat"
+  ],
+  [
+   "顶级冰冻兽肉",
+   "Icy Gourmet Meat"
+  ],
+  [
+   "冰冻禽肉",
+   "Frozen Bird Drumstick"
+  ],
+  [
+   "高级冰冻禽肉",
+   "Frozen Bird Thigh"
+  ],
+  [
+   "顶级冰冻禽肉",
+   "Frozen Whole Bird"
+  ],
+  [
+   "冰冻骨舌鱼",
+   "Frozen Arowana"
+  ],
+  [
+   "冰冻鲈鱼",
+   "Frozen Bass"
+  ],
+  [
+   "冰冻鳟鱼",
+   "Frozen Trout"
+  ],
+  [
+   "冰冻鲤鱼",
+   "Frozen Carp"
+  ],
+  [
+   "冰冻鲷鱼",
+   "Frozen Porgy"
+  ],
+  [
+   "冰冻霍拉鱼",
+   "Frozen Cave Fish"
+  ],
+  [
+   "冰冻生命鲈鱼",
+   "Frozen Hearty Bass"
+  ],
+  [
+   "冰冻生命鲑鱼",
+   "Frozen Hearty Salmon"
+  ],
+  [
+   "冰冻螃蟹",
+   "Frozen Crab"
+  ],
+  [
+   "明眸蟹",
+   "Bright-Eyed Crab"
+  ],
+  [
+   "冰冻田螺",
+   "Frozen River Snail"
+  ],
+  [
+   "14 种",
+   "14 dishes"
+  ],
+  [
+   "精力药",
+   "Energizing Elixir"
+  ],
+  [
+   "怪物素材 + 精力犀牛甲虫／不安蟋蟀",
+   "Enemy + Energetic Rhino Beetle / Restless Cricket"
+  ],
+  [
+   "速速药",
+   "Hasty Elixir"
+  ],
+  [
+   "怪物素材 + 速速蛙／长尾蜥蜴",
+   "Enemy + Hot-Footed Frog / Hightail Lizard"
+  ],
+  [
+   "辛辣药",
+   "Spicy Elixir"
+  ],
+  [
+   "怪物素材 + 夏翅蝴蝶／暖蜻蜓",
+   "Enemy + Summerwing Butterfly / Warm Darner"
+  ],
+  [
+   "冰冷药",
+   "Chilly Elixir"
+  ],
+  [
+   "怪物素材 + 冬翅蝴蝶／冰冷蜻蜓",
+   "Enemy + Winterwing Butterfly / Cold Darner"
+  ],
+  [
+   "电麻药",
+   "Electro Elixir"
+  ],
+  [
+   "怪物素材 + 雷翅蝴蝶／电蜻蜓",
+   "Enemy + Thunderwing Butterfly / Electric Darner"
+  ],
+  [
+   "防火药",
+   "Fireproof Elixir"
+  ],
+  [
+   "怪物素材 + 闷燃蝴蝶／防火蜥蜴",
+   "Enemy + Smotherwing Butterfly / Fireproof Lizard"
+  ],
+  [
+   "力量药",
+   "Mighty Elixir"
+  ],
+  [
+   "怪物素材 + 刀刃犀牛甲虫",
+   "Enemy + Bladed Rhino Beetle"
+  ],
+  [
+   "坚硬药",
+   "Tough Elixir"
+  ],
+  [
+   "怪物素材 + 坚硬犀牛甲虫",
+   "Enemy + Rugged Rhino Beetle"
+  ],
+  [
+   "潜行药",
+   "Sneaky Elixir"
+  ],
+  [
+   "怪物素材 + 黄昏萤火虫",
+   "Enemy + Sunset Firefly"
+  ],
+  [
+   "防滑药",
+   "Sticky Elixir"
+  ],
+  [
+   "怪物素材 + 粘粘蛙／粘粘蜥蜴",
+   "Enemy + Sticky Frog / Sticky Lizard"
+  ],
+  [
+   "光亮药",
+   "Bright Elixir"
+  ],
+  [
+   "怪物素材 + 深渊萤火虫",
+   "Enemy + Deep Firefly"
+  ],
+  [
+   "能量药",
+   "Enduring Elixir"
+  ],
+  [
+   "怪物素材 + 不倦蛙",
+   "Enemy + Tireless Frog"
+  ],
+  [
+   "生命药",
+   "Hearty Elixir"
+  ],
+  [
+   "怪物素材 + 生命蜥蜴",
+   "Enemy + Hearty Lizard"
+  ],
+  [
+   "妖精回力水",
+   "Fairy Tonic"
+  ],
+  [
+   "妖精",
+   "Fairy"
+  ],
+  [
+   "料理图片",
+   "Dish image"
+  ],
+  [
+   "所需材料",
+   "Ingredients"
+  ],
+  [
+   "加成效果",
+   "Bonus Effect"
+  ],
+  [
+   "回血",
+   "Hearts Restored"
+  ],
+  [
+   "关闭",
+   "Close"
+  ],
+  [
+   "串炒煎炸 · 锅煮",
+   "Skewers, Sautés & Fries · Cooked in a Cooking Pot"
+  ],
+  [
+   "汤品炖菜 · 锅煮",
+   "Soups & Stews · Cooked in a Cooking Pot"
+  ],
+  [
+   "饭食 · 锅煮",
+   "Rice Dishes & Baked Goods · Cooked in a Cooking Pot"
+  ],
+  [
+   "特殊料理 · 锅煮",
+   "Special Dishes · Cooked in a Cooking Pot"
+  ],
+  [
+   "烤食 · 篝火烤",
+   "Roasted Foods · Campfire Roasting"
+  ],
+  [
+   "特殊料理 · 温泉",
+   "Special Dishes · Hot Spring"
+  ],
+  [
+   "冷冻 · 极寒冷冻",
+   "Frozen Foods · Extreme-Cold Freezing"
+  ],
+  [
+   "药水 · 锅煮",
+   "Elixirs · Cooked in a Cooking Pot"
+  ],
+  [
+   "耐寒",
+   "Cold Resistance"
+  ],
+  [
+   "精力恢复",
+   "Stamina Recovery"
+  ],
+  [
+   "耐热 Lv1",
+   "Heat Resistance (Lv 1)"
+  ],
+  [
+   "精力恢复 Lv1 – 2",
+   "Stamina Recovery (Lv 1 – 2)"
+  ],
+  [
+   "移动速度提升 Lv1 – 3",
+   "Speed Up (Lv 1 – 3)"
+  ],
+  [
+   "耐寒 Lv1 – 2",
+   "Cold Resistance (Lv 1 – 2)"
+  ],
+  [
+   "耐热 Lv1 – 2",
+   "Heat Resistance (Lv 1 – 2)"
+  ],
+  [
+   "电气抗性 Lv1 – 3",
+   "Shock Resistance (Lv 1 – 3)"
+  ],
+  [
+   "防火 Lv1 – 2",
+   "Flame Guard (Lv 1 – 2)"
+  ],
+  [
+   "攻击力提升 Lv1 – 3",
+   "Attack Up (Lv 1 – 3)"
+  ],
+  [
+   "防御力提升 Lv1 – 3",
+   "Defense Up (Lv 1 – 3)"
+  ],
+  [
+   "潜行提升 Lv1 – 3",
+   "Stealth Up (Lv 1 – 3)"
+  ],
+  [
+   "防滑 Lv1 – 3",
+   "Slip Resistance (Lv 1 – 3)"
+  ],
+  [
+   "发光 Lv1 – 3",
+   "Glow (Lv 1 – 3)"
+  ],
+  [
+   "精力上限提升",
+   "Extra Stamina"
+  ],
+  [
+   "生命上限提升",
+   "Extra Hearts"
+  ],
+  [
+   "耐热",
+   "Heat Resistance"
+  ],
+  [
+   "移动速度提升",
+   "Speed Up"
+  ],
+  [
+   "电气抗性",
+   "Shock Resistance"
+  ],
+  [
+   "防火",
+   "Flame Guard"
+  ],
+  [
+   "攻击力提升",
+   "Attack Up"
+  ],
+  [
+   "防御力提升",
+   "Defense Up"
+  ],
+  [
+   "潜行提升",
+   "Stealth Up"
+  ],
+  [
+   "防滑",
+   "Slip Resistance"
+  ],
+  [
+   "发光",
+   "Glow"
+  ],
+  [
+   "瘴气抗性",
+   "Gloom Resistance"
+  ],
+  [
+   "瘴气恢复",
+   "Gloom Recovery"
+  ],
+  [
+   "无加成",
+   "No bonus"
+  ],
+  [
+   "无加成（失败料理）",
+   "No bonus (failed dish)"
+  ],
+  [
+   "恢复全部红心",
+   "Restores all hearts"
+  ],
+  [
+   "随机加成（怪物精华）",
+   "Random bonus (Monster Extract)"
+  ],
+  [
+   "取决于你选哪一种食材",
+   "Depends on which ingredient you choose"
+  ],
+  [
+   "效果不稳定（不同效果混用）",
+   "Unstable effect (mixed effects)"
+  ],
+  [
+   "取决于你选的具体食材",
+   "Depends on the specific ingredient you choose"
+  ],
+  [
+   "无加成，仅回血",
+   "No bonus, hearts only"
+  ],
+  [
+   "ZeldaCentral 配方表给出的固定加成。",
+   "Fixed bonus from the ZeldaCentral recipe table."
+  ],
+  [
+   "药水加成由昆虫／青蛙／蜥蜴决定，怪物素材只影响持续时间，不改变加成种类；怪物素材越高级，持续时间越长。",
+   "For elixirs, the bonus is determined by the insect, frog, or lizard; monster parts only affect duration, not the bonus type; higher-grade monster parts give a longer duration."
+  ],
+  [
+   "所有冷冻食品固定带耐热加成，代价是回血略低于生食材。",
+   "All frozen foods always carry Heat Resistance, at the cost of restoring slightly fewer hearts than the raw ingredient."
+  ],
+  [
+   "烤食不保留食材的加成效果，只恢复生命（烤后回血约为生食材的 1.5 倍）。",
+   "Roasted food does not keep the ingredient’s bonus effect; it only restores hearts (roasting restores about 1.5× the hearts of the raw ingredient)."
+  ],
+  [
+   "温泉水煮蛋仅恢复生命，无额外加成。",
+   "A hot-spring-boiled egg only restores hearts, with no extra bonus."
+  ],
+  [
+   "用非食材或不兼容材料煮出，回血极少，无加成。",
+   "Cooked from non-ingredients or incompatible materials; restores very few hearts and gives no bonus."
+  ],
+  [
+   "只用矿石煮出，又硬又难吃，回血极少，无加成。",
+   "Cooked using only ore; hard and unappetizing, restores very few hearts and gives no bonus."
+  ],
+  [
+   "单独用妖精煮出，喝下恢复全部生命。",
+   "Cooked from a fairy alone; drinking it restores all hearts."
+  ],
+  [
+   "暗黑团块提供瘴气抗性，每份提供 1 点抗性点数，放得越多抗性越强。",
+   "Dark Clumps grant Gloom Resistance, 1 resistance point per clump; more clumps mean stronger resistance."
+  ],
+  [
+   "注意：暗黑团块单独煮会失败，必须按配方搭配其他食材。",
+   "Note: cooking Dark Clumps alone will fail — they must be combined with other ingredients as in the recipe."
+  ],
+  [
+   "怪物精华会随机化结果：持续时间固定为 1 分钟、10 分钟或 30 分钟三档之一；回血或加成强度随机增强或减弱；且无法获得暴击加成。",
+   "Monster Extract randomizes the result: duration is fixed at one of three tiers — 1 minute, 10 minutes, or 30 minutes; heart recovery or bonus strength is randomly increased or decreased; and no critical-cooking bonus is possible."
+  ],
+  [
+   "本配方本身无固定加成，随机结果主要影响回血量。",
+   "This recipe itself has no fixed bonus; the random result mainly affects heart recovery."
+  ],
+  [
+   "同效果食材叠加可提升加成等级和持续时间；不同效果食材混用会互相抵消。",
+   "Stacking ingredients with the same effect raises the bonus level and duration; mixing ingredients with different effects cancels them out."
+  ],
+  [
+   "这道菜的配方里有任选材料，加成随你的选择而变",
+   "This dish’s recipe includes an ingredient you may choose freely, and the bonus changes with your choice"
+  ],
+  [
+   "选定一种后，不要再混入其他效果食材。",
+   "Once you have chosen one, do not mix in ingredients with other effects."
+  ],
+  [
+   "配方里同时有等不同效果食材，按游戏规则一锅只能有一种加成，不同效果混用会互相抵消或只保留最强的一种，做出来大概率只有回血，没有稳定加成。",
+   "The recipe contains ingredients with different effects; by the game’s rules a pot can only have one bonus, so mixed effects cancel each other out or only the strongest one remains, and the result will most likely restore hearts only, with no stable bonus."
+  ],
+  [
+   "想稳定出加成，请只放同一种效果的食材。",
+   "To get a stable bonus, use only ingredients with the same effect."
+  ],
+  [
+   "选普通食材则仅回血；同效果食材叠加可提升等级和持续时间。",
+   "Choosing an ordinary ingredient restores hearts only; stacking same-effect ingredients raises the level and duration."
+  ],
+  [
+   "这道菜的配方里没有带加成的食材，吃下只恢复生命；回血量随食材品质和数量提升，满月夜烹饪有概率暴击翻倍。",
+   "This dish’s recipe contains no bonus-granting ingredients; eating it only restores hearts. Heart recovery rises with ingredient quality and quantity, and cooking on a full-moon night has a chance to critically double the result."
+  ],
+  [
+   "加成优先采用 ZeldaCentral 配方表的固定加成；配方表未给固定加成的锅煮料理，加成由食材决定（同一道菜换不同食材，加成会跟着变）。",
+   "Bonuses use the ZeldaCentral recipe table’s fixed bonuses first; for pot dishes the table gives no fixed bonus for, the bonus is determined by the ingredients (changing ingredients in the same dish changes the bonus)."
+  ],
+  [
+   "回血量：锅煮料理取决于食材，烤食／冷冻／温泉为固定值。",
+   "Heart recovery: pot dishes depend on ingredients, while roasted, frozen, and hot-spring dishes have fixed values."
+  ],
+  [
+   "取决于食材：回血量 = 各食材回血之和 ×2；满月夜暴击可再翻倍。",
+   "Depends on ingredients: heart recovery = the sum of each ingredient’s heart recovery × 2; a full-moon-night critical cook can double it again."
+  ],
+  [
+   "取决于食材",
+   "Depends on ingredients"
+  ],
+  [
+   "3/4 颗红心",
+   "3/4 heart"
+  ],
+  [
+   "9/4 颗红心",
+   "9/4 heart"
+  ],
+  [
+   "1.5 颗红心",
+   "1.5 hearts"
+  ],
+  [
+   "0.5 颗红心",
+   "0.5 hearts"
+  ],
+  [
+   "3 颗红心",
+   "3 hearts"
+  ],
+  [
+   "15/4 颗红心",
+   "15/4 heart"
+  ],
+  [
+   "6 颗红心",
+   "6 hearts"
+  ],
+  [
+   "4.5 颗红心",
+   "4.5 hearts"
+  ],
+  [
+   "1 颗红心",
+   "1 heart"
+  ],
+  [
+   "2 颗红心",
+   "2 hearts"
+  ],
+  [
+   "4 颗红心",
+   "4 hearts"
+  ],
+  [
+   "篝火烤食：一次只用 1 个食材，直接扔进火里即可。",
+   "Campfire roasting: use only 1 ingredient at a time; just toss it directly into the fire."
+  ],
+  [
+   "极寒冷冻：一次冻 1 个食材，放在冰雪上即可。",
+   "Extreme-cold freezing: freeze 1 ingredient at a time; just place it on ice or snow."
+  ],
+  [
+   "温泉：放 1 个鸟蛋进温泉即可。",
+   "Hot spring: just place 1 bird egg in the hot spring."
+  ],
+  [
+   "药水：昆虫／青蛙／蜥蜴至少 1 只 + 怪物素材至少 1 个，锅最多放 5 个；怪物素材越多、越高级，持续时间越长。",
+   "Elixirs: at least 1 insect, frog, or lizard + at least 1 monster part, with at most 5 items in the pot; more and higher-grade monster parts mean a longer duration."
+  ],
+  [
+   "失败料理：按上面材料煮出即为失败品。",
+   "Failed dish: cooking with the ingredients above produces a failed dish."
+  ],
+  [
+   "锅最多放 5 个材料；上面是 ZeldaCentral 配方表的原配方，重复出现的材料已合并为数量（如肉×4 表示 4 份）。",
+   "A pot holds at most 5 ingredients; the above is the ZeldaCentral recipe table’s original recipe, with repeated ingredients merged into quantities (e.g. meat ×4 means 4 portions)."
+  ],
+  [
+   "剩余空位可补同类或同效果食材（不要补不同效果食材）。",
+   "Remaining slots may be filled with the same kind or same-effect ingredients (do not add different-effect ingredients)."
+  ],
+  [
+   "一档肉 = 兽肉／禽腿肉类，二档肉 = 高级兽肉／高级禽腿肉类，三档肉 = 顶级兽肉／整只禽肉类。",
+   "Tier 1 meat = raw meat / bird drumstick types; Tier 2 meat = raw prime meat / bird thigh types; Tier 3 meat = raw gourmet meat / whole bird types."
+  ],
+  [
+   "蘑菇：暖暖蘑菇→耐寒；冰冷蘑菇→耐热；酥麻蘑菇→电气抗性；大剑蘑菇→攻击力提升；铠甲蘑菇→防御力提升；速速蘑菇→移动速度提升；精力蘑菇→精力恢复；生命松露→生命上限提升；毅力蘑菇→精力上限提升；潜行蘑菇→潜行提升；光亮蘑菇→发光；普通蘑菇（海拉鲁蘑菇、天空蘑菇）→仅回血",
+   "Mushrooms: Sunshroom → Cold Resistance; Chillshroom → Heat Resistance; Zapshroom → Shock Resistance; Razorshroom → Attack Up; Ironshroom → Defense Up; Rushroom → Speed Up; Stamella Shroom → Stamina Recovery; Hearty Truffle → Extra Hearts; Endura Shroom → Extra Stamina; Silent Shroom → Stealth Up; Brightcap → Glow; ordinary mushrooms (Hylian Shroom, Skyshroom) → hearts only"
+  ],
+  [
+   "野菜：大剑草→攻击力提升；铠甲草→防御力提升；速速紫罗兰→移动速度提升；普通野菜→仅回血",
+   "Wild greens: Mighty Thistle → Attack Up; Armoranth → Defense Up; Swift Violet → Speed Up; ordinary wild greens → hearts only"
+  ],
+  [
+   "水果：暖暖草果→耐寒；冰冷蜜瓜→耐热；酥麻水果→电气抗性；大剑香蕉→攻击力提升；普通水果（苹果、草莓、椰子等）→仅回血",
+   "Fruit: Spicy Pepper → Cold Resistance; Hydromelon → Heat Resistance; Voltfruit → Shock Resistance; Mighty Bananas → Attack Up; ordinary fruit (apples, wildberries, palm fruit, etc.) → hearts only"
+  ],
+  [
+   "鱼：生命鲈鱼／生命鲑鱼→生命上限提升；大剑鲤鱼→攻击力提升；铠甲鲷鱼→防御力提升；速速鲤鱼→移动速度提升；精力鲈鱼→精力恢复；其他普通鱼→仅回血",
+   "Fish: Hearty Bass / Hearty Salmon → Extra Hearts; Mighty Carp → Attack Up; Armored Porgy → Defense Up; Swift Carp → Speed Up; Energizing Bass → Stamina Recovery; other ordinary fish → hearts only"
+  ],
+  [
+   "海鲜：利爪蟹→攻击力提升；铁壳蟹→防御力提升；潜行田螺→潜行提升；其他海鲜→仅回血",
+   "Seafood: Razorclaw Crab → Attack Up; Ironshell Crab → Defense Up; Sneaky River Snail → Stealth Up; other seafood → hearts only"
+  ],
+  [
+   "螃蟹：利爪蟹→攻击力提升；铁壳蟹→防御力提升；普通蟹→仅回血",
+   "Crabs: Razorclaw Crab → Attack Up; Ironshell Crab → Defense Up; ordinary crabs → hearts only"
+  ],
+  [
+   "南瓜：铠甲南瓜→防御力提升；向阳南瓜→瘴气恢复",
+   "Pumpkins: Fortified Pumpkin → Defense Up; Sun Pumpkin → Gloom Recovery"
+  ],
+  [
+   "胡萝卜：速速胡萝卜→移动速度提升；毅力胡萝卜→精力上限提升",
+   "Carrots: Swift Carrot → Speed Up; Endura Carrot → Extra Stamina"
+  ],
+  [
+   "鲷鱼：大剑鲷鱼→攻击力提升；铠甲鲷鱼→防御力提升",
+   "Porgy: Mighty Porgy → Attack Up; Armored Porgy → Defense Up"
+  ],
+  [
+   "鳟鱼：暖暖鳟鱼→耐寒；冰冷鳟鱼→耐热；酥麻鳟鱼→电气抗性；潜行鳟鱼→潜行提升",
+   "Trout: Sizzlefin Trout → Cold Resistance; Chillfin Trout → Heat Resistance; Voltfin Trout → Shock Resistance; Stealthfin Trout → Stealth Up"
+  ],
+  [
+   "鲤鱼：大剑鲤鱼→攻击力提升；铠甲鲤鱼→防御力提升；速速鲤鱼→移动速度提升",
+   "Carp: Mighty Carp → Attack Up; Armored Carp → Defense Up; Swift Carp → Speed Up"
+  ],
+  [
+   "鲈鱼：生命鲈鱼→生命上限提升；精力鲈鱼→精力恢复；普通鲈鱼→仅回血",
+   "Bass: Hearty Bass → Extra Hearts; Energizing Bass → Stamina Recovery; ordinary bass → hearts only"
+  ],
+  [
+   "坚果：树果、橡子均仅回血",
+   "Nuts: Tree Nuts and Acorns restore hearts only"
+  ],
+  [
+   "苹果／金苹果",
+   "Apple / Golden Apple"
+  ],
+  [
+   "苹果或草莓",
+   "Apple or Wildberry"
+  ],
+  [
+   "刀刃犀牛甲虫",
+   "Bladed Rhino Beetle"
+  ],
+  [
+   "蔗糖",
+   "Cane Sugar"
+  ],
+  [
+   "胡萝卜",
+   "Carrot"
+  ],
+  [
+   "暗黑团块",
+   "Dark Clump"
+  ],
+  [
+   "深渊萤火虫",
+   "Deep Firefly"
+  ],
+  [
+   "甜点水果",
+   "Dessert Fruit"
+  ],
+  [
+   "怪物素材",
+   "Enemy"
+  ],
+  [
+   "精力犀牛甲虫／不安蟋蟀",
+   "Energetic Rhino Beetle / Restless Cricket"
+  ],
+  [
+   "精力犀牛甲虫",
+   "Energetic Rhino Beetle"
+  ],
+  [
+   "不安蟋蟀",
+   "Restless Cricket"
+  ],
+  [
+   "鱼／蘑菇／野菜",
+   "Fish / Mushroom / Plant"
+  ],
+  [
+   "山羊黄油",
+   "Goat Butter"
+  ],
+  [
+   "戈隆香料",
+   "Goron Spice"
+  ],
+  [
+   "哈特诺奶酪",
+   "Hateno Cheese"
+  ],
+  [
+   "生命蜥蜴",
+   "Hearty Lizard"
+  ],
+  [
+   "速速蛙／长尾蜥蜴",
+   "Hot-Footed Frog / Hightail Lizard"
+  ],
+  [
+   "速速蛙",
+   "Hot-Footed Frog"
+  ],
+  [
+   "长尾蜥蜴",
+   "Hightail Lizard"
+  ],
+  [
+   "海拉鲁米",
+   "Hylian Rice"
+  ],
+  [
+   "怪物精华",
+   "Monster Extract"
+  ],
+  [
+   "蘑菇／野菜",
+   "Mushroom / Plant"
+  ],
+  [
+   "油壶",
+   "Oil Jar"
+  ],
+  [
+   "南瓜",
+   "Pumpkin"
+  ],
+  [
+   "南瓜或胡萝卜",
+   "Pumpkin or Carrot"
+  ],
+  [
+   "萝卜",
+   "Radish"
+  ],
+  [
+   "岩盐",
+   "Rock Salt"
+  ],
+  [
+   "坚硬犀牛甲虫",
+   "Rugged Rhino Beetle"
+  ],
+  [
+   "闷燃蝴蝶／防火蜥蜴",
+   "Smotherwing Butterfly / Fireproof Lizard"
+  ],
+  [
+   "闷燃蝴蝶",
+   "Smotherwing Butterfly"
+  ],
+  [
+   "防火蜥蜴",
+   "Fireproof Lizard"
+  ],
+  [
+   "粘粘蛙／粘粘蜥蜴",
+   "Sticky Frog / Sticky Lizard"
+  ],
+  [
+   "粘粘蛙",
+   "Sticky Frog"
+  ],
+  [
+   "粘粘蜥蜴",
+   "Sticky Lizard"
+  ],
+  [
+   "夏翅蝴蝶／暖蜻蜓",
+   "Summerwing Butterfly / Warm Darner"
+  ],
+  [
+   "夏翅蝴蝶",
+   "Summerwing Butterfly"
+  ],
+  [
+   "暖蜻蜓",
+   "Warm Darner"
+  ],
+  [
+   "黄昏萤火虫",
+   "Sunset Firefly"
+  ],
+  [
+   "塔邦挞小麦",
+   "Tabantha Wheat"
+  ],
+  [
+   "雷翅蝴蝶／电蜻蜓",
+   "Thunderwing Butterfly / Electric Darner"
+  ],
+  [
+   "雷翅蝴蝶",
+   "Thunderwing Butterfly"
+  ],
+  [
+   "电蜻蜓",
+   "Electric Darner"
+  ],
+  [
+   "一档肉",
+   "Tier 1 Meat"
+  ],
+  [
+   "二档肉",
+   "Tier 2 Meat"
+  ],
+  [
+   "三档肉",
+   "Tier 3 Meat"
+  ],
+  [
+   "不倦蛙",
+   "Tireless Frog"
+  ],
+  [
+   "冬翅蝴蝶／冰冷蜻蜓",
+   "Winterwing Butterfly / Cold Darner"
+  ],
+  [
+   "冬翅蝴蝶",
+   "Winterwing Butterfly"
+  ],
+  [
+   "冰冷蜻蜓",
+   "Cold Darner"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Cooking Recipes"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner’s Guide: 10 Things to Do First After Landing"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "📚 更多攻略",
+   "📚 More Guides"
+  ],
+  [
+   "› 哈里的终极秘籍（13篇）",
+   "› Harry’s Ultimate Tips (13 Articles)"
+  ],
+  [
+   "› 全部页面索引",
+   "› Full Site Index"
+  ],
+  [
+   "📌 相关攻略推荐",
+   "📌 Recommended Related Guides"
+  ],
+  [
+   "武器图鉴",
+   "Weapon Compendium"
+  ],
+  [
+   "套装获取",
+   "Armor Set Locations"
+  ],
+  [
+   "主线任务",
+   "Main Quests"
+  ],
+  [
+   "/4 颗红心",
+   "/4 hearts"
+  ],
+  [
+   "。选定一种后，不要再混入其他效果食材。",
+   ". Once you've picked one effect, don't mix in ingredients with other effects."
+  ],
+  [
+   "。选普通食材则仅回血；同效果食材叠加可提升等级和持续时间。",
+   ". Ordinary ingredients only restore health; stacking same-effect ingredients raises the effect level and duration."
+  ],
+  [
+   "提供。同效果食材叠加可提升加成等级和持续时间；不同效果食材混用会互相抵消。",
+   "provides. Stacking same-effect ingredients raises the bonus level and duration; mixing ingredients with different effects cancels each other out."
+  ],
+  [
+   "料理合成",
+   "Cooking Recipes"
+  ],
+  [
+   "极寒冷冻",
+   "Extreme Cold"
+  ],
+  [
+   "温泉",
+   "Hot Spring"
+  ],
+  [
+   "潜行公主花",
+   "Silent Princess"
+  ],
+  [
+   "篝火烤",
+   "Campfire"
+  ],
+  [
+   "这道菜的配方里有任选材料，加成随你的选择而变：",
+   "This dish's recipe includes a free-choice ingredient, and its bonus changes with your choice:"
+  ],
+  [
+   "配方里同时有",
+   "The recipe contains"
+  ],
+  [
+   "颗红心",
+   "hearts"
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "在篝火旁按",
+   "By a campfire, press"
+  ],
+  [
+   "键打开锅，放入 1~5 种食材即可烹饪。同类效果食材叠加效果更强，混合不同效果的食材会互相抵消。满月之夜有概率触发「暴击烹饪」，效果翻倍。点击卡片可查看详情。",
+   "to open the pot, then add 1–5 ingredients to cook. Ingredients with the same effect stack stronger; mixing different effects cancels them out. On a full-moon night you may trigger a \"critical cook\" that doubles the effect. Click a card for details."
+  ],
+  [
+   "🧂 所需材料",
+   "🧂 Ingredients"
+  ],
+  [
+   "✨ 加成效果",
+   "✨ Bonus Effects"
+  ],
+  [
+   "❤️ 回血",
+   "❤️ Healing"
+  ]
+ ],
+ "notes": [
+  "Source page renders its 228 dishes from embedded page data (dish cards + detail modal), not static HTML tables; all 228 dish names, their grouped recipe strings, fixed effects, and fixed heart values are included, in the page render order (category order: skewers/sautés/fries, soups/stews, rice/baked, special, roasted, frozen, elixirs).",
+  "Dish English names are the page data’s own “en” field, which matches official/descriptive English dish names; elixir prefixes follow the spec mapping (Hearty, Energizing, Enduring, Hasty, Sneaky, Mighty, Tough, Spicy, Chilly, Electro, Fireproof, Bright; Sticky Elixir has no spec prefix and keeps its descriptive name).",
+  "Category quirk in the source data, preserved as-is: No. 198 (Hard-Boiled Egg, hot-spring method) is categorized under Special Dishes, not Roasted Foods; the filter button label is “冷冻食品” (Frozen Foods) while the category key is “冷冻”. Both strings are included.",
+  "“星级食材” in the meta description is ambiguous in the source; rendered descriptively as “high-quality ingredients”.",
+  "Generic-ingredient effect notes name in-game ingredient variants descriptively (e.g. Mighty Carp, Armored Porgy, Swift Violet, Razorclaw/Ironshell Crab, Sizzlefin/Chillfin/Voltfin/Stealthfin Trout) as written in the source; these variant names are not separate dish ingredients on this page.",
+  "Modal effect descriptions that depend on the chosen dish’s ingredients are included as their fixed template sentences; the variable “provided by <ingredient>” prefix and per-choice “ingredient → effect” lines are covered by the ingredient and effect-name pairs.",
+  "Heart values use the page’s quarter-heart formatting (e.g. 3 quarters = “3/4 heart”, 6 quarters = “1.5 hearts”); numbers, No. ranges, and quantities are kept exact. URLs, coordinates, file names, and the © Nintendo footer line are excluded per spec, as are the global top nav and global footer."
+ ]
+}

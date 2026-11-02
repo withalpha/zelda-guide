@@ -1,0 +1,256 @@
+{
+ "title": "Hover Bike Ultimate Tuning and Autobuild Guide · Harry's Ultimate Tips · Tears of the Kingdom Guide",
+ "pairs": [
+  [
+   "马克兔飞行器极致调校与蓝图指南：两个风扇加一个操纵杆，45度不偏移调校工艺，9个左纳尼乌姆一键生成，地底探照与水晶快递两个神级用法。",
+   "Hover Bike ultimate tuning and Autobuild guide: two Fans plus one Steering Stick, a 45-degree no-drift tuning technique, one-tap Autobuild generation for 9 Zonaite, and two game-changing uses — Depths spotlighting and crystal delivery."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Tips"
+  ],
+  [
+   "马克兔飞行器攻略",
+   "Hover Bike Guide"
+  ],
+  [
+   "🛠️ 蓝图攻略",
+   "🛠️ Autobuild Guide"
+  ],
+  [
+   "神级逃课神器——\"马克兔\"（Hover Bike）极致调校与蓝图指南",
+   "The Game-Breaking Shortcut Machine — the “Hover Bike” Ultimate Tuning and Autobuild Guide"
+  ],
+  [
+   "被全球玩家誉为《王国之泪》最伟大的工程学载具发明，以仅需两个风扇和一个操纵杆的极简结构，实现高速垂直爬升、无限续航、平稳转向与全地形通达。",
+   "Hailed by players worldwide as the greatest engineering vehicle invention in The Legend of Zelda: Tears of the Kingdom, it achieves high-speed vertical ascent, unlimited range, stable steering, and all-terrain access with a minimalist structure of just two Fans and one Steering Stick."
+  ],
+  [
+   "🧙 作者：哈里",
+   "🧙 Author: Harry"
+  ],
+  [
+   "🛠️ 蓝图 · 载具搭建",
+   "🛠️ Autobuild · Vehicle Building"
+  ],
+  [
+   "📖 深度攻略",
+   "📖 In-Depth Guide"
+  ],
+  [
+   "林克驾驶马克兔悬浮摩托（游戏实机截图）",
+   "Link riding the Hover Bike (in-game screenshot)"
+  ],
+  [
+   "林克驾驶马克兔悬浮摩托（游戏实机截图，图片来源：PC Invasion）",
+   "Link riding the Hover Bike (in-game screenshot, image source: PC Invasion)"
+  ],
+  [
+   "一、核心材料清单与制作成本",
+   "1. Core Materials List and Build Cost"
+  ],
+  [
+   "零件配置：左纳乌操纵杆 × 1，左纳乌风扇机 × 2。",
+   "Parts: Zonai Steering Stick × 1, Zonai Fan × 2."
+  ],
+  [
+   "零件配置：左纳乌操纵杆 × 1，左纳乌风扇机 × 2",
+   "Parts: Zonai Steering Stick × 1, Zonai Fan × 2"
+  ],
+  [
+   "蓝图成本：若现场无实物零件，调用蓝图生成仅需 9 个左纳尼乌姆；若自带胶囊零件，组装耗费为 0。",
+   "Autobuild cost: if you have no physical parts on hand, calling up the Autobuild costs only 9 Zonaite; if you bring your own capsule parts, assembly costs 0."
+  ],
+  [
+   "蓝图成本：若现场无实物零件，调用蓝图生成仅需 9 个左纳尼乌姆",
+   "Autobuild cost: if you have no physical parts on hand, calling up the Autobuild costs only 9 Zonaite"
+  ],
+  [
+   "若自带胶囊零件，组装耗费为 0",
+   "If you bring your own capsule parts, assembly costs 0"
+  ],
+  [
+   "能耗表现：仅两台风扇基础耗电，开荒期1-2块电池即可飞行数公里，极具性价比。",
+   "Energy use: with only two Fans drawing base power, 1–2 Energy Cells are enough to fly several kilometers in the early game — excellent value."
+  ],
+  [
+   "能耗表现：仅两台风扇基础耗电，开荒期1-2块电池即可飞行数公里，极具性价比",
+   "Energy use: with only two Fans drawing base power, 1–2 Energy Cells are enough to fly several kilometers in the early game — excellent value"
+  ],
+  [
+   "二、完美不偏移调校工艺（核心难点突破）",
+   "2. Perfect No-Drift Tuning Technique (Breaking Through the Core Difficulty)"
+  ],
+  [
+   "很多玩家制作的飞天摩托存在向左或向右跑偏、下坠失衡的问题，关键在于操纵杆与两个风扇的角度及中轴对称度：",
+   "Many players' flying motorcycles drift left or right or lose balance and drop — the key lies in the angle of the Steering Stick and the two Fans, and in symmetry around the central axis:"
+  ],
+  [
+   "基准面找平：将两个风扇平面朝下放置在平整地面上（或利用神庙平整阶梯作为水平基准）。",
+   "Level the base surface: place both Fans flat side down on level ground (or use a shrine's flat steps as a horizontal reference)."
+  ],
+  [
+   "基准面找平：将两个风扇平面朝下放置在平整地面上（或利用神庙平整阶梯作为水平基准）",
+   "Level the base surface: place both Fans flat side down on level ground (or use a shrine's flat steps as a horizontal reference)"
+  ],
+  [
+   "前后风扇角度：",
+   "Front and rear Fan angles:"
+  ],
+  [
+   "前风扇：向后倾斜45度（提供向上的升力兼顾前进推力）；",
+   "Front Fan: tilt backward 45 degrees (providing upward lift as well as forward thrust);"
+  ],
+  [
+   "前风扇：向后倾斜45度（提供向上的升力兼顾前进推力）",
+   "Front Fan: tilt backward 45 degrees (providing upward lift as well as forward thrust)"
+  ],
+  [
+   "后风扇：同样向后倾斜45度，与前风扇保持严密在一条直线上。",
+   "Rear Fan: likewise tilt backward 45 degrees, keeping strictly in a straight line with the front Fan."
+  ],
+  [
+   "后风扇：同样向后倾斜45度，与前风扇保持严密在一条直线上",
+   "Rear Fan: likewise tilt backward 45 degrees, keeping strictly in a straight line with the front Fan"
+  ],
+  [
+   "操纵杆中轴对齐：使用究极手抓取操纵杆，将其底座两端分别吸附在前风扇边缘与后风扇边缘的正中央连接点，操纵把手正对前方。",
+   "Align the Steering Stick to the central axis: use Ultrahand to grab the Steering Stick, attaching each end of its base to the exact center connection point on the front Fan's edge and the rear Fan's edge, with the control handle facing straight forward."
+  ],
+  [
+   "操纵杆中轴对齐：使用究极手抓取操纵杆，将其底座两端分别吸附在前风扇边缘与后风扇边缘的正中央连接点，操纵把手正对前方",
+   "Align the Steering Stick to the central axis: use Ultrahand to grab the Steering Stick, attaching each end of its base to the exact center connection point on the front Fan's edge and the rear Fan's edge, with the control handle facing straight forward"
+  ],
+  [
+   "校验测试与保存：",
+   "Test, verify, and save:"
+  ],
+  [
+   "启动上机后双手松开方向摇杆，观察飞行器是否自动保持平稳直线爬升；",
+   "After starting up and mounting, take both hands off the directional stick and check whether the vehicle automatically maintains a steady, straight climb;"
+  ],
+  [
+   "启动上机后双手松开方向摇杆，观察飞行器是否自动保持平稳直线爬升",
+   "After starting up and mounting, take both hands off the directional stick and check whether the vehicle automatically maintains a steady, straight climb"
+  ],
+  [
+   "若无任何侧向漂移，立刻打开\"蓝图\"功能，将其加入\"喜好（收藏夹）\"，从此一键随叫随到！",
+   "If there is no sideways drift at all, immediately open the “Autobuild” function and add it to “Favorites”, so from then on it is one tap away whenever you need it!"
+  ],
+  [
+   "若无任何侧向漂移，立刻打开\"蓝图\"功能，将其加入\"喜好（收藏夹）\"，从此一键随叫随到",
+   "If there is no sideways drift at all, immediately open the “Autobuild” function and add it to “Favorites”, so from then on it is one tap away whenever you need it"
+  ],
+  [
+   "三、实战神级衍生技巧",
+   "3. Game-Changing Practical Techniques"
+  ],
+  [
+   "盲探地下世界（光亮大车灯）：将一颗巨大光亮花的种子粘贴在飞行器最前方（敲击或射击点亮），马克兔立刻变为强光探照直升机，无需点亮沿途树根即可在黑暗地底畅通无阻。",
+   "Exploring the Depths blind (bright headlight): stick a Giant Brightbloom Seed to the very front of the vehicle (light it by striking or shooting it), and the Hover Bike instantly becomes a powerful searchlight helicopter, letting you travel freely through the dark Depths without needing to activate the Lightroots along the way."
+  ],
+  [
+   "盲探地下世界（光亮大车灯）：将一颗巨大光亮花的种子粘贴在飞行器最前方（敲击或射击点亮），马克兔立刻变为强光探照直升机，无需点亮沿途树根即可在黑暗地底畅通无阻",
+   "Exploring the Depths blind (bright headlight): stick a Giant Brightbloom Seed to the very front of the vehicle (light it by striking or shooting it), and the Hover Bike instantly becomes a powerful searchlight helicopter, letting you travel freely through the dark Depths without needing to activate the Lightroots along the way"
+  ],
+  [
+   "神庙绿色水晶快递：许多野外劳鲁神庙需要搬运大型绿色水晶，直接用究极手把水晶粘在马克兔底座正中间，即可轻松吊装直飞神庙受光点。",
+   "Shrine green-crystal delivery: many shrines out in the wild require carrying a large green crystal — just use Ultrahand to stick the crystal to the exact center of the Hover Bike's base, and you can easily airlift it straight to the shrine's light-receiving point."
+  ],
+  [
+   "神庙绿色水晶快递：许多野外劳鲁神庙需要搬运大型绿色水晶，直接用究极手把水晶粘在马克兔底座正中间，即可轻松吊装直飞神庙受光点",
+   "Shrine green-crystal delivery: many shrines out in the wild require carrying a large green crystal — just use Ultrahand to stick the crystal to the exact center of the Hover Bike's base, and you can easily airlift it straight to the shrine's light-receiving point"
+  ],
+  [
+   "← 上一篇：白龙寻踪与大师之剑",
+   "← Previous: Tracking the White Dragon and the Master Sword"
+  ],
+  [
+   "返回秘籍专栏",
+   "Back to the Tips Column"
+  ],
+  [
+   "下一篇：地底电池扩充与大妖精 →",
+   "Next: Depths Energy Cell Expansion and the Great Fairies →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Depths Energy Cell Expansion and the Great Fairies"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Early-Game Guide: 10 Things to Do First After Landing"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Complete Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Tips"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Scimitar of the Seven Ultimate Guide"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four Game-Changing Cooking Recipes"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Full Breakdown of the Strongest Armor Sets in Three Tiers"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine: A Complete Beginner's Walkthrough"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the White Dragon and the Master Sword"
+  ],
+  [
+   "› 马克兔飞行器调校（本篇）",
+   "› Hover Bike Tuning (This Article)"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 New Daily Guides"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› Self-Check Guide to Collecting All 152 Shrines"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Complete Korok Seed Guide"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› Complete Guide to the Four Great Fairy Sisters and Armor Upgrades"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Guide to Farming Materials from the Four Dragons"
+  ]
+ ],
+ "notes": [
+  "马克兔 (Mark Rabbit) is a Chinese community nickname for the player-built two-Fan flying vehicle; rendered throughout as the English community name “Hover Bike”.",
+  "逃课神器 (literally a tool for skipping class) is gamer slang for a build that bypasses intended challenges; rendered descriptively as “game-breaking shortcut machine”.",
+  "野外劳鲁神庙 in the crystal-delivery tip is ambiguous in the source (it does not match a single named shrine); rendered descriptively as “shrines out in the wild” rather than assigning a specific shrine name.",
+  "乌萨诸马神庙 in the bottom index is a Chinese transliteration with no confirmed official English shrine name in the glossary; rendered phonetically as “Usazum Shrine” and should be checked against the official shrine list.",
+  "无限续航 is rendered as “unlimited range” (the vehicle still consumes Energy Cells, but with only two Fans its drain is minimal, as the article itself states); it is marketing-style phrasing in the source, not a literal claim of zero energy use."
+ ]
+}

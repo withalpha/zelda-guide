@@ -1,0 +1,392 @@
+{
+ "notes": [
+  "Great Fairy names mapped by stable: 蒂拉 (Woodland Stable) = Tera, 弥佳 (Snowfield Stable) = Mija, 西莎 (Outskirt Stable) = Kaysa, 可秋拉 (Dueling Peaks Stable) = Cotera. Musician names: 余福尔 (horn player) rendered as Eustus, 菲伊 (flute player) as Pyper, 毕兹 (drummer) as Beetz — descriptive mappings with no glossary entry, listed here as uncertain. 白诘报社 rendered as Lucky Clover Gazette."
+ ],
+ "pairs": [
+  [
+   "大妖精四姐妹与防具强化完全指南：蒂拉、弥佳、西莎、可秋拉四位位置与乐团任务，星级费用与套装隐藏效果。",
+   "Complete guide to the Four Great Fairies and armor enhancement: the locations and troupe quests for Tera, Mija, Kaysa, and Cotera, star-level costs, and set bonus hidden effects."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Tips"
+  ],
+  [
+   "大妖精四姐妹与防具强化完全指南",
+   "Complete Guide to the Four Great Fairies and Armor Enhancement"
+  ],
+  [
+   "每多唤醒一位，防具最高星级加一星；四位全唤醒才能升 4 星。位置、任务、费用一次讲清。",
+   "Each additional Fairy awakened raises armor's maximum star level by one star; only with all four awakened can you upgrade to 4 stars. Locations, quests, and costs explained all at once."
+  ],
+  [
+   "🧙 作者：哈里 🧚 大妖精 · 防具强化 📖 深度攻略",
+   "🧙 Author: Harry 🧚 Great Fairies · Armor Enhancement 📖 In-Depth Guide"
+  ],
+  [
+   "大妖精之泉（游戏实机截图）",
+   "A Great Fairy Fountain (in-game screenshot)"
+  ],
+  [
+   "大妖精之泉（游戏实机截图，图片来源：Zelda Wiki）",
+   "A Great Fairy Fountain (in-game screenshot, image source: Zelda Wiki)"
+  ],
+  [
+   "防具强化全靠四位大妖精：每多唤醒一位，所有防具的最高强化星级就加一星，唤醒全部四位才能升到 4 星。唤醒不花卢比，要走一条乐团任务线。这篇把四位的位置、任务和强化费用一次讲清。",
+   "Armor enhancement relies entirely on the four Great Fairies: each additional Fairy awakened raises all armor's maximum enhancement star level by one star, and only by awakening all four can you upgrade to 4 stars. Awakening costs no Rupees — it follows a musical troupe quest line. This article explains the four Fairies' locations, quests, and enhancement costs all at once."
+  ],
+  [
+   "⭐ 本篇要点",
+   "⭐ Key Points of This Article"
+  ],
+  [
+   "先去利特村附近的白诘报社找三叶，对话开启乐团任务线。",
+   "First go to the Lucky Clover Gazette near Rito Village and find Traysi; talking to her starts the troupe quest line."
+  ],
+  [
+   "四位大妖精：蒂拉（森林驿站）、弥佳（雪原驿站）、西莎（平原外围驿站）、可秋拉（双子驿站）。",
+   "The four Great Fairies: Tera (Woodland Stable), Mija (Snowfield Stable), Kaysa (Outskirt Stable), Cotera (Dueling Peaks Stable)."
+  ],
+  [
+   "每多唤醒一位，最高星级加一星；4 位全唤醒才能升 4 星。",
+   "Each additional Fairy awakened raises the maximum star level by one star; only with all 4 awakened can you upgrade to 4 stars."
+  ],
+  [
+   "强化费用随星级递增：2 星 50 卢比、3 星 200 卢比、4 星 500 卢比，另需指定素材。",
+   "Enhancement costs increase with star level: 2 stars cost 50 Rupees, 3 stars 200 Rupees, and 4 stars 500 Rupees, plus specified materials."
+  ],
+  [
+   "📑 本篇目录",
+   "📑 Contents of This Article"
+  ],
+  [
+   "一、开始之前：先接任务线",
+   "I. Before Starting: Accept the Quest Line First"
+  ],
+  [
+   "二、四位大妖精一览",
+   "II. Overview of the Four Great Fairies"
+  ],
+  [
+   "三、逐个唤醒流程",
+   "III. Awakening Process, One by One"
+  ],
+  [
+   "四、强化规则与费用",
+   "IV. Enhancement Rules and Costs"
+  ],
+  [
+   "常见问题",
+   "Frequently Asked Questions"
+  ],
+  [
+   "大妖精的唤醒必须完成乌玛纳利乐团的情节挑战。第一步去利特村附近的白诘报社，和总编辑三叶交谈，开启情节挑战「追求真相！萨尔达公主的传闻」。然后准备两样东西：第一，捕捉并登录一匹普通马，攒驿站点数换取牵引挽具——后面拖乐团马车全靠它；第二，去森林驿站找沛恩和乌玛纳利乐团，开启第一首小夜曲。",
+   "Awakening the Great Fairies requires completing the Stable Trotters' side adventures. The first step is to go to the Lucky Clover Gazette near Rito Village and talk to editor-in-chief Traysi, starting the side adventure “Potential Princess Sightings!” Then prepare two things: first, catch and register an ordinary horse, and save up stable points to exchange for a Towing Harness — dragging the troupe's wagon later relies entirely on it; second, go to Woodland Stable to find Penn and the Stable Trotters, starting the first serenade."
+  ],
+  [
+   "大妖精",
+   "Great Fairy"
+  ],
+  [
+   "邻近驿站",
+   "Nearby Stable"
+  ],
+  [
+   "情节挑战",
+   "Side Adventure"
+  ],
+  [
+   "关键需求",
+   "Key Requirement"
+  ],
+  [
+   "蒂拉",
+   "Tera"
+  ],
+  [
+   "森林驿站",
+   "Woodland Stable"
+  ],
+  [
+   "献给大妖精的小夜曲",
+   "Serenade to a Great Fairy"
+  ],
+  [
+   "修复乐团马车轮子，马加牵引挽具拖曳",
+   "Repair the troupe wagon's wheels, and tow it with a horse fitted with a Towing Harness"
+  ],
+  [
+   "弥佳",
+   "Mija"
+  ],
+  [
+   "雪原驿站",
+   "Snowfield Stable"
+  ],
+  [
+   "献给弥佳的小夜曲",
+   "Serenade to Mija"
+  ],
+  [
+   "找回圆号手余福尔，马车加车顶",
+   "Find horn player Eustus, and add a roof to the wagon"
+  ],
+  [
+   "西莎",
+   "Kaysa"
+  ],
+  [
+   "平原外围驿站",
+   "Outskirt Stable"
+  ],
+  [
+   "献给西莎的小夜曲",
+   "Serenade to Kaysa"
+  ],
+  [
+   "找回笛子手菲伊，组装越野车",
+   "Find flute player Pyper, and assemble an off-road vehicle"
+  ],
+  [
+   "可秋拉",
+   "Cotera"
+  ],
+  [
+   "双子驿站",
+   "Dueling Peaks Stable"
+  ],
+  [
+   "献给可秋拉的小夜曲",
+   "Serenade to Cotera"
+  ],
+  [
+   "找回太鼓手毕兹，马车改船沿河",
+   "Find drummer Beetz, and convert the wagon into a boat to travel along the river"
+  ],
+  [
+   "第一位：蒂拉（森林驿站）",
+   "First: Tera (Woodland Stable)"
+  ],
+  [
+   "森林驿站在中央海拉鲁右上角。到了驿站门口，沛恩和乐团成员会说要帮忙修车：用旁边的轮子把乐团马车修好，再去驿站老板处领一匹有牵引力的马，装上牵引挽具，用究极手把挽具和马车连起来，骑马拖着乐团去山上的巨大花蕾处。演奏结束，蒂拉现身。蒂拉解放后，地图上会标注其余三位大妖精的位置。",
+   "Woodland Stable is at the upper right of Central Hyrule. When you arrive at the stable's entrance, Penn and the troupe members will ask for help repairing the wagon: use the wheels nearby to repair the troupe's wagon, then get a horse with towing power from the stable owner, fit it with the Towing Harness, use Ultrahand to connect the harness to the wagon, and ride the horse towing the troupe to the giant flower bud on the hill. Once the performance ends, Tera appears. After Tera is freed, the map will mark the locations of the other three Great Fairies."
+  ],
+  [
+   "第二位：弥佳（雪原驿站）",
+   "Second: Mija (Snowfield Stable)"
+  ],
+  [
+   "雪原驿站在地图左上角。乐团说要找回圆号手余福尔，他在塔邦挞大桥驿站附近，沿着道路走、看到冒烟的洞就能找到他。余福尔归队后，用究极手给马车加上车顶（木板封顶），再用马匹拖曳出发，演奏唤醒弥佳。",
+   "Snowfield Stable is at the upper left of the map. The troupe says they need to find horn player Eustus, who is near Tabantha Bridge Stable — follow the road, and you'll find him when you see a smoking cave. After Eustus rejoins, use Ultrahand to add a roof to the wagon (planks sealing the top), then tow it off with horses and perform to awaken Mija."
+  ],
+  [
+   "第三位：西莎（平原外围驿站）",
+   "Third: Kaysa (Outskirt Stable)"
+  ],
+  [
+   "平原外围驿站在初始台地附近。乐团要找回笛子手菲伊，他在高原驿站附近的树上：收集 10 只静静萤火虫交给他，他就归队。归队后组装一台能越过岩石的左纳乌越野车，拖着乐团出发，演奏唤醒西莎。",
+   "Outskirt Stable is near the Great Sky Island. The troupe needs to find flute player Pyper, who is in a tree near Highland Stable: collect 10 Sunset Fireflies and give them to him, and he'll rejoin. After he rejoins, assemble a Zonai off-road vehicle that can cross rocks, tow the troupe off, and perform to awaken Kaysa."
+  ],
+  [
+   "第四位：可秋拉（双子驿站）",
+   "Fourth: Cotera (Dueling Peaks Stable)"
+  ],
+  [
+   "双子驿站在双子山附近。乐团要找回太鼓手毕兹，他在卡卡利科村附近：交给他 3 个蜂蜜，他就回到双子驿站。这次要渡河：用木板搭在马车上，配合风扇和操纵杆做成一艘简易小船，顺河开到对面的巨大花蕾处，演奏唤醒可秋拉。至此四位全部唤醒。",
+   "Dueling Peaks Stable is near the Dueling Peaks. The troupe needs to find drummer Beetz, who is near Kakariko Village: give him 3 Courser Bee Honey, and he'll return to Dueling Peaks Stable. This time you have to cross a river: lay planks on the wagon, and combined with Fans and a Steering Stick make a simple boat, sailing down the river to the giant flower bud on the other side, and perform to awaken Cotera. At this point all four are awakened."
+  ],
+  [
+   "星级上限：每多解放一位大妖精，所有大妖精可提供的最高强化阶段就增加一星。解放 1 位可升 1 星，解放全部 4 位才能升到 4 星。",
+   "Star cap: each additional Great Fairy freed raises the maximum enhancement stage all Great Fairies can offer by one star. Freeing 1 lets you upgrade to 1 star; only freeing all 4 lets you upgrade to 4 stars."
+  ],
+  [
+   "星级上限：每多解放一位大妖精，所有大妖精可提供的最高强化阶段就增加一星。",
+   "Star cap: each additional Great Fairy freed raises the maximum enhancement stage all Great Fairies can offer by one star."
+  ],
+  [
+   "解放 1 位可升 1 星，解放全部 4 位才能升到 4 星。",
+   "Freeing 1 lets you upgrade to 1 star; only freeing all 4 lets you upgrade to 4 stars."
+  ],
+  [
+   "费用：每次强化需要指定素材加卢比，星级越高、素材和费用越多。已核实的档位：2 星 50 卢比、3 星 200 卢比、4 星 500 卢比。",
+   "Cost: each enhancement requires specified materials plus Rupees, and the higher the star level, the more materials and cost. Verified tiers: 2 stars 50 Rupees, 3 stars 200 Rupees, 4 stars 500 Rupees."
+  ],
+  [
+   "费用：每次强化需要指定素材加卢比，星级越高、素材和费用越多。",
+   "Cost: each enhancement requires specified materials plus Rupees, and the higher the star level, the more materials and cost."
+  ],
+  [
+   "已核实的档位：2 星 50 卢比、3 星 200 卢比、4 星 500 卢比。",
+   "Verified tiers: 2 stars 50 Rupees, 3 stars 200 Rupees, 4 stars 500 Rupees."
+  ],
+  [
+   "套装隐藏效果：一套防具强化到 2 星之后，会出现隐藏的套装效果，值得优先把主力套装升到 2 星。",
+   "Set hidden effects: once an armor set is enhanced to 2 stars, a hidden set effect appears — worth prioritizing your main set to 2 stars."
+  ],
+  [
+   "个别防具无法强化：比如幻影套装就无法强化，拿到了也不用去找大妖精。",
+   "Some armor can't be enhanced: the Phantom Set, for example, can't be enhanced, so even after getting it there's no need to visit a Great Fairy."
+  ],
+  [
+   "💡 建议顺序",
+   "💡 Suggested Order"
+  ],
+  [
+   "唤醒要花卢比吗？不要。唤醒靠做乐团任务线，卢比只在强化防具时花。",
+   "Does awakening cost Rupees? No. Awakening relies on doing the troupe quest line; Rupees are only spent when enhancing armor."
+  ],
+  [
+   "唤醒要花卢比吗？",
+   "Does awakening cost Rupees?"
+  ],
+  [
+   "不要。唤醒靠做乐团任务线，卢比只在强化防具时花。",
+   "No. Awakening relies on doing the troupe quest line; Rupees are only spent when enhancing armor."
+  ],
+  [
+   "必须按蒂拉→弥佳→西莎→可秋拉的顺序吗？任务线是按这个顺序展开的，蒂拉解放后地图才标注其余三位，跟着任务线走最顺。",
+   "Must you follow the order Tera → Mija → Kaysa → Cotera? The quest line unfolds in this order — the map only marks the other three after Tera is freed — so following the quest line is the smoothest."
+  ],
+  [
+   "必须按蒂拉→弥佳→西莎→可秋拉的顺序吗？",
+   "Must you follow the order Tera → Mija → Kaysa → Cotera?"
+  ],
+  [
+   "任务线是按这个顺序展开的，蒂拉解放后地图才标注其余三位，跟着任务线走最顺。",
+   "The quest line unfolds in this order — the map only marks the other three after Tera is freed — so following the quest line is the smoothest."
+  ],
+  [
+   "强化要带什么？带上要强化的防具、对应的素材和足够的卢比，找任意一位已解放的大妖精交谈即可强化。",
+   "What should you bring for enhancement? Bring the armor to enhance, the corresponding materials, and enough Rupees, and talk to any freed Great Fairy to enhance."
+  ],
+  [
+   "强化要带什么？",
+   "What should you bring for enhancement?"
+  ],
+  [
+   "带上要强化的防具、对应的素材和足够的卢比，找任意一位已解放的大妖精交谈即可强化。",
+   "Bring the armor to enhance, the corresponding materials, and enough Rupees, and talk to any freed Great Fairy to enhance."
+  ],
+  [
+   "套装获取",
+   "Obtaining Armor Sets"
+  ],
+  [
+   "最强套装与隐藏特效解析",
+   "Analysis of the Strongest Sets and Hidden Effects"
+  ],
+  [
+   "地底电池与大妖精指南",
+   "Depths Battery and Great Fairy Guide"
+  ],
+  [
+   "相关攻略：套装获取、最强套装与隐藏特效解析、地底电池与大妖精指南（注：该篇大妖精一节尚未写完，本篇为完整版）。",
+   "Related guides: Obtaining Armor Sets, Analysis of the Strongest Sets and Hidden Effects, Depths Battery and Great Fairy Guide (note: that article's Great Fairy section is not yet finished; this article is the complete version)."
+  ],
+  [
+   "← 上一篇：地底世界生存与探索完全指南",
+   "← Previous: Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "返回秘籍专栏",
+   "Back to the Tips Column"
+  ],
+  [
+   "下一篇：四条龙素材刷取指南 →",
+   "Next: Guide to Farming Materials from the Four Dragons →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 套装获取",
+   "› Obtaining Armor Sets"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Full Analysis of the Three Tiers of Strongest Armor Sets"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Depths Battery Expansion and the Great Fairies"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Full Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Tips"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Ultimate Guide to the Scimitar of the Seven"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Dish Recipes"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine for Absolute Beginners"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Mark-Rabbit Hover Bike Tuning"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 Daily New Guides"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› Self-Check Guide to Collecting All 152 Shrines"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Pioneering Guide: 10 Things to Do First After Landing"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Complete Guide to Korok Seeds"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南（本篇）",
+   "› Complete Guide to the Four Great Fairies and Armor Enhancement (This Article)"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Guide to Farming Materials from the Four Dragons"
+  ],
+  [
+   "大妖精四姐妹指南",
+   "Four Great Fairies Guide"
+  ],
+  [
+   "🧚 大妖精攻略",
+   "🧚 Great Fairy Guide"
+  ],
+  [
+   "🧚 大妖精 · 防具强化",
+   "🧚 Great Fairies · Armor Upgrades"
+  ],
+  [
+   "先唤醒蒂拉拿 1 星，把主力防具升 1 星过渡；再按弥佳、西莎、可秋拉的顺序一路做过去，每多一位就回大妖精处把主力套装往上升，2 星出套装效果是性价比最高的节点。",
+   "First wake Tera for 1-star upgrades and bring your main armor up to 1 star as a stopgap; then work through Mija, Kaysa, and Cotera in order, returning to the fairies to upgrade your main set each time you unlock another — 2 stars unlocking the set bonus is the best value point."
+  ]
+ ],
+ "title": "Complete Guide to the Four Great Fairies and Armor Enhancement · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+}

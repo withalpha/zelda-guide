@@ -1,0 +1,370 @@
+{
+ "notes": [],
+ "pairs": [
+  [
+   "本站隐私政策说明，详细阐述用户数据收集方式、Cookie使用、Google Analytics追踪、广告展示机制及您的隐私权利保护措施。",
+   "This site's privacy policy explains how user data is collected, how Cookies are used, Google Analytics tracking, how ads are displayed, and measures protecting your privacy rights."
+  ],
+  [
+   "本攻略站隐私政策，说明数据收集、Cookie使用及版权声明。",
+   "This guide site's privacy policy, explaining data collection, Cookie use, and copyright notice."
+  ],
+  [
+   "🔒 隐私政策",
+   "🔒 Privacy Policy"
+  ],
+  [
+   "本网站如何处理您的信息及相关权利声明",
+   "How this website handles your information and related rights statements"
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "关于我们",
+   "About Us"
+  ],
+  [
+   "隐私政策",
+   "Privacy Policy"
+  ],
+  [
+   "最后更新：2025年5月 · 本政策适用于本网站所有页面",
+   "Last updated: May 2025 · This policy applies to all pages of this website"
+  ],
+  [
+   "一、网站性质与声明",
+   "1. Nature of the Website and Statement"
+  ],
+  [
+   "本网站（以下简称\"本站\"）是一个由个人独立制作和运营的非官方游戏攻略指南网站，专门针对《塞尔达传说：王国之泪》（The Legend of Zelda: Tears of the Kingdom）提供游戏攻略参考内容。",
+   "This website (hereinafter \"this site\") is an unofficial game guide website independently created and operated by an individual, providing game guide reference content specifically for The Legend of Zelda: Tears of the Kingdom."
+  ],
+  [
+   "本站与任天堂株式会社（Nintendo Co., Ltd.）及其任何关联公司不存在任何官方合作、授权或隶属关系。",
+   "This site has no official partnership, authorization, or affiliation with Nintendo Co., Ltd. or any of its affiliates."
+  ],
+  [
+   "版权声明：《塞尔达传说：王国之泪》及其全部游戏内容、角色、图像、音效等知识产权均归 Nintendo Co., Ltd. 所有。© 2023 Nintendo. All Rights Reserved. 本站以合理使用原则引用游戏相关信息，旨在为玩家提供攻略参考。本站不出售、不授权、不以任何形式转让任天堂的任何知识产权，亦不声称对上述内容拥有任何权利。",
+   "Copyright Notice: All intellectual property in The Legend of Zelda: Tears of the Kingdom and all of its game content, characters, images, sound effects, and other materials belongs to Nintendo Co., Ltd. © 2023 Nintendo. All Rights Reserved. This site cites game-related information under the principle of fair use, for the purpose of providing players with guide reference. This site does not sell, license, or transfer any of Nintendo's intellectual property in any form, nor does it claim any rights in the above content."
+  ],
+  [
+   "版权声明：《塞尔达传说：王国之泪》及其全部游戏内容、角色、图像、音效等知识产权均归 Nintendo Co., Ltd. 所有。",
+   "Copyright Notice: All intellectual property in The Legend of Zelda: Tears of the Kingdom and all of its game content, characters, images, sound effects, and other materials belongs to Nintendo Co., Ltd."
+  ],
+  [
+   "本站以合理使用原则引用游戏相关信息，旨在为玩家提供攻略参考。",
+   "This site cites game-related information under the principle of fair use, for the purpose of providing players with guide reference."
+  ],
+  [
+   "本站不出售、不授权、不以任何形式转让任天堂的任何知识产权，亦不声称对上述内容拥有任何权利。",
+   "This site does not sell, license, or transfer any of Nintendo's intellectual property in any form, nor does it claim any rights in the above content."
+  ],
+  [
+   "二、信息收集与使用",
+   "2. Information Collection and Use"
+  ],
+  [
+   "本站不收集、不存储、不处理任何用户个人身份信息，包括但不限于：姓名、电子邮件地址、IP 地址、设备标识符、地理位置等。",
+   "This site does not collect, store, or process any personally identifiable information of users, including but not limited to: name, email address, IP address, device identifier, geographic location, and similar."
+  ],
+  [
+   "本站不设置任何用户账号系统，无需注册或登录即可使用全部功能。",
+   "This site has no user account system; all features can be used without registration or login."
+  ],
+  [
+   "本地存储（localStorage）：本站使用浏览器本地存储（localStorage）保存您的游戏进度数据，例如已激活的神庙和破魔树根勾选状态。这些数据仅保存在您的本地设备上，不会被上传至任何服务器，本站无法访问或读取这些信息。您可随时通过清除浏览器数据删除这些记录。",
+   "Local Storage (localStorage): This site uses browser local storage (localStorage) to save your game progress data, such as the checked status of activated Shrines and Lightroots. This data is stored only on your local device, is not uploaded to any server, and this site cannot access or read it. You may delete these records at any time by clearing your browser data."
+  ],
+  [
+   "本地存储（localStorage）：本站使用浏览器本地存储（localStorage）保存您的游戏进度数据，例如已激活的神庙和破魔树根勾选状态。",
+   "Local Storage (localStorage): This site uses browser local storage (localStorage) to save your game progress data, such as the checked status of activated Shrines and Lightroots."
+  ],
+  [
+   "这些数据仅保存在您的本地设备上，不会被上传至任何服务器，本站无法访问或读取这些信息。",
+   "This data is stored only on your local device, is not uploaded to any server, and this site cannot access or read it."
+  ],
+  [
+   "您可随时通过清除浏览器数据删除这些记录。",
+   "You may delete these records at any time by clearing your browser data."
+  ],
+  [
+   "三、Cookie、追踪技术与广告",
+   "3. Cookies, Tracking Technologies, and Advertising"
+  ],
+  [
+   "本站可能使用 Cookie 及类似技术，包括来自第三方广告合作伙伴的技术，以实现以下目的：",
+   "This site may use Cookies and similar technologies, including technologies from third-party advertising partners, for the following purposes:"
+  ],
+  [
+   "广告展示：本站可能通过 Google AdSense 等广告网络在页面上展示广告。广告服务商会使用 Cookie 根据您过去对本站或其他网站的访问情况向您展示相关广告。",
+   "Ad Display: This site may display ads on its pages through advertising networks such as Google AdSense. Advertising providers use Cookies to show you relevant ads based on your past visits to this site or other websites."
+  ],
+  [
+   "广告展示：本站可能通过 Google AdSense 等广告网络在页面上展示广告。",
+   "Ad Display: This site may display ads on its pages through advertising networks such as Google AdSense."
+  ],
+  [
+   "广告服务商会使用 Cookie 根据您过去对本站或其他网站的访问情况向您展示相关广告。",
+   "Advertising providers use Cookies to show you relevant ads based on your past visits to this site or other websites."
+  ],
+  [
+   "兴趣定向广告：Google 等广告合作商可能使用 Cookie 在互联网上投放基于您兴趣的广告。您可访问 www.aboutads.info 了解如何退出第三方供应商的兴趣定向广告。",
+   "Interest-Based Advertising: Advertising partners such as Google may use Cookies to serve ads based on your interests across the internet. You can visit www.aboutads.info to learn how to opt out of interest-based advertising from third-party providers."
+  ],
+  [
+   "兴趣定向广告：Google 等广告合作商可能使用 Cookie 在互联网上投放基于您兴趣的广告。",
+   "Interest-Based Advertising: Advertising partners such as Google may use Cookies to serve ads based on your interests across the internet."
+  ],
+  [
+   "您可访问 www.aboutads.info 了解如何退出第三方供应商的兴趣定向广告。",
+   "You can visit www.aboutads.info to learn how to opt out of interest-based advertising from third-party providers."
+  ],
+  [
+   "数据分析（可选）：本站可能使用 Google Analytics 等统计工具了解访客的整体浏览行为，所收集的数据为匿名汇总数据，不包含任何可识别个人身份的信息。",
+   "Data Analytics (Optional): This site may use statistical tools such as Google Analytics to understand visitors' overall browsing behavior; the data collected is anonymous aggregated data and contains no personally identifiable information."
+  ],
+  [
+   "Google 在使用广告 Cookie 时遵守《Google 广告和隐私政策》。如需了解 Google 如何使用数据，请访问：policies.google.com/technologies/ads",
+   "Google complies with the Google Ads and Privacy Policy when using advertising Cookies. To learn how Google uses data, please visit: policies.google.com/technologies/ads"
+  ],
+  [
+   "Google 在使用广告 Cookie 时遵守《Google 广告和隐私政策》。",
+   "Google complies with the Google Ads and Privacy Policy when using advertising Cookies."
+  ],
+  [
+   "如需了解 Google 如何使用数据，请访问：policies.google.com/technologies/ads",
+   "To learn how Google uses data, please visit: policies.google.com/technologies/ads"
+  ],
+  [
+   "您的选择：大多数浏览器允许您在设置中管理或禁用 Cookie。禁用 Cookie 后，广告可能无法正常展示，但本站的其他功能不受影响。",
+   "Your Choice: Most browsers allow you to manage or disable Cookies in their settings. After disabling Cookies, ads may not display properly, but the other features of this site are unaffected."
+  ],
+  [
+   "您的选择：大多数浏览器允许您在设置中管理或禁用 Cookie。",
+   "Your Choice: Most browsers allow you to manage or disable Cookies in their settings."
+  ],
+  [
+   "禁用 Cookie 后，广告可能无法正常展示，但本站的其他功能不受影响。",
+   "After disabling Cookies, ads may not display properly, but the other features of this site are unaffected."
+  ],
+  [
+   "四、第三方资源与服务",
+   "4. Third-Party Resources and Services"
+  ],
+  [
+   "本站使用或可能使用以下第三方服务，这些服务在运行时可能收集技术性数据（如 IP 地址、设备类型、浏览器版本等），其收集行为均受各自隐私政策约束：",
+   "This site uses or may use the following third-party services, which may collect technical data when running (such as IP address, device type, browser version, and similar); their collection practices are governed by their respective privacy policies:"
+  ],
+  [
+   "Google AdSense — 广告展示服务。Google 会使用 Cookie 根据您的浏览记录投放广告。详情：policies.google.com/privacy",
+   "Google AdSense — Advertising display service. Google uses Cookies to serve ads based on your browsing history. Details: policies.google.com/privacy"
+  ],
+  [
+   "Google AdSense — 广告展示服务。",
+   "Google AdSense — Advertising display service."
+  ],
+  [
+   "Google 会使用 Cookie 根据您的浏览记录投放广告。",
+   "Google uses Cookies to serve ads based on your browsing history."
+  ],
+  [
+   "详情：policies.google.com/privacy",
+   "Details: policies.google.com/privacy"
+  ],
+  [
+   "Google Analytics（如启用）— 匿名访问统计分析。详情：policies.google.com/privacy",
+   "Google Analytics (if enabled) — Anonymous visit statistics and analysis. Details: policies.google.com/privacy"
+  ],
+  [
+   "Google Analytics（如启用）— 匿名访问统计分析。",
+   "Google Analytics (if enabled) — Anonymous visit statistics and analysis."
+  ],
+  [
+   "Leaflet.js（unpkg.com）— 开源互动地图库，MIT 协议",
+   "Leaflet.js (unpkg.com) — Open-source interactive map library, MIT License"
+  ],
+  [
+   "地图底图图像（cdn.jsdelivr.net）— 来自开源项目 vguzman812/totk-coordinates-map，MIT 协议",
+   "Map base images (cdn.jsdelivr.net) — From the open-source project vguzman812/totk-coordinates-map, MIT License"
+  ],
+  [
+   "Google Fonts / Bunny Fonts — 中文字体渲染",
+   "Google Fonts / Bunny Fonts — Chinese font rendering"
+  ],
+  [
+   "本站对上述第三方服务的隐私实践不承担责任。建议您访问各服务商官方网站了解其隐私政策。",
+   "This site is not responsible for the privacy practices of the above third-party services. We recommend visiting each provider's official website to learn about its privacy policy."
+  ],
+  [
+   "注意：部分外链图片资源（如神庙图鉴图片）托管于 Zelda Wiki（zeldawiki.wiki），访问时可能受其网站政策约束。",
+   "Note: Some externally linked image resources (such as Shrine guide images) are hosted on Zelda Wiki (zeldawiki.wiki), and access to them may be governed by that site's policies."
+  ],
+  [
+   "五、广告合规说明",
+   "5. Advertising Compliance Notice"
+  ],
+  [
+   "本站展示的广告由第三方广告服务商（如 Google AdSense）提供，广告内容由广告商自行决定，与本站立场无关。",
+   "Ads displayed on this site are provided by third-party advertising providers (such as Google AdSense); ad content is determined by the advertisers themselves and is unrelated to this site's position."
+  ],
+  [
+   "本站展示广告不代表本站对广告产品或服务的认可或推荐。",
+   "Displaying ads on this site does not represent this site's endorsement or recommendation of the advertised products or services."
+  ],
+  [
+   "本站通过展示广告获取的收益，属于网站运营者的合法收入，与游戏版权方任天堂株式会社的任何知识产权无关。",
+   "Revenue earned by this site from displaying ads is the lawful income of the site operator and is unrelated to any intellectual property of the game copyright holder, Nintendo Co., Ltd."
+  ],
+  [
+   "本站展示的广告不以任何形式出售或授权任天堂的知识产权，广告内容亦与任天堂游戏内容无关。",
+   "Ads displayed on this site do not sell or license Nintendo's intellectual property in any form, and ad content is also unrelated to Nintendo's game content."
+  ],
+  [
+   "本站不对广告商的隐私实践或广告内容的准确性承担责任。",
+   "This site is not responsible for advertisers' privacy practices or the accuracy of ad content."
+  ],
+  [
+   "GDPR / CCPA 合规：对于欧盟或加利福尼亚州的访问者，Google AdSense 等广告服务商在展示基于兴趣的广告前需获得您的同意。如您不希望接受个性化广告，可通过 Google 广告设置进行管理。",
+   "GDPR / CCPA Compliance: For visitors from the European Union or the State of California, advertising providers such as Google AdSense must obtain your consent before displaying interest-based ads. If you do not wish to receive personalized ads, you can manage this through Google Ad Settings."
+  ],
+  [
+   "GDPR / CCPA 合规：对于欧盟或加利福尼亚州的访问者，Google AdSense 等广告服务商在展示基于兴趣的广告前需获得您的同意。",
+   "GDPR / CCPA Compliance: For visitors from the European Union or the State of California, advertising providers such as Google AdSense must obtain your consent before displaying interest-based ads."
+  ],
+  [
+   "如您不希望接受个性化广告，可通过 Google 广告设置进行管理。",
+   "If you do not wish to receive personalized ads, you can manage this through Google Ad Settings."
+  ],
+  [
+   "六、本站原创内容版权",
+   "6. Copyright in This Site's Original Content"
+  ],
+  [
+   "本站的原创内容包括但不限于：页面排版设计、攻略文字描述、数据整理、代码实现，均由网站所有者独立创作，受著作权法保护。",
+   "This site's original content includes, but is not limited to: page layout design, guide text descriptions, data compilation, and code implementation, all independently created by the site owner and protected by copyright law."
+  ],
+  [
+   "未经本站所有者书面许可，不得转载、复制、修改或以商业目的使用本站原创内容。",
+   "Without the written permission of this site's owner, this site's original content may not be reprinted, copied, modified, or used for commercial purposes."
+  ],
+  [
+   "引用本站内容须注明来源，且不得歪曲原意。",
+   "Quoting content from this site must credit the source and must not distort its original meaning."
+  ],
+  [
+   "本站数据整理（包括坐标、攻略说明等）倾注了大量个人劳动，受个人创作权益保护。",
+   "The data compilation on this site (including coordinates, guide descriptions, and similar) reflects a great deal of individual labor and is protected as individual creative work."
+  ],
+  [
+   "七、未成年人保护",
+   "7. Protection of Minors"
+  ],
+  [
+   "本站内容面向一般公众开放，不针对特定年龄群体采集任何信息。",
+   "This site's content is open to the general public and does not collect any information targeted at any specific age group."
+  ],
+  [
+   "由于本站不收集任何个人信息，不存在针对未成年人的数据处理风险。",
+   "Since this site does not collect any personal information, there is no data-processing risk targeted at minors."
+  ],
+  [
+   "根据 Google AdSense 政策，本站承诺不向13岁以下（美国）或16岁以下（欧盟）未成年人展示个性化广告。",
+   "Under Google AdSense policy, this site undertakes not to display personalized ads to minors under 13 (United States) or under 16 (European Union)."
+  ],
+  [
+   "八、内容免责声明",
+   "8. Content Disclaimer"
+  ],
+  [
+   "本站攻略内容仅供参考，游戏数据、坐标及攻略说明可能存在误差或随游戏版本更新而变化，本站不对使用本站信息造成的任何游戏体验问题承担责任。",
+   "This site's guide content is for reference only; game data, coordinates, and guide descriptions may contain errors or change with game version updates, and this site is not responsible for any gameplay experience issues caused by using information from this site."
+  ],
+  [
+   "九、隐私政策更新",
+   "9. Privacy Policy Updates"
+  ],
+  [
+   "本站保留随时修改本隐私政策的权利。修改后的政策将在本页面发布，并更新顶部的\"最后更新\"日期。",
+   "This site reserves the right to modify this privacy policy at any time. The revised policy will be published on this page, and the \"Last updated\" date at the top will be updated."
+  ],
+  [
+   "继续使用本站即视为您接受更新后的隐私政策。",
+   "Continued use of this site constitutes your acceptance of the updated privacy policy."
+  ],
+  [
+   "十、联系我们",
+   "10. Contact Us"
+  ],
+  [
+   "如您对本隐私政策有任何疑问，或希望了解本站如何处理相关信息，请通过以下方式联系：",
+   "If you have any questions about this privacy policy, or wish to learn how this site handles related information, please contact us via the following:"
+  ],
+  [
+   "📬 电子邮件：",
+   "📬 Email:"
+  ],
+  [
+   "我们将在收到邮件后尽快回复。",
+   "We will reply as soon as possible after receiving your email."
+  ],
+  [
+   "版权声明：",
+   "Copyright Notice:"
+  ],
+  [
+   "《塞尔达传说：王国之泪》及其全部游戏内容、角色、图像、音效等知识产权均归 Nintendo Co., Ltd. 所有。© 2023 Nintendo. All Rights Reserved.",
+   "All intellectual property rights in The Legend of Zelda: Tears of the Kingdom and all its game content, characters, images, sound effects, etc. belong to Nintendo Co., Ltd. © 2023 Nintendo. All Rights Reserved."
+  ],
+  [
+   "广告展示：",
+   "Advertising:"
+  ],
+  [
+   "本站可能通过",
+   "This site may display ads through"
+  ],
+  [
+   "等广告网络在页面上展示广告。广告服务商会使用 Cookie 根据您过去对本站或其他网站的访问情况向您展示相关广告。",
+   "and other ad networks. Ad providers use cookies to show you relevant ads based on your past visits to this site or other sites."
+  ],
+  [
+   "兴趣定向广告：",
+   "Interest-Based Advertising:"
+  ],
+  [
+   "Google 等广告合作商可能使用 Cookie 在互联网上投放基于您兴趣的广告。您可访问",
+   "Google and other advertising partners may use cookies to serve interest-based ads across the internet. You can visit"
+  ],
+  [
+   "了解如何退出第三方供应商的兴趣定向广告。",
+   "to learn how to opt out of third-party interest-based advertising."
+  ],
+  [
+   "— 广告展示服务。Google 会使用 Cookie 根据您的浏览记录投放广告。详情：",
+   "— Advertising service. Google uses cookies to serve ads based on your browsing history. Details:"
+  ],
+  [
+   "— 中文字体渲染",
+   "— Chinese font rendering"
+  ],
+  [
+   "GDPR / CCPA 合规：",
+   "GDPR / CCPA Compliance:"
+  ],
+  [
+   "对于欧盟或加利福尼亚州的访问者，Google AdSense 等广告服务商在展示基于兴趣的广告前需获得您的同意。如您不希望接受个性化广告，可通过",
+   "For visitors from the EU or California, ad providers such as Google AdSense must obtain your consent before showing interest-based ads. If you do not wish to receive personalized ads, you can manage this through"
+  ],
+  [
+   "进行管理。",
+   "."
+  ],
+  [
+   "Google 广告设置",
+   "Google Ads Settings"
+  ]
+ ],
+ "title": "Privacy Policy – User Data Protection Notice | Tears of the Kingdom Guide"
+}

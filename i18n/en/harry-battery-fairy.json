@@ -1,0 +1,265 @@
+{
+ "notes": [
+  "可盖大人 rendered as Master Kohga and 依盖队 as Yiga Clan (official English names, not in the glossary file).",
+  "电池制造机 / 制造机 rendered descriptively as Crystal Refinery; 制炼魔像 as Forge Construct (the Construct that refines charges at the mines).",
+  "马克兔飞行器 rendered descriptively as Hover Bike (a fan nickname for the fan-built hoverbike; no official English name).",
+  "特大能量块 rendered descriptively as Large Zonaite (as distinct from 特大结晶 = Large Crystallized Charge); if the site prefers a different item name, this pair should be re-checked.",
+  "Source typo preserved in meaning only: 左纳尼乌姆矿石 read as 左纳乌矿石 and rendered as Zonaite ore.",
+  "The article itself states it is unfinished: the Great Fairy sisters walkthrough stops after the intro, so there is no further body content to translate."
+ ],
+ "pairs": [
+  [
+   "地底电池16格全满扩充与大妖精指南：4500个左纳乌能源结晶升满48格电池，可盖大人连环任务与废矿制炼所三条刷结晶捷径，地底地表镜像法则。",
+   "Guide to fully expanding your Depths battery to 16 cells and the Great Fairies: 4,500 Crystallized Charges to max out a 48-segment battery, three shortcuts for farming charges via the Master Kohga quest chain and the mine forges, and the Depths–surface mirroring rule."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Secrets"
+  ],
+  [
+   "地底电池与大妖精指南",
+   "Depths Battery and Great Fairy Guide"
+  ],
+  [
+   "⛏️ 资源攻略",
+   "⛏️ Resource Guide"
+  ],
+  [
+   "地底矿坑探索、左纳乌电池16格全满扩充与大妖精防具强化指南",
+   "Depths Mine Exploration, Expanding Your Zonai Battery to a Full 16 Cells, and Great Fairy Armor Enhancement Guide"
+  ],
+  [
+   "彻底告别载具\"飞三秒断电\"的电量焦虑，建立起庞大的左纳乌能源循环系统，并配合大妖精防具强化，让林克攻防两端全面质变。",
+   "Say goodbye for good to the range anxiety of a vehicle that runs out of power after three seconds in the air, build a massive Zonai energy cycle, and pair it with Great Fairy armor enhancement to completely transform Link's offense and defense."
+  ],
+  [
+   "🧙 作者：哈里",
+   "🧙 Author: Harry"
+  ],
+  [
+   "⛏️ 地底探索 · 电池扩充",
+   "⛏️ Depths Exploration · Battery Expansion"
+  ],
+  [
+   "📖 深度攻略",
+   "📖 In-Depth Guide"
+  ],
+  [
+   "林克腰间的左纳乌电池（游戏实机截图）",
+   "The Zonai battery at Link's waist (in-game screenshot)"
+  ],
+  [
+   "一、电池上限机制与升级换算",
+   "1. Battery Cap Mechanics and Upgrade Conversion"
+  ],
+  [
+   "电池容量上限：",
+   "Battery capacity cap:"
+  ],
+  [
+   "初始容量：1节（包含3小格绿色能量）",
+   "Starting capacity: 1 cell (containing 3 small segments of green energy)"
+  ],
+  [
+   "第一阶段：扩充至8节满绿色电池（共24小格）",
+   "Stage one: expand to 8 full green battery cells (24 small segments total)"
+  ],
+  [
+   "第二阶段（能量倍增）：再次扩充注入蓝色能源，升级为8节满蓝色电池（额外24小格）",
+   "Stage two (energy doubling): expand again to infuse blue energy, upgrading to 8 full blue battery cells (an additional 24 small segments)"
+  ],
+  [
+   "总上限：相当于16整节（48格能量）",
+   "Total cap: equivalent to 16 full cells (48 segments of energy)"
+  ],
+  [
+   "材料换算比例：",
+   "Material conversion rates:"
+  ],
+  [
+   "100个\"左纳乌能源结晶\" = 制造 1 小格电池",
+   "100 Crystallized Charges = 1 small battery segment"
+  ],
+  [
+   "300个\"左纳乌能源结晶\" = 制造 1 整节电池",
+   "300 Crystallized Charges = 1 full battery cell"
+  ],
+  [
+   "升满全套16节电池总共需要4500个结晶",
+   "Maxing out the full set of 16 battery cells requires 4,500 charges in total"
+  ],
+  [
+   "升级兑换机位置：监视堡垒北门正对的石堆上方\"电池制造机\"执事魔像，或初始空岛觉醒室出口旁的制造机。",
+   "Upgrade exchange machine location: the Steward Construct at the Crystal Refinery above the rock pile directly opposite the north gate of Lookout Landing, or the refinery beside the exit of the Awakening Room on the Great Sky Island."
+  ],
+  [
+   "二、快速刷取数千能源结晶的3大捷径",
+   "2. Three Shortcuts for Quickly Farming Thousands of Crystallized Charges"
+  ],
+  [
+   "追猎可盖大人连环任务（最快首通奖励）：在中央大废矿触发依盖队可盖大人剧情，一路追击并完成全部地底废矿对决。每次打赢可盖大人直接奖励宝箱内的\"超大结晶（价值100个）\"并附送实用蓝图。",
+   "Hunt down Master Kohga's quest chain (fastest first-clear reward): trigger the Yiga Clan Master Kohga storyline at the Great Abandoned Central Mine, chase him down, and complete every Depths mine showdown. Each time you defeat Master Kohga, you are directly rewarded with a Huge Crystallized Charge (worth 100 charges) in a treasure chest, plus a useful Autobuild schematic."
+  ],
+  [
+   "追猎可盖大人连环任务（最快首通奖励）：在中央大废矿触发依盖队可盖大人剧情，一路追击并完成全部地底废矿对决",
+   "Hunt down Master Kohga's quest chain (fastest first-clear reward): trigger the Yiga Clan Master Kohga storyline at the Great Abandoned Central Mine, chase him down, and complete every Depths mine showdown"
+  ],
+  [
+   "每次打赢可盖大人直接奖励宝箱内的\"超大结晶（价值100个）\"并附送实用蓝图",
+   "Each time you defeat Master Kohga, you are directly rewarded with a Huge Crystallized Charge (worth 100 charges) in a treasure chest, plus a useful Autobuild schematic"
+  ],
+  [
+   "扫荡地底废矿制炼所与Boss讨伐：",
+   "Clearing Depths mine forges and boss hunts:"
+  ],
+  [
+   "每个中央废矿、格鲁德废矿、拉聂尔废矿等均驻扎有制炼魔像，可直接用采集的左纳尼乌姆矿石兑换大结晶；",
+   "Each of the Abandoned Central Mine, Abandoned Gerudo Mine, Abandoned Lanayru Mine, and others is staffed by a Forge Construct, where you can directly exchange collected Zonaite ore for Large Crystallized Charges;"
+  ],
+  [
+   "地底散布的地下人马（白银莱尼尔）、巨霸迦玛、岩石巨人讨伐后掉落特大结晶（20个）或特大能量块。",
+   "Defeating the Silver Lynels, Frox, and Stone Taluses scattered through the Depths drops Large Crystallized Charges (20 charges) or Large Zonaite."
+  ],
+  [
+   "地底地貌与地表镜像法则：",
+   "The Depths terrain and surface mirroring rule:"
+  ],
+  [
+   "地底的神庙位置与地表的地面神庙绝对坐标重合（对应地底点亮树根）",
+   "Shrine locations in the Depths coincide exactly with the coordinates of surface shrines (corresponding to the Lightroots you light in the Depths)"
+  ],
+  [
+   "地面的山脉在地底对应深邃峡谷，地面的河流在地底对应无法攀爬的高耸断崖，利用镜像规律可快速定位未探明的矿坑与树根。",
+   "Surface mountains correspond to deep canyons in the Depths, and surface rivers correspond to towering, unclimbable cliffs in the Depths; using this mirroring pattern, you can quickly locate unexplored mines and Lightroots."
+  ],
+  [
+   "三、守护生存基石：大妖精四姐妹唤醒全流程",
+   "3. Guarding the Cornerstone of Survival: Waking All Four Great Fairy Sisters"
+  ],
+  [
+   "地底强敌攻击多附带瘴气侵蚀，防御力不足极易被一击致命。唤醒四位大妖精是升满四星防具的唯一途径",
+   "Powerful Depths enemies' attacks often carry Gloom erosion, and with insufficient defense you can easily be killed in one hit. Waking the four Great Fairies is the only way to fully upgrade armor to four stars"
+  ],
+  [
+   "📝 说明：本篇原文到此为止，大妖精四姐妹唤醒的后续步骤作者尚未完成，补齐后本站会同步更新。",
+   "📝 Note: the original text of this article ends here; the author has not yet finished the follow-up steps for waking the four Great Fairy sisters, and this site will update in sync once they are completed."
+  ],
+  [
+   "← 上一篇：马克兔飞行器调校",
+   "← Previous: Hover Bike Tuning"
+  ],
+  [
+   "返回秘籍专栏",
+   "Back to the Secrets Column"
+  ],
+  [
+   "下一篇：152座神庙全收集自查指南 →",
+   "Next: 152-Shrine Complete Collection Self-Check Guide →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Complete Guide to Surviving and Exploring the Depths World"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› Complete Guide to the Four Great Fairy Sisters and Armor Enhancement"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Hover Bike Tuning"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Full Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Secrets"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Scimitar of the Seven Ultimate Guide"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Recipe Formulas"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Full Breakdown of the Strongest Armor Sets in Three Tiers"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine: A Zero-Basis, Guaranteed-to-Learn Guide"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "› 地底电池扩充与大妖精（本篇）",
+   "› Depths Battery Expansion and the Great Fairies (this article)"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 Daily New Guides"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› 152-Shrine Complete Collection Self-Check Guide"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Pioneering Guide: The 10 Things to Do First After Landing"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Korok Seed Complete Guide"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Four Dragons Material Farming Guide"
+  ],
+  [
+   "初始容量：1节（包含3小格绿色能量）；",
+   "Starting capacity: 1 cell (containing 3 small segments of green energy);"
+  ],
+  [
+   "第一阶段：扩充至8节满绿色电池（共24小格）；",
+   "Phase 1: expand to 8 full green cells (24 segments total);"
+  ],
+  [
+   "第二阶段（能量倍增）：再次扩充注入蓝色能源，升级为8节满蓝色电池（额外24小格）；",
+   "Phase 2 (energy doubling): expand again with blue energy to upgrade to 8 full blue cells (24 extra segments);"
+  ],
+  [
+   "总上限：相当于16整节（48格能量）。",
+   "Total cap: equivalent to 16 full cells (48 segments of energy)."
+  ],
+  [
+   "100个\"左纳乌能源结晶\" = 制造 1 小格电池；",
+   "100 \"Crystallized Charges\" = 1 small battery segment;"
+  ],
+  [
+   "300个\"左纳乌能源结晶\" = 制造 1 整节电池；",
+   "300 \"Crystallized Charges\" = 1 full battery cell;"
+  ],
+  [
+   "升满全套16节电池总共需要4500个结晶。",
+   "Fully upgrading all 16 cells requires 4,500 Crystallized Charges in total."
+  ],
+  [
+   "地底的神庙位置与地表的地面神庙绝对坐标重合（对应地底点亮树根）；",
+   "Shrine locations in the Depths exactly match the surface shrines' coordinates (matching the Lightroots you light in the Depths);"
+  ]
+ ],
+ "title": "Depths Battery Expansion to a Full 16 Cells and Great Fairy Guide · Harry's Ultimate Secrets · Tears of the Kingdom Guide"
+}

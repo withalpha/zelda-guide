@@ -1,0 +1,412 @@
+{
+ "notes": [
+  "左纳尼乌姆 rendered as Zonaite (per GLOSSARY, 左纳乌能源 = Zonaite). 制炼魔像 rendered as Forge Construct. 特大结晶 rendered as Huge Crystallized Charge and 特大能量块 as Huge Zonaite Charge (descriptive). 巨霸迦玛 has no confident official English equivalent, so it is rendered as the transliteration 'Jubajiama' in the Depths-boss pair to avoid misidentification."
+ ],
+ "pairs": [
+  [
+   "地底世界生存与探索完全指南：瘴气机制、向阳草配方、照明三件套、120棵破魔之根镜像法则、废矿与Boss，下地底前必读。",
+   "Complete guide to surviving and exploring the Depths: gloom mechanics, Sundelion recipes, the three-piece lighting kit, the 120-Lightroot mirror rule, abandoned mines and bosses — essential reading before going into the Depths."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Tips"
+  ],
+  [
+   "地底世界生存与探索完全指南",
+   "Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "漆黑、瘴气、120 棵树根：地底的全部机制一次讲清，下地底前先读这篇。",
+   "Darkness, gloom, and 120 Lightroots: all the Depths' mechanics explained at once — read this before going into the Depths."
+  ],
+  [
+   "🧙 作者：哈里 🌑 地底 · 瘴气与照明 📖 深度攻略",
+   "🧙 Author: Harry 🌑 The Depths · Gloom and Lighting 📖 In-Depth Guide"
+  ],
+  [
+   "地底的破魔之根（游戏实机截图）",
+   "A Lightroot in the Depths (in-game screenshot)"
+  ],
+  [
+   "地底的破魔之根（游戏实机截图，图片来源：Zelda Wiki）",
+   "A Lightroot in the Depths (in-game screenshot, image source: Zelda Wiki)"
+  ],
+  [
+   "地底是王国之泪新增的一整层地图：漆黑、广阔、到处是瘴气，但也藏着电池、矿石和强力 Boss。这篇把地底生存的全部机制一次讲清：瘴气怎么算、怎么照明、120 棵树根怎么点、下地底前带什么。",
+   "The Depths are a whole new layer of map added in Tears of the Kingdom: pitch black, vast, and full of gloom everywhere, but also hiding batteries, ore, and powerful bosses. This article explains all the Depths survival mechanics at once: how gloom is calculated, how to light your way, how to activate the 120 Lightroots, and what to bring before going into the Depths."
+  ],
+  [
+   "⭐ 本篇要点",
+   "⭐ Key Points of This Article"
+  ],
+  [
+   "瘴气侵蚀的是红心上限，普通料理修不了，要用光明根光环或向阳草料理。",
+   "Gloom erodes your maximum hearts; ordinary meals can't repair it — use a Lightroot's aura or Sundelion meals."
+  ],
+  [
+   "照明三件套：光亮花种子（射远处）、巨大光亮花种子（当车灯）、发光料理（照自身）。",
+   "The three-piece lighting kit: Brightbloom Seeds (shoot them far away), Giant Brightbloom Seeds (as vehicle headlights), and Bright meals (to light yourself)."
+  ],
+  [
+   "120 棵破魔之根与地面 120 座神庙一一镜像，点亮就是传送点。",
+   "The 120 Lightroots mirror the 120 surface shrines one by one; lighting one makes it a travel point."
+  ],
+  [
+   "地形与地表相反：地表是山的地方，地底是低地；地表是河的地方，地底是高墙。",
+   "The terrain is the opposite of the surface: where the surface has mountains, the Depths have lowlands; where the surface has rivers, the Depths have high walls."
+  ],
+  [
+   "📑 本篇目录",
+   "📑 Contents of This Article"
+  ],
+  [
+   "一、瘴气机制：先搞懂它扣的是什么",
+   "I. Gloom Mechanics: First Understand What It Takes Away"
+  ],
+  [
+   "二、恢复瘴气伤害的三种方法",
+   "II. Three Ways to Recover from Gloom Damage"
+  ],
+  [
+   "三、照明：三件套怎么用",
+   "III. Lighting: How to Use the Three-Piece Kit"
+  ],
+  [
+   "四、120 棵破魔之根与镜像法则",
+   "IV. The 120 Lightroots and the Mirror Rule"
+  ],
+  [
+   "五、地底地形怎么读",
+   "V. How to Read Depths Terrain"
+  ],
+  [
+   "六、废矿、制炼所与 Boss",
+   "VI. Abandoned Mines, Forges, and Bosses"
+  ],
+  [
+   "七、下地底前的行囊清单",
+   "VII. Packing List Before Going into the Depths"
+  ],
+  [
+   "常见问题",
+   "Frequently Asked Questions"
+  ],
+  [
+   "地底到处是红色的瘴气池，带瘴气的敌人打中你也会附带瘴气伤害。瘴气伤害的特殊之处在于：它侵蚀的是红心上限。被侵蚀的心会变成无法使用的状态，这时候吃普通恢复料理，只能填补剩下可用的心，修不了被侵蚀的那部分。很多人觉得“吃了药怎么还是残血”，原因就在这里。",
+   "The Depths are full of red gloom pools everywhere, and gloom-infused enemies also deal gloom damage when they hit you. What's special about gloom damage is that it erodes your maximum hearts. Eroded hearts become unusable, and at that point eating ordinary recovery meals can only fill the hearts still usable — it can't repair the eroded part. Many people wonder “why am I still at low health after eating medicine?” — this is why."
+  ],
+  [
+   "站进光明根光环：走到任意已激活的破魔之根下方，光环会逐步修复被侵蚀的心。地底探索时养成“路过树根就站一会儿”的习惯。",
+   "Stand in a Lightroot's aura: walk beneath any activated Lightroot, and its aura will gradually repair your eroded hearts. While exploring the Depths, build the habit of “standing a while whenever you pass a Lightroot.”"
+  ],
+  [
+   "站进光明根光环：走到任意已激活的破魔之根下方，光环会逐步修复被侵蚀的心。",
+   "Stand in a Lightroot's aura: walk beneath any activated Lightroot, and its aura will gradually repair your eroded hearts."
+  ],
+  [
+   "地底探索时养成“路过树根就站一会儿”的习惯。",
+   "While exploring the Depths, build the habit of “standing a while whenever you pass a Lightroot.”"
+  ],
+  [
+   "回地面阳光下：从深穴回到地表，阳光会自动恢复被侵蚀的心。适合侵蚀严重、又离树根很远的时候。",
+   "Return to sunlight on the surface: go back to the surface from a chasm, and sunlight will automatically restore your eroded hearts. This suits times when the erosion is severe and you're far from a Lightroot."
+  ],
+  [
+   "回地面阳光下：从深穴回到地表，阳光会自动恢复被侵蚀的心。",
+   "Return to sunlight on the surface: go back to the surface from a chasm, and sunlight will automatically restore your eroded hearts."
+  ],
+  [
+   "适合侵蚀严重、又离树根很远的时候。",
+   "This suits times when the erosion is severe and you're far from a Lightroot."
+  ],
+  [
+   "向阳草料理：用向阳草（天空岛上采）做料理，会带“回复瘴气伤害”效果。1 个向阳草修 3 颗，3 个修 9 颗，5 个修 15 颗；向阳草 × 3 加顶级兽肉 × 2，还能一边修 9 颗一边回普通血量。注意：修完上限后心还是空的，要再吃普通料理补血。",
+   "Sundelion meals: cooking with Sundelions (gathered on the Sky Islands) gives a “restore gloom damage” effect. 1 Sundelion repairs 3 hearts, 3 repair 9, and 5 repair 15; 3 Sundelions plus 2 Prime Meats can also repair 9 hearts while restoring ordinary health at the same time. Note: after the cap is repaired, the hearts are still empty — eat ordinary meals to refill health."
+  ],
+  [
+   "向阳草料理：用向阳草（天空岛上采）做料理，会带“回复瘴气伤害”效果。",
+   "Sundelion meals: cooking with Sundelions (gathered on the Sky Islands) gives a “restore gloom damage” effect."
+  ],
+  [
+   "1 个向阳草修 3 颗，3 个修 9 颗，5 个修 15 颗；向阳草 × 3 加顶级兽肉 × 2，还能一边修 9 颗一边回普通血量。",
+   "1 Sundelion repairs 3 hearts, 3 repair 9, and 5 repair 15; 3 Sundelions plus 2 Prime Meats can also repair 9 hearts while restoring ordinary health at the same time."
+  ],
+  [
+   "注意：修完上限后心还是空的，要再吃普通料理补血。",
+   "Note: after the cap is repaired, the hearts are still empty — eat ordinary meals to refill health."
+  ],
+  [
+   "另外提醒一句：闇之块做出来的是“暂时瘴气防护”，作用是减少受到的瘴气伤害，和向阳草“修复已受的侵蚀”用途不同，别搞混了。",
+   "One more reminder: what Dark Clumps make is “temporary gloom protection,” which reduces the gloom damage you take — a different use from Sundelions' “repairing erosion already suffered,” so don't mix them up."
+  ],
+  [
+   "照明手段",
+   "Lighting Method"
+  ],
+  [
+   "怎么用",
+   "How to Use It"
+  ],
+  [
+   "适合场景",
+   "Suitable Situations"
+  ],
+  [
+   "光亮花种子",
+   "Brightbloom Seed"
+  ],
+  [
+   "绑在箭上射出去，照亮远处；直接投掷省箭，但范围小",
+   "Attach it to an arrow and shoot it to light up far away; throwing it directly saves arrows, but the range is small"
+  ],
+  [
+   "探路、标行进路线、照高处",
+   "Scouting, marking your route, lighting high places"
+  ],
+  [
+   "巨大光亮花种子",
+   "Giant Brightbloom Seed"
+  ],
+  [
+   "粘在载具最前方，敲击或射击点亮，变车灯",
+   "Stick it at the very front of a vehicle, then strike or shoot it to light it up as a headlight"
+  ],
+  [
+   "开车长途穿越黑暗区",
+   "Driving long distances through dark areas"
+  ],
+  [
+   "发光料理 / 发光药",
+   "Bright Meals / Bright Elixirs"
+  ],
+  [
+   "光亮蘑菇做发光料理；深萤火虫加怪物素材做发光药，吃下后自身持续发光",
+   "Brightcaps make Bright meals; Deep Fireflies plus monster parts make Bright elixirs, and after eating one you keep glowing yourself"
+  ],
+  [
+   "照亮自己周围，适合近处探索",
+   "Lighting your own surroundings; suitable for nearby exploration"
+  ],
+  [
+   "三件套分工明确：远处用箭射种子，赶路用车灯，身边用发光料理。发光料理只照自身，不能代替破魔之根——第一次进地底，仍要带大量光亮花种子，优先点亮沿途树根。",
+   "The three-piece kit has a clear division of labor: shoot seeds with arrows for far away, use the headlight for travelling, and use Bright meals for what's beside you. Bright meals only light yourself and can't replace Lightroots — on your first trip into the Depths, still bring a large number of Brightbloom Seeds, and prioritize lighting the Lightroots along the way."
+  ],
+  [
+   "152座神庙全收集自查指南",
+   "Self-Check Guide to Collecting All 152 Shrines"
+  ],
+  [
+   "地底一共有 120 棵破魔之根，和地面 120 座神庙一一对应，名字是神庙名的倒序。点亮一棵树根有三个好处：照亮周围一大片、解锁该处传送、修复被瘴气侵蚀的心。所以地底探索的核心节奏就是：沿着树根一棵一棵点过去，地图自然就亮了。反过来，这个机制也能帮你找漏掉的神庙：有树根、没神庙的地方，就是漏掉的地面神庙，详见本站152座神庙全收集自查指南。",
+   "The Depths have 120 Lightroots in total, corresponding one by one to 120 surface shrines, with names that are the shrine names reversed. Lighting a Lightroot has three benefits: lighting up a large surrounding area, unlocking travel to that spot, and repairing hearts eroded by gloom. So the core rhythm of Depths exploration is: light the Lightroots one by one along the way, and the map will naturally light up. Conversely, this mechanism can also help you find shrines you've missed: a place with a Lightroot but no shrine is a missed surface shrine — see this site's Self-Check Guide to Collecting All 152 Shrines for details."
+  ],
+  [
+   "地底一共有 120 棵破魔之根，和地面 120 座神庙一一对应，名字是神庙名的倒序。",
+   "The Depths have 120 Lightroots in total, corresponding one by one to 120 surface shrines, with names that are the shrine names reversed."
+  ],
+  [
+   "点亮一棵树根有三个好处：照亮周围一大片、解锁该处传送、修复被瘴气侵蚀的心。",
+   "Lighting a Lightroot has three benefits: lighting up a large surrounding area, unlocking travel to that spot, and repairing hearts eroded by gloom."
+  ],
+  [
+   "所以地底探索的核心节奏就是：沿着树根一棵一棵点过去，地图自然就亮了。",
+   "So the core rhythm of Depths exploration is: light the Lightroots one by one along the way, and the map will naturally light up."
+  ],
+  [
+   "反过来，这个机制也能帮你找漏掉的神庙：有树根、没神庙的地方，就是漏掉的地面神庙，详见本站152座神庙全收集自查指南。",
+   "Conversely, this mechanism can also help you find shrines you've missed: a place with a Lightroot but no shrine is a missed surface shrine — see this site's Self-Check Guide to Collecting All 152 Shrines for details."
+  ],
+  [
+   "地底地形和地表大致相反：地表是山脉的地方，地底对应低地；地表是河流湖泊的地方，地底对应无法直接跨越的高墙。出发前先看地表地图推测地底路线，能少走很多冤枉路。入口在地表的深穴，跳下去时记得开滑翔伞控制落点，别直接掉进瘴气池。",
+   "Depths terrain is roughly the opposite of the surface: where the surface has mountain ranges, the Depths have lowlands; where the surface has rivers and lakes, the Depths have high walls that can't be crossed directly. Before setting out, look at the surface map first to predict the Depths route, which saves a lot of wasted walking. Entrances are the chasms on the surface; when jumping down, remember to open the Paraglider to control your landing point — don't drop straight into a gloom pool."
+  ],
+  [
+   "地底电池与大妖精指南",
+   "Depths Battery and Great Fairy Guide"
+  ],
+  [
+   "废矿与制炼所：中央废矿、格鲁德废矿、拉聂尔废矿等地都有制炼魔像，可以用采集的左纳尼乌姆矿石兑换大结晶。采矿攒结晶扩电池的完整换算，见本站地底电池与大妖精指南。",
+   "Abandoned mines and forges: the Central Abandoned Mine, Gerudo Abandoned Mine, Lanayru Abandoned Mine, and others all have Forge Constructs, where Zonaite ore you've mined can be exchanged for Large Crystallized Charges. For the complete conversion for mining and saving Charges to expand batteries, see this site's Depths Battery and Great Fairy Guide."
+  ],
+  [
+   "废矿与制炼所：中央废矿、格鲁德废矿、拉聂尔废矿等地都有制炼魔像，可以用采集的左纳尼乌姆矿石兑换大结晶。",
+   "Abandoned mines and forges: the Central Abandoned Mine, Gerudo Abandoned Mine, Lanayru Abandoned Mine, and others all have Forge Constructs, where Zonaite ore you've mined can be exchanged for Large Crystallized Charges."
+  ],
+  [
+   "采矿攒结晶扩电池的完整换算，见本站地底电池与大妖精指南。",
+   "For the complete conversion for mining and saving Charges to expand batteries, see this site's Depths Battery and Great Fairy Guide."
+  ],
+  [
+   "地底 Boss：地下人马（白银莱尼尔）、巨霸迦玛、岩石巨人，讨伐后掉落特大结晶（20 个）或特大能量块，是结晶的重要来源。",
+   "Depths bosses: underground Lynels (Silver Lynels), Jubajiama, and Stone Taluses drop Huge Crystallized Charges (20) or Huge Zonaite Charges after being defeated, and are an important source of Charges."
+  ],
+  [
+   "光亮花种子：越多越好，探路全靠它。",
+   "Brightbloom Seeds: the more the better — scouting relies entirely on them."
+  ],
+  [
+   "向阳草料理：至少做几份修 9 颗的，应付 Boss 战和深区。",
+   "Sundelion meals: make at least a few that repair 9 hearts, to handle boss fights and deep areas."
+  ],
+  [
+   "滑翔伞：跳深穴、跨高墙、躲瘴气池都靠它。",
+   "Paraglider: jumping into chasms, crossing high walls, and dodging gloom pools all rely on it."
+  ],
+  [
+   "一辆可靠的载具：粘上巨大光亮花种子当车灯，地底赶路效率翻倍。",
+   "A reliable vehicle: stick a Giant Brightbloom Seed on it as a headlight, and Depths travelling efficiency doubles."
+  ],
+  [
+   "充足的武器和弓箭：地底敌人普遍比地表硬，别只带一两把。",
+   "Plenty of weapons and bows: Depths enemies are generally tougher than surface ones, so don't bring just one or two."
+  ],
+  [
+   "地底有呀哈哈吗？没有。呀哈哈只出现在天空和地面两层。",
+   "Are there Koroks in the Depths? No. Koroks only appear in the sky and surface layers."
+  ],
+  [
+   "地底有呀哈哈吗？",
+   "Are there Koroks in the Depths?"
+  ],
+  [
+   "没有。呀哈哈只出现在天空和地面两层。",
+   "No. Koroks only appear in the sky and surface layers."
+  ],
+  [
+   "树根点亮后能传送吗？能，树根就是地底的传送点。",
+   "Can you travel to a Lightroot after lighting it? Yes — Lightroots are the Depths' travel points."
+  ],
+  [
+   "树根点亮后能传送吗？",
+   "Can you travel to a Lightroot after lighting it?"
+  ],
+  [
+   "能，树根就是地底的传送点。",
+   "Yes — Lightroots are the Depths' travel points."
+  ],
+  [
+   "瘴气红心怎么恢复？光明根光环、回地面阳光、向阳草料理，三种方法见第二节。",
+   "How do gloom-eroded hearts recover? Lightroot aura, returning to surface sunlight, or Sundelion meals — the three methods are in Section II."
+  ],
+  [
+   "瘴气红心怎么恢复？",
+   "How do gloom-eroded hearts recover?"
+  ],
+  [
+   "光明根光环、回地面阳光、向阳草料理，三种方法见第二节。",
+   "Lightroot aura, returning to surface sunlight, or Sundelion meals — the three methods are in Section II."
+  ],
+  [
+   "破魔树根",
+   "Lightroots"
+  ],
+  [
+   "相关攻略：破魔树根、152座神庙全收集自查指南、地底电池与大妖精指南。",
+   "Related guides: Lightroots, Self-Check Guide to Collecting All 152 Shrines, Depths Battery and Great Fairy Guide."
+  ],
+  [
+   "← 上一篇：呀哈哈种子全指南",
+   "← Previous: Complete Guide to Korok Seeds"
+  ],
+  [
+   "返回秘籍专栏",
+   "Back to the Tips Column"
+  ],
+  [
+   "下一篇：大妖精四姐妹与防具强化完全指南 →",
+   "Next: Complete Guide to the Four Great Fairies and Armor Enhancement →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 破魔树根",
+   "› Lightroots"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Depths Battery Expansion and the Great Fairies"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› Self-Check Guide to Collecting All 152 Shrines"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Full Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Tips"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Ultimate Guide to the Scimitar of the Seven"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Dish Recipes"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Full Analysis of the Three Tiers of Strongest Armor Sets"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine for Absolute Beginners"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Mark-Rabbit Hover Bike Tuning"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 Daily New Guides"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Pioneering Guide: 10 Things to Do First After Landing"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Complete Guide to Korok Seeds"
+  ],
+  [
+   "› 地底世界生存与探索完全指南（本篇）",
+   "› Complete Guide to Surviving and Exploring the Depths (This Article)"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› Complete Guide to the Four Great Fairies and Armor Enhancement"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Guide to Farming Materials from the Four Dragons"
+  ],
+  [
+   "地底世界生存指南",
+   "Depths Survival Guide"
+  ],
+  [
+   "🌑 地底攻略",
+   "🌑 Depths Guide"
+  ],
+  [
+   "🌑 地底 · 瘴气与照明",
+   "🌑 The Depths · Gloom & Lighting"
+  ],
+  [
+   "⚠️ 注意：瘴气侵蚀的心不是“扣血”，是“上限被锁”。先解除侵蚀恢复上限，再吃普通料理回血，两步缺一不可。",
+   "⚠️ Note: Hearts eroded by gloom are not \"lost HP\" — your maximum is locked. First remove the gloom to restore your maximum, then eat normal food to recover HP. Neither step can be skipped."
+  ]
+ ],
+ "title": "Complete Guide to Surviving and Exploring the Depths · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+}

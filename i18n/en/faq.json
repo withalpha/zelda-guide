@@ -1,0 +1,990 @@
+{
+ "notes": [
+  "古代英杰套装 / 古代英杰之刃 rendered descriptively as 'Ancient Hero's Set' / 'Ancient Hero's Blade' — no confident official English equivalent in the glossary.",
+  "太阳花 and 阳光花 both rendered as Sundelion (the Gloom-restoring flower).",
+  "林克庄园 rendered descriptively as 'Link's house'.",
+  "王之碎片 rendered descriptively as 'King's Fragments'.",
+  "火之神殿 / 雷之神殿 locations translated exactly as written on the source page (Fire Temple listed under Gerudo Desert, Lightning Temple under Gerudo Highlands), even though this differs from the in-game regions.",
+  "哈里的武器秘籍 / 哈里的料理秘籍 / 哈里的终极秘籍 rendered descriptively as Harry's Weapon Secrets / Harry's Cooking Secrets / Harry's Ultimate Secrets (site-internal guide titles).",
+  "乐团任务 rendered descriptively as 'musical troupe quest' (the quest chain that unlocks the Great Fairies).",
+  "野菜牛奶粥 rendered descriptively as 'Veggie Cream Soup'; 精力蜜饯鳟鱼 as 'Energizing Honeyed Trout'.",
+  "Fragment pass (2026-11-02): FAQ answers split by <strong> tags translated as ordered fragments so concatenation reads correctly.",
+  "Source quirks translated as written: Fire Temple listed as Gerudo Desert and Lightning Temple as Gerudo Highlands in the recommended-order answer (regions appear swapped in the source).",
+  "Uncertain/descriptive renderings: 阳光花料理 -> Sunshine-Flower Dishes (source distinguishes it from Sundelion dishes); 王之碎片 -> King's Fragments (source claim, no such official item); 生命苹果 -> Hearty Apple (literal; no official item of this name); 林克庄园 -> Link's Manor (literal; source wording unclear); 古代英杰之刃 -> Ancient Hero's Blade (descriptive; no official weapon of this name)."
+ ],
+ "pairs": [
+  [
+   "王国之泪常见问题解答：神庙攻略、武器获取、料理配方、套装升级、破魔树根位置等游戏疑问快速解答，帮助玩家快速通关。",
+   "Tears of the Kingdom FAQ: quick answers to questions about Shrine guides, weapon locations, cooking recipes, armor set upgrades, Lightroot locations, and more, to help you beat the game faster."
+  ],
+  [
+   "💡 常见问题",
+   "💡 Frequently Asked Questions"
+  ],
+  [
+   "新手必看的游戏疑问快速解答",
+   "Quick answers to the gameplay questions every beginner should know"
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "常见问题",
+   "Frequently Asked Questions"
+  ],
+  [
+   "欢迎来到FAQ页面",
+   "Welcome to the FAQ Page"
+  ],
+  [
+   "这里收集了玩家最常遇到的问题和解答。点击问题即可展开查看详细答案。如果没有找到您想要的答案，欢迎通过邮件联系我们。",
+   "This page collects the questions and answers players ask about most often. Click a question to expand it and read the full answer. If you can't find the answer you're looking for, feel free to contact us by email."
+  ],
+  [
+   "这里收集了玩家最常遇到的问题和解答。",
+   "This page collects the questions and answers players ask about most often."
+  ],
+  [
+   "点击问题即可展开查看详细答案。",
+   "Click a question to expand it and read the full answer."
+  ],
+  [
+   "如果没有找到您想要的答案，欢迎通过邮件联系我们。",
+   "If you can't find the answer you're looking for, feel free to contact us by email."
+  ],
+  [
+   "🎮 基础游戏问题",
+   "🎮 Basic Gameplay Questions"
+  ],
+  [
+   "Q: 王国之泪一共有多少个神庙？",
+   "Q: How many Shrines are there in Tears of the Kingdom?"
+  ],
+  [
+   "《王国之泪》共有152个神庙（含教学神庙），分布在空岛、地上和地底世界。完成所有神庙可获得祝福之光，用于兑换心之容器和精力容器。查看完整神庙列表：神庙挑战攻略",
+   "Tears of the Kingdom has 152 Shrines (including the tutorial Shrines), spread across the Sky Islands, the surface, and the Depths. Completing all Shrines earns you Lights of Blessing, which can be exchanged for Heart Containers and Stamina Vessels. See the full Shrine list: Shrine Challenge Guide"
+  ],
+  [
+   "《王国之泪》共有152个神庙（含教学神庙），分布在空岛、地上和地底世界。",
+   "Tears of the Kingdom has 152 Shrines (including the tutorial Shrines), spread across the Sky Islands, the surface, and the Depths."
+  ],
+  [
+   "完成所有神庙可获得祝福之光，用于兑换心之容器和精力容器。",
+   "Completing all Shrines earns you Lights of Blessing, which can be exchanged for Heart Containers and Stamina Vessels."
+  ],
+  [
+   "查看完整神庙列表：神庙挑战攻略",
+   "See the full Shrine list: Shrine Challenge Guide"
+  ],
+  [
+   "Q: 破魔树根有什么用？在哪里找？",
+   "Q: What are Lightroots for, and where do I find them?"
+  ],
+  [
+   "破魔树根是地底世界的传送点，激活后可以照亮周围区域并作为快速旅行点。全地图共有120个破魔树根，与地上神庙位置相对应（正下方）。建议先激活地上神庙，然后从神庙位置向下跳入地底寻找对应的破魔树根。查看完整地图：破魔树根位置",
+   "Lightroots are warp points in the Depths. Once activated, they light up the surrounding area and serve as fast-travel points. There are 120 Lightroots across the whole map, each corresponding to a surface Shrine (directly below it). We recommend activating a surface Shrine first, then jumping down from the Shrine's location into the Depths to find the matching Lightroot. See the full map: Lightroot Locations"
+  ],
+  [
+   "破魔树根是地底世界的传送点，激活后可以照亮周围区域并作为快速旅行点。",
+   "Lightroots are warp points in the Depths. Once activated, they light up the surrounding area and serve as fast-travel points."
+  ],
+  [
+   "全地图共有120个破魔树根，与地上神庙位置相对应（正下方）。",
+   "There are 120 Lightroots across the whole map, each corresponding to a surface Shrine (directly below it)."
+  ],
+  [
+   "建议先激活地上神庙，然后从神庙位置向下跳入地底寻找对应的破魔树根。",
+   "We recommend activating a surface Shrine first, then jumping down from the Shrine's location into the Depths to find the matching Lightroot."
+  ],
+  [
+   "查看完整地图：破魔树根位置",
+   "See the full map: Lightroot Locations"
+  ],
+  [
+   "Q: 主线任务建议按什么顺序完成？",
+   "Q: What order is recommended for completing the main quests?"
+  ],
+  [
+   "推荐顺序：风→水→火→雷 • 风之神殿（利特村）：最简单，丘栗风力能力实用 • 水之神殿（卓拉之里）：希多水球盾强力防御 • 火之神殿（格鲁德沙漠）：阿沅翻滚破岩方便 • 雷之神殿（格鲁德高地）：难度最高，放最后 查看详细主线流程：主线任务攻略",
+   "Recommended order: Wind → Water → Fire → Lightning • Wind Temple (Rito Village): the easiest; Tulin's wind ability is very useful • Water Temple (Zora's Domain): Sidon's water bubble shield is a powerful defense • Fire Temple (Gerudo Desert): Yunobo's rolling ability makes breaking rocks easy • Lightning Temple (Gerudo Highlands): the hardest, so save it for last See the detailed main quest walkthrough: Main Quest Guide"
+  ],
+  [
+   "Q: 瘴气之心（黑色心形）如何恢复？",
+   "Q: How do I restore Gloom Hearts (the black hearts)?"
+  ],
+  [
+   "地底瘴气造成的损伤（黑色心形）需要使用太阳花料理或阳光花料理恢复。推荐配方： • 野菜牛奶粥（太阳花+鲜奶+岩盐）：完全恢复瘴气心 • 蒸太阳花（仅太阳花）：简单快速 太阳花可在地上世界采集，也可在地底商店购买。查看完整料理配方：料理合成攻略",
+   "Damage from Gloom in the Depths (the black hearts) must be restored with Sundelion dishes. Recommended recipes: • Veggie Cream Soup (Sundelion + Fresh Milk + Rock Salt): fully restores Gloom Hearts • Steamed Sundelion (Sundelion only): simple and quick Sundelions can be gathered in the surface world or bought in Depths shops. See all cooking recipes: Cooking Guide"
+  ],
+  [
+   "地底瘴气造成的损伤（黑色心形）需要使用太阳花料理或阳光花料理恢复。",
+   "Damage from Gloom in the Depths (the black hearts) must be restored with Sundelion dishes."
+  ],
+  [
+   "推荐配方： • 野菜牛奶粥（太阳花+鲜奶+岩盐）：完全恢复瘴气心 • 蒸太阳花（仅太阳花）：简单快速 太阳花可在地上世界采集，也可在地底商店购买。",
+   "Recommended recipes: • Veggie Cream Soup (Sundelion + Fresh Milk + Rock Salt): fully restores Gloom Hearts • Steamed Sundelion (Sundelion only): simple and quick. Sundelions can be gathered in the surface world or bought in Depths shops."
+  ],
+  [
+   "查看完整料理配方：料理合成攻略",
+   "See all cooking recipes: Cooking Guide"
+  ],
+  [
+   "⚔️ 武器与装备",
+   "⚔️ Weapons and Equipment"
+  ],
+  [
+   "Q: 大师剑在哪里获取？需要什么条件？",
+   "Q: Where do I get the Master Sword, and what are the requirements?"
+  ],
+  [
+   "大师剑位于龙泪湖上空，由白龙（塞尔达）守护。获取条件： • 至少2格精力（需要40点祝福之光） • 建议先完成4个神殿任务，获得贤者誓约 • 骑乘龙背拔出大师剑（需等待白龙从地底飞出） 提示：大师剑攻击力30，融合后可达50+，且可自动修复。查看详细获取方法：哈里的武器秘籍",
+   "The Master Sword is located in the sky above Dracozu Lake, guarded by the Light Dragon (Zelda). Requirements: • At least 2 full Stamina Wheels (requiring 40 Lights of Blessing) • We recommend completing the 4 temple quests first to obtain the Sages' Vows • Ride on the dragon's back to pull out the Master Sword (you'll need to wait for the Light Dragon to fly up from the Depths) Tip: The Master Sword has 30 attack power, can reach 50+ after fusing, and repairs itself automatically. See how to get it in detail: Harry's Weapon Secrets"
+  ],
+  [
+   "大师剑位于龙泪湖上空，由白龙（塞尔达）守护。",
+   "The Master Sword is located in the sky above Dracozu Lake, guarded by the Light Dragon (Zelda)."
+  ],
+  [
+   "获取条件： • 至少2格精力（需要40点祝福之光） • 建议先完成4个神殿任务，获得贤者誓约 • 骑乘龙背拔出大师剑（需等待白龙从地底飞出） 提示：大师剑攻击力30，融合后可达50+，且可自动修复。",
+   "Requirements: • At least 2 full Stamina Wheels (requiring 40 Lights of Blessing) • We recommend completing the 4 temple quests first to obtain the Sages' Vows • Ride on the dragon's back to pull out the Master Sword (you'll need to wait for the Light Dragon to fly up from the Depths) Tip: The Master Sword has 30 attack power, can reach 50+ after fusing, and repairs itself automatically."
+  ],
+  [
+   "查看详细获取方法：哈里的武器秘籍",
+   "See how to get it in detail: Harry's Weapon Secrets"
+  ],
+  [
+   "Q: 哪些武器最值得收集和使用？",
+   "Q: Which weapons are most worth collecting and using?"
+  ],
+  [
+   "推荐武器TOP 5： 1. 七宝匕首（攻击力138，耐久极高）：格鲁德女工匠打造 2. 大师剑（可自动修复）：白龙守护 3. 古代英杰之刃（攻击力52）：完成主线获得 4. 骑士之剑（攻击力26）：城堡武器库 5. 利特之弓（射程远）：利特村商店 查看完整武器图鉴：武器图鉴",
+   "Recommended Top 5 weapons: 1. Scimitar of the Seven (138 attack, extremely high durability): crafted by the Gerudo craftswoman 2. Master Sword (repairs itself automatically): guarded by the Light Dragon 3. Ancient Hero's Blade (52 attack): obtained by completing the main quest 4. Knight's Sword (26 attack): found in the castle armory 5. Rito Bow (long range): sold at the Rito Village shop See the full weapon compendium: Weapon Compendium"
+  ],
+  [
+   "Q: 如何快速升级套装？需要什么材料？",
+   "Q: How do I upgrade armor sets quickly, and what materials do I need?"
+  ],
+  [
+   "套装升级需要找到大妖精并提供升级材料。升级步骤： 1. 完成乐团任务解锁4个大妖精 2. 收集对应套装的升级材料（怪物掉落、矿石、植物） 3. 前往大妖精处升级（每个大妖精负责不同等级） 推荐优先升级：蛮族套装（攻击+）、古代英杰套装（箭矢消耗-）、攀爬套装（雨天攀爬） 查看详细升级材料：套装获取攻略",
+   "Upgrading an armor set requires finding a Great Fairy and providing upgrade materials. Upgrade steps: 1. Complete the musical troupe quest to unlock all 4 Great Fairies 2. Collect the upgrade materials for the set (monster drops, ores, plants) 3. Visit a Great Fairy to upgrade (each Great Fairy handles different upgrade levels) Recommended priority upgrades: Barbarian Set (attack +), Ancient Hero's Set (reduced arrow consumption), Climbing Set (climbing in the rain) See detailed upgrade materials: Armor Set Guide"
+  ],
+  [
+   "套装升级需要找到大妖精并提供升级材料。",
+   "Upgrading an armor set requires finding a Great Fairy and providing upgrade materials."
+  ],
+  [
+   "升级步骤： 1. 完成乐团任务解锁4个大妖精 2. 收集对应套装的升级材料（怪物掉落、矿石、植物） 3. 前往大妖精处升级（每个大妖精负责不同等级） 推荐优先升级：蛮族套装（攻击+）、古代英杰套装（箭矢消耗-）、攀爬套装（雨天攀爬） 查看详细升级材料：套装获取攻略",
+   "Upgrade steps: 1. Complete the musical troupe quest to unlock all 4 Great Fairies 2. Collect the upgrade materials for the set (monster drops, ores, plants) 3. Visit a Great Fairy to upgrade (each Great Fairy handles different upgrade levels) Recommended priority upgrades: Barbarian Set (attack +), Ancient Hero's Set (reduced arrow consumption), Climbing Set (climbing in the rain) See detailed upgrade materials: Armor Set Guide"
+  ],
+  [
+   "🍳 料理与合成",
+   "🍳 Cooking and Crafting"
+  ],
+  [
+   "Q: 什么料理可以瞬间满血？",
+   "Q: What dishes can instantly restore all my health?"
+  ],
+  [
+   "带\"生命\"前缀的食材，哪怕只放一个，也能触发\"完全恢复\"效果。推荐配方： • 蒸生命萝卜（1个生命萝卜）：瞬间满血+4颗额外心 • 烤生命大萝卜（1个生命大萝卜）：瞬间满血+5颗额外心 • 蒸生命苹果（1个生命苹果）：瞬间满血+3颗额外心 采集地点：生命萝卜可在卡卡利科村周边采集。查看完整料理配方：料理合成攻略",
+   "Ingredients with the \"Hearty\" prefix trigger the \"Full Recovery\" effect even if you use just one. Recommended recipes: • Steamed Hearty Radish (1 Hearty Radish): instantly restores all health + 4 bonus hearts • Roasted Big Hearty Radish (1 Big Hearty Radish): instantly restores all health + 5 bonus hearts • Steamed Hearty Apple (1 Hearty Apple): instantly restores all health + 3 bonus hearts Gathering spot: Hearty Radishes can be gathered around Kakariko Village. See all cooking recipes: Cooking Guide"
+  ],
+  [
+   "带\"生命\"前缀的食材，哪怕只放一个，也能触发\"完全恢复\"效果。",
+   "Ingredients with the \"Hearty\" prefix trigger the \"Full Recovery\" effect even if you use just one."
+  ],
+  [
+   "推荐配方： • 蒸生命萝卜（1个生命萝卜）：瞬间满血+4颗额外心 • 烤生命大萝卜（1个生命大萝卜）：瞬间满血+5颗额外心 • 蒸生命苹果（1个生命苹果）：瞬间满血+3颗额外心 采集地点：生命萝卜可在卡卡利科村周边采集。",
+   "Recommended recipes: • Steamed Hearty Radish (1 Hearty Radish): instantly restores all health + 4 bonus hearts • Roasted Big Hearty Radish (1 Big Hearty Radish): instantly restores all health + 5 bonus hearts • Steamed Hearty Apple (1 Hearty Apple): instantly restores all health + 3 bonus hearts Gathering spot: Hearty Radishes can be gathered around Kakariko Village."
+  ],
+  [
+   "Q: 打Boss用什么料理最好？",
+   "Q: What are the best dishes to use against bosses?"
+  ],
+  [
+   "打Boss推荐料理组合： 1. 大剑香蕉×5：3级攻击力提升（+50%伤害） 2. 铠甲南瓜×5：3级防御力提升（减伤50%） 3. 蒸生命萝卜：瞬间满血恢复 4. 精力蜜饯鳟鱼：恢复精力（闪避/弹反用） 提示：大剑香蕉可在法隆草原香蕉树采集，铠甲南瓜可在卡卡利科村购买。查看详细Boss攻略：Boss图鉴",
+   "Recommended dish combo for boss fights: 1. Mighty Bananas ×5: Level 3 attack boost (+50% damage) 2. Fortified Pumpkins ×5: Level 3 defense boost (50% damage reduction) 3. Steamed Hearty Radish: instantly restores all health 4. Energizing Honeyed Trout: restores stamina (for dodging/parrying) Tip: Mighty Bananas can be gathered from banana trees in the Faron Grasslands, and Fortified Pumpkins can be bought in Kakariko Village. See detailed boss guides: Boss Compendium"
+  ],
+  [
+   "打Boss推荐料理组合： 1. 大剑香蕉×5：3级攻击力提升（+50%伤害） 2. 铠甲南瓜×5：3级防御力提升（减伤50%） 3. 蒸生命萝卜：瞬间满血恢复 4. 精力蜜饯鳟鱼：恢复精力（闪避/弹反用） 提示：大剑香蕉可在法隆草原香蕉树采集，铠甲南瓜可在卡卡利科村购买。",
+   "Recommended dish combo for boss fights: 1. Mighty Bananas ×5: Level 3 attack boost (+50% damage) 2. Fortified Pumpkins ×5: Level 3 defense boost (50% damage reduction) 3. Steamed Hearty Radish: instantly restores all health 4. Energizing Honeyed Trout: restores stamina (for dodging/parrying) Tip: Mighty Bananas can be gathered from banana trees in the Faron Grasslands, and Fortified Pumpkins can be bought in Kakariko Village."
+  ],
+  [
+   "查看详细Boss攻略：Boss图鉴",
+   "See detailed boss guides: Boss Compendium"
+  ],
+  [
+   "Q: 料理时如何触发大成功（暴击）？",
+   "Q: How do I trigger a critical cook (a big success) when cooking?"
+  ],
+  [
+   "料理大成功（暴击）触发条件： • 在血月升起前后（23:30-00:30）烹饪 • 大成功后，料理效果时长+5分钟，回复量+额外1颗心 建议：血月来临前，准备好所有材料，在血月出现时快速烹饪5-10份重要料理（攻击、防御、精力）。查看完整料理配方：哈里的料理秘籍",
+   "Conditions for a critical cook: • Cook around the time the Blood Moon rises (23:30–00:30) • After a critical cook, the dish's effect lasts +5 minutes and restores +1 extra heart Suggestion: before the Blood Moon arrives, prepare all your ingredients, then quickly cook 5–10 servings of important dishes (attack, defense, stamina) when the Blood Moon appears. See all cooking recipes: Harry's Cooking Secrets"
+  ],
+  [
+   "料理大成功（暴击）触发条件： • 在血月升起前后（23:30-00:30）烹饪 • 大成功后，料理效果时长+5分钟，回复量+额外1颗心 建议：血月来临前，准备好所有材料，在血月出现时快速烹饪5-10份重要料理（攻击、防御、精力）。",
+   "Conditions for a critical cook: • Cook around the time the Blood Moon rises (23:30–00:30) • After a critical cook, the dish's effect lasts +5 minutes and restores +1 extra heart Suggestion: before the Blood Moon arrives, prepare all your ingredients, then quickly cook 5–10 servings of important dishes (attack, defense, stamina) when the Blood Moon appears."
+  ],
+  [
+   "查看完整料理配方：哈里的料理秘籍",
+   "See all cooking recipes: Harry's Cooking Secrets"
+  ],
+  [
+   "🗺️ 探索与收集",
+   "🗺️ Exploration and Collecting"
+  ],
+  [
+   "Q: 呀哈哈种子有什么用？一共多少个？",
+   "Q: What are Korok Seeds for, and how many are there in total?"
+  ],
+  [
+   "呀哈哈种子用于扩展武器、弓箭、盾牌的持有数量。全地图共有900个呀哈哈种子，但扩展全部格子只需441个。 兑换地点：找森林中的呀哈哈（海布拉地区、林克庄园等） 兑换价格：初期1个种子，后期逐渐增加到5-10个 建议：优先扩展武器和弓箭格子，盾牌格子可后期扩展。",
+   "Korok Seeds are used to expand how many weapons, bows, and shields you can carry. There are 900 Korok Seeds across the whole map, but you only need 441 of them to expand every slot. Exchange location: find the Korok in the forest (Hebra region, Link's house, and elsewhere) Exchange cost: 1 Seed at first, gradually rising to 5–10 Seeds later Suggestion: expand weapon and bow slots first; shield slots can wait until later."
+  ],
+  [
+   "呀哈哈种子用于扩展武器、弓箭、盾牌的持有数量。",
+   "Korok Seeds are used to expand how many weapons, bows, and shields you can carry."
+  ],
+  [
+   "全地图共有900个呀哈哈种子，但扩展全部格子只需441个。",
+   "There are 900 Korok Seeds across the whole map, but you only need 441 of them to expand every slot."
+  ],
+  [
+   "兑换地点：找森林中的呀哈哈（海布拉地区、林克庄园等） 兑换价格：初期1个种子，后期逐渐增加到5-10个 建议：优先扩展武器和弓箭格子，盾牌格子可后期扩展。",
+   "Exchange location: find the Korok in the forest (Hebra region, Link's house, and elsewhere) Exchange cost: 1 Seed at first, gradually rising to 5–10 Seeds later Suggestion: expand weapon and bow slots first; shield slots can wait until later."
+  ],
+  [
+   "Q: 贤者的遗志在哪里收集？有什么用？",
+   "Q: Where do I collect Sage's Wills, and what are they for?"
+  ],
+  [
+   "贤者的遗志共有20个，分布在空岛各处。作用： • 每收集4个，可强化1个贤者的誓约能力（攻击力、防御力提升） • 全部收集后，可获得王之碎片×4（强化大师剑） 查看完整收集地点：贤者的遗志",
+   "There are 20 Sage's Wills in total, scattered across the Sky Islands. Uses: • For every 4 collected, you can strengthen one Sage's Vow ability (attack and defense increase) • After collecting them all, you can obtain 4 King's Fragments (to strengthen the Master Sword) See all collection locations: Sage's Wills"
+  ],
+  [
+   "贤者的遗志共有20个，分布在空岛各处。",
+   "There are 20 Sage's Wills in total, scattered across the Sky Islands."
+  ],
+  [
+   "作用： • 每收集4个，可强化1个贤者的誓约能力（攻击力、防御力提升） • 全部收集后，可获得王之碎片×4（强化大师剑） 查看完整收集地点：贤者的遗志",
+   "Uses: • For every 4 collected, you can strengthen one Sage's Vow ability (attack and defense increase) • After collecting them all, you can obtain 4 King's Fragments (to strengthen the Master Sword) See all collection locations: Sage's Wills"
+  ],
+  [
+   "Q: 魔犹伊的遗失物怎么找？",
+   "Q: How do I find Bubbul Gems?"
+  ],
+  [
+   "魔犹伊的遗失物共有11个，散落在地底世界各处。寻找方法： 1. 与魔犹伊对话，接受\"寻找魔犹伊的遗失物\"任务 2. 前往地底世界，寻找发光的背包 3. 拾取后返回魔犹伊处兑换奖励（织布、染料等） 查看完整遗失物地图：魔犹伊的遗失物",
+   "There are 11 Bubbul Gems in total, scattered across the Depths. How to find them: 1. Talk to the Bubbulfrog and accept the \"Find the Bubbulfrog's Lost Items\" quest 2. Head into the Depths and look for glowing backpacks 3. After picking one up, return to the Bubbulfrog to exchange it for rewards (fabrics, dyes, and more) See the full lost-item map: Bubbul Gems"
+  ],
+  [
+   "魔犹伊的遗失物共有11个，散落在地底世界各处。",
+   "There are 11 Bubbul Gems in total, scattered across the Depths."
+  ],
+  [
+   "寻找方法： 1. 与魔犹伊对话，接受\"寻找魔犹伊的遗失物\"任务 2. 前往地底世界，寻找发光的背包 3. 拾取后返回魔犹伊处兑换奖励（织布、染料等） 查看完整遗失物地图：魔犹伊的遗失物",
+   "How to find them: 1. Talk to the Bubbulfrog and accept the \"Find the Bubbulfrog's Lost Items\" quest 2. Head into the Depths and look for glowing backpacks 3. After picking one up, return to the Bubbulfrog to exchange it for rewards (fabrics, dyes, and more) See the full lost-item map: Bubbul Gems"
+  ],
+  [
+   "⚡ 战斗与技巧",
+   "⚡ Combat and Techniques"
+  ],
+  [
+   "Q: 如何打败白鬃人马（银色人马）？",
+   "Q: How do I defeat a White-Maned Lynel (Silver Lynel)?"
+  ],
+  [
+   "白鬃人马是游戏中最强的普通敌人之一。攻略技巧： 1. 装备准备：蛮族套装（二星以上）+大剑香蕉×5料理（3级攻击） 2. 武器选择：七宝匕首融合白银人马角（攻击力200+） 3. 战斗技巧：利用完美闪避触发\"极限闪避\"，然后连砍5-8次 4. 注意事项：保持距离，避免被火焰箭秒杀 查看详细Boss攻略：白鬃人马攻略",
+   "The White-Maned Lynel is one of the strongest regular enemies in the game. Tips: 1. Gear prep: Barbarian Set (2 stars or higher) + a dish made with Mighty Bananas ×5 (Level 3 attack) 2. Weapon choice: Scimitar of the Seven fused with a Silver Lynel Horn (200+ attack) 3. Combat technique: use a perfect dodge to trigger a Flurry Rush, then slash 5–8 times in a row 4. Cautions: keep your distance and avoid being one-shot by fire arrows See the detailed boss guide: White-Maned Lynel Guide"
+  ],
+  [
+   "白鬃人马是游戏中最强的普通敌人之一。",
+   "The White-Maned Lynel is one of the strongest regular enemies in the game."
+  ],
+  [
+   "攻略技巧： 1. 装备准备：蛮族套装（二星以上）+大剑香蕉×5料理（3级攻击） 2. 武器选择：七宝匕首融合白银人马角（攻击力200+） 3. 战斗技巧：利用完美闪避触发\"极限闪避\"，然后连砍5-8次 4. 注意事项：保持距离，避免被火焰箭秒杀 查看详细Boss攻略：白鬃人马攻略",
+   "Tips: 1. Gear prep: Barbarian Set (2 stars or higher) + a dish made with Mighty Bananas ×5 (Level 3 attack) 2. Weapon choice: Scimitar of the Seven fused with a Silver Lynel Horn (200+ attack) 3. Combat technique: use a perfect dodge to trigger a Flurry Rush, then slash 5–8 times in a row 4. Cautions: keep your distance and avoid being one-shot by fire arrows See the detailed boss guide: White-Maned Lynel Guide"
+  ],
+  [
+   "Q: 什么是\"弹反\"？如何练习？",
+   "Q: What is a \"parry,\" and how do I practice it?"
+  ],
+  [
+   "弹反（完美格挡）是在敌人攻击即将命中时，按下A键举盾，成功后可弹开敌人攻击并眩晕敌人。 练习方法： 1. 找到波克布林等弱小敌人练习 2. 观察敌人挥剑动作，在武器即将命中时按A 3. 成功后会出现\"铛\"的金属声和慢动作特效 4. 高级技巧：对守护者激光弹反（需要精确时机） 建议：先从简单敌人开始，熟练后再挑战守护者和Boss。",
+   "A parry (perfect guard) is raising your shield with the A button just as an enemy's attack is about to hit; if successful, it deflects the enemy's attack and stuns them. How to practice: 1. Practice on weak enemies like Bokoblins 2. Watch the enemy's sword swing, and press A just as the weapon is about to hit 3. On success you'll hear a metallic \"clang\" and see a slow-motion effect 4. Advanced technique: parrying Guardian lasers (requires precise timing) Suggestion: start with easy enemies, and only take on Guardians and bosses once you're confident."
+  ],
+  [
+   "弹反（完美格挡）是在敌人攻击即将命中时，按下A键举盾，成功后可弹开敌人攻击并眩晕敌人。",
+   "A parry (perfect guard) is raising your shield with the A button just as an enemy's attack is about to hit; if successful, it deflects the enemy's attack and stuns them."
+  ],
+  [
+   "练习方法： 1. 找到波克布林等弱小敌人练习 2. 观察敌人挥剑动作，在武器即将命中时按A 3. 成功后会出现\"铛\"的金属声和慢动作特效 4. 高级技巧：对守护者激光弹反（需要精确时机） 建议：先从简单敌人开始，熟练后再挑战守护者和Boss。",
+   "How to practice: 1. Practice on weak enemies like Bokoblins 2. Watch the enemy's sword swing, and press A just as the weapon is about to hit 3. On success you'll hear a metallic \"clang\" and see a slow-motion effect 4. Advanced technique: parrying Guardian lasers (requires precise timing) Suggestion: start with easy enemies, and only take on Guardians and bosses once you're confident."
+  ],
+  [
+   "Q: 打最终Boss加侬多夫需要什么准备？",
+   "Q: What do I need to prepare before fighting the final boss, Ganondorf?"
+  ],
+  [
+   "挑战最终Boss前的准备清单： • 心之容器：至少15颗心（建议20+） • 精力容器：至少2格半（建议3格） • 武器：大师剑+七宝匕首+古代英杰之刃 • 套装：蛮族套装（二星）或古代英杰套装 • 料理：大剑香蕉×5（3级攻击）、蒸生命萝卜×10、精力蜜饯鳟鱼×5 • 贤者：建议召唤全部4个贤者协助战斗 查看详细Boss攻略：加侬多夫攻略",
+   "Checklist before challenging the final boss: • Heart Containers: at least 15 hearts (20+ recommended) • Stamina Vessels: at least 2.5 wheels (3 wheels recommended) • Weapons: Master Sword + Scimitar of the Seven + Ancient Hero's Blade • Armor sets: Barbarian Set (2 stars) or Ancient Hero's Set • Dishes: Mighty Bananas ×5 (Level 3 attack), Steamed Hearty Radish ×10, Energizing Honeyed Trout ×5 • Sages: we recommend summoning all 4 Sages to help in battle See the detailed boss guide: Ganondorf Guide"
+  ],
+  [
+   "❓ 没有找到您的问题？",
+   "❓ Can't find your question?"
+  ],
+  [
+   "如果您有其他疑问或建议，欢迎通过邮件联系我们。我们会尽快回复并更新到FAQ页面。",
+   "If you have any other questions or suggestions, feel free to contact us by email. We will reply as soon as possible and update this FAQ page."
+  ],
+  [
+   "发送邮件咨询",
+   "Send an email inquiry"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 哈里的终极秘籍",
+   "› Harry's Ultimate Secrets"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Guide: 10 Things to Do First After Landing"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› Checklist Guide to Collecting All 152 Shrines"
+  ],
+  [
+   "📚 更多攻略",
+   "📚 More Guides"
+  ],
+  [
+   "› 哈里的终极秘籍（13篇）",
+   "› Harry's Ultimate Secrets (13 articles)"
+  ],
+  [
+   "› 全部页面索引",
+   "› Full Site Index"
+  ],
+  [
+   "大师剑在哪里获取？",
+   "Where do I get the Master Sword?"
+  ],
+  [
+   "如何快速升级套装？",
+   "How do I upgrade armor sets quickly?"
+  ],
+  [
+   "王国之泪一共有多少个神庙？",
+   "How many shrines are there in Tears of the Kingdom?"
+  ],
+  [
+   "破魔树根有什么用？",
+   "What are Lightroots for?"
+  ],
+  [
+   "推荐顺序：",
+   "Recommended order:"
+  ],
+  [
+   "• 风之神殿（利特村）：最简单，丘栗风力能力实用",
+   "• Wind Temple (Rito Village): easiest; Tulin's wind ability is very useful"
+  ],
+  [
+   "• 水之神殿（卓拉之里）：希多水球盾强力防御",
+   "• Water Temple (Zora's Domain): Sidon's water shield is strong defense"
+  ],
+  [
+   "• 火之神殿（格鲁德沙漠）：阿沅翻滚破岩方便",
+   "• Fire Temple (Gerudo Desert): Yunobo's rolling breaks rocks easily"
+  ],
+  [
+   "• 雷之神殿（格鲁德高地）：难度最高，放最后",
+   "• Lightning Temple (Gerudo Highlands): hardest, save for last"
+  ],
+  [
+   "查看详细主线流程：",
+   "See the detailed main quest walkthrough:"
+  ],
+  [
+   "风→水→火→雷",
+   "Wind → Water → Fire → Lightning"
+  ],
+  [
+   "主线任务攻略",
+   "Main Quest Guide"
+  ],
+  [
+   "地底瘴气造成的损伤（黑色心形）需要使用",
+   "Gloom damage in the Depths (black hearts) requires using "
+  ],
+  [
+   "或",
+   "or "
+  ],
+  [
+   "恢复。推荐配方：",
+   "to recover. Recommended recipes: "
+  ],
+  [
+   "（太阳花+鲜奶+岩盐）：完全恢复瘴气心",
+   "(Sundelion + Fresh Milk + Rock Salt): fully restores gloom hearts "
+  ],
+  [
+   "（仅太阳花）：简单快速",
+   "(Sundelion only): quick and easy "
+  ],
+  [
+   "太阳花可在地上世界采集，也可在地底商店购买。查看完整料理配方：",
+   "Sundelions can be gathered on the surface or bought in Depths shops. See full recipes: "
+  ],
+  [
+   "太阳花料理",
+   "Sundelion Dishes "
+  ],
+  [
+   "阳光花料理",
+   "Sunshine-Flower Dishes "
+  ],
+  [
+   "野菜牛奶粥",
+   "Sunny Veggie Porridge "
+  ],
+  [
+   "蒸太阳花",
+   "Steamed Sundelion "
+  ],
+  [
+   "料理合成攻略",
+   "Cooking Guide"
+  ],
+  [
+   "大师剑位于",
+   "The Master Sword is located "
+  ],
+  [
+   "，由白龙（塞尔达）守护。获取条件：",
+   ", guarded by the Light Dragon (Zelda). Requirements:"
+  ],
+  [
+   "• 至少",
+   "• At least "
+  ],
+  [
+   "（需要40点祝福之光）",
+   " (requires 40 Lights of Blessing)"
+  ],
+  [
+   "• 建议先完成4个神殿任务，获得贤者誓约",
+   "• Complete the 4 temple quests first to obtain the Sages' Vows"
+  ],
+  [
+   "• 骑乘龙背拔出大师剑（需等待白龙从地底飞出）",
+   "• Ride the dragon and draw the Master Sword (wait for the Light Dragon to fly up from the Depths)"
+  ],
+  [
+   "：大师剑攻击力30，融合后可达50+，且可自动修复。查看详细获取方法：",
+   ": Master Sword attack 30, 50+ after Fuse, and it repairs itself automatically. See detailed guide: "
+  ],
+  [
+   "龙泪湖上空",
+   "above Dracozu Lake"
+  ],
+  [
+   "2格精力",
+   "2 stamina wheels"
+  ],
+  [
+   "提示",
+   "Tip"
+  ],
+  [
+   "哈里的武器秘籍",
+   "Harry's Weapon Tips"
+  ],
+  [
+   "推荐武器TOP 5：",
+   "Top 5 recommended weapons: "
+  ],
+  [
+   "（攻击力138，耐久极高）：格鲁德女工匠打造",
+   " (attack 138, extremely durable): forged by Gerudo craftswomen"
+  ],
+  [
+   "（可自动修复）：白龙守护",
+   " (repairs itself automatically): guarded by the Light Dragon"
+  ],
+  [
+   "（攻击力52）：完成主线获得",
+   " (attack 52): obtained by completing the main quest"
+  ],
+  [
+   "（攻击力26）：城堡武器库",
+   " (attack 26): Castle armory"
+  ],
+  [
+   "（射程远）：利特村商店",
+   " (long range): Rito Village shop"
+  ],
+  [
+   "查看完整武器图鉴：",
+   "See the full weapon compendium: "
+  ],
+  [
+   "七宝匕首",
+   "Scimitar of the Seven"
+  ],
+  [
+   "大师剑",
+   "Master Sword"
+  ],
+  [
+   "古代英杰之刃",
+   "Ancient Hero's Blade"
+  ],
+  [
+   "骑士之剑",
+   "Knight's Sword"
+  ],
+  [
+   "利特之弓",
+   "Swallow Bow"
+  ],
+  [
+   "套装升级需要找到",
+   "To upgrade armor sets, find the "
+  ],
+  [
+   "并提供升级材料。升级步骤：",
+   "and provide upgrade materials. Steps: "
+  ],
+  [
+   "1. 完成",
+   "1. Complete the "
+  ],
+  [
+   "解锁4个大妖精",
+   "to unlock all 4 Great Fairies "
+  ],
+  [
+   "2. 收集对应套装的升级材料（怪物掉落、矿石、植物）",
+   "2. Collect the corresponding set's upgrade materials (monster drops, ores, plants) "
+  ],
+  [
+   "3. 前往大妖精处升级（每个大妖精负责不同等级）",
+   "3. Upgrade at a Great Fairy (each Great Fairy handles different tiers) "
+  ],
+  [
+   "：蛮族套装（攻击+）、古代英杰套装（箭矢消耗-）、攀爬套装（雨天攀爬）",
+   ": Barbarian Set (attack+), Ancient Hero's Aspect (reduced arrow consumption), Climbing Set (rain climbing)"
+  ],
+  [
+   "查看详细升级材料：",
+   "See detailed upgrade materials: "
+  ],
+  [
+   "大妖精",
+   "Great Fairy "
+  ],
+  [
+   "乐团任务",
+   "Stable Trotters quests "
+  ],
+  [
+   "推荐优先升级",
+   "Recommended upgrades first"
+  ],
+  [
+   "套装获取攻略",
+   "Armor Set Guide"
+  ],
+  [
+   "带\"",
+   "Ingredients with the \""
+  ],
+  [
+   "\"前缀的食材，哪怕只放一个，也能触发\"",
+   "\" prefix trigger \""
+  ],
+  [
+   "\"效果。推荐配方：",
+   "\" effects even if you use just one. Recommended recipes: "
+  ],
+  [
+   "（1个生命萝卜）：瞬间满血+4颗额外心",
+   " (1 Hearty Radish): instant full recovery + 4 bonus hearts"
+  ],
+  [
+   "（1个生命大萝卜）：瞬间满血+5颗额外心",
+   " (1 Big Hearty Radish): instant full recovery + 5 bonus hearts"
+  ],
+  [
+   "（1个生命苹果）：瞬间满血+3颗额外心",
+   " (1 Hearty Apple): instant full recovery + 3 bonus hearts"
+  ],
+  [
+   "：生命萝卜可在卡卡利科村周边采集。查看完整料理配方：",
+   ": Hearty Radishes can be gathered around Kakariko Village. See full recipes: "
+  ],
+  [
+   "生命",
+   "Hearty"
+  ],
+  [
+   "完全恢复",
+   "Full Recovery"
+  ],
+  [
+   "蒸生命萝卜",
+   "Steamed Hearty Radish"
+  ],
+  [
+   "烤生命大萝卜",
+   "Roasted Big Hearty Radish"
+  ],
+  [
+   "蒸生命苹果",
+   "Steamed Hearty Apple"
+  ],
+  [
+   "采集地点",
+   "Gathering Location"
+  ],
+  [
+   "打Boss推荐料理组合：",
+   "Recommended Boss-fight dish combos: "
+  ],
+  [
+   "：3级攻击力提升（+50%伤害）",
+   ": Lv. 3 attack up (+50% damage) "
+  ],
+  [
+   "：3级防御力提升（减伤50%）",
+   ": Lv. 3 defense up (50% damage reduction) "
+  ],
+  [
+   "：瞬间满血恢复",
+   ": instant full recovery "
+  ],
+  [
+   "：恢复精力（闪避/弹反用）",
+   ": restores stamina (for dodging/parrying)"
+  ],
+  [
+   "：大剑香蕉可在法隆草原香蕉树采集，铠甲南瓜可在卡卡利科村购买。查看详细Boss攻略：",
+   ": Mighty Bananas can be gathered from banana trees on the Faron Grasslands; Fortified Pumpkins can be bought in Kakariko Village. See detailed Boss guides: "
+  ],
+  [
+   "大剑香蕉×5",
+   "Mighty Bananas ×5"
+  ],
+  [
+   "铠甲南瓜×5",
+   "Fortified Pumpkins ×5"
+  ],
+  [
+   "精力蜜饯鳟鱼",
+   "Energizing Honeyed Trout"
+  ],
+  [
+   "料理大成功（",
+   "Critical Cook ("
+  ],
+  [
+   "）触发条件：",
+   ") conditions: "
+  ],
+  [
+   "• 在",
+   "• Cook around "
+  ],
+  [
+   "前后（23:30-00:30）烹饪",
+   " (23:30–00:30)"
+  ],
+  [
+   "• 大成功后，料理效果",
+   "• After a critical cook, the dish's effect "
+  ],
+  [
+   "，回复量+额外1颗心",
+   ", and recovery +1 bonus heart "
+  ],
+  [
+   "：血月来临前，准备好所有材料，在血月出现时快速烹饪5-10份重要料理（攻击、防御、精力）。查看完整料理配方：",
+   ": Before the Blood Moon arrives, prepare all ingredients, then quickly cook 5–10 key dishes (attack, defense, stamina) as it appears. See full recipes: "
+  ],
+  [
+   "暴击",
+   "critical success"
+  ],
+  [
+   "血月升起",
+   "the Blood Moon rising"
+  ],
+  [
+   "时长+5分钟",
+   "duration +5 minutes"
+  ],
+  [
+   "建议",
+   "Tip"
+  ],
+  [
+   "哈里的料理秘籍",
+   "Harry's Cooking Tips"
+  ],
+  [
+   "呀哈哈种子用于",
+   "Korok Seeds are used to "
+  ],
+  [
+   "。全地图共有",
+   ". There are "
+  ],
+  [
+   "，但扩展全部格子只需",
+   " across the map, but expanding every slot only requires "
+  ],
+  [
+   "：找森林中的呀哈哈（海布拉地区、林克庄园等）",
+   ": Find Koroks in forests (Hebra region, Link's Manor, etc.) "
+  ],
+  [
+   "：初期1个种子，后期逐渐增加到5-10个",
+   ": 1 seed at first, gradually rising to 5–10 seeds later "
+  ],
+  [
+   "：优先扩展武器和弓箭格子，盾牌格子可后期扩展。",
+   ": Prioritize weapon and bow slots; shield slots can wait."
+  ],
+  [
+   "扩展武器、弓箭、盾牌的持有数量",
+   "expand weapon, bow, and shield slots"
+  ],
+  [
+   "900个呀哈哈种子",
+   "900 Korok Seeds"
+  ],
+  [
+   "441个",
+   "441"
+  ],
+  [
+   "兑换地点",
+   "Exchange Location"
+  ],
+  [
+   "兑换价格",
+   "Exchange Price"
+  ],
+  [
+   "共有",
+   "There are "
+  ],
+  [
+   "，分布在空岛各处。作用：",
+   ", found across the Sky Islands. Effects:"
+  ],
+  [
+   "• 每收集4个，可强化1个贤者的誓约能力（攻击力、防御力提升）",
+   "• Every 4 collected upgrades one Sage's Vow ability (attack and defense up) "
+  ],
+  [
+   "• 全部收集后，可获得",
+   "• Collecting them all grants "
+  ],
+  [
+   "（强化大师剑）",
+   "(upgrades the Master Sword) "
+  ],
+  [
+   "查看完整收集地点：",
+   "See all locations: "
+  ],
+  [
+   "20个",
+   "20 in total"
+  ],
+  [
+   "王之碎片×4",
+   "King's Fragments ×4 "
+  ],
+  [
+   "魔犹伊的遗失物共有",
+   "There are "
+  ],
+  [
+   "，散落在地底世界各处。寻找方法：",
+   " scattered across the Depths. How to find them:"
+  ],
+  [
+   "1. 与魔犹伊对话，接受\"",
+   "1. Talk to the Bubbulfrog and accept \""
+  ],
+  [
+   "\"任务",
+   "\" quest "
+  ],
+  [
+   "2. 前往地底世界，寻找",
+   "2. Head into the Depths and find the "
+  ],
+  [
+   "3. 拾取后返回魔犹伊处兑换奖励（织布、染料等）",
+   "3. Pick them up and return to the Bubbulfrog to exchange for rewards (fabrics, dyes, etc.)"
+  ],
+  [
+   "查看完整遗失物地图：",
+   "See the full Bubbul Gem map: "
+  ],
+  [
+   "11个",
+   "11 in total"
+  ],
+  [
+   "寻找魔犹伊的遗失物",
+   "The Hunt for Bubbul Gems"
+  ],
+  [
+   "发光的背包",
+   "glowing backpacks "
+  ],
+  [
+   "白鬃人马是游戏中最强的普通敌人之一。攻略技巧：",
+   "White-Maned Lynels are among the strongest regular enemies in the game. Strategy: "
+  ],
+  [
+   "：蛮族套装（二星以上）+大剑香蕉×5料理（3级攻击）",
+   ": Barbarian Set (2★ or higher) + Mighty Bananas ×5 dish (Lv. 3 attack) "
+  ],
+  [
+   "：七宝匕首融合白银人马角（攻击力200+）",
+   ": Scimitar of the Seven fused with a Silver Lynel Horn (attack 200+) "
+  ],
+  [
+   "：利用完美闪避触发\"极限闪避\"，然后连砍5-8次",
+   ": Use perfect dodges to trigger \"Flurry Rush,\" then slash 5–8 times "
+  ],
+  [
+   "：保持距离，避免被火焰箭秒杀",
+   ": Keep your distance to avoid being one-shot by fire arrows"
+  ],
+  [
+   "查看详细Boss攻略：",
+   "See detailed Boss guides: "
+  ],
+  [
+   "装备准备",
+   "Gear Prep"
+  ],
+  [
+   "武器选择",
+   "Weapon Choice"
+  ],
+  [
+   "战斗技巧",
+   "Combat Tips"
+  ],
+  [
+   "注意事项",
+   "Cautions"
+  ],
+  [
+   "白鬃人马攻略",
+   "White-Maned Lynel Guide"
+  ],
+  [
+   "弹反（完美格挡）",
+   "Parry (Perfect Guard) "
+  ],
+  [
+   "是在敌人攻击即将命中时，按下A键举盾，成功后可弹开敌人攻击并眩晕敌人。",
+   "is raising your shield with A just before an enemy attack lands; success deflects the attack and stuns the enemy. "
+  ],
+  [
+   "1. 找到波克布林等弱小敌人练习",
+   "1. Practice on weak enemies like Bokoblins "
+  ],
+  [
+   "2. 观察敌人挥剑动作，在武器即将命中时按A",
+   "2. Watch the enemy's sword swing and press A just as the weapon is about to hit "
+  ],
+  [
+   "3. 成功后会出现\"铛\"的金属声和慢动作特效",
+   "3. Success produces a metallic \"clang\" and a slow-motion effect "
+  ],
+  [
+   "4. 高级技巧：对守护者激光弹反（需要精确时机）",
+   "4. Advanced technique: parrying Guardian lasers (requires precise timing) "
+  ],
+  [
+   "：先从简单敌人开始，熟练后再挑战守护者和Boss。",
+   ": Start with easy enemies, then challenge Guardians and Bosses once skilled."
+  ],
+  [
+   "练习方法",
+   "Practice Method"
+  ],
+  [
+   "挑战最终Boss前的准备清单：",
+   "Checklist before challenging the final Boss: "
+  ],
+  [
+   "：至少15颗心（建议20+）",
+   ": at least 15 hearts (20+ recommended) "
+  ],
+  [
+   "：至少2格半（建议3格）",
+   ": at least 2.5 wheels (3 recommended) "
+  ],
+  [
+   "：大师剑+七宝匕首+古代英杰之刃",
+   ": Master Sword + Scimitar of the Seven + Ancient Hero's Blade "
+  ],
+  [
+   "：蛮族套装（二星）或古代英杰套装",
+   ": Barbarian Set (2★) or Ancient Hero's Aspect "
+  ],
+  [
+   "：大剑香蕉×5（3级攻击）、蒸生命萝卜×10、精力蜜饯鳟鱼×5",
+   ": Mighty Bananas ×5 (Lv. 3 attack), Steamed Hearty Radishes ×10, Energizing Honeyed Trout ×5 "
+  ],
+  [
+   "：建议召唤全部4个贤者协助战斗",
+   ": summon all 4 Sages to assist in battle"
+  ],
+  [
+   "心之容器",
+   "Heart Containers"
+  ],
+  [
+   "精力容器",
+   "Stamina Vessels"
+  ],
+  [
+   "武器",
+   "Weapons"
+  ],
+  [
+   "套装",
+   "Armor Sets"
+  ],
+  [
+   "料理",
+   "Dishes"
+  ],
+  [
+   "贤者",
+   "Sages"
+  ],
+  [
+   "加侬多夫攻略",
+   "Ganondorf Guide"
+  ]
+ ],
+ "title": "FAQ - Answers to Beginner Questions | Tears of the Kingdom Guide"
+}

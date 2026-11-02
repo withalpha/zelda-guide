@@ -1,0 +1,312 @@
+{
+ "notes": [
+  "塞乌塔波玛卡神庙 rendered as Serutabomac Shrine (official shrine name). 近卫武器 rendered as Royal Guard weapons (the Royal Guard series)."
+ ],
+ "pairs": [
+  [
+   "海拉鲁城堡探索指南：地面与浮空两部分、上城路线、谒见厅幻影加侬与城堡地下，以及近卫武器刷新。",
+   "Hyrule Castle exploration guide: the ground and floating parts, the route up to the castle, Phantom Ganon in the Throne Room and the castle depths, plus Royal Guard weapon respawns."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Tips"
+  ],
+  [
+   "海拉鲁城堡探索完全指南",
+   "Complete Guide to Exploring Hyrule Castle"
+  ],
+  [
+   "天地异变后城堡一分为二：地面能逛、浮空能飞、地下直通最终决战，三条线一次讲清。",
+   "After the Upheaval split the castle in two, the ground part can be explored, the floating part can be flown to, and the underground part leads straight to the final battle — all three routes explained in one article."
+  ],
+  [
+   "🧙 作者：哈里 🏰 城堡 · 探索与主线 📖 深度攻略",
+   "🧙 Author: Harry 🏰 Castle · Exploration and Main Story 📖 In-Depth Guide"
+  ],
+  [
+   "浮空的海拉鲁城堡",
+   "The floating Hyrule Castle"
+  ],
+  [
+   "天地异变后的城堡：主体浮在空中（游戏实机截图）",
+   "The castle after the Upheaval: its main body floats in the air (in-game screenshot)"
+  ],
+  [
+   "海拉鲁城堡是王国之泪里最容易逛晕的地方：地面部分、浮空主体和城堡地下是三条不同的路线，分别对应探索、主线和最终决战。很多人第一次来只逛了地面就走了，错过了浮空部分的宝箱和神庙。本篇按三条线讲，顺便把主线触发条件说清楚。",
+   "Hyrule Castle is the easiest place to get lost in Tears of the Kingdom: the ground part, the floating main body, and the castle depths are three different routes, corresponding respectively to exploration, the main story, and the final battle. Many people visit for the first time, only explore the ground, and leave, missing the treasure chests and shrine in the floating part. This article explains it by the three routes, and also makes the main-story trigger conditions clear."
+  ],
+  [
+   "⭐ 本篇要点",
+   "⭐ Key Points of This Article"
+  ],
+  [
+   "城堡一分为二：地面部分（餐厅、第一门楼等）与浮空主体（谒见厅、塞尔达的房间与书房、图书馆）。",
+   "The castle is split in two: the ground part (dining hall, First Gatehouse, and so on) and the floating main body (Throne Room, Zelda's Room and Study, Library)."
+  ],
+  [
+   "浮空主体内有塞乌塔波玛卡神庙，别只打主线，顺路把神庙开了。",
+   "Serutabomac Shrine is inside the floating main body — don't just play the main story, open the shrine along the way."
+  ],
+  [
+   "主线“海拉鲁城堡的异变”在完成四地区异变后触发，追的是假塞尔达，谒见厅打幻影加侬。",
+   "The main story quest “Crisis at Hyrule Castle” triggers after completing the four regional phenomena; you're chasing a fake Zelda, and you fight Phantom Ganon in the Throne Room."
+  ],
+  [
+   "上城路线：监视堡垒鸟望台弹射向北滑翔，配合丘栗疾风；也可以用自造飞行器飞上去。",
+   "Route up to the castle: launch from the Lookout Landing Skyview Tower and glide north, combined with Tulin's gust; or fly up with a flying machine you build yourself."
+  ],
+  [
+   "城堡地下只能从城堡正下方深穴进，经瘴气之路到被遗忘的神殿与封印遗迹，是最终决战的路。",
+   "The castle depths can only be entered from the chasm directly beneath the castle, passing the Gloom's Approach to the Forgotten Temple and the Sealed Ruins — it's the road to the final battle."
+  ],
+  [
+   "📑 本篇目录",
+   "📑 Contents of This Article"
+  ],
+  [
+   "一、城堡分三线：先认路再出发",
+   "I. The Castle Splits into Three Routes: Learn the Roads Before Setting Out"
+  ],
+  [
+   "二、地面部分：餐厅与第一门楼",
+   "II. The Ground Part: Dining Hall and First Gatehouse"
+  ],
+  [
+   "三、浮空主体：谒见厅与神庙",
+   "III. The Floating Main Body: Throne Room and Shrine"
+  ],
+  [
+   "四、主线：幻影加侬",
+   "IV. Main Story: Phantom Ganon"
+  ],
+  [
+   "五、城堡地下与近卫武器",
+   "V. The Castle Depths and Royal Guard Weapons"
+  ],
+  [
+   "常见问题",
+   "Frequently Asked Questions"
+  ],
+  [
+   "天地异变后，海拉鲁城堡被抬到了空中，但不是整座都飞走了：地面留下一部分，空中飘着主体，地下还连着一条深穴路线。探索前先分清你要去哪一条线：地面线适合前期捡装备，浮空线对应主线和神庙，地下线是最终决战的必经之路，三条线不要混着走。",
+   "After the Upheaval, Hyrule Castle was lifted into the air, but not the whole castle flew away: part remains on the ground, the main body floats in the air, and underground there's still a chasm route connected. Before exploring, first sort out which route you want: the ground route suits picking up equipment early on, the floating route corresponds to the main story and the shrine, and the underground route is the necessary road to the final battle — don't mix the three routes up."
+  ],
+  [
+   "地面部分包括餐厅、第一门楼等区域，相对好走，适合前期来捡武器和素材。这里的敌人强度中等，第一次来可以先把地面逛一遍，熟悉城堡的布局，再挑战浮空部分。地面部分的宝箱和武器会在血月后刷新，缺武器时可以定期回来补给。",
+   "The ground part includes the dining hall, First Gatehouse, and other areas, and is relatively easy to traverse, making it suitable for picking up weapons and materials early on. The enemies here are of middling strength; on your first visit you can explore the ground first, get familiar with the castle's layout, and then take on the floating part. The ground part's treasure chests and weapons refresh after a Blood Moon, so when you're short on weapons you can come back regularly to resupply."
+  ],
+  [
+   "海拉鲁城堡全景",
+   "Panorama of Hyrule Castle"
+  ],
+  [
+   "城堡全景：地面与浮空部分要分开规划（游戏实机截图）",
+   "Castle panorama: the ground and floating parts need to be planned separately (in-game screenshot)"
+  ],
+  [
+   "浮空主体包括谒见厅、塞尔达的房间与书房、图书馆，是城堡的核心区域。塞乌塔波玛卡神庙就在浮空主体内，来打主线时顺路开了，能省一次专门跑图。上浮空主体最稳的路线是从监视堡垒鸟望台弹射，向北滑翔，途中用丘栗的疾风加速；飞行器熟练的玩家也可以直接造飞行器飞上去。",
+   "The floating main body includes the Throne Room, Zelda's Room and Study, and the Library, and is the castle's core area. Serutabomac Shrine is inside the floating main body, so opening it along the way when you come for the main story saves a dedicated trip. The steadiest route up to the floating main body is to launch from the Lookout Landing Skyview Tower and glide north, using Tulin's gust to speed up along the way; players skilled with flying machines can also just build one and fly straight up."
+  ],
+  [
+   "主线“海拉鲁城堡的异变”在完成四地区异变后触发：你追踪的塞尔达其实是加侬多夫制造的假塞尔达，最终在谒见厅与幻影加侬开战。幻影加侬会模仿四种 Boss 的招式，打之前先把四地区的 Boss 打法复习一遍，战斗中按阶段切换应对方式，不要一套打法打到底。",
+   "The main story quest “Crisis at Hyrule Castle” triggers after completing the four regional phenomena: the Zelda you're tracking is actually a fake Zelda created by Ganondorf, and you finally go to war with Phantom Ganon in the Throne Room. Phantom Ganon mimics the moves of four bosses, so before fighting, review the boss tactics for the four regions, and switch your approach by phase during the battle — don't use one tactic all the way through."
+  ],
+  [
+   "城堡地下是游戏开头和最终决战的地点，只能从城堡正下方的深穴进入，经瘴气之路走到被遗忘的神殿与封印遗迹。地下瘴气很重，出发前备好向阳草料理或防瘴气手段。近卫系列武器散落在城堡内，血月后会刷新，是前期到中期都很好用的高攻武器，缺武器时值得定期回来刷。",
+   "The castle depths are the location of the game's opening and the final battle, and can only be entered from the chasm directly beneath the castle, passing the Gloom's Approach to the Forgotten Temple and the Sealed Ruins. The gloom underground is heavy, so before setting out, prepare Sundelion meals or gloom-protection measures. Royal Guard series weapons are scattered inside the castle, refresh after a Blood Moon, and are high-attack weapons that serve well from early to mid-game — worth coming back regularly to farm when you're short on weapons."
+  ],
+  [
+   "升空中的海拉鲁城堡",
+   "Hyrule Castle rising into the sky"
+  ],
+  [
+   "城堡升空：浮空主体是主线舞台（游戏实机截图）",
+   "The castle rising: the floating main body is the main-story stage (in-game screenshot)"
+  ],
+  [
+   "浮空城堡怎么上去？监视堡垒鸟望台弹射向北滑翔，配合丘栗疾风；或用飞行器。",
+   "How do you get up to the floating castle? Launch from the Lookout Landing Skyview Tower and glide north, combined with Tulin's gust; or use a flying machine."
+  ],
+  [
+   "浮空城堡怎么上去？",
+   "How do you get up to the floating castle?"
+  ],
+  [
+   "监视堡垒鸟望台弹射向北滑翔，配合丘栗疾风；或用飞行器。",
+   "Launch from the Lookout Landing Skyview Tower and glide north, combined with Tulin's gust; or use a flying machine."
+  ],
+  [
+   "主线什么时候触发？完成四地区异变后，“海拉鲁城堡的异变”才会触发。",
+   "When does the main story trigger? Only after completing the four regional phenomena does “Crisis at Hyrule Castle” trigger."
+  ],
+  [
+   "主线什么时候触发？",
+   "When does the main story trigger?"
+  ],
+  [
+   "完成四地区异变后，“海拉鲁城堡的异变”才会触发。",
+   "Only after completing the four regional phenomena does “Crisis at Hyrule Castle” trigger."
+  ],
+  [
+   "城堡地下怎么进？只能从城堡正下方深穴进，经瘴气之路到被遗忘的神殿。",
+   "How do you enter the castle depths? Only from the chasm directly beneath the castle, passing the Gloom's Approach to the Forgotten Temple."
+  ],
+  [
+   "城堡地下怎么进？",
+   "How do you enter the castle depths?"
+  ],
+  [
+   "只能从城堡正下方深穴进，经瘴气之路到被遗忘的神殿。",
+   "Only from the chasm directly beneath the castle, passing the Gloom's Approach to the Forgotten Temple."
+  ],
+  [
+   "白龙寻踪与大师之剑",
+   "Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "地底世界生存与探索完全指南",
+   "Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "五位贤者能力全解",
+   "Complete Explanation of the Five Sages' Abilities"
+  ],
+  [
+   "相关攻略：白龙寻踪与大师之剑、地底世界生存与探索完全指南、五位贤者能力全解。",
+   "Related guides: Tracking the Light Dragon and the Master Sword, Complete Guide to Surviving and Exploring the Depths, Complete Explanation of the Five Sages' Abilities."
+  ],
+  [
+   "← 上一篇：料理机制全解：效果、时长与暴击",
+   "← Previous: Complete Explanation of Cooking Mechanics: Effects, Duration, and Criticals"
+  ],
+  [
+   "返回秘籍专栏",
+   "Back to the Tips Column"
+  ],
+  [
+   "下一篇：海拉鲁图鉴509项收集指南 →",
+   "Next: Guide to Collecting All 509 Hyrule Compendium Entries →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "› 五位贤者能力全解",
+   "› Complete Explanation of the Five Sages' Abilities"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Full Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Tips"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Ultimate Guide to the Scimitar of the Seven"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Dish Recipes"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Full Analysis of the Three Tiers of Strongest Armor Sets"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine for Absolute Beginners"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Mark-Rabbit Hover Bike Tuning"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Depths Battery Expansion and the Great Fairies"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 Daily New Guides"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› Self-Check Guide to Collecting All 152 Shrines"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Pioneering Guide: 10 Things to Do First After Landing"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Complete Guide to Korok Seeds"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› Complete Guide to the Four Great Fairies and Armor Enhancement"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Guide to Farming Materials from the Four Dragons"
+  ],
+  [
+   "› 人马（莱尼尔）完全指南",
+   "› Complete Guide to Lynels"
+  ],
+  [
+   "› 卢比速刷指南：从前期到后期",
+   "› Rupee Farming Guide: From Early to Late Game"
+  ],
+  [
+   "› 马匹捕捉与稀有马完全指南",
+   "› Complete Guide to Catching Horses and Rare Horses"
+  ],
+  [
+   "› 料理机制全解：效果、时长与暴击",
+   "› Complete Explanation of Cooking Mechanics: Effects, Duration, and Criticals"
+  ],
+  [
+   "› 海拉鲁城堡探索完全指南（本篇）",
+   "› Complete Guide to Exploring Hyrule Castle (This Article)"
+  ],
+  [
+   "› 海拉鲁图鉴509项收集指南",
+   "› Guide to Collecting All 509 Hyrule Compendium Entries"
+  ],
+  [
+   "› 左纳乌装置实用造物指南",
+   "› Practical Guide to Zonai Device Builds"
+  ],
+  [
+   "› 血月机制全解",
+   "› Complete Explanation of the Blood Moon Mechanic"
+  ],
+  [
+   "› 余料建造完全指南",
+   "› Complete Guide to Fuse"
+  ],
+  [
+   "🏰 城堡攻略",
+   "🏰 Castle Guide"
+  ],
+  [
+   "🏰 城堡 · 探索与主线",
+   "🏰 Castle · Exploration & Main Quest"
+  ]
+ ],
+ "title": "Complete Guide to Exploring Hyrule Castle · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+}

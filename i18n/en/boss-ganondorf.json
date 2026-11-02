@@ -1,0 +1,711 @@
+{
+ "title": "Demon King Ganondorf Guide · Three-Stage Full Walkthrough · Tears of the Kingdom Boss Guide",
+ "pairs": [
+  [
+   "塞尔达传说王国之泪魔王加侬多夫完全攻略，含四大阶段详细打法（秘石解放/魔王分身/真魔王博弈/黑龙空战）、推荐装备、向阳草料理准备。",
+   "Complete guide to Demon King Ganondorf in The Legend of Zelda: Tears of the Kingdom, with detailed tactics for all four phases (Secret Stone Unleashed / Demon King Clones / True Demon King Duel / Demon Dragon Aerial Battle), recommended gear, and Sundelion meal preparation."
+  ],
+  [
+   "👑 魔王加侬多夫",
+   "👑 Demon King Ganondorf"
+  ],
+  [
+   "最终Boss · 四大阶段全图解 · 推荐满配装备",
+   "Final Boss · All four phases fully illustrated · Fully geared loadout recommended"
+  ],
+  [
+   "首页 ›",
+   "Home ›"
+  ],
+  [
+   "Boss图鉴 ›",
+   "Boss Compendium ›"
+  ],
+  [
+   "魔王加侬多夫",
+   "Demon King Ganondorf"
+  ],
+  [
+   "最后更新：2026年6月",
+   "Last updated: June 2026"
+  ],
+  [
+   "最终Boss",
+   "Final Boss"
+  ],
+  [
+   "魔王加侬多夫 Ganondorf",
+   "Demon King Ganondorf"
+  ],
+  [
+   "四大阶段",
+   "Four phases"
+  ],
+  [
+   "地底秘境",
+   "Depths sanctum"
+  ],
+  [
+   "出现地点",
+   "Location"
+  ],
+  [
+   "海拉鲁地底",
+   "Beneath Hyrule"
+  ],
+  [
+   "危险度",
+   "Danger level"
+  ],
+  [
+   "攻击属性",
+   "Attack element"
+  ],
+  [
+   "瘴气 / 全属性",
+   "Gloom / all elements"
+  ],
+  [
+   "阶段数",
+   "Number of phases"
+  ],
+  [
+   "⚠ 注意： 加侬多夫的瘴气攻击会 永久扣除心心上限 ，备好向阳草料理是通关必要条件。",
+   "⚠ Note: Ganondorf's Gloom attacks permanently reduce your maximum hearts. Having Sundelion meals ready is a requirement for clearing this fight."
+  ],
+  [
+   "战前核心整备",
+   "Core Pre-Fight Preparation"
+  ],
+  [
+   "物资类型",
+   "Supply type"
+  ],
+  [
+   "推荐携带",
+   "Recommended loadout"
+  ],
+  [
+   "核心作用",
+   "Core role"
+  ],
+  [
+   "武器",
+   "Weapon"
+  ],
+  [
+   "大师之剑 （自带高额面板且不耗耐久）",
+   "Master Sword (high base attack and costs no durability)"
+  ],
+  [
+   "核心近战输出，第三阶段击碎秘石的必备之选",
+   "Core melee damage; the essential pick for shattering the Secret Stone in the third phase"
+  ],
+  [
+   "弓",
+   "Bow"
+  ],
+  [
+   "兽神弓 （3连发/5连发）",
+   "Savage Lynel Bow (3-shot / 5-shot)"
+  ],
+  [
+   "核心输出与远程压制",
+   "Core damage and ranged pressure"
+  ],
+  [
+   "盾牌",
+   "Shield"
+  ],
+  [
+   "海拉鲁盾 （高耐久度）",
+   "Hylian Shield (high durability)"
+  ],
+  [
+   "融合【火箭】或【炸弹花】的备用盾",
+   "Spare shield fused with a Rocket or a Bomb Flower"
+  ],
+  [
+   "强行起飞，开启空中\"子弹时间\"",
+   "Force a launch into the air and trigger aerial \"bullet time\""
+  ],
+  [
+   "料理",
+   "Meals"
+  ],
+  [
+   "5个向阳草 制作的料理（5~10份）",
+   "Meals made with 5 Sundelions (5–10 servings)"
+  ],
+  [
+   "大生命/大活力料理",
+   "Hearty / Energizing large meals"
+  ],
+  [
+   "修复被瘴气侵蚀的心心上限",
+   "Restore maximum hearts eroded by Gloom"
+  ],
+  [
+   "防具",
+   "Armor"
+  ],
+  [
+   "鬼神套装 或 蛮族套装 （吃满3级攻击加成）",
+   "Evil Spirit Armor set or Barbarian Armor set (with full level 3 attack boost)"
+  ],
+  [
+   "大幅缩短战线，降低容错压力",
+   "Greatly shortens the fight and lowers the pressure on execution"
+  ],
+  [
+   "🔹 第一阶段：秘石解放 · 武器大师",
+   "🔹 Phase 1: Secret Stone Unleashed · Weapon Master"
+  ],
+  [
+   "加侬多夫频繁切换三种武器，以完美闪避为核心的纯剑术对决",
+   "Ganondorf frequently switches between three weapons — a pure swordsmanship duel built around perfect dodges"
+  ],
+  [
+   "⚠ 被动机制： 如果你直接上去平砍，他会 百分之百触发后撤闪避并反击 。不要主动攻击！拉开1到2个身位，观察他的武器起手式。",
+   "⚠ Passive mechanic: if you walk straight up and attack normally, he will 100% trigger a retreating dodge and counterattack. Don't attack first! Keep 1–2 body lengths away and watch his weapon's opening stance."
+  ],
+  [
+   "🗡 单手剑 · 横劈",
+   "🗡 One-handed sword · Horizontal slash"
+  ],
+  [
+   "看到他横劈， 立刻向后跳 （按住ZL + 摇杆后 + X）触发 完美闪避（林克时间） 。",
+   "When you see him slash horizontally, immediately jump backward (hold ZL + stick back + X) to trigger a perfect dodge (slow-motion Flurry Rush)."
+  ],
+  [
+   "⚔ 大剑 · 蓄力下砸",
+   "⚔ Greatsword · Charged downward smash"
+  ],
+  [
+   "看到他蓄力下砸， 立刻向左右侧跳 躲避冲击波。",
+   "When you see him charge a downward smash, immediately side-hop left or right to dodge the shockwave."
+  ],
+  [
+   "长枪 · 突刺冲锋",
+   "Spear · Thrusting charge"
+  ],
+  [
+   "看到他持枪突刺， 立刻向左右侧跳 。",
+   "When you see him thrust with his spear, immediately side-hop left or right."
+  ],
+  [
+   "💡 无脑逃课法： 掏出 融合了火箭的盾牌 直接飞天，在空中用多发弓箭黏上\"吉布得的骨头\"， 疯狂爆头 。",
+   "💡 No-brainer cheese tactic: pull out your Rocket-fused shield and fly straight up, then in midair fire multi-shot arrows fused with Gibdo Bones for relentless headshots."
+  ],
+  [
+   "🔹 第二阶段（前半）：魔王形态 · 分身围殴",
+   "🔹 Phase 2 (first half): Demon King Form · Clone Gang-Up"
+  ],
+  [
+   "加侬多夫血条第一次拉长，召唤4个黑影分身，海拉鲁五贤者全员加入",
+   "Ganondorf's health bar lengthens for the first time, he summons 4 shadow clones, and all five Sages of Hyrule join the fight"
+  ],
+  [
+   "绝对不要去管分身 ，把他们交给 贤者 去牵制。",
+   "Absolutely ignore the clones — leave them to the Sages to hold off."
+  ],
+  [
+   "你只需要在战场边缘游走， 锁定血条最长、头顶有名字的本体 。",
+   "You only need to circle the edge of the battlefield and lock onto the true body — the one with the longest health bar and a name above its head."
+  ],
+  [
+   "绕到他身后，用 高攻武器疯狂偷刀 。",
+   "Circle behind him and hit him hard from behind with a high-attack weapon."
+  ],
+  [
+   "🔹 第二阶段（后半）：真·魔王形态 · 终极博弈",
+   "🔹 Phase 2 (second half): True Demon King Form · Ultimate Duel"
+  ],
+  [
+   "分身消失，血条彻底拉满突破屏幕边界——全游戏难度最高阶段",
+   "The clones vanish and the health bar fills completely, breaking past the screen's edge — the hardest phase in the game"
+  ],
+  [
+   "⚠ 核心危机： 他的部分瘴气攻击会 直接粉碎你的心心 （碎掉的心心无法用向阳草料理恢复）。",
+   "⚠ Core danger: some of his Gloom attacks directly shatter your hearts (shattered hearts cannot be restored with Sundelion meals)."
+  ],
+  [
+   "🔄 神技防反（博弈核心）",
+   "🔄 God-tier counter (the core of the duel)"
+  ],
+  [
+   "当你对他触发\"完美闪避\"并疯狂砍他时，他会同样触发\"林克时间\"闪避掉你的攻击，并对你展开 致命反击 ！",
+   "When you trigger a \"perfect dodge\" against him and slash wildly at him, he will likewise trigger a slow-motion dodge to evade your attacks and launch a lethal counterattack at you!"
+  ],
+  [
+   "【破解方法】： 当你看到他闪避了你的林克时间并出招时，不要慌， 立刻再次按下闪避键（二段闪避） ！ 只要你成功闪避了他的\"反闪避\"，就能真正触发属于你的 终极林克时间 。",
+   "[Counter]: when you see him dodge your slow-motion window and attack, don't panic — immediately press dodge again (a second dodge)! As long as you successfully dodge his \"counter-dodge,\" you will truly trigger your own ultimate slow-motion window."
+  ],
+  [
+   "🌑 全屏瘴气流",
+   "🌑 Full-screen Gloom surge"
+  ],
+  [
+   "当他释放扩散的瘴气圆环时， 立刻踩在火箭盾上升空 ，在空中拉弓用\"子弹时间\" 射爆他的头部 将其打断。",
+   "When he releases an expanding ring of Gloom, immediately step onto your Rocket shield to rise into the air, then draw your bow in midair and use \"bullet time\" to blast his head and interrupt it."
+  ],
+  [
+   "🔹 第三阶段：黑龙形态 · 机制空战",
+   "🔹 Phase 3: Demon Dragon Form · Mechanics-based aerial battle"
+  ],
+  [
+   "加侬多夫吞下秘石化身黑龙，林克与白龙展开高空配合",
+   "Ganondorf swallows the Secret Stone and becomes the Demon Dragon, while Link and the Light Dragon cooperate high in the sky"
+  ],
+  [
+   "✨ 纯机制福利关卡： BGM极燃，只要不失误绝对稳过。",
+   "✨ A pure-mechanics bonus stage: the BGM is electrifying, and as long as you don't make mistakes, you will absolutely clear it safely."
+  ],
+  [
+   "从 白龙背上跃下 ，利用滑翔伞调整方向，朝着 黑龙背上的发光红肿弱点 俯冲。",
+   "Leap from the Light Dragon's back, use your paraglider to adjust direction, and dive toward the glowing red swollen weak points on the Demon Dragon's back."
+  ],
+  [
+   "降落到弱点附近，用 大师之剑 疯狂砍碎 发光晶体 。",
+   "Land near a weak point and slash wildly with the Master Sword to shatter the glowing crystals."
+  ],
+  [
+   "每砍碎一个，黑龙会把你弹飞。 被弹飞后不用慌 ，白龙会准时飞过来在半空中接住你，带你重新升空。",
+   "Each time you shatter one, the Demon Dragon will fling you off. Don't panic after being flung off — the Light Dragon will fly over right on time to catch you midair and carry you back up."
+  ],
+  [
+   "依次破坏掉背部 4 个弱点 后，黑龙头部会汇聚红光。",
+   "After destroying all 4 weak points on its back in turn, red light will gather on the Demon Dragon's head."
+  ],
+  [
+   "直接俯冲降落到它脑门上的 秘石处 ，一刀插碎秘石，即可迎来 通关CG ！",
+   "Dive straight down onto the Secret Stone on its forehead and stab it to shatter it in one blow, and the ending cutscene awaits!"
+  ],
+  [
+   "注意： 如果在黑龙背上被甩落，白龙会接住—— 请不要提前开伞 ，开伞后白龙无法接你，可能坠入云层导致扣血。",
+   "Note: if you are thrown off the Demon Dragon's back, the Light Dragon will catch you — please do not open your paraglider early, because once the paraglider is open the Light Dragon cannot catch you, and you may fall into the clouds and lose health."
+  ],
+  [
+   "🎁 各阶段武器掉落",
+   "🎁 Weapon drops by phase"
+  ],
+  [
+   "💀 瘴气之剑（第一阶段掉落）",
+   "💀 Gloom Sword (Phase 1 drop)"
+  ],
+  [
+   "🔱 瘴气之枪（第一阶段掉落）",
+   "🔱 Gloom Spear (Phase 1 drop)"
+  ],
+  [
+   "🔨 瘴气之锤（第一阶段掉落）",
+   "🔨 Gloom Club (Phase 1 drop)"
+  ],
+  [
+   "👑 魔王之弓（第二阶段掉落）",
+   "👑 Demon King's Bow (Phase 2 drop)"
+  ],
+  [
+   "🐉 魔王骨骼（第三阶段通关奖励）",
+   "🐉 Demon King's Bone (Phase 3 clear reward)"
+  ],
+  [
+   "📖 相关 Boss 推荐阅读",
+   "📖 Recommended related Boss guides"
+  ],
+  [
+   "👻 幻影加侬攻略 →",
+   "👻 Phantom Ganon Guide →"
+  ],
+  [
+   "🦁 莱尼尔攻略 →",
+   "🦁 Lynel Guide →"
+  ],
+  [
+   "⚔ 返回 Boss 图鉴 →",
+   "⚔ Back to the Boss Compendium →"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› Boss攻略",
+   "› Boss Guides"
+  ],
+  [
+   "› 幻影加农",
+   "› Phantom Ganon"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "📚 更多攻略",
+   "📚 More Guides"
+  ],
+  [
+   "› 哈里的终极秘籍（13篇）",
+   "› Harry's Ultimate Guide Collection (13 articles)"
+  ],
+  [
+   "› 全部页面索引",
+   "› Full Page Index"
+  ],
+  [
+   "⚠ 被动机制： 如果你直接上去平砍，他会 百分之百触发后撤闪避并反击 。",
+   "⚠ Passive mechanic: if you walk straight up and attack normally, he will 100% trigger a retreating dodge and counterattack."
+  ],
+  [
+   "不要主动攻击！",
+   "Don't attack first!"
+  ],
+  [
+   "拉开1到2个身位，观察他的武器起手式。",
+   "Keep 1–2 body lengths away and watch his weapon's opening stance."
+  ],
+  [
+   "【破解方法】： 当你看到他闪避了你的林克时间并出招时，不要慌， 立刻再次按下闪避键（二段闪避） ！",
+   "[Counter]: when you see him dodge your slow-motion window and attack, don't panic — immediately press dodge again (a second dodge)!"
+  ],
+  [
+   " 只要你成功闪避了他的\"反闪避\"，就能真正触发属于你的 终极林克时间 。",
+   "As long as you successfully dodge his \"counter-dodge,\" you will truly trigger your own ultimate slow-motion window."
+  ],
+  [
+   "每砍碎一个，黑龙会把你弹飞。",
+   "Each time you shatter one, the Demon Dragon will fling you off."
+  ],
+  [
+   " 被弹飞后不用慌 ，白龙会准时飞过来在半空中接住你，带你重新升空。",
+   "Don't panic after being flung off — the Light Dragon will fly over right on time to catch you midair and carry you back up."
+  ],
+  [
+   "大师之剑（自带高额面板且不耗耐久）",
+   "Master Sword (high base stats and doesn't consume durability)"
+  ],
+  [
+   "兽神弓（3连发/5连发）",
+   "Savage Lynel Bow (3-shot/5-shot)"
+  ],
+  [
+   "海拉鲁盾（高耐久度）融合【火箭】或【炸弹花】的备用盾",
+   "Hylian Shield (high durability) fused with a Rocket or Bomb Flower, kept as a spare shield"
+  ],
+  [
+   "5个向阳草制作的料理（5~10份）",
+   "Dishes cooked with 5 Sundelions (5–10 servings)"
+  ],
+  [
+   "大生命/大活力料理修复被瘴气侵蚀的心心上限",
+   "Hearty/Energizing dishes restore the heart cap eroded by Gloom"
+  ],
+  [
+   "鬼神套装 或 蛮族套装（吃满3级攻击加成）",
+   "Phantom Set or Barbarian Set (with full level-3 Attack Up)"
+  ],
+  [
+   "Boss图鉴",
+   "Boss Encyclopedia"
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "⚠ 注意：",
+   "⚠ Note: "
+  ],
+  [
+   "加侬多夫的瘴气攻击会",
+   "Ganondorf's Gloom attacks will "
+  ],
+  [
+   "，备好向阳草料理是通关必要条件。",
+   ", and having Sundelion meals ready is required to clear this fight."
+  ],
+  [
+   "永久扣除心心上限",
+   "permanently reduce your maximum hearts"
+  ],
+  [
+   "鬼神套装",
+   "Fierce Deity Set "
+  ],
+  [
+   "或",
+   "or "
+  ],
+  [
+   "（吃满3级攻击加成）",
+   "(with full level 3 attack boost)"
+  ],
+  [
+   "蛮族套装",
+   "Barbarian Set"
+  ],
+  [
+   "⚠ 被动机制：",
+   "⚠ Passive mechanic: "
+  ],
+  [
+   "如果你直接上去平砍，他会",
+   "If you walk straight up and slash at him, he will "
+  ],
+  [
+   "百分之百触发后撤闪避并反击",
+   "100% trigger a retreating dodge and counterattack"
+  ],
+  [
+   "看到他横劈，",
+   "When you see his horizontal slash, "
+  ],
+  [
+   "（按住ZL + 摇杆后 + X）触发",
+   "(hold ZL + stick back + X) to trigger "
+  ],
+  [
+   "立刻向后跳",
+   "immediately back-hop"
+  ],
+  [
+   "完美闪避（林克时间）",
+   "a Perfect Dodge (bullet time)"
+  ],
+  [
+   "看到他蓄力下砸，",
+   "When you see him charge up and slam downward, "
+  ],
+  [
+   "躲避冲击波。",
+   "to dodge the shockwave."
+  ],
+  [
+   "立刻向左右侧跳",
+   "immediately side-hop left/right "
+  ],
+  [
+   "看到他持枪突刺，",
+   "When you see him thrust with his spear, "
+  ],
+  [
+   "💡 无脑逃课法：",
+   "💡 Brainless cheese strategy: "
+  ],
+  [
+   "掏出",
+   "Take out "
+  ],
+  [
+   "直接飞天，在空中用多发弓箭黏上\"吉布得的骨头\"，",
+   "and fly straight up, then stick \"Gibdo Bones\" onto multi-shot arrows midair and "
+  ],
+  [
+   "融合了火箭的盾牌",
+   "a shield fused with a Rocket"
+  ],
+  [
+   "疯狂爆头",
+   "blast heads like crazy"
+  ],
+  [
+   "绝对不要去管分身",
+   "Absolutely ignore the clones"
+  ],
+  [
+   "，把他们交给",
+   ", and leave them to "
+  ],
+  [
+   "去牵制。",
+   "to keep them busy."
+  ],
+  [
+   "贤者",
+   "the Sages "
+  ],
+  [
+   "你只需要在战场边缘游走，",
+   "You only need to roam the edge of the battlefield, "
+  ],
+  [
+   "锁定血条最长、头顶有名字的本体",
+   "locking onto the true form with the longest HP bar and a name above its head"
+  ],
+  [
+   "绕到他身后，用",
+   "Circle behind him and use "
+  ],
+  [
+   "高攻武器疯狂偷刀",
+   "high-attack weapons to cheap-shot him repeatedly"
+  ],
+  [
+   "⚠ 核心危机：",
+   "⚠ Core crisis: "
+  ],
+  [
+   "他的部分瘴气攻击会",
+   "Some of his Gloom attacks will "
+  ],
+  [
+   "（碎掉的心心无法用向阳草料理恢复）。",
+   "(shattered hearts cannot be restored with Sundelion meals)."
+  ],
+  [
+   "直接粉碎你的心心",
+   "directly shatter your hearts"
+  ],
+  [
+   "当你对他触发\"完美闪避\"并疯狂砍他时，他会同样触发\"林克时间\"闪避掉你的攻击，并对你展开",
+   "When you trigger a \"Perfect Dodge\" against him and slash wildly at him, he will likewise trigger \"bullet time\" to dodge your attacks and launch a "
+  ],
+  [
+   "当你看到他闪避了你的林克时间并出招时，不要慌，",
+   "When you see him dodge your bullet time and attack, do not panic — "
+  ],
+  [
+   "！ 只要你成功闪避了他的\"反闪避\"，就能真正触发属于你的",
+   "! As long as you successfully dodge his \"counter-dodge\", you can truly trigger your own "
+  ],
+  [
+   "致命反击",
+   "lethal counterattack"
+  ],
+  [
+   "【破解方法】：",
+   "[Solution]: "
+  ],
+  [
+   "立刻再次按下闪避键（二段闪避）",
+   "immediately press dodge again (double dodge)"
+  ],
+  [
+   "终极林克时间",
+   "ultimate bullet time"
+  ],
+  [
+   "当他释放扩散的瘴气圆环时，",
+   "When he unleashes an expanding Gloom ring, "
+  ],
+  [
+   "，在空中拉弓用\"子弹时间\"",
+   ", then draw your bow midair and use \"bullet time\" to "
+  ],
+  [
+   "将其打断。",
+   "and interrupt him."
+  ],
+  [
+   "立刻踩在火箭盾上升空",
+   "immediately step onto your Rocket Shield and rise into the air"
+  ],
+  [
+   "射爆他的头部",
+   "blast his head apart"
+  ],
+  [
+   "✨ 纯机制福利关卡：",
+   "✨ Pure-mechanics bonus stage: "
+  ],
+  [
+   "BGM极燃，只要不失误绝对稳过。",
+   "The BGM is hype, and as long as you make no mistakes, you will absolutely clear it."
+  ],
+  [
+   "从",
+   "Leap from "
+  ],
+  [
+   "，利用滑翔伞调整方向，朝着",
+   ", adjust your direction with your paraglider, and dive toward "
+  ],
+  [
+   "俯冲。",
+   "in a dive."
+  ],
+  [
+   "白龙背上跃下",
+   "the white dragon's back"
+  ],
+  [
+   "黑龙背上的发光红肿弱点",
+   "the glowing red swollen weak point on the black dragon's back"
+  ],
+  [
+   "降落到弱点附近，用",
+   "Land near the weak point and use the "
+  ],
+  [
+   "疯狂砍碎",
+   "to furiously smash "
+  ],
+  [
+   "大师之剑",
+   "Master Sword"
+  ],
+  [
+   "发光晶体",
+   "the glowing crystals"
+  ],
+  [
+   "被弹飞后不用慌",
+   "Don't panic after being bounced off"
+  ],
+  [
+   "，白龙会准时飞过来在半空中接住你，带你重新升空。",
+   ", and the white dragon will fly over right on time to catch you midair and carry you back up."
+  ],
+  [
+   "依次破坏掉背部",
+   "After destroying all "
+  ],
+  [
+   "后，黑龙头部会汇聚红光。",
+   ", the black dragon's head will gather red light."
+  ],
+  [
+   "4 个弱点",
+   "4 weak points on its back"
+  ],
+  [
+   "直接俯冲降落到它脑门上的",
+   "Dive straight down onto the "
+  ],
+  [
+   "，一刀插碎秘石，即可迎来",
+   ", stab the Secret Stone apart with one blow, and usher in the "
+  ],
+  [
+   "秘石处",
+   "Secret Stone on its forehead"
+  ],
+  [
+   "通关CG",
+   "ending CG"
+  ],
+  [
+   "注意：",
+   "Note: "
+  ],
+  [
+   "如果在黑龙背上被甩落，白龙会接住——",
+   "If you are thrown off the black dragon's back, the white dragon will catch you — "
+  ],
+  [
+   "，开伞后白龙无法接你，可能坠入云层导致扣血。",
+   ", because after opening it, the white dragon cannot catch you, and you may fall into the clouds and lose HP."
+  ],
+  [
+   "请不要提前开伞",
+   "please do not open your paraglider early"
+  ]
+ ],
+ "notes": [
+  "Source title says three stages while the body describes four phases; both translated literally as written.",
+  "Two headings in the source contain a garbled replacement character (before 战前核心整备 and before 长枪); the garbled character was omitted in English.",
+  "林克时间 rendered contextually as slow-motion/Flurry Rush: bullet time for aerial bow aiming, Flurry Rush for dodge counters.",
+  "鬼神套装 rendered as Evil Spirit Armor set."
+ ]
+}

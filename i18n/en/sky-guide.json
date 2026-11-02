@@ -1,0 +1,460 @@
+{
+ "notes": [
+  "贤者能力名称 rendered descriptively: 誓言 as Vow, 庄严誓言 as Solemn Vow. 三头龙王 rendered as King Gleeok (official enemy name for the three-headed dragon boss). 方块魔像 rendered as Flux Construct."
+ ],
+ "pairs": [
+  [
+   "王国之泪天空岛完全指南：鸟望塔弹射、倒转乾坤、左纳乌飞行器、岛内接力四种上岛法，20份贤者遗志4换1升级、31张残旧地图地底兑现与方块魔像、三头龙王打法。",
+   "Complete guide to the Sky Islands in Tears of the Kingdom: four ways to reach the islands — Skyview Tower launch, Recall, Zonai flying machines, and on-island relays; 20 Sage's Wills exchanged 4-for-1 for upgrades; 31 Old Maps redeemed in the Depths; and tactics for Flux Constructs and King Gleeok."
+  ],
+  [
+   "首页",
+   "Home"
+  ],
+  [
+   "哈里的终极秘籍",
+   "Harry's Ultimate Tips"
+  ],
+  [
+   "天空岛完全指南：上岛四法、贤者遗志与残旧地图",
+   "Complete Guide to the Sky Islands: Four Ways Up, Sage's Wills, and Old Maps"
+  ],
+  [
+   "天空不是主线之外的风景：20份贤者遗志、31张残旧地图与天空限定装备全在上面，而上岛的方法比你想象的多得多。",
+   "The sky is not just scenery outside the main story: all 20 Sage's Wills, all 31 Old Maps, and the sky-exclusive equipment are up there, and there are far more ways up than you'd imagine."
+  ],
+  [
+   "🧙 作者：哈里 ☁️ 天空岛 · 上岛与收集 📖 深度攻略",
+   "🧙 Author: Harry ☁️ Sky Islands · Reaching Them and Collecting 📖 In-Depth Guide"
+  ],
+  [
+   "📑 本篇目录",
+   "📑 Contents of This Article"
+  ],
+  [
+   "适用人群与前置条件",
+   "Who This Is For and Prerequisites"
+  ],
+  [
+   "上岛四法：从弹射到飞行器",
+   "Four Ways Up: From Launching to Flying Machines"
+  ],
+  [
+   "岛上有什么：先分清三类奖励",
+   "What's on the Islands: First Sort Out the Three Kinds of Rewards"
+  ],
+  [
+   "贤者遗志：20份、4换1、先升图林",
+   "Sage's Wills: 20 in Total, 4-for-1, Upgrade Tulin First"
+  ],
+  [
+   "残旧地图：拿到就去地底兑现",
+   "Old Maps: Redeem Them in the Depths as Soon as You Get Them"
+  ],
+  [
+   "守岛的敌人：方块魔像与三头龙王",
+   "Island Guardians: Flux Constructs and King Gleeok"
+  ],
+  [
+   "特殊岛屿：低重力岛与雷暴岛群",
+   "Special Islands: Low-Gravity Islands and Thunderstorm Island Groups"
+  ],
+  [
+   "三个最常见的翻车点",
+   "The Three Most Common Pitfalls"
+  ],
+  [
+   "哈里的取舍：扫岛顺序",
+   "Harry's Priorities: Island-Sweeping Order"
+  ],
+  [
+   "王国之泪的天空岛：金色树木、池塘与石质遗迹漂浮在云海之上",
+   "The Sky Islands in Tears of the Kingdom: golden trees, ponds, and stone ruins floating above a sea of clouds"
+  ],
+  [
+   "图：游戏实机截图（天空岛，图片来源：Zelda Wiki），金色树木与石质遗迹是天空岛的标志性外观。",
+   "Image: in-game screenshot (Sky Islands, image source: Zelda Wiki); golden trees and stone ruins are the signature look of the Sky Islands."
+  ],
+  [
+   "这篇写给两类玩家：一是抬头看见天上有岛、却不知道怎么上去的玩家；二是已经上过几座岛、但对“岛上到底值得找什么”没有头绪的玩家。前置条件有两样：滑翔伞（没有它，上了天也下不来），以及至少一格半以上的精力——很多岛之间的滑翔距离比想象中远，精力不够会在半空坠落。贤者遗志的兑换还需要先获得至少一位贤者，刚出初始空岛的玩家可以先熟悉上岛方法，贤者到手后再系统收集。",
+   "This article is written for two kinds of players: those who look up, see islands in the sky, and don't know how to get up there; and those who have already visited a few islands but have no idea “what exactly is worth looking for on the islands.” There are two prerequisites: the Paraglider (without it, you can't get back down once you're up there), and at least one-and-a-half stamina segments or more — the gliding distance between many islands is farther than you'd imagine, and without enough stamina you'll fall midair. Exchanging Sage's Wills also requires having obtained at least one Sage first; players who have just left the Great Sky Island can first get familiar with the ways up, then collect systematically once they have a Sage."
+  ],
+  [
+   "上岛没有唯一解，游戏给了四条路，分别对应不同的进度与资源状况。按从易到难排：",
+   "There is no single solution for getting up to the islands; the game gives four routes, each matching a different stage of progress and resource situation. Ranked from easiest to hardest:"
+  ],
+  [
+   "15座鸟望塔开图完全指南",
+   "Complete Guide to Opening All 15 Skyview Towers"
+  ],
+  [
+   "1鸟望塔弹射——最常用。激活一座鸟望塔后，林克会被弹射到高空，空中开伞滑向附近的天空岛。已经激活过的塔可以重复弹射，所以“开塔”本身就是上岛：每开一座塔，就顺路扫一扫它头顶附近的岛群。先开塔、再扫岛，是效率最高的顺序（开塔细节见本站15座鸟望塔开图完全指南）。",
+   "1. Skyview Tower launch — the most common. After activating a Skyview Tower, Link is launched high into the air, and you open the Paraglider midair and glide toward a nearby Sky Island. Towers you've already activated can launch you again, so “opening a tower” is itself a way up: each time you open a tower, sweep the island group above it along the way. Opening towers first, then sweeping islands, is the most efficient order (for tower-opening details, see this site's Complete Guide to Opening All 15 Skyview Towers)."
+  ],
+  [
+   "1鸟望塔弹射——最常用。",
+   "1. Skyview Tower launch — the most common."
+  ],
+  [
+   "激活一座鸟望塔后，林克会被弹射到高空，空中开伞滑向附近的天空岛。",
+   "After activating a Skyview Tower, Link is launched high into the air, and you open the Paraglider midair and glide toward a nearby Sky Island."
+  ],
+  [
+   "已经激活过的塔可以重复弹射，所以“开塔”本身就是上岛：每开一座塔，就顺路扫一扫它头顶附近的岛群。",
+   "Towers you've already activated can launch you again, so “opening a tower” is itself a way up: each time you open a tower, sweep the island group above it along the way."
+  ],
+  [
+   "先开塔、再扫岛，是效率最高的顺序（开塔细节见本站15座鸟望塔开图完全指南）。",
+   "Opening towers first, then sweeping islands, is the most efficient order (for tower-opening details, see this site's Complete Guide to Opening All 15 Skyview Towers)."
+  ],
+  [
+   "2倒转乾坤搭便车——零成本。地面上偶尔能看到从天上坠落的石块与平台，对它们使用倒转乾坤，石块会按原路升回天空。站上去或扒住边缘，就能一路升到高空，再开伞滑向目标岛。这招不需要任何左纳乌装置，是前期最省资源的办法，缺点是坠落物的位置随机，遇到了别错过。",
+   "2. Hitching a ride with Recall — zero cost. On the ground you occasionally see rocks and platforms that have fallen from the sky; use Recall on them and the rock will rise back to the sky along its original path. Stand on it or grab its edge, and you can ride all the way up high, then open the Paraglider and glide to your target island. This trick needs no Zonai devices at all, making it the most resource-saving method early on; the downside is that falling objects appear in random locations, so don't pass one up when you see it."
+  ],
+  [
+   "2倒转乾坤搭便车——零成本。",
+   "2. Hitching a ride with Recall — zero cost."
+  ],
+  [
+   "地面上偶尔能看到从天上坠落的石块与平台，对它们使用倒转乾坤，石块会按原路升回天空。",
+   "On the ground you occasionally see rocks and platforms that have fallen from the sky; use Recall on them and the rock will rise back to the sky along its original path."
+  ],
+  [
+   "站上去或扒住边缘，就能一路升到高空，再开伞滑向目标岛。",
+   "Stand on it or grab its edge, and you can ride all the way up high, then open the Paraglider and glide to your target island."
+  ],
+  [
+   "这招不需要任何左纳乌装置，是前期最省资源的办法，缺点是坠落物的位置随机，遇到了别错过。",
+   "This trick needs no Zonai devices at all, making it the most resource-saving method early on; the downside is that falling objects appear in random locations, so don't pass one up when you see it."
+  ],
+  [
+   "3左纳乌飞行器——最自由。翼＋风扇是最经典的组合，两个风扇推力更稳；岛上的装置制造机可以补充风扇、翼与电池。飞行器的天敌是电池与解体：电池耗尽会失速，机身受损过重会散架，所以远距离飞行前先确认电池余量，半路没电时立刻开伞，别等到散架。",
+   "3. Zonai flying machine — the freest. A Wing plus a Fan is the most classic combination, and two Fans give steadier thrust; the Device Dispensers on the islands can top up your Fans, Wings, and batteries. A flying machine's enemies are its battery and disintegration: a dead battery means stalling, and a badly damaged body falls apart, so before a long flight, confirm your remaining battery, and if you run out of power mid-flight, open the Paraglider at once — don't wait until it falls apart."
+  ],
+  [
+   "3左纳乌飞行器——最自由。",
+   "3. Zonai flying machine — the freest."
+  ],
+  [
+   "翼＋风扇是最经典的组合，两个风扇推力更稳；岛上的装置制造机可以补充风扇、翼与电池。",
+   "A Wing plus a Fan is the most classic combination, and two Fans give steadier thrust; the Device Dispensers on the islands can top up your Fans, Wings, and batteries."
+  ],
+  [
+   "飞行器的天敌是电池与解体：电池耗尽会失速，机身受损过重会散架，所以远距离飞行前先确认电池余量，半路没电时立刻开伞，别等到散架。",
+   "A flying machine's enemies are its battery and disintegration: a dead battery means stalling, and a badly damaged body falls apart, so before a long flight, confirm your remaining battery, and if you run out of power mid-flight, open the Paraglider at once — don't wait until it falls apart."
+  ],
+  [
+   "4岛内接力——上岛后再上岛。很多岛群内部还有接力机关：弹射器把你弹向下一座岛，火箭平台把你顶到更高处，矿车轨道连着相邻的岛，通天术能穿过头顶的岩层。登上一座岛后别急着走，先环顾一圈：弹射器、火箭、轨道往往指向同一群岛里更高的那座。",
+   "4. On-island relays — island-hopping after you're up. Many island groups have relay mechanisms inside them: launchers fling you toward the next island, rocket platforms push you higher, mine-cart tracks connect neighboring islands, and Ascend lets you pass through the rock layer overhead. After landing on an island, don't rush off — first look around: launchers, rockets, and tracks usually point toward a higher island in the same group."
+  ],
+  [
+   "4岛内接力——上岛后再上岛。",
+   "4. On-island relays — island-hopping after you're up."
+  ],
+  [
+   "很多岛群内部还有接力机关：弹射器把你弹向下一座岛，火箭平台把你顶到更高处，矿车轨道连着相邻的岛，通天术能穿过头顶的岩层。",
+   "Many island groups have relay mechanisms inside them: launchers fling you toward the next island, rocket platforms push you higher, mine-cart tracks connect neighboring islands, and Ascend lets you pass through the rock layer overhead."
+  ],
+  [
+   "登上一座岛后别急着走，先环顾一圈：弹射器、火箭、轨道往往指向同一群岛里更高的那座。",
+   "After landing on an island, don't rush off — first look around: launchers, rockets, and tracks usually point toward a higher island in the same group."
+  ],
+  [
+   "作者视角的判断：四法之中，鸟望塔弹射的性价比最高，因为它同时推进了开图、上岛、找神庙三件事；飞行器最自由，但只适合电池与装置储备充足的中后期；倒转乾坤是前期神技，看到坠落石块就该想到“这是一张免费上天票”。",
+   "The author's judgment: of the four methods, the Skyview Tower launch is the best value, because it advances map-revealing, island-reaching, and shrine-hunting all at once; flying machines are the freest, but only suit the mid-to-late game when your battery and device reserves are plentiful; Recall is an early-game godsend — when you see a falling rock, you should think “that's a free ticket to the sky.”"
+  ],
+  [
+   "152座神庙全收集自查指南",
+   "Self-Check Guide to Collecting All 152 Shrines"
+  ],
+  [
+   "天空岛的奖励分三类，找之前先分清，免得在岛上漫无目的地转：第一类是永久强化——贤者遗志，集齐能升级贤者能力；第二类是地底宝藏的钥匙——残旧地图，每张指向地底的一只宝箱；第三类是天空限定装备与神庙，包括滑翔套装等只在天空出现的装备，以及天空神庙的祝福之光。神庙自查的方法见本站152座神庙全收集自查指南。",
+   "Sky Island rewards fall into three categories — sort them out before searching, so you don't wander the islands aimlessly: the first is permanent enhancement — Sage's Wills, which can upgrade Sage abilities once collected; the second is the key to Depths treasure — Old Maps, each pointing to one treasure chest in the Depths; the third is sky-exclusive equipment and shrines, including equipment that only appears in the sky, like the Glide Set, plus the Lights of Blessing from sky shrines. For the shrine self-check method, see this site's Self-Check Guide to Collecting All 152 Shrines."
+  ],
+  [
+   "天空岛的奖励分三类，找之前先分清，免得在岛上漫无目的地转：第一类是永久强化——贤者遗志，集齐能升级贤者能力；第二类是地底宝藏的钥匙——残旧地图，每张指向地底的一只宝箱；第三类是天空限定装备与神庙，包括滑翔套装等只在天空出现的装备，以及天空神庙的祝福之光。",
+   "Sky Island rewards fall into three categories — sort them out before searching, so you don't wander the islands aimlessly: the first is permanent enhancement — Sage's Wills, which can upgrade Sage abilities once collected; the second is the key to Depths treasure — Old Maps, each pointing to one treasure chest in the Depths; the third is sky-exclusive equipment and shrines, including equipment that only appears in the sky, like the Glide Set, plus the Lights of Blessing from sky shrines."
+  ],
+  [
+   "神庙自查的方法见本站152座神庙全收集自查指南。",
+   "For the shrine self-check method, see this site's Self-Check Guide to Collecting All 152 Shrines."
+  ],
+  [
+   "岛上的敌人与机关同样分三档：普通构装体与小怪，清理后开宝箱；带宝箱的方块魔像，打赢才能拿到它身上的箱子；以及守着部分贤者遗志的三头龙王，难度最高，可以先标记、后挑战。扫岛时按“宝箱—贤者遗志—神庙”的顺序记优先级，比见岛就登省时间。",
+   "The islands' enemies and mechanisms also fall into three tiers: ordinary Constructs and small enemies, which you clear and then open the treasure chests; Flux Constructs carrying treasure chests, which you must defeat to get the chest on them; and King Gleeok, guarding some Sage's Wills, the hardest of all, which you can mark first and challenge later. When sweeping islands, remember the priority order “treasure chests — Sage's Wills — shrines,” which saves time compared with landing on every island you see."
+  ],
+  [
+   "贤者遗志是天空岛最核心的收集品：全游戏共20份，全部藏在天空岛的宝箱里，地面与地底都没有。每集齐4份，就可以到任意一座女神像前祈祷，把一位贤者的“誓言”升级为“庄严誓言”，提升该贤者的攻击力。每位贤者只能升级一次，20份正好够五位贤者各升一次，不存在“升错了再洗”的操作，所以第一次兑换前要想清楚先升谁。",
+   "Sage's Wills are the Sky Islands' most core collectible: there are 20 in the whole game, all hidden in Sky Island treasure chests — none on the surface or in the Depths. Each time you collect 4, you can go to any Goddess Statue and pray to upgrade one Sage's “Vow” into a “Solemn Vow,” raising that Sage's attack power. Each Sage can only be upgraded once, and 20 is exactly enough to upgrade all five Sages once each — there is no “upgrade the wrong one and respec” option, so think carefully about who to upgrade first before your first exchange."
+  ],
+  [
+   "多份攻略与玩家经验的共同建议是先升图林：他的风之能力在探索中最常用——滑翔加速、吹散障碍、辅助战斗，升满后探索效率提升最明显。其次按自己的打法选：喜欢正面硬打的升火、水贤者，喜欢远程与控场的升雷贤者。反正20份最终能升满全部五位，先后顺序只影响中期体验，不影响结局。",
+   "The shared advice of many guides and player experience is to upgrade Tulin first: his wind ability is the most used in exploration — gliding speed boosts, blowing away obstacles, and combat support — and after upgrading, exploration efficiency improves most noticeably. Next, choose by your own playstyle: if you like head-on fighting, upgrade the Fire and Water Sages; if you like ranged and crowd control, upgrade the Lightning Sage. Either way, all 20 will eventually max out all five Sages, so the order only affects the mid-game experience, not the ending."
+  ],
+  [
+   "五位贤者能力全解",
+   "Complete Explanation of the Five Sages' Abilities"
+  ],
+  [
+   "找贤者遗志的实用技巧有三条：一是优先清“带宝箱的方块魔像”与“构装体营地”，不少遗志就藏在它们的宝箱里；二是被藤蔓封住的遗迹入口可以用火烧开，别绕路；三是球形浮岛内部的机关多用究极手转动，洞口转到下方时再钻进去。贤者能力的完整解析见本站五位贤者能力全解。",
+   "There are three practical tips for finding Sage's Wills: first, prioritize clearing “Flux Constructs carrying treasure chests” and “Construct camps,” since many Wills are hidden in their chests; second, ruin entrances sealed by vines can be burned open with fire — don't go around; third, for the mechanisms inside spherical floating islands, mostly use Ultrahand to rotate them, and climb in only when the opening has rotated to the bottom. For a complete analysis of Sage abilities, see this site's Complete Explanation of the Five Sages' Abilities."
+  ],
+  [
+   "找贤者遗志的实用技巧有三条：一是优先清“带宝箱的方块魔像”与“构装体营地”，不少遗志就藏在它们的宝箱里；二是被藤蔓封住的遗迹入口可以用火烧开，别绕路；三是球形浮岛内部的机关多用究极手转动，洞口转到下方时再钻进去。",
+   "There are three practical tips for finding Sage's Wills: first, prioritize clearing “Flux Constructs carrying treasure chests” and “Construct camps,” since many Wills are hidden in their chests; second, ruin entrances sealed by vines can be burned open with fire — don't go around; third, for the mechanisms inside spherical floating islands, mostly use Ultrahand to rotate them, and climb in only when the opening has rotated to the bottom."
+  ],
+  [
+   "贤者能力的完整解析见本站五位贤者能力全解。",
+   "For a complete analysis of Sage abilities, see this site's Complete Explanation of the Five Sages' Abilities."
+  ],
+  [
+   "残旧的地图全收集",
+   "Complete Collection of Old Maps"
+  ],
+  [
+   "残旧地图共31张，同样出自天空岛的宝箱（详见本站残旧的地图全收集）。每张地图标注的不是天空岛本身，而是地底深处对应位置的一只宝箱，里面装着旷野之息时代的经典装备——包括不少无法在地面商店买到的套装与武器。也就是说，天空岛与地底是成对设计的：天上拿地图，地下开宝箱。",
+   "There are 31 Old Maps in total, also from Sky Island treasure chests (see this site's Complete Collection of Old Maps for details). Each map doesn't mark a Sky Island itself, but one treasure chest at the corresponding location deep in the Depths, containing classic equipment from the Breath of the Wild era — including many sets and weapons you can't buy in surface shops. In other words, the sky and the Depths are designed as a pair: get the map in the sky, open the chest underground."
+  ],
+  [
+   "残旧地图共31张，同样出自天空岛的宝箱（详见本站残旧的地图全收集）。",
+   "There are 31 Old Maps in total, also from Sky Island treasure chests (see this site's Complete Collection of Old Maps for details)."
+  ],
+  [
+   "每张地图标注的不是天空岛本身，而是地底深处对应位置的一只宝箱，里面装着旷野之息时代的经典装备——包括不少无法在地面商店买到的套装与武器。",
+   "Each map doesn't mark a Sky Island itself, but one treasure chest at the corresponding location deep in the Depths, containing classic equipment from the Breath of the Wild era — including many sets and weapons you can't buy in surface shops."
+  ],
+  [
+   "也就是说，天空岛与地底是成对设计的：天上拿地图，地下开宝箱。",
+   "In other words, the sky and the Depths are designed as a pair: get the map in the sky, open the chest underground."
+  ],
+  [
+   "地底世界生存与探索完全指南",
+   "Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "最容易犯的错误是“囤地图”：在天上攒了十几张地图，却一次地底都没下过。正确的做法是拿到地图就记下来，下次下地底时按地图坐标顺路开箱。地底探索本身有瘴气、黑暗与电池管理的问题，出发前先看本站地底世界生存与探索完全指南，带够明亮花种子与电池再下去。",
+   "The easiest mistake to make is “hoarding maps”: piling up a dozen or so maps in the sky without ever going down into the Depths once. The right approach is to note each map down as soon as you get it, and open the chests along the way by map coordinates the next time you go into the Depths. Depths exploration itself involves gloom, darkness, and battery management, so before setting out, first read this site's Complete Guide to Surviving and Exploring the Depths, and bring enough Brightbloom Seeds and batteries before going down."
+  ],
+  [
+   "最容易犯的错误是“囤地图”：在天上攒了十几张地图，却一次地底都没下过。",
+   "The easiest mistake to make is “hoarding maps”: piling up a dozen or so maps in the sky without ever going down into the Depths once."
+  ],
+  [
+   "正确的做法是拿到地图就记下来，下次下地底时按地图坐标顺路开箱。",
+   "The right approach is to note each map down as soon as you get it, and open the chests along the way by map coordinates the next time you go into the Depths."
+  ],
+  [
+   "地底探索本身有瘴气、黑暗与电池管理的问题，出发前先看本站地底世界生存与探索完全指南，带够明亮花种子与电池再下去。",
+   "Depths exploration itself involves gloom, darkness, and battery management, so before setting out, first read this site's Complete Guide to Surviving and Exploring the Depths, and bring enough Brightbloom Seeds and batteries before going down."
+  ],
+  [
+   "方块魔像是天空岛的标志性守卫：由多个方块组成的构装体，会拆解、重组、变换形态，身上往往挂着一只宝箱。打它的要点是盯住核心方块打，不要被满天飞的散件带乱节奏；它解体时是输出窗口，重组完成前拉开距离。不少贤者遗志就在它身上的宝箱里，所以方块魔像不是“可打可不打”的小怪，而是扫岛路线上的必经点。",
+   "The Flux Construct is the Sky Islands' signature guardian: a Construct made of multiple cubes that disassembles, reassembles, and changes form, often carrying a treasure chest on it. The key to fighting it is to focus on the core cube — don't let the scattered pieces flying everywhere throw off your rhythm; when it disassembles, that's your damage window, and keep your distance before it finishes reassembling. Many Sage's Wills are in the chests on them, so Flux Constructs aren't optional small enemies, but must-pass points on an island-sweeping route."
+  ],
+  [
+   "三头龙王是更高一档的守卫：三颗头分别喷火、喷冰、喷雷，同时应对三种属性攻击，容错很低。它守着的贤者遗志值得拿，但不必硬刚：先标记位置，攒够红心、备好属性抗性料理与强力弓箭再来；或者先把同一群岛里简单的遗志拿完，升级过贤者、装备成型后再回头挑战。扫岛不是考试，绕过强敌先拿简单的，才是收集玩法的正确节奏。",
+   "King Gleeok is a higher-tier guardian: its three heads breathe fire, ice, and lightning respectively, and dealing with three elemental attacks at once leaves very little room for error. The Sage's Wills it guards are worth taking, but there's no need to fight it head-on: mark its location first, and come back once you've saved up enough hearts and prepared elemental-resistance meals and powerful bows; or first collect the easy Wills in the same island group, then return to challenge it after upgrading Sages and getting your equipment in shape. Island-sweeping isn't an exam — bypassing strong enemies to take the easy ones first is the right rhythm for collecting."
+  ],
+  [
+   "部分天空岛有低重力特性：跳得更高、落得更慢，配合滑翔伞可以跨越平时够不着的距离。在这种岛上，跳跃本身就是交通工具，别按地面上的距离感估算落点。另一些岛群常年被雷暴笼罩，雷雨天举着金属武器与盾牌容易引雷，强行登岛既危险又容易被雷打断滑翔——这类岛群可以先标记，等主线推进到相关区域、或备好抗雷手段后再系统探索。",
+   "Some Sky Islands have low-gravity properties: you jump higher and fall more slowly, and combined with the Paraglider you can cross distances normally out of reach. On such islands, jumping itself is the means of transport — don't estimate landing points by your ground-level sense of distance. Other island groups are perennially shrouded in thunderstorms, and holding metal weapons and shields in stormy weather easily attracts lightning — forcing your way onto such islands is both dangerous and liable to have your glide interrupted by lightning — so you can mark this kind of island group first, then explore systematically once the main story has advanced to the relevant area, or once you've prepared lightning-protection measures."
+  ],
+  [
+   "还有一类容易错过的岛：外表看只是几块小浮石，实际藏着神庙挑战的前置机关——例如需要踩盾滑行穿过圆环、或用弹射器接力才能触发的神庙出现条件。登岛后多留意地面上的圆环、石碑与机关残件，这些往往是神庙挑战的触发器，而不是装饰。",
+   "There's another easily missed kind of island: on the outside it looks like just a few small floating rocks, but it actually hides the prerequisite mechanism for a shrine challenge — for example, shrine-appearance conditions that require shield-surfing through rings, or using a launcher relay to trigger. After landing, pay extra attention to rings, stone tablets, and mechanism fragments on the ground — these are often the triggers for shrine challenges, not decoration."
+  ],
+  [
+   "扫岛的优先级分三档：第一档是开塔顺路扫——每座鸟望塔弹射上天后，把它头顶的岛群先清掉，这是零额外成本的收集；第二档是按群岛分区扫——选定一个群岛（例如南部的岛群），用飞行器或接力机关一次性清完，比全图东一座西一座地跳省时间；第三档才是三头龙王守着的硬骨头——标记好位置，等装备与贤者升级成型后再回头打。",
+   "Island-sweeping priority falls into three tiers: the first tier is sweeping along the way when opening towers — after each Skyview Tower launches you skyward, clear the island group above it first, which is zero-extra-cost collecting; the second tier is sweeping by island group — pick one group (for example, the southern island group) and clear it in one go with a flying machine or relay mechanisms, which saves time compared with hopping from island to island all over the map; the third tier is the hard nut guarded by King Gleeok — mark its location, and come back to fight it once your equipment and Sage upgrades are in shape."
+  ],
+  [
+   "一句话总结：天空岛玩的不是“登了多少座岛”，而是“每次上天带回了什么”。上天前定好目标——这趟是拿贤者遗志、还是拿残旧地图、还是开神庙——带着目标上岛，落地才不会空手而归。",
+   "In one sentence: playing the Sky Islands isn't about “how many islands you've landed on,” but “what you brought back each time you went up.” Set a goal before going up — is this trip for Sage's Wills, for Old Maps, or for opening shrines? — and go up with a goal in mind, so you don't come back empty-handed."
+  ],
+  [
+   "← 上一篇：盾牌完全指南",
+   "← Previous: Complete Shield Guide"
+  ],
+  [
+   "返回秘籍专栏",
+   "Back to the Tips Column"
+  ],
+  [
+   "🔗 相关攻略",
+   "🔗 Related Guides"
+  ],
+  [
+   "› 15座鸟望塔开图完全指南",
+   "› Complete Guide to Opening All 15 Skyview Towers"
+  ],
+  [
+   "› 五位贤者能力全解",
+   "› Complete Explanation of the Five Sages' Abilities"
+  ],
+  [
+   "› 残旧的地图全收集",
+   "› Complete Collection of Old Maps"
+  ],
+  [
+   "📚 全部攻略索引",
+   "📚 Full Guide Index"
+  ],
+  [
+   "🏆 哈里的终极秘籍",
+   "🏆 Harry's Ultimate Tips"
+  ],
+  [
+   "› 七宝匕首终极攻略",
+   "› Ultimate Guide to the Scimitar of the Seven"
+  ],
+  [
+   "› 四大神级料理配方",
+   "› Four God-Tier Dish Recipes"
+  ],
+  [
+   "› 最强套装三梯队全解析",
+   "› Full Analysis of the Three Tiers of Strongest Armor Sets"
+  ],
+  [
+   "› 乌萨诸马神庙零基础包教包会",
+   "› Usazum Shrine for Absolute Beginners"
+  ],
+  [
+   "› 白龙寻踪与大师之剑",
+   "› Tracking the Light Dragon and the Master Sword"
+  ],
+  [
+   "› 马克兔飞行器调校",
+   "› Mark-Rabbit Hover Bike Tuning"
+  ],
+  [
+   "› 地底电池扩充与大妖精",
+   "› Depths Battery Expansion and the Great Fairies"
+  ],
+  [
+   "🆕 每日新攻略",
+   "🆕 Daily New Guides"
+  ],
+  [
+   "› 152座神庙全收集自查指南",
+   "› Self-Check Guide to Collecting All 152 Shrines"
+  ],
+  [
+   "› 新手开荒指南：落地先做的10件事",
+   "› Beginner's Pioneering Guide: 10 Things to Do First After Landing"
+  ],
+  [
+   "› 呀哈哈种子全指南",
+   "› Complete Guide to Korok Seeds"
+  ],
+  [
+   "› 地底世界生存与探索完全指南",
+   "› Complete Guide to Surviving and Exploring the Depths"
+  ],
+  [
+   "› 大妖精四姐妹与防具强化完全指南",
+   "› Complete Guide to the Four Great Fairies and Armor Enhancement"
+  ],
+  [
+   "› 四条龙素材刷取指南",
+   "› Guide to Farming Materials from the Four Dragons"
+  ],
+  [
+   "› 人马（莱尼尔）完全指南",
+   "› Complete Guide to Lynels"
+  ],
+  [
+   "› 卢比速刷指南：从前期到后期",
+   "› Rupee Farming Guide: From Early to Late Game"
+  ],
+  [
+   "› 马匹捕捉与稀有马完全指南",
+   "› Complete Guide to Catching Horses and Rare Horses"
+  ],
+  [
+   "› 料理机制全解：效果、时长与暴击",
+   "› Complete Explanation of Cooking Mechanics: Effects, Duration, and Criticals"
+  ],
+  [
+   "› 海拉鲁城堡探索完全指南",
+   "› Complete Guide to Exploring Hyrule Castle"
+  ],
+  [
+   "› 海拉鲁图鉴509项收集指南",
+   "› Guide to Collecting All 509 Hyrule Compendium Entries"
+  ],
+  [
+   "› 左纳乌装置实用造物指南",
+   "› Practical Guide to Zonai Device Builds"
+  ],
+  [
+   "› 血月机制全解",
+   "› Complete Explanation of the Blood Moon Mechanic"
+  ],
+  [
+   "› 余料建造完全指南",
+   "› Complete Guide to Fuse"
+  ],
+  [
+   "› 祝福之光兑换完全指南",
+   "› Complete Guide to Exchanging Lights of Blessing"
+  ],
+  [
+   "› 弓箭完全指南：选弓、箭矢搭配与五连兽神弓",
+   "› Complete Bow Guide: Choosing Bows, Arrow Pairings, and the Five-Shot Savage Lynel Bow"
+  ],
+  [
+   "› 洞窟探险完全指南：樱花树、魔犹伊与柯尔天",
+   "› Complete Cave Exploration Guide: Cherry Blossom Trees, Bubbulfrogs, and Kolten"
+  ],
+  [
+   "› 盾牌完全指南：海利亚盾、盾反与盾冲浪",
+   "› Complete Shield Guide: Hylian Shield, Shield Parries, and Shield Surfing"
+  ],
+  [
+   "› 天空岛完全指南：上岛四法、贤者遗志与残旧地图（本篇）",
+   "› Complete Guide to the Sky Islands: Four Ways Up, Sage's Wills, and Old Maps (This Article)"
+  ],
+  [
+   "洞窟探险完全指南",
+   "Complete Cave Exploration Guide"
+  ],
+  [
+   "☁️ 天空岛攻略",
+   "☁️ Sky Islands Guide"
+  ],
+  [
+   "☁️ 天空岛 · 上岛与收集",
+   "☁️ Sky Islands · Getting Up & Collecting"
+  ],
+  [
+   "⚠️ 坑一：精力不够硬滑远岛。",
+   "⚠️ Pitfall 1: Gliding to a distant island without enough stamina."
+  ],
+  [
+   "岛与岛之间的滑翔距离经常超出目测，精力耗尽会在半空坠落。远距离滑翔前先吃精力料理，或先落到中途的小浮石上回精力。",
+   "Glide distances between islands often exceed what they look like, and running out of stamina mid-air means falling. Before a long glide, eat stamina-restoring food or land on a small floating rock halfway to recover stamina."
+  ],
+  [
+   "⚠️ 坑二：飞行器半路没电还硬撑。",
+   "⚠️ Pitfall 2: Clinging to a flying machine that's running out of power."
+  ],
+  [
+   "电池耗尽、机身散架时还在上面待着，只会连人带机一起掉下去。感觉推力不对立刻开伞，飞行器可以再造，坠落伤害省不回来。",
+   "When the battery dies and the machine falls apart, staying on board only sends you down with it. Open your paraglider the moment thrust feels wrong — you can always build another machine, but fall damage can't be undone."
+  ],
+  [
+   "⚠️ 坑三：贤者遗志升错人就后悔。",
+   "⚠️ Pitfall 3: Upgrading the wrong Sage's Will and regretting it."
+  ],
+  [
+   "每位贤者只能升一次，第一次兑换前先定好顺序：推荐先图林，再按自己的打法选第二位，别把第一份4连换交给平时根本不用的贤者。",
+   "Each Sage can only be upgraded once, so decide the order before your first exchange: Tulin first is recommended, then pick your second based on your playstyle — don't hand your first set of 4 to a Sage you barely use."
+  ],
+  [
+   "已经是最后一篇",
+   "This is the last article"
+  ]
+ ],
+ "title": "Complete Guide to the Sky Islands: Four Ways Up, Sage's Wills, and Old Maps · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+}
