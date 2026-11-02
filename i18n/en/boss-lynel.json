@@ -26,7 +26,7 @@
   ],
   [
    "Boss图鉴",
-   "Boss Encyclopedia"
+   "Bosses"
   ],
   [
    "莱尼尔",
@@ -126,7 +126,7 @@
   ],
   [
    "红鬃 < 青色 < 蓝鬃 < 白鬃 < 白银 · 本页专注红鬃版攻略",
-   "Red-Maned < Blue < Blue-Maned < White-Maned < Silver · This page focuses on the Red-Maned version"
+   "Red-Maned < Blue-Maned < White-Maned < Silver · This page focuses on the Red-Maned version"
   ],
   [
    "🎯 弱点",
@@ -142,7 +142,7 @@
   ],
   [
    "🛡 盾反→近距爆头→跪地",
-   "🛡 Parry → close-range headshot → kneeling"
+   "🛡 Perfect Guard → close-range headshot → kneeling"
   ],
   [
    "🎒 战前准备",
@@ -310,7 +310,7 @@
   ],
   [
    "前兆：人马举刀向你连续挥击。 应对：在它挥刀的瞬间，按住 ZL 锁定，同时向后跳（后翻滚）。如果时机准确，会触发「林克时间」，直接上去用单手剑或双手剑疯狂乱舞。",
-   "Tell: the Lynel raises its blade and slashes at you repeatedly. Counter: the instant it swings, hold ZL to lock on and jump backward (backflip). With good timing, this triggers bullet time — then rush in and flail away with a one-handed or two-handed sword."
+   "Tell: the Lynel raises its blade and slashes at you repeatedly. Counter: the instant it swings, hold ZL to lock on and jump backward (backflip). With good timing, this triggers a Flurry Rush — then rush in and flail away with a one-handed or two-handed sword."
   ],
   [
    "前兆：人马举刀向你连续挥击。",
@@ -330,7 +330,7 @@
   ],
   [
    "前兆：它收起武器，像一匹真正的马一样四脚着地向你全速冲来。 方案 A（闪避流）：在它快撞到你的瞬间，向左或向右侧跳，可以触发林克时间，然后输出。 方案 B · 盾反（更推荐）：举盾迎着它，在它撞到你的瞬间按下 A 键进行盾反。盾反成功后它会原地愣神 1～2 秒，此时距离极近，直接拉弓盲射它的脸，它就会跪地。然后直接转入骑乘流。",
-   "Tell: it puts its weapon away and charges at you at full speed on all fours, like a real horse. Option A (dodge style): sidestep left or right the instant before it hits you to trigger bullet time, then attack. Option B · Parry (recommended): raise your shield to meet it and press A the instant it hits you to parry. After a successful parry it stands stunned for 1–2 seconds; at such close range, draw your bow and blind-fire at its face and it will kneel. Then go straight into the mounting strategy."
+   "Tell: it puts its weapon away and charges at you at full speed on all fours, like a real horse. Option A (dodge style): sidestep left or right the instant before it hits you to trigger bullet time, then attack. Option B · Perfect Guard (recommended): raise your shield to meet it and press A the instant it hits you to Perfect Guard. After a successful Perfect Guard it stands stunned for 1–2 seconds; at such close range, draw your bow and blind-fire at its face and it will kneel. Then go straight into the mounting strategy."
   ],
   [
    "前兆：它收起武器，像一匹真正的马一样四脚着地向你全速冲来。",
@@ -338,15 +338,15 @@
   ],
   [
    "方案 A（闪避流）：在它快撞到你的瞬间，向左或向右侧跳，可以触发林克时间，然后输出。",
-   "Option A (dodge style): sidestep left or right the instant before it hits you to trigger bullet time, then attack."
+   "Option A (dodge style): sidestep left or right the instant before it hits you to trigger a Flurry Rush, then attack."
   ],
   [
    "方案 B · 盾反（更推荐）：举盾迎着它，在它撞到你的瞬间按下 A 键进行盾反。",
-   "Option B · Parry (recommended): raise your shield to meet it and press A the instant it hits you to parry."
+   "Option B · Perfect Guard (recommended): raise your shield to meet it and press A the instant it hits you to Perfect Guard."
   ],
   [
    "盾反成功后它会原地愣神 1～2 秒，此时距离极近，直接拉弓盲射它的脸，它就会跪地。",
-   "After a successful parry it stands stunned for 1–2 seconds; at such close range, draw your bow and blind-fire at its face and it will kneel."
+   "After a successful Perfect Guard it stands stunned for 1–2 seconds; at such close range, draw your bow and blind-fire at its face and it will kneel."
   ],
   [
    "然后直接转入骑乘流。",
@@ -354,7 +354,7 @@
   ],
   [
    "💡 推荐方案 B：盾反成功后距离极近，爆头几乎 100% 命中，是最高效创造骑乘机会的手段。",
-   "💡 Option B is recommended: after a successful parry you are extremely close, so headshots land almost 100% of the time — the most efficient way to create a mounting opportunity."
+   "💡 Option B is recommended: after a successful Perfect Guard you are extremely close, so headshots land almost 100% of the time — the most efficient way to create a mounting opportunity."
   ],
   [
    "喷吐三连火球",
@@ -442,7 +442,7 @@
   ],
   [
    "← 返回 Boss 图鉴",
-   "← Back to Boss Encyclopedia"
+   "← Back to Boss Compendium"
   ],
   [
    "🔗 相关攻略",
@@ -466,7 +466,7 @@
   ],
   [
    "› 哈里的终极秘籍（13篇）",
-   "› Harry's Ultimate Secrets (13 articles)"
+   "› Harry's Ultimate Tips (13 articles)"
   ],
   [
    "› 全部页面索引",
@@ -690,7 +690,7 @@
   ],
   [
    "，可以触发林克时间，然后输出。",
-   ", which can trigger bullet time, letting you deal damage. "
+   ", which can trigger a Flurry Rush, letting you deal damage."
   ],
   [
    "举盾迎着它，在它撞到你的瞬间",

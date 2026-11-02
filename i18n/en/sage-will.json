@@ -43,11 +43,11 @@
   ],
   [
    "贤者的遗志说明：全游戏共 20 个贤者的遗志（Sage's Will），分布于天空群岛的宝箱中，每位贤者对应 5 个。收集后可在神庙内的雕像处兑换，每 4 个可提升一位贤者的能力等级（最高 2 级）。部分遗志需要击败特定 Boss（方块魔像 II/III、王者古栗欧克）才能开启宝箱，其余通过解谜或直接开箱获得。坐标说明：游戏内按 M 打开地图，右下角显示当前坐标（X, Y, Z）。天空群岛 Z 高度通常在 800 以上。",
-   "Sage's Will guide: There are 20 Sage's Wills in total across the game, found in chests on the Sky Islands, 5 per Sage. Once collected, they can be exchanged at the statue inside a shrine; every 4 will raise one Sage's ability level (max level 2). Some wills require defeating a specific boss (Flux Construct II/III, King Gleeok) before the chest can be opened; the rest are obtained by solving puzzles or opening chests directly. Coordinates: in game, press M to open the map; your current coordinates (X, Y, Z) appear in the bottom-right corner. Sky Islands usually sit at a Z height above 800."
+   "Sage's Will guide: There are 20 Sage's Wills in total across the game, found in chests on the Sky Islands. Once collected, they can be exchanged at the statue inside a shrine; every 4 will raise one Sage's ability level (max level 2). Some wills require defeating a specific boss (Flux Construct II/III, King Gleeok) before the chest can be opened; the rest are obtained by solving puzzles or opening chests directly. Coordinates: in game, press M to open the map; your current coordinates (X, Y, Z) appear in the bottom-right corner. Sky Islands usually sit at a Z height above 800."
   ],
   [
    "贤者的遗志说明：全游戏共 20 个贤者的遗志（Sage's Will），分布于天空群岛的宝箱中，每位贤者对应 5 个。",
-   "Sage's Will guide: There are 20 Sage's Wills in total across the game, found in chests on the Sky Islands, 5 per Sage."
+   "Sage's Will guide: There are 20 Sage's Wills in total across the game, found in chests on the Sky Islands."
   ],
   [
    "收集后可在神庙内的雕像处兑换，每 4 个可提升一位贤者的能力等级（最高 2 级）。",
@@ -251,11 +251,11 @@
   ],
   [
    "星望岛（北格鲁德天空）Starview Island",
-   "Starview Island"
+   "Starview Island (North Gerudo Sky)"
   ],
   [
    "星望岛（北格鲁德天空）",
-   "Starview Island"
+   "Starview Island (North Gerudo Sky)"
   ],
   [
    "西海拉鲁天空群岛West Hyrule Sky Archipelago",
@@ -323,19 +323,19 @@
   ],
   [
    "雷鸣岛（法罗尼天空）Thunderhead Isles",
-   "Thunderhead Isles"
+   "Thunderhead Isles (Faron Sky)"
   ],
   [
    "雷鸣岛（法罗尼天空）",
-   "Thunderhead Isles"
+   "Thunderhead Isles (Faron Sky)"
   ],
   [
    "龙首岛（法罗尼天空）Dragonhead Island",
-   "Dragonhead Island"
+   "Dragonhead Island (Faron Sky)"
   ],
   [
    "龙首岛（法罗尼天空）",
-   "Dragonhead Island"
+   "Dragonhead Island (Faron Sky)"
   ],
   [
    "💧 希多 — 水之贤者",
@@ -383,11 +383,11 @@
   ],
   [
    "涌泉岛（拉聂尔天空）Wellspring Island",
-   "Wellspring Island"
+   "Wellspring Island (Lanayru Sky)"
   ],
   [
    "涌泉岛（拉聂尔天空）",
-   "Wellspring Island"
+   "Wellspring Island (Lanayru Sky)"
   ],
   [
    "🔗 相关攻略",
@@ -399,11 +399,11 @@
   ],
   [
    "› 白龙寻踪与大师之剑",
-   "› White Dragon Trail & the Master Sword"
+   "› Light Dragon Trail & the Master Sword"
   ],
   [
    "› 神庙挑战",
-   "› Shrine Challenges"
+   "› Shrine Quests"
   ],
   [
    "📚 更多攻略",
@@ -431,7 +431,7 @@
   ],
   [
    "⚔️ 神庙挑战 →",
-   "⚔️ Shrine Challenges →"
+   "⚔️ Shrine Quests →"
   ],
   [
    "地图库加载失败，请检查网络连接后刷新页面",

@@ -28,7 +28,7 @@
   ],
   [
    "Boss图鉴",
-   "Boss Encyclopedia"
+   "Bosses"
   ],
   [
    "莱尼尔",
@@ -112,7 +112,7 @@
   ],
   [
    "🛡 盾反吃掉爆炸冲击波",
-   "🛡 Parry to absorb the explosion shockwave"
+   "🛡 Perfect Guard to absorb the explosion shockwave"
   ],
   [
    "🔥 核心新招式 · 怒吼流星（大范围爆破）",
@@ -160,27 +160,27 @@
   ],
   [
    "🛡 方案 B（保险流）· 盾反吃掉冲击波",
-   "🛡 Option B (safe play) · Parry to absorb the shockwave"
+   "🛡 Option B (safe play) · Perfect Guard to absorb the shockwave"
   ],
   [
    "如果手速慢没有射中，在它砸地的一瞬间立刻举起盾牌进行盾反（Parry）。盾反可以完美吃掉爆炸的冲击波，化险为夷。 如果连盾反也错过了，只能立刻转身狂奔——此时跑不跑都很危险，所以优先练方案 A。",
-   "If your hands are too slow and you miss the shot, raise your shield and parry (Parry) the instant it slams the ground. A parry perfectly absorbs the explosion's shockwave, turning danger into safety. If you miss the parry too, all you can do is turn and sprint — running or not, you are in danger either way, so practice Option A first."
+   "If your hands are too slow and you miss the shot, raise your shield and Perfect Guard the instant it slams the ground. A Perfect Guard perfectly absorbs the explosion's shockwave, turning danger into safety. If you miss the Perfect Guard too, all you can do is turn and sprint — running or not, you are in danger either way, so practice Option A first."
   ],
   [
    "如果手速慢没有射中，在它砸地的一瞬间立刻举起盾牌进行盾反（Parry）。",
-   "If your hands are too slow and you miss the shot, raise your shield and parry (Parry) the instant it slams the ground."
+   "If your hands are too slow and you miss the shot, raise your shield and Perfect Guard the instant it slams the ground."
   ],
   [
    "盾反可以完美吃掉爆炸的冲击波，化险为夷。",
-   "A parry perfectly absorbs the explosion's shockwave, turning danger into safety."
+   "A Perfect Guard perfectly absorbs the explosion's shockwave, turning danger into safety."
   ],
   [
    "如果连盾反也错过了，只能立刻转身狂奔——此时跑不跑都很危险，所以优先练方案 A。",
-   "If you miss the parry too, all you can do is turn and sprint — running or not, you are in danger either way, so practice Option A first."
+   "If you miss the Perfect Guard too, all you can do is turn and sprint — running or not, you are in danger either way, so practice Option A first."
   ],
   [
    "🗡️ 《荒野之息》打法 · 时停流与近战盾反",
-   "🗡️ Breath of the Wild Strategy · Time-Stop and Melee Parry"
+   "🗡️ Breath of the Wild Strategy · Time-Stop and Melee Perfect Guard"
   ],
   [
    "在《荒野之息》中，善用希卡之石的静止器升级（时停+），可以大幅简化白鬃的战斗流程：",
@@ -204,7 +204,7 @@
   ],
   [
    "贴身诱导三连挥刀（最高效地面输出）： 尽量贴着它转圈，诱导它使用三连挥刀。这一招非常容易触发后翻滚的「林克时间」，进入慢动作后疯狂输出，是地面战中伤害最高的手段。不要在远处等待——远距离反而更容易被怒吼火圈伤到。",
-   "Bait the triple slash up close (most efficient ground damage): circle as close to it as possible to bait the triple slash. This move very easily triggers a backflip bullet time; once in slow motion, unleash damage freely — the highest-damage ground tactic. Don't wait at a distance — long range actually makes you more likely to be hurt by the roaring fire ring."
+   "Bait the triple slash up close (most efficient ground damage): circle as close to it as possible to bait the triple slash. This move very easily triggers a backflip a Flurry Rush; once in slow motion, unleash damage freely — the highest-damage ground tactic. Don't wait at a distance — long range actually makes you more likely to be hurt by the roaring fire ring."
   ],
   [
    "贴身诱导三连挥刀（最高效地面输出）：",
@@ -216,7 +216,7 @@
   ],
   [
    "这一招非常容易触发后翻滚的「林克时间」，进入慢动作后疯狂输出，是地面战中伤害最高的手段。",
-   "This move very easily triggers a backflip bullet time; once in slow motion, unleash damage freely — the highest-damage ground tactic."
+   "This move very easily triggers a backflip a Flurry Rush; once in slow motion, unleash damage freely — the highest-damage ground tactic."
   ],
   [
    "不要在远处等待——远距离反而更容易被怒吼火圈伤到。",
@@ -224,7 +224,7 @@
   ],
   [
    "盾反补刀循环： 对它的普通近战攻击，举盾等待盾反机会。盾反成功后距离极近，立刻掏弓盲射脸部，命中率极高，触发跪地后上马输出。",
-   "Parry follow-up loop: against its normal melee attacks, raise your shield and wait for a parry opening. After a successful parry you are extremely close — immediately draw your bow and blind-fire at its face for a very high hit rate, then mount for damage once it kneels."
+   "Perfect Guard follow-up loop: against its normal melee attacks, raise your shield and wait for a Perfect Guard opening. After a successful Perfect Guard you are extremely close — immediately draw your bow and blind-fire at its face for a very high hit rate, then mount for damage once it kneels."
   ],
   [
    "🚀 《王国之泪》打法 · 破甲 + 空中林克时间",
@@ -236,7 +236,7 @@
   ],
   [
    "破甲（必备前提）： 护甲存在时上马提示不出现。给箭头附魔大炮、炸弹花，或手持融合了莱尼尔蹄子 / 各类钝器素材的双手大剑。利用盾反后的硬直，或趁它冲锋时用重武器持续砸击，直到黄色槽彻底打碎，护甲崩落。",
-   "Armor break (required first step): while the armor is present, no mount prompt appears. Fuse cannons or Bomb Flowers to your arrows, or wield a two-handed greatsword fused with a Lynel hoof / blunt materials. Use the stagger after a parry, or keep smashing with a heavy weapon while it charges, until the yellow bar is fully destroyed and the armor falls off."
+   "Armor break (required first step): while the armor is present, no mount prompt appears. Fuse cannons or Bomb Flowers to your arrows, or wield a two-handed greatsword fused with a Lynel hoof / blunt materials. Use the stagger after a Perfect Guard, or keep smashing with a heavy weapon while it charges, until the yellow bar is fully destroyed and the armor falls off."
   ],
   [
    "破甲（必备前提）：",
@@ -252,7 +252,7 @@
   ],
   [
    "利用盾反后的硬直，或趁它冲锋时用重武器持续砸击，直到黄色槽彻底打碎，护甲崩落。",
-   "Use the stagger after a parry, or keep smashing with a heavy weapon while it charges, until the yellow bar is fully destroyed and the armor falls off."
+   "Use the stagger after a Perfect Guard, or keep smashing with a heavy weapon while it charges, until the yellow bar is fully destroyed and the armor falls off."
   ],
   [
    "强制触发空中林克时间（制造输出环境）： 破甲成功后，立刻使用大容量电池 + 火箭盾飞上高空，或丢出一个「翼」跳上去，让自己处于高空。从天上俯瞰人马，进入最安全的输出环境。",
@@ -312,7 +312,7 @@
   ],
   [
    "🗡️ 白鬃莱尼尔的刃角 / 碎角",
-   "🗡️ White-Maned Lynel Saber Horn / Shatter Horn"
+   "🗡️ White-Maned Lynel Saber Horn / Mace Horn"
   ],
   [
    "🐾 白鬃莱尼尔的蹄",
@@ -364,7 +364,7 @@
   ],
   [
    "← Boss 图鉴",
-   "← Boss Encyclopedia"
+   "← Boss Compendium"
   ],
   [
    "🔗 相关攻略",
@@ -388,7 +388,7 @@
   ],
   [
    "› 哈里的终极秘籍（13篇）",
-   "› Harry's Ultimate Secrets (13 articles)"
+   "› Harry's Ultimate Tips (13 articles)"
   ],
   [
    "› 全部页面索引",
@@ -484,7 +484,7 @@
   ],
   [
    "举起盾牌进行盾反（Parry）",
-   "raise your shield and Perfect Guard (Parry)"
+   "raise your shield and Perfect Guard (Perfect Guard)"
   ],
   [
    "优先练方案 A",
@@ -536,7 +536,7 @@
   ],
   [
    "后翻滚的「林克时间」",
-   "backflip bullet time"
+   "backflip a Flurry Rush"
   ],
   [
    "盾反补刀循环：",

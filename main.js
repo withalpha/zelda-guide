@@ -987,6 +987,8 @@ function getLang() {
 var lang = getLang();
 var textNodes = [], altEls = [], titleEls = [], metaEls = [], origTitle = document.title;
 var attrEls = []; /* data-tip / aria-label 元素（分享面板等 JS 生成 UI 的悬浮提示） */
+var phEls = []; /* placeholder 输入提示 */
+var dnEls = []; /* data-name（任务页搜索匹配用，英文下随译文走，恢复时还原） */
 var curMap = null, curSub = null, curNorm = null; /* 当前英文包（供后生成内容补译复用） */
 var obsNodes = []; /* 由 MutationObserver 翻译的后生成文本节点（地图弹窗、JS 表格等），切换语言时一并恢复 */
 
@@ -1100,6 +1102,14 @@ function collect() {
     if (el.hasAttribute('aria-label') && el._totkOrigAria === undefined) el._totkOrigAria = el.getAttribute('aria-label');
     attrEls.push(el);
   });
+  Array.prototype.forEach.call(document.querySelectorAll('[placeholder]'), function (el) {
+    if (el._totkOrigPh === undefined) el._totkOrigPh = el.getAttribute('placeholder');
+    phEls.push(el);
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-name]'), function (el) {
+    if (el._totkOrigDn === undefined) el._totkOrigDn = el.getAttribute('data-name');
+    dnEls.push(el);
+  });
 }
 function restoreAll() {
   obsNodes.forEach(function (o) {
@@ -1115,6 +1125,8 @@ function restoreAll() {
     if (el._totkOrigTip !== undefined) el.setAttribute('data-tip', el._totkOrigTip);
     if (el._totkOrigAria !== undefined) el.setAttribute('aria-label', el._totkOrigAria);
   });
+  phEls.forEach(function (el) { if (el._totkOrigPh !== undefined) el.setAttribute('placeholder', el._totkOrigPh); });
+  dnEls.forEach(function (el) { if (el._totkOrigDn !== undefined) el.setAttribute('data-name', el._totkOrigDn); });
   document.title = origTitle;
 }
 function splitWS(s) {
@@ -1140,7 +1152,7 @@ function applyMapToText(map, subKeys) {
      <br> 不再排除，因 textContent 本来就把 <br> 当空拼接，与翻译包键一致。 */
   var blockEls = [];
   Array.prototype.forEach.call(document.body.querySelectorAll('*'), function (el) {
-    if (el.querySelector('img,table,ul,ol')) return;
+    if (el.querySelector('img,table,ul,ol,input,button,select,textarea')) return;
     blockEls.push(el);
   });
   blockEls.forEach(function (el) {
@@ -1208,6 +1220,20 @@ function applyMapToText(map, subKeys) {
       else if (Object.prototype.hasOwnProperty.call(normMap, normWS(el._totkOrigAria))) el.setAttribute('aria-label', normMap[normWS(el._totkOrigAria)]);
       else if (Object.prototype.hasOwnProperty.call(normMap, flatWS(el._totkOrigAria))) el.setAttribute('aria-label', normMap[flatWS(el._totkOrigAria)]);
     }
+  });
+  phEls.forEach(function (el) {
+    var v = el._totkOrigPh;
+    if (v === undefined) return;
+    if (Object.prototype.hasOwnProperty.call(map, v)) el.setAttribute('placeholder', map[v]);
+    else if (Object.prototype.hasOwnProperty.call(normMap, normWS(v))) el.setAttribute('placeholder', normMap[normWS(v)]);
+    else if (Object.prototype.hasOwnProperty.call(normMap, flatWS(v))) el.setAttribute('placeholder', normMap[flatWS(v)]);
+  });
+  dnEls.forEach(function (el) {
+    var v = el._totkOrigDn;
+    if (v === undefined) return;
+    if (Object.prototype.hasOwnProperty.call(map, v)) el.setAttribute('data-name', map[v]);
+    else if (Object.prototype.hasOwnProperty.call(normMap, normWS(v))) el.setAttribute('data-name', normMap[normWS(v)]);
+    else if (Object.prototype.hasOwnProperty.call(normMap, flatWS(v))) el.setAttribute('data-name', normMap[flatWS(v)]);
   });
 }
 
@@ -1355,6 +1381,8 @@ function applyLang() {
           if (el._totkOrigTip !== undefined) el.setAttribute('data-tip', twConvert(el._totkOrigTip));
           if (el._totkOrigAria !== undefined) el.setAttribute('aria-label', twConvert(el._totkOrigAria));
         });
+        phEls.forEach(function (el) { if (el._totkOrigPh !== undefined) el.setAttribute('placeholder', twConvert(el._totkOrigPh)); });
+        dnEls.forEach(function (el) { if (el._totkOrigDn !== undefined) el.setAttribute('data-name', twConvert(el._totkOrigDn)); });
         document.title = twConvert(origTitle);
         installObs();
       }

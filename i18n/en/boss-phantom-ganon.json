@@ -3,7 +3,7 @@
  "pairs": [
   [
    "王国之泪幻影加侬完全攻略，含战前准备、无伤清瘴气触手、真身三武器完美闪避打法、城堡五连战贤者战术，附魔王之弓与瘴气武器余料建造技巧。",
-   "Complete guide to Phantom Ganon in Tears of the Kingdom, covering pre-fight preparation, clearing Gloom tendrils without damage, perfect-dodge tactics against its true form's three weapons, Sage tactics for the castle's five-bout gauntlet, and Fuse tips for the Demon King's Bow and Gloom weapons."
+   "Complete guide to Phantom Ganon in Tears of the Kingdom, covering pre-fight preparation, clearing Gloom tendrils without damage, perfect-dodge tactics against its true form's three weapons, Sage tactics for the castle's five-clone fight, and Fuse tips for the Demon King's Bow and Gloom weapons."
   ],
   [
    "👻 幻影加侬",
@@ -71,7 +71,7 @@
   ],
   [
    "⚠ 瘴气伤害： 幻影加侬的攻击带有瘴气效果， 会永久扣除心心上限 。务必备好向阳草料理。",
-   "⚠ Gloom damage: Phantom Ganon's attacks carry a Gloom effect that permanently reduces your maximum hearts. Be sure to have Sundelion meals ready."
+   "⚠ Gloom damage: Phantom Ganon's attacks carry a Gloom effect that temporarily reduces your maximum hearts (restorable with Sundelion meals). Be sure to have Sundelion meals ready."
   ],
   [
    "⚔️ 第一步：战前准备",
@@ -87,7 +87,7 @@
   ],
   [
    "抗瘴气装备： 如果有在地下兑换的 \"暗黑套装\" 或 \"瘴气防护服\" ，可以穿上增加容错率。",
-   "Gloom-resistant gear: if you have the \"Dark Armor set\" or \"Gloom protection outfit\" exchanged in the Depths, wear them to increase your margin for error."
+   "Gloom-resistant gear: if you have the \"Dark Set\" or \"Gloom protection outfit\" exchanged in the Depths, wear them to increase your margin for error."
   ],
   [
    "🛑 第二步：白送的第一阶段——无伤清触手",
@@ -163,7 +163,7 @@
   ],
   [
    "大棒（双手剑）形态： 攻击力极高还会跳起来砸地。 千万别用盾牌硬挡 （会在地上产生瘴气）。砸下来的瞬间 向后跳 ，躲开冲击波并触发突击。",
-   "Club (two-handed sword) form: extremely high attack, and it leaps up to slam the ground. Never block it head-on with your shield (it leaves Gloom on the ground). The instant it slams down, jump backward to dodge the shockwave and trigger a Flurry Rush."
+   "Club (two-handed weapon) form: extremely high attack, and it leaps up to slam the ground. Never block it head-on with your shield (it leaves Gloom on the ground). The instant it slams down, jump backward to dodge the shockwave and trigger a Flurry Rush."
   ],
   [
    "方案 B",
@@ -187,11 +187,11 @@
   ],
   [
    "⚠️ 城堡五连战（主线）特殊技巧",
-   "⚠️ Castle Five-Bout Gauntlet (Main Quest) Special Tips"
+   "⚠️ Castle Five-Clone Fight (Main Quest) Special Tips"
   ],
   [
    "海拉鲁城堡主线\"幻影加侬五连战\"——同时出现多个分身",
-   "Hyrule Castle main quest \"Phantom Ganon five-bout gauntlet\" — multiple clones appear at once"
+   "Hyrule Castle main quest \"Phantom Ganon five-clone fight\" — multiple clones appear at once"
   ],
   [
    "让贤者当肉盾： 进场直接把 阿布莱克（雷）、丘栗（风）、米法（水）、云坊（火） 等贤者分身全部召唤出来，让他们去 分散幻影加侬的注意力 。",
@@ -211,7 +211,7 @@
   ],
   [
    "魔王之弓： 你的 心心上限越多，这把弓的攻击力就越高 （后期能达到 60 点面板攻击 ），前期堪称神级武器。",
-   "Demon King's Bow: the more maximum hearts you have, the higher this bow's attack (it can reach 60 listed attack late in the game) — a god-tier weapon early on."
+   "Demon King's Bow: the more maximum hearts you have, the higher this bow's attack (up to 60 attack at 30 hearts) — it becomes a god-tier weapon once you have many hearts early on."
   ],
   [
    "瘴气武器（剑/枪/大棒）： 攻击力非常高（通常在 40 左右）。虽然握在手里攻击会 腐蚀自己的心心 ，但完美的解决方法是：",
@@ -259,7 +259,7 @@
   ],
   [
    "› 哈里的终极秘籍（13篇）",
-   "› Harry's Ultimate Guide Collection (13 articles)"
+   "› Harry's Ultimate Tips Column (13 articles)"
   ],
   [
    "› 全部页面索引",
@@ -267,7 +267,7 @@
   ],
   [
    "⚠ 瘴气伤害： 幻影加侬的攻击带有瘴气效果， 会永久扣除心心上限 。",
-   "⚠ Gloom damage: Phantom Ganon's attacks carry a Gloom effect that permanently reduces your maximum hearts."
+   "⚠ Gloom damage: Phantom Ganon's attacks carry a Gloom effect that temporarily reduces your maximum hearts (restorable with Sundelion meals)."
   ],
   [
    "务必备好向阳草料理。",
@@ -299,7 +299,7 @@
   ],
   [
    "大棒（双手剑）形态： 攻击力极高还会跳起来砸地。",
-   "Club (two-handed sword) form: extremely high attack, and it leaps up to slam the ground."
+   "Club (two-handed weapon) form: extremely high attack, and it leaps up to slam the ground."
   ],
   [
    " 千万别用盾牌硬挡 （会在地上产生瘴气）。",
@@ -319,7 +319,7 @@
   ],
   [
    "Boss图鉴",
-   "Boss Encyclopedia"
+   "Bosses"
   ],
   [
    "首页",
@@ -351,11 +351,11 @@
   ],
   [
    "向阳草",
-   "heal your shattered maximum hearts"
+   "Sundelions "
   ],
   [
    "治好你碎掉的心心上限",
-   "Sundelions "
+   "heal your shattered maximum hearts"
   ],
   [
    "准备武器：",
@@ -451,7 +451,7 @@
   ],
   [
    "触手堆的中心疯狂输出",
-   "Bomb Flowers "
+   "the center of the tendril cluster, pouring damage into it"
   ],
   [
    "⚠ 注意：",
@@ -507,11 +507,11 @@
   ],
   [
    "ZL + 向左或向右侧跳",
-   "to guarantee a Flurry Rush"
+   "ZL + side-hop left/right "
   ],
   [
    "必出突击",
-   "ZL + side-hop left/right "
+   "to guarantee a Flurry Rush"
   ],
   [
    "大棒（双手剑）形态：",
@@ -579,11 +579,11 @@
   ],
   [
    "阿布莱克（雷）、丘栗（风）、米法（水）、云坊（火）",
-   "distract Phantom Ganon"
+   "Riju (Lightning), Tulin (Wind), Sidon (Water), Yunobo (Fire) "
   ],
   [
    "分散幻影加侬的注意力",
-   "Riju (Lightning), Tulin (Wind), Sidon (Water), Yunobo (Fire) "
+   "distract Phantom Ganon"
   ],
   [
    "逐个击破：",
@@ -667,15 +667,15 @@
   ],
   [
    "腐蚀自己的心心",
-   "losing no HP at all"
-  ],
-  [
-   "余料建造",
    "corrode your own hearts"
   ],
   [
+   "余料建造",
+   "Fuse"
+  ],
+  [
    "完全不会扣血",
-   "Fuse "
+   "lose no HP at all"
   ]
  ],
  "notes": [

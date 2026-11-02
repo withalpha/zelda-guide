@@ -2,7 +2,7 @@
  "notes": [
   "Many set names, set bonuses, locations, and shop/shrine names on this page do not match official Tears of the Kingdom armor; they are translated faithfully and descriptively as written, not corrected to official game data. Where a set matches an official set, the official English name is used (e.g. Flamebreaker, Rubber, Snowquill, Desert Voe, Froggy, Climbing, Glide, Stealth, Radiant, Barbarian, Dark, Evil Spirit, Phantom, Royal Guard, Hylian, Soldier's, Zora, Yiga, Ember, Zonaite).",
   "Uncertain/descriptive names: 黑暗套装=Shadow Set, 织梦之勇者套装=Hero of Awakening Set, 初始之勇者套装=Classic Hero Set, 精灵套装=Fairy Set, 采矿套装=Miner Set, 雷光套装=Lightning Set, 利特套装=Rito Set, 神兽兵装 (Ruta/Medoh/Rudania/Naboris pieces)=Divine Beast Armor pieces, 异次元恶灵套装=Otherworldly Evil Spirit Set, 汀空套装=Tingkong Set (transliterated; the Chinese name is unclear), 依盖队套装=Yiga Set.",
-  "Fairy names: 忒拉=Tera, 弥佳=Mija are official-style transliterations; 西莎 and 可秋拉 do not match official Great Fairy names and are transliterated as Xisha and Keqiula.",
+  "Fairy names: 忒拉=Tera, 弥佳=Mija are official-style transliterations; 西莎 and 可秋拉 do not match official Great Fairy names and are transliterated as Kaysa and Cotera.",
   "Place/shop/shrine names that do not match official names (e.g. 骨狂人之火, 奥鲁克神庙, 利达尔山脉, 罗吉鲁神庙, 纳贝坎努神庙, 阿库拉遗迹, 科加遗迹) are transliterated descriptively.",
   "The upgrade table body on this page is rendered by JavaScript from script data; per the spec's 'exclude script content' rule, only the static table header and footnote are included — the per-set material rows are not in the static HTML.",
   "Repair pass 2026-11-02: appended missing pairs only; existing pairs/titles untouched.",
@@ -32,7 +32,7 @@
   ],
   [
    "套装获取",
-   "Armor Set Acquisition"
+   "Armor Sets"
   ],
   [
    "ARMOR & OUTFITS 🧥 套装完全图鉴 防御力 · 套装加成 · 强化素材 · 全部 38 套套装获取攻略",
@@ -76,7 +76,7 @@
   ],
   [
    "穿戴后可在火山、熔岩地区自由活动，不受灼热伤害。三件齐穿解锁急速套装加成，移动速度大幅提升。前往鼓隆城及格鲁德火山必备。",
-   "After wearing it, you can move freely in volcanic and lava areas without taking scorching damage. Wearing all three pieces unlocks the Speed Boost set bonus, greatly increasing movement speed. Essential for heading to Goron City and the Gerudo volcano."
+   "After wearing it, you can move freely in volcanic and lava areas without taking scorching damage. Wearing all three pieces grants the Fireproof set bonus. Essential for heading to Goron City and the Death Mountain."
   ],
   [
    "获取：前往鼓隆城（骨狂人之火）杂货店购买，需先完成进城任务。三件合计约 2400 卢比。",
@@ -104,7 +104,7 @@
   ],
   [
    "穿戴后免疫雷击伤害，不会被闪电击落武器。三件齐穿解锁静电加成，攻击可传导雷电。雷电神庙及雷击平原探索必备。",
-   "After wearing it, you are immune to lightning damage and lightning won't knock weapons out of your hands. Wearing all three pieces unlocks the Static Electricity bonus, letting attacks conduct lightning. Essential for exploring lightning shrines and lightning plains."
+   "After wearing it, you are immune to lightning damage and lightning won't knock weapons out of your hands. Wearing all three pieces grants the Lightning Proof set bonus, making you immune to lightning damage. Essential for exploring lightning shrines and lightning plains."
   ],
   [
    "获取：完成三座「奥鲁克神庙」（雷型神庙）任务。头部：雷电山脉区域神庙；上身：法罗尼高原神庙；腿部：雷击平原神庙。",
@@ -124,7 +124,7 @@
   ],
   [
    "强力耐寒套装，穿戴后可在极寒地区活动无需进食热食。三件齐穿解锁雪地急速，在雪地中移动速度大幅加快。",
-   "A powerful cold-resistant set; after wearing it, you can be active in extremely cold regions without eating hot food. Wearing all three pieces unlocks Snow Speed Boost, greatly increasing movement speed in snow."
+   "A powerful cold-resistant set; after wearing it, you can be active in extremely cold regions without eating hot food. Wearing all three pieces grants the Unfreezable set bonus, so you cannot be frozen."
   ],
   [
    "获取：利达尔山脉山顶商店购买，需在极寒环境下抵达（建议先有耐寒食物）。三件合计约 2100 卢比。",
@@ -152,7 +152,7 @@
   ],
   [
    "保护身体免受灼热沙漠气候影响，可在杰鲁多沙漠白天自由行动。三件齐穿在沙地中移动速度提升。",
-   "Protects the body from the scorching desert climate, letting you move freely in the Gerudo Desert during the day. Wearing all three pieces increases movement speed on sand."
+   "Protects the body from the scorching desert climate, letting you move freely in the Gerudo Desert during the day. Wearing all three pieces grants Shock Resistance."
   ],
   [
    "获取：杰鲁多城服装店购买，需以女性身份（穿着女装）入城。三件合计约 1800 卢比。",
@@ -340,7 +340,7 @@
   ],
   [
    "鬼神套装",
-   "Evil Spirit Set"
+   "Fierce Deity Set"
   ],
   [
    "💥 重击强化 套装加成：震地冲击",
@@ -664,7 +664,7 @@
   ],
   [
    "获取：三件均在格鲁德火山地区宝箱（包括地底对应区域），需耐火保护才能进入获取。",
-   "How to get: all three pieces are in treasure chests in the Gerudo volcano region (including the corresponding Depths region); fireproof protection is needed to enter and obtain them."
+   "How to get: all three pieces are in treasure chests in the Death Mountain region (including the corresponding Depths region); fireproof protection is needed to enter and obtain them."
   ],
   [
    "雷光套装",
@@ -712,11 +712,11 @@
   ],
   [
    "卓拉族礼服，穿戴后在水中游泳速度大幅提升。三件齐穿解锁瀑布逆行能力，可沿瀑布向上冲浪攀升。探索卓拉领地必备套装。",
-   "Zora ceremonial dress; after wearing it, swimming speed in water increases greatly. With all three pieces worn, the Waterfall Ascent ability unlocks, letting you surf up waterfalls. An essential set for exploring Zora's Domain."
+   "Zora ceremonial dress; after wearing it, swimming speed in water increases greatly. The torso piece grants Waterfall Ascent, letting you surf up waterfalls. An essential set for exploring Zora's Domain."
   ],
   [
    "获取：完成水之神殿后，卓拉领地商店全套开放购买。头部、上身、腿部各约 500 卢比。",
-   "How to get: after completing the Water Temple, the full set goes on sale at shops in Zora's Domain. Head, torso, and legs cost about 500 Rupees each."
+   "How to get: after completing the Water Temple, the full set goes on sale at shops in Zora's Domain. Head 300 Rupees, torso 600 Rupees, legs 300 Rupees."
   ],
   [
    "🪶",
@@ -732,7 +732,7 @@
   ],
   [
    "利特族羽毛编织的保暖套装，穿戴后在寒冷地区不受冻伤。三件齐穿顺风滑翔时速度额外加快，是雪山和利特村探索的舒适选择。",
-   "A warm set woven from Rito feathers; after wearing it, you won't suffer frostbite in cold regions. With all three pieces worn, gliding speed increases further with a tailwind, making it a comfortable choice for exploring snowy mountains and Rito Village."
+   "A warm set woven from Rito feathers; after wearing it, you won't suffer frostbite in cold regions. With all three pieces worn, you gain the Unfreezable set bonus, making it a comfortable choice for exploring snowy mountains and Rito Village."
   ],
   [
    "获取：完成风之神殿后，利特村服装店开放购买。三件合计约 2400 卢比。",
@@ -768,11 +768,11 @@
   ],
   [
    "杰鲁多英杰乌尔波萨的神兽兵装（上身），金色杰鲁多甲胄，穿戴后攻击附带雷电，免疫自身雷击，与杰鲁多沙漠探索完美搭配。",
-   "The Divine Beast armor (torso) of Gerudo Champion Urbosa, golden Gerudo armor; after wearing it, attacks deal bonus lightning and you are immune to your own lightning strikes, pairing perfectly with Gerudo Desert exploration."
+   "The Divine Beast armor (torso) of Rito Champion Revali, white winged armor; after wearing it, attack power increases while gliding, wind-element attack damage is boosted, and it is excellent for an aerial combat style."
   ],
   [
    "获取：完成雷之神殿主线后，杰鲁多城特定 NPC 处兑换，或支线奖励获得。",
-   "How to get: after completing the Lightning Temple main quest, exchange at a specific NPC in Gerudo Town, or obtain it as a side quest reward."
+   "How to get: after completing the Wind Temple main quest, exchange with a specific NPC in Rito Village, or obtain it as a side quest reward."
   ],
   [
    "神兽兵装 · 鲁达尼亚",
@@ -800,11 +800,11 @@
   ],
   [
    "利特英杰莱乃博的神兽兵装（上身），白色羽翼甲胄，穿戴后滑翔时攻击力提升，风属性攻击伤害加成，飞行战斗风格极佳。",
-   "The Divine Beast armor (torso) of Rito Champion Revali, white winged armor; after wearing it, attack power increases while gliding, wind-element attack damage is boosted, and it is excellent for an aerial combat style."
+   "The Divine Beast armor (torso) of Gerudo Champion Urbosa, golden Gerudo armor; after wearing it, attacks deal bonus lightning and you are immune to your own lightning strikes, pairing perfectly with Gerudo Desert exploration."
   ],
   [
    "获取：完成风之神殿主线后，利特村特定 NPC 处兑换，或支线奖励获得。",
-   "How to get: after completing the Wind Temple main quest, exchange with a specific NPC in Rito Village, or obtain it as a side quest reward."
+   "How to get: after completing the Lightning Temple main quest, exchange at a specific NPC in Gerudo Town, or obtain it as a side quest reward."
   ],
   [
    "🌀 隐藏 · 特殊套装",
@@ -888,11 +888,11 @@
   ],
   [
    "🧚 四位大妖精位置： 忒拉（森林驿站附近）· 弥佳（雪原驿站附近）· 西莎（双子驿站附近）· 可秋拉（平原外围驿站附近） 解锁越多大妖精，可升级的星级上限越高（满4星需全部解锁）。需先完成白诘报社「沛恩」系列前置任务。 卢比消耗（单件）：★1 = 10卢比 · ★2 = 50卢比 · ★3 = 200卢比 · ★4 = 500卢比",
-   "🧚 Four Great Fairy locations: Tera (near Woodland Stable) · Mija (near Snowfield Stable) · Xisha (near Dueling Peaks Stable) · Keqiula (near the outskirts of the plains). The more Great Fairies you unlock, the higher the star cap you can upgrade to (all four must be unlocked for the full 4 stars). You must first complete the Lucky Clover Gazette 'Penn' prerequisite quest series. Rupee cost (per piece): ★1 = 10 Rupees · ★2 = 50 Rupees · ★3 = 200 Rupees · ★4 = 500 Rupees"
+   "🧚 Four Great Fairy locations: Tera (near Woodland Stable) · Mija (near Snowfield Stable) · Cotera (near Dueling Peaks Stable) · Kaysa (near Outskirt Stable). The more Great Fairies you unlock, the higher the star cap you can upgrade to (all four must be unlocked for the full 4 stars). You must first complete the Lucky Clover Gazette 'Penn' prerequisite quest series. Rupee cost (per piece): ★1 = 10 Rupees · ★2 = 50 Rupees · ★3 = 200 Rupees · ★4 = 500 Rupees"
   ],
   [
    "🧚 四位大妖精位置： 忒拉（森林驿站附近）· 弥佳（雪原驿站附近）· 西莎（双子驿站附近）· 可秋拉（平原外围驿站附近）",
-   "🧚 Four Great Fairy locations: Tera (near Woodland Stable) · Mija (near Snowfield Stable) · Xisha (near Dueling Peaks Stable) · Keqiula (near the outskirts of the plains)."
+   "🧚 Four Great Fairy locations: Tera (near Woodland Stable) · Mija (near Snowfield Stable) · Cotera (near Dueling Peaks Stable) · Kaysa (near Outskirt Stable)."
   ],
   [
    "解锁越多大妖精，可升级的星级上限越高（满4星需全部解锁）。",
@@ -960,7 +960,7 @@
   ],
   [
    "🔗 相关攻略",
-   "🔗 Related guides"
+   "🔗 Related Guides"
   ],
   [
    "› 最强套装三梯队全解析",
@@ -972,15 +972,15 @@
   ],
   [
    "› 哈里的终极秘籍",
-   "› Harry's Ultimate Guide"
+   "› Harry's Ultimate Tips"
   ],
   [
    "📚 更多攻略",
-   "📚 More guides"
+   "📚 More Guides"
   ],
   [
    "› 哈里的终极秘籍（13篇）",
-   "› Harry's Ultimate Guide (13 guides)"
+   "› Harry's Ultimate Tips (13 guides)"
   ],
   [
    "› 全部页面索引",
@@ -992,7 +992,7 @@
   ],
   [
    "⚔️ 料理合成 → ⚔️ 神庙挑战 → ⚔️ 情节挑战 →",
-   "⚔️ Cooking Combinations → ⚔️ Shrine Challenges → ⚔️ Story Challenges →"
+   "⚔️ Cooking Combinations → ⚔️ Shrine Quests → ⚔️ Story Challenges →"
   ],
   [
    "神兽兵装-露塔",
@@ -1056,7 +1056,7 @@
   ],
   [
    "冰龙的角 ×3\\n冰冷凤蝶 ×10\\n蓝宝石 ×5",
-   "Ice Dragon's Horn ×3\\nWinterwing Butterfly ×10\\nSapphire ×5"
+   "Shard of Naydra's Horn ×3\\nWinterwing Butterfly ×10\\nSapphire ×5"
   ],
   [
    "冷气果 ×3",
@@ -1268,7 +1268,7 @@
   ],
   [
    "火龙的角 ×3\\n暖暖凤蝶 ×10\\n红宝石 ×5",
-   "Fire Dragon's Horn ×3\\nSummerwing Butterfly ×10\\nRuby ×5"
+   "Shard of Dinraal's Horn ×3\\nSummerwing Butterfly ×10\\nRuby ×5"
   ],
   [
    "琥珀 ×10\\n打火石 ×5",
@@ -2084,7 +2084,7 @@
   ],
   [
    "忒拉（森林驿站附近）· 弥佳（雪原驿站附近）· 西莎（双子驿站附近）· 可秋拉（平原外围驿站附近）",
-   "Tera (near Woodland Stable) · Mija (near Snowfield Stable) · Kaysa (near Dueling Peaks Stable) · Cotera (near Outskirt Stable)"
+   "Tera (near Woodland Stable) · Mija (near Snowfield Stable) · Cotera (near Dueling Peaks Stable) · Kaysa (near Outskirt Stable)"
   ],
   [
    "★1 = 10卢比 · ★2 = 50卢比 · ★3 = 200卢比 · ★4 = 500卢比",
@@ -2113,6 +2113,14 @@
   [
    "⭐⭐⭐⭐ 四星素材",
    "⭐⭐⭐⭐ 4-Star Materials"
+  ],
+  [
+   "🔍 搜索套装名称或素材…",
+   "🔍 Search armor set names or materials…"
+  ],
+  [
+   "。在大妖精泉强化后，防御力大幅提升，部分套装 4 星强化后还可解锁额外加成。建议优先强化常用套装至 ★★。",
+   "After enhancement at a Great Fairy Fountain, defense rises greatly, and some sets unlock extra bonuses after 4-star enhancement. It is recommended to prioritize enhancing your most-used sets to ★★."
   ]
  ],
  "title": "Tears of the Kingdom Complete 38 Armor Set Guide and Acquisition Guide · Armor Enhancement Materials | Tears of the Kingdom Guide"

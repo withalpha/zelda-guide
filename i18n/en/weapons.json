@@ -11,7 +11,7 @@
   ],
   [
    "武器图鉴",
-   "Weapon Compendium"
+   "Weapons"
   ],
   [
    "⚔ 武器完全图鉴",
@@ -27,7 +27,7 @@
   ],
   [
    "余料建造 / 融合系统：按 Y 键可将素材与武器融合，最终攻击力 = 武器基础攻击 + 素材加成。龙骨碎片 / 银色莱乃尔角最高可加 +55；宝石融合附加元素属性（🔥火 / ❄冰 / ⚡雷）。大师之剑耐久无限，耗尽后约 10 分钟充能，不会永久破损。",
-   "Fuse system: press Y to fuse a material to a weapon, and final attack = weapon base attack + material bonus. Dragon Bone Fragments / Silver Lynel horns add up to +55 at most. Fusing gems adds elemental properties (🔥 Fire / ❄ Ice / ⚡ Lightning). The Master Sword has infinite durability, recharging in about 10 minutes after depletion, and never breaks permanently."
+   "Fuse system: press Y to fuse a material to a weapon, and final attack = weapon base attack + material bonus. Silver Lynel Saber Horns / Silver Lynel horns add up to +55 at most. Fusing gems adds elemental properties (🔥 Fire / ❄ Ice / ⚡ Lightning). The Master Sword has infinite durability, recharging in about 10 minutes after depletion, and never breaks permanently."
   ],
   [
    "余料建造 / 融合系统：按 Y 键可将素材与武器融合，最终攻击力 = 武器基础攻击 + 素材加成。",
@@ -35,7 +35,7 @@
   ],
   [
    "龙骨碎片 / 银色莱乃尔角最高可加 +55；",
-   "Dragon Bone Fragments / Silver Lynel horns add up to +55 at most."
+   "Silver Lynel Saber Horns / Silver Lynel horns add up to +55 at most."
   ],
   [
    "宝石融合附加元素属性（🔥火 / ❄冰 / ⚡雷）。",
@@ -143,7 +143,7 @@
   ],
   [
    "融合建议：龙骨碎片（+55）→ 总攻击 85，满血约 115，全游戏最强输出",
-   "Fuse Suggestion: Dragon Bone Fragment (+55) → total attack 85, about 115 at full health, the strongest damage output in the game."
+   "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 85, about 115 at full health, the strongest damage output in the game."
   ],
   [
    "森民之枪",
@@ -311,11 +311,11 @@
   ],
   [
    "融合建议：龙骨碎片（+55）→ 总攻击 81；红宝石（+4，🔥）兼顾范围燃烧",
-   "Fuse Suggestion: Dragon Bone Fragment (+55) → total attack 81; Ruby (+4, 🔥) also gives area burning."
+   "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 81; Ruby (+4, 🔥) also gives area burning."
   ],
   [
    "融合建议：龙骨碎片（+55）→ 总攻击 81；",
-   "Fuse Suggestion: Dragon Bone Fragment (+55) → total attack 81;"
+   "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 81;"
   ],
   [
    "红宝石（+4，🔥）兼顾范围燃烧",
@@ -367,7 +367,7 @@
   ],
   [
    "融合建议：蜥蜴族尾巴（+10）→ 扩大攻击范围；龙骨碎片（+55）→ 总攻击 70",
-   "Fuse Suggestion: Lizalfos Tail (+10) → expands attack range; Dragon Bone Fragment (+55) → total attack 70."
+   "Fuse Suggestion: Lizalfos Tail (+10) → expands attack range; Silver Lynel Saber Horn (+55) → total attack 70."
   ],
   [
    "融合建议：蜥蜴族尾巴（+10）→ 扩大攻击范围；",
@@ -375,7 +375,7 @@
   ],
   [
    "龙骨碎片（+55）→ 总攻击 70",
-   "Dragon Bone Fragment (+55) → total attack 70."
+   "Silver Lynel Saber Horn (+55) → total attack 70."
   ],
   [
    "⭐ 传说 · 双手武器",
@@ -471,7 +471,7 @@
   ],
   [
    "融合建议：黄玉（+4，⚡雷击）对沙漠系和水系敌人有效；龙骨碎片（+55）→ 总攻击 83",
-   "Fuse Suggestion: Topaz (+4, ⚡ lightning) works against desert and water enemies; Dragon Bone Fragment (+55) → total attack 83."
+   "Fuse Suggestion: Topaz (+4, ⚡ lightning) works against desert and water enemies; Silver Lynel Saber Horn (+55) → total attack 83."
   ],
   [
    "融合建议：黄玉（+4，⚡雷击）对沙漠系和水系敌人有效；",
@@ -479,7 +479,7 @@
   ],
   [
    "龙骨碎片（+55）→ 总攻击 83",
-   "Dragon Bone Fragment (+55) → total attack 83."
+   "Silver Lynel Saber Horn (+55) → total attack 83."
   ],
   [
    "🗡 怪物武器",
@@ -531,7 +531,7 @@
   ],
   [
    "融合建议：作为底座融合龙骨碎片（+55）→ 总攻击 65，性价比融合武器",
-   "Fuse Suggestion: As a base fused with a Dragon Bone Fragment (+55) → total attack 65, a cost-effective fused weapon."
+   "Fuse Suggestion: As a base fused with a Silver Lynel Saber Horn (+55) → total attack 65, a cost-effective fused weapon."
   ],
   [
    "⭐ 英杰 · 长柄武器",
@@ -583,11 +583,11 @@
   ],
   [
    "融合建议：龙骨碎片（+55）→ 总攻击 77；配合水系装束更强",
-   "Fuse Suggestion: Dragon Bone Fragment (+55) → total attack 77; even stronger with water-element armor."
+   "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 77; even stronger with water-element armor."
   ],
   [
    "融合建议：龙骨碎片（+55）→ 总攻击 77；",
-   "Fuse Suggestion: Dragon Bone Fragment (+55) → total attack 77;"
+   "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 77;"
   ],
   [
    "配合水系装束更强",
@@ -819,11 +819,11 @@
   ],
   [
    "融合建议：龙骨碎片（+55）→ 总攻击 69；搭配雷电宝石可形成水电联动",
-   "Fuse Suggestion: Dragon Bone Fragment (+55) → total attack 69; pairing with lightning gems creates a water-lightning combo."
+   "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 69; pairing with lightning gems creates a water-lightning combo."
   ],
   [
    "融合建议：龙骨碎片（+55）→ 总攻击 69；",
-   "Fuse Suggestion: Dragon Bone Fragment (+55) → total attack 69;"
+   "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 69;"
   ],
   [
    "搭配雷电宝石可形成水电联动",
@@ -931,7 +931,7 @@
   ],
   [
    "融合建议：搭配满心力状态使用；融合龙骨碎片（+55）→ 总攻击 87，注意瘴气自伤",
-   "Fuse Suggestion: Use at full Hearts; fusing a Dragon Bone Fragment (+55) → total attack 87, but watch out for Gloom self-damage."
+   "Fuse Suggestion: Use at full Hearts; fusing a Silver Lynel Saber Horn (+55) → total attack 87, but watch out for Gloom self-damage."
   ],
   [
    "融合建议：搭配满心力状态使用；",
@@ -939,7 +939,7 @@
   ],
   [
    "融合龙骨碎片（+55）→ 总攻击 87，注意瘴气自伤",
-   "fusing a Dragon Bone Fragment (+55) → total attack 87, but watch out for Gloom self-damage."
+   "fusing a Silver Lynel Saber Horn (+55) → total attack 87, but watch out for Gloom self-damage."
   ],
   [
    "王族双手剑",
@@ -987,11 +987,11 @@
   ],
   [
    "融合建议：龙骨碎片（+55）→ 总攻击 95；银色莱乃尔角（+55）同样效果",
-   "Fuse Suggestion: Dragon Bone Fragment (+55) → total attack 95; a Silver Lynel Horn (+55) has the same effect."
+   "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 95; a Silver Lynel Horn (+55) has the same effect."
   ],
   [
    "融合建议：龙骨碎片（+55）→ 总攻击 95；",
-   "Fuse Suggestion: Dragon Bone Fragment (+55) → total attack 95;"
+   "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 95;"
   ],
   [
    "银色莱乃尔角（+55）同样效果",
@@ -1039,7 +1039,7 @@
   ],
   [
    "融合建议：龙骨碎片（+55）→ 总攻击 83，性价比单手剑天花板",
-   "Fuse Suggestion: Dragon Bone Fragment (+55) → total attack 83, the ceiling for cost-effective one-handed swords."
+   "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 83, the ceiling for cost-effective one-handed swords."
   ],
   [
    "🗡 长刀",
@@ -1147,11 +1147,11 @@
   ],
   [
    "融合建议：龙骨碎片（+55）→ 总攻击 93；已自带火焰，再融合红宝石可增大燃烧范围",
-   "Fuse Suggestion: Dragon Bone Fragment (+55) → total attack 93; already fire-elemental, and fusing a Ruby further expands the burning area."
+   "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 93; already fire-elemental, and fusing a Ruby further expands the burning area."
   ],
   [
    "融合建议：龙骨碎片（+55）→ 总攻击 93；",
-   "Fuse Suggestion: Dragon Bone Fragment (+55) → total attack 93;"
+   "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 93;"
   ],
   [
    "已自带火焰，再融合红宝石可增大燃烧范围",
@@ -1199,7 +1199,7 @@
   ],
   [
    "融合建议：配合满心力状态使用；融合龙骨碎片（+55）→ 总攻击 95，瘴气范围伤害清场之王",
-   "Fuse Suggestion: Use at full Hearts; fusing a Dragon Bone Fragment (+55) → total attack 95, the king of Gloom area-damage clearing."
+   "Fuse Suggestion: Use at full Hearts; fusing a Silver Lynel Saber Horn (+55) → total attack 95, the king of Gloom area-damage clearing."
   ],
   [
    "融合建议：配合满心力状态使用；",
@@ -1207,7 +1207,7 @@
   ],
   [
    "融合龙骨碎片（+55）→ 总攻击 95，瘴气范围伤害清场之王",
-   "fusing a Dragon Bone Fragment (+55) → total attack 95, the king of Gloom area-damage clearing."
+   "fusing a Silver Lynel Saber Horn (+55) → total attack 95, the king of Gloom area-damage clearing."
   ],
   [
    "🔗 相关攻略",
@@ -1231,7 +1231,7 @@
   ],
   [
    "› 哈里的终极秘籍（13篇）",
-   "› Harry's Ultimate Guide (13 Articles)"
+   "› Harry's Ultimate Tips (13 Articles)"
   ],
   [
    "› 全部页面索引",
@@ -1243,7 +1243,7 @@
   ],
   [
    "⚔️ 神庙挑战 → ⚔️ 料理合成 → ⚔️ Boss图鉴 →",
-   "⚔️ Shrine Challenges → ⚔️ Cooking → ⚔️ Boss Compendium →"
+   "⚔️ Shrine Quests → ⚔️ Cooking → ⚔️ Boss Compendium →"
   ],
   [
    "王国之泪武器图鉴，含各类武器获取途径、融合材料推荐与最优合成配方。",
@@ -1259,7 +1259,7 @@
   ],
   [
    "键可将素材与武器融合，最终攻击力 = 武器基础攻击 + 素材加成。龙骨碎片 / 银色莱乃尔角最高可加",
-   "to fuse materials to weapons. Final attack = weapon base attack + material bonus. Dragon Bone Fragments / Silver Lynel horns add up to"
+   "to fuse materials to weapons. Final attack = weapon base attack + material bonus. Silver Lynel Saber Horns / Silver Lynel horns add up to"
   ],
   [
    "，耗尽后约 10 分钟充能，不会永久破损。",
@@ -1299,7 +1299,7 @@
   ],
   [
    "龙骨碎片（+55）→ 总攻击 85，满血约",
-   "Dragon Bone Fragment (+55) → total attack 85, about"
+   "Silver Lynel Saber Horn (+55) → total attack 85, about"
   ],
   [
    "，全游戏最强输出",
@@ -1331,7 +1331,7 @@
   ],
   [
    "龙骨碎片（+55）→ 总攻击",
-   "Dragon Bone Fragment (+55) → total attack"
+   "Silver Lynel Saber Horn (+55) → total attack"
   ],
   [
    "⚔ 攻击 15",
@@ -1463,7 +1463,7 @@
   ],
   [
    "配合满心力状态使用；融合龙骨碎片（+55）→ 总攻击",
-   "Use at full Hearts; fusing a Dragon Bone Fragment (+55) → total attack"
+   "Use at full Hearts; fusing a Silver Lynel Saber Horn (+55) → total attack"
   ],
   [
    "，瘴气范围伤害清场之王",

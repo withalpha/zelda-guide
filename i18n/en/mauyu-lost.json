@@ -39,7 +39,7 @@
   ],
   [
    "魔犹伊的遗失物说明：每个山洞深处都有一只魔犹伊（Bubbulfrog），击败后掉落魔犹伊的遗失物（Bubbul Gem）。收集后可在夜晚找到柯尔天（Koltin）兑换怪物面具与神秘套装。山洞入口在地图上显示为洞穴图标，找到附近的樱花树（Satori Tree）放置果实，可点亮该区域所有山洞入口。坐标说明：游戏内按 M 打开地图，右下角显示当前坐标（X, Y, Z）。",
-   "About Bubbul Gems: deep inside every cave lives a Bubbulfrog; defeating it drops a Bubbul Gem. Collected gems can be exchanged at night with Koltin for monster masks and the Mystic Set. Cave entrances appear on the map as cave icons; place fruit at a nearby cherry blossom tree (Satori Tree) to reveal all cave entrances in that area. About coordinates: press M in-game to open the map; your current coordinates (X, Y, Z) are shown at the bottom right."
+   "About Bubbul Gems: deep inside every cave lives a Bubbulfrog; defeating it drops a Bubbul Gem. Collected gems can be exchanged at night with Koltin for monster masks and the Mystic Set. Cave entrances appear on the map as cave icons; place fruit beside a nearby cherry blossom tree (Satori Tree) to reveal all cave entrances in that area. About coordinates: press M in-game to open the map; your current coordinates (X, Y, Z) are shown at the bottom right."
   ],
   [
    "魔犹伊的遗失物说明：每个山洞深处都有一只魔犹伊（Bubbulfrog），击败后掉落魔犹伊的遗失物（Bubbul Gem）。",
@@ -51,7 +51,7 @@
   ],
   [
    "山洞入口在地图上显示为洞穴图标，找到附近的樱花树（Satori Tree）放置果实，可点亮该区域所有山洞入口。",
-   "Cave entrances appear on the map as cave icons; place fruit at a nearby cherry blossom tree (Satori Tree) to reveal all cave entrances in that area."
+   "Cave entrances appear on the map as cave icons; place fruit beside a nearby cherry blossom tree (Satori Tree) to reveal all cave entrances in that area."
   ],
   [
    "坐标说明：游戏内按 M 打开地图，右下角显示当前坐标（X, Y, Z）。",
@@ -1131,7 +1131,7 @@
   ],
   [
    "神庙挑战",
-   "Shrine Quests"
+   "Shrines"
   ],
   [
    "破魔树根",
@@ -1223,7 +1223,7 @@
   ],
   [
    "附近（林地驿站旁，坐标 1247, 1232, 0037）遇见他，完成支线任务「寻找柯尔天」后，\n    他会在",
-   " (beside Woodland Stable, coordinates 1247, 1232, 0037). After completing the side quest \"Finding Koltin\", he will"
+   " (beside Woodland Stable, coordinates 1247, 1232, 0037). After completing the side quest \"Find Koltin\", he will"
   ],
   [
    "出现于海拉鲁各地轮换摊位。\n    柯尔天每次只卖一件物品，按",
@@ -1255,7 +1255,7 @@
   ],
   [
    "的樱花树旁。",
-   "'s Satori Tree."
+   "beside the Satori Tree."
   ],
   [
    "蓝色精灵（Blupee）",
@@ -1283,7 +1283,7 @@
   ],
   [
    "（无尽的洞窟、竖穴的洞窟、池边的洞窟、采矿的洞窟，均在大天空岛）；\n    地表图层：",
-   " (Endless Cave, Vertical Cave, Pondside Cave, Mining Cave, all on the Great Sky Island); Surface layer:"
+   " (Bottomless Cave, Pit Cave, Pondside Cave, and Mining Cave, all on the Great Sky Island); Surface layer:"
   ],
   [
    "147 个洞窟",

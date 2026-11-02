@@ -3,7 +3,7 @@
  "pairs": [
   [
    "塞尔达传说王国之泪魔王加侬多夫完全攻略，含四大阶段详细打法（秘石解放/魔王分身/真魔王博弈/黑龙空战）、推荐装备、向阳草料理准备。",
-   "Complete guide to Demon King Ganondorf in The Legend of Zelda: Tears of the Kingdom, with detailed tactics for all four phases (Secret Stone Unleashed / Demon King Clones / True Demon King Duel / Demon Dragon Aerial Battle), recommended gear, and Sundelion meal preparation."
+   "Complete guide to Demon King Ganondorf in The Legend of Zelda: Tears of the Kingdom, with detailed tactics for all three phases (Phase 2 in two parts) (Secret Stone Unleashed / Demon King Clones / True Demon King Duel / Demon Dragon Aerial Battle), recommended gear, and Sundelion meal preparation."
   ],
   [
    "👑 魔王加侬多夫",
@@ -11,7 +11,7 @@
   ],
   [
    "最终Boss · 四大阶段全图解 · 推荐满配装备",
-   "Final Boss · All four phases fully illustrated · Fully geared loadout recommended"
+   "Final Boss · All three phases fully illustrated (Phase 2 in two parts) · Fully geared loadout recommended"
   ],
   [
    "首页 ›",
@@ -71,7 +71,7 @@
   ],
   [
    "⚠ 注意： 加侬多夫的瘴气攻击会 永久扣除心心上限 ，备好向阳草料理是通关必要条件。",
-   "⚠ Note: Ganondorf's Gloom attacks permanently reduce your maximum hearts. Having Sundelion meals ready is a requirement for clearing this fight."
+   "⚠ Note: Ganondorf's Gloom attacks temporarily reduce your maximum hearts (his final-battle attacks can destroy a container until the fight ends). Having Sundelion meals ready is a requirement for clearing this fight."
   ],
   [
    "战前核心整备",
@@ -95,7 +95,7 @@
   ],
   [
    "大师之剑 （自带高额面板且不耗耐久）",
-   "Master Sword (high base attack and costs no durability)"
+   "Master Sword (high base attack; it doesn't break permanently, but it does run out of energy and need to recharge)"
   ],
   [
    "核心近战输出，第三阶段击碎秘石的必备之选",
@@ -151,7 +151,7 @@
   ],
   [
    "鬼神套装 或 蛮族套装 （吃满3级攻击加成）",
-   "Evil Spirit Armor set or Barbarian Armor set (with full level 3 attack boost)"
+   "Fierce Deity Armor set or Barbarian Armor set (with full level 3 attack boost)"
   ],
   [
    "大幅缩短战线，降低容错压力",
@@ -239,7 +239,7 @@
   ],
   [
    "【破解方法】： 当你看到他闪避了你的林克时间并出招时，不要慌， 立刻再次按下闪避键（二段闪避） ！ 只要你成功闪避了他的\"反闪避\"，就能真正触发属于你的 终极林克时间 。",
-   "[Counter]: when you see him dodge your slow-motion window and attack, don't panic — immediately press dodge again (a second dodge)! As long as you successfully dodge his \"counter-dodge,\" you will truly trigger your own ultimate slow-motion window."
+   "[Counter]: when you see him dodge your slow-motion window and attack, don't panic — immediately press dodge again (a second dodge)! As long as you successfully dodge his \"counter-dodge,\" you will truly trigger your own ultimate Flurry Rush window."
   ],
   [
    "🌑 全屏瘴气流",
@@ -347,7 +347,7 @@
   ],
   [
    "› 哈里的终极秘籍（13篇）",
-   "› Harry's Ultimate Guide Collection (13 articles)"
+   "› Harry's Ultimate Tips Column (13 articles)"
   ],
   [
    "› 全部页面索引",
@@ -371,7 +371,7 @@
   ],
   [
    " 只要你成功闪避了他的\"反闪避\"，就能真正触发属于你的 终极林克时间 。",
-   "As long as you successfully dodge his \"counter-dodge,\" you will truly trigger your own ultimate slow-motion window."
+   "As long as you successfully dodge his \"counter-dodge,\" you will truly trigger your own ultimate Flurry Rush window."
   ],
   [
    "每砍碎一个，黑龙会把你弹飞。",
@@ -391,7 +391,7 @@
   ],
   [
    "海拉鲁盾（高耐久度）融合【火箭】或【炸弹花】的备用盾",
-   "Hylian Shield (high durability) fused with a Rocket or Bomb Flower, kept as a spare shield"
+   "Hylian Shield (high durability), plus a spare shield fused with a Rocket or Bomb Flower."
   ],
   [
    "5个向阳草制作的料理（5~10份）",
@@ -399,7 +399,7 @@
   ],
   [
    "大生命/大活力料理修复被瘴气侵蚀的心心上限",
-   "Hearty/Energizing dishes restore the heart cap eroded by Gloom"
+   "Sundelion meals restore the heart cap eroded by Gloom"
   ],
   [
    "鬼神套装 或 蛮族套装（吃满3级攻击加成）",
@@ -407,7 +407,7 @@
   ],
   [
    "Boss图鉴",
-   "Boss Encyclopedia"
+   "Bosses"
   ],
   [
    "首页",
@@ -427,7 +427,7 @@
   ],
   [
    "永久扣除心心上限",
-   "permanently reduce your maximum hearts"
+   "temporarily reduce your maximum hearts (his final-battle attacks can destroy a container until the fight ends)"
   ],
   [
    "鬼神套装",
@@ -471,7 +471,7 @@
   ],
   [
    "完美闪避（林克时间）",
-   "a Perfect Dodge (bullet time)"
+   "a Perfect Dodge (Flurry Rush)"
   ],
   [
    "看到他蓄力下砸，",
@@ -583,7 +583,7 @@
   ],
   [
    "终极林克时间",
-   "ultimate bullet time"
+   "ultimate Flurry Rush window"
   ],
   [
    "当他释放扩散的瘴气圆环时，",
@@ -627,7 +627,7 @@
   ],
   [
    "白龙背上跃下",
-   "the white dragon's back"
+   "the Light Dragon's back"
   ],
   [
    "黑龙背上的发光红肿弱点",
@@ -655,7 +655,7 @@
   ],
   [
    "，白龙会准时飞过来在半空中接住你，带你重新升空。",
-   ", and the white dragon will fly over right on time to catch you midair and carry you back up."
+   ", and the Light Dragon will fly over right on time to catch you midair and carry you back up."
   ],
   [
    "依次破坏掉背部",
@@ -691,11 +691,11 @@
   ],
   [
    "如果在黑龙背上被甩落，白龙会接住——",
-   "If you are thrown off the black dragon's back, the white dragon will catch you — "
+   "If you are thrown off the black dragon's back, the Light Dragon will catch you — "
   ],
   [
    "，开伞后白龙无法接你，可能坠入云层导致扣血。",
-   ", because after opening it, the white dragon cannot catch you, and you may fall into the clouds and lose HP."
+   ", because after opening it, the Light Dragon cannot catch you, and you may fall into the clouds and lose HP."
   ],
   [
    "请不要提前开伞",

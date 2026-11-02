@@ -431,7 +431,7 @@
   ],
   [
    "哈特诺奶酪从可音牧场购买，蘑菇在哈特诺村后山采集，鱼肉在林娜尤湖捕捞。",
-   "Buy Hateno Cheese at Koyin's pasture, gather mushrooms on the mountain behind Hateno Village, and catch fish at Linnayou Lake."
+   "Buy Hateno Cheese at Koyin's pasture, gather mushrooms on the mountain behind Hateno Village, and catch fish at Lanayru Lake."
   ],
   [
    "食材全部收集后交给里德，他亲自下厨制作新菜，任务完成。",
@@ -575,7 +575,7 @@
   ],
   [
    "被流氓占领的村子",
-   "Ruffian-Infested Village"
+   "The Village Attacked by Pirates"
   ],
   [
    "卢雷林村被波克布林占领，居民流离失所。帮助老渔夫罗泽尔收复家园。",
@@ -647,7 +647,7 @@
   ],
   [
    "完成「被流氓占领的村子」后，建筑商博尔森出现在村口。",
-   "After completing “Ruffian-Infested Village,” the builder Bolson appears at the village entrance."
+   "After completing “The Village Attacked by Pirates,” the builder Bolson appears at the village entrance."
   ],
   [
    "博尔森说明重建需要大量卢比，需要链克捐款 500 卢比作为启动资金。",
@@ -903,7 +903,7 @@
   ],
   [
    "失踪的白山羊",
-   "The Missing White Goats"
+   "White Goats Gone Missing"
   ],
   [
    "塔班达桥马厩附近的白山羊全部失踪，目击者说被「公主」带走了，追查发现又是伊卡族所为。",
@@ -1467,7 +1467,7 @@
   ],
   [
    "每处营地约有 5~8 名怪物，攻营之前可先用弓箭远程点燃火把制造优势。",
-   "Each camp has about 5–8 monsters; before assaulting a camp, you can shoot torches from afar with a bow to create an advantage."
+   "Each camp has about 5–8 monsters; before assaulting a camp, you can use arrows from afar to light the torches and create an advantage."
   ],
   [
    "清剿完成后回报霍兹，他确认区域安全，任务完成。",
@@ -1483,7 +1483,7 @@
   ],
   [
    "协助霍兹队长清剿奈克鲁达地区的怪物巢穴，保卫双峰山与林娜尤湖区的安全。",
-   "Assist Captain Hoz in clearing monster dens in Necluda to protect the safety of Dueling Peaks and the Linnayou Lake area."
+   "Assist Captain Hoz in clearing monster dens in Necluda to protect the safety of Dueling Peaks and the Lanayru Lake area."
   ],
   [
    "触发点：奈克鲁达",
@@ -1527,7 +1527,7 @@
   ],
   [
    "穿戴防火铠甲或持续服用耐热药水，清剿 3 处营地（含火系波克布林和火巨人）。",
-   "Wear Fireproof Armor or keep taking heat-resistance elixirs while clearing 3 camps (including Fire Bokoblins and Fire Giants)."
+   "Wear Fireproof Armor or keep taking heat-resistance elixirs while clearing 3 camps (including Fire Bokoblins and Fire Hinoxs)."
   ],
   [
    "注意地面岩浆，勿踩入，建议用余料建造搭桥。",
@@ -1627,11 +1627,11 @@
   ],
   [
    "穿戴耐寒装备，清剿 3 处冰系怪物营地（含冰系波克布林和冰巨人）。",
-   "Wearing cold-resistant gear, clear 3 ice-monster camps (including Ice Bokoblins and Ice Giants)."
+   "Wearing cold-resistant gear, clear 3 ice-monster camps (including Ice Bokoblins and Ice Hinoxs)."
   ],
   [
    "冰巨人弱点：用火焰箭射击冰块护甲，使其裸露后近战攻击。",
-   "Ice Giant weakness: Shoot its ice armor with Fire Arrows to expose it, then attack in melee."
+   "Ice Hinox weakness: Shoot its ice armor with Fire Arrows to expose it, then attack in melee."
   ],
   [
    "清剿完成回报弗拉克斯，六大区域全部完成，获得终极和平守护奖励（高性能武器+装备一套）。",
@@ -1771,7 +1771,7 @@
   ],
   [
    "林娜尤湿地（湿地马厩附近）",
-   "Linnayou Wetlands (near Wetland Stable)"
+   "Lanayru Wetlands (near Wetland Stable)"
   ],
   [
    "法罗尼草原（草原中心）",
@@ -1823,7 +1823,7 @@
   ],
   [
    "图鉴 I：提交波克布林、魔布林、莫里布林系怪物材料各 3 份 → 奖励：怪物腌肉 ×5",
-   "Compendium I: Submit 3 each of Bokoblin, Moblin, and Moriblin-series monster materials → Reward: Monster Jerky ×5"
+   "Compendium I: Submit 3 each of Bokoblin and Moblin monster materials → Reward: Monster Jerky ×5"
   ],
   [
    "图鉴 II：提交飞行怪（Keese/Chuchu）材料各 3 份 → 奖励：怪物萃取液 ×5",
@@ -2403,7 +2403,7 @@
   ],
   [
    "🔗 相关攻略",
-   "🔗 Related guides"
+   "🔗 Related Guides"
   ],
   [
    "› 主线任务攻略",
@@ -2419,7 +2419,7 @@
   ],
   [
    "📚 更多攻略",
-   "📚 More guides"
+   "📚 More Guides"
   ],
   [
    "› 哈里的终极秘籍（13篇）",
@@ -2435,15 +2435,15 @@
   ],
   [
    "主线任务",
-   "Main quests"
+   "Main Quests"
   ],
   [
    "神庙挑战",
-   "Shrine challenges"
+   "Shrines"
   ],
   [
    "套装获取",
-   "Armor set acquisition"
+   "Armor Sets"
   ],
   [
    "给大妖精的小夜曲",
@@ -2619,7 +2619,7 @@
   ],
   [
    "前往外环马厩西侧小山丘上的",
-   "Go to the"
+   "Go to the small hill west of Outskirt Stable to reach the"
   ],
   [
    "，支付",
@@ -2639,7 +2639,7 @@
   ],
   [
    "前往双峰马厩东南侧山谷的",
-   "Go to the"
+   "Go to the valley southeast of Dueling Peaks Stable to reach the"
   ],
   [
    "500 卢比",
@@ -2647,7 +2647,7 @@
   ],
   [
    "穿着耐寒装备，前往雪原马厩东北山谷的",
-   "Wearing cold-resistant gear, go to the"
+   "Wearing cold-resistant gear, go to the valley northeast of Snowfield Stable to reach"
   ],
   [
    "米雅之泉",

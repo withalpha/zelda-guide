@@ -219,11 +219,11 @@
   ],
   [
    "Boss图鉴",
-   "Boss Encyclopedia"
+   "Bosses"
   ],
   [
    "👹 Boss 图鉴",
-   "👹 Boss Encyclopedia"
+   "👹 Boss Compendium"
   ],
   [
    "全 16 个 Boss · 弱点分析 · 阶段打法 · 推荐装备",
@@ -271,7 +271,7 @@
   ],
   [
    "人形 / 秘石 / 黑龙三阶段全解，战前满配指南，盾反与二次闪避打法。",
-   "Full breakdown of the humanoid / Secret Stone / Demon Dragon phases, a pre-fight max-gear guide, and parry and double-dodge strategies."
+   "Full breakdown of the humanoid / Secret Stone / Demon Dragon phases, a pre-fight max-gear guide, and Perfect Guard and double-dodge strategies."
   ],
   [
    "向阳草料理",
@@ -1031,7 +1031,7 @@
   ],
   [
    "核心机制：水属性逼出小章鱼本体 → 近战击晕翻倒 → 疯狂输出。二阶段满地淤泥，用空中林克时间远程洗澡解决。",
-   "Core mechanic: water forces out the small octopus true form → melee stun knocks it over → unleash damage. In phase 2 the ground is covered in sludge — solve it remotely with midair bullet time \"baths\"."
+   "Core mechanic: water forces out the small octopus true form → melee stun knocks it over → unleash damage. In phase 2 the ground is covered in sludge — wash it down from midair with bullet time."
   ],
   [
    "一阶段：轻松压制",
@@ -1231,7 +1231,7 @@
   ],
   [
    "🛡 盾反后组合拳推入电网",
-   "🛡 Push it into the electric fence with combo punches after a parry"
+   "🛡 Push it into the electric fence with combo punches after a Perfect Guard"
   ],
   [
    "💣 大炮（直接轰入电网）",
@@ -1259,7 +1259,7 @@
   ],
   [
    "一阶段：无脑盾反流",
-   "Phase 1: Brainless parry strategy"
+   "Phase 1: Brainless Perfect Guard strategy"
   ],
   [
    "按住 ZL 防御：开局不要主动乱出拳，按住 ZL 摆出防御姿势，稳步向 BOSS 靠近。",
@@ -1267,7 +1267,7 @@
   ],
   [
    "完美格挡（盾反）：BOSS 抬手挥拳瞬间按下 A 键盾反，成功后 BOSS 陷入身体失衡短暂硬直。",
-   "Perfect guard (parry): press A to parry the instant the boss raises its hand to punch; on success the boss loses balance in a brief stagger."
+   "Perfect guard (Perfect Guard): press A to Perfect Guard the instant the boss raises its hand to punch; on success the boss loses balance in a brief stagger."
   ],
   [
    "组合拳推入电网：趁硬直立刻左拳→右拳→左拳（L→R→L）交替连击，最后一击强力推击直接将 BOSS 打飞撞上电网，起步扣约 1/4 血。",
@@ -1315,7 +1315,7 @@
   ],
   [
    "提示：战前组装配件是胜负关键——大炮让两个阶段都变得简单无脑。盾反节奏不熟时可先用大炮偷鸡，熟悉后再练盾反组合拳。",
-   "Tip: pre-battle part assembly decides victory — cannons make both phases simple and brainless. If you haven't learned parry timing, cheese with the cannon first, then practice parry combos once familiar."
+   "Tip: pre-battle part assembly decides victory — cannons make both phases simple and brainless. If you haven't learned Perfect Guard timing, cheese with the cannon first, then practice Perfect Guard combos once familiar."
   ],
   [
    "提示：战前组装配件是胜负关键——大炮让两个阶段都变得简单无脑。",
@@ -1323,7 +1323,7 @@
   ],
   [
    "盾反节奏不熟时可先用大炮偷鸡，熟悉后再练盾反组合拳。",
-   "If you haven't learned parry timing, cheese with the cannon first, then practice parry combos once familiar."
+   "If you haven't learned Perfect Guard timing, cheese with the cannon first, then practice Perfect Guard combos once familiar."
   ],
   [
    "城堡 1打5 / 野外单挑",
@@ -1343,7 +1343,7 @@
   ],
   [
    "🗡 完美闪避突击（单挑）",
-   "🗡 Perfect-dodge flurry rush (solo)"
+   "🗡 Perfect-dodge Flurry Rush (solo)"
   ],
   [
    "🏹 弓箭爆头打断蓄力",
@@ -1367,7 +1367,7 @@
   ],
   [
    "起飞：用火箭盾 / 炸弹花盾，或踩梯子 / 高台跳下，直接飞向半空。",
-   "Take off: use a rocket shield / Bomb Flower shield, or step off a ladder / high platform, flying straight into midair."
+   "Take off: use a rocket shield (hold ZL and jump) or a Bomb Flower shield (shield-surf with ZL + X + A), or step off a ladder / high platform, flying straight into midair."
   ],
   [
    "空中林克时间：掏出弓箭触发慢动作，附魔炸弹花对着挤堆的 5 个分身疯狂连射，范围伤害将他们全部炸飞炸晕、完全无法还手。",
@@ -1379,15 +1379,15 @@
   ],
   [
    "野外单挑：完美闪避突击流",
-   "Solo field fight: perfect-dodge flurry rush strategy"
+   "Solo field fight: perfect-dodge Flurry Rush strategy"
   ],
   [
    "击败野外瘴气之手后蹦出的单个幻影加侬，完美闪避触发突击是最优雅省武器的打法。他会根据手中武器交替使用三种攻击：",
-   "Against the single Phantom Ganon that pops out after defeating a field Gloom Spawn, triggering a flurry rush with a perfect dodge is the most elegant, weapon-saving strategy. It alternates three attacks depending on its weapon:"
+   "Against the single Phantom Ganon that pops out after defeating a field Gloom Spawn, triggering a Flurry Rush with a perfect dodge is the most elegant, weapon-saving strategy. It alternates three attacks depending on its weapon:"
   ],
   [
    "击败野外瘴气之手后蹦出的单个幻影加侬，完美闪避触发突击是最优雅省武器的打法。",
-   "Against the single Phantom Ganon that pops out after defeating a field Gloom Spawn, triggering a flurry rush with a perfect dodge is the most elegant, weapon-saving strategy."
+   "Against the single Phantom Ganon that pops out after defeating a field Gloom Spawn, triggering a Flurry Rush with a perfect dodge is the most elegant, weapon-saving strategy."
   ],
   [
    "他会根据手中武器交替使用三种攻击：",
@@ -1399,7 +1399,7 @@
   ],
   [
    "剑形态：瞬移突刺 / 横劈 前兆：微微低头后瞬间消失。 · 现身时剑架腰间横摆：按住 ZL + 连按两下【后跳】触发突击。 · 现身时高举下劈：按住 ZL + 连按两下【侧跳】触发突击。",
-   "Sword form: teleport thrust / horizontal slash. Tell: it lowers its head slightly, then instantly vanishes. · When it reappears with its sword held sideways at its waist: hold ZL + press back-jump twice to trigger a flurry rush. · When it reappears raising its sword for a downward chop: hold ZL + press side-jump twice to trigger a flurry rush."
+   "Sword form: teleport thrust / horizontal slash. Tell: it lowers its head slightly, then instantly vanishes. · When it reappears with its sword held sideways at its waist: hold ZL + jump backward (one jump, stick in the dodge direction) to trigger a Flurry Rush. · When it reappears raising its sword for a downward chop: hold ZL + side-jump once (stick in the dodge direction) to trigger a Flurry Rush."
   ],
   [
    "枪",
@@ -1407,7 +1407,7 @@
   ],
   [
    "长枪形态：直线冲锋 前兆：长枪横于身后、身体前倾，拉出红色瘴气残影直线冲刺。 应对：冲到面前瞬间按住 ZL + 向左/右【侧跳】——最容易触发突击的一招。",
-   "Spear form: straight charge. Tell: spear held horizontally behind it, body leaning forward, trailing red Gloom afterimages in a straight dash. Counter: the instant it reaches you, hold ZL + side-jump left / right — the easiest move to trigger a flurry rush with."
+   "Spear form: straight charge. Tell: spear held horizontally behind it, body leaning forward, trailing red Gloom afterimages in a straight dash. Counter: the instant it reaches you, hold ZL + side-jump left / right — the easiest move to trigger a Flurry Rush with."
   ],
   [
    "斧",
@@ -1495,11 +1495,11 @@
   ],
   [
    "单手剑形态（瞬移冲刺）： · 横劈（剑放腰间）：按住 ZL + 向后跳触发突击。 · 竖劈（高举过头）：按住 ZL + 向左/右侧跳触发突击。",
-   "One-handed sword form (teleport dash): · Horizontal slash (sword at waist): hold ZL + jump backward to trigger a flurry rush. · Vertical slash (raised overhead): hold ZL + side-jump left / right to trigger a flurry rush."
+   "One-handed sword form (teleport dash): · Horizontal slash (sword at waist): hold ZL + jump backward to trigger a Flurry Rush. · Vertical slash (raised overhead): hold ZL + side-jump left / right to trigger a Flurry Rush."
   ],
   [
    "长枪形态（直线突刺）：看到他前倾冲来瞬间，按住 ZL + 向左/右侧跳触发突击——最容易抓的一招。",
-   "Spear form (straight thrust): the instant you see him lean forward and rush in, hold ZL + side-jump left / right to trigger a flurry rush — the easiest move to catch."
+   "Spear form (straight thrust): the instant you see him lean forward and rush in, hold ZL + side-jump left / right to trigger a Flurry Rush — the easiest move to catch."
   ],
   [
    "大锤形态（跳跃下劈）：判定极大，不要闪避。看到他跳起立刻向后跑拉距离，或在落地前用弓箭爆头打断。",
@@ -1519,11 +1519,11 @@
   ],
   [
    "二次闪避打法（最优雅）：他闪避你的攻击后向你挥刀时，立刻再次闪避（后跳/侧跳）触发第二次突击——此时他无法再闪避，可直接一套带走。",
-   "Double-dodge strategy (most elegant): after he dodges your attack and swings at you, immediately dodge again (back-jump / side-jump) to trigger a second flurry rush — at that point he cannot dodge again, and you can finish him in one combo."
+   "Double-dodge strategy (most elegant): after he dodges your attack and swings at you, immediately dodge again (back-jump / side-jump) to trigger a second Flurry Rush — at that point he cannot dodge again, and you can finish him in one combo."
   ],
   [
    "无脑盾反流（最安全）：按住 ZL 盾防，砍中盾牌瞬间按 A 键完美格挡（盾反）。盾反成功后他陷入大硬直，直接连击输出——他绝对无法闪避盾反后的攻击。",
-   "Brainless parry strategy (safest): hold ZL to guard; the instant his slash hits your shield, press A for a perfect guard (parry). After a successful parry he falls into a huge stagger — combo him directly, as he absolutely cannot dodge attacks after a parry."
+   "Brainless Perfect Guard strategy (safest): hold ZL to guard; the instant his slash hits your shield, press A for a perfect guard (Perfect Guard). After a successful Perfect Guard he falls into a huge stagger — combo him directly, as he absolutely cannot dodge attacks after a Perfect Guard."
   ],
   [
    "第三阶段：黑龙形态（空战剧情杀）",
@@ -1591,7 +1591,7 @@
   ],
   [
    "🛡 盾反后近距爆头",
-   "🛡 Close-range headshot after parry"
+   "🛡 Close-range headshot after Perfect Guard"
   ],
   [
    "⚙ 战前最强骑马专用武器准备",
@@ -1619,7 +1619,7 @@
   ],
   [
    "飞天：地上放弹簧，或用火箭盾 / 炸弹花盾原地飞天。",
-   "Fly: place a spring on the ground, or use a rocket shield / Bomb Flower shield to launch on the spot."
+   "Fly: place a spring on the ground, or use a rocket shield (hold ZL and jump) or a Bomb Flower shield (shield-surf with ZL + X + A) to launch on the spot."
   ],
   [
    "空中爆头：在空中掏出弓箭触发林克时间，瞄准人马脸部（胡须和眼睛附近）射击。听到「叮」的脆响，人马双膝跪地瘫痪数秒。",
@@ -1635,7 +1635,7 @@
   ],
   [
    "上马白嫖：收弓落地解除锁定，冲到人马身侧按 A 键骑上，掏出那把快要折断的近卫双手剑，疯狂按 Y 键连砍 3～6 刀。",
-   "Free mounted damage: put your bow away, land, release lock-on, rush to the Lynel's side, press A to mount, draw that nearly broken Royal Guard's Claymore, and mash Y for 3–6 hits."
+   "Free mounted damage: put your bow away, land, release lock-on, rush to the Lynel's side, press A to mount, draw that nearly broken Royal Guard's Claymore, and mash Y for up to 5 hits."
   ],
   [
    "下马补刀：被甩下时系统触发空中慢动作，立刻拉弓对着后脑勺再补 2～3 发爆头箭。",
@@ -1651,27 +1651,27 @@
   ],
   [
    "盾反爆头（抓近战）：横劈 / 砸地 / 冲撞时按住 ZL 防御，武器快砸中盾的瞬间按 A 键完美格挡。盾反后立刻掏弓近距离爆头，人马直接跪倒，可骑马输出。",
-   "Parry headshot (catch melee): during horizontal slashes / ground slams / charges, hold ZL to guard and press A for a perfect guard the instant the weapon is about to hit your shield. Right after the parry, draw your bow for a close-range headshot — the Lynel kneels directly, ready for mounted damage."
+   "Perfect Guard headshot (catch melee): during horizontal slashes / ground slams / charges, hold ZL to guard and press A for a perfect guard the instant the weapon is about to hit your shield. Right after the Perfect Guard, draw your bow for a close-range headshot — the Lynel kneels directly, ready for mounted damage."
   ],
   [
    "盾反爆头（抓近战）：横劈 / 砸地 / 冲撞时按住 ZL 防御，武器快砸中盾的瞬间按 A 键完美格挡。",
-   "Parry headshot (catch melee): during horizontal slashes / ground slams / charges, hold ZL to guard and press A for a perfect guard the instant the weapon is about to hit your shield."
+   "Perfect Guard headshot (catch melee): during horizontal slashes / ground slams / charges, hold ZL to guard and press A for a perfect guard the instant the weapon is about to hit your shield."
   ],
   [
    "盾反后立刻掏弓近距离爆头，人马直接跪倒，可骑马输出。",
-   "Right after the parry, draw your bow for a close-range headshot — the Lynel kneels directly, ready for mounted damage."
+   "Right after the Perfect Guard, draw your bow for a close-range headshot — the Lynel kneels directly, ready for mounted damage."
   ],
   [
    "侧跳突击（抓冲锋）：人马四足着地直线冲来时，按住 ZL + 连按两下【侧跳】触发突击连击。（建议盾反爆头骑马，更省武器耐久）",
-   "Side-jump flurry rush (catch charges): when the Lynel charges straight at you on all fours, hold ZL + press side-jump twice to trigger a flurry rush combo. (Parry-headshot-mount is recommended instead — it saves more weapon durability.)"
+   "Side-jump Flurry Rush (catch charges): when the Lynel charges straight at you on all fours, hold ZL + side-jump once (stick in the dodge direction) to trigger a Flurry Rush combo. (Perfect Guard-headshot-mount is recommended instead — it saves more weapon durability.)"
   ],
   [
    "躲避火球：人马后跳蓄力吐出 3 发大火球时，不要盾反或闪避，直接朝左或右疯狂奔跑——火球飞行慢，横向跑绝对砸不中。3 发吐完后原地喘气，是拉弓爆头的绝佳时机。",
-   "Dodge fireballs: when the Lynel jumps back, charges, and spits 3 large fireballs, don't parry or dodge — just run furiously left or right. The fireballs fly slowly, so running sideways absolutely avoids them. After all 3 are spat, it pants in place — a perfect moment to draw your bow for a headshot."
+   "Dodge fireballs: when the Lynel jumps back, charges, and spits 3 large fireballs, don't Perfect Guard or dodge — just run furiously left or right. The fireballs fly slowly, so running sideways absolutely avoids them. After all 3 are spat, it pants in place — a perfect moment to draw your bow for a headshot."
   ],
   [
    "躲避火球：人马后跳蓄力吐出 3 发大火球时，不要盾反或闪避，直接朝左或右疯狂奔跑——火球飞行慢，横向跑绝对砸不中。",
-   "Dodge fireballs: when the Lynel jumps back, charges, and spits 3 large fireballs, don't parry or dodge — just run furiously left or right. The fireballs fly slowly, so running sideways absolutely avoids them."
+   "Dodge fireballs: when the Lynel jumps back, charges, and spits 3 large fireballs, don't Perfect Guard or dodge — just run furiously left or right. The fireballs fly slowly, so running sideways absolutely avoids them."
   ],
   [
    "3 发吐完后原地喘气，是拉弓爆头的绝佳时机。",
@@ -1691,7 +1691,7 @@
   ],
   [
    "强度排序：红褐色 → 青色 → 白鬃 → 白银。地底竞技场需连续挑战 5 只不同颜色的莱尼尔（最后一只为白银装甲），是全游戏最高难度的战斗挑战。",
-   "Strength order: Red → Blue → White-Maned → Silver. The Depths arena requires fighting 5 differently colored Lynels in a row (the last is armored Silver) — the hardest combat challenge in the game."
+   "Strength order: Red-Maned → Blue-Maned → White-Maned → Silver. The Depths arena requires fighting 5 Lynels in a row (the last is an armored Silver) — the hardest combat challenge in the game."
   ],
   [
    "强度排序：红褐色 → 青色 → 白鬃 → 白银。",
@@ -1699,7 +1699,7 @@
   ],
   [
    "地底竞技场需连续挑战 5 只不同颜色的莱尼尔（最后一只为白银装甲），是全游戏最高难度的战斗挑战。",
-   "The Depths arena requires fighting 5 differently colored Lynels in a row (the last is armored Silver) — the hardest combat challenge in the game."
+   "The Depths arena requires fighting 5 Lynels in a row (the last is an armored Silver) — the hardest combat challenge in the game."
   ],
   [
    "西诺克斯",
@@ -1843,11 +1843,11 @@
   ],
   [
    "多发弓（最关键）：带 2～3 把兽神弓（人马弓）或大鹫弓（3发或5发扩散）。单发弓容错率极低。",
-   "Multi-shot bows (most crucial): bring 2–3 Savage Lynel Bows (Lynel bows) or Great Eagle Bows (3- or 5-shot spread). Single-shot bows are extremely unforgiving."
+   "Multi-shot bows (most crucial): bring 2–3 Savage Lynel Bows (3-shot, or 5-shot with the modifier) or Great Eagle Bows (3-shot). Single-shot bows are extremely unforgiving."
   ],
   [
    "多发弓（最关键）：带 2～3 把兽神弓（人马弓）或大鹫弓（3发或5发扩散）。",
-   "Multi-shot bows (most crucial): bring 2–3 Savage Lynel Bows (Lynel bows) or Great Eagle Bows (3- or 5-shot spread)."
+   "Multi-shot bows (most crucial): bring 2–3 Savage Lynel Bows (3-shot, or 5-shot with the modifier) or Great Eagle Bows (3-shot)."
   ],
   [
    "单发弓容错率极低。",
@@ -1859,7 +1859,7 @@
   ],
   [
    "起飞工具：几面火箭盾 / 炸弹花盾，或弹簧胶囊备用。",
-   "Launch tools: several rocket shields / Bomb Flower shields, or spring capsules as backup."
+   "Launch tools: several rocket shields or Bomb Flower shields, or spring capsules as backup."
   ],
   [
    "👁 三颗龙头（多发弓+眼球箭同时爆）",
@@ -1987,7 +1987,7 @@
   ],
   [
    "🔗 相关攻略",
-   "🔗 Related guides"
+   "🔗 Related Guides"
   ],
   [
    "› 加农多夫",
@@ -2003,11 +2003,11 @@
   ],
   [
    "📚 更多攻略",
-   "📚 More guides"
+   "📚 More Guides"
   ],
   [
    "› 哈里的终极秘籍（13篇）",
-   "› Harry's Ultimate Secrets (13 articles)"
+   "› Harry's Ultimate Tips (13 articles)"
   ],
   [
    "› 全部页面索引",
@@ -2019,11 +2019,11 @@
   ],
   [
    "⚔️ 武器图鉴",
-   "⚔️ Weapon Encyclopedia"
+   "⚔️ Weapon Compendium"
   ],
   [
    "料理合成",
-   "Cooking Recipes"
+   "Cooking"
   ],
   [
    "主线任务",
@@ -2119,7 +2119,7 @@
   ],
   [
    "武器图鉴",
-   "Weapon Encyclopedia"
+   "Weapons"
   ],
   [
    "用",
@@ -2511,19 +2511,19 @@
   ],
   [
    "启动背上",
-   "Method B (aerial duel): "
-  ],
-  [
-   "跟着飞上天，在空中飞过去给它一拳砸下来。",
    "Activate the "
   ],
   [
-   "瞄准空中轰一炮",
+   "跟着飞上天，在空中飞过去给它一拳砸下来。",
    "to follow it into the sky, then fly over and punch it down."
   ],
   [
-   "方法 B（滞空对决）：",
+   "瞄准空中轰一炮",
    "fire a shot into the air"
+  ],
+  [
+   "方法 B（滞空对决）：",
+   "Method B (aerial duel):"
   ],
   [
    "火箭或风扇",
@@ -2699,11 +2699,11 @@
   ],
   [
    "4 处粉红色秘石弱点",
-   "and the white dragon will always catch you from below"
+   "4 pink Secret Stone weak points"
   ],
   [
    "白龙必定从下方接住你",
-   "4 pink Secret Stone weak points"
+   "and the Light Dragon will always catch you from below"
   ],
   [
    "上马白嫖：",
@@ -2819,11 +2819,11 @@
   ],
   [
    "瘫痪大硬直，趁机近战疯狂输出。",
-   "10–15 seconds of "
+   "major paralysis stagger — take the chance to go wild with melee attacks."
   ],
   [
    "10～15 秒",
-   "major paralysis stagger — take the chance to go wild with melee attacks."
+   "10–15 seconds of "
   ],
   [
    "循环锁死：",

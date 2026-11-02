@@ -79,7 +79,7 @@
   ],
   [
    "饭食",
-   "Rice Dishes & Baked Goods"
+   "Rice Dishes"
   ],
   [
    "特殊料理",
@@ -1795,7 +1795,7 @@
   ],
   [
    "怪物素材 + 精力犀牛甲虫／不安蟋蟀",
-   "Enemy + Energetic Rhino Beetle / Restless Cricket"
+   "Monster Part + Energetic Rhino Beetle / Restless Cricket"
   ],
   [
    "速速药",
@@ -1803,7 +1803,7 @@
   ],
   [
    "怪物素材 + 速速蛙／长尾蜥蜴",
-   "Enemy + Hot-Footed Frog / Hightail Lizard"
+   "Monster Part + Hot-Footed Frog / Hightail Lizard"
   ],
   [
    "辛辣药",
@@ -1811,7 +1811,7 @@
   ],
   [
    "怪物素材 + 夏翅蝴蝶／暖蜻蜓",
-   "Enemy + Summerwing Butterfly / Warm Darner"
+   "Monster Part + Summerwing Butterfly / Warm Darner"
   ],
   [
    "冰冷药",
@@ -1819,7 +1819,7 @@
   ],
   [
    "怪物素材 + 冬翅蝴蝶／冰冷蜻蜓",
-   "Enemy + Winterwing Butterfly / Cold Darner"
+   "Monster Part + Winterwing Butterfly / Cold Darner"
   ],
   [
    "电麻药",
@@ -1827,7 +1827,7 @@
   ],
   [
    "怪物素材 + 雷翅蝴蝶／电蜻蜓",
-   "Enemy + Thunderwing Butterfly / Electric Darner"
+   "Monster Part + Thunderwing Butterfly / Electric Darner"
   ],
   [
    "防火药",
@@ -1835,7 +1835,7 @@
   ],
   [
    "怪物素材 + 闷燃蝴蝶／防火蜥蜴",
-   "Enemy + Smotherwing Butterfly / Fireproof Lizard"
+   "Monster Part + Smotherwing Butterfly / Fireproof Lizard"
   ],
   [
    "力量药",
@@ -1843,7 +1843,7 @@
   ],
   [
    "怪物素材 + 刀刃犀牛甲虫",
-   "Enemy + Bladed Rhino Beetle"
+   "Monster Part + Bladed Rhino Beetle"
   ],
   [
    "坚硬药",
@@ -1851,7 +1851,7 @@
   ],
   [
    "怪物素材 + 坚硬犀牛甲虫",
-   "Enemy + Rugged Rhino Beetle"
+   "Monster Part + Rugged Rhino Beetle"
   ],
   [
    "潜行药",
@@ -1859,7 +1859,7 @@
   ],
   [
    "怪物素材 + 黄昏萤火虫",
-   "Enemy + Sunset Firefly"
+   "Monster Part + Sunset Firefly"
   ],
   [
    "防滑药",
@@ -1867,7 +1867,7 @@
   ],
   [
    "怪物素材 + 粘粘蛙／粘粘蜥蜴",
-   "Enemy + Sticky Frog / Sticky Lizard"
+   "Monster Part + Sticky Frog / Sticky Lizard"
   ],
   [
    "光亮药",
@@ -1875,7 +1875,7 @@
   ],
   [
    "怪物素材 + 深渊萤火虫",
-   "Enemy + Deep Firefly"
+   "Monster Part + Deep Firefly"
   ],
   [
    "能量药",
@@ -1883,7 +1883,7 @@
   ],
   [
    "怪物素材 + 不倦蛙",
-   "Enemy + Tireless Frog"
+   "Monster Part + Tireless Frog"
   ],
   [
    "生命药",
@@ -1891,7 +1891,7 @@
   ],
   [
    "怪物素材 + 生命蜥蜴",
-   "Enemy + Hearty Lizard"
+   "Monster Part + Hearty Lizard"
   ],
   [
    "妖精回力水",
@@ -2347,7 +2347,7 @@
   ],
   [
    "怪物素材",
-   "Enemy"
+   "Monster Part"
   ],
   [
    "精力犀牛甲虫／不安蟋蟀",
@@ -2519,7 +2519,7 @@
   ],
   [
    "› 四大神级料理配方",
-   "› Four God-Tier Cooking Recipes"
+   "› Four God-Tier Recipes"
   ],
   [
    "› 新手开荒指南：落地先做的10件事",
@@ -2547,11 +2547,11 @@
   ],
   [
    "武器图鉴",
-   "Weapon Compendium"
+   "Weapons"
   ],
   [
    "套装获取",
-   "Armor Set Locations"
+   "Armor Sets"
   ],
   [
    "主线任务",
@@ -2575,7 +2575,7 @@
   ],
   [
    "料理合成",
-   "Cooking Recipes"
+   "Cooking"
   ],
   [
    "极寒冷冻",

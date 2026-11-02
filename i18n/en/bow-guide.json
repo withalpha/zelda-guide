@@ -11,7 +11,7 @@
   ],
   [
    "哈里的终极秘籍",
-   "Harry's Ultimate Guide"
+   "Harry's Ultimate Tips"
   ],
   [
    "弓箭完全指南",
@@ -363,7 +363,7 @@
   ],
   [
    "兽神弓自带三连，但通过词条可以变成五连——面板 32×5，近距离全中就是 160 点理论伤害，是游戏里最强的弓。刷法靠岩石巨人（岩奥克塔），步骤如下：",
-   "The Savage Lynel Bow comes with triple-shot by default, but a modifier can turn it into five-shot, with a panel of 32×5, for 160 theoretical damage if every arrow hits at close range, making it the strongest bow in the game. The farming method relies on Rock Octoroks, and the steps are as follows:"
+   "The Savage Lynel Bow comes with triple-shot by default, but a modifier can turn it into five-shot, with a panel of 32×5, for 160 theoretical damage if every arrow hits at close range, making it the strongest bow in the game. The farming method relies on Rock Octoroks (each Octorok works only once per Blood Moon), and the steps are as follows:"
   ],
   [
    "1先去找一只岩石巨人，位置以鼓隆城周边最方便。动手前先存档，这是整套方法的保险。",
@@ -379,7 +379,7 @@
   ],
   [
    "2把兽神弓扔到岩石巨人面前，让它吸进去再吐出来。吐出来的弓会带上一个随机词条：先是蓝字或白字的一段词条。",
-   "Step 2: Throw the Savage Lynel Bow in front of the Rock Octorok and let it suck it in and spit it back out. The spat-out bow will carry a random modifier: first a blue-text or white-text modifier."
+   "Step 2: Throw the Savage Lynel Bow in front of the Rock Octorok and let it suck it in and spit it back out. The spat-out bow will carry a random modifier: first a white-text modifier."
   ],
   [
    "2把兽神弓扔到岩石巨人面前，让它吸进去再吐出来。",
@@ -387,7 +387,7 @@
   ],
   [
    "吐出来的弓会带上一个随机词条：先是蓝字或白字的一段词条。",
-   "The spat-out bow will carry a random modifier: first a blue-text or white-text modifier."
+   "The spat-out bow will carry a random modifier: first a white-text modifier."
   ],
   [
    "3再重复一次吸入吐出，第二段词条有概率刷出黄字的“五连射”。不是五连就读档重来，直到刷出为止。",
@@ -431,7 +431,7 @@
   ],
   [
    "弱点优先：多数敌人的眼睛、头部是弱点，命中出暴击。打人马先射脸把它打跪，再近身输出；打守护者类敌人先射眼睛控场。弱点暴击的收益远大于多射几箭。",
-   "Weak points first: most enemies have weak points at their eyes or head, and hitting them scores a critical hit. Against a Lynel, shoot its face first to make it kneel, then move in for close damage; against Guardian-type enemies, shoot the eye first to control the fight. The payoff from weak-point critical hits far exceeds firing a few more arrows."
+   "Weak points first: most enemies have weak points at their eyes or head, and hitting them scores a critical hit. Against a Lynel, shoot its face first to make it kneel, then move in for close damage; against enemies with an eye weak point, shoot the eye first to control the fight. The payoff from weak-point critical hits far exceeds firing a few more arrows."
   ],
   [
    "弱点优先：多数敌人的眼睛、头部是弱点，命中出暴击。",
@@ -443,7 +443,7 @@
   ],
   [
    "打守护者类敌人先射眼睛控场。",
-   "against Guardian-type enemies, shoot the eye first to control the fight."
+   "against enemies with an eye weak point, shoot the eye first to control the fight."
   ],
   [
    "弱点暴击的收益远大于多射几箭。",
@@ -527,7 +527,7 @@
   ],
   [
    "← 上一篇：15座鸟望塔开图完全指南 返回秘籍专栏 下一篇：洞窟探险完全指南 →",
-   "← Previous: All 15 Skyview Towers Map-Unlock Complete Guide | Back to the Guide Column | Next: Cave Exploration Complete Guide →"
+   "← Previous: All 15 Skyview Towers Map-Unlock Complete Guide | Back to the Tips Column | Next: Cave Exploration Complete Guide →"
   ],
   [
    "🔗 相关攻略",
@@ -551,7 +551,7 @@
   ],
   [
    "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Guide"
+   "🏆 Harry's Ultimate Tips"
   ],
   [
    "› 七宝匕首终极攻略",
@@ -559,7 +559,7 @@
   ],
   [
    "› 四大神级料理配方",
-   "› Four God-Tier Cooking Recipes"
+   "› Four God-Tier Recipes"
   ],
   [
    "› 最强套装三梯队全解析",
@@ -567,7 +567,7 @@
   ],
   [
    "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine: Zero-Basics Walkthrough"
+   "› Usazum Shrine Guide for Complete Beginners"
   ],
   [
    "› 白龙寻踪与大师之剑",
@@ -575,7 +575,7 @@
   ],
   [
    "› 马克兔飞行器调校",
-   "› Mark Rabbit Flyer Tuning"
+   "› Hover Bike Tuning"
   ],
   [
    "› 地底电池扩充与大妖精",
@@ -679,6 +679,6 @@
   ]
  ],
  "notes": [
-  "Boss Bokoblin is the descriptive English name for 巨霸迦马; Mark Rabbit Flyer is a descriptive rendering of 马克兔飞行器."
+  "Boss Bokoblin is the descriptive English name for 巨霸迦马; Mark Rabbit Flyer is a descriptive rendering of 马克兔飞行器. [2026-11-02 review: Boss Bokoblin claim removed — no pair uses it; the boss is Colgera.]"
  ]
 }

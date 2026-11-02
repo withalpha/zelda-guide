@@ -3,7 +3,7 @@
  "pairs": [
   [
    "人马完全指南：白银人马5000血、刃角+55最高余料、骑背不耗耐久、破甲与地底竞技场五连战打法。",
-   "Complete Lynel guide: Silver Lynel 5000 HP, blade horn +55 top Fuse attack, mounted attacks cost no durability, armor-breaking, and the Depths Colosseum five-bout gauntlet."
+   "Complete Lynel guide: Silver Lynel 5000 HP, Silver Lynel Saber Horn +55 top Fuse attack, mounted attacks cost no durability, armor-breaking, and the Depths Colosseum five-bout gauntlet."
   ],
   [
    "首页 ›",
@@ -11,7 +11,7 @@
   ],
   [
    "哈里的终极秘籍 ›",
-   "Harry's Ultimate Guide Collection ›"
+   "Harry's Ultimate Tips Column ›"
   ],
   [
    "人马（莱尼尔）完全指南",
@@ -47,7 +47,7 @@
   ],
   [
    "人马不像普通怪物可以莽过去：它会冲锋、跳劈、喷火、射爆裂箭，血量还厚。但它有一套固定的出招规律，学会闪避反击和骑背，普通人马也能无伤过；白银人马打下来，一根刃角就是全游戏最高的余料攻击。",
-   "You can't just bulldoze a Lynel like an ordinary monster: it charges, leaps and slams, breathes fire, and fires explosive arrows, and it has a lot of HP. But it follows a fixed move pattern — learn dodge counters and mounting, and even a standard Lynel can be beaten without damage; and a Silver Lynel's blade horn gives the highest Fuse attack in the game."
+   "You can't just bulldoze a Lynel like an ordinary monster: it charges, leaps and slams, breathes fire, and fires explosive arrows, and it has a lot of HP. But it follows a fixed move pattern — learn dodge counters and mounting, and even a standard Lynel can be beaten without damage; and a Silver Lynel's Silver Lynel Saber Horn gives the highest Fuse attack in the game."
   ],
   [
    "⭐ 本篇要点",
@@ -55,7 +55,7 @@
   ],
   [
    "白银人马血量5000，刃角余料攻击+55、碎角+51，是全游戏余料天花板。",
-   "Silver Lynel: 5000 HP, blade horn Fuse attack +55, shattered horn +51 — the ceiling for Fuse materials in the game."
+   "Silver Lynel: 5000 HP, Silver Lynel Saber Horn Fuse attack +55, Silver Lynel Mace Horn +51 — the ceiling for Fuse materials in the game."
   ],
   [
    "骑背攻击不消耗武器耐久：把最强武器留到骑背时用，是打人马的核心省耐久技巧。",
@@ -71,7 +71,7 @@
   ],
   [
    "对闪耀果免疫：别指望闪光弹控它，靠闪避和盾反才是正路。",
-   "Immune to Dazzlefruit: don't count on flash bombs to control it — dodging and parrying are the right approach."
+   "Immune to Dazzlefruit: don't count on flash bombs to control it — dodging and Perfect Guarding are the right approach."
   ],
   [
    "📑 本篇目录",
@@ -83,7 +83,7 @@
   ],
   [
    "二、通用打法：闪避、盾反与骑背",
-   "2. General Tactics: Dodging, Parrying, and Mounting"
+   "2. General Tactics: Dodging, Perfect Guarding, and Mounting"
   ],
   [
    "三、白银人马与掉落价值",
@@ -119,7 +119,7 @@
   ],
   [
    "普通人马",
-   "Standard Lynel"
+   "Red-Maned Lynel"
   ],
   [
    "前期练手",
@@ -163,7 +163,7 @@
   ],
   [
    "血量 5000；刃角 +55、碎角 +51，全游戏最高余料",
-   "5000 HP; blade horn +55, shattered horn +51 — the highest Fuse values in the game"
+   "5000 HP; Silver Lynel Saber Horn +55, Silver Lynel Mace Horn +51 — the highest Fuse values in the game"
   ],
   [
    "林克与人马正面对峙",
@@ -175,7 +175,7 @@
   ],
   [
    "人马的冲锋和跳劈都有明显前摇：冲锋时向侧面闪避触发林克时间，跳劈落地前向后闪避同样能触发。盾反可以弹开它的近战挥击，但爆裂箭和喷火不要硬接，拉开距离或绕到侧面。最关键的一步是骑背：人马被打晕、被箭射中头部或从高处落到它背上后，就能骑上去连砍。",
-   "A Lynel's charge and leaping slam both have clear wind-ups: side-dodge a charge to trigger bullet time, and back-dodge just before a leaping slam lands to trigger it too. Parrying can deflect its melee swings, but don't tank explosive arrows or fire breath head-on — create distance or circle to its side. The most crucial step is mounting: after a Lynel is stunned, shot in the head with an arrow, or you drop onto its back from above, you can mount it and slash repeatedly."
+   "A Lynel's charge and leaping slam both have clear wind-ups: side-dodge a charge to trigger a Flurry Rush, and back-dodge just before a leaping slam lands to trigger it too. Perfect Guarding can deflect its melee swings, but don't tank explosive arrows or fire breath head-on — create distance or circle to its side. The most crucial step is mounting: after a Lynel is stunned, shot in the head with an arrow, or you drop onto its back from above, you can mount it and slash repeatedly."
   ],
   [
    "骑背时武器不消耗耐久，这一点要充分利用：平时用普通武器磨血、打晕，骑背的一刻再换上最高攻击的武器猛砍。骑背结束人马会把林克甩下来，落地前开滑翔伞拉开距离，再射一箭头部可以续一轮控制。",
@@ -183,7 +183,7 @@
   ],
   [
    "白银人马的刃角余料攻击 +55，碎角 +51 且带粉碎效果、可破甲，是余料建造的毕业选择之一。配格鲁德武器攻击翻倍、配卓拉武器沾水翻倍时，数值还会再放大，详见本站余料建造完全指南。打白银人马不要贪刀：它一套连招的伤害足以秒掉没强化的防具，先保证两级以上的防具和满血再进场。",
-   "The Silver Lynel's blade horn has Fuse attack +55, and its shattered horn +51 with a crushing effect that can break armor — among the best endgame Fuse choices. Paired with Gerudo weapons (attack doubles) or Zora weapons (attack doubles when wet), the numbers grow even larger; see this site's Fuse Complete Guide for details. Don't get greedy against a Silver Lynel: one full combo can one-shot unupgraded armor, so make sure your armor is upgraded to level 2 or higher and your HP is full before entering the fight."
+   "The Silver Lynel's Silver Lynel Saber Horn has Fuse attack +55, and its Silver Lynel Mace Horn +51 with a crushing effect that can break armor — among the best endgame Fuse choices. Paired with Gerudo weapons (attack doubles) or Zora weapons (attack doubles when wet), the numbers grow even larger; see this site's Fuse Complete Guide for details. Don't get greedy against a Silver Lynel: one full combo can one-shot unupgraded armor, so make sure your armor is upgraded to level 2 or higher and your HP is full before entering the fight."
   ],
   [
    "余料建造完全指南",
@@ -219,7 +219,7 @@
   ],
   [
    "相关攻略： 余料建造完全指南 、 白银人马 、 地底世界生存与探索完全指南 。",
-   "Related guides: Fuse Complete Guide, Silver Lynel, Depths Survival and Exploration Complete Guide."
+   "Related Guides: Fuse Complete Guide, Silver Lynel, Depths Survival and Exploration Complete Guide."
   ],
   [
    "← 上一篇：四条龙素材刷取指南",
@@ -227,7 +227,7 @@
   ],
   [
    "返回秘籍专栏",
-   "Back to the Guide Collection"
+   "Back to the Tips Column"
   ],
   [
    "下一篇：卢比速刷指南：从前期到后期 →",
@@ -255,7 +255,7 @@
   ],
   [
    "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Guide Collection"
+   "🏆 Harry's Ultimate Tips Column"
   ],
   [
    "› 七宝匕首终极攻略",
@@ -263,7 +263,7 @@
   ],
   [
    "› 四大神级料理配方",
-   "› Four God-Tier Meal Recipes"
+   "› Four God-Tier Recipes"
   ],
   [
    "› 最强套装三梯队全解析",
@@ -271,7 +271,7 @@
   ],
   [
    "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine: Zero-Experience Step-by-Step Guide"
+   "› Usazum Shrine Guide for Complete Beginners"
   ],
   [
    "› 白龙寻踪与大师之剑",
@@ -279,7 +279,7 @@
   ],
   [
    "› 马克兔飞行器调校",
-   "› Marktu Flying Machine Tuning"
+   "› Hover Bike Tuning"
   ],
   [
    "› 地底电池扩充与大妖精",
@@ -355,7 +355,7 @@
   ],
   [
    "白银人马打下来，一根刃角就是全游戏最高的余料攻击。",
-   "and a Silver Lynel's blade horn gives the highest Fuse attack in the game."
+   "and a Silver Lynel's Silver Lynel Saber Horn gives the highest Fuse attack in the game."
   ],
   [
    "人马按颜色分档，越往后血量、攻击和掉落越好。",
@@ -375,15 +375,15 @@
   ],
   [
    "刃角 +55、碎角 +51，全游戏最高余料",
-   "blade horn +55, shattered horn +51 — the highest Fuse values in the game"
+   "Silver Lynel Saber Horn +55, Silver Lynel Mace Horn +51 — the highest Fuse values in the game"
   ],
   [
    "人马的冲锋和跳劈都有明显前摇：冲锋时向侧面闪避触发林克时间，跳劈落地前向后闪避同样能触发。",
-   "A Lynel's charge and leaping slam both have clear wind-ups: side-dodge a charge to trigger bullet time, and back-dodge just before a leaping slam lands to trigger it too."
+   "A Lynel's charge and leaping slam both have clear wind-ups: side-dodge a charge to trigger a Flurry Rush, and back-dodge just before a leaping slam lands to trigger it too."
   ],
   [
    "盾反可以弹开它的近战挥击，但爆裂箭和喷火不要硬接，拉开距离或绕到侧面。",
-   "Parrying can deflect its melee swings, but don't tank explosive arrows or fire breath head-on — create distance or circle to its side."
+   "Perfect Guarding can deflect its melee swings, but don't tank explosive arrows or fire breath head-on — create distance or circle to its side."
   ],
   [
    "最关键的一步是骑背：人马被打晕、被箭射中头部或从高处落到它背上后，就能骑上去连砍。",
@@ -451,7 +451,7 @@
   ],
   [
    "相关攻略：余料建造完全指南、白银人马、地底世界生存与探索完全指南。",
-   "Related guides: Complete Fuse Guide, Silver Lynels, and Complete Depths Survival and Exploration Guide."
+   "Related Guides: Complete Fuse Guide, Silver Lynels, and Complete Depths Survival and Exploration Guide."
   ]
  ],
  "notes": [

@@ -3,7 +3,7 @@
  "pairs": [
   [
    "王国之泪白银莱尼尔完全攻略，血量5000点全游戏最强野外强敌，详解流水线无伤伐木打法、战前神装准备、地面缠斗盾反爆头、怒吼火圈反杀处理，附白银刃角+55攻击说明。",
-   "Complete guide to the Silver Lynel in Tears of the Kingdom: 5000 HP, the strongest overworld enemy in the game, with the no-damage assembly-line \"logging\" strategy, best pre-fight gear, ground-combat parry-to-headshot tactics, countering its roar fire-ring, and notes on the Silver Blade Horn's +55 attack."
+   "Complete guide to the Silver Lynel in Tears of the Kingdom: 5000 HP, the strongest overworld enemy in the game, with the no-damage assembly-line \"logging\" strategy, best pre-fight gear, ground-combat Perfect Guard-to-headshot tactics, countering its roar fire-ring, and notes on the Silver Blade Horn's +55 attack."
   ],
   [
    "⚔️ 白银莱尼尔",
@@ -67,7 +67,7 @@
   ],
   [
    "继承白鬃的 怒吼流星爆破 ，AI 变招速度极快，伤害高到能直接 一击秒杀防具未升级的林克 。单纯靠闪避刮痧效率太低，消耗巨大——必须使用 流水线无伤伐木打法 。",
-   "It inherits the White-Maned Lynel's roaring meteor blast, its AI switches moves extremely fast, and its damage is high enough to one-shot Link in unupgraded armor. Simply dodging and chipping away is too inefficient and costly — you must use the no-damage assembly-line logging strategy."
+   "It inherits the White-Maned Lynel's roar-triggered fiery explosion, its AI switches moves extremely fast, and its damage is high enough to one-shot Link in unupgraded armor. Simply dodging and chipping away is too inefficient and costly — you must use the no-damage assembly-line logging strategy."
   ],
   [
    "📍 出没地点",
@@ -99,7 +99,7 @@
   ],
   [
    "🛡 盾反→近距爆头→跪地",
-   "🛡 Parry → close-range headshot → kneeling"
+   "🛡 Perfect Guard → close-range headshot → kneeling"
   ],
   [
    "⚙️ 战前神装准备（核心）",
@@ -119,7 +119,7 @@
   ],
   [
    "这是击败前几只人马后掉落的多发弓。 齐射的箭雨可以同时命中脸部多个判定点 ，瞬间触发暴击跪地，比单发弓效率高出数倍。没有兽神弓就先去打蓝鬃/白鬃拿弓。",
-   "This multi-shot bow drops from earlier Lynels. A volley's rain of arrows can hit multiple hit zones on its face at once, instantly triggering a critical kneel — several times more efficient than a single-shot bow. If you don't have a Savage Lynel Bow yet, go fight Blue-Maned / White-Maned Lynels to get one first."
+   "This multi-shot bow drops from earlier Lynels. A volley's rain of arrows can hit multiple hit zones on its face at once, instantly triggering a staggering it to its knees — several times more efficient than a single-shot bow. If you don't have a Savage Lynel Bow yet, go fight Blue-Maned / White-Maned Lynels to get one first."
   ],
   [
    "骑乘专属武器（背上输出，不扣耐久）：",
@@ -139,7 +139,7 @@
   ],
   [
    "用 5 个大剑香蕉 烹饪，或穿戴满级的 蛮族套装 / 鬼神套装 。攻击加成可以显著减少击杀所需的循环轮数。",
-   "Cooked from 5 Mighty Bananas, or wear a fully upgraded Barbarian Armor set / Evil Spirit Armor set. The attack boost significantly reduces the number of cycles needed for the kill."
+   "Cooked from 5 Mighty Bananas, or wear a fully upgraded Barbarian Armor set / Fierce Deity Armor set. The attack boost significantly reduces the number of cycles needed for the kill."
   ],
   [
    "🪓 顶配高效击杀 · 流水线无伤伐木打法",
@@ -175,7 +175,7 @@
   ],
   [
    "齐射的箭雨会瞬间触发暴击， 让人马直接跪地 ——不需要精确瞄准，命中率极高。",
-   "The volley's rain of arrows instantly triggers a critical hit that makes the Lynel kneel — no precise aiming needed, and the hit rate is extremely high."
+   "The volley's rain of arrows instantly triggers a staggerical hit that makes the Lynel kneel — no precise aiming needed, and the hit rate is extremely high."
   ],
   [
    "近卫红血武器切菜——白嫖最高伤害",
@@ -247,11 +247,11 @@
   ],
   [
    "✅ 正确操作： 站在原地 举盾 ，等它快撞到你的瞬间按下 A 键进行完美盾反（Parry） 。",
-   "✅ Correct move: stand your ground with your shield raised, and press A the instant before it hits you for a perfect parry."
+   "✅ Correct move: stand your ground with your shield raised, and press A the instant before it hits you for a perfect Perfect Guard."
   ],
   [
    "后续： 盾反成功后人马原地眩晕 1 秒，此时距离 极近 ，直接掏出弓箭 盲射脸部 ——根本不需要仔细瞄准，它会再次跪地，立刻上马骑乘输出。",
-   "Follow-up: after a successful parry the Lynel is stunned in place for 1 second, and at this extremely close range you can just draw your bow and blind-fire at its face — no careful aiming needed at all — it will kneel again, so mount it immediately for mounted damage."
+   "Follow-up: after a successful Perfect Guard the Lynel is stunned in place for 1 second, and at this extremely close range you can just draw your bow and blind-fire at its face — no careful aiming needed at all — it will kneel again, so mount it immediately for mounted damage."
   ],
   [
    "处理 2",
@@ -307,7 +307,7 @@
   ],
   [
    "每只之间不能回复 ——血量和状态完整保持到下一场。",
-   "No healing between bouts — your HP and status carry over fully into the next fight."
+   "No automatic recovery between bouts — your HP and status carry over fully into the next fight. — your HP and status carry over fully into the next fight."
   ],
   [
    "武器不会自动补充 ——只能捡地上掉落的武器。前 4 只全程用地上武器，把自己携带的 近卫红血剑和兽神弓 完整留给白银莱尼尔。",
@@ -351,11 +351,11 @@
   ],
   [
    "✨ 星之碎片 / 大容量能源",
-   "✨ Star Fragment / Large Zonaite"
+   "✨ Silver Lynel Mace Horn (+51)"
   ],
   [
    "星之碎片 用于强化顶级防具（如鬼神套装、英雄套装）至最高等级。",
-   "Star Fragments are used to upgrade top-tier armor (such as the Evil Spirit Armor set and Hero Armor set) to max level."
+   "Silver Lynel Mace Horns (+51) are a top-tier Fuse material and armor-upgrade material."
   ],
   [
    "大容量能源 用于扩充林克的电池上限，让火箭盾飞更久。",
@@ -407,7 +407,7 @@
   ],
   [
    "› 哈里的终极秘籍（13篇）",
-   "› Harry's Ultimate Guide Collection (13 articles)"
+   "› Harry's Ultimate Tips Column (13 articles)"
   ],
   [
    "› 全部页面索引",
@@ -415,7 +415,7 @@
   ],
   [
    "继承白鬃的 怒吼流星爆破 ，AI 变招速度极快，伤害高到能直接 一击秒杀防具未升级的林克 。",
-   "It inherits the White-Maned Lynel's roaring meteor blast, its AI switches moves extremely fast, and its damage is high enough to one-shot Link in unupgraded armor."
+   "It inherits the White-Maned Lynel's roar-triggered fiery explosion, its AI switches moves extremely fast, and its damage is high enough to one-shot Link in unupgraded armor."
   ],
   [
    "单纯靠闪避刮痧效率太低，消耗巨大——必须使用 流水线无伤伐木打法 。",
@@ -439,7 +439,7 @@
   ],
   [
    " 齐射的箭雨可以同时命中脸部多个判定点 ，瞬间触发暴击跪地，比单发弓效率高出数倍。",
-   "A volley's rain of arrows can hit multiple hit zones on its face at once, instantly triggering a critical kneel — several times more efficient than a single-shot bow."
+   "A volley's rain of arrows can hit multiple hit zones on its face at once, instantly triggering a staggering it to its knees — several times more efficient than a single-shot bow."
   ],
   [
    "没有兽神弓就先去打蓝鬃/白鬃拿弓。",
@@ -455,7 +455,7 @@
   ],
   [
    "用 5 个大剑香蕉 烹饪，或穿戴满级的 蛮族套装 / 鬼神套装 。",
-   "Cooked from 5 Mighty Bananas, or wear a fully upgraded Barbarian Armor set / Evil Spirit Armor set."
+   "Cooked from 5 Mighty Bananas, or wear a fully upgraded Barbarian Armor set / Fierce Deity Armor set."
   ],
   [
    "攻击加成可以显著减少击杀所需的循环轮数。",
@@ -567,7 +567,7 @@
   ],
   [
    "Boss图鉴",
-   "Boss Encyclopedia"
+   "Bosses"
   ],
   [
    "首页",
@@ -599,7 +599,7 @@
   ],
   [
    "怒吼流星爆破",
-   "Roar Meteor blast"
+   "Roar-triggered fiery explosion"
   ],
   [
    "一击秒杀防具未升级的林克",
@@ -615,7 +615,7 @@
   ],
   [
    "，瞬间触发暴击跪地，比单发弓效率高出数倍。没有兽神弓就先去打蓝鬃/白鬃拿弓。",
-   ", instantly triggering a critical kneel, several times more efficient than a single-shot bow. Without a Savage Lynel Bow, go fight Blue-Maned / White-Maned Lynels for one first."
+   ", instantly triggering a staggering it to its knees, several times more efficient than a single-shot bow. Without a Savage Lynel Bow, go fight Blue-Maned / White-Maned Lynels for one first."
   ],
   [
    "《荒野之息》：",
@@ -659,7 +659,7 @@
   ],
   [
    "蛮族套装 / 鬼神套装",
-   "Barbarian Set / Evil Spirit Set"
+   "Barbarian Set / Fierce Deity Set"
   ],
   [
    "使用力巴尔的勇猛（鸟神兽起风技能）原地起飞。",
@@ -695,7 +695,7 @@
   ],
   [
    "齐射的箭雨会瞬间触发暴击，",
-   "The volley of arrows instantly triggers a crit, "
+   "The volley of arrows instantly triggers a stagger, "
   ],
   [
    "——不需要精确瞄准，命中率极高。",
@@ -799,7 +799,7 @@
   ],
   [
    "A 键进行完美盾反（Parry）",
-   "A for a Perfect Guard (Parry) "
+   "A for a Perfect Guard (Perfect Guard) "
   ],
   [
    "后续：",
@@ -895,7 +895,7 @@
   ],
   [
    "用于强化顶级防具（如鬼神套装、英雄套装）至最高等级。",
-   "is used to upgrade top-tier armor (such as the Evil Spirit Set and Hero Set) to max level. "
+   "is used to upgrade top-tier armor (such as the Fierce Deity Set and Hero Set) to max level. "
   ],
   [
    "用于扩充林克的电池上限，让火箭盾飞更久。",
@@ -916,6 +916,14 @@
   [
    "最稳定来源",
    "most reliable source"
+  ],
+  [
+   "。攻击加成可以显著减少击杀所需的循环轮数。",
+   "The attack boost significantly reduces the number of cycles needed for the kill."
+  ],
+  [
+   "。骑乘不耗耐久，红血状态伤害翻倍，这 5 刀是整套流程伤害最高的输出阶段。",
+   "Mounted attacks cost no durability, and low-HP state doubles damage — these 5 hits are the highest-damage phase of the whole routine."
   ]
  ],
  "notes": [
