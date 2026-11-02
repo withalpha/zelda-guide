@@ -934,7 +934,8 @@ function scrollToTop() {
    语言切换 i18n：English / 简体中文 / 繁體中文，全站生效
    - 简体：原文；繁体：OpenCC s2twp（台湾惯用）词表转换；
      英文：按页加载翻译包 /i18n/en/<页>.json + 全站标题包。
-   - 选择记入 localStorage，跨页保持；?lang= 参数可直接分享。
+   - 选择记入 localStorage，跨页保持；?lang= 参数可直接分享，且进页即落盘；
+     站内链接自动带上当前语言（?lang=），点进其他页也不掉语言。
    ============================================================ */
 (function () {
 'use strict';
@@ -981,6 +982,7 @@ var pageSlug = (function () {
 function getLang() {
   var m = /[?&]lang=(en|zh-CN|zh-TW)/.exec(location.search);
   var l = m ? m[1] : null;
+  if (l) { try { localStorage.setItem(KEY, l); } catch (e) {} }
   if (!l) { try { l = localStorage.getItem(KEY); } catch (e) {} }
   return (l === 'en' || l === 'zh-TW' || l === 'zh-CN') ? l : 'zh-CN';
 }
@@ -1278,6 +1280,48 @@ function setLang(l) {
   } catch (e) {}
   setActive();
   applyLang();
+  rewriteLangLinks();
+}
+/* ---------- 站内链接带语言：当前语言跨页保持 ---------- */
+function rewriteLangLinks(root) {
+  var nodes = [];
+  if (root && root.nodeName === 'A' && root.getAttribute) nodes.push(root);
+  var list = null;
+  try { list = (root || document).querySelectorAll('a[href]'); } catch (e) { list = null; }
+  if (list) { for (var i = 0; i < list.length; i++) nodes.push(list[i]); }
+  for (var k = 0; k < nodes.length; k++) {
+    var a = nodes[k];
+    if (a.closest && a.closest('.adsbygoogle,[data-no-i18n],.lang-switch')) continue;
+    var href = a.getAttribute('href');
+    if (!href || href.charAt(0) === '#' || /^(mailto|tel|javascript):/i.test(href)) continue;
+    var u;
+    try { u = new URL(href, location.href); } catch (e) { continue; }
+    var host = u.hostname;
+    if (host !== 'uppersteps.com' && host.slice(-15) !== '.uppersteps.com') continue;
+    if (!(u.pathname === '/' || /\.html$/.test(u.pathname))) continue;
+    if (lang === 'zh-CN') {
+      if (!u.searchParams.has('lang')) continue;
+      u.searchParams.delete('lang');
+    } else {
+      if (u.searchParams.get('lang') === lang) continue;
+      u.searchParams.set('lang', lang);
+    }
+    var nh = u.pathname + u.search + u.hash;
+    a.setAttribute('href', /^https?:\/\//i.test(href) ? u.toString() : nh);
+  }
+}
+function installLinkObs() {
+  if (window._totkLinkObs || !window.MutationObserver) return;
+  window._totkLinkObs = true;
+  var obs = new MutationObserver(function (muts) {
+    for (var i = 0; i < muts.length; i++) {
+      var added = muts[i].addedNodes;
+      for (var j = 0; j < added.length; j++) {
+        if (added[j].nodeType === 1) rewriteLangLinks(added[j]);
+      }
+    }
+  });
+  obs.observe(document.body, { childList: true, subtree: true });
 }
 function installObs() {
       if (!window._totkObs) {
@@ -1435,6 +1479,8 @@ function setBusy(b) {
 document.addEventListener('DOMContentLoaded', function () {
   collect();
   injectSwitcher();
+  rewriteLangLinks();
+  installLinkObs();
   if (lang !== 'zh-CN') applyLang();
 });
 })();
