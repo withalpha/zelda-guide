@@ -1,867 +1,855 @@
 {
- "notes": [
-  "鸟望塔/鸟望台 rendered as Skyview Tower (official name; not in GLOSSARY.md).",
-  "萨托利 rendered as Satori; 山神萨托利 is the Lord of the Mountain, Satori.",
-  "迷你挑战“寻找柯尔天” translated descriptively as the mini-challenge 'Finding Koltin'; no confident official English quest name in GLOSSARY.md.",
-  "冰雪蜥蜴尾巴 rendered as Ice-Breath Lizalfos Tail (descriptive, based on the Ice-Breath Lizalfos enemy type).",
-  "格里奥克雷角 rendered as Thunder Gleeok Horn.",
-  "呀哈哈（Blupee） kept as in the source: Koltin wishes to become a Blupee; the source's Chinese term for Blupee is given as 呀哈哈 here, distinct from Korok (also 呀哈哈 elsewhere).",
-  "马克兔飞行器 rendered descriptively as Hover Bike.",
-  "乌萨诸马神庙 rendered as Usazum Shrine (transliteration; not in GLOSSARY.md)."
- ],
- "pairs": [
-  [
-   "王国之泪洞窟探险完全指南：147座洞窟的系统玩法——樱花树供奉果实唤山神点亮洞窟、一击必掉泡泡宝石的魔犹伊打法、柯尔天46颗换齐神秘套装与147颗终极奖励。",
-   "Tears of the Kingdom cave exploration complete guide: the systematic way to play 147 caves — offer fruit at cherry blossom trees to summon the Lord of the Mountain and light up caves, the one-hit Bubbulfrog tactic that always drops a Bubbul Gem, Koltin's 46 gems for the full Mystic Set, and the ultimate reward at 147 gems."
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "哈里的终极秘籍",
-   "Harry's Ultimate Tips"
-  ],
-  [
-   "洞窟探险完全指南",
-   "Cave Exploration Complete Guide"
-  ],
-  [
-   "🕳️ 洞窟攻略",
-   "🕳️ Cave Guide"
-  ],
-  [
-   "洞窟探险完全指南：樱花树、魔犹伊与柯尔天",
-   "Cave Exploration Complete Guide: Cherry Blossom Trees, Bubbulfrogs, and Koltin"
-  ],
-  [
-   "147 座洞窟不是 147 个“进去看看”的空壳：每座洞都藏着一只发光青蛙，而青蛙掉的东西能换一整套无法用卢比买到的装备。",
-   "147 caves are not 147 empty shells to just 'pop in and look': every cave hides a glowing frog, and what the frog drops can be traded for a whole set of gear that Rupees cannot buy."
-  ],
-  [
-   "🧙 作者：哈里",
-   "🧙 Author: Harry"
-  ],
-  [
-   "🕳️ 洞窟 · 找洞与兑换",
-   "🕳️ Caves · Finding Caves and Trading"
-  ],
-  [
-   "📖 深度攻略",
-   "📖 In-Depth Guide"
-  ],
-  [
-   "📑 本篇目录",
-   "📑 Contents of This Guide"
-  ],
-  [
-   "适用人群与前置条件",
-   "Who This Is For and Prerequisites"
-  ],
-  [
-   "洞窟里到底有什么",
-   "What Is Actually Inside a Cave"
-  ],
-  [
-   "找洞：樱花树供奉法",
-   "Finding Caves: The Cherry Blossom Tree Offering Method"
-  ],
-  [
-   "魔犹伊：一击必掉宝石的打法",
-   "Bubbulfrogs: The One-Hit Tactic That Always Drops a Gem"
-  ],
-  [
-   "柯尔天兑换全表：46颗换齐神秘套装",
-   "Koltin Trade Table: 46 Gems for the Full Mystic Set"
-  ],
-  [
-   "神秘套装到底值不值",
-   "Is the Mystic Set Worth It?"
-  ],
-  [
-   "终极奖励：147颗之后的故事",
-   "Ultimate Reward: The Story After 147 Gems"
-  ],
-  [
-   "进洞必带的三样东西",
-   "Three Things You Must Bring into a Cave"
-  ],
-  [
-   "三个最常见的翻车点",
-   "Three Most Common Mistakes"
-  ],
-  [
-   "哈里的取舍：洞窟优先级",
-   "Harry's Call: Cave Priorities"
-  ],
-  [
-   "洞窟中的魔犹伊与它掉落的泡泡宝石（游戏实机截图）",
-   "A Bubbulfrog in a cave and the Bubbul Gem it drops (in-game screenshot)"
-  ],
-  [
-   "图：游戏实机截图（洞窟中的魔犹伊，图片来源：Zelda Wiki），淡蓝色、带黄色角的蛙形生物就是魔犹伊。",
-   "Image: in-game screenshot (a Bubbulfrog in a cave, image source: Zelda Wiki); the pale-blue, yellow-horned frog-like creature is the Bubbulfrog."
-  ],
-  [
-   "这篇写给两种玩家：一是路过洞口不知道该不该进的新手，二是已经攒了十几颗泡泡宝石、不知道该找谁换的收集党。洞窟系统没有剧情门槛，下了空岛就能开始，但建议先拿到滑翔伞再系统性地跑——很多洞口在悬崖半腰，没有滑翔伞会跑得很狼狈。",
-   "This guide is written for two kinds of players: first, beginners who pass a cave entrance and don't know whether to go in, and second, collectors who have already saved up a dozen or so Bubbul Gems and don't know who to trade them with. The cave system has no story gate — you can start once you leave the sky island — but it is best to get the Paraglider first before running caves systematically, as many cave entrances sit halfway up cliffs and are miserable to reach without a Paraglider."
-  ],
-  [
-   "先说清两个数，避免一开始就记混：全游戏有 147 座洞窟，但洞窟入口标记有 197 个——因为不少洞窟有多个入口。数洞窟按 147 算，数入口按 197 算，两者都对，说的不是一回事。另外井不算洞窟，井有自己的一套标记。",
-   "First, let's get two numbers straight so you don't mix them up from the start: the game has 147 caves in total, but there are 197 cave entrance markers — because quite a few caves have multiple entrances. Count caves as 147, count entrances as 197; both are correct, they just aren't talking about the same thing. Also, wells do not count as caves; wells have their own set of markers."
-  ],
-  [
-   "先说清两个数，避免一开始就记混：全游戏有 147 座洞窟，但洞窟入口标记有 197 个——因为不少洞窟有多个入口",
-   "First, let's get two numbers straight so you don't mix them up from the start: the game has 147 caves in total, but there are 197 cave entrance markers — because quite a few caves have multiple entrances"
-  ],
-  [
-   "数洞窟按 147 算，数入口按 197 算，两者都对，说的不是一回事",
-   "Count caves as 147, count entrances as 197; both are correct, they just aren't talking about the same thing"
-  ],
-  [
-   "另外井不算洞窟，井有自己的一套标记",
-   "Also, wells do not count as caves; wells have their own set of markers"
-  ],
-  [
-   "📌 本篇要点",
-   "📌 Key Points of This Guide"
-  ],
-  [
-   "樱花树下供奉任意果实，山神现身后光柱会标出附近的洞窟；每座洞窟都有一只魔犹伊，一击就掉泡泡宝石；柯尔天只在夜里现身，46 颗宝石换完常规奖励，集齐 147 颗有终极奖励。",
-   "Offer any fruit under a cherry blossom tree, and after the Lord of the Mountain appears, pillars of light will mark nearby caves; every cave has one Bubbulfrog, and one hit drops a Bubbul Gem; Koltin only appears at night, 46 gems trade for all the regular rewards, and collecting all 147 gems earns the ultimate reward."
-  ],
-  [
-   "樱花树下供奉任意果实，山神现身后光柱会标出附近的洞窟",
-   "Offer any fruit under a cherry blossom tree, and after the Lord of the Mountain appears, pillars of light will mark nearby caves"
-  ],
-  [
-   "每座洞窟都有一只魔犹伊，一击就掉泡泡宝石",
-   "Every cave has one Bubbulfrog, and one hit drops a Bubbul Gem"
-  ],
-  [
-   "柯尔天只在夜里现身，46 颗宝石换完常规奖励，集齐 147 颗有终极奖励",
-   "Koltin only appears at night, 46 gems trade for all the regular rewards, and collecting all 147 gems earns the ultimate reward"
-  ],
-  [
-   "洞窟不是单纯的山洞，它是王国之泪里密度最高的“奖励容器”之一。进一座洞，通常能拿到下面几类东西：",
-   "A cave is not just a hole in a mountain; it is one of the densest 'reward containers' in Tears of the Kingdom. Entering a cave, you can usually get the following kinds of things:"
-  ],
-  [
-   "宝箱与防具。不少套装部件直接藏在洞窟宝箱里，跑洞是拿齐套装最稳定的路子之一。",
-   "Treasure chests and armor. Quite a few armor set pieces are hidden directly in cave chests, making cave-running one of the most reliable ways to complete sets."
-  ],
-  [
-   "宝箱与防具",
-   "Treasure chests and armor"
-  ],
-  [
-   "不少套装部件直接藏在洞窟宝箱里，跑洞是拿齐套装最稳定的路子之一",
-   "Quite a few armor set pieces are hidden directly in cave chests, making cave-running one of the most reliable ways to complete sets"
-  ],
-  [
-   "矿石与夜光石。洞壁常有矿石与夜光石矿脉，缺钱缺材料时顺路敲一圈不亏。",
-   "Ores and Luminous Stones. Cave walls often have ore and Luminous Stone veins, so mining a round on your way is never a loss when you are short of money or materials."
-  ],
-  [
-   "矿石与夜光石",
-   "Ores and Luminous Stones"
-  ],
-  [
-   "洞壁常有矿石与夜光石矿脉，缺钱缺材料时顺路敲一圈不亏",
-   "Cave walls often have ore and Luminous Stone veins, so mining a round on your way is never a loss when you are short of money or materials"
-  ],
-  [
-   "明亮花种子。地底探索的照明全靠它，洞窟是前期最稳定的明亮花来源，进地底之前先跑几个洞囤货。",
-   "Brightbloom Seeds. Depths exploration lighting depends entirely on them, and caves are the most stable early source of Brightblooms — run a few caves to stock up before entering the Depths."
-  ],
-  [
-   "明亮花种子",
-   "Brightbloom Seeds"
-  ],
-  [
-   "地底探索的照明全靠它，洞窟是前期最稳定的明亮花来源，进地底之前先跑几个洞囤货",
-   "Depths exploration lighting depends entirely on them, and caves are the most stable early source of Brightblooms — run a few caves to stock up before entering the Depths"
-  ],
-  [
-   "魔犹伊。每座洞窟必有一只，掉落泡泡宝石，是本篇的核心奖励链，见下两节。",
-   "Bubbulfrogs. Every cave has exactly one, dropping a Bubbul Gem — the core reward chain of this guide, covered in the next two sections."
-  ],
-  [
-   "魔犹伊",
-   "Bubbulfrogs"
-  ],
-  [
-   "每座洞窟必有一只，掉落泡泡宝石，是本篇的核心奖励链，见下两节",
-   "Every cave has exactly one, dropping a Bubbul Gem — the core reward chain of this guide, covered in the next two sections"
-  ],
-  [
-   "神庙挑战入口。部分神庙挑战的入口就藏在洞窟深处，跑洞与开神庙常常是同一趟活。",
-   "Shrine quest entrances. Some Shrine quest entrances are hidden deep inside caves, so cave-running and opening Shrines are often the same trip."
-  ],
-  [
-   "神庙挑战入口",
-   "Shrine quest entrances"
-  ],
-  [
-   "部分神庙挑战的入口就藏在洞窟深处，跑洞与开神庙常常是同一趟活",
-   "Some Shrine quest entrances are hidden deep inside caves, so cave-running and opening Shrines are often the same trip"
-  ],
-  [
-   "洞窟内部结构差异很大：有的笔直到底，有的上下分层带水域，有的要炸开石墙才有后半段。进洞前先在洞口抬头看一眼——发光青蛙经常贴在洞顶或高处岩壁上，低头赶路最容易错过它。",
-   "Cave interiors vary greatly: some run straight to the end, some have multiple levels with water areas, and some need stone walls blasted open to reveal the second half. Before entering, look up at the cave entrance — the glowing frog often clings to the cave ceiling or high rock walls, and rushing in with your head down is the easiest way to miss it."
-  ],
-  [
-   "对着地图一个个找洞口是最笨的办法。游戏里给了系统性的找洞工具：樱花树。海拉鲁各地都有樱花树，树下有一个小供奉盘，做法如下：",
-   "Searching for cave entrances one by one on the map is the dumbest method. The game gives you a systematic cave-finding tool: cherry blossom trees. There are cherry blossom trees all over Hyrule, each with a small offering dish beneath it. Here's how it works:"
-  ],
-  [
-   "找到一棵樱花树，往树下的供奉盘里放任意一种果实——苹果就行，不必是特定果实，放进去的果实事后还可以取回来。",
-   "Find a cherry blossom tree and place any kind of fruit in the offering dish beneath it — an apple will do, it doesn't need to be a specific fruit, and you can take the fruit back afterwards."
-  ],
-  [
-   "找到一棵樱花树，往树下的供奉盘里放任意一种果实——苹果就行，不必是特定果实，放进去的果实事后还可以取回来",
-   "Find a cherry blossom tree and place any kind of fruit in the offering dish beneath it — an apple will do, it doesn't need to be a specific fruit, and you can take the fruit back afterwards"
-  ],
-  [
-   "山神萨托利现身，附近区域的洞窟位置会被一道道光柱标出来。光柱不是永久的，只持续一段游戏时间。",
-   "The Lord of the Mountain, Satori, appears, and the cave locations in the nearby region are marked by pillars of light. The pillars are not permanent; they only last for a period of in-game time."
-  ],
-  [
-   "山神萨托利现身，附近区域的洞窟位置会被一道道光柱标出来",
-   "The Lord of the Mountain, Satori, appears, and the cave locations in the nearby region are marked by pillars of light"
-  ],
-  [
-   "光柱不是永久的，只持续一段游戏时间",
-   "The pillars are not permanent; they only last for a period of in-game time"
-  ],
-  [
-   "立刻打开地图，把光柱对应的位置逐个打上标记。光柱消失后，标记还在，之后按标记跑洞就行。",
-   "Immediately open the map and mark each pillar's location one by one. After the pillars disappear, the marks remain, and you can then run caves by following the marks."
-  ],
-  [
-   "立刻打开地图，把光柱对应的位置逐个打上标记",
-   "Immediately open the map and mark each pillar's location one by one"
-  ],
-  [
-   "光柱消失后，标记还在，之后按标记跑洞就行",
-   "After the pillars disappear, the marks remain, and you can then run caves by following the marks"
-  ],
-  [
-   "关键点只有两个：光柱只标附近区域的洞窟，不是全图，所以要按区域一棵树一棵树地供奉；供奉完别先做别的事，先把标记打完再走，否则光柱没了又要重供一次。萨托利山的那棵樱花树是最出名的一棵，刚学会这招时可以先去那里练一次手。",
-   "There are only two key points: the pillars only mark caves in the nearby region, not the whole map, so you must offer tree by tree, region by region; and after offering, don't do anything else first — finish marking before you leave, or once the pillars are gone you will have to offer again. The cherry blossom tree on Satori Mountain is the most famous one, and a good place to practice when you first learn this trick."
-  ],
-  [
-   "关键点只有两个：光柱只标附近区域的洞窟，不是全图，所以要按区域一棵树一棵树地供奉",
-   "There are only two key points: the pillars only mark caves in the nearby region, not the whole map, so you must offer tree by tree, region by region"
-  ],
-  [
-   "供奉完别先做别的事，先把标记打完再走，否则光柱没了又要重供一次",
-   "After offering, don't do anything else first — finish marking before you leave, or once the pillars are gone you will have to offer again"
-  ],
-  [
-   "萨托利山的那棵樱花树是最出名的一棵，刚学会这招时可以先去那里练一次手",
-   "The cherry blossom tree on Satori Mountain is the most famous one, and a good place to practice when you first learn this trick"
-  ],
-  [
-   "魔犹伊就是洞窟里那只发光的青蛙，身上顶着一颗泡泡状的光球。它不是 Boss，没有血条概念：打中一击就掉一颗泡泡宝石，用什么武器都行。但它会逃跑，处理不好就白跑一趟：",
-   "A Bubbulfrog is the glowing frog in a cave, with a bubble-shaped ball of light on top of it. It is not a Boss and has no health-bar concept: one hit drops one Bubbul Gem, with any weapon. But it will flee, and if you handle it badly the trip is wasted:"
-  ],
-  [
-   "魔犹伊就是洞窟里那只发光的青蛙，身上顶着一颗泡泡状的光球",
-   "A Bubbulfrog is the glowing frog in a cave, with a bubble-shaped ball of light on top of it"
-  ],
-  [
-   "它不是 Boss，没有血条概念：打中一击就掉一颗泡泡宝石，用什么武器都行",
-   "It is not a Boss and has no health-bar concept: one hit drops one Bubbul Gem, with any weapon"
-  ],
-  [
-   "但它会逃跑，处理不好就白跑一趟",
-   "But it will flee, and if you handle it badly the trip is wasted"
-  ],
-  [
-   "先发现，再动手。进洞后先环视洞顶和岩壁，找到青蛙再靠近。直接冲过去会惊动它，它跳着逃跑的速度不慢。",
-   "Spot it first, then act. After entering a cave, look around the ceiling and rock walls first and find the frog before approaching. Rushing straight at it will startle it, and it hops away pretty fast."
-  ],
-  [
-   "先发现，再动手",
-   "Spot it first, then act"
-  ],
-  [
-   "进洞后先环视洞顶和岩壁，找到青蛙再靠近",
-   "After entering a cave, look around the ceiling and rock walls first and find the frog before approaching"
-  ],
-  [
-   "直接冲过去会惊动它，它跳着逃跑的速度不慢",
-   "Rushing straight at it will startle it, and it hops away pretty fast"
-  ],
-  [
-   "首选弓箭远程一击。瞄准了再射，一箭就结束战斗，不给它逃跑的机会。近战武器容易挥空，挥空一次它就开始逃。",
-   "First choice: one ranged bow shot. Aim carefully and shoot — one arrow ends the fight and gives it no chance to flee. Melee weapons easily miss, and one miss and it starts fleeing."
-  ],
-  [
-   "首选弓箭远程一击",
-   "First choice: one ranged bow shot"
-  ],
-  [
-   "瞄准了再射，一箭就结束战斗，不给它逃跑的机会",
-   "Aim carefully and shoot — one arrow ends the fight and gives it no chance to flee"
-  ],
-  [
-   "近战武器容易挥空，挥空一次它就开始逃",
-   "Melee weapons easily miss, and one miss and it starts fleeing"
-  ],
-  [
-   "一旦钻回洞口就消失了。青蛙逃到自己的洞口钻进去，这趟就白跑了，只能下次再来。别贪刀，别追着它绕洞跑。",
-   "Once it burrows back into its hole, it's gone. When the frog flees to its own hole and burrows in, the trip is wasted and you can only come back next time. Don't be greedy with hits, and don't chase it around the cave."
-  ],
-  [
-   "一旦钻回洞口就消失了",
-   "Once it burrows back into its hole, it's gone"
-  ],
-  [
-   "青蛙逃到自己的洞口钻进去，这趟就白跑了，只能下次再来",
-   "When the frog flees to its own hole and burrows in, the trip is wasted and you can only come back next time"
-  ],
-  [
-   "别贪刀，别追着它绕洞跑",
-   "Don't be greedy with hits, and don't chase it around the cave"
-  ],
-  [
-   "拿到宝石后地图会打勾。取得一座洞窟的魔犹伊遗失物后，地图上该洞窟图标的右上角会打勾——这是判断哪些洞跑过、哪些没跑过的唯一可靠标记。",
-   "After getting the gem, the map gets a check mark. Once you obtain a cave's Bubbul Gem, a check mark appears at the top-right corner of that cave's icon on the map — this is the only reliable mark for telling which caves you have run and which you haven't."
-  ],
-  [
-   "拿到宝石后地图会打勾",
-   "After getting the gem, the map gets a check mark"
-  ],
-  [
-   "取得一座洞窟的魔犹伊遗失物后，地图上该洞窟图标的右上角会打勾——这是判断哪些洞跑过、哪些没跑过的唯一可靠标记",
-   "Once you obtain a cave's Bubbul Gem, a check mark appears at the top-right corner of that cave's icon on the map — this is the only reliable mark for telling which caves you have run and which you haven't"
-  ],
-  [
-   "洞窟全收集的进度管理就靠这个勾：跑过的洞有勾，没跑过的没勾。配合樱花树光柱的标记，两套标记一对，就能清楚知道一片区域还剩几个洞没跑。",
-   "Cave completion progress management relies on this check mark: run caves have a mark, unrun caves don't. Combined with the cherry blossom tree pillar marks, comparing the two sets of marks clearly shows how many caves remain unrun in a region."
-  ],
-  [
-   "泡泡宝石的用途只有一个：交给柯尔天换奖励。柯尔天是基尔顿的弟弟，一心想变成呀哈哈（Blupee），为此收集泡泡宝石。见他有两个前提：先接取迷你挑战“寻找柯尔天”；他只在夜里现身，而且位置经常变化，白天去是找不到人的，找不到时先找地方睡到晚上再去。",
-   "Bubbul Gems have only one use: give them to Koltin in exchange for rewards. Koltin is Kilton's younger brother, single-mindedly wanting to become a Blupee, and collects Bubbul Gems for that purpose. There are two prerequisites for meeting him: first take on the mini-challenge 'Finding Koltin'; and he only appears at night, and his location changes often — going in daytime you won't find him, so if you can't find him, first find somewhere to sleep until night and then go."
-  ],
-  [
-   "泡泡宝石的用途只有一个：交给柯尔天换奖励",
-   "Bubbul Gems have only one use: give them to Koltin in exchange for rewards"
-  ],
-  [
-   "柯尔天是基尔顿的弟弟，一心想变成呀哈哈（Blupee），为此收集泡泡宝石",
-   "Koltin is Kilton's younger brother, single-mindedly wanting to become a Blupee, and collects Bubbul Gems for that purpose"
-  ],
-  [
-   "见他有两个前提：先接取迷你挑战“寻找柯尔天”",
-   "There are two prerequisites for meeting him: first take on the mini-challenge 'Finding Koltin'"
-  ],
-  [
-   "他只在夜里现身，而且位置经常变化，白天去是找不到人的，找不到时先找地方睡到晚上再去",
-   "He only appears at night, and his location changes often — going in daytime you won't find him, so if you can't find him, first find somewhere to sleep until night and then go"
-  ],
-  [
-   "常规奖励共 14 档，按累计宝石数排列如下（每档是这次要交的数量，累计列是交到该档为止的总投入）：",
-   "There are 14 tiers of regular rewards in total, listed below by cumulative gem count (each tier's figure is the number to hand in this time, and the cumulative column is the total invested up to that tier):"
-  ],
-  [
-   "本次交",
-   "This Time"
-  ],
-  [
-   "累计",
-   "Cumulative"
-  ],
-  [
-   "奖励",
-   "Reward"
-  ],
-  [
-   "1 颗",
-   "1 gem"
-  ],
-  [
-   "1",
-   "1"
-  ],
-  [
-   "波克布林面具",
-   "Bokoblin Mask"
-  ],
-  [
-   "2 颗",
-   "2 gems"
-  ],
-  [
-   "3",
-   "3"
-  ],
-  [
-   "莫力布林面具",
-   "Moblin Mask"
-  ],
-  [
-   "5",
-   "5"
-  ],
-  [
-   "海诺克斯脚趾 ×3",
-   "Hinox Toenail ×3"
-  ],
-  [
-   "3 颗",
-   "3 gems"
-  ],
-  [
-   "8",
-   "8"
-  ],
-  [
-   "神秘长袍",
-   "Mystic Robe"
-  ],
-  [
-   "11",
-   "11"
-  ],
-  [
-   "火蝙蝠眼睛 ×8",
-   "Fire Keese Eyeball ×8"
-  ],
-  [
-   "14",
-   "14"
-  ],
-  [
-   "蜥蜴战士面具",
-   "Lizalfos Mask"
-  ],
-  [
-   "17",
-   "17"
-  ],
-  [
-   "冰雪蜥蜴尾巴 ×5",
-   "Ice-Breath Lizalfos Tail ×5"
-  ],
-  [
-   "4 颗",
-   "4 gems"
-  ],
-  [
-   "21",
-   "21"
-  ],
-  [
-   "神秘长裤",
-   "Mystic Trousers"
-  ],
-  [
-   "25",
-   "25"
-  ],
-  [
-   "白鬃人马重锤角",
-   "White-Maned Lynel Mace Horn"
-  ],
-  [
-   "29",
-   "29"
-  ],
-  [
-   "霍拉布林面具",
-   "Horriblin Mask"
-  ],
-  [
-   "33",
-   "33"
-  ],
-  [
-   "格里奥克翅膀 ×2",
-   "Gleeok Wing ×2"
-  ],
-  [
-   "37",
-   "37"
-  ],
-  [
-   "人马面具",
-   "Lynel Mask"
-  ],
-  [
-   "41",
-   "41"
-  ],
-  [
-   "格里奥克雷角 ×3",
-   "Thunder Gleeok Horn ×3"
-  ],
-  [
-   "5 颗",
-   "5 gems"
-  ],
-  [
-   "46",
-   "46"
-  ],
-  [
-   "神秘头饰",
-   "Mystic Headpiece"
-  ],
-  [
-   "也就是说，交满 46 颗，常规奖励全部换完，神秘套装三件也齐了。面具类奖励的实际作用是“戴上后对应怪物不主动攻击”，适合潜行流玩家；材料类奖励则是直接送高价值余料，省去刷怪的时间。想查每一座洞窟的具体位置，可以对照本站的魔犹伊的遗失物页面按入口逐个核对。",
-   "In other words, once you have handed in 46 gems, all regular rewards are traded and the three Mystic Set pieces are complete. The practical effect of mask rewards is that 'wearing one, the corresponding monster won't attack on its own,' suiting stealth players; material rewards directly give high-value Fuse materials, saving monster-farming time. To check each cave's exact location, cross-check entrance by entrance against this site's Bubbul Gems page."
-  ],
-  [
-   "也就是说，交满 46 颗，常规奖励全部换完，神秘套装三件也齐了",
-   "In other words, once you have handed in 46 gems, all regular rewards are traded and the three Mystic Set pieces are complete"
-  ],
-  [
-   "面具类奖励的实际作用是“戴上后对应怪物不主动攻击”，适合潜行流玩家",
-   "The practical effect of mask rewards is that 'wearing one, the corresponding monster won't attack on its own,' suiting stealth players"
-  ],
-  [
-   "材料类奖励则是直接送高价值余料，省去刷怪的时间",
-   "Material rewards directly give high-value Fuse materials, saving monster-farming time"
-  ],
-  [
-   "想查每一座洞窟的具体位置，可以对照本站的魔犹伊的遗失物页面按入口逐个核对",
-   "To check each cave's exact location, cross-check entrance by entrance against this site's Bubbul Gems page"
-  ],
-  [
-   "神秘套装（头饰、长袍、长裤）的效果叫“卢比垫”：穿着它受到伤害时，扣的是卢比而不是红心。听起来像无敌，实际要打个折：",
-   "The Mystic Set (Headpiece, Robe, Trousers) has an effect called 'Rupee Padding': while wearing it, taking damage deducts Rupees instead of hearts. It sounds invincible, but in practice it comes with a discount:"
-  ],
-  [
-   "卢比烧得很快。挨打一次扣的卢比不少，钱包不厚时穿它打硬仗，几下就把钱打光了；钱打光后效果也就没了。",
-   "Rupees burn fast. Each hit deducts a fair amount of Rupees, so wearing it for a hard fight with a thin wallet will drain your money in a few hits; once the money is gone, the effect is gone too."
-  ],
-  [
-   "卢比烧得很快",
-   "Rupees burn fast"
-  ],
-  [
-   "挨打一次扣的卢比不少，钱包不厚时穿它打硬仗，几下就把钱打光了",
-   "Each hit deducts a fair amount of Rupees, so wearing it for a hard fight with a thin wallet will drain your money in a few hits"
-  ],
-  [
-   "钱打光后效果也就没了",
-   "Once the money is gone, the effect is gone too"
-  ],
-  [
-   "防御本身偏低，且无法强化。它不是靠防御力吃饭的套装，别指望它像士兵套那样硬扛。",
-   "Its defense itself is low, and it cannot be enhanced. It is not a set that lives on defense — don't expect it to tank hits like the Soldier's Set."
-  ],
-  [
-   "防御本身偏低，且无法强化",
-   "Its defense itself is low, and it cannot be enhanced"
-  ],
-  [
-   "它不是靠防御力吃饭的套装，别指望它像士兵套那样硬扛",
-   "It is not a set that lives on defense — don't expect it to tank hits like the Soldier's Set"
-  ],
-  [
-   "真正的用法是“容错”，不是“坦克”。适合的场景是：挑战平时容易失误的战斗、带它去打不熟悉的 Boss，用卢比买一次失误的机会，而不是穿着它站撸。",
-   "Its real use is 'room for error,' not 'tank.' Suitable scenarios are: challenging fights where you usually make mistakes, or taking it to fight an unfamiliar Boss — buying one mistake with Rupees, rather than standing and trading blows while wearing it."
-  ],
-  [
-   "真正的用法是“容错”，不是“坦克”",
-   "Its real use is 'room for error,' not 'tank'"
-  ],
-  [
-   "适合的场景是：挑战平时容易失误的战斗、带它去打不熟悉的 Boss，用卢比买一次失误的机会，而不是穿着它站撸",
-   "Suitable scenarios are: challenging fights where you usually make mistakes, or taking it to fight an unfamiliar Boss — buying one mistake with Rupees, rather than standing and trading blows while wearing it"
-  ],
-  [
-   "作者视角的判断：神秘套装值得换，但别把它当毕业套。它的价值在于“多一次容错”，而卢比在本作里越到后期越不值钱——后期卢比多到没处花时，这套装才真正进入完全体。",
-   "The author's judgment: the Mystic Set is worth trading for, but don't treat it as an endgame set. Its value lies in 'one more chance for error,' and Rupees become less and less valuable the later you get in this game — only when you have more Rupees than you can spend late in the game does this set truly reach its full form."
-  ],
-  [
-   "46 颗换完常规奖励后，柯尔天还会继续收宝石，但不再给新装备——直到你把全游戏的 147 颗全部交给他。集齐 147 颗后，他会实现变成呀哈哈的愿望，并送你最后的礼物：柯尔天滑翔伞布料，可以用来定制滑翔伞外观。",
-   "After the 46 gems for the regular rewards, Koltin will keep accepting gems, but no longer gives new gear — until you hand him all 147 gems in the game. Once you have collected all 147, he will fulfill his wish to become a Blupee and give you his final gift: Koltin's Paraglider Fabric, which can be used to customize your Paraglider's appearance."
-  ],
-  [
-   "46 颗换完常规奖励后，柯尔天还会继续收宝石，但不再给新装备——直到你把全游戏的 147 颗全部交给他",
-   "After the 46 gems for the regular rewards, Koltin will keep accepting gems, but no longer gives new gear — until you hand him all 147 gems in the game"
-  ],
-  [
-   "集齐 147 颗后，他会实现变成呀哈哈的愿望，并送你最后的礼物：柯尔天滑翔伞布料，可以用来定制滑翔伞外观",
-   "Once you have collected all 147, he will fulfill his wish to become a Blupee and give you his final gift: Koltin's Paraglider Fabric, which can be used to customize your Paraglider's appearance"
-  ],
-  [
-   "这 101 颗的长尾纯粹是收集党的功课：没有战斗力收益，只有布料与一段剧情收尾。打算全收集的玩家，按区域用樱花树法加地图打勾法推进，比对着清单硬跑省心得多。",
-   "The long tail of these 101 gems is purely collectors' homework: no combat benefit, only the fabric and a story conclusion. Players aiming for full completion will find it much easier to advance region by region using the cherry blossom tree method plus the map check-mark method than to run hard against a checklist."
-  ],
-  [
-   "明亮花种子。洞内光线暗，没有照明寸步难行；种子可以扔出去照亮一片区域，比火把省事。",
-   "Brightbloom Seeds. Caves are dark inside, and without light you can barely move; seeds can be thrown to light up an area, which is less trouble than a torch."
-  ],
-  [
-   "洞内光线暗，没有照明寸步难行",
-   "Caves are dark inside, and without light you can barely move"
-  ],
-  [
-   "种子可以扔出去照亮一片区域，比火把省事",
-   "Seeds can be thrown to light up an area, which is less trouble than a torch"
-  ],
-  [
-   "炸弹花。不少洞窟的后半段被石墙挡着，没有炸弹花就只能绕路或干瞪眼。",
-   "Bomb Flowers. The second half of quite a few caves is blocked by stone walls, and without Bomb Flowers you can only detour or stare helplessly."
-  ],
-  [
-   "炸弹花",
-   "Bomb Flowers"
-  ],
-  [
-   "不少洞窟的后半段被石墙挡着，没有炸弹花就只能绕路或干瞪眼",
-   "The second half of quite a few caves is blocked by stone walls, and without Bomb Flowers you can only detour or stare helplessly"
-  ],
-  [
-   "一把弓。既是打魔犹伊的工具，也是洞内远程触发机关、射落高处宝箱的通用手段。",
-   "A bow. It is both the tool for hitting Bubbulfrogs and the general means for triggering mechanisms remotely inside caves and shooting down high treasure chests."
-  ],
-  [
-   "一把弓",
-   "A bow"
-  ],
-  [
-   "既是打魔犹伊的工具，也是洞内远程触发机关、射落高处宝箱的通用手段",
-   "It is both the tool for hitting Bubbulfrogs and the general means for triggering mechanisms remotely inside caves and shooting down high treasure chests"
-  ],
-  [
-   "⚠️ 坑一：供奉完樱花树不打标记。光柱只持续一段时间，跑去做别的事再回来，光柱没了，等于白供一次。供奉完第一件事永远是开地图打标记。",
-   "⚠️ Pitfall 1: Offering at a cherry blossom tree without marking. The pillars only last a while; if you go off to do something else and come back, the pillars are gone, and the offering was wasted. The first thing after offering is always to open the map and mark."
-  ],
-  [
-   "⚠️ 坑一：供奉完樱花树不打标记",
-   "⚠️ Pitfall 1: Offering at a cherry blossom tree without marking"
-  ],
-  [
-   "光柱只持续一段时间，跑去做别的事再回来，光柱没了，等于白供一次",
-   "The pillars only last a while; if you go off to do something else and come back, the pillars are gone, and the offering was wasted"
-  ],
-  [
-   "供奉完第一件事永远是开地图打标记",
-   "The first thing after offering is always to open the map and mark"
-  ],
-  [
-   "⚠️ 坑二：追着魔犹伊近战挥空。挥空一次它就逃，钻进洞口就消失。进洞先找蛙、后动手，弓箭一击解决，别近战追打。",
-   "⚠️ Pitfall 2: Chasing a Bubbulfrog and missing with melee. One miss and it flees, burrowing into its hole and disappearing. Find the frog first after entering, then act — settle it with one bow shot, don't chase it with melee."
-  ],
-  [
-   "⚠️ 坑二：追着魔犹伊近战挥空",
-   "⚠️ Pitfall 2: Chasing a Bubbulfrog and missing with melee"
-  ],
-  [
-   "挥空一次它就逃，钻进洞口就消失",
-   "One miss and it flees, burrowing into its hole and disappearing"
-  ],
-  [
-   "进洞先找蛙、后动手，弓箭一击解决，别近战追打",
-   "Find the frog first after entering, then act — settle it with one bow shot, don't chase it with melee"
-  ],
-  [
-   "⚠️ 坑三：白天去找柯尔天。他只在夜里现身，白天跑遍全图也找不到。找不到时先睡觉到晚上，再去他常出没的洞窟附近看看。",
-   "⚠️ Pitfall 3: Going to find Koltin in daytime. He only appears at night, and you won't find him even running all over the map in daytime. When you can't find him, sleep until night first, then look near the caves he often haunts."
-  ],
-  [
-   "⚠️ 坑三：白天去找柯尔天",
-   "⚠️ Pitfall 3: Going to find Koltin in daytime"
-  ],
-  [
-   "他只在夜里现身，白天跑遍全图也找不到",
-   "He only appears at night, and you won't find him even running all over the map in daytime"
-  ],
-  [
-   "找不到时先睡觉到晚上，再去他常出没的洞窟附近看看",
-   "When you can't find him, sleep until night first, then look near the caves he often haunts"
-  ],
-  [
-   "洞窟的优先级分三档：第一档是顺路跑——推主线、开神庙路过洞口就进去，宝箱、矿石、青蛙一趟全拿；第二档是 46 颗目标——有意识地攒到 46 颗，把神秘套装与面具换齐，这是洞窟系统真正的战斗力收益；第三档是 147 颗全收集——只留给想拿滑翔伞布料与完整剧情的玩家，不必强求。",
-   "Cave priorities come in three tiers: tier one is running caves on the way — when pushing the main quest or opening Shrines, go in whenever you pass a cave entrance, getting chests, ores, and the frog in one trip; tier two is the 46-gem goal — deliberately save up to 46 gems and trade for the full Mystic Set and masks, which is the cave system's real combat benefit; tier three is the 147-gem full collection — only for players who want the Paraglider Fabric and the complete story, and not something to force."
-  ],
-  [
-   "一句话总结：洞窟系统奖励的是“顺路的耐心”，不是“清单式的苦力”。樱花树找洞、弓箭打蛙、夜里找柯尔天，三步形成闭环，跑上十几座洞，这套流程就比任何清单都顺手。",
-   "In one sentence: the cave system rewards 'patience along the way,' not 'checklist drudgery.' Finding caves with cherry blossom trees, hitting frogs with a bow, and finding Koltin at night — these three steps form a loop, and after running a dozen or so caves, this routine feels smoother than any checklist."
-  ],
-  [
-   "← 上一篇：弓箭完全指南",
-   "← Previous: Bow Complete Guide"
-  ],
-  [
-   "返回秘籍专栏",
-   "Back to the Tips Column"
-  ],
-  [
-   "下一篇：盾牌完全指南 →",
-   "Next: Shield Complete Guide →"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 魔犹伊的遗失物",
-   "› Bubbul Gems"
-  ],
-  [
-   "› 地底世界生存与探索完全指南",
-   "› Depths Survival and Exploration Complete Guide"
-  ],
-  [
-   "› 152座神庙全收集自查指南",
-   "› 152-Shrine Complete Collection Self-Check Guide"
-  ],
-  [
-   "📚 全部攻略索引",
-   "📚 Complete Guide Index"
-  ],
-  [
-   "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Tips"
-  ],
-  [
-   "› 七宝匕首终极攻略",
-   "› Scimitar of the Seven Ultimate Guide"
-  ],
-  [
-   "› 四大神级料理配方",
-   "› Four God-Tier Recipes"
-  ],
-  [
-   "› 最强套装三梯队全解析",
-   "› Strongest Armor Sets: Full Three-Tier Analysis"
-  ],
-  [
-   "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine Guide for Complete Beginners"
-  ],
-  [
-   "› 白龙寻踪与大师之剑",
-   "› Tracking the Light Dragon and the Master Sword"
-  ],
-  [
-   "› 马克兔飞行器调校",
-   "› Hover Bike Tuning"
-  ],
-  [
-   "› 地底电池扩充与大妖精",
-   "› Depths Energy Cell Expansion and the Great Fairies"
-  ],
-  [
-   "🆕 每日新攻略",
-   "🆕 Daily New Guides"
-  ],
-  [
-   "› 新手开荒指南：落地先做的10件事",
-   "› Beginner Guide: 10 Things to Do First After Landing"
-  ],
-  [
-   "› 呀哈哈种子全指南",
-   "› Complete Korok Seed Guide"
-  ],
-  [
-   "› 大妖精四姐妹与防具强化完全指南",
-   "› Four Great Fairies and Armor Enhancement Complete Guide"
-  ],
-  [
-   "› 四条龙素材刷取指南",
-   "› Four Dragons Material Farming Guide"
-  ],
-  [
-   "› 人马（莱尼尔）完全指南",
-   "› Lynel Complete Guide"
-  ],
-  [
-   "› 卢比速刷指南：从前期到后期",
-   "› Rupee Farming Guide: From Early to Late Game"
-  ],
-  [
-   "› 马匹捕捉与稀有马完全指南",
-   "› Horse Catching and Rare Horses Complete Guide"
-  ],
-  [
-   "› 五位贤者能力全解",
-   "› Five Sages' Abilities Fully Explained"
-  ],
-  [
-   "› 料理机制全解：效果、时长与暴击",
-   "› Cooking Mechanics Fully Explained: Effects, Duration, and Critical Hits"
-  ],
-  [
-   "› 海拉鲁城堡探索完全指南",
-   "› Hyrule Castle Exploration Complete Guide"
-  ],
-  [
-   "› 海拉鲁图鉴509项收集指南",
-   "› Hyrule Compendium 509-Item Collection Guide"
-  ],
-  [
-   "› 左纳乌装置实用造物指南",
-   "› Zonai Devices Practical Builds Guide"
-  ],
-  [
-   "› 血月机制全解",
-   "› Blood Moon Mechanics Fully Explained"
-  ],
-  [
-   "› 余料建造完全指南",
-   "› Fuse Complete Guide"
-  ],
-  [
-   "› 祝福之光兑换完全指南",
-   "› Light of Blessing Exchange Complete Guide"
-  ],
-  [
-   "› 15座鸟望塔开图完全指南",
-   "› 15 Skyview Towers Map-Reveal Complete Guide"
-  ],
-  [
-   "› 弓箭完全指南：选弓、箭矢搭配与五连兽神弓",
-   "› Bow Complete Guide: Choosing Bows, Arrow Combinations, and the Five-Shot Savage Lynel Bow"
-  ],
-  [
-   "› 洞窟探险完全指南：樱花树、魔犹伊与柯尔天",
-   "› Cave Exploration Complete Guide: Cherry Blossom Trees, Bubbulfrogs, and Koltin"
-  ],
-  [
-   "› 盾牌完全指南：海利亚盾、盾反与盾冲浪",
-   "› Shield Complete Guide: Hylian Shield, Shield Parry, and Shield Surfing"
-  ],
-  [
-   "› 天空岛完全指南：上岛四法、贤者遗志与残旧地图",
-   "› Sky Islands Complete Guide: Four Ways Up, Sage's Wills, and Old Maps"
-  ],
-  [
-   "1找到一棵樱花树，往树下的供奉盘里放任意一种果实——苹果就行，不必是特定果实，放进去的果实事后还可以取回来。",
-   "1. Find a cherry blossom tree and place any fruit in the offering dish beneath it — an apple works, it does not have to be a specific fruit, and you can take the fruit back afterward."
-  ],
-  [
-   "2山神萨托利现身，附近区域的洞窟位置会被一道道光柱标出来。光柱不是永久的，只持续一段游戏时间。",
-   "2. The Lord of the Mountain, Satori, appears, and cave locations in the nearby area are marked by pillars of light. The pillars are not permanent — they only last for a period of in-game time."
-  ],
-  [
-   "3立刻打开地图，把光柱对应的位置逐个打上标记。光柱消失后，标记还在，之后按标记跑洞就行。",
-   "3. Open the map right away and mark each pillar location one by one. The markers stay after the pillars disappear, so you can just follow them to explore caves later."
-  ],
-  [
-   "先说清两个数，避免一开始就记混：全游戏有",
-   "First, let's get two numbers straight so you don't mix them up: the game has"
-  ],
-  [
-   "，但洞窟入口标记有 197 个——因为不少洞窟有多个入口。数洞窟按 147 算，数入口按 197 算，两者都对，说的不是一回事。另外井不算洞窟，井有自己的一套标记。",
-   ", but there are 197 cave entrance markers — because many caves have multiple entrances. Count caves as 147, count entrances as 197; both are right, they're just different things. Wells don't count as caves either — wells have their own set of markers."
-  ],
-  [
-   "147 座洞窟",
-   "147 caves"
-  ],
-  [
-   "搜索山洞名称或坐标...",
-   "Search cave names or coordinates..."
-  ]
- ],
- "title": "Cave Exploration Complete Guide: Cherry Blossom Trees, Bubbulfrogs, and Koltin · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+  "notes": [
+    "鸟望塔/鸟望台 rendered as Skyview Tower (official name; not in GLOSSARY.md).",
+    "萨托利 rendered as Satori; 山神萨托利 is the Lord of the Mountain, Satori.",
+    "迷你挑战“寻找柯尔天” translated descriptively as the mini-challenge 'Finding Koltin'; no confident official English quest name in GLOSSARY.md.",
+    "冰雪蜥蜴尾巴 rendered as Ice-Breath Lizalfos Tail (descriptive, based on the Ice-Breath Lizalfos enemy type).",
+    "格里奥克雷角 rendered as Thunder Gleeok Horn.",
+    "呀哈哈（Blupee） kept as in the source: Koltin wishes to become a Blupee; the source's Chinese term for Blupee is given as 呀哈哈 here, distinct from Korok (also 呀哈哈 elsewhere).",
+    "马克兔飞行器 rendered descriptively as Hover Bike.",
+    "乌萨诸马神庙 rendered as Usazum Shrine (transliteration; not in GLOSSARY.md)."
+  ],
+  "pairs": [
+    [
+      "王国之泪洞窟探险完全指南：147座洞窟的系统玩法——樱花树供奉果实唤山神点亮洞窟、一击必掉泡泡宝石的魔犹伊打法、柯尔天46颗换齐神秘套装与147颗终极奖励。",
+      "Tears of the Kingdom cave exploration complete guide: the systematic way to play 147 caves — offer fruit at cherry blossom trees to summon the Lord of the Mountain and light up caves, the one-hit Bubbulfrog tactic that always drops a Bubbul Gem, Koltin's 46 gems for the full Mystic Set, and the ultimate reward at 147 gems."
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "哈里的终极秘籍",
+      "Harry's Ultimate Tips"
+    ],
+    [
+      "洞窟探险完全指南",
+      "Cave Exploration Complete Guide"
+    ],
+    [
+      "🕳️ 洞窟攻略",
+      "🕳️ Cave Guide"
+    ],
+    [
+      "洞窟探险完全指南：樱花树、魔犹伊与柯尔天",
+      "Cave Exploration Complete Guide: Cherry Blossom Trees, Bubbulfrogs, and Koltin"
+    ],
+    [
+      "147 座洞窟不是 147 个“进去看看”的空壳：每座洞都藏着一只发光青蛙，而青蛙掉的东西能换一整套无法用卢比买到的装备。",
+      "147 caves are not 147 empty shells to just 'pop in and look': every cave hides a glowing frog, and what the frog drops can be traded for a whole set of gear that Rupees cannot buy."
+    ],
+    [
+      "🧙 作者：哈里",
+      "🧙 Author: Harry"
+    ],
+    [
+      "🕳️ 洞窟 · 找洞与兑换",
+      "🕳️ Caves · Finding Caves and Trading"
+    ],
+    [
+      "📖 深度攻略",
+      "📖 In-Depth Guide"
+    ],
+    [
+      "📑 本篇目录",
+      "📑 Contents of This Guide"
+    ],
+    [
+      "适用人群与前置条件",
+      "Who This Is For and Prerequisites"
+    ],
+    [
+      "洞窟里到底有什么",
+      "What Is Actually Inside a Cave"
+    ],
+    [
+      "找洞：樱花树供奉法",
+      "Finding Caves: The Cherry Blossom Tree Offering Method"
+    ],
+    [
+      "魔犹伊：一击必掉宝石的打法",
+      "Bubbulfrogs: The One-Hit Tactic That Always Drops a Gem"
+    ],
+    [
+      "柯尔天兑换全表：46颗换齐神秘套装",
+      "Koltin Trade Table: 46 Gems for the Full Mystic Set"
+    ],
+    [
+      "神秘套装到底值不值",
+      "Is the Mystic Set Worth It?"
+    ],
+    [
+      "终极奖励：147颗之后的故事",
+      "Ultimate Reward: The Story After 147 Gems"
+    ],
+    [
+      "进洞必带的三样东西",
+      "Three Things You Must Bring into a Cave"
+    ],
+    [
+      "三个最常见的翻车点",
+      "Three Most Common Mistakes"
+    ],
+    [
+      "哈里的取舍：洞窟优先级",
+      "Harry's Call: Cave Priorities"
+    ],
+    [
+      "洞窟中的魔犹伊与它掉落的泡泡宝石（游戏实机截图）",
+      "A Bubbulfrog in a cave and the Bubbul Gem it drops (in-game screenshot)"
+    ],
+    [
+      "图：游戏实机截图（洞窟中的魔犹伊，图片来源：Zelda Wiki），淡蓝色、带黄色角的蛙形生物就是魔犹伊。",
+      "Image: in-game screenshot (a Bubbulfrog in a cave, image source: Zelda Wiki); the pale-blue, yellow-horned frog-like creature is the Bubbulfrog."
+    ],
+    [
+      "这篇写给两种玩家：一是路过洞口不知道该不该进的新手，二是已经攒了十几颗泡泡宝石、不知道该找谁换的收集党。洞窟系统没有剧情门槛，下了空岛就能开始，但建议先拿到滑翔伞再系统性地跑——很多洞口在悬崖半腰，没有滑翔伞会跑得很狼狈。",
+      "This guide is written for two kinds of players: first, beginners who pass a cave entrance and don't know whether to go in, and second, collectors who have already saved up a dozen or so Bubbul Gems and don't know who to trade them with. The cave system has no story gate — you can start once you leave the sky island — but it is best to get the Paraglider first before running caves systematically, as many cave entrances sit halfway up cliffs and are miserable to reach without a Paraglider."
+    ],
+    [
+      "先说清两个数，避免一开始就记混：全游戏有 147 座洞窟，但洞窟入口标记有 197 个——因为不少洞窟有多个入口。数洞窟按 147 算，数入口按 197 算，两者都对，说的不是一回事。另外井不算洞窟，井有自己的一套标记。",
+      "First, let's get two numbers straight so you don't mix them up from the start: the game has 147 caves in total, but there are 197 cave entrance markers — because quite a few caves have multiple entrances. Count caves as 147, count entrances as 197; both are correct, they just aren't talking about the same thing. Also, wells do not count as caves; wells have their own set of markers."
+    ],
+    [
+      "先说清两个数，避免一开始就记混：全游戏有 147 座洞窟，但洞窟入口标记有 197 个——因为不少洞窟有多个入口",
+      "First, let's get two numbers straight so you don't mix them up from the start: the game has 147 caves in total, but there are 197 cave entrance markers — because quite a few caves have multiple entrances"
+    ],
+    [
+      "数洞窟按 147 算，数入口按 197 算，两者都对，说的不是一回事",
+      "Count caves as 147, count entrances as 197; both are correct, they just aren't talking about the same thing"
+    ],
+    [
+      "另外井不算洞窟，井有自己的一套标记",
+      "Also, wells do not count as caves; wells have their own set of markers"
+    ],
+    [
+      "📌 本篇要点",
+      "📌 Key Points of This Guide"
+    ],
+    [
+      "樱花树下供奉任意果实，山神现身后光柱会标出附近的洞窟；每座洞窟都有一只魔犹伊，一击就掉泡泡宝石；柯尔天只在夜里现身，46 颗宝石换完常规奖励，集齐 147 颗有终极奖励。",
+      "Offer any fruit under a cherry blossom tree, and after the Lord of the Mountain appears, pillars of light will mark nearby caves; every cave has one Bubbulfrog, and one hit drops a Bubbul Gem; Koltin only appears at night, 46 gems trade for all the regular rewards, and collecting all 147 gems earns the ultimate reward."
+    ],
+    [
+      "樱花树下供奉任意果实，山神现身后光柱会标出附近的洞窟",
+      "Offer any fruit under a cherry blossom tree, and after the Lord of the Mountain appears, pillars of light will mark nearby caves"
+    ],
+    [
+      "每座洞窟都有一只魔犹伊，一击就掉泡泡宝石",
+      "Every cave has one Bubbulfrog, and one hit drops a Bubbul Gem"
+    ],
+    [
+      "柯尔天只在夜里现身，46 颗宝石换完常规奖励，集齐 147 颗有终极奖励",
+      "Koltin only appears at night, 46 gems trade for all the regular rewards, and collecting all 147 gems earns the ultimate reward"
+    ],
+    [
+      "洞窟不是单纯的山洞，它是王国之泪里密度最高的“奖励容器”之一。进一座洞，通常能拿到下面几类东西：",
+      "A cave is not just a hole in a mountain; it is one of the densest 'reward containers' in Tears of the Kingdom. Entering a cave, you can usually get the following kinds of things:"
+    ],
+    [
+      "宝箱与防具。不少套装部件直接藏在洞窟宝箱里，跑洞是拿齐套装最稳定的路子之一。",
+      "Treasure chests and armor. Quite a few armor set pieces are hidden directly in cave chests, making cave-running one of the most reliable ways to complete sets."
+    ],
+    [
+      "宝箱与防具",
+      "Treasure chests and armor"
+    ],
+    [
+      "不少套装部件直接藏在洞窟宝箱里，跑洞是拿齐套装最稳定的路子之一",
+      "Quite a few armor set pieces are hidden directly in cave chests, making cave-running one of the most reliable ways to complete sets"
+    ],
+    [
+      "矿石与夜光石。洞壁常有矿石与夜光石矿脉，缺钱缺材料时顺路敲一圈不亏。",
+      "Ores and Luminous Stones. Cave walls often have ore and Luminous Stone veins, so mining a round on your way is never a loss when you are short of money or materials."
+    ],
+    [
+      "矿石与夜光石",
+      "Ores and Luminous Stones"
+    ],
+    [
+      "洞壁常有矿石与夜光石矿脉，缺钱缺材料时顺路敲一圈不亏",
+      "Cave walls often have ore and Luminous Stone veins, so mining a round on your way is never a loss when you are short of money or materials"
+    ],
+    [
+      "明亮花种子。地底探索的照明全靠它，洞窟是前期最稳定的明亮花来源，进地底之前先跑几个洞囤货。",
+      "Brightbloom Seeds. Depths exploration lighting depends entirely on them, and caves are the most stable early source of Brightblooms — run a few caves to stock up before entering the Depths."
+    ],
+    [
+      "明亮花种子",
+      "Brightbloom Seeds"
+    ],
+    [
+      "地底探索的照明全靠它，洞窟是前期最稳定的明亮花来源，进地底之前先跑几个洞囤货",
+      "Depths exploration lighting depends entirely on them, and caves are the most stable early source of Brightblooms — run a few caves to stock up before entering the Depths"
+    ],
+    [
+      "魔犹伊。每座洞窟必有一只，掉落泡泡宝石，是本篇的核心奖励链，见下两节。",
+      "Bubbulfrogs. Every cave has exactly one, dropping a Bubbul Gem — the core reward chain of this guide, covered in the next two sections."
+    ],
+    [
+      "魔犹伊",
+      "Bubbulfrogs"
+    ],
+    [
+      "每座洞窟必有一只，掉落泡泡宝石，是本篇的核心奖励链，见下两节",
+      "Every cave has exactly one, dropping a Bubbul Gem — the core reward chain of this guide, covered in the next two sections"
+    ],
+    [
+      "神庙挑战入口。部分神庙挑战的入口就藏在洞窟深处，跑洞与开神庙常常是同一趟活。",
+      "Shrine quest entrances. Some Shrine quest entrances are hidden deep inside caves, so cave-running and opening Shrines are often the same trip."
+    ],
+    [
+      "神庙挑战入口",
+      "Shrine quest entrances"
+    ],
+    [
+      "部分神庙挑战的入口就藏在洞窟深处，跑洞与开神庙常常是同一趟活",
+      "Some Shrine quest entrances are hidden deep inside caves, so cave-running and opening Shrines are often the same trip"
+    ],
+    [
+      "洞窟内部结构差异很大：有的笔直到底，有的上下分层带水域，有的要炸开石墙才有后半段。进洞前先在洞口抬头看一眼——发光青蛙经常贴在洞顶或高处岩壁上，低头赶路最容易错过它。",
+      "Cave interiors vary greatly: some run straight to the end, some have multiple levels with water areas, and some need stone walls blasted open to reveal the second half. Before entering, look up at the cave entrance — the glowing frog often clings to the cave ceiling or high rock walls, and rushing in with your head down is the easiest way to miss it."
+    ],
+    [
+      "对着地图一个个找洞口是最笨的办法。游戏里给了系统性的找洞工具：樱花树。海拉鲁各地都有樱花树，树下有一个小供奉盘，做法如下：",
+      "Searching for cave entrances one by one on the map is the dumbest method. The game gives you a systematic cave-finding tool: cherry blossom trees. There are cherry blossom trees all over Hyrule, each with a small offering dish beneath it. Here's how it works:"
+    ],
+    [
+      "找到一棵樱花树，往树下的供奉盘里放任意一种果实——苹果就行，不必是特定果实，放进去的果实事后还可以取回来。",
+      "Find a cherry blossom tree and place any kind of fruit in the offering dish beneath it — an apple will do, it doesn't need to be a specific fruit, and you can take the fruit back afterwards."
+    ],
+    [
+      "找到一棵樱花树，往树下的供奉盘里放任意一种果实——苹果就行，不必是特定果实，放进去的果实事后还可以取回来",
+      "Find a cherry blossom tree and place any kind of fruit in the offering dish beneath it — an apple will do, it doesn't need to be a specific fruit, and you can take the fruit back afterwards"
+    ],
+    [
+      "山神萨托利现身，附近区域的洞窟位置会被一道道光柱标出来。光柱不是永久的，只持续一段游戏时间。",
+      "The Lord of the Mountain, Satori, appears, and the cave locations in the nearby region are marked by pillars of light. The pillars are not permanent; they only last for a period of in-game time."
+    ],
+    [
+      "山神萨托利现身，附近区域的洞窟位置会被一道道光柱标出来",
+      "The Lord of the Mountain, Satori, appears, and the cave locations in the nearby region are marked by pillars of light"
+    ],
+    [
+      "光柱不是永久的，只持续一段游戏时间",
+      "The pillars are not permanent; they only last for a period of in-game time"
+    ],
+    [
+      "立刻打开地图，把光柱对应的位置逐个打上标记。光柱消失后，标记还在，之后按标记跑洞就行。",
+      "Immediately open the map and mark each pillar's location one by one. After the pillars disappear, the marks remain, and you can then run caves by following the marks."
+    ],
+    [
+      "立刻打开地图，把光柱对应的位置逐个打上标记",
+      "Immediately open the map and mark each pillar's location one by one"
+    ],
+    [
+      "光柱消失后，标记还在，之后按标记跑洞就行",
+      "After the pillars disappear, the marks remain, and you can then run caves by following the marks"
+    ],
+    [
+      "关键点只有两个：光柱只标附近区域的洞窟，不是全图，所以要按区域一棵树一棵树地供奉；供奉完别先做别的事，先把标记打完再走，否则光柱没了又要重供一次。萨托利山的那棵樱花树是最出名的一棵，刚学会这招时可以先去那里练一次手。",
+      "There are only two key points: the pillars only mark caves in the nearby region, not the whole map, so you must offer tree by tree, region by region; and after offering, don't do anything else first — finish marking before you leave, or once the pillars are gone you will have to offer again. The cherry blossom tree on Satori Mountain is the most famous one, and a good place to practice when you first learn this trick."
+    ],
+    [
+      "关键点只有两个：光柱只标附近区域的洞窟，不是全图，所以要按区域一棵树一棵树地供奉",
+      "There are only two key points: the pillars only mark caves in the nearby region, not the whole map, so you must offer tree by tree, region by region"
+    ],
+    [
+      "供奉完别先做别的事，先把标记打完再走，否则光柱没了又要重供一次",
+      "After offering, don't do anything else first — finish marking before you leave, or once the pillars are gone you will have to offer again"
+    ],
+    [
+      "萨托利山的那棵樱花树是最出名的一棵，刚学会这招时可以先去那里练一次手",
+      "The cherry blossom tree on Satori Mountain is the most famous one, and a good place to practice when you first learn this trick"
+    ],
+    [
+      "魔犹伊就是洞窟里那只发光的青蛙，身上顶着一颗泡泡状的光球。它不是 Boss，没有血条概念：打中一击就掉一颗泡泡宝石，用什么武器都行。但它会逃跑，处理不好就白跑一趟：",
+      "A Bubbulfrog is the glowing frog in a cave, with a bubble-shaped ball of light on top of it. It is not a Boss and has no health-bar concept: one hit drops one Bubbul Gem, with any weapon. But it will flee, and if you handle it badly the trip is wasted:"
+    ],
+    [
+      "魔犹伊就是洞窟里那只发光的青蛙，身上顶着一颗泡泡状的光球",
+      "A Bubbulfrog is the glowing frog in a cave, with a bubble-shaped ball of light on top of it"
+    ],
+    [
+      "它不是 Boss，没有血条概念：打中一击就掉一颗泡泡宝石，用什么武器都行",
+      "It is not a Boss and has no health-bar concept: one hit drops one Bubbul Gem, with any weapon"
+    ],
+    [
+      "但它会逃跑，处理不好就白跑一趟",
+      "But it will flee, and if you handle it badly the trip is wasted"
+    ],
+    [
+      "先发现，再动手。进洞后先环视洞顶和岩壁，找到青蛙再靠近。直接冲过去会惊动它，它跳着逃跑的速度不慢。",
+      "Spot it first, then act. After entering a cave, look around the ceiling and rock walls first and find the frog before approaching. Rushing straight at it will startle it, and it hops away pretty fast."
+    ],
+    [
+      "先发现，再动手",
+      "Spot it first, then act"
+    ],
+    [
+      "进洞后先环视洞顶和岩壁，找到青蛙再靠近",
+      "After entering a cave, look around the ceiling and rock walls first and find the frog before approaching"
+    ],
+    [
+      "直接冲过去会惊动它，它跳着逃跑的速度不慢",
+      "Rushing straight at it will startle it, and it hops away pretty fast"
+    ],
+    [
+      "首选弓箭远程一击。瞄准了再射，一箭就结束战斗，不给它逃跑的机会。近战武器容易挥空，挥空一次它就开始逃。",
+      "First choice: one ranged bow shot. Aim carefully and shoot — one arrow ends the fight and gives it no chance to flee. Melee weapons easily miss, and one miss and it starts fleeing."
+    ],
+    [
+      "首选弓箭远程一击",
+      "First choice: one ranged bow shot"
+    ],
+    [
+      "瞄准了再射，一箭就结束战斗，不给它逃跑的机会",
+      "Aim carefully and shoot — one arrow ends the fight and gives it no chance to flee"
+    ],
+    [
+      "近战武器容易挥空，挥空一次它就开始逃",
+      "Melee weapons easily miss, and one miss and it starts fleeing"
+    ],
+    [
+      "一旦钻回洞口就消失了。青蛙逃到自己的洞口钻进去，这趟就白跑了，只能下次再来。别贪刀，别追着它绕洞跑。",
+      "Once it burrows back into its hole, it's gone. When the frog flees to its own hole and burrows in, the trip is wasted and you can only come back next time. Don't be greedy with hits, and don't chase it around the cave."
+    ],
+    [
+      "一旦钻回洞口就消失了",
+      "Once it burrows back into its hole, it's gone"
+    ],
+    [
+      "青蛙逃到自己的洞口钻进去，这趟就白跑了，只能下次再来",
+      "When the frog flees to its own hole and burrows in, the trip is wasted and you can only come back next time"
+    ],
+    [
+      "别贪刀，别追着它绕洞跑",
+      "Don't be greedy with hits, and don't chase it around the cave"
+    ],
+    [
+      "拿到宝石后地图会打勾。取得一座洞窟的魔犹伊遗失物后，地图上该洞窟图标的右上角会打勾——这是判断哪些洞跑过、哪些没跑过的唯一可靠标记。",
+      "After getting the gem, the map gets a check mark. Once you obtain a cave's Bubbul Gem, a check mark appears at the top-right corner of that cave's icon on the map — this is the only reliable mark for telling which caves you have run and which you haven't."
+    ],
+    [
+      "拿到宝石后地图会打勾",
+      "After getting the gem, the map gets a check mark"
+    ],
+    [
+      "取得一座洞窟的魔犹伊遗失物后，地图上该洞窟图标的右上角会打勾——这是判断哪些洞跑过、哪些没跑过的唯一可靠标记",
+      "Once you obtain a cave's Bubbul Gem, a check mark appears at the top-right corner of that cave's icon on the map — this is the only reliable mark for telling which caves you have run and which you haven't"
+    ],
+    [
+      "洞窟全收集的进度管理就靠这个勾：跑过的洞有勾，没跑过的没勾。配合樱花树光柱的标记，两套标记一对，就能清楚知道一片区域还剩几个洞没跑。",
+      "Cave completion progress management relies on this check mark: run caves have a mark, unrun caves don't. Combined with the cherry blossom tree pillar marks, comparing the two sets of marks clearly shows how many caves remain unrun in a region."
+    ],
+    [
+      "泡泡宝石的用途只有一个：交给柯尔天换奖励。柯尔天是基尔顿的弟弟，一心想变成呀哈哈（Blupee），为此收集泡泡宝石。见他有两个前提：先接取迷你挑战“寻找柯尔天”；他只在夜里现身，而且位置经常变化，白天去是找不到人的，找不到时先找地方睡到晚上再去。",
+      "Bubbul Gems have only one use: give them to Koltin in exchange for rewards. Koltin is Kilton's younger brother, single-mindedly wanting to become a Blupee, and collects Bubbul Gems for that purpose. There are two prerequisites for meeting him: first take on the mini-challenge 'Finding Koltin'; and he only appears at night, and his location changes often — going in daytime you won't find him, so if you can't find him, first find somewhere to sleep until night and then go."
+    ],
+    [
+      "泡泡宝石的用途只有一个：交给柯尔天换奖励",
+      "Bubbul Gems have only one use: give them to Koltin in exchange for rewards"
+    ],
+    [
+      "柯尔天是基尔顿的弟弟，一心想变成呀哈哈（Blupee），为此收集泡泡宝石",
+      "Koltin is Kilton's younger brother, single-mindedly wanting to become a Blupee, and collects Bubbul Gems for that purpose"
+    ],
+    [
+      "见他有两个前提：先接取迷你挑战“寻找柯尔天”",
+      "There are two prerequisites for meeting him: first take on the mini-challenge 'Finding Koltin'"
+    ],
+    [
+      "他只在夜里现身，而且位置经常变化，白天去是找不到人的，找不到时先找地方睡到晚上再去",
+      "He only appears at night, and his location changes often — going in daytime you won't find him, so if you can't find him, first find somewhere to sleep until night and then go"
+    ],
+    [
+      "常规奖励共 14 档，按累计宝石数排列如下（每档是这次要交的数量，累计列是交到该档为止的总投入）：",
+      "There are 14 tiers of regular rewards in total, listed below by cumulative gem count (each tier's figure is the number to hand in this time, and the cumulative column is the total invested up to that tier):"
+    ],
+    [
+      "本次交",
+      "This Time"
+    ],
+    [
+      "累计",
+      "Cumulative"
+    ],
+    [
+      "奖励",
+      "Reward"
+    ],
+    [
+      "1 颗",
+      "1 gem"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "波克布林面具",
+      "Bokoblin Mask"
+    ],
+    [
+      "2 颗",
+      "2 gems"
+    ],
+    [
+      "3",
+      "3"
+    ],
+    [
+      "莫力布林面具",
+      "Moblin Mask"
+    ],
+    [
+      "5",
+      "5"
+    ],
+    [
+      "海诺克斯脚趾 ×3",
+      "Hinox Toenail ×3"
+    ],
+    [
+      "3 颗",
+      "3 gems"
+    ],
+    [
+      "8",
+      "8"
+    ],
+    [
+      "神秘长袍",
+      "Mystic Robe"
+    ],
+    [
+      "11",
+      "11"
+    ],
+    [
+      "火蝙蝠眼睛 ×8",
+      "Fire Keese Eyeball ×8"
+    ],
+    [
+      "14",
+      "14"
+    ],
+    [
+      "蜥蜴战士面具",
+      "Lizalfos Mask"
+    ],
+    [
+      "17",
+      "17"
+    ],
+    [
+      "冰雪蜥蜴尾巴 ×5",
+      "Ice-Breath Lizalfos Tail ×5"
+    ],
+    [
+      "4 颗",
+      "4 gems"
+    ],
+    [
+      "21",
+      "21"
+    ],
+    [
+      "神秘长裤",
+      "Mystic Trousers"
+    ],
+    [
+      "25",
+      "25"
+    ],
+    [
+      "白鬃人马重锤角",
+      "White-Maned Lynel Mace Horn"
+    ],
+    [
+      "29",
+      "29"
+    ],
+    [
+      "霍拉布林面具",
+      "Horriblin Mask"
+    ],
+    [
+      "33",
+      "33"
+    ],
+    [
+      "格里奥克翅膀 ×2",
+      "Gleeok Wing ×2"
+    ],
+    [
+      "37",
+      "37"
+    ],
+    [
+      "人马面具",
+      "Lynel Mask"
+    ],
+    [
+      "41",
+      "41"
+    ],
+    [
+      "格里奥克雷角 ×3",
+      "Thunder Gleeok Horn ×3"
+    ],
+    [
+      "5 颗",
+      "5 gems"
+    ],
+    [
+      "46",
+      "46"
+    ],
+    [
+      "神秘头饰",
+      "Mystic Headpiece"
+    ],
+    [
+      "也就是说，交满 46 颗，常规奖励全部换完，神秘套装三件也齐了。面具类奖励的实际作用是“戴上后对应怪物不主动攻击”，适合潜行流玩家；材料类奖励则是直接送高价值余料，省去刷怪的时间。想查每一座洞窟的具体位置，可以对照本站的魔犹伊的遗失物页面按入口逐个核对。",
+      "In other words, once you have handed in 46 gems, all regular rewards are traded and the three Mystic Set pieces are complete. The practical effect of mask rewards is that 'wearing one, the corresponding monster won't attack on its own,' suiting stealth players; material rewards directly give high-value Fuse materials, saving monster-farming time. To check each cave's exact location, cross-check entrance by entrance against this site's Bubbul Gems page."
+    ],
+    [
+      "也就是说，交满 46 颗，常规奖励全部换完，神秘套装三件也齐了",
+      "In other words, once you have handed in 46 gems, all regular rewards are traded and the three Mystic Set pieces are complete"
+    ],
+    [
+      "面具类奖励的实际作用是“戴上后对应怪物不主动攻击”，适合潜行流玩家",
+      "The practical effect of mask rewards is that 'wearing one, the corresponding monster won't attack on its own,' suiting stealth players"
+    ],
+    [
+      "材料类奖励则是直接送高价值余料，省去刷怪的时间",
+      "Material rewards directly give high-value Fuse materials, saving monster-farming time"
+    ],
+    [
+      "想查每一座洞窟的具体位置，可以对照本站的魔犹伊的遗失物页面按入口逐个核对",
+      "To check each cave's exact location, cross-check entrance by entrance against this site's Bubbul Gems page"
+    ],
+    [
+      "神秘套装（头饰、长袍、长裤）的效果叫“卢比垫”：穿着它受到伤害时，扣的是卢比而不是红心。听起来像无敌，实际要打个折：",
+      "The Mystic Set (Headpiece, Robe, Trousers) has an effect called 'Rupee Padding': while wearing it, taking damage deducts Rupees instead of hearts. It sounds invincible, but in practice it comes with a discount:"
+    ],
+    [
+      "卢比烧得很快。挨打一次扣的卢比不少，钱包不厚时穿它打硬仗，几下就把钱打光了；钱打光后效果也就没了。",
+      "Rupees burn fast. Each hit deducts a fair amount of Rupees, so wearing it for a hard fight with a thin wallet will drain your money in a few hits; once the money is gone, the effect is gone too."
+    ],
+    [
+      "卢比烧得很快",
+      "Rupees burn fast"
+    ],
+    [
+      "挨打一次扣的卢比不少，钱包不厚时穿它打硬仗，几下就把钱打光了",
+      "Each hit deducts a fair amount of Rupees, so wearing it for a hard fight with a thin wallet will drain your money in a few hits"
+    ],
+    [
+      "钱打光后效果也就没了",
+      "Once the money is gone, the effect is gone too"
+    ],
+    [
+      "防御本身偏低，且无法强化。它不是靠防御力吃饭的套装，别指望它像士兵套那样硬扛。",
+      "Its defense itself is low, and it cannot be enhanced. It is not a set that lives on defense — don't expect it to tank hits like the Soldier's Set."
+    ],
+    [
+      "防御本身偏低，且无法强化",
+      "Its defense itself is low, and it cannot be enhanced"
+    ],
+    [
+      "它不是靠防御力吃饭的套装，别指望它像士兵套那样硬扛",
+      "It is not a set that lives on defense — don't expect it to tank hits like the Soldier's Set"
+    ],
+    [
+      "真正的用法是“容错”，不是“坦克”。适合的场景是：挑战平时容易失误的战斗、带它去打不熟悉的 Boss，用卢比买一次失误的机会，而不是穿着它站撸。",
+      "Its real use is 'room for error,' not 'tank.' Suitable scenarios are: challenging fights where you usually make mistakes, or taking it to fight an unfamiliar Boss — buying one mistake with Rupees, rather than standing and trading blows while wearing it."
+    ],
+    [
+      "真正的用法是“容错”，不是“坦克”",
+      "Its real use is 'room for error,' not 'tank'"
+    ],
+    [
+      "适合的场景是：挑战平时容易失误的战斗、带它去打不熟悉的 Boss，用卢比买一次失误的机会，而不是穿着它站撸",
+      "Suitable scenarios are: challenging fights where you usually make mistakes, or taking it to fight an unfamiliar Boss — buying one mistake with Rupees, rather than standing and trading blows while wearing it"
+    ],
+    [
+      "作者视角的判断：神秘套装值得换，但别把它当毕业套。它的价值在于“多一次容错”，而卢比在本作里越到后期越不值钱——后期卢比多到没处花时，这套装才真正进入完全体。",
+      "The author's judgment: the Mystic Set is worth trading for, but don't treat it as an endgame set. Its value lies in 'one more chance for error,' and Rupees become less and less valuable the later you get in this game — only when you have more Rupees than you can spend late in the game does this set truly reach its full form."
+    ],
+    [
+      "46 颗换完常规奖励后，柯尔天还会继续收宝石，但不再给新装备——直到你把全游戏的 147 颗全部交给他。集齐 147 颗后，他会实现变成呀哈哈的愿望，并送你最后的礼物：柯尔天滑翔伞布料，可以用来定制滑翔伞外观。",
+      "After the 46 gems for the regular rewards, Koltin will keep accepting gems, but no longer gives new gear — until you hand him all 147 gems in the game. Once you have collected all 147, he will fulfill his wish to become a Blupee and give you his final gift: Koltin's Paraglider Fabric, which can be used to customize your Paraglider's appearance."
+    ],
+    [
+      "46 颗换完常规奖励后，柯尔天还会继续收宝石，但不再给新装备——直到你把全游戏的 147 颗全部交给他",
+      "After the 46 gems for the regular rewards, Koltin will keep accepting gems, but no longer gives new gear — until you hand him all 147 gems in the game"
+    ],
+    [
+      "集齐 147 颗后，他会实现变成呀哈哈的愿望，并送你最后的礼物：柯尔天滑翔伞布料，可以用来定制滑翔伞外观",
+      "Once you have collected all 147, he will fulfill his wish to become a Blupee and give you his final gift: Koltin's Paraglider Fabric, which can be used to customize your Paraglider's appearance"
+    ],
+    [
+      "这 101 颗的长尾纯粹是收集党的功课：没有战斗力收益，只有布料与一段剧情收尾。打算全收集的玩家，按区域用樱花树法加地图打勾法推进，比对着清单硬跑省心得多。",
+      "The long tail of these 101 gems is purely collectors' homework: no combat benefit, only the fabric and a story conclusion. Players aiming for full completion will find it much easier to advance region by region using the cherry blossom tree method plus the map check-mark method than to run hard against a checklist."
+    ],
+    [
+      "明亮花种子。洞内光线暗，没有照明寸步难行；种子可以扔出去照亮一片区域，比火把省事。",
+      "Brightbloom Seeds. Caves are dark inside, and without light you can barely move; seeds can be thrown to light up an area, which is less trouble than a torch."
+    ],
+    [
+      "洞内光线暗，没有照明寸步难行",
+      "Caves are dark inside, and without light you can barely move"
+    ],
+    [
+      "种子可以扔出去照亮一片区域，比火把省事",
+      "Seeds can be thrown to light up an area, which is less trouble than a torch"
+    ],
+    [
+      "炸弹花。不少洞窟的后半段被石墙挡着，没有炸弹花就只能绕路或干瞪眼。",
+      "Bomb Flowers. The second half of quite a few caves is blocked by stone walls, and without Bomb Flowers you can only detour or stare helplessly."
+    ],
+    [
+      "炸弹花",
+      "Bomb Flowers"
+    ],
+    [
+      "不少洞窟的后半段被石墙挡着，没有炸弹花就只能绕路或干瞪眼",
+      "The second half of quite a few caves is blocked by stone walls, and without Bomb Flowers you can only detour or stare helplessly"
+    ],
+    [
+      "一把弓。既是打魔犹伊的工具，也是洞内远程触发机关、射落高处宝箱的通用手段。",
+      "A bow. It is both the tool for hitting Bubbulfrogs and the general means for triggering mechanisms remotely inside caves and shooting down high treasure chests."
+    ],
+    [
+      "一把弓",
+      "A bow"
+    ],
+    [
+      "既是打魔犹伊的工具，也是洞内远程触发机关、射落高处宝箱的通用手段",
+      "It is both the tool for hitting Bubbulfrogs and the general means for triggering mechanisms remotely inside caves and shooting down high treasure chests"
+    ],
+    [
+      "⚠️ 坑一：供奉完樱花树不打标记。光柱只持续一段时间，跑去做别的事再回来，光柱没了，等于白供一次。供奉完第一件事永远是开地图打标记。",
+      "⚠️ Pitfall 1: Offering at a cherry blossom tree without marking. The pillars only last a while; if you go off to do something else and come back, the pillars are gone, and the offering was wasted. The first thing after offering is always to open the map and mark."
+    ],
+    [
+      "⚠️ 坑一：供奉完樱花树不打标记",
+      "⚠️ Pitfall 1: Offering at a cherry blossom tree without marking"
+    ],
+    [
+      "光柱只持续一段时间，跑去做别的事再回来，光柱没了，等于白供一次",
+      "The pillars only last a while; if you go off to do something else and come back, the pillars are gone, and the offering was wasted"
+    ],
+    [
+      "供奉完第一件事永远是开地图打标记",
+      "The first thing after offering is always to open the map and mark"
+    ],
+    [
+      "⚠️ 坑二：追着魔犹伊近战挥空。挥空一次它就逃，钻进洞口就消失。进洞先找蛙、后动手，弓箭一击解决，别近战追打。",
+      "⚠️ Pitfall 2: Chasing a Bubbulfrog and missing with melee. One miss and it flees, burrowing into its hole and disappearing. Find the frog first after entering, then act — settle it with one bow shot, don't chase it with melee."
+    ],
+    [
+      "⚠️ 坑二：追着魔犹伊近战挥空",
+      "⚠️ Pitfall 2: Chasing a Bubbulfrog and missing with melee"
+    ],
+    [
+      "挥空一次它就逃，钻进洞口就消失",
+      "One miss and it flees, burrowing into its hole and disappearing"
+    ],
+    [
+      "进洞先找蛙、后动手，弓箭一击解决，别近战追打",
+      "Find the frog first after entering, then act — settle it with one bow shot, don't chase it with melee"
+    ],
+    [
+      "⚠️ 坑三：白天去找柯尔天。他只在夜里现身，白天跑遍全图也找不到。找不到时先睡觉到晚上，再去他常出没的洞窟附近看看。",
+      "⚠️ Pitfall 3: Going to find Koltin in daytime. He only appears at night, and you won't find him even running all over the map in daytime. When you can't find him, sleep until night first, then look near the caves he often haunts."
+    ],
+    [
+      "⚠️ 坑三：白天去找柯尔天",
+      "⚠️ Pitfall 3: Going to find Koltin in daytime"
+    ],
+    [
+      "他只在夜里现身，白天跑遍全图也找不到",
+      "He only appears at night, and you won't find him even running all over the map in daytime"
+    ],
+    [
+      "找不到时先睡觉到晚上，再去他常出没的洞窟附近看看",
+      "When you can't find him, sleep until night first, then look near the caves he often haunts"
+    ],
+    [
+      "洞窟的优先级分三档：第一档是顺路跑——推主线、开神庙路过洞口就进去，宝箱、矿石、青蛙一趟全拿；第二档是 46 颗目标——有意识地攒到 46 颗，把神秘套装与面具换齐，这是洞窟系统真正的战斗力收益；第三档是 147 颗全收集——只留给想拿滑翔伞布料与完整剧情的玩家，不必强求。",
+      "Cave priorities come in three tiers: tier one is running caves on the way — when pushing the main quest or opening Shrines, go in whenever you pass a cave entrance, getting chests, ores, and the frog in one trip; tier two is the 46-gem goal — deliberately save up to 46 gems and trade for the full Mystic Set and masks, which is the cave system's real combat benefit; tier three is the 147-gem full collection — only for players who want the Paraglider Fabric and the complete story, and not something to force."
+    ],
+    [
+      "一句话总结：洞窟系统奖励的是“顺路的耐心”，不是“清单式的苦力”。樱花树找洞、弓箭打蛙、夜里找柯尔天，三步形成闭环，跑上十几座洞，这套流程就比任何清单都顺手。",
+      "In one sentence: the cave system rewards 'patience along the way,' not 'checklist drudgery.' Finding caves with cherry blossom trees, hitting frogs with a bow, and finding Koltin at night — these three steps form a loop, and after running a dozen or so caves, this routine feels smoother than any checklist."
+    ],
+    [
+      "← 上一篇：弓箭完全指南",
+      "← Previous: Bow Complete Guide"
+    ],
+    [
+      "返回秘籍专栏",
+      "Back to the Tips Column"
+    ],
+    [
+      "下一篇：盾牌完全指南 →",
+      "Next: Shield Complete Guide →"
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 魔犹伊的遗失物",
+      "› Bubbul Gems"
+    ],
+    [
+      "› 地底世界生存与探索完全指南",
+      "› Depths Survival and Exploration Complete Guide"
+    ],
+    [
+      "› 152座神庙全收集自查指南",
+      "› 152-Shrine Complete Collection Self-Check Guide"
+    ],
+    [
+      "📚 全部攻略索引",
+      "📚 Complete Guide Index"
+    ],
+    [
+      "🏆 哈里的终极秘籍",
+      "🏆 Harry's Ultimate Tips"
+    ],
+    [
+      "› 七宝匕首终极攻略",
+      "› Scimitar of the Seven Ultimate Guide"
+    ],
+    [
+      "› 四大神级料理配方",
+      "› Four God-Tier Recipes"
+    ],
+    [
+      "› 最强套装三梯队全解析",
+      "› Strongest Armor Sets: Full Three-Tier Analysis"
+    ],
+    [
+      "› 乌萨诸马神庙零基础包教包会",
+      "› Usazum Shrine Guide for Complete Beginners"
+    ],
+    [
+      "› 白龙寻踪与大师之剑",
+      "› Tracking the Light Dragon and the Master Sword"
+    ],
+    [
+      "› 马克兔飞行器调校",
+      "› Hover Bike Tuning"
+    ],
+    [
+      "› 地底电池扩充与大妖精",
+      "› Depths Energy Cell Expansion and the Great Fairies"
+    ],
+    [
+      "🆕 每日新攻略",
+      "🆕 Daily New Guides"
+    ],
+    [
+      "› 新手开荒指南：落地先做的10件事",
+      "› Beginner Guide: 10 Things to Do First After Landing"
+    ],
+    [
+      "› 呀哈哈种子全指南",
+      "› Complete Korok Seed Guide"
+    ],
+    [
+      "› 大妖精四姐妹与防具强化完全指南",
+      "› Four Great Fairies and Armor Enhancement Complete Guide"
+    ],
+    [
+      "› 四条龙素材刷取指南",
+      "› Four Dragons Material Farming Guide"
+    ],
+    [
+      "› 人马（莱尼尔）完全指南",
+      "› Lynel Complete Guide"
+    ],
+    [
+      "› 卢比速刷指南：从前期到后期",
+      "› Rupee Farming Guide: From Early to Late Game"
+    ],
+    [
+      "› 马匹捕捉与稀有马完全指南",
+      "› Horse Catching and Rare Horses Complete Guide"
+    ],
+    [
+      "› 五位贤者能力全解",
+      "› Five Sages' Abilities Fully Explained"
+    ],
+    [
+      "› 料理机制全解：效果、时长与暴击",
+      "› Cooking Mechanics Fully Explained: Effects, Duration, and Critical Hits"
+    ],
+    [
+      "› 海拉鲁城堡探索完全指南",
+      "› Hyrule Castle Exploration Complete Guide"
+    ],
+    [
+      "› 海拉鲁图鉴509项收集指南",
+      "› Hyrule Compendium 509-Item Collection Guide"
+    ],
+    [
+      "› 左纳乌装置实用造物指南",
+      "› Zonai Devices Practical Builds Guide"
+    ],
+    [
+      "› 血月机制全解",
+      "› Blood Moon Mechanics Fully Explained"
+    ],
+    [
+      "› 余料建造完全指南",
+      "› Fuse Complete Guide"
+    ],
+    [
+      "› 祝福之光兑换完全指南",
+      "› Light of Blessing Exchange Complete Guide"
+    ],
+    [
+      "› 15座鸟望塔开图完全指南",
+      "› 15 Skyview Towers Map-Reveal Complete Guide"
+    ],
+    [
+      "› 弓箭完全指南：选弓、箭矢搭配与五连兽神弓",
+      "› Bow Complete Guide: Choosing Bows, Arrow Combinations, and the Five-Shot Savage Lynel Bow"
+    ],
+    [
+      "› 洞窟探险完全指南：樱花树、魔犹伊与柯尔天",
+      "› Cave Exploration Complete Guide: Cherry Blossom Trees, Bubbulfrogs, and Koltin"
+    ],
+    [
+      "› 盾牌完全指南：海利亚盾、盾反与盾冲浪",
+      "› Shield Complete Guide: Hylian Shield, Shield Parry, and Shield Surfing"
+    ],
+    [
+      "› 天空岛完全指南：上岛四法、贤者遗志与残旧地图",
+      "› Sky Islands Complete Guide: Four Ways Up, Sage's Wills, and Old Maps"
+    ],
+    [
+      "先说清两个数，避免一开始就记混：全游戏有",
+      "First, let's get two numbers straight so you don't mix them up: the game has"
+    ],
+    [
+      "，但洞窟入口标记有 197 个——因为不少洞窟有多个入口。数洞窟按 147 算，数入口按 197 算，两者都对，说的不是一回事。另外井不算洞窟，井有自己的一套标记。",
+      ", but there are 197 cave entrance markers — because many caves have multiple entrances. Count caves as 147, count entrances as 197; both are right, they're just different things. Wells don't count as caves either — wells have their own set of markers."
+    ],
+    [
+      "147 座洞窟",
+      "147 caves"
+    ],
+    [
+      "搜索山洞名称或坐标...",
+      "Search cave names or coordinates..."
+    ]
+  ],
+  "title": "Cave Exploration Complete Guide: Cherry Blossom Trees, Bubbulfrogs, and Koltin · Harry's Ultimate Tips · Tears of the Kingdom Guide"
 }

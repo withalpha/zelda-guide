@@ -1,2934 +1,2914 @@
 {
- "notes": [
-  "林克时间 rendered as 'bullet time' (the slow-motion aiming state); no official glossary term was given for it.",
-  "人马 rendered as Lynel throughout; 盖拉 and 古栗欧克 both rendered as Gleeok (two Chinese transliterations of the same enemy).",
-  "沙化 rendered as 'calcify' (the page describes it as the body turning white); no official glossary term was given.",
-  "Uncertain terms: 岩家巨人 rendered as Battle Talus; 白苍巨霸迦马 as Pale Colgera; 黑曜巨霸迦马 as Obsidian Colgera; 左纳乌精炼石 as Refined Zonaite; 巨霸迦马的牙 as Colgera's Fang; 考林族 as Rito; 图弓力 as Tulin; 卓拉水蛭之王头盔 rendered descriptively (no confident official equivalent).",
-  "Phantom Ganon card labels a weapon '斧' (axe) while its body text describes a greatsword form; both translated as written.",
-  "Source encoding: the Colgera fang drop line genuinely contains one U+FFFD replacement character before the text in the source HTML (a corrupted emoji); the pair keeps that character verbatim. The Hinox necklace line is intact in the source.",
-  "Fragment pass: 盾反 standardized as Perfect Guard; 突击 as Flurry Rush; 抽出来 composed with its body to keep word order; isolated 。 punctuation nodes remain untranslated by design."
- ],
- "pairs": [
-  [
-   "塞尔达传说王国之泪全Boss图鉴与攻略，含方块魔像、莫尔德拉吉克、巨霸迦马、急冻盖拉、吉波得女王、魔王加侬多夫等16个Boss的弱点、打法与推荐装备。",
-   "Complete Boss encyclopedia and guide for The Legend of Zelda: Tears of the Kingdom, covering the weaknesses, strategies, and recommended gear for all 16 bosses including Flux Constructs, Molduga, Colgera, Frost Gleeok, Queen Gibdo, and Demon King Ganondorf."
-  ],
-  [
-   "方块魔像 Flux Construct",
-   "Flux Construct"
-  ],
-  [
-   "方块魔像 初级",
-   "Flux Construct I"
-  ],
-  [
-   "方块魔像 中等",
-   "Flux Construct II"
-  ],
-  [
-   "方块魔像 上等",
-   "Flux Construct III"
-  ],
-  [
-   "岩石巨人 Stone Talus",
-   "Stone Talus"
-  ],
-  [
-   "岩石巨人 普通",
-   "Stone Talus (standard)"
-  ],
-  [
-   "岩石巨人 稀有",
-   "Rare Stone Talus"
-  ],
-  [
-   "岩石巨人 夜光",
-   "Luminous Stone Talus"
-  ],
-  [
-   "岩家巨人",
-   "Battle Talus"
-  ],
-  [
-   "熔岩巨人 Igneo Talus",
-   "Igneo Talus"
-  ],
-  [
-   "冰岩巨人 Frost Talus",
-   "Frost Talus"
-  ],
-  [
-   "莫尔德拉吉克 Molduga",
-   "Molduga"
-  ],
-  [
-   "莫尔德拉吉克",
-   "Molduga"
-  ],
-  [
-   "巨霸迦马 Colgera",
-   "Colgera"
-  ],
-  [
-   "巨霸迦马",
-   "Colgera"
-  ],
-  [
-   "白苍巨霸迦马",
-   "Pale Colgera"
-  ],
-  [
-   "黑曜巨霸迦马",
-   "Obsidian Colgera"
-  ],
-  [
-   "急冻盖拉 Frost Gleeok",
-   "Frost Gleeok"
-  ],
-  [
-   "急冻盖拉",
-   "Frost Gleeok"
-  ],
-  [
-   "伊尔巴基亚 Moragia",
-   "Moragia"
-  ],
-  [
-   "伊尔巴基亚",
-   "Moragia"
-  ],
-  [
-   "巨砾哥马 Marbled Gohma",
-   "Marbled Gohma"
-  ],
-  [
-   "巨砾哥马",
-   "Marbled Gohma"
-  ],
-  [
-   "淤泥莱克 Sludge Like",
-   "Sludge Like"
-  ],
-  [
-   "淤泥莱克",
-   "Sludge Like"
-  ],
-  [
-   "八爪怪章 Mucktorok",
-   "Mucktorok"
-  ],
-  [
-   "八爪怪章",
-   "Mucktorok"
-  ],
-  [
-   "吉波得女王 Queen Gibdo",
-   "Queen Gibdo"
-  ],
-  [
-   "吉波得女王",
-   "Queen Gibdo"
-  ],
-  [
-   "被夺之魔像 Seized Construct",
-   "Seized Construct"
-  ],
-  [
-   "被夺之魔像",
-   "Seized Construct"
-  ],
-  [
-   "幻影加侬 Phantom Ganon",
-   "Phantom Ganon"
-  ],
-  [
-   "幻影加侬",
-   "Phantom Ganon"
-  ],
-  [
-   "魔王加侬多夫 Demon King Ganondorf",
-   "Demon King Ganondorf"
-  ],
-  [
-   "魔王加侬多夫",
-   "Demon King Ganondorf"
-  ],
-  [
-   "莱尼尔 Lynel",
-   "Lynel"
-  ],
-  [
-   "莱尼尔 普通",
-   "Lynel (standard)"
-  ],
-  [
-   "白鬃莱尼尔",
-   "White-Maned Lynel"
-  ],
-  [
-   "蓝鬃莱尼尔",
-   "Blue-Maned Lynel"
-  ],
-  [
-   "白银莱尼尔",
-   "Silver Lynel"
-  ],
-  [
-   "西诺克斯 Hinox",
-   "Hinox"
-  ],
-  [
-   "西诺克斯 普通",
-   "Hinox (standard)"
-  ],
-  [
-   "蓝色西诺克斯",
-   "Blue Hinox"
-  ],
-  [
-   "黑色西诺克斯",
-   "Black Hinox"
-  ],
-  [
-   "骷髅西诺克斯 Stalnox",
-   "Stalnox"
-  ],
-  [
-   "古栗欧克王 King Gleeok",
-   "King Gleeok"
-  ],
-  [
-   "古栗欧克王",
-   "King Gleeok"
-  ],
-  [
-   "火焰古栗欧克",
-   "Flame Gleeok"
-  ],
-  [
-   "冰雪古栗欧克",
-   "Frost Gleeok"
-  ],
-  [
-   "雷电古栗欧克",
-   "Thunder Gleeok"
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "Boss图鉴",
-   "Bosses"
-  ],
-  [
-   "👹 Boss 图鉴",
-   "👹 Boss Compendium"
-  ],
-  [
-   "全 16 个 Boss · 弱点分析 · 阶段打法 · 推荐装备",
-   "All 16 Bosses · Weakness analysis · Phase strategies · Recommended gear"
-  ],
-  [
-   "最后更新：2026年6月",
-   "Last updated: June 2026"
-  ],
-  [
-   "共收录",
-   "Total included"
-  ],
-  [
-   "16 个 Boss",
-   "16 Bosses"
-  ],
-  [
-   "普通难度",
-   "Normal difficulty"
-  ],
-  [
-   "困难",
-   "Hard"
-  ],
-  [
-   "极难",
-   "Extreme"
-  ],
-  [
-   "最终Boss",
-   "Final Boss"
-  ],
-  [
-   "热门 Boss 专题页",
-   "Popular Boss feature pages"
-  ],
-  [
-   "含完整打法 · 招式解析 · 掉落说明",
-   "With full strategies · move breakdowns · drop details"
-  ],
-  [
-   "👑 魔王加侬多夫",
-   "👑 Demon King Ganondorf"
-  ],
-  [
-   "人形 / 秘石 / 黑龙三阶段全解，战前满配指南，盾反与二次闪避打法。",
-   "Full breakdown of the humanoid / Secret Stone / Demon Dragon phases, a pre-fight max-gear guide, and Perfect Guard and double-dodge strategies."
-  ],
-  [
-   "向阳草料理",
-   "Sundelion meals"
-  ],
-  [
-   "👻 幻影加侬",
-   "👻 Phantom Ganon"
-  ],
-  [
-   "城堡 1 打 5 高空轰炸流，野外单挑三形态完美闪避，瘴气武器使用技巧。",
-   "Castle 1-vs-5 high-altitude bombardment strategy, perfect dodges against all three forms in solo field fights, and Gloom weapon tips."
-  ],
-  [
-   "剧情Boss",
-   "Story Boss"
-  ],
-  [
-   "炸弹花齐射",
-   "Bomb Flower volleys"
-  ],
-  [
-   "🦁 莱尼尔系列",
-   "🦁 Lynel Series"
-  ],
-  [
-   "爆头骑乘流全解，红→蓝→白→白银四色强度递进，逐级专题页面。",
-   "Complete headshot-and-mount breakdown, with strength progressing Red → Blue → White → Silver across dedicated pages per tier."
-  ],
-  [
-   "野外最强",
-   "Strongest in the field"
-  ],
-  [
-   "4 页深度攻略",
-   "4 in-depth guide pages"
-  ],
-  [
-   "莱尼尔变体：",
-   "Lynel variants:"
-  ],
-  [
-   "🦁 红鬃 · 2000血",
-   "🦁 Red-Maned · 2,000 HP"
-  ],
-  [
-   "🔵 蓝鬃 · 3000血",
-   "🔵 Blue-Maned · 3,000 HP"
-  ],
-  [
-   "⚪ 白鬃 · 4000血",
-   "⚪ White-Maned · 4,000 HP"
-  ],
-  [
-   "⚔️ 白银 · 5000血",
-   "⚔️ Silver · 5,000 HP"
-  ],
-  [
-   "全部 (16)",
-   "All (16)"
-  ],
-  [
-   "🏛 神殿Boss",
-   "🏛 Temple Bosses"
-  ],
-  [
-   "🌍 野外强敌",
-   "🌍 Field Bosses"
-  ],
-  [
-   "📜 剧情Boss",
-   "📜 Story Bosses"
-  ],
-  [
-   "👑 最终Boss",
-   "👑 Final Boss"
-  ],
-  [
-   "普通",
-   "Normal"
-  ],
-  [
-   "方块魔像",
-   "Flux Construct"
-  ],
-  [
-   "野外强敌",
-   "Field Boss"
-  ],
-  [
-   "天空 / 地表",
-   "Sky / Surface"
-  ],
-  [
-   "初/中/上 三阶",
-   "Three tiers: I / II / III"
-  ],
-  [
-   "天空岛",
-   "Sky Islands"
-  ],
-  [
-   "主要出没",
-   "Main locations"
-  ],
-  [
-   "危险度",
-   "Danger level"
-  ],
-  [
-   "物理",
-   "Physical"
-  ],
-  [
-   "攻击属性",
-   "Attack attribute"
-  ],
-  [
-   "🎯 弱点",
-   "🎯 Weaknesses"
-  ],
-  [
-   "🟦 发光核心方块",
-   "🟦 Glowing core block"
-  ],
-  [
-   "🏹 究极手拔取",
-   "🏹 Pull it out with Ultrahand"
-  ],
-  [
-   "📖 击败方法",
-   "📖 How to Defeat"
-  ],
-  [
-   "魔像由许多方块拼成，身上有一块颜色不同、会发光的核心方块，那是它的唯一弱点。",
-   "The Construct is made of many blocks, with one differently colored, glowing core block on its body — its only weakness."
-  ],
-  [
-   "用 究极手 直接把核心方块从身体里抽出来，魔像会瞬间瘫散，趁机疯狂攻击核心。",
-   "Use Ultrahand to pull the core block straight out of its body; the Construct instantly collapses, so attack the core furiously while you can."
-  ],
-  [
-   "当它变成地面滚动形态或竖立成高塔时，攀爬上去靠近核心；它趴下变平面时核心最好打。",
-   "When it turns into a ground-rolling form or stands up as a tall tower, climb up to get near the core; when it lies flat, the core is easiest to hit."
-  ],
-  [
-   "当它变成地面滚动形态或竖立成高塔时，攀爬上去靠近核心。",
-   "When it turns into a ground-rolling form or stands up as a tall tower, climb up to get near the core."
-  ],
-  [
-   "它趴下变平面时核心最好打。",
-   "When it lies flat, the core is easiest to hit."
-  ],
-  [
-   "上等魔像（中等/上等）血更厚、会浮空与释放电击，建议用左纳乌火炮 / 重武器 速攻核心。",
-   "Higher-tier Constructs (II / III) have more HP, can float, and release electric shocks — use Zonai cannons / heavy weapons to attack the core quickly."
-  ],
-  [
-   "🎁 掉落物品",
-   "🎁 Drops"
-  ],
-  [
-   "🔩 左纳乌矿",
-   "🔩 Zonaite"
-  ],
-  [
-   "💎 大型左纳乌矿",
-   "💎 Large Zonaite"
-  ],
-  [
-   "⚙ 左纳乌精炼石",
-   "⚙ Refined Zonaite"
-  ],
-  [
-   "🔋 大型结晶充能",
-   "🔋 Large Crystallized Charge"
-  ],
-  [
-   "提示：究极手拔核心是最快解法，省去逐块拆解的时间。掉落的左纳乌矿可拿去交换电池容量。",
-   "Tip: pulling the core with Ultrahand is the fastest solution, saving the time of dismantling it block by block. The Zonaite it drops can be exchanged for Energy Cell capacity."
-  ],
-  [
-   "提示：究极手拔核心是最快解法，省去逐块拆解的时间。",
-   "Tip: pulling the core with Ultrahand is the fastest solution, saving the time of dismantling it block by block."
-  ],
-  [
-   "掉落的左纳乌矿可拿去交换电池容量。",
-   "The Zonaite it drops can be exchanged for Energy Cell capacity."
-  ],
-  [
-   "岩石巨人",
-   "Stone Talus"
-  ],
-  [
-   "熔岩 / 冰岩 / 稀有变种",
-   "Igneo / Frost / Rare variants"
-  ],
-  [
-   "全地图",
-   "All over the map"
-  ],
-  [
-   "物理/元素",
-   "Physical / Elemental"
-  ],
-  [
-   "⛏ 背部矿石核心",
-   "⛏ Ore core on its back"
-  ],
-  [
-   "❄ 熔岩巨人怕冰",
-   "❄ Igneo Talus fears ice"
-  ],
-  [
-   "🔥 冰岩巨人怕火",
-   "🔥 Frost Talus fears fire"
-  ],
-  [
-   "巨人的弱点是背上突出的黑色矿石块，普通攻击身体几乎无效。",
-   "The Talus's weakness is the protruding black ore block on its back; normal attacks to its body are almost useless."
-  ],
-  [
-   "爬到它身上（趁它挥拳砸地时跳上去），用 融合岩石锤 / 重武器 猛敲背部矿石核心。",
-   "Climb onto it (jump on when it slams its fist into the ground) and smash the ore core on its back with a fused rock hammer / heavy weapon."
-  ],
-  [
-   "熔岩巨人全身高温，需先用冰属性武器/冰雪果降温再攀爬；冰岩巨人则用火属性融化。",
-   "The Igneo Talus's whole body is hot — cool it down first with an ice weapon / Ice Fruit before climbing; the Frost Talus, conversely, is melted with fire."
-  ],
-  [
-   "熔岩巨人全身高温，需先用冰属性武器/冰雪果降温再攀爬。",
-   "The Igneo Talus's whole body is hot — cool it down first with an ice weapon / Ice Fruit before climbing."
-  ],
-  [
-   "冰岩巨人则用火属性融化。",
-   "The Frost Talus, conversely, is melted with fire."
-  ],
-  [
-   "击碎核心即可击败。夜光/稀有巨人会掉落大量宝石，性价比极高。",
-   "Shatter the core to defeat it. Luminous / Rare Taluses drop large quantities of gems — excellent value."
-  ],
-  [
-   "击碎核心即可击败。",
-   "Shatter the core to defeat it."
-  ],
-  [
-   "夜光/稀有巨人会掉落大量宝石，性价比极高。",
-   "Luminous / Rare Taluses drop large quantities of gems — excellent value."
-  ],
-  [
-   "💎 各类宝石（蓝/红宝石、黄玉、钻石）",
-   "💎 Various gems (Sapphire / Ruby, Topaz, Diamond)"
-  ],
-  [
-   "🪨 火打石",
-   "🪨 Flint"
-  ],
-  [
-   "✨ 夜光石",
-   "✨ Luminous Stone"
-  ],
-  [
-   "🧡 巨人之心（稀有）",
-   "🧡 Talus Heart (rare)"
-  ],
-  [
-   "刷钱推荐：夜光岩石巨人会掉落成堆夜光石与宝石，是前期赚卢比的优质目标。",
-   "Rupee-farming recommendation: Luminous Stone Taluses drop piles of Luminous Stones and gems, making them a great early-game Rupee target."
-  ],
-  [
-   "杰鲁多沙漠",
-   "Gerudo Desert"
-  ],
-  [
-   "沙漠地带",
-   "Desert areas"
-  ],
-  [
-   "💣 爆弹花（震晕）",
-   "💣 Bomb Flower (stun)"
-  ],
-  [
-   "⚔ 出土后的身体",
-   "⚔ Body after it surfaces"
-  ],
-  [
-   "它潜在沙子下游动，会循着你的脚步震动追踪。站在岩石上可避免被它感知。",
-   "It swims beneath the sand, tracking the vibrations of your footsteps. Standing on rock keeps it from sensing you."
-  ],
-  [
-   "它潜在沙子下游动，会循着你的脚步震动追踪。",
-   "It swims beneath the sand, tracking the vibrations of your footsteps."
-  ],
-  [
-   "站在岩石上可避免被它感知。",
-   "Standing on rock keeps it from sensing you."
-  ],
-  [
-   "朝沙面投掷爆弹花（或用余料建造的炸弹箭），它会冲上来吞食并被炸出沙面、翻倒震晕。",
-   "Throw a Bomb Flower at the sand's surface (or use a Fuse-made bomb arrow); it will rush up to swallow it and be blasted out of the sand, flipping over stunned."
-  ],
-  [
-   "趁它翻肚朝天的硬直时间冲上去用最强武器全力输出。",
-   "During the stagger while it lies belly-up, rush in and unleash your strongest weapon."
-  ],
-  [
-   "重复「炸弹诱出 → 震晕 → 输出」循环数次即可击杀。",
-   "Repeat the \"bomb lure → stun → damage\" loop several times to kill it."
-  ],
-  [
-   "🐟 莫尔德拉吉克的鳍",
-   "🐟 Molduga Fin"
-  ],
-  [
-   "🫀 莫尔德拉吉克的内脏",
-   "🫀 Molduga Guts"
-  ],
-  [
-   "注意：它的吞食与跃起攻击伤害极高，没有岩石掩体时务必准备好闪避翻滚。",
-   "Note: its swallow and leaping attacks deal extremely high damage — without rock cover, be ready to dodge-roll."
-  ],
-  [
-   "普通 / 白苍 / 黑曜",
-   "Standard / Pale / Obsidian"
-  ],
-  [
-   "出现地点",
-   "Locations"
-  ],
-  [
-   "物理 / 吸引",
-   "Physical / Suction"
-  ],
-  [
-   "👁 眼睛（弓箭射击）",
-   "👁 Eyes (shoot with bow)"
-  ],
-  [
-   "💣 嘴里投炸弹花",
-   "💣 Throw a Bomb Flower into its mouth"
-  ],
-  [
-   "🪓 背部黑色矿石（重武器）",
-   "🪓 Black ore on its back (heavy weapons)"
-  ],
-  [
-   "核心思路：炸弹断吸、射眼出硬直、爬背狂输出。",
-   "Core idea: break its suction with a bomb, shoot its eyes for stagger, climb onto its back and unleash damage."
-  ],
-  [
-   "破招瘫痪（二选一） · 射击弱点：用弓箭瞄准它的眼睛（发光部位）射击数次，或附加【蝙蝠的眼珠】自动追踪，可直接让它倒地瘫痪。 · 炸弹诱饵：当它张大嘴巴准备吸气时，朝嘴里扔一颗【炸弹花】，它吞下后立刻炸出大硬直。",
-   "Break and paralyze (choose one) · Shoot the weakness: aim your bow at its eyes (the glowing parts) and shoot several times, or attach a Keese Eyeball for auto-tracking, which can drop it paralyzed directly. · Bomb bait: when it opens its mouth wide to inhale, throw a Bomb Flower into its mouth — after swallowing it, it suffers a huge stagger."
-  ],
-  [
-   "破招瘫痪（二选一）",
-   "Break and paralyze (choose one)"
-  ],
-  [
-   "射击弱点：用弓箭瞄准它的眼睛（发光部位）射击数次，或附加【蝙蝠的眼珠】自动追踪，可直接让它倒地瘫痪。",
-   "Shoot the weakness: aim your bow at its eyes (the glowing parts) and shoot several times, or attach a Keese Eyeball for auto-tracking, which can drop it paralyzed directly."
-  ],
-  [
-   "炸弹诱饵：当它张大嘴巴准备吸气时，朝嘴里扔一颗，它吞下后立刻炸出大硬直。",
-   "Bomb bait: when it opens its mouth wide to inhale, throw a Bomb Flower into its mouth — after swallowing it, it suffers a huge stagger."
-  ],
-  [
-   "上背输出：趁巨霸迦马倒地硬直，迅速跑到它身体下方，攀爬上去来到背部。",
-   "Back damage: while Colgera lies staggered, quickly run beneath its body and climb up onto its back."
-  ],
-  [
-   "狂砍矿石：站在背部中央，用大剑 / 锤子 / 岩石锤等高爆发钝器疯狂砍击背上的黑色矿石。",
-   "Hack the ore: stand at the center of its back and furiously hack the black ore with high-burst blunt weapons like greatswords / hammers / rock hammers."
-  ],
-  [
-   "无限循环：它甩开林克时会触发滞空，利用【林克时间】再次射击眼睛，如此循环几轮即可击杀。",
-   "Endless loop: when it throws Link off, it triggers midair hang time — use bullet time to shoot its eyes again, and repeat for a few rounds to kill it."
-  ],
-  [
-   "巨霸迦马的牙",
-   "Colgera's Fang"
-  ],
-  [
-   "巨霸迦马的内脏",
-   "Colgera Guts"
-  ],
-  [
-   "💎 矿石素材",
-   "💎 Ore materials"
-  ],
-  [
-   "推荐装备：附加蝙蝠眼珠的弓（自动追踪）+ 高攻击力双手重武器 / 岩石锤，战前备好回血料理。",
-   "Recommended gear: a bow with a Keese eyeball attached (auto-tracking) + a high-attack two-handed heavy weapon / rock hammer, and healing meals prepared before the fight."
-  ],
-  [
-   "神殿Boss",
-   "Temple Boss"
-  ],
-  [
-   "风之神殿",
-   "Wind Temple"
-  ],
-  [
-   "冰冻",
-   "Freezing"
-  ],
-  [
-   "💥 林克身体直接撞击冰晶",
-   "💥 Link's body directly smashing the ice crystals"
-  ],
-  [
-   "💣 炸弹花附魔箭（远程）",
-   "💣 Bomb Flower fused arrows (ranged)"
-  ],
-  [
-   "🔵 背部紫色结晶",
-   "🔵 Purple crystals on its back"
-  ],
-  [
-   "两套核心打法可自由选择，推荐优先使用「林克肉弹冲击」。",
-   "Two core strategies to choose freely; the \"Link human missile\" is recommended first."
-  ],
-  [
-   "打法一：林克肉弹冲击（最推荐）",
-   "Strategy 1: Link human missile (most recommended)"
-  ],
-  [
-   "空中盘旋：利用考林族丘栗产生的上升气流在空中持续飞行。无限气流无需担心精力消耗。",
-   "Circling midair: use the updrafts created by the Rito Tulin to keep flying. With unlimited updrafts, no need to worry about stamina."
-  ],
-  [
-   "空中盘旋：利用考林族丘栗产生的上升气流在空中持续飞行。",
-   "Circling midair: use the updrafts created by the Rito Tulin to keep flying."
-  ],
-  [
-   "无限气流无需担心精力消耗。",
-   "With unlimited updrafts, no need to worry about stamina."
-  ],
-  [
-   "引诱攻击：等待 BOSS 从下方垂直向上冲撞，或它射出背上冰刺，此时冰晶弱点会直接暴露。",
-   "Bait attacks: wait for the boss to charge straight up from below, or for it to fire the ice spikes on its back — the ice-crystal weaknesses are then directly exposed."
-  ],
-  [
-   "俯冲撞击：按 R 键俯冲（也可直接收翼自由落体），用林克的身体直接撞碎冰晶！",
-   "Dive strike: press R to dive (or simply fold your paraglider and free-fall) and smash the ice crystals with Link's body!"
-  ],
-  [
-   "循环操作：撞碎一处后立刻展开滑翔翼重回高空，寻找下一个弱点，如此循环直至击败。",
-   "Loop: after smashing one, immediately open your paraglider to return high, find the next weakness, and repeat until defeated."
-  ],
-  [
-   "打法二：远程弓箭打法",
-   "Strategy 2: Ranged bow strategy"
-  ],
-  [
-   "暴露弱点：等待 BOSS 射出背部的角，底下的紫色结晶弱点随之暴露。",
-   "Expose the weakness: wait for the boss to fire the horns on its back, exposing the purple crystal weaknesses beneath."
-  ],
-  [
-   "开启林克时间：在空中掏出弓箭，触发慢动作精准瞄准。",
-   "Activate bullet time: draw your bow midair to trigger slow-motion precise aiming."
-  ],
-  [
-   "合成炸弹箭：附魔炸弹花（或直接使用多发弓、强力弓），连续射击同一处冰晶 2～3 次将其炸碎。",
-   "Craft bomb arrows: fuse Bomb Flowers (or use a multi-shot / powerful bow) and shoot the same ice crystal 2–3 times in a row to blow it apart."
-  ],
-  [
-   "🎁 掉落 / 奖励",
-   "🎁 Drops / Rewards"
-  ],
-  [
-   "🧡 心之容器",
-   "🧡 Heart Container"
-  ],
-  [
-   "🐦 图弓力的祝福（顺风能力）",
-   "🐦 Tulin's Blessing (tailwind ability)"
-  ],
-  [
-   "🪶 盖拉的羽翼",
-   "🪶 Gleeok Wing"
-  ],
-  [
-   "❄ 急冻盖拉之角",
-   "❄ Frost Gleeok Horn"
-  ],
-  [
-   "🫀 盖拉的内脏",
-   "🫀 Gleeok Guts"
-  ],
-  [
-   "提示：盖拉之角是顶级融合素材，融合至武器或箭上可附带强力冰属性。肉弹打法全程不消耗箭矢，适合箭不够多的情况。",
-   "Tip: Gleeok horns are top-tier Fuse materials, granting strong ice attributes when fused to weapons or arrows. The human-missile strategy uses no arrows at all, suiting times when arrows are scarce."
-  ],
-  [
-   "提示：盖拉之角是顶级融合素材，融合至武器或箭上可附带强力冰属性。",
-   "Tip: Gleeok horns are top-tier Fuse materials, granting strong ice attributes when fused to weapons or arrows."
-  ],
-  [
-   "肉弹打法全程不消耗箭矢，适合箭不够多的情况。",
-   "The human-missile strategy uses no arrows at all, suiting times when arrows are scarce."
-  ],
-  [
-   "火之神殿 前置",
-   "Fire Temple prelude"
-  ],
-  [
-   "死亡火山",
-   "Death Mountain"
-  ],
-  [
-   "火焰 / 熔岩",
-   "Fire / Lava"
-  ],
-  [
-   "🔥 阿沅的冲撞（击碎龙头）",
-   "🔥 Yunobo's charge (smash the dragon heads)"
-  ],
-  [
-   "🐉 三个红色脑袋",
-   "🐉 Three red heads"
-  ],
-  [
-   "核心思路：驾驶左纳乌飞翼在空中机动，操控阿沅逐一击碎巨龙的三个红色脑袋。",
-   "Core idea: pilot a Zonai Wing to maneuver midair, directing Yunobo to smash the giant dragon's three red heads one by one."
-  ],
-  [
-   "登上飞翼：战斗触发后立刻跑向阿沅身边的空地，那里停放着一架已组装好操纵杆和风扇的左纳乌飞翼。站上去控住操纵杆起飞——此飞翼拥有无限电池，不必担心坠落。",
-   "Board the Wing: once the fight starts, immediately run to the open ground beside Yunobo, where a Zonai Wing fitted with a control stick and fans is parked. Stand on it, grab the control stick, and take off — this Wing has unlimited battery, so no fear of falling."
-  ],
-  [
-   "登上飞翼：战斗触发后立刻跑向阿沅身边的空地，那里停放着一架已组装好操纵杆和风扇的左纳乌飞翼。",
-   "Board the Wing: once the fight starts, immediately run to the open ground beside Yunobo, where a Zonai Wing fitted with a control stick and fans is parked."
-  ],
-  [
-   "站上去控住操纵杆起飞——此飞翼拥有无限电池，不必担心坠落。",
-   "Stand on it, grab the control stick, and take off — this Wing has unlimited battery, so no fear of falling."
-  ],
-  [
-   "空中索敌与锁定：驾驶飞翼在空中盘旋，调整高度和方向靠近巨龙。巨龙共有3 个红色脑袋，准星对准其中一个后按 A 键 释放阿沅蓄力猛冲。",
-   "Acquire and lock targets midair: circle in the Wing, adjusting height and direction to approach the dragon. The dragon has 3 red heads; aim the reticle at one and press A to release Yunobo's charged rush."
-  ],
-  [
-   "空中索敌与锁定：驾驶飞翼在空中盘旋，调整高度和方向靠近巨龙。",
-   "Acquire and lock targets midair: circle in the Wing, adjusting height and direction to approach the dragon."
-  ],
-  [
-   "巨龙共有3 个红色脑袋，准星对准其中一个后按 A 键 释放阿沅蓄力猛冲。",
-   "The dragon has 3 red heads; aim the reticle at one and press A to release Yunobo's charged rush."
-  ],
-  [
-   "规避火球攻击： · 躲避：轻拨左摇杆调转飞翼方向避开熔岩火石。 · 强攻：也可直接对着飞来的火球发射阿沅，阿沅能直接将火球撞碎。",
-   "Dodge fireball attacks: · Dodge: nudge the left stick to turn the Wing away from molten rocks. · Attack head-on: you can also launch Yunobo directly at incoming fireballs — Yunobo smashes them apart."
-  ],
-  [
-   "逐个击破：阿沅成功撞中后该脑袋直接被破坏。调转机头寻找剩余 2 个脑袋，依次用同样方法击碎，3 个全部打掉后 BOSS 彻底死亡，暴露出火山口入口并触发剧情。",
-   "Destroy them one by one: when Yunobo lands a hit, that head is destroyed outright. Turn around to find the remaining 2 heads and destroy them the same way; once all 3 are gone, the boss dies completely, exposing the crater entrance and triggering the story."
-  ],
-  [
-   "🌋 暴露火山口入口（剧情推进）",
-   "🌋 Exposed crater entrance (story progress)"
-  ],
-  [
-   "🔥 解锁进入火之神殿",
-   "🔥 Unlocks entry to the Fire Temple"
-  ],
-  [
-   "提示：全程在飞翼上无需落地，专注调整飞翼方向对准下一个龙头，用阿沅对抗来袭火球可节省躲避精力。",
-   "Tip: stay on the Wing the whole time without landing; focus on steering toward the next dragon head, and using Yunobo against incoming fireballs saves dodging effort."
-  ],
-  [
-   "火之神殿",
-   "Fire Temple"
-  ],
-  [
-   "岩石 / 爆炸",
-   "Rock / Explosions"
-  ],
-  [
-   "👁 本体独眼（近战输出）",
-   "👁 Main body's single eye (melee damage)"
-  ],
-  [
-   "🔥 阿沅的冲撞技能",
-   "🔥 Yunobo's charge skill"
-  ],
-  [
-   "核心思路：利用火之贤者阿沅（Yunobo）的冲撞技能瘫痪 Boss，再近战猛攻核心独眼，分两个阶段击败。",
-   "Core idea: use Sage of Fire Yunobo's charge skill to paralyze the boss, then melee its core single eye hard, defeating it in two phases."
-  ],
-  [
-   "第一阶段：断腿倒地",
-   "Phase 1: Break its legs to topple it"
-  ],
-  [
-   "发射阿沅：控制火之贤者阿沅，瞄准巨砾哥马的岩石前腿发射冲撞技能。",
-   "Launch Yunobo: control Sage of Fire Yunobo, aim at Marbled Gohma's rocky front legs, and fire the charge skill."
-  ],
-  [
-   "破除双腿：连续炸断它的两条前腿，BOSS 的本体（核心独眼）就会掉落在地上。",
-   "Break both legs: blast off its two front legs in succession and the boss's main body (core single eye) drops to the ground."
-  ],
-  [
-   "近战输出：迅速冲上去，使用高攻击力武器猛砍暴露在地的核心独眼。",
-   "Melee damage: rush in and hack the exposed core eye on the ground with a high-attack weapon."
-  ],
-  [
-   "第二阶段：天花板轰炸",
-   "Phase 2: Ceiling bombardment"
-  ],
-  [
-   "躲避包围：BOSS 会爬上天花板，向下投掷大量爆炸岩石将你团团包围。",
-   "Escape the encirclement: the boss climbs onto the ceiling and throws down masses of exploding rocks to surround you."
-  ],
-  [
-   "寻找缺口：在包围圈中寻找缝隙，向外发射阿沅炸开一条路，或用弓箭射击清理出通道。",
-   "Find a gap: look for an opening in the ring, fire Yunobo outward to blast a path, or shoot with your bow to clear a channel."
-  ],
-  [
-   "锁定弱点：趁 BOSS 在天花板上蓄力投掷巨石时，用阿沅撞击它的眼睛，它会直接从天花板重重摔落并瘫痪。",
-   "Lock onto the weakness: while the boss charges up to throw a boulder from the ceiling, hit its eye with Yunobo — it crashes heavily from the ceiling, paralyzed."
-  ],
-  [
-   "尽情输出：趁它摔落硬直冲上去疯狂输出，循环几轮即可将其击杀。",
-   "Unleash damage: rush in during its fall stagger and attack furiously; a few loops will kill it."
-  ],
-  [
-   "🔥 阿沅的祝福（冲撞能力）",
-   "🔥 Yunobo's Blessing (charge ability)"
-  ],
-  [
-   "🏛 净化火之神殿",
-   "🏛 Purify the Fire Temple"
-  ],
-  [
-   "提示：阿沅冷却期间专注走位躲避落石，切勿硬接。第二阶段清理包围圈时弓箭比阿沅更省时，留阿沅冲撞用于击落 BOSS。",
-   "Tip: while Yunobo is on cooldown, focus on positioning to dodge falling rocks — never tank them head-on. In phase 2, clearing the ring with your bow is faster than with Yunobo; save Yunobo's charge for knocking the boss down."
-  ],
-  [
-   "提示：阿沅冷却期间专注走位躲避落石，切勿硬接。",
-   "Tip: while Yunobo is on cooldown, focus on positioning to dodge falling rocks — never tank them head-on."
-  ],
-  [
-   "第二阶段清理包围圈时弓箭比阿沅更省时，留阿沅冲撞用于击落 BOSS。",
-   "In phase 2, clearing the ring with your bow is faster than with Yunobo; save Yunobo's charge for knocking the boss down."
-  ],
-  [
-   "水之神殿",
-   "Water Temple"
-  ],
-  [
-   "淤泥",
-   "Sludge"
-  ],
-  [
-   "💧 水属性（洗净泥浆）",
-   "💧 Water attribute (wash off sludge)"
-  ],
-  [
-   "🏹 嘴里紫色核心（弓箭射击）",
-   "🏹 Purple core in its mouth (shoot with bow)"
-  ],
-  [
-   "⚔ 核心暴露后近战输出",
-   "⚔ Melee damage after the core is exposed"
-  ],
-  [
-   "核心机制：水属性洗掉淤泥破除无敌 → 引诱张嘴暴露紫色核心 → 射击核心触发硬直 → 近战疯狂输出，循环 2～3 轮击杀。",
-   "Core mechanic: water washes off the sludge to break its invincibility → bait it into opening its mouth to expose the purple core → shoot the core to trigger stagger → unleash melee damage, repeating 2–3 rounds for the kill."
-  ],
-  [
-   "洗净泥浆（破除无敌）",
-   "Wash off the sludge (break invincibility)"
-  ],
-  [
-   "BOSS 全身裹淤泥时处于无敌状态，必须先洗净。 · 方法 A（最推荐）：靠近希多（米法弟弟）按 A 键包裹水盾，对着 BOSS 挥动武器砍出水波清除淤泥。 · 方法 B（远程）：弓箭附魔水之果 / 丘丘胶（蓝色）/ 水龙头胶囊，一箭命中即可瞬间洗净。",
-   "While coated in sludge, the boss is invincible and must be washed first. · Method A (most recommended): approach Sidon (Mipha's younger brother), press A to wrap yourself in his water shield, and swing your weapon at the boss to send water waves clearing the sludge. · Method B (ranged): fuse Splash Fruit / blue Chuchu Jelly / a Hydrant capsule to an arrow — one hit washes it instantly."
-  ],
-  [
-   "BOSS 全身裹淤泥时处于无敌状态，必须先洗净。",
-   "While coated in sludge, the boss is invincible and must be washed first."
-  ],
-  [
-   "方法 A（最推荐）：靠近希多（米法弟弟）按 A 键包裹水盾，对着 BOSS 挥动武器砍出水波清除淤泥。",
-   "Method A (most recommended): approach Sidon (Mipha's younger brother), press A to wrap yourself in his water shield, and swing your weapon at the boss to send water waves clearing the sludge."
-  ],
-  [
-   "方法 B（远程）：弓箭附魔水之果 / 丘丘胶（蓝色）/ 水龙头胶囊，一箭命中即可瞬间洗净。",
-   "Method B (ranged): fuse Splash Fruit / blue Chuchu Jelly / a Hydrant capsule to an arrow — one hit washes it instantly."
-  ],
-  [
-   "引诱张嘴",
-   "Bait it into opening its mouth"
-  ],
-  [
-   "泥浆洗净后 BOSS 现出原形（白色大蠕虫）。不要盲目冲上去砍，保持距离引诱它张嘴——张嘴左右摇晃时，嘴里红紫色发光球体（核心）随之暴露。",
-   "After washing, the boss reveals its true form (a large white worm). Don't blindly rush in to slash — keep your distance and bait it into opening its mouth; as it sways side to side with its mouth open, the red-purple glowing orb (core) inside is exposed."
-  ],
-  [
-   "泥浆洗净后 BOSS 现出原形（白色大蠕虫）。",
-   "After washing, the boss reveals its true form (a large white worm)."
-  ],
-  [
-   "不要盲目冲上去砍，保持距离引诱它张嘴——张嘴左右摇晃时，嘴里红紫色发光球体（核心）随之暴露。",
-   "Don't blindly rush in to slash — keep your distance and bait it into opening its mouth; as it sways side to side with its mouth open, the red-purple glowing orb (core) inside is exposed."
-  ],
-  [
-   "击晕并疯狂输出",
-   "Stun it and unleash damage"
-  ],
-  [
-   "射击核心：张嘴瞬间立刻用弓箭直接射击嘴里的紫色核心。",
-   "Shoot the core: the instant its mouth opens, shoot the purple core inside directly with your bow."
-  ],
-  [
-   "近战输出：核心中弹后 BOSS 陷入大硬直瘫倒在地，立刻冲上去用双手重武器对着核心疯狂输出。",
-   "Melee damage: once the core is hit, the boss collapses in a huge stagger — immediately rush in and attack the core furiously with a two-handed heavy weapon."
-  ],
-  [
-   "无限循环：起身后它缩回地下并重刷淤泥，重复「洗泥浆 → 等张嘴 → 射核心 → 输出」，一般 2～3 轮即可击杀。",
-   "Endless loop: after it gets up, it retreats underground and re-coats itself in sludge; repeat \"wash sludge → wait for mouth → shoot core → damage\" — usually 2–3 rounds is enough for the kill."
-  ],
-  [
-   "⚠ 战场生存要点",
-   "⚠ Battlefield survival points"
-  ],
-  [
-   "水盾走位：希多水盾不仅能攻击，还能抵挡一次任意伤害，CD好了就补盾。",
-   "Water shield positioning: Sidon's water shield not only attacks, it also blocks any one hit — reapply it as soon as its cooldown ends."
-  ],
-  [
-   "清除地面淤泥：战场淤泥会严重减速，用希多水波或水之果清理出一条干净跑道。",
-   "Clear ground sludge: battlefield sludge slows you severely — use Sidon's water waves or Splash Fruit to clear a clean path."
-  ],
-  [
-   "躲避泥浆弹：洗净后若长时间不射核心，BOSS 会向前方吐出三发高威力泥浆弹，横向奔跑躲避。",
-   "Dodge sludge shots: after washing, if you don't shoot the core for a long time, the boss spits three high-power sludge shots forward — run sideways to dodge."
-  ],
-  [
-   "💎 蛋白石",
-   "💎 Opal"
-  ],
-  [
-   "🟢 怪物素材",
-   "🟢 Monster materials"
-  ],
-  [
-   "💧 水属性（逼出本体）",
-   "💧 Water attribute (force out its true form)"
-  ],
-  [
-   "🐙 小章鱼本体（近战击晕）",
-   "🐙 Small octopus true form (melee stun)"
-  ],
-  [
-   "🏹 空中林克时间（二阶段）",
-   "🏹 Midair bullet time (phase 2)"
-  ],
-  [
-   "核心机制：水属性逼出小章鱼本体 → 近战击晕翻倒 → 疯狂输出。二阶段满地淤泥，用空中林克时间远程洗澡解决。",
-   "Core mechanic: water forces out the small octopus true form → melee stun knocks it over → unleash damage. In phase 2 the ground is covered in sludge — wash it down from midair with bullet time."
-  ],
-  [
-   "一阶段：轻松压制",
-   "Phase 1: Easy suppression"
-  ],
-  [
-   "破除泥浆鲨鱼：BOSS 裹着泥浆像鲨鱼在地下游动。靠近希多对话套上水盾后挥武器砍出水波，或弓箭附魔水之果 / 丘丘胶射它，直接把它从泥浆里洗出来。",
-   "Break the sludge shark: the boss, coated in sludge, swims underground like a shark. Talk to Sidon to gain the water shield, then swing your weapon to send water waves, or shoot it with Splash Fruit / Chuchu Jelly fused arrows, washing it straight out of the sludge."
-  ],
-  [
-   "追击小章鱼：失去泥浆后它变成慌乱逃跑的小章鱼，立刻追上去砍一刀，它会陷入大硬直（肚皮朝天翻倒）。",
-   "Chase the little octopus: without its sludge it becomes a panicked fleeing octopus — chase it and land one hit, and it falls into a huge stagger (flipped belly-up)."
-  ],
-  [
-   "疯狂输出：趁它倒地换上面板最高的双手武器大风车疯狂输出。重复 2 次左右即可进入二阶段。",
-   "Unleash damage: while it lies down, switch to your highest-attack two-handed weapon and whirlwind-spin furiously. Repeat about twice to enter phase 2."
-  ],
-  [
-   "疯狂输出：趁它倒地换上面板最高的双手武器大风车疯狂输出。",
-   "Unleash damage: while it lies down, switch to your highest-attack two-handed weapon and whirlwind-spin furiously."
-  ],
-  [
-   "重复 2 次左右即可进入二阶段。",
-   "Repeat about twice to enter phase 2."
-  ],
-  [
-   "二阶段：全屏淤泥（核心难点）",
-   "Phase 2: Screen-wide sludge (the core difficulty)"
-  ],
-  [
-   "局面说明：血量过半后 BOSS 跳回中央并在全场铺满淤泥，移动速度极快且疯狂跳跃，地面行动受到严重限制。",
-   "Situation: below half HP, the boss jumps back to the center and covers the whole arena in sludge; it moves extremely fast and leaps wildly, severely limiting ground movement."
-  ],
-  [
-   "空中林克时间（强烈推荐）： · 盾牌融合炸弹花 / 火箭，按住 ZL 盾防并起跳，直接飞向高空。 · 在空中拉弓触发慢动作（林克时间），弓箭附魔水之果 / 丘丘胶 / 多发弓，从空中往下连续射击。 · 可瞬间清理周围泥浆并把 BOSS 射回小章鱼原形。",
-   "Midair bullet time (strongly recommended): · Fuse a Bomb Flower / rocket to your shield, hold ZL to guard and jump, flying straight up high. · Draw your bow midair to trigger slow motion (bullet time), with Splash Fruit / Chuchu Jelly fused arrows / a multi-shot bow, shooting continuously downward from above. · This instantly clears nearby sludge and shoots the boss back into its little-octopus form."
-  ],
-  [
-   "定身输出：落地后再次用林克时间射击逃跑中的小章鱼，倒地后冲上去近战补刀。",
-   "Pinned damage: after landing, use bullet time again to shoot the fleeing octopus; once it falls, rush in for melee follow-ups."
-  ],
-  [
-   "💡 局势掌控技巧",
-   "💡 Situation control tips"
-  ],
-  [
-   "不要盲目追希多：二阶段希多可能被泥浆卡住，用弓箭 + 水之果比找希多效率高得多。",
-   "Don't blindly chase Sidon: in phase 2 Sidon may get stuck in sludge — bow + Splash Fruit is far more efficient than finding Sidon."
-  ],
-  [
-   "清理脚下：被泥浆严重减速时，往自己脚下扔一颗水之果，瞬间清出一片空地。",
-   "Clear your footing: when sludge slows you badly, throw a Splash Fruit at your own feet to instantly clear an open patch."
-  ],
-  [
-   "左纳乌科技：背包里有水龙头胶囊的话，放在战场中央，它会自动喷水持续清理周围泥浆。",
-   "Zonai tech: if you have a Hydrant capsule in your pack, place it at the arena's center — it sprays water automatically, continuously clearing nearby sludge."
-  ],
-  [
-   "🦈 希多的祝福（水球攻击）",
-   "🦈 Sidon's Blessing (water bubble attack)"
-  ],
-  [
-   "🏛 净化水之神殿",
-   "🏛 Purify the Water Temple"
-  ],
-  [
-   "提示：希多的水之力全程既能攻击又能护身，二阶段优先飞到空中用林克时间清场，是最省力的稳定打法。",
-   "Tip: Sidon's water power attacks and protects throughout; in phase 2, flying up and clearing the field with bullet time first is the most effort-saving stable strategy."
-  ],
-  [
-   "雷之神殿",
-   "Lightning Temple"
-  ],
-  [
-   "风沙 / 飞行",
-   "Sandstorm / Flight"
-  ],
-  [
-   "⚡ 雷属性沙化（露珠技能 / 雷击果）",
-   "⚡ Lightning attribute calcification (Riju's skill / Shock Fruit)"
-  ],
-  [
-   "🔥 火属性沙化（炸弹花 / 火之果）",
-   "🔥 Fire attribute calcification (Bomb Flower / Fire Fruit)"
-  ],
-  [
-   "⚔ 沙化变白后近战输出",
-   "⚔ Melee damage after calcification turns it white"
-  ],
-  [
-   "核心机制：BOSS 和小怪常态下极高免伤，必须先用雷属性或火属性攻击使其全身变白（沙化），才能造成正常伤害。",
-   "Core mechanic: the boss and its minions normally take extremely reduced damage — you must first hit them with lightning or fire attacks to turn their whole body white (calcify them) before dealing normal damage."
-  ],
-  [
-   "一阶段：风筝输出",
-   "Phase 1: Kiting damage"
-  ],
-  [
-   "雷电破防：BOSS 在地上冲锋或发射龙卷风时，一边侧向奔跑躲避，一边靠近露珠。等她的雷电圈扩大包裹住 BOSS 时，用弓箭射击 BOSS 任意部位触发落雷。",
-   "Lightning defense break: while the boss charges on the ground or fires tornadoes, run sideways to dodge while approaching Riju. When her lightning ring expands to envelop the boss, shoot any part of the boss with your bow to trigger a lightning strike."
-  ],
-  [
-   "雷电破防：BOSS 在地上冲锋或发射龙卷风时，一边侧向奔跑躲避，一边靠近露珠。",
-   "Lightning defense break: while the boss charges on the ground or fires tornadoes, run sideways to dodge while approaching Riju."
-  ],
-  [
-   "等她的雷电圈扩大包裹住 BOSS 时，用弓箭射击 BOSS 任意部位触发落雷。",
-   "When her lightning ring expands to envelop the boss, shoot any part of the boss with your bow to trigger a lightning strike."
-  ],
-  [
-   "变白硬直：受到雷击后女王全身变白瘫倒在地。立刻冲上去用伤害最高的武器疯狂输出。",
-   "White stagger: after the lightning strike, the queen turns white all over and collapses. Immediately rush in and attack furiously with your highest-damage weapon."
-  ],
-  [
-   "循环：起身后女王扇翅飞走，重复「露珠雷电破防 → 变白 → 输出」2～3 次，即可将其打入二阶段（血量过半）。",
-   "Loop: after she gets up, the queen flaps her wings and flies off; repeat \"Riju lightning defense break → turn white → damage\" 2–3 times to push her into phase 2 (below half HP)."
-  ],
-  [
-   "二阶段：拆除巢穴（核心难点）",
-   "Phase 2: Demolish the nests (the core difficulty)"
-  ],
-  [
-   "局面说明：战场四周 4 个紫色吉波得巢穴（柱子） 开始发光并不断孵化大量爬行和飞行吉波得，场面极度混乱。",
-   "Situation: the 4 purple Gibdo nests (pillars) around the arena start glowing and constantly hatch masses of crawling and flying Gibdos — total chaos."
-  ],
-  [
-   "拆迁流打法（强烈推荐）",
-   "Demolition strategy (strongly recommended)"
-  ],
-  [
-   "优先拆柱子：无视 BOSS！等巢穴柱子中心发出紫红色光（可破坏状态）时，开启露珠雷电用弓箭射击发光中心，或弓箭附魔炸弹花射击——一击即可彻底炸毁巢穴。",
-   "Prioritize the pillars: ignore the boss! When a nest pillar's center glows purple-red (destructible state), activate Riju's lightning and shoot the glowing center with your bow, or shoot it with a Bomb Flower fused arrow — one hit completely destroys the nest."
-  ],
-  [
-   "优先拆柱子：无视 BOSS！",
-   "Prioritize the pillars: ignore the boss!"
-  ],
-  [
-   "等巢穴柱子中心发出紫红色光（可破坏状态）时，开启露珠雷电用弓箭射击发光中心，或弓箭附魔炸弹花射击——一击即可彻底炸毁巢穴。",
-   "When a nest pillar's center glows purple-red (destructible state), activate Riju's lightning and shoot the glowing center with your bow, or shoot it with a Bomb Flower fused arrow — one hit completely destroys the nest."
-  ],
-  [
-   "利用光柱杀怪：巢穴被炸毁后天花板漏下圣洁光柱。普通吉波得小怪走近光柱会直接沙化自焚，站在光柱里小怪根本不敢靠近。",
-   "Use light pillars to kill minions: after a nest is destroyed, a holy light pillar leaks down from the ceiling. Ordinary Gibdo minions that approach the pillar calcify and self-immolate on the spot; standing inside a pillar, minions won't dare approach."
-  ],
-  [
-   "利用光柱杀怪：巢穴被炸毁后天花板漏下圣洁光柱。",
-   "Use light pillars to kill minions: after a nest is destroyed, a holy light pillar leaks down from the ceiling."
-  ],
-  [
-   "普通吉波得小怪走近光柱会直接沙化自焚，站在光柱里小怪根本不敢靠近。",
-   "Ordinary Gibdo minions that approach the pillar calcify and self-immolate on the spot; standing inside a pillar, minions won't dare approach."
-  ],
-  [
-   "决战女王：拆完 4 个柱子清完杂兵后，女王孤立无援。她会频繁释放激光和多个龙卷风，走位绕到侧面，继续用露珠雷电 + 弓箭打进硬直，上去补刀即可收尾。",
-   "Final battle with the queen: after demolishing all 4 pillars and clearing the minions, the queen is isolated. She fires lasers and multiple tornadoes frequently — position yourself to her side, keep using Riju's lightning + bow to force stagger, then finish her with follow-ups."
-  ],
-  [
-   "决战女王：拆完 4 个柱子清完杂兵后，女王孤立无援。",
-   "Final battle with the queen: after demolishing all 4 pillars and clearing the minions, the queen is isolated."
-  ],
-  [
-   "她会频繁释放激光和多个龙卷风，走位绕到侧面，继续用露珠雷电 + 弓箭打进硬直，上去补刀即可收尾。",
-   "She fires lasers and multiple tornadoes frequently — position yourself to her side, keep using Riju's lightning + bow to force stagger, then finish her with follow-ups."
-  ],
-  [
-   "⚡ 露珠的祝福（雷电能力）",
-   "⚡ Riju's Blessing (lightning ability)"
-  ],
-  [
-   "🏛 净化雷之神殿",
-   "🏛 Purify the Lightning Temple"
-  ],
-  [
-   "注意：二阶段切勿被小怪群围攻——拆柱子优先级高于一切，光柱是最好的防守阵地。金属武器在雷电场景下会引雷，飞行阶段备足箭矢。",
-   "Note: in phase 2, never let the minion swarm surround you — demolishing pillars outranks everything, and light pillars are the best defensive position. Metal weapons attract lightning in lightning scenarios; stock up on arrows for the flying phase."
-  ],
-  [
-   "注意：二阶段切勿被小怪群围攻——拆柱子优先级高于一切，光柱是最好的防守阵地。",
-   "Note: in phase 2, never let the minion swarm surround you — demolishing pillars outranks everything, and light pillars are the best defensive position."
-  ],
-  [
-   "金属武器在雷电场景下会引雷，飞行阶段备足箭矢。",
-   "Metal weapons attract lightning in lightning scenarios; stock up on arrows for the flying phase."
-  ],
-  [
-   "魂之神殿",
-   "Spirit Temple"
-  ],
-  [
-   "物理 / 瘴气",
-   "Physical / Gloom"
-  ],
-  [
-   "⚡ 场地四周通电铁丝网",
-   "⚡ Electrified wire fences around the arena"
-  ],
-  [
-   "🛡 盾反后组合拳推入电网",
-   "🛡 Push it into the electric fence with combo punches after a Perfect Guard"
-  ],
-  [
-   "💣 大炮（直接轰入电网）",
-   "💣 Cannon (blast it straight into the fence)"
-  ],
-  [
-   "核心机制：普通攻击无法有效伤害 BOSS。必须通过连续攻击或盾反不断将其往后推，直到撞上场地四周的通电铁丝网，触电造成极高伤害并使其瘫痪。",
-   "Core mechanic: normal attacks can't effectively hurt the boss. You must keep pushing it backward with consecutive attacks or parries until it hits the electrified wire fences around the arena — electrocution deals extremely high damage and paralyzes it."
-  ],
-  [
-   "核心机制：普通攻击无法有效伤害 BOSS。",
-   "Core mechanic: normal attacks can't effectively hurt the boss."
-  ],
-  [
-   "必须通过连续攻击或盾反不断将其往后推，直到撞上场地四周的通电铁丝网，触电造成极高伤害并使其瘫痪。",
-   "You must keep pushing it backward with consecutive attacks or parries until it hits the electrified wire fences around the arena — electrocution deals extremely high damage and paralyzes it."
-  ],
-  [
-   "战前极速组装（非常关键）",
-   "Pre-battle rapid assembly (crucial)"
-  ],
-  [
-   "开局前务必给魔像装好以下配件： · 左手 / 右手：强烈建议安装大炮或铁球 / 刺球。 · 后背：安装火箭或风扇（用于二阶段起飞或快速位移）。",
-   "Before the fight starts, be sure to fit your Construct with these parts: · Left / right hand: a cannon or iron ball / spiked ball is strongly recommended. · Back: a rocket or fan (for phase-2 takeoff or fast movement)."
-  ],
-  [
-   "一阶段：无脑盾反流",
-   "Phase 1: Brainless Perfect Guard strategy"
-  ],
-  [
-   "按住 ZL 防御：开局不要主动乱出拳，按住 ZL 摆出防御姿势，稳步向 BOSS 靠近。",
-   "Hold ZL to guard: don't throw wild punches at the start — hold ZL in a guard stance and steadily approach the boss."
-  ],
-  [
-   "完美格挡（盾反）：BOSS 抬手挥拳瞬间按下 A 键盾反，成功后 BOSS 陷入身体失衡短暂硬直。",
-   "Perfect guard (Perfect Guard): press A to Perfect Guard the instant the boss raises its hand to punch; on success the boss loses balance in a brief stagger."
-  ],
-  [
-   "组合拳推入电网：趁硬直立刻左拳→右拳→左拳（L→R→L）交替连击，最后一击强力推击直接将 BOSS 打飞撞上电网，起步扣约 1/4 血。",
-   "Combo punches into the fence: during the stagger, immediately alternate left → right → left (L→R→L) punches; the final powerful push sends the boss flying into the fence, taking about 1/4 of its HP right away."
-  ],
-  [
-   "💣 大炮偷鸡法：手有大炮时可直接拉开距离轰一炮，BOSS 直接被轰到电网上，无脑高效。",
-   "💣 Cannon cheese: with a cannon in hand, just keep your distance and fire one shot — the boss is blasted straight onto the fence, brainlessly efficient."
-  ],
-  [
-   "二阶段：空中飞袭",
-   "Phase 2: Aerial assault"
-  ],
-  [
-   "局面说明：血量过半后 BOSS 后背组装风扇并直接飞到半空中。",
-   "Situation: below half HP, the boss fits a fan on its back and flies straight up into midair."
-  ],
-  [
-   "打落长空（二选一）： · 方法 A（最省事）：手有大炮直接在地面瞄准空中轰一炮，BOSS 直接坠机摔倒。 · 方法 B（滞空对决）：启动背上火箭或风扇跟着飞上天，在空中飞过去给它一拳砸下来。",
-   "Knock it out of the sky (choose one): · Method A (easiest): with a cannon, aim from the ground and fire one shot — the boss crashes down. · Method B (midair duel): activate your back rocket or fan to fly up after it, fly over, and punch it down."
-  ],
-  [
-   "躲避激光：它在空中发射激光时，保持横向移动或按住防御即可。",
-   "Dodge lasers: while it fires lasers midair, keep moving sideways or hold guard."
-  ],
-  [
-   "落地痛扁：从空中打落后必定大硬直，立刻冲上去继续组合拳推入电网。重复 2 次即可彻底拆毁叛变魔像。",
-   "Beat it down after landing: knocking it out of the air always causes a huge stagger — immediately rush in and keep combo-punching it into the fence. Repeat twice to completely dismantle the rogue Construct."
-  ],
-  [
-   "落地痛扁：从空中打落后必定大硬直，立刻冲上去继续组合拳推入电网。",
-   "Beat it down after landing: knocking it out of the air always causes a huge stagger — immediately rush in and keep combo-punching it into the fence."
-  ],
-  [
-   "重复 2 次即可彻底拆毁叛变魔像。",
-   "Repeat twice to completely dismantle the rogue Construct."
-  ],
-  [
-   "🤖 米涅鲁的祝福（魔像之力）",
-   "🤖 Mineru's Blessing (Construct power)"
-  ],
-  [
-   "🏛 净化魂之神殿",
-   "🏛 Purify the Spirit Temple"
-  ],
-  [
-   "提示：战前组装配件是胜负关键——大炮让两个阶段都变得简单无脑。盾反节奏不熟时可先用大炮偷鸡，熟悉后再练盾反组合拳。",
-   "Tip: pre-battle part assembly decides victory — cannons make both phases simple and brainless. If you haven't learned Perfect Guard timing, cheese with the cannon first, then practice Perfect Guard combos once familiar."
-  ],
-  [
-   "提示：战前组装配件是胜负关键——大炮让两个阶段都变得简单无脑。",
-   "Tip: pre-battle part assembly decides victory — cannons make both phases simple and brainless."
-  ],
-  [
-   "盾反节奏不熟时可先用大炮偷鸡，熟悉后再练盾反组合拳。",
-   "If you haven't learned Perfect Guard timing, cheese with the cannon first, then practice Perfect Guard combos once familiar."
-  ],
-  [
-   "城堡 1打5 / 野外单挑",
-   "Castle 1-vs-5 / solo field fights"
-  ],
-  [
-   "城堡/野外",
-   "Castle / field"
-  ],
-  [
-   "瘴气",
-   "Gloom"
-  ],
-  [
-   "💣 炸弹花附魔箭（城堡群战）",
-   "💣 Bomb Flower fused arrows (castle group fight)"
-  ],
-  [
-   "🗡 完美闪避突击（单挑）",
-   "🗡 Perfect-dodge Flurry Rush (solo)"
-  ],
-  [
-   "🏹 弓箭爆头打断蓄力",
-   "🏹 Bow headshot to interrupt charges"
-  ],
-  [
-   "城堡主线：1打5分身流（海拉鲁城堡）",
-   "Castle main quest: 1-vs-5 clone strategy (Hyrule Castle)"
-  ],
-  [
-   "同时面对 5 个手持不同武器的幻影加侬，千万不要在地面硬刚，会被围殴到死。",
-   "Facing 5 Phantom Ganons wielding different weapons at once, never fight them head-on on the ground — they will swarm you to death."
-  ],
-  [
-   "逃票打法：高空爆头流（最推荐）",
-   "Cheese strategy: high-altitude headshot strategy (most recommended)"
-  ],
-  [
-   "准备：带上多发弓（兽神弓 / 大鹫弓），背包装满炸弹花。",
-   "Prepare: bring a multi-shot bow (Savage Lynel Bow / Great Eagle Bow) and fill your pack with Bomb Flowers."
-  ],
-  [
-   "起飞：用火箭盾 / 炸弹花盾，或踩梯子 / 高台跳下，直接飞向半空。",
-   "Take off: use a rocket shield (hold ZL and jump) or a Bomb Flower shield (shield-surf with ZL + X + A), or step off a ladder / high platform, flying straight into midair."
-  ],
-  [
-   "空中林克时间：掏出弓箭触发慢动作，附魔炸弹花对着挤堆的 5 个分身疯狂连射，范围伤害将他们全部炸飞炸晕、完全无法还手。",
-   "Midair bullet time: draw your bow to trigger slow motion, fuse Bomb Flowers, and fire wildly at the 5 clustered clones — the area damage blasts them all flying and stunned, completely unable to fight back."
-  ],
-  [
-   "循环：落地后立刻换一面火箭盾再次升空，重复 2～3 轮即可轻松清场。",
-   "Loop: after landing, immediately swap to another rocket shield and launch again; 2–3 rounds easily clears the field."
-  ],
-  [
-   "野外单挑：完美闪避突击流",
-   "Solo field fight: perfect-dodge Flurry Rush strategy"
-  ],
-  [
-   "击败野外瘴气之手后蹦出的单个幻影加侬，完美闪避触发突击是最优雅省武器的打法。他会根据手中武器交替使用三种攻击：",
-   "Against the single Phantom Ganon that pops out after defeating a field Gloom Spawn, triggering a Flurry Rush with a perfect dodge is the most elegant, weapon-saving strategy. It alternates three attacks depending on its weapon:"
-  ],
-  [
-   "击败野外瘴气之手后蹦出的单个幻影加侬，完美闪避触发突击是最优雅省武器的打法。",
-   "Against the single Phantom Ganon that pops out after defeating a field Gloom Spawn, triggering a Flurry Rush with a perfect dodge is the most elegant, weapon-saving strategy."
-  ],
-  [
-   "他会根据手中武器交替使用三种攻击：",
-   "It alternates three attacks depending on its weapon:"
-  ],
-  [
-   "剑",
-   "Sword"
-  ],
-  [
-   "剑形态：瞬移突刺 / 横劈 前兆：微微低头后瞬间消失。 · 现身时剑架腰间横摆：按住 ZL + 连按两下【后跳】触发突击。 · 现身时高举下劈：按住 ZL + 连按两下【侧跳】触发突击。",
-   "Sword form: teleport thrust / horizontal slash. Tell: it lowers its head slightly, then instantly vanishes. · When it reappears with its sword held sideways at its waist: hold ZL + jump backward (one jump, stick in the dodge direction) to trigger a Flurry Rush. · When it reappears raising its sword for a downward chop: hold ZL + side-jump once (stick in the dodge direction) to trigger a Flurry Rush."
-  ],
-  [
-   "枪",
-   "Spear"
-  ],
-  [
-   "长枪形态：直线冲锋 前兆：长枪横于身后、身体前倾，拉出红色瘴气残影直线冲刺。 应对：冲到面前瞬间按住 ZL + 向左/右【侧跳】——最容易触发突击的一招。",
-   "Spear form: straight charge. Tell: spear held horizontally behind it, body leaning forward, trailing red Gloom afterimages in a straight dash. Counter: the instant it reaches you, hold ZL + side-jump left / right — the easiest move to trigger a Flurry Rush with."
-  ],
-  [
-   "斧",
-   "Axe"
-  ],
-  [
-   "大剑形态：蓄力大风车 前兆：高举大剑原地蓄力，准备 360° 瘴气旋风斩。 应对：判定范围极大，不建议尝试闪避。看到蓄力立刻向后跑拉开距离，或弓箭附魔吉波得之骨 / 炸弹花直接射脸打断蓄力并让他跪地。",
-   "Greatsword form: charged whirlwind. Tell: it raises the greatsword high and charges in place, preparing a 360° Gloom whirlwind slash. Counter: its hitbox is enormous — dodging is not recommended. The moment you see it charge, run backward to create distance, or shoot its face with a Gibdo Bone / Bomb Flower fused arrow to interrupt the charge and make it kneel."
-  ],
-  [
-   "💡 必备生存要点",
-   "💡 Essential survival points"
-  ],
-  [
-   "驱散瘴气：幻影加侬走过的地方留有瘴气，提前烹饪向阳草料理（3个向阳草+2个苹果）用于回复被瘴气扣除的心心上限。",
-   "Dispel Gloom: Phantom Ganon leaves Gloom where it walks — cook Sundelion meals in advance (3 Sundelions + 2 apples) to restore maximum hearts lost to Gloom."
-  ],
-  [
-   "贤者干扰：召唤全部五位贤者，虽然输出不高，但能吸引 2～3 个分身仇恨，极大缓解生存压力。",
-   "Sage interference: summon all five Sages — their damage is low, but they draw the aggression of 2–3 clones, greatly easing survival pressure."
-  ],
-  [
-   "🏹 魔王之弓（血量越高面板伤害越高）",
-   "🏹 Demon King's Bow (higher HP means higher listed damage)"
-  ],
-  [
-   "🗡 瘴气之剑 / 大剑",
-   "🗡 Gloom Sword / Gloom Claymore"
-  ],
-  [
-   "瘴气武器使用技巧：瘴气武器直接使用会扣血，但可用余料建造把它们融在普通武器枪头上——既获得高攻击力又不扣血！",
-   "Gloom weapon tip: using Gloom weapons directly drains your health, but you can Fuse them onto the head of a normal spear — gaining high attack without losing health!"
-  ],
-  [
-   "三阶段",
-   "Three phases"
-  ],
-  [
-   "人形 / 秘石 / 黑龙",
-   "Humanoid / Secret Stone / Demon Dragon"
-  ],
-  [
-   "海拉鲁地底",
-   "Hyrule Depths"
-  ],
-  [
-   "瘴气 / 全属性",
-   "Gloom / All attributes"
-  ],
-  [
-   "⚠ 战前绝对核心准备",
-   "⚠ Absolutely core pre-battle preparations"
-  ],
-  [
-   "向阳草料理：加侬的瘴气攻击会打碎心心上限。用向阳草 + 金苹果 / 肉大量烹饪「恢复被碎心心」料理，备足全程消耗。",
-   "Sundelion meals: Ganon's Gloom attacks shatter your maximum hearts. Cook large quantities of \"restore shattered hearts\" meals with Sundelions + Golden Apples / meat, enough for the whole fight."
-  ],
-  [
-   "向阳草料理：加侬的瘴气攻击会打碎心心上限。",
-   "Sundelion meals: Ganon's Gloom attacks shatter your maximum hearts."
-  ],
-  [
-   "用向阳草 + 金苹果 / 肉大量烹饪「恢复被碎心心」料理，备足全程消耗。",
-   "Cook large quantities of \"restore shattered hearts\" meals with Sundelions + Golden Apples / meat, enough for the whole fight."
-  ],
-  [
-   "高攻武器：多准备几把白银莱尼尔刃角余料建造的武器。大师之剑此战不增伤但绝不破损，是稳定主力。",
-   "High-attack weapons: prepare several weapons fused with Silver Lynel horns. The Master Sword gains no bonus damage in this fight but never breaks, making it a reliable main weapon."
-  ],
-  [
-   "高攻武器：多准备几把白银莱尼尔刃角余料建造的武器。",
-   "High-attack weapons: prepare several weapons fused with Silver Lynel horns."
-  ],
-  [
-   "大师之剑此战不增伤但绝不破损，是稳定主力。",
-   "The Master Sword gains no bonus damage in this fight but never breaks, making it a reliable main weapon."
-  ],
-  [
-   "升级防具：建议蛮族套装 / 鬼神套装 / 兵士套装升至 3～4 星，否则加侬一刀秒杀。",
-   "Upgraded armor: Barbarian Armor / Fierce Deity Armor / Soldier's Armor upgraded to 3–4 stars is recommended — otherwise Ganon can kill you in one hit."
-  ],
-  [
-   "第一阶段：黑发黑衣人形态（单挑试水）",
-   "Phase 1: Black-haired, black-clad humanoid form (solo test)"
-  ],
-  [
-   "单手剑形态（瞬移冲刺）： · 横劈（剑放腰间）：按住 ZL + 向后跳触发突击。 · 竖劈（高举过头）：按住 ZL + 向左/右侧跳触发突击。",
-   "One-handed sword form (teleport dash): · Horizontal slash (sword at waist): hold ZL + jump backward to trigger a Flurry Rush. · Vertical slash (raised overhead): hold ZL + side-jump left / right to trigger a Flurry Rush."
-  ],
-  [
-   "长枪形态（直线突刺）：看到他前倾冲来瞬间，按住 ZL + 向左/右侧跳触发突击——最容易抓的一招。",
-   "Spear form (straight thrust): the instant you see him lean forward and rush in, hold ZL + side-jump left / right to trigger a Flurry Rush — the easiest move to catch."
-  ],
-  [
-   "大锤形态（跳跃下劈）：判定极大，不要闪避。看到他跳起立刻向后跑拉距离，或在落地前用弓箭爆头打断。",
-   "Great hammer form (leaping downward chop): enormous hitbox — don't dodge. The moment you see him jump, run backward to create distance, or interrupt him with a bow headshot before he lands."
-  ],
-  [
-   "第二阶段：秘石解放形态（分身围殴）",
-   "Phase 2: Secret Stone unleashed form (clone swarm)"
-  ],
-  [
-   "前半段：分身乱战 · 五位贤者加入战场，让贤者缠住分身，你直接冲向本体（真身血条与其他分身不同）。 · 用第一阶段的闪避打法（抓长枪冲刺或单手剑横劈）强行压低本体血量。",
-   "First half: clone melee · The five Sages join the battle — let the Sages tie up the clones while you charge the true body (its health bar differs from the other clones'). · Use the phase-1 dodge tactics (catching the spear charge or the one-handed sword horizontal slash) to force the true body's HP down."
-  ],
-  [
-   "后半段：红发魔王单挑（核心难点：他也会闪避！） 分身消失后加侬获得超长血条，并学会了完美闪避。",
-   "Second half: red-haired Demon King duel (core difficulty: he dodges too!) After the clones vanish, Ganon gains an extremely long health bar and has learned to perfectly dodge."
-  ],
-  [
-   "二次闪避打法（最优雅）：他闪避你的攻击后向你挥刀时，立刻再次闪避（后跳/侧跳）触发第二次突击——此时他无法再闪避，可直接一套带走。",
-   "Double-dodge strategy (most elegant): after he dodges your attack and swings at you, immediately dodge again (back-jump / side-jump) to trigger a second Flurry Rush — at that point he cannot dodge again, and you can finish him in one combo."
-  ],
-  [
-   "无脑盾反流（最安全）：按住 ZL 盾防，砍中盾牌瞬间按 A 键完美格挡（盾反）。盾反成功后他陷入大硬直，直接连击输出——他绝对无法闪避盾反后的攻击。",
-   "Brainless Perfect Guard strategy (safest): hold ZL to guard; the instant his slash hits your shield, press A for a perfect guard (Perfect Guard). After a successful Perfect Guard he falls into a huge stagger — combo him directly, as he absolutely cannot dodge attacks after a Perfect Guard."
-  ],
-  [
-   "第三阶段：黑龙形态（空战剧情杀）",
-   "Phase 3: Demon Dragon form (aerial scripted battle)"
-  ],
-  [
-   "空中俯冲：骑在白龙（塞尔达）头上，从龙背跳下用滑翔翼调整方向，躲避黑龙吐出的红色光球。",
-   "Aerial dive: riding on the Light Dragon's (Zelda's) head, jump off its back and steer with your paraglider, dodging the red orbs the Demon Dragon spits."
-  ],
-  [
-   "摧毁外壳：黑龙背上有 4 处粉红色秘石弱点，直接俯冲降落到弱点上，用普通武器砍 2～3 下破坏一处。每破坏一处会被弹飞，白龙必定从下方接住你。",
-   "Destroy the shell: the Demon Dragon's back has 4 pink Secret Stone weak points — dive straight down onto a weak point and hack it 2–3 times with a normal weapon to destroy it. Each destruction bounces you off, and the Light Dragon always catches you from below."
-  ],
-  [
-   "摧毁外壳：黑龙背上有 4 处粉红色秘石弱点，直接俯冲降落到弱点上，用普通武器砍 2～3 下破坏一处。",
-   "Destroy the shell: the Demon Dragon's back has 4 pink Secret Stone weak points — dive straight down onto a weak point and hack it 2–3 times with a normal weapon to destroy it."
-  ],
-  [
-   "每破坏一处会被弹飞，白龙必定从下方接住你。",
-   "Each destruction bounces you off, and the Light Dragon always catches you from below."
-  ],
-  [
-   "终结一击：破坏全部 4 个弱点后，黑龙头部彻底暴露。俯冲到额头上对着巨大秘石疯狂按 A 键，用大师之剑将其击碎，迎来通关 CG！",
-   "Finishing blow: after destroying all 4 weak points, the Demon Dragon's head is fully exposed. Dive onto its forehead and mash A against the giant Secret Stone, shattering it with the Master Sword, and watch the ending CG!"
-  ],
-  [
-   "终结一击：破坏全部 4 个弱点后，黑龙头部彻底暴露。",
-   "Finishing blow: after destroying all 4 weak points, the Demon Dragon's head is fully exposed."
-  ],
-  [
-   "俯冲到额头上对着巨大秘石疯狂按 A 键，用大师之剑将其击碎，迎来通关 CG！",
-   "Dive onto its forehead and mash A against the giant Secret Stone, shattering it with the Master Sword, and watch the ending CG!"
-  ],
-  [
-   "🎁 通关奖励",
-   "🎁 Completion rewards"
-  ],
-  [
-   "🏆 通关游戏 · 真结局",
-   "🏆 Complete the game · True ending"
-  ],
-  [
-   "⭐ 通关存档标记",
-   "⭐ Completion save marker"
-  ],
-  [
-   "终极提示：满心心、大量向阳草料理、白银莱尼尔角武器、防具3～4星——做好这四件事，魔王加侬多夫就没有你打不过的理由。",
-   "Ultimate tip: full hearts, plenty of Sundelion meals, Silver Lynel horn weapons, and 3–4 star armor — do these four things, and there is no reason you can't beat Demon King Ganondorf."
-  ],
-  [
-   "莱尼尔",
-   "Lynel"
-  ],
-  [
-   "红褐/青/白鬃/白银",
-   "Red / Blue / White-Maned / Silver"
-  ],
-  [
-   "🏹 脸部爆头（跪地硬直）",
-   "🏹 Face headshot (kneeling stagger)"
-  ],
-  [
-   "🐎 骑马白嫖输出",
-   "🐎 Mounted free damage"
-  ],
-  [
-   "🛡 盾反后近距爆头",
-   "🛡 Close-range headshot after Perfect Guard"
-  ],
-  [
-   "⚙ 战前最强骑马专用武器准备",
-   "⚙ Prepare the strongest dedicated mounted weapon before battle"
-  ],
-  [
-   "准备武器：找一把近卫双手剑，在武器前端余料建造面板最高的材料（白银莱尼尔刃角 / 吉波得之骨 / 独眼巨人肝脏）。",
-   "Prepare the weapon: find a Royal Guard's Claymore and Fuse the highest-attack material to its front (Silver Lynel Saber Horn / Gibdo Bone / Hinox Guts)."
-  ],
-  [
-   "故意用坏：在地上乱砍直到屏幕提示「武器快要破损了」——此时近卫双手剑触发特殊效果，伤害直接翻倍。",
-   "Deliberately wear it down: slash randomly on the ground until the screen warns \"weapon is about to break\" — the Royal Guard's Claymore then triggers its special effect, doubling its damage."
-  ],
-  [
-   "⚠ 此武器只能在骑马时使用，在地面砍到任何东西都会立刻折断！",
-   "⚠ This weapon can only be used while mounted — hitting anything on the ground will snap it instantly!"
-  ],
-  [
-   "📖 核心打法：无脑骑马流",
-   "📖 Core strategy: brainless mounting strategy"
-  ],
-  [
-   "空中爆头（最简单）",
-   "Midair headshot (easiest)"
-  ],
-  [
-   "飞天：地上放弹簧，或用火箭盾 / 炸弹花盾原地飞天。",
-   "Fly: place a spring on the ground, or use a rocket shield (hold ZL and jump) or a Bomb Flower shield (shield-surf with ZL + X + A) to launch on the spot."
-  ],
-  [
-   "空中爆头：在空中掏出弓箭触发林克时间，瞄准人马脸部（胡须和眼睛附近）射击。听到「叮」的脆响，人马双膝跪地瘫痪数秒。",
-   "Midair headshot: draw your bow midair to trigger bullet time and shoot the Lynel's face (near its beard and eyes). On hearing the crisp \"ding\", the Lynel drops to both knees, paralyzed for several seconds."
-  ],
-  [
-   "空中爆头：在空中掏出弓箭触发林克时间，瞄准人马脸部（胡须和眼睛附近）射击。",
-   "Midair headshot: draw your bow midair to trigger bullet time and shoot the Lynel's face (near its beard and eyes)."
-  ],
-  [
-   "听到「叮」的脆响，人马双膝跪地瘫痪数秒。",
-   "On hearing the crisp \"ding\", the Lynel drops to both knees, paralyzed for several seconds."
-  ],
-  [
-   "上马白嫖：收弓落地解除锁定，冲到人马身侧按 A 键骑上，掏出那把快要折断的近卫双手剑，疯狂按 Y 键连砍 3～6 刀。",
-   "Free mounted damage: put your bow away, land, release lock-on, rush to the Lynel's side, press A to mount, draw that nearly broken Royal Guard's Claymore, and mash Y for up to 5 hits."
-  ],
-  [
-   "下马补刀：被甩下时系统触发空中慢动作，立刻拉弓对着后脑勺再补 2～3 发爆头箭。",
-   "Dismount follow-ups: when thrown off, the game triggers midair slow motion — immediately draw your bow and fire 2–3 more headshot arrows at the back of its head."
-  ],
-  [
-   "循环：落地后立刻再次飞天，重复整套流程直至击杀。",
-   "Loop: after landing, immediately fly up again and repeat the whole routine until the kill."
-  ],
-  [
-   "地面招式应对（无飞天道具时）",
-   "Ground move counters (without flight items)"
-  ],
-  [
-   "盾反爆头（抓近战）：横劈 / 砸地 / 冲撞时按住 ZL 防御，武器快砸中盾的瞬间按 A 键完美格挡。盾反后立刻掏弓近距离爆头，人马直接跪倒，可骑马输出。",
-   "Perfect Guard headshot (catch melee): during horizontal slashes / ground slams / charges, hold ZL to guard and press A for a perfect guard the instant the weapon is about to hit your shield. Right after the Perfect Guard, draw your bow for a close-range headshot — the Lynel kneels directly, ready for mounted damage."
-  ],
-  [
-   "盾反爆头（抓近战）：横劈 / 砸地 / 冲撞时按住 ZL 防御，武器快砸中盾的瞬间按 A 键完美格挡。",
-   "Perfect Guard headshot (catch melee): during horizontal slashes / ground slams / charges, hold ZL to guard and press A for a perfect guard the instant the weapon is about to hit your shield."
-  ],
-  [
-   "盾反后立刻掏弓近距离爆头，人马直接跪倒，可骑马输出。",
-   "Right after the Perfect Guard, draw your bow for a close-range headshot — the Lynel kneels directly, ready for mounted damage."
-  ],
-  [
-   "侧跳突击（抓冲锋）：人马四足着地直线冲来时，按住 ZL + 连按两下【侧跳】触发突击连击。（建议盾反爆头骑马，更省武器耐久）",
-   "Side-jump Flurry Rush (catch charges): when the Lynel charges straight at you on all fours, hold ZL + side-jump once (stick in the dodge direction) to trigger a Flurry Rush combo. (Perfect Guard-headshot-mount is recommended instead — it saves more weapon durability.)"
-  ],
-  [
-   "躲避火球：人马后跳蓄力吐出 3 发大火球时，不要盾反或闪避，直接朝左或右疯狂奔跑——火球飞行慢，横向跑绝对砸不中。3 发吐完后原地喘气，是拉弓爆头的绝佳时机。",
-   "Dodge fireballs: when the Lynel jumps back, charges, and spits 3 large fireballs, don't Perfect Guard or dodge — just run furiously left or right. The fireballs fly slowly, so running sideways absolutely avoids them. After all 3 are spat, it pants in place — a perfect moment to draw your bow for a headshot."
-  ],
-  [
-   "躲避火球：人马后跳蓄力吐出 3 发大火球时，不要盾反或闪避，直接朝左或右疯狂奔跑——火球飞行慢，横向跑绝对砸不中。",
-   "Dodge fireballs: when the Lynel jumps back, charges, and spits 3 large fireballs, don't Perfect Guard or dodge — just run furiously left or right. The fireballs fly slowly, so running sideways absolutely avoids them."
-  ],
-  [
-   "3 发吐完后原地喘气，是拉弓爆头的绝佳时机。",
-   "After all 3 are spat, it pants in place — a perfect moment to draw your bow for a headshot."
-  ],
-  [
-   "🦄 莱尼尔的刃角（高攻融合素材）",
-   "🦄 Lynel Saber Horn (high-attack Fuse material)"
-  ],
-  [
-   "🦷 莱尼尔的蹄",
-   "🦷 Lynel Hoof"
-  ],
-  [
-   "🫀 莱尼尔的肝",
-   "🫀 Lynel Guts"
-  ],
-  [
-   "强度排序：红褐色 → 青色 → 白鬃 → 白银。地底竞技场需连续挑战 5 只不同颜色的莱尼尔（最后一只为白银装甲），是全游戏最高难度的战斗挑战。",
-   "Strength order: Red-Maned → Blue-Maned → White-Maned → Silver. The Depths arena requires fighting 5 Lynels in a row (the last is an armored Silver) — the hardest combat challenge in the game."
-  ],
-  [
-   "强度排序：红褐色 → 青色 → 白鬃 → 白银。",
-   "Strength order: Red → Blue → White-Maned → Silver."
-  ],
-  [
-   "地底竞技场需连续挑战 5 只不同颜色的莱尼尔（最后一只为白银装甲），是全游戏最高难度的战斗挑战。",
-   "The Depths arena requires fighting 5 Lynels in a row (the last is an armored Silver) — the hardest combat challenge in the game."
-  ],
-  [
-   "西诺克斯",
-   "Hinox"
-  ],
-  [
-   "红/蓝/黑 · 骷髅变种",
-   "Red / Blue / Black · Stalnox variants"
-  ],
-  [
-   "👁 独眼（任意弓箭即可跪倒）",
-   "👁 Single eye (any bow arrow makes it kneel)"
-  ],
-  [
-   "⚔ 倒地后脚踝近战大风车",
-   "⚔ Melee whirlwind at its ankles after it falls"
-  ],
-  [
-   "💣 护腿弱点（木质用火/黑色用雷）",
-   "💣 Greave weaknesses (fire for wood / lightning for black)"
-  ],
-  [
-   "核心机制：独眼是唯一绝对弱点，哪怕极低攻击力的箭命中都能触发极长瘫痪硬直，让它捂眼坐倒在地。",
-   "Core mechanic: the single eye is the only absolute weakness — even an extremely low-attack arrow triggers a very long paralysis stagger, making it clutch its eye and sit down."
-  ],
-  [
-   "弓箭爆眼：拉开距离，它走近或举起树木时直接瞄准脸部中央的大眼睛射一箭，听到「叮」声它就往后坐倒。 · 逃票技巧：弓箭附魔蝙蝠的眼睛（或任意怪物眼球），自带自动追踪，朝头顶瞎射一箭就能精准命中独眼。",
-   "Bow eye-shot: keep your distance; when it approaches or lifts a tree, shoot the large eye in the center of its face directly — on hearing the \"ding\" it sits back down. · Cheese tip: fuse a Keese eyeball (or any monster eyeball) to your arrow for built-in auto-tracking — one blind shot overhead hits the single eye precisely."
-  ],
-  [
-   "弓箭爆眼：拉开距离，它走近或举起树木时直接瞄准脸部中央的大眼睛射一箭，听到「叮」声它就往后坐倒。",
-   "Bow eye-shot: keep your distance; when it approaches or lifts a tree, shoot the large eye in the center of its face directly — on hearing the \"ding\" it sits back down."
-  ],
-  [
-   "逃票技巧：弓箭附魔蝙蝠的眼睛（或任意怪物眼球），自带自动追踪，朝头顶瞎射一箭就能精准命中独眼。",
-   "Cheese tip: fuse a Keese eyeball (or any monster eyeball) to your arrow for built-in auto-tracking — one blind shot overhead hits the single eye precisely."
-  ],
-  [
-   "近战修脚：它坐倒捂眼后立刻收弓，冲到两腿之间，换上双手大剑 / 重武器，按住 Y 键「大风车」蓄力回旋斩，顺着脚踝疯狂输出直至血条见底。",
-   "Melee footwork: once it sits clutching its eye, put your bow away, rush between its legs, switch to a two-handed greatsword / heavy weapon, and hold Y for a charged whirlwind spin slash, attacking furiously along its ankles until its HP bottoms out."
-  ],
-  [
-   "顺手牵羊：它坐倒瘫痪时，爬到胸口或在身边连按 A 键，可直接偷走项链上挂着的高品质武器，拿它的武器打它效率更高。",
-   "Snatch it: while it sits paralyzed, climb onto its chest or mash A beside it to steal the high-quality weapon hanging from its necklace — fighting it with its own weapon is more efficient."
-  ],
-  [
-   "⚠ 高级变种与避坑",
-   "⚠ Advanced variants and pitfalls"
-  ],
-  [
-   "带木质护腿（蓝色/黑色常见）：近战弹刀无法伤害。 解法：弓箭附魔炸弹花 / 火之果 / 红丘丘胶射木护腿，木板遇火燃烧并触发二次输出硬直。",
-   "Wooden greaves (common on Blue / Black): melee attacks bounce off harmlessly. Solution: shoot the wooden greaves with Bomb Flower / Fire Fruit / red Chuchu Jelly fused arrows — the boards catch fire, triggering a second damage stagger."
-  ],
-  [
-   "带木质护腿（蓝色/黑色常见）：近战弹刀无法伤害。",
-   "Wooden greaves (common on Blue / Black): melee attacks bounce off harmlessly."
-  ],
-  [
-   "解法：弓箭附魔炸弹花 / 火之果 / 红丘丘胶射木护腿，木板遇火燃烧并触发二次输出硬直。",
-   "Solution: shoot the wooden greaves with Bomb Flower / Fire Fruit / red Chuchu Jelly fused arrows — the boards catch fire, triggering a second damage stagger."
-  ],
-  [
-   "带铁质护腿（黑色常见）：砍不动也烧不掉。 解法：弓箭附魔雷击果 / 黄丘丘胶射铁护腿，电击通过铁板传遍全身触发大范围触电硬直。",
-   "Iron greaves (common on Black): can't be cut or burned. Solution: shoot the iron greaves with Shock Fruit / yellow Chuchu Jelly fused arrows — electricity conducts through the iron across its whole body, triggering a wide-area electrocution stagger."
-  ],
-  [
-   "带铁质护腿（黑色常见）：砍不动也烧不掉。",
-   "Iron greaves (common on Black): can't be cut or burned."
-  ],
-  [
-   "解法：弓箭附魔雷击果 / 黄丘丘胶射铁护腿，电击通过铁板传遍全身触发大范围触电硬直。",
-   "Solution: shoot the iron greaves with Shock Fruit / yellow Chuchu Jelly fused arrows — electricity conducts through the iron across its whole body, triggering a wide-area electrocution stagger."
-  ],
-  [
-   "后期学会「捂眼睛」（黑色高等级）：拉弓时它会用手死死捂眼。 解法：收起弓箭，等它弯腰捡石头或拔树抬手露眼的瞬间立刻拉弓爆头。",
-   "Later learns to \"cover its eyes\" (high-level Black): it clamps its hand over its eye when you draw your bow. Solution: put your bow away and wait for the instant it bends to pick up a rock or raises its arm to uproot a tree, exposing its eye — then draw and headshot immediately."
-  ],
-  [
-   "后期学会「捂眼睛」（黑色高等级）：拉弓时它会用手死死捂眼。",
-   "Later learns to \"cover its eyes\" (high-level Black): it clamps its hand over its eye when you draw your bow."
-  ],
-  [
-   "解法：收起弓箭，等它弯腰捡石头或拔树抬手露眼的瞬间立刻拉弓爆头。",
-   "Solution: put your bow away and wait for the instant it bends to pick up a rock or raises its arm to uproot a tree, exposing its eye — then draw and headshot immediately."
-  ],
-  [
-   "💀 骷髅西诺克斯（夜间限定）",
-   "💀 Stalnox (night only)"
-  ],
-  [
-   "夜间才会复活：白天只是一堆散落骨头，游戏时间晚上 9:00 后才会重新成形。",
-   "Only revives at night: by day it's just a pile of scattered bones, reforming only after 9:00 PM in-game time."
-  ],
-  [
-   "眼球会掉落：血量降至约一半以下时，独眼直接从眼眶里脱落滚到地上。此时攻击身体无法击杀！",
-   "Eyeball drops out: when HP falls below about half, the single eye pops out of its socket and rolls onto the ground. Attacking the body cannot kill it now!"
-  ],
-  [
-   "锁定眼球输出：立刻转火冲向地上滚动的眼球，疯狂砍击直到眼球血条清空才算彻底击杀。",
-   "Focus fire on the eyeball: immediately switch targets and rush the rolling eyeball on the ground, hacking furiously until the eyeball's HP is emptied — only then is it truly dead."
-  ],
-  [
-   "🦶 西诺克斯的脚趾甲",
-   "🦶 Hinox Toenail"
-  ],
-  [
-   "🦷 西诺克斯的牙",
-   "🦷 Hinox Tooth"
-  ],
-  [
-   "🫀 西诺克斯的肝",
-   "🫀 Hinox Guts"
-  ],
-  [
-   "🎁 项链上的高品质武器",
-   "🎁 High-quality weapon on its necklace"
-  ],
-  [
-   "提示：优先附魔蝙蝠眼球箭省时省力；骷髅种眼球落地后必须砍眼球而非身体，这是最常被忽略的坑。",
-   "Tip: prioritize Keese eyeball fused arrows to save time and effort; after a Stalnox's eyeball lands, you must hit the eyeball, not the body — the most commonly overlooked pitfall."
-  ],
-  [
-   "提示：优先附魔蝙蝠眼球箭省时省力。",
-   "Tip: prioritize Keese eyeball fused arrows to save time and effort."
-  ],
-  [
-   "骷髅种眼球落地后必须砍眼球而非身体，这是最常被忽略的坑。",
-   "After a Stalnox's eyeball lands, you must hit the eyeball, not the body — the most commonly overlooked pitfall."
-  ],
-  [
-   "古栗欧克",
-   "Gleeok"
-  ],
-  [
-   "火 / 冰 / 雷 · 三首王",
-   "Fire / Ice / Lightning · Three-headed king"
-  ],
-  [
-   "⚙ 战前核心准备",
-   "⚙ Core pre-battle preparations"
-  ],
-  [
-   "多发弓（最关键）：带 2～3 把兽神弓（人马弓）或大鹫弓（3发或5发扩散）。单发弓容错率极低。",
-   "Multi-shot bows (most crucial): bring 2–3 Savage Lynel Bows (3-shot, or 5-shot with the modifier) or Great Eagle Bows (3-shot). Single-shot bows are extremely unforgiving."
-  ],
-  [
-   "多发弓（最关键）：带 2～3 把兽神弓（人马弓）或大鹫弓（3发或5发扩散）。",
-   "Multi-shot bows (most crucial): bring 2–3 Savage Lynel Bows (3-shot, or 5-shot with the modifier) or Great Eagle Bows (3-shot)."
-  ],
-  [
-   "单发弓容错率极低。",
-   "Single-shot bows are extremely unforgiving."
-  ],
-  [
-   "怪物眼睛（自动外挂）：大量备好蝙蝠的眼睛或卡克达（飞怪）的眼睛，任何属性均可，是无脑通关的灵丹妙药。",
-   "Monster eyes (auto-aim cheat): stock up on Keese eyes or Aerocuda (flying monster) eyes — any attribute works; they're a miracle cure for brainless clears."
-  ],
-  [
-   "起飞工具：几面火箭盾 / 炸弹花盾，或弹簧胶囊备用。",
-   "Launch tools: several rocket shields or Bomb Flower shields, or spring capsules as backup."
-  ],
-  [
-   "👁 三颗龙头（多发弓+眼球箭同时爆）",
-   "👁 Three dragon heads (burst all at once with multi-shot bow + eyeball arrows)"
-  ],
-  [
-   "⚔ 三头倒地后近战大风车",
-   "⚔ Melee whirlwind after all three heads fall"
-  ],
-  [
-   "🔥 属性克制（火克冰头 / 冰克火头）",
-   "🔥 Attribute counters (fire beats ice heads / ice beats fire heads)"
-  ],
-  [
-   "核心逻辑：在短时间内将 3 个头的血条全部射空，三头同时垂下后产生冲击波摔倒，触发 10～15 秒瘫痪大硬直，趁机近战疯狂输出。",
-   "Core logic: empty all 3 heads' HP bars in a short time — all three heads droop at once, then slam down with a shockwave, triggering a 10–15 second huge paralysis stagger for furious melee damage."
-  ],
-  [
-   "极致压制流（从头到尾下不来）",
-   "Ultimate suppression strategy (never come down from start to finish)"
-  ],
-  [
-   "开局飞天：战斗触发瞬间按住 ZL 防御并起跳，利用火箭盾或弹簧冲上高空。",
-   "Opening launch: the instant the fight starts, hold ZL to guard and jump, rushing high with a rocket shield or spring."
-  ],
-  [
-   "无脑自动爆头：空中掏弓触发林克时间，附魔任意怪物眼睛配合多发弓，朝龙的大体方向瞎射 2～3 箭，3 个头在 2 秒内瞬间全部被射爆。",
-   "Brainless auto-headshots: draw your bow midair to trigger bullet time, fuse any monster eye with a multi-shot bow, and blind-fire 2–3 arrows roughly at the dragon — all 3 heads burst within 2 seconds."
-  ],
-  [
-   "地面大风车：三头龙轰然倒地，立刻收翼俯冲落地，换上最高攻击武器，对着垂地的头按住 Y 键大风车蓄力回旋斩疯狂输出。",
-   "Ground whirlwind: the three-headed dragon crashes down — immediately fold your paraglider, dive to land, switch to your highest-attack weapon, and hold Y for a charged whirlwind spin slash against the drooping heads."
-  ],
-  [
-   "循环锁死：它站起瞬间强风吹飞，立刻再次飞天（掏第二面火箭盾或踩弹簧），空中再射眼睛，重复「爆头 → 倒地 → 输出」，一般 3 个回合可无伤带走。",
-   "Loop lock: the instant it stands, strong wind blows you away — immediately fly up again (draw a second rocket shield or step on a spring), shoot eyes midair again, and repeat \"headshot → fall → damage\" — usually 3 rounds for a damage-free kill."
-  ],
-  [
-   "终极阶段应对（血量低于 1/4 飞入云层）",
-   "Final phase counters (below 1/4 HP, it flies into the clouds)"
-  ],
-  [
-   "火三头龙（乱石流星雨）：巨大火球砸地产生上升气流，立刻开伞顺气流飞上高空与它平齐，一箭射落。从高处摔落会扣巨额血量甚至直接摔死。",
-   "Fire three-headed dragon (rock meteor shower): giant fireballs smash the ground creating updrafts — immediately open your paraglider and ride the updraft up level with it, shooting it down with one arrow. Falling from height costs huge HP or can kill outright."
-  ],
-  [
-   "火三头龙（乱石流星雨）：巨大火球砸地产生上升气流，立刻开伞顺气流飞上高空与它平齐，一箭射落。",
-   "Fire three-headed dragon (rock meteor shower): giant fireballs smash the ground creating updrafts — immediately open your paraglider and ride the updraft up level with it, shooting it down with one arrow."
-  ],
-  [
-   "从高处摔落会扣巨额血量甚至直接摔死。",
-   "Falling from height costs huge HP or can kill outright."
-  ],
-  [
-   "雷三头龙（雷暴闪电阵）：落雷劈地留下持续上升气流，立刻开伞顺气流飞上去爆头。",
-   "Lightning three-headed dragon (thunderstorm lightning array): lightning strikes leave lasting updrafts — immediately open your paraglider and ride the updraft up for a headshot."
-  ],
-  [
-   "冰三头龙（绝对零度冰雹）：被冰柱砸中冻结秒杀。等冰柱落地后跳到冰柱顶端使用「倒转乾坤」，冰柱带你升空，解除后拉弓爆头。",
-   "Ice three-headed dragon (absolute-zero hail): being hit by an ice pillar freezes you for an instant kill. After an ice pillar lands, jump onto its top and use Recall — the pillar carries you up; cancel it, then draw your bow for a headshot."
-  ],
-  [
-   "冰三头龙（绝对零度冰雹）：被冰柱砸中冻结秒杀。",
-   "Ice three-headed dragon (absolute-zero hail): being hit by an ice pillar freezes you for an instant kill."
-  ],
-  [
-   "等冰柱落地后跳到冰柱顶端使用「倒转乾坤」，冰柱带你升空，解除后拉弓爆头。",
-   "After an ice pillar lands, jump onto its top and use Recall — the pillar carries you up; cancel it, then draw your bow for a headshot."
-  ],
-  [
-   "👑 王之古栗欧克（地底竞技场）",
-   "👑 King Gleeok (Depths arena)"
-  ],
-  [
-   "三头分别为火 / 冰 / 雷属性，血量极厚。属性克制：火之果射冰头、冰之果射火头可一击秒杀该头防御。",
-   "Its three heads are fire / ice / lightning attributes, with extremely thick HP. Attribute counters: a Fire Fruit shot at an ice head, or an Ice Fruit at a fire head, can one-shot that head's defense."
-  ],
-  [
-   "三头分别为火 / 冰 / 雷属性，血量极厚。",
-   "Its three heads are fire / ice / lightning attributes, with extremely thick HP."
-  ],
-  [
-   "属性克制：火之果射冰头、冰之果射火头可一击秒杀该头防御。",
-   "Attribute counters: a Fire Fruit shot at an ice head, or an Ice Fruit at a fire head, can one-shot that head's defense."
-  ],
-  [
-   "挑战前推荐拿到卓拉水蛭之王头盔（免疫冻结）或雷鸣头盔（免疫雷击），彻底废掉两个头的威胁。",
-   "Before the challenge, getting the Zora 'King of Leeches' helmet (freeze immunity) or the Thunder Helm (lightning immunity) is recommended, completely neutralizing two heads' threats."
-  ],
-  [
-   "🔥 火焰 / 冰雪 / 雷电盖拉之角",
-   "🔥 Flame / Frost / Thunder Gleeok Horns"
-  ],
-  [
-   "提示：多发弓 + 怪物眼睛是最省力的通关方案，全程无需精准瞄准。盖拉之角是制作最强元素弓箭与融合武器的核心素材。",
-   "Tip: multi-shot bow + monster eyes is the most effort-saving clear strategy, needing no precise aiming throughout. Gleeok horns are the core material for crafting the strongest elemental arrows and Fuse weapons."
-  ],
-  [
-   "提示：多发弓 + 怪物眼睛是最省力的通关方案，全程无需精准瞄准。",
-   "Tip: multi-shot bow + monster eyes is the most effort-saving clear strategy, needing no precise aiming throughout."
-  ],
-  [
-   "盖拉之角是制作最强元素弓箭与融合武器的核心素材。",
-   "Gleeok horns are the core material for crafting the strongest elemental arrows and Fuse weapons."
-  ],
-  [
-   "⚔ 通用 Boss 攻略要点： ① 战前备齐回血 / 攻击强化 / 元素抗性料理，对应 Boss 属性携带克制装备。 ② 多数大型 Boss 都有「击晕 → 倒地 → 集火弱点」的循环节奏，耐心找破绽比硬刚更高效。 ③ 瞬闪（横向闪避）与盾反是应对高速攻击的关键，练熟后能大幅降低难度。 ④ Boss 掉落的角 / 牙 / 内脏多为顶级融合素材，是打造最强武器的核心来源。",
-   "⚔ General boss strategy points: ① Before battle, prepare healing / attack-boosting / elemental-resistance meals, and bring counter gear matching the boss's attributes. ② Most large bosses follow a \"stun → fall → focus fire on weakness\" loop rhythm — patiently finding openings beats head-on fighting. ③ Flurry rushes (side dodges) and parries are key against fast attacks; mastering them greatly lowers difficulty. ④ Boss-dropped horns / fangs / guts are mostly top-tier Fuse materials, the core source for crafting the strongest weapons."
-  ],
-  [
-   "① 战前备齐回血 / 攻击强化 / 元素抗性料理，对应 Boss 属性携带克制装备。",
-   "① Before battle, prepare healing / attack-boosting / elemental-resistance meals, and bring counter gear matching the boss's attributes."
-  ],
-  [
-   "② 多数大型 Boss 都有「击晕 → 倒地 → 集火弱点」的循环节奏，耐心找破绽比硬刚更高效。",
-   "② Most large bosses follow a \"stun → fall → focus fire on weakness\" loop rhythm — patiently finding openings beats head-on fighting."
-  ],
-  [
-   "③ 瞬闪（横向闪避）与盾反是应对高速攻击的关键，练熟后能大幅降低难度。",
-   "③ Flurry rushes (side dodges) and parries are key against fast attacks; mastering them greatly lowers difficulty."
-  ],
-  [
-   "④ Boss 掉落的角 / 牙 / 内脏多为顶级融合素材，是打造最强武器的核心来源。",
-   "④ Boss-dropped horns / fangs / guts are mostly top-tier Fuse materials, the core source for crafting the strongest weapons."
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 加农多夫",
-   "› Ganondorf"
-  ],
-  [
-   "› 人马",
-   "› Lynel"
-  ],
-  [
-   "› 幻影加农",
-   "› Phantom Ganon"
-  ],
-  [
-   "📚 更多攻略",
-   "📚 More Guides"
-  ],
-  [
-   "› 哈里的终极秘籍（13篇）",
-   "› Harry's Ultimate Tips (13 articles)"
-  ],
-  [
-   "› 全部页面索引",
-   "› Full page index"
-  ],
-  [
-   "📌 相关攻略推荐",
-   "📌 Recommended related guides"
-  ],
-  [
-   "⚔️ 武器图鉴",
-   "⚔️ Weapon Compendium"
-  ],
-  [
-   "料理合成",
-   "Cooking"
-  ],
-  [
-   "主线任务",
-   "Main Quests"
-  ],
-  [
-   "FEATURED GUIDES · 专题深度攻略",
-   "FEATURED GUIDES · In-depth feature guides"
-  ],
-  [
-   "FINAL BOSS · 三阶段",
-   "FINAL BOSS · Three phases"
-  ],
-  [
-   "STORY BOSS · 剧情",
-   "STORY BOSS · Story"
-  ],
-  [
-   "FIELD BOSS · 四色变体",
-   "FIELD BOSS · Four color variants"
-  ],
-  [
-   "� 巨霸迦马的牙",
-   "Colgera's Fang"
-  ],
-  [
-   "🫀 巨霸迦马的内脏",
-   "🫀 Colgera Guts"
-  ],
-  [
-   "一",
-   "One"
-  ],
-  [
-   "二",
-   "Two"
-  ],
-  [
-   "三",
-   "Three"
-  ],
-  [
-   "前",
-   "First half"
-  ],
-  [
-   "后",
-   "Second half"
-  ],
-  [
-   "锤",
-   "Hammer"
-  ],
-  [
-   "盾",
-   "Shield"
-  ],
-  [
-   "侧",
-   "Side"
-  ],
-  [
-   "跑",
-   "Run"
-  ],
-  [
-   "局势掌控技巧",
-   "Situation control tips"
-  ],
-  [
-   "必备生存要点",
-   "Essential survival points"
-  ],
-  [
-   "大炮偷鸡法：手有大炮时可直接拉开距离轰一炮，BOSS 直接被轰到电网上，无脑高效。",
-   "Cannon cheese: with a cannon in hand, just keep your distance and fire one shot — the boss is blasted straight onto the fence, brainlessly efficient."
-  ],
-  [
-   "此武器只能在骑马时使用，在地面砍到任何东西都会立刻折断！",
-   "This weapon can only be used while mounted — hitting anything on the ground will snap it instantly!"
-  ],
-  [
-   "物理 / 元素",
-   "Physical / Elemental"
-  ],
-  [
-   "火 / 冰 / 雷",
-   "Fire / Ice / Lightning"
-  ],
-  [
-   "王之古栗欧克（地底竞技场）",
-   "King Gleeok (Depths arena)"
-  ],
-  [
-   "武器图鉴",
-   "Weapons"
-  ],
-  [
-   "用",
-   "Use "
-  ],
-  [
-   "直接把核心方块从身体里",
-   "to pull the core block directly out of "
-  ],
-  [
-   "，魔像会瞬间瘫散，趁机疯狂攻击核心。",
-   ", and the Construct instantly collapses — attack the core furiously while you can."
-  ],
-  [
-   "究极手",
-   "Ultrahand "
-  ],
-  [
-   "抽出来",
-   "its body"
-  ],
-  [
-   "上等魔像（中等/上等）血更厚、会浮空与释放电击，建议用",
-   "Higher-tier Constructs (mid / high tier) have more HP, can hover, and discharge electricity — use "
-  ],
-  [
-   "速攻核心。",
-   "to blitz the core."
-  ],
-  [
-   "左纳乌火炮 / 重武器",
-   "Zonai Cannons / heavy weapons "
-  ],
-  [
-   "爬到它身上（趁它挥拳砸地时跳上去），用",
-   "Climb onto it (jump on while it slams the ground with its fist), and use "
-  ],
-  [
-   "猛敲背部矿石核心。",
-   "to smash the ore core on its back."
-  ],
-  [
-   "融合岩石锤 / 重武器",
-   "a fused rock hammer / heavy weapon "
-  ],
-  [
-   "射击弱点：",
-   "Shoot the weak point: "
-  ],
-  [
-   "用弓箭瞄准它的",
-   "Use your bow to aim at its "
-  ],
-  [
-   "射击数次，或附加",
-   "and shoot several times, or attach "
-  ],
-  [
-   "自动追踪，可直接让它倒地瘫痪。",
-   "for auto-tracking, which can knock it down and paralyze it directly. "
-  ],
-  [
-   "当它张大嘴巴准备吸气时，朝嘴里扔一颗",
-   "When it opens its mouth wide to inhale, throw a "
-  ],
-  [
-   "，它吞下后立刻炸出大硬直。",
-   ", and it will swallow it and immediately blow into a long stagger."
-  ],
-  [
-   "眼睛（发光部位）",
-   "eyes (the glowing parts) "
-  ],
-  [
-   "【蝙蝠的眼珠】",
-   "[Keese Eyeball] "
-  ],
-  [
-   "炸弹诱饵：",
-   "Bomb bait: "
-  ],
-  [
-   "【炸弹花】",
-   "[Bomb Flower]"
-  ],
-  [
-   "俯冲撞击：",
-   "Diving slam: "
-  ],
-  [
-   "按",
-   "Press "
-  ],
-  [
-   "（也可直接收翼自由落体），用",
-   "(or just fold your wings and free-fall), and use "
-  ],
-  [
-   "R 键俯冲",
-   "R to dive "
-  ],
-  [
-   "林克的身体直接撞碎冰晶",
-   "Link's body to smash the ice crystals directly"
-  ],
-  [
-   "暴露弱点：",
-   "Expose the weak point: "
-  ],
-  [
-   "等待 BOSS",
-   "Wait for the boss to "
-  ],
-  [
-   "，底下的",
-   ", and the "
-  ],
-  [
-   "随之暴露。",
-   "below will be exposed."
-  ],
-  [
-   "射出背部的角",
-   "fire the horns from its back"
-  ],
-  [
-   "紫色结晶弱点",
-   "purple crystal weak point"
-  ],
-  [
-   "空中索敌与锁定：",
-   "Aerial targeting and lock-on: "
-  ],
-  [
-   "驾驶飞翼在空中盘旋，调整高度和方向靠近巨龙。巨龙共有",
-   "Pilot your wing device to circle in the air, adjusting height and direction to approach the giant dragon. The dragon has "
-  ],
-  [
-   "，准星对准其中一个后按",
-   ", and after aiming at one of them, press "
-  ],
-  [
-   "释放阿沅蓄力猛冲。",
-   "to unleash Yunobo's charged rush."
-  ],
-  [
-   "3 个红色脑袋",
-   "3 red heads"
-  ],
-  [
-   "A 键",
-   "A "
-  ],
-  [
-   "规避火球攻击：",
-   "Dodging fireball attacks: "
-  ],
-  [
-   "躲避：",
-   "Dodge: "
-  ],
-  [
-   "轻拨左摇杆调转飞翼方向避开熔岩火石。",
-   "Gently tilt the left stick to turn your wing device and avoid the molten rocks. "
-  ],
-  [
-   "也可直接对着飞来的",
-   "You can also directly launch Yunobo at the incoming "
-  ],
-  [
-   "，阿沅能直接将火球撞碎。",
-   ", and Yunobo can smash the fireballs apart directly."
-  ],
-  [
-   "强攻：",
-   "Aggressive approach: "
-  ],
-  [
-   "火球发射阿沅",
-   "fireballs"
-  ],
-  [
-   "BOSS 全身裹淤泥时处于",
-   "While the boss is fully covered in sludge, it is in "
-  ],
-  [
-   "，必须先洗净。",
-   ", and must be cleaned first. "
-  ],
-  [
-   "靠近",
-   "Get close to "
-  ],
-  [
-   "按 A 键包裹水盾，对着 BOSS 挥动武器砍出水波清除淤泥。",
-   "and press A to wrap yourself in a water shield, then swing your weapon at the boss to slash out water waves and clear the sludge. "
-  ],
-  [
-   "弓箭附魔",
-   "Fuse your arrows with"
-  ],
-  [
-   "，一箭命中即可瞬间洗净。",
-   ", and one hit instantly cleans it."
-  ],
-  [
-   "无敌状态",
-   "an invincible state"
-  ],
-  [
-   "方法 A（最推荐）：",
-   "Method A (most recommended): "
-  ],
-  [
-   "希多（米法弟弟）",
-   "Sidon (Mipha's younger brother) "
-  ],
-  [
-   "方法 B（远程）：",
-   "Method B (ranged): "
-  ],
-  [
-   "水之果 / 丘丘胶（蓝色）/ 水龙头胶囊",
-   "Splash Fruit / Chuchu Jelly (blue) / Hydrant"
-  ],
-  [
-   "无限循环：",
-   "Infinite loop: "
-  ],
-  [
-   "起身后它缩回地下并重刷淤泥，重复「洗泥浆 → 等张嘴 → 射核心 → 输出」，一般",
-   "After it gets up, it retreats underground and refreshes its sludge. Repeat \"wash sludge → wait for it to open its mouth → shoot the core → deal damage\" — usually "
-  ],
-  [
-   "即可击杀。",
-   "is enough to kill it."
-  ],
-  [
-   "2～3 轮",
-   "2–3 rounds "
-  ],
-  [
-   "空中林克时间（强烈推荐）：",
-   "Midair bullet time (highly recommended): "
-  ],
-  [
-   "· 盾牌融合",
-   "· Fuse your shield with "
-  ],
-  [
-   "，按住 ZL 盾防并起跳，",
-   ", hold ZL to guard with your shield and jump, "
-  ],
-  [
-   "· 在空中拉弓触发",
-   "· Draw your bow midair to trigger "
-  ],
-  [
-   "，弓箭附魔",
-   ", fuse your arrows with "
-  ],
-  [
-   "，从空中往下",
-   ", and from above, shoot downward with "
-  ],
-  [
-   "· 可瞬间清理周围泥浆并把 BOSS 射回小章鱼原形。",
-   "· This instantly clears the surrounding sludge and shoots the boss back into its small-octopus form."
-  ],
-  [
-   "炸弹花 / 火箭",
-   "a Bomb Flower / Rocket"
-  ],
-  [
-   "直接飞向高空",
-   "flying straight up into the sky "
-  ],
-  [
-   "慢动作（林克时间）",
-   "slow motion (bullet time)"
-  ],
-  [
-   "水之果 / 丘丘胶 / 多发弓",
-   "Splash Fruit / Chuchu Jelly / multi-shot bows"
-  ],
-  [
-   "连续射击",
-   "continuous fire "
-  ],
-  [
-   "雷电破防：",
-   "Lightning breach: "
-  ],
-  [
-   "BOSS 在地上冲锋或发射龙卷风时，一边",
-   "While the boss charges on the ground or fires tornadoes, "
-  ],
-  [
-   "，一边靠近露珠。等她的",
-   ", while approaching Riju. Once her "
-  ],
-  [
-   "时，用弓箭射击 BOSS 任意部位触发落雷。",
-   ", then use your bow to shoot any part of the boss and trigger a lightning strike."
-  ],
-  [
-   "侧向奔跑躲避",
-   "dodge by running sideways"
-  ],
-  [
-   "雷电圈扩大包裹住 BOSS",
-   "lightning ring expands to envelop the boss "
-  ],
-  [
-   "局面说明：",
-   "Situation: "
-  ],
-  [
-   "战场四周",
-   "Around the battlefield, "
-  ],
-  [
-   "开始发光并不断孵化大量爬行和飞行吉波得，场面极度混乱。",
-   "begin glowing and continuously hatching large numbers of crawling and flying Gibdos, making the scene extremely chaotic."
-  ],
-  [
-   "4 个紫色吉波得巢穴（柱子）",
-   "4 purple Gibdo nests (pillars) "
-  ],
-  [
-   "开局前务必给魔像装好以下配件：",
-   "Before the fight starts, be sure to equip your Construct with the following parts: "
-  ],
-  [
-   "强烈建议安装",
-   "Strongly recommended: install "
-  ],
-  [
-   "或",
-   "or "
-  ],
-  [
-   "安装",
-   "Install "
-  ],
-  [
-   "（用于二阶段起飞或快速位移）。",
-   "(for phase-2 takeoff or quick repositioning)."
-  ],
-  [
-   "左手 / 右手：",
-   "Left / right hand: "
-  ],
-  [
-   "大炮",
-   "a Cannon "
-  ],
-  [
-   "铁球 / 刺球",
-   "an Iron Ball / Spiked Ball"
-  ],
-  [
-   "后背：",
-   "Back: "
-  ],
-  [
-   "火箭",
-   "a Rocket "
-  ],
-  [
-   "风扇",
-   " a Fan "
-  ],
-  [
-   "打落长空（二选一）：",
-   "Knock it out of the sky (choose one): "
-  ],
-  [
-   "方法 A（最省事）：",
-   "Method A (easiest): "
-  ],
-  [
-   "手有大炮直接在地面",
-   "With a Cannon in hand, aim from the ground and "
-  ],
-  [
-   "，BOSS 直接坠机摔倒。",
-   ", and the boss crashes straight out of the sky. "
-  ],
-  [
-   "启动背上",
-   "Activate the "
-  ],
-  [
-   "跟着飞上天，在空中飞过去给它一拳砸下来。",
-   "to follow it into the sky, then fly over and punch it down."
-  ],
-  [
-   "瞄准空中轰一炮",
-   "fire a shot into the air"
-  ],
-  [
-   "方法 B（滞空对决）：",
-   "Method B (aerial duel):"
-  ],
-  [
-   "火箭或风扇",
-   "Rocket or Fan on your back"
-  ],
-  [
-   "剑形态：瞬移突刺 / 横劈",
-   "Sword form: teleport thrust / horizontal slash "
-  ],
-  [
-   "前兆：微微低头后瞬间消失。",
-   "Tell: it lowers its head slightly, then vanishes instantly. "
-  ],
-  [
-   "· 现身时",
-   "· When it reappears with "
-  ],
-  [
-   "：按住 ZL + 连按两下",
-   ": hold ZL + double-tap "
-  ],
-  [
-   "触发突击。",
-   "to trigger a Flurry Rush. "
-  ],
-  [
-   "剑架腰间横摆",
-   "its sword held sideways at its waist"
-  ],
-  [
-   "【后跳】",
-   "[Back Hop] "
-  ],
-  [
-   "高举下劈",
-   "raised overhead chop"
-  ],
-  [
-   "【侧跳】",
-   "[Side Hop] "
-  ],
-  [
-   "长枪形态：直线冲锋",
-   "Spear form: straight-line charge "
-  ],
-  [
-   "前兆：长枪横于身后、身体前倾，拉出红色瘴气残影直线冲刺。",
-   "Tell: its spear held horizontally behind it, body leaning forward, it dashes in a straight line trailing red Gloom afterimages. "
-  ],
-  [
-   "应对：冲到面前瞬间按住 ZL + 向左/右",
-   "Counter: the instant it reaches you, hold ZL + "
-  ],
-  [
-   "最容易触发突击的一招",
-   "— the easiest move for triggering a Flurry Rush."
-  ],
-  [
-   "大剑形态：蓄力大风车",
-   "Greatsword form: charged giant windmill "
-  ],
-  [
-   "前兆：高举大剑原地蓄力，准备 360° 瘴气旋风斩。",
-   "Tell: it raises its greatsword high and charges in place, preparing a 360° Gloom whirlwind slash. "
-  ],
-  [
-   "应对：判定范围极大，",
-   "Counter: the hitbox is enormous, "
-  ],
-  [
-   "。看到蓄力立刻向后跑拉开距离，或弓箭附魔",
-   ". When you see it charging, immediately run backward to gain distance, or fuse your arrows with "
-  ],
-  [
-   "直接",
-   "and directly "
-  ],
-  [
-   "并让他跪地。",
-   "and make it kneel."
-  ],
-  [
-   "不建议尝试闪避",
-   "dodging is not recommended"
-  ],
-  [
-   "吉波得之骨 / 炸弹花",
-   "Gibdo Bones / Bomb Flowers "
-  ],
-  [
-   "射脸打断蓄力",
-   "shoot it in the face to interrupt its charge-up "
-  ],
-  [
-   "升级防具：",
-   "Upgrade armor: "
-  ],
-  [
-   "建议蛮族套装 / 鬼神套装 / 兵士套装升至",
-   "It is recommended to upgrade the Barbarian Set / Fierce Deity Set / Soldier's Set to "
-  ],
-  [
-   "，否则加侬一刀秒杀。",
-   ", or Ganondorf will one-shot you."
-  ],
-  [
-   "3～4 星",
-   "3–4 stars"
-  ],
-  [
-   "单手剑形态（瞬移冲刺）：",
-   "One-handed sword form (teleport dash): "
-  ],
-  [
-   "横劈（剑放腰间）：",
-   "Horizontal slash (sword at waist): "
-  ],
-  [
-   "按住 ZL + 向后跳触发突击。",
-   "Hold ZL + back-hop to trigger a Flurry Rush. "
-  ],
-  [
-   "按住 ZL + 向左/右侧跳触发突击。",
-   "Hold ZL + side-hop left/right to trigger a Flurry Rush."
-  ],
-  [
-   "竖劈（高举过头）：",
-   "Vertical chop (raised overhead): "
-  ],
-  [
-   "前半段：分身乱战",
-   "First half: clone melee "
-  ],
-  [
-   "· 五位贤者加入战场，",
-   "· The five Sages join the battle; "
-  ],
-  [
-   "，你直接冲向本体（真身血条与其他分身不同）。",
-   ", and rush straight at the true form (its HP bar differs from the other clones). "
-  ],
-  [
-   "· 用第一阶段的闪避打法（抓长枪冲刺或单手剑横劈）强行压低本体血量。",
-   "· Use the phase-1 dodge strategy (catch the spear charge or the one-handed sword horizontal slash) to force the true form's HP down."
-  ],
-  [
-   "让贤者缠住分身",
-   "have the Sages tie up the clones"
-  ],
-  [
-   "后半段：红发魔王单挑（核心难点：他也会闪避！）",
-   "Second half: solo duel with the red-haired Demon King (core difficulty: he dodges too!) "
-  ],
-  [
-   "分身消失后加侬获得超长血条，并",
-   "After the clones vanish, Ganondorf gains an extra-long HP bar, and "
-  ],
-  [
-   "学会了完美闪避",
-   "learns Perfect Dodge"
-  ],
-  [
-   "摧毁外壳：",
-   "Destroy the shell: "
-  ],
-  [
-   "黑龙背上有",
-   "On the black dragon's back are "
-  ],
-  [
-   "，直接俯冲降落到弱点上，用普通武器砍 2～3 下破坏一处。每破坏一处会被弹飞，",
-   ", so dive straight down onto a weak point and hack it 2–3 times with an ordinary weapon to destroy it. Each time you destroy one you will be bounced off, "
-  ],
-  [
-   "4 处粉红色秘石弱点",
-   "4 pink Secret Stone weak points"
-  ],
-  [
-   "白龙必定从下方接住你",
-   "and the Light Dragon will always catch you from below"
-  ],
-  [
-   "上马白嫖：",
-   "Free mounted damage: "
-  ],
-  [
-   "收弓落地解除锁定，冲到人马身侧按",
-   "Put your bow away, land, release the lock, rush to the Lynel's side, and press "
-  ],
-  [
-   "，掏出那把快要折断的近卫双手剑，",
-   ", then draw that nearly breaking Royal Guard's Claymore and "
-  ],
-  [
-   "A 键骑上",
-   "A to mount"
-  ],
-  [
-   "疯狂按 Y 键连砍 3～6 刀",
-   "mash Y for 3–6 consecutive slashes"
-  ],
-  [
-   "弓箭爆眼：",
-   "Bow eye-shot: "
-  ],
-  [
-   "拉开距离，它走近或举起树木时直接瞄准脸部中央的",
-   "Keep your distance; when it approaches or raises a tree, aim directly at the "
-  ],
-  [
-   "射一箭，听到「叮」声它就往后坐倒。",
-   "and shoot an arrow — on hearing the \"ding\" sound, it falls backward onto its rear. "
-  ],
-  [
-   "（或任意怪物眼球），自带自动追踪，朝头顶瞎射一箭就能精准命中独眼。",
-   " (or any monster eyeball) — with built-in auto-tracking, a blind shot over its head will precisely hit its single eye."
-  ],
-  [
-   "大眼睛",
-   "big eye in the center of its face "
-  ],
-  [
-   "逃票技巧：",
-   "Shortcut trick: "
-  ],
-  [
-   "蝙蝠的眼睛",
-   "bat eyes "
-  ],
-  [
-   "带木质护腿（蓝色/黑色常见）：",
-   "With wooden greaves (common in blue / black): "
-  ],
-  [
-   "近战弹刀无法伤害。",
-   "Melee attacks bounce off and deal no damage. "
-  ],
-  [
-   "解法：弓箭附魔",
-   "Solution: fuse your arrows with "
-  ],
-  [
-   "射木护腿，木板遇火燃烧并触发二次输出硬直。",
-   "and shoot the wooden greaves — the boards catch fire and trigger a second damage stagger."
-  ],
-  [
-   "炸弹花 / 火之果 / 红丘丘胶",
-   "Bomb Flowers / Fire Fruit / red Chuchu Jelly "
-  ],
-  [
-   "带铁质护腿（黑色常见）：",
-   "With iron greaves (common in black): "
-  ],
-  [
-   "砍不动也烧不掉。",
-   "You cannot cut through them, nor burn them. "
-  ],
-  [
-   "射铁护腿，电击通过铁板传遍全身触发大范围触电硬直。",
-   "and shoot the iron greaves — electricity spreads through the iron plates across its whole body, triggering a wide-area electrocution stagger."
-  ],
-  [
-   "雷击果 / 黄丘丘胶",
-   "Shock Fruit / yellow Chuchu Jelly "
-  ],
-  [
-   "后期学会「捂眼睛」（黑色高等级）：",
-   "Later learns \"eye-covering\" (high-level black variants): "
-  ],
-  [
-   "拉弓时它会用手死死捂眼。",
-   "When you draw your bow, it covers its eyes tightly with its hands. "
-  ],
-  [
-   "解法：收起弓箭，等它弯腰捡石头或拔树",
-   "Solution: put your bow away, and when it bends down to pick up a rock or uproot a tree, "
-  ],
-  [
-   "立刻拉弓爆头。",
-   "immediately draw your bow for a headshot."
-  ],
-  [
-   "抬手露眼的瞬间",
-   "the instant it raises its hand and exposes its eyes "
-  ],
-  [
-   "核心逻辑：",
-   "Core logic: "
-  ],
-  [
-   "在短时间内将 3 个头的血条全部射空，三头同时垂下后产生冲击波摔倒，触发",
-   "Empty all 3 heads' HP bars in a short time; when all three heads droop at once, a shockwave knocks it down, triggering "
-  ],
-  [
-   "瘫痪大硬直，趁机近战疯狂输出。",
-   "major paralysis stagger — take the chance to go wild with melee attacks."
-  ],
-  [
-   "10～15 秒",
-   "10–15 seconds of "
-  ],
-  [
-   "循环锁死：",
-   "Loop lock: "
-  ],
-  [
-   "它站起瞬间强风吹飞，立刻再次飞天（掏第二面火箭盾或踩弹簧），空中再射眼睛，重复「爆头 → 倒地 → 输出」，一般",
-   "The instant it stands up, strong winds blow you away — immediately fly up again (draw a second Rocket Shield or step on a Spring), shoot its eyes from midair, and repeat \"headshot → knockdown → damage\" — usually "
-  ],
-  [
-   "可无伤带走。",
-   "are enough to take it down without taking damage."
-  ],
-  [
-   "3 个回合",
-   "3 rounds "
-  ],
-  [
-   "⚔ 通用 Boss 攻略要点：",
-   "⚔ General boss guide points: "
-  ],
-  [
-   "① 战前备齐",
-   "① Prepare enough "
-  ],
-  [
-   "，对应 Boss 属性携带克制装备。",
-   ", and bring countering gear matching the boss's element. "
-  ],
-  [
-   "② 多数大型 Boss 都有「",
-   "② Most large bosses follow a \""
-  ],
-  [
-   "」的循环节奏，耐心找破绽比硬刚更高效。",
-   "\" cycle rhythm — patiently finding openings is far more efficient than brute force. "
-  ],
-  [
-   "与",
-   "and "
-  ],
-  [
-   "是应对高速攻击的关键，练熟后能大幅降低难度。",
-   "are key against fast attacks; mastering them greatly lowers difficulty. "
-  ],
-  [
-   "④ Boss 掉落的",
-   "④ Boss drops such as "
-  ],
-  [
-   "多为顶级融合素材，是打造最强武器的核心来源。",
-   "are mostly top-tier Fuse materials and the core source for crafting the strongest weapons."
-  ],
-  [
-   "回血 / 攻击强化 / 元素抗性料理",
-   "healing / attack-boosting / elemental-resistance meals"
-  ],
-  [
-   "击晕 → 倒地 → 集火弱点",
-   "stun → knockdown → focus fire on the weak point"
-  ],
-  [
-   "瞬闪（横向闪避）",
-   "Flurry Rush (side dodge) "
-  ],
-  [
-   "盾反",
-   "Perfect Guard "
-  ],
-  [
-   "角 / 牙 / 内脏",
-   "horns / fangs / guts"
-  ],
-  [
-   "强度排序：",
-   "Strength ranking:"
-  ],
-  [
-   "红鬃 → 蓝鬃 → 白鬃 → 白银 → 铠甲白银。浮岛斗技场需连续挑战 5 只人马（最后一只是铠甲白银），是全游戏最高难度的战斗挑战。",
-   "Red-Maned → Blue-Maned → White-Maned → Silver → Armored Silver. The Floating Colosseum gauntlet pits you against 5 Lynels in a row (the last is the Armored Silver), the hardest combat challenge in the game."
-  ],
-  [
-   "挑战前推荐拿到",
-   "Before the challenge, get"
-  ],
-  [
-   "利特套装全套 ★2（套装加成免冻结）",
-   "the full Snowquill Set at ★2 (set bonus: Unfreezable)"
-  ],
-  [
-   "雷鸣头盔（免疫雷击）",
-   "the Thunder Helm (lightning immunity)"
-  ],
-  [
-   "，彻底废掉两个头的威胁。",
-   "to completely neutralize two of the heads' threats."
-  ],
-  [
-   "蓝鬃 · 3000血",
-   "Blue-Maned · 3000 HP"
-  ],
-  [
-   "白鬃 · 4000血",
-   "White-Maned · 4000 HP"
-  ]
- ],
- "title": "All 16 Bosses Complete Encyclopedia and Strategy Guide | The Legend of Zelda: Tears of the Kingdom Guide"
+  "notes": [
+    "林克时间 rendered as 'bullet time' (the slow-motion aiming state); no official glossary term was given for it.",
+    "人马 rendered as Lynel throughout; 盖拉 and 古栗欧克 both rendered as Gleeok (two Chinese transliterations of the same enemy).",
+    "沙化 rendered as 'calcify' (the page describes it as the body turning white); no official glossary term was given.",
+    "Uncertain terms: 岩家巨人 rendered as Battle Talus; 白苍巨霸迦马 as Pale Colgera; 黑曜巨霸迦马 as Obsidian Colgera; 左纳乌精炼石 as Refined Zonaite; 巨霸迦马的牙 as Colgera's Fang; 考林族 as Rito; 图弓力 as Tulin; 卓拉水蛭之王头盔 rendered descriptively (no confident official equivalent).",
+    "Phantom Ganon card labels a weapon '斧' (axe) while its body text describes a greatsword form; both translated as written.",
+    "Source encoding: the Colgera fang drop line genuinely contains one U+FFFD replacement character before the text in the source HTML (a corrupted emoji); the pair keeps that character verbatim. The Hinox necklace line is intact in the source.",
+    "Fragment pass: 盾反 standardized as Perfect Guard; 突击 as Flurry Rush; 抽出来 composed with its body to keep word order; isolated 。 punctuation nodes remain untranslated by design."
+  ],
+  "pairs": [
+    [
+      "塞尔达传说王国之泪全Boss图鉴与攻略，含方块魔像、莫尔德拉吉克、巨霸迦马、急冻盖拉、吉波得女王、魔王加侬多夫等16个Boss的弱点、打法与推荐装备。",
+      "Complete Boss encyclopedia and guide for The Legend of Zelda: Tears of the Kingdom, covering the weaknesses, strategies, and recommended gear for all 16 bosses including Flux Constructs, Molduga, Colgera, Frost Gleeok, Queen Gibdo, and Demon King Ganondorf."
+    ],
+    [
+      "方块魔像 Flux Construct",
+      "Flux Construct"
+    ],
+    [
+      "方块魔像 初级",
+      "Flux Construct I"
+    ],
+    [
+      "方块魔像 中等",
+      "Flux Construct II"
+    ],
+    [
+      "方块魔像 上等",
+      "Flux Construct III"
+    ],
+    [
+      "岩石巨人 Stone Talus",
+      "Stone Talus"
+    ],
+    [
+      "岩石巨人 普通",
+      "Stone Talus (standard)"
+    ],
+    [
+      "岩石巨人 稀有",
+      "Rare Stone Talus"
+    ],
+    [
+      "岩石巨人 夜光",
+      "Luminous Stone Talus"
+    ],
+    [
+      "岩家巨人",
+      "Battle Talus"
+    ],
+    [
+      "熔岩巨人 Igneo Talus",
+      "Igneo Talus"
+    ],
+    [
+      "冰岩巨人 Frost Talus",
+      "Frost Talus"
+    ],
+    [
+      "莫尔德拉吉克 Molduga",
+      "Molduga"
+    ],
+    [
+      "莫尔德拉吉克",
+      "Molduga"
+    ],
+    [
+      "巨霸迦马 Colgera",
+      "Colgera"
+    ],
+    [
+      "巨霸迦马",
+      "Colgera"
+    ],
+    [
+      "白苍巨霸迦马",
+      "Pale Colgera"
+    ],
+    [
+      "黑曜巨霸迦马",
+      "Obsidian Colgera"
+    ],
+    [
+      "急冻盖拉 Frost Gleeok",
+      "Frost Gleeok"
+    ],
+    [
+      "急冻盖拉",
+      "Frost Gleeok"
+    ],
+    [
+      "伊尔巴基亚 Moragia",
+      "Moragia"
+    ],
+    [
+      "伊尔巴基亚",
+      "Moragia"
+    ],
+    [
+      "巨砾哥马 Marbled Gohma",
+      "Marbled Gohma"
+    ],
+    [
+      "巨砾哥马",
+      "Marbled Gohma"
+    ],
+    [
+      "淤泥莱克 Sludge Like",
+      "Sludge Like"
+    ],
+    [
+      "淤泥莱克",
+      "Sludge Like"
+    ],
+    [
+      "八爪怪章 Mucktorok",
+      "Mucktorok"
+    ],
+    [
+      "八爪怪章",
+      "Mucktorok"
+    ],
+    [
+      "吉波得女王 Queen Gibdo",
+      "Queen Gibdo"
+    ],
+    [
+      "吉波得女王",
+      "Queen Gibdo"
+    ],
+    [
+      "被夺之魔像 Seized Construct",
+      "Seized Construct"
+    ],
+    [
+      "被夺之魔像",
+      "Seized Construct"
+    ],
+    [
+      "幻影加侬 Phantom Ganon",
+      "Phantom Ganon"
+    ],
+    [
+      "幻影加侬",
+      "Phantom Ganon"
+    ],
+    [
+      "魔王加侬多夫 Demon King Ganondorf",
+      "Demon King Ganondorf"
+    ],
+    [
+      "魔王加侬多夫",
+      "Demon King Ganondorf"
+    ],
+    [
+      "莱尼尔 Lynel",
+      "Lynel"
+    ],
+    [
+      "莱尼尔 普通",
+      "Lynel (standard)"
+    ],
+    [
+      "白鬃莱尼尔",
+      "White-Maned Lynel"
+    ],
+    [
+      "蓝鬃莱尼尔",
+      "Blue-Maned Lynel"
+    ],
+    [
+      "白银莱尼尔",
+      "Silver Lynel"
+    ],
+    [
+      "西诺克斯 Hinox",
+      "Hinox"
+    ],
+    [
+      "西诺克斯 普通",
+      "Hinox (standard)"
+    ],
+    [
+      "蓝色西诺克斯",
+      "Blue Hinox"
+    ],
+    [
+      "黑色西诺克斯",
+      "Black Hinox"
+    ],
+    [
+      "骷髅西诺克斯 Stalnox",
+      "Stalnox"
+    ],
+    [
+      "古栗欧克王 King Gleeok",
+      "King Gleeok"
+    ],
+    [
+      "古栗欧克王",
+      "King Gleeok"
+    ],
+    [
+      "火焰古栗欧克",
+      "Flame Gleeok"
+    ],
+    [
+      "冰雪古栗欧克",
+      "Frost Gleeok"
+    ],
+    [
+      "雷电古栗欧克",
+      "Thunder Gleeok"
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "Boss图鉴",
+      "Bosses"
+    ],
+    [
+      "👹 Boss 图鉴",
+      "👹 Boss Compendium"
+    ],
+    [
+      "全 16 个 Boss · 弱点分析 · 阶段打法 · 推荐装备",
+      "All 16 Bosses · Weakness analysis · Phase strategies · Recommended gear"
+    ],
+    [
+      "最后更新：2026年6月",
+      "Last updated: June 2026"
+    ],
+    [
+      "共收录",
+      "Total included"
+    ],
+    [
+      "16 个 Boss",
+      "16 Bosses"
+    ],
+    [
+      "普通难度",
+      "Normal difficulty"
+    ],
+    [
+      "困难",
+      "Hard"
+    ],
+    [
+      "极难",
+      "Extreme"
+    ],
+    [
+      "最终Boss",
+      "Final Boss"
+    ],
+    [
+      "热门 Boss 专题页",
+      "Popular Boss feature pages"
+    ],
+    [
+      "含完整打法 · 招式解析 · 掉落说明",
+      "With full strategies · move breakdowns · drop details"
+    ],
+    [
+      "👑 魔王加侬多夫",
+      "👑 Demon King Ganondorf"
+    ],
+    [
+      "人形 / 秘石 / 黑龙三阶段全解，战前满配指南，盾反与二次闪避打法。",
+      "Full breakdown of the humanoid / Secret Stone / Demon Dragon phases, a pre-fight max-gear guide, and Perfect Guard and double-dodge strategies."
+    ],
+    [
+      "向阳草料理",
+      "Sundelion meals"
+    ],
+    [
+      "👻 幻影加侬",
+      "👻 Phantom Ganon"
+    ],
+    [
+      "城堡 1 打 5 高空轰炸流，野外单挑三形态完美闪避，瘴气武器使用技巧。",
+      "Castle 1-vs-5 high-altitude bombardment strategy, perfect dodges against all three forms in solo field fights, and Gloom weapon tips."
+    ],
+    [
+      "剧情Boss",
+      "Story Boss"
+    ],
+    [
+      "炸弹花齐射",
+      "Bomb Flower volleys"
+    ],
+    [
+      "🦁 莱尼尔系列",
+      "🦁 Lynel Series"
+    ],
+    [
+      "爆头骑乘流全解，红→蓝→白→白银四色强度递进，逐级专题页面。",
+      "Complete headshot-and-mount breakdown, with strength progressing Red → Blue → White → Silver across dedicated pages per tier."
+    ],
+    [
+      "野外最强",
+      "Strongest in the field"
+    ],
+    [
+      "4 页深度攻略",
+      "4 in-depth guide pages"
+    ],
+    [
+      "莱尼尔变体：",
+      "Lynel variants:"
+    ],
+    [
+      "🦁 红鬃 · 2000血",
+      "🦁 Red-Maned · 2,000 HP"
+    ],
+    [
+      "🔵 蓝鬃 · 3000血",
+      "🔵 Blue-Maned · 3,000 HP"
+    ],
+    [
+      "⚪ 白鬃 · 4000血",
+      "⚪ White-Maned · 4,000 HP"
+    ],
+    [
+      "⚔️ 白银 · 5000血",
+      "⚔️ Silver · 5,000 HP"
+    ],
+    [
+      "全部 (16)",
+      "All (16)"
+    ],
+    [
+      "🏛 神殿Boss",
+      "🏛 Temple Bosses"
+    ],
+    [
+      "🌍 野外强敌",
+      "🌍 Field Bosses"
+    ],
+    [
+      "📜 剧情Boss",
+      "📜 Story Bosses"
+    ],
+    [
+      "👑 最终Boss",
+      "👑 Final Boss"
+    ],
+    [
+      "普通",
+      "Normal"
+    ],
+    [
+      "方块魔像",
+      "Flux Construct"
+    ],
+    [
+      "野外强敌",
+      "Field Boss"
+    ],
+    [
+      "天空 / 地表",
+      "Sky / Surface"
+    ],
+    [
+      "初/中/上 三阶",
+      "Three tiers: I / II / III"
+    ],
+    [
+      "天空岛",
+      "Sky Islands"
+    ],
+    [
+      "主要出没",
+      "Main locations"
+    ],
+    [
+      "危险度",
+      "Danger level"
+    ],
+    [
+      "物理",
+      "Physical"
+    ],
+    [
+      "攻击属性",
+      "Attack attribute"
+    ],
+    [
+      "🎯 弱点",
+      "🎯 Weaknesses"
+    ],
+    [
+      "🟦 发光核心方块",
+      "🟦 Glowing core block"
+    ],
+    [
+      "🏹 究极手拔取",
+      "🏹 Pull it out with Ultrahand"
+    ],
+    [
+      "📖 击败方法",
+      "📖 How to Defeat"
+    ],
+    [
+      "魔像由许多方块拼成，身上有一块颜色不同、会发光的核心方块，那是它的唯一弱点。",
+      "The Construct is made of many blocks, with one differently colored, glowing core block on its body — its only weakness."
+    ],
+    [
+      "用 究极手 直接把核心方块从身体里抽出来，魔像会瞬间瘫散，趁机疯狂攻击核心。",
+      "Use Ultrahand to pull the core block straight out of its body; the Construct instantly collapses, so attack the core furiously while you can."
+    ],
+    [
+      "当它变成地面滚动形态或竖立成高塔时，攀爬上去靠近核心；它趴下变平面时核心最好打。",
+      "When it turns into a ground-rolling form or stands up as a tall tower, climb up to get near the core; when it lies flat, the core is easiest to hit."
+    ],
+    [
+      "当它变成地面滚动形态或竖立成高塔时，攀爬上去靠近核心。",
+      "When it turns into a ground-rolling form or stands up as a tall tower, climb up to get near the core."
+    ],
+    [
+      "它趴下变平面时核心最好打。",
+      "When it lies flat, the core is easiest to hit."
+    ],
+    [
+      "上等魔像（中等/上等）血更厚、会浮空与释放电击，建议用左纳乌火炮 / 重武器 速攻核心。",
+      "Higher-tier Constructs (II / III) have more HP, can float, and release electric shocks — use Zonai cannons / heavy weapons to attack the core quickly."
+    ],
+    [
+      "🎁 掉落物品",
+      "🎁 Drops"
+    ],
+    [
+      "🔩 左纳乌矿",
+      "🔩 Zonaite"
+    ],
+    [
+      "💎 大型左纳乌矿",
+      "💎 Large Zonaite"
+    ],
+    [
+      "⚙ 左纳乌精炼石",
+      "⚙ Refined Zonaite"
+    ],
+    [
+      "🔋 大型结晶充能",
+      "🔋 Large Crystallized Charge"
+    ],
+    [
+      "提示：究极手拔核心是最快解法，省去逐块拆解的时间。掉落的左纳乌矿可拿去交换电池容量。",
+      "Tip: pulling the core with Ultrahand is the fastest solution, saving the time of dismantling it block by block. The Zonaite it drops can be exchanged for Energy Cell capacity."
+    ],
+    [
+      "提示：究极手拔核心是最快解法，省去逐块拆解的时间。",
+      "Tip: pulling the core with Ultrahand is the fastest solution, saving the time of dismantling it block by block."
+    ],
+    [
+      "掉落的左纳乌矿可拿去交换电池容量。",
+      "The Zonaite it drops can be exchanged for Energy Cell capacity."
+    ],
+    [
+      "岩石巨人",
+      "Stone Talus"
+    ],
+    [
+      "熔岩 / 冰岩 / 稀有变种",
+      "Igneo / Frost / Rare variants"
+    ],
+    [
+      "全地图",
+      "All over the map"
+    ],
+    [
+      "物理/元素",
+      "Physical / Elemental"
+    ],
+    [
+      "⛏ 背部矿石核心",
+      "⛏ Ore core on its back"
+    ],
+    [
+      "❄ 熔岩巨人怕冰",
+      "❄ Igneo Talus fears ice"
+    ],
+    [
+      "🔥 冰岩巨人怕火",
+      "🔥 Frost Talus fears fire"
+    ],
+    [
+      "巨人的弱点是背上突出的黑色矿石块，普通攻击身体几乎无效。",
+      "The Talus's weakness is the protruding black ore block on its back; normal attacks to its body are almost useless."
+    ],
+    [
+      "爬到它身上（趁它挥拳砸地时跳上去），用 融合岩石锤 / 重武器 猛敲背部矿石核心。",
+      "Climb onto it (jump on when it slams its fist into the ground) and smash the ore core on its back with a fused rock hammer / heavy weapon."
+    ],
+    [
+      "熔岩巨人全身高温，需先用冰属性武器/冰雪果降温再攀爬；冰岩巨人则用火属性融化。",
+      "The Igneo Talus's whole body is hot — cool it down first with an ice weapon / Ice Fruit before climbing; the Frost Talus, conversely, is melted with fire."
+    ],
+    [
+      "熔岩巨人全身高温，需先用冰属性武器/冰雪果降温再攀爬。",
+      "The Igneo Talus's whole body is hot — cool it down first with an ice weapon / Ice Fruit before climbing."
+    ],
+    [
+      "冰岩巨人则用火属性融化。",
+      "The Frost Talus, conversely, is melted with fire."
+    ],
+    [
+      "击碎核心即可击败。夜光/稀有巨人会掉落大量宝石，性价比极高。",
+      "Shatter the core to defeat it. Luminous / Rare Taluses drop large quantities of gems — excellent value."
+    ],
+    [
+      "击碎核心即可击败。",
+      "Shatter the core to defeat it."
+    ],
+    [
+      "夜光/稀有巨人会掉落大量宝石，性价比极高。",
+      "Luminous / Rare Taluses drop large quantities of gems — excellent value."
+    ],
+    [
+      "💎 各类宝石（蓝/红宝石、黄玉、钻石）",
+      "💎 Various gems (Sapphire / Ruby, Topaz, Diamond)"
+    ],
+    [
+      "🪨 火打石",
+      "🪨 Flint"
+    ],
+    [
+      "✨ 夜光石",
+      "✨ Luminous Stone"
+    ],
+    [
+      "🧡 巨人之心（稀有）",
+      "🧡 Talus Heart (rare)"
+    ],
+    [
+      "刷钱推荐：夜光岩石巨人会掉落成堆夜光石与宝石，是前期赚卢比的优质目标。",
+      "Rupee-farming recommendation: Luminous Stone Taluses drop piles of Luminous Stones and gems, making them a great early-game Rupee target."
+    ],
+    [
+      "杰鲁多沙漠",
+      "Gerudo Desert"
+    ],
+    [
+      "沙漠地带",
+      "Desert areas"
+    ],
+    [
+      "💣 爆弹花（震晕）",
+      "💣 Bomb Flower (stun)"
+    ],
+    [
+      "⚔ 出土后的身体",
+      "⚔ Body after it surfaces"
+    ],
+    [
+      "它潜在沙子下游动，会循着你的脚步震动追踪。站在岩石上可避免被它感知。",
+      "It swims beneath the sand, tracking the vibrations of your footsteps. Standing on rock keeps it from sensing you."
+    ],
+    [
+      "它潜在沙子下游动，会循着你的脚步震动追踪。",
+      "It swims beneath the sand, tracking the vibrations of your footsteps."
+    ],
+    [
+      "站在岩石上可避免被它感知。",
+      "Standing on rock keeps it from sensing you."
+    ],
+    [
+      "朝沙面投掷爆弹花（或用余料建造的炸弹箭），它会冲上来吞食并被炸出沙面、翻倒震晕。",
+      "Throw a Bomb Flower at the sand's surface (or use a Fuse-made bomb arrow); it will rush up to swallow it and be blasted out of the sand, flipping over stunned."
+    ],
+    [
+      "趁它翻肚朝天的硬直时间冲上去用最强武器全力输出。",
+      "During the stagger while it lies belly-up, rush in and unleash your strongest weapon."
+    ],
+    [
+      "重复「炸弹诱出 → 震晕 → 输出」循环数次即可击杀。",
+      "Repeat the \"bomb lure → stun → damage\" loop several times to kill it."
+    ],
+    [
+      "🐟 莫尔德拉吉克的鳍",
+      "🐟 Molduga Fin"
+    ],
+    [
+      "🫀 莫尔德拉吉克的内脏",
+      "🫀 Molduga Guts"
+    ],
+    [
+      "注意：它的吞食与跃起攻击伤害极高，没有岩石掩体时务必准备好闪避翻滚。",
+      "Note: its swallow and leaping attacks deal extremely high damage — without rock cover, be ready to dodge-roll."
+    ],
+    [
+      "普通 / 白苍 / 黑曜",
+      "Standard / Pale / Obsidian"
+    ],
+    [
+      "出现地点",
+      "Locations"
+    ],
+    [
+      "物理 / 吸引",
+      "Physical / Suction"
+    ],
+    [
+      "👁 眼睛（弓箭射击）",
+      "👁 Eyes (shoot with bow)"
+    ],
+    [
+      "💣 嘴里投炸弹花",
+      "💣 Throw a Bomb Flower into its mouth"
+    ],
+    [
+      "🪓 背部黑色矿石（重武器）",
+      "🪓 Black ore on its back (heavy weapons)"
+    ],
+    [
+      "核心思路：炸弹断吸、射眼出硬直、爬背狂输出。",
+      "Core idea: break its suction with a bomb, shoot its eyes for stagger, climb onto its back and unleash damage."
+    ],
+    [
+      "破招瘫痪（二选一） · 射击弱点：用弓箭瞄准它的眼睛（发光部位）射击数次，或附加【蝙蝠的眼珠】自动追踪，可直接让它倒地瘫痪。 · 炸弹诱饵：当它张大嘴巴准备吸气时，朝嘴里扔一颗【炸弹花】，它吞下后立刻炸出大硬直。",
+      "Break and paralyze (choose one) · Shoot the weakness: aim your bow at its eyes (the glowing parts) and shoot several times, or attach a Keese Eyeball for auto-tracking, which can drop it paralyzed directly. · Bomb bait: when it opens its mouth wide to inhale, throw a Bomb Flower into its mouth — after swallowing it, it suffers a huge stagger."
+    ],
+    [
+      "破招瘫痪（二选一）",
+      "Break and paralyze (choose one)"
+    ],
+    [
+      "射击弱点：用弓箭瞄准它的眼睛（发光部位）射击数次，或附加【蝙蝠的眼珠】自动追踪，可直接让它倒地瘫痪。",
+      "Shoot the weakness: aim your bow at its eyes (the glowing parts) and shoot several times, or attach a Keese Eyeball for auto-tracking, which can drop it paralyzed directly."
+    ],
+    [
+      "炸弹诱饵：当它张大嘴巴准备吸气时，朝嘴里扔一颗，它吞下后立刻炸出大硬直。",
+      "Bomb bait: when it opens its mouth wide to inhale, throw a Bomb Flower into its mouth — after swallowing it, it suffers a huge stagger."
+    ],
+    [
+      "上背输出：趁巨霸迦马倒地硬直，迅速跑到它身体下方，攀爬上去来到背部。",
+      "Back damage: while Colgera lies staggered, quickly run beneath its body and climb up onto its back."
+    ],
+    [
+      "狂砍矿石：站在背部中央，用大剑 / 锤子 / 岩石锤等高爆发钝器疯狂砍击背上的黑色矿石。",
+      "Hack the ore: stand at the center of its back and furiously hack the black ore with high-burst blunt weapons like greatswords / hammers / rock hammers."
+    ],
+    [
+      "无限循环：它甩开林克时会触发滞空，利用【林克时间】再次射击眼睛，如此循环几轮即可击杀。",
+      "Endless loop: when it throws Link off, it triggers midair hang time — use bullet time to shoot its eyes again, and repeat for a few rounds to kill it."
+    ],
+    [
+      "巨霸迦马的牙",
+      "Colgera's Fang"
+    ],
+    [
+      "巨霸迦马的内脏",
+      "Colgera Guts"
+    ],
+    [
+      "💎 矿石素材",
+      "💎 Ore materials"
+    ],
+    [
+      "推荐装备：附加蝙蝠眼珠的弓（自动追踪）+ 高攻击力双手重武器 / 岩石锤，战前备好回血料理。",
+      "Recommended gear: a bow with a Keese eyeball attached (auto-tracking) + a high-attack two-handed heavy weapon / rock hammer, and healing meals prepared before the fight."
+    ],
+    [
+      "神殿Boss",
+      "Temple Boss"
+    ],
+    [
+      "风之神殿",
+      "Wind Temple"
+    ],
+    [
+      "冰冻",
+      "Freezing"
+    ],
+    [
+      "💥 林克身体直接撞击冰晶",
+      "💥 Link's body directly smashing the ice crystals"
+    ],
+    [
+      "💣 炸弹花附魔箭（远程）",
+      "💣 Bomb Flower fused arrows (ranged)"
+    ],
+    [
+      "🔵 背部紫色结晶",
+      "🔵 Purple crystals on its back"
+    ],
+    [
+      "两套核心打法可自由选择，推荐优先使用「林克肉弹冲击」。",
+      "Two core strategies to choose freely; the \"Link human missile\" is recommended first."
+    ],
+    [
+      "打法一：林克肉弹冲击（最推荐）",
+      "Strategy 1: Link human missile (most recommended)"
+    ],
+    [
+      "空中盘旋：利用考林族丘栗产生的上升气流在空中持续飞行。无限气流无需担心精力消耗。",
+      "Circling midair: use the updrafts created by the Rito Tulin to keep flying. With unlimited updrafts, no need to worry about stamina."
+    ],
+    [
+      "空中盘旋：利用考林族丘栗产生的上升气流在空中持续飞行。",
+      "Circling midair: use the updrafts created by the Rito Tulin to keep flying."
+    ],
+    [
+      "无限气流无需担心精力消耗。",
+      "With unlimited updrafts, no need to worry about stamina."
+    ],
+    [
+      "引诱攻击：等待 BOSS 从下方垂直向上冲撞，或它射出背上冰刺，此时冰晶弱点会直接暴露。",
+      "Bait attacks: wait for the boss to charge straight up from below, or for it to fire the ice spikes on its back — the ice-crystal weaknesses are then directly exposed."
+    ],
+    [
+      "俯冲撞击：按 R 键俯冲（也可直接收翼自由落体），用林克的身体直接撞碎冰晶！",
+      "Dive strike: press R to dive (or simply fold your paraglider and free-fall) and smash the ice crystals with Link's body!"
+    ],
+    [
+      "循环操作：撞碎一处后立刻展开滑翔翼重回高空，寻找下一个弱点，如此循环直至击败。",
+      "Loop: after smashing one, immediately open your paraglider to return high, find the next weakness, and repeat until defeated."
+    ],
+    [
+      "打法二：远程弓箭打法",
+      "Strategy 2: Ranged bow strategy"
+    ],
+    [
+      "暴露弱点：等待 BOSS 射出背部的角，底下的紫色结晶弱点随之暴露。",
+      "Expose the weakness: wait for the boss to fire the horns on its back, exposing the purple crystal weaknesses beneath."
+    ],
+    [
+      "开启林克时间：在空中掏出弓箭，触发慢动作精准瞄准。",
+      "Activate bullet time: draw your bow midair to trigger slow-motion precise aiming."
+    ],
+    [
+      "合成炸弹箭：附魔炸弹花（或直接使用多发弓、强力弓），连续射击同一处冰晶 2～3 次将其炸碎。",
+      "Craft bomb arrows: fuse Bomb Flowers (or use a multi-shot / powerful bow) and shoot the same ice crystal 2–3 times in a row to blow it apart."
+    ],
+    [
+      "🎁 掉落 / 奖励",
+      "🎁 Drops / Rewards"
+    ],
+    [
+      "🧡 心之容器",
+      "🧡 Heart Container"
+    ],
+    [
+      "🐦 图弓力的祝福（顺风能力）",
+      "🐦 Tulin's Blessing (tailwind ability)"
+    ],
+    [
+      "🪶 盖拉的羽翼",
+      "🪶 Gleeok Wing"
+    ],
+    [
+      "❄ 急冻盖拉之角",
+      "❄ Frost Gleeok Horn"
+    ],
+    [
+      "🫀 盖拉的内脏",
+      "🫀 Gleeok Guts"
+    ],
+    [
+      "提示：盖拉之角是顶级融合素材，融合至武器或箭上可附带强力冰属性。肉弹打法全程不消耗箭矢，适合箭不够多的情况。",
+      "Tip: Gleeok horns are top-tier Fuse materials, granting strong ice attributes when fused to weapons or arrows. The human-missile strategy uses no arrows at all, suiting times when arrows are scarce."
+    ],
+    [
+      "提示：盖拉之角是顶级融合素材，融合至武器或箭上可附带强力冰属性。",
+      "Tip: Gleeok horns are top-tier Fuse materials, granting strong ice attributes when fused to weapons or arrows."
+    ],
+    [
+      "肉弹打法全程不消耗箭矢，适合箭不够多的情况。",
+      "The human-missile strategy uses no arrows at all, suiting times when arrows are scarce."
+    ],
+    [
+      "火之神殿 前置",
+      "Fire Temple prelude"
+    ],
+    [
+      "死亡火山",
+      "Death Mountain"
+    ],
+    [
+      "火焰 / 熔岩",
+      "Fire / Lava"
+    ],
+    [
+      "🔥 阿沅的冲撞（击碎龙头）",
+      "🔥 Yunobo's charge (smash the dragon heads)"
+    ],
+    [
+      "🐉 三个红色脑袋",
+      "🐉 Three red heads"
+    ],
+    [
+      "核心思路：驾驶左纳乌飞翼在空中机动，操控阿沅逐一击碎巨龙的三个红色脑袋。",
+      "Core idea: pilot a Zonai Wing to maneuver midair, directing Yunobo to smash the giant dragon's three red heads one by one."
+    ],
+    [
+      "登上飞翼：战斗触发后立刻跑向阿沅身边的空地，那里停放着一架已组装好操纵杆和风扇的左纳乌飞翼。站上去控住操纵杆起飞——此飞翼拥有无限电池，不必担心坠落。",
+      "Board the Wing: once the fight starts, immediately run to the open ground beside Yunobo, where a Zonai Wing fitted with a control stick and fans is parked. Stand on it, grab the control stick, and take off — this Wing has unlimited battery, so no fear of falling."
+    ],
+    [
+      "登上飞翼：战斗触发后立刻跑向阿沅身边的空地，那里停放着一架已组装好操纵杆和风扇的左纳乌飞翼。",
+      "Board the Wing: once the fight starts, immediately run to the open ground beside Yunobo, where a Zonai Wing fitted with a control stick and fans is parked."
+    ],
+    [
+      "站上去控住操纵杆起飞——此飞翼拥有无限电池，不必担心坠落。",
+      "Stand on it, grab the control stick, and take off — this Wing has unlimited battery, so no fear of falling."
+    ],
+    [
+      "空中索敌与锁定：驾驶飞翼在空中盘旋，调整高度和方向靠近巨龙。巨龙共有3 个红色脑袋，准星对准其中一个后按 A 键 释放阿沅蓄力猛冲。",
+      "Acquire and lock targets midair: circle in the Wing, adjusting height and direction to approach the dragon. The dragon has 3 red heads; aim the reticle at one and press A to release Yunobo's charged rush."
+    ],
+    [
+      "空中索敌与锁定：驾驶飞翼在空中盘旋，调整高度和方向靠近巨龙。",
+      "Acquire and lock targets midair: circle in the Wing, adjusting height and direction to approach the dragon."
+    ],
+    [
+      "巨龙共有3 个红色脑袋，准星对准其中一个后按 A 键 释放阿沅蓄力猛冲。",
+      "The dragon has 3 red heads; aim the reticle at one and press A to release Yunobo's charged rush."
+    ],
+    [
+      "规避火球攻击： · 躲避：轻拨左摇杆调转飞翼方向避开熔岩火石。 · 强攻：也可直接对着飞来的火球发射阿沅，阿沅能直接将火球撞碎。",
+      "Dodge fireball attacks: · Dodge: nudge the left stick to turn the Wing away from molten rocks. · Attack head-on: you can also launch Yunobo directly at incoming fireballs — Yunobo smashes them apart."
+    ],
+    [
+      "逐个击破：阿沅成功撞中后该脑袋直接被破坏。调转机头寻找剩余 2 个脑袋，依次用同样方法击碎，3 个全部打掉后 BOSS 彻底死亡，暴露出火山口入口并触发剧情。",
+      "Destroy them one by one: when Yunobo lands a hit, that head is destroyed outright. Turn around to find the remaining 2 heads and destroy them the same way; once all 3 are gone, the boss dies completely, exposing the crater entrance and triggering the story."
+    ],
+    [
+      "🌋 暴露火山口入口（剧情推进）",
+      "🌋 Exposed crater entrance (story progress)"
+    ],
+    [
+      "🔥 解锁进入火之神殿",
+      "🔥 Unlocks entry to the Fire Temple"
+    ],
+    [
+      "提示：全程在飞翼上无需落地，专注调整飞翼方向对准下一个龙头，用阿沅对抗来袭火球可节省躲避精力。",
+      "Tip: stay on the Wing the whole time without landing; focus on steering toward the next dragon head, and using Yunobo against incoming fireballs saves dodging effort."
+    ],
+    [
+      "火之神殿",
+      "Fire Temple"
+    ],
+    [
+      "岩石 / 爆炸",
+      "Rock / Explosions"
+    ],
+    [
+      "👁 本体独眼（近战输出）",
+      "👁 Main body's single eye (melee damage)"
+    ],
+    [
+      "🔥 阿沅的冲撞技能",
+      "🔥 Yunobo's charge skill"
+    ],
+    [
+      "核心思路：利用火之贤者阿沅（Yunobo）的冲撞技能瘫痪 Boss，再近战猛攻核心独眼，分两个阶段击败。",
+      "Core idea: use Sage of Fire Yunobo's charge skill to paralyze the boss, then melee its core single eye hard, defeating it in two phases."
+    ],
+    [
+      "第一阶段：断腿倒地",
+      "Phase 1: Break its legs to topple it"
+    ],
+    [
+      "发射阿沅：控制火之贤者阿沅，瞄准巨砾哥马的岩石前腿发射冲撞技能。",
+      "Launch Yunobo: control Sage of Fire Yunobo, aim at Marbled Gohma's rocky front legs, and fire the charge skill."
+    ],
+    [
+      "破除双腿：连续炸断它的两条前腿，BOSS 的本体（核心独眼）就会掉落在地上。",
+      "Break both legs: blast off its two front legs in succession and the boss's main body (core single eye) drops to the ground."
+    ],
+    [
+      "近战输出：迅速冲上去，使用高攻击力武器猛砍暴露在地的核心独眼。",
+      "Melee damage: rush in and hack the exposed core eye on the ground with a high-attack weapon."
+    ],
+    [
+      "第二阶段：天花板轰炸",
+      "Phase 2: Ceiling bombardment"
+    ],
+    [
+      "躲避包围：BOSS 会爬上天花板，向下投掷大量爆炸岩石将你团团包围。",
+      "Escape the encirclement: the boss climbs onto the ceiling and throws down masses of exploding rocks to surround you."
+    ],
+    [
+      "寻找缺口：在包围圈中寻找缝隙，向外发射阿沅炸开一条路，或用弓箭射击清理出通道。",
+      "Find a gap: look for an opening in the ring, fire Yunobo outward to blast a path, or shoot with your bow to clear a channel."
+    ],
+    [
+      "锁定弱点：趁 BOSS 在天花板上蓄力投掷巨石时，用阿沅撞击它的眼睛，它会直接从天花板重重摔落并瘫痪。",
+      "Lock onto the weakness: while the boss charges up to throw a boulder from the ceiling, hit its eye with Yunobo — it crashes heavily from the ceiling, paralyzed."
+    ],
+    [
+      "尽情输出：趁它摔落硬直冲上去疯狂输出，循环几轮即可将其击杀。",
+      "Unleash damage: rush in during its fall stagger and attack furiously; a few loops will kill it."
+    ],
+    [
+      "🔥 阿沅的祝福（冲撞能力）",
+      "🔥 Yunobo's Blessing (charge ability)"
+    ],
+    [
+      "🏛 净化火之神殿",
+      "🏛 Purify the Fire Temple"
+    ],
+    [
+      "提示：阿沅冷却期间专注走位躲避落石，切勿硬接。第二阶段清理包围圈时弓箭比阿沅更省时，留阿沅冲撞用于击落 BOSS。",
+      "Tip: while Yunobo is on cooldown, focus on positioning to dodge falling rocks — never tank them head-on. In phase 2, clearing the ring with your bow is faster than with Yunobo; save Yunobo's charge for knocking the boss down."
+    ],
+    [
+      "提示：阿沅冷却期间专注走位躲避落石，切勿硬接。",
+      "Tip: while Yunobo is on cooldown, focus on positioning to dodge falling rocks — never tank them head-on."
+    ],
+    [
+      "第二阶段清理包围圈时弓箭比阿沅更省时，留阿沅冲撞用于击落 BOSS。",
+      "In phase 2, clearing the ring with your bow is faster than with Yunobo; save Yunobo's charge for knocking the boss down."
+    ],
+    [
+      "水之神殿",
+      "Water Temple"
+    ],
+    [
+      "淤泥",
+      "Sludge"
+    ],
+    [
+      "💧 水属性（洗净泥浆）",
+      "💧 Water attribute (wash off sludge)"
+    ],
+    [
+      "🏹 嘴里紫色核心（弓箭射击）",
+      "🏹 Purple core in its mouth (shoot with bow)"
+    ],
+    [
+      "⚔ 核心暴露后近战输出",
+      "⚔ Melee damage after the core is exposed"
+    ],
+    [
+      "核心机制：水属性洗掉淤泥破除无敌 → 引诱张嘴暴露紫色核心 → 射击核心触发硬直 → 近战疯狂输出，循环 2～3 轮击杀。",
+      "Core mechanic: water washes off the sludge to break its invincibility → bait it into opening its mouth to expose the purple core → shoot the core to trigger stagger → unleash melee damage, repeating 2–3 rounds for the kill."
+    ],
+    [
+      "洗净泥浆（破除无敌）",
+      "Wash off the sludge (break invincibility)"
+    ],
+    [
+      "BOSS 全身裹淤泥时处于无敌状态，必须先洗净。 · 方法 A（最推荐）：靠近希多（米法弟弟）按 A 键包裹水盾，对着 BOSS 挥动武器砍出水波清除淤泥。 · 方法 B（远程）：弓箭附魔水之果 / 丘丘胶（蓝色）/ 水龙头胶囊，一箭命中即可瞬间洗净。",
+      "While coated in sludge, the boss is invincible and must be washed first. · Method A (most recommended): approach Sidon (Mipha's younger brother), press A to wrap yourself in his water shield, and swing your weapon at the boss to send water waves clearing the sludge. · Method B (ranged): fuse Splash Fruit / blue Chuchu Jelly / a Hydrant capsule to an arrow — one hit washes it instantly."
+    ],
+    [
+      "BOSS 全身裹淤泥时处于无敌状态，必须先洗净。",
+      "While coated in sludge, the boss is invincible and must be washed first."
+    ],
+    [
+      "方法 A（最推荐）：靠近希多（米法弟弟）按 A 键包裹水盾，对着 BOSS 挥动武器砍出水波清除淤泥。",
+      "Method A (most recommended): approach Sidon (Mipha's younger brother), press A to wrap yourself in his water shield, and swing your weapon at the boss to send water waves clearing the sludge."
+    ],
+    [
+      "方法 B（远程）：弓箭附魔水之果 / 丘丘胶（蓝色）/ 水龙头胶囊，一箭命中即可瞬间洗净。",
+      "Method B (ranged): fuse Splash Fruit / blue Chuchu Jelly / a Hydrant capsule to an arrow — one hit washes it instantly."
+    ],
+    [
+      "引诱张嘴",
+      "Bait it into opening its mouth"
+    ],
+    [
+      "泥浆洗净后 BOSS 现出原形（白色大蠕虫）。不要盲目冲上去砍，保持距离引诱它张嘴——张嘴左右摇晃时，嘴里红紫色发光球体（核心）随之暴露。",
+      "After washing, the boss reveals its true form (a large white worm). Don't blindly rush in to slash — keep your distance and bait it into opening its mouth; as it sways side to side with its mouth open, the red-purple glowing orb (core) inside is exposed."
+    ],
+    [
+      "泥浆洗净后 BOSS 现出原形（白色大蠕虫）。",
+      "After washing, the boss reveals its true form (a large white worm)."
+    ],
+    [
+      "不要盲目冲上去砍，保持距离引诱它张嘴——张嘴左右摇晃时，嘴里红紫色发光球体（核心）随之暴露。",
+      "Don't blindly rush in to slash — keep your distance and bait it into opening its mouth; as it sways side to side with its mouth open, the red-purple glowing orb (core) inside is exposed."
+    ],
+    [
+      "击晕并疯狂输出",
+      "Stun it and unleash damage"
+    ],
+    [
+      "射击核心：张嘴瞬间立刻用弓箭直接射击嘴里的紫色核心。",
+      "Shoot the core: the instant its mouth opens, shoot the purple core inside directly with your bow."
+    ],
+    [
+      "近战输出：核心中弹后 BOSS 陷入大硬直瘫倒在地，立刻冲上去用双手重武器对着核心疯狂输出。",
+      "Melee damage: once the core is hit, the boss collapses in a huge stagger — immediately rush in and attack the core furiously with a two-handed heavy weapon."
+    ],
+    [
+      "无限循环：起身后它缩回地下并重刷淤泥，重复「洗泥浆 → 等张嘴 → 射核心 → 输出」，一般 2～3 轮即可击杀。",
+      "Endless loop: after it gets up, it retreats underground and re-coats itself in sludge; repeat \"wash sludge → wait for mouth → shoot core → damage\" — usually 2–3 rounds is enough for the kill."
+    ],
+    [
+      "⚠ 战场生存要点",
+      "⚠ Battlefield survival points"
+    ],
+    [
+      "水盾走位：希多水盾不仅能攻击，还能抵挡一次任意伤害，CD好了就补盾。",
+      "Water shield positioning: Sidon's water shield not only attacks, it also blocks any one hit — reapply it as soon as its cooldown ends."
+    ],
+    [
+      "清除地面淤泥：战场淤泥会严重减速，用希多水波或水之果清理出一条干净跑道。",
+      "Clear ground sludge: battlefield sludge slows you severely — use Sidon's water waves or Splash Fruit to clear a clean path."
+    ],
+    [
+      "躲避泥浆弹：洗净后若长时间不射核心，BOSS 会向前方吐出三发高威力泥浆弹，横向奔跑躲避。",
+      "Dodge sludge shots: after washing, if you don't shoot the core for a long time, the boss spits three high-power sludge shots forward — run sideways to dodge."
+    ],
+    [
+      "💎 蛋白石",
+      "💎 Opal"
+    ],
+    [
+      "🟢 怪物素材",
+      "🟢 Monster materials"
+    ],
+    [
+      "💧 水属性（逼出本体）",
+      "💧 Water attribute (force out its true form)"
+    ],
+    [
+      "🐙 小章鱼本体（近战击晕）",
+      "🐙 Small octopus true form (melee stun)"
+    ],
+    [
+      "🏹 空中林克时间（二阶段）",
+      "🏹 Midair bullet time (phase 2)"
+    ],
+    [
+      "核心机制：水属性逼出小章鱼本体 → 近战击晕翻倒 → 疯狂输出。二阶段满地淤泥，用空中林克时间远程洗澡解决。",
+      "Core mechanic: water forces out the small octopus true form → melee stun knocks it over → unleash damage. In phase 2 the ground is covered in sludge — wash it down from midair with bullet time."
+    ],
+    [
+      "一阶段：轻松压制",
+      "Phase 1: Easy suppression"
+    ],
+    [
+      "破除泥浆鲨鱼：BOSS 裹着泥浆像鲨鱼在地下游动。靠近希多对话套上水盾后挥武器砍出水波，或弓箭附魔水之果 / 丘丘胶射它，直接把它从泥浆里洗出来。",
+      "Break the sludge shark: the boss, coated in sludge, swims underground like a shark. Talk to Sidon to gain the water shield, then swing your weapon to send water waves, or shoot it with Splash Fruit / Chuchu Jelly fused arrows, washing it straight out of the sludge."
+    ],
+    [
+      "追击小章鱼：失去泥浆后它变成慌乱逃跑的小章鱼，立刻追上去砍一刀，它会陷入大硬直（肚皮朝天翻倒）。",
+      "Chase the little octopus: without its sludge it becomes a panicked fleeing octopus — chase it and land one hit, and it falls into a huge stagger (flipped belly-up)."
+    ],
+    [
+      "疯狂输出：趁它倒地换上面板最高的双手武器大风车疯狂输出。重复 2 次左右即可进入二阶段。",
+      "Unleash damage: while it lies down, switch to your highest-attack two-handed weapon and whirlwind-spin furiously. Repeat about twice to enter phase 2."
+    ],
+    [
+      "疯狂输出：趁它倒地换上面板最高的双手武器大风车疯狂输出。",
+      "Unleash damage: while it lies down, switch to your highest-attack two-handed weapon and whirlwind-spin furiously."
+    ],
+    [
+      "重复 2 次左右即可进入二阶段。",
+      "Repeat about twice to enter phase 2."
+    ],
+    [
+      "二阶段：全屏淤泥（核心难点）",
+      "Phase 2: Screen-wide sludge (the core difficulty)"
+    ],
+    [
+      "局面说明：血量过半后 BOSS 跳回中央并在全场铺满淤泥，移动速度极快且疯狂跳跃，地面行动受到严重限制。",
+      "Situation: below half HP, the boss jumps back to the center and covers the whole arena in sludge; it moves extremely fast and leaps wildly, severely limiting ground movement."
+    ],
+    [
+      "空中林克时间（强烈推荐）： · 盾牌融合炸弹花 / 火箭，按住 ZL 盾防并起跳，直接飞向高空。 · 在空中拉弓触发慢动作（林克时间），弓箭附魔水之果 / 丘丘胶 / 多发弓，从空中往下连续射击。 · 可瞬间清理周围泥浆并把 BOSS 射回小章鱼原形。",
+      "Midair bullet time (strongly recommended): · Fuse a Bomb Flower / rocket to your shield, hold ZL to guard and jump, flying straight up high. · Draw your bow midair to trigger slow motion (bullet time), with Splash Fruit / Chuchu Jelly fused arrows / a multi-shot bow, shooting continuously downward from above. · This instantly clears nearby sludge and shoots the boss back into its little-octopus form."
+    ],
+    [
+      "定身输出：落地后再次用林克时间射击逃跑中的小章鱼，倒地后冲上去近战补刀。",
+      "Pinned damage: after landing, use bullet time again to shoot the fleeing octopus; once it falls, rush in for melee follow-ups."
+    ],
+    [
+      "不要盲目追希多：二阶段希多可能被泥浆卡住，用弓箭 + 水之果比找希多效率高得多。",
+      "Don't blindly chase Sidon: in phase 2 Sidon may get stuck in sludge — bow + Splash Fruit is far more efficient than finding Sidon."
+    ],
+    [
+      "清理脚下：被泥浆严重减速时，往自己脚下扔一颗水之果，瞬间清出一片空地。",
+      "Clear your footing: when sludge slows you badly, throw a Splash Fruit at your own feet to instantly clear an open patch."
+    ],
+    [
+      "左纳乌科技：背包里有水龙头胶囊的话，放在战场中央，它会自动喷水持续清理周围泥浆。",
+      "Zonai tech: if you have a Hydrant capsule in your pack, place it at the arena's center — it sprays water automatically, continuously clearing nearby sludge."
+    ],
+    [
+      "🦈 希多的祝福（水球攻击）",
+      "🦈 Sidon's Blessing (water bubble attack)"
+    ],
+    [
+      "🏛 净化水之神殿",
+      "🏛 Purify the Water Temple"
+    ],
+    [
+      "提示：希多的水之力全程既能攻击又能护身，二阶段优先飞到空中用林克时间清场，是最省力的稳定打法。",
+      "Tip: Sidon's water power attacks and protects throughout; in phase 2, flying up and clearing the field with bullet time first is the most effort-saving stable strategy."
+    ],
+    [
+      "雷之神殿",
+      "Lightning Temple"
+    ],
+    [
+      "风沙 / 飞行",
+      "Sandstorm / Flight"
+    ],
+    [
+      "⚡ 雷属性沙化（露珠技能 / 雷击果）",
+      "⚡ Lightning attribute calcification (Riju's skill / Shock Fruit)"
+    ],
+    [
+      "🔥 火属性沙化（炸弹花 / 火之果）",
+      "🔥 Fire attribute calcification (Bomb Flower / Fire Fruit)"
+    ],
+    [
+      "⚔ 沙化变白后近战输出",
+      "⚔ Melee damage after calcification turns it white"
+    ],
+    [
+      "核心机制：BOSS 和小怪常态下极高免伤，必须先用雷属性或火属性攻击使其全身变白（沙化），才能造成正常伤害。",
+      "Core mechanic: the boss and its minions normally take extremely reduced damage — you must first hit them with lightning or fire attacks to turn their whole body white (calcify them) before dealing normal damage."
+    ],
+    [
+      "一阶段：风筝输出",
+      "Phase 1: Kiting damage"
+    ],
+    [
+      "雷电破防：BOSS 在地上冲锋或发射龙卷风时，一边侧向奔跑躲避，一边靠近露珠。等她的雷电圈扩大包裹住 BOSS 时，用弓箭射击 BOSS 任意部位触发落雷。",
+      "Lightning defense break: while the boss charges on the ground or fires tornadoes, run sideways to dodge while approaching Riju. When her lightning ring expands to envelop the boss, shoot any part of the boss with your bow to trigger a lightning strike."
+    ],
+    [
+      "雷电破防：BOSS 在地上冲锋或发射龙卷风时，一边侧向奔跑躲避，一边靠近露珠。",
+      "Lightning defense break: while the boss charges on the ground or fires tornadoes, run sideways to dodge while approaching Riju."
+    ],
+    [
+      "等她的雷电圈扩大包裹住 BOSS 时，用弓箭射击 BOSS 任意部位触发落雷。",
+      "When her lightning ring expands to envelop the boss, shoot any part of the boss with your bow to trigger a lightning strike."
+    ],
+    [
+      "变白硬直：受到雷击后女王全身变白瘫倒在地。立刻冲上去用伤害最高的武器疯狂输出。",
+      "White stagger: after the lightning strike, the queen turns white all over and collapses. Immediately rush in and attack furiously with your highest-damage weapon."
+    ],
+    [
+      "循环：起身后女王扇翅飞走，重复「露珠雷电破防 → 变白 → 输出」2～3 次，即可将其打入二阶段（血量过半）。",
+      "Loop: after she gets up, the queen flaps her wings and flies off; repeat \"Riju lightning defense break → turn white → damage\" 2–3 times to push her into phase 2 (below half HP)."
+    ],
+    [
+      "二阶段：拆除巢穴（核心难点）",
+      "Phase 2: Demolish the nests (the core difficulty)"
+    ],
+    [
+      "局面说明：战场四周 4 个紫色吉波得巢穴（柱子） 开始发光并不断孵化大量爬行和飞行吉波得，场面极度混乱。",
+      "Situation: the 4 purple Gibdo nests (pillars) around the arena start glowing and constantly hatch masses of crawling and flying Gibdos — total chaos."
+    ],
+    [
+      "拆迁流打法（强烈推荐）",
+      "Demolition strategy (strongly recommended)"
+    ],
+    [
+      "优先拆柱子：无视 BOSS！等巢穴柱子中心发出紫红色光（可破坏状态）时，开启露珠雷电用弓箭射击发光中心，或弓箭附魔炸弹花射击——一击即可彻底炸毁巢穴。",
+      "Prioritize the pillars: ignore the boss! When a nest pillar's center glows purple-red (destructible state), activate Riju's lightning and shoot the glowing center with your bow, or shoot it with a Bomb Flower fused arrow — one hit completely destroys the nest."
+    ],
+    [
+      "优先拆柱子：无视 BOSS！",
+      "Prioritize the pillars: ignore the boss!"
+    ],
+    [
+      "等巢穴柱子中心发出紫红色光（可破坏状态）时，开启露珠雷电用弓箭射击发光中心，或弓箭附魔炸弹花射击——一击即可彻底炸毁巢穴。",
+      "When a nest pillar's center glows purple-red (destructible state), activate Riju's lightning and shoot the glowing center with your bow, or shoot it with a Bomb Flower fused arrow — one hit completely destroys the nest."
+    ],
+    [
+      "利用光柱杀怪：巢穴被炸毁后天花板漏下圣洁光柱。普通吉波得小怪走近光柱会直接沙化自焚，站在光柱里小怪根本不敢靠近。",
+      "Use light pillars to kill minions: after a nest is destroyed, a holy light pillar leaks down from the ceiling. Ordinary Gibdo minions that approach the pillar calcify and self-immolate on the spot; standing inside a pillar, minions won't dare approach."
+    ],
+    [
+      "利用光柱杀怪：巢穴被炸毁后天花板漏下圣洁光柱。",
+      "Use light pillars to kill minions: after a nest is destroyed, a holy light pillar leaks down from the ceiling."
+    ],
+    [
+      "普通吉波得小怪走近光柱会直接沙化自焚，站在光柱里小怪根本不敢靠近。",
+      "Ordinary Gibdo minions that approach the pillar calcify and self-immolate on the spot; standing inside a pillar, minions won't dare approach."
+    ],
+    [
+      "决战女王：拆完 4 个柱子清完杂兵后，女王孤立无援。她会频繁释放激光和多个龙卷风，走位绕到侧面，继续用露珠雷电 + 弓箭打进硬直，上去补刀即可收尾。",
+      "Final battle with the queen: after demolishing all 4 pillars and clearing the minions, the queen is isolated. She fires lasers and multiple tornadoes frequently — position yourself to her side, keep using Riju's lightning + bow to force stagger, then finish her with follow-ups."
+    ],
+    [
+      "决战女王：拆完 4 个柱子清完杂兵后，女王孤立无援。",
+      "Final battle with the queen: after demolishing all 4 pillars and clearing the minions, the queen is isolated."
+    ],
+    [
+      "她会频繁释放激光和多个龙卷风，走位绕到侧面，继续用露珠雷电 + 弓箭打进硬直，上去补刀即可收尾。",
+      "She fires lasers and multiple tornadoes frequently — position yourself to her side, keep using Riju's lightning + bow to force stagger, then finish her with follow-ups."
+    ],
+    [
+      "⚡ 露珠的祝福（雷电能力）",
+      "⚡ Riju's Blessing (lightning ability)"
+    ],
+    [
+      "🏛 净化雷之神殿",
+      "🏛 Purify the Lightning Temple"
+    ],
+    [
+      "注意：二阶段切勿被小怪群围攻——拆柱子优先级高于一切，光柱是最好的防守阵地。金属武器在雷电场景下会引雷，飞行阶段备足箭矢。",
+      "Note: in phase 2, never let the minion swarm surround you — demolishing pillars outranks everything, and light pillars are the best defensive position. Metal weapons attract lightning in lightning scenarios; stock up on arrows for the flying phase."
+    ],
+    [
+      "注意：二阶段切勿被小怪群围攻——拆柱子优先级高于一切，光柱是最好的防守阵地。",
+      "Note: in phase 2, never let the minion swarm surround you — demolishing pillars outranks everything, and light pillars are the best defensive position."
+    ],
+    [
+      "金属武器在雷电场景下会引雷，飞行阶段备足箭矢。",
+      "Metal weapons attract lightning in lightning scenarios; stock up on arrows for the flying phase."
+    ],
+    [
+      "魂之神殿",
+      "Spirit Temple"
+    ],
+    [
+      "物理 / 瘴气",
+      "Physical / Gloom"
+    ],
+    [
+      "⚡ 场地四周通电铁丝网",
+      "⚡ Electrified wire fences around the arena"
+    ],
+    [
+      "🛡 盾反后组合拳推入电网",
+      "🛡 Push it into the electric fence with combo punches after a Perfect Guard"
+    ],
+    [
+      "💣 大炮（直接轰入电网）",
+      "💣 Cannon (blast it straight into the fence)"
+    ],
+    [
+      "核心机制：普通攻击无法有效伤害 BOSS。必须通过连续攻击或盾反不断将其往后推，直到撞上场地四周的通电铁丝网，触电造成极高伤害并使其瘫痪。",
+      "Core mechanic: normal attacks can't effectively hurt the boss. You must keep pushing it backward with consecutive attacks or parries until it hits the electrified wire fences around the arena — electrocution deals extremely high damage and paralyzes it."
+    ],
+    [
+      "核心机制：普通攻击无法有效伤害 BOSS。",
+      "Core mechanic: normal attacks can't effectively hurt the boss."
+    ],
+    [
+      "必须通过连续攻击或盾反不断将其往后推，直到撞上场地四周的通电铁丝网，触电造成极高伤害并使其瘫痪。",
+      "You must keep pushing it backward with consecutive attacks or parries until it hits the electrified wire fences around the arena — electrocution deals extremely high damage and paralyzes it."
+    ],
+    [
+      "战前极速组装（非常关键）",
+      "Pre-battle rapid assembly (crucial)"
+    ],
+    [
+      "开局前务必给魔像装好以下配件： · 左手 / 右手：强烈建议安装大炮或铁球 / 刺球。 · 后背：安装火箭或风扇（用于二阶段起飞或快速位移）。",
+      "Before the fight starts, be sure to fit your Construct with these parts: · Left / right hand: a cannon or iron ball / spiked ball is strongly recommended. · Back: a rocket or fan (for phase-2 takeoff or fast movement)."
+    ],
+    [
+      "一阶段：无脑盾反流",
+      "Phase 1: Brainless Perfect Guard strategy"
+    ],
+    [
+      "按住 ZL 防御：开局不要主动乱出拳，按住 ZL 摆出防御姿势，稳步向 BOSS 靠近。",
+      "Hold ZL to guard: don't throw wild punches at the start — hold ZL in a guard stance and steadily approach the boss."
+    ],
+    [
+      "完美格挡（盾反）：BOSS 抬手挥拳瞬间按下 A 键盾反，成功后 BOSS 陷入身体失衡短暂硬直。",
+      "Perfect guard (Perfect Guard): press A to Perfect Guard the instant the boss raises its hand to punch; on success the boss loses balance in a brief stagger."
+    ],
+    [
+      "组合拳推入电网：趁硬直立刻左拳→右拳→左拳（L→R→L）交替连击，最后一击强力推击直接将 BOSS 打飞撞上电网，起步扣约 1/4 血。",
+      "Combo punches into the fence: during the stagger, immediately alternate left → right → left (L→R→L) punches; the final powerful push sends the boss flying into the fence, taking about 1/4 of its HP right away."
+    ],
+    [
+      "二阶段：空中飞袭",
+      "Phase 2: Aerial assault"
+    ],
+    [
+      "局面说明：血量过半后 BOSS 后背组装风扇并直接飞到半空中。",
+      "Situation: below half HP, the boss fits a fan on its back and flies straight up into midair."
+    ],
+    [
+      "打落长空（二选一）： · 方法 A（最省事）：手有大炮直接在地面瞄准空中轰一炮，BOSS 直接坠机摔倒。 · 方法 B（滞空对决）：启动背上火箭或风扇跟着飞上天，在空中飞过去给它一拳砸下来。",
+      "Knock it out of the sky (choose one): · Method A (easiest): with a cannon, aim from the ground and fire one shot — the boss crashes down. · Method B (midair duel): activate your back rocket or fan to fly up after it, fly over, and punch it down."
+    ],
+    [
+      "躲避激光：它在空中发射激光时，保持横向移动或按住防御即可。",
+      "Dodge lasers: while it fires lasers midair, keep moving sideways or hold guard."
+    ],
+    [
+      "落地痛扁：从空中打落后必定大硬直，立刻冲上去继续组合拳推入电网。重复 2 次即可彻底拆毁叛变魔像。",
+      "Beat it down after landing: knocking it out of the air always causes a huge stagger — immediately rush in and keep combo-punching it into the fence. Repeat twice to completely dismantle the rogue Construct."
+    ],
+    [
+      "落地痛扁：从空中打落后必定大硬直，立刻冲上去继续组合拳推入电网。",
+      "Beat it down after landing: knocking it out of the air always causes a huge stagger — immediately rush in and keep combo-punching it into the fence."
+    ],
+    [
+      "重复 2 次即可彻底拆毁叛变魔像。",
+      "Repeat twice to completely dismantle the rogue Construct."
+    ],
+    [
+      "🤖 米涅鲁的祝福（魔像之力）",
+      "🤖 Mineru's Blessing (Construct power)"
+    ],
+    [
+      "🏛 净化魂之神殿",
+      "🏛 Purify the Spirit Temple"
+    ],
+    [
+      "提示：战前组装配件是胜负关键——大炮让两个阶段都变得简单无脑。盾反节奏不熟时可先用大炮偷鸡，熟悉后再练盾反组合拳。",
+      "Tip: pre-battle part assembly decides victory — cannons make both phases simple and brainless. If you haven't learned Perfect Guard timing, cheese with the cannon first, then practice Perfect Guard combos once familiar."
+    ],
+    [
+      "提示：战前组装配件是胜负关键——大炮让两个阶段都变得简单无脑。",
+      "Tip: pre-battle part assembly decides victory — cannons make both phases simple and brainless."
+    ],
+    [
+      "盾反节奏不熟时可先用大炮偷鸡，熟悉后再练盾反组合拳。",
+      "If you haven't learned Perfect Guard timing, cheese with the cannon first, then practice Perfect Guard combos once familiar."
+    ],
+    [
+      "城堡 1打5 / 野外单挑",
+      "Castle 1-vs-5 / solo field fights"
+    ],
+    [
+      "城堡/野外",
+      "Castle / field"
+    ],
+    [
+      "瘴气",
+      "Gloom"
+    ],
+    [
+      "💣 炸弹花附魔箭（城堡群战）",
+      "💣 Bomb Flower fused arrows (castle group fight)"
+    ],
+    [
+      "🗡 完美闪避突击（单挑）",
+      "🗡 Perfect-dodge Flurry Rush (solo)"
+    ],
+    [
+      "🏹 弓箭爆头打断蓄力",
+      "🏹 Bow headshot to interrupt charges"
+    ],
+    [
+      "城堡主线：1打5分身流（海拉鲁城堡）",
+      "Castle main quest: 1-vs-5 clone strategy (Hyrule Castle)"
+    ],
+    [
+      "同时面对 5 个手持不同武器的幻影加侬，千万不要在地面硬刚，会被围殴到死。",
+      "Facing 5 Phantom Ganons wielding different weapons at once, never fight them head-on on the ground — they will swarm you to death."
+    ],
+    [
+      "逃票打法：高空爆头流（最推荐）",
+      "Cheese strategy: high-altitude headshot strategy (most recommended)"
+    ],
+    [
+      "准备：带上多发弓（兽神弓 / 大鹫弓），背包装满炸弹花。",
+      "Prepare: bring a multi-shot bow (Savage Lynel Bow / Great Eagle Bow) and fill your pack with Bomb Flowers."
+    ],
+    [
+      "起飞：用火箭盾 / 炸弹花盾，或踩梯子 / 高台跳下，直接飞向半空。",
+      "Take off: use a rocket shield (hold ZL and jump) or a Bomb Flower shield (shield-surf with ZL + X + A), or step off a ladder / high platform, flying straight into midair."
+    ],
+    [
+      "空中林克时间：掏出弓箭触发慢动作，附魔炸弹花对着挤堆的 5 个分身疯狂连射，范围伤害将他们全部炸飞炸晕、完全无法还手。",
+      "Midair bullet time: draw your bow to trigger slow motion, fuse Bomb Flowers, and fire wildly at the 5 clustered clones — the area damage blasts them all flying and stunned, completely unable to fight back."
+    ],
+    [
+      "循环：落地后立刻换一面火箭盾再次升空，重复 2～3 轮即可轻松清场。",
+      "Loop: after landing, immediately swap to another rocket shield and launch again; 2–3 rounds easily clears the field."
+    ],
+    [
+      "野外单挑：完美闪避突击流",
+      "Solo field fight: perfect-dodge Flurry Rush strategy"
+    ],
+    [
+      "击败野外瘴气之手后蹦出的单个幻影加侬，完美闪避触发突击是最优雅省武器的打法。他会根据手中武器交替使用三种攻击：",
+      "Against the single Phantom Ganon that pops out after defeating a field Gloom Spawn, triggering a Flurry Rush with a perfect dodge is the most elegant, weapon-saving strategy. It alternates three attacks depending on its weapon:"
+    ],
+    [
+      "击败野外瘴气之手后蹦出的单个幻影加侬，完美闪避触发突击是最优雅省武器的打法。",
+      "Against the single Phantom Ganon that pops out after defeating a field Gloom Spawn, triggering a Flurry Rush with a perfect dodge is the most elegant, weapon-saving strategy."
+    ],
+    [
+      "他会根据手中武器交替使用三种攻击：",
+      "It alternates three attacks depending on its weapon:"
+    ],
+    [
+      "剑",
+      "Sword"
+    ],
+    [
+      "剑形态：瞬移突刺 / 横劈 前兆：微微低头后瞬间消失。 · 现身时剑架腰间横摆：按住 ZL + 连按两下【后跳】触发突击。 · 现身时高举下劈：按住 ZL + 连按两下【侧跳】触发突击。",
+      "Sword form: teleport thrust / horizontal slash. Tell: it lowers its head slightly, then instantly vanishes. · When it reappears with its sword held sideways at its waist: hold ZL + jump backward (one jump, stick in the dodge direction) to trigger a Flurry Rush. · When it reappears raising its sword for a downward chop: hold ZL + side-jump once (stick in the dodge direction) to trigger a Flurry Rush."
+    ],
+    [
+      "枪",
+      "Spear"
+    ],
+    [
+      "长枪形态：直线冲锋 前兆：长枪横于身后、身体前倾，拉出红色瘴气残影直线冲刺。 应对：冲到面前瞬间按住 ZL + 向左/右【侧跳】——最容易触发突击的一招。",
+      "Spear form: straight charge. Tell: spear held horizontally behind it, body leaning forward, trailing red Gloom afterimages in a straight dash. Counter: the instant it reaches you, hold ZL + side-jump left / right — the easiest move to trigger a Flurry Rush with."
+    ],
+    [
+      "斧",
+      "Axe"
+    ],
+    [
+      "大剑形态：蓄力大风车 前兆：高举大剑原地蓄力，准备 360° 瘴气旋风斩。 应对：判定范围极大，不建议尝试闪避。看到蓄力立刻向后跑拉开距离，或弓箭附魔吉波得之骨 / 炸弹花直接射脸打断蓄力并让他跪地。",
+      "Greatsword form: charged whirlwind. Tell: it raises the greatsword high and charges in place, preparing a 360° Gloom whirlwind slash. Counter: its hitbox is enormous — dodging is not recommended. The moment you see it charge, run backward to create distance, or shoot its face with a Gibdo Bone / Bomb Flower fused arrow to interrupt the charge and make it kneel."
+    ],
+    [
+      "驱散瘴气：幻影加侬走过的地方留有瘴气，提前烹饪向阳草料理（3个向阳草+2个苹果）用于回复被瘴气扣除的心心上限。",
+      "Dispel Gloom: Phantom Ganon leaves Gloom where it walks — cook Sundelion meals in advance (3 Sundelions + 2 apples) to restore maximum hearts lost to Gloom."
+    ],
+    [
+      "贤者干扰：召唤全部五位贤者，虽然输出不高，但能吸引 2～3 个分身仇恨，极大缓解生存压力。",
+      "Sage interference: summon all five Sages — their damage is low, but they draw the aggression of 2–3 clones, greatly easing survival pressure."
+    ],
+    [
+      "🏹 魔王之弓（血量越高面板伤害越高）",
+      "🏹 Demon King's Bow (higher HP means higher listed damage)"
+    ],
+    [
+      "🗡 瘴气之剑 / 大剑",
+      "🗡 Gloom Sword / Gloom Claymore"
+    ],
+    [
+      "瘴气武器使用技巧：瘴气武器直接使用会扣血，但可用余料建造把它们融在普通武器枪头上——既获得高攻击力又不扣血！",
+      "Gloom weapon tip: using Gloom weapons directly drains your health, but you can Fuse them onto the head of a normal spear — gaining high attack without losing health!"
+    ],
+    [
+      "三阶段",
+      "Three phases"
+    ],
+    [
+      "人形 / 秘石 / 黑龙",
+      "Humanoid / Secret Stone / Demon Dragon"
+    ],
+    [
+      "海拉鲁地底",
+      "Hyrule Depths"
+    ],
+    [
+      "瘴气 / 全属性",
+      "Gloom / All attributes"
+    ],
+    [
+      "⚠ 战前绝对核心准备",
+      "⚠ Absolutely core pre-battle preparations"
+    ],
+    [
+      "向阳草料理：加侬的瘴气攻击会打碎心心上限。用向阳草 + 金苹果 / 肉大量烹饪「恢复被碎心心」料理，备足全程消耗。",
+      "Sundelion meals: Ganon's Gloom attacks shatter your maximum hearts. Cook large quantities of \"restore shattered hearts\" meals with Sundelions + Golden Apples / meat, enough for the whole fight."
+    ],
+    [
+      "向阳草料理：加侬的瘴气攻击会打碎心心上限。",
+      "Sundelion meals: Ganon's Gloom attacks shatter your maximum hearts."
+    ],
+    [
+      "用向阳草 + 金苹果 / 肉大量烹饪「恢复被碎心心」料理，备足全程消耗。",
+      "Cook large quantities of \"restore shattered hearts\" meals with Sundelions + Golden Apples / meat, enough for the whole fight."
+    ],
+    [
+      "高攻武器：多准备几把白银莱尼尔刃角余料建造的武器。大师之剑此战不增伤但绝不破损，是稳定主力。",
+      "High-attack weapons: prepare several weapons fused with Silver Lynel horns. The Master Sword gains no bonus damage in this fight but never breaks, making it a reliable main weapon."
+    ],
+    [
+      "高攻武器：多准备几把白银莱尼尔刃角余料建造的武器。",
+      "High-attack weapons: prepare several weapons fused with Silver Lynel horns."
+    ],
+    [
+      "大师之剑此战不增伤但绝不破损，是稳定主力。",
+      "The Master Sword gains no bonus damage in this fight but never breaks, making it a reliable main weapon."
+    ],
+    [
+      "升级防具：建议蛮族套装 / 鬼神套装 / 兵士套装升至 3～4 星，否则加侬一刀秒杀。",
+      "Upgraded armor: Barbarian Armor / Fierce Deity Armor / Soldier's Armor upgraded to 3–4 stars is recommended — otherwise Ganon can kill you in one hit."
+    ],
+    [
+      "第一阶段：黑发黑衣人形态（单挑试水）",
+      "Phase 1: Black-haired, black-clad humanoid form (solo test)"
+    ],
+    [
+      "单手剑形态（瞬移冲刺）： · 横劈（剑放腰间）：按住 ZL + 向后跳触发突击。 · 竖劈（高举过头）：按住 ZL + 向左/右侧跳触发突击。",
+      "One-handed sword form (teleport dash): · Horizontal slash (sword at waist): hold ZL + jump backward to trigger a Flurry Rush. · Vertical slash (raised overhead): hold ZL + side-jump left / right to trigger a Flurry Rush."
+    ],
+    [
+      "长枪形态（直线突刺）：看到他前倾冲来瞬间，按住 ZL + 向左/右侧跳触发突击——最容易抓的一招。",
+      "Spear form (straight thrust): the instant you see him lean forward and rush in, hold ZL + side-jump left / right to trigger a Flurry Rush — the easiest move to catch."
+    ],
+    [
+      "大锤形态（跳跃下劈）：判定极大，不要闪避。看到他跳起立刻向后跑拉距离，或在落地前用弓箭爆头打断。",
+      "Great hammer form (leaping downward chop): enormous hitbox — don't dodge. The moment you see him jump, run backward to create distance, or interrupt him with a bow headshot before he lands."
+    ],
+    [
+      "第二阶段：秘石解放形态（分身围殴）",
+      "Phase 2: Secret Stone unleashed form (clone swarm)"
+    ],
+    [
+      "前半段：分身乱战 · 五位贤者加入战场，让贤者缠住分身，你直接冲向本体（真身血条与其他分身不同）。 · 用第一阶段的闪避打法（抓长枪冲刺或单手剑横劈）强行压低本体血量。",
+      "First half: clone melee · The five Sages join the battle — let the Sages tie up the clones while you charge the true body (its health bar differs from the other clones'). · Use the phase-1 dodge tactics (catching the spear charge or the one-handed sword horizontal slash) to force the true body's HP down."
+    ],
+    [
+      "后半段：红发魔王单挑（核心难点：他也会闪避！） 分身消失后加侬获得超长血条，并学会了完美闪避。",
+      "Second half: red-haired Demon King duel (core difficulty: he dodges too!) After the clones vanish, Ganon gains an extremely long health bar and has learned to perfectly dodge."
+    ],
+    [
+      "二次闪避打法（最优雅）：他闪避你的攻击后向你挥刀时，立刻再次闪避（后跳/侧跳）触发第二次突击——此时他无法再闪避，可直接一套带走。",
+      "Double-dodge strategy (most elegant): after he dodges your attack and swings at you, immediately dodge again (back-jump / side-jump) to trigger a second Flurry Rush — at that point he cannot dodge again, and you can finish him in one combo."
+    ],
+    [
+      "无脑盾反流（最安全）：按住 ZL 盾防，砍中盾牌瞬间按 A 键完美格挡（盾反）。盾反成功后他陷入大硬直，直接连击输出——他绝对无法闪避盾反后的攻击。",
+      "Brainless Perfect Guard strategy (safest): hold ZL to guard; the instant his slash hits your shield, press A for a perfect guard (Perfect Guard). After a successful Perfect Guard he falls into a huge stagger — combo him directly, as he absolutely cannot dodge attacks after a Perfect Guard."
+    ],
+    [
+      "第三阶段：黑龙形态（空战剧情杀）",
+      "Phase 3: Demon Dragon form (aerial scripted battle)"
+    ],
+    [
+      "空中俯冲：骑在白龙（塞尔达）头上，从龙背跳下用滑翔翼调整方向，躲避黑龙吐出的红色光球。",
+      "Aerial dive: riding on the Light Dragon's (Zelda's) head, jump off its back and steer with your paraglider, dodging the red orbs the Demon Dragon spits."
+    ],
+    [
+      "摧毁外壳：黑龙背上有 4 处粉红色秘石弱点，直接俯冲降落到弱点上，用普通武器砍 2～3 下破坏一处。每破坏一处会被弹飞，白龙必定从下方接住你。",
+      "Destroy the shell: the Demon Dragon's back has 4 pink Secret Stone weak points — dive straight down onto a weak point and hack it 2–3 times with a normal weapon to destroy it. Each destruction bounces you off, and the Light Dragon always catches you from below."
+    ],
+    [
+      "摧毁外壳：黑龙背上有 4 处粉红色秘石弱点，直接俯冲降落到弱点上，用普通武器砍 2～3 下破坏一处。",
+      "Destroy the shell: the Demon Dragon's back has 4 pink Secret Stone weak points — dive straight down onto a weak point and hack it 2–3 times with a normal weapon to destroy it."
+    ],
+    [
+      "每破坏一处会被弹飞，白龙必定从下方接住你。",
+      "Each destruction bounces you off, and the Light Dragon always catches you from below."
+    ],
+    [
+      "终结一击：破坏全部 4 个弱点后，黑龙头部彻底暴露。俯冲到额头上对着巨大秘石疯狂按 A 键，用大师之剑将其击碎，迎来通关 CG！",
+      "Finishing blow: after destroying all 4 weak points, the Demon Dragon's head is fully exposed. Dive onto its forehead and mash A against the giant Secret Stone, shattering it with the Master Sword, and watch the ending CG!"
+    ],
+    [
+      "终结一击：破坏全部 4 个弱点后，黑龙头部彻底暴露。",
+      "Finishing blow: after destroying all 4 weak points, the Demon Dragon's head is fully exposed."
+    ],
+    [
+      "俯冲到额头上对着巨大秘石疯狂按 A 键，用大师之剑将其击碎，迎来通关 CG！",
+      "Dive onto its forehead and mash A against the giant Secret Stone, shattering it with the Master Sword, and watch the ending CG!"
+    ],
+    [
+      "🎁 通关奖励",
+      "🎁 Completion rewards"
+    ],
+    [
+      "🏆 通关游戏 · 真结局",
+      "🏆 Complete the game · True ending"
+    ],
+    [
+      "⭐ 通关存档标记",
+      "⭐ Completion save marker"
+    ],
+    [
+      "终极提示：满心心、大量向阳草料理、白银莱尼尔角武器、防具3～4星——做好这四件事，魔王加侬多夫就没有你打不过的理由。",
+      "Ultimate tip: full hearts, plenty of Sundelion meals, Silver Lynel horn weapons, and 3–4 star armor — do these four things, and there is no reason you can't beat Demon King Ganondorf."
+    ],
+    [
+      "莱尼尔",
+      "Lynel"
+    ],
+    [
+      "红褐/青/白鬃/白银",
+      "Red / Blue / White-Maned / Silver"
+    ],
+    [
+      "🏹 脸部爆头（跪地硬直）",
+      "🏹 Face headshot (kneeling stagger)"
+    ],
+    [
+      "🐎 骑马白嫖输出",
+      "🐎 Mounted free damage"
+    ],
+    [
+      "🛡 盾反后近距爆头",
+      "🛡 Close-range headshot after Perfect Guard"
+    ],
+    [
+      "⚙ 战前最强骑马专用武器准备",
+      "⚙ Prepare the strongest dedicated mounted weapon before battle"
+    ],
+    [
+      "准备武器：找一把近卫双手剑，在武器前端余料建造面板最高的材料（白银莱尼尔刃角 / 吉波得之骨 / 独眼巨人肝脏）。",
+      "Prepare the weapon: find a Royal Guard's Claymore and Fuse the highest-attack material to its front (Silver Lynel Saber Horn / Gibdo Bone / Hinox Guts)."
+    ],
+    [
+      "故意用坏：在地上乱砍直到屏幕提示「武器快要破损了」——此时近卫双手剑触发特殊效果，伤害直接翻倍。",
+      "Deliberately wear it down: slash randomly on the ground until the screen warns \"weapon is about to break\" — the Royal Guard's Claymore then triggers its special effect, doubling its damage."
+    ],
+    [
+      "📖 核心打法：无脑骑马流",
+      "📖 Core strategy: brainless mounting strategy"
+    ],
+    [
+      "空中爆头（最简单）",
+      "Midair headshot (easiest)"
+    ],
+    [
+      "飞天：地上放弹簧，或用火箭盾 / 炸弹花盾原地飞天。",
+      "Fly: place a spring on the ground, or use a rocket shield (hold ZL and jump) or a Bomb Flower shield (shield-surf with ZL + X + A) to launch on the spot."
+    ],
+    [
+      "空中爆头：在空中掏出弓箭触发林克时间，瞄准人马脸部（胡须和眼睛附近）射击。听到「叮」的脆响，人马双膝跪地瘫痪数秒。",
+      "Midair headshot: draw your bow midair to trigger bullet time and shoot the Lynel's face (near its beard and eyes). On hearing the crisp \"ding\", the Lynel drops to both knees, paralyzed for several seconds."
+    ],
+    [
+      "空中爆头：在空中掏出弓箭触发林克时间，瞄准人马脸部（胡须和眼睛附近）射击。",
+      "Midair headshot: draw your bow midair to trigger bullet time and shoot the Lynel's face (near its beard and eyes)."
+    ],
+    [
+      "听到「叮」的脆响，人马双膝跪地瘫痪数秒。",
+      "On hearing the crisp \"ding\", the Lynel drops to both knees, paralyzed for several seconds."
+    ],
+    [
+      "上马白嫖：收弓落地解除锁定，冲到人马身侧按 A 键骑上，掏出那把快要折断的近卫双手剑，疯狂按 Y 键连砍 3～6 刀。",
+      "Free mounted damage: put your bow away, land, release lock-on, rush to the Lynel's side, press A to mount, draw that nearly broken Royal Guard's Claymore, and mash Y for up to 5 hits."
+    ],
+    [
+      "下马补刀：被甩下时系统触发空中慢动作，立刻拉弓对着后脑勺再补 2～3 发爆头箭。",
+      "Dismount follow-ups: when thrown off, the game triggers midair slow motion — immediately draw your bow and fire 2–3 more headshot arrows at the back of its head."
+    ],
+    [
+      "循环：落地后立刻再次飞天，重复整套流程直至击杀。",
+      "Loop: after landing, immediately fly up again and repeat the whole routine until the kill."
+    ],
+    [
+      "地面招式应对（无飞天道具时）",
+      "Ground move counters (without flight items)"
+    ],
+    [
+      "盾反爆头（抓近战）：横劈 / 砸地 / 冲撞时按住 ZL 防御，武器快砸中盾的瞬间按 A 键完美格挡。盾反后立刻掏弓近距离爆头，人马直接跪倒，可骑马输出。",
+      "Perfect Guard headshot (catch melee): during horizontal slashes / ground slams / charges, hold ZL to guard and press A for a perfect guard the instant the weapon is about to hit your shield. Right after the Perfect Guard, draw your bow for a close-range headshot — the Lynel kneels directly, ready for mounted damage."
+    ],
+    [
+      "盾反爆头（抓近战）：横劈 / 砸地 / 冲撞时按住 ZL 防御，武器快砸中盾的瞬间按 A 键完美格挡。",
+      "Perfect Guard headshot (catch melee): during horizontal slashes / ground slams / charges, hold ZL to guard and press A for a perfect guard the instant the weapon is about to hit your shield."
+    ],
+    [
+      "盾反后立刻掏弓近距离爆头，人马直接跪倒，可骑马输出。",
+      "Right after the Perfect Guard, draw your bow for a close-range headshot — the Lynel kneels directly, ready for mounted damage."
+    ],
+    [
+      "侧跳突击（抓冲锋）：人马四足着地直线冲来时，按住 ZL + 连按两下【侧跳】触发突击连击。（建议盾反爆头骑马，更省武器耐久）",
+      "Side-jump Flurry Rush (catch charges): when the Lynel charges straight at you on all fours, hold ZL + side-jump once (stick in the dodge direction) to trigger a Flurry Rush combo. (Perfect Guard-headshot-mount is recommended instead — it saves more weapon durability.)"
+    ],
+    [
+      "躲避火球：人马后跳蓄力吐出 3 发大火球时，不要盾反或闪避，直接朝左或右疯狂奔跑——火球飞行慢，横向跑绝对砸不中。3 发吐完后原地喘气，是拉弓爆头的绝佳时机。",
+      "Dodge fireballs: when the Lynel jumps back, charges, and spits 3 large fireballs, don't Perfect Guard or dodge — just run furiously left or right. The fireballs fly slowly, so running sideways absolutely avoids them. After all 3 are spat, it pants in place — a perfect moment to draw your bow for a headshot."
+    ],
+    [
+      "躲避火球：人马后跳蓄力吐出 3 发大火球时，不要盾反或闪避，直接朝左或右疯狂奔跑——火球飞行慢，横向跑绝对砸不中。",
+      "Dodge fireballs: when the Lynel jumps back, charges, and spits 3 large fireballs, don't Perfect Guard or dodge — just run furiously left or right. The fireballs fly slowly, so running sideways absolutely avoids them."
+    ],
+    [
+      "3 发吐完后原地喘气，是拉弓爆头的绝佳时机。",
+      "After all 3 are spat, it pants in place — a perfect moment to draw your bow for a headshot."
+    ],
+    [
+      "🦄 莱尼尔的刃角（高攻融合素材）",
+      "🦄 Lynel Saber Horn (high-attack Fuse material)"
+    ],
+    [
+      "🦷 莱尼尔的蹄",
+      "🦷 Lynel Hoof"
+    ],
+    [
+      "🫀 莱尼尔的肝",
+      "🫀 Lynel Guts"
+    ],
+    [
+      "强度排序：红褐色 → 青色 → 白鬃 → 白银。地底竞技场需连续挑战 5 只不同颜色的莱尼尔（最后一只为白银装甲），是全游戏最高难度的战斗挑战。",
+      "Strength order: Red-Maned → Blue-Maned → White-Maned → Silver. The Depths arena requires fighting 5 Lynels in a row (the last is an armored Silver) — the hardest combat challenge in the game."
+    ],
+    [
+      "强度排序：红褐色 → 青色 → 白鬃 → 白银。",
+      "Strength order: Red → Blue → White-Maned → Silver."
+    ],
+    [
+      "地底竞技场需连续挑战 5 只不同颜色的莱尼尔（最后一只为白银装甲），是全游戏最高难度的战斗挑战。",
+      "The Depths arena requires fighting 5 Lynels in a row (the last is an armored Silver) — the hardest combat challenge in the game."
+    ],
+    [
+      "西诺克斯",
+      "Hinox"
+    ],
+    [
+      "红/蓝/黑 · 骷髅变种",
+      "Red / Blue / Black · Stalnox variants"
+    ],
+    [
+      "👁 独眼（任意弓箭即可跪倒）",
+      "👁 Single eye (any bow arrow makes it kneel)"
+    ],
+    [
+      "⚔ 倒地后脚踝近战大风车",
+      "⚔ Melee whirlwind at its ankles after it falls"
+    ],
+    [
+      "💣 护腿弱点（木质用火/黑色用雷）",
+      "💣 Greave weaknesses (fire for wood / lightning for black)"
+    ],
+    [
+      "核心机制：独眼是唯一绝对弱点，哪怕极低攻击力的箭命中都能触发极长瘫痪硬直，让它捂眼坐倒在地。",
+      "Core mechanic: the single eye is the only absolute weakness — even an extremely low-attack arrow triggers a very long paralysis stagger, making it clutch its eye and sit down."
+    ],
+    [
+      "弓箭爆眼：拉开距离，它走近或举起树木时直接瞄准脸部中央的大眼睛射一箭，听到「叮」声它就往后坐倒。 · 逃票技巧：弓箭附魔蝙蝠的眼睛（或任意怪物眼球），自带自动追踪，朝头顶瞎射一箭就能精准命中独眼。",
+      "Bow eye-shot: keep your distance; when it approaches or lifts a tree, shoot the large eye in the center of its face directly — on hearing the \"ding\" it sits back down. · Cheese tip: fuse a Keese eyeball (or any monster eyeball) to your arrow for built-in auto-tracking — one blind shot overhead hits the single eye precisely."
+    ],
+    [
+      "弓箭爆眼：拉开距离，它走近或举起树木时直接瞄准脸部中央的大眼睛射一箭，听到「叮」声它就往后坐倒。",
+      "Bow eye-shot: keep your distance; when it approaches or lifts a tree, shoot the large eye in the center of its face directly — on hearing the \"ding\" it sits back down."
+    ],
+    [
+      "逃票技巧：弓箭附魔蝙蝠的眼睛（或任意怪物眼球），自带自动追踪，朝头顶瞎射一箭就能精准命中独眼。",
+      "Cheese tip: fuse a Keese eyeball (or any monster eyeball) to your arrow for built-in auto-tracking — one blind shot overhead hits the single eye precisely."
+    ],
+    [
+      "近战修脚：它坐倒捂眼后立刻收弓，冲到两腿之间，换上双手大剑 / 重武器，按住 Y 键「大风车」蓄力回旋斩，顺着脚踝疯狂输出直至血条见底。",
+      "Melee footwork: once it sits clutching its eye, put your bow away, rush between its legs, switch to a two-handed greatsword / heavy weapon, and hold Y for a charged whirlwind spin slash, attacking furiously along its ankles until its HP bottoms out."
+    ],
+    [
+      "顺手牵羊：它坐倒瘫痪时，爬到胸口或在身边连按 A 键，可直接偷走项链上挂着的高品质武器，拿它的武器打它效率更高。",
+      "Snatch it: while it sits paralyzed, climb onto its chest or mash A beside it to steal the high-quality weapon hanging from its necklace — fighting it with its own weapon is more efficient."
+    ],
+    [
+      "⚠ 高级变种与避坑",
+      "⚠ Advanced variants and pitfalls"
+    ],
+    [
+      "带木质护腿（蓝色/黑色常见）：近战弹刀无法伤害。 解法：弓箭附魔炸弹花 / 火之果 / 红丘丘胶射木护腿，木板遇火燃烧并触发二次输出硬直。",
+      "Wooden greaves (common on Blue / Black): melee attacks bounce off harmlessly. Solution: shoot the wooden greaves with Bomb Flower / Fire Fruit / red Chuchu Jelly fused arrows — the boards catch fire, triggering a second damage stagger."
+    ],
+    [
+      "带木质护腿（蓝色/黑色常见）：近战弹刀无法伤害。",
+      "Wooden greaves (common on Blue / Black): melee attacks bounce off harmlessly."
+    ],
+    [
+      "解法：弓箭附魔炸弹花 / 火之果 / 红丘丘胶射木护腿，木板遇火燃烧并触发二次输出硬直。",
+      "Solution: shoot the wooden greaves with Bomb Flower / Fire Fruit / red Chuchu Jelly fused arrows — the boards catch fire, triggering a second damage stagger."
+    ],
+    [
+      "带铁质护腿（黑色常见）：砍不动也烧不掉。 解法：弓箭附魔雷击果 / 黄丘丘胶射铁护腿，电击通过铁板传遍全身触发大范围触电硬直。",
+      "Iron greaves (common on Black): can't be cut or burned. Solution: shoot the iron greaves with Shock Fruit / yellow Chuchu Jelly fused arrows — electricity conducts through the iron across its whole body, triggering a wide-area electrocution stagger."
+    ],
+    [
+      "带铁质护腿（黑色常见）：砍不动也烧不掉。",
+      "Iron greaves (common on Black): can't be cut or burned."
+    ],
+    [
+      "解法：弓箭附魔雷击果 / 黄丘丘胶射铁护腿，电击通过铁板传遍全身触发大范围触电硬直。",
+      "Solution: shoot the iron greaves with Shock Fruit / yellow Chuchu Jelly fused arrows — electricity conducts through the iron across its whole body, triggering a wide-area electrocution stagger."
+    ],
+    [
+      "后期学会「捂眼睛」（黑色高等级）：拉弓时它会用手死死捂眼。 解法：收起弓箭，等它弯腰捡石头或拔树抬手露眼的瞬间立刻拉弓爆头。",
+      "Later learns to \"cover its eyes\" (high-level Black): it clamps its hand over its eye when you draw your bow. Solution: put your bow away and wait for the instant it bends to pick up a rock or raises its arm to uproot a tree, exposing its eye — then draw and headshot immediately."
+    ],
+    [
+      "后期学会「捂眼睛」（黑色高等级）：拉弓时它会用手死死捂眼。",
+      "Later learns to \"cover its eyes\" (high-level Black): it clamps its hand over its eye when you draw your bow."
+    ],
+    [
+      "解法：收起弓箭，等它弯腰捡石头或拔树抬手露眼的瞬间立刻拉弓爆头。",
+      "Solution: put your bow away and wait for the instant it bends to pick up a rock or raises its arm to uproot a tree, exposing its eye — then draw and headshot immediately."
+    ],
+    [
+      "💀 骷髅西诺克斯（夜间限定）",
+      "💀 Stalnox (night only)"
+    ],
+    [
+      "夜间才会复活：白天只是一堆散落骨头，游戏时间晚上 9:00 后才会重新成形。",
+      "Only revives at night: by day it's just a pile of scattered bones, reforming only after 9:00 PM in-game time."
+    ],
+    [
+      "眼球会掉落：血量降至约一半以下时，独眼直接从眼眶里脱落滚到地上。此时攻击身体无法击杀！",
+      "Eyeball drops out: when HP falls below about half, the single eye pops out of its socket and rolls onto the ground. Attacking the body cannot kill it now!"
+    ],
+    [
+      "锁定眼球输出：立刻转火冲向地上滚动的眼球，疯狂砍击直到眼球血条清空才算彻底击杀。",
+      "Focus fire on the eyeball: immediately switch targets and rush the rolling eyeball on the ground, hacking furiously until the eyeball's HP is emptied — only then is it truly dead."
+    ],
+    [
+      "🦶 西诺克斯的脚趾甲",
+      "🦶 Hinox Toenail"
+    ],
+    [
+      "🦷 西诺克斯的牙",
+      "🦷 Hinox Tooth"
+    ],
+    [
+      "🫀 西诺克斯的肝",
+      "🫀 Hinox Guts"
+    ],
+    [
+      "🎁 项链上的高品质武器",
+      "🎁 High-quality weapon on its necklace"
+    ],
+    [
+      "提示：优先附魔蝙蝠眼球箭省时省力；骷髅种眼球落地后必须砍眼球而非身体，这是最常被忽略的坑。",
+      "Tip: prioritize Keese eyeball fused arrows to save time and effort; after a Stalnox's eyeball lands, you must hit the eyeball, not the body — the most commonly overlooked pitfall."
+    ],
+    [
+      "提示：优先附魔蝙蝠眼球箭省时省力。",
+      "Tip: prioritize Keese eyeball fused arrows to save time and effort."
+    ],
+    [
+      "骷髅种眼球落地后必须砍眼球而非身体，这是最常被忽略的坑。",
+      "After a Stalnox's eyeball lands, you must hit the eyeball, not the body — the most commonly overlooked pitfall."
+    ],
+    [
+      "古栗欧克",
+      "Gleeok"
+    ],
+    [
+      "火 / 冰 / 雷 · 三首王",
+      "Fire / Ice / Lightning · Three-headed king"
+    ],
+    [
+      "⚙ 战前核心准备",
+      "⚙ Core pre-battle preparations"
+    ],
+    [
+      "多发弓（最关键）：带 2～3 把兽神弓（人马弓）或大鹫弓（3发或5发扩散）。单发弓容错率极低。",
+      "Multi-shot bows (most crucial): bring 2–3 Savage Lynel Bows (3-shot, or 5-shot with the modifier) or Great Eagle Bows (3-shot). Single-shot bows are extremely unforgiving."
+    ],
+    [
+      "多发弓（最关键）：带 2～3 把兽神弓（人马弓）或大鹫弓（3发或5发扩散）。",
+      "Multi-shot bows (most crucial): bring 2–3 Savage Lynel Bows (3-shot, or 5-shot with the modifier) or Great Eagle Bows (3-shot)."
+    ],
+    [
+      "单发弓容错率极低。",
+      "Single-shot bows are extremely unforgiving."
+    ],
+    [
+      "怪物眼睛（自动外挂）：大量备好蝙蝠的眼睛或卡克达（飞怪）的眼睛，任何属性均可，是无脑通关的灵丹妙药。",
+      "Monster eyes (auto-aim cheat): stock up on Keese eyes or Aerocuda (flying monster) eyes — any attribute works; they're a miracle cure for brainless clears."
+    ],
+    [
+      "起飞工具：几面火箭盾 / 炸弹花盾，或弹簧胶囊备用。",
+      "Launch tools: several rocket shields or Bomb Flower shields, or spring capsules as backup."
+    ],
+    [
+      "👁 三颗龙头（多发弓+眼球箭同时爆）",
+      "👁 Three dragon heads (burst all at once with multi-shot bow + eyeball arrows)"
+    ],
+    [
+      "⚔ 三头倒地后近战大风车",
+      "⚔ Melee whirlwind after all three heads fall"
+    ],
+    [
+      "🔥 属性克制（火克冰头 / 冰克火头）",
+      "🔥 Attribute counters (fire beats ice heads / ice beats fire heads)"
+    ],
+    [
+      "核心逻辑：在短时间内将 3 个头的血条全部射空，三头同时垂下后产生冲击波摔倒，触发 10～15 秒瘫痪大硬直，趁机近战疯狂输出。",
+      "Core logic: empty all 3 heads' HP bars in a short time — all three heads droop at once, then slam down with a shockwave, triggering a 10–15 second huge paralysis stagger for furious melee damage."
+    ],
+    [
+      "极致压制流（从头到尾下不来）",
+      "Ultimate suppression strategy (never come down from start to finish)"
+    ],
+    [
+      "开局飞天：战斗触发瞬间按住 ZL 防御并起跳，利用火箭盾或弹簧冲上高空。",
+      "Opening launch: the instant the fight starts, hold ZL to guard and jump, rushing high with a rocket shield or spring."
+    ],
+    [
+      "无脑自动爆头：空中掏弓触发林克时间，附魔任意怪物眼睛配合多发弓，朝龙的大体方向瞎射 2～3 箭，3 个头在 2 秒内瞬间全部被射爆。",
+      "Brainless auto-headshots: draw your bow midair to trigger bullet time, fuse any monster eye with a multi-shot bow, and blind-fire 2–3 arrows roughly at the dragon — all 3 heads burst within 2 seconds."
+    ],
+    [
+      "地面大风车：三头龙轰然倒地，立刻收翼俯冲落地，换上最高攻击武器，对着垂地的头按住 Y 键大风车蓄力回旋斩疯狂输出。",
+      "Ground whirlwind: the three-headed dragon crashes down — immediately fold your paraglider, dive to land, switch to your highest-attack weapon, and hold Y for a charged whirlwind spin slash against the drooping heads."
+    ],
+    [
+      "循环锁死：它站起瞬间强风吹飞，立刻再次飞天（掏第二面火箭盾或踩弹簧），空中再射眼睛，重复「爆头 → 倒地 → 输出」，一般 3 个回合可无伤带走。",
+      "Loop lock: the instant it stands, strong wind blows you away — immediately fly up again (draw a second rocket shield or step on a spring), shoot eyes midair again, and repeat \"headshot → fall → damage\" — usually 3 rounds for a damage-free kill."
+    ],
+    [
+      "终极阶段应对（血量低于 1/4 飞入云层）",
+      "Final phase counters (below 1/4 HP, it flies into the clouds)"
+    ],
+    [
+      "火三头龙（乱石流星雨）：巨大火球砸地产生上升气流，立刻开伞顺气流飞上高空与它平齐，一箭射落。从高处摔落会扣巨额血量甚至直接摔死。",
+      "Fire three-headed dragon (rock meteor shower): giant fireballs smash the ground creating updrafts — immediately open your paraglider and ride the updraft up level with it, shooting it down with one arrow. Falling from height costs huge HP or can kill outright."
+    ],
+    [
+      "火三头龙（乱石流星雨）：巨大火球砸地产生上升气流，立刻开伞顺气流飞上高空与它平齐，一箭射落。",
+      "Fire three-headed dragon (rock meteor shower): giant fireballs smash the ground creating updrafts — immediately open your paraglider and ride the updraft up level with it, shooting it down with one arrow."
+    ],
+    [
+      "从高处摔落会扣巨额血量甚至直接摔死。",
+      "Falling from height costs huge HP or can kill outright."
+    ],
+    [
+      "雷三头龙（雷暴闪电阵）：落雷劈地留下持续上升气流，立刻开伞顺气流飞上去爆头。",
+      "Lightning three-headed dragon (thunderstorm lightning array): lightning strikes leave lasting updrafts — immediately open your paraglider and ride the updraft up for a headshot."
+    ],
+    [
+      "冰三头龙（绝对零度冰雹）：被冰柱砸中冻结秒杀。等冰柱落地后跳到冰柱顶端使用「倒转乾坤」，冰柱带你升空，解除后拉弓爆头。",
+      "Ice three-headed dragon (absolute-zero hail): being hit by an ice pillar freezes you for an instant kill. After an ice pillar lands, jump onto its top and use Recall — the pillar carries you up; cancel it, then draw your bow for a headshot."
+    ],
+    [
+      "冰三头龙（绝对零度冰雹）：被冰柱砸中冻结秒杀。",
+      "Ice three-headed dragon (absolute-zero hail): being hit by an ice pillar freezes you for an instant kill."
+    ],
+    [
+      "等冰柱落地后跳到冰柱顶端使用「倒转乾坤」，冰柱带你升空，解除后拉弓爆头。",
+      "After an ice pillar lands, jump onto its top and use Recall — the pillar carries you up; cancel it, then draw your bow for a headshot."
+    ],
+    [
+      "三头分别为火 / 冰 / 雷属性，血量极厚。属性克制：火之果射冰头、冰之果射火头可一击秒杀该头防御。",
+      "Its three heads are fire / ice / lightning attributes, with extremely thick HP. Attribute counters: a Fire Fruit shot at an ice head, or an Ice Fruit at a fire head, can one-shot that head's defense."
+    ],
+    [
+      "三头分别为火 / 冰 / 雷属性，血量极厚。",
+      "Its three heads are fire / ice / lightning attributes, with extremely thick HP."
+    ],
+    [
+      "属性克制：火之果射冰头、冰之果射火头可一击秒杀该头防御。",
+      "Attribute counters: a Fire Fruit shot at an ice head, or an Ice Fruit at a fire head, can one-shot that head's defense."
+    ],
+    [
+      "挑战前推荐拿到卓拉水蛭之王头盔（免疫冻结）或雷鸣头盔（免疫雷击），彻底废掉两个头的威胁。",
+      "Before the challenge, getting the Zora 'King of Leeches' helmet (freeze immunity) or the Thunder Helm (lightning immunity) is recommended, completely neutralizing two heads' threats."
+    ],
+    [
+      "🔥 火焰 / 冰雪 / 雷电盖拉之角",
+      "🔥 Flame / Frost / Thunder Gleeok Horns"
+    ],
+    [
+      "提示：多发弓 + 怪物眼睛是最省力的通关方案，全程无需精准瞄准。盖拉之角是制作最强元素弓箭与融合武器的核心素材。",
+      "Tip: multi-shot bow + monster eyes is the most effort-saving clear strategy, needing no precise aiming throughout. Gleeok horns are the core material for crafting the strongest elemental arrows and Fuse weapons."
+    ],
+    [
+      "提示：多发弓 + 怪物眼睛是最省力的通关方案，全程无需精准瞄准。",
+      "Tip: multi-shot bow + monster eyes is the most effort-saving clear strategy, needing no precise aiming throughout."
+    ],
+    [
+      "盖拉之角是制作最强元素弓箭与融合武器的核心素材。",
+      "Gleeok horns are the core material for crafting the strongest elemental arrows and Fuse weapons."
+    ],
+    [
+      "⚔ 通用 Boss 攻略要点： ① 战前备齐回血 / 攻击强化 / 元素抗性料理，对应 Boss 属性携带克制装备。 ② 多数大型 Boss 都有「击晕 → 倒地 → 集火弱点」的循环节奏，耐心找破绽比硬刚更高效。 ③ 瞬闪（横向闪避）与盾反是应对高速攻击的关键，练熟后能大幅降低难度。 ④ Boss 掉落的角 / 牙 / 内脏多为顶级融合素材，是打造最强武器的核心来源。",
+      "⚔ General boss strategy points: ① Before battle, prepare healing / attack-boosting / elemental-resistance meals, and bring counter gear matching the boss's attributes. ② Most large bosses follow a \"stun → fall → focus fire on weakness\" loop rhythm — patiently finding openings beats head-on fighting. ③ Flurry rushes (side dodges) and parries are key against fast attacks; mastering them greatly lowers difficulty. ④ Boss-dropped horns / fangs / guts are mostly top-tier Fuse materials, the core source for crafting the strongest weapons."
+    ],
+    [
+      "① 战前备齐回血 / 攻击强化 / 元素抗性料理，对应 Boss 属性携带克制装备。",
+      "① Before battle, prepare healing / attack-boosting / elemental-resistance meals, and bring counter gear matching the boss's attributes."
+    ],
+    [
+      "② 多数大型 Boss 都有「击晕 → 倒地 → 集火弱点」的循环节奏，耐心找破绽比硬刚更高效。",
+      "② Most large bosses follow a \"stun → fall → focus fire on weakness\" loop rhythm — patiently finding openings beats head-on fighting."
+    ],
+    [
+      "③ 瞬闪（横向闪避）与盾反是应对高速攻击的关键，练熟后能大幅降低难度。",
+      "③ Flurry rushes (side dodges) and parries are key against fast attacks; mastering them greatly lowers difficulty."
+    ],
+    [
+      "④ Boss 掉落的角 / 牙 / 内脏多为顶级融合素材，是打造最强武器的核心来源。",
+      "④ Boss-dropped horns / fangs / guts are mostly top-tier Fuse materials, the core source for crafting the strongest weapons."
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 加农多夫",
+      "› Ganondorf"
+    ],
+    [
+      "› 人马",
+      "› Lynel"
+    ],
+    [
+      "› 幻影加农",
+      "› Phantom Ganon"
+    ],
+    [
+      "📚 更多攻略",
+      "📚 More Guides"
+    ],
+    [
+      "› 哈里的终极秘籍（13篇）",
+      "› Harry's Ultimate Tips (13 articles)"
+    ],
+    [
+      "› 全部页面索引",
+      "› Full page index"
+    ],
+    [
+      "📌 相关攻略推荐",
+      "📌 Recommended related guides"
+    ],
+    [
+      "⚔️ 武器图鉴",
+      "⚔️ Weapon Compendium"
+    ],
+    [
+      "料理合成",
+      "Cooking"
+    ],
+    [
+      "主线任务",
+      "Main Quests"
+    ],
+    [
+      "FEATURED GUIDES · 专题深度攻略",
+      "FEATURED GUIDES · In-depth feature guides"
+    ],
+    [
+      "FINAL BOSS · 三阶段",
+      "FINAL BOSS · Three phases"
+    ],
+    [
+      "STORY BOSS · 剧情",
+      "STORY BOSS · Story"
+    ],
+    [
+      "FIELD BOSS · 四色变体",
+      "FIELD BOSS · Four color variants"
+    ],
+    [
+      "� 巨霸迦马的牙",
+      "Colgera's Fang"
+    ],
+    [
+      "🫀 巨霸迦马的内脏",
+      "🫀 Colgera Guts"
+    ],
+    [
+      "一",
+      "1"
+    ],
+    [
+      "二",
+      "2"
+    ],
+    [
+      "三",
+      "3"
+    ],
+    [
+      "前",
+      "First half"
+    ],
+    [
+      "后",
+      "Second half"
+    ],
+    [
+      "锤",
+      "Hammer"
+    ],
+    [
+      "盾",
+      "Shield"
+    ],
+    [
+      "侧",
+      "Side"
+    ],
+    [
+      "跑",
+      "Run"
+    ],
+    [
+      "局势掌控技巧",
+      "Situation control tips"
+    ],
+    [
+      "必备生存要点",
+      "Essential survival points"
+    ],
+    [
+      "大炮偷鸡法：手有大炮时可直接拉开距离轰一炮，BOSS 直接被轰到电网上，无脑高效。",
+      "Cannon cheese: with a cannon in hand, just keep your distance and fire one shot — the boss is blasted straight onto the fence, brainlessly efficient."
+    ],
+    [
+      "此武器只能在骑马时使用，在地面砍到任何东西都会立刻折断！",
+      "This weapon can only be used while mounted — hitting anything on the ground will snap it instantly!"
+    ],
+    [
+      "物理 / 元素",
+      "Physical / Elemental"
+    ],
+    [
+      "火 / 冰 / 雷",
+      "Fire / Ice / Lightning"
+    ],
+    [
+      "王之古栗欧克（地底竞技场）",
+      "King Gleeok (Depths arena)"
+    ],
+    [
+      "武器图鉴",
+      "Weapons"
+    ],
+    [
+      "用",
+      "Use "
+    ],
+    [
+      "直接把核心方块从身体里",
+      "to pull the core block directly out of "
+    ],
+    [
+      "，魔像会瞬间瘫散，趁机疯狂攻击核心。",
+      ", and the Construct instantly collapses — attack the core furiously while you can."
+    ],
+    [
+      "究极手",
+      "Ultrahand "
+    ],
+    [
+      "抽出来",
+      "its body"
+    ],
+    [
+      "上等魔像（中等/上等）血更厚、会浮空与释放电击，建议用",
+      "Higher-tier Constructs (mid / high tier) have more HP, can hover, and discharge electricity — use "
+    ],
+    [
+      "速攻核心。",
+      "to blitz the core."
+    ],
+    [
+      "左纳乌火炮 / 重武器",
+      "Zonai Cannons / heavy weapons "
+    ],
+    [
+      "爬到它身上（趁它挥拳砸地时跳上去），用",
+      "Climb onto it (jump on while it slams the ground with its fist), and use "
+    ],
+    [
+      "猛敲背部矿石核心。",
+      "to smash the ore core on its back."
+    ],
+    [
+      "融合岩石锤 / 重武器",
+      "a fused rock hammer / heavy weapon "
+    ],
+    [
+      "射击弱点：",
+      "Shoot the weak point: "
+    ],
+    [
+      "用弓箭瞄准它的",
+      "Use your bow to aim at its "
+    ],
+    [
+      "射击数次，或附加",
+      "and shoot several times, or attach "
+    ],
+    [
+      "自动追踪，可直接让它倒地瘫痪。",
+      "for auto-tracking, which can knock it down and paralyze it directly. "
+    ],
+    [
+      "当它张大嘴巴准备吸气时，朝嘴里扔一颗",
+      "When it opens its mouth wide to inhale, throw a "
+    ],
+    [
+      "，它吞下后立刻炸出大硬直。",
+      ", and it will swallow it and immediately blow into a long stagger."
+    ],
+    [
+      "眼睛（发光部位）",
+      "eyes (the glowing parts) "
+    ],
+    [
+      "【蝙蝠的眼珠】",
+      "[Keese Eyeball] "
+    ],
+    [
+      "炸弹诱饵：",
+      "Bomb bait: "
+    ],
+    [
+      "【炸弹花】",
+      "[Bomb Flower]"
+    ],
+    [
+      "俯冲撞击：",
+      "Diving slam: "
+    ],
+    [
+      "按",
+      "Press "
+    ],
+    [
+      "（也可直接收翼自由落体），用",
+      "(or just fold your wings and free-fall), and use "
+    ],
+    [
+      "R 键俯冲",
+      "R to dive "
+    ],
+    [
+      "林克的身体直接撞碎冰晶",
+      "Link's body to smash the ice crystals directly"
+    ],
+    [
+      "暴露弱点：",
+      "Expose the weak point: "
+    ],
+    [
+      "等待 BOSS",
+      "Wait for the boss to "
+    ],
+    [
+      "，底下的",
+      ", and the "
+    ],
+    [
+      "随之暴露。",
+      "below will be exposed."
+    ],
+    [
+      "射出背部的角",
+      "fire the horns from its back"
+    ],
+    [
+      "紫色结晶弱点",
+      "purple crystal weak point"
+    ],
+    [
+      "空中索敌与锁定：",
+      "Aerial targeting and lock-on: "
+    ],
+    [
+      "驾驶飞翼在空中盘旋，调整高度和方向靠近巨龙。巨龙共有",
+      "Pilot your wing device to circle in the air, adjusting height and direction to approach the giant dragon. The dragon has "
+    ],
+    [
+      "，准星对准其中一个后按",
+      ", and after aiming at one of them, press "
+    ],
+    [
+      "释放阿沅蓄力猛冲。",
+      "to unleash Yunobo's charged rush."
+    ],
+    [
+      "3 个红色脑袋",
+      "3 red heads"
+    ],
+    [
+      "A 键",
+      "A "
+    ],
+    [
+      "规避火球攻击：",
+      "Dodging fireball attacks: "
+    ],
+    [
+      "躲避：",
+      "Dodge: "
+    ],
+    [
+      "轻拨左摇杆调转飞翼方向避开熔岩火石。",
+      "Gently tilt the left stick to turn your wing device and avoid the molten rocks. "
+    ],
+    [
+      "也可直接对着飞来的",
+      "You can also directly launch Yunobo at the incoming "
+    ],
+    [
+      "，阿沅能直接将火球撞碎。",
+      ", and Yunobo can smash the fireballs apart directly."
+    ],
+    [
+      "强攻：",
+      "Aggressive approach: "
+    ],
+    [
+      "火球发射阿沅",
+      "fireballs"
+    ],
+    [
+      "BOSS 全身裹淤泥时处于",
+      "While the boss is fully covered in sludge, it is in "
+    ],
+    [
+      "，必须先洗净。",
+      ", and must be cleaned first. "
+    ],
+    [
+      "靠近",
+      "Get close to "
+    ],
+    [
+      "按 A 键包裹水盾，对着 BOSS 挥动武器砍出水波清除淤泥。",
+      "and press A to wrap yourself in a water shield, then swing your weapon at the boss to slash out water waves and clear the sludge. "
+    ],
+    [
+      "弓箭附魔",
+      "Fuse your arrows with"
+    ],
+    [
+      "，一箭命中即可瞬间洗净。",
+      ", and one hit instantly cleans it."
+    ],
+    [
+      "无敌状态",
+      "an invincible state"
+    ],
+    [
+      "方法 A（最推荐）：",
+      "Method A (most recommended): "
+    ],
+    [
+      "希多（米法弟弟）",
+      "Sidon (Mipha's younger brother) "
+    ],
+    [
+      "方法 B（远程）：",
+      "Method B (ranged): "
+    ],
+    [
+      "水之果 / 丘丘胶（蓝色）/ 水龙头胶囊",
+      "Splash Fruit / Chuchu Jelly (blue) / Hydrant"
+    ],
+    [
+      "无限循环：",
+      "Infinite loop: "
+    ],
+    [
+      "起身后它缩回地下并重刷淤泥，重复「洗泥浆 → 等张嘴 → 射核心 → 输出」，一般",
+      "After it gets up, it retreats underground and refreshes its sludge. Repeat \"wash sludge → wait for it to open its mouth → shoot the core → deal damage\" — usually "
+    ],
+    [
+      "即可击杀。",
+      "is enough to kill it."
+    ],
+    [
+      "2～3 轮",
+      "2–3 rounds "
+    ],
+    [
+      "空中林克时间（强烈推荐）：",
+      "Midair bullet time (highly recommended): "
+    ],
+    [
+      "· 盾牌融合",
+      "· Fuse your shield with "
+    ],
+    [
+      "，按住 ZL 盾防并起跳，",
+      ", hold ZL to guard with your shield and jump, "
+    ],
+    [
+      "· 在空中拉弓触发",
+      "· Draw your bow midair to trigger "
+    ],
+    [
+      "，弓箭附魔",
+      ", fuse your arrows with "
+    ],
+    [
+      "，从空中往下",
+      ", and from above, shoot downward with "
+    ],
+    [
+      "· 可瞬间清理周围泥浆并把 BOSS 射回小章鱼原形。",
+      "· This instantly clears the surrounding sludge and shoots the boss back into its small-octopus form."
+    ],
+    [
+      "炸弹花 / 火箭",
+      "a Bomb Flower / Rocket"
+    ],
+    [
+      "直接飞向高空",
+      "flying straight up into the sky "
+    ],
+    [
+      "慢动作（林克时间）",
+      "slow motion (bullet time)"
+    ],
+    [
+      "水之果 / 丘丘胶 / 多发弓",
+      "Splash Fruit / Chuchu Jelly / multi-shot bows"
+    ],
+    [
+      "连续射击",
+      "continuous fire "
+    ],
+    [
+      "雷电破防：",
+      "Lightning breach: "
+    ],
+    [
+      "BOSS 在地上冲锋或发射龙卷风时，一边",
+      "While the boss charges on the ground or fires tornadoes, "
+    ],
+    [
+      "，一边靠近露珠。等她的",
+      ", while approaching Riju. Once her "
+    ],
+    [
+      "时，用弓箭射击 BOSS 任意部位触发落雷。",
+      ", then use your bow to shoot any part of the boss and trigger a lightning strike."
+    ],
+    [
+      "侧向奔跑躲避",
+      "dodge by running sideways"
+    ],
+    [
+      "雷电圈扩大包裹住 BOSS",
+      "lightning ring expands to envelop the boss "
+    ],
+    [
+      "局面说明：",
+      "Situation: "
+    ],
+    [
+      "战场四周",
+      "Around the battlefield, "
+    ],
+    [
+      "开始发光并不断孵化大量爬行和飞行吉波得，场面极度混乱。",
+      "begin glowing and continuously hatching large numbers of crawling and flying Gibdos, making the scene extremely chaotic."
+    ],
+    [
+      "4 个紫色吉波得巢穴（柱子）",
+      "4 purple Gibdo nests (pillars) "
+    ],
+    [
+      "开局前务必给魔像装好以下配件：",
+      "Before the fight starts, be sure to equip your Construct with the following parts: "
+    ],
+    [
+      "强烈建议安装",
+      "Strongly recommended: install "
+    ],
+    [
+      "或",
+      "or "
+    ],
+    [
+      "安装",
+      "Install "
+    ],
+    [
+      "（用于二阶段起飞或快速位移）。",
+      "(for phase-2 takeoff or quick repositioning)."
+    ],
+    [
+      "左手 / 右手：",
+      "Left / right hand: "
+    ],
+    [
+      "大炮",
+      "a Cannon "
+    ],
+    [
+      "铁球 / 刺球",
+      "an Iron Ball / Spiked Ball"
+    ],
+    [
+      "后背：",
+      "Back: "
+    ],
+    [
+      "火箭",
+      "a Rocket "
+    ],
+    [
+      "风扇",
+      " a Fan "
+    ],
+    [
+      "打落长空（二选一）：",
+      "Knock it out of the sky (choose one): "
+    ],
+    [
+      "方法 A（最省事）：",
+      "Method A (easiest): "
+    ],
+    [
+      "手有大炮直接在地面",
+      "With a Cannon in hand, aim from the ground and "
+    ],
+    [
+      "，BOSS 直接坠机摔倒。",
+      ", and the boss crashes straight out of the sky. "
+    ],
+    [
+      "启动背上",
+      "Activate the "
+    ],
+    [
+      "跟着飞上天，在空中飞过去给它一拳砸下来。",
+      "to follow it into the sky, then fly over and punch it down."
+    ],
+    [
+      "瞄准空中轰一炮",
+      "fire a shot into the air"
+    ],
+    [
+      "方法 B（滞空对决）：",
+      "Method B (aerial duel):"
+    ],
+    [
+      "火箭或风扇",
+      "Rocket or Fan on your back"
+    ],
+    [
+      "剑形态：瞬移突刺 / 横劈",
+      "Sword form: teleport thrust / horizontal slash "
+    ],
+    [
+      "前兆：微微低头后瞬间消失。",
+      "Tell: it lowers its head slightly, then vanishes instantly. "
+    ],
+    [
+      "· 现身时",
+      "· When it reappears with "
+    ],
+    [
+      "：按住 ZL + 连按两下",
+      ": hold ZL + double-tap "
+    ],
+    [
+      "触发突击。",
+      "to trigger a Flurry Rush. "
+    ],
+    [
+      "剑架腰间横摆",
+      "its sword held sideways at its waist"
+    ],
+    [
+      "【后跳】",
+      "[Back Hop] "
+    ],
+    [
+      "高举下劈",
+      "raised overhead chop"
+    ],
+    [
+      "【侧跳】",
+      "[Side Hop] "
+    ],
+    [
+      "长枪形态：直线冲锋",
+      "Spear form: straight-line charge "
+    ],
+    [
+      "前兆：长枪横于身后、身体前倾，拉出红色瘴气残影直线冲刺。",
+      "Tell: its spear held horizontally behind it, body leaning forward, it dashes in a straight line trailing red Gloom afterimages. "
+    ],
+    [
+      "应对：冲到面前瞬间按住 ZL + 向左/右",
+      "Counter: the instant it reaches you, hold ZL + "
+    ],
+    [
+      "最容易触发突击的一招",
+      "— the easiest move for triggering a Flurry Rush."
+    ],
+    [
+      "大剑形态：蓄力大风车",
+      "Greatsword form: charged giant windmill "
+    ],
+    [
+      "前兆：高举大剑原地蓄力，准备 360° 瘴气旋风斩。",
+      "Tell: it raises its greatsword high and charges in place, preparing a 360° Gloom whirlwind slash. "
+    ],
+    [
+      "应对：判定范围极大，",
+      "Counter: the hitbox is enormous, "
+    ],
+    [
+      "。看到蓄力立刻向后跑拉开距离，或弓箭附魔",
+      ". When you see it charging, immediately run backward to gain distance, or fuse your arrows with "
+    ],
+    [
+      "直接",
+      "and directly "
+    ],
+    [
+      "并让他跪地。",
+      "and make it kneel."
+    ],
+    [
+      "不建议尝试闪避",
+      "dodging is not recommended"
+    ],
+    [
+      "吉波得之骨 / 炸弹花",
+      "Gibdo Bones / Bomb Flowers "
+    ],
+    [
+      "射脸打断蓄力",
+      "shoot it in the face to interrupt its charge-up "
+    ],
+    [
+      "升级防具：",
+      "Upgrade armor: "
+    ],
+    [
+      "建议蛮族套装 / 鬼神套装 / 兵士套装升至",
+      "It is recommended to upgrade the Barbarian Set / Fierce Deity Set / Soldier's Set to "
+    ],
+    [
+      "，否则加侬一刀秒杀。",
+      ", or Ganondorf will one-shot you."
+    ],
+    [
+      "3～4 星",
+      "3–4 stars"
+    ],
+    [
+      "单手剑形态（瞬移冲刺）：",
+      "One-handed sword form (teleport dash): "
+    ],
+    [
+      "横劈（剑放腰间）：",
+      "Horizontal slash (sword at waist): "
+    ],
+    [
+      "按住 ZL + 向后跳触发突击。",
+      "Hold ZL + back-hop to trigger a Flurry Rush. "
+    ],
+    [
+      "按住 ZL + 向左/右侧跳触发突击。",
+      "Hold ZL + side-hop left/right to trigger a Flurry Rush."
+    ],
+    [
+      "竖劈（高举过头）：",
+      "Vertical chop (raised overhead): "
+    ],
+    [
+      "前半段：分身乱战",
+      "First half: clone melee "
+    ],
+    [
+      "· 五位贤者加入战场，",
+      "· The five Sages join the battle; "
+    ],
+    [
+      "，你直接冲向本体（真身血条与其他分身不同）。",
+      ", and rush straight at the true form (its HP bar differs from the other clones). "
+    ],
+    [
+      "· 用第一阶段的闪避打法（抓长枪冲刺或单手剑横劈）强行压低本体血量。",
+      "· Use the phase-1 dodge strategy (catch the spear charge or the one-handed sword horizontal slash) to force the true form's HP down."
+    ],
+    [
+      "让贤者缠住分身",
+      "have the Sages tie up the clones"
+    ],
+    [
+      "后半段：红发魔王单挑（核心难点：他也会闪避！）",
+      "Second half: solo duel with the red-haired Demon King (core difficulty: he dodges too!) "
+    ],
+    [
+      "分身消失后加侬获得超长血条，并",
+      "After the clones vanish, Ganondorf gains an extra-long HP bar, and "
+    ],
+    [
+      "学会了完美闪避",
+      "learns Perfect Dodge"
+    ],
+    [
+      "摧毁外壳：",
+      "Destroy the shell: "
+    ],
+    [
+      "黑龙背上有",
+      "On the black dragon's back are "
+    ],
+    [
+      "，直接俯冲降落到弱点上，用普通武器砍 2～3 下破坏一处。每破坏一处会被弹飞，",
+      ", so dive straight down onto a weak point and hack it 2–3 times with an ordinary weapon to destroy it. Each time you destroy one you will be bounced off, "
+    ],
+    [
+      "4 处粉红色秘石弱点",
+      "4 pink Secret Stone weak points"
+    ],
+    [
+      "白龙必定从下方接住你",
+      "and the Light Dragon will always catch you from below"
+    ],
+    [
+      "上马白嫖：",
+      "Free mounted damage: "
+    ],
+    [
+      "收弓落地解除锁定，冲到人马身侧按",
+      "Put your bow away, land, release the lock, rush to the Lynel's side, and press "
+    ],
+    [
+      "，掏出那把快要折断的近卫双手剑，",
+      ", then draw that nearly breaking Royal Guard's Claymore and "
+    ],
+    [
+      "A 键骑上",
+      "A to mount"
+    ],
+    [
+      "疯狂按 Y 键连砍 3～6 刀",
+      "mash Y for 3–6 consecutive slashes"
+    ],
+    [
+      "弓箭爆眼：",
+      "Bow eye-shot: "
+    ],
+    [
+      "拉开距离，它走近或举起树木时直接瞄准脸部中央的",
+      "Keep your distance; when it approaches or raises a tree, aim directly at the "
+    ],
+    [
+      "射一箭，听到「叮」声它就往后坐倒。",
+      "and shoot an arrow — on hearing the \"ding\" sound, it falls backward onto its rear. "
+    ],
+    [
+      "（或任意怪物眼球），自带自动追踪，朝头顶瞎射一箭就能精准命中独眼。",
+      " (or any monster eyeball) — with built-in auto-tracking, a blind shot over its head will precisely hit its single eye."
+    ],
+    [
+      "大眼睛",
+      "big eye in the center of its face "
+    ],
+    [
+      "逃票技巧：",
+      "Shortcut trick: "
+    ],
+    [
+      "蝙蝠的眼睛",
+      "bat eyes "
+    ],
+    [
+      "带木质护腿（蓝色/黑色常见）：",
+      "With wooden greaves (common in blue / black): "
+    ],
+    [
+      "近战弹刀无法伤害。",
+      "Melee attacks bounce off and deal no damage. "
+    ],
+    [
+      "解法：弓箭附魔",
+      "Solution: fuse your arrows with "
+    ],
+    [
+      "射木护腿，木板遇火燃烧并触发二次输出硬直。",
+      "and shoot the wooden greaves — the boards catch fire and trigger a second damage stagger."
+    ],
+    [
+      "炸弹花 / 火之果 / 红丘丘胶",
+      "Bomb Flowers / Fire Fruit / red Chuchu Jelly "
+    ],
+    [
+      "带铁质护腿（黑色常见）：",
+      "With iron greaves (common in black): "
+    ],
+    [
+      "砍不动也烧不掉。",
+      "You cannot cut through them, nor burn them. "
+    ],
+    [
+      "射铁护腿，电击通过铁板传遍全身触发大范围触电硬直。",
+      "and shoot the iron greaves — electricity spreads through the iron plates across its whole body, triggering a wide-area electrocution stagger."
+    ],
+    [
+      "雷击果 / 黄丘丘胶",
+      "Shock Fruit / yellow Chuchu Jelly "
+    ],
+    [
+      "后期学会「捂眼睛」（黑色高等级）：",
+      "Later learns \"eye-covering\" (high-level black variants): "
+    ],
+    [
+      "拉弓时它会用手死死捂眼。",
+      "When you draw your bow, it covers its eyes tightly with its hands. "
+    ],
+    [
+      "解法：收起弓箭，等它弯腰捡石头或拔树",
+      "Solution: put your bow away, and when it bends down to pick up a rock or uproot a tree, "
+    ],
+    [
+      "立刻拉弓爆头。",
+      "immediately draw your bow for a headshot."
+    ],
+    [
+      "抬手露眼的瞬间",
+      "the instant it raises its hand and exposes its eyes "
+    ],
+    [
+      "核心逻辑：",
+      "Core logic: "
+    ],
+    [
+      "在短时间内将 3 个头的血条全部射空，三头同时垂下后产生冲击波摔倒，触发",
+      "Empty all 3 heads' HP bars in a short time; when all three heads droop at once, a shockwave knocks it down, triggering "
+    ],
+    [
+      "瘫痪大硬直，趁机近战疯狂输出。",
+      "major paralysis stagger — take the chance to go wild with melee attacks."
+    ],
+    [
+      "10～15 秒",
+      "10–15 seconds of "
+    ],
+    [
+      "循环锁死：",
+      "Loop lock: "
+    ],
+    [
+      "它站起瞬间强风吹飞，立刻再次飞天（掏第二面火箭盾或踩弹簧），空中再射眼睛，重复「爆头 → 倒地 → 输出」，一般",
+      "The instant it stands up, strong winds blow you away — immediately fly up again (draw a second Rocket Shield or step on a Spring), shoot its eyes from midair, and repeat \"headshot → knockdown → damage\" — usually "
+    ],
+    [
+      "可无伤带走。",
+      "are enough to take it down without taking damage."
+    ],
+    [
+      "3 个回合",
+      "3 rounds "
+    ],
+    [
+      "⚔ 通用 Boss 攻略要点：",
+      "⚔ General boss guide points: "
+    ],
+    [
+      "① 战前备齐",
+      "① Prepare enough "
+    ],
+    [
+      "，对应 Boss 属性携带克制装备。",
+      ", and bring countering gear matching the boss's element. "
+    ],
+    [
+      "② 多数大型 Boss 都有「",
+      "② Most large bosses follow a \""
+    ],
+    [
+      "」的循环节奏，耐心找破绽比硬刚更高效。",
+      "\" cycle rhythm — patiently finding openings is far more efficient than brute force. "
+    ],
+    [
+      "与",
+      "and "
+    ],
+    [
+      "是应对高速攻击的关键，练熟后能大幅降低难度。",
+      "are key against fast attacks; mastering them greatly lowers difficulty. "
+    ],
+    [
+      "④ Boss 掉落的",
+      "④ Boss drops such as "
+    ],
+    [
+      "多为顶级融合素材，是打造最强武器的核心来源。",
+      "are mostly top-tier Fuse materials and the core source for crafting the strongest weapons."
+    ],
+    [
+      "回血 / 攻击强化 / 元素抗性料理",
+      "healing / attack-boosting / elemental-resistance meals"
+    ],
+    [
+      "击晕 → 倒地 → 集火弱点",
+      "stun → knockdown → focus fire on the weak point"
+    ],
+    [
+      "瞬闪（横向闪避）",
+      "Flurry Rush (side dodge) "
+    ],
+    [
+      "盾反",
+      "Perfect Guard "
+    ],
+    [
+      "角 / 牙 / 内脏",
+      "horns / fangs / guts"
+    ],
+    [
+      "强度排序：",
+      "Strength ranking:"
+    ],
+    [
+      "红鬃 → 蓝鬃 → 白鬃 → 白银 → 铠甲白银。浮岛斗技场需连续挑战 5 只人马（最后一只是铠甲白银），是全游戏最高难度的战斗挑战。",
+      "Red-Maned → Blue-Maned → White-Maned → Silver → Armored Silver. The Floating Colosseum gauntlet pits you against 5 Lynels in a row (the last is the Armored Silver), the hardest combat challenge in the game."
+    ],
+    [
+      "挑战前推荐拿到",
+      "Before the challenge, get"
+    ],
+    [
+      "利特套装全套 ★2（套装加成免冻结）",
+      "the full Snowquill Set at ★2 (set bonus: Unfreezable)"
+    ],
+    [
+      "雷鸣头盔（免疫雷击）",
+      "the Thunder Helm (lightning immunity)"
+    ],
+    [
+      "，彻底废掉两个头的威胁。",
+      "to completely neutralize two of the heads' threats."
+    ],
+    [
+      "蓝鬃 · 3000血",
+      "Blue-Maned · 3000 HP"
+    ],
+    [
+      "白鬃 · 4000血",
+      "White-Maned · 4000 HP"
+    ]
+  ],
+  "title": "All 16 Bosses Complete Encyclopedia and Strategy Guide | The Legend of Zelda: Tears of the Kingdom Guide"
 }

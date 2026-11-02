@@ -98,10 +98,6 @@
       "The Hylian Shield is found at the castle docks below the moat on the north side of Hyrule Castle, compendium number 471, with 90 defense, 800 durability, and 22 Fuse attack (when the shield itself is fused onto a weapon). Its location is not inside the floating castle itself, but in the dock cavern below the water, and following the five steps below requires no mandatory Boss fight:"
     ],
     [
-      "1到城堡北侧护城河。从瞭望台一带向东北飞往海拉鲁城堡，目标是城堡北侧水面上的洞口（码头一带坐标约-0161, 1159, 0037）。可以滑翔过去，也可以在水边造一艘简易木筏划过去。",
-      "Step 1: Head to the north moat of Hyrule Castle. Fly northeast from the Lookout Landing area toward Hyrule Castle, aiming for the opening on the water north of the castle (dock area, coordinates about -0161, 1159, 0037). You can glide there, or build a simple wooden raft at the water's edge and row across."
-    ],
-    [
       "1到城堡北侧护城河。",
       "Step 1: Head to the north moat of Hyrule Castle."
     ],
@@ -112,10 +108,6 @@
     [
       "可以滑翔过去，也可以在水边造一艘简易木筏划过去。",
       "You can glide there, or build a simple wooden raft at the water's edge and row across."
-    ],
-    [
-      "2进水洞、上楼梯。从水面洞口进入码头内部，沿着楼梯一路向上。沿途有幽暗瘴气与巡逻的敌人，红心不多时不要恋战，跑过去即可。",
-      "Step 2: Enter the water cave and climb the stairs. Enter the docks interior through the opening on the water and follow the stairs all the way up. Gloom and patrolling enemies line the way, so if you do not have many Hearts, do not linger in combat, and just run through."
     ],
     [
       "2进水洞、上楼梯。",
@@ -130,10 +122,6 @@
       "Gloom and patrolling enemies line the way, so if you do not have many Hearts, do not linger in combat, and just run through."
     ],
     [
-      "3幽暗之手可以绕。上楼梯途中可能触发幽暗之手：它会抓握并挤压林克、削减红心上限。早期伤害不够时不必硬打，拉开距离、脱离它的视线后它会消失，绕过去继续上楼。",
-      "Step 3: You can go around the Gloom Hands. While climbing the stairs you may trigger the Gloom Hands: they will grab and squeeze Link, reducing your maximum Hearts. If your damage is too low early on, there is no need to fight them head-on, pull away and break line of sight, and they will vanish, letting you go around and keep climbing."
-    ],
-    [
       "3幽暗之手可以绕。",
       "Step 3: You can go around the Gloom Hands."
     ],
@@ -146,10 +134,6 @@
       "If your damage is too low early on, there is no need to fight them head-on, pull away and break line of sight, and they will vanish, letting you go around and keep climbing."
     ],
     [
-      "4点燃大火盆。楼梯尽头有一座未点燃的大火盆，周围有小火把。用火焰果、火丘丘胶冻、火箭，或把木质武器在小火把上点着后引火，点燃大火盆。",
-      "Step 4: Light the large brazier. At the top of the stairs stands a large unlit brazier, surrounded by small torches. Use a Fire Fruit, a Fire Chuchu Jelly, or a Rocket, or light a wooden weapon on a small torch and carry the flame over to light the large brazier."
-    ],
-    [
       "4点燃大火盆。",
       "Step 4: Light the large brazier."
     ],
@@ -160,10 +144,6 @@
     [
       "用火焰果、火丘丘胶冻、火箭，或把木质武器在小火把上点着后引火，点燃大火盆。",
       "Use a Fire Fruit, a Fire Chuchu Jelly, or a Rocket, or light a wooden weapon on a small torch and carry the flame over to light the large brazier."
-    ],
-    [
-      "5开宝箱拿盾。点火后幽暗之手会消失，身后的地面上会升起一只宝箱，里面就是海利亚盾。这只宝箱只出现一次，拿完就不会再刷。",
-      "Step 5: Open the chest and take the shield. Once the fire is lit, the Gloom Hands will vanish, and a chest will rise from the ground behind you containing the Hylian Shield. This chest appears only once, and will not respawn after you take it."
     ],
     [
       "5开宝箱拿盾。",
@@ -588,6 +568,46 @@
     [
       "返回秘籍专栏",
       "Back to the Tips Column"
+    ],
+    [
+      "到城堡北侧护城河。从瞭望台一带向东北飞往海拉鲁城堡，目标是城堡北侧水面上的洞口（码头一带坐标约-0161, 1159, 0037）。可以滑翔过去，也可以在水边造一艘简易木筏划过去。",
+      "Head to the north moat of Hyrule Castle. Fly northeast from the Lookout Landing area toward Hyrule Castle, aiming for the opening on the water north of the castle (dock area, coordinates about -0161, 1159, 0037). You can glide there, or build a simple wooden raft at the water's edge and row across."
+    ],
+    [
+      "进水洞、上楼梯。从水面洞口进入码头内部，沿着楼梯一路向上。沿途有幽暗瘴气与巡逻的敌人，红心不多时不要恋战，跑过去即可。",
+      "Enter the water cave and climb the stairs. Enter the docks interior through the opening on the water and follow the stairs all the way up. Gloom and patrolling enemies line the way, so if you do not have many Hearts, do not linger in combat, and just run through."
+    ],
+    [
+      "幽暗之手可以绕。上楼梯途中可能触发幽暗之手：它会抓握并挤压林克、削减红心上限。早期伤害不够时不必硬打，拉开距离、脱离它的视线后它会消失，绕过去继续上楼。",
+      "You can go around the Gloom Hands. While climbing the stairs you may trigger the Gloom Hands: they will grab and squeeze Link, reducing your maximum Hearts. If your damage is too low early on, there is no need to fight them head-on, pull away and break line of sight, and they will vanish, letting you go around and keep climbing."
+    ],
+    [
+      "点燃大火盆。楼梯尽头有一座未点燃的大火盆，周围有小火把。用火焰果、火丘丘胶冻、火箭，或把木质武器在小火把上点着后引火，点燃大火盆。",
+      "Light the large brazier. At the top of the stairs stands a large unlit brazier, surrounded by small torches. Use a Fire Fruit, a Fire Chuchu Jelly, or a Rocket, or light a wooden weapon on a small torch and carry the flame over to light the large brazier."
+    ],
+    [
+      "开宝箱拿盾。点火后幽暗之手会消失，身后的地面上会升起一只宝箱，里面就是海利亚盾。这只宝箱只出现一次，拿完就不会再刷。",
+      "Open the chest and take the shield. Once the fire is lit, the Gloom Hands will vanish, and a chest will rise from the ground behind you containing the Hylian Shield. This chest appears only once, and will not respawn after you take it."
+    ],
+    [
+      "到城堡北侧护城河。",
+      "Head to the north moat of Hyrule Castle."
+    ],
+    [
+      "进水洞、上楼梯。",
+      "Enter the water cave and climb the stairs."
+    ],
+    [
+      "幽暗之手可以绕。",
+      "You can go around the Gloom Hands."
+    ],
+    [
+      "点燃大火盆。",
+      "Light the large brazier."
+    ],
+    [
+      "开宝箱拿盾。",
+      "Open the chest and take the shield."
     ]
   ],
   "notes": [
