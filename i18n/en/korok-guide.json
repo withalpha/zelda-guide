@@ -1,278 +1,278 @@
 {
- "notes": [
-  "一大坨黄金大便 translated descriptively as a large lump of golden poop; its official in-game item name is Hestu's Gift.",
-  "拉布拉山鸟望台 rendered as Lindor's Brow Skyview Tower; 监视堡垒 as Lookout Landing per glossary.",
-  "Breadcrumb items (Home / Harry's Ultimate Tips / current title) included as page-specific navigation; global top nav and global footer excluded per spec."
- ],
- "pairs": [
-  [
-   "呀哈哈种子全指南：1000颗果实分两大类，常见解谜类型、伯库林三处位置、扩满421颗，背包扩充一次讲清。",
-   "Korok Seed Complete Guide: 1000 seeds in two major categories, common puzzle types, Hestu's three locations, and the 421 seeds needed to max out your inventory — inventory expansion explained in one place."
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "哈里的终极秘籍",
-   "Harry's Ultimate Tips"
-  ],
-  [
-   "呀哈哈种子全指南",
-   "Korok Seed Complete Guide"
-  ],
-  [
-   "🍀 收集攻略",
-   "🍀 Collection Guide"
-  ],
-  [
-   "呀哈哈种子全指南：1000颗的解谜类型与扩充路线",
-   "Korok Seed Complete Guide: Puzzle Types and Expansion Routes for All 1000 Seeds"
-  ],
-  [
-   "全图 1000 颗果实，900 个地点：800 个解谜加 100 对运送。扩满背包其实只要 421 颗。",
-   "1000 seeds across the whole map, at 900 locations: 800 puzzles plus 100 escort pairs. Maxing out your inventory actually only takes 421 seeds."
-  ],
-  [
-   "🧙 作者：哈里",
-   "🧙 Author: Harry"
-  ],
-  [
-   "🍀 收集 · 背包扩充",
-   "🍀 Collection · Inventory Expansion"
-  ],
-  [
-   "📖 深度攻略",
-   "📖 In-Depth Guide"
-  ],
-  [
-   "伯库林与呀哈哈种子（游戏实机截图）",
-   "Hestu and Korok Seeds (in-game screenshot)"
-  ],
-  [
-   "伯库林与呀哈哈种子（游戏实机截图，图片来源：Zelda Dungeon）",
-   "Hestu and Korok Seeds (in-game screenshot, image source: Zelda Dungeon)"
-  ],
-  [
-   "呀哈哈种子是全游戏最庞大的收集：全图一共 1000 颗果实，对应 900 个地点。这篇把两大类解谜、常见解谜类型、伯库林的位置和扩充格数一次讲清，帮你从“随缘捡”变成“有计划地扩满背包”。",
-   "Korok Seeds are the largest collection in the whole game: 1000 seeds across the map, corresponding to 900 locations. This guide covers the two major puzzle categories, common puzzle types, Hestu's locations, and how many slots each expansion adds, all in one place, to take you from picking seeds up casually to maxing out your inventory with a plan."
-  ],
-  [
-   "一、总数：1000 颗，900 个地点",
-   "1. The Total: 1000 Seeds, 900 Locations"
-  ],
-  [
-   "1000 颗果实分成两大类：第一类是各式小谜题，共 800 个；第二类是新加入的运送任务——帮助背包呀哈哈去找他的朋友，成功一次拿 2 颗，这类有 100 对，所以是 200 颗。800 + 200 = 1000。注意：呀哈哈只出现在天空和地面两层，地底没有。",
-   "The 1000 seeds fall into two major categories: the first is various small puzzles, 800 in total; the second is the newly added escort quests — helping a backpack-carrying Korok find his friend, which earns 2 seeds per success, with 100 such pairs, so 200 seeds. 800 + 200 = 1000. Note: Koroks only appear in the sky and on the surface — there are none in the Depths."
-  ],
-  [
-   "二、常见解谜类型",
-   "2. Common Puzzle Types"
-  ],
-  [
-   "举石头：路边孤零零的石头，尤其是不自然地单放着的，举起来下面多半藏着呀哈哈。有的石头藏在冰块里，先融冰；有的在荆棘下面，先烧掉荆棘。",
-   "Lift a Rock: a lone rock by the roadside, especially one sitting unnaturally on its own, usually hides a Korok underneath when lifted. Some rocks are hidden inside ice — melt the ice first; some are under thorns — burn the thorns away first."
-  ],
-  [
-   "举石头：路边孤零零的石头，尤其是不自然地单放着的，举起来下面多半藏着呀哈哈。",
-   "Lift a Rock: a lone rock by the roadside, especially one sitting unnaturally on its own, usually hides a Korok underneath when lifted."
-  ],
-  [
-   "有的石头藏在冰块里，先融冰",
-   "Some rocks are hidden inside ice — melt the ice first"
-  ],
-  [
-   "有的在荆棘下面，先烧掉荆棘。",
-   "Some are under thorns — burn the thorns away first."
-  ],
-  [
-   "补石阵：一圈石头里缺了一块，把附近的石头用究极手补上去。石阵出现就基本确定有呀哈哈。",
-   "Complete the Stone Circle: if one stone is missing from a ring of stones, use Ultrahand to put a nearby stone in place. When you see a stone circle, a Korok is almost certainly there."
-  ],
-  [
-   "补石阵：一圈石头里缺了一块，把附近的石头用究极手补上去。",
-   "Complete the Stone Circle: if one stone is missing from a ring of stones, use Ultrahand to put a nearby stone in place."
-  ],
-  [
-   "石阵出现就基本确定有呀哈哈。",
-   "When you see a stone circle, a Korok is almost certainly there."
-  ],
-  [
-   "追花：跟着一朵花跑，追到终点出呀哈哈。花跑得快，别跟丢。",
-   "Chase the Flower: follow a flower as it runs, and a Korok appears when you reach the finish. The flower moves fast — do not lose track of it."
-  ],
-  [
-   "追花：跟着一朵花跑，追到终点出呀哈哈。",
-   "Chase the Flower: follow a flower as it runs, and a Korok appears when you reach the finish."
-  ],
-  [
-   "花跑得快，别跟丢。",
-   "The flower moves fast — do not lose track of it."
-  ],
-  [
-   "射气球：天上飘的气球或靶子，射中出呀哈哈，留意风声和气球的位置。",
-   "Shoot the Balloon: shoot a balloon or target floating in the sky and a Korok appears — listen for the wind and watch where the balloon is."
-  ],
-  [
-   "摇钟：用究极手抓住钟，推或拉到尽头触发。",
-   "Ring the Bell: grab the bell with Ultrahand and push or pull it to its limit to trigger it."
-  ],
-  [
-   "俯冲追碎片：站上特定位置会出现流星一样的呀哈哈碎片，俯冲追上、出现互动提示马上按调查。",
-   "Dive After the Fragment: stand on a specific spot and a meteor-like Korok fragment appears; dive after it and press Investigate as soon as the interaction prompt appears."
-  ],
-  [
-   "运送朋友：背着呀哈哈的背包朋友，用究极手做个简易载具（木板加风扇或轮子）运到朋友身边。路途远的优先做车，别硬扛着走。",
-   "Escort a Friend: for a Korok friend carrying a backpack, use Ultrahand to build a simple vehicle (planks plus fans or wheels) and carry him to his friend. For long journeys, build a vehicle first instead of carrying him on foot."
-  ],
-  [
-   "运送朋友：背着呀哈哈的背包朋友，用究极手做个简易载具（木板加风扇或轮子）运到朋友身边。",
-   "Escort a Friend: for a Korok friend carrying a backpack, use Ultrahand to build a simple vehicle (planks plus fans or wheels) and carry him to his friend."
-  ],
-  [
-   "路途远的优先做车，别硬扛着走。",
-   "For long journeys, build a vehicle first instead of carrying him on foot."
-  ],
-  [
-   "通用嗅觉：觉得“不对劲”的地方——形状不自然的石头、缺一块的石阵、落叶堆、单独的花——都值得停下来看一眼。",
-   "A general nose for them: any place that feels 'off' — an unnaturally shaped rock, a stone circle missing a piece, a pile of leaves, a lone flower — is worth stopping to check."
-  ],
-  [
-   "三、伯库林在哪，扩充要多少颗",
-   "3. Where Hestu Is, and How Many Seeds Expansions Take"
-  ],
-  [
-   "果实交给大呀哈哈伯库林扩充背包。伯库林一共有 3 个位置：最初在监视堡垒往西边走、快到拉布拉山鸟望台的地方；完成一个贤者主线任务后，他会来到监视堡垒里面；解救克洛格森林之后，他固定在克洛格森林里。",
-   "Give the seeds to the great Korok Hestu to expand your inventory. Hestu has 3 locations in total: at first, he is west of Lookout Landing, near Lindor's Brow Skyview Tower; after you complete a Sage main quest, he moves inside Lookout Landing; and after you rescue Korok Forest, he settles permanently in Korok Forest."
-  ],
-  [
-   "弓袋：初始 5 格，最多 14 格。",
-   "Bow Stash: starts at 5 slots, max 14 slots."
-  ],
-  [
-   "盾袋：初始 4 格，最多 20 格。",
-   "Shield Stash: starts at 4 slots, max 20 slots."
-  ],
-  [
-   "武器袋：初始 9 格，最多 19 格。",
-   "Weapon Stash: starts at 9 slots, max 19 slots."
-  ],
-  [
-   "三袋全部扩满一共需要 421 颗果实。也就是说，不用找齐 1000 颗，421 颗就够把背包扩到顶。剩下的 579 颗，是冲 100% 完成度才需要找的。",
-   "Maxing out all three stashes takes 421 seeds in total. In other words, you do not need to find all 1000 seeds — 421 is enough to expand your inventory to the max. The remaining 579 seeds are only needed if you are going for 100% completion."
-  ],
-  [
-   "四、查漏方法",
-   "4. How to Find the Ones You Missed"
-  ],
-  [
-   "地图放大到最大后，拿过的呀哈哈地点会有克洛格果实标记。按区域对照地图查漏，比盲跑效率高得多。运送类任务一次给 2 颗，查漏时记得按“对”数，别按颗数多数了一倍。",
-   "After zooming the map all the way in, locations where you have already collected a Korok will show a Korok Seed marker. Checking off areas against the map is far more efficient than wandering blindly. Escort quests give 2 seeds at a time, so when checking for missed ones, count by 'pairs' — do not double-count by seeds."
-  ],
-  [
-   "五、集齐 1000 颗的彩蛋",
-   "5. The Easter Egg for Collecting All 1000 Seeds"
-  ],
-  [
-   "把 1000 颗全部交给伯库林后，他会送你一大坨黄金大便，还能随时看他跳舞——除了本作的新舞蹈，还能选“令人怀念的舞蹈”看旷野之息版本的舞。纯属彩蛋，图一乐。",
-   "After giving all 1000 seeds to Hestu, he will give you a large lump of golden poop, and you can watch him dance any time — besides this game's new dance, you can also choose the 'nostalgic dance' to see the Breath of the Wild version. Purely an Easter egg, just for fun."
-  ],
-  [
-   "相关攻略：新手开荒指南、152座神庙全收集自查指南。",
-   "Related Guides: Beginner's Guide to Starting Out, Self-Check Guide to Collecting All 152 Shrines."
-  ],
-  [
-   "新手开荒指南",
-   "Beginner's Guide to Starting Out"
-  ],
-  [
-   "152座神庙全收集自查指南",
-   "Self-Check Guide to Collecting All 152 Shrines"
-  ],
-  [
-   "← 上一篇：新手开荒指南：落地先做的10件事",
-   "← Previous: Beginner's Guide to Starting Out: 10 Things to Do First After Landing"
-  ],
-  [
-   "返回秘籍专栏",
-   "Back to the Tips Column"
-  ],
-  [
-   "下一篇：地底世界生存与探索完全指南 →",
-   "Next: Complete Guide to Surviving and Exploring the Depths →"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 新手开荒指南：落地先做的10件事",
-   "› Beginner's Guide to Starting Out: 10 Things to Do First After Landing"
-  ],
-  [
-   "› 152座神庙全收集自查指南",
-   "› Self-Check Guide to Collecting All 152 Shrines"
-  ],
-  [
-   "› 地底世界生存与探索完全指南",
-   "› Complete Guide to Surviving and Exploring the Depths"
-  ],
-  [
-   "📚 全部攻略索引",
-   "📚 Complete Guide Index"
-  ],
-  [
-   "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Tips"
-  ],
-  [
-   "› 七宝匕首终极攻略",
-   "› Ultimate Guide to the Scimitar of the Seven"
-  ],
-  [
-   "› 四大神级料理配方",
-   "› Four God-Tier Recipes"
-  ],
-  [
-   "› 最强套装三梯队全解析",
-   "› Full Breakdown of the Three Tiers of Strongest Armor Sets"
-  ],
-  [
-   "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine Guide for Complete Beginners"
-  ],
-  [
-   "› 白龙寻踪与大师之剑",
-   "› Tracking the Light Dragon and the Master Sword"
-  ],
-  [
-   "› 马克兔飞行器调校",
-   "› Hover Bike Tuning"
-  ],
-  [
-   "› 地底电池扩充与大妖精",
-   "› Depths Battery Expansion and the Great Fairies"
-  ],
-  [
-   "🆕 每日新攻略",
-   "🆕 New Daily Guides"
-  ],
-  [
-   "› 呀哈哈种子全指南（本篇）",
-   "› Korok Seed Complete Guide (this guide)"
-  ],
-  [
-   "› 大妖精四姐妹与防具强化完全指南",
-   "› Complete Guide to the Four Great Fairies and Armor Upgrades"
-  ],
-  [
-   "› 四条龙素材刷取指南",
-   "› Guide to Farming Materials from the Four Dragons"
-  ],
-  [
-   "呀哈哈种子全指南：1000颗的解谜类型、伯库林位置与421颗扩满路线。",
-   "Korok Seed complete guide: puzzle types for all 1000 seeds, Hestu locations, and the 421-seed max-upgrade route."
-  ]
- ],
- "title": "Korok Seed Complete Guide: Puzzle Types and Expansion Routes for All 1000 Seeds · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+  "notes": [
+    "一大坨黄金大便 translated descriptively as a large lump of golden poop; its official in-game item name is Hestu's Gift.",
+    "拉布拉山鸟望台 rendered as Lindor's Brow Skyview Tower; 监视堡垒 as Lookout Landing per glossary.",
+    "Breadcrumb items (Home / Harry's Ultimate Tips / current title) included as page-specific navigation; global top nav and global footer excluded per spec."
+  ],
+  "pairs": [
+    [
+      "呀哈哈种子全指南：1000颗果实分两大类，常见解谜类型、伯库林三处位置、扩满421颗，背包扩充一次讲清。",
+      "Korok Seed Complete Guide: 1000 seeds in two major categories, common puzzle types, Hestu's three locations, and the 421 seeds needed to max out your inventory — inventory expansion explained in one place."
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "哈里的终极秘籍",
+      "Harry's Ultimate Tips"
+    ],
+    [
+      "呀哈哈种子全指南",
+      "Korok Seed Complete Guide"
+    ],
+    [
+      "🍀 收集攻略",
+      "🍀 Collection Guide"
+    ],
+    [
+      "呀哈哈种子全指南：1000颗的解谜类型与扩充路线",
+      "Korok Seed Complete Guide: Puzzle Types and Expansion Routes for All 1000 Seeds"
+    ],
+    [
+      "全图 1000 颗果实，900 个地点：800 个解谜加 100 对运送。扩满背包其实只要 421 颗。",
+      "1000 seeds across the whole map, at 900 locations: 800 puzzles plus 100 escort pairs. Maxing out your inventory actually only takes 421 seeds."
+    ],
+    [
+      "🧙 作者：哈里",
+      "🧙 Author: Harry"
+    ],
+    [
+      "🍀 收集 · 背包扩充",
+      "🍀 Collection · Inventory Expansion"
+    ],
+    [
+      "📖 深度攻略",
+      "📖 In-Depth Guide"
+    ],
+    [
+      "伯库林与呀哈哈种子（游戏实机截图）",
+      "Hestu and Korok Seeds (in-game screenshot)"
+    ],
+    [
+      "伯库林与呀哈哈种子（游戏实机截图，图片来源：Zelda Dungeon）",
+      "Hestu and Korok Seeds (in-game screenshot, image source: Zelda Dungeon)"
+    ],
+    [
+      "呀哈哈种子是全游戏最庞大的收集：全图一共 1000 颗果实，对应 900 个地点。这篇把两大类解谜、常见解谜类型、伯库林的位置和扩充格数一次讲清，帮你从“随缘捡”变成“有计划地扩满背包”。",
+      "Korok Seeds are the largest collection in the whole game: 1000 seeds across the map, corresponding to 900 locations. This guide covers the two major puzzle categories, common puzzle types, Hestu's locations, and how many slots each expansion adds, all in one place, to take you from picking seeds up casually to maxing out your inventory with a plan."
+    ],
+    [
+      "一、总数：1000 颗，900 个地点",
+      "1. The Total: 1000 Seeds, 900 Locations"
+    ],
+    [
+      "1000 颗果实分成两大类：第一类是各式小谜题，共 800 个；第二类是新加入的运送任务——帮助背包呀哈哈去找他的朋友，成功一次拿 2 颗，这类有 100 对，所以是 200 颗。800 + 200 = 1000。注意：呀哈哈只出现在天空和地面两层，地底没有。",
+      "The 1000 seeds fall into two major categories: the first is various small puzzles, 800 in total; the second is the newly added escort quests — helping a backpack-carrying Korok find his friend, which earns 2 seeds per success, with 100 such pairs, so 200 seeds. 800 + 200 = 1000. Note: Koroks only appear in the sky and on the surface — there are none in the Depths."
+    ],
+    [
+      "二、常见解谜类型",
+      "2. Common Puzzle Types"
+    ],
+    [
+      "举石头：路边孤零零的石头，尤其是不自然地单放着的，举起来下面多半藏着呀哈哈。有的石头藏在冰块里，先融冰；有的在荆棘下面，先烧掉荆棘。",
+      "Lift a Rock: a lone rock by the roadside, especially one sitting unnaturally on its own, usually hides a Korok underneath when lifted. Some rocks are hidden inside ice — melt the ice first; some are under thorns — burn the thorns away first."
+    ],
+    [
+      "举石头：路边孤零零的石头，尤其是不自然地单放着的，举起来下面多半藏着呀哈哈。",
+      "Lift a Rock: a lone rock by the roadside, especially one sitting unnaturally on its own, usually hides a Korok underneath when lifted."
+    ],
+    [
+      "有的石头藏在冰块里，先融冰",
+      "Some rocks are hidden inside ice — melt the ice first"
+    ],
+    [
+      "有的在荆棘下面，先烧掉荆棘。",
+      "Some are under thorns — burn the thorns away first."
+    ],
+    [
+      "补石阵：一圈石头里缺了一块，把附近的石头用究极手补上去。石阵出现就基本确定有呀哈哈。",
+      "Complete the Stone Circle: if one stone is missing from a ring of stones, use Ultrahand to put a nearby stone in place. When you see a stone circle, a Korok is almost certainly there."
+    ],
+    [
+      "补石阵：一圈石头里缺了一块，把附近的石头用究极手补上去。",
+      "Complete the Stone Circle: if one stone is missing from a ring of stones, use Ultrahand to put a nearby stone in place."
+    ],
+    [
+      "石阵出现就基本确定有呀哈哈。",
+      "When you see a stone circle, a Korok is almost certainly there."
+    ],
+    [
+      "追花：跟着一朵花跑，追到终点出呀哈哈。花跑得快，别跟丢。",
+      "Chase the Flower: follow a flower as it runs, and a Korok appears when you reach the finish. The flower moves fast — do not lose track of it."
+    ],
+    [
+      "追花：跟着一朵花跑，追到终点出呀哈哈。",
+      "Chase the Flower: follow a flower as it runs, and a Korok appears when you reach the finish."
+    ],
+    [
+      "花跑得快，别跟丢。",
+      "The flower moves fast — do not lose track of it."
+    ],
+    [
+      "射气球：天上飘的气球或靶子，射中出呀哈哈，留意风声和气球的位置。",
+      "Shoot the Balloon: shoot a balloon or target floating in the sky and a Korok appears — listen for the wind and watch where the balloon is."
+    ],
+    [
+      "摇钟：用究极手抓住钟，推或拉到尽头触发。",
+      "Ring the Bell: grab the bell with Ultrahand and push or pull it to its limit to trigger it."
+    ],
+    [
+      "俯冲追碎片：站上特定位置会出现流星一样的呀哈哈碎片，俯冲追上、出现互动提示马上按调查。",
+      "Dive After the Fragment: stand on a specific spot and a meteor-like Korok fragment appears; dive after it and press Investigate as soon as the interaction prompt appears."
+    ],
+    [
+      "运送朋友：背着呀哈哈的背包朋友，用究极手做个简易载具（木板加风扇或轮子）运到朋友身边。路途远的优先做车，别硬扛着走。",
+      "Escort a Friend: for a Korok friend carrying a backpack, use Ultrahand to build a simple vehicle (planks plus fans or wheels) and carry him to his friend. For long journeys, build a vehicle first instead of carrying him on foot."
+    ],
+    [
+      "运送朋友：背着呀哈哈的背包朋友，用究极手做个简易载具（木板加风扇或轮子）运到朋友身边。",
+      "Escort a Friend: for a Korok friend carrying a backpack, use Ultrahand to build a simple vehicle (planks plus fans or wheels) and carry him to his friend."
+    ],
+    [
+      "路途远的优先做车，别硬扛着走。",
+      "For long journeys, build a vehicle first instead of carrying him on foot."
+    ],
+    [
+      "通用嗅觉：觉得“不对劲”的地方——形状不自然的石头、缺一块的石阵、落叶堆、单独的花——都值得停下来看一眼。",
+      "A general nose for them: any place that feels 'off' — an unnaturally shaped rock, a stone circle missing a piece, a pile of leaves, a lone flower — is worth stopping to check."
+    ],
+    [
+      "三、伯库林在哪，扩充要多少颗",
+      "3. Where Hestu Is, and How Many Seeds Expansions Take"
+    ],
+    [
+      "果实交给大呀哈哈伯库林扩充背包。伯库林一共有 3 个位置：最初在监视堡垒往西边走、快到拉布拉山鸟望台的地方；完成一个贤者主线任务后，他会来到监视堡垒里面；解救克洛格森林之后，他固定在克洛格森林里。",
+      "Give the seeds to the great Korok Hestu to expand your inventory. Hestu has 3 locations in total: at first, he is west of Lookout Landing, near Lindor's Brow Skyview Tower; after you complete a Sage main quest, he moves inside Lookout Landing; and after you rescue Korok Forest, he settles permanently in Korok Forest."
+    ],
+    [
+      "弓袋：初始 5 格，最多 14 格。",
+      "Bow Stash: starts at 5 slots, max 14 slots."
+    ],
+    [
+      "盾袋：初始 4 格，最多 20 格。",
+      "Shield Stash: starts at 4 slots, max 20 slots."
+    ],
+    [
+      "武器袋：初始 9 格，最多 19 格。",
+      "Weapon Stash: starts at 9 slots, max 19 slots."
+    ],
+    [
+      "三袋全部扩满一共需要 421 颗果实。也就是说，不用找齐 1000 颗，421 颗就够把背包扩到顶。剩下的 579 颗，是冲 100% 完成度才需要找的。",
+      "Maxing out all three stashes takes 421 seeds in total. In other words, you do not need to find all 1000 seeds — 421 is enough to expand your inventory to the max. The remaining 579 seeds are only needed if you are going for 100% completion."
+    ],
+    [
+      "四、查漏方法",
+      "4. How to Find the Ones You Missed"
+    ],
+    [
+      "地图放大到最大后，拿过的呀哈哈地点会有克洛格果实标记。按区域对照地图查漏，比盲跑效率高得多。运送类任务一次给 2 颗，查漏时记得按“对”数，别按颗数多数了一倍。",
+      "After zooming the map all the way in, locations where you have already collected a Korok will show a Korok Seed marker. Checking off areas against the map is far more efficient than wandering blindly. Escort quests give 2 seeds at a time, so when checking for missed ones, count by 'pairs' — do not double-count by seeds."
+    ],
+    [
+      "五、集齐 1000 颗的彩蛋",
+      "5. The Easter Egg for Collecting All 1000 Seeds"
+    ],
+    [
+      "把 1000 颗全部交给伯库林后，他会送你一大坨黄金大便，还能随时看他跳舞——除了本作的新舞蹈，还能选“令人怀念的舞蹈”看旷野之息版本的舞。纯属彩蛋，图一乐。",
+      "After giving all 1000 seeds to Hestu, he will give you a large lump of golden poop, and you can watch him dance any time — besides this game's new dance, you can also choose the 'nostalgic dance' to see the Breath of the Wild version. Purely an Easter egg, just for fun."
+    ],
+    [
+      "新手开荒指南",
+      "Beginner's Guide to Starting Out"
+    ],
+    [
+      "152座神庙全收集自查指南",
+      "Self-Check Guide to Collecting All 152 Shrines"
+    ],
+    [
+      "← 上一篇：新手开荒指南：落地先做的10件事",
+      "← Previous: Beginner's Guide to Starting Out: 10 Things to Do First After Landing"
+    ],
+    [
+      "返回秘籍专栏",
+      "Back to the Tips Column"
+    ],
+    [
+      "下一篇：地底世界生存与探索完全指南 →",
+      "Next: Complete Guide to Surviving and Exploring the Depths →"
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 新手开荒指南：落地先做的10件事",
+      "› Beginner's Guide to Starting Out: 10 Things to Do First After Landing"
+    ],
+    [
+      "› 152座神庙全收集自查指南",
+      "› Self-Check Guide to Collecting All 152 Shrines"
+    ],
+    [
+      "› 地底世界生存与探索完全指南",
+      "› Complete Guide to Surviving and Exploring the Depths"
+    ],
+    [
+      "📚 全部攻略索引",
+      "📚 Complete Guide Index"
+    ],
+    [
+      "🏆 哈里的终极秘籍",
+      "🏆 Harry's Ultimate Tips"
+    ],
+    [
+      "› 七宝匕首终极攻略",
+      "› Ultimate Guide to the Scimitar of the Seven"
+    ],
+    [
+      "› 四大神级料理配方",
+      "› Four God-Tier Recipes"
+    ],
+    [
+      "› 最强套装三梯队全解析",
+      "› Full Breakdown of the Three Tiers of Strongest Armor Sets"
+    ],
+    [
+      "› 乌萨诸马神庙零基础包教包会",
+      "› Usazum Shrine Guide for Complete Beginners"
+    ],
+    [
+      "› 白龙寻踪与大师之剑",
+      "› Tracking the Light Dragon and the Master Sword"
+    ],
+    [
+      "› 马克兔飞行器调校",
+      "› Hover Bike Tuning"
+    ],
+    [
+      "› 地底电池扩充与大妖精",
+      "› Depths Battery Expansion and the Great Fairies"
+    ],
+    [
+      "🆕 每日新攻略",
+      "🆕 New Daily Guides"
+    ],
+    [
+      "› 呀哈哈种子全指南（本篇）",
+      "› Korok Seed Complete Guide (this guide)"
+    ],
+    [
+      "› 大妖精四姐妹与防具强化完全指南",
+      "› Complete Guide to the Four Great Fairies and Armor Upgrades"
+    ],
+    [
+      "› 四条龙素材刷取指南",
+      "› Guide to Farming Materials from the Four Dragons"
+    ],
+    [
+      "呀哈哈种子全指南：1000颗的解谜类型、伯库林位置与421颗扩满路线。",
+      "Korok Seed complete guide: puzzle types for all 1000 seeds, Hestu locations, and the 421-seed max-upgrade route."
+    ],
+    [
+      "相关攻略：",
+      "Related Guides:"
+    ]
+  ],
+  "title": "Korok Seed Complete Guide: Puzzle Types and Expansion Routes for All 1000 Seeds · Harry's Ultimate Tips · Tears of the Kingdom Guide"
 }

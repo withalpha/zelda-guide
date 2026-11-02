@@ -96,10 +96,6 @@
       "Vehicle building: decide the purpose first, then pick the device combination (in-game screenshot)"
     ],
     [
-      "魔像的头部会自己瞄准敌人，配上大炮就是自动炮台：放下后不用管，它会自己开火。适合守点和清营地，但要注意炮台是固定火力，敌人跑出射程就打不到了。炮台怕人马咆哮，见本站人马完全指南：人马一声吼，装置全碎，别在人马面前摆炮台。",
-      "The Construct Head aims at enemies on its own, and paired with a Cannon it becomes an automatic turret: once placed, you can leave it alone and it will fire by itself. It suits holding positions and clearing camps, but note that the turret is fixed firepower — once an enemy runs out of range, it can no longer hit them. Turrets are vulnerable to a Lynel's roar; see this site's Complete Lynel Guide: one Lynel roar shatters every device, so don't set up turrets in front of a Lynel."
-    ],
-    [
       "魔像的头部会自己瞄准敌人，配上大炮就是自动炮台：放下后不用管，它会自己开火。",
       "The Construct Head aims at enemies on its own, and paired with a Cannon it becomes an automatic turret: once placed, you can leave it alone and it will fire by itself."
     ],
@@ -158,10 +154,6 @@
     [
       "制造机抽，消耗左纳乌能源或魔像角。",
       "Draw them from Device Dispensers, consuming Zonaite Charges or Construct Horns."
-    ],
-    [
-      "相关攻略：人马完全指南、马克兔飞行器调校、五位贤者能力全解。",
-      "Related Guides: Complete Lynel Guide, Hover Bike Tuning, and All Five Sages' Abilities Explained."
     ],
     [
       "🔗 相关攻略",
@@ -310,6 +302,22 @@
     [
       "返回秘籍专栏",
       "Back to the Tips Column"
+    ],
+    [
+      "相关攻略：",
+      "Related Guides:"
+    ],
+    [
+      "人马完全指南",
+      "Lynel Complete Guide"
+    ],
+    [
+      "马克兔飞行器调校",
+      "Hover Bike Tuning"
+    ],
+    [
+      "五位贤者能力全解",
+      "All Five Sages' Abilities Explained"
     ]
   ],
   "title": "Practical Zonai Device Builds Guide · Harry's Ultimate Guide · Tears of the Kingdom Guide"

@@ -1,327 +1,323 @@
 {
- "notes": [
-  "林克时间 rendered descriptively as bullet time (slow motion while aiming in midair); it is a fan term for the in-air slow-motion aiming state, not an official English term.",
-  "牢固盟约 rendered as Solemn Vow, the upgraded form of a Sage's vow.",
-  "鸟望台 rendered as Skyview Tower; 沾水状态 rendered as the wet status; 瘴气 rendered as Gloom.",
-  "The first image alt says 四位贤者 (four Sages) although the page covers five Sages; translated literally as written."
- ],
- "pairs": [
-  [
-   "五位贤者能力全解：丘栗疾风、阿沅冲撞、希多水盾、露珠落雷、米涅鲁魔像的用法与配合，附贤者之愿说明。",
-   "All five Sages' abilities explained: Tulin's gust, Yunobo's charge, Sidon's water shield, Riju's lightning strikes, and Mineru's Construct — how to use them and combine them, plus an explanation of Sage's Wills."
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "哈里的终极秘籍",
-   "Harry's Ultimate Tips"
-  ],
-  [
-   "五位贤者能力全解",
-   "All Five Sages' Abilities Explained"
-  ],
-  [
-   "✨ 贤者攻略",
-   "✨ Sage Guide"
-  ],
-  [
-   "贤者不是摆设：五个能力对应五种解法，知道每个能力能干什么，很多谜题和战斗会简单一半。",
-   "The Sages aren't just decoration: five abilities mean five kinds of solutions, and knowing what each ability can do makes many puzzles and battles half as hard."
-  ],
-  [
-   "🧙 作者：哈里",
-   "🧙 Author: Harry"
-  ],
-  [
-   "✨ 贤者 · 能力与用法",
-   "✨ Sages · Abilities and How to Use Them"
-  ],
-  [
-   "📖 深度攻略",
-   "📖 In-Depth Guide"
-  ],
-  [
-   "四位贤者的分身",
-   "Avatars of the four Sages"
-  ],
-  [
-   "贤者分身：战斗、解谜、赶路都能派上用场（游戏实机截图）",
-   "Sage avatars: useful in combat, puzzle-solving, and travel alike (in-game screenshot)"
-  ],
-  [
-   "完成四地区异变与地底主线后，林克身边会跟着五位贤者的分身：风之贤者丘栗、火之贤者阿沅、水之贤者希多、雷之贤者露珠，以及魂之贤者米涅鲁。每个分身都有一个主动能力，用对了能开路、能采矿、能打怪；用错了只会觉得它们碍事。本篇按人讲清用法。",
-   "After completing the Regional Phenomena in the four regions and the Depths main quest, Link is followed by the avatars of five Sages: Tulin, Sage of Wind; Yunobo, Sage of Fire; Sidon, Sage of Water; Riju, Sage of Lightning; and Mineru, Sage of Spirit. Each avatar has an active ability: used well, they can clear paths, mine ore, and fight monsters; used badly, they just feel in the way. This guide explains each one's use, Sage by Sage."
-  ],
-  [
-   "⭐ 本篇要点",
-   "⭐ Key Points of This Guide"
-  ],
-  [
-   "丘栗：滑翔时放出疾风，水平加速，赶路和上高处都靠它。",
-   "Tulin: releases a gust while gliding for horizontal acceleration — essential for travel and reaching high places."
-  ],
-  [
-   "阿沅：火焰冲撞，能采矿、碎岩、点火造上升气流，站在载具上还能当连发炮弹。",
-   "Yunobo: a fiery charge that can mine ore, break rock, and light fires to create updrafts; standing on a vehicle, it can even fire repeatedly like a cannon."
-  ],
-  [
-   "希多：水之护盾，沾水状态下卓拉武器攻击翻倍，还能用水流采矿而不炸飞矿石。",
-   "Sidon: a water shield; while Link has the wet status, Zora weapons deal double damage, and mining with water won't blast ore flying."
-  ],
-  [
-   "露珠：雷电领域内射箭，箭落点触发范围落雷，清群怪很好用。",
-   "Riju: shoot an arrow inside her lightning field and a wide-area lightning strike hits where the arrow lands — great for clearing groups of monsters."
-  ],
-  [
-   "米涅鲁：骑乘魔像，可走瘴气、浅熔岩和冰水，双臂能装武器与装置，骑乘时跳起可进林克时间。",
-   "Mineru: ride her Construct, which can cross Gloom, shallow lava, and cold water; its two arms can hold weapons and Zonai Devices, and jumping while riding enters bullet time."
-  ],
-  [
-   "📑 本篇目录",
-   "📑 Contents"
-  ],
-  [
-   "一、丘栗：风之疾风",
-   "1. Tulin: Wind Gust"
-  ],
-  [
-   "二、阿沅：火之冲撞",
-   "2. Yunobo: Fire Charge"
-  ],
-  [
-   "三、希多：水之护盾",
-   "3. Sidon: Water Shield"
-  ],
-  [
-   "四、露珠：雷电领域",
-   "4. Riju: Lightning Field"
-  ],
-  [
-   "五、米涅鲁：骑乘魔像与贤者之愿",
-   "5. Mineru: Riding the Construct and Sage's Wills"
-  ],
-  [
-   "常见问题",
-   "FAQ"
-  ],
-  [
-   "丘栗的能力是在滑翔时放出一股水平的疾风，让林克向前加速。赶路时从鸟望台弹射出来接疾风，能飞出很远；爬高处爬到一半没力气了，跳下来滑翔接疾风也能再上一段。疾风有冷却，平时赶路可以留着，关键时刻再用。",
-   "Tulin's ability releases a horizontal gust while gliding, accelerating Link forward. When traveling, launch from a Skyview Tower and follow up with the gust to fly a long way; if you run out of stamina halfway up a climb, jump off, glide, and use the gust to gain another stretch of height. The gust has a cooldown, so you can save it during ordinary travel and use it at key moments."
-  ],
-  [
-   "阿沅会向前冲撞并带火焰，采矿、碎裂岩石、点燃草地制造上升气流都靠它。站在自造载具上时，阿沅的冲撞可以连续触发，相当于一门不用弹药的炮。打怕火的敌人和冰系敌人时，阿沅也是很好的先手。",
-   "Yunobo charges forward wreathed in flame — the go-to for mining, breaking rock, and lighting grass to create updrafts. Standing on a self-built vehicle, Yunobo's charge can trigger repeatedly, like a cannon that needs no ammunition. Yunobo is also a good opening move against enemies afraid of fire and ice-type enemies."
-  ],
-  [
-   "风之贤者丘栗",
-   "Tulin, Sage of Wind"
-  ],
-  [
-   "丘栗的疾风：滑翔加速的关键（游戏实机截图）",
-   "Tulin's gust: the key to gliding acceleration (in-game screenshot)"
-  ],
-  [
-   "希多的水之护盾平时是一层防护，主动触发后会给林克挂上沾水状态。沾水状态下卓拉武器攻击翻倍，这是卓拉武器流的核心配合。水流采矿还有一个好处：矿石不会被炸飞，捡起来更方便。配水盾打火系敌人也有优势。",
-   "Sidon's water shield is normally a layer of protection; triggering it actively gives Link the wet status. While wet, Zora weapons deal double damage — the core combination of a Zora-weapon build. Mining with water has another benefit: ore won't be blasted flying, so it's easier to pick up. Fighting fire-type enemies with the water shield is also advantageous."
-  ],
-  [
-   "露珠会在林克周围张开一个雷电领域，在领域内射箭，箭落点会引下一道范围落雷。清一群扎堆的敌人时，先张开领域再射一箭，落雷能一次打一片。注意领域内自己的金属武器也可能引雷，雷雨天用露珠要小心站位。",
-   "Riju opens a lightning field around Link; shoot an arrow inside the field and a wide-area lightning strike falls where the arrow lands. To clear a clustered group of enemies, open the field first and then shoot one arrow, and the strike can hit a whole area at once. Note that your own metal weapons inside the field can also attract lightning, so be careful where you stand when using Riju in a thunderstorm."
-  ],
-  [
-   "米涅鲁的分身是一具魔像，林克可以直接骑上去。魔像不怕瘴气，能走浅熔岩和冰水，双臂可以装武器和左纳乌装置，等于一个会走路的炮台。骑乘时跳起还能进入林克时间，空中射箭很好用。贤者之愿方面：全游戏共 20 个，每集齐 4 个可以在女神像处强化一位贤者为牢固盟约；强化只提升分身的攻击力，不缩短冷却、不改变功能，别指望它让能力变出新花样。",
-   "Mineru's avatar is a Construct that Link can ride directly. The Construct is immune to Gloom, can cross shallow lava and cold water, and its two arms can hold weapons and Zonai Devices — effectively a walking turret. Jumping while riding also enters bullet time, which is great for shooting arrows midair. As for Sage's Wills: there are 20 in the whole game, and every 4 collected let you upgrade one Sage to a Solemn Vow at a Goddess Statue; the upgrade only increases the avatar's attack power, it does not shorten cooldowns or change functions, so don't expect it to give abilities new tricks."
-  ],
-  [
-   "米涅鲁的魔像",
-   "Mineru's Construct"
-  ],
-  [
-   "米涅鲁的魔像：可骑乘、可装武器与装置（游戏实机截图）",
-   "Mineru's Construct: rideable, and able to hold weapons and Devices (in-game screenshot)"
-  ],
-  [
-   "贤者之愿强化有什么用？只提升该贤者分身的攻击力，不改冷却和功能。",
-   "What does upgrading with a Sage's Will do? It only increases that Sage avatar's attack power; it doesn't change cooldowns or functions."
-  ],
-  [
-   "贤者之愿强化有什么用？",
-   "What does upgrading with a Sage's Will do?"
-  ],
-  [
-   "只提升该贤者分身的攻击力，不改冷却和功能。",
-   "It only increases that Sage avatar's attack power; it doesn't change cooldowns or functions."
-  ],
-  [
-   "贤者之愿一共多少个？全游戏 20 个，详见本站贤者的遗志收集页。",
-   "How many Sage's Wills are there in total? 20 in the whole game; see this site's Sage's Will collection page for details."
-  ],
-  [
-   "贤者之愿一共多少个？",
-   "How many Sage's Wills are there in total?"
-  ],
-  [
-   "全游戏 20 个，详见本站贤者的遗志收集页。",
-   "20 in the whole game; see this site's Sage's Will collection page for details."
-  ],
-  [
-   "贤者的遗志",
-   "Sage's Wills"
-  ],
-  [
-   "哪个贤者最通用？丘栗的疾风赶路最常用，阿沅的采矿和冲撞解谜最常用，两位优先熟悉。",
-   "Which Sage is the most versatile? Tulin's gust is the most used for travel, and Yunobo's mining and charge-based puzzle-solving are the most used for puzzles — get familiar with these two first."
-  ],
-  [
-   "哪个贤者最通用？",
-   "Which Sage is the most versatile?"
-  ],
-  [
-   "丘栗的疾风赶路最常用，阿沅的采矿和冲撞解谜最常用，两位优先熟悉。",
-   "Tulin's gust is the most used for travel, and Yunobo's mining and charge-based puzzle-solving are the most used for puzzles — get familiar with these two first."
-  ],
-  [
-   "相关攻略：贤者的遗志、余料建造完全指南、左纳乌装置实用造物指南。",
-   "Related Guides: Sage's Will, Complete Guide to Fuse, Practical Guide to Zonai Device Builds."
-  ],
-  [
-   "余料建造完全指南",
-   "Complete Guide to Fuse"
-  ],
-  [
-   "左纳乌装置实用造物指南",
-   "Practical Guide to Zonai Device Builds"
-  ],
-  [
-   "← 上一篇：马匹捕捉与稀有马完全指南",
-   "← Previous: Complete Guide to Catching Horses and Rare Horses"
-  ],
-  [
-   "返回秘籍专栏",
-   "Back to the Tips Column"
-  ],
-  [
-   "下一篇：料理机制全解：效果、时长与暴击 →",
-   "Next: Complete Guide to Cooking Mechanics: Effects, Duration, and Critical Success →"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 贤者的遗志",
-   "› Sage's Will"
-  ],
-  [
-   "› 余料建造完全指南",
-   "› Complete Guide to Fuse"
-  ],
-  [
-   "› 左纳乌装置实用造物指南",
-   "› Practical Guide to Zonai Device Builds"
-  ],
-  [
-   "📚 全部攻略索引",
-   "📚 Full Guide Index"
-  ],
-  [
-   "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Tips"
-  ],
-  [
-   "› 七宝匕首终极攻略",
-   "› Ultimate Guide to the Scimitar of the Seven"
-  ],
-  [
-   "› 四大神级料理配方",
-   "› Four God-Tier Recipes"
-  ],
-  [
-   "› 最强套装三梯队全解析",
-   "› The Strongest Armor Sets, Explained in Three Tiers"
-  ],
-  [
-   "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine Guide for Complete Beginners"
-  ],
-  [
-   "› 白龙寻踪与大师之剑",
-   "› Tracking the Light Dragon and the Master Sword"
-  ],
-  [
-   "› 马克兔飞行器调校",
-   "› Hover Bike Tuning"
-  ],
-  [
-   "› 地底电池扩充与大妖精",
-   "› Depths Energy Cell Expansion and the Great Fairies"
-  ],
-  [
-   "🆕 每日新攻略",
-   "🆕 Daily New Guides"
-  ],
-  [
-   "› 152座神庙全收集自查指南",
-   "› Self-Check Guide to Collecting All 152 Shrines"
-  ],
-  [
-   "› 新手开荒指南：落地先做的10件事",
-   "› Beginner's Guide to Starting Out: The First 10 Things to Do After Landing"
-  ],
-  [
-   "› 呀哈哈种子全指南",
-   "› Complete Guide to Korok Seeds"
-  ],
-  [
-   "› 地底世界生存与探索完全指南",
-   "› Complete Guide to Surviving and Exploring the Depths"
-  ],
-  [
-   "› 大妖精四姐妹与防具强化完全指南",
-   "› Complete Guide to the Four Great Fairies and Armor Upgrades"
-  ],
-  [
-   "› 四条龙素材刷取指南",
-   "› Guide to Farming Materials from the Four Dragons"
-  ],
-  [
-   "› 人马（莱尼尔）完全指南",
-   "› Complete Guide to Lynels"
-  ],
-  [
-   "› 卢比速刷指南：从前期到后期",
-   "› Rupee Farming Guide: From Early to Late Game"
-  ],
-  [
-   "› 马匹捕捉与稀有马完全指南",
-   "› Complete Guide to Catching Horses and Rare Horses"
-  ],
-  [
-   "› 五位贤者能力全解（本篇）",
-   "› All Five Sages' Abilities Explained (this guide)"
-  ],
-  [
-   "› 料理机制全解：效果、时长与暴击",
-   "› Complete Guide to Cooking Mechanics: Effects, Duration, and Critical Success"
-  ],
-  [
-   "› 海拉鲁城堡探索完全指南",
-   "› Complete Guide to Exploring Hyrule Castle"
-  ],
-  [
-   "› 海拉鲁图鉴509项收集指南",
-   "› Guide to Collecting All 509 Hyrule Compendium Entries"
-  ],
-  [
-   "› 血月机制全解",
-   "› Complete Guide to the Blood Moon Mechanic"
-  ],
-  [
-   "贤者的分身",
-   "Sage avatars"
-  ]
- ],
- "title": "All Five Sages' Abilities Explained · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+  "notes": [
+    "林克时间 rendered descriptively as bullet time (slow motion while aiming in midair); it is a fan term for the in-air slow-motion aiming state, not an official English term.",
+    "牢固盟约 rendered as Solemn Vow, the upgraded form of a Sage's vow.",
+    "鸟望台 rendered as Skyview Tower; 沾水状态 rendered as the wet status; 瘴气 rendered as Gloom.",
+    "The first image alt says 四位贤者 (four Sages) although the page covers five Sages; translated literally as written."
+  ],
+  "pairs": [
+    [
+      "五位贤者能力全解：丘栗疾风、阿沅冲撞、希多水盾、露珠落雷、米涅鲁魔像的用法与配合，附贤者之愿说明。",
+      "All five Sages' abilities explained: Tulin's gust, Yunobo's charge, Sidon's water shield, Riju's lightning strikes, and Mineru's Construct — how to use them and combine them, plus an explanation of Sage's Wills."
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "哈里的终极秘籍",
+      "Harry's Ultimate Tips"
+    ],
+    [
+      "五位贤者能力全解",
+      "All Five Sages' Abilities Explained"
+    ],
+    [
+      "✨ 贤者攻略",
+      "✨ Sage Guide"
+    ],
+    [
+      "贤者不是摆设：五个能力对应五种解法，知道每个能力能干什么，很多谜题和战斗会简单一半。",
+      "The Sages aren't just decoration: five abilities mean five kinds of solutions, and knowing what each ability can do makes many puzzles and battles half as hard."
+    ],
+    [
+      "🧙 作者：哈里",
+      "🧙 Author: Harry"
+    ],
+    [
+      "✨ 贤者 · 能力与用法",
+      "✨ Sages · Abilities and How to Use Them"
+    ],
+    [
+      "📖 深度攻略",
+      "📖 In-Depth Guide"
+    ],
+    [
+      "四位贤者的分身",
+      "Avatars of the four Sages"
+    ],
+    [
+      "贤者分身：战斗、解谜、赶路都能派上用场（游戏实机截图）",
+      "Sage avatars: useful in combat, puzzle-solving, and travel alike (in-game screenshot)"
+    ],
+    [
+      "完成四地区异变与地底主线后，林克身边会跟着五位贤者的分身：风之贤者丘栗、火之贤者阿沅、水之贤者希多、雷之贤者露珠，以及魂之贤者米涅鲁。每个分身都有一个主动能力，用对了能开路、能采矿、能打怪；用错了只会觉得它们碍事。本篇按人讲清用法。",
+      "After completing the Regional Phenomena in the four regions and the Depths main quest, Link is followed by the avatars of five Sages: Tulin, Sage of Wind; Yunobo, Sage of Fire; Sidon, Sage of Water; Riju, Sage of Lightning; and Mineru, Sage of Spirit. Each avatar has an active ability: used well, they can clear paths, mine ore, and fight monsters; used badly, they just feel in the way. This guide explains each one's use, Sage by Sage."
+    ],
+    [
+      "⭐ 本篇要点",
+      "⭐ Key Points of This Guide"
+    ],
+    [
+      "丘栗：滑翔时放出疾风，水平加速，赶路和上高处都靠它。",
+      "Tulin: releases a gust while gliding for horizontal acceleration — essential for travel and reaching high places."
+    ],
+    [
+      "阿沅：火焰冲撞，能采矿、碎岩、点火造上升气流，站在载具上还能当连发炮弹。",
+      "Yunobo: a fiery charge that can mine ore, break rock, and light fires to create updrafts; standing on a vehicle, it can even fire repeatedly like a cannon."
+    ],
+    [
+      "希多：水之护盾，沾水状态下卓拉武器攻击翻倍，还能用水流采矿而不炸飞矿石。",
+      "Sidon: a water shield; while Link has the wet status, Zora weapons deal double damage, and mining with water won't blast ore flying."
+    ],
+    [
+      "露珠：雷电领域内射箭，箭落点触发范围落雷，清群怪很好用。",
+      "Riju: shoot an arrow inside her lightning field and a wide-area lightning strike hits where the arrow lands — great for clearing groups of monsters."
+    ],
+    [
+      "米涅鲁：骑乘魔像，可走瘴气、浅熔岩和冰水，双臂能装武器与装置，骑乘时跳起可进林克时间。",
+      "Mineru: ride her Construct, which can cross Gloom, shallow lava, and cold water; its two arms can hold weapons and Zonai Devices, and jumping while riding enters bullet time."
+    ],
+    [
+      "📑 本篇目录",
+      "📑 Contents"
+    ],
+    [
+      "一、丘栗：风之疾风",
+      "1. Tulin: Wind Gust"
+    ],
+    [
+      "二、阿沅：火之冲撞",
+      "2. Yunobo: Fire Charge"
+    ],
+    [
+      "三、希多：水之护盾",
+      "3. Sidon: Water Shield"
+    ],
+    [
+      "四、露珠：雷电领域",
+      "4. Riju: Lightning Field"
+    ],
+    [
+      "五、米涅鲁：骑乘魔像与贤者之愿",
+      "5. Mineru: Riding the Construct and Sage's Wills"
+    ],
+    [
+      "常见问题",
+      "FAQ"
+    ],
+    [
+      "丘栗的能力是在滑翔时放出一股水平的疾风，让林克向前加速。赶路时从鸟望台弹射出来接疾风，能飞出很远；爬高处爬到一半没力气了，跳下来滑翔接疾风也能再上一段。疾风有冷却，平时赶路可以留着，关键时刻再用。",
+      "Tulin's ability releases a horizontal gust while gliding, accelerating Link forward. When traveling, launch from a Skyview Tower and follow up with the gust to fly a long way; if you run out of stamina halfway up a climb, jump off, glide, and use the gust to gain another stretch of height. The gust has a cooldown, so you can save it during ordinary travel and use it at key moments."
+    ],
+    [
+      "阿沅会向前冲撞并带火焰，采矿、碎裂岩石、点燃草地制造上升气流都靠它。站在自造载具上时，阿沅的冲撞可以连续触发，相当于一门不用弹药的炮。打怕火的敌人和冰系敌人时，阿沅也是很好的先手。",
+      "Yunobo charges forward wreathed in flame — the go-to for mining, breaking rock, and lighting grass to create updrafts. Standing on a self-built vehicle, Yunobo's charge can trigger repeatedly, like a cannon that needs no ammunition. Yunobo is also a good opening move against enemies afraid of fire and ice-type enemies."
+    ],
+    [
+      "风之贤者丘栗",
+      "Tulin, Sage of Wind"
+    ],
+    [
+      "丘栗的疾风：滑翔加速的关键（游戏实机截图）",
+      "Tulin's gust: the key to gliding acceleration (in-game screenshot)"
+    ],
+    [
+      "希多的水之护盾平时是一层防护，主动触发后会给林克挂上沾水状态。沾水状态下卓拉武器攻击翻倍，这是卓拉武器流的核心配合。水流采矿还有一个好处：矿石不会被炸飞，捡起来更方便。配水盾打火系敌人也有优势。",
+      "Sidon's water shield is normally a layer of protection; triggering it actively gives Link the wet status. While wet, Zora weapons deal double damage — the core combination of a Zora-weapon build. Mining with water has another benefit: ore won't be blasted flying, so it's easier to pick up. Fighting fire-type enemies with the water shield is also advantageous."
+    ],
+    [
+      "露珠会在林克周围张开一个雷电领域，在领域内射箭，箭落点会引下一道范围落雷。清一群扎堆的敌人时，先张开领域再射一箭，落雷能一次打一片。注意领域内自己的金属武器也可能引雷，雷雨天用露珠要小心站位。",
+      "Riju opens a lightning field around Link; shoot an arrow inside the field and a wide-area lightning strike falls where the arrow lands. To clear a clustered group of enemies, open the field first and then shoot one arrow, and the strike can hit a whole area at once. Note that your own metal weapons inside the field can also attract lightning, so be careful where you stand when using Riju in a thunderstorm."
+    ],
+    [
+      "米涅鲁的分身是一具魔像，林克可以直接骑上去。魔像不怕瘴气，能走浅熔岩和冰水，双臂可以装武器和左纳乌装置，等于一个会走路的炮台。骑乘时跳起还能进入林克时间，空中射箭很好用。贤者之愿方面：全游戏共 20 个，每集齐 4 个可以在女神像处强化一位贤者为牢固盟约；强化只提升分身的攻击力，不缩短冷却、不改变功能，别指望它让能力变出新花样。",
+      "Mineru's avatar is a Construct that Link can ride directly. The Construct is immune to Gloom, can cross shallow lava and cold water, and its two arms can hold weapons and Zonai Devices — effectively a walking turret. Jumping while riding also enters bullet time, which is great for shooting arrows midair. As for Sage's Wills: there are 20 in the whole game, and every 4 collected let you upgrade one Sage to a Solemn Vow at a Goddess Statue; the upgrade only increases the avatar's attack power, it does not shorten cooldowns or change functions, so don't expect it to give abilities new tricks."
+    ],
+    [
+      "米涅鲁的魔像",
+      "Mineru's Construct"
+    ],
+    [
+      "米涅鲁的魔像：可骑乘、可装武器与装置（游戏实机截图）",
+      "Mineru's Construct: rideable, and able to hold weapons and Devices (in-game screenshot)"
+    ],
+    [
+      "贤者之愿强化有什么用？只提升该贤者分身的攻击力，不改冷却和功能。",
+      "What does upgrading with a Sage's Will do? It only increases that Sage avatar's attack power; it doesn't change cooldowns or functions."
+    ],
+    [
+      "贤者之愿强化有什么用？",
+      "What does upgrading with a Sage's Will do?"
+    ],
+    [
+      "只提升该贤者分身的攻击力，不改冷却和功能。",
+      "It only increases that Sage avatar's attack power; it doesn't change cooldowns or functions."
+    ],
+    [
+      "贤者之愿一共多少个？",
+      "How many Sage's Wills are there in total?"
+    ],
+    [
+      "全游戏 20 个，详见本站贤者的遗志收集页。",
+      "20 in the whole game; see this site's Sage's Will collection page for details."
+    ],
+    [
+      "贤者的遗志",
+      "Sage's Wills"
+    ],
+    [
+      "哪个贤者最通用？丘栗的疾风赶路最常用，阿沅的采矿和冲撞解谜最常用，两位优先熟悉。",
+      "Which Sage is the most versatile? Tulin's gust is the most used for travel, and Yunobo's mining and charge-based puzzle-solving are the most used for puzzles — get familiar with these two first."
+    ],
+    [
+      "哪个贤者最通用？",
+      "Which Sage is the most versatile?"
+    ],
+    [
+      "丘栗的疾风赶路最常用，阿沅的采矿和冲撞解谜最常用，两位优先熟悉。",
+      "Tulin's gust is the most used for travel, and Yunobo's mining and charge-based puzzle-solving are the most used for puzzles — get familiar with these two first."
+    ],
+    [
+      "余料建造完全指南",
+      "Complete Guide to Fuse"
+    ],
+    [
+      "左纳乌装置实用造物指南",
+      "Practical Guide to Zonai Device Builds"
+    ],
+    [
+      "← 上一篇：马匹捕捉与稀有马完全指南",
+      "← Previous: Complete Guide to Catching Horses and Rare Horses"
+    ],
+    [
+      "返回秘籍专栏",
+      "Back to the Tips Column"
+    ],
+    [
+      "下一篇：料理机制全解：效果、时长与暴击 →",
+      "Next: Complete Guide to Cooking Mechanics: Effects, Duration, and Critical Success →"
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 贤者的遗志",
+      "› Sage's Will"
+    ],
+    [
+      "› 余料建造完全指南",
+      "› Complete Guide to Fuse"
+    ],
+    [
+      "› 左纳乌装置实用造物指南",
+      "› Practical Guide to Zonai Device Builds"
+    ],
+    [
+      "📚 全部攻略索引",
+      "📚 Full Guide Index"
+    ],
+    [
+      "🏆 哈里的终极秘籍",
+      "🏆 Harry's Ultimate Tips"
+    ],
+    [
+      "› 七宝匕首终极攻略",
+      "› Ultimate Guide to the Scimitar of the Seven"
+    ],
+    [
+      "› 四大神级料理配方",
+      "› Four God-Tier Recipes"
+    ],
+    [
+      "› 最强套装三梯队全解析",
+      "› The Strongest Armor Sets, Explained in Three Tiers"
+    ],
+    [
+      "› 乌萨诸马神庙零基础包教包会",
+      "› Usazum Shrine Guide for Complete Beginners"
+    ],
+    [
+      "› 白龙寻踪与大师之剑",
+      "› Tracking the Light Dragon and the Master Sword"
+    ],
+    [
+      "› 马克兔飞行器调校",
+      "› Hover Bike Tuning"
+    ],
+    [
+      "› 地底电池扩充与大妖精",
+      "› Depths Energy Cell Expansion and the Great Fairies"
+    ],
+    [
+      "🆕 每日新攻略",
+      "🆕 Daily New Guides"
+    ],
+    [
+      "› 152座神庙全收集自查指南",
+      "› Self-Check Guide to Collecting All 152 Shrines"
+    ],
+    [
+      "› 新手开荒指南：落地先做的10件事",
+      "› Beginner's Guide to Starting Out: The First 10 Things to Do After Landing"
+    ],
+    [
+      "› 呀哈哈种子全指南",
+      "› Complete Guide to Korok Seeds"
+    ],
+    [
+      "› 地底世界生存与探索完全指南",
+      "› Complete Guide to Surviving and Exploring the Depths"
+    ],
+    [
+      "› 大妖精四姐妹与防具强化完全指南",
+      "› Complete Guide to the Four Great Fairies and Armor Upgrades"
+    ],
+    [
+      "› 四条龙素材刷取指南",
+      "› Guide to Farming Materials from the Four Dragons"
+    ],
+    [
+      "› 人马（莱尼尔）完全指南",
+      "› Complete Guide to Lynels"
+    ],
+    [
+      "› 卢比速刷指南：从前期到后期",
+      "› Rupee Farming Guide: From Early to Late Game"
+    ],
+    [
+      "› 马匹捕捉与稀有马完全指南",
+      "› Complete Guide to Catching Horses and Rare Horses"
+    ],
+    [
+      "› 五位贤者能力全解（本篇）",
+      "› All Five Sages' Abilities Explained (this guide)"
+    ],
+    [
+      "› 料理机制全解：效果、时长与暴击",
+      "› Complete Guide to Cooking Mechanics: Effects, Duration, and Critical Success"
+    ],
+    [
+      "› 海拉鲁城堡探索完全指南",
+      "› Complete Guide to Exploring Hyrule Castle"
+    ],
+    [
+      "› 海拉鲁图鉴509项收集指南",
+      "› Guide to Collecting All 509 Hyrule Compendium Entries"
+    ],
+    [
+      "› 血月机制全解",
+      "› Complete Guide to the Blood Moon Mechanic"
+    ],
+    [
+      "贤者的分身",
+      "Sage avatars"
+    ],
+    [
+      "相关攻略：",
+      "Related Guides:"
+    ]
+  ],
+  "title": "All Five Sages' Abilities Explained · Harry's Ultimate Tips · Tears of the Kingdom Guide"
 }

@@ -166,10 +166,6 @@
       "The Hylian Shield does not have infinite durability, and its 800 durability will break all the same once used up, which must be stated first, so you do not take it for long slides on rock or head-on blocks against Lynel charges as if it were an invincible shield. If it breaks, do not panic: after completing the Mayoral Election side adventure in Hateno Village, Cece's shop sells rare equipment, including the Hylian Shield, for 3000 Rupees. There is only one restriction: she will only sell it if your Hylian Shield has already broken, and you cannot buy a second one while it is intact, so stockpiling two is not possible."
     ],
     [
-      "作者视角的判断：3000卢比在后期不算大钱，但前期是一笔巨款。前期拿到海利亚盾后，最好的策略是“省着用”：平时用捡来的普通盾，硬仗、打人马、挑战精英怪时再换上海利亚盾。等到卢比来源稳定（参考本站卢比速刷指南），碎了再买的心理负担就小多了。",
-      "The author's verdict: 3000 Rupees is not much money in the late game, but it is a huge sum early on. After getting the Hylian Shield early, the best strategy is to use it sparingly: use picked-up ordinary shields day to day, and switch to the Hylian Shield only for hard fights, Lynels, and elite monsters. Once your Rupee income is stable (see this site's Rupee Farming Guide), the mental burden of buying a replacement after it breaks is much smaller."
-    ],
-    [
       "作者视角的判断：3000卢比在后期不算大钱，但前期是一笔巨款。",
       "The author's verdict: 3000 Rupees is not much money in the late game, but it is a huge sum early on."
     ],
@@ -322,10 +318,6 @@
       "Rocket shield: shield plus a Rocket, able to fly briefly, but with enormous durability cost, suited only to just-short-of-enough-height situations, and not to be used as regular transport."
     ],
     [
-      "盾冲浪的另一条铁律：盾在滑行中碎掉，林克会直接摔出去，在陡坡上摔一下的伤害不低。所以冲浪前先看一眼盾的耐久状态——快碎的盾只适合在雪地上滑最后一段，千万别拿它下陡坡。更多余料搭配的通用规则，见本站余料建造完全指南。",
-      "Another iron rule of shield surfing: if your shield breaks mid-slide, Link will be thrown straight off, and a fall on a steep slope deals no small amount of damage. So check your shield's durability before surfing: a nearly broken shield is only fit for a final stretch on snow, and must never be taken down a steep slope. For the general rules of more Fuse combos, see this site's Fuse Complete Guide."
-    ],
-    [
       "盾冲浪的另一条铁律：盾在滑行中碎掉，林克会直接摔出去，在陡坡上摔一下的伤害不低。",
       "Another iron rule of shield surfing: if your shield breaks mid-slide, Link will be thrown straight off, and a fall on a steep slope deals no small amount of damage."
     ],
@@ -340,10 +332,6 @@
     [
       "盾牌管理的核心就一句话：按用途分盾。背包里同时留三类盾：战斗盾（海利亚盾或高防御盾，只打硬仗）、冲浪盾（捡来的普通盾，碎了不心疼）、备用盾（路上随手捡的，营地战利品）。这个分法的好处是，任何一种用法都不会把另一类用途的盾提前耗光。",
       "Shield management comes down to one sentence: divide shields by use. Keep three kinds of shields in your inventory at once: combat shields (the Hylian Shield or high-defense shields, for hard fights only), surfing shields (picked-up ordinary shields, no great loss when they break), and spare shields (picked up along the road, as camp loot). The benefit of this split is that no one use will wear out the shields meant for another use early."
-    ],
-    [
-      "另外两个省盾习惯：一是营地战优先用弓箭与环境杀（炸弹桶、落石），少举盾硬扛；二是打人马这类高强度敌人时，盾反与闪避优先于举盾（详见本站人马完全指南）。盾反练出来后，你会发现海利亚盾的800耐久比想象中耐用得多。",
-      "Two more shield-saving habits: first, in camp battles prioritize bows and environmental kills (bomb barrels, falling rocks) and block head-on less often; second, against high-intensity enemies like Lynels, prioritize Perfect Guard and dodging over holding up your shield (see this site's Lynel Complete Guide for details). Once you have mastered Perfect Guard, you will find the Hylian Shield's 800 durability lasts much longer than you imagined."
     ],
     [
       "另外两个省盾习惯：一是营地战优先用弓箭与环境杀（炸弹桶、落石），少举盾硬扛；",
@@ -608,6 +596,18 @@
     [
       "开宝箱拿盾。",
       "Open the chest and take the shield."
+    ],
+    [
+      "余料建造完全指南",
+      "Fuse Complete Guide"
+    ],
+    [
+      "人马完全指南",
+      "Lynel Complete Guide"
+    ],
+    [
+      "卢比速刷指南",
+      "Rupee Fast Farming Guide"
     ]
   ],
   "notes": [

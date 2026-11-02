@@ -1,316 +1,316 @@
 {
- "notes": [
-  "感应器 rendered as Sensor (the Sensor+ upgrade is described as the Compendium Sensor task). 洛贝利 rendered as Robbie. 精英敌人 rendered as elite enemies (the game's stronger, post-clearance enemy variants)."
- ],
- "pairs": [
-  [
-   "海拉鲁图鉴509项收集指南：相机解锁、五大分类、缺漏照片购买规则与全收集奖励，附感应器任务。",
-   "Guide to collecting all 509 Hyrule Compendium entries: camera unlocking, the five major categories, rules for buying missing photos, and the full-collection reward, plus the Sensor quest."
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "哈里的终极秘籍",
-   "Harry's Ultimate Tips"
-  ],
-  [
-   "海拉鲁图鉴509项收集指南",
-   "Guide to Collecting All 509 Hyrule Compendium Entries"
-  ],
-  [
-   "509 项图鉴不用一张张硬找：相机解锁、分类查漏、研究所补买，三步就能系统性地收齐。",
-   "You don't have to hunt down all 509 Compendium entries one by one: unlocking the camera, checking by category, and buying replacements at the lab will systematically complete the collection in three steps."
-  ],
-  [
-   "🧙 作者：哈里 📷 图鉴 · 509项收集 📖 深度攻略",
-   "🧙 Author: Harry 📷 Compendium · Collecting All 509 📖 In-Depth Guide"
-  ],
-  [
-   "普尔亚帕德的相机功能",
-   "The Purah Pad's camera function"
-  ],
-  [
-   "相机是图鉴的入口：先解锁，再谈收集（游戏实机截图）",
-   "The camera is the Compendium's entry point: unlock it first, then talk about collecting (in-game screenshot)"
-  ],
-  [
-   "海拉鲁图鉴共 509 项，分生物、怪物、材料、装备、宝物五大类。很多人玩到后期才发现缺了几十张照片，又不知道缺的是哪一类。本篇讲清解锁流程、查漏方法和补买规则，收集可以按部就班地推进，不用靠运气碰。",
-   "The Hyrule Compendium has 509 entries in total, divided into five major categories: Creatures, Monsters, Materials, Equipment, and Treasure. Many people only discover late in the game that they're missing dozens of photos, without knowing which category they're missing from. This article explains the unlocking process, the gap-checking method, and the replacement-purchase rules, so collecting can proceed step by step without relying on luck."
-  ],
-  [
-   "⭐ 本篇要点",
-   "⭐ Key Points of This Article"
-  ],
-  [
-   "图鉴共 509 项，分生物、怪物、材料、装备、宝物五类；别信 585 项的说法。",
-   "The Compendium has 509 entries in total, in five categories — Creatures, Monsters, Materials, Equipment, and Treasure; don't believe the claim of 585."
-  ],
-  [
-   "相机与图鉴经主线“给地底人拍照”解锁：在监视堡垒南边深穴跟着洛贝利走。",
-   "The camera and Compendium unlock through the main quest “Camera Work in the Depths”: follow Robbie at the chasm south of Lookout Landing."
-  ],
-  [
-   "缺漏照片去哈特诺古代研究所找洛贝利按类别买：普通 100 卢比一张，类别内随机。",
-   "Buy missing photos by category from Robbie at the Hateno Ancient Tech Lab: ordinary photos cost 100 Rupees each, random within the category."
-  ],
-  [
-   "通关后精英敌人照片 500 卢比一张，普通照片仍是 100 卢比。",
-   "After clearing the game, elite enemy photos cost 500 Rupees each; ordinary photos are still 100 Rupees."
-  ],
-  [
-   "全收集奖励是洛贝利的布料（滑翔伞布料）；图鉴感应器任务要求先登录 5 个怪物条目。",
-   "The full-collection reward is Robbie's Fabric (Paraglider fabric); the Compendium Sensor quest requires registering 5 monster entries first."
-  ],
-  [
-   "📑 本篇目录",
-   "📑 Contents of This Article"
-  ],
-  [
-   "一、解锁：相机与图鉴",
-   "I. Unlocking: Camera and Compendium"
-  ],
-  [
-   "二、五大分类与509项构成",
-   "II. The Five Categories and What the 509 Entries Comprise"
-  ],
-  [
-   "三、拍照技巧：怎么算登录",
-   "III. Photography Tips: What Counts as Registering"
-  ],
-  [
-   "四、查漏与补买规则",
-   "IV. Gap-Checking and Replacement-Purchase Rules"
-  ],
-  [
-   "五、全收集奖励与感应器",
-   "V. Full-Collection Reward and the Sensor"
-  ],
-  [
-   "常见问题",
-   "FAQ"
-  ],
-  [
-   "相机与图鉴不是开局就有的，要经主线“给地底人拍照”解锁：去监视堡垒南边的深穴，跟着洛贝利走完流程，普尔亚帕德就会获得相机功能，图鉴也随之开启。解锁越早越好，之后遇到的每种生物和怪物顺手拍一张，后期就不用专门回头补。",
-   "The camera and Compendium aren't available from the start — they unlock through the main quest “Camera Work in the Depths”: go to the chasm south of Lookout Landing, follow Robbie through the process, and the Purah Pad will gain the camera function, with the Compendium opening along with it. The earlier you unlock them, the better — afterwards, snap a photo of each new creature and monster you meet, and you won't need to specially go back to fill gaps later."
-  ],
-  [
-   "图鉴共 509 项，分五类：生物、怪物、材料、装备、宝物。查漏时按类查，不要按地点瞎找：先看哪一类缺得多，再针对性地去那类出没的区域。装备类很多来自宝箱和商店，宝物类则与呀哈哈、地底宝箱等收集要素相关，缺漏往往集中在这两类。",
-   "The Compendium has 509 entries in five categories: Creatures, Monsters, Materials, Equipment, and Treasure. When checking for gaps, check by category, not by blindly searching by location: first see which category is missing the most, then go specifically to the areas where that category appears. Many Equipment entries come from treasure chests and shops, while Treasure entries relate to collecting elements like Koroks and Depths chests — gaps are often concentrated in these two categories."
-  ],
-  [
-   "用相机拍摄海拉鲁生物",
-   "Photographing Hyrule creatures with the camera"
-  ],
-  [
-   "拍照登录：对准目标拍下即算一条（游戏实机截图）",
-   "Photo registration: aiming at the target and taking the photo counts as one entry (in-game screenshot)"
-  ],
-  [
-   "拍照登录的判定很宽松：对准目标、拍清楚就能登录，不用拍得多艺术。怪物拍照时注意安全，远距离用相机变焦拍也可以登录，不用贴脸。同一目标拍多次只算一条，换目标才有新条目。养成习惯：新区域先拍一圈，Boss 战前先拍 Boss，错过一次可能要等血月刷新。",
-   "Photo registration is judged leniently: aim at the target and take a clear photo to register — it doesn't need to be artistic. When photographing monsters, mind your safety: photographing from far away with the camera zoom also registers, with no need to get up close. Photographing the same target multiple times only counts as one entry; only a new target gives a new entry. Build the habit: photograph a full round in each new area, and photograph a boss before the boss fight — missing once may mean waiting for a Blood Moon refresh."
-  ],
-  [
-   "缺漏照片不用满地图重找：去哈特诺古代研究所找洛贝利，按类别购买。普通照片 100 卢比一张，类别内随机给，买之前先确认缺的是哪一类，别跨类乱买。通关后精英敌人照片涨到 500 卢比一张，精英怪的照片建议通关前尽量自己拍，省钱又省事。",
-   "You don't need to search the whole map again for missing photos: go to Robbie at the Hateno Ancient Tech Lab and buy by category. Ordinary photos cost 100 Rupees each, given randomly within the category — confirm which category you're missing before buying, and don't buy randomly across categories. After clearing the game, elite enemy photos rise to 500 Rupees each, so it's recommended to photograph elite monsters yourself before clearing the game as much as possible, saving both money and trouble."
-  ],
-  [
-   "509 项全收集后，奖励是洛贝利的布料，可以用来换滑翔伞外观。图鉴感应器（Sensor+）是另一个相关任务：要求先登录 5 个怪物条目，完成后感应器可以帮你定位图鉴目标，查漏效率会高很多。建议先做感应器任务，再系统性补图鉴。",
-   "After collecting all 509 entries, the reward is Robbie's Fabric, which can be used to change the Paraglider's appearance. The Compendium Sensor (Sensor+) is another related quest: it requires registering 5 monster entries first, and once completed, the Sensor can help you locate Compendium targets, greatly improving gap-checking efficiency. It's recommended to do the Sensor quest first, then systematically complete the Compendium."
-  ],
-  [
-   "普尔亚帕德与感应器",
-   "The Purah Pad and the Sensor"
-  ],
-  [
-   "感应器：登录5个怪物条目后解锁（游戏实机截图）",
-   "The Sensor: unlocked after registering 5 monster entries (in-game screenshot)"
-  ],
-  [
-   "图鉴一共多少项？509 项，五大类。585 项的说法不可信。",
-   "How many entries does the Compendium have in total? 509, in five major categories. The claim of 585 is not credible."
-  ],
-  [
-   "图鉴一共多少项？",
-   "How many entries does the Compendium have in total?"
-  ],
-  [
-   "509 项，五大类。585 项的说法不可信。",
-   "509, in five major categories. The claim of 585 is not credible."
-  ],
-  [
-   "照片缺了怎么办？哈特诺古代研究所找洛贝利按类买，普通 100 卢比一张。",
-   "What if photos are missing? Buy by category from Robbie at the Hateno Ancient Tech Lab; ordinary photos cost 100 Rupees each."
-  ],
-  [
-   "照片缺了怎么办？",
-   "What if photos are missing?"
-  ],
-  [
-   "哈特诺古代研究所找洛贝利按类买，普通 100 卢比一张。",
-   "Buy by category from Robbie at the Hateno Ancient Tech Lab; ordinary photos cost 100 Rupees each."
-  ],
-  [
-   "全收集有什么奖励？洛贝利的布料（滑翔伞布料）。",
-   "What's the reward for full collection? Robbie's Fabric (Paraglider fabric)."
-  ],
-  [
-   "全收集有什么奖励？",
-   "What's the reward for full collection?"
-  ],
-  [
-   "洛贝利的布料（滑翔伞布料）。",
-   "Robbie's Fabric (Paraglider fabric)."
-  ],
-  [
-   "贤者的遗志",
-   "Sage's Wills"
-  ],
-  [
-   "呀哈哈种子全指南",
-   "Complete Guide to Korok Seeds"
-  ],
-  [
-   "地底世界生存与探索完全指南",
-   "Complete Guide to Surviving and Exploring the Depths"
-  ],
-  [
-   "相关攻略：贤者的遗志、呀哈哈种子全指南、地底世界生存与探索完全指南。",
-   "Related Guides: Sage's Wills, Complete Guide to Korok Seeds, Complete Guide to Surviving and Exploring the Depths."
-  ],
-  [
-   "← 上一篇：海拉鲁城堡探索完全指南",
-   "← Previous: Complete Guide to Exploring Hyrule Castle"
-  ],
-  [
-   "返回秘籍专栏",
-   "Back to the Tips Column"
-  ],
-  [
-   "下一篇：左纳乌装置实用造物指南 →",
-   "Next: Practical Guide to Zonai Device Builds →"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 贤者的遗志",
-   "› Sage's Wills"
-  ],
-  [
-   "› 呀哈哈种子全指南",
-   "› Complete Guide to Korok Seeds"
-  ],
-  [
-   "› 地底世界生存与探索完全指南",
-   "› Complete Guide to Surviving and Exploring the Depths"
-  ],
-  [
-   "📚 全部攻略索引",
-   "📚 Full Guide Index"
-  ],
-  [
-   "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Tips"
-  ],
-  [
-   "› 七宝匕首终极攻略",
-   "› Ultimate Guide to the Scimitar of the Seven"
-  ],
-  [
-   "› 四大神级料理配方",
-   "› Four God-Tier Recipes"
-  ],
-  [
-   "› 最强套装三梯队全解析",
-   "› Full Analysis of the Three Tiers of Strongest Armor Sets"
-  ],
-  [
-   "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine Guide for Complete Beginners"
-  ],
-  [
-   "› 白龙寻踪与大师之剑",
-   "› Tracking the Light Dragon and the Master Sword"
-  ],
-  [
-   "› 马克兔飞行器调校",
-   "› Hover Bike Tuning"
-  ],
-  [
-   "› 地底电池扩充与大妖精",
-   "› Depths Battery Expansion and the Great Fairies"
-  ],
-  [
-   "🆕 每日新攻略",
-   "🆕 Daily New Guides"
-  ],
-  [
-   "› 152座神庙全收集自查指南",
-   "› Self-Check Guide to Collecting All 152 Shrines"
-  ],
-  [
-   "› 新手开荒指南：落地先做的10件事",
-   "› Beginner's Pioneering Guide: 10 Things to Do First After Landing"
-  ],
-  [
-   "› 大妖精四姐妹与防具强化完全指南",
-   "› Complete Guide to the Four Great Fairies and Armor Enhancement"
-  ],
-  [
-   "› 四条龙素材刷取指南",
-   "› Guide to Farming Materials from the Four Dragons"
-  ],
-  [
-   "› 人马（莱尼尔）完全指南",
-   "› Complete Guide to Lynels"
-  ],
-  [
-   "› 卢比速刷指南：从前期到后期",
-   "› Rupee Farming Guide: From Early to Late Game"
-  ],
-  [
-   "› 马匹捕捉与稀有马完全指南",
-   "› Complete Guide to Catching Horses and Rare Horses"
-  ],
-  [
-   "› 五位贤者能力全解",
-   "› Complete Explanation of the Five Sages' Abilities"
-  ],
-  [
-   "› 料理机制全解：效果、时长与暴击",
-   "› Complete Explanation of Cooking Mechanics: Effects, Duration, and Criticals"
-  ],
-  [
-   "› 海拉鲁城堡探索完全指南",
-   "› Complete Guide to Exploring Hyrule Castle"
-  ],
-  [
-   "› 海拉鲁图鉴509项收集指南（本篇）",
-   "› Guide to Collecting All 509 Hyrule Compendium Entries (This Article)"
-  ],
-  [
-   "› 左纳乌装置实用造物指南",
-   "› Practical Guide to Zonai Device Builds"
-  ],
-  [
-   "› 血月机制全解",
-   "› Complete Explanation of the Blood Moon Mechanic"
-  ],
-  [
-   "› 余料建造完全指南",
-   "› Complete Guide to Fuse"
-  ],
-  [
-   "📷 图鉴攻略",
-   "📷 Compendium Guide"
-  ],
-  [
-   "📷 图鉴 · 509项收集",
-   "📷 Compendium · 509 Entries"
-  ]
- ],
- "title": "Guide to Collecting All 509 Hyrule Compendium Entries · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+  "notes": [
+    "感应器 rendered as Sensor (the Sensor+ upgrade is described as the Compendium Sensor task). 洛贝利 rendered as Robbie. 精英敌人 rendered as elite enemies (the game's stronger, post-clearance enemy variants)."
+  ],
+  "pairs": [
+    [
+      "海拉鲁图鉴509项收集指南：相机解锁、五大分类、缺漏照片购买规则与全收集奖励，附感应器任务。",
+      "Guide to collecting all 509 Hyrule Compendium entries: camera unlocking, the five major categories, rules for buying missing photos, and the full-collection reward, plus the Sensor quest."
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "哈里的终极秘籍",
+      "Harry's Ultimate Tips"
+    ],
+    [
+      "海拉鲁图鉴509项收集指南",
+      "Guide to Collecting All 509 Hyrule Compendium Entries"
+    ],
+    [
+      "509 项图鉴不用一张张硬找：相机解锁、分类查漏、研究所补买，三步就能系统性地收齐。",
+      "You don't have to hunt down all 509 Compendium entries one by one: unlocking the camera, checking by category, and buying replacements at the lab will systematically complete the collection in three steps."
+    ],
+    [
+      "🧙 作者：哈里 📷 图鉴 · 509项收集 📖 深度攻略",
+      "🧙 Author: Harry 📷 Compendium · Collecting All 509 📖 In-Depth Guide"
+    ],
+    [
+      "普尔亚帕德的相机功能",
+      "The Purah Pad's camera function"
+    ],
+    [
+      "相机是图鉴的入口：先解锁，再谈收集（游戏实机截图）",
+      "The camera is the Compendium's entry point: unlock it first, then talk about collecting (in-game screenshot)"
+    ],
+    [
+      "海拉鲁图鉴共 509 项，分生物、怪物、材料、装备、宝物五大类。很多人玩到后期才发现缺了几十张照片，又不知道缺的是哪一类。本篇讲清解锁流程、查漏方法和补买规则，收集可以按部就班地推进，不用靠运气碰。",
+      "The Hyrule Compendium has 509 entries in total, divided into five major categories: Creatures, Monsters, Materials, Equipment, and Treasure. Many people only discover late in the game that they're missing dozens of photos, without knowing which category they're missing from. This article explains the unlocking process, the gap-checking method, and the replacement-purchase rules, so collecting can proceed step by step without relying on luck."
+    ],
+    [
+      "⭐ 本篇要点",
+      "⭐ Key Points of This Article"
+    ],
+    [
+      "图鉴共 509 项，分生物、怪物、材料、装备、宝物五类；别信 585 项的说法。",
+      "The Compendium has 509 entries in total, in five categories — Creatures, Monsters, Materials, Equipment, and Treasure; don't believe the claim of 585."
+    ],
+    [
+      "相机与图鉴经主线“给地底人拍照”解锁：在监视堡垒南边深穴跟着洛贝利走。",
+      "The camera and Compendium unlock through the main quest “Camera Work in the Depths”: follow Robbie at the chasm south of Lookout Landing."
+    ],
+    [
+      "缺漏照片去哈特诺古代研究所找洛贝利按类别买：普通 100 卢比一张，类别内随机。",
+      "Buy missing photos by category from Robbie at the Hateno Ancient Tech Lab: ordinary photos cost 100 Rupees each, random within the category."
+    ],
+    [
+      "通关后精英敌人照片 500 卢比一张，普通照片仍是 100 卢比。",
+      "After clearing the game, elite enemy photos cost 500 Rupees each; ordinary photos are still 100 Rupees."
+    ],
+    [
+      "全收集奖励是洛贝利的布料（滑翔伞布料）；图鉴感应器任务要求先登录 5 个怪物条目。",
+      "The full-collection reward is Robbie's Fabric (Paraglider fabric); the Compendium Sensor quest requires registering 5 monster entries first."
+    ],
+    [
+      "📑 本篇目录",
+      "📑 Contents of This Article"
+    ],
+    [
+      "一、解锁：相机与图鉴",
+      "I. Unlocking: Camera and Compendium"
+    ],
+    [
+      "二、五大分类与509项构成",
+      "II. The Five Categories and What the 509 Entries Comprise"
+    ],
+    [
+      "三、拍照技巧：怎么算登录",
+      "III. Photography Tips: What Counts as Registering"
+    ],
+    [
+      "四、查漏与补买规则",
+      "IV. Gap-Checking and Replacement-Purchase Rules"
+    ],
+    [
+      "五、全收集奖励与感应器",
+      "V. Full-Collection Reward and the Sensor"
+    ],
+    [
+      "常见问题",
+      "FAQ"
+    ],
+    [
+      "相机与图鉴不是开局就有的，要经主线“给地底人拍照”解锁：去监视堡垒南边的深穴，跟着洛贝利走完流程，普尔亚帕德就会获得相机功能，图鉴也随之开启。解锁越早越好，之后遇到的每种生物和怪物顺手拍一张，后期就不用专门回头补。",
+      "The camera and Compendium aren't available from the start — they unlock through the main quest “Camera Work in the Depths”: go to the chasm south of Lookout Landing, follow Robbie through the process, and the Purah Pad will gain the camera function, with the Compendium opening along with it. The earlier you unlock them, the better — afterwards, snap a photo of each new creature and monster you meet, and you won't need to specially go back to fill gaps later."
+    ],
+    [
+      "图鉴共 509 项，分五类：生物、怪物、材料、装备、宝物。查漏时按类查，不要按地点瞎找：先看哪一类缺得多，再针对性地去那类出没的区域。装备类很多来自宝箱和商店，宝物类则与呀哈哈、地底宝箱等收集要素相关，缺漏往往集中在这两类。",
+      "The Compendium has 509 entries in five categories: Creatures, Monsters, Materials, Equipment, and Treasure. When checking for gaps, check by category, not by blindly searching by location: first see which category is missing the most, then go specifically to the areas where that category appears. Many Equipment entries come from treasure chests and shops, while Treasure entries relate to collecting elements like Koroks and Depths chests — gaps are often concentrated in these two categories."
+    ],
+    [
+      "用相机拍摄海拉鲁生物",
+      "Photographing Hyrule creatures with the camera"
+    ],
+    [
+      "拍照登录：对准目标拍下即算一条（游戏实机截图）",
+      "Photo registration: aiming at the target and taking the photo counts as one entry (in-game screenshot)"
+    ],
+    [
+      "拍照登录的判定很宽松：对准目标、拍清楚就能登录，不用拍得多艺术。怪物拍照时注意安全，远距离用相机变焦拍也可以登录，不用贴脸。同一目标拍多次只算一条，换目标才有新条目。养成习惯：新区域先拍一圈，Boss 战前先拍 Boss，错过一次可能要等血月刷新。",
+      "Photo registration is judged leniently: aim at the target and take a clear photo to register — it doesn't need to be artistic. When photographing monsters, mind your safety: photographing from far away with the camera zoom also registers, with no need to get up close. Photographing the same target multiple times only counts as one entry; only a new target gives a new entry. Build the habit: photograph a full round in each new area, and photograph a boss before the boss fight — missing once may mean waiting for a Blood Moon refresh."
+    ],
+    [
+      "缺漏照片不用满地图重找：去哈特诺古代研究所找洛贝利，按类别购买。普通照片 100 卢比一张，类别内随机给，买之前先确认缺的是哪一类，别跨类乱买。通关后精英敌人照片涨到 500 卢比一张，精英怪的照片建议通关前尽量自己拍，省钱又省事。",
+      "You don't need to search the whole map again for missing photos: go to Robbie at the Hateno Ancient Tech Lab and buy by category. Ordinary photos cost 100 Rupees each, given randomly within the category — confirm which category you're missing before buying, and don't buy randomly across categories. After clearing the game, elite enemy photos rise to 500 Rupees each, so it's recommended to photograph elite monsters yourself before clearing the game as much as possible, saving both money and trouble."
+    ],
+    [
+      "509 项全收集后，奖励是洛贝利的布料，可以用来换滑翔伞外观。图鉴感应器（Sensor+）是另一个相关任务：要求先登录 5 个怪物条目，完成后感应器可以帮你定位图鉴目标，查漏效率会高很多。建议先做感应器任务，再系统性补图鉴。",
+      "After collecting all 509 entries, the reward is Robbie's Fabric, which can be used to change the Paraglider's appearance. The Compendium Sensor (Sensor+) is another related quest: it requires registering 5 monster entries first, and once completed, the Sensor can help you locate Compendium targets, greatly improving gap-checking efficiency. It's recommended to do the Sensor quest first, then systematically complete the Compendium."
+    ],
+    [
+      "普尔亚帕德与感应器",
+      "The Purah Pad and the Sensor"
+    ],
+    [
+      "感应器：登录5个怪物条目后解锁（游戏实机截图）",
+      "The Sensor: unlocked after registering 5 monster entries (in-game screenshot)"
+    ],
+    [
+      "图鉴一共多少项？509 项，五大类。585 项的说法不可信。",
+      "How many entries does the Compendium have in total? 509, in five major categories. The claim of 585 is not credible."
+    ],
+    [
+      "图鉴一共多少项？",
+      "How many entries does the Compendium have in total?"
+    ],
+    [
+      "509 项，五大类。585 项的说法不可信。",
+      "509, in five major categories. The claim of 585 is not credible."
+    ],
+    [
+      "照片缺了怎么办？哈特诺古代研究所找洛贝利按类买，普通 100 卢比一张。",
+      "What if photos are missing? Buy by category from Robbie at the Hateno Ancient Tech Lab; ordinary photos cost 100 Rupees each."
+    ],
+    [
+      "照片缺了怎么办？",
+      "What if photos are missing?"
+    ],
+    [
+      "哈特诺古代研究所找洛贝利按类买，普通 100 卢比一张。",
+      "Buy by category from Robbie at the Hateno Ancient Tech Lab; ordinary photos cost 100 Rupees each."
+    ],
+    [
+      "全收集有什么奖励？洛贝利的布料（滑翔伞布料）。",
+      "What's the reward for full collection? Robbie's Fabric (Paraglider fabric)."
+    ],
+    [
+      "全收集有什么奖励？",
+      "What's the reward for full collection?"
+    ],
+    [
+      "洛贝利的布料（滑翔伞布料）。",
+      "Robbie's Fabric (Paraglider fabric)."
+    ],
+    [
+      "贤者的遗志",
+      "Sage's Wills"
+    ],
+    [
+      "呀哈哈种子全指南",
+      "Complete Guide to Korok Seeds"
+    ],
+    [
+      "地底世界生存与探索完全指南",
+      "Complete Guide to Surviving and Exploring the Depths"
+    ],
+    [
+      "← 上一篇：海拉鲁城堡探索完全指南",
+      "← Previous: Complete Guide to Exploring Hyrule Castle"
+    ],
+    [
+      "返回秘籍专栏",
+      "Back to the Tips Column"
+    ],
+    [
+      "下一篇：左纳乌装置实用造物指南 →",
+      "Next: Practical Guide to Zonai Device Builds →"
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 贤者的遗志",
+      "› Sage's Wills"
+    ],
+    [
+      "› 呀哈哈种子全指南",
+      "› Complete Guide to Korok Seeds"
+    ],
+    [
+      "› 地底世界生存与探索完全指南",
+      "› Complete Guide to Surviving and Exploring the Depths"
+    ],
+    [
+      "📚 全部攻略索引",
+      "📚 Full Guide Index"
+    ],
+    [
+      "🏆 哈里的终极秘籍",
+      "🏆 Harry's Ultimate Tips"
+    ],
+    [
+      "› 七宝匕首终极攻略",
+      "› Ultimate Guide to the Scimitar of the Seven"
+    ],
+    [
+      "› 四大神级料理配方",
+      "› Four God-Tier Recipes"
+    ],
+    [
+      "› 最强套装三梯队全解析",
+      "› Full Analysis of the Three Tiers of Strongest Armor Sets"
+    ],
+    [
+      "› 乌萨诸马神庙零基础包教包会",
+      "› Usazum Shrine Guide for Complete Beginners"
+    ],
+    [
+      "› 白龙寻踪与大师之剑",
+      "› Tracking the Light Dragon and the Master Sword"
+    ],
+    [
+      "› 马克兔飞行器调校",
+      "› Hover Bike Tuning"
+    ],
+    [
+      "› 地底电池扩充与大妖精",
+      "› Depths Battery Expansion and the Great Fairies"
+    ],
+    [
+      "🆕 每日新攻略",
+      "🆕 Daily New Guides"
+    ],
+    [
+      "› 152座神庙全收集自查指南",
+      "› Self-Check Guide to Collecting All 152 Shrines"
+    ],
+    [
+      "› 新手开荒指南：落地先做的10件事",
+      "› Beginner's Pioneering Guide: 10 Things to Do First After Landing"
+    ],
+    [
+      "› 大妖精四姐妹与防具强化完全指南",
+      "› Complete Guide to the Four Great Fairies and Armor Enhancement"
+    ],
+    [
+      "› 四条龙素材刷取指南",
+      "› Guide to Farming Materials from the Four Dragons"
+    ],
+    [
+      "› 人马（莱尼尔）完全指南",
+      "› Complete Guide to Lynels"
+    ],
+    [
+      "› 卢比速刷指南：从前期到后期",
+      "› Rupee Farming Guide: From Early to Late Game"
+    ],
+    [
+      "› 马匹捕捉与稀有马完全指南",
+      "› Complete Guide to Catching Horses and Rare Horses"
+    ],
+    [
+      "› 五位贤者能力全解",
+      "› Complete Explanation of the Five Sages' Abilities"
+    ],
+    [
+      "› 料理机制全解：效果、时长与暴击",
+      "› Complete Explanation of Cooking Mechanics: Effects, Duration, and Criticals"
+    ],
+    [
+      "› 海拉鲁城堡探索完全指南",
+      "› Complete Guide to Exploring Hyrule Castle"
+    ],
+    [
+      "› 海拉鲁图鉴509项收集指南（本篇）",
+      "› Guide to Collecting All 509 Hyrule Compendium Entries (This Article)"
+    ],
+    [
+      "› 左纳乌装置实用造物指南",
+      "› Practical Guide to Zonai Device Builds"
+    ],
+    [
+      "› 血月机制全解",
+      "› Complete Explanation of the Blood Moon Mechanic"
+    ],
+    [
+      "› 余料建造完全指南",
+      "› Complete Guide to Fuse"
+    ],
+    [
+      "📷 图鉴攻略",
+      "📷 Compendium Guide"
+    ],
+    [
+      "📷 图鉴 · 509项收集",
+      "📷 Compendium · 509 Entries"
+    ],
+    [
+      "相关攻略：",
+      "Related Guides:"
+    ]
+  ],
+  "title": "Guide to Collecting All 509 Hyrule Compendium Entries · Harry's Ultimate Tips · Tears of the Kingdom Guide"
 }

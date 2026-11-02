@@ -1,641 +1,645 @@
 {
- "title": "All 20 Sage's Wills Collection Guide – Coordinates & Rewards | Tears of the Kingdom Guide",
- "pairs": [
-  [
-   "贤者的遗志全20个收集完整攻略，四位贤者遗志精确坐标位置，Boss击败前置条件，收集进度追踪与奖励效果详解，完成贤者誓约的必备指南。",
-   "Complete guide to all 20 Sage's Wills: exact coordinates for the four Sages' wills, boss-defeat prerequisites, collection progress tracking, and a detailed breakdown of reward effects — the essential guide to completing Sage's Vows."
-  ],
-  [
-   "首页 › 贤者的遗志",
-   "Home › Sage's Wills"
-  ],
-  [
-   "贤者的遗志",
-   "Sage's Wills"
-  ],
-  [
-   "全 20 个天空遗志坐标 · 互动地图 · 天空区域分布 · 收集进度追踪",
-   "All 20 Sky Will coordinates · Interactive map · Sky region distribution · Collection progress tracking"
-  ],
-  [
-   "首页 › 物品收集 › 贤者的遗志",
-   "Home › Collectibles › Sage's Wills"
-  ],
-  [
-   "贤者的遗志收集进度",
-   "Sage's Will collection progress"
-  ],
-  [
-   "已收集",
-   "Collected"
-  ],
-  [
-   "总数",
-   "Total"
-  ],
-  [
-   "每位贤者",
-   "Per Sage"
-  ],
-  [
-   "贤者数量",
-   "Number of Sages"
-  ],
-  [
-   "贤者的遗志说明：全游戏共 20 个贤者的遗志（Sage's Will），分布于天空群岛的宝箱中，每位贤者对应 5 个。收集后可在神庙内的雕像处兑换，每 4 个可提升一位贤者的能力等级（最高 2 级）。部分遗志需要击败特定 Boss（方块魔像 II/III、王者古栗欧克）才能开启宝箱，其余通过解谜或直接开箱获得。坐标说明：游戏内按 M 打开地图，右下角显示当前坐标（X, Y, Z）。天空群岛 Z 高度通常在 800 以上。",
-   "Sage's Will guide: There are 20 Sage's Wills in total across the game, found in chests on the Sky Islands. Once collected, they can be exchanged at the statue inside a shrine; every 4 will raise one Sage's ability level (max level 2). Some wills require defeating a specific boss (Flux Construct II/III, King Gleeok) before the chest can be opened; the rest are obtained by solving puzzles or opening chests directly. Coordinates: in game, press M to open the map; your current coordinates (X, Y, Z) appear in the bottom-right corner. Sky Islands usually sit at a Z height above 800."
-  ],
-  [
-   "贤者的遗志说明：全游戏共 20 个贤者的遗志（Sage's Will），分布于天空群岛的宝箱中，每位贤者对应 5 个。",
-   "Sage's Will guide: There are 20 Sage's Wills in total across the game, found in chests on the Sky Islands."
-  ],
-  [
-   "收集后可在神庙内的雕像处兑换，每 4 个可提升一位贤者的能力等级（最高 2 级）。",
-   "Once collected, they can be exchanged at the statue inside a shrine; every 4 will raise one Sage's ability level (max level 2)."
-  ],
-  [
-   "部分遗志需要击败特定 Boss（方块魔像 II/III、王者古栗欧克）才能开启宝箱，其余通过解谜或直接开箱获得。",
-   "Some wills require defeating a specific boss (Flux Construct II/III, King Gleeok) before the chest can be opened; the rest are obtained by solving puzzles or opening chests directly."
-  ],
-  [
-   "坐标说明：游戏内按 M 打开地图，右下角显示当前坐标（X, Y, Z）。",
-   "Coordinates: in game, press M to open the map; your current coordinates (X, Y, Z) appear in the bottom-right corner."
-  ],
-  [
-   "天空群岛 Z 高度通常在 800 以上。",
-   "Sky Islands usually sit at a Z height above 800."
-  ],
-  [
-   "🧙 五位贤者",
-   "🧙 Five Sages"
-  ],
-  [
-   "阿沅",
-   "Yunobo"
-  ],
-  [
-   "火之贤者 · 鼓隆族",
-   "Sage of Fire · Goron"
-  ],
-  [
-   "露珠",
-   "Riju"
-  ],
-  [
-   "雷之贤者 · 格鲁德族",
-   "Sage of Lightning · Gerudo"
-  ],
-  [
-   "丘栗",
-   "Tulin"
-  ],
-  [
-   "风之贤者 · 利特族",
-   "Sage of Wind · Rito"
-  ],
-  [
-   "希多",
-   "Sidon"
-  ],
-  [
-   "水之贤者 · 卓拉族",
-   "Sage of Water · Zora"
-  ],
-  [
-   "米涅鲁",
-   "Mineru"
-  ],
-  [
-   "魂之贤者 · 左纳乌族",
-   "Sage of Spirit · Zonai"
-  ],
-  [
-   "搜索遗志位置名称或坐标...",
-   "Search Will locations or coordinates..."
-  ],
-  [
-   "🗺 天空群岛 · 贤者遗志互动地图",
-   "🗺 Sky Islands · Sage's Will Interactive Map"
-  ],
-  [
-   "全部",
-   "All"
-  ],
-  [
-   "阿沅·火",
-   "Yunobo · Fire"
-  ],
-  [
-   "露珠·雷",
-   "Riju · Lightning"
-  ],
-  [
-   "丘栗·风",
-   "Tulin · Wind"
-  ],
-  [
-   "希多·水",
-   "Sidon · Water"
-  ],
-  [
-   "隐藏已完成",
-   "Hide completed"
-  ],
-  [
-   "点击标记查看详情 · 滚轮缩放",
-   "Click a marker for details · Scroll to zoom"
-  ],
-  [
-   "📍 全部贤者遗志坐标列表（20个）",
-   "📍 Full Sage's Will Coordinate List (20)"
-  ],
-  [
-   "遗志位置",
-   "Will Location"
-  ],
-  [
-   "坐标 (X, Y, Z)",
-   "Coordinates (X, Y, Z)"
-  ],
-  [
-   "地区",
-   "Region"
-  ],
-  [
-   "🔥 阿沅 — 火之贤者",
-   "🔥 Yunobo — Sage of Fire"
-  ],
-  [
-   "鼓隆族 · Fire Sage · 5 个遗志",
-   "Goron · Sage of Fire · 5 Sage's Wills"
-  ],
-  [
-   "南奥尔汀天空群岛South Eldin Sky Archipelago",
-   "South Eldin Sky Archipelago"
-  ],
-  [
-   "南奥尔汀天空群岛",
-   "South Eldin Sky Archipelago"
-  ],
-  [
-   "艾尔丁天空",
-   "Eldin Sky"
-  ],
-  [
-   "奥尔汀天空群岛Eldin Sky Archipelago",
-   "Eldin Sky Archipelago"
-  ],
-  [
-   "奥尔汀天空群岛",
-   "Eldin Sky Archipelago"
-  ],
-  [
-   "索卡拉天空群岛Sokkala Sky Archipelago",
-   "Sokkala Sky Archipelago"
-  ],
-  [
-   "索卡拉天空群岛",
-   "Sokkala Sky Archipelago"
-  ],
-  [
-   "阿卡拉天空",
-   "Akkala Sky"
-  ],
-  [
-   "拉聂尔天空群岛Lanayru Sky Archipelago",
-   "Lanayru Sky Archipelago"
-  ],
-  [
-   "拉聂尔天空群岛",
-   "Lanayru Sky Archipelago"
-  ],
-  [
-   "拉纳尤天空",
-   "Lanayru Sky"
-  ],
-  [
-   "拉聂尔大水源天空Lanayru Great Spring Sky",
-   "Lanayru Great Spring Sky"
-  ],
-  [
-   "拉聂尔大水源天空",
-   "Lanayru Great Spring Sky"
-  ],
-  [
-   "⚡ 露珠 — 雷之贤者",
-   "⚡ Riju — Sage of Lightning"
-  ],
-  [
-   "格鲁德族 · Thunder Sage · 5 个遗志",
-   "Gerudo · Sage of Lightning · 5 Sage's Wills"
-  ],
-  [
-   "西格鲁德天空West Gerudo Sky",
-   "West Gerudo Sky"
-  ],
-  [
-   "西格鲁德天空",
-   "West Gerudo Sky"
-  ],
-  [
-   "格鲁德天空",
-   "Gerudo Sky"
-  ],
-  [
-   "东格鲁德天空群岛East Gerudo Sky Archipelago",
-   "East Gerudo Sky Archipelago"
-  ],
-  [
-   "东格鲁德天空群岛",
-   "East Gerudo Sky Archipelago"
-  ],
-  [
-   "星望岛（北格鲁德天空）Starview Island",
-   "Starview Island (North Gerudo Sky)"
-  ],
-  [
-   "星望岛（北格鲁德天空）",
-   "Starview Island (North Gerudo Sky)"
-  ],
-  [
-   "西海拉鲁天空群岛West Hyrule Sky Archipelago",
-   "West Hyrule Sky Archipelago"
-  ],
-  [
-   "西海拉鲁天空群岛",
-   "West Hyrule Sky Archipelago"
-  ],
-  [
-   "中央天空",
-   "Central Sky"
-  ],
-  [
-   "法罗尼天空群岛Faron Sky Archipelago",
-   "Faron Sky Archipelago"
-  ],
-  [
-   "法罗尼天空群岛",
-   "Faron Sky Archipelago"
-  ],
-  [
-   "法罗尼天空",
-   "Faron Sky"
-  ],
-  [
-   "🌬 丘栗 — 风之贤者",
-   "🌬 Tulin — Sage of Wind"
-  ],
-  [
-   "利特族 · Wind Sage · 5 个遗志",
-   "Rito · Sage of Wind · 5 Sage's Wills"
-  ],
-  [
-   "西海布拉天空群岛West Hebra Sky Archipelago",
-   "West Hebra Sky Archipelago"
-  ],
-  [
-   "西海布拉天空群岛",
-   "West Hebra Sky Archipelago"
-  ],
-  [
-   "赫布拉天空",
-   "Hebra Sky"
-  ],
-  [
-   "南海布拉天空群岛South Hebra Sky Archipelago",
-   "South Hebra Sky Archipelago"
-  ],
-  [
-   "南海布拉天空群岛",
-   "South Hebra Sky Archipelago"
-  ],
-  [
-   "北塔班达天空群岛North Tabantha Sky Archipelago",
-   "North Tabantha Sky Archipelago"
-  ],
-  [
-   "北塔班达天空群岛",
-   "North Tabantha Sky Archipelago"
-  ],
-  [
-   "塔班达天空",
-   "Tabantha Sky"
-  ],
-  [
-   "雷鸣岛（法罗尼天空）Thunderhead Isles",
-   "Thunderhead Isles (Faron Sky)"
-  ],
-  [
-   "雷鸣岛（法罗尼天空）",
-   "Thunderhead Isles (Faron Sky)"
-  ],
-  [
-   "龙首岛（法罗尼天空）Dragonhead Island",
-   "Dragonhead Island (Faron Sky)"
-  ],
-  [
-   "龙首岛（法罗尼天空）",
-   "Dragonhead Island (Faron Sky)"
-  ],
-  [
-   "💧 希多 — 水之贤者",
-   "💧 Sidon — Sage of Water"
-  ],
-  [
-   "卓拉族 · Water Sage · 5 个遗志",
-   "Zora · Sage of Water · 5 Sage's Wills"
-  ],
-  [
-   "南海拉鲁天空群岛South Hyrule Sky Archipelago",
-   "South Hyrule Sky Archipelago"
-  ],
-  [
-   "南海拉鲁天空群岛",
-   "South Hyrule Sky Archipelago"
-  ],
-  [
-   "北奈克鲁达天空群岛North Necluda Sky Archipelago",
-   "North Necluda Sky Archipelago"
-  ],
-  [
-   "北奈克鲁达天空群岛",
-   "North Necluda Sky Archipelago"
-  ],
-  [
-   "奈克鲁达天空",
-   "Necluda Sky"
-  ],
-  [
-   "东南奈克鲁达天空Southeast Necluda Sky",
-   "Southeast Necluda Sky"
-  ],
-  [
-   "东南奈克鲁达天空",
-   "Southeast Necluda Sky"
-  ],
-  [
-   "南奈克鲁达天空群岛South Necluda Sky Archipelago",
-   "South Necluda Sky Archipelago"
-  ],
-  [
-   "南奈克鲁达天空群岛",
-   "South Necluda Sky Archipelago"
-  ],
-  [
-   "涌泉岛（拉聂尔天空）Wellspring Island",
-   "Wellspring Island (Lanayru Sky)"
-  ],
-  [
-   "涌泉岛（拉聂尔天空）",
-   "Wellspring Island (Lanayru Sky)"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 主线任务攻略",
-   "› Main Quest Guide"
-  ],
-  [
-   "› 白龙寻踪与大师之剑",
-   "› Light Dragon Trail & the Master Sword"
-  ],
-  [
-   "› 神庙挑战",
-   "› Shrine Quests"
-  ],
-  [
-   "📚 更多攻略",
-   "📚 More Guides"
-  ],
-  [
-   "› 哈里的终极秘籍（13篇）",
-   "› Harry's Ultimate Tips (13 Guides)"
-  ],
-  [
-   "› 全部页面索引",
-   "› All Pages Index"
-  ],
-  [
-   "📌 相关攻略推荐",
-   "📌 Recommended Related Guides"
-  ],
-  [
-   "⚔️ 破魔树根 →",
-   "⚔️ Lightroot →"
-  ],
-  [
-   "⚔️ 主线任务 →",
-   "⚔️ Main Quests →"
-  ],
-  [
-   "⚔️ 神庙挑战 →",
-   "⚔️ Shrine Quests →"
-  ],
-  [
-   "地图库加载失败，请检查网络连接后刷新页面",
-   "Map library failed to load. Check your network connection and refresh the page."
-  ],
-  [
-   "海布拉空域",
-   "Hebra Sky"
-  ],
-  [
-   "奥尔汀空域",
-   "Eldin Sky"
-  ],
-  [
-   "阿卡莱空域",
-   "Akkala Sky"
-  ],
-  [
-   "中央海拉鲁空域",
-   "Central Hyrule Sky"
-  ],
-  [
-   "拉聂尔空域",
-   "Lanayru Sky"
-  ],
-  [
-   "格鲁德空域",
-   "Gerudo Sky"
-  ],
-  [
-   "费罗尼空域",
-   "Faron Sky"
-  ],
-  [
-   "内克鲁达空域",
-   "Necluda Sky"
-  ],
-  [
-   "阿沅·火之贤者",
-   "Yunobo · Sage of Fire"
-  ],
-  [
-   "露珠·雷之贤者",
-   "Riju · Sage of Lightning"
-  ],
-  [
-   "丘栗·风之贤者",
-   "Tulin · Sage of Wind"
-  ],
-  [
-   "希多·水之贤者",
-   "Sidon · Sage of Water"
-  ],
-  [
-   "Boss：",
-   "Boss:"
-  ],
-  [
-   "↓ 定位到列表",
-   "↓ Locate in list"
-  ],
-  [
-   "方块魔像II",
-   "Flux Construct II"
-  ],
-  [
-   "方块魔像III",
-   "Flux Construct III"
-  ],
-  [
-   "王者古栗欧克",
-   "King Gleeok"
-  ],
-  [
-   "宝箱（解谜）",
-   "Chest (puzzle)"
-  ],
-  [
-   "宝箱（开放）",
-   "Chest (open)"
-  ],
-  [
-   "击败方块魔像II，宝箱从其身上掉落",
-   "Defeat Flux Construct II; the chest drops from it."
-  ],
-  [
-   "使用矿车穿越轨道后开箱",
-   "Ride a mine cart across the tracks, then open the chest."
-  ],
-  [
-   "球形岛内操控入口朝下，用通天术进入后开箱",
-   "Inside the spherical island, turn the entrance to face down, then enter with Ascend and open the chest."
-  ],
-  [
-   "球形旋转天空岛，停止旋转后进入下层开箱",
-   "On the rotating spherical sky island, stop its rotation, then enter the lower level and open the chest."
-  ],
-  [
-   "击败王者古栗欧克后，南侧祭坛宝箱解锁",
-   "After defeating King Gleeok, the chest at the southern altar unlocks."
-  ],
-  [
-   "用镜子反射阳光点亮六边形面板，开启锁门宝箱",
-   "Use mirrors to reflect sunlight onto the hexagonal panels to open the locked-door chest."
-  ],
-  [
-   "星望岛内用镜子反射光线点亮面板，开启宝箱",
-   "Inside Starview Island, use mirrors to reflect light onto the panels to open the chest."
-  ],
-  [
-   "击败方块魔像III，宝箱从其身上掉落",
-   "Defeat Flux Construct III; the chest drops from it."
-  ],
-  [
-   "南海布拉天空群岛废墟中央，直接开箱",
-   "In the center of the South Hebra Sky Archipelago ruins, open the chest directly."
-  ],
-  [
-   "北塔班达天空群岛西侧岛屿，直接开箱",
-   "On the western island of the North Tabantha Sky Archipelago, open the chest directly."
-  ],
-  [
-   "雷鸣岛，用弹射器发射后破石取箱",
-   "On Thunderhead Isles, launch yourself with the launcher, then break the stone to reach the chest."
-  ],
-  [
-   "龙首岛西北角祭坛，直接开箱",
-   "At the altar in the northwest corner of Dragonhead Island, open the chest directly."
-  ],
-  [
-   "双水池岛，用究极手抬起闸门排水后开箱",
-   "On the twin-pool island, use Ultrahand to lift the sluice gate and drain the water, then open the chest."
-  ],
-  [
-   "北奈克鲁达天空群岛发光石岛屿，直接开箱",
-   "On the Luminous Stone island of the North Necluda Sky Archipelago, open the chest directly."
-  ],
-  [
-   "涌泉岛，击败方块魔像II后开箱",
-   "On Wellspring Island, open the chest after defeating Flux Construct II."
-  ],
-  [
-   "贤者的遗志说明：",
-   "About Sage's Wills:"
-  ],
-  [
-   "全游戏共",
-   "There are"
-  ],
-  [
-   "，分布于天空群岛的宝箱中，每位贤者对应 5 个。\n    收集后可在",
-   ", found in treasure chests on the Sky Islands, 5 per Sage. After collecting them, you can redeem them at statues inside"
-  ],
-  [
-   "内的雕像处兑换，每 4 个可提升一位贤者的能力等级（最高 2 级）。\n    部分遗志需要",
-   ", with every 4 raising one Sage's ability level (max level 2). Some Wills require defeating"
-  ],
-  [
-   "（方块魔像 II/III、王者古栗欧克）才能开启宝箱，其余通过解谜或直接开箱获得。",
-   " (Flux Construct II/III, King Gleeok) to unlock their chests; the rest are obtained by solving puzzles or opening chests directly."
-  ],
-  [
-   "游戏内按",
-   "In-game, press"
-  ],
-  [
-   "打开地图，右下角显示当前坐标（X, Y, Z）。天空群岛 Z 高度通常在 800 以上。",
-   "to open the map; your current coordinates (X, Y, Z) are shown at the bottom right. Sky Islands usually sit at Z above 800."
-  ],
-  [
-   "20 个贤者的遗志（Sage's Will）",
-   "20 Sage's Wills"
-  ],
-  [
-   "神庙",
-   "Shrines"
-  ],
-  [
-   "击败特定 Boss",
-   "specific Bosses"
-  ],
-  [
-   "坐标说明：",
-   "About coordinates:"
-  ],
-  [
-   "贤者筛选：",
-   "Filter by Sage:"
-  ],
-  [
-   "图例：",
-   "Legend:"
-  ],
-  [
-   "贤者的遗志全20个收集完整攻略，五位贤者遗志精确坐标位置，Boss击败前置条件，收集进度追踪与奖励效果详解，完成贤者誓约的必备指南。",
-   "Complete guide to all 20 Sage's Wills: exact locations for all five Sages' wills, boss prerequisites, progress tracking, and reward effects — everything you need to complete the Sage's Vows."
+  "title": "All 20 Sage's Wills Collection Guide – Coordinates & Rewards | Tears of the Kingdom Guide",
+  "pairs": [
+    [
+      "贤者的遗志全20个收集完整攻略，四位贤者遗志精确坐标位置，Boss击败前置条件，收集进度追踪与奖励效果详解，完成贤者誓约的必备指南。",
+      "Complete guide to all 20 Sage's Wills: exact coordinates for the four Sages' wills, boss-defeat prerequisites, collection progress tracking, and a detailed breakdown of reward effects — the essential guide to completing Sage's Vows."
+    ],
+    [
+      "首页 › 贤者的遗志",
+      "Home › Sage's Wills"
+    ],
+    [
+      "贤者的遗志",
+      "Sage's Wills"
+    ],
+    [
+      "全 20 个天空遗志坐标 · 互动地图 · 天空区域分布 · 收集进度追踪",
+      "All 20 Sky Will coordinates · Interactive map · Sky region distribution · Collection progress tracking"
+    ],
+    [
+      "贤者的遗志收集进度",
+      "Sage's Will collection progress"
+    ],
+    [
+      "已收集",
+      "Collected"
+    ],
+    [
+      "总数",
+      "Total"
+    ],
+    [
+      "每位贤者",
+      "Per Sage"
+    ],
+    [
+      "贤者数量",
+      "Number of Sages"
+    ],
+    [
+      "贤者的遗志说明：全游戏共 20 个贤者的遗志（Sage's Will），分布于天空群岛的宝箱中，每位贤者对应 5 个。收集后可在神庙内的雕像处兑换，每 4 个可提升一位贤者的能力等级（最高 2 级）。部分遗志需要击败特定 Boss（方块魔像 II/III、王者古栗欧克）才能开启宝箱，其余通过解谜或直接开箱获得。坐标说明：游戏内按 M 打开地图，右下角显示当前坐标（X, Y, Z）。天空群岛 Z 高度通常在 800 以上。",
+      "Sage's Will guide: There are 20 Sage's Wills in total across the game, found in chests on the Sky Islands. Once collected, they can be exchanged at the statue inside a shrine; every 4 will raise one Sage's ability level (max level 2). Some wills require defeating a specific boss (Flux Construct II/III, King Gleeok) before the chest can be opened; the rest are obtained by solving puzzles or opening chests directly. Coordinates: in game, press M to open the map; your current coordinates (X, Y, Z) appear in the bottom-right corner. Sky Islands usually sit at a Z height above 800."
+    ],
+    [
+      "贤者的遗志说明：全游戏共 20 个贤者的遗志（Sage's Will），分布于天空群岛的宝箱中，每位贤者对应 5 个。",
+      "Sage's Will guide: There are 20 Sage's Wills in total across the game, found in chests on the Sky Islands."
+    ],
+    [
+      "收集后可在神庙内的雕像处兑换，每 4 个可提升一位贤者的能力等级（最高 2 级）。",
+      "Once collected, they can be exchanged at the statue inside a shrine; every 4 will raise one Sage's ability level (max level 2)."
+    ],
+    [
+      "部分遗志需要击败特定 Boss（方块魔像 II/III、王者古栗欧克）才能开启宝箱，其余通过解谜或直接开箱获得。",
+      "Some wills require defeating a specific boss (Flux Construct II/III, King Gleeok) before the chest can be opened; the rest are obtained by solving puzzles or opening chests directly."
+    ],
+    [
+      "坐标说明：游戏内按 M 打开地图，右下角显示当前坐标（X, Y, Z）。",
+      "Coordinates: in game, press M to open the map; your current coordinates (X, Y, Z) appear in the bottom-right corner."
+    ],
+    [
+      "天空群岛 Z 高度通常在 800 以上。",
+      "Sky Islands usually sit at a Z height above 800."
+    ],
+    [
+      "🧙 五位贤者",
+      "🧙 Five Sages"
+    ],
+    [
+      "阿沅",
+      "Yunobo"
+    ],
+    [
+      "火之贤者 · 鼓隆族",
+      "Sage of Fire · Goron"
+    ],
+    [
+      "露珠",
+      "Riju"
+    ],
+    [
+      "雷之贤者 · 格鲁德族",
+      "Sage of Lightning · Gerudo"
+    ],
+    [
+      "丘栗",
+      "Tulin"
+    ],
+    [
+      "风之贤者 · 利特族",
+      "Sage of Wind · Rito"
+    ],
+    [
+      "希多",
+      "Sidon"
+    ],
+    [
+      "水之贤者 · 卓拉族",
+      "Sage of Water · Zora"
+    ],
+    [
+      "米涅鲁",
+      "Mineru"
+    ],
+    [
+      "魂之贤者 · 左纳乌族",
+      "Sage of Spirit · Zonai"
+    ],
+    [
+      "搜索遗志位置名称或坐标...",
+      "Search Will locations or coordinates..."
+    ],
+    [
+      "🗺 天空群岛 · 贤者遗志互动地图",
+      "🗺 Sky Islands · Sage's Will Interactive Map"
+    ],
+    [
+      "全部",
+      "All"
+    ],
+    [
+      "阿沅·火",
+      "Yunobo · Fire"
+    ],
+    [
+      "露珠·雷",
+      "Riju · Lightning"
+    ],
+    [
+      "丘栗·风",
+      "Tulin · Wind"
+    ],
+    [
+      "希多·水",
+      "Sidon · Water"
+    ],
+    [
+      "隐藏已完成",
+      "Hide completed"
+    ],
+    [
+      "点击标记查看详情 · 滚轮缩放",
+      "Click a marker for details · Scroll to zoom"
+    ],
+    [
+      "📍 全部贤者遗志坐标列表（20个）",
+      "📍 Full Sage's Will Coordinate List (20)"
+    ],
+    [
+      "遗志位置",
+      "Will Location"
+    ],
+    [
+      "坐标 (X, Y, Z)",
+      "Coordinates (X, Y, Z)"
+    ],
+    [
+      "地区",
+      "Region"
+    ],
+    [
+      "🔥 阿沅 — 火之贤者",
+      "🔥 Yunobo — Sage of Fire"
+    ],
+    [
+      "鼓隆族 · Fire Sage · 5 个遗志",
+      "Goron · Sage of Fire · 5 Sage's Wills"
+    ],
+    [
+      "南奥尔汀天空群岛South Eldin Sky Archipelago",
+      "South Eldin Sky Archipelago"
+    ],
+    [
+      "南奥尔汀天空群岛",
+      "South Eldin Sky Archipelago"
+    ],
+    [
+      "艾尔丁天空",
+      "Eldin Sky"
+    ],
+    [
+      "奥尔汀天空群岛Eldin Sky Archipelago",
+      "Eldin Sky Archipelago"
+    ],
+    [
+      "奥尔汀天空群岛",
+      "Eldin Sky Archipelago"
+    ],
+    [
+      "索卡拉天空群岛Sokkala Sky Archipelago",
+      "Sokkala Sky Archipelago"
+    ],
+    [
+      "索卡拉天空群岛",
+      "Sokkala Sky Archipelago"
+    ],
+    [
+      "阿卡拉天空",
+      "Akkala Sky"
+    ],
+    [
+      "拉聂尔天空群岛Lanayru Sky Archipelago",
+      "Lanayru Sky Archipelago"
+    ],
+    [
+      "拉聂尔天空群岛",
+      "Lanayru Sky Archipelago"
+    ],
+    [
+      "拉纳尤天空",
+      "Lanayru Sky"
+    ],
+    [
+      "拉聂尔大水源天空Lanayru Great Spring Sky",
+      "Lanayru Great Spring Sky"
+    ],
+    [
+      "拉聂尔大水源天空",
+      "Lanayru Great Spring Sky"
+    ],
+    [
+      "⚡ 露珠 — 雷之贤者",
+      "⚡ Riju — Sage of Lightning"
+    ],
+    [
+      "格鲁德族 · Thunder Sage · 5 个遗志",
+      "Gerudo · Sage of Lightning · 5 Sage's Wills"
+    ],
+    [
+      "西格鲁德天空West Gerudo Sky",
+      "West Gerudo Sky"
+    ],
+    [
+      "西格鲁德天空",
+      "West Gerudo Sky"
+    ],
+    [
+      "格鲁德天空",
+      "Gerudo Sky"
+    ],
+    [
+      "东格鲁德天空群岛East Gerudo Sky Archipelago",
+      "East Gerudo Sky Archipelago"
+    ],
+    [
+      "东格鲁德天空群岛",
+      "East Gerudo Sky Archipelago"
+    ],
+    [
+      "星望岛（北格鲁德天空）Starview Island",
+      "Starview Island (North Gerudo Sky)"
+    ],
+    [
+      "星望岛（北格鲁德天空）",
+      "Starview Island (North Gerudo Sky)"
+    ],
+    [
+      "西海拉鲁天空群岛West Hyrule Sky Archipelago",
+      "West Hyrule Sky Archipelago"
+    ],
+    [
+      "西海拉鲁天空群岛",
+      "West Hyrule Sky Archipelago"
+    ],
+    [
+      "中央天空",
+      "Central Sky"
+    ],
+    [
+      "法罗尼天空群岛Faron Sky Archipelago",
+      "Faron Sky Archipelago"
+    ],
+    [
+      "法罗尼天空群岛",
+      "Faron Sky Archipelago"
+    ],
+    [
+      "法罗尼天空",
+      "Faron Sky"
+    ],
+    [
+      "🌬 丘栗 — 风之贤者",
+      "🌬 Tulin — Sage of Wind"
+    ],
+    [
+      "利特族 · Wind Sage · 5 个遗志",
+      "Rito · Sage of Wind · 5 Sage's Wills"
+    ],
+    [
+      "西海布拉天空群岛West Hebra Sky Archipelago",
+      "West Hebra Sky Archipelago"
+    ],
+    [
+      "西海布拉天空群岛",
+      "West Hebra Sky Archipelago"
+    ],
+    [
+      "赫布拉天空",
+      "Hebra Sky"
+    ],
+    [
+      "南海布拉天空群岛South Hebra Sky Archipelago",
+      "South Hebra Sky Archipelago"
+    ],
+    [
+      "南海布拉天空群岛",
+      "South Hebra Sky Archipelago"
+    ],
+    [
+      "北塔班达天空群岛North Tabantha Sky Archipelago",
+      "North Tabantha Sky Archipelago"
+    ],
+    [
+      "北塔班达天空群岛",
+      "North Tabantha Sky Archipelago"
+    ],
+    [
+      "塔班达天空",
+      "Tabantha Sky"
+    ],
+    [
+      "雷鸣岛（法罗尼天空）Thunderhead Isles",
+      "Thunderhead Isles (Faron Sky)"
+    ],
+    [
+      "雷鸣岛（法罗尼天空）",
+      "Thunderhead Isles (Faron Sky)"
+    ],
+    [
+      "龙首岛（法罗尼天空）Dragonhead Island",
+      "Dragonhead Island (Faron Sky)"
+    ],
+    [
+      "龙首岛（法罗尼天空）",
+      "Dragonhead Island (Faron Sky)"
+    ],
+    [
+      "💧 希多 — 水之贤者",
+      "💧 Sidon — Sage of Water"
+    ],
+    [
+      "卓拉族 · Water Sage · 5 个遗志",
+      "Zora · Sage of Water · 5 Sage's Wills"
+    ],
+    [
+      "南海拉鲁天空群岛South Hyrule Sky Archipelago",
+      "South Hyrule Sky Archipelago"
+    ],
+    [
+      "南海拉鲁天空群岛",
+      "South Hyrule Sky Archipelago"
+    ],
+    [
+      "北奈克鲁达天空群岛North Necluda Sky Archipelago",
+      "North Necluda Sky Archipelago"
+    ],
+    [
+      "北奈克鲁达天空群岛",
+      "North Necluda Sky Archipelago"
+    ],
+    [
+      "奈克鲁达天空",
+      "Necluda Sky"
+    ],
+    [
+      "东南奈克鲁达天空Southeast Necluda Sky",
+      "Southeast Necluda Sky"
+    ],
+    [
+      "东南奈克鲁达天空",
+      "Southeast Necluda Sky"
+    ],
+    [
+      "南奈克鲁达天空群岛South Necluda Sky Archipelago",
+      "South Necluda Sky Archipelago"
+    ],
+    [
+      "南奈克鲁达天空群岛",
+      "South Necluda Sky Archipelago"
+    ],
+    [
+      "涌泉岛（拉聂尔天空）Wellspring Island",
+      "Wellspring Island (Lanayru Sky)"
+    ],
+    [
+      "涌泉岛（拉聂尔天空）",
+      "Wellspring Island (Lanayru Sky)"
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 主线任务攻略",
+      "› Main Quest Guide"
+    ],
+    [
+      "› 白龙寻踪与大师之剑",
+      "› Light Dragon Trail & the Master Sword"
+    ],
+    [
+      "› 神庙挑战",
+      "› Shrine Quests"
+    ],
+    [
+      "📚 更多攻略",
+      "📚 More Guides"
+    ],
+    [
+      "› 哈里的终极秘籍（13篇）",
+      "› Harry's Ultimate Tips (13 Guides)"
+    ],
+    [
+      "› 全部页面索引",
+      "› All Pages Index"
+    ],
+    [
+      "📌 相关攻略推荐",
+      "📌 Recommended Related Guides"
+    ],
+    [
+      "⚔️ 破魔树根 →",
+      "⚔️ Lightroot →"
+    ],
+    [
+      "⚔️ 主线任务 →",
+      "⚔️ Main Quests →"
+    ],
+    [
+      "⚔️ 神庙挑战 →",
+      "⚔️ Shrine Quests →"
+    ],
+    [
+      "地图库加载失败，请检查网络连接后刷新页面",
+      "Map library failed to load. Check your network connection and refresh the page."
+    ],
+    [
+      "海布拉空域",
+      "Hebra Sky"
+    ],
+    [
+      "奥尔汀空域",
+      "Eldin Sky"
+    ],
+    [
+      "阿卡莱空域",
+      "Akkala Sky"
+    ],
+    [
+      "中央海拉鲁空域",
+      "Central Hyrule Sky"
+    ],
+    [
+      "拉聂尔空域",
+      "Lanayru Sky"
+    ],
+    [
+      "格鲁德空域",
+      "Gerudo Sky"
+    ],
+    [
+      "费罗尼空域",
+      "Faron Sky"
+    ],
+    [
+      "内克鲁达空域",
+      "Necluda Sky"
+    ],
+    [
+      "阿沅·火之贤者",
+      "Yunobo · Sage of Fire"
+    ],
+    [
+      "露珠·雷之贤者",
+      "Riju · Sage of Lightning"
+    ],
+    [
+      "丘栗·风之贤者",
+      "Tulin · Sage of Wind"
+    ],
+    [
+      "希多·水之贤者",
+      "Sidon · Sage of Water"
+    ],
+    [
+      "Boss：",
+      "Boss:"
+    ],
+    [
+      "↓ 定位到列表",
+      "↓ Locate in list"
+    ],
+    [
+      "方块魔像II",
+      "Flux Construct II"
+    ],
+    [
+      "方块魔像III",
+      "Flux Construct III"
+    ],
+    [
+      "王者古栗欧克",
+      "King Gleeok"
+    ],
+    [
+      "宝箱（解谜）",
+      "Chest (puzzle)"
+    ],
+    [
+      "宝箱（开放）",
+      "Chest (open)"
+    ],
+    [
+      "击败方块魔像II，宝箱从其身上掉落",
+      "Defeat Flux Construct II; the chest drops from it."
+    ],
+    [
+      "使用矿车穿越轨道后开箱",
+      "Ride a mine cart across the tracks, then open the chest."
+    ],
+    [
+      "球形岛内操控入口朝下，用通天术进入后开箱",
+      "Inside the spherical island, turn the entrance to face down, then enter with Ascend and open the chest."
+    ],
+    [
+      "球形旋转天空岛，停止旋转后进入下层开箱",
+      "On the rotating spherical sky island, stop its rotation, then enter the lower level and open the chest."
+    ],
+    [
+      "击败王者古栗欧克后，南侧祭坛宝箱解锁",
+      "After defeating King Gleeok, the chest at the southern altar unlocks."
+    ],
+    [
+      "用镜子反射阳光点亮六边形面板，开启锁门宝箱",
+      "Use mirrors to reflect sunlight onto the hexagonal panels to open the locked-door chest."
+    ],
+    [
+      "星望岛内用镜子反射光线点亮面板，开启宝箱",
+      "Inside Starview Island, use mirrors to reflect light onto the panels to open the chest."
+    ],
+    [
+      "击败方块魔像III，宝箱从其身上掉落",
+      "Defeat Flux Construct III; the chest drops from it."
+    ],
+    [
+      "南海布拉天空群岛废墟中央，直接开箱",
+      "In the center of the South Hebra Sky Archipelago ruins, open the chest directly."
+    ],
+    [
+      "北塔班达天空群岛西侧岛屿，直接开箱",
+      "On the western island of the North Tabantha Sky Archipelago, open the chest directly."
+    ],
+    [
+      "雷鸣岛，用弹射器发射后破石取箱",
+      "On Thunderhead Isles, launch yourself with the launcher, then break the stone to reach the chest."
+    ],
+    [
+      "龙首岛西北角祭坛，直接开箱",
+      "At the altar in the northwest corner of Dragonhead Island, open the chest directly."
+    ],
+    [
+      "双水池岛，用究极手抬起闸门排水后开箱",
+      "On the twin-pool island, use Ultrahand to lift the sluice gate and drain the water, then open the chest."
+    ],
+    [
+      "北奈克鲁达天空群岛发光石岛屿，直接开箱",
+      "On the Luminous Stone island of the North Necluda Sky Archipelago, open the chest directly."
+    ],
+    [
+      "涌泉岛，击败方块魔像II后开箱",
+      "On Wellspring Island, open the chest after defeating Flux Construct II."
+    ],
+    [
+      "贤者的遗志说明：",
+      "About Sage's Wills:"
+    ],
+    [
+      "全游戏共",
+      "There are"
+    ],
+    [
+      "，分布于天空群岛的宝箱中，每位贤者对应 5 个。\n    收集后可在",
+      ", found in treasure chests on the Sky Islands, 5 per Sage. After collecting them, you can redeem them at statues inside"
+    ],
+    [
+      "内的雕像处兑换，每 4 个可提升一位贤者的能力等级（最高 2 级）。\n    部分遗志需要",
+      ", with every 4 raising one Sage's ability level (max level 2). Some Wills require defeating"
+    ],
+    [
+      "（方块魔像 II/III、王者古栗欧克）才能开启宝箱，其余通过解谜或直接开箱获得。",
+      " (Flux Construct II/III, King Gleeok) to unlock their chests; the rest are obtained by solving puzzles or opening chests directly."
+    ],
+    [
+      "游戏内按",
+      "In-game, press"
+    ],
+    [
+      "打开地图，右下角显示当前坐标（X, Y, Z）。天空群岛 Z 高度通常在 800 以上。",
+      "to open the map; your current coordinates (X, Y, Z) are shown at the bottom right. Sky Islands usually sit at Z above 800."
+    ],
+    [
+      "20 个贤者的遗志（Sage's Will）",
+      "20 Sage's Wills"
+    ],
+    [
+      "神庙",
+      "Shrines"
+    ],
+    [
+      "击败特定 Boss",
+      "specific Bosses"
+    ],
+    [
+      "坐标说明：",
+      "About coordinates:"
+    ],
+    [
+      "贤者筛选：",
+      "Filter by Sage:"
+    ],
+    [
+      "图例：",
+      "Legend:"
+    ],
+    [
+      "贤者的遗志全20个收集完整攻略，五位贤者遗志精确坐标位置，Boss击败前置条件，收集进度追踪与奖励效果详解，完成贤者誓约的必备指南。",
+      "Complete guide to all 20 Sage's Wills: exact locations for all five Sages' wills, boss prerequisites, progress tracking, and reward effects — everything you need to complete the Sage's Vows."
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "物品收集",
+      "Collectibles"
+    ]
+  ],
+  "notes": [
+    "The page groups wills 001–005 under Yunobo, 006–010 under Riju, 011–015 under Tulin, 016–020 under Sidon; translation follows the page's own display grouping. (Its internal JS sage keys and HTML comments use different names for the same groups; those are not visible text and were not followed.)",
+    "Section subtitles on the page use 'Fire Sage / Thunder Sage / Wind Sage / Water Sage'; normalized to glossary terms Sage of Fire / Sage of Lightning / Sage of Wind / Sage of Water.",
+    "Meta description says 'four Sages' while the page shows five sage cards (including Mineru, who has no wills) and a 'Five Sages' label; translated faithfully as written.",
+    "Map sky-region labels contain typos in the source (费罗尼 for 法罗尼, 内克鲁达 for 奈克鲁达); translated by meaning as Faron Sky / Necluda Sky.",
+    "Mineru's card count ('— / —') and pure-number/symbol strings (row numbers, coordinates, ✓ buttons) contain no Chinese and are carried over unchanged.",
+    "Breadcrumb separator spacing normalized to ' › ' in both breadcrumb pairs."
   ]
- ],
- "notes": [
-  "The page groups wills 001–005 under Yunobo, 006–010 under Riju, 011–015 under Tulin, 016–020 under Sidon; translation follows the page's own display grouping. (Its internal JS sage keys and HTML comments use different names for the same groups; those are not visible text and were not followed.)",
-  "Section subtitles on the page use 'Fire Sage / Thunder Sage / Wind Sage / Water Sage'; normalized to glossary terms Sage of Fire / Sage of Lightning / Sage of Wind / Sage of Water.",
-  "Meta description says 'four Sages' while the page shows five sage cards (including Mineru, who has no wills) and a 'Five Sages' label; translated faithfully as written.",
-  "Map sky-region labels contain typos in the source (费罗尼 for 法罗尼, 内克鲁达 for 奈克鲁达); translated by meaning as Faron Sky / Necluda Sky.",
-  "Mineru's card count ('— / —') and pure-number/symbol strings (row numbers, coordinates, ✓ buttons) contain no Chinese and are carried over unchanged.",
-  "Breadcrumb separator spacing normalized to ' › ' in both breadcrumb pairs."
- ]
 }

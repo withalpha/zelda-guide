@@ -142,10 +142,6 @@
       "This list determines what the Blood Moon is for: for monster materials, weapons, and boss drops, the Blood Moon is the best alarm clock; but if you hope to farm treasure chests, Koroks, or ores from a Blood Moon, they won't respawn — don't wait in vain."
     ],
     [
-      "血月夜 23:30 至次日 00:15 做料理必定大成功，批量做高级料理就卡这个窗口，详见本站料理机制全解。另外有一种强制血月的方法：用多连弓加蛋白石箭射可破坏岩壁制造过载触发，这属于利用游戏机制、非官方功能，且 1.0.0 版本不可用，普通玩家按正常周期等血月就够了，不用专门去学。",
-      "Cooking between 23:30 on a Blood Moon night and 00:15 the next day guarantees critical success, so batch-cook high-end dishes inside this window — see this site's Cooking Mechanics Explained for details. There is also a forced Blood Moon method: using a multi-shot bow with Opal arrows to shoot destructible rock walls to create an overload trigger. This exploits game mechanics, is not an official feature, and does not work in version 1.0.0; ordinary players only need to wait for Blood Moons on the normal cycle and don't need to learn it."
-    ],
-    [
       "血月夜 23:30 至次日 00:15 做料理必定大成功，批量做高级料理就卡这个窗口，详见本站料理机制全解。",
       "Cooking between 23:30 on a Blood Moon night and 00:15 the next day guarantees critical success, so batch-cook high-end dishes inside this window — see this site's Cooking Mechanics Explained for details."
     ],
@@ -192,10 +188,6 @@
     [
       "不刷。宝箱、呀哈哈、采集物、矿床都不刷新。",
       "No. Treasure chests, Koroks, gatherables, and ore deposits do not refresh."
-    ],
-    [
-      "相关攻略：料理机制全解、人马完全指南、海拉鲁城堡探索完全指南。",
-      "Related Guides: Cooking Mechanics Explained, Complete Lynel Guide, and Hyrule Castle Exploration Complete Guide."
     ],
     [
       "🔗 相关攻略",
@@ -348,6 +340,22 @@
     [
       "返回秘籍专栏",
       "Back to the Tips Column"
+    ],
+    [
+      "相关攻略：",
+      "Related Guides:"
+    ],
+    [
+      "料理机制全解",
+      "Cooking Mechanics Explained"
+    ],
+    [
+      "人马完全指南",
+      "Lynel Complete Guide"
+    ],
+    [
+      "海拉鲁城堡探索完全指南",
+      "Hyrule Castle Exploration Complete Guide"
     ]
   ],
   "title": "Blood Moon Mechanics Explained · Harry's Ultimate Guide · Tears of the Kingdom Guide"

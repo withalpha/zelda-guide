@@ -1,613 +1,605 @@
 {
- "notes": [
-  "Tower region names are rendered with their official English Skyview Tower names (e.g. 茨茨齐齐雪原 as Pikida Stonegrove, 卡尔加岭 as Rospro Pass, 德依布朗遗迹 as Thyphlo Ruins); 乌萨诸马神庙 rendered as Usazum Shrine and 马克兔飞行器 as Mark-Rabbit Hover Bike, both descriptive renderings of fan/guide nicknames with no confirmed official English equivalent.",
-  "倒流之力 rendered as Recall per GLOSSARY (倒转乾坤 Recall)."
- ],
- "pairs": [
-  [
-   "15座鸟望塔开图完全指南：五路推进的开塔顺序、全部15座坐标全表，以及泡泡拉、奥尔汀、格鲁德、拉聂尔四座疑难塔的解法。",
-   "Complete guide to opening all 15 Skyview Towers: a five-route tower-opening order, a full table of all 15 towers' coordinates, and solutions for the four tricky towers — Popla Foothills, Eldin Canyon, Gerudo Canyon, and Mount Lanayru."
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "哈里的终极秘籍",
-   "Harry's Ultimate Tips"
-  ],
-  [
-   "15座鸟望塔开图完全指南",
-   "Complete Guide to Opening All 15 Skyview Towers"
-  ],
-  [
-   "15 座塔全部开完，地面和天空地图才算真正点亮：按区域推进，疑难塔逐个拆解。",
-   "Once all 15 towers are open, the surface and sky maps are truly lit up: advance region by region, and take the tricky towers apart one by one."
-  ],
-  [
-   "🧙 作者：哈里 🗼 鸟望台 · 开图与升空 📖 深度攻略",
-   "🧙 Author: Harry 🗼 Skyview Towers · Map-Revealing and Launching 📖 In-Depth Guide"
-  ],
-  [
-   "监视堡垒鸟望台（游戏实机截图）",
-   "Lookout Landing Skyview Tower (in-game screenshot)"
-  ],
-  [
-   "鸟望台升空后可以滑翔到平时到不了的高处和空岛（游戏实机截图，图片来源：Zelda Wiki）",
-   "After a Skyview Tower launches you, you can glide to high places and sky islands you normally can't reach (in-game screenshot, image source: Zelda Wiki)"
-  ],
-  [
-   "鸟望台是王国之泪里性价比最高的探索投资：开一座塔，整片地区的地面地图和天空地图一起点亮，还多一个传送点和一个免费升空台。全游戏一共 15 座，全部开完之前，你的地图永远是缺角的。本篇不罗列干巴巴的坐标表，而是给一条按区域推进的开塔路线，讲清哪几座塔有机关、哪几座要带抗性装备，让你按顺序跑下来不走回头路。",
-   "Skyview Towers are the best-value exploration investment in Tears of the Kingdom: open one tower and the whole region's surface map and sky map light up together, plus you gain a travel point and a free launch pad. There are 15 in the whole game, and until all of them are open, your map will always be missing corners. This article doesn't just list a dry coordinate table; it gives you a region-by-region tower-opening route, explains which towers have mechanisms and which require resistance gear, so you can run through them in order without backtracking."
-  ],
-  [
-   "⭐ 本篇要点",
-   "⭐ Key Points of This Article"
-  ],
-  [
-   "总数：全游戏 15 座鸟望台，全部开完才算地图全开。",
-   "Total: 15 Skyview Towers in the whole game; the map only counts as fully open once all of them are open."
-  ],
-  [
-   "开塔给什么：该地区的地面与天空地图、一个传送点、可反复触发的升空调查。",
-   "What opening a tower gives you: that region's surface and sky maps, a travel point, and a launch survey you can trigger repeatedly."
-  ],
-  [
-   "开塔不给什么：地底地图不归鸟望台管，地底要靠破魔之根点亮，别在塔上找地底。",
-   "What opening a tower doesn't give you: the Depths map is not the Skyview Towers' job — the Depths are lit up by Lightroots, so don't look for the Depths on a tower."
-  ],
-  [
-   "推荐顺序：先中央三塔站稳脚跟，再分西、北、东、南、西南五路推进，难塔放在有抗性装备之后。",
-   "Recommended order: first secure your footing with the three central towers, then advance along five routes — west, north, east, south, and southwest — saving the hard towers for after you have resistance gear."
-  ],
-  [
-   "四座疑难塔：泡泡拉高地要井底救人、奥尔汀峡谷要倒流落石升空、格鲁德峡谷要吊车送维修员、拉聂尔山要 2 级耐寒。",
-   "Four tricky towers: Popla Foothills requires rescuing someone from a well, Eldin Canyon requires sending a falling rock back up with Recall, Gerudo Canyon requires using a crane to lift the repairman, and Mount Lanayru requires level 2 cold resistance."
-  ],
-  [
-   "📑 本篇目录",
-   "📑 Contents of This Article"
-  ],
-  [
-   "一、鸟望台到底给什么",
-   "I. What Exactly Do Skyview Towers Give You"
-  ],
-  [
-   "二、推荐开塔路线：五路推进",
-   "II. Recommended Tower-Opening Route: Five Routes"
-  ],
-  [
-   "三、15 座鸟望台全表",
-   "III. Full Table of All 15 Skyview Towers"
-  ],
-  [
-   "四、四座疑难塔的具体解法",
-   "IV. Specific Solutions for the Four Tricky Towers"
-  ],
-  [
-   "五、开塔之后怎么用",
-   "V. How to Use Towers After Opening Them"
-  ],
-  [
-   "常见问题",
-   "FAQ"
-  ],
-  [
-   "走进鸟望台、触发终端，立刻有三样回报。第一，该地区的地图被点亮，而且是地面和天空一起点亮——天上那些空岛的位置、地形轮廓，升空前在地图上是看不到的，开塔后才显形。第二，这座塔本身变成传送点，以后跑图、做任务、回城补给都能直接飞回来。第三，塔顶的调查装置可以反复触发：每次触发都会把你弹射到高空，接着滑翔，你可以借此去平时爬不上去的悬崖、够不着的空岛，还能在空中用望远镜标记远处的神庙和兴趣点。",
-   "Walk into a Skyview Tower and trigger the terminal, and you get three rewards right away. First, that region's map lights up — surface and sky together: the positions and terrain outlines of the sky islands above can't be seen on the map before you launch, and only appear after you open the tower. Second, the tower itself becomes a travel point, so later, when exploring, doing quests, or returning to town to resupply, you can fly straight back. Third, the survey device on top of the tower can be triggered repeatedly: each time it launches you high into the air, and then you glide — you can use it to reach cliffs you normally can't climb and sky islands you can't reach, and in midair you can use the telescope to mark distant shrines and points of interest."
-  ],
-  [
-   "地底世界生存与探索完全指南",
-   "Complete Guide to Surviving and Exploring the Depths"
-  ],
-  [
-   "但要先破除一个误解：鸟望台不负责地底。很多玩家开完地面塔，发现地底地图还是一片黑，就以为塔没开成功。其实地底地图要靠破魔之根，一根根点亮，和鸟望台是两套系统。开塔的意义在地面和天空，地底探索要另起一套路线，本站的地底世界生存与探索完全指南讲过那边的打法。",
-   "But first, clear up a misconception: Skyview Towers are not responsible for the Depths. Many players open all the surface towers, find the Depths map still pitch black, and assume the towers didn't open properly. In fact, the Depths map is lit up Lightroot by Lightroot, a completely separate system from the Skyview Towers. Towers matter for the surface and the sky; Depths exploration needs its own separate route, and this site's Complete Guide to Surviving and Exploring the Depths covers how to play over there."
-  ],
-  [
-   "但要先破除一个误解：鸟望台不负责地底。",
-   "But first, clear up a misconception: Skyview Towers are not responsible for the Depths."
-  ],
-  [
-   "很多玩家开完地面塔，发现地底地图还是一片黑，就以为塔没开成功。",
-   "Many players open all the surface towers, find the Depths map still pitch black, and assume the towers didn't open properly."
-  ],
-  [
-   "其实地底地图要靠破魔之根，一根根点亮，和鸟望台是两套系统。",
-   "In fact, the Depths map is lit up Lightroot by Lightroot, a completely separate system from the Skyview Towers."
-  ],
-  [
-   "开塔的意义在地面和天空，地底探索要另起一套路线，本站的地底世界生存与探索完全指南讲过那边的打法。",
-   "Towers matter for the surface and the sky; Depths exploration needs its own separate route, and this site's Complete Guide to Surviving and Exploring the Depths covers how to play over there."
-  ],
-  [
-   "作者推荐的路线不是按编号硬跑，而是按“脚跟站稳、再向外扩”的思路分五路。第一路是中央：监视堡垒、海拉鲁平原、撒哈斯拉平原，这三座离主线最近、难度最低，先开它们等于先把大本营周边的地图和传送点铺好，后面所有远行都有回程锚点。第二路向西、北：拉布拉山、茨茨齐齐雪原、卡尔加岭，这一路开始进雪原，出发前先备好耐寒装备或耐寒料理，别光着身子往雪里钻。第三路向东：卓拉台地、乌尔利山、拉聂尔山、德依布朗遗迹，东边路程长，顺路可以把卓拉领地和阿卡莱一带的神庙、驿站一起清了。第四路向南：泡泡拉高地、拉贝拉湿地带，南边多水多雨，爬山前留意天气，雨天爬墙会打滑。第五路向西南：格鲁德峡谷、格鲁德高地、奥尔汀峡谷，这一路的两座格鲁德塔和奥尔汀峡谷塔都有机关，放在最后是因为那时你的精力、装备和左纳乌装置都比较齐全，解机关不吃力。",
-   "The author's recommended route doesn't just run the towers in numerical order; it splits into five routes following the idea of “secure your footing first, then expand outward.” The first route is central: Lookout Landing, Hyrule Field, and Sahasra Slope — these three are closest to the main story and the easiest, and opening them first is like laying down the map and travel points around your home base, so every later long journey has a return anchor. The second route goes west and north: Lindor's Brow, Pikida Stonegrove, and Rospro Pass — this route starts entering snowy fields, so before setting out, prepare cold-resistant gear or cold-resistant meals, and don't head into the snow undressed. The third route goes east: Upland Zorana, Ulri Mountain, Mount Lanayru, and Thyphlo Ruins — the eastern journey is long, and along the way you can clear the shrines and stables around Zora's Domain and Akkala. The fourth route goes south: Popla Foothills and Rabella Wetlands — the south has lots of water and rain, so check the weather before climbing, since walls get slippery in the rain. The fifth route goes southwest: Gerudo Canyon, Gerudo Highlands, and Eldin Canyon — the two Gerudo towers and the Eldin Canyon tower on this route all have mechanisms, and they're saved for last because by then your stamina, gear, and Zonai devices are fairly complete, so solving the mechanisms isn't a struggle."
-  ],
-  [
-   "这个顺序的好处是每一步都有明确回报：中央三塔解决“不知道往哪走”，西、北、东三路解决“地图缺角”，南路和西南路解决“难塔集中”。如果你是刚落地的新手，别一上来就挑战拉聂尔山或格鲁德高地——不是打不过，而是缺抗性、缺精力，爬到一半掉下来比绕路更浪费时间。开塔本质上是跑图投资，投资顺序错了，收益会被路上的折返吃掉。",
-   "The benefit of this order is that every step has a clear payoff: the three central towers solve “not knowing where to go,” the west, north, and east routes solve “missing corners of the map,” and the south and southwest routes solve “the hard towers are concentrated here.” If you're a newcomer who just landed, don't challenge Mount Lanayru or Gerudo Highlands right away — not because you can't handle the enemies, but because you lack resistance and stamina, and falling halfway up a climb wastes more time than taking a detour. Opening towers is essentially an investment in exploration, and if you invest in the wrong order, the returns get eaten up by backtracking on the road."
-  ],
-  [
-   "下表是全部 15 座鸟望台的名称与游戏内坐标。坐标的看法是：打开地图界面，右下角显示的三组数字就是当前位置坐标，对照着走就不会找错山头。表中“开塔要点”只写有把握的提示，没有机关的塔写“直接进入”，有机关的四座在下一节细讲。",
-   "The table below lists the names and in-game coordinates of all 15 Skyview Towers. How to read coordinates: open the map screen, and the three numbers shown at the bottom right are your current coordinates — follow them and you won't head for the wrong hilltop. The “Opening Notes” column only gives tips we're sure about: towers with no mechanism say “Enter directly,” and the four towers with mechanisms are explained in detail in the next section."
-  ],
-  [
-   "鸟望台",
-   "Skyview Tower"
-  ],
-  [
-   "大致区域",
-   "General Area"
-  ],
-  [
-   "坐标",
-   "Coordinates"
-  ],
-  [
-   "开塔要点",
-   "Opening Notes"
-  ],
-  [
-   "监视堡垒",
-   "Lookout Landing"
-  ],
-  [
-   "中央海拉鲁",
-   "Central Hyrule"
-  ],
-  [
-   "主线第一座，直接进入",
-   "The first tower in the main story; enter directly"
-  ],
-  [
-   "海拉鲁平原",
-   "Hyrule Field"
-  ],
-  [
-   "直接进入",
-   "Enter directly"
-  ],
-  [
-   "撒哈斯拉平原",
-   "Sahasra Slope"
-  ],
-  [
-   "卡卡利科一带",
-   "Around Kakariko"
-  ],
-  [
-   "拉布拉山",
-   "Lindor's Brow"
-  ],
-  [
-   "海布拉",
-   "Hebra"
-  ],
-  [
-   "雪原，备耐寒",
-   "Snowfield; bring cold resistance"
-  ],
-  [
-   "茨茨齐齐雪原",
-   "Pikida Stonegrove"
-  ],
-  [
-   "海布拉雪原",
-   "Hebra Snowfield"
-  ],
-  [
-   "卡尔加岭",
-   "Rospro Pass"
-  ],
-  [
-   "西北雪原",
-   "Northwest Snowfield"
-  ],
-  [
-   "卓拉台地",
-   "Upland Zorana"
-  ],
-  [
-   "拉聂尔",
-   "Lanayru"
-  ],
-  [
-   "乌尔利山",
-   "Ulri Mountain"
-  ],
-  [
-   "阿卡莱",
-   "Akkala"
-  ],
-  [
-   "拉聂尔山",
-   "Mount Lanayru"
-  ],
-  [
-   "拉聂尔雪山",
-   "Mount Lanayru Snowfield"
-  ],
-  [
-   "需 2 级耐寒，见第四节",
-   "Requires level 2 cold resistance; see Section IV"
-  ],
-  [
-   "德依布朗遗迹",
-   "Thyphlo Ruins"
-  ],
-  [
-   "北境森林",
-   "Northern Forest"
-  ],
-  [
-   "泡泡拉高地",
-   "Popla Foothills"
-  ],
-  [
-   "费罗尼",
-   "Faron"
-  ],
-  [
-   "井底救人，见第四节",
-   "Rescue someone from a well; see Section IV"
-  ],
-  [
-   "拉贝拉湿地带",
-   "Rabella Wetlands"
-  ],
-  [
-   "格鲁德峡谷",
-   "Gerudo Canyon"
-  ],
-  [
-   "格鲁德",
-   "Gerudo"
-  ],
-  [
-   "吊车送维修员，见第四节",
-   "Use a crane to lift the repairman; see Section IV"
-  ],
-  [
-   "格鲁德高地",
-   "Gerudo Highlands"
-  ],
-  [
-   "高寒，备耐寒",
-   "Bitterly cold; bring cold resistance"
-  ],
-  [
-   "奥尔汀峡谷",
-   "Eldin Canyon"
-  ],
-  [
-   "奥尔汀",
-   "Eldin"
-  ],
-  [
-   "倒流落石升空，见第四节",
-   "Send a falling rock back up with Recall; see Section IV"
-  ],
-  [
-   "泡泡拉高地：塔是坏的，人要先救出来。到塔下会发现终端无法使用，旁边井里有人喊救命。先下井，到底打碎石块找到被关的人，对话得知要去对面的洞窟踩机关救他。进洞窟后搬一块石头压住机关，人得救后会自己回去把塔修好，再回塔顶触发终端即可。别在坏塔前反复互动，那不是操作问题，是流程还没走完。",
-   "Popla Foothills: the tower is broken, and you have to rescue someone first. When you get to the tower you'll find the terminal unusable, and someone in the well nearby is crying for help. Go down the well first, smash the rocks at the bottom to find the trapped person, and talking to them reveals you need to go to the cave across the way and step on a mechanism to rescue them. After entering the cave, move a rock onto the mechanism to hold it down; once rescued, the person will go back and repair the tower themselves, and then you just return to the top of the tower and trigger the terminal. Don't keep interacting with the broken tower — that's not an input problem, it's that you haven't finished the sequence yet."
-  ],
-  [
-   "泡泡拉高地：塔是坏的，人要先救出来。",
-   "Popla Foothills: the tower is broken, and you have to rescue someone first."
-  ],
-  [
-   "到塔下会发现终端无法使用，旁边井里有人喊救命。",
-   "When you get to the tower you'll find the terminal unusable, and someone in the well nearby is crying for help."
-  ],
-  [
-   "先下井，到底打碎石块找到被关的人，对话得知要去对面的洞窟踩机关救他。",
-   "Go down the well first, smash the rocks at the bottom to find the trapped person, and talking to them reveals you need to go to the cave across the way and step on a mechanism to rescue them."
-  ],
-  [
-   "进洞窟后搬一块石头压住机关，人得救后会自己回去把塔修好，再回塔顶触发终端即可。",
-   "After entering the cave, move a rock onto the mechanism to hold it down; once rescued, the person will go back and repair the tower themselves, and then you just return to the top of the tower and trigger the terminal."
-  ],
-  [
-   "别在坏塔前反复互动，那不是操作问题，是流程还没走完。",
-   "Don't keep interacting with the broken tower — that's not an input problem, it's that you haven't finished the sequence yet."
-  ],
-  [
-   "奥尔汀峡谷：塔顶的洞才是入口。塔门附近的人会提示你天上有东西掉下来。等天上落石坠落时，对落石用倒流之力让它升空，把你带到比塔顶更高的位置，再滑翔进塔顶的洞里，从内部启动终端。关键是时机：落石升空的窗口不长，别等它升到最高才跳，提前瞄准洞口方向滑翔。",
-   "Eldin Canyon: the hole in the top of the tower is the real entrance. Someone near the tower door will hint that something falls from the sky. When a rock falls from the sky, use Recall on it to send it back up, carrying you higher than the top of the tower, then glide into the hole at the top of the tower and activate the terminal from inside. The key is timing: the window while the rock rises isn't long, so don't wait until it reaches its highest point before jumping — aim toward the hole in advance and glide."
-  ],
-  [
-   "奥尔汀峡谷：塔顶的洞才是入口。",
-   "Eldin Canyon: the hole in the top of the tower is the real entrance."
-  ],
-  [
-   "塔门附近的人会提示你天上有东西掉下来。",
-   "Someone near the tower door will hint that something falls from the sky."
-  ],
-  [
-   "等天上落石坠落时，对落石用倒流之力让它升空，把你带到比塔顶更高的位置，再滑翔进塔顶的洞里，从内部启动终端。",
-   "When a rock falls from the sky, use Recall on it to send it back up, carrying you higher than the top of the tower, then glide into the hole at the top of the tower and activate the terminal from inside."
-  ],
-  [
-   "关键是时机：落石升空的窗口不长，别等它升到最高才跳，提前瞄准洞口方向滑翔。",
-   "The key is timing: the window while the rock rises isn't long, so don't wait until it reaches its highest point before jumping — aim toward the hole in advance and glide."
-  ],
-  [
-   "格鲁德峡谷：用吊车把维修员送上去。塔旁的山上有吊车，维修员在下面上不去。爬上去后，把塔旁的箱子当配重放上去，放够三个左右就能把维修员运上来，对话后塔就修好了。这里考的不是战斗力，是配重思路：箱子不够就去附近再找，别硬推维修员上山。",
-   "Gerudo Canyon: use the crane to lift the repairman up. There's a crane on the hill beside the tower, and the repairman below can't get up. After climbing up, put the crates beside the tower on as counterweights — about three should be enough to lift the repairman up — and after talking to them, the tower will be repaired. This tests not combat strength but counterweight thinking: if there aren't enough crates, go find more nearby, and don't try to force the repairman up the hill."
-  ],
-  [
-   "格鲁德峡谷：用吊车把维修员送上去。",
-   "Gerudo Canyon: use the crane to lift the repairman up."
-  ],
-  [
-   "塔旁的山上有吊车，维修员在下面上不去。",
-   "There's a crane on the hill beside the tower, and the repairman below can't get up."
-  ],
-  [
-   "爬上去后，把塔旁的箱子当配重放上去，放够三个左右就能把维修员运上来，对话后塔就修好了。",
-   "After climbing up, put the crates beside the tower on as counterweights — about three should be enough to lift the repairman up — and after talking to them, the tower will be repaired."
-  ],
-  [
-   "这里考的不是战斗力，是配重思路：箱子不够就去附近再找，别硬推维修员上山。",
-   "This tests not combat strength but counterweight thinking: if there aren't enough crates, go find more nearby, and don't try to force the repairman up the hill."
-  ],
-  [
-   "拉聂尔山：先把耐寒堆到 2 级再爬。这座塔在雪山顶上，耐寒不够会在半路持续掉血。出发前备好 2 级耐寒的防具或料理，爬山时优先走缓坡和有落脚点的路线，精力不够就停下来回满再爬。实在爬不上去时，可以改用热气球或借天上落下的大石块升空，到塔顶直接触发终端，不必全程徒手爬。",
-   "Mount Lanayru: stack cold resistance to level 2 before climbing. This tower sits atop a snowy mountain, and without enough cold resistance you'll keep losing health halfway up. Before setting out, prepare level 2 cold-resistant armor or meals, and when climbing, prefer gentle slopes and routes with places to rest; if your stamina runs low, stop and refill it before climbing on. If you really can't climb up, you can switch to a hot-air balloon or ride a large rock falling from the sky up to the top of the tower and trigger the terminal directly — you don't have to climb the whole way by hand."
-  ],
-  [
-   "拉聂尔山：先把耐寒堆到 2 级再爬。",
-   "Mount Lanayru: stack cold resistance to level 2 before climbing."
-  ],
-  [
-   "这座塔在雪山顶上，耐寒不够会在半路持续掉血。",
-   "This tower sits atop a snowy mountain, and without enough cold resistance you'll keep losing health halfway up."
-  ],
-  [
-   "出发前备好 2 级耐寒的防具或料理，爬山时优先走缓坡和有落脚点的路线，精力不够就停下来回满再爬。",
-   "Before setting out, prepare level 2 cold-resistant armor or meals, and when climbing, prefer gentle slopes and routes with places to rest; if your stamina runs low, stop and refill it before climbing on."
-  ],
-  [
-   "实在爬不上去时，可以改用热气球或借天上落下的大石块升空，到塔顶直接触发终端，不必全程徒手爬。",
-   "If you really can't climb up, you can switch to a hot-air balloon or ride a large rock falling from the sky up to the top of the tower and trigger the terminal directly — you don't have to climb the whole way by hand."
-  ],
-  [
-   "开完一座塔，别只把它当传送点用，升空调查才是它真正的价值。每次从塔顶弹射升空后，先在空中转一圈：用望远镜扫一遍周围，神庙的绿色光柱、空岛的轮廓、驿站和村庄的位置，在高空一眼就能看清，标记下来再滑翔过去，比在地面上瞎逛省一半时间。滑翔时注意精力条，长距离滑翔中途要找空岛或高地落脚回精力，别一口气飞到精力耗尽坠落。",
-   "Once you've opened a tower, don't just use it as a travel point — the launch survey is its real value. Each time you're launched from the top of a tower, first circle around in midair: sweep the surroundings with the telescope, and the green light pillars of shrines, the outlines of sky islands, and the positions of stables and villages can all be seen clearly from high up; mark them, then glide over, which saves half the time compared with wandering aimlessly on the ground. While gliding, watch your stamina bar: on a long glide, find a sky island or high ground midway to land and recover stamina — don't fly in one go until your stamina runs out and you fall."
-  ],
-  [
-   "祝福之光兑换完全指南",
-   "Complete Guide to Exchanging Lights of Blessing"
-  ],
-  [
-   "还有一个使用习惯值得养成：每次开新塔，先把该地区的神庙和驿站顺路清一遍，再去下一座塔。塔与塔之间的路程本身就是探索，顺路清掉的神庙会立刻变成祝福之光（见祝福之光兑换完全指南），反过来又帮你换精力、换生命，形成正循环。反过来只开塔、不清神庙，地图是亮了，但人物强度没跟上，后面的神殿和 Boss 战还是会吃力。",
-   "There's another habit worth building: each time you open a new tower, clear that region's shrines and stables along the way before heading to the next tower. The journey between towers is itself exploration, and shrines cleared along the way immediately become Lights of Blessing (see the Complete Guide to Exchanging Lights of Blessing), which in turn help you exchange for stamina and hearts, forming a virtuous cycle. Conversely, if you only open towers without clearing shrines, the map will be lit up but your character's strength won't keep up, and later temple and boss fights will still be a struggle."
-  ],
-  [
-   "还有一个使用习惯值得养成：每次开新塔，先把该地区的神庙和驿站顺路清一遍，再去下一座塔。",
-   "There's another habit worth building: each time you open a new tower, clear that region's shrines and stables along the way before heading to the next tower."
-  ],
-  [
-   "塔与塔之间的路程本身就是探索，顺路清掉的神庙会立刻变成祝福之光（见祝福之光兑换完全指南），反过来又帮你换精力、换生命，形成正循环。",
-   "The journey between towers is itself exploration, and shrines cleared along the way immediately become Lights of Blessing (see the Complete Guide to Exchanging Lights of Blessing), which in turn help you exchange for stamina and hearts, forming a virtuous cycle."
-  ],
-  [
-   "反过来只开塔、不清神庙，地图是亮了，但人物强度没跟上，后面的神殿和 Boss 战还是会吃力。",
-   "Conversely, if you only open towers without clearing shrines, the map will be lit up but your character's strength won't keep up, and later temple and boss fights will still be a struggle."
-  ],
-  [
-   "一共几座鸟望台？15 座，全部开完地面与天空地图才算全开。",
-   "How many Skyview Towers are there in total? 15; the surface and sky maps only count as fully open once all of them are open."
-  ],
-  [
-   "一共几座鸟望台？",
-   "How many Skyview Towers are there in total?"
-  ],
-  [
-   "15 座，全部开完地面与天空地图才算全开。",
-   "15; the surface and sky maps only count as fully open once all of them are open."
-  ],
-  [
-   "开了塔为什么地底还是黑的？地底地图靠破魔之根，不归鸟望台管。",
-   "Why is the Depths still black after opening towers? The Depths map relies on Lightroots and is not the Skyview Towers' job."
-  ],
-  [
-   "开了塔为什么地底还是黑的？",
-   "Why is the Depths still black after opening towers?"
-  ],
-  [
-   "地底地图靠破魔之根，不归鸟望台管。",
-   "The Depths map relies on Lightroots and is not the Skyview Towers' job."
-  ],
-  [
-   "升空调查能重复用吗？能，没有次数限制，随时可以回塔再弹射一次。",
-   "Can the launch survey be used repeatedly? Yes, with no limit on uses — you can return to a tower and launch again at any time."
-  ],
-  [
-   "升空调查能重复用吗？",
-   "Can the launch survey be used repeatedly?"
-  ],
-  [
-   "能，没有次数限制，随时可以回塔再弹射一次。",
-   "Yes, with no limit on uses — you can return to a tower and launch again at any time."
-  ],
-  [
-   "雪山塔爬不上去怎么办？先把耐寒堆到 2 级，或改用热气球、落石升空，别硬爬。",
-   "What if you can't climb a snow-mountain tower? Stack cold resistance to level 2 first, or switch to a hot-air balloon or a falling-rock launch — don't force the climb."
-  ],
-  [
-   "雪山塔爬不上去怎么办？",
-   "What if you can't climb a snow-mountain tower?"
-  ],
-  [
-   "先把耐寒堆到 2 级，或改用热气球、落石升空，别硬爬。",
-   "Stack cold resistance to level 2 first, or switch to a hot-air balloon or a falling-rock launch — don't force the climb."
-  ],
-  [
-   "任务顺序推荐指南",
-   "Recommended Quest Order Guide"
-  ],
-  [
-   "152座神庙全收集自查指南",
-   "Self-Check Guide to Collecting All 152 Shrines"
-  ],
-  [
-   "相关攻略：任务顺序推荐指南、152座神庙全收集自查指南、地底世界生存与探索完全指南。",
-   "Related Guides: Recommended Quest Order Guide, Self-Check Guide to Collecting All 152 Shrines, Complete Guide to Surviving and Exploring the Depths."
-  ],
-  [
-   "← 上一篇：祝福之光兑换完全指南",
-   "← Previous: Complete Guide to Exchanging Lights of Blessing"
-  ],
-  [
-   "返回秘籍专栏",
-   "Back to the Tips Column"
-  ],
-  [
-   "下一篇：弓箭完全指南 →",
-   "Next: Complete Bow Guide →"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 任务顺序推荐指南",
-   "› Recommended Quest Order Guide"
-  ],
-  [
-   "› 152座神庙全收集自查指南",
-   "› Self-Check Guide to Collecting All 152 Shrines"
-  ],
-  [
-   "› 地底世界生存与探索完全指南",
-   "› Complete Guide to Surviving and Exploring the Depths"
-  ],
-  [
-   "📚 全部攻略索引",
-   "📚 Full Guide Index"
-  ],
-  [
-   "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Tips"
-  ],
-  [
-   "› 七宝匕首终极攻略",
-   "› Ultimate Guide to the Scimitar of the Seven"
-  ],
-  [
-   "› 四大神级料理配方",
-   "› Four God-Tier Recipes"
-  ],
-  [
-   "› 最强套装三梯队全解析",
-   "› Full Analysis of the Three Tiers of Strongest Armor Sets"
-  ],
-  [
-   "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine Guide for Complete Beginners"
-  ],
-  [
-   "› 白龙寻踪与大师之剑",
-   "› Tracking the Light Dragon and the Master Sword"
-  ],
-  [
-   "› 马克兔飞行器调校",
-   "› Hover Bike Tuning"
-  ],
-  [
-   "› 地底电池扩充与大妖精",
-   "› Depths Battery Expansion and the Great Fairies"
-  ],
-  [
-   "🆕 每日新攻略",
-   "🆕 Daily New Guides"
-  ],
-  [
-   "› 新手开荒指南：落地先做的10件事",
-   "› Beginner's Pioneering Guide: 10 Things to Do First After Landing"
-  ],
-  [
-   "› 呀哈哈种子全指南",
-   "› Complete Guide to Korok Seeds"
-  ],
-  [
-   "› 大妖精四姐妹与防具强化完全指南",
-   "› Complete Guide to the Four Great Fairies and Armor Enhancement"
-  ],
-  [
-   "› 四条龙素材刷取指南",
-   "› Guide to Farming Materials from the Four Dragons"
-  ],
-  [
-   "› 人马（莱尼尔）完全指南",
-   "› Complete Guide to Lynels"
-  ],
-  [
-   "› 卢比速刷指南：从前期到后期",
-   "› Rupee Farming Guide: From Early to Late Game"
-  ],
-  [
-   "› 马匹捕捉与稀有马完全指南",
-   "› Complete Guide to Catching Horses and Rare Horses"
-  ],
-  [
-   "› 五位贤者能力全解",
-   "› Complete Explanation of the Five Sages' Abilities"
-  ],
-  [
-   "› 料理机制全解：效果、时长与暴击",
-   "› Complete Explanation of Cooking Mechanics: Effects, Duration, and Criticals"
-  ],
-  [
-   "› 海拉鲁城堡探索完全指南",
-   "› Complete Guide to Exploring Hyrule Castle"
-  ],
-  [
-   "› 海拉鲁图鉴509项收集指南",
-   "› Guide to Collecting All 509 Hyrule Compendium Entries"
-  ],
-  [
-   "› 左纳乌装置实用造物指南",
-   "› Practical Guide to Zonai Device Builds"
-  ],
-  [
-   "› 血月机制全解",
-   "› Complete Explanation of the Blood Moon Mechanic"
-  ],
-  [
-   "› 余料建造完全指南",
-   "› Complete Guide to Fuse"
-  ],
-  [
-   "› 祝福之光兑换完全指南",
-   "› Complete Guide to Exchanging Lights of Blessing"
-  ],
-  [
-   "› 15座鸟望塔开图完全指南（本篇）",
-   "› Complete Guide to Opening All 15 Skyview Towers (This Article)"
-  ],
-  [
-   "🗼 鸟望台攻略",
-   "🗼 Skyview Tower Guide"
-  ],
-  [
-   "🗼 鸟望台 · 开图与升空",
-   "🗼 Skyview Towers · Mapping & Launching"
-  ],
-  [
-   "推荐顺序：先中央三塔站稳脚跟，再分西/北、东、南、西南四路推进，难塔放在有抗性装备之后。",
-   "Recommended order: secure the three central towers first, then push out along four routes — west/north, east, south, and southwest — saving hard towers until you have resistance gear."
-  ],
-  [
-   "作者推荐的路线不是按编号硬跑，而是按“脚跟站稳、再向外扩”的思路分五路。第一路是中央：监视堡垒、海拉鲁平原、撒哈斯拉平原，这三座离主线最近、难度最低，先开它们等于先把大本营周边的地图和传送点铺好，后面所有远行都有回程锚点。第二路向西、北：拉布拉山、茨茨齐齐雪原、卡尔加岭，这一路开始进雪原，出发前先备好耐寒装备或耐寒料理，别光着身子往雪里钻。第三路向东：卓拉台地、乌尔利山、拉聂尔山、德依布朗遗迹，东边路程长，顺路可以把卓拉领地和阿卡莱一带的神庙、驿站一起清了。第四路向南：泡泡拉高地、拉贝拉湿地带，南边多水多雨，爬山前留意天气，雨天爬墙会打滑。第五路向西南：格鲁德峡谷、格鲁德高地、奥尔汀峡谷，这一路的格鲁德峡谷塔和奥尔汀峡谷塔都有机关，放在最后是因为那时你的精力、装备和左纳乌装置都比较齐全，解机关不吃力。",
-   "This route doesn't grind towers by number — it works outward from a secure foothold, in five legs. First, the center: Lookout Landing, Hyrule Field, and Sahasra Slope, the closest to the main story and the easiest; opening them first lays down maps and travel points around your base so every later journey has a way back. Second, west and north: Lindor's Brow, Pikida Stonegrove, and Rospro Pass — this leg enters the snowfields, so bring cold-resistant gear or meals before you go; don't walk into the snow unprepared. Third, east: Upland Zorana, Ulri Mountain, Mount Lanayru, and Thyphlo Ruins — the east leg is long, so clear the Zora region and Akkala Shrines and stables along the way. Fourth, south: Popla Foothills and Rabella Wetlands — wet and rainy down south, so watch the weather before climbing; rain makes walls slippery. Fifth, southwest: Gerudo Canyon, Gerudo Highlands, and Eldin Canyon — the Gerudo Canyon and Eldin Canyon towers have mechanisms, and they come last because by then your stamina, gear, and Zonai devices are well stocked, making the mechanisms easy."
-  ],
-  [
-   "这个顺序的好处是每一步都有明确回报：中央三塔解决“不知道往哪走”，西/北、东两路解决“地图缺角”，南路和西南路解决“难塔集中”。如果你是刚落地的新手，别一上来就挑战拉聂尔山或格鲁德高地——不是打不过，而是缺抗性、缺精力，爬到一半掉下来比绕路更浪费时间。开塔本质上是跑图投资，投资顺序错了，收益会被路上的折返吃掉。",
-   "The payoff of this order is clear at every step: the central three towers solve “not knowing where to go,” the west/north and east legs solve “missing map corners,” and the south and southwest legs solve “hard towers clustered together.” If you're freshly landed, don't tackle Mount Lanayru or Gerudo Highlands first — not because you can't beat them, but because without resistance gear and stamina you'll fall halfway up, wasting more time than a detour would. Opening towers is an investment in exploration; get the order wrong and backtracking eats your returns."
-  ]
- ],
- "title": "Complete Guide to Opening All 15 Skyview Towers · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+  "notes": [
+    "Tower region names are rendered with their official English Skyview Tower names (e.g. 茨茨齐齐雪原 as Pikida Stonegrove, 卡尔加岭 as Rospro Pass, 德依布朗遗迹 as Thyphlo Ruins); 乌萨诸马神庙 rendered as Usazum Shrine and 马克兔飞行器 as Mark-Rabbit Hover Bike, both descriptive renderings of fan/guide nicknames with no confirmed official English equivalent.",
+    "倒流之力 rendered as Recall per GLOSSARY (倒转乾坤 Recall)."
+  ],
+  "pairs": [
+    [
+      "15座鸟望塔开图完全指南：五路推进的开塔顺序、全部15座坐标全表，以及泡泡拉、奥尔汀、格鲁德、拉聂尔四座疑难塔的解法。",
+      "Complete guide to opening all 15 Skyview Towers: a five-route tower-opening order, a full table of all 15 towers' coordinates, and solutions for the four tricky towers — Popla Foothills, Eldin Canyon, Gerudo Canyon, and Mount Lanayru."
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "哈里的终极秘籍",
+      "Harry's Ultimate Tips"
+    ],
+    [
+      "15座鸟望塔开图完全指南",
+      "Complete Guide to Opening All 15 Skyview Towers"
+    ],
+    [
+      "15 座塔全部开完，地面和天空地图才算真正点亮：按区域推进，疑难塔逐个拆解。",
+      "Once all 15 towers are open, the surface and sky maps are truly lit up: advance region by region, and take the tricky towers apart one by one."
+    ],
+    [
+      "🧙 作者：哈里 🗼 鸟望台 · 开图与升空 📖 深度攻略",
+      "🧙 Author: Harry 🗼 Skyview Towers · Map-Revealing and Launching 📖 In-Depth Guide"
+    ],
+    [
+      "监视堡垒鸟望台（游戏实机截图）",
+      "Lookout Landing Skyview Tower (in-game screenshot)"
+    ],
+    [
+      "鸟望台升空后可以滑翔到平时到不了的高处和空岛（游戏实机截图，图片来源：Zelda Wiki）",
+      "After a Skyview Tower launches you, you can glide to high places and sky islands you normally can't reach (in-game screenshot, image source: Zelda Wiki)"
+    ],
+    [
+      "鸟望台是王国之泪里性价比最高的探索投资：开一座塔，整片地区的地面地图和天空地图一起点亮，还多一个传送点和一个免费升空台。全游戏一共 15 座，全部开完之前，你的地图永远是缺角的。本篇不罗列干巴巴的坐标表，而是给一条按区域推进的开塔路线，讲清哪几座塔有机关、哪几座要带抗性装备，让你按顺序跑下来不走回头路。",
+      "Skyview Towers are the best-value exploration investment in Tears of the Kingdom: open one tower and the whole region's surface map and sky map light up together, plus you gain a travel point and a free launch pad. There are 15 in the whole game, and until all of them are open, your map will always be missing corners. This article doesn't just list a dry coordinate table; it gives you a region-by-region tower-opening route, explains which towers have mechanisms and which require resistance gear, so you can run through them in order without backtracking."
+    ],
+    [
+      "⭐ 本篇要点",
+      "⭐ Key Points of This Article"
+    ],
+    [
+      "总数：全游戏 15 座鸟望台，全部开完才算地图全开。",
+      "Total: 15 Skyview Towers in the whole game; the map only counts as fully open once all of them are open."
+    ],
+    [
+      "开塔给什么：该地区的地面与天空地图、一个传送点、可反复触发的升空调查。",
+      "What opening a tower gives you: that region's surface and sky maps, a travel point, and a launch survey you can trigger repeatedly."
+    ],
+    [
+      "开塔不给什么：地底地图不归鸟望台管，地底要靠破魔之根点亮，别在塔上找地底。",
+      "What opening a tower doesn't give you: the Depths map is not the Skyview Towers' job — the Depths are lit up by Lightroots, so don't look for the Depths on a tower."
+    ],
+    [
+      "推荐顺序：先中央三塔站稳脚跟，再分西、北、东、南、西南五路推进，难塔放在有抗性装备之后。",
+      "Recommended order: first secure your footing with the three central towers, then advance along five routes — west, north, east, south, and southwest — saving the hard towers for after you have resistance gear."
+    ],
+    [
+      "四座疑难塔：泡泡拉高地要井底救人、奥尔汀峡谷要倒流落石升空、格鲁德峡谷要吊车送维修员、拉聂尔山要 2 级耐寒。",
+      "Four tricky towers: Popla Foothills requires rescuing someone from a well, Eldin Canyon requires sending a falling rock back up with Recall, Gerudo Canyon requires using a crane to lift the repairman, and Mount Lanayru requires level 2 cold resistance."
+    ],
+    [
+      "📑 本篇目录",
+      "📑 Contents of This Article"
+    ],
+    [
+      "一、鸟望台到底给什么",
+      "I. What Exactly Do Skyview Towers Give You"
+    ],
+    [
+      "二、推荐开塔路线：五路推进",
+      "II. Recommended Tower-Opening Route: Five Routes"
+    ],
+    [
+      "三、15 座鸟望台全表",
+      "III. Full Table of All 15 Skyview Towers"
+    ],
+    [
+      "四、四座疑难塔的具体解法",
+      "IV. Specific Solutions for the Four Tricky Towers"
+    ],
+    [
+      "五、开塔之后怎么用",
+      "V. How to Use Towers After Opening Them"
+    ],
+    [
+      "常见问题",
+      "FAQ"
+    ],
+    [
+      "走进鸟望台、触发终端，立刻有三样回报。第一，该地区的地图被点亮，而且是地面和天空一起点亮——天上那些空岛的位置、地形轮廓，升空前在地图上是看不到的，开塔后才显形。第二，这座塔本身变成传送点，以后跑图、做任务、回城补给都能直接飞回来。第三，塔顶的调查装置可以反复触发：每次触发都会把你弹射到高空，接着滑翔，你可以借此去平时爬不上去的悬崖、够不着的空岛，还能在空中用望远镜标记远处的神庙和兴趣点。",
+      "Walk into a Skyview Tower and trigger the terminal, and you get three rewards right away. First, that region's map lights up — surface and sky together: the positions and terrain outlines of the sky islands above can't be seen on the map before you launch, and only appear after you open the tower. Second, the tower itself becomes a travel point, so later, when exploring, doing quests, or returning to town to resupply, you can fly straight back. Third, the survey device on top of the tower can be triggered repeatedly: each time it launches you high into the air, and then you glide — you can use it to reach cliffs you normally can't climb and sky islands you can't reach, and in midair you can use the telescope to mark distant shrines and points of interest."
+    ],
+    [
+      "地底世界生存与探索完全指南",
+      "Complete Guide to Surviving and Exploring the Depths"
+    ],
+    [
+      "但要先破除一个误解：鸟望台不负责地底。",
+      "But first, clear up a misconception: Skyview Towers are not responsible for the Depths."
+    ],
+    [
+      "很多玩家开完地面塔，发现地底地图还是一片黑，就以为塔没开成功。",
+      "Many players open all the surface towers, find the Depths map still pitch black, and assume the towers didn't open properly."
+    ],
+    [
+      "其实地底地图要靠破魔之根，一根根点亮，和鸟望台是两套系统。",
+      "In fact, the Depths map is lit up Lightroot by Lightroot, a completely separate system from the Skyview Towers."
+    ],
+    [
+      "开塔的意义在地面和天空，地底探索要另起一套路线，本站的地底世界生存与探索完全指南讲过那边的打法。",
+      "Towers matter for the surface and the sky; Depths exploration needs its own separate route, and this site's Complete Guide to Surviving and Exploring the Depths covers how to play over there."
+    ],
+    [
+      "作者推荐的路线不是按编号硬跑，而是按“脚跟站稳、再向外扩”的思路分五路。第一路是中央：监视堡垒、海拉鲁平原、撒哈斯拉平原，这三座离主线最近、难度最低，先开它们等于先把大本营周边的地图和传送点铺好，后面所有远行都有回程锚点。第二路向西、北：拉布拉山、茨茨齐齐雪原、卡尔加岭，这一路开始进雪原，出发前先备好耐寒装备或耐寒料理，别光着身子往雪里钻。第三路向东：卓拉台地、乌尔利山、拉聂尔山、德依布朗遗迹，东边路程长，顺路可以把卓拉领地和阿卡莱一带的神庙、驿站一起清了。第四路向南：泡泡拉高地、拉贝拉湿地带，南边多水多雨，爬山前留意天气，雨天爬墙会打滑。第五路向西南：格鲁德峡谷、格鲁德高地、奥尔汀峡谷，这一路的两座格鲁德塔和奥尔汀峡谷塔都有机关，放在最后是因为那时你的精力、装备和左纳乌装置都比较齐全，解机关不吃力。",
+      "The author's recommended route doesn't just run the towers in numerical order; it splits into five routes following the idea of “secure your footing first, then expand outward.” The first route is central: Lookout Landing, Hyrule Field, and Sahasra Slope — these three are closest to the main story and the easiest, and opening them first is like laying down the map and travel points around your home base, so every later long journey has a return anchor. The second route goes west and north: Lindor's Brow, Pikida Stonegrove, and Rospro Pass — this route starts entering snowy fields, so before setting out, prepare cold-resistant gear or cold-resistant meals, and don't head into the snow undressed. The third route goes east: Upland Zorana, Ulri Mountain, Mount Lanayru, and Thyphlo Ruins — the eastern journey is long, and along the way you can clear the shrines and stables around Zora's Domain and Akkala. The fourth route goes south: Popla Foothills and Rabella Wetlands — the south has lots of water and rain, so check the weather before climbing, since walls get slippery in the rain. The fifth route goes southwest: Gerudo Canyon, Gerudo Highlands, and Eldin Canyon — the two Gerudo towers and the Eldin Canyon tower on this route all have mechanisms, and they're saved for last because by then your stamina, gear, and Zonai devices are fairly complete, so solving the mechanisms isn't a struggle."
+    ],
+    [
+      "这个顺序的好处是每一步都有明确回报：中央三塔解决“不知道往哪走”，西、北、东三路解决“地图缺角”，南路和西南路解决“难塔集中”。如果你是刚落地的新手，别一上来就挑战拉聂尔山或格鲁德高地——不是打不过，而是缺抗性、缺精力，爬到一半掉下来比绕路更浪费时间。开塔本质上是跑图投资，投资顺序错了，收益会被路上的折返吃掉。",
+      "The benefit of this order is that every step has a clear payoff: the three central towers solve “not knowing where to go,” the west, north, and east routes solve “missing corners of the map,” and the south and southwest routes solve “the hard towers are concentrated here.” If you're a newcomer who just landed, don't challenge Mount Lanayru or Gerudo Highlands right away — not because you can't handle the enemies, but because you lack resistance and stamina, and falling halfway up a climb wastes more time than taking a detour. Opening towers is essentially an investment in exploration, and if you invest in the wrong order, the returns get eaten up by backtracking on the road."
+    ],
+    [
+      "下表是全部 15 座鸟望台的名称与游戏内坐标。坐标的看法是：打开地图界面，右下角显示的三组数字就是当前位置坐标，对照着走就不会找错山头。表中“开塔要点”只写有把握的提示，没有机关的塔写“直接进入”，有机关的四座在下一节细讲。",
+      "The table below lists the names and in-game coordinates of all 15 Skyview Towers. How to read coordinates: open the map screen, and the three numbers shown at the bottom right are your current coordinates — follow them and you won't head for the wrong hilltop. The “Opening Notes” column only gives tips we're sure about: towers with no mechanism say “Enter directly,” and the four towers with mechanisms are explained in detail in the next section."
+    ],
+    [
+      "鸟望台",
+      "Skyview Tower"
+    ],
+    [
+      "大致区域",
+      "General Area"
+    ],
+    [
+      "坐标",
+      "Coordinates"
+    ],
+    [
+      "开塔要点",
+      "Opening Notes"
+    ],
+    [
+      "监视堡垒",
+      "Lookout Landing"
+    ],
+    [
+      "中央海拉鲁",
+      "Central Hyrule"
+    ],
+    [
+      "主线第一座，直接进入",
+      "The first tower in the main story; enter directly"
+    ],
+    [
+      "海拉鲁平原",
+      "Hyrule Field"
+    ],
+    [
+      "直接进入",
+      "Enter directly"
+    ],
+    [
+      "撒哈斯拉平原",
+      "Sahasra Slope"
+    ],
+    [
+      "卡卡利科一带",
+      "Around Kakariko"
+    ],
+    [
+      "拉布拉山",
+      "Lindor's Brow"
+    ],
+    [
+      "海布拉",
+      "Hebra"
+    ],
+    [
+      "雪原，备耐寒",
+      "Snowfield; bring cold resistance"
+    ],
+    [
+      "茨茨齐齐雪原",
+      "Pikida Stonegrove"
+    ],
+    [
+      "海布拉雪原",
+      "Hebra Snowfield"
+    ],
+    [
+      "卡尔加岭",
+      "Rospro Pass"
+    ],
+    [
+      "西北雪原",
+      "Northwest Snowfield"
+    ],
+    [
+      "卓拉台地",
+      "Upland Zorana"
+    ],
+    [
+      "拉聂尔",
+      "Lanayru"
+    ],
+    [
+      "乌尔利山",
+      "Ulri Mountain"
+    ],
+    [
+      "阿卡莱",
+      "Akkala"
+    ],
+    [
+      "拉聂尔山",
+      "Mount Lanayru"
+    ],
+    [
+      "拉聂尔雪山",
+      "Mount Lanayru Snowfield"
+    ],
+    [
+      "需 2 级耐寒，见第四节",
+      "Requires level 2 cold resistance; see Section IV"
+    ],
+    [
+      "德依布朗遗迹",
+      "Thyphlo Ruins"
+    ],
+    [
+      "北境森林",
+      "Northern Forest"
+    ],
+    [
+      "泡泡拉高地",
+      "Popla Foothills"
+    ],
+    [
+      "费罗尼",
+      "Faron"
+    ],
+    [
+      "井底救人，见第四节",
+      "Rescue someone from a well; see Section IV"
+    ],
+    [
+      "拉贝拉湿地带",
+      "Rabella Wetlands"
+    ],
+    [
+      "格鲁德峡谷",
+      "Gerudo Canyon"
+    ],
+    [
+      "格鲁德",
+      "Gerudo"
+    ],
+    [
+      "吊车送维修员，见第四节",
+      "Use a crane to lift the repairman; see Section IV"
+    ],
+    [
+      "格鲁德高地",
+      "Gerudo Highlands"
+    ],
+    [
+      "高寒，备耐寒",
+      "Bitterly cold; bring cold resistance"
+    ],
+    [
+      "奥尔汀峡谷",
+      "Eldin Canyon"
+    ],
+    [
+      "奥尔汀",
+      "Eldin"
+    ],
+    [
+      "倒流落石升空，见第四节",
+      "Send a falling rock back up with Recall; see Section IV"
+    ],
+    [
+      "泡泡拉高地：塔是坏的，人要先救出来。到塔下会发现终端无法使用，旁边井里有人喊救命。先下井，到底打碎石块找到被关的人，对话得知要去对面的洞窟踩机关救他。进洞窟后搬一块石头压住机关，人得救后会自己回去把塔修好，再回塔顶触发终端即可。别在坏塔前反复互动，那不是操作问题，是流程还没走完。",
+      "Popla Foothills: the tower is broken, and you have to rescue someone first. When you get to the tower you'll find the terminal unusable, and someone in the well nearby is crying for help. Go down the well first, smash the rocks at the bottom to find the trapped person, and talking to them reveals you need to go to the cave across the way and step on a mechanism to rescue them. After entering the cave, move a rock onto the mechanism to hold it down; once rescued, the person will go back and repair the tower themselves, and then you just return to the top of the tower and trigger the terminal. Don't keep interacting with the broken tower — that's not an input problem, it's that you haven't finished the sequence yet."
+    ],
+    [
+      "泡泡拉高地：塔是坏的，人要先救出来。",
+      "Popla Foothills: the tower is broken, and you have to rescue someone first."
+    ],
+    [
+      "到塔下会发现终端无法使用，旁边井里有人喊救命。",
+      "When you get to the tower you'll find the terminal unusable, and someone in the well nearby is crying for help."
+    ],
+    [
+      "先下井，到底打碎石块找到被关的人，对话得知要去对面的洞窟踩机关救他。",
+      "Go down the well first, smash the rocks at the bottom to find the trapped person, and talking to them reveals you need to go to the cave across the way and step on a mechanism to rescue them."
+    ],
+    [
+      "进洞窟后搬一块石头压住机关，人得救后会自己回去把塔修好，再回塔顶触发终端即可。",
+      "After entering the cave, move a rock onto the mechanism to hold it down; once rescued, the person will go back and repair the tower themselves, and then you just return to the top of the tower and trigger the terminal."
+    ],
+    [
+      "别在坏塔前反复互动，那不是操作问题，是流程还没走完。",
+      "Don't keep interacting with the broken tower — that's not an input problem, it's that you haven't finished the sequence yet."
+    ],
+    [
+      "奥尔汀峡谷：塔顶的洞才是入口。塔门附近的人会提示你天上有东西掉下来。等天上落石坠落时，对落石用倒流之力让它升空，把你带到比塔顶更高的位置，再滑翔进塔顶的洞里，从内部启动终端。关键是时机：落石升空的窗口不长，别等它升到最高才跳，提前瞄准洞口方向滑翔。",
+      "Eldin Canyon: the hole in the top of the tower is the real entrance. Someone near the tower door will hint that something falls from the sky. When a rock falls from the sky, use Recall on it to send it back up, carrying you higher than the top of the tower, then glide into the hole at the top of the tower and activate the terminal from inside. The key is timing: the window while the rock rises isn't long, so don't wait until it reaches its highest point before jumping — aim toward the hole in advance and glide."
+    ],
+    [
+      "奥尔汀峡谷：塔顶的洞才是入口。",
+      "Eldin Canyon: the hole in the top of the tower is the real entrance."
+    ],
+    [
+      "塔门附近的人会提示你天上有东西掉下来。",
+      "Someone near the tower door will hint that something falls from the sky."
+    ],
+    [
+      "等天上落石坠落时，对落石用倒流之力让它升空，把你带到比塔顶更高的位置，再滑翔进塔顶的洞里，从内部启动终端。",
+      "When a rock falls from the sky, use Recall on it to send it back up, carrying you higher than the top of the tower, then glide into the hole at the top of the tower and activate the terminal from inside."
+    ],
+    [
+      "关键是时机：落石升空的窗口不长，别等它升到最高才跳，提前瞄准洞口方向滑翔。",
+      "The key is timing: the window while the rock rises isn't long, so don't wait until it reaches its highest point before jumping — aim toward the hole in advance and glide."
+    ],
+    [
+      "格鲁德峡谷：用吊车把维修员送上去。塔旁的山上有吊车，维修员在下面上不去。爬上去后，把塔旁的箱子当配重放上去，放够三个左右就能把维修员运上来，对话后塔就修好了。这里考的不是战斗力，是配重思路：箱子不够就去附近再找，别硬推维修员上山。",
+      "Gerudo Canyon: use the crane to lift the repairman up. There's a crane on the hill beside the tower, and the repairman below can't get up. After climbing up, put the crates beside the tower on as counterweights — about three should be enough to lift the repairman up — and after talking to them, the tower will be repaired. This tests not combat strength but counterweight thinking: if there aren't enough crates, go find more nearby, and don't try to force the repairman up the hill."
+    ],
+    [
+      "格鲁德峡谷：用吊车把维修员送上去。",
+      "Gerudo Canyon: use the crane to lift the repairman up."
+    ],
+    [
+      "塔旁的山上有吊车，维修员在下面上不去。",
+      "There's a crane on the hill beside the tower, and the repairman below can't get up."
+    ],
+    [
+      "爬上去后，把塔旁的箱子当配重放上去，放够三个左右就能把维修员运上来，对话后塔就修好了。",
+      "After climbing up, put the crates beside the tower on as counterweights — about three should be enough to lift the repairman up — and after talking to them, the tower will be repaired."
+    ],
+    [
+      "这里考的不是战斗力，是配重思路：箱子不够就去附近再找，别硬推维修员上山。",
+      "This tests not combat strength but counterweight thinking: if there aren't enough crates, go find more nearby, and don't try to force the repairman up the hill."
+    ],
+    [
+      "拉聂尔山：先把耐寒堆到 2 级再爬。这座塔在雪山顶上，耐寒不够会在半路持续掉血。出发前备好 2 级耐寒的防具或料理，爬山时优先走缓坡和有落脚点的路线，精力不够就停下来回满再爬。实在爬不上去时，可以改用热气球或借天上落下的大石块升空，到塔顶直接触发终端，不必全程徒手爬。",
+      "Mount Lanayru: stack cold resistance to level 2 before climbing. This tower sits atop a snowy mountain, and without enough cold resistance you'll keep losing health halfway up. Before setting out, prepare level 2 cold-resistant armor or meals, and when climbing, prefer gentle slopes and routes with places to rest; if your stamina runs low, stop and refill it before climbing on. If you really can't climb up, you can switch to a hot-air balloon or ride a large rock falling from the sky up to the top of the tower and trigger the terminal directly — you don't have to climb the whole way by hand."
+    ],
+    [
+      "拉聂尔山：先把耐寒堆到 2 级再爬。",
+      "Mount Lanayru: stack cold resistance to level 2 before climbing."
+    ],
+    [
+      "这座塔在雪山顶上，耐寒不够会在半路持续掉血。",
+      "This tower sits atop a snowy mountain, and without enough cold resistance you'll keep losing health halfway up."
+    ],
+    [
+      "出发前备好 2 级耐寒的防具或料理，爬山时优先走缓坡和有落脚点的路线，精力不够就停下来回满再爬。",
+      "Before setting out, prepare level 2 cold-resistant armor or meals, and when climbing, prefer gentle slopes and routes with places to rest; if your stamina runs low, stop and refill it before climbing on."
+    ],
+    [
+      "实在爬不上去时，可以改用热气球或借天上落下的大石块升空，到塔顶直接触发终端，不必全程徒手爬。",
+      "If you really can't climb up, you can switch to a hot-air balloon or ride a large rock falling from the sky up to the top of the tower and trigger the terminal directly — you don't have to climb the whole way by hand."
+    ],
+    [
+      "开完一座塔，别只把它当传送点用，升空调查才是它真正的价值。每次从塔顶弹射升空后，先在空中转一圈：用望远镜扫一遍周围，神庙的绿色光柱、空岛的轮廓、驿站和村庄的位置，在高空一眼就能看清，标记下来再滑翔过去，比在地面上瞎逛省一半时间。滑翔时注意精力条，长距离滑翔中途要找空岛或高地落脚回精力，别一口气飞到精力耗尽坠落。",
+      "Once you've opened a tower, don't just use it as a travel point — the launch survey is its real value. Each time you're launched from the top of a tower, first circle around in midair: sweep the surroundings with the telescope, and the green light pillars of shrines, the outlines of sky islands, and the positions of stables and villages can all be seen clearly from high up; mark them, then glide over, which saves half the time compared with wandering aimlessly on the ground. While gliding, watch your stamina bar: on a long glide, find a sky island or high ground midway to land and recover stamina — don't fly in one go until your stamina runs out and you fall."
+    ],
+    [
+      "祝福之光兑换完全指南",
+      "Complete Guide to Exchanging Lights of Blessing"
+    ],
+    [
+      "还有一个使用习惯值得养成：每次开新塔，先把该地区的神庙和驿站顺路清一遍，再去下一座塔。",
+      "There's another habit worth building: each time you open a new tower, clear that region's shrines and stables along the way before heading to the next tower."
+    ],
+    [
+      "塔与塔之间的路程本身就是探索，顺路清掉的神庙会立刻变成祝福之光（见祝福之光兑换完全指南），反过来又帮你换精力、换生命，形成正循环。",
+      "The journey between towers is itself exploration, and shrines cleared along the way immediately become Lights of Blessing (see the Complete Guide to Exchanging Lights of Blessing), which in turn help you exchange for stamina and hearts, forming a virtuous cycle."
+    ],
+    [
+      "反过来只开塔、不清神庙，地图是亮了，但人物强度没跟上，后面的神殿和 Boss 战还是会吃力。",
+      "Conversely, if you only open towers without clearing shrines, the map will be lit up but your character's strength won't keep up, and later temple and boss fights will still be a struggle."
+    ],
+    [
+      "一共几座鸟望台？15 座，全部开完地面与天空地图才算全开。",
+      "How many Skyview Towers are there in total? 15; the surface and sky maps only count as fully open once all of them are open."
+    ],
+    [
+      "一共几座鸟望台？",
+      "How many Skyview Towers are there in total?"
+    ],
+    [
+      "15 座，全部开完地面与天空地图才算全开。",
+      "15; the surface and sky maps only count as fully open once all of them are open."
+    ],
+    [
+      "开了塔为什么地底还是黑的？地底地图靠破魔之根，不归鸟望台管。",
+      "Why is the Depths still black after opening towers? The Depths map relies on Lightroots and is not the Skyview Towers' job."
+    ],
+    [
+      "开了塔为什么地底还是黑的？",
+      "Why is the Depths still black after opening towers?"
+    ],
+    [
+      "地底地图靠破魔之根，不归鸟望台管。",
+      "The Depths map relies on Lightroots and is not the Skyview Towers' job."
+    ],
+    [
+      "升空调查能重复用吗？能，没有次数限制，随时可以回塔再弹射一次。",
+      "Can the launch survey be used repeatedly? Yes, with no limit on uses — you can return to a tower and launch again at any time."
+    ],
+    [
+      "升空调查能重复用吗？",
+      "Can the launch survey be used repeatedly?"
+    ],
+    [
+      "能，没有次数限制，随时可以回塔再弹射一次。",
+      "Yes, with no limit on uses — you can return to a tower and launch again at any time."
+    ],
+    [
+      "雪山塔爬不上去怎么办？先把耐寒堆到 2 级，或改用热气球、落石升空，别硬爬。",
+      "What if you can't climb a snow-mountain tower? Stack cold resistance to level 2 first, or switch to a hot-air balloon or a falling-rock launch — don't force the climb."
+    ],
+    [
+      "雪山塔爬不上去怎么办？",
+      "What if you can't climb a snow-mountain tower?"
+    ],
+    [
+      "先把耐寒堆到 2 级，或改用热气球、落石升空，别硬爬。",
+      "Stack cold resistance to level 2 first, or switch to a hot-air balloon or a falling-rock launch — don't force the climb."
+    ],
+    [
+      "任务顺序推荐指南",
+      "Recommended Quest Order Guide"
+    ],
+    [
+      "152座神庙全收集自查指南",
+      "Self-Check Guide to Collecting All 152 Shrines"
+    ],
+    [
+      "← 上一篇：祝福之光兑换完全指南",
+      "← Previous: Complete Guide to Exchanging Lights of Blessing"
+    ],
+    [
+      "返回秘籍专栏",
+      "Back to the Tips Column"
+    ],
+    [
+      "下一篇：弓箭完全指南 →",
+      "Next: Complete Bow Guide →"
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 任务顺序推荐指南",
+      "› Recommended Quest Order Guide"
+    ],
+    [
+      "› 152座神庙全收集自查指南",
+      "› Self-Check Guide to Collecting All 152 Shrines"
+    ],
+    [
+      "› 地底世界生存与探索完全指南",
+      "› Complete Guide to Surviving and Exploring the Depths"
+    ],
+    [
+      "📚 全部攻略索引",
+      "📚 Full Guide Index"
+    ],
+    [
+      "🏆 哈里的终极秘籍",
+      "🏆 Harry's Ultimate Tips"
+    ],
+    [
+      "› 七宝匕首终极攻略",
+      "› Ultimate Guide to the Scimitar of the Seven"
+    ],
+    [
+      "› 四大神级料理配方",
+      "› Four God-Tier Recipes"
+    ],
+    [
+      "› 最强套装三梯队全解析",
+      "› Full Analysis of the Three Tiers of Strongest Armor Sets"
+    ],
+    [
+      "› 乌萨诸马神庙零基础包教包会",
+      "› Usazum Shrine Guide for Complete Beginners"
+    ],
+    [
+      "› 白龙寻踪与大师之剑",
+      "› Tracking the Light Dragon and the Master Sword"
+    ],
+    [
+      "› 马克兔飞行器调校",
+      "› Hover Bike Tuning"
+    ],
+    [
+      "› 地底电池扩充与大妖精",
+      "› Depths Battery Expansion and the Great Fairies"
+    ],
+    [
+      "🆕 每日新攻略",
+      "🆕 Daily New Guides"
+    ],
+    [
+      "› 新手开荒指南：落地先做的10件事",
+      "› Beginner's Pioneering Guide: 10 Things to Do First After Landing"
+    ],
+    [
+      "› 呀哈哈种子全指南",
+      "› Complete Guide to Korok Seeds"
+    ],
+    [
+      "› 大妖精四姐妹与防具强化完全指南",
+      "› Complete Guide to the Four Great Fairies and Armor Enhancement"
+    ],
+    [
+      "› 四条龙素材刷取指南",
+      "› Guide to Farming Materials from the Four Dragons"
+    ],
+    [
+      "› 人马（莱尼尔）完全指南",
+      "› Complete Guide to Lynels"
+    ],
+    [
+      "› 卢比速刷指南：从前期到后期",
+      "› Rupee Farming Guide: From Early to Late Game"
+    ],
+    [
+      "› 马匹捕捉与稀有马完全指南",
+      "› Complete Guide to Catching Horses and Rare Horses"
+    ],
+    [
+      "› 五位贤者能力全解",
+      "› Complete Explanation of the Five Sages' Abilities"
+    ],
+    [
+      "› 料理机制全解：效果、时长与暴击",
+      "› Complete Explanation of Cooking Mechanics: Effects, Duration, and Criticals"
+    ],
+    [
+      "› 海拉鲁城堡探索完全指南",
+      "› Complete Guide to Exploring Hyrule Castle"
+    ],
+    [
+      "› 海拉鲁图鉴509项收集指南",
+      "› Guide to Collecting All 509 Hyrule Compendium Entries"
+    ],
+    [
+      "› 左纳乌装置实用造物指南",
+      "› Practical Guide to Zonai Device Builds"
+    ],
+    [
+      "› 血月机制全解",
+      "› Complete Explanation of the Blood Moon Mechanic"
+    ],
+    [
+      "› 余料建造完全指南",
+      "› Complete Guide to Fuse"
+    ],
+    [
+      "› 祝福之光兑换完全指南",
+      "› Complete Guide to Exchanging Lights of Blessing"
+    ],
+    [
+      "› 15座鸟望塔开图完全指南（本篇）",
+      "› Complete Guide to Opening All 15 Skyview Towers (This Article)"
+    ],
+    [
+      "🗼 鸟望台攻略",
+      "🗼 Skyview Tower Guide"
+    ],
+    [
+      "🗼 鸟望台 · 开图与升空",
+      "🗼 Skyview Towers · Mapping & Launching"
+    ],
+    [
+      "推荐顺序：先中央三塔站稳脚跟，再分西/北、东、南、西南四路推进，难塔放在有抗性装备之后。",
+      "Recommended order: secure the three central towers first, then push out along four routes — west/north, east, south, and southwest — saving hard towers until you have resistance gear."
+    ],
+    [
+      "作者推荐的路线不是按编号硬跑，而是按“脚跟站稳、再向外扩”的思路分五路。第一路是中央：监视堡垒、海拉鲁平原、撒哈斯拉平原，这三座离主线最近、难度最低，先开它们等于先把大本营周边的地图和传送点铺好，后面所有远行都有回程锚点。第二路向西、北：拉布拉山、茨茨齐齐雪原、卡尔加岭，这一路开始进雪原，出发前先备好耐寒装备或耐寒料理，别光着身子往雪里钻。第三路向东：卓拉台地、乌尔利山、拉聂尔山、德依布朗遗迹，东边路程长，顺路可以把卓拉领地和阿卡莱一带的神庙、驿站一起清了。第四路向南：泡泡拉高地、拉贝拉湿地带，南边多水多雨，爬山前留意天气，雨天爬墙会打滑。第五路向西南：格鲁德峡谷、格鲁德高地、奥尔汀峡谷，这一路的格鲁德峡谷塔和奥尔汀峡谷塔都有机关，放在最后是因为那时你的精力、装备和左纳乌装置都比较齐全，解机关不吃力。",
+      "This route doesn't grind towers by number — it works outward from a secure foothold, in five legs. First, the center: Lookout Landing, Hyrule Field, and Sahasra Slope, the closest to the main story and the easiest; opening them first lays down maps and travel points around your base so every later journey has a way back. Second, west and north: Lindor's Brow, Pikida Stonegrove, and Rospro Pass — this leg enters the snowfields, so bring cold-resistant gear or meals before you go; don't walk into the snow unprepared. Third, east: Upland Zorana, Ulri Mountain, Mount Lanayru, and Thyphlo Ruins — the east leg is long, so clear the Zora region and Akkala Shrines and stables along the way. Fourth, south: Popla Foothills and Rabella Wetlands — wet and rainy down south, so watch the weather before climbing; rain makes walls slippery. Fifth, southwest: Gerudo Canyon, Gerudo Highlands, and Eldin Canyon — the Gerudo Canyon and Eldin Canyon towers have mechanisms, and they come last because by then your stamina, gear, and Zonai devices are well stocked, making the mechanisms easy."
+    ],
+    [
+      "这个顺序的好处是每一步都有明确回报：中央三塔解决“不知道往哪走”，西/北、东两路解决“地图缺角”，南路和西南路解决“难塔集中”。如果你是刚落地的新手，别一上来就挑战拉聂尔山或格鲁德高地——不是打不过，而是缺抗性、缺精力，爬到一半掉下来比绕路更浪费时间。开塔本质上是跑图投资，投资顺序错了，收益会被路上的折返吃掉。",
+      "The payoff of this order is clear at every step: the central three towers solve “not knowing where to go,” the west/north and east legs solve “missing map corners,” and the south and southwest legs solve “hard towers clustered together.” If you're freshly landed, don't tackle Mount Lanayru or Gerudo Highlands first — not because you can't beat them, but because without resistance gear and stamina you'll fall halfway up, wasting more time than a detour would. Opening towers is an investment in exploration; get the order wrong and backtracking eats your returns."
+    ],
+    [
+      "相关攻略：",
+      "Related Guides:"
+    ]
+  ],
+  "title": "Complete Guide to Opening All 15 Skyview Towers · Harry's Ultimate Tips · Tears of the Kingdom Guide"
 }

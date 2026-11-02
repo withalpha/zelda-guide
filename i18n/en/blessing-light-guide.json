@@ -1,406 +1,406 @@
 {
- "notes": [],
- "pairs": [
-  [
-   "祝福之光兑换完全指南：4个换1颗心或1格精力、152座神庙的兑换账目、先精力后生命的推荐路线，以及恶魔像换回的方法。",
-   "Complete guide to exchanging Lights of Blessing: 4 for 1 heart or 1 stamina segment, the exchange accounting for all 152 shrines, the recommended stamina-first-then-hearts route, and how to swap back at the Demon Statue."
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "哈里的终极秘籍",
-   "Harry's Ultimate Tips"
-  ],
-  [
-   "祝福之光兑换完全指南",
-   "Complete Guide to Exchanging Lights of Blessing"
-  ],
-  [
-   "4 个祝福之光换一次奖励，换生命还是换精力？先算账、再按路线换，换错了还能用恶魔像改回来。",
-   "4 Lights of Blessing per reward — hearts or stamina? Do the accounting first, then exchange along a route; if you exchange wrongly, you can still change it back at the Demon Statue."
-  ],
-  [
-   "🧙 作者：哈里 ✨ 祝福之光 · 生命与精力 📖 深度攻略",
-   "🧙 Author: Harry ✨ Lights of Blessing · Hearts and Stamina 📖 In-Depth Guide"
-  ],
-  [
-   "林克在时光神殿遗迹的女神像前祈祷（游戏实机截图）",
-   "Link praying before the Goddess Statue at the Temple of Time ruins (in-game screenshot)"
-  ],
-  [
-   "女神像前兑换祝福之光：4 个换 1 颗心或 1 格精力（游戏实机截图，图片来源：Zelda Dungeon Wiki）",
-   "Exchanging Lights of Blessing before a Goddess Statue: 4 for 1 heart or 1 stamina segment (in-game screenshot, image source: Zelda Dungeon Wiki)"
-  ],
-  [
-   "每通关一座神庙就拿到 1 个祝福之光，攒够 4 个才能去女神像换一次奖励。这个系统看起来简单，真正难的是取舍：前期缺精力爬不上山、飞不远，后期缺生命扛不住人马和神殿 Boss 的一击。换错了不是世界末日，但每一次兑换都是一次不可逆的方向选择——除非你愿意去找恶魔像花钱改回来。本篇把规则、账目和推荐路线一次讲清楚，让你每 4 个祝福之光都花在刀刃上。",
-   "Each shrine you clear gives you 1 Light of Blessing, and only once you've saved up 4 can you go to a Goddess Statue to exchange for one reward. This system looks simple, but the truly hard part is the trade-off: early on, lacking stamina means you can't climb mountains or fly far, and later on, lacking hearts means you can't withstand a single hit from a Lynel or a temple boss. Exchanging wrongly isn't the end of the world, but each exchange is an irreversible directional choice — unless you're willing to go to the Demon Statue and pay to change it back. This article explains the rules, the accounting, and the recommended route all at once, so every 4 Lights of Blessing are spent where they count."
-  ],
-  [
-   "⭐ 本篇要点",
-   "⭐ Key Points of This Article"
-  ],
-  [
-   "规则：每座神庙给 1 个祝福之光，4 个换 1 颗生命容器或 1 格精力容器（精力一圈等于 5 格）。",
-   "Rule: each shrine gives 1 Light of Blessing; 4 exchange for 1 Heart Container or 1 Stamina Vessel (one full stamina ring equals 5 segments)."
-  ],
-  [
-   "例外：初始空岛时光神殿的第一座女神像强制换生命，第一次兑换没有选择权。",
-   "Exception: the first Goddess Statue at the Temple of Time on the Great Sky Island forces a heart exchange — you have no choice on the first exchange."
-  ],
-  [
-   "账目：全 152 座神庙共 152 个祝福之光，等于 38 次兑换；主线还会另外送生命容器，别一股脑全换生命。",
-   "Accounting: all 152 shrines give 152 Lights of Blessing in total, equal to 38 exchanges; the main story also gives Heart Containers separately, so don't pour everything into hearts."
-  ],
-  [
-   "推荐路线：先把精力堆到两圈完整，再补生命；拔大师之剑需要两圈完整精力，这一步不能省。",
-   "Recommended route: first stack stamina to two full rings, then top up hearts; drawing the Master Sword requires two full rings of stamina, and this step can't be skipped."
-  ],
-  [
-   "后悔药：监视堡垒地下的恶魔像可以换回，交出 1 颗心或 1 格精力得 100 卢比，赎回要 120 卢比，等于每次调整净花 20 卢比。",
-   "The remedy: the Demon Statue under Lookout Landing lets you swap back — hand over 1 heart or 1 stamina segment for 100 Rupees, and buying it back costs 120 Rupees, so each adjustment nets 20 Rupees spent."
-  ],
-  [
-   "📑 本篇目录",
-   "📑 Contents of This Article"
-  ],
-  [
-   "一、兑换规则：去哪里换、怎么换",
-   "I. Exchange Rules: Where and How to Exchange"
-  ],
-  [
-   "二、先算账：152 个祝福之光够换什么",
-   "II. Do the Accounting First: What 152 Lights of Blessing Can Buy"
-  ],
-  [
-   "三、推荐路线：先精力、后生命的理由",
-   "III. Recommended Route: Why Stamina First, Then Hearts"
-  ],
-  [
-   "四、换错了怎么办：恶魔像的用法",
-   "IV. What If You Exchanged Wrongly: How to Use the Demon Statue"
-  ],
-  [
-   "五、常见翻车点",
-   "V. Common Pitfalls"
-  ],
-  [
-   "常见问题",
-   "FAQ"
-  ],
-  [
-   "祝福之光只能在女神像前兑换。操作很简单：带着至少 4 个祝福之光走到女神像前互动，选择祈祷，再选生命容器或精力容器。最容易去的一座在监视堡垒地下的紧急避难所里，从中央的梯子下去就能看到；此外利特村、鼓隆城、卓拉领地和格鲁德小镇等主要聚落也各有一座，跑主线顺路就能换，不必特意回监视堡垒。个别女神像要先完成相关任务才会开放兑换，如果互动后没有兑换选项，先去做它附近的任务，而不是怀疑自己的祝福之光数量。",
-   "Lights of Blessing can only be exchanged before a Goddess Statue. The operation is simple: walk up to a Goddess Statue with at least 4 Lights of Blessing, interact, choose to pray, then choose a Heart Container or a Stamina Vessel. The easiest one to reach is in the Emergency Shelter under Lookout Landing, visible as soon as you go down the central ladder; in addition, major settlements like Rito Village, Goron City, Zora's Domain, and Gerudo Town each have one, so you can exchange along the way while running the main story without specially returning to Lookout Landing. Individual Goddess Statues only open for exchange after you complete related quests — if there's no exchange option after interacting, go do the quests near it first, rather than doubting your Light of Blessing count."
-  ],
-  [
-   "有一个新手必知的例外：游戏开局在初始空岛时光神殿遇到的第一座女神像，第一次兑换强制给你生命容器，没有选项。这不是 Bug，也不是你按错了。接受这颗心，之后的兑换才轮到你自己选。",
-   "There's one exception every beginner must know: the first Goddess Statue you meet at the Temple of Time on the Great Sky Island at the start of the game forces a Heart Container on your first exchange, with no option. This isn't a bug, and it's not that you pressed the wrong button. Accept this heart, and only later exchanges are yours to choose."
-  ],
-  [
-   "项目",
-   "Item"
-  ],
-  [
-   "规则",
-   "Rule"
-  ],
-  [
-   "来源",
-   "Source"
-  ],
-  [
-   "每通关 1 座神庙得 1 个祝福之光",
-   "1 Light of Blessing per shrine cleared"
-  ],
-  [
-   "兑换价",
-   "Exchange Price"
-  ],
-  [
-   "4 个祝福之光换 1 次",
-   "4 Lights of Blessing per exchange"
-  ],
-  [
-   "生命容器",
-   "Heart Container"
-  ],
-  [
-   "生命上限 +1 颗心",
-   "Maximum hearts +1"
-  ],
-  [
-   "精力容器",
-   "Stamina Vessel"
-  ],
-  [
-   "精力上限 +1 格，5 格凑满一圈",
-   "Maximum stamina +1 segment; 5 segments make one full ring"
-  ],
-  [
-   "首次兑换",
-   "First Exchange"
-  ],
-  [
-   "时光神殿女神像强制换生命容器",
-   "The Temple of Time Goddess Statue forces a Heart Container exchange"
-  ],
-  [
-   "全游戏共 152 座神庙，全部通关就是 152 个祝福之光，正好 38 次兑换。游戏对生命和精力各有上限，生命最高 30 颗心，精力最高 3 圈完整。只看数字会觉得 38 次绰绰有余，但别忘了两件事：第一，主线推进本身也会送生命容器，神殿打完、剧情节点过后生命会自己涨；第二，精力从开局的 1 圈拉到 3 圈需要 10 格，也就是 10 次兑换。所以真正稀缺的不是兑换次数，而是你愿不愿意为精力留出位置。",
-   "The whole game has 152 shrines, and clearing them all gives 152 Lights of Blessing — exactly 38 exchanges. The game caps hearts and stamina separately: hearts max out at 30, stamina at 3 full rings. Looking only at the numbers, 38 exchanges seem more than enough, but don't forget two things: first, main-story progress itself gives Heart Containers — hearts rise on their own after temples are cleared and story beats are passed; second, raising stamina from 1 ring at the start to 3 rings takes 10 segments, which is 10 exchanges. So what's truly scarce isn't the number of exchanges, but whether you're willing to reserve room for stamina."
-  ],
-  [
-   "作者的算账方法是反着来的：先定目标，再倒推兑换。目标定为“精力 3 圈、生命尽量高”，那么精力要 10 次兑换，剩下的 28 次兑换加主线送的心，足够把生命推到一个打 Boss 不虚的水平。反过来如果开局无脑全换生命，到了要爬雪山、飞长距离、拔大师之剑的时候，才发现精力只有 1 圈多一点，那时再补精力，要重新攒 20 个祝福之光才能凑满一圈，进度会被拖慢一大截。",
-   "The author's accounting method works backwards: set the goal first, then work out the exchanges in reverse. With the goal set as “3 rings of stamina, hearts as high as possible,” stamina takes 10 exchanges, and the remaining 28 exchanges plus the hearts given by the main story are enough to push hearts to a level where boss fights aren't daunting. Conversely, if you mindlessly exchange everything for hearts at the start, by the time you need to climb snowy mountains, fly long distances, or draw the Master Sword, you'll discover you have only a little over 1 ring of stamina — and topping up stamina then means saving up 20 Lights of Blessing again just to complete one ring, which will slow your progress considerably."
-  ],
-  [
-   "推荐分三个阶段走。第一阶段，拿到强制的那颗心之后，连续换精力，直到精力达到两圈完整。这一步的理由非常具体：拔大师之剑需要两圈完整精力，缺一格都不行；而且两圈精力基本覆盖了开荒期的爬山、游泳和滑翔需求，跑图效率会立刻上一个台阶。第二阶段，开始补生命，目标是先到一个能扛住神殿 Boss 两到三下重击的水平，配合料理回血，打四神殿就不会动不动读档。第三阶段，神殿打完、跑图压力小了之后，再按喜好把剩下的祝福之光分给精力（冲 3 圈）或生命（冲上限）。",
-   "It's recommended to go in three stages. Stage one: after receiving the forced heart, keep exchanging for stamina until stamina reaches two full rings. The reason for this step is very specific: drawing the Master Sword requires two full rings of stamina — not one segment less will do; and two rings basically cover the climbing, swimming, and gliding needs of the early exploration period, immediately raising your map-running efficiency a notch. Stage two: start topping up hearts, aiming first for a level that can withstand two to three heavy hits from a temple boss, so that with meal healing, fighting the four temples won't have you reloading constantly. Stage three: after the temples are done and map-running pressure eases, distribute the remaining Lights of Blessing to stamina (pushing for 3 rings) or hearts (pushing for the cap) as you prefer."
-  ],
-  [
-   "这个顺序还有一个隐藏好处：精力早点拉满，神庙本身也更好打。很多神庙解法要爬高、要长距离滑翔、要水里长游，精力不够时你会反复失败在体力条上，而不是解法上。反过来，生命不够的问题可以用料理临时顶——加黄心的料理、加精力的料理都能在关键时刻救急，但料理加的是临时上限，不是永久上限，打完一仗就没了，不能代替兑换。所以判断标准就一条：能用料理临时顶的问题先放后，能帮你到达新地方、拿到新装备的问题先解决。精力属于后者。",
-   "This order has another hidden benefit: raising stamina early makes the shrines themselves easier to clear. Many shrine solutions require climbing high, gliding long distances, or swimming long stretches in water, and without enough stamina you'll repeatedly fail on the stamina bar rather than on the solution. Conversely, the problem of not having enough hearts can be temporarily covered with meals — meals that add yellow hearts and meals that add stamina can both save you at critical moments, but meals add a temporary cap, not a permanent one, and it's gone after one fight, so they can't replace exchanging. So there's one rule of thumb: problems that meals can temporarily cover come later; problems that help you reach new places and get new equipment come first. Stamina belongs to the latter."
-  ],
-  [
-   "不同打法的玩家可以微调，但不要颠倒大方向。喜欢正面硬刚、常和人马贴身换血的玩家，第二阶段可以提前多换两颗心；喜欢潜行、弓箭和绕后的玩家，精力拉到 3 圈的优先级更高。唯一不建议的路线是全程只换一种：全生命会让你跑图处处受限，全精力会让你在神殿 Boss 面前像纸糊的一样。",
-   "Players with different playstyles can fine-tune, but don't reverse the overall direction. Players who like head-on fighting and trading blows up close with Lynels can exchange for two extra hearts earlier in stage two; players who like stealth, bows, and flanking should prioritize raising stamina to 3 rings. The only route not recommended is exchanging for only one kind the whole way: all hearts will leave you restricted everywhere while running the map, and all stamina will leave you as flimsy as paper before a temple boss."
-  ],
-  [
-   "换错了不用重开档。监视堡垒地下有一座恶魔像，专门做“换回来”的生意：你把 1 颗生命容器或 1 格精力容器交给它，它给你 100 卢比；之后再向它赎回 1 颗心或 1 格精力，要付 120 卢比。一出一进，等于每次调整净花 20 卢比。这个价格在游戏中期几乎可以忽略，所以真正的成本不是钱，而是你愿不愿意跑一趟监视堡垒地下。",
-   "Exchanging wrongly doesn't mean restarting your save. There's a Demon Statue under Lookout Landing that specializes in “swapping back”: you hand it 1 Heart Container or 1 Stamina Vessel, and it gives you 100 Rupees; later, buying back 1 heart or 1 stamina segment costs 120 Rupees. Out and back in, each adjustment nets 20 Rupees spent. That price is almost negligible in the mid-game, so the real cost isn't money, but whether you're willing to make a trip under Lookout Landing."
-  ],
-  [
-   "用法示例：前期全换了生命，后来发现精力不够拔大师之剑，就去恶魔像交出几颗心换成卢比，再赎回成精力格，一次调整 20 卢比，几分钟搞定。反过来，后期精力溢出、想多扛几下 Boss，同样可以反向操作。注意恶魔像初次见面有前置对话任务，要先完成监视堡垒地下相关的指引再去，别到了门口发现它不理你就以为走错了地方。",
-   "Usage example: if you exchanged everything for hearts early on and later find you don't have enough stamina to draw the Master Sword, go to the Demon Statue, hand over a few hearts for Rupees, then buy them back as stamina segments — 20 Rupees per adjustment, done in a few minutes. Conversely, if stamina overflows later and you want to withstand a few more boss hits, you can do the reverse. Note that the first meeting with the Demon Statue has a prerequisite dialogue quest — complete the guidance related to under Lookout Landing first, and don't assume you've gone to the wrong place if it ignores you at the door."
-  ],
-  [
-   "还有一个容易混淆的点：贤者的遗志和祝福之光长得很像，但不能混着用。贤者遗志也是 4 个换 1 次，同样在女神像前兑换，可一次兑换必须用同一种材料凑满 4 个，3 个祝福之光加 1 个贤者遗志换不到任何东西。攒的时候分开数，别把两边的数量加在一起算。",
-   "There's another easily confused point: Sage's Wills and Lights of Blessing look very similar, but they can't be mixed. Sage's Wills are also exchanged 4-for-1, also before a Goddess Statue, but one exchange must be made up of 4 of the same material — 3 Lights of Blessing plus 1 Sage's Will buys nothing. Count them separately when saving up; don't add the two sides' numbers together."
-  ],
-  [
-   "差 1 个就跑去换：兑换要整 4 个，3 个去女神像前只能干瞪眼。出门前先看一眼祝福之光数量，凑满 4 的倍数再跑。",
-   "Going to exchange when you're 1 short: an exchange needs a full 4 — with 3, you'll just stare blankly before a Goddess Statue. Check your Light of Blessing count before heading out, and only go once you've reached a multiple of 4."
-  ],
-  [
-   "差 1 个就跑去换：兑换要整 4 个，3 个去女神像前只能干瞪眼。",
-   "Going to exchange when you're 1 short: an exchange needs a full 4 — with 3, you'll just stare blankly before a Goddess Statue."
-  ],
-  [
-   "出门前先看一眼祝福之光数量，凑满 4 的倍数再跑。",
-   "Check your Light of Blessing count before heading out, and only go once you've reached a multiple of 4."
-  ],
-  [
-   "把临时上限当永久上限：料理和药加的黄心、黄精力条是临时的，睡一觉、受重创后会掉，不能代替兑换，也别为了省兑换而长期靠料理硬撑。",
-   "Treating a temporary cap as a permanent cap: the yellow hearts and yellow stamina bar added by meals and elixirs are temporary — they drop after sleeping or taking a heavy blow — and can't replace exchanging, nor should you rely on meals long-term just to save exchanges."
-  ],
-  [
-   "只盯着生命数：生命高不等于能打，精力不够连 Boss 场地的高台都爬不上去，输出环境都没有。",
-   "Only watching your heart count: high hearts don't equal being able to fight — without enough stamina, you can't even climb the high platforms in a boss arena, leaving you with no room to deal damage."
-  ],
-  [
-   "神庙通关了不领奖励：每座神庙终点的祝福之光要走过去拿，解完谜直接传送走等于白打，养成“走到发光点再走”的习惯。",
-   "Clearing a shrine without claiming the reward: you have to walk over to pick up the Light of Blessing at the end of each shrine — teleporting away right after solving the puzzle is a wasted clear, so build the habit of “walk to the glowing point before leaving.”"
-  ],
-  [
-   "4 个祝福之光能换什么？1 颗生命容器，或 1 格精力容器，5 格精力凑满一圈。",
-   "What can 4 Lights of Blessing buy? 1 Heart Container, or 1 Stamina Vessel — 5 stamina segments make one full ring."
-  ],
-  [
-   "4 个祝福之光能换什么？",
-   "What can 4 Lights of Blessing buy?"
-  ],
-  [
-   "1 颗生命容器，或 1 格精力容器，5 格精力凑满一圈。",
-   "1 Heart Container, or 1 Stamina Vessel — 5 stamina segments make one full ring."
-  ],
-  [
-   "最容易去的女神像在哪里？监视堡垒地下紧急避难所，此外四大聚落也各有一座。",
-   "Where is the easiest Goddess Statue to reach? The Emergency Shelter under Lookout Landing; the four major settlements also each have one."
-  ],
-  [
-   "最容易去的女神像在哪里？",
-   "Where is the easiest Goddess Statue to reach?"
-  ],
-  [
-   "监视堡垒地下紧急避难所，此外四大聚落也各有一座。",
-   "The Emergency Shelter under Lookout Landing; the four major settlements also each have one."
-  ],
-  [
-   "换错了能改吗？能，去监视堡垒地下的恶魔像，交出得 100 卢比、赎回付 120 卢比，每次调整净花 20 卢比。",
-   "Can a wrong exchange be changed? Yes — go to the Demon Statue under Lookout Landing: handing over gets 100 Rupees, buying back costs 120 Rupees, so each adjustment nets 20 Rupees spent."
-  ],
-  [
-   "换错了能改吗？",
-   "Can a wrong exchange be changed?"
-  ],
-  [
-   "能，去监视堡垒地下的恶魔像，交出得 100 卢比、赎回付 120 卢比，每次调整净花 20 卢比。",
-   "Yes — go to the Demon Statue under Lookout Landing: handing over gets 100 Rupees, buying back costs 120 Rupees, so each adjustment nets 20 Rupees spent."
-  ],
-  [
-   "贤者遗志能和祝福之光混着换吗？不能，一次兑换必须同一种材料凑满 4 个。",
-   "Can Sage's Wills be mixed with Lights of Blessing in an exchange? No — one exchange must be made up of 4 of the same material."
-  ],
-  [
-   "贤者遗志能和祝福之光混着换吗？",
-   "Can Sage's Wills be mixed with Lights of Blessing in an exchange?"
-  ],
-  [
-   "不能，一次兑换必须同一种材料凑满 4 个。",
-   "No — one exchange must be made up of 4 of the same material."
-  ],
-  [
-   "152座神庙全收集自查指南",
-   "Self-Check Guide to Collecting All 152 Shrines"
-  ],
-  [
-   "新手开荒指南：落地先做的10件事",
-   "Beginner's Pioneering Guide: 10 Things to Do First After Landing"
-  ],
-  [
-   "大妖精四姐妹与防具强化完全指南",
-   "Complete Guide to the Four Great Fairies and Armor Enhancement"
-  ],
-  [
-   "相关攻略：152座神庙全收集自查指南、新手开荒指南：落地先做的10件事、大妖精四姐妹与防具强化完全指南。",
-   "Related Guides: Self-Check Guide to Collecting All 152 Shrines, Beginner's Pioneering Guide: 10 Things to Do First After Landing, Complete Guide to the Four Great Fairies and Armor Enhancement."
-  ],
-  [
-   "← 上一篇：余料建造完全指南",
-   "← Previous: Complete Guide to Fuse"
-  ],
-  [
-   "返回秘籍专栏",
-   "Back to the Tips Column"
-  ],
-  [
-   "下一篇：15座鸟望塔开图完全指南 →",
-   "Next: Complete Guide to Opening All 15 Skyview Towers →"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 152座神庙全收集自查指南",
-   "› Self-Check Guide to Collecting All 152 Shrines"
-  ],
-  [
-   "› 新手开荒指南：落地先做的10件事",
-   "› Beginner's Pioneering Guide: 10 Things to Do First After Landing"
-  ],
-  [
-   "› 大妖精四姐妹与防具强化完全指南",
-   "› Complete Guide to the Four Great Fairies and Armor Enhancement"
-  ],
-  [
-   "📚 全部攻略索引",
-   "📚 Full Guide Index"
-  ],
-  [
-   "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Tips"
-  ],
-  [
-   "› 七宝匕首终极攻略",
-   "› Ultimate Guide to the Scimitar of the Seven"
-  ],
-  [
-   "› 四大神级料理配方",
-   "› Four God-Tier Recipes"
-  ],
-  [
-   "› 最强套装三梯队全解析",
-   "› Full Analysis of the Three Tiers of Strongest Armor Sets"
-  ],
-  [
-   "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine Guide for Complete Beginners"
-  ],
-  [
-   "› 白龙寻踪与大师之剑",
-   "› Tracking the Light Dragon and the Master Sword"
-  ],
-  [
-   "› 马克兔飞行器调校",
-   "› Hover Bike Tuning"
-  ],
-  [
-   "› 地底电池扩充与大妖精",
-   "› Depths Battery Expansion and the Great Fairies"
-  ],
-  [
-   "🆕 每日新攻略",
-   "🆕 Daily New Guides"
-  ],
-  [
-   "› 呀哈哈种子全指南",
-   "› Complete Guide to Korok Seeds"
-  ],
-  [
-   "› 地底世界生存与探索完全指南",
-   "› Complete Guide to Surviving and Exploring the Depths"
-  ],
-  [
-   "› 四条龙素材刷取指南",
-   "› Guide to Farming Materials from the Four Dragons"
-  ],
-  [
-   "› 人马（莱尼尔）完全指南",
-   "› Complete Guide to Lynels"
-  ],
-  [
-   "› 卢比速刷指南：从前期到后期",
-   "› Rupee Farming Guide: From Early to Late Game"
-  ],
-  [
-   "› 马匹捕捉与稀有马完全指南",
-   "› Complete Guide to Catching Horses and Rare Horses"
-  ],
-  [
-   "› 五位贤者能力全解",
-   "› Complete Explanation of the Five Sages' Abilities"
-  ],
-  [
-   "› 料理机制全解：效果、时长与暴击",
-   "› Complete Explanation of Cooking Mechanics: Effects, Duration, and Criticals"
-  ],
-  [
-   "› 海拉鲁城堡探索完全指南",
-   "› Complete Guide to Exploring Hyrule Castle"
-  ],
-  [
-   "› 海拉鲁图鉴509项收集指南",
-   "› Guide to Collecting All 509 Hyrule Compendium Entries"
-  ],
-  [
-   "› 左纳乌装置实用造物指南",
-   "› Practical Guide to Zonai Device Builds"
-  ],
-  [
-   "› 血月机制全解",
-   "› Complete Explanation of the Blood Moon Mechanic"
-  ],
-  [
-   "› 余料建造完全指南",
-   "› Complete Guide to Fuse"
-  ],
-  [
-   "› 祝福之光兑换完全指南（本篇）",
-   "› Complete Guide to Exchanging Lights of Blessing (This Article)"
-  ],
-  [
-   "› 15座鸟望塔开图完全指南",
-   "› Complete Guide to Opening All 15 Skyview Towers"
-  ],
-  [
-   "✨ 祝福之光攻略",
-   "✨ Light of Blessing Guide"
-  ],
-  [
-   "✨ 祝福之光 · 生命与精力",
-   "✨ Light of Blessing · Hearts & Stamina"
-  ]
- ],
- "title": "Complete Guide to Exchanging Lights of Blessing · Harry's Ultimate Tips · Tears of the Kingdom Guide"
+  "notes": [],
+  "pairs": [
+    [
+      "祝福之光兑换完全指南：4个换1颗心或1格精力、152座神庙的兑换账目、先精力后生命的推荐路线，以及恶魔像换回的方法。",
+      "Complete guide to exchanging Lights of Blessing: 4 for 1 heart or 1 stamina segment, the exchange accounting for all 152 shrines, the recommended stamina-first-then-hearts route, and how to swap back at the Demon Statue."
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "哈里的终极秘籍",
+      "Harry's Ultimate Tips"
+    ],
+    [
+      "祝福之光兑换完全指南",
+      "Complete Guide to Exchanging Lights of Blessing"
+    ],
+    [
+      "4 个祝福之光换一次奖励，换生命还是换精力？先算账、再按路线换，换错了还能用恶魔像改回来。",
+      "4 Lights of Blessing per reward — hearts or stamina? Do the accounting first, then exchange along a route; if you exchange wrongly, you can still change it back at the Demon Statue."
+    ],
+    [
+      "🧙 作者：哈里 ✨ 祝福之光 · 生命与精力 📖 深度攻略",
+      "🧙 Author: Harry ✨ Lights of Blessing · Hearts and Stamina 📖 In-Depth Guide"
+    ],
+    [
+      "林克在时光神殿遗迹的女神像前祈祷（游戏实机截图）",
+      "Link praying before the Goddess Statue at the Temple of Time ruins (in-game screenshot)"
+    ],
+    [
+      "女神像前兑换祝福之光：4 个换 1 颗心或 1 格精力（游戏实机截图，图片来源：Zelda Dungeon Wiki）",
+      "Exchanging Lights of Blessing before a Goddess Statue: 4 for 1 heart or 1 stamina segment (in-game screenshot, image source: Zelda Dungeon Wiki)"
+    ],
+    [
+      "每通关一座神庙就拿到 1 个祝福之光，攒够 4 个才能去女神像换一次奖励。这个系统看起来简单，真正难的是取舍：前期缺精力爬不上山、飞不远，后期缺生命扛不住人马和神殿 Boss 的一击。换错了不是世界末日，但每一次兑换都是一次不可逆的方向选择——除非你愿意去找恶魔像花钱改回来。本篇把规则、账目和推荐路线一次讲清楚，让你每 4 个祝福之光都花在刀刃上。",
+      "Each shrine you clear gives you 1 Light of Blessing, and only once you've saved up 4 can you go to a Goddess Statue to exchange for one reward. This system looks simple, but the truly hard part is the trade-off: early on, lacking stamina means you can't climb mountains or fly far, and later on, lacking hearts means you can't withstand a single hit from a Lynel or a temple boss. Exchanging wrongly isn't the end of the world, but each exchange is an irreversible directional choice — unless you're willing to go to the Demon Statue and pay to change it back. This article explains the rules, the accounting, and the recommended route all at once, so every 4 Lights of Blessing are spent where they count."
+    ],
+    [
+      "⭐ 本篇要点",
+      "⭐ Key Points of This Article"
+    ],
+    [
+      "规则：每座神庙给 1 个祝福之光，4 个换 1 颗生命容器或 1 格精力容器（精力一圈等于 5 格）。",
+      "Rule: each shrine gives 1 Light of Blessing; 4 exchange for 1 Heart Container or 1 Stamina Vessel (one full stamina ring equals 5 segments)."
+    ],
+    [
+      "例外：初始空岛时光神殿的第一座女神像强制换生命，第一次兑换没有选择权。",
+      "Exception: the first Goddess Statue at the Temple of Time on the Great Sky Island forces a heart exchange — you have no choice on the first exchange."
+    ],
+    [
+      "账目：全 152 座神庙共 152 个祝福之光，等于 38 次兑换；主线还会另外送生命容器，别一股脑全换生命。",
+      "Accounting: all 152 shrines give 152 Lights of Blessing in total, equal to 38 exchanges; the main story also gives Heart Containers separately, so don't pour everything into hearts."
+    ],
+    [
+      "推荐路线：先把精力堆到两圈完整，再补生命；拔大师之剑需要两圈完整精力，这一步不能省。",
+      "Recommended route: first stack stamina to two full rings, then top up hearts; drawing the Master Sword requires two full rings of stamina, and this step can't be skipped."
+    ],
+    [
+      "后悔药：监视堡垒地下的恶魔像可以换回，交出 1 颗心或 1 格精力得 100 卢比，赎回要 120 卢比，等于每次调整净花 20 卢比。",
+      "The remedy: the Demon Statue under Lookout Landing lets you swap back — hand over 1 heart or 1 stamina segment for 100 Rupees, and buying it back costs 120 Rupees, so each adjustment nets 20 Rupees spent."
+    ],
+    [
+      "📑 本篇目录",
+      "📑 Contents of This Article"
+    ],
+    [
+      "一、兑换规则：去哪里换、怎么换",
+      "I. Exchange Rules: Where and How to Exchange"
+    ],
+    [
+      "二、先算账：152 个祝福之光够换什么",
+      "II. Do the Accounting First: What 152 Lights of Blessing Can Buy"
+    ],
+    [
+      "三、推荐路线：先精力、后生命的理由",
+      "III. Recommended Route: Why Stamina First, Then Hearts"
+    ],
+    [
+      "四、换错了怎么办：恶魔像的用法",
+      "IV. What If You Exchanged Wrongly: How to Use the Demon Statue"
+    ],
+    [
+      "五、常见翻车点",
+      "V. Common Pitfalls"
+    ],
+    [
+      "常见问题",
+      "FAQ"
+    ],
+    [
+      "祝福之光只能在女神像前兑换。操作很简单：带着至少 4 个祝福之光走到女神像前互动，选择祈祷，再选生命容器或精力容器。最容易去的一座在监视堡垒地下的紧急避难所里，从中央的梯子下去就能看到；此外利特村、鼓隆城、卓拉领地和格鲁德小镇等主要聚落也各有一座，跑主线顺路就能换，不必特意回监视堡垒。个别女神像要先完成相关任务才会开放兑换，如果互动后没有兑换选项，先去做它附近的任务，而不是怀疑自己的祝福之光数量。",
+      "Lights of Blessing can only be exchanged before a Goddess Statue. The operation is simple: walk up to a Goddess Statue with at least 4 Lights of Blessing, interact, choose to pray, then choose a Heart Container or a Stamina Vessel. The easiest one to reach is in the Emergency Shelter under Lookout Landing, visible as soon as you go down the central ladder; in addition, major settlements like Rito Village, Goron City, Zora's Domain, and Gerudo Town each have one, so you can exchange along the way while running the main story without specially returning to Lookout Landing. Individual Goddess Statues only open for exchange after you complete related quests — if there's no exchange option after interacting, go do the quests near it first, rather than doubting your Light of Blessing count."
+    ],
+    [
+      "有一个新手必知的例外：游戏开局在初始空岛时光神殿遇到的第一座女神像，第一次兑换强制给你生命容器，没有选项。这不是 Bug，也不是你按错了。接受这颗心，之后的兑换才轮到你自己选。",
+      "There's one exception every beginner must know: the first Goddess Statue you meet at the Temple of Time on the Great Sky Island at the start of the game forces a Heart Container on your first exchange, with no option. This isn't a bug, and it's not that you pressed the wrong button. Accept this heart, and only later exchanges are yours to choose."
+    ],
+    [
+      "项目",
+      "Item"
+    ],
+    [
+      "规则",
+      "Rule"
+    ],
+    [
+      "来源",
+      "Source"
+    ],
+    [
+      "每通关 1 座神庙得 1 个祝福之光",
+      "1 Light of Blessing per shrine cleared"
+    ],
+    [
+      "兑换价",
+      "Exchange Price"
+    ],
+    [
+      "4 个祝福之光换 1 次",
+      "4 Lights of Blessing per exchange"
+    ],
+    [
+      "生命容器",
+      "Heart Container"
+    ],
+    [
+      "生命上限 +1 颗心",
+      "Maximum hearts +1"
+    ],
+    [
+      "精力容器",
+      "Stamina Vessel"
+    ],
+    [
+      "精力上限 +1 格，5 格凑满一圈",
+      "Maximum stamina +1 segment; 5 segments make one full ring"
+    ],
+    [
+      "首次兑换",
+      "First Exchange"
+    ],
+    [
+      "时光神殿女神像强制换生命容器",
+      "The Temple of Time Goddess Statue forces a Heart Container exchange"
+    ],
+    [
+      "全游戏共 152 座神庙，全部通关就是 152 个祝福之光，正好 38 次兑换。游戏对生命和精力各有上限，生命最高 30 颗心，精力最高 3 圈完整。只看数字会觉得 38 次绰绰有余，但别忘了两件事：第一，主线推进本身也会送生命容器，神殿打完、剧情节点过后生命会自己涨；第二，精力从开局的 1 圈拉到 3 圈需要 10 格，也就是 10 次兑换。所以真正稀缺的不是兑换次数，而是你愿不愿意为精力留出位置。",
+      "The whole game has 152 shrines, and clearing them all gives 152 Lights of Blessing — exactly 38 exchanges. The game caps hearts and stamina separately: hearts max out at 30, stamina at 3 full rings. Looking only at the numbers, 38 exchanges seem more than enough, but don't forget two things: first, main-story progress itself gives Heart Containers — hearts rise on their own after temples are cleared and story beats are passed; second, raising stamina from 1 ring at the start to 3 rings takes 10 segments, which is 10 exchanges. So what's truly scarce isn't the number of exchanges, but whether you're willing to reserve room for stamina."
+    ],
+    [
+      "作者的算账方法是反着来的：先定目标，再倒推兑换。目标定为“精力 3 圈、生命尽量高”，那么精力要 10 次兑换，剩下的 28 次兑换加主线送的心，足够把生命推到一个打 Boss 不虚的水平。反过来如果开局无脑全换生命，到了要爬雪山、飞长距离、拔大师之剑的时候，才发现精力只有 1 圈多一点，那时再补精力，要重新攒 20 个祝福之光才能凑满一圈，进度会被拖慢一大截。",
+      "The author's accounting method works backwards: set the goal first, then work out the exchanges in reverse. With the goal set as “3 rings of stamina, hearts as high as possible,” stamina takes 10 exchanges, and the remaining 28 exchanges plus the hearts given by the main story are enough to push hearts to a level where boss fights aren't daunting. Conversely, if you mindlessly exchange everything for hearts at the start, by the time you need to climb snowy mountains, fly long distances, or draw the Master Sword, you'll discover you have only a little over 1 ring of stamina — and topping up stamina then means saving up 20 Lights of Blessing again just to complete one ring, which will slow your progress considerably."
+    ],
+    [
+      "推荐分三个阶段走。第一阶段，拿到强制的那颗心之后，连续换精力，直到精力达到两圈完整。这一步的理由非常具体：拔大师之剑需要两圈完整精力，缺一格都不行；而且两圈精力基本覆盖了开荒期的爬山、游泳和滑翔需求，跑图效率会立刻上一个台阶。第二阶段，开始补生命，目标是先到一个能扛住神殿 Boss 两到三下重击的水平，配合料理回血，打四神殿就不会动不动读档。第三阶段，神殿打完、跑图压力小了之后，再按喜好把剩下的祝福之光分给精力（冲 3 圈）或生命（冲上限）。",
+      "It's recommended to go in three stages. Stage one: after receiving the forced heart, keep exchanging for stamina until stamina reaches two full rings. The reason for this step is very specific: drawing the Master Sword requires two full rings of stamina — not one segment less will do; and two rings basically cover the climbing, swimming, and gliding needs of the early exploration period, immediately raising your map-running efficiency a notch. Stage two: start topping up hearts, aiming first for a level that can withstand two to three heavy hits from a temple boss, so that with meal healing, fighting the four temples won't have you reloading constantly. Stage three: after the temples are done and map-running pressure eases, distribute the remaining Lights of Blessing to stamina (pushing for 3 rings) or hearts (pushing for the cap) as you prefer."
+    ],
+    [
+      "这个顺序还有一个隐藏好处：精力早点拉满，神庙本身也更好打。很多神庙解法要爬高、要长距离滑翔、要水里长游，精力不够时你会反复失败在体力条上，而不是解法上。反过来，生命不够的问题可以用料理临时顶——加黄心的料理、加精力的料理都能在关键时刻救急，但料理加的是临时上限，不是永久上限，打完一仗就没了，不能代替兑换。所以判断标准就一条：能用料理临时顶的问题先放后，能帮你到达新地方、拿到新装备的问题先解决。精力属于后者。",
+      "This order has another hidden benefit: raising stamina early makes the shrines themselves easier to clear. Many shrine solutions require climbing high, gliding long distances, or swimming long stretches in water, and without enough stamina you'll repeatedly fail on the stamina bar rather than on the solution. Conversely, the problem of not having enough hearts can be temporarily covered with meals — meals that add yellow hearts and meals that add stamina can both save you at critical moments, but meals add a temporary cap, not a permanent one, and it's gone after one fight, so they can't replace exchanging. So there's one rule of thumb: problems that meals can temporarily cover come later; problems that help you reach new places and get new equipment come first. Stamina belongs to the latter."
+    ],
+    [
+      "不同打法的玩家可以微调，但不要颠倒大方向。喜欢正面硬刚、常和人马贴身换血的玩家，第二阶段可以提前多换两颗心；喜欢潜行、弓箭和绕后的玩家，精力拉到 3 圈的优先级更高。唯一不建议的路线是全程只换一种：全生命会让你跑图处处受限，全精力会让你在神殿 Boss 面前像纸糊的一样。",
+      "Players with different playstyles can fine-tune, but don't reverse the overall direction. Players who like head-on fighting and trading blows up close with Lynels can exchange for two extra hearts earlier in stage two; players who like stealth, bows, and flanking should prioritize raising stamina to 3 rings. The only route not recommended is exchanging for only one kind the whole way: all hearts will leave you restricted everywhere while running the map, and all stamina will leave you as flimsy as paper before a temple boss."
+    ],
+    [
+      "换错了不用重开档。监视堡垒地下有一座恶魔像，专门做“换回来”的生意：你把 1 颗生命容器或 1 格精力容器交给它，它给你 100 卢比；之后再向它赎回 1 颗心或 1 格精力，要付 120 卢比。一出一进，等于每次调整净花 20 卢比。这个价格在游戏中期几乎可以忽略，所以真正的成本不是钱，而是你愿不愿意跑一趟监视堡垒地下。",
+      "Exchanging wrongly doesn't mean restarting your save. There's a Demon Statue under Lookout Landing that specializes in “swapping back”: you hand it 1 Heart Container or 1 Stamina Vessel, and it gives you 100 Rupees; later, buying back 1 heart or 1 stamina segment costs 120 Rupees. Out and back in, each adjustment nets 20 Rupees spent. That price is almost negligible in the mid-game, so the real cost isn't money, but whether you're willing to make a trip under Lookout Landing."
+    ],
+    [
+      "用法示例：前期全换了生命，后来发现精力不够拔大师之剑，就去恶魔像交出几颗心换成卢比，再赎回成精力格，一次调整 20 卢比，几分钟搞定。反过来，后期精力溢出、想多扛几下 Boss，同样可以反向操作。注意恶魔像初次见面有前置对话任务，要先完成监视堡垒地下相关的指引再去，别到了门口发现它不理你就以为走错了地方。",
+      "Usage example: if you exchanged everything for hearts early on and later find you don't have enough stamina to draw the Master Sword, go to the Demon Statue, hand over a few hearts for Rupees, then buy them back as stamina segments — 20 Rupees per adjustment, done in a few minutes. Conversely, if stamina overflows later and you want to withstand a few more boss hits, you can do the reverse. Note that the first meeting with the Demon Statue has a prerequisite dialogue quest — complete the guidance related to under Lookout Landing first, and don't assume you've gone to the wrong place if it ignores you at the door."
+    ],
+    [
+      "还有一个容易混淆的点：贤者的遗志和祝福之光长得很像，但不能混着用。贤者遗志也是 4 个换 1 次，同样在女神像前兑换，可一次兑换必须用同一种材料凑满 4 个，3 个祝福之光加 1 个贤者遗志换不到任何东西。攒的时候分开数，别把两边的数量加在一起算。",
+      "There's another easily confused point: Sage's Wills and Lights of Blessing look very similar, but they can't be mixed. Sage's Wills are also exchanged 4-for-1, also before a Goddess Statue, but one exchange must be made up of 4 of the same material — 3 Lights of Blessing plus 1 Sage's Will buys nothing. Count them separately when saving up; don't add the two sides' numbers together."
+    ],
+    [
+      "差 1 个就跑去换：兑换要整 4 个，3 个去女神像前只能干瞪眼。出门前先看一眼祝福之光数量，凑满 4 的倍数再跑。",
+      "Going to exchange when you're 1 short: an exchange needs a full 4 — with 3, you'll just stare blankly before a Goddess Statue. Check your Light of Blessing count before heading out, and only go once you've reached a multiple of 4."
+    ],
+    [
+      "差 1 个就跑去换：兑换要整 4 个，3 个去女神像前只能干瞪眼。",
+      "Going to exchange when you're 1 short: an exchange needs a full 4 — with 3, you'll just stare blankly before a Goddess Statue."
+    ],
+    [
+      "出门前先看一眼祝福之光数量，凑满 4 的倍数再跑。",
+      "Check your Light of Blessing count before heading out, and only go once you've reached a multiple of 4."
+    ],
+    [
+      "把临时上限当永久上限：料理和药加的黄心、黄精力条是临时的，睡一觉、受重创后会掉，不能代替兑换，也别为了省兑换而长期靠料理硬撑。",
+      "Treating a temporary cap as a permanent cap: the yellow hearts and yellow stamina bar added by meals and elixirs are temporary — they drop after sleeping or taking a heavy blow — and can't replace exchanging, nor should you rely on meals long-term just to save exchanges."
+    ],
+    [
+      "只盯着生命数：生命高不等于能打，精力不够连 Boss 场地的高台都爬不上去，输出环境都没有。",
+      "Only watching your heart count: high hearts don't equal being able to fight — without enough stamina, you can't even climb the high platforms in a boss arena, leaving you with no room to deal damage."
+    ],
+    [
+      "神庙通关了不领奖励：每座神庙终点的祝福之光要走过去拿，解完谜直接传送走等于白打，养成“走到发光点再走”的习惯。",
+      "Clearing a shrine without claiming the reward: you have to walk over to pick up the Light of Blessing at the end of each shrine — teleporting away right after solving the puzzle is a wasted clear, so build the habit of “walk to the glowing point before leaving.”"
+    ],
+    [
+      "4 个祝福之光能换什么？1 颗生命容器，或 1 格精力容器，5 格精力凑满一圈。",
+      "What can 4 Lights of Blessing buy? 1 Heart Container, or 1 Stamina Vessel — 5 stamina segments make one full ring."
+    ],
+    [
+      "4 个祝福之光能换什么？",
+      "What can 4 Lights of Blessing buy?"
+    ],
+    [
+      "1 颗生命容器，或 1 格精力容器，5 格精力凑满一圈。",
+      "1 Heart Container, or 1 Stamina Vessel — 5 stamina segments make one full ring."
+    ],
+    [
+      "最容易去的女神像在哪里？监视堡垒地下紧急避难所，此外四大聚落也各有一座。",
+      "Where is the easiest Goddess Statue to reach? The Emergency Shelter under Lookout Landing; the four major settlements also each have one."
+    ],
+    [
+      "最容易去的女神像在哪里？",
+      "Where is the easiest Goddess Statue to reach?"
+    ],
+    [
+      "监视堡垒地下紧急避难所，此外四大聚落也各有一座。",
+      "The Emergency Shelter under Lookout Landing; the four major settlements also each have one."
+    ],
+    [
+      "换错了能改吗？能，去监视堡垒地下的恶魔像，交出得 100 卢比、赎回付 120 卢比，每次调整净花 20 卢比。",
+      "Can a wrong exchange be changed? Yes — go to the Demon Statue under Lookout Landing: handing over gets 100 Rupees, buying back costs 120 Rupees, so each adjustment nets 20 Rupees spent."
+    ],
+    [
+      "换错了能改吗？",
+      "Can a wrong exchange be changed?"
+    ],
+    [
+      "能，去监视堡垒地下的恶魔像，交出得 100 卢比、赎回付 120 卢比，每次调整净花 20 卢比。",
+      "Yes — go to the Demon Statue under Lookout Landing: handing over gets 100 Rupees, buying back costs 120 Rupees, so each adjustment nets 20 Rupees spent."
+    ],
+    [
+      "贤者遗志能和祝福之光混着换吗？不能，一次兑换必须同一种材料凑满 4 个。",
+      "Can Sage's Wills be mixed with Lights of Blessing in an exchange? No — one exchange must be made up of 4 of the same material."
+    ],
+    [
+      "贤者遗志能和祝福之光混着换吗？",
+      "Can Sage's Wills be mixed with Lights of Blessing in an exchange?"
+    ],
+    [
+      "不能，一次兑换必须同一种材料凑满 4 个。",
+      "No — one exchange must be made up of 4 of the same material."
+    ],
+    [
+      "152座神庙全收集自查指南",
+      "Self-Check Guide to Collecting All 152 Shrines"
+    ],
+    [
+      "新手开荒指南：落地先做的10件事",
+      "Beginner's Pioneering Guide: 10 Things to Do First After Landing"
+    ],
+    [
+      "大妖精四姐妹与防具强化完全指南",
+      "Complete Guide to the Four Great Fairies and Armor Enhancement"
+    ],
+    [
+      "← 上一篇：余料建造完全指南",
+      "← Previous: Complete Guide to Fuse"
+    ],
+    [
+      "返回秘籍专栏",
+      "Back to the Tips Column"
+    ],
+    [
+      "下一篇：15座鸟望塔开图完全指南 →",
+      "Next: Complete Guide to Opening All 15 Skyview Towers →"
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 152座神庙全收集自查指南",
+      "› Self-Check Guide to Collecting All 152 Shrines"
+    ],
+    [
+      "› 新手开荒指南：落地先做的10件事",
+      "› Beginner's Pioneering Guide: 10 Things to Do First After Landing"
+    ],
+    [
+      "› 大妖精四姐妹与防具强化完全指南",
+      "› Complete Guide to the Four Great Fairies and Armor Enhancement"
+    ],
+    [
+      "📚 全部攻略索引",
+      "📚 Full Guide Index"
+    ],
+    [
+      "🏆 哈里的终极秘籍",
+      "🏆 Harry's Ultimate Tips"
+    ],
+    [
+      "› 七宝匕首终极攻略",
+      "› Ultimate Guide to the Scimitar of the Seven"
+    ],
+    [
+      "› 四大神级料理配方",
+      "› Four God-Tier Recipes"
+    ],
+    [
+      "› 最强套装三梯队全解析",
+      "› Full Analysis of the Three Tiers of Strongest Armor Sets"
+    ],
+    [
+      "› 乌萨诸马神庙零基础包教包会",
+      "› Usazum Shrine Guide for Complete Beginners"
+    ],
+    [
+      "› 白龙寻踪与大师之剑",
+      "› Tracking the Light Dragon and the Master Sword"
+    ],
+    [
+      "› 马克兔飞行器调校",
+      "› Hover Bike Tuning"
+    ],
+    [
+      "› 地底电池扩充与大妖精",
+      "› Depths Battery Expansion and the Great Fairies"
+    ],
+    [
+      "🆕 每日新攻略",
+      "🆕 Daily New Guides"
+    ],
+    [
+      "› 呀哈哈种子全指南",
+      "› Complete Guide to Korok Seeds"
+    ],
+    [
+      "› 地底世界生存与探索完全指南",
+      "› Complete Guide to Surviving and Exploring the Depths"
+    ],
+    [
+      "› 四条龙素材刷取指南",
+      "› Guide to Farming Materials from the Four Dragons"
+    ],
+    [
+      "› 人马（莱尼尔）完全指南",
+      "› Complete Guide to Lynels"
+    ],
+    [
+      "› 卢比速刷指南：从前期到后期",
+      "› Rupee Farming Guide: From Early to Late Game"
+    ],
+    [
+      "› 马匹捕捉与稀有马完全指南",
+      "› Complete Guide to Catching Horses and Rare Horses"
+    ],
+    [
+      "› 五位贤者能力全解",
+      "› Complete Explanation of the Five Sages' Abilities"
+    ],
+    [
+      "› 料理机制全解：效果、时长与暴击",
+      "› Complete Explanation of Cooking Mechanics: Effects, Duration, and Criticals"
+    ],
+    [
+      "› 海拉鲁城堡探索完全指南",
+      "› Complete Guide to Exploring Hyrule Castle"
+    ],
+    [
+      "› 海拉鲁图鉴509项收集指南",
+      "› Guide to Collecting All 509 Hyrule Compendium Entries"
+    ],
+    [
+      "› 左纳乌装置实用造物指南",
+      "› Practical Guide to Zonai Device Builds"
+    ],
+    [
+      "› 血月机制全解",
+      "› Complete Explanation of the Blood Moon Mechanic"
+    ],
+    [
+      "› 余料建造完全指南",
+      "› Complete Guide to Fuse"
+    ],
+    [
+      "› 祝福之光兑换完全指南（本篇）",
+      "› Complete Guide to Exchanging Lights of Blessing (This Article)"
+    ],
+    [
+      "› 15座鸟望塔开图完全指南",
+      "› Complete Guide to Opening All 15 Skyview Towers"
+    ],
+    [
+      "✨ 祝福之光攻略",
+      "✨ Light of Blessing Guide"
+    ],
+    [
+      "✨ 祝福之光 · 生命与精力",
+      "✨ Light of Blessing · Hearts & Stamina"
+    ],
+    [
+      "相关攻略：",
+      "Related Guides:"
+    ]
+  ],
+  "title": "Complete Guide to Exchanging Lights of Blessing · Harry's Ultimate Tips · Tears of the Kingdom Guide"
 }

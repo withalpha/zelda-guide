@@ -30,10 +30,6 @@
       "Fused weapons: pick the right material and attack jumps (in-game screenshot)"
     ],
     [
-      "余料建造在初始空岛的伊萨神庙取得，之后所有武器都能贴素材。贴什么、贴在哪把武器上、贴错了怎么拆回，这三个问题搞懂了，武器库的强度会直接上一个台阶。本站七宝匕首终极攻略讲过一把具体武器，本篇讲整个系统机制。",
-      "Fuse is obtained at the In-isa Shrine on the Great Sky Island, after which every weapon can have materials fused to it. Once you understand what to fuse, which weapon to fuse it to, and how to take a bad fuse apart, your arsenal jumps a whole tier in strength. This site's Scimitar of the Seven ultimate guide already covered one specific weapon, while this article covers the whole system."
-    ],
-    [
       "余料建造在初始空岛的伊萨神庙取得，之后所有武器都能贴素材。",
       "Fuse is obtained at the In-isa Shrine on the Great Sky Island, after which every weapon can have materials fused to it."
     ],
@@ -122,10 +118,6 @@
       "+55"
     ],
     [
-      "全游戏最高，见人马完全指南",
-      "Highest in the game, see the Lynel Complete Guide"
-    ],
-    [
       "白银莱尼尔碎角",
       "Silver Lynel Mace Horn"
     ],
@@ -170,10 +162,6 @@
       "+26"
     ],
     [
-      "龙素材，见四条龙素材刷取指南",
-      "Dragon material, see the Four Dragons Material Farming Guide"
-    ],
-    [
       "钻石",
       "Diamond"
     ],
@@ -196,10 +184,6 @@
     [
       "贴错了怎么办？在背包里直接拆解会销毁素材，素材就没了。正确做法是去一始村的拆解屋找佩里森，花 20 卢比就能无损拆回，武器和素材都保留。高攻素材一律走拆解屋拆，别在背包里手滑销毁。",
       "What if you fuse the wrong thing? Dismantling directly from your inventory destroys the material, and it is gone for good. The right way is to go to Pelison at the Break-a-Part shop in Tarrey Town, where 20 Rupees separates them with nothing lost, keeping both weapon and material. Always take high-attack materials to the Break-a-Part shop, and do not accidentally destroy them from your inventory."
-    ],
-    [
-      "余料的上限来自武器特效配合：格鲁德武器让素材攻击翻倍，七宝匕首本身 28，贴刃角 55 后翻倍得 138；卓拉武器沾水翻倍，光鳞之枪 22 贴刃角 55 得 77，沾水后 154，配合希多的水盾使用，见本站五位贤者能力全解。这两个配合是余料系统的毕业玩法，武器和素材要成套准备。",
-      "The ceiling of Fuse comes from weapon-effect combos: Gerudo weapons double material attack, so the Scimitar of the Seven at 28 plus a doubled 55 blade horn reaches 138; Zora weapons double when wet, so the Lightscale Trident at 22 plus a 55 blade horn totals 77 and reaches 154 when wet, used together with Sidon's water shield, as covered in this site's All Five Sages' Abilities Explained. These two combos are the endgame of the Fuse system, and weapons and materials should be prepared as sets."
     ],
     [
       "余料的上限来自武器特效配合：格鲁德武器让素材攻击翻倍，七宝匕首本身 28，贴刃角 55 后翻倍得 138；",
@@ -256,10 +240,6 @@
     [
       "素材攻击翻倍，七宝匕首贴刃角可达 138。",
       "Material attack doubles, and the Scimitar of the Seven with a blade horn can reach 138."
-    ],
-    [
-      "相关攻略：人马完全指南、七宝匕首终极攻略、五位贤者能力全解。",
-      "Related Guides: Lynel Complete Guide, Scimitar of the Seven Ultimate Guide, All Five Sages' Abilities Explained."
     ],
     [
       "🔗 相关攻略",
@@ -400,6 +380,26 @@
     [
       "返回秘籍专栏",
       "Back to the Tips Column"
+    ],
+    [
+      "相关攻略：",
+      "Related Guides:"
+    ],
+    [
+      "人马完全指南",
+      "Lynel Complete Guide"
+    ],
+    [
+      "七宝匕首终极攻略",
+      "Scimitar of the Seven Ultimate Guide"
+    ],
+    [
+      "五位贤者能力全解",
+      "All Five Sages' Abilities Explained"
+    ],
+    [
+      "四条龙素材刷取指南",
+      "Four Dragons Material Farming Guide"
     ]
   ],
   "notes": [

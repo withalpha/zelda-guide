@@ -1,470 +1,466 @@
 {
- "title": "Lynel Complete Guide · Harry's Ultimate Guide Collection · Tears of the Kingdom Guide",
- "pairs": [
-  [
-   "人马完全指南：白银人马5000血、刃角+55最高余料、骑背不耗耐久、破甲与地底竞技场五连战打法。",
-   "Complete Lynel guide: Silver Lynel 5000 HP, Silver Lynel Saber Horn +55 top Fuse attack, mounted attacks cost no durability, armor-breaking, and the Depths Colosseum five-bout gauntlet."
-  ],
-  [
-   "首页 ›",
-   "Home ›"
-  ],
-  [
-   "哈里的终极秘籍 ›",
-   "Harry's Ultimate Tips Column ›"
-  ],
-  [
-   "人马（莱尼尔）完全指南",
-   "Lynel Complete Guide"
-  ],
-  [
-   "⚔ 人马攻略",
-   "⚔ Lynel Guide"
-  ],
-  [
-   "人马是全游戏最强的野外敌人，也是最好的余料来源：打法对了，白银人马就是一座会走路的武器库。",
-   "Lynels are the strongest overworld enemies in the game and the best source of Fuse materials: with the right tactics, a Silver Lynel is a walking weapons depot."
-  ],
-  [
-   "🧙 作者：哈里",
-   "🧙 Author: Harry"
-  ],
-  [
-   "⚔ 人马 · 打法与掉落",
-   "⚔ Lynel · Tactics and Drops"
-  ],
-  [
-   "📖 深度攻略",
-   "📖 In-Depth Guide"
-  ],
-  [
-   "地底竞技场中的人马",
-   "Lynel in the Depths Colosseum"
-  ],
-  [
-   "地底竞技场的人马对决（游戏实机截图）",
-   "Lynel duel in the Depths Colosseum (actual in-game screenshot)"
-  ],
-  [
-   "人马不像普通怪物可以莽过去：它会冲锋、跳劈、喷火、射爆裂箭，血量还厚。但它有一套固定的出招规律，学会闪避反击和骑背，普通人马也能无伤过；白银人马打下来，一根刃角就是全游戏最高的余料攻击。",
-   "You can't just bulldoze a Lynel like an ordinary monster: it charges, leaps and slams, breathes fire, and fires explosive arrows, and it has a lot of HP. But it follows a fixed move pattern — learn dodge counters and mounting, and even a standard Lynel can be beaten without damage; and a Silver Lynel's Silver Lynel Saber Horn gives the highest Fuse attack in the game."
-  ],
-  [
-   "⭐ 本篇要点",
-   "⭐ Key Points of This Guide"
-  ],
-  [
-   "白银人马血量5000，刃角余料攻击+55、碎角+51，是全游戏余料天花板。",
-   "Silver Lynel: 5000 HP, Silver Lynel Saber Horn Fuse attack +55, Silver Lynel Mace Horn +51 — the ceiling for Fuse materials in the game."
-  ],
-  [
-   "骑背攻击不消耗武器耐久：把最强武器留到骑背时用，是打人马的核心省耐久技巧。",
-   "Mounted attacks cost no weapon durability: saving your strongest weapon for mounting is the core durability-saving trick against Lynels."
-  ],
-  [
-   "地底的铠甲人马要先破甲：炸弹花、钝器重击都行，甲不破打上去几乎不掉血。",
-   "Armored Lynels in the Depths must have their armor broken first: Bomb Flowers or heavy blunt strikes both work — if the armor isn't broken, hits barely dent their HP."
-  ],
-  [
-   "人马咆哮会摧毁附近的左纳乌装置和蓝图造物，别在它面前摆炮台。",
-   "A Lynel's roar destroys nearby Zonai devices and Autobuild constructs — don't set up turrets in front of one."
-  ],
-  [
-   "对闪耀果免疫：别指望闪光弹控它，靠闪避和盾反才是正路。",
-   "Immune to Dazzlefruit: don't count on flash bombs to control it — dodging and Perfect Guarding are the right approach."
-  ],
-  [
-   "📑 本篇目录",
-   "📑 Contents of This Guide"
-  ],
-  [
-   "一、人马种类与强度",
-   "1. Lynel Types and Strength"
-  ],
-  [
-   "二、通用打法：闪避、盾反与骑背",
-   "2. General Tactics: Dodging, Perfect Guarding, and Mounting"
-  ],
-  [
-   "三、白银人马与掉落价值",
-   "3. Silver Lynels and Drop Value"
-  ],
-  [
-   "四、铠甲人马与地底竞技场",
-   "4. Armored Lynels and the Depths Colosseum"
-  ],
-  [
-   "五、翻车点与常见问题",
-   "5. Common Mistakes and FAQ"
-  ],
-  [
-   "常见问题",
-   "FAQ"
-  ],
-  [
-   "人马按颜色分档，越往后血量、攻击和掉落越好。游戏进程推进后，野外人马会逐步升级：前期多是普通与蓝色，中后期出现白色与白银。白银人马血量 5000，是野外单体最耐打的敌人之一，第一次打建议先备好高攻武器和回血料理再去。",
-   "Lynels are tiered by color, and later tiers have more HP, attack, and better drops. As the game progresses, overworld Lynels gradually upgrade: early on they are mostly standard and blue, while white and silver appear in the mid-to-late game. A Silver Lynel has 5000 HP, making it one of the toughest single overworld enemies — before your first fight, prepare high-attack weapons and healing meals."
-  ],
-  [
-   "种类",
-   "Type"
-  ],
-  [
-   "定位",
-   "Role"
-  ],
-  [
-   "掉落要点",
-   "Drop highlights"
-  ],
-  [
-   "普通人马",
-   "Red-Maned Lynel"
-  ],
-  [
-   "前期练手",
-   "Early-game practice"
-  ],
-  [
-   "人马角、蹄、肝脏，练闪避的好对手",
-   "Lynel horn, hoof, and guts — a good opponent for practicing dodges"
-  ],
-  [
-   "蓝色人马",
-   "Blue-Maned Lynel"
-  ],
-  [
-   "中期",
-   "Mid-game"
-  ],
-  [
-   "掉落品质提升，开始出较好的角",
-   "Drop quality improves, and better horns start appearing"
-  ],
-  [
-   "白色人马",
-   "White-Maned Lynel"
-  ],
-  [
-   "后期",
-   "Late game"
-  ],
-  [
-   "高攻素材，适合余料过渡",
-   "High-attack materials, good as transitional Fuse options"
-  ],
-  [
-   "白银人马",
-   "Silver Lynel"
-  ],
-  [
-   "终局",
-   "Endgame"
-  ],
-  [
-   "血量 5000；刃角 +55、碎角 +51，全游戏最高余料",
-   "5000 HP; Silver Lynel Saber Horn +55, Silver Lynel Mace Horn +51 — the highest Fuse values in the game"
-  ],
-  [
-   "林克与人马正面对峙",
-   "Link facing off against a Lynel"
-  ],
-  [
-   "与人马对峙：先读招式，再找闪避窗口（游戏实机截图）",
-   "Facing off against a Lynel: read its moves first, then find the dodge window (actual in-game screenshot)"
-  ],
-  [
-   "人马的冲锋和跳劈都有明显前摇：冲锋时向侧面闪避触发林克时间，跳劈落地前向后闪避同样能触发。盾反可以弹开它的近战挥击，但爆裂箭和喷火不要硬接，拉开距离或绕到侧面。最关键的一步是骑背：人马被打晕、被箭射中头部或从高处落到它背上后，就能骑上去连砍。",
-   "A Lynel's charge and leaping slam both have clear wind-ups: side-dodge a charge to trigger a Flurry Rush, and back-dodge just before a leaping slam lands to trigger it too. Perfect Guarding can deflect its melee swings, but don't tank explosive arrows or fire breath head-on — create distance or circle to its side. The most crucial step is mounting: after a Lynel is stunned, shot in the head with an arrow, or you drop onto its back from above, you can mount it and slash repeatedly."
-  ],
-  [
-   "骑背时武器不消耗耐久，这一点要充分利用：平时用普通武器磨血、打晕，骑背的一刻再换上最高攻击的武器猛砍。骑背结束人马会把林克甩下来，落地前开滑翔伞拉开距离，再射一箭头部可以续一轮控制。",
-   "Mounted weapons cost no durability — make full use of this: use ordinary weapons to chip away HP and stun it, then switch to your highest-attack weapon the moment you mount and slash hard. When mounting ends, the Lynel will throw Link off; open your paraglider before landing to create distance, then shoot one more arrow at its head to extend control for another round."
-  ],
-  [
-   "白银人马的刃角余料攻击 +55，碎角 +51 且带粉碎效果、可破甲，是余料建造的毕业选择之一。配格鲁德武器攻击翻倍、配卓拉武器沾水翻倍时，数值还会再放大，详见本站余料建造完全指南。打白银人马不要贪刀：它一套连招的伤害足以秒掉没强化的防具，先保证两级以上的防具和满血再进场。",
-   "The Silver Lynel's Silver Lynel Saber Horn has Fuse attack +55, and its Silver Lynel Mace Horn +51 with a crushing effect that can break armor — among the best endgame Fuse choices. Paired with Gerudo weapons (attack doubles) or Zora weapons (attack doubles when wet), the numbers grow even larger; see this site's Fuse Complete Guide for details. Don't get greedy against a Silver Lynel: one full combo can one-shot unupgraded armor, so make sure your armor is upgraded to level 2 or higher and your HP is full before entering the fight."
-  ],
-  [
-   "余料建造完全指南",
-   "Fuse Complete Guide"
-  ],
-  [
-   "地底有些人马穿着铠甲，直接砍上去伤害极低。正确顺序是先破甲：炸弹花贴脸炸、钝器重武器砸，甲碎了再按正常流程打。地底水上竞技场有一场五连人马车轮战，最后一只是白银人马，打之前把料理、防具和武器全部准备好，中途没有补给点。",
-   "Some Lynels in the Depths wear armor, and slashing them directly deals very little damage. The correct order is to break the armor first: Bomb Flowers detonated point-blank or heavy blunt weapons will do it, then fight normally once the armor shatters. The waterborne Depths Colosseum hosts a five-bout Lynel gauntlet, with a Silver Lynel last — prepare all your meals, armor, and weapons beforehand, as there are no resupply points midway."
-  ],
-  [
-   "竞技场中的人马",
-   "Lynel in the Colosseum"
-  ],
-  [
-   "竞技场连战：最后一只是白银人马（游戏实机截图）",
-   "Colosseum gauntlet: the last one is a Silver Lynel (actual in-game screenshot)"
-  ],
-  [
-   "三个最常见的翻车原因：第一，在人马面前摆左纳乌装置，一声咆哮就全碎了，炮台流对人马无效；第二，拿闪耀果当控制技，人马对闪耀果免疫，白白浪费素材；第三，骑背时用低攻武器，把不耗耐久的窗口浪费了。记住这三点，白银人马的难度会下降一大截。",
-   "The three most common causes of failure: first, placing Zonai devices in front of a Lynel — one roar shatters them all, so turret strategies don't work on Lynels; second, using Dazzlefruit as crowd control — Lynels are immune to Dazzlefruit, wasting materials for nothing; third, using a low-attack weapon while mounted, wasting the no-durability window. Remember these three points and Silver Lynels become much easier."
-  ],
-  [
-   "打不过白银人马怎么办？ 先去刷防具强化和料理，把武器换成高攻余料，再回来。也可以先打低档人马练闪避节奏。",
-   "What if I can't beat a Silver Lynel? Go farm armor upgrades and meals first, switch your weapon to a high-attack Fuse build, then come back. You can also fight lower-tier Lynels first to practice dodge timing."
-  ],
-  [
-   "人马角有什么用？ 余料第一梯队，也能卖钱，但留着做武器远比卖掉划算。",
-   "What are Lynel horns good for? Top-tier Fuse materials. They can also be sold, but keeping them for weapons is far more worthwhile than selling."
-  ],
-  [
-   "骑背怎么触发？ 射头部、打晕或从高处落到背上都可以，骑上去立刻换最高攻击武器。",
-   "How do I trigger mounting? Shooting its head, stunning it, or dropping onto its back from above all work — switch to your highest-attack weapon the moment you mount."
-  ],
-  [
-   "相关攻略： 余料建造完全指南 、 白银人马 、 地底世界生存与探索完全指南 。",
-   "Related Guides: Fuse Complete Guide, Silver Lynel, Depths Survival and Exploration Complete Guide."
-  ],
-  [
-   "← 上一篇：四条龙素材刷取指南",
-   "← Previous: Four Dragons Material Farming Guide"
-  ],
-  [
-   "返回秘籍专栏",
-   "Back to the Tips Column"
-  ],
-  [
-   "下一篇：卢比速刷指南：从前期到后期 →",
-   "Next: Rupee Fast-Farming Guide: Early to Late Game →"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 余料建造完全指南",
-   "› Fuse Complete Guide"
-  ],
-  [
-   "› 白银人马",
-   "› Silver Lynel"
-  ],
-  [
-   "› 地底世界生存与探索完全指南",
-   "› Depths Survival and Exploration Complete Guide"
-  ],
-  [
-   "📚 全部攻略索引",
-   "📚 Full Guide Index"
-  ],
-  [
-   "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Tips Column"
-  ],
-  [
-   "› 七宝匕首终极攻略",
-   "› Scimitar of the Seven Ultimate Guide"
-  ],
-  [
-   "› 四大神级料理配方",
-   "› Four God-Tier Recipes"
-  ],
-  [
-   "› 最强套装三梯队全解析",
-   "› Strongest Armor Sets: Three-Tier Full Analysis"
-  ],
-  [
-   "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine Guide for Complete Beginners"
-  ],
-  [
-   "› 白龙寻踪与大师之剑",
-   "› Tracking the Light Dragon and the Master Sword"
-  ],
-  [
-   "› 马克兔飞行器调校",
-   "› Hover Bike Tuning"
-  ],
-  [
-   "› 地底电池扩充与大妖精",
-   "› Depths Energy Cell Expansion and Great Fairies"
-  ],
-  [
-   "🆕 每日新攻略",
-   "🆕 Daily New Guides"
-  ],
-  [
-   "› 152座神庙全收集自查指南",
-   "› 152 Shrines Full Collection Self-Check Guide"
-  ],
-  [
-   "› 新手开荒指南：落地先做的10件事",
-   "› Beginner's Starting Guide: 10 Things to Do First After Landing"
-  ],
-  [
-   "› 呀哈哈种子全指南",
-   "› Korok Seed Complete Guide"
-  ],
-  [
-   "› 大妖精四姐妹与防具强化完全指南",
-   "› Four Great Fairies and Armor Upgrading Complete Guide"
-  ],
-  [
-   "› 四条龙素材刷取指南",
-   "› Four Dragons Material Farming Guide"
-  ],
-  [
-   "› 人马（莱尼尔）完全指南（本篇）",
-   "› Lynel Complete Guide (this article)"
-  ],
-  [
-   "› 卢比速刷指南：从前期到后期",
-   "› Rupee Fast-Farming Guide: Early to Late Game"
-  ],
-  [
-   "› 马匹捕捉与稀有马完全指南",
-   "› Horse Catching and Rare Horses Complete Guide"
-  ],
-  [
-   "› 五位贤者能力全解",
-   "› Five Sages' Abilities Fully Explained"
-  ],
-  [
-   "› 料理机制全解：效果、时长与暴击",
-   "› Cooking Mechanics Fully Explained: Effects, Duration, and Criticals"
-  ],
-  [
-   "› 海拉鲁城堡探索完全指南",
-   "› Hyrule Castle Exploration Complete Guide"
-  ],
-  [
-   "› 海拉鲁图鉴509项收集指南",
-   "› Hyrule Compendium 509-Item Collection Guide"
-  ],
-  [
-   "› 左纳乌装置实用造物指南",
-   "› Practical Zonai Device Builds Guide"
-  ],
-  [
-   "› 血月机制全解",
-   "› Blood Moon Mechanics Fully Explained"
-  ],
-  [
-   "人马不像普通怪物可以莽过去：它会冲锋、跳劈、喷火、射爆裂箭，血量还厚。",
-   "You can't just bulldoze a Lynel like an ordinary monster: it charges, leaps and slams, breathes fire, and fires explosive arrows, and it has a lot of HP."
-  ],
-  [
-   "但它有一套固定的出招规律，学会闪避反击和骑背，普通人马也能无伤过；",
-   "But it follows a fixed move pattern — learn dodge counters and mounting, and even a standard Lynel can be beaten without damage;"
-  ],
-  [
-   "白银人马打下来，一根刃角就是全游戏最高的余料攻击。",
-   "and a Silver Lynel's Silver Lynel Saber Horn gives the highest Fuse attack in the game."
-  ],
-  [
-   "人马按颜色分档，越往后血量、攻击和掉落越好。",
-   "Lynels are tiered by color, and later tiers have more HP, attack, and better drops."
-  ],
-  [
-   "游戏进程推进后，野外人马会逐步升级：前期多是普通与蓝色，中后期出现白色与白银。",
-   "As the game progresses, overworld Lynels gradually upgrade: early on they are mostly standard and blue, while white and silver appear in the mid-to-late game."
-  ],
-  [
-   "白银人马血量 5000，是野外单体最耐打的敌人之一，第一次打建议先备好高攻武器和回血料理再去。",
-   "A Silver Lynel has 5000 HP, making it one of the toughest single overworld enemies — before your first fight, prepare high-attack weapons and healing meals."
-  ],
-  [
-   "血量 5000；",
-   "5000 HP;"
-  ],
-  [
-   "刃角 +55、碎角 +51，全游戏最高余料",
-   "Silver Lynel Saber Horn +55, Silver Lynel Mace Horn +51 — the highest Fuse values in the game"
-  ],
-  [
-   "人马的冲锋和跳劈都有明显前摇：冲锋时向侧面闪避触发林克时间，跳劈落地前向后闪避同样能触发。",
-   "A Lynel's charge and leaping slam both have clear wind-ups: side-dodge a charge to trigger a Flurry Rush, and back-dodge just before a leaping slam lands to trigger it too."
-  ],
-  [
-   "盾反可以弹开它的近战挥击，但爆裂箭和喷火不要硬接，拉开距离或绕到侧面。",
-   "Perfect Guarding can deflect its melee swings, but don't tank explosive arrows or fire breath head-on — create distance or circle to its side."
-  ],
-  [
-   "最关键的一步是骑背：人马被打晕、被箭射中头部或从高处落到它背上后，就能骑上去连砍。",
-   "The most crucial step is mounting: after a Lynel is stunned, shot in the head with an arrow, or you drop onto its back from above, you can mount it and slash repeatedly."
-  ],
-  [
-   "地底有些人马穿着铠甲，直接砍上去伤害极低。",
-   "Some Lynels in the Depths wear armor, and slashing them directly deals very little damage."
-  ],
-  [
-   "正确顺序是先破甲：炸弹花贴脸炸、钝器重武器砸，甲碎了再按正常流程打。",
-   "The correct order is to break the armor first: Bomb Flowers detonated point-blank or heavy blunt weapons will do it, then fight normally once the armor shatters."
-  ],
-  [
-   "地底水上竞技场有一场五连人马车轮战，最后一只是白银人马，打之前把料理、防具和武器全部准备好，中途没有补给点。",
-   "The waterborne Depths Colosseum hosts a five-bout Lynel gauntlet, with a Silver Lynel last — prepare all your meals, armor, and weapons beforehand, as there are no resupply points midway."
-  ],
-  [
-   "三个最常见的翻车原因：第一，在人马面前摆左纳乌装置，一声咆哮就全碎了，炮台流对人马无效；",
-   "The three most common causes of failure: first, placing Zonai devices in front of a Lynel — one roar shatters them all, so turret strategies don't work on Lynels;"
-  ],
-  [
-   "第二，拿闪耀果当控制技，人马对闪耀果免疫，白白浪费素材；",
-   "second, using Dazzlefruit as crowd control — Lynels are immune to Dazzlefruit, wasting materials for nothing;"
-  ],
-  [
-   "第三，骑背时用低攻武器，把不耗耐久的窗口浪费了。",
-   "third, using a low-attack weapon while mounted, wasting the no-durability window."
-  ],
-  [
-   "记住这三点，白银人马的难度会下降一大截。",
-   "Remember these three points and Silver Lynels become much easier."
-  ],
-  [
-   "打不过白银人马怎么办？",
-   "What if I can't beat a Silver Lynel?"
-  ],
-  [
-   " 先去刷防具强化和料理，把武器换成高攻余料，再回来。",
-   "Go farm armor upgrades and meals first, switch your weapon to a high-attack Fuse build, then come back."
-  ],
-  [
-   "也可以先打低档人马练闪避节奏。",
-   "You can also fight lower-tier Lynels first to practice dodge timing."
-  ],
-  [
-   "骑背怎么触发？",
-   "How do I trigger mounting?"
-  ],
-  [
-   " 射头部、打晕或从高处落到背上都可以，骑上去立刻换最高攻击武器。",
-   "Shooting its head, stunning it, or dropping onto its back from above all work — switch to your highest-attack weapon the moment you mount."
-  ],
-  [
-   "打不过白银人马怎么办？先去刷防具强化和料理，把武器换成高攻余料，再回来。也可以先打低档人马练闪避节奏。",
-   "What if you cannot beat a Silver Lynel? Go farm armor upgrades and cooking first, switch your weapon to a high-attack Fuse, then come back. You can also practice dodge timing on lower-tier Lynels first."
-  ],
-  [
-   "人马角有什么用？余料第一梯队，也能卖钱，但留着做武器远比卖掉划算。",
-   "What are Lynel horns for? They are top-tier Fuse material. You can sell them, but keeping them for weapons is far more worthwhile than selling."
-  ],
-  [
-   "骑背怎么触发？射头部、打晕或从高处落到背上都可以，骑上去立刻换最高攻击武器。",
-   "How do you trigger back mounting? Shoot it in the head, stun it, or drop onto its back from above — any of these works. Once mounted, switch to your highest-attack weapon immediately."
-  ],
-  [
-   "相关攻略：余料建造完全指南、白银人马、地底世界生存与探索完全指南。",
-   "Related Guides: Complete Fuse Guide, Silver Lynels, and Complete Depths Survival and Exploration Guide."
-  ],
-  [
-   "地底有些人马穿着铠甲，直接砍上去伤害极低。正确顺序是先破甲：炸弹花贴脸炸、钝器重武器砸，甲碎了再按正常流程打。地底斗技场遗迹正下方有一座浮岛斗技场（Floating Colosseum），里面有一场五连人马车轮战，顺序是红鬃、蓝鬃、白鬃、白银，最后是铠甲白银人马，打之前把料理、防具和武器全部准备好，中途没有补给点。",
-   "Some Depths Lynels wear armor — slashing them directly barely scratches them. The right order is to break the armor first: a Bomb Flower to the face, or heavy blunt weapons; once the armor shatters, fight normally. Beneath the Colosseum Ruins in the Depths sits the Floating Colosseum, home to a five-Lynel gauntlet in order: Red-Maned, Blue-Maned, White-Maned, Silver, and finally the Armored Silver Lynel. Prepare all your meals, armor, and weapons beforehand — there are no resupply points midway."
-  ],
-  [
-   "竞技场连战：最后一只是铠甲白银人马（游戏实机截图）",
-   "Arena gauntlet: the last one is the Armored Silver Lynel (in-game screenshot)"
+  "title": "Lynel Complete Guide · Harry's Ultimate Guide Collection · Tears of the Kingdom Guide",
+  "pairs": [
+    [
+      "人马完全指南：白银人马5000血、刃角+55最高余料、骑背不耗耐久、破甲与地底竞技场五连战打法。",
+      "Complete Lynel guide: Silver Lynel 5000 HP, Silver Lynel Saber Horn +55 top Fuse attack, mounted attacks cost no durability, armor-breaking, and the Depths Colosseum five-bout gauntlet."
+    ],
+    [
+      "首页 ›",
+      "Home ›"
+    ],
+    [
+      "哈里的终极秘籍 ›",
+      "Harry's Ultimate Tips Column ›"
+    ],
+    [
+      "人马（莱尼尔）完全指南",
+      "Lynel Complete Guide"
+    ],
+    [
+      "⚔ 人马攻略",
+      "⚔ Lynel Guide"
+    ],
+    [
+      "人马是全游戏最强的野外敌人，也是最好的余料来源：打法对了，白银人马就是一座会走路的武器库。",
+      "Lynels are the strongest overworld enemies in the game and the best source of Fuse materials: with the right tactics, a Silver Lynel is a walking weapons depot."
+    ],
+    [
+      "🧙 作者：哈里",
+      "🧙 Author: Harry"
+    ],
+    [
+      "⚔ 人马 · 打法与掉落",
+      "⚔ Lynel · Tactics and Drops"
+    ],
+    [
+      "📖 深度攻略",
+      "📖 In-Depth Guide"
+    ],
+    [
+      "地底竞技场中的人马",
+      "Lynel in the Depths Colosseum"
+    ],
+    [
+      "地底竞技场的人马对决（游戏实机截图）",
+      "Lynel duel in the Depths Colosseum (actual in-game screenshot)"
+    ],
+    [
+      "人马不像普通怪物可以莽过去：它会冲锋、跳劈、喷火、射爆裂箭，血量还厚。但它有一套固定的出招规律，学会闪避反击和骑背，普通人马也能无伤过；白银人马打下来，一根刃角就是全游戏最高的余料攻击。",
+      "You can't just bulldoze a Lynel like an ordinary monster: it charges, leaps and slams, breathes fire, and fires explosive arrows, and it has a lot of HP. But it follows a fixed move pattern — learn dodge counters and mounting, and even a standard Lynel can be beaten without damage; and a Silver Lynel's Silver Lynel Saber Horn gives the highest Fuse attack in the game."
+    ],
+    [
+      "⭐ 本篇要点",
+      "⭐ Key Points of This Guide"
+    ],
+    [
+      "白银人马血量5000，刃角余料攻击+55、碎角+51，是全游戏余料天花板。",
+      "Silver Lynel: 5000 HP, Silver Lynel Saber Horn Fuse attack +55, Silver Lynel Mace Horn +51 — the ceiling for Fuse materials in the game."
+    ],
+    [
+      "骑背攻击不消耗武器耐久：把最强武器留到骑背时用，是打人马的核心省耐久技巧。",
+      "Mounted attacks cost no weapon durability: saving your strongest weapon for mounting is the core durability-saving trick against Lynels."
+    ],
+    [
+      "地底的铠甲人马要先破甲：炸弹花、钝器重击都行，甲不破打上去几乎不掉血。",
+      "Armored Lynels in the Depths must have their armor broken first: Bomb Flowers or heavy blunt strikes both work — if the armor isn't broken, hits barely dent their HP."
+    ],
+    [
+      "人马咆哮会摧毁附近的左纳乌装置和蓝图造物，别在它面前摆炮台。",
+      "A Lynel's roar destroys nearby Zonai devices and Autobuild constructs — don't set up turrets in front of one."
+    ],
+    [
+      "对闪耀果免疫：别指望闪光弹控它，靠闪避和盾反才是正路。",
+      "Immune to Dazzlefruit: don't count on flash bombs to control it — dodging and Perfect Guarding are the right approach."
+    ],
+    [
+      "📑 本篇目录",
+      "📑 Contents of This Guide"
+    ],
+    [
+      "一、人马种类与强度",
+      "1. Lynel Types and Strength"
+    ],
+    [
+      "二、通用打法：闪避、盾反与骑背",
+      "2. General Tactics: Dodging, Perfect Guarding, and Mounting"
+    ],
+    [
+      "三、白银人马与掉落价值",
+      "3. Silver Lynels and Drop Value"
+    ],
+    [
+      "四、铠甲人马与地底竞技场",
+      "4. Armored Lynels and the Depths Colosseum"
+    ],
+    [
+      "五、翻车点与常见问题",
+      "5. Common Mistakes and FAQ"
+    ],
+    [
+      "常见问题",
+      "FAQ"
+    ],
+    [
+      "人马按颜色分档，越往后血量、攻击和掉落越好。游戏进程推进后，野外人马会逐步升级：前期多是普通与蓝色，中后期出现白色与白银。白银人马血量 5000，是野外单体最耐打的敌人之一，第一次打建议先备好高攻武器和回血料理再去。",
+      "Lynels are tiered by color, and later tiers have more HP, attack, and better drops. As the game progresses, overworld Lynels gradually upgrade: early on they are mostly standard and blue, while white and silver appear in the mid-to-late game. A Silver Lynel has 5000 HP, making it one of the toughest single overworld enemies — before your first fight, prepare high-attack weapons and healing meals."
+    ],
+    [
+      "种类",
+      "Type"
+    ],
+    [
+      "定位",
+      "Role"
+    ],
+    [
+      "掉落要点",
+      "Drop highlights"
+    ],
+    [
+      "普通人马",
+      "Red-Maned Lynel"
+    ],
+    [
+      "前期练手",
+      "Early-game practice"
+    ],
+    [
+      "人马角、蹄、肝脏，练闪避的好对手",
+      "Lynel horn, hoof, and guts — a good opponent for practicing dodges"
+    ],
+    [
+      "蓝色人马",
+      "Blue-Maned Lynel"
+    ],
+    [
+      "中期",
+      "Mid-game"
+    ],
+    [
+      "掉落品质提升，开始出较好的角",
+      "Drop quality improves, and better horns start appearing"
+    ],
+    [
+      "白色人马",
+      "White-Maned Lynel"
+    ],
+    [
+      "后期",
+      "Late game"
+    ],
+    [
+      "高攻素材，适合余料过渡",
+      "High-attack materials, good as transitional Fuse options"
+    ],
+    [
+      "白银人马",
+      "Silver Lynel"
+    ],
+    [
+      "终局",
+      "Endgame"
+    ],
+    [
+      "血量 5000；刃角 +55、碎角 +51，全游戏最高余料",
+      "5000 HP; Silver Lynel Saber Horn +55, Silver Lynel Mace Horn +51 — the highest Fuse values in the game"
+    ],
+    [
+      "林克与人马正面对峙",
+      "Link facing off against a Lynel"
+    ],
+    [
+      "与人马对峙：先读招式，再找闪避窗口（游戏实机截图）",
+      "Facing off against a Lynel: read its moves first, then find the dodge window (actual in-game screenshot)"
+    ],
+    [
+      "人马的冲锋和跳劈都有明显前摇：冲锋时向侧面闪避触发林克时间，跳劈落地前向后闪避同样能触发。盾反可以弹开它的近战挥击，但爆裂箭和喷火不要硬接，拉开距离或绕到侧面。最关键的一步是骑背：人马被打晕、被箭射中头部或从高处落到它背上后，就能骑上去连砍。",
+      "A Lynel's charge and leaping slam both have clear wind-ups: side-dodge a charge to trigger a Flurry Rush, and back-dodge just before a leaping slam lands to trigger it too. Perfect Guarding can deflect its melee swings, but don't tank explosive arrows or fire breath head-on — create distance or circle to its side. The most crucial step is mounting: after a Lynel is stunned, shot in the head with an arrow, or you drop onto its back from above, you can mount it and slash repeatedly."
+    ],
+    [
+      "骑背时武器不消耗耐久，这一点要充分利用：平时用普通武器磨血、打晕，骑背的一刻再换上最高攻击的武器猛砍。骑背结束人马会把林克甩下来，落地前开滑翔伞拉开距离，再射一箭头部可以续一轮控制。",
+      "Mounted weapons cost no durability — make full use of this: use ordinary weapons to chip away HP and stun it, then switch to your highest-attack weapon the moment you mount and slash hard. When mounting ends, the Lynel will throw Link off; open your paraglider before landing to create distance, then shoot one more arrow at its head to extend control for another round."
+    ],
+    [
+      "余料建造完全指南",
+      "Fuse Complete Guide"
+    ],
+    [
+      "地底有些人马穿着铠甲，直接砍上去伤害极低。正确顺序是先破甲：炸弹花贴脸炸、钝器重武器砸，甲碎了再按正常流程打。地底水上竞技场有一场五连人马车轮战，最后一只是白银人马，打之前把料理、防具和武器全部准备好，中途没有补给点。",
+      "Some Lynels in the Depths wear armor, and slashing them directly deals very little damage. The correct order is to break the armor first: Bomb Flowers detonated point-blank or heavy blunt weapons will do it, then fight normally once the armor shatters. The waterborne Depths Colosseum hosts a five-bout Lynel gauntlet, with a Silver Lynel last — prepare all your meals, armor, and weapons beforehand, as there are no resupply points midway."
+    ],
+    [
+      "竞技场中的人马",
+      "Lynel in the Colosseum"
+    ],
+    [
+      "竞技场连战：最后一只是白银人马（游戏实机截图）",
+      "Colosseum gauntlet: the last one is a Silver Lynel (actual in-game screenshot)"
+    ],
+    [
+      "三个最常见的翻车原因：第一，在人马面前摆左纳乌装置，一声咆哮就全碎了，炮台流对人马无效；第二，拿闪耀果当控制技，人马对闪耀果免疫，白白浪费素材；第三，骑背时用低攻武器，把不耗耐久的窗口浪费了。记住这三点，白银人马的难度会下降一大截。",
+      "The three most common causes of failure: first, placing Zonai devices in front of a Lynel — one roar shatters them all, so turret strategies don't work on Lynels; second, using Dazzlefruit as crowd control — Lynels are immune to Dazzlefruit, wasting materials for nothing; third, using a low-attack weapon while mounted, wasting the no-durability window. Remember these three points and Silver Lynels become much easier."
+    ],
+    [
+      "打不过白银人马怎么办？ 先去刷防具强化和料理，把武器换成高攻余料，再回来。也可以先打低档人马练闪避节奏。",
+      "What if I can't beat a Silver Lynel? Go farm armor upgrades and meals first, switch your weapon to a high-attack Fuse build, then come back. You can also fight lower-tier Lynels first to practice dodge timing."
+    ],
+    [
+      "人马角有什么用？ 余料第一梯队，也能卖钱，但留着做武器远比卖掉划算。",
+      "What are Lynel horns good for? Top-tier Fuse materials. They can also be sold, but keeping them for weapons is far more worthwhile than selling."
+    ],
+    [
+      "骑背怎么触发？ 射头部、打晕或从高处落到背上都可以，骑上去立刻换最高攻击武器。",
+      "How do I trigger mounting? Shooting its head, stunning it, or dropping onto its back from above all work — switch to your highest-attack weapon the moment you mount."
+    ],
+    [
+      "← 上一篇：四条龙素材刷取指南",
+      "← Previous: Four Dragons Material Farming Guide"
+    ],
+    [
+      "返回秘籍专栏",
+      "Back to the Tips Column"
+    ],
+    [
+      "下一篇：卢比速刷指南：从前期到后期 →",
+      "Next: Rupee Fast-Farming Guide: Early to Late Game →"
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 余料建造完全指南",
+      "› Fuse Complete Guide"
+    ],
+    [
+      "› 白银人马",
+      "› Silver Lynel"
+    ],
+    [
+      "› 地底世界生存与探索完全指南",
+      "› Depths Survival and Exploration Complete Guide"
+    ],
+    [
+      "📚 全部攻略索引",
+      "📚 Full Guide Index"
+    ],
+    [
+      "🏆 哈里的终极秘籍",
+      "🏆 Harry's Ultimate Tips Column"
+    ],
+    [
+      "› 七宝匕首终极攻略",
+      "› Scimitar of the Seven Ultimate Guide"
+    ],
+    [
+      "› 四大神级料理配方",
+      "› Four God-Tier Recipes"
+    ],
+    [
+      "› 最强套装三梯队全解析",
+      "› Strongest Armor Sets: Three-Tier Full Analysis"
+    ],
+    [
+      "› 乌萨诸马神庙零基础包教包会",
+      "› Usazum Shrine Guide for Complete Beginners"
+    ],
+    [
+      "› 白龙寻踪与大师之剑",
+      "› Tracking the Light Dragon and the Master Sword"
+    ],
+    [
+      "› 马克兔飞行器调校",
+      "› Hover Bike Tuning"
+    ],
+    [
+      "› 地底电池扩充与大妖精",
+      "› Depths Energy Cell Expansion and Great Fairies"
+    ],
+    [
+      "🆕 每日新攻略",
+      "🆕 Daily New Guides"
+    ],
+    [
+      "› 152座神庙全收集自查指南",
+      "› 152 Shrines Full Collection Self-Check Guide"
+    ],
+    [
+      "› 新手开荒指南：落地先做的10件事",
+      "› Beginner's Starting Guide: 10 Things to Do First After Landing"
+    ],
+    [
+      "› 呀哈哈种子全指南",
+      "› Korok Seed Complete Guide"
+    ],
+    [
+      "› 大妖精四姐妹与防具强化完全指南",
+      "› Four Great Fairies and Armor Upgrading Complete Guide"
+    ],
+    [
+      "› 四条龙素材刷取指南",
+      "› Four Dragons Material Farming Guide"
+    ],
+    [
+      "› 人马（莱尼尔）完全指南（本篇）",
+      "› Lynel Complete Guide (this article)"
+    ],
+    [
+      "› 卢比速刷指南：从前期到后期",
+      "› Rupee Fast-Farming Guide: Early to Late Game"
+    ],
+    [
+      "› 马匹捕捉与稀有马完全指南",
+      "› Horse Catching and Rare Horses Complete Guide"
+    ],
+    [
+      "› 五位贤者能力全解",
+      "› Five Sages' Abilities Fully Explained"
+    ],
+    [
+      "› 料理机制全解：效果、时长与暴击",
+      "› Cooking Mechanics Fully Explained: Effects, Duration, and Criticals"
+    ],
+    [
+      "› 海拉鲁城堡探索完全指南",
+      "› Hyrule Castle Exploration Complete Guide"
+    ],
+    [
+      "› 海拉鲁图鉴509项收集指南",
+      "› Hyrule Compendium 509-Item Collection Guide"
+    ],
+    [
+      "› 左纳乌装置实用造物指南",
+      "› Practical Zonai Device Builds Guide"
+    ],
+    [
+      "› 血月机制全解",
+      "› Blood Moon Mechanics Fully Explained"
+    ],
+    [
+      "人马不像普通怪物可以莽过去：它会冲锋、跳劈、喷火、射爆裂箭，血量还厚。",
+      "You can't just bulldoze a Lynel like an ordinary monster: it charges, leaps and slams, breathes fire, and fires explosive arrows, and it has a lot of HP."
+    ],
+    [
+      "但它有一套固定的出招规律，学会闪避反击和骑背，普通人马也能无伤过；",
+      "But it follows a fixed move pattern — learn dodge counters and mounting, and even a standard Lynel can be beaten without damage;"
+    ],
+    [
+      "白银人马打下来，一根刃角就是全游戏最高的余料攻击。",
+      "and a Silver Lynel's Silver Lynel Saber Horn gives the highest Fuse attack in the game."
+    ],
+    [
+      "人马按颜色分档，越往后血量、攻击和掉落越好。",
+      "Lynels are tiered by color, and later tiers have more HP, attack, and better drops."
+    ],
+    [
+      "游戏进程推进后，野外人马会逐步升级：前期多是普通与蓝色，中后期出现白色与白银。",
+      "As the game progresses, overworld Lynels gradually upgrade: early on they are mostly standard and blue, while white and silver appear in the mid-to-late game."
+    ],
+    [
+      "白银人马血量 5000，是野外单体最耐打的敌人之一，第一次打建议先备好高攻武器和回血料理再去。",
+      "A Silver Lynel has 5000 HP, making it one of the toughest single overworld enemies — before your first fight, prepare high-attack weapons and healing meals."
+    ],
+    [
+      "血量 5000；",
+      "5000 HP;"
+    ],
+    [
+      "刃角 +55、碎角 +51，全游戏最高余料",
+      "Silver Lynel Saber Horn +55, Silver Lynel Mace Horn +51 — the highest Fuse values in the game"
+    ],
+    [
+      "人马的冲锋和跳劈都有明显前摇：冲锋时向侧面闪避触发林克时间，跳劈落地前向后闪避同样能触发。",
+      "A Lynel's charge and leaping slam both have clear wind-ups: side-dodge a charge to trigger a Flurry Rush, and back-dodge just before a leaping slam lands to trigger it too."
+    ],
+    [
+      "盾反可以弹开它的近战挥击，但爆裂箭和喷火不要硬接，拉开距离或绕到侧面。",
+      "Perfect Guarding can deflect its melee swings, but don't tank explosive arrows or fire breath head-on — create distance or circle to its side."
+    ],
+    [
+      "最关键的一步是骑背：人马被打晕、被箭射中头部或从高处落到它背上后，就能骑上去连砍。",
+      "The most crucial step is mounting: after a Lynel is stunned, shot in the head with an arrow, or you drop onto its back from above, you can mount it and slash repeatedly."
+    ],
+    [
+      "地底有些人马穿着铠甲，直接砍上去伤害极低。",
+      "Some Lynels in the Depths wear armor, and slashing them directly deals very little damage."
+    ],
+    [
+      "正确顺序是先破甲：炸弹花贴脸炸、钝器重武器砸，甲碎了再按正常流程打。",
+      "The correct order is to break the armor first: Bomb Flowers detonated point-blank or heavy blunt weapons will do it, then fight normally once the armor shatters."
+    ],
+    [
+      "地底水上竞技场有一场五连人马车轮战，最后一只是白银人马，打之前把料理、防具和武器全部准备好，中途没有补给点。",
+      "The waterborne Depths Colosseum hosts a five-bout Lynel gauntlet, with a Silver Lynel last — prepare all your meals, armor, and weapons beforehand, as there are no resupply points midway."
+    ],
+    [
+      "三个最常见的翻车原因：第一，在人马面前摆左纳乌装置，一声咆哮就全碎了，炮台流对人马无效；",
+      "The three most common causes of failure: first, placing Zonai devices in front of a Lynel — one roar shatters them all, so turret strategies don't work on Lynels;"
+    ],
+    [
+      "第二，拿闪耀果当控制技，人马对闪耀果免疫，白白浪费素材；",
+      "second, using Dazzlefruit as crowd control — Lynels are immune to Dazzlefruit, wasting materials for nothing;"
+    ],
+    [
+      "第三，骑背时用低攻武器，把不耗耐久的窗口浪费了。",
+      "third, using a low-attack weapon while mounted, wasting the no-durability window."
+    ],
+    [
+      "记住这三点，白银人马的难度会下降一大截。",
+      "Remember these three points and Silver Lynels become much easier."
+    ],
+    [
+      "打不过白银人马怎么办？",
+      "What if I can't beat a Silver Lynel?"
+    ],
+    [
+      " 先去刷防具强化和料理，把武器换成高攻余料，再回来。",
+      "Go farm armor upgrades and meals first, switch your weapon to a high-attack Fuse build, then come back."
+    ],
+    [
+      "也可以先打低档人马练闪避节奏。",
+      "You can also fight lower-tier Lynels first to practice dodge timing."
+    ],
+    [
+      "骑背怎么触发？",
+      "How do I trigger mounting?"
+    ],
+    [
+      " 射头部、打晕或从高处落到背上都可以，骑上去立刻换最高攻击武器。",
+      "Shooting its head, stunning it, or dropping onto its back from above all work — switch to your highest-attack weapon the moment you mount."
+    ],
+    [
+      "打不过白银人马怎么办？先去刷防具强化和料理，把武器换成高攻余料，再回来。也可以先打低档人马练闪避节奏。",
+      "What if you cannot beat a Silver Lynel? Go farm armor upgrades and cooking first, switch your weapon to a high-attack Fuse, then come back. You can also practice dodge timing on lower-tier Lynels first."
+    ],
+    [
+      "人马角有什么用？余料第一梯队，也能卖钱，但留着做武器远比卖掉划算。",
+      "What are Lynel horns for? They are top-tier Fuse material. You can sell them, but keeping them for weapons is far more worthwhile than selling."
+    ],
+    [
+      "骑背怎么触发？射头部、打晕或从高处落到背上都可以，骑上去立刻换最高攻击武器。",
+      "How do you trigger back mounting? Shoot it in the head, stun it, or drop onto its back from above — any of these works. Once mounted, switch to your highest-attack weapon immediately."
+    ],
+    [
+      "地底有些人马穿着铠甲，直接砍上去伤害极低。正确顺序是先破甲：炸弹花贴脸炸、钝器重武器砸，甲碎了再按正常流程打。地底斗技场遗迹正下方有一座浮岛斗技场（Floating Colosseum），里面有一场五连人马车轮战，顺序是红鬃、蓝鬃、白鬃、白银，最后是铠甲白银人马，打之前把料理、防具和武器全部准备好，中途没有补给点。",
+      "Some Depths Lynels wear armor — slashing them directly barely scratches them. The right order is to break the armor first: a Bomb Flower to the face, or heavy blunt weapons; once the armor shatters, fight normally. Beneath the Colosseum Ruins in the Depths sits the Floating Colosseum, home to a five-Lynel gauntlet in order: Red-Maned, Blue-Maned, White-Maned, Silver, and finally the Armored Silver Lynel. Prepare all your meals, armor, and weapons beforehand — there are no resupply points midway."
+    ],
+    [
+      "竞技场连战：最后一只是铠甲白银人马（游戏实机截图）",
+      "Arena gauntlet: the last one is the Armored Silver Lynel (in-game screenshot)"
+    ],
+    [
+      "相关攻略：",
+      "Related Guides:"
+    ],
+    [
+      "地底世界生存与探索完全指南",
+      "Complete Guide to Surviving and Exploring the Depths"
+    ]
+  ],
+  "notes": [
+    "人马 and 莱尼尔 both rendered as Lynel, as they refer to the same enemy.",
+    "刃角/碎角 rendered descriptively as blade horn/shattered horn; official item-name mapping not confirmed from the glossary.",
+    "马克兔 rendered by pinyin as Marktu; no confident official equivalent found."
   ]
- ],
- "notes": [
-  "人马 and 莱尼尔 both rendered as Lynel, as they refer to the same enemy.",
-  "刃角/碎角 rendered descriptively as blade horn/shattered horn; official item-name mapping not confirmed from the glossary.",
-  "马克兔 rendered by pinyin as Marktu; no confident official equivalent found."
- ]
 }
