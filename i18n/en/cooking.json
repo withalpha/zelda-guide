@@ -2628,6 +2628,22 @@
   [
    "❤️ 回血",
    "❤️ Healing"
+  ],
+  [
+   "键打开锅，放入 1~5 种食材即可烹饪。同类效果食材叠加效果更强，混合不同效果的食材会互相抵消。血月之夜 23:30 起做料理必定大成功（暴击），效果翻倍。点击卡片可查看详情。",
+   " to open the pot and cook with 1–5 ingredients. Same-effect ingredients stack stronger; mixing different effects cancels them out. Cooking from 23:30 on a Blood Moon night always crits, doubling the effect. Tap a card for details."
+  ],
+  [
+   "② 血月之夜 23:30 起烹饪必定大成功，效果和时间翻倍。",
+   "② Cooking from 23:30 on a Blood Moon night always crits, doubling effect and duration."
+  ],
+  [
+   "这道菜的配方里没有带加成的食材，吃下只恢复生命；回血量随食材品质和数量提升，血月夜 23:30 起做料理必定大成功。",
+   "This dish has no bonus-granting ingredients — it only restores health, with the amount scaling by ingredient quality and quantity. Cooking from 23:30 on a Blood Moon night always crits."
+  ],
+  [
+   "取决于食材：回血量 = 各食材回血之和 ×2；血月夜必定大成功，效果更强。",
+   "Depends on ingredients: healing = sum of ingredient healing ×2; on a Blood Moon night it always crits for an even stronger effect."
   ]
  ],
  "notes": [

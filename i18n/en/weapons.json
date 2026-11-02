@@ -1476,6 +1476,206 @@
   [
    "✨ 魔法爆炸",
    "✨ Magic Blast"
+  ],
+  [
+   "键可将素材与武器融合，最终攻击力 = 武器基础攻击 + 素材加成。白银人马刃角最高可加",
+   " to fuse materials with weapons. Final attack = weapon base attack + material bonus. Silver Lynel Saber Horns add up to "
+  ],
+  [
+   "大师之剑能量耗尽后约 10 分钟充能",
+   "The Master Sword recharges about 10 minutes after running out of energy"
+  ],
+  [
+   "，不会永久破损。",
+   ", and never breaks permanently."
+  ],
+  [
+   "⚔ 攻击 30（近瘴气 45、对加侬 60）",
+   "⚔ Attack 30 (45 near Gloom, 60 vs Ganondorf)"
+  ],
+  [
+   "♾ 充能复原",
+   "♾ Recharges"
+  ],
+  [
+   "驱逐邪恶之力的圣剑。靠近瘴气时攻击力提升至 45，对幻影加侬与加侬多夫时为 60；满血时可向远处发射能量光束。能量耗尽后约 10 分钟充能复原，不会永久破损。需要",
+   "The holy sword that banishes evil. Near Gloom, its attack rises to 45, and against Phantom Ganon and Ganondorf it is 60; at full health it can fire energy beams far away. After its energy runs out, it recharges in about 10 minutes and never breaks permanently. Requires"
+  ],
+  [
+   "两圈精力",
+   "two full Stamina Wheels"
+  ],
+  [
+   "攻击力",
+   "Attack"
+  ],
+  [
+   "30（近瘴气 45，对幻影加侬、加侬多夫 60）",
+   "30 (45 near Gloom, 60 vs Phantom Ganon and Ganondorf)"
+  ],
+  [
+   "特殊效果",
+   "Special Effect"
+  ],
+  [
+   "近瘴气时攻击力提升，对幻影加侬与加侬多夫时更高；满血时可发射能量光束；对幽暗之力敌人有克制效果；能量耗尽后充能复原，不会永久破损",
+   "Attack rises near Gloom, higher against Phantom Ganon and Ganondorf; can fire energy beams at full health; strong against Gloom enemies; recharges after running out of energy and never breaks permanently"
+  ],
+  [
+   "白银人马刃角（+55）→ 总攻击 85，对加侬约",
+   "Silver Lynel Saber Horn (+55) → total attack 85, about against Ganondorf "
+  ],
+  [
+   "白银人马刃角（+55）→ 总攻击",
+   "Silver Lynel Saber Horn (+55) → total attack "
+  ],
+  [
+   "蜥蜴族尾巴（+10）→ 扩大攻击范围；白银人马刃角（+55）→ 总攻击 70",
+   "Lizalfos Tail (+10) → wider attack range; Silver Lynel Saber Horn (+55) → total attack 70"
+  ],
+  [
+   "⚔ 攻击 32（未衰朽 42）",
+   "⚔ Attack 32 (pristine 42)"
+  ],
+  [
+   "🔵 耐久 11（未衰朽 12）",
+   "🔵 Durability 11 (pristine 12)"
+  ],
+  [
+   "谢卡族以古代技术为皇室护卫打造的试作双手剑，攻击力极高但耐久极度脆弱。耐久将尽红闪时触发濒死爆发，攻击力翻倍：衰朽版约 64，未衰朽版约 84，适合对 Boss 进行致命一击。",
+   "A prototype two-handed sword the Sheikah built with ancient technology for the royal guard. Its attack is extremely high but its durability is extremely fragile. When it flashes red near breaking, its attack doubles: about 64 decayed, about 84 pristine — ideal for a finishing blow on a boss."
+  ],
+  [
+   "32（未衰朽 42；濒死爆发时翻倍）",
+   "32 (pristine 42; doubles on near-death burst)"
+  ],
+  [
+   "耐久度",
+   "Durability"
+  ],
+  [
+   "11（未衰朽 12；极低，慎用）",
+   "11 (pristine 12; extremely low, use with care)"
+  ],
+  [
+   "耐久将尽红闪时攻击力翻倍（濒死爆发），可瞬间斩杀高血量 Boss",
+   "Attack doubles when flashing red near breaking (near-death burst), enough to instantly slay high-HP bosses"
+  ],
+  [
+   "古代之刃（+50）→ 总攻击 82（衰朽版）/ 92（未衰朽版），濒死爆发约",
+   "Ancient Blade (+50) → total attack 82 (decayed) / 92 (pristine), near-death burst about "
+  ],
+  [
+   "黄玉（+4，⚡雷击）对沙漠系和水系敌人有效；白银人马刃角（+55）→ 总攻击 83",
+   "Topaz (+4, ⚡ lightning) works well against desert and water enemies; Silver Lynel Saber Horn (+55) → total attack 83"
+  ],
+  [
+   "作为底座融合白银人马刃角（+55）→ 总攻击 65，性价比融合武器",
+   "As a base, fuse a Silver Lynel Saber Horn (+55) → total attack 65, a great value fusion weapon"
+  ],
+  [
+   "💧 沾水攻击翻倍",
+   "💧 Attack doubles when wet"
+  ],
+  [
+   "卓拉英杰米法使用的三叉戟，由卓拉族最精良的海底矿石打造，耐久度为同类最高。沾水时整把武器总攻击力翻倍（Water Warrior 特效），对火焰系敌人有克制效果。",
+   "The trident of Zora Champion Mipha, forged from the finest seabed ore of the Zora. Its total attack doubles when wet (Water Warrior effect), and it counters fire enemies."
+  ],
+  [
+   "沾水时总攻击力翻倍（Water Warrior）；对火焰属性敌人造成额外伤害；损毁后可找 NPC 修复",
+   "Total attack doubles when wet (Water Warrior); bonus damage against fire-element enemies; can be repaired by an NPC after breaking."
+  ],
+  [
+   "🔵 耐久 60",
+   "🔵 Durability 60"
+  ],
+  [
+   "格鲁德族传承的宝匕首，刀身短小但锋利异常。强力融合（Strong Fusion）特效：融合素材的攻击力翻倍，贴白银人马刃角（+55）可达总攻击 138（28+55×2）。",
+   "The treasured dagger passed down by the Gerudo. Short but exceptionally sharp. Strong Fusion effect: fused material attack doubles, reaching total attack 138 with a Silver Lynel Saber Horn (+55) (28+55×2)."
+  ],
+  [
+   "强力融合（Strong Fusion）：融合素材攻击力翻倍；匕首攻速极快",
+   "Strong Fusion: fused material attack doubles; extremely fast dagger attack speed."
+  ],
+  [
+   "融合白银人马刃角（+55）→ 总攻击 138（28+55×2），全游戏单发最高之一",
+   "Fuse a Silver Lynel Saber Horn (+55) → total attack 138 (28+55×2), one of the highest single hits in the game"
+  ],
+  [
+   "三连射（同时发射 3 箭）；岩石巨人可刷出五连词条（32×5）",
+   "Triple shot (fires 3 arrows at once); Rock Octoroks can roll a five-shot modifier (32×5)"
+  ],
+  [
+   "卓拉族工匠以深海玄铁打造的双手大剑，耐久极高。沾水时整把武器总攻击力翻倍（Water Warrior 特效），是卓拉地区探险的理想装备。",
+   "A two-handed greatsword forged by Zora craftsmen from deep-sea iron, with extremely high durability. Its total attack doubles when wet (Water Warrior effect), making it ideal for exploring the Zora region."
+  ],
+  [
+   "14（沾水时总攻击翻倍）",
+   "14 (total attack doubles when wet)"
+  ],
+  [
+   "沾水时总攻击力翻倍（Water Warrior）；可对火焰系敌人造成克制伤害",
+   "Total attack doubles when wet (Water Warrior); can deal counter damage to fire-element enemies."
+  ],
+  [
+   "白银人马刃角（+55）→ 总攻击 69；搭配雷电宝石可形成水电联动",
+   "Silver Lynel Saber Horn (+55) → total attack 69; pairing with lightning gems creates a water-lightning combo."
+  ],
+  [
+   "8（潜行暗杀 8×）",
+   "8 (Sneakstrike 8×)"
+  ],
+  [
+   "潜行暗杀伤害 8×（基础）；移动无声音；八刃系武器特效可再 ×2 至 16×",
+   "Sneakstrike damage 8× (base); silent movement; Eightfold weapon effect can double it again to 16×"
+  ],
+  [
+   "配合潜行套装 + 潜行药 → 暗杀伤害可达 16×，即秒大多数精英敌人",
+   "With the Stealth Set + stealth elixir → sneakstrike damage up to 16×, instantly killing most elite enemies"
+  ],
+  [
+   "⚔ 攻击 41",
+   "⚔ Attack 41"
+  ],
+  [
+   "被瘴气（幽暗之力）完全侵蚀的魔王之剑，攻击力极高，但每次攻击都会侵蚀持有者自身的心力（瘴气反噬），扣减自身心力上限，需备足心力与向阳草料理使用。",
+   "The Demon King's sword fully corroded by Gloom. Its attack is extremely high, but every strike eats into the wielder's own hearts (Gloom backlash), lowering your max hearts — bring plenty of hearts and Sundelion dishes."
+  ],
+  [
+   "获取方法",
+   "How to Obtain"
+  ],
+  [
+   "击败幻影加侬掉落",
+   "Dropped by Phantom Ganon"
+  ],
+  [
+   "每次攻击侵蚀持有者自身心力，扣减自身心力上限（可用向阳草料理恢复）；使用前确保心力充足",
+   "Every strike eats into the wielder's own hearts, lowering your max hearts (recoverable with Sundelion dishes); make sure your hearts are full before using it"
+  ],
+  [
+   "搭配满心力状态使用；融合白银人马刃角（+55）→ 总攻击 96，注意瘴气自伤",
+   "Use at full hearts; Silver Lynel Saber Horn (+55) → total attack 96, mind the Gloom self-damage"
+  ],
+  [
+   "14（潜行暗杀 8×）",
+   "14 (Sneakstrike 8×)"
+  ],
+  [
+   "连击速度快；潜行暗杀伤害 8×（基础），八刃系武器特效可再 ×2 至 16×",
+   "Very fast combo speed; Sneakstrike damage 8× (base), Eightfold weapon effect can double it again to 16×"
+  ],
+  [
+   "被瘴气力量渗透的巨型金属棒，挥动范围极广，命中伤害极高，但每次攻击都会侵蚀持有者自身的心力（瘴气反噬），使用时心力需充足。",
+   "A giant metal club soaked in Gloom power, with an extremely wide swing and very high hit damage, but every strike eats into the wielder's own hearts (Gloom backlash) — keep your hearts full."
+  ],
+  [
+   "命中伤害极高；使用者每次攻击都会受到瘴气反噬，扣减自身心力上限（可用向阳草料理恢复），须保持满心力",
+   "Extremely high hit damage; every strike inflicts Gloom backlash on the wielder, lowering your max hearts (recoverable with Sundelion dishes) — stay at full hearts"
+  ],
+  [
+   "配合满心力状态使用；融合白银人马刃角（+55）→ 总攻击",
+   "Use at full hearts; Silver Lynel Saber Horn (+55) → total attack "
   ]
  ],
  "notes": [

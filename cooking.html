@@ -345,7 +345,7 @@
   </div>
 
   <div class="highlight-box">
-    <strong>烹饪基础：</strong>在篝火旁按 <kbd style="background:rgba(201,162,39,0.15);border:1px solid var(--border-gold);padding:0 5px;border-radius:3px;font-size:0.8em">A</kbd> 键打开锅，放入 1~5 种食材即可烹饪。同类效果食材叠加效果更强，混合不同效果的食材会互相抵消。满月之夜有概率触发「暴击烹饪」，效果翻倍。点击卡片可查看详情。
+    <strong>烹饪基础：</strong>在篝火旁按 <kbd style="background:rgba(201,162,39,0.15);border:1px solid var(--border-gold);padding:0 5px;border-radius:3px;font-size:0.8em">A</kbd> 键打开锅，放入 1~5 种食材即可烹饪。同类效果食材叠加效果更强，混合不同效果的食材会互相抵消。血月之夜 23:30 起做料理必定大成功（暴击），效果翻倍。点击卡片可查看详情。
   </div>
 
   <!-- 分类筛选 -->
@@ -367,7 +367,7 @@
   <div class="tip-box" style="margin-top:28px">
     <strong>🍳 实用要点：</strong><br>
     ① 同类食材叠加效果更强，混合不同效果的食材会互相抵消。<br>
-    ② 满月之夜（游戏内每 7 天一次）烹饪有概率暴击，效果和时间翻倍。<br>
+    ② 血月之夜 23:30 起烹饪必定大成功，效果和时间翻倍。<br>
     ③ 食材品质越高（兽肉→高级兽肉→顶级兽肉）效果越强。<br>
     ④ 药水类（编号 215–228）需要昆虫 / 青蛙 / 蜥蜴 + 怪物素材，不能用食材替代。
   </div>
@@ -953,7 +953,7 @@ function getDishEffect(d) {
   if (generics.length) {
     return { title: "取决于你选的具体食材", warn: false, desc: generics.join("；") + "。选普通食材则仅回血；同效果食材叠加可提升等级和持续时间。" };
   }
-  return { title: "无加成，仅回血", warn: false, desc: "这道菜的配方里没有带加成的食材，吃下只恢复生命；回血量随食材品质和数量提升，满月夜烹饪有概率暴击翻倍。" };
+  return { title: "无加成，仅回血", warn: false, desc: "这道菜的配方里没有带加成的食材，吃下只恢复生命；回血量随食材品质和数量提升，血月夜 23:30 起做料理必定大成功。" };
 }
 function ingNoteFor(d) {
   if (d.method === "Campfire") return "篝火烤食：一次只用 1 个食材，直接扔进火里即可。";
@@ -980,7 +980,7 @@ function openModal(d) {
   effEl.innerHTML = `<strong>${escapeHtml(eff.title)}</strong><br>${escapeHtml(eff.desc)}`;
   document.getElementById("modalEffectNote").textContent = "加成优先采用 ZeldaCentral 配方表的固定加成；配方表未给固定加成的锅煮料理，加成由食材决定（同一道菜换不同食材，加成会跟着变）。回血量：锅煮料理取决于食材，烤食／冷冻／温泉为固定值。";
   const heartsEl = document.getElementById("modalHearts");
-  if (heartsEl) heartsEl.textContent = d.no === 228 ? "恢复全部红心" : (d.hearts === "—" ? "取决于食材：回血量 = 各食材回血之和 ×2；满月夜暴击可再翻倍。" : formatHearts(d.hearts));
+  if (heartsEl) heartsEl.textContent = d.no === 228 ? "恢复全部红心" : (d.hearts === "—" ? "取决于食材：回血量 = 各食材回血之和 ×2；血月夜必定大成功，效果更强。" : formatHearts(d.hearts));
   document.getElementById("modalOverlay").classList.add("open");
 }
 function closeModal(e) {
