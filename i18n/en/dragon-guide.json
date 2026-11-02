@@ -1,471 +1,471 @@
 {
- "notes": [
-  "Dragon names use official English names: 聂尔龙=Naydra, 费罗龙=Farosh, 奥尔龙=Dinraal, 白龙=Light Dragon.",
-  "'龙岩石' (spike shards picked up from a dragon's back) has no single official generic term; translated as Dragon Spike Shard.",
-  "Place names use official English names: 拉聂尔山=Mount Lanayru, 拉贝拉湿地=Rabella Wetlands, 东格鲁德深穴=East Gerudo Chasm, 格鲁德峡谷=Gerudo Canyon, 泡泡拉高地=Popla Foothills, 乌尔利山=Ulri Mountain, 德依布朗遗迹=Thyphlo Ruins, 龙之泪点=Dragon's Tear geoglyph sites.",
-  "'鸟望台' translated as Skyview Tower throughout."
- ],
- "pairs": [
-  [
-   "四条龙素材刷取指南：冰龙、雷龙、火龙、白龙固定路线与蹲点，部位对应素材与10分钟刷新机制。",
-   "Four dragons material farming guide: fixed routes and waiting spots for the ice, lightning, fire, and Light Dragons, materials by body part, and the 10-minute refresh mechanic."
-  ],
-  [
-   "首页› 哈里的终极秘籍› 四条龙素材刷取指南 🐉 龙素材攻略 四条龙素材刷取指南 龙按固定路线循环飞行：掌握路线、部位和 10 分钟机制，就不用满地图追龙碰运气。",
-   "Home › Harry's Ultimate Tips › Four Dragons Material Farming Guide 🐉 Dragon Material Guide Four Dragons Material Farming Guide The dragons fly fixed routes in a loop: master the routes, body parts, and the 10-minute mechanic, and you won't have to chase dragons all over the map on luck."
-  ],
-  [
-   "龙按固定路线循环飞行：掌握路线、部位和 10 分钟机制，就不用满地图追龙碰运气。",
-   "The dragons fly fixed routes in a loop: master the routes, body parts, and the 10-minute mechanic, and you won't have to chase dragons all over the map on luck."
-  ],
-  [
-   "🧙 作者：哈里 🐉 龙 · 素材刷取 📖 深度攻略",
-   "🧙 By Harry 🐉 Dragons · Material Farming 📖 In-depth Guide"
-  ],
-  [
-   "雷龙法洛斯翱翔空中（游戏实机截图，图片来源：Zelda Wiki）",
-   "Farosh, the lightning dragon, soaring through the sky (in-game screenshot, image source: Zelda Wiki)"
-  ],
-  [
-   "四条龙是全游戏最高效的素材来源：龙角、龙鳞、龙爪、龙牙和龙岩石，很多高阶防具强化都离不开它们。龙按固定路线不停地飞，掌握路线、部位和 10 分钟刷新机制，就不用满地图追龙碰运气。",
-   "The four dragons are the most efficient material source in the whole game: dragon horns, scales, claws, fangs, and spike shards are indispensable for many high-tier armor enhancements. The dragons fly fixed routes without stopping, so once you master the routes, body parts, and the 10-minute refresh mechanic, you won't have to chase dragons all over the map on luck."
-  ],
-  [
-   "⭐ 本篇要点",
-   "⭐ Key points of this guide"
-  ],
-  [
-   "四条龙路线固定循环：冰龙约 30 分钟、雷龙约 40 分钟、火龙约 50 分钟一圈，白龙一圈最长。",
-   "The four dragons' routes are fixed loops: the ice dragon takes about 30 minutes per loop, the lightning dragon about 40 minutes, the fire dragon about 50 minutes, and the Light Dragon takes the longest per loop."
-  ],
-  [
-   "射不同部位掉不同素材：身体→龙鳞、手脚→龙爪、嘴部→龙牙、角→龙角、背上尖刺→龙岩石（直接捡）。",
-   "Shooting different body parts drops different materials: body → Dragon Scale, hands/feet → Dragon Claw, mouth → Dragon Fang, horn → Dragon Horn, spikes on the back → Dragon Spike Shard (picked up directly)."
-  ],
-  [
-   "每次发光状态只能取 1 个攻击型素材，约 10 分钟后重新发亮；开菜单、读盘、营火等待都不能缩短。",
-   "Each glowing state yields only 1 material obtained by striking the dragon, and the dragon glows again after about 10 minutes; opening menus, loading screens, and waiting at campfires cannot shorten this."
-  ],
-  [
-   "最高效的刷法：留在龙背上等，每 10 分钟取一个部位，顺路收背上的龙岩石。",
-   "The most efficient farming method: stay on the dragon's back and wait, taking one body part every 10 minutes and collecting the spike shards from its back along the way."
-  ],
-  [
-   "📑 本篇目录",
-   "📑 Contents of this guide"
-  ],
-  [
-   "一、四条龙一览：路线、蹲点与准备",
-   "1. The four dragons at a glance: routes, waiting spots, and preparation"
-  ],
-  [
-   "二、部位对应素材表",
-   "2. Body part to material table"
-  ],
-  [
-   "三、10 分钟刷新机制",
-   "3. The 10-minute refresh mechanic"
-  ],
-  [
-   "四、守株待兔：蹲点方法",
-   "4. Waiting in ambush: waiting-spot method"
-  ],
-  [
-   "五、高效刷取流程",
-   "5. Efficient farming process"
-  ],
-  [
-   "常见问题",
-   "FAQ"
-  ],
-  [
-   "龙",
-   "Dragon"
-  ],
-  [
-   "属性",
-   "Element"
-  ],
-  [
-   "路线要点",
-   "Route notes"
-  ],
-  [
-   "蹲点鸟望台",
-   "Waiting-spot Skyview Tower"
-  ],
-  [
-   "登龙前准备",
-   "Preparation before mounting"
-  ],
-  [
-   "聂尔龙",
-   "Naydra"
-  ],
-  [
-   "冰",
-   "Ice"
-  ],
-  [
-   "从拉聂尔山深穴飞出，经卡卡利科村附近深坑入地底，地底绕圈再出地面；一圈约 30 分钟",
-   "Flies out of the Mount Lanayru chasm, enters the Depths through a chasm near Kakariko Village, circles the Depths, then returns to the surface; about 30 minutes per loop"
-  ],
-  [
-   "拉聂尔山、拉贝拉湿地、卡卡利科村",
-   "Mount Lanayru, Rabella Wetlands, Kakariko Village"
-  ],
-  [
-   "两级防寒",
-   "Two levels of cold resistance"
-  ],
-  [
-   "费罗龙",
-   "Farosh"
-  ],
-  [
-   "雷",
-   "Lightning"
-  ],
-  [
-   "从东格鲁德深穴飞出，经格鲁德峡谷，到泡泡拉高地附近深坑入地底；一圈约 40 分钟",
-   "Flies out of the East Gerudo chasm, passes through Gerudo Canyon, and enters the Depths through a chasm near Popla Foothills; about 40 minutes per loop"
-  ],
-  [
-   "格鲁德峡谷、泡泡拉高地",
-   "Gerudo Canyon, Popla Foothills"
-  ],
-  [
-   "卸下金属装备，备防电料理或防具",
-   "Remove metal equipment, and prepare shock-resistant dishes or armor"
-  ],
-  [
-   "奥尔龙",
-   "Dinraal"
-  ],
-  [
-   "火",
-   "Fire"
-  ],
-  [
-   "从乌尔利山鸟望台右侧深坑飞出，绕地图最北，到德依布朗遗迹鸟望台深坑入地底；一圈约 50 分钟",
-   "Flies out of the chasm to the right of the Ulri Mountain Skyview Tower, circles the northernmost part of the map, and enters the Depths through the chasm at the Thyphlo Ruins Skyview Tower; about 50 minutes per loop"
-  ],
-  [
-   "乌尔利山、德依布朗遗迹",
-   "Ulri Mountain, Thyphlo Ruins"
-  ],
-  [
-   "滑翔伞与足量精力",
-   "Paraglider, plenty of stamina, and Flame Guard (Flamebreaker set or a fireproof elixir)"
-  ],
-  [
-   "白龙",
-   "Light Dragon"
-  ],
-  [
-   "无元素",
-   "No element"
-  ],
-  [
-   "只在天空顺时针绕海拉鲁外圈，不入地底，经过所有龙之泪点；一圈耗时最长",
-   "Flies only in the sky, clockwise around the outer edge of Hyrule, never entering the Depths, passing all Dragon's Tear sites; takes the longest per loop"
-  ],
-  [
-   "龙之泪地上图画附近的天空岛、各地高空岛",
-   "Sky Islands near the Dragon's Tear geoglyphs, and high Sky Islands everywhere"
-  ],
-  [
-   "三条元素龙都会在地面与地底之间循环：从一处深穴飞出地面，绕一段地面路线，再从另一处深坑钻入地底，地底路线与地面路线大致相似。白龙是例外：它始终在高空绕圈，不会钻地底。",
-   "The three elemental dragons all cycle between the surface and the Depths: they fly out of one chasm onto the surface, follow a surface route for a stretch, then dive into the Depths through another chasm, with the Depths route roughly mirroring the surface route. The Light Dragon is the exception: it always circles high in the sky and never dives into the Depths."
-  ],
-  [
-   "目标部位",
-   "Target body part"
-  ],
-  [
-   "取得素材",
-   "Material obtained"
-  ],
-  [
-   "取得方式",
-   "How to obtain"
-  ],
-  [
-   "身体（无尖刺的躯干）",
-   "Body (torso without spikes)"
-  ],
-  [
-   "龙鳞",
-   "Dragon Scale"
-  ],
-  [
-   "射击躯干",
-   "Shoot the torso"
-  ],
-  [
-   "手或脚",
-   "Hand or foot"
-  ],
-  [
-   "龙爪",
-   "Dragon Claw"
-  ],
-  [
-   "射击爪子附近",
-   "Shoot near the claws"
-  ],
-  [
-   "嘴部",
-   "Mouth"
-  ],
-  [
-   "龙牙",
-   "Dragon Fang"
-  ],
-  [
-   "射击嘴部或牙齿",
-   "Shoot the mouth or teeth"
-  ],
-  [
-   "头部的角",
-   "Horn on the head"
-  ],
-  [
-   "龙角",
-   "Dragon Horn"
-  ],
-  [
-   "射击头部的角",
-   "Shoot the horn on the head"
-  ],
-  [
-   "背上的发光尖刺",
-   "Glowing spikes on the back"
-  ],
-  [
-   "龙岩石",
-   "Dragon Spike Shard"
-  ],
-  [
-   "直接在龙背上拾取，不必攻击，一次约 12 颗",
-   "Pick up directly on the dragon's back, no attack needed, about 12 per trip"
-  ],
-  [
-   "命中后素材会发光并朝下方坠落，尽量靠近目标部位再射，素材刚掉出时就在附近接住，省得再往地面飞一趟去捡。",
-   "After a hit, the material glows and falls downward, so get as close to the target body part as possible before shooting, and catch the material nearby as soon as it drops, saving a trip down to the ground to pick it up."
-  ],
-  [
-   "每条龙每次发光状态只能取得 1 个攻击型素材（鳞、爪、牙、角四选一）。取得一个后，龙身暂时不再发亮，这时候再打其他部位也不会掉素材。约 10 分钟现实时间后，龙身会再次发亮，才能再取一个。注意：开选单、读取画面、在营火前等待，都不能缩短这段时间。龙岩石不受“一次一个”的限制，但重新生成的周期更长，不适合当成每 10 分钟固定刷新的素材。",
-   "Each dragon, in each glowing state, yields only 1 material obtained by striking the dragon (one of scale, claw, fang, or horn). After obtaining one, the dragon's body temporarily stops glowing, and hitting other body parts at that point will not drop materials. After about 10 minutes of real time, the dragon's body glows again, and only then can another be taken. Note: opening menus, loading screens, and waiting at campfires cannot shorten this time. Dragon Spike Shards are not subject to the 'one at a time' limit, but their regeneration cycle is longer, so they are not suitable as a fixed every-10-minutes farming material."
-  ],
-  [
-   "不要追着龙跑。选上表里的蹲点鸟望台，弹射升空后在高处等龙飞过来，看到龙就滑翔落到龙背上。白龙最难蹲：它只在高空外圈飞，推荐去龙之泪地上图画附近的天空岛等，或者用鸟望台弹射后滑翔靠近。登龙前按上表准备好防寒、防电或精力，免得刚上龙背就被环境逼下来。",
-   "Don't chase after the dragons. Pick a waiting-spot Skyview Tower from the table above, launch into the air, and wait up high for the dragon to fly over; when you see it, glide down onto its back. The Light Dragon is the hardest to wait for: it only flies the high outer loop, so it is recommended to wait on Sky Islands near the Dragon's Tear geoglyphs, or to launch from a Skyview Tower and glide toward it. Before mounting, prepare cold resistance, shock resistance, fire protection, or stamina as listed in the table, so you aren't forced off the dragon's back by the environment just after mounting."
-  ],
-  [
-   "选一条龙，去它的蹲点鸟望台等龙出现，登龙。",
-   "Pick a dragon, go to its waiting-spot Skyview Tower, wait for the dragon to appear, and mount it."
-  ],
-  [
-   "射你最需要的部位，取 1 个攻击型素材。",
-   "Shoot the body part you need most, and take 1 material obtained by striking the dragon."
-  ],
-  [
-   "留在龙背上：沿背部走一趟，收约 12 颗龙岩石，顺便整理背包。",
-   "Stay on the dragon's back: walk along its back once, collect about 12 Dragon Spike Shards, and tidy your inventory along the way."
-  ],
-  [
-   "等约 10 分钟龙身重新发亮，再取下一个部位。如此循环，一趟能拿齐多个部位。",
-   "Wait about 10 minutes for the dragon's body to glow again, then take the next body part. Repeat this cycle, and one trip can cover multiple body parts."
-  ],
-  [
-   "龙素材的用途：很多高阶防具强化需要龙素材；白龙素材附魔在武器上时，每次攻击命中还能吸血，详见本站白龙寻踪与大师之剑攻略。",
-   "Uses of dragon materials: many high-tier armor enhancements need dragon materials; when Light Dragon materials are fused to a weapon, each successful attack hit also restores health — see this site's Tracking the Light Dragon and the Master Sword guide for details."
-  ],
-  [
-   "一次能拿几个素材？攻击型素材一次 1 个，龙岩石另算，背上一趟约 12 颗。",
-   "How many materials can you get at once? Materials obtained by striking: 1 at a time; Dragon Spike Shards are counted separately, about 12 per trip along the back."
-  ],
-  [
-   "一次能拿几个素材？",
-   "How many materials can you get at once?"
-  ],
-  [
-   "攻击型素材一次 1 个，龙岩石另算，背上一趟约 12 颗。",
-   "Materials obtained by striking: 1 at a time; Dragon Spike Shards are counted separately, about 12 per trip along the back."
-  ],
-  [
-   "龙飞走了怎么办？路线是固定循环，等它绕回来，或者换个蹲点鸟望台等。",
-   "What if the dragon flew away? Its route is a fixed loop — wait for it to circle back, or switch to a different waiting-spot Skyview Tower."
-  ],
-  [
-   "龙飞走了怎么办？",
-   "What if the dragon flew away?"
-  ],
-  [
-   "路线是固定循环，等它绕回来，或者换个蹲点鸟望台等。",
-   "Its route is a fixed loop — wait for it to circle back, or switch to a different waiting-spot Skyview Tower."
-  ],
-  [
-   "白龙为什么总找不到？它只在高空外圈飞，不钻地底。去龙之泪点附近的天空岛或用鸟望台弹射后滑翔，别在地面干等。",
-   "Why can't I ever find the Light Dragon? It only flies the high outer loop and never dives into the Depths. Go to Sky Islands near Dragon's Tear sites, or launch from a Skyview Tower and glide toward it — don't just wait on the ground."
-  ],
-  [
-   "白龙为什么总找不到？",
-   "Why can't I ever find the Light Dragon?"
-  ],
-  [
-   "它只在高空外圈飞，不钻地底。去龙之泪点附近的天空岛或用鸟望台弹射后滑翔，别在地面干等。",
-   "It only flies the high outer loop and never dives into the Depths. Go to Sky Islands near Dragon's Tear sites, or launch from a Skyview Tower and glide toward it — don't just wait on the ground."
-  ],
-  [
-   "相关攻略：白龙寻踪与大师之剑攻略、地底世界生存与探索完全指南。",
-   "Related Guides: Tracking the Light Dragon and the Master Sword, and Depths Survival and Exploration Complete Guide."
-  ],
-  [
-   "← 上一篇：大妖精四姐妹与防具强化完全指南 返回秘籍专栏 下一篇：人马（莱尼尔）完全指南 →",
-   "← Previous: Four Great Fairies and Armor Enhancement Complete Guide · Back to the Tips Column · Next: Complete Lynel Guide →"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 白龙寻踪与大师之剑",
-   "› Tracking the Light Dragon and the Master Sword"
-  ],
-  [
-   "› 地底世界生存与探索完全指南",
-   "› Depths Survival and Exploration Complete Guide"
-  ],
-  [
-   "› 七宝匕首终极攻略",
-   "› Scimitar of the Seven Ultimate Guide"
-  ],
-  [
-   "📚 全部攻略索引",
-   "📚 Full guide index"
-  ],
-  [
-   "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Tips"
-  ],
-  [
-   "› 四大神级料理配方",
-   "› Four God-Tier Recipes"
-  ],
-  [
-   "› 最强套装三梯队全解析",
-   "› Strongest Armor Sets: Three-Tier Breakdown"
-  ],
-  [
-   "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine Guide for Complete Beginners"
-  ],
-  [
-   "› 马克兔飞行器调校",
-   "› Hover Bike Tuning"
-  ],
-  [
-   "› 地底电池扩充与大妖精",
-   "› Depths Energy Cell Expansion and the Great Fairies"
-  ],
-  [
-   "🆕 每日新攻略",
-   "🆕 Daily New Guides"
-  ],
-  [
-   "› 152座神庙全收集自查指南",
-   "› 152 Shrines Complete Collection Self-Check Guide"
-  ],
-  [
-   "› 新手开荒指南：落地先做的10件事",
-   "› Beginner's Guide: 10 Things to Do First After Landing"
-  ],
-  [
-   "› 呀哈哈种子全指南",
-   "› Korok Seed Complete Guide"
-  ],
-  [
-   "› 大妖精四姐妹与防具强化完全指南",
-   "› Four Great Fairies and Armor Enhancement Complete Guide"
-  ],
-  [
-   "› 四条龙素材刷取指南（本篇）",
-   "› Four Dragons Material Farming Guide (this guide)"
-  ],
-  [
-   "› 人马（莱尼尔）完全指南",
-   "› Complete Lynel Guide"
-  ],
-  [
-   "› 卢比速刷指南：从前期到后期",
-   "› Rupee Fast Farming Guide: Early to Late Game"
-  ],
-  [
-   "› 马匹捕捉与稀有马完全指南",
-   "› Horse Catching and Rare Horses Complete Guide"
-  ],
-  [
-   "› 五位贤者能力全解",
-   "› All Five Sages' Abilities Explained"
-  ],
-  [
-   "› 料理机制全解：效果、时长与暴击",
-   "› Cooking Mechanics Explained: Effects, Duration, and Critical Success"
-  ],
-  [
-   "› 海拉鲁城堡探索完全指南",
-   "› Hyrule Castle Exploration Complete Guide"
-  ],
-  [
-   "› 海拉鲁图鉴509项收集指南",
-   "› Hyrule Compendium 509-Item Collection Guide"
-  ],
-  [
-   "› 左纳乌装置实用造物指南",
-   "› Practical Zonai Device Builds Guide"
-  ],
-  [
-   "› 血月机制全解",
-   "› Blood Moon Mechanics Explained"
-  ],
-  [
-   "› 余料建造完全指南",
-   "› Fuse Complete Guide"
-  ],
-  [
-   "雷龙法洛斯翱翔空中（游戏实机截图）",
-   "Farosh, the lightning dragon, soaring through the sky (in-game screenshot)"
-  ],
-  [
-   "四条龙素材刷取指南",
-   "Four Dragons Material Farming Guide"
-  ],
-  [
-   "哈里的终极秘籍",
-   "Harry's Ultimate Tips"
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "🐉 龙素材攻略",
-   "🐉 Dragon Materials Guide"
-  ],
-  [
-   "🐉 龙 · 素材刷取",
-   "🐉 Dragons · Material Farming"
-  ],
-  [
-   "← 上一篇：大妖精四姐妹与防具强化完全指南",
-   "← Previous: Complete Guide to the Four Great Fairies & Armor Upgrades"
-  ],
-  [
-   "下一篇：人马（莱尼尔）完全指南 →",
-   "Next: Complete Lynel Guide →"
-  ]
- ],
- "title": "Four Dragons Material Farming Guide · Harry's Ultimate Guide · Tears of the Kingdom Guide"
+  "notes": [
+    "Dragon names use official English names: 聂尔龙=Naydra, 费罗龙=Farosh, 奥尔龙=Dinraal, 白龙=Light Dragon.",
+    "'龙岩石' (spike shards picked up from a dragon's back) has no single official generic term; translated as Dragon Spike Shard.",
+    "Place names use official English names: 拉聂尔山=Mount Lanayru, 拉贝拉湿地=Rabella Wetlands, 东格鲁德深穴=East Gerudo Chasm, 格鲁德峡谷=Gerudo Canyon, 泡泡拉高地=Popla Foothills, 乌尔利山=Ulri Mountain, 德依布朗遗迹=Thyphlo Ruins, 龙之泪点=Dragon's Tear geoglyph sites.",
+    "'鸟望台' translated as Skyview Tower throughout."
+  ],
+  "pairs": [
+    [
+      "四条龙素材刷取指南：冰龙、雷龙、火龙、白龙固定路线与蹲点，部位对应素材与10分钟刷新机制。",
+      "Four dragons material farming guide: fixed routes and waiting spots for the ice, lightning, fire, and Light Dragons, materials by body part, and the 10-minute refresh mechanic."
+    ],
+    [
+      "首页› 哈里的终极秘籍› 四条龙素材刷取指南 🐉 龙素材攻略 四条龙素材刷取指南 龙按固定路线循环飞行：掌握路线、部位和 10 分钟机制，就不用满地图追龙碰运气。",
+      "Home › Harry's Ultimate Tips › Four Dragons Material Farming Guide 🐉 Dragon Material Guide Four Dragons Material Farming Guide The dragons fly fixed routes in a loop: master the routes, body parts, and the 10-minute mechanic, and you won't have to chase dragons all over the map on luck."
+    ],
+    [
+      "龙按固定路线循环飞行：掌握路线、部位和 10 分钟机制，就不用满地图追龙碰运气。",
+      "The dragons fly fixed routes in a loop: master the routes, body parts, and the 10-minute mechanic, and you won't have to chase dragons all over the map on luck."
+    ],
+    [
+      "🧙 作者：哈里 🐉 龙 · 素材刷取 📖 深度攻略",
+      "🧙 By Harry 🐉 Dragons · Material Farming 📖 In-depth Guide"
+    ],
+    [
+      "雷龙法洛斯翱翔空中（游戏实机截图，图片来源：Zelda Wiki）",
+      "Farosh, the lightning dragon, soaring through the sky (in-game screenshot, image source: Zelda Wiki)"
+    ],
+    [
+      "四条龙是全游戏最高效的素材来源：龙角、龙鳞、龙爪、龙牙和龙岩石，很多高阶防具强化都离不开它们。龙按固定路线不停地飞，掌握路线、部位和 10 分钟刷新机制，就不用满地图追龙碰运气。",
+      "The four dragons are the most efficient material source in the whole game: dragon horns, scales, claws, fangs, and spike shards are indispensable for many high-tier armor enhancements. The dragons fly fixed routes without stopping, so once you master the routes, body parts, and the 10-minute refresh mechanic, you won't have to chase dragons all over the map on luck."
+    ],
+    [
+      "⭐ 本篇要点",
+      "⭐ Key points of this guide"
+    ],
+    [
+      "四条龙路线固定循环：冰龙约 30 分钟、雷龙约 40 分钟、火龙约 50 分钟一圈，白龙一圈最长。",
+      "The four dragons' routes are fixed loops: the ice dragon takes about 30 minutes per loop, the lightning dragon about 40 minutes, the fire dragon about 50 minutes, and the Light Dragon takes the longest per loop."
+    ],
+    [
+      "射不同部位掉不同素材：身体→龙鳞、手脚→龙爪、嘴部→龙牙、角→龙角、背上尖刺→龙岩石（直接捡）。",
+      "Shooting different body parts drops different materials: body → Dragon Scale, hands/feet → Dragon Claw, mouth → Dragon Fang, horn → Dragon Horn, spikes on the back → Dragon Spike Shard (picked up directly)."
+    ],
+    [
+      "每次发光状态只能取 1 个攻击型素材，约 10 分钟后重新发亮；开菜单、读盘、营火等待都不能缩短。",
+      "Each glowing state yields only 1 material obtained by striking the dragon, and the dragon glows again after about 10 minutes; opening menus, loading screens, and waiting at campfires cannot shorten this."
+    ],
+    [
+      "最高效的刷法：留在龙背上等，每 10 分钟取一个部位，顺路收背上的龙岩石。",
+      "The most efficient farming method: stay on the dragon's back and wait, taking one body part every 10 minutes and collecting the spike shards from its back along the way."
+    ],
+    [
+      "📑 本篇目录",
+      "📑 Contents of this guide"
+    ],
+    [
+      "一、四条龙一览：路线、蹲点与准备",
+      "1. The four dragons at a glance: routes, waiting spots, and preparation"
+    ],
+    [
+      "二、部位对应素材表",
+      "2. Body part to material table"
+    ],
+    [
+      "三、10 分钟刷新机制",
+      "3. The 10-minute refresh mechanic"
+    ],
+    [
+      "四、守株待兔：蹲点方法",
+      "4. Waiting in ambush: waiting-spot method"
+    ],
+    [
+      "五、高效刷取流程",
+      "5. Efficient farming process"
+    ],
+    [
+      "常见问题",
+      "FAQ"
+    ],
+    [
+      "龙",
+      "Dragon"
+    ],
+    [
+      "属性",
+      "Element"
+    ],
+    [
+      "路线要点",
+      "Route notes"
+    ],
+    [
+      "蹲点鸟望台",
+      "Waiting-spot Skyview Tower"
+    ],
+    [
+      "登龙前准备",
+      "Preparation before mounting"
+    ],
+    [
+      "聂尔龙",
+      "Naydra"
+    ],
+    [
+      "冰",
+      "Ice"
+    ],
+    [
+      "从拉聂尔山深穴飞出，经卡卡利科村附近深坑入地底，地底绕圈再出地面；一圈约 30 分钟",
+      "Flies out of the Mount Lanayru chasm, enters the Depths through a chasm near Kakariko Village, circles the Depths, then returns to the surface; about 30 minutes per loop"
+    ],
+    [
+      "拉聂尔山、拉贝拉湿地、卡卡利科村",
+      "Mount Lanayru, Rabella Wetlands, Kakariko Village"
+    ],
+    [
+      "两级防寒",
+      "Two levels of cold resistance"
+    ],
+    [
+      "费罗龙",
+      "Farosh"
+    ],
+    [
+      "雷",
+      "Lightning"
+    ],
+    [
+      "从东格鲁德深穴飞出，经格鲁德峡谷，到泡泡拉高地附近深坑入地底；一圈约 40 分钟",
+      "Flies out of the East Gerudo chasm, passes through Gerudo Canyon, and enters the Depths through a chasm near Popla Foothills; about 40 minutes per loop"
+    ],
+    [
+      "格鲁德峡谷、泡泡拉高地",
+      "Gerudo Canyon, Popla Foothills"
+    ],
+    [
+      "卸下金属装备，备防电料理或防具",
+      "Remove metal equipment, and prepare shock-resistant dishes or armor"
+    ],
+    [
+      "奥尔龙",
+      "Dinraal"
+    ],
+    [
+      "火",
+      "Fire"
+    ],
+    [
+      "从乌尔利山鸟望台右侧深坑飞出，绕地图最北，到德依布朗遗迹鸟望台深坑入地底；一圈约 50 分钟",
+      "Flies out of the chasm to the right of the Ulri Mountain Skyview Tower, circles the northernmost part of the map, and enters the Depths through the chasm at the Thyphlo Ruins Skyview Tower; about 50 minutes per loop"
+    ],
+    [
+      "乌尔利山、德依布朗遗迹",
+      "Ulri Mountain, Thyphlo Ruins"
+    ],
+    [
+      "滑翔伞与足量精力",
+      "Paraglider, plenty of stamina, and Flame Guard (Flamebreaker set or a fireproof elixir)"
+    ],
+    [
+      "白龙",
+      "Light Dragon"
+    ],
+    [
+      "无元素",
+      "No element"
+    ],
+    [
+      "只在天空顺时针绕海拉鲁外圈，不入地底，经过所有龙之泪点；一圈耗时最长",
+      "Flies only in the sky, clockwise around the outer edge of Hyrule, never entering the Depths, passing all Dragon's Tear sites; takes the longest per loop"
+    ],
+    [
+      "龙之泪地上图画附近的天空岛、各地高空岛",
+      "Sky Islands near the Dragon's Tear geoglyphs, and high Sky Islands everywhere"
+    ],
+    [
+      "三条元素龙都会在地面与地底之间循环：从一处深穴飞出地面，绕一段地面路线，再从另一处深坑钻入地底，地底路线与地面路线大致相似。白龙是例外：它始终在高空绕圈，不会钻地底。",
+      "The three elemental dragons all cycle between the surface and the Depths: they fly out of one chasm onto the surface, follow a surface route for a stretch, then dive into the Depths through another chasm, with the Depths route roughly mirroring the surface route. The Light Dragon is the exception: it always circles high in the sky and never dives into the Depths."
+    ],
+    [
+      "目标部位",
+      "Target body part"
+    ],
+    [
+      "取得素材",
+      "Material obtained"
+    ],
+    [
+      "取得方式",
+      "How to obtain"
+    ],
+    [
+      "身体（无尖刺的躯干）",
+      "Body (torso without spikes)"
+    ],
+    [
+      "龙鳞",
+      "Dragon Scale"
+    ],
+    [
+      "射击躯干",
+      "Shoot the torso"
+    ],
+    [
+      "手或脚",
+      "Hand or foot"
+    ],
+    [
+      "龙爪",
+      "Dragon Claw"
+    ],
+    [
+      "射击爪子附近",
+      "Shoot near the claws"
+    ],
+    [
+      "嘴部",
+      "Mouth"
+    ],
+    [
+      "龙牙",
+      "Dragon Fang"
+    ],
+    [
+      "射击嘴部或牙齿",
+      "Shoot the mouth or teeth"
+    ],
+    [
+      "头部的角",
+      "Horn on the head"
+    ],
+    [
+      "龙角",
+      "Dragon Horn"
+    ],
+    [
+      "射击头部的角",
+      "Shoot the horn on the head"
+    ],
+    [
+      "背上的发光尖刺",
+      "Glowing spikes on the back"
+    ],
+    [
+      "龙岩石",
+      "Dragon Spike Shard"
+    ],
+    [
+      "直接在龙背上拾取，不必攻击，一次约 12 颗",
+      "Pick up directly on the dragon's back, no attack needed, about 12 per trip"
+    ],
+    [
+      "命中后素材会发光并朝下方坠落，尽量靠近目标部位再射，素材刚掉出时就在附近接住，省得再往地面飞一趟去捡。",
+      "After a hit, the material glows and falls downward, so get as close to the target body part as possible before shooting, and catch the material nearby as soon as it drops, saving a trip down to the ground to pick it up."
+    ],
+    [
+      "每条龙每次发光状态只能取得 1 个攻击型素材（鳞、爪、牙、角四选一）。取得一个后，龙身暂时不再发亮，这时候再打其他部位也不会掉素材。约 10 分钟现实时间后，龙身会再次发亮，才能再取一个。注意：开选单、读取画面、在营火前等待，都不能缩短这段时间。龙岩石不受“一次一个”的限制，但重新生成的周期更长，不适合当成每 10 分钟固定刷新的素材。",
+      "Each dragon, in each glowing state, yields only 1 material obtained by striking the dragon (one of scale, claw, fang, or horn). After obtaining one, the dragon's body temporarily stops glowing, and hitting other body parts at that point will not drop materials. After about 10 minutes of real time, the dragon's body glows again, and only then can another be taken. Note: opening menus, loading screens, and waiting at campfires cannot shorten this time. Dragon Spike Shards are not subject to the 'one at a time' limit, but their regeneration cycle is longer, so they are not suitable as a fixed every-10-minutes farming material."
+    ],
+    [
+      "不要追着龙跑。选上表里的蹲点鸟望台，弹射升空后在高处等龙飞过来，看到龙就滑翔落到龙背上。白龙最难蹲：它只在高空外圈飞，推荐去龙之泪地上图画附近的天空岛等，或者用鸟望台弹射后滑翔靠近。登龙前按上表准备好防寒、防电或精力，免得刚上龙背就被环境逼下来。",
+      "Don't chase after the dragons. Pick a waiting-spot Skyview Tower from the table above, launch into the air, and wait up high for the dragon to fly over; when you see it, glide down onto its back. The Light Dragon is the hardest to wait for: it only flies the high outer loop, so it is recommended to wait on Sky Islands near the Dragon's Tear geoglyphs, or to launch from a Skyview Tower and glide toward it. Before mounting, prepare cold resistance, shock resistance, fire protection, or stamina as listed in the table, so you aren't forced off the dragon's back by the environment just after mounting."
+    ],
+    [
+      "选一条龙，去它的蹲点鸟望台等龙出现，登龙。",
+      "Pick a dragon, go to its waiting-spot Skyview Tower, wait for the dragon to appear, and mount it."
+    ],
+    [
+      "射你最需要的部位，取 1 个攻击型素材。",
+      "Shoot the body part you need most, and take 1 material obtained by striking the dragon."
+    ],
+    [
+      "留在龙背上：沿背部走一趟，收约 12 颗龙岩石，顺便整理背包。",
+      "Stay on the dragon's back: walk along its back once, collect about 12 Dragon Spike Shards, and tidy your inventory along the way."
+    ],
+    [
+      "等约 10 分钟龙身重新发亮，再取下一个部位。如此循环，一趟能拿齐多个部位。",
+      "Wait about 10 minutes for the dragon's body to glow again, then take the next body part. Repeat this cycle, and one trip can cover multiple body parts."
+    ],
+    [
+      "龙素材的用途：很多高阶防具强化需要龙素材；白龙素材附魔在武器上时，每次攻击命中还能吸血，详见本站白龙寻踪与大师之剑攻略。",
+      "Uses of dragon materials: many high-tier armor enhancements need dragon materials; when Light Dragon materials are fused to a weapon, each successful attack hit also restores health — see this site's Tracking the Light Dragon and the Master Sword guide for details."
+    ],
+    [
+      "一次能拿几个素材？攻击型素材一次 1 个，龙岩石另算，背上一趟约 12 颗。",
+      "How many materials can you get at once? Materials obtained by striking: 1 at a time; Dragon Spike Shards are counted separately, about 12 per trip along the back."
+    ],
+    [
+      "一次能拿几个素材？",
+      "How many materials can you get at once?"
+    ],
+    [
+      "攻击型素材一次 1 个，龙岩石另算，背上一趟约 12 颗。",
+      "Materials obtained by striking: 1 at a time; Dragon Spike Shards are counted separately, about 12 per trip along the back."
+    ],
+    [
+      "龙飞走了怎么办？路线是固定循环，等它绕回来，或者换个蹲点鸟望台等。",
+      "What if the dragon flew away? Its route is a fixed loop — wait for it to circle back, or switch to a different waiting-spot Skyview Tower."
+    ],
+    [
+      "龙飞走了怎么办？",
+      "What if the dragon flew away?"
+    ],
+    [
+      "路线是固定循环，等它绕回来，或者换个蹲点鸟望台等。",
+      "Its route is a fixed loop — wait for it to circle back, or switch to a different waiting-spot Skyview Tower."
+    ],
+    [
+      "白龙为什么总找不到？它只在高空外圈飞，不钻地底。去龙之泪点附近的天空岛或用鸟望台弹射后滑翔，别在地面干等。",
+      "Why can't I ever find the Light Dragon? It only flies the high outer loop and never dives into the Depths. Go to Sky Islands near Dragon's Tear sites, or launch from a Skyview Tower and glide toward it — don't just wait on the ground."
+    ],
+    [
+      "白龙为什么总找不到？",
+      "Why can't I ever find the Light Dragon?"
+    ],
+    [
+      "它只在高空外圈飞，不钻地底。去龙之泪点附近的天空岛或用鸟望台弹射后滑翔，别在地面干等。",
+      "It only flies the high outer loop and never dives into the Depths. Go to Sky Islands near Dragon's Tear sites, or launch from a Skyview Tower and glide toward it — don't just wait on the ground."
+    ],
+    [
+      "相关攻略：白龙寻踪与大师之剑攻略、地底世界生存与探索完全指南。",
+      "Related Guides: Tracking the Light Dragon and the Master Sword, and Depths Survival and Exploration Complete Guide."
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 白龙寻踪与大师之剑",
+      "› Tracking the Light Dragon and the Master Sword"
+    ],
+    [
+      "› 地底世界生存与探索完全指南",
+      "› Depths Survival and Exploration Complete Guide"
+    ],
+    [
+      "› 七宝匕首终极攻略",
+      "› Scimitar of the Seven Ultimate Guide"
+    ],
+    [
+      "📚 全部攻略索引",
+      "📚 Full guide index"
+    ],
+    [
+      "🏆 哈里的终极秘籍",
+      "🏆 Harry's Ultimate Tips"
+    ],
+    [
+      "› 四大神级料理配方",
+      "› Four God-Tier Recipes"
+    ],
+    [
+      "› 最强套装三梯队全解析",
+      "› Strongest Armor Sets: Three-Tier Breakdown"
+    ],
+    [
+      "› 乌萨诸马神庙零基础包教包会",
+      "› Usazum Shrine Guide for Complete Beginners"
+    ],
+    [
+      "› 马克兔飞行器调校",
+      "› Hover Bike Tuning"
+    ],
+    [
+      "› 地底电池扩充与大妖精",
+      "› Depths Energy Cell Expansion and the Great Fairies"
+    ],
+    [
+      "🆕 每日新攻略",
+      "🆕 Daily New Guides"
+    ],
+    [
+      "› 152座神庙全收集自查指南",
+      "› 152 Shrines Complete Collection Self-Check Guide"
+    ],
+    [
+      "› 新手开荒指南：落地先做的10件事",
+      "› Beginner's Guide: 10 Things to Do First After Landing"
+    ],
+    [
+      "› 呀哈哈种子全指南",
+      "› Korok Seed Complete Guide"
+    ],
+    [
+      "› 大妖精四姐妹与防具强化完全指南",
+      "› Four Great Fairies and Armor Enhancement Complete Guide"
+    ],
+    [
+      "› 四条龙素材刷取指南（本篇）",
+      "› Four Dragons Material Farming Guide (this guide)"
+    ],
+    [
+      "› 人马（莱尼尔）完全指南",
+      "› Complete Lynel Guide"
+    ],
+    [
+      "› 卢比速刷指南：从前期到后期",
+      "› Rupee Fast Farming Guide: Early to Late Game"
+    ],
+    [
+      "› 马匹捕捉与稀有马完全指南",
+      "› Horse Catching and Rare Horses Complete Guide"
+    ],
+    [
+      "› 五位贤者能力全解",
+      "› All Five Sages' Abilities Explained"
+    ],
+    [
+      "› 料理机制全解：效果、时长与暴击",
+      "› Cooking Mechanics Explained: Effects, Duration, and Critical Success"
+    ],
+    [
+      "› 海拉鲁城堡探索完全指南",
+      "› Hyrule Castle Exploration Complete Guide"
+    ],
+    [
+      "› 海拉鲁图鉴509项收集指南",
+      "› Hyrule Compendium 509-Item Collection Guide"
+    ],
+    [
+      "› 左纳乌装置实用造物指南",
+      "› Practical Zonai Device Builds Guide"
+    ],
+    [
+      "› 血月机制全解",
+      "› Blood Moon Mechanics Explained"
+    ],
+    [
+      "› 余料建造完全指南",
+      "› Fuse Complete Guide"
+    ],
+    [
+      "雷龙法洛斯翱翔空中（游戏实机截图）",
+      "Farosh, the lightning dragon, soaring through the sky (in-game screenshot)"
+    ],
+    [
+      "四条龙素材刷取指南",
+      "Four Dragons Material Farming Guide"
+    ],
+    [
+      "哈里的终极秘籍",
+      "Harry's Ultimate Tips"
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "🐉 龙素材攻略",
+      "🐉 Dragon Materials Guide"
+    ],
+    [
+      "🐉 龙 · 素材刷取",
+      "🐉 Dragons · Material Farming"
+    ],
+    [
+      "← 上一篇：大妖精四姐妹与防具强化完全指南",
+      "← Previous: Complete Guide to the Four Great Fairies & Armor Upgrades"
+    ],
+    [
+      "下一篇：人马（莱尼尔）完全指南 →",
+      "Next: Complete Lynel Guide →"
+    ],
+    [
+      "返回秘籍专栏",
+      "Back to the Tips Column"
+    ]
+  ],
+  "title": "Four Dragons Material Farming Guide · Harry's Ultimate Guide · Tears of the Kingdom Guide"
 }

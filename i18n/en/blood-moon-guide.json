@@ -1,354 +1,354 @@
 {
- "notes": [
-  "'大成功' (cooking critical success) translated as critical success throughout.",
-  "'强制血月' is presented on the page as an exploit using game mechanics, not an official feature; translated faithfully with that qualification kept.",
-  "'旷野之息' translated as Breath of the Wild."
- ],
- "pairs": [
-  [
-   "血月机制全解：144分钟周期、顺延规则、刷新与不刷新清单、血月夜做菜必暴击与强制血月说明。",
-   "Blood Moon mechanics explained: the 144-minute cycle, postponement rules, what refreshes and what doesn't, guaranteed critical cooking on Blood Moon nights, and forced Blood Moons."
-  ],
-  [
-   "首页› 哈里的终极秘籍› 血月机制全解 🌕 血月攻略 血月机制全解 血月不是随机事件：144 分钟一个周期，顺延有规则，刷新有清单，搞懂它就能把血月变成刷怪和做菜的闹钟。",
-   "Home › Harry's Ultimate Tips › Blood Moon Mechanics Explained 🌕 Blood Moon Guide Blood Moon Mechanics Explained The Blood Moon is not a random event: a 144-minute cycle, rules for postponement, and a list of what refreshes — understand it and you can turn the Blood Moon into an alarm clock for monster farming and cooking."
-  ],
-  [
-   "血月不是随机事件：144 分钟一个周期，顺延有规则，刷新有清单，搞懂它就能把血月变成刷怪和做菜的闹钟。",
-   "The Blood Moon is not a random event: a 144-minute cycle, rules for postponement, and a list of what refreshes — understand it and you can turn the Blood Moon into an alarm clock for monster farming and cooking."
-  ],
-  [
-   "🧙 作者：哈里 🌕 血月 · 周期与刷新 📖 深度攻略",
-   "🧙 By Harry 🌕 Blood Moon · Cycle and Refresh 📖 In-depth Guide"
-  ],
-  [
-   "血月之夜：红月升起，世界刷新（游戏实机截图）",
-   "Blood Moon night: the red moon rises and the world refreshes (in-game screenshot)"
-  ],
-  [
-   "很多玩家以为血月是随机的，其实它有固定周期和明确规则。搞懂周期能规划刷怪路线，搞懂刷新清单能知道什么值得等血月，搞懂做菜窗口能批量做出大成功料理。本篇把这三点一次讲清，顺便纠正一个流传很广的错误数字。",
-   "Many players think the Blood Moon is random, but it actually has a fixed cycle and clear rules. Understanding the cycle lets you plan monster-farming routes, understanding the refresh list tells you what is worth waiting for a Blood Moon for, and understanding the cooking window lets you batch-cook critical-success dishes. This guide explains all three points at once, and also corrects a widely repeated wrong number."
-  ],
-  [
-   "⭐ 本篇要点",
-   "⭐ Key points of this guide"
-  ],
-  [
-   "王国之泪的血月周期是 144 分钟实际游玩时间，约游戏内 6 天；不是旷野之息的 168 分钟/7 天。",
-   "The Blood Moon cycle in Tears of the Kingdom is 144 minutes of actual play time, about 6 in-game days — not Breath of the Wild's 168 minutes / 7 days."
-  ],
-  [
-   "计时从时之神殿接到主线“紧闭之门”后开始；开菜单、读图不计时，坐篝火睡觉不能催血月。",
-   "Timing starts after accepting the main quest 'The Closed Door' at the Temple of Time; opening menus and loading screens don't count, and sitting by a campfire to sleep cannot hurry a Blood Moon along."
-  ],
-  [
-   "到点时若人在地底、神庙、神殿或城堡内，血月顺延到下一晚。",
-   "If you are in the Depths, a Shrine, a temple, or Hyrule Castle when the time comes, the Blood Moon is postponed to the next night."
-  ],
-  [
-   "刷新：被打倒的怪物（含头目）与野外及敌人手中的武器；不刷新：宝箱、呀哈哈、采集物、矿床。",
-   "Refreshes: defeated overworld monsters (including overworld bosses) and weapons in the wild and in enemies' hands. Does not refresh: treasure chests, Koroks, gatherables, and ore deposits."
-  ],
-  [
-   "做菜窗口 23:30 至次日 00:15 必大成功；强制血月是利用游戏机制的过载触发，非官方功能。",
-   "The cooking window from 23:30 to 00:15 the next day guarantees critical success; a forced Blood Moon is an overload trigger exploiting game mechanics, not an official feature."
-  ],
-  [
-   "📑 本篇目录",
-   "📑 Contents of this guide"
-  ],
-  [
-   "一、周期：144分钟，不是168分钟",
-   "1. The cycle: 144 minutes, not 168 minutes"
-  ],
-  [
-   "二、计时规则：什么算时间、什么不算",
-   "2. Timing rules: what counts as time and what doesn't"
-  ],
-  [
-   "三、顺延规则：在哪里会推迟",
-   "3. Postponement rules: where it gets delayed"
-  ],
-  [
-   "四、刷新清单：刷什么、不刷什么",
-   "4. Refresh list: what to farm and what not to farm"
-  ],
-  [
-   "五、血月夜做菜与强制血月",
-   "5. Cooking on Blood Moon nights and forced Blood Moons"
-  ],
-  [
-   "常见问题",
-   "FAQ"
-  ],
-  [
-   "先纠正一个常见错误：王国之泪的血月周期是 144 分钟实际游玩时间，约游戏内 6 天。168 分钟/7 天是旷野之息的旧数，套用到王国之泪会算错时间。如果你按 168 分钟等血月，会发现血月总是“提前”来——不是游戏乱了，是周期本来就更短。",
-   "First, a common error to correct: the Blood Moon cycle in Tears of the Kingdom is 144 minutes of actual play time, about 6 in-game days. 168 minutes / 7 days is the old Breath of the Wild number, and applying it to Tears of the Kingdom will miscalculate the timing. If you wait for a Blood Moon on a 168-minute schedule, you'll find the Blood Moon always seems to come 'early' — the game isn't acting up, the cycle is simply shorter."
-  ],
-  [
-   "血月计时从时之神殿接到主线“紧闭之门”后开始。之后只有实际游玩时间算数：开菜单、读图加载都不计时，坐在篝火前睡觉也不能催出血月。想等血月就去正常游玩、做任务、探索，时间到了自然会来；挂机睡觉是等不到的。",
-   "Blood Moon timing starts after accepting the main quest 'The Closed Door' at the Temple of Time. After that, only actual play time counts: opening menus and loading screens don't count, and sitting by a campfire to sleep cannot bring on a Blood Moon. If you want to wait for a Blood Moon, just play normally — do quests and explore — and it will come when the time arrives; idling and sleeping won't get you one."
-  ],
-  [
-   "血月过场：到点时全图怪物与武器刷新（游戏实机截图）",
-   "Blood Moon cutscene: when the time comes, monsters and weapons across the whole map refresh (in-game screenshot)"
-  ],
-  [
-   "到点时如果林克在地底、神庙、神殿或城堡内，血月不会在里面触发，而是顺延到下一晚。规划刷怪路线时要注意：想在当晚等血月，就别在到点前钻进神庙或地底，否则要多等一晚。",
-   "If Link is in the Depths, a Shrine, a temple, or Hyrule Castle when the time comes, the Blood Moon won't trigger inside — it is postponed to the next night. When planning a monster-farming route, note: if you want to wait for the Blood Moon that night, don't duck into a Shrine or the Depths just before the time comes, or you'll have to wait an extra night."
-  ],
-  [
-   "刷新",
-   "Refreshes"
-  ],
-  [
-   "不刷新",
-   "Does not refresh"
-  ],
-  [
-   "被打倒的怪物（含头目）",
-   "Defeated monsters (including bosses)"
-  ],
-  [
-   "宝箱",
-   "Treasure chests"
-  ],
-  [
-   "野外武器",
-   "Weapons in the wild"
-  ],
-  [
-   "呀哈哈",
-   "Koroks"
-  ],
-  [
-   "敌人手中的武器",
-   "Weapons in enemies' hands"
-  ],
-  [
-   "采集物",
-   "Gatherables"
-  ],
-  [
-   "城堡内的近卫武器等野外武器",
-   "Royal Guard weapons in the castle and other weapons in the wild"
-  ],
-  [
-   "矿床",
-   "Ore deposits"
-  ],
-  [
-   "这张清单决定了血月的用途：刷怪素材、刷武器、刷头目掉落，血月是最好的闹钟；但想靠血月刷宝箱、呀哈哈或矿石，是刷不出来的，别白等。",
-   "This list determines what the Blood Moon is for: for monster materials, weapons, and boss drops, the Blood Moon is the best alarm clock; but if you hope to farm treasure chests, Koroks, or ores from a Blood Moon, they won't respawn — don't wait in vain."
-  ],
-  [
-   "血月夜 23:30 至次日 00:15 做料理必定大成功，批量做高级料理就卡这个窗口，详见本站料理机制全解。另外有一种强制血月的方法：用多连弓加蛋白石箭射可破坏岩壁制造过载触发，这属于利用游戏机制、非官方功能，且 1.0.0 版本不可用，普通玩家按正常周期等血月就够了，不用专门去学。",
-   "Cooking between 23:30 on a Blood Moon night and 00:15 the next day guarantees critical success, so batch-cook high-end dishes inside this window — see this site's Cooking Mechanics Explained for details. There is also a forced Blood Moon method: using a multi-shot bow with Opal arrows to shoot destructible rock walls to create an overload trigger. This exploits game mechanics, is not an official feature, and does not work in version 1.0.0; ordinary players only need to wait for Blood Moons on the normal cycle and don't need to learn it."
-  ],
-  [
-   "血月夜 23:30 至次日 00:15 做料理必定大成功，批量做高级料理就卡这个窗口，详见本站料理机制全解。",
-   "Cooking between 23:30 on a Blood Moon night and 00:15 the next day guarantees critical success, so batch-cook high-end dishes inside this window — see this site's Cooking Mechanics Explained for details."
-  ],
-  [
-   "另外有一种强制血月的方法：用多连弓加蛋白石箭射可破坏岩壁制造过载触发，这属于利用游戏机制、非官方功能，且 1.0.0 版本不可用，普通玩家按正常周期等血月就够了，不用专门去学。",
-   "There is also a forced Blood Moon method: using a multi-shot bow with Opal arrows to shoot destructible rock walls to create an overload trigger. This exploits game mechanics, is not an official feature, and does not work in version 1.0.0; ordinary players only need to wait for Blood Moons on the normal cycle and don't need to learn it."
-  ],
-  [
-   "血月夜：23:30后做菜必大成功（游戏实机截图）",
-   "Blood Moon night: cooking after 23:30 guarantees critical success (in-game screenshot)"
-  ],
-  [
-   "血月周期到底是多少？144 分钟实际游玩时间，约游戏内 6 天。",
-   "Exactly how long is the Blood Moon cycle? 144 minutes of actual play time, about 6 in-game days."
-  ],
-  [
-   "血月周期到底是多少？",
-   "Exactly how long is the Blood Moon cycle?"
-  ],
-  [
-   "144 分钟实际游玩时间，约游戏内 6 天。",
-   "144 minutes of actual play time, about 6 in-game days."
-  ],
-  [
-   "睡觉能催血月吗？不能。篝火睡觉不计时，只能正常游玩等。",
-   "Can sleeping hurry a Blood Moon along? No. Sleeping at a campfire doesn't count, so you can only wait by playing normally."
-  ],
-  [
-   "睡觉能催血月吗？",
-   "Can sleeping hurry a Blood Moon along?"
-  ],
-  [
-   "不能。篝火睡觉不计时，只能正常游玩等。",
-   "No. Sleeping at a campfire doesn't count, so you can only wait by playing normally."
-  ],
-  [
-   "血月刷宝箱吗？不刷。宝箱、呀哈哈、采集物、矿床都不刷新。",
-   "Does the Blood Moon refresh treasure chests? No. Treasure chests, Koroks, gatherables, and ore deposits do not refresh."
-  ],
-  [
-   "血月刷宝箱吗？",
-   "Does the Blood Moon refresh treasure chests?"
-  ],
-  [
-   "不刷。宝箱、呀哈哈、采集物、矿床都不刷新。",
-   "No. Treasure chests, Koroks, gatherables, and ore deposits do not refresh."
-  ],
-  [
-   "相关攻略：料理机制全解、人马完全指南、海拉鲁城堡探索完全指南。",
-   "Related Guides: Cooking Mechanics Explained, Complete Lynel Guide, and Hyrule Castle Exploration Complete Guide."
-  ],
-  [
-   "← 上一篇：左纳乌装置实用造物指南 返回秘籍专栏 下一篇：余料建造完全指南 →",
-   "← Previous: Practical Zonai Device Builds Guide · Back to the Tips Column · Next: Fuse Complete Guide →"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 料理机制全解：效果、时长与暴击",
-   "› Cooking Mechanics Explained: Effects, Duration, and Critical Success"
-  ],
-  [
-   "› 人马（莱尼尔）完全指南",
-   "› Complete Lynel Guide"
-  ],
-  [
-   "› 海拉鲁城堡探索完全指南",
-   "› Hyrule Castle Exploration Complete Guide"
-  ],
-  [
-   "📚 全部攻略索引",
-   "📚 Full guide index"
-  ],
-  [
-   "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Tips"
-  ],
-  [
-   "› 七宝匕首终极攻略",
-   "› Scimitar of the Seven Ultimate Guide"
-  ],
-  [
-   "› 四大神级料理配方",
-   "› Four God-Tier Recipes"
-  ],
-  [
-   "› 最强套装三梯队全解析",
-   "› Strongest Armor Sets: Three-Tier Breakdown"
-  ],
-  [
-   "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine Guide for Complete Beginners"
-  ],
-  [
-   "› 白龙寻踪与大师之剑",
-   "› Tracking the Light Dragon and the Master Sword"
-  ],
-  [
-   "› 马克兔飞行器调校",
-   "› Hover Bike Tuning"
-  ],
-  [
-   "› 地底电池扩充与大妖精",
-   "› Depths Energy Cell Expansion and the Great Fairies"
-  ],
-  [
-   "🆕 每日新攻略",
-   "🆕 Daily New Guides"
-  ],
-  [
-   "› 152座神庙全收集自查指南",
-   "› 152 Shrines Complete Collection Self-Check Guide"
-  ],
-  [
-   "› 新手开荒指南：落地先做的10件事",
-   "› Beginner's Guide: 10 Things to Do First After Landing"
-  ],
-  [
-   "› 呀哈哈种子全指南",
-   "› Korok Seed Complete Guide"
-  ],
-  [
-   "› 地底世界生存与探索完全指南",
-   "› Depths Survival and Exploration Complete Guide"
-  ],
-  [
-   "› 大妖精四姐妹与防具强化完全指南",
-   "› Four Great Fairies and Armor Enhancement Complete Guide"
-  ],
-  [
-   "› 四条龙素材刷取指南",
-   "› Four Dragons Material Farming Guide"
-  ],
-  [
-   "› 卢比速刷指南：从前期到后期",
-   "› Rupee Fast Farming Guide: Early to Late Game"
-  ],
-  [
-   "› 马匹捕捉与稀有马完全指南",
-   "› Horse Catching and Rare Horses Complete Guide"
-  ],
-  [
-   "› 五位贤者能力全解",
-   "› All Five Sages' Abilities Explained"
-  ],
-  [
-   "› 海拉鲁图鉴509项收集指南",
-   "› Hyrule Compendium 509-Item Collection Guide"
-  ],
-  [
-   "› 左纳乌装置实用造物指南",
-   "› Practical Zonai Device Builds Guide"
-  ],
-  [
-   "› 血月机制全解（本篇）",
-   "› Blood Moon Mechanics Explained (this guide)"
-  ],
-  [
-   "› 余料建造完全指南",
-   "› Fuse Complete Guide"
-  ],
-  [
-   "血月升起的夜空",
-   "Night sky as the Blood Moon rises"
-  ],
-  [
-   "血月过场动画",
-   "Blood Moon cutscene"
-  ],
-  [
-   "红月下的海拉鲁",
-   "Hyrule under the red moon"
-  ],
-  [
-   "血月机制全解",
-   "Blood Moon Mechanics Explained"
-  ],
-  [
-   "哈里的终极秘籍",
-   "Harry's Ultimate Tips"
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "🌕 血月攻略",
-   "🌕 Blood Moon Guide"
-  ],
-  [
-   "🌕 血月 · 周期与刷新",
-   "🌕 Blood Moon · Cycle & Respawns"
-  ],
-  [
-   "← 上一篇：左纳乌装置实用造物指南",
-   "← Previous: Practical Zonai Device Builds Guide"
-  ],
-  [
-   "下一篇：余料建造完全指南 →",
-   "Next: Complete Fuse Guide →"
-  ]
- ],
- "title": "Blood Moon Mechanics Explained · Harry's Ultimate Guide · Tears of the Kingdom Guide"
+  "notes": [
+    "'大成功' (cooking critical success) translated as critical success throughout.",
+    "'强制血月' is presented on the page as an exploit using game mechanics, not an official feature; translated faithfully with that qualification kept.",
+    "'旷野之息' translated as Breath of the Wild."
+  ],
+  "pairs": [
+    [
+      "血月机制全解：144分钟周期、顺延规则、刷新与不刷新清单、血月夜做菜必暴击与强制血月说明。",
+      "Blood Moon mechanics explained: the 144-minute cycle, postponement rules, what refreshes and what doesn't, guaranteed critical cooking on Blood Moon nights, and forced Blood Moons."
+    ],
+    [
+      "首页› 哈里的终极秘籍› 血月机制全解 🌕 血月攻略 血月机制全解 血月不是随机事件：144 分钟一个周期，顺延有规则，刷新有清单，搞懂它就能把血月变成刷怪和做菜的闹钟。",
+      "Home › Harry's Ultimate Tips › Blood Moon Mechanics Explained 🌕 Blood Moon Guide Blood Moon Mechanics Explained The Blood Moon is not a random event: a 144-minute cycle, rules for postponement, and a list of what refreshes — understand it and you can turn the Blood Moon into an alarm clock for monster farming and cooking."
+    ],
+    [
+      "血月不是随机事件：144 分钟一个周期，顺延有规则，刷新有清单，搞懂它就能把血月变成刷怪和做菜的闹钟。",
+      "The Blood Moon is not a random event: a 144-minute cycle, rules for postponement, and a list of what refreshes — understand it and you can turn the Blood Moon into an alarm clock for monster farming and cooking."
+    ],
+    [
+      "🧙 作者：哈里 🌕 血月 · 周期与刷新 📖 深度攻略",
+      "🧙 By Harry 🌕 Blood Moon · Cycle and Refresh 📖 In-depth Guide"
+    ],
+    [
+      "血月之夜：红月升起，世界刷新（游戏实机截图）",
+      "Blood Moon night: the red moon rises and the world refreshes (in-game screenshot)"
+    ],
+    [
+      "很多玩家以为血月是随机的，其实它有固定周期和明确规则。搞懂周期能规划刷怪路线，搞懂刷新清单能知道什么值得等血月，搞懂做菜窗口能批量做出大成功料理。本篇把这三点一次讲清，顺便纠正一个流传很广的错误数字。",
+      "Many players think the Blood Moon is random, but it actually has a fixed cycle and clear rules. Understanding the cycle lets you plan monster-farming routes, understanding the refresh list tells you what is worth waiting for a Blood Moon for, and understanding the cooking window lets you batch-cook critical-success dishes. This guide explains all three points at once, and also corrects a widely repeated wrong number."
+    ],
+    [
+      "⭐ 本篇要点",
+      "⭐ Key points of this guide"
+    ],
+    [
+      "王国之泪的血月周期是 144 分钟实际游玩时间，约游戏内 6 天；不是旷野之息的 168 分钟/7 天。",
+      "The Blood Moon cycle in Tears of the Kingdom is 144 minutes of actual play time, about 6 in-game days — not Breath of the Wild's 168 minutes / 7 days."
+    ],
+    [
+      "计时从时之神殿接到主线“紧闭之门”后开始；开菜单、读图不计时，坐篝火睡觉不能催血月。",
+      "Timing starts after accepting the main quest 'The Closed Door' at the Temple of Time; opening menus and loading screens don't count, and sitting by a campfire to sleep cannot hurry a Blood Moon along."
+    ],
+    [
+      "到点时若人在地底、神庙、神殿或城堡内，血月顺延到下一晚。",
+      "If you are in the Depths, a Shrine, a temple, or Hyrule Castle when the time comes, the Blood Moon is postponed to the next night."
+    ],
+    [
+      "刷新：被打倒的怪物（含头目）与野外及敌人手中的武器；不刷新：宝箱、呀哈哈、采集物、矿床。",
+      "Refreshes: defeated overworld monsters (including overworld bosses) and weapons in the wild and in enemies' hands. Does not refresh: treasure chests, Koroks, gatherables, and ore deposits."
+    ],
+    [
+      "做菜窗口 23:30 至次日 00:15 必大成功；强制血月是利用游戏机制的过载触发，非官方功能。",
+      "The cooking window from 23:30 to 00:15 the next day guarantees critical success; a forced Blood Moon is an overload trigger exploiting game mechanics, not an official feature."
+    ],
+    [
+      "📑 本篇目录",
+      "📑 Contents of this guide"
+    ],
+    [
+      "一、周期：144分钟，不是168分钟",
+      "1. The cycle: 144 minutes, not 168 minutes"
+    ],
+    [
+      "二、计时规则：什么算时间、什么不算",
+      "2. Timing rules: what counts as time and what doesn't"
+    ],
+    [
+      "三、顺延规则：在哪里会推迟",
+      "3. Postponement rules: where it gets delayed"
+    ],
+    [
+      "四、刷新清单：刷什么、不刷什么",
+      "4. Refresh list: what to farm and what not to farm"
+    ],
+    [
+      "五、血月夜做菜与强制血月",
+      "5. Cooking on Blood Moon nights and forced Blood Moons"
+    ],
+    [
+      "常见问题",
+      "FAQ"
+    ],
+    [
+      "先纠正一个常见错误：王国之泪的血月周期是 144 分钟实际游玩时间，约游戏内 6 天。168 分钟/7 天是旷野之息的旧数，套用到王国之泪会算错时间。如果你按 168 分钟等血月，会发现血月总是“提前”来——不是游戏乱了，是周期本来就更短。",
+      "First, a common error to correct: the Blood Moon cycle in Tears of the Kingdom is 144 minutes of actual play time, about 6 in-game days. 168 minutes / 7 days is the old Breath of the Wild number, and applying it to Tears of the Kingdom will miscalculate the timing. If you wait for a Blood Moon on a 168-minute schedule, you'll find the Blood Moon always seems to come 'early' — the game isn't acting up, the cycle is simply shorter."
+    ],
+    [
+      "血月计时从时之神殿接到主线“紧闭之门”后开始。之后只有实际游玩时间算数：开菜单、读图加载都不计时，坐在篝火前睡觉也不能催出血月。想等血月就去正常游玩、做任务、探索，时间到了自然会来；挂机睡觉是等不到的。",
+      "Blood Moon timing starts after accepting the main quest 'The Closed Door' at the Temple of Time. After that, only actual play time counts: opening menus and loading screens don't count, and sitting by a campfire to sleep cannot bring on a Blood Moon. If you want to wait for a Blood Moon, just play normally — do quests and explore — and it will come when the time arrives; idling and sleeping won't get you one."
+    ],
+    [
+      "血月过场：到点时全图怪物与武器刷新（游戏实机截图）",
+      "Blood Moon cutscene: when the time comes, monsters and weapons across the whole map refresh (in-game screenshot)"
+    ],
+    [
+      "到点时如果林克在地底、神庙、神殿或城堡内，血月不会在里面触发，而是顺延到下一晚。规划刷怪路线时要注意：想在当晚等血月，就别在到点前钻进神庙或地底，否则要多等一晚。",
+      "If Link is in the Depths, a Shrine, a temple, or Hyrule Castle when the time comes, the Blood Moon won't trigger inside — it is postponed to the next night. When planning a monster-farming route, note: if you want to wait for the Blood Moon that night, don't duck into a Shrine or the Depths just before the time comes, or you'll have to wait an extra night."
+    ],
+    [
+      "刷新",
+      "Refreshes"
+    ],
+    [
+      "不刷新",
+      "Does not refresh"
+    ],
+    [
+      "被打倒的怪物（含头目）",
+      "Defeated monsters (including bosses)"
+    ],
+    [
+      "宝箱",
+      "Treasure chests"
+    ],
+    [
+      "野外武器",
+      "Weapons in the wild"
+    ],
+    [
+      "呀哈哈",
+      "Koroks"
+    ],
+    [
+      "敌人手中的武器",
+      "Weapons in enemies' hands"
+    ],
+    [
+      "采集物",
+      "Gatherables"
+    ],
+    [
+      "城堡内的近卫武器等野外武器",
+      "Royal Guard weapons in the castle and other weapons in the wild"
+    ],
+    [
+      "矿床",
+      "Ore deposits"
+    ],
+    [
+      "这张清单决定了血月的用途：刷怪素材、刷武器、刷头目掉落，血月是最好的闹钟；但想靠血月刷宝箱、呀哈哈或矿石，是刷不出来的，别白等。",
+      "This list determines what the Blood Moon is for: for monster materials, weapons, and boss drops, the Blood Moon is the best alarm clock; but if you hope to farm treasure chests, Koroks, or ores from a Blood Moon, they won't respawn — don't wait in vain."
+    ],
+    [
+      "血月夜 23:30 至次日 00:15 做料理必定大成功，批量做高级料理就卡这个窗口，详见本站料理机制全解。另外有一种强制血月的方法：用多连弓加蛋白石箭射可破坏岩壁制造过载触发，这属于利用游戏机制、非官方功能，且 1.0.0 版本不可用，普通玩家按正常周期等血月就够了，不用专门去学。",
+      "Cooking between 23:30 on a Blood Moon night and 00:15 the next day guarantees critical success, so batch-cook high-end dishes inside this window — see this site's Cooking Mechanics Explained for details. There is also a forced Blood Moon method: using a multi-shot bow with Opal arrows to shoot destructible rock walls to create an overload trigger. This exploits game mechanics, is not an official feature, and does not work in version 1.0.0; ordinary players only need to wait for Blood Moons on the normal cycle and don't need to learn it."
+    ],
+    [
+      "血月夜 23:30 至次日 00:15 做料理必定大成功，批量做高级料理就卡这个窗口，详见本站料理机制全解。",
+      "Cooking between 23:30 on a Blood Moon night and 00:15 the next day guarantees critical success, so batch-cook high-end dishes inside this window — see this site's Cooking Mechanics Explained for details."
+    ],
+    [
+      "另外有一种强制血月的方法：用多连弓加蛋白石箭射可破坏岩壁制造过载触发，这属于利用游戏机制、非官方功能，且 1.0.0 版本不可用，普通玩家按正常周期等血月就够了，不用专门去学。",
+      "There is also a forced Blood Moon method: using a multi-shot bow with Opal arrows to shoot destructible rock walls to create an overload trigger. This exploits game mechanics, is not an official feature, and does not work in version 1.0.0; ordinary players only need to wait for Blood Moons on the normal cycle and don't need to learn it."
+    ],
+    [
+      "血月夜：23:30后做菜必大成功（游戏实机截图）",
+      "Blood Moon night: cooking after 23:30 guarantees critical success (in-game screenshot)"
+    ],
+    [
+      "血月周期到底是多少？144 分钟实际游玩时间，约游戏内 6 天。",
+      "Exactly how long is the Blood Moon cycle? 144 minutes of actual play time, about 6 in-game days."
+    ],
+    [
+      "血月周期到底是多少？",
+      "Exactly how long is the Blood Moon cycle?"
+    ],
+    [
+      "144 分钟实际游玩时间，约游戏内 6 天。",
+      "144 minutes of actual play time, about 6 in-game days."
+    ],
+    [
+      "睡觉能催血月吗？不能。篝火睡觉不计时，只能正常游玩等。",
+      "Can sleeping hurry a Blood Moon along? No. Sleeping at a campfire doesn't count, so you can only wait by playing normally."
+    ],
+    [
+      "睡觉能催血月吗？",
+      "Can sleeping hurry a Blood Moon along?"
+    ],
+    [
+      "不能。篝火睡觉不计时，只能正常游玩等。",
+      "No. Sleeping at a campfire doesn't count, so you can only wait by playing normally."
+    ],
+    [
+      "血月刷宝箱吗？不刷。宝箱、呀哈哈、采集物、矿床都不刷新。",
+      "Does the Blood Moon refresh treasure chests? No. Treasure chests, Koroks, gatherables, and ore deposits do not refresh."
+    ],
+    [
+      "血月刷宝箱吗？",
+      "Does the Blood Moon refresh treasure chests?"
+    ],
+    [
+      "不刷。宝箱、呀哈哈、采集物、矿床都不刷新。",
+      "No. Treasure chests, Koroks, gatherables, and ore deposits do not refresh."
+    ],
+    [
+      "相关攻略：料理机制全解、人马完全指南、海拉鲁城堡探索完全指南。",
+      "Related Guides: Cooking Mechanics Explained, Complete Lynel Guide, and Hyrule Castle Exploration Complete Guide."
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 料理机制全解：效果、时长与暴击",
+      "› Cooking Mechanics Explained: Effects, Duration, and Critical Success"
+    ],
+    [
+      "› 人马（莱尼尔）完全指南",
+      "› Complete Lynel Guide"
+    ],
+    [
+      "› 海拉鲁城堡探索完全指南",
+      "› Hyrule Castle Exploration Complete Guide"
+    ],
+    [
+      "📚 全部攻略索引",
+      "📚 Full guide index"
+    ],
+    [
+      "🏆 哈里的终极秘籍",
+      "🏆 Harry's Ultimate Tips"
+    ],
+    [
+      "› 七宝匕首终极攻略",
+      "› Scimitar of the Seven Ultimate Guide"
+    ],
+    [
+      "› 四大神级料理配方",
+      "› Four God-Tier Recipes"
+    ],
+    [
+      "› 最强套装三梯队全解析",
+      "› Strongest Armor Sets: Three-Tier Breakdown"
+    ],
+    [
+      "› 乌萨诸马神庙零基础包教包会",
+      "› Usazum Shrine Guide for Complete Beginners"
+    ],
+    [
+      "› 白龙寻踪与大师之剑",
+      "› Tracking the Light Dragon and the Master Sword"
+    ],
+    [
+      "› 马克兔飞行器调校",
+      "› Hover Bike Tuning"
+    ],
+    [
+      "› 地底电池扩充与大妖精",
+      "› Depths Energy Cell Expansion and the Great Fairies"
+    ],
+    [
+      "🆕 每日新攻略",
+      "🆕 Daily New Guides"
+    ],
+    [
+      "› 152座神庙全收集自查指南",
+      "› 152 Shrines Complete Collection Self-Check Guide"
+    ],
+    [
+      "› 新手开荒指南：落地先做的10件事",
+      "› Beginner's Guide: 10 Things to Do First After Landing"
+    ],
+    [
+      "› 呀哈哈种子全指南",
+      "› Korok Seed Complete Guide"
+    ],
+    [
+      "› 地底世界生存与探索完全指南",
+      "› Depths Survival and Exploration Complete Guide"
+    ],
+    [
+      "› 大妖精四姐妹与防具强化完全指南",
+      "› Four Great Fairies and Armor Enhancement Complete Guide"
+    ],
+    [
+      "› 四条龙素材刷取指南",
+      "› Four Dragons Material Farming Guide"
+    ],
+    [
+      "› 卢比速刷指南：从前期到后期",
+      "› Rupee Fast Farming Guide: Early to Late Game"
+    ],
+    [
+      "› 马匹捕捉与稀有马完全指南",
+      "› Horse Catching and Rare Horses Complete Guide"
+    ],
+    [
+      "› 五位贤者能力全解",
+      "› All Five Sages' Abilities Explained"
+    ],
+    [
+      "› 海拉鲁图鉴509项收集指南",
+      "› Hyrule Compendium 509-Item Collection Guide"
+    ],
+    [
+      "› 左纳乌装置实用造物指南",
+      "› Practical Zonai Device Builds Guide"
+    ],
+    [
+      "› 血月机制全解（本篇）",
+      "› Blood Moon Mechanics Explained (this guide)"
+    ],
+    [
+      "› 余料建造完全指南",
+      "› Fuse Complete Guide"
+    ],
+    [
+      "血月升起的夜空",
+      "Night sky as the Blood Moon rises"
+    ],
+    [
+      "血月过场动画",
+      "Blood Moon cutscene"
+    ],
+    [
+      "红月下的海拉鲁",
+      "Hyrule under the red moon"
+    ],
+    [
+      "血月机制全解",
+      "Blood Moon Mechanics Explained"
+    ],
+    [
+      "哈里的终极秘籍",
+      "Harry's Ultimate Tips"
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "🌕 血月攻略",
+      "🌕 Blood Moon Guide"
+    ],
+    [
+      "🌕 血月 · 周期与刷新",
+      "🌕 Blood Moon · Cycle & Respawns"
+    ],
+    [
+      "← 上一篇：左纳乌装置实用造物指南",
+      "← Previous: Practical Zonai Device Builds Guide"
+    ],
+    [
+      "下一篇：余料建造完全指南 →",
+      "Next: Complete Fuse Guide →"
+    ],
+    [
+      "返回秘籍专栏",
+      "Back to the Tips Column"
+    ]
+  ],
+  "title": "Blood Moon Mechanics Explained · Harry's Ultimate Guide · Tears of the Kingdom Guide"
 }

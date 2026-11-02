@@ -1,316 +1,316 @@
 {
- "notes": [
-  "'矿' is used on this page as shorthand for Zonaite cost (Autobuild cost); translated as Zonaite throughout.",
-  "'龙头旋转炮台' (dragon-head rotating turret) has no matching official Zonai device name; translated descriptively as written.",
-  "'马克兔飞行器' is a community nickname for a fan-built flyer; translated descriptively as 'Mark Rabbit flyer'.",
-  "'制造机' translated as Device Dispenser (the Zonai device dispenser).",
-  "'左纳尼乌姆' translated as Zonaite per the glossary."
- ],
- "pairs": [
-  [
-   "左纳乌装置实用造物指南：27种装置一览、双风扇飞行车、魔像头炮台与大轮胎旋转炮台的配法与成本。",
-   "Practical Zonai device builds guide: all 27 devices at a glance, plus builds and costs for the two-fan hover bike, Construct Head cannon turret, and big-wheel rotating turret."
-  ],
-  [
-   "首页› 哈里的终极秘籍› 左纳乌装置实用造物指南 🔧 造物攻略 左纳乌装置实用造物指南 左纳乌装置一共 27 种，但真正天天用的造物只有几样：飞行车、炮台、载具，本篇只讲最实用的配法。",
-   "Home › Harry's Ultimate Tips › Practical Zonai Device Builds Guide 🔧 Builds Guide Practical Zonai Device Builds Guide There are 27 Zonai devices in total, but only a few builds are used every day: hover bikes, turrets, and vehicles. This guide only covers the most practical builds."
-  ],
-  [
-   "左纳乌装置一共 27 种，但真正天天用的造物只有几样：飞行车、炮台、载具，本篇只讲最实用的配法。",
-   "There are 27 Zonai devices in total, but only a few builds are used every day: hover bikes, turrets, and vehicles. This guide only covers the most practical builds."
-  ],
-  [
-   "🧙 作者：哈里 🔧 左纳乌 · 实用造物 📖 深度攻略",
-   "🧙 By Harry 🔧 Zonai · Practical Builds 📖 In-depth Guide"
-  ],
-  [
-   "究极手拼装：装置的组合方式决定好不好用（游戏实机截图）",
-   "Ultrahand assembly: how devices are combined determines how well they work (in-game screenshot)"
-  ],
-  [
-   "左纳乌装置是王国之泪的建造系统核心：风扇、翼、轮胎、炮台、电池，组合起来能上天、能下水、能打怪。但装置种类多，新手容易每个都试一遍却没一个好用。本篇先列清 27 种装置，再讲三个经过验证的实用造物，照着配就能用。",
-   "Zonai devices are the core of Tears of the Kingdom's building system: fans, wings, wheels, cannons, and batteries can be combined to fly, cross water, and fight monsters. But with so many device types, beginners easily try each one without any of them working well. This guide first lists all 27 devices clearly, then covers three proven practical builds — follow the builds and they will work."
-  ],
-  [
-   "⭐ 本篇要点",
-   "⭐ Key points of this guide"
-  ],
-  [
-   "左纳乌装置共 27 种：风扇机、翼、平台车、热气球、火箭、定时炸弹、便携锅、火焰/冰冻/雷电放射器、光线头、放水栓、操纵杆、大轮胎、小轮胎、雪橇、电池、大电池、弹簧、大炮、平衡器、浮游石、灯、桩子、镜子、追踪平台车、魔像的头部。",
-   "There are 27 Zonai devices in total: Fan, Wing, Cart, Balloon, Rocket, Time Bomb, Portable Pot, Flame/Frost/Shock Emitter, Beam Emitter, Hydrant, Steering Stick, Big Wheel, Small Wheel, Sled, Battery, Big Battery, Spring, Cannon, Stabilizer, Hover Stone, Light, Stake, Mirror, Homing Cart, and Construct Head."
-  ],
-  [
-   "双风扇飞行车：2 个风扇 + 1 个操纵杆，操纵杆 45° 装法，蓝图 9 左纳尼乌姆。",
-   "Two-fan hover bike: 2 Fans + 1 Steering Stick, with the Steering Stick mounted at 45°, Autobuild costs up to 9 Zonaite (0 if you already own all parts)."
-  ],
-  [
-   "魔像头 + 大炮自动炮台：魔像头会自己瞄准，配大炮就是自动火力点。",
-   "Construct Head + Cannon auto turret: the Construct Head aims on its own, and paired with a Cannon it becomes an automatic fire point."
-  ],
-  [
-   "追踪车炮台 9 矿、大轮胎 + 龙头旋转炮台 6 矿，成本要提前算好。",
-   "The Homing Cart turret costs up to 9 Zonaite (0 if you already own all parts), and the Big Wheel + Construct Head rotating turret costs up to 6 Zonaite (0 if you already own all parts) — work out the costs in advance."
-  ],
-  [
-   "装置从制造机用左纳乌能源或魔像角抽胶囊；人马咆哮会摧毁装置，别在人马面前摆炮台。",
-   "Devices are drawn as capsules from Device Dispensers using Zonaite or Construct Horns; a Lynel's roar destroys devices, so don't set up turrets in front of a Lynel."
-  ],
-  [
-   "📑 本篇目录",
-   "📑 Contents of this guide"
-  ],
-  [
-   "一、27种装置一览",
-   "1. All 27 devices at a glance"
-  ],
-  [
-   "二、双风扇飞行车",
-   "2. Two-fan hover bike"
-  ],
-  [
-   "三、魔像头自动炮台",
-   "3. Construct Head auto turret"
-  ],
-  [
-   "四、追踪车与旋转炮台",
-   "4. Homing Cart and rotating turret"
-  ],
-  [
-   "五、胶囊获取与使用禁忌",
-   "5. Getting capsules and usage taboos"
-  ],
-  [
-   "常见问题",
-   "FAQ"
-  ],
-  [
-   "27 种装置按功能可以分四组：动力组（风扇机、翼、热气球、火箭、轮胎、雪橇）、武器组（大炮、火焰/冰冻/雷电放射器、光线头、魔像的头部）、功能组（便携锅、放水栓、操纵杆、电池、大电池、弹簧、平衡器、浮游石、灯、桩子、镜子、追踪平台车、定时炸弹、平台车）。记住分组比死记名字有用：缺动力补风扇轮胎，缺火力补大炮和魔像头，缺续航补电池。",
-   "The 27 devices can be split into four groups by function: propulsion (Fan, Wing, Balloon, Rocket, wheels, Sled), weapons (Cannon, Flame/Frost/Shock Emitter, Beam Emitter, Construct Head), and utility (Portable Pot, Hydrant, Steering Stick, Battery, Big Battery, Spring, Stabilizer, Hover Stone, Light, Stake, Mirror, Homing Cart, Time Bomb, Cart). Remembering the groups is more useful than memorizing names: if you lack propulsion, add fans and wheels; if you lack firepower, add cannons and Construct Heads; if you lack endurance, add batteries."
-  ],
-  [
-   "最实用的飞行造物是双风扇飞行车：2 个风扇 + 1 个操纵杆，操纵杆按 45° 装法，蓝图成本 9 左纳尼乌姆。风扇提供升力和前进动力，操纵杆控制方向，结构简单、故障率低，是跑图和上天空岛的主力。造的时候注意风扇朝向一致，装反一个就会原地打转。",
-   "The most practical flying build is the two-fan hover bike: 2 Fans + 1 Steering Stick, with the Steering Stick mounted at 45°, and an Autobuild cost of 9 Zonaite. The fans provide lift and forward thrust, the Steering Stick controls direction, and the simple structure with a low failure rate makes it the workhorse for traversing the map and reaching Sky Islands. When building it, make sure the fans face the same direction — mounting one backwards will make it spin in place."
-  ],
-  [
-   "载具建造：先定用途，再选装置组合（游戏实机截图）",
-   "Vehicle building: decide the purpose first, then pick the device combination (in-game screenshot)"
-  ],
-  [
-   "魔像的头部会自己瞄准敌人，配上大炮就是自动炮台：放下后不用管，它会自己开火。适合守点和清营地，但要注意炮台是固定火力，敌人跑出射程就打不到了。炮台怕人马咆哮，见本站人马完全指南：人马一声吼，装置全碎，别在人马面前摆炮台。",
-   "The Construct Head aims at enemies on its own, and paired with a Cannon it becomes an automatic turret: once placed, you can leave it alone and it will fire by itself. It suits holding positions and clearing camps, but note that the turret is fixed firepower — once an enemy runs out of range, it can no longer hit them. Turrets are vulnerable to a Lynel's roar; see this site's Complete Lynel Guide: one Lynel roar shatters every device, so don't set up turrets in front of a Lynel."
-  ],
-  [
-   "魔像的头部会自己瞄准敌人，配上大炮就是自动炮台：放下后不用管，它会自己开火。",
-   "The Construct Head aims at enemies on its own, and paired with a Cannon it becomes an automatic turret: once placed, you can leave it alone and it will fire by itself."
-  ],
-  [
-   "适合守点和清营地，但要注意炮台是固定火力，敌人跑出射程就打不到了。",
-   "It suits holding positions and clearing camps, but note that the turret is fixed firepower — once an enemy runs out of range, it can no longer hit them."
-  ],
-  [
-   "炮台怕人马咆哮，见本站人马完全指南：人马一声吼，装置全碎，别在人马面前摆炮台。",
-   "Turrets are vulnerable to a Lynel's roar; see this site's Complete Lynel Guide: one Lynel roar shatters every device, so don't set up turrets in front of a Lynel."
-  ],
-  [
-   "追踪平台车会自己追踪敌人，配上武器就是移动炮台，成本 9 矿；大轮胎 + 龙头旋转炮台成本 6 矿，龙头会旋转扫射，适合对付成群的敌人。两种炮台的成本都要提前算好矿，别造到一半发现矿不够。矿的主要来源是地底和制造机周边的矿床。",
-   "The Homing Cart tracks enemies on its own, and fitted with a weapon it becomes a mobile turret, costing up to 9 Zonaite (0 if you already own all parts); the Big Wheel + Construct Head rotating turret costs up to 6 Zonaite (0 if you already own all parts), and the dragon head rotates while firing, which suits groups of enemies. Work out the Zonaite costs of both turrets in advance, so you don't run out halfway through building. Zonaite mainly comes from the Depths and from ore deposits near Device Dispensers."
-  ],
-  [
-   "装置胶囊从制造机抽取，消耗左纳乌能源或魔像角。抽之前先想好要什么装置，别把能源浪费在用不上的装置上。使用禁忌就一条：人马咆哮会摧毁附近的左纳乌装置和蓝图造物，打人马时别依赖造物，靠闪避和骑背才是正路。",
-   "Device capsules are drawn from Device Dispensers, consuming Zonaite Charges or Construct Horns. Decide what device you want before drawing, and don't waste Zonaite on devices you won't use. There is just one usage taboo: a Lynel's roar destroys nearby Zonai devices and Autobuild creations, so don't rely on builds when fighting a Lynel — dodging and mounting its back is the right approach."
-  ],
-  [
-   "左纳乌载具：动力、武器、续航要平衡（游戏实机截图）",
-   "Zonai vehicles: propulsion, weapons, and endurance must be balanced (in-game screenshot)"
-  ],
-  [
-   "飞行车怎么造最稳？2 风扇 + 1 操纵杆，操纵杆 45° 装，风扇朝向一致。",
-   "How do I build the most stable hover bike? 2 Fans + 1 Steering Stick, with the Steering Stick mounted at 45° and the fans facing the same direction."
-  ],
-  [
-   "飞行车怎么造最稳？",
-   "How do I build the most stable hover bike?"
-  ],
-  [
-   "2 风扇 + 1 操纵杆，操纵杆 45° 装，风扇朝向一致。",
-   "2 Fans + 1 Steering Stick, with the Steering Stick mounted at 45° and the fans facing the same direction."
-  ],
-  [
-   "炮台为什么一吼就碎？人马咆哮会摧毁左纳乌装置，打人马别摆炮台。",
-   "Why does a turret shatter at one roar? A Lynel's roar destroys Zonai devices, so don't set up turrets when fighting a Lynel."
-  ],
-  [
-   "炮台为什么一吼就碎？",
-   "Why does a turret shatter at one roar?"
-  ],
-  [
-   "人马咆哮会摧毁左纳乌装置，打人马别摆炮台。",
-   "A Lynel's roar destroys Zonai devices, so don't set up turrets when fighting a Lynel."
-  ],
-  [
-   "装置胶囊怎么来？制造机抽，消耗左纳乌能源或魔像角。",
-   "Where do device capsules come from? Draw them from Device Dispensers, consuming Zonaite Charges or Construct Horns."
-  ],
-  [
-   "装置胶囊怎么来？",
-   "Where do device capsules come from?"
-  ],
-  [
-   "制造机抽，消耗左纳乌能源或魔像角。",
-   "Draw them from Device Dispensers, consuming Zonaite Charges or Construct Horns."
-  ],
-  [
-   "相关攻略：人马完全指南、马克兔飞行器调校、五位贤者能力全解。",
-   "Related Guides: Complete Lynel Guide, Hover Bike Tuning, and All Five Sages' Abilities Explained."
-  ],
-  [
-   "← 上一篇：海拉鲁图鉴509项收集指南 返回秘籍专栏 下一篇：血月机制全解 →",
-   "← Previous: Hyrule Compendium 509-Item Collection Guide · Back to the Tips Column · Next: Blood Moon Mechanics Explained →"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 人马（莱尼尔）完全指南",
-   "› Complete Lynel Guide"
-  ],
-  [
-   "› 马克兔飞行器调校",
-   "› Hover Bike Tuning"
-  ],
-  [
-   "› 五位贤者能力全解",
-   "› All Five Sages' Abilities Explained"
-  ],
-  [
-   "📚 全部攻略索引",
-   "📚 Full guide index"
-  ],
-  [
-   "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Tips"
-  ],
-  [
-   "› 七宝匕首终极攻略",
-   "› Scimitar of the Seven Ultimate Guide"
-  ],
-  [
-   "› 四大神级料理配方",
-   "› Four God-Tier Recipes"
-  ],
-  [
-   "› 最强套装三梯队全解析",
-   "› Strongest Armor Sets: Three-Tier Breakdown"
-  ],
-  [
-   "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine Guide for Complete Beginners"
-  ],
-  [
-   "› 白龙寻踪与大师之剑",
-   "› Tracking the Light Dragon and the Master Sword"
-  ],
-  [
-   "› 地底电池扩充与大妖精",
-   "› Depths Energy Cell Expansion and the Great Fairies"
-  ],
-  [
-   "🆕 每日新攻略",
-   "🆕 Daily New Guides"
-  ],
-  [
-   "› 152座神庙全收集自查指南",
-   "› 152 Shrines Complete Collection Self-Check Guide"
-  ],
-  [
-   "› 新手开荒指南：落地先做的10件事",
-   "› Beginner's Guide: 10 Things to Do First After Landing"
-  ],
-  [
-   "› 呀哈哈种子全指南",
-   "› Korok Seed Complete Guide"
-  ],
-  [
-   "› 地底世界生存与探索完全指南",
-   "› Depths Survival and Exploration Complete Guide"
-  ],
-  [
-   "› 大妖精四姐妹与防具强化完全指南",
-   "› Four Great Fairies and Armor Enhancement Complete Guide"
-  ],
-  [
-   "› 四条龙素材刷取指南",
-   "› Four Dragons Material Farming Guide"
-  ],
-  [
-   "› 卢比速刷指南：从前期到后期",
-   "› Rupee Fast Farming Guide: Early to Late Game"
-  ],
-  [
-   "› 马匹捕捉与稀有马完全指南",
-   "› Horse Catching and Rare Horses Complete Guide"
-  ],
-  [
-   "› 料理机制全解：效果、时长与暴击",
-   "› Cooking Mechanics Explained: Effects, Duration, and Critical Success"
-  ],
-  [
-   "› 海拉鲁城堡探索完全指南",
-   "› Hyrule Castle Exploration Complete Guide"
-  ],
-  [
-   "› 海拉鲁图鉴509项收集指南",
-   "› Hyrule Compendium 509-Item Collection Guide"
-  ],
-  [
-   "› 左纳乌装置实用造物指南（本篇）",
-   "› Practical Zonai Device Builds Guide (this guide)"
-  ],
-  [
-   "› 血月机制全解",
-   "› Blood Moon Mechanics Explained"
-  ],
-  [
-   "› 余料建造完全指南",
-   "› Fuse Complete Guide"
-  ],
-  [
-   "究极手拼装左纳乌装置",
-   "Ultrahand-assembled Zonai devices"
-  ],
-  [
-   "左纳乌载具建造",
-   "Zonai vehicle building"
-  ],
-  [
-   "左纳乌载具",
-   "Zonai vehicle"
-  ],
-  [
-   "左纳乌装置实用造物指南",
-   "Practical Zonai Device Builds Guide"
-  ],
-  [
-   "🔧 造物攻略",
-   "🔧 Builds Guide"
-  ],
-  [
-   "🔧 左纳乌 · 实用造物",
-   "🔧 Zonai · Practical Builds"
-  ],
-  [
-   "← 上一篇：海拉鲁图鉴509项收集指南",
-   "← Previous: Hyrule Compendium 509-Entry Collection Guide"
-  ],
-  [
-   "下一篇：血月机制全解 →",
-   "Next: Blood Moon Mechanics Explained →"
-  ],
-  [
-   "27 种装置按功能可以分三组：动力组（风扇机、翼、热气球、火箭、轮胎、雪橇）、武器组（大炮、火焰/冰冻/雷电放射器、光线头、魔像的头部）、功能组（便携锅、放水栓、操纵杆、电池、大电池、弹簧、平衡器、浮游石、灯、桩子、镜子、追踪平台车、定时炸弹、平台车）。记住分组比死记名字有用：缺动力补风扇轮胎，缺火力补大炮和魔像头，缺续航补电池。",
-   "The 27 devices fall into three groups by function: propulsion (Fan, Wing, Hot-Air Balloon, Rocket, Wheel, Sled), weapons (Cannon, Flame/Frost/Shock Emitter, Beam Emitter, Construct Head), and utility (Portable Pot, Hydrant, Steering Stick, Battery, Big Battery, Spring, Stabilizer, Hover Stone, Light, Stake, Mirror, Homing Cart, Time Bomb, Cart). Remembering the groups beats memorizing names: short on propulsion, add fans and wheels; short on firepower, add cannons and Construct Heads; short on range, add batteries."
-  ]
- ],
- "title": "Practical Zonai Device Builds Guide · Harry's Ultimate Guide · Tears of the Kingdom Guide"
+  "notes": [
+    "'矿' is used on this page as shorthand for Zonaite cost (Autobuild cost); translated as Zonaite throughout.",
+    "'龙头旋转炮台' (dragon-head rotating turret) has no matching official Zonai device name; translated descriptively as written.",
+    "'马克兔飞行器' is a community nickname for a fan-built flyer; translated descriptively as 'Mark Rabbit flyer'.",
+    "'制造机' translated as Device Dispenser (the Zonai device dispenser).",
+    "'左纳尼乌姆' translated as Zonaite per the glossary."
+  ],
+  "pairs": [
+    [
+      "左纳乌装置实用造物指南：27种装置一览、双风扇飞行车、魔像头炮台与大轮胎旋转炮台的配法与成本。",
+      "Practical Zonai device builds guide: all 27 devices at a glance, plus builds and costs for the two-fan hover bike, Construct Head cannon turret, and big-wheel rotating turret."
+    ],
+    [
+      "首页› 哈里的终极秘籍› 左纳乌装置实用造物指南 🔧 造物攻略 左纳乌装置实用造物指南 左纳乌装置一共 27 种，但真正天天用的造物只有几样：飞行车、炮台、载具，本篇只讲最实用的配法。",
+      "Home › Harry's Ultimate Tips › Practical Zonai Device Builds Guide 🔧 Builds Guide Practical Zonai Device Builds Guide There are 27 Zonai devices in total, but only a few builds are used every day: hover bikes, turrets, and vehicles. This guide only covers the most practical builds."
+    ],
+    [
+      "左纳乌装置一共 27 种，但真正天天用的造物只有几样：飞行车、炮台、载具，本篇只讲最实用的配法。",
+      "There are 27 Zonai devices in total, but only a few builds are used every day: hover bikes, turrets, and vehicles. This guide only covers the most practical builds."
+    ],
+    [
+      "🧙 作者：哈里 🔧 左纳乌 · 实用造物 📖 深度攻略",
+      "🧙 By Harry 🔧 Zonai · Practical Builds 📖 In-depth Guide"
+    ],
+    [
+      "究极手拼装：装置的组合方式决定好不好用（游戏实机截图）",
+      "Ultrahand assembly: how devices are combined determines how well they work (in-game screenshot)"
+    ],
+    [
+      "左纳乌装置是王国之泪的建造系统核心：风扇、翼、轮胎、炮台、电池，组合起来能上天、能下水、能打怪。但装置种类多，新手容易每个都试一遍却没一个好用。本篇先列清 27 种装置，再讲三个经过验证的实用造物，照着配就能用。",
+      "Zonai devices are the core of Tears of the Kingdom's building system: fans, wings, wheels, cannons, and batteries can be combined to fly, cross water, and fight monsters. But with so many device types, beginners easily try each one without any of them working well. This guide first lists all 27 devices clearly, then covers three proven practical builds — follow the builds and they will work."
+    ],
+    [
+      "⭐ 本篇要点",
+      "⭐ Key points of this guide"
+    ],
+    [
+      "左纳乌装置共 27 种：风扇机、翼、平台车、热气球、火箭、定时炸弹、便携锅、火焰/冰冻/雷电放射器、光线头、放水栓、操纵杆、大轮胎、小轮胎、雪橇、电池、大电池、弹簧、大炮、平衡器、浮游石、灯、桩子、镜子、追踪平台车、魔像的头部。",
+      "There are 27 Zonai devices in total: Fan, Wing, Cart, Balloon, Rocket, Time Bomb, Portable Pot, Flame/Frost/Shock Emitter, Beam Emitter, Hydrant, Steering Stick, Big Wheel, Small Wheel, Sled, Battery, Big Battery, Spring, Cannon, Stabilizer, Hover Stone, Light, Stake, Mirror, Homing Cart, and Construct Head."
+    ],
+    [
+      "双风扇飞行车：2 个风扇 + 1 个操纵杆，操纵杆 45° 装法，蓝图 9 左纳尼乌姆。",
+      "Two-fan hover bike: 2 Fans + 1 Steering Stick, with the Steering Stick mounted at 45°, Autobuild costs up to 9 Zonaite (0 if you already own all parts)."
+    ],
+    [
+      "魔像头 + 大炮自动炮台：魔像头会自己瞄准，配大炮就是自动火力点。",
+      "Construct Head + Cannon auto turret: the Construct Head aims on its own, and paired with a Cannon it becomes an automatic fire point."
+    ],
+    [
+      "追踪车炮台 9 矿、大轮胎 + 龙头旋转炮台 6 矿，成本要提前算好。",
+      "The Homing Cart turret costs up to 9 Zonaite (0 if you already own all parts), and the Big Wheel + Construct Head rotating turret costs up to 6 Zonaite (0 if you already own all parts) — work out the costs in advance."
+    ],
+    [
+      "装置从制造机用左纳乌能源或魔像角抽胶囊；人马咆哮会摧毁装置，别在人马面前摆炮台。",
+      "Devices are drawn as capsules from Device Dispensers using Zonaite or Construct Horns; a Lynel's roar destroys devices, so don't set up turrets in front of a Lynel."
+    ],
+    [
+      "📑 本篇目录",
+      "📑 Contents of this guide"
+    ],
+    [
+      "一、27种装置一览",
+      "1. All 27 devices at a glance"
+    ],
+    [
+      "二、双风扇飞行车",
+      "2. Two-fan hover bike"
+    ],
+    [
+      "三、魔像头自动炮台",
+      "3. Construct Head auto turret"
+    ],
+    [
+      "四、追踪车与旋转炮台",
+      "4. Homing Cart and rotating turret"
+    ],
+    [
+      "五、胶囊获取与使用禁忌",
+      "5. Getting capsules and usage taboos"
+    ],
+    [
+      "常见问题",
+      "FAQ"
+    ],
+    [
+      "27 种装置按功能可以分四组：动力组（风扇机、翼、热气球、火箭、轮胎、雪橇）、武器组（大炮、火焰/冰冻/雷电放射器、光线头、魔像的头部）、功能组（便携锅、放水栓、操纵杆、电池、大电池、弹簧、平衡器、浮游石、灯、桩子、镜子、追踪平台车、定时炸弹、平台车）。记住分组比死记名字有用：缺动力补风扇轮胎，缺火力补大炮和魔像头，缺续航补电池。",
+      "The 27 devices can be split into four groups by function: propulsion (Fan, Wing, Balloon, Rocket, wheels, Sled), weapons (Cannon, Flame/Frost/Shock Emitter, Beam Emitter, Construct Head), and utility (Portable Pot, Hydrant, Steering Stick, Battery, Big Battery, Spring, Stabilizer, Hover Stone, Light, Stake, Mirror, Homing Cart, Time Bomb, Cart). Remembering the groups is more useful than memorizing names: if you lack propulsion, add fans and wheels; if you lack firepower, add cannons and Construct Heads; if you lack endurance, add batteries."
+    ],
+    [
+      "最实用的飞行造物是双风扇飞行车：2 个风扇 + 1 个操纵杆，操纵杆按 45° 装法，蓝图成本 9 左纳尼乌姆。风扇提供升力和前进动力，操纵杆控制方向，结构简单、故障率低，是跑图和上天空岛的主力。造的时候注意风扇朝向一致，装反一个就会原地打转。",
+      "The most practical flying build is the two-fan hover bike: 2 Fans + 1 Steering Stick, with the Steering Stick mounted at 45°, and an Autobuild cost of 9 Zonaite. The fans provide lift and forward thrust, the Steering Stick controls direction, and the simple structure with a low failure rate makes it the workhorse for traversing the map and reaching Sky Islands. When building it, make sure the fans face the same direction — mounting one backwards will make it spin in place."
+    ],
+    [
+      "载具建造：先定用途，再选装置组合（游戏实机截图）",
+      "Vehicle building: decide the purpose first, then pick the device combination (in-game screenshot)"
+    ],
+    [
+      "魔像的头部会自己瞄准敌人，配上大炮就是自动炮台：放下后不用管，它会自己开火。适合守点和清营地，但要注意炮台是固定火力，敌人跑出射程就打不到了。炮台怕人马咆哮，见本站人马完全指南：人马一声吼，装置全碎，别在人马面前摆炮台。",
+      "The Construct Head aims at enemies on its own, and paired with a Cannon it becomes an automatic turret: once placed, you can leave it alone and it will fire by itself. It suits holding positions and clearing camps, but note that the turret is fixed firepower — once an enemy runs out of range, it can no longer hit them. Turrets are vulnerable to a Lynel's roar; see this site's Complete Lynel Guide: one Lynel roar shatters every device, so don't set up turrets in front of a Lynel."
+    ],
+    [
+      "魔像的头部会自己瞄准敌人，配上大炮就是自动炮台：放下后不用管，它会自己开火。",
+      "The Construct Head aims at enemies on its own, and paired with a Cannon it becomes an automatic turret: once placed, you can leave it alone and it will fire by itself."
+    ],
+    [
+      "适合守点和清营地，但要注意炮台是固定火力，敌人跑出射程就打不到了。",
+      "It suits holding positions and clearing camps, but note that the turret is fixed firepower — once an enemy runs out of range, it can no longer hit them."
+    ],
+    [
+      "炮台怕人马咆哮，见本站人马完全指南：人马一声吼，装置全碎，别在人马面前摆炮台。",
+      "Turrets are vulnerable to a Lynel's roar; see this site's Complete Lynel Guide: one Lynel roar shatters every device, so don't set up turrets in front of a Lynel."
+    ],
+    [
+      "追踪平台车会自己追踪敌人，配上武器就是移动炮台，成本 9 矿；大轮胎 + 龙头旋转炮台成本 6 矿，龙头会旋转扫射，适合对付成群的敌人。两种炮台的成本都要提前算好矿，别造到一半发现矿不够。矿的主要来源是地底和制造机周边的矿床。",
+      "The Homing Cart tracks enemies on its own, and fitted with a weapon it becomes a mobile turret, costing up to 9 Zonaite (0 if you already own all parts); the Big Wheel + Construct Head rotating turret costs up to 6 Zonaite (0 if you already own all parts), and the dragon head rotates while firing, which suits groups of enemies. Work out the Zonaite costs of both turrets in advance, so you don't run out halfway through building. Zonaite mainly comes from the Depths and from ore deposits near Device Dispensers."
+    ],
+    [
+      "装置胶囊从制造机抽取，消耗左纳乌能源或魔像角。抽之前先想好要什么装置，别把能源浪费在用不上的装置上。使用禁忌就一条：人马咆哮会摧毁附近的左纳乌装置和蓝图造物，打人马时别依赖造物，靠闪避和骑背才是正路。",
+      "Device capsules are drawn from Device Dispensers, consuming Zonaite Charges or Construct Horns. Decide what device you want before drawing, and don't waste Zonaite on devices you won't use. There is just one usage taboo: a Lynel's roar destroys nearby Zonai devices and Autobuild creations, so don't rely on builds when fighting a Lynel — dodging and mounting its back is the right approach."
+    ],
+    [
+      "左纳乌载具：动力、武器、续航要平衡（游戏实机截图）",
+      "Zonai vehicles: propulsion, weapons, and endurance must be balanced (in-game screenshot)"
+    ],
+    [
+      "飞行车怎么造最稳？2 风扇 + 1 操纵杆，操纵杆 45° 装，风扇朝向一致。",
+      "How do I build the most stable hover bike? 2 Fans + 1 Steering Stick, with the Steering Stick mounted at 45° and the fans facing the same direction."
+    ],
+    [
+      "飞行车怎么造最稳？",
+      "How do I build the most stable hover bike?"
+    ],
+    [
+      "2 风扇 + 1 操纵杆，操纵杆 45° 装，风扇朝向一致。",
+      "2 Fans + 1 Steering Stick, with the Steering Stick mounted at 45° and the fans facing the same direction."
+    ],
+    [
+      "炮台为什么一吼就碎？人马咆哮会摧毁左纳乌装置，打人马别摆炮台。",
+      "Why does a turret shatter at one roar? A Lynel's roar destroys Zonai devices, so don't set up turrets when fighting a Lynel."
+    ],
+    [
+      "炮台为什么一吼就碎？",
+      "Why does a turret shatter at one roar?"
+    ],
+    [
+      "人马咆哮会摧毁左纳乌装置，打人马别摆炮台。",
+      "A Lynel's roar destroys Zonai devices, so don't set up turrets when fighting a Lynel."
+    ],
+    [
+      "装置胶囊怎么来？制造机抽，消耗左纳乌能源或魔像角。",
+      "Where do device capsules come from? Draw them from Device Dispensers, consuming Zonaite Charges or Construct Horns."
+    ],
+    [
+      "装置胶囊怎么来？",
+      "Where do device capsules come from?"
+    ],
+    [
+      "制造机抽，消耗左纳乌能源或魔像角。",
+      "Draw them from Device Dispensers, consuming Zonaite Charges or Construct Horns."
+    ],
+    [
+      "相关攻略：人马完全指南、马克兔飞行器调校、五位贤者能力全解。",
+      "Related Guides: Complete Lynel Guide, Hover Bike Tuning, and All Five Sages' Abilities Explained."
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 人马（莱尼尔）完全指南",
+      "› Complete Lynel Guide"
+    ],
+    [
+      "› 马克兔飞行器调校",
+      "› Hover Bike Tuning"
+    ],
+    [
+      "› 五位贤者能力全解",
+      "› All Five Sages' Abilities Explained"
+    ],
+    [
+      "📚 全部攻略索引",
+      "📚 Full guide index"
+    ],
+    [
+      "🏆 哈里的终极秘籍",
+      "🏆 Harry's Ultimate Tips"
+    ],
+    [
+      "› 七宝匕首终极攻略",
+      "› Scimitar of the Seven Ultimate Guide"
+    ],
+    [
+      "› 四大神级料理配方",
+      "› Four God-Tier Recipes"
+    ],
+    [
+      "› 最强套装三梯队全解析",
+      "› Strongest Armor Sets: Three-Tier Breakdown"
+    ],
+    [
+      "› 乌萨诸马神庙零基础包教包会",
+      "› Usazum Shrine Guide for Complete Beginners"
+    ],
+    [
+      "› 白龙寻踪与大师之剑",
+      "› Tracking the Light Dragon and the Master Sword"
+    ],
+    [
+      "› 地底电池扩充与大妖精",
+      "› Depths Energy Cell Expansion and the Great Fairies"
+    ],
+    [
+      "🆕 每日新攻略",
+      "🆕 Daily New Guides"
+    ],
+    [
+      "› 152座神庙全收集自查指南",
+      "› 152 Shrines Complete Collection Self-Check Guide"
+    ],
+    [
+      "› 新手开荒指南：落地先做的10件事",
+      "› Beginner's Guide: 10 Things to Do First After Landing"
+    ],
+    [
+      "› 呀哈哈种子全指南",
+      "› Korok Seed Complete Guide"
+    ],
+    [
+      "› 地底世界生存与探索完全指南",
+      "› Depths Survival and Exploration Complete Guide"
+    ],
+    [
+      "› 大妖精四姐妹与防具强化完全指南",
+      "› Four Great Fairies and Armor Enhancement Complete Guide"
+    ],
+    [
+      "› 四条龙素材刷取指南",
+      "› Four Dragons Material Farming Guide"
+    ],
+    [
+      "› 卢比速刷指南：从前期到后期",
+      "› Rupee Fast Farming Guide: Early to Late Game"
+    ],
+    [
+      "› 马匹捕捉与稀有马完全指南",
+      "› Horse Catching and Rare Horses Complete Guide"
+    ],
+    [
+      "› 料理机制全解：效果、时长与暴击",
+      "› Cooking Mechanics Explained: Effects, Duration, and Critical Success"
+    ],
+    [
+      "› 海拉鲁城堡探索完全指南",
+      "› Hyrule Castle Exploration Complete Guide"
+    ],
+    [
+      "› 海拉鲁图鉴509项收集指南",
+      "› Hyrule Compendium 509-Item Collection Guide"
+    ],
+    [
+      "› 左纳乌装置实用造物指南（本篇）",
+      "› Practical Zonai Device Builds Guide (this guide)"
+    ],
+    [
+      "› 血月机制全解",
+      "› Blood Moon Mechanics Explained"
+    ],
+    [
+      "› 余料建造完全指南",
+      "› Fuse Complete Guide"
+    ],
+    [
+      "究极手拼装左纳乌装置",
+      "Ultrahand-assembled Zonai devices"
+    ],
+    [
+      "左纳乌载具建造",
+      "Zonai vehicle building"
+    ],
+    [
+      "左纳乌载具",
+      "Zonai vehicle"
+    ],
+    [
+      "左纳乌装置实用造物指南",
+      "Practical Zonai Device Builds Guide"
+    ],
+    [
+      "🔧 造物攻略",
+      "🔧 Builds Guide"
+    ],
+    [
+      "🔧 左纳乌 · 实用造物",
+      "🔧 Zonai · Practical Builds"
+    ],
+    [
+      "← 上一篇：海拉鲁图鉴509项收集指南",
+      "← Previous: Hyrule Compendium 509-Entry Collection Guide"
+    ],
+    [
+      "下一篇：血月机制全解 →",
+      "Next: Blood Moon Mechanics Explained →"
+    ],
+    [
+      "27 种装置按功能可以分三组：动力组（风扇机、翼、热气球、火箭、轮胎、雪橇）、武器组（大炮、火焰/冰冻/雷电放射器、光线头、魔像的头部）、功能组（便携锅、放水栓、操纵杆、电池、大电池、弹簧、平衡器、浮游石、灯、桩子、镜子、追踪平台车、定时炸弹、平台车）。记住分组比死记名字有用：缺动力补风扇轮胎，缺火力补大炮和魔像头，缺续航补电池。",
+      "The 27 devices fall into three groups by function: propulsion (Fan, Wing, Hot-Air Balloon, Rocket, Wheel, Sled), weapons (Cannon, Flame/Frost/Shock Emitter, Beam Emitter, Construct Head), and utility (Portable Pot, Hydrant, Steering Stick, Battery, Big Battery, Spring, Stabilizer, Hover Stone, Light, Stake, Mirror, Homing Cart, Time Bomb, Cart). Remembering the groups beats memorizing names: short on propulsion, add fans and wheels; short on firepower, add cannons and Construct Heads; short on range, add batteries."
+    ],
+    [
+      "返回秘籍专栏",
+      "Back to the Tips Column"
+    ]
+  ],
+  "title": "Practical Zonai Device Builds Guide · Harry's Ultimate Guide · Tears of the Kingdom Guide"
 }

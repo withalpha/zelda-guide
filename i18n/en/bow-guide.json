@@ -1,684 +1,684 @@
 {
- "title": "Bow Complete Guide: Choosing Bows, Arrow Combos, and the Five-Shot Savage Lynel Bow · Harry's Ultimate Guide · Tears of the Kingdom Guide",
- "pairs": [
-  [
-   "王国之泪弓箭系统完全指南：多连弓只耗1支箭的核心机制、兽神弓32×3与五连词条刷法、眼睛追踪箭与炸弹花的搭配，以及新手最容易踩的三个坑。",
-   "Tears of the Kingdom bow system complete guide: the core mechanic that multi-shot bows cost only 1 arrow, the Savage Lynel Bow at 32×3 and its five-shot modifier farming, eyeball homing arrows and Bomb Flower combos, and the three mistakes beginners make most often."
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "哈里的终极秘籍",
-   "Harry's Ultimate Tips"
-  ],
-  [
-   "弓箭完全指南",
-   "Bow Complete Guide"
-  ],
-  [
-   "弓箭完全指南：选弓、箭矢搭配与五连兽神弓",
-   "Bow Complete Guide: Choosing Bows, Arrow Combos, and the Five-Shot Savage Lynel Bow"
-  ],
-  [
-   "弓是王国之泪里最被低估的武器：它不只是远程补刀，配对了弓与箭矢，一发就能打出近战武器几倍的伤害。",
-   "The bow is the most underrated weapon in Tears of the Kingdom: it is not just ranged cleanup, and with the right bow-and-arrow pairing, one shot can deal several times the damage of a melee weapon."
-  ],
-  [
-   "🧙 作者：哈里 🏹 弓箭 · 选弓与箭矢搭配 📖 深度攻略",
-   "🧙 Author: Harry 🏹 Bows · Choosing Bows and Arrow Combos 📖 In-Depth Guide"
-  ],
-  [
-   "📑 本篇目录",
-   "📑 Contents of This Article"
-  ],
-  [
-   "适用人群与前置条件",
-   "Who This Is For and Prerequisites"
-  ],
-  [
-   "先搞懂：多连弓的核心机制",
-   "First, Understand: The Core Mechanic of Multi-Shot Bows"
-  ],
-  [
-   "选弓：按阶段挑，不追最高攻击",
-   "Choosing a Bow: Pick by Stage, Not by Highest Attack"
-  ],
-  [
-   "箭矢搭配：四种余料，四种场合",
-   "Arrow Combos: Four Fuse Materials, Four Situations"
-  ],
-  [
-   "五连兽神弓：岩石巨人刷词条法",
-   "Five-Shot Savage Lynel Bow: The Rock Octorok Modifier Farming Method"
-  ],
-  [
-   "实战技巧：空中慢动作与弱点",
-   "Combat Tips: Bullet Time and Weak Points"
-  ],
-  [
-   "三个最常见的翻车点",
-   "The Three Most Common Mistakes"
-  ],
-  [
-   "哈里的取舍：资源优先级",
-   "Harry's Trade-Offs: Resource Priority"
-  ],
-  [
-   "图：游戏实机截图（林克拉弓瞄准空中目标，图片来源：Zelda Dungeon Wiki），展示拉弓射箭的姿态。",
-   "Image: in-game screenshot (Link drawing his bow and aiming at an aerial target, image source: Zelda Dungeon Wiki), showing the bow-drawing pose."
-  ],
-  [
-   "这篇写给两类玩家：一是刚下空岛、觉得弓“伤害低、箭不够用”的新手；二是已经能打人马、想把弓练成主力输出的老玩家。前者看前四节就能立刻变强，后者重点看五连刷法与资源优先级。",
-   "This article is written for two kinds of players: first, newcomers who have just left the Sky Islands and find the bow weak and arrows always in short supply; second, veteran players who can already beat Lynels and want to train the bow into their main damage source. The former will get noticeably stronger just by reading the first four sections, while the latter should focus on the five-shot farming method and resource priority."
-  ],
-  [
-   "前置条件很低：只要拿到过一把弓、背包里有箭就能练。箭的常规来源是各村庄杂货店与驿站商店，前期别省——箭是消耗品，不是收藏品。弓的格子不够时，先把低攻击的旧弓扔掉，别为了“以后可能有用”占着格子。",
-   "The prerequisites are very low: you can practice as long as you have picked up a bow and have arrows in your inventory. The regular sources of arrows are village general stores and stable shops, so do not skimp early on, since arrows are consumables, not collectibles. When you run out of bow slots, throw away low-attack old bows first, and do not keep them on the chance they might be useful later."
-  ],
-  [
-   "📌 本篇要点",
-   "📌 Key Points of This Article"
-  ],
-  [
-   "多连弓一发只消耗 1 支箭和 1 份余料，却能打出 3 发甚至 5 发的伤害；兽神弓 32×3 是后期毕业弓，五连词条要靠岩石巨人刷；眼睛箭打移动目标、炸弹花打群怪、高伤余料打 Boss，分工越清楚，箭花得越值。",
-   "A multi-shot bow consumes only 1 arrow and 1 portion of Fuse material per shot, yet deals the damage of 3 or even 5 shots; the Savage Lynel Bow at 32×3 is the late-game endgame bow, and its five-shot modifier must be farmed from Rock Octoroks; eyeball arrows for moving targets, Bomb Flowers for groups, and high-damage materials for Bosses, and the clearer the division of labor, the more each arrow is worth."
-  ],
-  [
-   "王国之泪里有一类弓一次射出多支箭，面板写作“32×3”这种形式，意思是每支箭 32 点攻击、一次射 3 支。理解这条机制，是整篇攻略的地基：",
-   "Tears of the Kingdom has a class of bows that fire multiple arrows at once, shown on the stat panel in the form 32×3, meaning 32 attack per arrow and 3 arrows per shot. Understanding this mechanic is the foundation of the whole guide:"
-  ],
-  [
-   "只消耗 1 支箭。三连弓一发 3 支箭，背包里的箭只少 1 支；余料也一样，一发只消耗 1 份余料，却能让 3 支箭全带上余料效果。这是多连弓强大的根本原因。",
-   "Only consumes 1 arrow. A triple-shot bow fires 3 arrows per shot, but only 1 arrow leaves your inventory; Fuse materials work the same way, with just 1 portion consumed while all 3 arrows carry the Fuse effect. This is the fundamental reason multi-shot bows are so powerful."
-  ],
-  [
-   "只消耗 1 支箭。",
-   "Only consumes 1 arrow."
-  ],
-  [
-   "三连弓一发 3 支箭，背包里的箭只少 1 支；",
-   "A triple-shot bow fires 3 arrows per shot, but only 1 arrow leaves your inventory;"
-  ],
-  [
-   "余料也一样，一发只消耗 1 份余料，却能让 3 支箭全带上余料效果。",
-   "Fuse materials work the same way, with just 1 portion consumed while all 3 arrows carry the Fuse effect."
-  ],
-  [
-   "这是多连弓强大的根本原因。",
-   "This is the fundamental reason multi-shot bows are so powerful."
-  ],
-  [
-   "伤害按支算，命中才算数。兽神弓 32×3 的理论伤害是 96，但远距离散开后常常只有 1 支命中，实际伤害就只有 32。离得越近，命中支数越多，伤害越接近理论值。",
-   "Damage is counted per arrow, and only hits count. The Savage Lynel Bow at 32×3 has a theoretical damage of 96, but at long range the spread often leaves only 1 arrow hitting, so actual damage is just 32. The closer you are, the more arrows hit, and the closer damage gets to the theoretical value."
-  ],
-  [
-   "伤害按支算，命中才算数。",
-   "Damage is counted per arrow, and only hits count."
-  ],
-  [
-   "兽神弓 32×3 的理论伤害是 96，但远距离散开后常常只有 1 支命中，实际伤害就只有 32。",
-   "The Savage Lynel Bow at 32×3 has a theoretical damage of 96, but at long range the spread often leaves only 1 arrow hitting, so actual damage is just 32."
-  ],
-  [
-   "离得越近，命中支数越多，伤害越接近理论值。",
-   "The closer you are, the more arrows hit, and the closer damage gets to the theoretical value."
-  ],
-  [
-   "散布是双刃剑。近距离打大体型目标（人马、巨霸迦马、格里奥克）几乎全中；远距离打小目标反而可能全偏。对小目标用单发高攻弓，对大目标用多连弓，这个分工要刻在脑子里。",
-   "Spread is a double-edged sword. At close range against large targets (Lynels, Colgera, Gleeoks), nearly every arrow hits; at long range against small targets, they may all miss instead. For small targets use a high-attack single-shot bow, and for large targets use a multi-shot bow, a division of labor to burn into your brain."
-  ],
-  [
-   "散布是双刃剑。",
-   "Spread is a double-edged sword."
-  ],
-  [
-   "近距离打大体型目标（人马、巨霸迦马、格里奥克）几乎全中；",
-   "At close range against large targets (Lynels, Colgera, Gleeoks), nearly every arrow hits;"
-  ],
-  [
-   "远距离打小目标反而可能全偏。",
-   "at long range against small targets, they may all miss instead."
-  ],
-  [
-   "对小目标用单发高攻弓，对大目标用多连弓，这个分工要刻在脑子里。",
-   "For small targets use a high-attack single-shot bow, and for large targets use a multi-shot bow, a division of labor to burn into your brain."
-  ],
-  [
-   "新手最常见的误解就是反着来：拿着三连弓远远地狙击小怪，打不中还以为弓弱；或者舍不得用多连弓，觉得“一发 3 支箭太浪费”——其实它比单发弓更省箭。",
-   "The most common beginner misunderstanding is doing it backwards: sniping small monsters from far away with a triple-shot bow, missing, and concluding the bow is weak; or refusing to use a multi-shot bow because one shot firing 3 arrows feels wasteful, when in fact it saves arrows compared with a single-shot bow."
-  ],
-  [
-   "弓的面板由攻击、耐久、射程三项决定，但实战里“什么场合用”比“面板多高”更重要。下表是本篇核实过的代表弓，按游戏进程排列：",
-   "A bow's stat panel is set by three values, attack, durability, and range, but in real combat, which situation it is used in matters more than how high its stats are. The table below lists representative bows verified for this article, ordered by game progression:"
-  ],
-  [
-   "弓",
-   "Bow"
-  ],
-  [
-   "攻击",
-   "Attack"
-  ],
-  [
-   "特点与获取",
-   "Traits and How to Obtain"
-  ],
-  [
-   "旅人之弓 / 士兵之弓",
-   "Traveler's Bow / Soldier's Bow"
-  ],
-  [
-   "低",
-   "Low"
-  ],
-  [
-   "开局过渡，路边宝箱与杂兵掉落，坏了不心疼",
-   "Early-game stopgap, dropped from roadside chests and common enemies, and no great loss when it breaks"
-  ],
-  [
-   "骑士之弓",
-   "Knight's Bow"
-  ],
-  [
-   "26",
-   "26"
-  ],
-  [
-   "中期主力，耐久扎实、无特殊散布，打什么都不亏",
-   "Mid-game mainstay, with solid durability and no special spread, never a bad choice against anything"
-  ],
-  [
-   "王族之弓",
-   "Royal Bow"
-  ],
-  [
-   "38",
-   "38"
-  ],
-  [
-   "单发弓里的高攻选择，适合远距离点名与弱点狙击",
-   "The high-attack choice among single-shot bows, suited to picking off targets at long range and sniping weak points"
-  ],
-  [
-   "森林居民之弓",
-   "Forest Dweller's Bow"
-  ],
-  [
-   "15×3",
-   "15×3"
-  ],
-  [
-   "前期就能拿到的三连弓，练多连手感的入门弓",
-   "A triple-shot bow obtainable early on, and the beginner bow for learning the multi-shot feel"
-  ],
-  [
-   "大鹫弓",
-   "Great Eagle Bow"
-  ],
-  [
-   "28×3",
-   "28×3"
-  ],
-  [
-   "三连弓里耐久最高（60），一把能用很久，适合当日常多连弓",
-   "The most durable triple-shot bow (60), lasting a long time in one bow, and suited as an everyday multi-shot bow"
-  ],
-  [
-   "兽神弓",
-   "Savage Lynel Bow"
-  ],
-  [
-   "32×3",
-   "32×3"
-  ],
-  [
-   "白鬃与白银人马掉落，耐久 45，三连弓里的伤害天花板",
-   "Dropped by White-Maned and Silver Lynels, durability 45, and the damage ceiling among triple-shot bows"
-  ],
-  [
-   "近卫之弓",
-   "Royal Guard's Bow"
-  ],
-  [
-   "50",
-   "50"
-  ],
-  [
-   "全游戏单发攻击最高，但耐久偏低，留着打 Boss 弱点爆发",
-   "The highest single-shot attack in the game, but with low durability, so save it for burst damage on Boss weak points"
-  ],
-  [
-   "黄昏之弓",
-   "Twilight Bow"
-  ],
-  [
-   "—",
-   "—"
-  ],
-  [
-   "amiibo 掉落，以超远射程著称，专打超远距离目标",
-   "An amiibo drop, famous for its extreme range, and made for hitting targets at extreme distances"
-  ],
-  [
-   "作者视角的判断：不要一上来就追兽神弓。前期人马打不过，硬追只会浪费时间；先用骑士之弓加王族之弓推图，等能稳定打白鬃人马了，兽神弓自然会来。弓的毕业不是一把弓，而是“一把单发狙击弓加一把多连弓”的组合。",
-   "The author's verdict: do not chase the Savage Lynel Bow right away. Early on you cannot beat Lynels, and chasing it will only waste time; first clear the map with the Knight's Bow and the Royal Bow, and once you can reliably beat White-Maned Lynels, the Savage Lynel Bow will come naturally. A bow endgame is not one bow, but the combination of one single-shot sniper bow and one multi-shot bow."
-  ],
-  [
-   "作者视角的判断：不要一上来就追兽神弓。",
-   "The author's verdict: do not chase the Savage Lynel Bow right away."
-  ],
-  [
-   "前期人马打不过，硬追只会浪费时间；",
-   "Early on you cannot beat Lynels, and chasing it will only waste time;"
-  ],
-  [
-   "先用骑士之弓加王族之弓推图，等能稳定打白鬃人马了，兽神弓自然会来。",
-   "first clear the map with the Knight's Bow and the Royal Bow, and once you can reliably beat White-Maned Lynels, the Savage Lynel Bow will come naturally."
-  ],
-  [
-   "弓的毕业不是一把弓，而是“一把单发狙击弓加一把多连弓”的组合。",
-   "A bow endgame is not one bow, but the combination of one single-shot sniper bow and one multi-shot bow."
-  ],
-  [
-   "王国之泪的箭矢伤害主要来自余料，弓只是发射器。按场合分工，箭才花得值：",
-   "In Tears of the Kingdom, arrow damage comes mainly from Fuse materials, and the bow is just the launcher. Arrows are only worth their cost when divided by situation:"
-  ],
-  [
-   "蝙蝠眼睛（追踪箭）：打移动与飞行目标。余料附上蝙蝠眼睛后箭会自己追踪，专治蝙蝠、会飞的怪物和跑动中的目标。配多连弓时多支箭会一同追踪，清飞行怪极快。但别拿它打静止杂兵，浪费。",
-   "Keese Eyeballs (homing arrows): for moving and flying targets. Once a Keese Eyeball is fused, arrows home in on their own, perfect for Keese, flying monsters, and running targets. With a multi-shot bow, multiple arrows home in together, clearing flying monsters extremely fast. But do not use them on stationary small fry, as that is a waste."
-  ],
-  [
-   "蝙蝠眼睛（追踪箭）：打移动与飞行目标。",
-   "Keese Eyeballs (homing arrows): for moving and flying targets."
-  ],
-  [
-   "余料附上蝙蝠眼睛后箭会自己追踪，专治蝙蝠、会飞的怪物和跑动中的目标。",
-   "Once a Keese Eyeball is fused, arrows home in on their own, perfect for Keese, flying monsters, and running targets."
-  ],
-  [
-   "配多连弓时多支箭会一同追踪，清飞行怪极快。",
-   "With a multi-shot bow, multiple arrows home in together, clearing flying monsters extremely fast."
-  ],
-  [
-   "但别拿它打静止杂兵，浪费。",
-   "But do not use them on stationary small fry, as that is a waste."
-  ],
-  [
-   "炸弹花：打群怪与破防。范围爆炸，一发清一片，还能炸开岩石墙与矿石。配多连弓等于一次扔出多颗炸弹，是营地清场的首选。注意别在自己脚边射，爆炸范围不认人。",
-   "Bomb Flowers: for groups and breaking defenses. A blast covers an area, clearing a patch in one shot, and can also blow open rock walls and ore deposits. With a multi-shot bow, one shot equals throwing multiple bombs, making it the first choice for clearing camps. Just do not fire at your own feet, because the blast radius does not distinguish friend from foe."
-  ],
-  [
-   "炸弹花：打群怪与破防。",
-   "Bomb Flowers: for groups and breaking defenses."
-  ],
-  [
-   "范围爆炸，一发清一片，还能炸开岩石墙与矿石。",
-   "A blast covers an area, clearing a patch in one shot, and can also blow open rock walls and ore deposits."
-  ],
-  [
-   "配多连弓等于一次扔出多颗炸弹，是营地清场的首选。",
-   "With a multi-shot bow, one shot equals throwing multiple bombs, making it the first choice for clearing camps."
-  ],
-  [
-   "注意别在自己脚边射，爆炸范围不认人。",
-   "Just do not fire at your own feet, because the blast radius does not distinguish friend from foe."
-  ],
-  [
-   "宝石（红宝石、蓝宝石、黄玉）：打属性场合。命中后炸开一片对应属性范围，适合点燃草地、冻住水面敌人或引雷。平时不常用，留给属性解谜与特定战斗。",
-   "Gems (Ruby, Sapphire, Topaz): for elemental situations. On hit they burst into an area of the matching element, good for setting grass on fire, freezing enemies in water, or calling lightning. They are not used often in everyday play, so save them for elemental puzzles and specific battles."
-  ],
-  [
-   "宝石（红宝石、蓝宝石、黄玉）：打属性场合。",
-   "Gems (Ruby, Sapphire, Topaz): for elemental situations."
-  ],
-  [
-   "命中后炸开一片对应属性范围，适合点燃草地、冻住水面敌人或引雷。",
-   "On hit they burst into an area of the matching element, good for setting grass on fire, freezing enemies in water, or calling lightning."
-  ],
-  [
-   "平时不常用，留给属性解谜与特定战斗。",
-   "They are not used often in everyday play, so save them for elemental puzzles and specific battles."
-  ],
-  [
-   "高伤素材（吉波得骨、白银人马刃角等）：打 Boss。单体伤害最高的余料选择，配多连弓打 Boss 弱点是全游戏最高的爆发组合之一。平时舍不得用很正常，这类余料本来就是为 Boss 战准备的。",
-   "High-damage materials (Gibdo Bones, Silver Lynel Saber Horns, and the like): for Bosses. The highest single-target damage Fuse choice, and paired with a multi-shot bow against a Boss weak point, it is one of the highest burst combos in the game. It is normal to be reluctant to use them normally, since these materials are meant for Boss battles."
-  ],
-  [
-   "高伤素材（吉波得骨、白银人马刃角等）：打 Boss。",
-   "High-damage materials (Gibdo Bones, Silver Lynel Saber Horns, and the like): for Bosses."
-  ],
-  [
-   "单体伤害最高的余料选择，配多连弓打 Boss 弱点是全游戏最高的爆发组合之一。",
-   "The highest single-target damage Fuse choice, and paired with a multi-shot bow against a Boss weak point, it is one of the highest burst combos in the game."
-  ],
-  [
-   "平时舍不得用很正常，这类余料本来就是为 Boss 战准备的。",
-   "It is normal to be reluctant to use them normally, since these materials are meant for Boss battles."
-  ],
-  [
-   "省箭的习惯：普通箭留给静止目标与补刀；眼睛箭只打会动的目标；炸弹花只打成群的目标。分工清楚了，箭永远够用。",
-   "Arrow-saving habits: save ordinary arrows for stationary targets and finishing blows; use eyeball arrows only on moving targets; use Bomb Flowers only on clustered targets. Once the division of labor is clear, arrows will always be enough."
-  ],
-  [
-   "兽神弓自带三连，但通过词条可以变成五连——面板 32×5，近距离全中就是 160 点理论伤害，是游戏里最强的弓。刷法靠岩石巨人（岩奥克塔），步骤如下：",
-   "The Savage Lynel Bow comes with triple-shot by default, but a modifier can turn it into five-shot, with a panel of 32×5, for 160 theoretical damage if every arrow hits at close range, making it the strongest bow in the game. The farming method relies on Rock Octoroks (each Octorok works only once per Blood Moon), and the steps are as follows:"
-  ],
-  [
-   "1先去找一只岩石巨人，位置以鼓隆城周边最方便。动手前先存档，这是整套方法的保险。",
-   "Step 1: First, find a Rock Octorok, most conveniently around Goron City. Save before you start, as insurance for the whole method."
-  ],
-  [
-   "1先去找一只岩石巨人，位置以鼓隆城周边最方便。",
-   "Step 1: First, find a Rock Octorok, most conveniently around Goron City."
-  ],
-  [
-   "动手前先存档，这是整套方法的保险。",
-   "Save before you start, as insurance for the whole method."
-  ],
-  [
-   "2把兽神弓扔到岩石巨人面前，让它吸进去再吐出来。吐出来的弓会带上一个随机词条：先是蓝字或白字的一段词条。",
-   "Step 2: Throw the Savage Lynel Bow in front of the Rock Octorok and let it suck it in and spit it back out. The spat-out bow will carry a random modifier: first a white-text modifier."
-  ],
-  [
-   "2把兽神弓扔到岩石巨人面前，让它吸进去再吐出来。",
-   "Step 2: Throw the Savage Lynel Bow in front of the Rock Octorok and let it suck it in and spit it back out."
-  ],
-  [
-   "吐出来的弓会带上一个随机词条：先是蓝字或白字的一段词条。",
-   "The spat-out bow will carry a random modifier: first a white-text modifier."
-  ],
-  [
-   "3再重复一次吸入吐出，第二段词条有概率刷出黄字的“五连射”。不是五连就读档重来，直到刷出为止。",
-   "Step 3: Repeat the suck-in and spit-out once more, and the second modifier has a chance to roll the yellow-text Five-Shot Burst. If it is not five-shot, reload your save and try again until it appears."
-  ],
-  [
-   "3再重复一次吸入吐出，第二段词条有概率刷出黄字的“五连射”。",
-   "Step 3: Repeat the suck-in and spit-out once more, and the second modifier has a chance to roll the yellow-text Five-Shot Burst."
-  ],
-  [
-   "不是五连就读档重来，直到刷出为止。",
-   "If it is not five-shot, reload your save and try again until it appears."
-  ],
-  [
-   "4刷出五连后立刻再存档。注意：已经带词条的弓再刷会被替换掉，刷之前确认手里这把是不是要保留的。",
-   "Step 4: Save again immediately after rolling five-shot. Note: re-rolling a bow that already has a modifier will replace it, so confirm that the bow in hand is the one you want to keep before re-rolling."
-  ],
-  [
-   "4刷出五连后立刻再存档。",
-   "Step 4: Save again immediately after rolling five-shot."
-  ],
-  [
-   "注意：已经带词条的弓再刷会被替换掉，刷之前确认手里这把是不是要保留的。",
-   "Note: re-rolling a bow that already has a modifier will replace it, so confirm that the bow in hand is the one you want to keep before re-rolling."
-  ],
-  [
-   "顺带的好处：岩石巨人吐出的武器耐久会被修满，所以一把快断的兽神弓也可以这样“续命”——先修满再刷词条，一举两得。但别指望一次成功，读档几次是常态，刷之前先把档存好比什么都重要。",
-   "A side benefit: a weapon spat out by a Rock Octorok has its durability fully restored, so a nearly broken Savage Lynel Bow can be given a new lease on life this way, restoring it fully before farming modifiers, killing two birds with one stone. But do not expect success on the first try, since reloading a few times is normal, and saving before farming matters more than anything else."
-  ],
-  [
-   "空中慢动作：从高处下落或弹射起飞时拉弓，时间会变慢，适合瞄准弱点。代价是持续消耗精力，精力见底就掉下来了，跳之前先确认精力够不够一套输出。",
-   "Bullet time: when you draw your bow while falling from a height or launching into the air, time slows down, which suits aiming at weak points. The cost is continuous Stamina drain, and you will fall once Stamina runs out, so confirm you have enough Stamina for a full round of damage before jumping."
-  ],
-  [
-   "空中慢动作：从高处下落或弹射起飞时拉弓，时间会变慢，适合瞄准弱点。",
-   "Bullet time: when you draw your bow while falling from a height or launching into the air, time slows down, which suits aiming at weak points."
-  ],
-  [
-   "代价是持续消耗精力，精力见底就掉下来了，跳之前先确认精力够不够一套输出。",
-   "The cost is continuous Stamina drain, and you will fall once Stamina runs out, so confirm you have enough Stamina for a full round of damage before jumping."
-  ],
-  [
-   "弱点优先：多数敌人的眼睛、头部是弱点，命中出暴击。打人马先射脸把它打跪，再近身输出；打守护者类敌人先射眼睛控场。弱点暴击的收益远大于多射几箭。",
-   "Weak points first: most enemies have weak points at their eyes or head, and hitting them scores a critical hit. Against a Lynel, shoot its face first to make it kneel, then move in for close damage; against enemies with an eye weak point, shoot the eye first to control the fight. The payoff from weak-point critical hits far exceeds firing a few more arrows."
-  ],
-  [
-   "弱点优先：多数敌人的眼睛、头部是弱点，命中出暴击。",
-   "Weak points first: most enemies have weak points at their eyes or head, and hitting them scores a critical hit."
-  ],
-  [
-   "打人马先射脸把它打跪，再近身输出；",
-   "Against a Lynel, shoot its face first to make it kneel, then move in for close damage;"
-  ],
-  [
-   "打守护者类敌人先射眼睛控场。",
-   "against enemies with an eye weak point, shoot the eye first to control the fight."
-  ],
-  [
-   "弱点暴击的收益远大于多射几箭。",
-   "The payoff from weak-point critical hits far exceeds firing a few more arrows."
-  ],
-  [
-   "骑马射箭：骑马时可以拉弓射击，适合边跑边打营地外围的敌人，但马上瞄准手感较飘，远距离还是下马打。",
-   "Horseback archery: you can draw and shoot while riding, which suits hitting enemies around the outside of a camp while moving, but aiming on horseback feels floaty, so dismount for long-range shots."
-  ],
-  [
-   "抛物线预判：箭会下坠，超远距离要把准星抬高一截。黄昏之弓射程远、下坠小，是超远狙击的专门选择；普通弓打远目标别指望一发命中，先试一发看落点。",
-   "Arrow drop prediction: arrows drop, so at extreme range raise your crosshair a notch. The Twilight Bow has long range and little drop, making it the dedicated choice for extreme-range sniping; with an ordinary bow against distant targets, do not expect a first-shot hit, so fire one test shot to see where it lands."
-  ],
-  [
-   "抛物线预判：箭会下坠，超远距离要把准星抬高一截。",
-   "Arrow drop prediction: arrows drop, so at extreme range raise your crosshair a notch."
-  ],
-  [
-   "黄昏之弓射程远、下坠小，是超远狙击的专门选择；",
-   "The Twilight Bow has long range and little drop, making it the dedicated choice for extreme-range sniping;"
-  ],
-  [
-   "普通弓打远目标别指望一发命中，先试一发看落点。",
-   "with an ordinary bow against distant targets, do not expect a first-shot hit, so fire one test shot to see where it lands."
-  ],
-  [
-   "⚠️ 坑一：远距离用多连弓打小目标。散布一开全偏，还以为弓不行。多连弓是近战爆发弓，远距离请换单发弓。",
-   "⚠️ Pitfall 1: Using a multi-shot bow on small targets at long range. Once the spread opens up, everything misses, and you will think the bow is no good. Multi-shot bows are close-range burst weapons, so switch to a single-shot bow at long range."
-  ],
-  [
-   "⚠️ 坑一：远距离用多连弓打小目标。",
-   "⚠️ Pitfall 1: Using a multi-shot bow on small targets at long range."
-  ],
-  [
-   "散布一开全偏，还以为弓不行。",
-   "Once the spread opens up, everything misses, and you will think the bow is no good."
-  ],
-  [
-   "多连弓是近战爆发弓，远距离请换单发弓。",
-   "Multi-shot bows are close-range burst weapons, so switch to a single-shot bow at long range."
-  ],
-  [
-   "⚠️ 坑二：把眼睛箭当通用箭。眼睛箭打静止目标等于白白烧掉蝙蝠眼睛。眼睛只留给会飞、会跑的目标，静止目标用普通箭。",
-   "⚠️ Pitfall 2: Treating eyeball arrows as all-purpose arrows. Using an eyeball arrow on a stationary target just burns a Keese Eyeball for nothing. Save eyeballs for flying or running targets, and use ordinary arrows on stationary targets."
-  ],
-  [
-   "⚠️ 坑二：把眼睛箭当通用箭。",
-   "⚠️ Pitfall 2: Treating eyeball arrows as all-purpose arrows."
-  ],
-  [
-   "眼睛箭打静止目标等于白白烧掉蝙蝠眼睛。",
-   "Using an eyeball arrow on a stationary target just burns a Keese Eyeball for nothing."
-  ],
-  [
-   "眼睛只留给会飞、会跑的目标，静止目标用普通箭。",
-   "Save eyeballs for flying or running targets, and use ordinary arrows on stationary targets."
-  ],
-  [
-   "⚠️ 坑三：弓快断了还在用，断在 Boss 战里。弓没有耐久提示以外的预警，进 Boss 战前检查一遍背包：主弓、备用弓、箭的数量，三样齐了再开打。五连兽神弓是宝贝，但只有一把时别把它当日常弓糟蹋。",
-   "⚠️ Pitfall 3: Keep using a bow that is about to break, and have it snap mid-Boss battle. Bows give no warning beyond their durability indicator, so check your inventory before a Boss battle: main bow, backup bow, and arrow count, and only start once all three are ready. A five-shot Savage Lynel Bow is a treasure, but if you have only one, do not waste it as an everyday bow."
-  ],
-  [
-   "⚠️ 坑三：弓快断了还在用，断在 Boss 战里。",
-   "⚠️ Pitfall 3: Keep using a bow that is about to break, and have it snap mid-Boss battle."
-  ],
-  [
-   "弓没有耐久提示以外的预警，进 Boss 战前检查一遍背包：主弓、备用弓、箭的数量，三样齐了再开打。",
-   "Bows give no warning beyond their durability indicator, so check your inventory before a Boss battle: main bow, backup bow, and arrow count, and only start once all three are ready."
-  ],
-  [
-   "五连兽神弓是宝贝，但只有一把时别把它当日常弓糟蹋。",
-   "A five-shot Savage Lynel Bow is a treasure, but if you have only one, do not waste it as an everyday bow."
-  ],
-  [
-   "如果只能记三句话：第一，前期先拿骑士之弓和王族之弓推图，别硬追兽神弓；第二，眼睛箭和炸弹花按场合分工，箭永远够用；第三，五连兽神弓是后期毕业追求，刷出来之前，三连兽神弓加高伤余料已经足够打穿绝大多数战斗。",
-   "If you can only remember three sentences: first, clear the map early on with the Knight's Bow and the Royal Bow, and do not force the chase for a Savage Lynel Bow; second, divide eyeball arrows and Bomb Flowers by situation, and arrows will always be enough; third, the five-shot Savage Lynel Bow is a late-game endgame goal, and before you farm one, a triple-shot Savage Lynel Bow plus high-damage Fuse materials is already enough to beat the vast majority of battles."
-  ],
-  [
-   "弓箭系统的精髓不在面板，而在“弓加箭矢”的组合思维：单发弓配普通箭打点名，多连弓配余料打爆发，追踪箭配移动目标。组合对了，一把中期弓也能打出后期伤害；组合错了，毕业弓也只能刮痧。",
-   "The essence of the bow system is not the stat panel, but bow-plus-arrow combo thinking: single-shot bows with ordinary arrows for picking off targets, multi-shot bows with Fuse materials for burst damage, and homing arrows for moving targets. With the right combo, even a mid-game bow can deal late-game damage; with the wrong combo, even an endgame bow will only scratch enemies."
-  ],
-  [
-   "← 上一篇：15座鸟望塔开图完全指南 返回秘籍专栏 下一篇：洞窟探险完全指南 →",
-   "← Previous: All 15 Skyview Towers Map-Unlock Complete Guide | Back to the Tips Column | Next: Cave Exploration Complete Guide →"
-  ],
-  [
-   "🔗 相关攻略",
-   "🔗 Related Guides"
-  ],
-  [
-   "› 人马（莱尼尔）完全指南",
-   "› Lynel Complete Guide"
-  ],
-  [
-   "› 余料建造完全指南",
-   "› Fuse Complete Guide"
-  ],
-  [
-   "› 武器图鉴",
-   "› Weapon Compendium"
-  ],
-  [
-   "📚 全部攻略索引",
-   "📚 Complete Guide Index"
-  ],
-  [
-   "🏆 哈里的终极秘籍",
-   "🏆 Harry's Ultimate Tips"
-  ],
-  [
-   "› 七宝匕首终极攻略",
-   "› Scimitar of the Seven Ultimate Guide"
-  ],
-  [
-   "› 四大神级料理配方",
-   "› Four God-Tier Recipes"
-  ],
-  [
-   "› 最强套装三梯队全解析",
-   "› Strongest Armor Sets: Full Three-Tier Breakdown"
-  ],
-  [
-   "› 乌萨诸马神庙零基础包教包会",
-   "› Usazum Shrine Guide for Complete Beginners"
-  ],
-  [
-   "› 白龙寻踪与大师之剑",
-   "› Tracking the Light Dragon and the Master Sword"
-  ],
-  [
-   "› 马克兔飞行器调校",
-   "› Hover Bike Tuning"
-  ],
-  [
-   "› 地底电池扩充与大妖精",
-   "› Depths Battery Expansion and the Great Fairies"
-  ],
-  [
-   "🆕 每日新攻略",
-   "🆕 Daily New Guides"
-  ],
-  [
-   "› 152座神庙全收集自查指南",
-   "› All 152 Shrines: Complete Collection Checklist"
-  ],
-  [
-   "› 新手开荒指南：落地先做的10件事",
-   "› Beginner's Guide: The First 10 Things to Do After Landing"
-  ],
-  [
-   "› 呀哈哈种子全指南",
-   "› Korok Seed Complete Guide"
-  ],
-  [
-   "› 地底世界生存与探索完全指南",
-   "› Depths Survival and Exploration Complete Guide"
-  ],
-  [
-   "› 大妖精四姐妹与防具强化完全指南",
-   "› The Four Great Fairies and Armor Enhancement Complete Guide"
-  ],
-  [
-   "› 四条龙素材刷取指南",
-   "› Four Dragons Material Farming Guide"
-  ],
-  [
-   "› 卢比速刷指南：从前期到后期",
-   "› Rupee Farming Guide: From Early to Late Game"
-  ],
-  [
-   "› 马匹捕捉与稀有马完全指南",
-   "› Horse Taming and Rare Horses Complete Guide"
-  ],
-  [
-   "› 五位贤者能力全解",
-   "› All Five Sages' Abilities Explained"
-  ],
-  [
-   "› 料理机制全解：效果、时长与暴击",
-   "› Cooking Mechanics Explained: Effects, Duration, and Critical Hits"
-  ],
-  [
-   "› 海拉鲁城堡探索完全指南",
-   "› Hyrule Castle Exploration Complete Guide"
-  ],
-  [
-   "› 海拉鲁图鉴509项收集指南",
-   "› Hyrule Compendium: All 509 Entries Collection Guide"
-  ],
-  [
-   "› 左纳乌装置实用造物指南",
-   "› Practical Zonai Device Builds Guide"
-  ],
-  [
-   "› 血月机制全解",
-   "› Blood Moon Mechanics Explained"
-  ],
-  [
-   "› 祝福之光兑换完全指南",
-   "› Light of Blessing Exchange Complete Guide"
-  ],
-  [
-   "› 15座鸟望塔开图完全指南",
-   "› All 15 Skyview Towers Map-Unlock Complete Guide"
-  ],
-  [
-   "› 弓箭完全指南：选弓、箭矢搭配与五连兽神弓（本篇）",
-   "› Bow Complete Guide: Choosing Bows, Arrow Combos, and the Five-Shot Savage Lynel Bow (This Article)"
-  ],
-  [
-   "› 洞窟探险完全指南：樱花树、魔犹伊与柯尔天",
-   "› Cave Exploration Complete Guide: Cherry Blossom Trees, Bubbulfrogs, and Koltin"
-  ],
-  [
-   "← 上一篇：15座鸟望塔开图完全指南",
-   "← Previous: All 15 Skyview Towers Map-Unlock Complete Guide"
-  ],
-  [
-   "下一篇：洞窟探险完全指南 →",
-   "Next: Cave Exploration Complete Guide →"
-  ],
-  [
-   "林克拉弓瞄准空中目标的游戏实机画面",
-   "In-game footage of Link drawing his bow and aiming at an aerial target"
-  ],
-  [
-   "🏹 弓箭攻略",
-   "🏹 Bow Guide"
-  ],
-  [
-   "🏹 弓箭 · 选弓与箭矢搭配",
-   "🏹 Bows · Choosing Bows & Arrows"
+  "title": "Bow Complete Guide: Choosing Bows, Arrow Combos, and the Five-Shot Savage Lynel Bow · Harry's Ultimate Guide · Tears of the Kingdom Guide",
+  "pairs": [
+    [
+      "王国之泪弓箭系统完全指南：多连弓只耗1支箭的核心机制、兽神弓32×3与五连词条刷法、眼睛追踪箭与炸弹花的搭配，以及新手最容易踩的三个坑。",
+      "Tears of the Kingdom bow system complete guide: the core mechanic that multi-shot bows cost only 1 arrow, the Savage Lynel Bow at 32×3 and its five-shot modifier farming, eyeball homing arrows and Bomb Flower combos, and the three mistakes beginners make most often."
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "哈里的终极秘籍",
+      "Harry's Ultimate Tips"
+    ],
+    [
+      "弓箭完全指南",
+      "Bow Complete Guide"
+    ],
+    [
+      "弓箭完全指南：选弓、箭矢搭配与五连兽神弓",
+      "Bow Complete Guide: Choosing Bows, Arrow Combos, and the Five-Shot Savage Lynel Bow"
+    ],
+    [
+      "弓是王国之泪里最被低估的武器：它不只是远程补刀，配对了弓与箭矢，一发就能打出近战武器几倍的伤害。",
+      "The bow is the most underrated weapon in Tears of the Kingdom: it is not just ranged cleanup, and with the right bow-and-arrow pairing, one shot can deal several times the damage of a melee weapon."
+    ],
+    [
+      "🧙 作者：哈里 🏹 弓箭 · 选弓与箭矢搭配 📖 深度攻略",
+      "🧙 Author: Harry 🏹 Bows · Choosing Bows and Arrow Combos 📖 In-Depth Guide"
+    ],
+    [
+      "📑 本篇目录",
+      "📑 Contents of This Article"
+    ],
+    [
+      "适用人群与前置条件",
+      "Who This Is For and Prerequisites"
+    ],
+    [
+      "先搞懂：多连弓的核心机制",
+      "First, Understand: The Core Mechanic of Multi-Shot Bows"
+    ],
+    [
+      "选弓：按阶段挑，不追最高攻击",
+      "Choosing a Bow: Pick by Stage, Not by Highest Attack"
+    ],
+    [
+      "箭矢搭配：四种余料，四种场合",
+      "Arrow Combos: Four Fuse Materials, Four Situations"
+    ],
+    [
+      "五连兽神弓：岩石巨人刷词条法",
+      "Five-Shot Savage Lynel Bow: The Rock Octorok Modifier Farming Method"
+    ],
+    [
+      "实战技巧：空中慢动作与弱点",
+      "Combat Tips: Bullet Time and Weak Points"
+    ],
+    [
+      "三个最常见的翻车点",
+      "The Three Most Common Mistakes"
+    ],
+    [
+      "哈里的取舍：资源优先级",
+      "Harry's Trade-Offs: Resource Priority"
+    ],
+    [
+      "图：游戏实机截图（林克拉弓瞄准空中目标，图片来源：Zelda Dungeon Wiki），展示拉弓射箭的姿态。",
+      "Image: in-game screenshot (Link drawing his bow and aiming at an aerial target, image source: Zelda Dungeon Wiki), showing the bow-drawing pose."
+    ],
+    [
+      "这篇写给两类玩家：一是刚下空岛、觉得弓“伤害低、箭不够用”的新手；二是已经能打人马、想把弓练成主力输出的老玩家。前者看前四节就能立刻变强，后者重点看五连刷法与资源优先级。",
+      "This article is written for two kinds of players: first, newcomers who have just left the Sky Islands and find the bow weak and arrows always in short supply; second, veteran players who can already beat Lynels and want to train the bow into their main damage source. The former will get noticeably stronger just by reading the first four sections, while the latter should focus on the five-shot farming method and resource priority."
+    ],
+    [
+      "前置条件很低：只要拿到过一把弓、背包里有箭就能练。箭的常规来源是各村庄杂货店与驿站商店，前期别省——箭是消耗品，不是收藏品。弓的格子不够时，先把低攻击的旧弓扔掉，别为了“以后可能有用”占着格子。",
+      "The prerequisites are very low: you can practice as long as you have picked up a bow and have arrows in your inventory. The regular sources of arrows are village general stores and stable shops, so do not skimp early on, since arrows are consumables, not collectibles. When you run out of bow slots, throw away low-attack old bows first, and do not keep them on the chance they might be useful later."
+    ],
+    [
+      "📌 本篇要点",
+      "📌 Key Points of This Article"
+    ],
+    [
+      "多连弓一发只消耗 1 支箭和 1 份余料，却能打出 3 发甚至 5 发的伤害；兽神弓 32×3 是后期毕业弓，五连词条要靠岩石巨人刷；眼睛箭打移动目标、炸弹花打群怪、高伤余料打 Boss，分工越清楚，箭花得越值。",
+      "A multi-shot bow consumes only 1 arrow and 1 portion of Fuse material per shot, yet deals the damage of 3 or even 5 shots; the Savage Lynel Bow at 32×3 is the late-game endgame bow, and its five-shot modifier must be farmed from Rock Octoroks; eyeball arrows for moving targets, Bomb Flowers for groups, and high-damage materials for Bosses, and the clearer the division of labor, the more each arrow is worth."
+    ],
+    [
+      "王国之泪里有一类弓一次射出多支箭，面板写作“32×3”这种形式，意思是每支箭 32 点攻击、一次射 3 支。理解这条机制，是整篇攻略的地基：",
+      "Tears of the Kingdom has a class of bows that fire multiple arrows at once, shown on the stat panel in the form 32×3, meaning 32 attack per arrow and 3 arrows per shot. Understanding this mechanic is the foundation of the whole guide:"
+    ],
+    [
+      "只消耗 1 支箭。三连弓一发 3 支箭，背包里的箭只少 1 支；余料也一样，一发只消耗 1 份余料，却能让 3 支箭全带上余料效果。这是多连弓强大的根本原因。",
+      "Only consumes 1 arrow. A triple-shot bow fires 3 arrows per shot, but only 1 arrow leaves your inventory; Fuse materials work the same way, with just 1 portion consumed while all 3 arrows carry the Fuse effect. This is the fundamental reason multi-shot bows are so powerful."
+    ],
+    [
+      "只消耗 1 支箭。",
+      "Only consumes 1 arrow."
+    ],
+    [
+      "三连弓一发 3 支箭，背包里的箭只少 1 支；",
+      "A triple-shot bow fires 3 arrows per shot, but only 1 arrow leaves your inventory;"
+    ],
+    [
+      "余料也一样，一发只消耗 1 份余料，却能让 3 支箭全带上余料效果。",
+      "Fuse materials work the same way, with just 1 portion consumed while all 3 arrows carry the Fuse effect."
+    ],
+    [
+      "这是多连弓强大的根本原因。",
+      "This is the fundamental reason multi-shot bows are so powerful."
+    ],
+    [
+      "伤害按支算，命中才算数。兽神弓 32×3 的理论伤害是 96，但远距离散开后常常只有 1 支命中，实际伤害就只有 32。离得越近，命中支数越多，伤害越接近理论值。",
+      "Damage is counted per arrow, and only hits count. The Savage Lynel Bow at 32×3 has a theoretical damage of 96, but at long range the spread often leaves only 1 arrow hitting, so actual damage is just 32. The closer you are, the more arrows hit, and the closer damage gets to the theoretical value."
+    ],
+    [
+      "伤害按支算，命中才算数。",
+      "Damage is counted per arrow, and only hits count."
+    ],
+    [
+      "兽神弓 32×3 的理论伤害是 96，但远距离散开后常常只有 1 支命中，实际伤害就只有 32。",
+      "The Savage Lynel Bow at 32×3 has a theoretical damage of 96, but at long range the spread often leaves only 1 arrow hitting, so actual damage is just 32."
+    ],
+    [
+      "离得越近，命中支数越多，伤害越接近理论值。",
+      "The closer you are, the more arrows hit, and the closer damage gets to the theoretical value."
+    ],
+    [
+      "散布是双刃剑。近距离打大体型目标（人马、巨霸迦马、格里奥克）几乎全中；远距离打小目标反而可能全偏。对小目标用单发高攻弓，对大目标用多连弓，这个分工要刻在脑子里。",
+      "Spread is a double-edged sword. At close range against large targets (Lynels, Colgera, Gleeoks), nearly every arrow hits; at long range against small targets, they may all miss instead. For small targets use a high-attack single-shot bow, and for large targets use a multi-shot bow, a division of labor to burn into your brain."
+    ],
+    [
+      "散布是双刃剑。",
+      "Spread is a double-edged sword."
+    ],
+    [
+      "近距离打大体型目标（人马、巨霸迦马、格里奥克）几乎全中；",
+      "At close range against large targets (Lynels, Colgera, Gleeoks), nearly every arrow hits;"
+    ],
+    [
+      "远距离打小目标反而可能全偏。",
+      "at long range against small targets, they may all miss instead."
+    ],
+    [
+      "对小目标用单发高攻弓，对大目标用多连弓，这个分工要刻在脑子里。",
+      "For small targets use a high-attack single-shot bow, and for large targets use a multi-shot bow, a division of labor to burn into your brain."
+    ],
+    [
+      "新手最常见的误解就是反着来：拿着三连弓远远地狙击小怪，打不中还以为弓弱；或者舍不得用多连弓，觉得“一发 3 支箭太浪费”——其实它比单发弓更省箭。",
+      "The most common beginner misunderstanding is doing it backwards: sniping small monsters from far away with a triple-shot bow, missing, and concluding the bow is weak; or refusing to use a multi-shot bow because one shot firing 3 arrows feels wasteful, when in fact it saves arrows compared with a single-shot bow."
+    ],
+    [
+      "弓的面板由攻击、耐久、射程三项决定，但实战里“什么场合用”比“面板多高”更重要。下表是本篇核实过的代表弓，按游戏进程排列：",
+      "A bow's stat panel is set by three values, attack, durability, and range, but in real combat, which situation it is used in matters more than how high its stats are. The table below lists representative bows verified for this article, ordered by game progression:"
+    ],
+    [
+      "弓",
+      "Bow"
+    ],
+    [
+      "攻击",
+      "Attack"
+    ],
+    [
+      "特点与获取",
+      "Traits and How to Obtain"
+    ],
+    [
+      "旅人之弓 / 士兵之弓",
+      "Traveler's Bow / Soldier's Bow"
+    ],
+    [
+      "低",
+      "Low"
+    ],
+    [
+      "开局过渡，路边宝箱与杂兵掉落，坏了不心疼",
+      "Early-game stopgap, dropped from roadside chests and common enemies, and no great loss when it breaks"
+    ],
+    [
+      "骑士之弓",
+      "Knight's Bow"
+    ],
+    [
+      "26",
+      "26"
+    ],
+    [
+      "中期主力，耐久扎实、无特殊散布，打什么都不亏",
+      "Mid-game mainstay, with solid durability and no special spread, never a bad choice against anything"
+    ],
+    [
+      "王族之弓",
+      "Royal Bow"
+    ],
+    [
+      "38",
+      "38"
+    ],
+    [
+      "单发弓里的高攻选择，适合远距离点名与弱点狙击",
+      "The high-attack choice among single-shot bows, suited to picking off targets at long range and sniping weak points"
+    ],
+    [
+      "森林居民之弓",
+      "Forest Dweller's Bow"
+    ],
+    [
+      "15×3",
+      "15×3"
+    ],
+    [
+      "前期就能拿到的三连弓，练多连手感的入门弓",
+      "A triple-shot bow obtainable early on, and the beginner bow for learning the multi-shot feel"
+    ],
+    [
+      "大鹫弓",
+      "Great Eagle Bow"
+    ],
+    [
+      "28×3",
+      "28×3"
+    ],
+    [
+      "三连弓里耐久最高（60），一把能用很久，适合当日常多连弓",
+      "The most durable triple-shot bow (60), lasting a long time in one bow, and suited as an everyday multi-shot bow"
+    ],
+    [
+      "兽神弓",
+      "Savage Lynel Bow"
+    ],
+    [
+      "32×3",
+      "32×3"
+    ],
+    [
+      "白鬃与白银人马掉落，耐久 45，三连弓里的伤害天花板",
+      "Dropped by White-Maned and Silver Lynels, durability 45, and the damage ceiling among triple-shot bows"
+    ],
+    [
+      "近卫之弓",
+      "Royal Guard's Bow"
+    ],
+    [
+      "50",
+      "50"
+    ],
+    [
+      "全游戏单发攻击最高，但耐久偏低，留着打 Boss 弱点爆发",
+      "The highest single-shot attack in the game, but with low durability, so save it for burst damage on Boss weak points"
+    ],
+    [
+      "黄昏之弓",
+      "Twilight Bow"
+    ],
+    [
+      "—",
+      "—"
+    ],
+    [
+      "amiibo 掉落，以超远射程著称，专打超远距离目标",
+      "An amiibo drop, famous for its extreme range, and made for hitting targets at extreme distances"
+    ],
+    [
+      "作者视角的判断：不要一上来就追兽神弓。前期人马打不过，硬追只会浪费时间；先用骑士之弓加王族之弓推图，等能稳定打白鬃人马了，兽神弓自然会来。弓的毕业不是一把弓，而是“一把单发狙击弓加一把多连弓”的组合。",
+      "The author's verdict: do not chase the Savage Lynel Bow right away. Early on you cannot beat Lynels, and chasing it will only waste time; first clear the map with the Knight's Bow and the Royal Bow, and once you can reliably beat White-Maned Lynels, the Savage Lynel Bow will come naturally. A bow endgame is not one bow, but the combination of one single-shot sniper bow and one multi-shot bow."
+    ],
+    [
+      "作者视角的判断：不要一上来就追兽神弓。",
+      "The author's verdict: do not chase the Savage Lynel Bow right away."
+    ],
+    [
+      "前期人马打不过，硬追只会浪费时间；",
+      "Early on you cannot beat Lynels, and chasing it will only waste time;"
+    ],
+    [
+      "先用骑士之弓加王族之弓推图，等能稳定打白鬃人马了，兽神弓自然会来。",
+      "first clear the map with the Knight's Bow and the Royal Bow, and once you can reliably beat White-Maned Lynels, the Savage Lynel Bow will come naturally."
+    ],
+    [
+      "弓的毕业不是一把弓，而是“一把单发狙击弓加一把多连弓”的组合。",
+      "A bow endgame is not one bow, but the combination of one single-shot sniper bow and one multi-shot bow."
+    ],
+    [
+      "王国之泪的箭矢伤害主要来自余料，弓只是发射器。按场合分工，箭才花得值：",
+      "In Tears of the Kingdom, arrow damage comes mainly from Fuse materials, and the bow is just the launcher. Arrows are only worth their cost when divided by situation:"
+    ],
+    [
+      "蝙蝠眼睛（追踪箭）：打移动与飞行目标。余料附上蝙蝠眼睛后箭会自己追踪，专治蝙蝠、会飞的怪物和跑动中的目标。配多连弓时多支箭会一同追踪，清飞行怪极快。但别拿它打静止杂兵，浪费。",
+      "Keese Eyeballs (homing arrows): for moving and flying targets. Once a Keese Eyeball is fused, arrows home in on their own, perfect for Keese, flying monsters, and running targets. With a multi-shot bow, multiple arrows home in together, clearing flying monsters extremely fast. But do not use them on stationary small fry, as that is a waste."
+    ],
+    [
+      "蝙蝠眼睛（追踪箭）：打移动与飞行目标。",
+      "Keese Eyeballs (homing arrows): for moving and flying targets."
+    ],
+    [
+      "余料附上蝙蝠眼睛后箭会自己追踪，专治蝙蝠、会飞的怪物和跑动中的目标。",
+      "Once a Keese Eyeball is fused, arrows home in on their own, perfect for Keese, flying monsters, and running targets."
+    ],
+    [
+      "配多连弓时多支箭会一同追踪，清飞行怪极快。",
+      "With a multi-shot bow, multiple arrows home in together, clearing flying monsters extremely fast."
+    ],
+    [
+      "但别拿它打静止杂兵，浪费。",
+      "But do not use them on stationary small fry, as that is a waste."
+    ],
+    [
+      "炸弹花：打群怪与破防。范围爆炸，一发清一片，还能炸开岩石墙与矿石。配多连弓等于一次扔出多颗炸弹，是营地清场的首选。注意别在自己脚边射，爆炸范围不认人。",
+      "Bomb Flowers: for groups and breaking defenses. A blast covers an area, clearing a patch in one shot, and can also blow open rock walls and ore deposits. With a multi-shot bow, one shot equals throwing multiple bombs, making it the first choice for clearing camps. Just do not fire at your own feet, because the blast radius does not distinguish friend from foe."
+    ],
+    [
+      "炸弹花：打群怪与破防。",
+      "Bomb Flowers: for groups and breaking defenses."
+    ],
+    [
+      "范围爆炸，一发清一片，还能炸开岩石墙与矿石。",
+      "A blast covers an area, clearing a patch in one shot, and can also blow open rock walls and ore deposits."
+    ],
+    [
+      "配多连弓等于一次扔出多颗炸弹，是营地清场的首选。",
+      "With a multi-shot bow, one shot equals throwing multiple bombs, making it the first choice for clearing camps."
+    ],
+    [
+      "注意别在自己脚边射，爆炸范围不认人。",
+      "Just do not fire at your own feet, because the blast radius does not distinguish friend from foe."
+    ],
+    [
+      "宝石（红宝石、蓝宝石、黄玉）：打属性场合。命中后炸开一片对应属性范围，适合点燃草地、冻住水面敌人或引雷。平时不常用，留给属性解谜与特定战斗。",
+      "Gems (Ruby, Sapphire, Topaz): for elemental situations. On hit they burst into an area of the matching element, good for setting grass on fire, freezing enemies in water, or calling lightning. They are not used often in everyday play, so save them for elemental puzzles and specific battles."
+    ],
+    [
+      "宝石（红宝石、蓝宝石、黄玉）：打属性场合。",
+      "Gems (Ruby, Sapphire, Topaz): for elemental situations."
+    ],
+    [
+      "命中后炸开一片对应属性范围，适合点燃草地、冻住水面敌人或引雷。",
+      "On hit they burst into an area of the matching element, good for setting grass on fire, freezing enemies in water, or calling lightning."
+    ],
+    [
+      "平时不常用，留给属性解谜与特定战斗。",
+      "They are not used often in everyday play, so save them for elemental puzzles and specific battles."
+    ],
+    [
+      "高伤素材（吉波得骨、白银人马刃角等）：打 Boss。单体伤害最高的余料选择，配多连弓打 Boss 弱点是全游戏最高的爆发组合之一。平时舍不得用很正常，这类余料本来就是为 Boss 战准备的。",
+      "High-damage materials (Gibdo Bones, Silver Lynel Saber Horns, and the like): for Bosses. The highest single-target damage Fuse choice, and paired with a multi-shot bow against a Boss weak point, it is one of the highest burst combos in the game. It is normal to be reluctant to use them normally, since these materials are meant for Boss battles."
+    ],
+    [
+      "高伤素材（吉波得骨、白银人马刃角等）：打 Boss。",
+      "High-damage materials (Gibdo Bones, Silver Lynel Saber Horns, and the like): for Bosses."
+    ],
+    [
+      "单体伤害最高的余料选择，配多连弓打 Boss 弱点是全游戏最高的爆发组合之一。",
+      "The highest single-target damage Fuse choice, and paired with a multi-shot bow against a Boss weak point, it is one of the highest burst combos in the game."
+    ],
+    [
+      "平时舍不得用很正常，这类余料本来就是为 Boss 战准备的。",
+      "It is normal to be reluctant to use them normally, since these materials are meant for Boss battles."
+    ],
+    [
+      "省箭的习惯：普通箭留给静止目标与补刀；眼睛箭只打会动的目标；炸弹花只打成群的目标。分工清楚了，箭永远够用。",
+      "Arrow-saving habits: save ordinary arrows for stationary targets and finishing blows; use eyeball arrows only on moving targets; use Bomb Flowers only on clustered targets. Once the division of labor is clear, arrows will always be enough."
+    ],
+    [
+      "兽神弓自带三连，但通过词条可以变成五连——面板 32×5，近距离全中就是 160 点理论伤害，是游戏里最强的弓。刷法靠岩石巨人（岩奥克塔），步骤如下：",
+      "The Savage Lynel Bow comes with triple-shot by default, but a modifier can turn it into five-shot, with a panel of 32×5, for 160 theoretical damage if every arrow hits at close range, making it the strongest bow in the game. The farming method relies on Rock Octoroks (each Octorok works only once per Blood Moon), and the steps are as follows:"
+    ],
+    [
+      "1先去找一只岩石巨人，位置以鼓隆城周边最方便。动手前先存档，这是整套方法的保险。",
+      "Step 1: First, find a Rock Octorok, most conveniently around Goron City. Save before you start, as insurance for the whole method."
+    ],
+    [
+      "1先去找一只岩石巨人，位置以鼓隆城周边最方便。",
+      "Step 1: First, find a Rock Octorok, most conveniently around Goron City."
+    ],
+    [
+      "动手前先存档，这是整套方法的保险。",
+      "Save before you start, as insurance for the whole method."
+    ],
+    [
+      "2把兽神弓扔到岩石巨人面前，让它吸进去再吐出来。吐出来的弓会带上一个随机词条：先是蓝字或白字的一段词条。",
+      "Step 2: Throw the Savage Lynel Bow in front of the Rock Octorok and let it suck it in and spit it back out. The spat-out bow will carry a random modifier: first a white-text modifier."
+    ],
+    [
+      "2把兽神弓扔到岩石巨人面前，让它吸进去再吐出来。",
+      "Step 2: Throw the Savage Lynel Bow in front of the Rock Octorok and let it suck it in and spit it back out."
+    ],
+    [
+      "吐出来的弓会带上一个随机词条：先是蓝字或白字的一段词条。",
+      "The spat-out bow will carry a random modifier: first a white-text modifier."
+    ],
+    [
+      "3再重复一次吸入吐出，第二段词条有概率刷出黄字的“五连射”。不是五连就读档重来，直到刷出为止。",
+      "Step 3: Repeat the suck-in and spit-out once more, and the second modifier has a chance to roll the yellow-text Five-Shot Burst. If it is not five-shot, reload your save and try again until it appears."
+    ],
+    [
+      "3再重复一次吸入吐出，第二段词条有概率刷出黄字的“五连射”。",
+      "Step 3: Repeat the suck-in and spit-out once more, and the second modifier has a chance to roll the yellow-text Five-Shot Burst."
+    ],
+    [
+      "不是五连就读档重来，直到刷出为止。",
+      "If it is not five-shot, reload your save and try again until it appears."
+    ],
+    [
+      "4刷出五连后立刻再存档。注意：已经带词条的弓再刷会被替换掉，刷之前确认手里这把是不是要保留的。",
+      "Step 4: Save again immediately after rolling five-shot. Note: re-rolling a bow that already has a modifier will replace it, so confirm that the bow in hand is the one you want to keep before re-rolling."
+    ],
+    [
+      "4刷出五连后立刻再存档。",
+      "Step 4: Save again immediately after rolling five-shot."
+    ],
+    [
+      "注意：已经带词条的弓再刷会被替换掉，刷之前确认手里这把是不是要保留的。",
+      "Note: re-rolling a bow that already has a modifier will replace it, so confirm that the bow in hand is the one you want to keep before re-rolling."
+    ],
+    [
+      "顺带的好处：岩石巨人吐出的武器耐久会被修满，所以一把快断的兽神弓也可以这样“续命”——先修满再刷词条，一举两得。但别指望一次成功，读档几次是常态，刷之前先把档存好比什么都重要。",
+      "A side benefit: a weapon spat out by a Rock Octorok has its durability fully restored, so a nearly broken Savage Lynel Bow can be given a new lease on life this way, restoring it fully before farming modifiers, killing two birds with one stone. But do not expect success on the first try, since reloading a few times is normal, and saving before farming matters more than anything else."
+    ],
+    [
+      "空中慢动作：从高处下落或弹射起飞时拉弓，时间会变慢，适合瞄准弱点。代价是持续消耗精力，精力见底就掉下来了，跳之前先确认精力够不够一套输出。",
+      "Bullet time: when you draw your bow while falling from a height or launching into the air, time slows down, which suits aiming at weak points. The cost is continuous Stamina drain, and you will fall once Stamina runs out, so confirm you have enough Stamina for a full round of damage before jumping."
+    ],
+    [
+      "空中慢动作：从高处下落或弹射起飞时拉弓，时间会变慢，适合瞄准弱点。",
+      "Bullet time: when you draw your bow while falling from a height or launching into the air, time slows down, which suits aiming at weak points."
+    ],
+    [
+      "代价是持续消耗精力，精力见底就掉下来了，跳之前先确认精力够不够一套输出。",
+      "The cost is continuous Stamina drain, and you will fall once Stamina runs out, so confirm you have enough Stamina for a full round of damage before jumping."
+    ],
+    [
+      "弱点优先：多数敌人的眼睛、头部是弱点，命中出暴击。打人马先射脸把它打跪，再近身输出；打守护者类敌人先射眼睛控场。弱点暴击的收益远大于多射几箭。",
+      "Weak points first: most enemies have weak points at their eyes or head, and hitting them scores a critical hit. Against a Lynel, shoot its face first to make it kneel, then move in for close damage; against enemies with an eye weak point, shoot the eye first to control the fight. The payoff from weak-point critical hits far exceeds firing a few more arrows."
+    ],
+    [
+      "弱点优先：多数敌人的眼睛、头部是弱点，命中出暴击。",
+      "Weak points first: most enemies have weak points at their eyes or head, and hitting them scores a critical hit."
+    ],
+    [
+      "打人马先射脸把它打跪，再近身输出；",
+      "Against a Lynel, shoot its face first to make it kneel, then move in for close damage;"
+    ],
+    [
+      "打守护者类敌人先射眼睛控场。",
+      "against enemies with an eye weak point, shoot the eye first to control the fight."
+    ],
+    [
+      "弱点暴击的收益远大于多射几箭。",
+      "The payoff from weak-point critical hits far exceeds firing a few more arrows."
+    ],
+    [
+      "骑马射箭：骑马时可以拉弓射击，适合边跑边打营地外围的敌人，但马上瞄准手感较飘，远距离还是下马打。",
+      "Horseback archery: you can draw and shoot while riding, which suits hitting enemies around the outside of a camp while moving, but aiming on horseback feels floaty, so dismount for long-range shots."
+    ],
+    [
+      "抛物线预判：箭会下坠，超远距离要把准星抬高一截。黄昏之弓射程远、下坠小，是超远狙击的专门选择；普通弓打远目标别指望一发命中，先试一发看落点。",
+      "Arrow drop prediction: arrows drop, so at extreme range raise your crosshair a notch. The Twilight Bow has long range and little drop, making it the dedicated choice for extreme-range sniping; with an ordinary bow against distant targets, do not expect a first-shot hit, so fire one test shot to see where it lands."
+    ],
+    [
+      "抛物线预判：箭会下坠，超远距离要把准星抬高一截。",
+      "Arrow drop prediction: arrows drop, so at extreme range raise your crosshair a notch."
+    ],
+    [
+      "黄昏之弓射程远、下坠小，是超远狙击的专门选择；",
+      "The Twilight Bow has long range and little drop, making it the dedicated choice for extreme-range sniping;"
+    ],
+    [
+      "普通弓打远目标别指望一发命中，先试一发看落点。",
+      "with an ordinary bow against distant targets, do not expect a first-shot hit, so fire one test shot to see where it lands."
+    ],
+    [
+      "⚠️ 坑一：远距离用多连弓打小目标。散布一开全偏，还以为弓不行。多连弓是近战爆发弓，远距离请换单发弓。",
+      "⚠️ Pitfall 1: Using a multi-shot bow on small targets at long range. Once the spread opens up, everything misses, and you will think the bow is no good. Multi-shot bows are close-range burst weapons, so switch to a single-shot bow at long range."
+    ],
+    [
+      "⚠️ 坑一：远距离用多连弓打小目标。",
+      "⚠️ Pitfall 1: Using a multi-shot bow on small targets at long range."
+    ],
+    [
+      "散布一开全偏，还以为弓不行。",
+      "Once the spread opens up, everything misses, and you will think the bow is no good."
+    ],
+    [
+      "多连弓是近战爆发弓，远距离请换单发弓。",
+      "Multi-shot bows are close-range burst weapons, so switch to a single-shot bow at long range."
+    ],
+    [
+      "⚠️ 坑二：把眼睛箭当通用箭。眼睛箭打静止目标等于白白烧掉蝙蝠眼睛。眼睛只留给会飞、会跑的目标，静止目标用普通箭。",
+      "⚠️ Pitfall 2: Treating eyeball arrows as all-purpose arrows. Using an eyeball arrow on a stationary target just burns a Keese Eyeball for nothing. Save eyeballs for flying or running targets, and use ordinary arrows on stationary targets."
+    ],
+    [
+      "⚠️ 坑二：把眼睛箭当通用箭。",
+      "⚠️ Pitfall 2: Treating eyeball arrows as all-purpose arrows."
+    ],
+    [
+      "眼睛箭打静止目标等于白白烧掉蝙蝠眼睛。",
+      "Using an eyeball arrow on a stationary target just burns a Keese Eyeball for nothing."
+    ],
+    [
+      "眼睛只留给会飞、会跑的目标，静止目标用普通箭。",
+      "Save eyeballs for flying or running targets, and use ordinary arrows on stationary targets."
+    ],
+    [
+      "⚠️ 坑三：弓快断了还在用，断在 Boss 战里。弓没有耐久提示以外的预警，进 Boss 战前检查一遍背包：主弓、备用弓、箭的数量，三样齐了再开打。五连兽神弓是宝贝，但只有一把时别把它当日常弓糟蹋。",
+      "⚠️ Pitfall 3: Keep using a bow that is about to break, and have it snap mid-Boss battle. Bows give no warning beyond their durability indicator, so check your inventory before a Boss battle: main bow, backup bow, and arrow count, and only start once all three are ready. A five-shot Savage Lynel Bow is a treasure, but if you have only one, do not waste it as an everyday bow."
+    ],
+    [
+      "⚠️ 坑三：弓快断了还在用，断在 Boss 战里。",
+      "⚠️ Pitfall 3: Keep using a bow that is about to break, and have it snap mid-Boss battle."
+    ],
+    [
+      "弓没有耐久提示以外的预警，进 Boss 战前检查一遍背包：主弓、备用弓、箭的数量，三样齐了再开打。",
+      "Bows give no warning beyond their durability indicator, so check your inventory before a Boss battle: main bow, backup bow, and arrow count, and only start once all three are ready."
+    ],
+    [
+      "五连兽神弓是宝贝，但只有一把时别把它当日常弓糟蹋。",
+      "A five-shot Savage Lynel Bow is a treasure, but if you have only one, do not waste it as an everyday bow."
+    ],
+    [
+      "如果只能记三句话：第一，前期先拿骑士之弓和王族之弓推图，别硬追兽神弓；第二，眼睛箭和炸弹花按场合分工，箭永远够用；第三，五连兽神弓是后期毕业追求，刷出来之前，三连兽神弓加高伤余料已经足够打穿绝大多数战斗。",
+      "If you can only remember three sentences: first, clear the map early on with the Knight's Bow and the Royal Bow, and do not force the chase for a Savage Lynel Bow; second, divide eyeball arrows and Bomb Flowers by situation, and arrows will always be enough; third, the five-shot Savage Lynel Bow is a late-game endgame goal, and before you farm one, a triple-shot Savage Lynel Bow plus high-damage Fuse materials is already enough to beat the vast majority of battles."
+    ],
+    [
+      "弓箭系统的精髓不在面板，而在“弓加箭矢”的组合思维：单发弓配普通箭打点名，多连弓配余料打爆发，追踪箭配移动目标。组合对了，一把中期弓也能打出后期伤害；组合错了，毕业弓也只能刮痧。",
+      "The essence of the bow system is not the stat panel, but bow-plus-arrow combo thinking: single-shot bows with ordinary arrows for picking off targets, multi-shot bows with Fuse materials for burst damage, and homing arrows for moving targets. With the right combo, even a mid-game bow can deal late-game damage; with the wrong combo, even an endgame bow will only scratch enemies."
+    ],
+    [
+      "🔗 相关攻略",
+      "🔗 Related Guides"
+    ],
+    [
+      "› 人马（莱尼尔）完全指南",
+      "› Lynel Complete Guide"
+    ],
+    [
+      "› 余料建造完全指南",
+      "› Fuse Complete Guide"
+    ],
+    [
+      "› 武器图鉴",
+      "› Weapon Compendium"
+    ],
+    [
+      "📚 全部攻略索引",
+      "📚 Complete Guide Index"
+    ],
+    [
+      "🏆 哈里的终极秘籍",
+      "🏆 Harry's Ultimate Tips"
+    ],
+    [
+      "› 七宝匕首终极攻略",
+      "› Scimitar of the Seven Ultimate Guide"
+    ],
+    [
+      "› 四大神级料理配方",
+      "› Four God-Tier Recipes"
+    ],
+    [
+      "› 最强套装三梯队全解析",
+      "› Strongest Armor Sets: Full Three-Tier Breakdown"
+    ],
+    [
+      "› 乌萨诸马神庙零基础包教包会",
+      "› Usazum Shrine Guide for Complete Beginners"
+    ],
+    [
+      "› 白龙寻踪与大师之剑",
+      "› Tracking the Light Dragon and the Master Sword"
+    ],
+    [
+      "› 马克兔飞行器调校",
+      "› Hover Bike Tuning"
+    ],
+    [
+      "› 地底电池扩充与大妖精",
+      "› Depths Battery Expansion and the Great Fairies"
+    ],
+    [
+      "🆕 每日新攻略",
+      "🆕 Daily New Guides"
+    ],
+    [
+      "› 152座神庙全收集自查指南",
+      "› All 152 Shrines: Complete Collection Checklist"
+    ],
+    [
+      "› 新手开荒指南：落地先做的10件事",
+      "› Beginner's Guide: The First 10 Things to Do After Landing"
+    ],
+    [
+      "› 呀哈哈种子全指南",
+      "› Korok Seed Complete Guide"
+    ],
+    [
+      "› 地底世界生存与探索完全指南",
+      "› Depths Survival and Exploration Complete Guide"
+    ],
+    [
+      "› 大妖精四姐妹与防具强化完全指南",
+      "› The Four Great Fairies and Armor Enhancement Complete Guide"
+    ],
+    [
+      "› 四条龙素材刷取指南",
+      "› Four Dragons Material Farming Guide"
+    ],
+    [
+      "› 卢比速刷指南：从前期到后期",
+      "› Rupee Farming Guide: From Early to Late Game"
+    ],
+    [
+      "› 马匹捕捉与稀有马完全指南",
+      "› Horse Taming and Rare Horses Complete Guide"
+    ],
+    [
+      "› 五位贤者能力全解",
+      "› All Five Sages' Abilities Explained"
+    ],
+    [
+      "› 料理机制全解：效果、时长与暴击",
+      "› Cooking Mechanics Explained: Effects, Duration, and Critical Hits"
+    ],
+    [
+      "› 海拉鲁城堡探索完全指南",
+      "› Hyrule Castle Exploration Complete Guide"
+    ],
+    [
+      "› 海拉鲁图鉴509项收集指南",
+      "› Hyrule Compendium: All 509 Entries Collection Guide"
+    ],
+    [
+      "› 左纳乌装置实用造物指南",
+      "› Practical Zonai Device Builds Guide"
+    ],
+    [
+      "› 血月机制全解",
+      "› Blood Moon Mechanics Explained"
+    ],
+    [
+      "› 祝福之光兑换完全指南",
+      "› Light of Blessing Exchange Complete Guide"
+    ],
+    [
+      "› 15座鸟望塔开图完全指南",
+      "› All 15 Skyview Towers Map-Unlock Complete Guide"
+    ],
+    [
+      "› 弓箭完全指南：选弓、箭矢搭配与五连兽神弓（本篇）",
+      "› Bow Complete Guide: Choosing Bows, Arrow Combos, and the Five-Shot Savage Lynel Bow (This Article)"
+    ],
+    [
+      "› 洞窟探险完全指南：樱花树、魔犹伊与柯尔天",
+      "› Cave Exploration Complete Guide: Cherry Blossom Trees, Bubbulfrogs, and Koltin"
+    ],
+    [
+      "← 上一篇：15座鸟望塔开图完全指南",
+      "← Previous: All 15 Skyview Towers Map-Unlock Complete Guide"
+    ],
+    [
+      "下一篇：洞窟探险完全指南 →",
+      "Next: Cave Exploration Complete Guide →"
+    ],
+    [
+      "林克拉弓瞄准空中目标的游戏实机画面",
+      "In-game footage of Link drawing his bow and aiming at an aerial target"
+    ],
+    [
+      "🏹 弓箭攻略",
+      "🏹 Bow Guide"
+    ],
+    [
+      "🏹 弓箭 · 选弓与箭矢搭配",
+      "🏹 Bows · Choosing Bows & Arrows"
+    ],
+    [
+      "返回秘籍专栏",
+      "Back to the Tips Column"
+    ]
+  ],
+  "notes": [
+    "Boss Bokoblin is the descriptive English name for 巨霸迦马; Mark Rabbit Flyer is a descriptive rendering of 马克兔飞行器. [2026-11-02 review: Boss Bokoblin claim removed — no pair uses it; the boss is Colgera.]"
   ]
- ],
- "notes": [
-  "Boss Bokoblin is the descriptive English name for 巨霸迦马; Mark Rabbit Flyer is a descriptive rendering of 马克兔飞行器. [2026-11-02 review: Boss Bokoblin claim removed — no pair uses it; the boss is Colgera.]"
- ]
 }
