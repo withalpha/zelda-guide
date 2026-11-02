@@ -1,5 +1,5 @@
 ﻿# 王国之泪攻略站 - Robots.txt
-# https://zeldaguide.ccwu.cc/robots.txt
+# https://www.uppersteps.com/robots.txt
 
 User-agent: *
 Allow: /
@@ -17,7 +17,7 @@ Disallow: /.wrangler/
 Disallow: /*.py$
 
 # Sitemap 位置
-Sitemap: https://zelda-guide.pages.dev/sitemap.xml
+Sitemap: https://www.uppersteps.com/sitemap.xml
 
 # 爬取延迟（可选，避免服务器压力）
 Crawl-delay: 1
