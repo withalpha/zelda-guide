@@ -949,7 +949,12 @@ var UI_EN = {
   '王国之泪 攻略': 'Tears of the Kingdom Guide',
   '本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。': 'All guides on this site are the author\'s original work. All game characters are copyrighted by Nintendo Co., Ltd.',
   '《塞尔达传说 王国之泪》版权归任天堂株式会社所有。': 'The Legend of Zelda: Tears of the Kingdom is copyrighted by Nintendo Co., Ltd.',
-  '常见问题': 'FAQ', '📋 攻略步骤': '📋 Guide Steps', '📋 任务步骤': '📋 Quest Steps',
+  '常见问题': 'FAQ',
+  '分享本页面': 'Share this page', '分享到微博': 'Share to Weibo',
+  '微信扫码分享': 'Share via WeChat QR code', '分享到QQ': 'Share to QQ',
+  '分享到 Twitter/X': 'Share to X (Twitter)', '分享到 Facebook': 'Share to Facebook',
+  '复制链接': 'Copy link', '复制页面链接': 'Copy page link', '已复制！': 'Copied!',
+  '菜单': 'Menu', '搜索任务': 'Search quests', '📋 攻略步骤': '📋 Guide Steps', '📋 任务步骤': '📋 Quest Steps',
   '🔗 相关攻略': '🔗 Related Guides', '📚 全部攻略索引': '📚 All Guides Index',
   '📚 更多攻略': '📚 More Guides', '📖 深度攻略': '📖 In-Depth Guides',
   '阅读全文 →': 'Read More →', '返回秘籍专栏': "Back to Harry's Guides",
@@ -981,12 +986,15 @@ function getLang() {
 }
 var lang = getLang();
 var textNodes = [], altEls = [], titleEls = [], metaEls = [], origTitle = document.title;
+var attrEls = []; /* data-tip / aria-label 元素（分享面板等 JS 生成 UI 的悬浮提示） */
+var curMap = null, curSub = null, curNorm = null; /* 当前英文包（供后生成内容补译复用） */
 var obsNodes = []; /* 由 MutationObserver 翻译的后生成文本节点（地图弹窗、JS 表格等），切换语言时一并恢复 */
 
 /* ---------- 繁体转换：OpenCC s2twp 算法移植（词表按需加载） ---------- */
 var TW = null, twLoading = false, twQueue = [];
 function twLoad(cb) {
   if (TW) { cb(); return; }
+  if (window.__TW_DICTS) { TW = window.__TW_DICTS; cb(); return; }
   twQueue.push(cb);
   if (twLoading) return;
   twLoading = true;
@@ -1056,6 +1064,8 @@ function twConvert(str) {
 
 /* ---------- 原文快照与恢复 ---------- */
 function collect() {
+  if (window._totkCollected) return;
+  window._totkCollected = true;
   var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
     acceptNode: function (n) {
       var p = n.parentNode;
@@ -1084,14 +1094,27 @@ function collect() {
     if (el._totkOrig === undefined) el._totkOrig = el.getAttribute('content');
     metaEls.push(el);
   });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-tip],[aria-label]'), function (el) {
+    if (el.closest && el.closest('.lang-switch')) return;
+    if (el.hasAttribute('data-tip') && el._totkOrigTip === undefined) el._totkOrigTip = el.getAttribute('data-tip');
+    if (el.hasAttribute('aria-label') && el._totkOrigAria === undefined) el._totkOrigAria = el.getAttribute('aria-label');
+    attrEls.push(el);
+  });
 }
 function restoreAll() {
-  obsNodes.forEach(function (o) { o.n.nodeValue = o.orig; o.n._totkDone = false; });
+  obsNodes.forEach(function (o) {
+    if (o.n) { o.n.nodeValue = o.orig; o.n._totkDone = false; }
+    else if (o.el) o.el.setAttribute(o.attr, o.orig);
+  });
   obsNodes = [];
   textNodes.forEach(function (n) { n.nodeValue = n._totkOrig; });
   altEls.forEach(function (el) { el.setAttribute('alt', el._totkOrig); });
   titleEls.forEach(function (el) { el.setAttribute('title', el._totkOrigT); });
   metaEls.forEach(function (el) { el.setAttribute('content', el._totkOrig); });
+  attrEls.forEach(function (el) {
+    if (el._totkOrigTip !== undefined) el.setAttribute('data-tip', el._totkOrigTip);
+    if (el._totkOrigAria !== undefined) el.setAttribute('aria-label', el._totkOrigAria);
+  });
   document.title = origTitle;
 }
 function splitWS(s) {
@@ -1099,35 +1122,41 @@ function splitWS(s) {
   return { pre: m[1], core: m[2], post: m[3] };
 }
 function normWS(s) { return s.replace(/\s+/g, ' ').replace(/[\u201c\u201d]/g, '"').replace(/[\u2018\u2019]/g, "'").trim(); }
+function flatWS(s) { return s.replace(/\s+/g, ''); } /* 去全部空白：HTML 源码里的换行缩进会让整块 textContent 在 <br> 处多出空格，包键里没有这些空格 */
 function applyMapToText(map, subKeys) {
   /* 整块优先：段落/列表/单元格全文匹配时，把译文放进首个文本节点，
      其余文本节点清空（保留链接等内联元素占位，避免半中半英）。 */
   var normMap = {};
-  Object.keys(map).forEach(function (k) { normMap[normWS(k)] = map[k]; });
+  Object.keys(map).forEach(function (k) {
+    normMap[normWS(k)] = map[k];
+    var f = flatWS(k);
+    if (!Object.prototype.hasOwnProperty.call(normMap, f)) normMap[f] = map[k];
+  });
   /* 整块匹配扩展：所有元素都可作为整块候选（卡片 div、步骤 div 等），
-     按深度从深到浅尝试，内层先命中则外层跳过；含 img/table/ul/ol 的
-     容器跳过（其全文是多项拼接，不会是单条译文）；<br> 不再排除，
-     因 textContent 本来就把 <br> 当空拼接，与翻译包键一致。 */
+     按文档顺序（外层先于内层）尝试：外层全文先命中则内层跳过。
+     若按深到浅，内层 <strong> 标签（如“无限循环：”）会先把自己翻掉，
+     导致外层步骤句全文再也匹配不上整句键，只剩半中半英。
+     含 img/table/ul/ol 的容器跳过（其全文是多项拼接，不会是单条译文）；
+     <br> 不再排除，因 textContent 本来就把 <br> 当空拼接，与翻译包键一致。 */
   var blockEls = [];
   Array.prototype.forEach.call(document.body.querySelectorAll('*'), function (el) {
     if (el.querySelector('img,table,ul,ol')) return;
     blockEls.push(el);
   });
-  blockEls.sort(function (a, b) {
-    var da = 0, db = 0, x = a, y = b;
-    while (x) { da++; x = x.parentNode; }
-    while (y) { db++; y = y.parentNode; }
-    return db - da;
-  });
   blockEls.forEach(function (el) {
     var full = normWS(el.textContent);
-    if (!full || !Object.prototype.hasOwnProperty.call(normMap, full)) return;
+    var bval = normMap[full];
+    if (bval === undefined) bval = normMap[flatWS(el.textContent)];
+    if (!full || bval === undefined) return;
     var nodes = [];
     var w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, { acceptNode: function (n) { return /\S/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT; } });
     var tn;
     while ((tn = w.nextNode())) nodes.push(tn);
     if (!nodes.length) return;
-    nodes[0].nodeValue = normMap[full];
+    var allDone = true;
+    for (var di = 0; di < nodes.length; di++) { if (!nodes[di]._totkDone) { allDone = false; break; } }
+    if (allDone) return;
+    nodes[0].nodeValue = bval;
     for (var i = 1; i < nodes.length; i++) nodes[i].nodeValue = '';
     nodes.forEach(function (n) { n._totkDone = true; });
   });
@@ -1141,6 +1170,10 @@ function applyMapToText(map, subKeys) {
     }
     if (Object.prototype.hasOwnProperty.call(normMap, normWS(parts.core))) {
       n.nodeValue = parts.pre + normMap[normWS(parts.core)] + parts.post;
+      return;
+    }
+    if (Object.prototype.hasOwnProperty.call(normMap, flatWS(parts.core))) {
+      n.nodeValue = parts.pre + normMap[flatWS(parts.core)] + parts.post;
       return;
     }
     if (subKeys && !n._totkDone) {
@@ -1164,39 +1197,48 @@ function applyMapToText(map, subKeys) {
     var v = el._totkOrig;
     if (Object.prototype.hasOwnProperty.call(map, v)) el.setAttribute('content', map[v]);
   });
+  attrEls.forEach(function (el) {
+    if (el._totkOrigTip !== undefined) {
+      if (Object.prototype.hasOwnProperty.call(map, el._totkOrigTip)) el.setAttribute('data-tip', map[el._totkOrigTip]);
+      else if (Object.prototype.hasOwnProperty.call(normMap, normWS(el._totkOrigTip))) el.setAttribute('data-tip', normMap[normWS(el._totkOrigTip)]);
+      else if (Object.prototype.hasOwnProperty.call(normMap, flatWS(el._totkOrigTip))) el.setAttribute('data-tip', normMap[flatWS(el._totkOrigTip)]);
+    }
+    if (el._totkOrigAria !== undefined) {
+      if (Object.prototype.hasOwnProperty.call(map, el._totkOrigAria)) el.setAttribute('aria-label', map[el._totkOrigAria]);
+      else if (Object.prototype.hasOwnProperty.call(normMap, normWS(el._totkOrigAria))) el.setAttribute('aria-label', normMap[normWS(el._totkOrigAria)]);
+      else if (Object.prototype.hasOwnProperty.call(normMap, flatWS(el._totkOrigAria))) el.setAttribute('aria-label', normMap[flatWS(el._totkOrigAria)]);
+    }
+  });
 }
 
 /* ---------- 切换器 UI ---------- */
 var switchEl = null, busy = false;
 function setActive() {
   if (!switchEl) return;
-  Array.prototype.forEach.call(switchEl.querySelectorAll('button'), function (b) {
-    b.classList.toggle('on', b.getAttribute('data-lang') === lang);
-  });
+  switchEl.value = lang;
 }
 function injectSwitcher() {
   var host = document.querySelector('.navbar-inner') || document.querySelector('.navbar');
   if (!host || document.querySelector('.lang-switch')) return;
   var st = document.createElement('style');
-  st.textContent = '.lang-switch{display:flex;gap:6px;margin-left:auto;align-items:center;flex-wrap:wrap}' +
-    '.lang-switch button{background:transparent;border:1px solid rgba(201,162,39,.5);color:#e8dcc0;border-radius:20px;padding:4px 10px;font-size:12px;cursor:pointer;line-height:1.4}' +
-    '.lang-switch button.on{background:#c9a227;color:#10131a;border-color:#c9a227;font-weight:700}' +
-    '.lang-switch button:disabled{opacity:.5;cursor:wait}';
+  st.textContent = '.lang-switch{display:flex;margin-left:auto;align-items:center}' +
+    '.lang-switch select{background:#10131a;border:1px solid rgba(201,162,39,.6);color:#e8dcc0;border-radius:20px;padding:5px 8px;font-size:12px;cursor:pointer;line-height:1.4;max-width:118px}' +
+    '.lang-switch select:disabled{opacity:.5;cursor:wait}';
   document.head.appendChild(st);
   var div = document.createElement('div');
   div.className = 'lang-switch';
-  div.setAttribute('role', 'group');
-  div.setAttribute('aria-label', 'Language');
+  var sel = document.createElement('select');
+  sel.setAttribute('aria-label', 'Language');
   [['en', 'English'], ['zh-CN', '简体中文'], ['zh-TW', '繁體中文']].forEach(function (item) {
-    var b = document.createElement('button');
-    b.type = 'button';
-    b.setAttribute('data-lang', item[0]);
-    b.textContent = item[1];
-    b.addEventListener('click', function () { setLang(item[0]); });
-    div.appendChild(b);
+    var o = document.createElement('option');
+    o.value = item[0];
+    o.textContent = item[1];
+    sel.appendChild(o);
   });
+  sel.addEventListener('change', function () { setLang(sel.value); });
+  div.appendChild(sel);
   host.appendChild(div);
-  switchEl = div;
+  switchEl = sel;
   setActive();
 }
 function setLang(l) {
@@ -1211,6 +1253,92 @@ function setLang(l) {
   setActive();
   applyLang();
 }
+function installObs() {
+      if (!window._totkObs) {
+        window._totkObs = true;
+        var obs = new MutationObserver(function (muts) {
+          if (lang !== 'en' && lang !== 'zh-TW') return;
+          function trNode(n) {
+            if (lang === 'zh-TW') {
+              if (!TW || n._totkDone || !/\S/.test(n.nodeValue)) return;
+              var p0 = n.parentNode;
+              if (!p0) return;
+              var tg0 = p0.nodeName;
+              if (tg0 === 'SCRIPT' || tg0 === 'STYLE' || tg0 === 'NOSCRIPT') return;
+              if (p0.closest && p0.closest('[data-no-i18n],.adsbygoogle,.lang-switch')) return;
+              var orig0 = n.nodeValue;
+              n.nodeValue = twConvert(orig0);
+              n._totkDone = true; obsNodes.push({ n: n, orig: orig0 });
+              return;
+            }
+            if (!curMap || n._totkDone || !/\S/.test(n.nodeValue)) return;
+            var p = n.parentNode;
+            if (!p) return;
+            var tag = p.nodeName;
+            if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'NOSCRIPT') return;
+            if (p.closest && p.closest('[data-no-i18n],.adsbygoogle,.lang-switch')) return;
+            var parts = splitWS(n.nodeValue);
+            if (!parts.core) return;
+            var orig = n.nodeValue, out = null;
+            if (Object.prototype.hasOwnProperty.call(curMap, parts.core)) out = parts.pre + curMap[parts.core] + parts.post;
+            else {
+              var normCore = normWS(parts.core), nm = {};
+              Object.keys(curMap).forEach(function (k) { nm[normWS(k)] = curMap[k]; var cf2 = flatWS(k); if (!Object.prototype.hasOwnProperty.call(nm, cf2)) nm[cf2] = curMap[k]; });
+              if (Object.prototype.hasOwnProperty.call(nm, normCore)) out = parts.pre + nm[normCore] + parts.post;
+              else {
+                var core = parts.core;
+                for (var i = 0; i < curSub.length; i++) {
+                  var k = curSub[i];
+                  if (core.indexOf(k) !== -1) core = core.split(k).join(curMap[k]);
+                }
+                out = parts.pre + core + parts.post;
+              }
+            }
+            if (out !== orig) { n.nodeValue = out; n._totkDone = true; obsNodes.push({ n: n, orig: orig }); }
+          }
+          function trAttr(el) {
+            if (el.closest && el.closest('.lang-switch')) return;
+            if (lang === 'zh-TW') {
+              if (!TW) return;
+              if (el.hasAttribute('data-tip')) {
+                if (el._totkOrigTip === undefined) el._totkOrigTip = el.getAttribute('data-tip');
+                var nt = twConvert(el._totkOrigTip);
+                if (nt !== el.getAttribute('data-tip')) { el.setAttribute('data-tip', nt); obsNodes.push({ el: el, attr: 'data-tip', orig: el._totkOrigTip }); }
+              }
+              if (el.hasAttribute('aria-label')) {
+                if (el._totkOrigAria === undefined) el._totkOrigAria = el.getAttribute('aria-label');
+                var na = twConvert(el._totkOrigAria);
+                if (na !== el.getAttribute('aria-label')) { el.setAttribute('aria-label', na); obsNodes.push({ el: el, attr: 'aria-label', orig: el._totkOrigAria }); }
+              }
+              return;
+            }
+            if (!curMap) return;
+            if (el.hasAttribute('data-tip')) {
+              if (el._totkOrigTip === undefined) el._totkOrigTip = el.getAttribute('data-tip');
+              var vt = curMap[el._totkOrigTip] || (curNorm && (curNorm[normWS(el._totkOrigTip)] || curNorm[flatWS(el._totkOrigTip)]));
+              if (vt && vt !== el.getAttribute('data-tip')) { el.setAttribute('data-tip', vt); obsNodes.push({ el: el, attr: 'data-tip', orig: el._totkOrigTip }); }
+            }
+            if (el.hasAttribute('aria-label')) {
+              if (el._totkOrigAria === undefined) el._totkOrigAria = el.getAttribute('aria-label');
+              var va = curMap[el._totkOrigAria] || (curNorm && (curNorm[normWS(el._totkOrigAria)] || curNorm[flatWS(el._totkOrigAria)]));
+              if (va && va !== el.getAttribute('aria-label')) { el.setAttribute('aria-label', va); obsNodes.push({ el: el, attr: 'aria-label', orig: el._totkOrigAria }); }
+            }
+          }
+          muts.forEach(function (mu) {
+            Array.prototype.forEach.call(mu.addedNodes, function (an) {
+              if (an.nodeType === 3) { trNode(an); return; }
+              if (an.nodeType !== 1) return;
+              var w = document.createTreeWalker(an, NodeFilter.SHOW_TEXT, { acceptNode: function (n) { return /\S/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT; } });
+              var tn;
+              while ((tn = w.nextNode())) trNode(tn);
+              trAttr(an);
+              Array.prototype.forEach.call(an.querySelectorAll('[data-tip],[aria-label]'), function (x) { trAttr(x); });
+            });
+          });
+        });
+        obs.observe(document.body, { childList: true, subtree: true });
+      }
+}
 function applyLang() {
   restoreAll();
   document.documentElement.lang = lang === 'en' ? 'en' : lang;
@@ -1223,7 +1351,12 @@ function applyLang() {
         altEls.forEach(function (el) { el.setAttribute('alt', twConvert(el._totkOrig)); });
         titleEls.forEach(function (el) { el.setAttribute('title', twConvert(el._totkOrigT)); });
         metaEls.forEach(function (el) { el.setAttribute('content', twConvert(el._totkOrig)); });
+        attrEls.forEach(function (el) {
+          if (el._totkOrigTip !== undefined) el.setAttribute('data-tip', twConvert(el._totkOrigTip));
+          if (el._totkOrigAria !== undefined) el.setAttribute('aria-label', twConvert(el._totkOrigAria));
+        });
         document.title = twConvert(origTitle);
+        installObs();
       }
       busy = false; setBusy(false);
     });
@@ -1252,71 +1385,24 @@ function applyLang() {
         });
         subKeys.sort(function (a, b) { return b.length - a.length; });
       }
+      curMap = map; curSub = subKeys; curNorm = {};
+      Object.keys(map).forEach(function (k) {
+        curNorm[normWS(k)] = map[k];
+        var cf = flatWS(k);
+        if (!Object.prototype.hasOwnProperty.call(curNorm, cf)) curNorm[cf] = map[k];
+      });
       applyMapToText(map, subKeys);
       if (pack && pack.title) document.title = pack.title;
       /* 后生成内容翻译：地图弹窗、JS 渲染表格等在 collect() 之后才出现，
          靠 MutationObserver 补译；切换出英文时由 restoreAll 恢复。 */
-      if (!window._totkObs) {
-        window._totkObs = true;
-        var obs = new MutationObserver(function (muts) {
-          if (lang !== 'en' && lang !== 'zh-TW') return;
-          function trNode(n) {
-            if (lang === 'zh-TW') {
-              if (!TW || n._totkDone || !/\S/.test(n.nodeValue)) return;
-              var p0 = n.parentNode;
-              if (!p0) return;
-              var tg0 = p0.nodeName;
-              if (tg0 === 'SCRIPT' || tg0 === 'STYLE' || tg0 === 'NOSCRIPT') return;
-              if (p0.closest && p0.closest('[data-no-i18n],.adsbygoogle,.lang-switch')) return;
-              var orig0 = n.nodeValue;
-              n.nodeValue = twConvert(orig0);
-              n._totkDone = true; obsNodes.push({ n: n, orig: orig0 });
-              return;
-            }
-            if (n._totkDone || !/\S/.test(n.nodeValue)) return;
-            var p = n.parentNode;
-            if (!p) return;
-            var tag = p.nodeName;
-            if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'NOSCRIPT') return;
-            if (p.closest && p.closest('[data-no-i18n],.adsbygoogle,.lang-switch')) return;
-            var parts = splitWS(n.nodeValue);
-            if (!parts.core) return;
-            var orig = n.nodeValue, out = null;
-            if (Object.prototype.hasOwnProperty.call(map, parts.core)) out = parts.pre + map[parts.core] + parts.post;
-            else {
-              var normCore = normWS(parts.core), nm = {};
-              Object.keys(map).forEach(function (k) { nm[normWS(k)] = map[k]; });
-              if (Object.prototype.hasOwnProperty.call(nm, normCore)) out = parts.pre + nm[normCore] + parts.post;
-              else {
-                var core = parts.core;
-                for (var i = 0; i < subKeys.length; i++) {
-                  var k = subKeys[i];
-                  if (core.indexOf(k) !== -1) core = core.split(k).join(map[k]);
-                }
-                out = parts.pre + core + parts.post;
-              }
-            }
-            if (out !== orig) { n.nodeValue = out; n._totkDone = true; obsNodes.push({ n: n, orig: orig }); }
-          }
-          muts.forEach(function (mu) {
-            Array.prototype.forEach.call(mu.addedNodes, function (an) {
-              if (an.nodeType === 3) { trNode(an); return; }
-              if (an.nodeType !== 1) return;
-              var w = document.createTreeWalker(an, NodeFilter.SHOW_TEXT, { acceptNode: function (n) { return /\S/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT; } });
-              var tn;
-              while ((tn = w.nextNode())) trNode(tn);
-            });
-          });
-        });
-        obs.observe(document.body, { childList: true, subtree: true });
-      }
+      installObs();
       busy = false; setBusy(false);
     });
   }
 }
 function setBusy(b) {
   if (!switchEl) return;
-  Array.prototype.forEach.call(switchEl.querySelectorAll('button'), function (x) { x.disabled = b; });
+  switchEl.disabled = b;
 }
 document.addEventListener('DOMContentLoaded', function () {
   collect();
