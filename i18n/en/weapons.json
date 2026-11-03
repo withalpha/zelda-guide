@@ -110,26 +110,6 @@
       "At least 13 Hearts are needed to pull it from the Light Dragon's forehead."
     ],
     [
-      "攻击力30（满血状态下 60）",
-      "Attack 30 (60 at full health)"
-    ],
-    [
-      "耐久度无限（耗尽后 10 分钟充能）",
-      "Durability: Infinite (recharges in 10 minutes after depletion)"
-    ],
-    [
-      "获取方法完成主线「失落的勇者之剑」后，骑乘光源龙飞行至龙头，从额头光源宝箱中取出",
-      "How to Obtain: After completing the main quest The Lost Hero's Sword, ride the Light Dragon in flight to its head and take it from the forehead light chest."
-    ],
-    [
-      "特殊效果满血时攻击力翻倍；可发射能量光束；对幽暗之力敌人有克制效果；耐久不会永久归零",
-      "Special Effects: Attack doubles at full health; can fire energy beams; strong against Gloom enemies; durability never permanently reaches zero."
-    ],
-    [
-      "特殊效果满血时攻击力翻倍；",
-      "Special Effects: Attack doubles at full health;"
-    ],
-    [
       "可发射能量光束；",
       "can fire energy beams;"
     ],
@@ -142,32 +122,12 @@
       "durability never permanently reaches zero."
     ],
     [
-      "融合建议：龙骨碎片（+55）→ 总攻击 85，满血约 115，全游戏最强输出",
-      "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 85, about 115 at full health, the strongest damage output in the game."
-    ],
-    [
       "森民之枪",
       "Forest Dweller's Spear"
     ],
     [
       "科洛格森林居民使用的木制长枪，以森林硬木打造，轻巧灵活。虽然攻击力偏低，但耐久尚可，适合初期远程刺击和融合底座使用。",
       "A wooden spear used by the residents of Korok Forest, made from hard forest wood, light and nimble. Its attack is on the low side, but its durability is acceptable, making it suited to early ranged thrusts and use as a Fuse base."
-    ],
-    [
-      "攻击力7",
-      "Attack 7"
-    ],
-    [
-      "耐久度35",
-      "Durability 35"
-    ],
-    [
-      "获取方法科洛格森林附近地面拾取；林间宝箱；击败科洛格守卫偶尔掉落",
-      "How to Obtain: Picked up from the ground near Korok Forest; forest chests; occasionally dropped by defeated Korok guards."
-    ],
-    [
-      "获取方法科洛格森林附近地面拾取；",
-      "How to Obtain: Picked up from the ground near Korok Forest;"
     ],
     [
       "林间宝箱；",
@@ -178,24 +138,8 @@
       "occasionally dropped by defeated Korok guards."
     ],
     [
-      "特殊效果无特殊效果；木质材质可被点燃，注意火焰环境",
-      "Special Effects: No special effects; wooden material can catch fire, so watch out in fiery environments."
-    ],
-    [
-      "特殊效果无特殊效果；",
-      "Special Effects: No special effects;"
-    ],
-    [
       "木质材质可被点燃，注意火焰环境",
       "wooden material can catch fire, so watch out in fiery environments."
-    ],
-    [
-      "融合建议：蜥蜴族尾巴（+10）→ 增加攻击范围；火石（+3，🔥）适合初期点燃草丛",
-      "Fuse Suggestion: Lizalfos Tail (+10) → increases attack range; Flint (+3, 🔥) suits lighting grass early on."
-    ],
-    [
-      "融合建议：蜥蜴族尾巴（+10）→ 增加攻击范围；",
-      "Fuse Suggestion: Lizalfos Tail (+10) → increases attack range;"
     ],
     [
       "火石（+3，🔥）适合初期点燃草丛",
@@ -210,22 +154,6 @@
       "The standard sword of Hyrule's knights, solidly made, with balanced attack and durability, and one of the most common main weapons in the mid-game. Its plain shape suits use with a shield."
     ],
     [
-      "攻击力18",
-      "Attack 18"
-    ],
-    [
-      "耐久度27",
-      "Durability 27"
-    ],
-    [
-      "获取方法海拉鲁城堡周边守卫掉落；城堡外围宝箱；坐骑驿站附近拾取",
-      "How to Obtain: Dropped by guards around Hyrule Castle; chests outside the castle; picked up near riding stables."
-    ],
-    [
-      "获取方法海拉鲁城堡周边守卫掉落；",
-      "How to Obtain: Dropped by guards around Hyrule Castle;"
-    ],
-    [
       "城堡外围宝箱；",
       "chests outside the castle;"
     ],
@@ -234,20 +162,8 @@
       "picked up near riding stables."
     ],
     [
-      "特殊效果无特殊效果；可配盾单手操作，攻防兼备",
-      "Special Effects: No special effects; can be wielded one-handed with a shield, balancing offense and defense."
-    ],
-    [
       "可配盾单手操作，攻防兼备",
       "can be wielded one-handed with a shield, balancing offense and defense."
-    ],
-    [
-      "融合建议：莱乃尔角（+21）→ 总攻击 39；蓝宝石（+4，❄）适合对付火属性敌人",
-      "Fuse Suggestion: Lynel Horn (+21) → total attack 39; Sapphire (+4, ❄) suits fighting fire-element enemies."
-    ],
-    [
-      "融合建议：莱乃尔角（+21）→ 总攻击 39；",
-      "Fuse Suggestion: Lynel Horn (+21) → total attack 39;"
     ],
     [
       "蓝宝石（+4，❄）适合对付火属性敌人",
@@ -262,22 +178,6 @@
       "A two-handed greatsword used by Hyrule's heavy cavalry, with a wide swing that can sweep multiple targets in one hit. It requires both hands and cannot be used with a shield, but its burst damage is powerful."
     ],
     [
-      "攻击力26",
-      "Attack 26"
-    ],
-    [
-      "耐久度20",
-      "Durability 20"
-    ],
-    [
-      "获取方法海拉鲁城堡周边宝箱；重骑士守卫掉落；地图中部宝箱",
-      "How to Obtain: Chests around Hyrule Castle; dropped by heavy knight guards; chests in the central map."
-    ],
-    [
-      "获取方法海拉鲁城堡周边宝箱；",
-      "How to Obtain: Chests around Hyrule Castle;"
-    ],
-    [
       "重骑士守卫掉落；",
       "dropped by heavy knight guards;"
     ],
@@ -286,24 +186,8 @@
       "chests in the central map."
     ],
     [
-      "特殊效果双手武器范围攻击，可扫击周围敌人；攻击带有轻微冲击波",
-      "Special Effects: Two-handed weapon with area attacks that can sweep surrounding enemies; attacks carry a slight shockwave."
-    ],
-    [
-      "特殊效果双手武器范围攻击，可扫击周围敌人；",
-      "Special Effects: Two-handed weapon with area attacks that can sweep surrounding enemies;"
-    ],
-    [
       "攻击带有轻微冲击波",
       "attacks carry a slight shockwave."
-    ],
-    [
-      "融合建议：龙骨碎片（+55）→ 总攻击 81；红宝石（+4，🔥）兼顾范围燃烧",
-      "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 81; Ruby (+4, 🔥) also gives area burning."
-    ],
-    [
-      "融合建议：龙骨碎片（+55）→ 总攻击 81；",
-      "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 81;"
     ],
     [
       "红宝石（+4，🔥）兼顾范围燃烧",
@@ -318,18 +202,6 @@
       "The standard spear of Hyrule's knight infantry, with long attack reach, suited to keeping distance from enemies. Its fast thrust combos flow smoothly, making it an excellent mid-game polearm."
     ],
     [
-      "攻击力15",
-      "Attack 15"
-    ],
-    [
-      "获取方法海拉鲁城堡区域守卫掉落；城堡内宝箱；中部平原骑兵掉落",
-      "How to Obtain: Dropped by guards in the Hyrule Castle region; chests inside the castle; dropped by cavalry on the central plains."
-    ],
-    [
-      "获取方法海拉鲁城堡区域守卫掉落；",
-      "How to Obtain: Dropped by guards in the Hyrule Castle region;"
-    ],
-    [
       "城堡内宝箱；",
       "chests inside the castle;"
     ],
@@ -338,24 +210,8 @@
       "dropped by cavalry on the central plains."
     ],
     [
-      "特殊效果攻击范围长，可隔距攻击；三连刺速度快",
-      "Special Effects: Long attack range for striking from a distance; fast triple-thrust speed."
-    ],
-    [
-      "特殊效果攻击范围长，可隔距攻击；",
-      "Special Effects: Long attack range for striking from a distance;"
-    ],
-    [
       "三连刺速度快",
       "fast triple-thrust speed."
-    ],
-    [
-      "融合建议：蜥蜴族尾巴（+10）→ 扩大攻击范围；龙骨碎片（+55）→ 总攻击 70",
-      "Fuse Suggestion: Lizalfos Tail (+10) → expands attack range; Silver Lynel Saber Horn (+55) → total attack 70."
-    ],
-    [
-      "融合建议：蜥蜴族尾巴（+10）→ 扩大攻击范围；",
-      "Fuse Suggestion: Lizalfos Tail (+10) → expands attack range;"
     ],
     [
       "龙骨碎片（+55）→ 总攻击 70",
@@ -378,32 +234,8 @@
       "A prototype two-handed sword made by the Sheikah with ancient technology for the royal guard, with extremely high attack but extremely fragile durability. When 3 durability segments remain, Death's Door Burst triggers, doubling attack to about 104, suited to landing a fatal blow on a Boss."
     ],
     [
-      "攻击力52（濒死爆发时约 104）",
-      "Attack 52 (about 104 during Death's Door Burst)"
-    ],
-    [
-      "耐久度7（极低，慎用）",
-      "Durability 7 (extremely low, use with care)"
-    ],
-    [
-      "获取方法海拉鲁城堡深处地牢宝箱；地底冥界城堡对应区域宝箱",
-      "How to Obtain: Chests in the dungeon deep inside Hyrule Castle; chests in the corresponding Depths castle region."
-    ],
-    [
-      "获取方法海拉鲁城堡深处地牢宝箱；",
-      "How to Obtain: Chests in the dungeon deep inside Hyrule Castle;"
-    ],
-    [
       "地底冥界城堡对应区域宝箱",
       "chests in the corresponding Depths castle region."
-    ],
-    [
-      "特殊效果耐久剩余 3 格时攻击力翻倍（濒死爆发），可瞬间斩杀高血量 Boss",
-      "Special Effects: Attack doubles when 3 durability segments remain (Death's Door Burst), instantly slaying high-health Bosses."
-    ],
-    [
-      "融合建议：古代刀片（+30）→ 总攻击 82，濒死爆发约 164，全游戏爆发伤害之王",
-      "Fuse Suggestion: Ancient Blade (+30) → total attack 82, about 164 during Death's Door Burst, the king of burst damage in the game."
     ],
     [
       "格鲁德双手剑",
@@ -414,22 +246,6 @@
       "A two-handed greatsword forged by Gerudo craftsmen from fine desert metal, ornate in shape with a broad blade. Its performance is stable in hot desert conditions, with balanced durability and attack, making it an excellent mid-to-late-game two-handed weapon base."
     ],
     [
-      "攻击力28",
-      "Attack 28"
-    ],
-    [
-      "耐久度30",
-      "Durability 30"
-    ],
-    [
-      "获取方法杰鲁多城地区宝箱；格鲁德精英战士掉落；沙漠遗迹宝箱",
-      "How to Obtain: Chests in the Gerudo Town region; dropped by elite Gerudo warriors; desert ruin chests."
-    ],
-    [
-      "获取方法杰鲁多城地区宝箱；",
-      "How to Obtain: Chests in the Gerudo Town region;"
-    ],
-    [
       "格鲁德精英战士掉落；",
       "dropped by elite Gerudo warriors;"
     ],
@@ -438,24 +254,8 @@
       "desert ruin chests."
     ],
     [
-      "特殊效果无特殊属性；抗高温材质，沙漠探险不受环境影响",
-      "Special Effects: No special properties; heat-resistant material, unaffected by the environment when exploring the desert."
-    ],
-    [
-      "特殊效果无特殊属性；",
-      "Special Effects: No special properties;"
-    ],
-    [
       "抗高温材质，沙漠探险不受环境影响",
       "heat-resistant material, unaffected by the environment when exploring the desert."
-    ],
-    [
-      "融合建议：黄玉（+4，⚡雷击）对沙漠系和水系敌人有效；龙骨碎片（+55）→ 总攻击 83",
-      "Fuse Suggestion: Topaz (+4, ⚡ lightning) works against desert and water enemies; Silver Lynel Saber Horn (+55) → total attack 83."
-    ],
-    [
-      "融合建议：黄玉（+4，⚡雷击）对沙漠系和水系敌人有效；",
-      "Fuse Suggestion: Topaz (+4, ⚡ lightning) works against desert and water enemies;"
     ],
     [
       "龙骨碎片（+55）→ 总攻击 83",
@@ -474,40 +274,12 @@
       "A bone weapon used in combat by Lizalfos, adapted from their forelimbs. Its attack is low, but the bone is light and its swing speed extremely fast. Its greater use is as a Fuse material for stacking attack."
     ],
     [
-      "攻击力10",
-      "Attack 10"
-    ],
-    [
-      "耐久度18",
-      "Durability 18"
-    ],
-    [
-      "获取方法击败蜥蜴族（Lizalfos）必定掉落；全游戏各地蜥蜴族巢穴",
-      "How to Obtain: Guaranteed drop from defeated Lizalfos; Lizalfos nests all over the game."
-    ],
-    [
-      "获取方法击败蜥蜴族（Lizalfos）必定掉落；",
-      "How to Obtain: Guaranteed drop from defeated Lizalfos;"
-    ],
-    [
       "全游戏各地蜥蜴族巢穴",
       "Lizalfos nests all over the game."
     ],
     [
-      "特殊效果骨质材质，受部分环境魔法影响；可作为融合素材附加在其他武器上提升攻击",
-      "Special Effects: Bone material, affected by some environmental magic; can be fused onto other weapons to raise attack."
-    ],
-    [
-      "特殊效果骨质材质，受部分环境魔法影响；",
-      "Special Effects: Bone material, affected by some environmental magic;"
-    ],
-    [
       "可作为融合素材附加在其他武器上提升攻击",
       "can be fused onto other weapons to raise attack."
-    ],
-    [
-      "融合建议：作为底座融合龙骨碎片（+55）→ 总攻击 65，性价比融合武器",
-      "Fuse Suggestion: As a base fused with a Silver Lynel Saber Horn (+55) → total attack 65, a cost-effective fused weapon."
     ],
     [
       "⭐ 英杰 · 长柄武器",
@@ -526,26 +298,6 @@
       "The trident used by Zora Champion Mipha, made from the finest undersea ore of the Zora, with the highest durability in its class. Every attack carries the water element, attack speed rises noticeably in water, and its counter effect against fire-element enemies doubles."
     ],
     [
-      "攻击力22",
-      "Attack 22"
-    ],
-    [
-      "耐久度70（长柄武器中最高）",
-      "Durability 70 (highest among polearms)"
-    ],
-    [
-      "获取方法完成水之神殿主线后，在卓拉领地找到特定 NPC，用卓拉蓝宝石等素材重新打造或接受赠予",
-      "How to Obtain: After completing the Water Temple main quest, find a specific NPC in Zora's Domain and reforge it with Zora Sapphire and other materials, or receive it as a gift."
-    ],
-    [
-      "特殊效果攻击自带💧水属性；水中攻速提升 20%；对火焰属性敌人造成额外伤害；损毁后可找 NPC 修复",
-      "Special Effects: Attacks carry the 💧 water element; attack speed in water rises by 20%; bonus damage against fire-element enemies; can be repaired by an NPC after breaking."
-    ],
-    [
-      "特殊效果攻击自带💧水属性；",
-      "Special Effects: Attacks carry the 💧 water element;"
-    ],
-    [
       "水中攻速提升 20%；",
       "attack speed in water rises by 20%;"
     ],
@@ -556,14 +308,6 @@
     [
       "损毁后可找 NPC 修复",
       "can be repaired by an NPC after breaking."
-    ],
-    [
-      "融合建议：龙骨碎片（+55）→ 总攻击 77；配合水系装束更强",
-      "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 77; even stronger with water-element armor."
-    ],
-    [
-      "融合建议：龙骨碎片（+55）→ 总攻击 77；",
-      "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 77;"
     ],
     [
       "配合水系装束更强",
@@ -582,18 +326,6 @@
       "An exquisite dagger set with seven sacred gems, short-bladed but exceptionally sharp. Said to have been made over many years by ancient Gerudo craftsmen, its attacks randomly trigger bursts of the element matching a gem."
     ],
     [
-      "攻击力16",
-      "Attack 16"
-    ],
-    [
-      "获取方法杰鲁多古代宝库宝箱；完成沙漠特定支线任务奖励；沙漠深处神庙宝箱",
-      "How to Obtain: Chests in the ancient Gerudo treasury; reward for completing a specific desert side quest; chests in deep desert shrines."
-    ],
-    [
-      "获取方法杰鲁多古代宝库宝箱；",
-      "How to Obtain: Chests in the ancient Gerudo treasury;"
-    ],
-    [
       "完成沙漠特定支线任务奖励；",
       "reward for completing a specific desert side quest;"
     ],
@@ -602,24 +334,8 @@
       "chests in deep desert shrines."
     ],
     [
-      "特殊效果攻击时随机触发🔥火 / ❄冰 / ⚡雷三种元素之一的小范围爆发；匕首攻速极快",
-      "Special Effects: Attacks randomly trigger a small-area burst of one of three elements, 🔥 fire, ❄ ice, or ⚡ lightning; extremely fast dagger attack speed."
-    ],
-    [
-      "特殊效果攻击时随机触发🔥火 / ❄冰 / ⚡雷三种元素之一的小范围爆发；",
-      "Special Effects: Attacks randomly trigger a small-area burst of one of three elements, 🔥 fire, ❄ ice, or ⚡ lightning;"
-    ],
-    [
       "匕首攻速极快",
       "extremely fast dagger attack speed."
-    ],
-    [
-      "融合建议：已含元素特效，可融合宝石强化特定属性；配合潜行套装潜行斩效果极佳",
-      "Fuse Suggestion: Already has elemental effects, and fusing gems strengthens a specific element; pairs excellently with a stealth set for stealth strikes."
-    ],
-    [
-      "融合建议：已含元素特效，可融合宝石强化特定属性；",
-      "Fuse Suggestion: Already has elemental effects, and fusing gems strengthens a specific element;"
     ],
     [
       "配合潜行套装潜行斩效果极佳",
@@ -638,22 +354,6 @@
       "A short rod holding ancient magic, triggering a magic energy explosion at the point of impact on every hit, dealing small-area shockwave damage. Its physical attack is low, but the bonus damage from magic explosions cannot be ignored."
     ],
     [
-      "攻击力8（+魔法爆炸附加伤害）",
-      "Attack 8 (+ magic explosion bonus damage)"
-    ],
-    [
-      "耐久度25",
-      "Durability 25"
-    ],
-    [
-      "获取方法神圣神庙宝箱；古代佐纳依遗迹特定区域；击败魔法系小 Boss 掉落",
-      "How to Obtain: Chests in sacred shrines; specific areas of ancient Zonai ruins; dropped by defeated magic mini-Bosses."
-    ],
-    [
-      "获取方法神圣神庙宝箱；",
-      "How to Obtain: Chests in sacred shrines;"
-    ],
-    [
       "古代佐纳依遗迹特定区域；",
       "specific areas of ancient Zonai ruins;"
     ],
@@ -662,20 +362,8 @@
       "dropped by defeated magic mini-Bosses."
     ],
     [
-      "特殊效果每次命中触发魔法爆炸，产生小范围冲击波；可引爆附近爆炸桶",
-      "Special Effects: Every hit triggers a magic explosion producing a small-area shockwave; can detonate nearby explosive barrels."
-    ],
-    [
-      "特殊效果每次命中触发魔法爆炸，产生小范围冲击波；",
-      "Special Effects: Every hit triggers a magic explosion producing a small-area shockwave;"
-    ],
-    [
       "可引爆附近爆炸桶",
       "can detonate nearby explosive barrels."
-    ],
-    [
-      "融合建议：炸弹花（+2）→ 触发连锁大爆炸，清场效率极高",
-      "Fuse Suggestion: Bomb Flower (+2) → triggers a chain mega-explosion, extremely efficient at clearing areas."
     ],
     [
       "⭐ 传说 · 弓",
@@ -690,32 +378,8 @@
       "A compound bow empowered by the legendary Savage Lynel's power, firing three arrows at once with every draw, for 96 actual damage per shot (32×3). Its rate of fire is extremely fast, and it is especially effective against aerial targets and fast-moving enemies, making it a sharp weapon against dragon-shaped Bosses."
     ],
     [
-      "攻击力32 × 3箭 = 实际 96",
-      "Attack 32 × 3 arrows = 96 actual"
-    ],
-    [
-      "耐久度45",
-      "Durability 45"
-    ],
-    [
-      "获取方法击败银色莱乃尔或特殊变种必定掉落；地底深层莱乃尔区域",
-      "How to Obtain: Guaranteed drop from defeated Silver Lynels or special variants; deep Depths Lynel areas."
-    ],
-    [
-      "获取方法击败银色莱乃尔或特殊变种必定掉落；",
-      "How to Obtain: Guaranteed drop from defeated Silver Lynels or special variants;"
-    ],
-    [
       "地底深层莱乃尔区域",
       "deep Depths Lynel areas."
-    ],
-    [
-      "特殊效果三连射（同时发射 3 箭）；拉弓时可瞄准时间慢速效果更长；对空中目标额外命中加成",
-      "Special Effects: Triple-shot (fires 3 arrows at once); longer slow-aim time while drawing; bonus hit rate against aerial targets."
-    ],
-    [
-      "特殊效果三连射（同时发射 3 箭）；",
-      "Special Effects: Triple-shot (fires 3 arrows at once);"
     ],
     [
       "拉弓时可瞄准时间慢速效果更长；",
@@ -724,14 +388,6 @@
     [
       "对空中目标额外命中加成",
       "bonus hit rate against aerial targets."
-    ],
-    [
-      "融合建议：电气果 → 三箭同时麻痹群敌；火果 → 三点同时燃烧，清场利器",
-      "Fuse Suggestion: Shock Fruit → all three arrows paralyze groups of enemies at once; Fire Fruit → three points burn at once, a great clearing tool."
-    ],
-    [
-      "融合建议：电气果 → 三箭同时麻痹群敌；",
-      "Fuse Suggestion: Shock Fruit → all three arrows paralyze groups of enemies at once;"
     ],
     [
       "火果 → 三点同时燃烧，清场利器",
@@ -750,22 +406,6 @@
       "A two-handed greatsword forged by Zora craftsmen from deep-sea dark iron, with extremely high durability and water-element attacks. Its attack rises further when fighting in rain or water, making it ideal gear for exploring the Zora region."
     ],
     [
-      "攻击力14（雨天 / 水中 +4）",
-      "Attack 14 (+4 in rain / water)"
-    ],
-    [
-      "耐久度45（双手剑中高耐久）",
-      "Durability 45 (high durability for a two-handed sword)"
-    ],
-    [
-      "获取方法卓拉领地武器商店购买（约 300 卢比）；完成卓拉支线任务奖励；卓拉精英战士掉落",
-      "How to Obtain: Bought at the Zora's Domain weapon shop (about 300 Rupees); reward for completing Zora side quests; dropped by elite Zora warriors."
-    ],
-    [
-      "获取方法卓拉领地武器商店购买（约 300 卢比）；",
-      "How to Obtain: Bought at the Zora's Domain weapon shop (about 300 Rupees);"
-    ],
-    [
       "完成卓拉支线任务奖励；",
       "reward for completing Zora side quests;"
     ],
@@ -774,24 +414,12 @@
       "dropped by elite Zora warriors."
     ],
     [
-      "特殊效果攻击自带💧水属性；雨天或水中攻击力提升；可对火焰系敌人造成克制伤害",
-      "Special Effects: Attacks carry the 💧 water element; attack rises in rain or water; can deal counter damage to fire-element enemies."
-    ],
-    [
       "雨天或水中攻击力提升；",
       "attack rises in rain or water;"
     ],
     [
       "可对火焰系敌人造成克制伤害",
       "can deal counter damage to fire-element enemies."
-    ],
-    [
-      "融合建议：龙骨碎片（+55）→ 总攻击 69；搭配雷电宝石可形成水电联动",
-      "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 69; pairing with lightning gems creates a water-lightning combo."
-    ],
-    [
-      "融合建议：龙骨碎片（+55）→ 总攻击 69；",
-      "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 69;"
     ],
     [
       "搭配雷电宝石可形成水电联动",
@@ -806,22 +434,6 @@
       "A small blade designed for stealth assassination, thin-bladed and nearly silent. When attacking while undetected, its damage multiplier rises sharply, making it the first-choice melee weapon for stealth players."
     ],
     [
-      "攻击力8（潜行暗杀时 ×3）",
-      "Attack 8 (×3 on stealth assassination)"
-    ],
-    [
-      "耐久度15",
-      "Durability 15"
-    ],
-    [
-      "获取方法完成潜行相关支线任务奖励；特定地区地下密室宝箱；稀有商人贩售",
-      "How to Obtain: Reward for completing stealth-related side quests; chests in underground chambers in specific regions; sold by rare merchants."
-    ],
-    [
-      "获取方法完成潜行相关支线任务奖励；",
-      "How to Obtain: Reward for completing stealth-related side quests;"
-    ],
-    [
       "特定地区地下密室宝箱；",
       "chests in underground chambers in specific regions;"
     ],
@@ -830,24 +442,12 @@
       "sold by rare merchants."
     ],
     [
-      "特殊效果潜行状态下暗杀伤害 ×3；移动无声音；配合潜行套装效果叠加",
-      "Special Effects: Assassination damage ×3 while stealthed; silent movement; effects stack with a stealth set."
-    ],
-    [
-      "特殊效果潜行状态下暗杀伤害 ×3；",
-      "Special Effects: Assassination damage ×3 while stealthed;"
-    ],
-    [
       "移动无声音；",
       "silent movement;"
     ],
     [
       "配合潜行套装效果叠加",
       "effects stack with a stealth set."
-    ],
-    [
-      "融合建议：配合潜行套装 + 潜行药 → 暗杀伤害可达 ×6，即秒大多数精英敌人",
-      "Fuse Suggestion: With a stealth set plus stealth elixir, assassination damage can reach ×6, instantly killing most elite enemies."
     ],
     [
       "🟣 瘴气 · 单手剑",
@@ -866,40 +466,12 @@
       "A Demon King's sword completely eroded by Gloom, whose attacks inflict the Gloom effect on enemies, continuously reducing their maximum Heart limit. At the same time it inflicts the same backlash on its wielder, so it must be used with Hearts to spare."
     ],
     [
-      "攻击力32",
-      "Attack 32"
-    ],
-    [
-      "获取方法击败地底幽暗幻影 Boss（Gloom Hands / 幽暗手掌）掉落；地底冥王领地深层宝箱",
-      "How to Obtain: Dropped by the defeated Depths Gloom phantom Boss (Gloom Hands); chests deep in the Depths underworld region."
-    ],
-    [
-      "获取方法击败地底幽暗幻影 Boss（Gloom Hands / 幽暗手掌）掉落；",
-      "How to Obtain: Dropped by the defeated Depths Gloom phantom Boss (Gloom Hands);"
-    ],
-    [
       "地底冥王领地深层宝箱",
       "chests deep in the Depths underworld region."
     ],
     [
-      "特殊效果攻击对敌人附加🟣瘴气效果，持续减少最大心力；使用者同样受到反噬，使用前确保心力充足",
-      "Special Effects: Attacks inflict the 🟣 Gloom effect on enemies, continuously reducing maximum Hearts; the wielder suffers the same backlash, so make sure Hearts are full before use."
-    ],
-    [
-      "特殊效果攻击对敌人附加🟣瘴气效果，持续减少最大心力；",
-      "Special Effects: Attacks inflict the 🟣 Gloom effect on enemies, continuously reducing maximum Hearts;"
-    ],
-    [
       "使用者同样受到反噬，使用前确保心力充足",
       "the wielder suffers the same backlash, so make sure Hearts are full before use."
-    ],
-    [
-      "融合建议：搭配满心力状态使用；融合龙骨碎片（+55）→ 总攻击 87，注意瘴气自伤",
-      "Fuse Suggestion: Use at full Hearts; fusing a Silver Lynel Saber Horn (+55) → total attack 87, but watch out for Gloom self-damage."
-    ],
-    [
-      "融合建议：搭配满心力状态使用；",
-      "Fuse Suggestion: Use at full Hearts;"
     ],
     [
       "融合龙骨碎片（+55）→ 总攻击 87，注意瘴气自伤",
@@ -914,22 +486,6 @@
       "A top-tier two-handed greatsword made by Hyrule's royal smiths, ranking highest in attack among ordinary two-handed swords. Forged from fine steel, it outputs powerful damage even without fused materials, making it one of the best mid-to-late-game two-handed weapon bases."
     ],
     [
-      "攻击力40",
-      "Attack 40"
-    ],
-    [
-      "耐久度32",
-      "Durability 32"
-    ],
-    [
-      "获取方法海拉鲁城堡内部宝箱（多处）；皇家精英护卫掉落；地底冥界城堡对应区域",
-      "How to Obtain: Chests inside Hyrule Castle (several); dropped by royal elite guards; the corresponding Depths underworld castle region."
-    ],
-    [
-      "获取方法海拉鲁城堡内部宝箱（多处）；",
-      "How to Obtain: Chests inside Hyrule Castle (several);"
-    ],
-    [
       "皇家精英护卫掉落；",
       "dropped by royal elite guards;"
     ],
@@ -938,20 +494,8 @@
       "the corresponding Depths underworld castle region."
     ],
     [
-      "特殊效果无特殊效果；王族锻造工艺使其基础攻击力在同类中最高",
-      "Special Effects: No special effects; royal forging gives it the highest base attack in its class."
-    ],
-    [
       "王族锻造工艺使其基础攻击力在同类中最高",
       "royal forging gives it the highest base attack in its class."
-    ],
-    [
-      "融合建议：龙骨碎片（+55）→ 总攻击 95；银色莱乃尔角（+55）同样效果",
-      "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 95; a Silver Lynel Horn (+55) has the same effect."
-    ],
-    [
-      "融合建议：龙骨碎片（+55）→ 总攻击 95；",
-      "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 95;"
     ],
     [
       "银色莱乃尔角（+55）同样效果",
@@ -966,18 +510,6 @@
       "A one-handed sword carefully forged by royal craftsmen, higher than the Knight's Sword in both attack and durability, and the first-choice balanced one-handed sword for the mid-to-late game. Its ornate royal-crest blade is both a weapon and a symbol of status."
     ],
     [
-      "耐久度36",
-      "Durability 36"
-    ],
-    [
-      "获取方法海拉鲁城堡内部多处宝箱；皇家护卫队掉落；地底对应冥界区域宝箱",
-      "How to Obtain: Several chests inside Hyrule Castle; dropped by the royal guard; chests in the corresponding Depths underworld region."
-    ],
-    [
-      "获取方法海拉鲁城堡内部多处宝箱；",
-      "How to Obtain: Several chests inside Hyrule Castle;"
-    ],
-    [
       "皇家护卫队掉落；",
       "dropped by the royal guard;"
     ],
@@ -986,16 +518,8 @@
       "chests in the corresponding Depths underworld region."
     ],
     [
-      "特殊效果无特殊效果；单手剑中攻击与耐久综合最优，是单手剑融合的最佳底座",
-      "Special Effects: No special effects; the best combined attack and durability among one-handed swords, and the best one-handed sword Fuse base."
-    ],
-    [
       "单手剑中攻击与耐久综合最优，是单手剑融合的最佳底座",
       "the best combined attack and durability among one-handed swords, and the best one-handed sword Fuse base."
-    ],
-    [
-      "融合建议：龙骨碎片（+55）→ 总攻击 83，性价比单手剑天花板",
-      "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 83, the ceiling for cost-effective one-handed swords."
     ],
     [
       "🗡 长刀",
@@ -1010,22 +534,6 @@
       "An assassin's blade longer than the Eightfold Dagger, slender-bladed and likewise designed for stealth combat. Its combo speed is extremely fast, allowing rapid multi-hit sneak attacks while undetected, with notable effect when paired with a stealth set."
     ],
     [
-      "攻击力14（潜行暗杀 ×3）",
-      "Attack 14 (×3 on stealth assassination)"
-    ],
-    [
-      "耐久度22",
-      "Durability 22"
-    ],
-    [
-      "获取方法潜行支线任务高阶奖励；地下秘密宝库宝箱；特定商人高价购买",
-      "How to Obtain: High-tier reward from stealth side quests; chests in underground secret vaults; bought at a high price from specific merchants."
-    ],
-    [
-      "获取方法潜行支线任务高阶奖励；",
-      "How to Obtain: High-tier reward from stealth side quests;"
-    ],
-    [
       "地下秘密宝库宝箱；",
       "chests in underground secret vaults;"
     ],
@@ -1034,24 +542,12 @@
       "bought at a high price from specific merchants."
     ],
     [
-      "特殊效果连击速度快；潜行状态暗杀伤害 ×3；配合潜行套装效果叠加至更高倍率",
-      "Special Effects: Fast combo speed; assassination damage ×3 while stealthed; stacks with a stealth set to an even higher multiplier."
-    ],
-    [
-      "特殊效果连击速度快；",
-      "Special Effects: Fast combo speed;"
-    ],
-    [
       "潜行状态暗杀伤害 ×3；",
       "assassination damage ×3 while stealthed;"
     ],
     [
       "配合潜行套装效果叠加至更高倍率",
       "stacks with a stealth set to an even higher multiplier."
-    ],
-    [
-      "融合建议：潜行链条：潜行套装满级 + 潜行药 + 戒心长刀 → 暗杀可秒杀精英怪",
-      "Fuse Suggestion: Stealth chain: max-level stealth set plus stealth elixir plus the Eightfold Longblade → assassinations can instantly kill elite monsters."
     ],
     [
       "⭐ 英杰 · 双手武器",
@@ -1066,40 +562,12 @@
       "The giant maul used by Goron Champion Daruk, forged in a volcanic ore vein, carrying fire effects on attack that can ignite enemies and melt ice blocks. Among two-handed weapons it combines high attack with excellent durability, making it the strongest all-round Champion weapon."
     ],
     [
-      "攻击力38",
-      "Attack 38"
-    ],
-    [
-      "耐久度40",
-      "Durability 40"
-    ],
-    [
-      "获取方法完成火之神殿主线后，前往鼓隆城找到特定铁匠 NPC（格凌 / Rohan），用鼓隆矿石等素材重新打造或修复",
-      "How to Obtain: After completing the Fire Temple main quest, go to Goron City and find a specific blacksmith NPC (Greling / Rohan), and reforge or repair it with Goron ore and other materials."
-    ],
-    [
-      "特殊效果攻击自带🔥火焰属性，可点燃敌人持续灼烧；可熔化冰块解谜；击碎岩石矿脉效率 ×2；损毁后可找 NPC 修复",
-      "Special Effects: Attacks carry the 🔥 fire element and can set enemies burning continuously; can melt ice blocks for puzzles; rock vein breaking efficiency ×2; can be repaired by an NPC after breaking."
-    ],
-    [
-      "特殊效果攻击自带🔥火焰属性，可点燃敌人持续灼烧；",
-      "Special Effects: Attacks carry the 🔥 fire element and can set enemies burning continuously;"
-    ],
-    [
       "可熔化冰块解谜；",
       "can melt ice blocks for puzzles;"
     ],
     [
       "击碎岩石矿脉效率 ×2；",
       "rock vein breaking efficiency ×2;"
-    ],
-    [
-      "融合建议：龙骨碎片（+55）→ 总攻击 93；已自带火焰，再融合红宝石可增大燃烧范围",
-      "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 93; already fire-elemental, and fusing a Ruby further expands the burning area."
-    ],
-    [
-      "融合建议：龙骨碎片（+55）→ 总攻击 93；",
-      "Fuse Suggestion: Silver Lynel Saber Horn (+55) → total attack 93;"
     ],
     [
       "已自带火焰，再融合红宝石可增大燃烧范围",
@@ -1118,36 +586,12 @@
       "A giant metal club permeated by Gloom power, with an extremely wide swing, producing a large-area Gloom explosion on hit that inflicts the Gloom curse on several surrounding enemies at once. Like the Gloom Sword, it backlashes onto its wielder, so Hearts must be plentiful when using it."
     ],
     [
-      "获取方法击败地底幽暗幻影 Boss（Phantom Ganon）掉落；地底深层瘴气浓郁区域大型宝箱",
-      "How to Obtain: Dropped by the defeated Depths Gloom phantom Boss (Phantom Ganon); large chests in deep Depths areas thick with Gloom."
-    ],
-    [
-      "获取方法击败地底幽暗幻影 Boss（Phantom Ganon）掉落；",
-      "How to Obtain: Dropped by the defeated Depths Gloom phantom Boss (Phantom Ganon);"
-    ],
-    [
       "地底深层瘴气浓郁区域大型宝箱",
       "large chests in deep Depths areas thick with Gloom."
     ],
     [
-      "特殊效果命中时产生大范围🟣瘴气爆炸，可同时对多个敌人附加瘴气诅咒；使用者受到同等瘴气反噬，须保持满心力",
-      "Special Effects: Hits produce a large-area 🟣 Gloom explosion, inflicting the Gloom curse on multiple enemies at once; the wielder suffers equal Gloom backlash and must keep Hearts full."
-    ],
-    [
-      "特殊效果命中时产生大范围🟣瘴气爆炸，可同时对多个敌人附加瘴气诅咒；",
-      "Special Effects: Hits produce a large-area 🟣 Gloom explosion, inflicting the Gloom curse on multiple enemies at once;"
-    ],
-    [
       "使用者受到同等瘴气反噬，须保持满心力",
       "the wielder suffers equal Gloom backlash and must keep Hearts full."
-    ],
-    [
-      "融合建议：配合满心力状态使用；融合龙骨碎片（+55）→ 总攻击 95，瘴气范围伤害清场之王",
-      "Fuse Suggestion: Use at full Hearts; fusing a Silver Lynel Saber Horn (+55) → total attack 95, the king of Gloom area-damage clearing."
-    ],
-    [
-      "融合建议：配合满心力状态使用；",
-      "Fuse Suggestion: Use at full Hearts;"
     ],
     [
       "融合龙骨碎片（+55）→ 总攻击 95，瘴气范围伤害清场之王",
@@ -1239,7 +683,7 @@
     ],
     [
       "融合建议：",
-      "Fuse Suggestion:"
+      "Fuse Suggestion: "
     ],
     [
       "龙骨碎片（+55）→ 总攻击 85，满血约",
@@ -1451,7 +895,7 @@
     ],
     [
       "攻击力",
-      "Attack"
+      "Attack: "
     ],
     [
       "30（近瘴气 45，对幻影加侬、加侬多夫 60）",
@@ -1459,7 +903,7 @@
     ],
     [
       "特殊效果",
-      "Special Effect"
+      "Special Effect: "
     ],
     [
       "近瘴气时攻击力提升，对幻影加侬与加侬多夫时更高；满血时可发射能量光束；对幽暗之力敌人有克制效果；能量耗尽后充能复原，不会永久破损",
@@ -1495,7 +939,7 @@
     ],
     [
       "耐久度",
-      "Durability"
+      "Durability: "
     ],
     [
       "11（未衰朽 12；极低，慎用）",
@@ -1587,7 +1031,7 @@
     ],
     [
       "获取方法",
-      "How to Obtain"
+      "How to Obtain: "
     ],
     [
       "击败幻影加侬掉落",
@@ -1620,9 +1064,362 @@
     [
       "配合满心力状态使用；融合白银人马刃角（+55）→ 总攻击",
       "Use at full hearts; Silver Lynel Saber Horn (+55) → total attack "
+    ],
+    [
+      "30（满血状态下 60）",
+      "30 (60 at full health)"
+    ],
+    [
+      "无限（耗尽后 10 分钟充能）",
+      "Infinite (recharges in 10 minutes after depletion)"
+    ],
+    [
+      "完成主线「失落的勇者之剑」后，骑乘光源龙飞行至龙头，从额头光源宝箱中取出",
+      "After completing the main quest The Lost Hero's Sword, ride the Light Dragon in flight to its head and take it from the forehead light chest."
+    ],
+    [
+      "满血时攻击力翻倍；可发射能量光束；对幽暗之力敌人有克制效果；耐久不会永久归零",
+      "Attack doubles at full health; can fire energy beams; strong against Gloom enemies; durability never permanently reaches zero."
+    ],
+    [
+      "满血时攻击力翻倍；",
+      "Attack doubles at full health;"
+    ],
+    [
+      "科洛格森林附近地面拾取；林间宝箱；击败科洛格守卫偶尔掉落",
+      "Picked up from the ground near Korok Forest; forest chests; occasionally dropped by defeated Korok guards."
+    ],
+    [
+      "科洛格森林附近地面拾取；",
+      "Picked up from the ground near Korok Forest;"
+    ],
+    [
+      "无特殊效果；木质材质可被点燃，注意火焰环境",
+      "No special effects; wooden material can catch fire, so watch out in fiery environments."
+    ],
+    [
+      "无特殊效果；",
+      "No special effects;"
+    ],
+    [
+      "海拉鲁城堡周边守卫掉落；城堡外围宝箱；坐骑驿站附近拾取",
+      "Dropped by guards around Hyrule Castle; chests outside the castle; picked up near riding stables."
+    ],
+    [
+      "海拉鲁城堡周边守卫掉落；",
+      "Dropped by guards around Hyrule Castle;"
+    ],
+    [
+      "无特殊效果；可配盾单手操作，攻防兼备",
+      "No special effects; can be wielded one-handed with a shield, balancing offense and defense."
+    ],
+    [
+      "海拉鲁城堡周边宝箱；重骑士守卫掉落；地图中部宝箱",
+      "Chests around Hyrule Castle; dropped by heavy knight guards; chests in the central map."
+    ],
+    [
+      "海拉鲁城堡周边宝箱；",
+      "Chests around Hyrule Castle;"
+    ],
+    [
+      "双手武器范围攻击，可扫击周围敌人；攻击带有轻微冲击波",
+      "Two-handed weapon with area attacks that can sweep surrounding enemies; attacks carry a slight shockwave."
+    ],
+    [
+      "双手武器范围攻击，可扫击周围敌人；",
+      "Two-handed weapon with area attacks that can sweep surrounding enemies;"
+    ],
+    [
+      "海拉鲁城堡区域守卫掉落；城堡内宝箱；中部平原骑兵掉落",
+      "Dropped by guards in the Hyrule Castle region; chests inside the castle; dropped by cavalry on the central plains."
+    ],
+    [
+      "海拉鲁城堡区域守卫掉落；",
+      "Dropped by guards in the Hyrule Castle region;"
+    ],
+    [
+      "攻击范围长，可隔距攻击；三连刺速度快",
+      "Long attack range for striking from a distance; fast triple-thrust speed."
+    ],
+    [
+      "攻击范围长，可隔距攻击；",
+      "Long attack range for striking from a distance;"
+    ],
+    [
+      "52（濒死爆发时约 104）",
+      "52 (about 104 during Death's Door Burst)"
+    ],
+    [
+      "7（极低，慎用）",
+      "7 (extremely low, use with care)"
+    ],
+    [
+      "海拉鲁城堡深处地牢宝箱；地底冥界城堡对应区域宝箱",
+      "Chests in the dungeon deep inside Hyrule Castle; chests in the corresponding Depths castle region."
+    ],
+    [
+      "海拉鲁城堡深处地牢宝箱；",
+      "Chests in the dungeon deep inside Hyrule Castle;"
+    ],
+    [
+      "耐久剩余 3 格时攻击力翻倍（濒死爆发），可瞬间斩杀高血量 Boss",
+      "Attack doubles when 3 durability segments remain (Death's Door Burst), instantly slaying high-health Bosses."
+    ],
+    [
+      "杰鲁多城地区宝箱；格鲁德精英战士掉落；沙漠遗迹宝箱",
+      "Chests in the Gerudo Town region; dropped by elite Gerudo warriors; desert ruin chests."
+    ],
+    [
+      "杰鲁多城地区宝箱；",
+      "Chests in the Gerudo Town region;"
+    ],
+    [
+      "无特殊属性；抗高温材质，沙漠探险不受环境影响",
+      "No special properties; heat-resistant material, unaffected by the environment when exploring the desert."
+    ],
+    [
+      "无特殊属性；",
+      "No special properties;"
+    ],
+    [
+      "击败蜥蜴族（Lizalfos）必定掉落；全游戏各地蜥蜴族巢穴",
+      "Guaranteed drop from defeated Lizalfos; Lizalfos nests all over the game."
+    ],
+    [
+      "击败蜥蜴族（Lizalfos）必定掉落；",
+      "Guaranteed drop from defeated Lizalfos;"
+    ],
+    [
+      "骨质材质，受部分环境魔法影响；可作为融合素材附加在其他武器上提升攻击",
+      "Bone material, affected by some environmental magic; can be fused onto other weapons to raise attack."
+    ],
+    [
+      "骨质材质，受部分环境魔法影响；",
+      "Bone material, affected by some environmental magic;"
+    ],
+    [
+      "70（长柄武器中最高）",
+      "70 (highest among polearms)"
+    ],
+    [
+      "完成水之神殿主线后，在卓拉领地找到特定 NPC，用卓拉蓝宝石等素材重新打造或接受赠予",
+      "After completing the Water Temple main quest, find a specific NPC in Zora's Domain and reforge it with Zora Sapphire and other materials, or receive it as a gift."
+    ],
+    [
+      "攻击自带💧水属性；水中攻速提升 20%；对火焰属性敌人造成额外伤害；损毁后可找 NPC 修复",
+      "Attacks carry the 💧 water element; attack speed in water rises by 20%; bonus damage against fire-element enemies; can be repaired by an NPC after breaking."
+    ],
+    [
+      "攻击自带💧水属性；",
+      "Attacks carry the 💧 water element;"
+    ],
+    [
+      "杰鲁多古代宝库宝箱；完成沙漠特定支线任务奖励；沙漠深处神庙宝箱",
+      "Chests in the ancient Gerudo treasury; reward for completing a specific desert side quest; chests in deep desert shrines."
+    ],
+    [
+      "杰鲁多古代宝库宝箱；",
+      "Chests in the ancient Gerudo treasury;"
+    ],
+    [
+      "攻击时随机触发🔥火 / ❄冰 / ⚡雷三种元素之一的小范围爆发；匕首攻速极快",
+      "Attacks randomly trigger a small-area burst of one of three elements, 🔥 fire, ❄ ice, or ⚡ lightning; extremely fast dagger attack speed."
+    ],
+    [
+      "攻击时随机触发🔥火 / ❄冰 / ⚡雷三种元素之一的小范围爆发；",
+      "Attacks randomly trigger a small-area burst of one of three elements, 🔥 fire, ❄ ice, or ⚡ lightning;"
+    ],
+    [
+      "8（+魔法爆炸附加伤害）",
+      "8 (+ magic explosion bonus damage)"
+    ],
+    [
+      "神圣神庙宝箱；古代佐纳依遗迹特定区域；击败魔法系小 Boss 掉落",
+      "Chests in sacred shrines; specific areas of ancient Zonai ruins; dropped by defeated magic mini-Bosses."
+    ],
+    [
+      "神圣神庙宝箱；",
+      "Chests in sacred shrines;"
+    ],
+    [
+      "每次命中触发魔法爆炸，产生小范围冲击波；可引爆附近爆炸桶",
+      "Every hit triggers a magic explosion producing a small-area shockwave; can detonate nearby explosive barrels."
+    ],
+    [
+      "每次命中触发魔法爆炸，产生小范围冲击波；",
+      "Every hit triggers a magic explosion producing a small-area shockwave;"
+    ],
+    [
+      "32 × 3箭 = 实际 96",
+      "32 × 3 arrows = 96 actual"
+    ],
+    [
+      "击败银色莱乃尔或特殊变种必定掉落；地底深层莱乃尔区域",
+      "Guaranteed drop from defeated Silver Lynels or special variants; deep Depths Lynel areas."
+    ],
+    [
+      "击败银色莱乃尔或特殊变种必定掉落；",
+      "Guaranteed drop from defeated Silver Lynels or special variants;"
+    ],
+    [
+      "三连射（同时发射 3 箭）；拉弓时可瞄准时间慢速效果更长；对空中目标额外命中加成",
+      "Triple-shot (fires 3 arrows at once); longer slow-aim time while drawing; bonus hit rate against aerial targets."
+    ],
+    [
+      "三连射（同时发射 3 箭）；",
+      "Triple-shot (fires 3 arrows at once);"
+    ],
+    [
+      "14（雨天 / 水中 +4）",
+      "14 (+4 in rain / water)"
+    ],
+    [
+      "45（双手剑中高耐久）",
+      "45 (high durability for a two-handed sword)"
+    ],
+    [
+      "卓拉领地武器商店购买（约 300 卢比）；完成卓拉支线任务奖励；卓拉精英战士掉落",
+      "Bought at the Zora's Domain weapon shop (about 300 Rupees); reward for completing Zora side quests; dropped by elite Zora warriors."
+    ],
+    [
+      "卓拉领地武器商店购买（约 300 卢比）；",
+      "Bought at the Zora's Domain weapon shop (about 300 Rupees);"
+    ],
+    [
+      "攻击自带💧水属性；雨天或水中攻击力提升；可对火焰系敌人造成克制伤害",
+      "Attacks carry the 💧 water element; attack rises in rain or water; can deal counter damage to fire-element enemies."
+    ],
+    [
+      "8（潜行暗杀时 ×3）",
+      "8 (×3 on stealth assassination)"
+    ],
+    [
+      "完成潜行相关支线任务奖励；特定地区地下密室宝箱；稀有商人贩售",
+      "Reward for completing stealth-related side quests; chests in underground chambers in specific regions; sold by rare merchants."
+    ],
+    [
+      "完成潜行相关支线任务奖励；",
+      "Reward for completing stealth-related side quests;"
+    ],
+    [
+      "潜行状态下暗杀伤害 ×3；移动无声音；配合潜行套装效果叠加",
+      "Assassination damage ×3 while stealthed; silent movement; effects stack with a stealth set."
+    ],
+    [
+      "潜行状态下暗杀伤害 ×3；",
+      "Assassination damage ×3 while stealthed;"
+    ],
+    [
+      "击败地底幽暗幻影 Boss（Gloom Hands / 幽暗手掌）掉落；地底冥王领地深层宝箱",
+      "Dropped by the defeated Depths Gloom phantom Boss (Gloom Hands); chests deep in the Depths underworld region."
+    ],
+    [
+      "击败地底幽暗幻影 Boss（Gloom Hands / 幽暗手掌）掉落；",
+      "Dropped by the defeated Depths Gloom phantom Boss (Gloom Hands);"
+    ],
+    [
+      "攻击对敌人附加🟣瘴气效果，持续减少最大心力；使用者同样受到反噬，使用前确保心力充足",
+      "Attacks inflict the 🟣 Gloom effect on enemies, continuously reducing maximum Hearts; the wielder suffers the same backlash, so make sure Hearts are full before use."
+    ],
+    [
+      "攻击对敌人附加🟣瘴气效果，持续减少最大心力；",
+      "Attacks inflict the 🟣 Gloom effect on enemies, continuously reducing maximum Hearts;"
+    ],
+    [
+      "海拉鲁城堡内部宝箱（多处）；皇家精英护卫掉落；地底冥界城堡对应区域",
+      "Chests inside Hyrule Castle (several); dropped by royal elite guards; the corresponding Depths underworld castle region."
+    ],
+    [
+      "海拉鲁城堡内部宝箱（多处）；",
+      "Chests inside Hyrule Castle (several);"
+    ],
+    [
+      "无特殊效果；王族锻造工艺使其基础攻击力在同类中最高",
+      "No special effects; royal forging gives it the highest base attack in its class."
+    ],
+    [
+      "海拉鲁城堡内部多处宝箱；皇家护卫队掉落；地底对应冥界区域宝箱",
+      "Several chests inside Hyrule Castle; dropped by the royal guard; chests in the corresponding Depths underworld region."
+    ],
+    [
+      "海拉鲁城堡内部多处宝箱；",
+      "Several chests inside Hyrule Castle;"
+    ],
+    [
+      "无特殊效果；单手剑中攻击与耐久综合最优，是单手剑融合的最佳底座",
+      "No special effects; the best combined attack and durability among one-handed swords, and the best one-handed sword Fuse base."
+    ],
+    [
+      "14（潜行暗杀 ×3）",
+      "14 (×3 on stealth assassination)"
+    ],
+    [
+      "潜行支线任务高阶奖励；地下秘密宝库宝箱；特定商人高价购买",
+      "High-tier reward from stealth side quests; chests in underground secret vaults; bought at a high price from specific merchants."
+    ],
+    [
+      "潜行支线任务高阶奖励；",
+      "High-tier reward from stealth side quests;"
+    ],
+    [
+      "连击速度快；潜行状态暗杀伤害 ×3；配合潜行套装效果叠加至更高倍率",
+      "Fast combo speed; assassination damage ×3 while stealthed; stacks with a stealth set to an even higher multiplier."
+    ],
+    [
+      "连击速度快；",
+      "Fast combo speed;"
+    ],
+    [
+      "完成火之神殿主线后，前往鼓隆城找到特定铁匠 NPC（格凌 / Rohan），用鼓隆矿石等素材重新打造或修复",
+      "After completing the Fire Temple main quest, go to Goron City and find a specific blacksmith NPC (Greling / Rohan), and reforge or repair it with Goron ore and other materials."
+    ],
+    [
+      "攻击自带🔥火焰属性，可点燃敌人持续灼烧；可熔化冰块解谜；击碎岩石矿脉效率 ×2；损毁后可找 NPC 修复",
+      "Attacks carry the 🔥 fire element and can set enemies burning continuously; can melt ice blocks for puzzles; rock vein breaking efficiency ×2; can be repaired by an NPC after breaking."
+    ],
+    [
+      "攻击自带🔥火焰属性，可点燃敌人持续灼烧；",
+      "Attacks carry the 🔥 fire element and can set enemies burning continuously;"
+    ],
+    [
+      "击败地底幽暗幻影 Boss（Phantom Ganon）掉落；地底深层瘴气浓郁区域大型宝箱",
+      "Dropped by the defeated Depths Gloom phantom Boss (Phantom Ganon); large chests in deep Depths areas thick with Gloom."
+    ],
+    [
+      "击败地底幽暗幻影 Boss（Phantom Ganon）掉落；",
+      "Dropped by the defeated Depths Gloom phantom Boss (Phantom Ganon);"
+    ],
+    [
+      "命中时产生大范围🟣瘴气爆炸，可同时对多个敌人附加瘴气诅咒；使用者受到同等瘴气反噬，须保持满心力",
+      "Hits produce a large-area 🟣 Gloom explosion, inflicting the Gloom curse on multiple enemies at once; the wielder suffers equal Gloom backlash and must keep Hearts full."
+    ],
+    [
+      "命中时产生大范围🟣瘴气爆炸，可同时对多个敌人附加瘴气诅咒；",
+      "Hits produce a large-area 🟣 Gloom explosion, inflicting the Gloom curse on multiple enemies at once;"
+    ],
+    [
+      "蜥蜴族尾巴（+10）→ 增加攻击范围；火石（+3，🔥）适合初期点燃草丛",
+      "Lizalfos Tail (+10) → increases attack range; Flint (+3, 🔥) suits lighting grass early on."
+    ],
+    [
+      "莱乃尔角（+21）→ 总攻击 39；蓝宝石（+4，❄）适合对付火属性敌人",
+      "Lynel Horn (+21) → total attack 39; Sapphire (+4, ❄) suits fighting fire-element enemies."
+    ],
+    [
+      "炸弹花（+2）→ 触发连锁大爆炸，清场效率极高",
+      "Bomb Flower (+2) → triggers a chain mega-explosion, extremely efficient at clearing areas."
+    ],
+    [
+      "电气果 → 三箭同时麻痹群敌；火果 → 三点同时燃烧，清场利器",
+      "Shock Fruit → all three arrows paralyze groups of enemies at once; Fire Fruit → three points burn at once, a great clearing tool."
+    ],
+    [
+      "潜行链条：潜行套装满级 + 潜行药 + 戒心长刀 → 暗杀可秒杀精英怪",
+      "Stealth chain: max-level stealth set plus stealth elixir plus the Eightfold Longblade → assassinations can instantly kill elite monsters."
     ]
   ],
   "notes": [
-    "Descriptive renderings (not in glossary): 龙骨碎片 as Dragon Bone Fragment, 卓拉大剑 as Zora Greatsword, 戒心小刀/戒心长刀 as Eightfold Dagger/Longblade, 巨霸迦马 does not appear on this page. Source inconsistencies kept as written: the weapons page uses both 莱乃尔 and 莱尼尔 for Lynel and gives the Scimitar of the Seven a base attack of 16, while the Fuse page gives 28; the page also uses both 古代刀片 (+30) and, on the Fuse page, 古代之刃 (+50) for Ancient Blade. All 20 card-name alt texts duplicate the card name pairs already present, so they are not repeated."
+    "Descriptive renderings (not in glossary): 龙骨碎片 as Dragon Bone Fragment, 卓拉大剑 as Zora Greatsword, 戒心小刀/戒心长刀 as Eightfold Dagger/Longblade, 巨霸迦马 does not appear on this page. Source inconsistencies kept as written: the weapons page uses both 莱乃尔 and 莱尼尔 for Lynel and gives the Scimitar of the Seven a base attack of 16, while the Fuse page gives 28; the page also uses both 古代刀片 (+30) and, on the Fuse page, 古代之刃 (+50) for Ancient Blade. All 20 card-name alt texts duplicate the card name pairs already present, so they are not repeated.",
+    "2026-11-03: row-level pairs split into single-node pairs (labels carry \": \" separator) to fix EN card overflow; fuse-hint rows split per text node."
   ]
 }
