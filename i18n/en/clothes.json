@@ -2425,6 +2425,886 @@
     [
       "← 左右滑动查看完整表格 →",
       "← Swipe sideways to see the full table →"
+    ],
+    [
+      "丘丘胶 ×5",
+      "Chuchu Jelly ×5"
+    ],
+    [
+      "波克布林肝脏 ×3",
+      "Bokoblin Guts ×3"
+    ],
+    [
+      "光亮花种子 ×20",
+      "Brightbloom Seed ×20"
+    ],
+    [
+      "光亮蘑菇 ×5",
+      "Brightcap ×5"
+    ],
+    [
+      "冰蝙蝠的翅膀 ×5",
+      "Ice Keese Wing ×5"
+    ],
+    [
+      "冰蝙蝠的眼珠 ×3",
+      "Ice Keese Eyeball ×3"
+    ],
+    [
+      "冰冷蘑菇 ×5",
+      "Chillshroom ×5"
+    ],
+    [
+      "霍拉布林的角 ×5",
+      "Horriblin Horn ×5"
+    ],
+    [
+      "速速青蛙 ×10",
+      "Hot-Footed Frog ×10"
+    ],
+    [
+      "冰蝙蝠的角 ×5",
+      "Ice Keese Horn ×5"
+    ],
+    [
+      "冰龙头 ×5",
+      "Ice Dragon's Head ×5"
+    ],
+    [
+      "冰龙的角 ×3",
+      "Shard of Naydra's Horn ×3"
+    ],
+    [
+      "冰冷凤蝶 ×10",
+      "Winterwing Butterfly ×10"
+    ],
+    [
+      "蓝宝石 ×5",
+      "Sapphire ×5"
+    ],
+    [
+      "卡库达的眼珠 ×6",
+      "Aerocuda Eyeball ×6"
+    ],
+    [
+      "蝙蝠的翅膀 ×5",
+      "Keese Wing ×5"
+    ],
+    [
+      "卡库达的翅膀 ×6",
+      "Aerocuda Wing ×6"
+    ],
+    [
+      "卡库达的眼珠 ×8",
+      "Aerocuda Eyeball ×8"
+    ],
+    [
+      "古栗欧克的翅膀 ×12",
+      "Gleeok Wing ×12"
+    ],
+    [
+      "卡库达的翅膀 ×10",
+      "Aerocuda Wing ×10"
+    ],
+    [
+      "吐冰蜥蜴的尾巴 ×5",
+      "Ice-Breath Lizalfos Tail ×5"
+    ],
+    [
+      "冰冷凤蝶 ×5",
+      "Winterwing Butterfly ×5"
+    ],
+    [
+      "吐冰蜥蜴的角 ×5",
+      "Ice-Breath Lizalfos Horn ×5"
+    ],
+    [
+      "冰冷蜜瓜 ×5",
+      "Hydromelon ×5"
+    ],
+    [
+      "吐火蜥蜴的尾巴 ×5",
+      "Fire-Breath Lizalfos Tail ×5"
+    ],
+    [
+      "红宝石 ×5",
+      "Ruby ×5"
+    ],
+    [
+      "暖暖凤蝶 ×5",
+      "Summerwing Butterfly ×5"
+    ],
+    [
+      "吐火蜥蜴的角 ×5",
+      "Fire-Breath Lizalfos Horn ×5"
+    ],
+    [
+      "暖暖草果 ×5",
+      "Spicy Pepper ×5"
+    ],
+    [
+      "吐电蜥蜴的尾巴 ×5",
+      "Electric Lizalfos Tail ×5"
+    ],
+    [
+      "黄玉 ×5",
+      "Topaz ×5"
+    ],
+    [
+      "酥麻凤蝶 ×5",
+      "Thunderwing Butterfly ×5"
+    ],
+    [
+      "吐电蜥蜴的角 ×5",
+      "Electric Lizalfos Horn ×5"
+    ],
+    [
+      "酥麻水果 ×5",
+      "Voltfruit ×5"
+    ],
+    [
+      "夜光石 ×10",
+      "Luminous Stone ×10"
+    ],
+    [
+      "星星碎片 ×1",
+      "Star Fragment ×1"
+    ],
+    [
+      "波克布林肝脏 ×1",
+      "Bokoblin Guts ×1"
+    ],
+    [
+      "夜光石 ×15",
+      "Luminous Stone ×15"
+    ],
+    [
+      "莫力布林肝脏 ×2",
+      "Moblin Guts ×2"
+    ],
+    [
+      "夜光石 ×20",
+      "Luminous Stone ×20"
+    ],
+    [
+      "西诺克斯的肝脏 ×3",
+      "Hinox Guts ×3"
+    ],
+    [
+      "夜光石 ×30",
+      "Luminous Stone ×30"
+    ],
+    [
+      "莱尼尔的肝脏 ×3",
+      "Lynel Guts ×3"
+    ],
+    [
+      "吉波得的骨头 ×10",
+      "Gibdo Bone ×10"
+    ],
+    [
+      "大剑香蕉 ×10",
+      "Mighty Bananas ×10"
+    ],
+    [
+      "八爪怪的眼珠 ×5",
+      "Octorok Eyeball ×5"
+    ],
+    [
+      "大剑香蕉 ×15",
+      "Mighty Bananas ×15"
+    ],
+    [
+      "八爪怪的脚 ×5",
+      "Octorok Tentacle ×5"
+    ],
+    [
+      "大剑香蕉 ×20",
+      "Mighty Bananas ×20"
+    ],
+    [
+      "八爪怪气球 ×5",
+      "Octorok Balloon ×5"
+    ],
+    [
+      "大剑香蕉 ×30",
+      "Mighty Bananas ×30"
+    ],
+    [
+      "八爪怪的肝脏 ×5",
+      "Octorok Guts ×5"
+    ],
+    [
+      "宁静公主 ×10",
+      "Silent Princess ×10"
+    ],
+    [
+      "向阳草 ×20",
+      "Sundelion ×20"
+    ],
+    [
+      "白龙的角 ×2",
+      "Light Dragon's Horn ×2"
+    ],
+    [
+      "潜行鳟鱼 ×10",
+      "Stealthfin Trout ×10"
+    ],
+    [
+      "静谧凤蝶 ×5",
+      "Tranquil Butterfly ×5"
+    ],
+    [
+      "向阳草 ×10",
+      "Sundelion ×10"
+    ],
+    [
+      "白龙的爪子 ×2",
+      "Light Dragon's Claw ×2"
+    ],
+    [
+      "潜行草 ×5",
+      "Blue Nightshade ×5"
+    ],
+    [
+      "白龙的鳞片 ×2",
+      "Light Dragon's Scale ×2"
+    ],
+    [
+      "宁静公主 ×5",
+      "Silent Princess ×5"
+    ],
+    [
+      "向阳草 ×15",
+      "Sundelion ×15"
+    ],
+    [
+      "白龙的牙齿碎片 ×2",
+      "Light Dragon's Fang ×2"
+    ],
+    [
+      "潜行蘑菇 ×5",
+      "Silent Shroom ×5"
+    ],
+    [
+      "潜行田螺 ×5",
+      "Sneaky River Snail ×5"
+    ],
+    [
+      "左纳乌能源 ×20",
+      "Zonaite Charge ×20"
+    ],
+    [
+      "巨霸伽马的指甲 ×3",
+      "Frox Fingernail ×3"
+    ],
+    [
+      "巨大光亮花种子 ×15",
+      "Giant Brightbloom Seed ×15"
+    ],
+    [
+      "暗萤火虫 ×5",
+      "Deep Firefly ×5"
+    ],
+    [
+      "巨大光亮花种子 ×20",
+      "Giant Brightbloom Seed ×20"
+    ],
+    [
+      "钻石 ×3",
+      "Diamond ×3"
+    ],
+    [
+      "暗萤火虫 ×10",
+      "Deep Firefly ×10"
+    ],
+    [
+      "龙的角 ×2",
+      "Dragon Horn ×2"
+    ],
+    [
+      "暗之块 ×5",
+      "Dark Clump ×5"
+    ],
+    [
+      "巨霸伽马的牙齿 ×3",
+      "Frox Fang ×3"
+    ],
+    [
+      "橡子 ×10",
+      "Acorn ×10"
+    ],
+    [
+      "龙的鳞片 ×2",
+      "Dragon Scale ×2"
+    ],
+    [
+      "火蝙蝠的翅膀 ×5",
+      "Fire Keese Wing ×5"
+    ],
+    [
+      "火蝙蝠的眼珠 ×3",
+      "Fire Keese Eyeball ×3"
+    ],
+    [
+      "暖暖蘑菇 ×5",
+      "Sunshroom ×5"
+    ],
+    [
+      "蜥蜴战士的尾巴 ×10",
+      "Lizalfos Tail ×10"
+    ],
+    [
+      "速速紫罗兰 ×20",
+      "Swift Violet ×20"
+    ],
+    [
+      "火蝙蝠的角 ×5",
+      "Fire Keese Horn ×5"
+    ],
+    [
+      "火龙头 ×5",
+      "Fire Dragon's Head ×5"
+    ],
+    [
+      "火龙的角 ×3",
+      "Shard of Dinraal's Horn ×3"
+    ],
+    [
+      "暖暖凤蝶 ×10",
+      "Summerwing Butterfly ×10"
+    ],
+    [
+      "琥珀 ×10",
+      "Amber ×10"
+    ],
+    [
+      "打火石 ×5",
+      "Flint ×5"
+    ],
+    [
+      "琥珀 ×20",
+      "Amber ×20"
+    ],
+    [
+      "打火石 ×10",
+      "Flint ×10"
+    ],
+    [
+      "琥珀 ×30",
+      "Amber ×30"
+    ],
+    [
+      "琥珀 ×35",
+      "Amber ×35"
+    ],
+    [
+      "打火石 ×15",
+      "Flint ×15"
+    ],
+    [
+      "琥珀 ×40",
+      "Amber ×40"
+    ],
+    [
+      "琥珀 ×60",
+      "Amber ×60"
+    ],
+    [
+      "打火石 ×25",
+      "Flint ×25"
+    ],
+    [
+      "电蝙蝠的翅膀 ×5",
+      "Electric Keese Wing ×5"
+    ],
+    [
+      "电蝙蝠的眼珠 ×3",
+      "Electric Keese Eyeball ×3"
+    ],
+    [
+      "酥麻蘑菇 ×5",
+      "Zapshroom ×5"
+    ],
+    [
+      "贴贴蜥蜴 ×5",
+      "Sticky Lizard ×5"
+    ],
+    [
+      "电蝙蝠的角 ×5",
+      "Electric Keese Horn ×5"
+    ],
+    [
+      "雷龙头 ×5",
+      "Thunder Dragon's Head ×5"
+    ],
+    [
+      "白色丘丘胶 ×5",
+      "White Chuchu Jelly ×5"
+    ],
+    [
+      "冰冷蜜瓜 ×3",
+      "Hydromelon ×3"
+    ],
+    [
+      "白银波克布林角 ×5",
+      "Silver Bokoblin Horn ×5"
+    ],
+    [
+      "白银波克布林角 ×9",
+      "Silver Bokoblin Horn ×9"
+    ],
+    [
+      "西诺克斯肝脏 ×9",
+      "Hinox Guts ×9"
+    ],
+    [
+      "左纳尼乌姆 ×15",
+      "Zonaite ×15"
+    ],
+    [
+      "白银莫力布林角 ×9",
+      "Silver Moblin Horn ×9"
+    ],
+    [
+      "巨霸伽马肝脏 ×9",
+      "Frox Guts ×9"
+    ],
+    [
+      "大左纳尼乌姆 ×10",
+      "Large Zonaite ×10"
+    ],
+    [
+      "白银莱尼尔刃角 ×9",
+      "Silver Lynel Saber Horn ×9"
+    ],
+    [
+      "白银莱尼尔碎角 ×9",
+      "Silver Lynel Mace Horn ×9"
+    ],
+    [
+      "古栗欧克肝脏 ×9",
+      "Gleeok Guts ×9"
+    ],
+    [
+      "白银蜥蜴角 ×9",
+      "Silver Lizalfos Horn ×9"
+    ],
+    [
+      "莫尔德拉吉克肝脏 ×9",
+      "Molduga Guts ×9"
+    ],
+    [
+      "大左纳尼乌姆 ×15",
+      "Large Zonaite ×15"
+    ],
+    [
+      "白银首领波克布林角 ×3",
+      "Silver Boss Bokoblin Horn ×3"
+    ],
+    [
+      "白鬃莱尼尔的角 ×3",
+      "White-Maned Lynel Saber Horn ×3"
+    ],
+    [
+      "大剑独角仙 ×3",
+      "Bladed Rhino Beetle ×3"
+    ],
+    [
+      "精力独角仙 ×3",
+      "Energetic Rhino Beetle ×3"
+    ],
+    [
+      "龙的牙齿碎片 ×2",
+      "Dragon Fang ×2"
+    ],
+    [
+      "精力蜂的蜂蜜 ×5",
+      "Courser Bee Honey ×5"
+    ],
+    [
+      "龙的爪子 ×2",
+      "Dragon Claw ×2"
+    ],
+    [
+      "红宝石 ×10",
+      "Ruby ×10"
+    ],
+    [
+      "星星碎片 ×2",
+      "Star Fragment ×2"
+    ],
+    [
+      "红宝石 ×1",
+      "Ruby ×1"
+    ],
+    [
+      "红宝石 ×2",
+      "Ruby ×2"
+    ],
+    [
+      "打火石 ×3",
+      "Flint ×3"
+    ],
+    [
+      "红宝石 ×4",
+      "Ruby ×4"
+    ],
+    [
+      "红宝石 ×6",
+      "Ruby ×6"
+    ],
+    [
+      "红色丘丘胶 ×5",
+      "Red Chuchu Jelly ×5"
+    ],
+    [
+      "暖暖草果 ×3",
+      "Spicy Pepper ×3"
+    ],
+    [
+      "莫力布林的牙齿 ×5",
+      "Moblin Fang ×5"
+    ],
+    [
+      "耐火蜥蜴 ×5",
+      "Fireproof Lizard ×5"
+    ],
+    [
+      "莱尼尔的肝脏 ×2",
+      "Lynel Guts ×2"
+    ],
+    [
+      "奥尔龙的角 ×1",
+      "Dinraal's Horn ×1"
+    ],
+    [
+      "莱尼尔的角 ×2",
+      "Lynel Horn ×2"
+    ],
+    [
+      "莱尼尔的蹄子 ×2",
+      "Lynel Hoof ×2"
+    ],
+    [
+      "大剑草 ×5",
+      "Mighty Thistle ×5"
+    ],
+    [
+      "莱尼尔的蹄子 ×5",
+      "Lynel Hoof ×5"
+    ],
+    [
+      "莱尼尔的肝脏 ×5",
+      "Lynel Guts ×5"
+    ],
+    [
+      "蓝宝石 ×10",
+      "Sapphire ×10"
+    ],
+    [
+      "蓝宝石 ×1",
+      "Sapphire ×1"
+    ],
+    [
+      "蓝宝石 ×2",
+      "Sapphire ×2"
+    ],
+    [
+      "蓝宝石 ×4",
+      "Sapphire ×4"
+    ],
+    [
+      "蓝宝石 ×6",
+      "Sapphire ×6"
+    ],
+    [
+      "蓝波克布林角 ×5",
+      "Blue Bokoblin Horn ×5"
+    ],
+    [
+      "波克布林的牙齿 ×3",
+      "Bokoblin Fang ×3"
+    ],
+    [
+      "蓝白巨霸伽马的牙 ×5",
+      "Blue-White Frox Fang ×5"
+    ],
+    [
+      "大容量左纳乌能源 ×10",
+      "Large Zonaite Charge ×10"
+    ],
+    [
+      "巨霸伽马的肝脏 ×3",
+      "Frox Guts ×3"
+    ],
+    [
+      "蓝莫力布林的角 ×5",
+      "Blue Moblin Horn ×5"
+    ],
+    [
+      "耐火凤蝶 ×3",
+      "Smotherwing Butterfly ×3"
+    ],
+    [
+      "蓝蜥蜴战士的角 ×5",
+      "Blue Lizalfos Horn ×5"
+    ],
+    [
+      "蜥蜴战士的尾巴 ×3",
+      "Lizalfos Tail ×3"
+    ],
+    [
+      "生命鲈鱼 ×3",
+      "Hearty Bass ×3"
+    ],
+    [
+      "蓝霍拉布林的角 ×5",
+      "Blue Horriblin Horn ×5"
+    ],
+    [
+      "蓝首领波克布林角 ×3",
+      "Blue Boss Bokoblin Horn ×3"
+    ],
+    [
+      "首领波克布林牙齿 ×3",
+      "Boss Bokoblin Fang ×3"
+    ],
+    [
+      "蓝鬃莱尼尔的角 ×3",
+      "Blue-Maned Lynel Saber Horn ×3"
+    ],
+    [
+      "莱尼尔的蹄子 ×3",
+      "Lynel Hoof ×3"
+    ],
+    [
+      "大剑蘑菇 ×3",
+      "Razorshroom ×3"
+    ],
+    [
+      "蛋白石 ×10",
+      "Opal ×10"
+    ],
+    [
+      "蛋白石 ×15",
+      "Opal ×15"
+    ],
+    [
+      "蛋白石 ×16",
+      "Opal ×16"
+    ],
+    [
+      "蛋白石 ×24",
+      "Opal ×24"
+    ],
+    [
+      "蛋白石 ×25",
+      "Opal ×25"
+    ],
+    [
+      "蛋白石 ×32",
+      "Opal ×32"
+    ],
+    [
+      "蛋白石 ×5",
+      "Opal ×5"
+    ],
+    [
+      "蛋白石 ×8",
+      "Opal ×8"
+    ],
+    [
+      "打火石 ×30",
+      "Flint ×30"
+    ],
+    [
+      "蜥蜴战士的爪子 ×5",
+      "Lizalfos Talon ×5"
+    ],
+    [
+      "海拉鲁鲈鱼 ×5",
+      "Hyrule Bass ×5"
+    ],
+    [
+      "蝙蝠的眼珠 ×5",
+      "Keese Eyeball ×5"
+    ],
+    [
+      "莫力布林肝脏 ×3",
+      "Moblin Guts ×3"
+    ],
+    [
+      "速速蘑菇 ×3",
+      "Rushroom ×3"
+    ],
+    [
+      "西诺克斯的指甲 ×5",
+      "Hinox Toenail ×5"
+    ],
+    [
+      "奥尔龙的鳞片 ×1",
+      "Dinraal's Scale ×1"
+    ],
+    [
+      "西诺克斯的牙齿 ×5",
+      "Hinox Tooth ×5"
+    ],
+    [
+      "奥尔龙的爪子 ×1",
+      "Dinraal's Claw ×1"
+    ],
+    [
+      "西诺克斯的肝脏 ×2",
+      "Hinox Guts ×2"
+    ],
+    [
+      "奥尔龙的牙齿碎片 ×1",
+      "Dinraal's Fang ×1"
+    ],
+    [
+      "速速紫罗兰 ×10",
+      "Swift Violet ×10"
+    ],
+    [
+      "莫尔德拉吉克的肝脏 ×5",
+      "Molduga Guts ×5"
+    ],
+    [
+      "速速胡萝卜 ×5",
+      "Swift Carrot ×5"
+    ],
+    [
+      "吉波得的肝脏 ×5",
+      "Gibdo Guts ×5"
+    ],
+    [
+      "速速蘑菇 ×10",
+      "Rushroom ×10"
+    ],
+    [
+      "莫尔德拉吉克的颚骨 ×5",
+      "Molduga Jaw ×5"
+    ],
+    [
+      "速速蜥蜴 ×3",
+      "Hightail Lizard ×3"
+    ],
+    [
+      "钻石 ×2",
+      "Diamond ×2"
+    ],
+    [
+      "钻石 ×5",
+      "Diamond ×5"
+    ],
+    [
+      "钻石 ×8",
+      "Diamond ×8"
+    ],
+    [
+      "队长魔像的角(上) ×5",
+      "Captain Construct III Horn ×5"
+    ],
+    [
+      "队长魔像的角(中) ×5",
+      "Captain Construct II Horn ×5"
+    ],
+    [
+      "左纳尼乌姆 ×10",
+      "Zonaite ×10"
+    ],
+    [
+      "队长魔像的角(极) ×5",
+      "Captain Construct IV Horn ×5"
+    ],
+    [
+      "雷龙的角 ×3",
+      "Thunder Dragon's Horn ×3"
+    ],
+    [
+      "酥麻凤蝶 ×10",
+      "Thunderwing Butterfly ×10"
+    ],
+    [
+      "贴贴青蛙 ×5",
+      "Sticky Frog ×5"
+    ],
+    [
+      "黄玉 ×10",
+      "Topaz ×10"
+    ],
+    [
+      "黄玉 ×1",
+      "Topaz ×1"
+    ],
+    [
+      "黄玉 ×2",
+      "Topaz ×2"
+    ],
+    [
+      "黄玉 ×4",
+      "Topaz ×4"
+    ],
+    [
+      "黄玉 ×6",
+      "Topaz ×6"
+    ],
+    [
+      "黄色丘丘胶 ×5",
+      "Yellow Chuchu Jelly ×5"
+    ],
+    [
+      "酥麻水果 ×3",
+      "Voltfruit ×3"
+    ],
+    [
+      "黑波克布林角 ×5",
+      "Black Bokoblin Horn ×5"
+    ],
+    [
+      "黑莫力布林的角 ×5",
+      "Black Moblin Horn ×5"
+    ],
+    [
+      "耐火凤蝶 ×5",
+      "Smotherwing Butterfly ×5"
+    ],
+    [
+      "黑蜥蜴战士的角 ×5",
+      "Black Lizalfos Horn ×5"
+    ],
+    [
+      "蓝蜥蜴战士的尾巴 ×5",
+      "Blue Lizalfos Tail ×5"
+    ],
+    [
+      "蛋白石 ×20",
+      "Opal ×20"
+    ],
+    [
+      "黑霍拉布林的角 ×5",
+      "Black Horriblin Horn ×5"
+    ],
+    [
+      "霍拉布林的肝脏 ×5",
+      "Horriblin Guts ×5"
+    ],
+    [
+      "黑首领波克布林角 ×3",
+      "Black Boss Bokoblin Horn ×3"
+    ],
+    [
+      "首领波克布林肝脏 ×3",
+      "Boss Bokoblin Guts ×3"
+    ],
+    [
+      "首领波克布林的角 ×3",
+      "Boss Bokoblin Horn ×3"
+    ],
+    [
+      "波克布林的肝脏 ×3",
+      "Bokoblin Guts ×3"
     ]
   ],
   "title": "Tears of the Kingdom Complete 38 Armor Set Guide and Acquisition Guide · Armor Enhancement Materials | Tears of the Kingdom Guide"

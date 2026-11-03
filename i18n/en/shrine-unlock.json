@@ -1188,6 +1188,18 @@
     [
       "本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。神庙坐标数据来源：thonky.com。",
       "All guides on this site are the author's original work. All game characters are copyrighted by Nintendo Co., Ltd. Shrine coordinate data source: thonky.com."
+    ],
+    [
+      "导出失败，请确保浏览器支持下载功能。",
+      "Export failed. Please make sure your browser supports downloads."
+    ],
+    [
+      "错误信息：",
+      "Error message: "
+    ],
+    [
+      "导出失败，请确保浏览器支持下载功能。\n错误信息：",
+      "Export failed. Please make sure your browser supports downloads.\nError message: "
     ]
   ],
   "notes": [
