@@ -1,0 +1,244 @@
+{
+  "title": "Gloom Recovery Complete Guide: Broken Hearts, Sundelions, and Gloom Resistance · Harry's Ultimate Tips · Tears of the Kingdom Guide",
+  "pairs": [
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "哈里的终极秘籍",
+      "Harry's Ultimate Tips"
+    ],
+    [
+      "📑 本篇目录",
+      "📑 Contents of This Article"
+    ],
+    [
+      "💜 瘴气攻略",
+      "💜 Gloom Guide"
+    ],
+    [
+      "瘴气恢复完全指南：破损的心、向阳草与瘴气抗性",
+      "Gloom Recovery Complete Guide: Broken Hearts, Sundelions, and Gloom Resistance"
+    ],
+    [
+      "红心变灰裂开、怎么吃都回不满，不是血量不够，而是心被瘴气“破损”了——解法只有三种，全部讲清楚。",
+      "Hearts turning gray and cracked, never refilling no matter what you eat — that's not low HP, it's hearts \"broken\" by gloom. There are only three fixes, and they're all explained here."
+    ],
+    [
+      "💜 瘴气 · 破损的心恢复",
+      "💜 Gloom · Broken Heart Recovery"
+    ],
+    [
+      "适用人群与前置条件",
+      "Who This Guide Is For and Prerequisites"
+    ],
+    [
+      "瘴气到底伤了什么：破损的心",
+      "What Gloom Actually Damages: Broken Hearts"
+    ],
+    [
+      "三种恢复法：料理、树根、回地面",
+      "Three Recovery Methods: Cooking, Lightroots, Returning to the Surface"
+    ],
+    [
+      "向阳草哪里找：天空岛是主产地",
+      "Where to Find Sundelions: Sky Islands Are the Main Source"
+    ],
+    [
+      "向阳料理怎么做：一锅的算法",
+      "How to Cook Sundelion Meals: The One-Pot Math"
+    ],
+    [
+      "预防比治疗便宜：瘴气抗性与走位",
+      "Prevention Beats Cure: Gloom Resistance and Positioning"
+    ],
+    [
+      "三个最常见的翻车点",
+      "Three Most Common Mistakes"
+    ],
+    [
+      "哈里的取舍：出发前先算好一锅",
+      "Harry's Take: Plan One Pot Before You Set Out"
+    ],
+    [
+      "图：游戏实机截图（向阳草：金黄色的星形花朵，夜里会发光，图片来源：Zelda Wiki）。",
+      "Image: Actual in-game screenshot (Sundelions: golden star-shaped flowers that glow at night. Source: Zelda Wiki)."
+    ],
+    [
+      "这篇写给两类玩家：一是刚下地底、发现红心变灰裂开、怎么吃料理都回不满的玩家；二是准备长期在地底探索、想提前把瘴气问题一次解决的玩家。前置条件很简单：你已经去过地底，或者正在为第一次下地底做准备。不需要任何主线进度——瘴气机制从第一次踩上地底的瘴气水洼就开始生效，越早搞懂越省事。地底探索的通用准备（照明、电池、路线）见本站",
+      "This guide is for two kinds of players: those who just went down to the Depths and found their hearts cracked and gray, no matter how many meals they eat; and those planning long Depths expeditions who want to settle the gloom problem once and for all. The prerequisites are simple: you have already been to the Depths, or you are preparing for your first trip down. No main-quest progress is needed — the gloom mechanic kicks in the first time you step on a Depths gloom puddle, so the sooner you understand it, the less trouble it causes. For general Depths preparation (lighting, batteries, routes), see this site's"
+    ],
+    [
+      "，本篇只解决“破损的心”这一个问题。",
+      ", and this guide solves only this one problem: broken hearts."
+    ],
+    [
+      "瘴气伤害和普通伤害是两回事。普通伤害扣的是当前血量，吃烤肉、喝料理就能补回来；瘴气伤害扣的是心心上限——被瘴气伤到的那几颗心会裂开、变灰，变成“破损的心”。破损的心有两个特点：第一，它不能用普通料理恢复，吃再多烤肉，灰色的部分也不会变回来；第二，它会一直占着你的心槽，直到你用正确的方法解除，在此期间你的可用血量上限就是被压低后的数值。",
+      "Gloom damage and ordinary damage are two different things. Ordinary damage reduces current HP, which roast meat and meals can restore; gloom damage reduces your heart-container cap — hearts hit by gloom crack and turn gray, becoming \"broken hearts.\" Broken hearts have two traits: first, they can't be restored with ordinary meals — no matter how much roast meat you eat, the gray parts won't come back; second, they keep occupying your heart slots until you remove them the right way, and until then your usable HP cap stays at the reduced value."
+    ],
+    [
+      "瘴气的来源有三处：地底随处可见的瘴气水洼与瘴气池，踩上去持续掉；地底敌人中带瘴气属性的攻击，例如瘴气魔与瘴气化的怪物，被打中同样会破损；以及地底 Boss 战中的瘴气范围攻击。地面上基本没有瘴气，所以这个机制几乎是地底专属——这也是为什么很多玩家在地面上从没见过破损的心，一下地底就懵了。",
+      "Gloom comes from three sources: gloom puddles and pools scattered across the Depths, which drain you continuously when stepped on; gloom-element attacks from Depths enemies, such as Gloom Spawn and gloom-infected monsters, which also break hearts when they hit; and gloom area attacks in Depths boss fights. The surface is basically gloom-free, so this mechanic is almost Depths-exclusive — which is why many players who never saw a broken heart on the surface get confused the moment they go underground."
+    ],
+    [
+      "先建立一个正确的预期：破损的心不是永久损失。游戏给了三种恢复途径，下地底前把这三种方法记牢，破损了也只是多花一点时间，不会毁掉一趟探索。",
+      "Set the right expectation first: broken hearts are not permanent losses. The game gives three recovery routes — memorize them before going underground, and a break just costs a little extra time; it won't ruin an expedition."
+    ],
+    [
+      "向阳料理——地底现场恢复。",
+      "Sundelion cooking — on-site recovery in the Depths."
+    ],
+    [
+      "用向阳草（或向阳南瓜）做的料理，名字前会带“向阳”二字，吃下去能恢复破损的心。这是唯一能在地底深处、不挪地方就恢复的方法，也是本篇的重点，后面会细讲配方与用量。",
+      "Meals cooked with Sundelions (or Sundelion pumpkins) carry the \"Sunny\" prefix and restore broken hearts when eaten. This is the only method that recovers you deep in the Depths without moving anywhere, and it's the focus of this guide — recipes and amounts are detailed below."
+    ],
+    [
+      "树根——地底的免费恢复点。",
+      "Lightroots — free recovery points in the Depths."
+    ],
+    [
+      "站在地底破魔树根的光柱下方，或者直接传送到任意一座已激活的树根，破损的心会立刻恢复。树根是地底探索的天然检查点：规划路线时把树根当成补给站，每经过一座就等于免费回满一次。",
+      "Stand under the light pillar of a Depths Lightroot, or warp directly to any activated Lightroot, and broken hearts recover instantly. Lightroots are natural checkpoints for Depths exploration: plan routes treating Lightroots as supply stations, and every one you pass equals one free full recovery."
+    ],
+    [
+      "回地面——最省钱但最费腿。",
+      "Returning to the surface — cheapest but most legwork."
+    ],
+    [
+      "只要回到地面世界，破损的心会自动恢复。代价是来回跑路：如果地底深处没有树根、身上又没有向阳料理，回地面就是最后的保底手段，别硬撑着满身破损继续打 Boss。",
+      "Just returning to the surface world automatically restores broken hearts. The cost is the round trip: if there's no Lightroot deep in the Depths and no Sundelion meals on you, returning to the surface is the last-resort safety net — don't push on into a boss fight covered in broken hearts."
+    ],
+    [
+      "三者的取舍很清楚：有料理就地吃，有树根就近蹭，两者都没有才回地面。很多玩家的翻车不是不知道方法，而是破损了还想着“再撑一会儿”，结果在 Boss 门口只剩两三颗可用心，被一招带走。",
+      "The trade-off among the three is clear: eat a meal if you have one, stop by a Lightroot if one's near, and only return to the surface if neither is available. Many players' failures come not from ignorance but from thinking \"just a little longer\" while broken — and then getting one-shot at a boss door with only two or three usable hearts left."
+    ],
+    [
+      "向阳草是向阳料理的核心材料，它只长在高处——天空岛是主产地，几乎每座天空岛上都能找到，夜里还会发光，隔着一段距离就能认出那朵黄底黑边的星形花。南奥尔汀空岛一带比较集中，一次能采到十几株，是前期最值得专门跑一趟的采集点；从天上坠落到地面的岩石表面偶尔也会附着向阳草，看到坠落石块不妨绕过去看一眼。",
+      "Sundelions are the core ingredient of Sundelion cooking, and they only grow up high — the Sky Islands are the main source, with almost every Sky Island holding some, glowing at night so you can spot their yellow-and-black star flowers from a distance. The South Lanayru Sky Archipelago area is fairly dense, yielding a dozen or so in one trip, making it the most worthwhile dedicated gathering run early on; Sundelions also occasionally cling to rock surfaces that fall from the sky to the surface, so when you see fallen rock, it's worth circling around for a look."
+    ],
+    [
+      "除了野外采集，还有两条补充渠道：一是卡卡利科村的瘴气病支线会让你去找向阳草，做任务的过程本身就是一次采集教学；二是向阳南瓜同样能做向阳料理，哈特诺村一带有售卖与种植的渠道，手头没有向阳草时可以用它顶上。采集时的原则是“见一朵采一朵”：向阳草不占多少背包格，平时顺手采的几十株，到了地底深处就是几十颗心的保险。",
+      "Besides wild gathering, there are two more supply channels: first, the Kakariko Village gloom-sickness side quest sends you looking for Sundelions, and the quest itself doubles as a gathering tutorial; second, Sundelion pumpkins also make Sunny meals, with sale and growing channels around Hateno Village — use them as a substitute when you're out of Sundelions. The gathering rule is \"pick every one you see\": Sundelions take barely any inventory space, and a few dozen casually picked on the surface become dozens of hearts' worth of insurance deep in the Depths."
+    ],
+    [
+      "向阳料理的算法只有一条：",
+      "The rule for Sundelion cooking is just one:"
+    ],
+    [
+      "每朵向阳草恢复 3 颗破损的心",
+      "Each Sundelion restores 3 broken hearts"
+    ],
+    [
+      "，一锅里放几朵就恢复几乘以 3 颗。向阳草本身不回血量，它只解除“破损”状态；想同时回血，要在同一锅里搭配其他能回血的食材（肉、鱼、蘑菇都行），这样一锅吃下去既解破损又补血量。只放向阳草的“向阳炒野菜”也能用，但吃完后血量还是空的，还得再吃一锅普通料理，不如一锅搭配来得划算。",
+      ", and a pot restores 3 times however many flowers you put in. Sundelions themselves don't restore HP; they only remove the \"broken\" state. To restore HP at the same time, add other healing ingredients to the same pot (meat, fish, or mushrooms all work), so one pot both un-breaks and heals. Plain \"Sunny Fried Wild Greens\" with only Sundelions works too, but your HP stays empty afterward and you'll need another regular meal — less efficient than combining in one pot."
+    ],
+    [
+      "做法",
+      "Method"
+    ],
+    [
+      "用量",
+      "Amount"
+    ],
+    [
+      "效果与适用场景",
+      "Effect and When to Use"
+    ],
+    [
+      "向阳炒野菜（纯向阳草）",
+      "Sunny Fried Wild Greens (pure Sundelions)"
+    ],
+    [
+      "3 朵向阳草",
+      "3 Sundelions"
+    ],
+    [
+      "恢复 9 颗破损的心，适合破损不多、只想快速解状态时；不回血量，吃完还需补普通料理。",
+      "Restores 9 broken hearts — good when few hearts are broken and you just want to clear the state fast; doesn't restore HP, so a regular meal is still needed afterward."
+    ],
+    [
+      "向阳炖肉（向阳草＋肉）",
+      "Sunny Meat Stew (Sundelions + meat)"
+    ],
+    [
+      "5 朵向阳草＋任意肉类",
+      "5 Sundelions + any meat"
+    ],
+    [
+      "恢复 15 颗破损的心并补血量，适合 Boss 战前或地底深处长途探索，一锅顶两锅。",
+      "Restores 15 broken hearts and heals HP — ideal before boss fights or long deep-Depths treks; one pot does the work of two."
+    ],
+    [
+      "向阳蔬菜粥（向阳草＋海拉鲁米＋鲜奶）",
+      "Sunny Veggie Porridge (Sundelions + Hylian Rice + Fresh Milk)"
+    ],
+    [
+      "1 朵向阳草起步即可",
+      "Just 1 Sundelion to start"
+    ],
+    [
+      "卡卡利科瘴气病支线的指定配方，也是手头材料少时的保底做法；用量少，恢复量也相应少。",
+      "The designated recipe for the Kakariko gloom-sickness side quest, and the fallback when materials are short; small amounts mean proportionally small recovery."
+    ],
+    [
+      "用量上的经验法则是“按破损数下锅，别按背包数下锅”：破损 6 颗就放 2 朵，破损 9 颗就放 3 朵，一锅放 5 朵以上去解 3 颗破损纯属浪费——多恢复的部分不会存起来，下次破损还得重新吃。出发前先算好：按自己常去的地底深度备两到三锅的量就够了，剩下的向阳草留着下次用。",
+      "The rule of thumb for amounts is \"cook to the number of broken hearts, not to the size of your inventory\": 6 broken hearts means 2 flowers, 9 means 3 — putting 5 or more flowers in a pot to fix 3 broken hearts is pure waste, since excess recovery isn't banked and you'll have to eat again next time you break. Before setting out, do the math: two to three pots' worth for the Depths depth you usually visit is enough; save the remaining Sundelions for next time."
+    ],
+    [
+      "向阳料理是事后补救，瘴气抗性是事前预防。带瘴气抗性效果的装备与料理，能先替你挡掉一部分瘴气伤害：被挡掉的心不会马上变成破损，而是进入一个可恢复的缓冲状态，约 5 秒恢复 1 颗。抗性等级越高，能挡的上限越高——满级抗性大约能挡 3 颗心的量。也就是说，穿着抗性装踩一小片瘴气水洼，可能一颗心都不会破损；没有抗性时，同样的水洼会直接啃掉你的心槽。",
+      "Sundelion cooking is after-the-fact repair; gloom resistance is prevention. Gear and meals with gloom-resistance effects block part of the gloom damage first: blocked hearts don't immediately become broken but enter a recoverable buffer state, recovering about 1 heart per 5 seconds. The higher the resistance level, the higher the blocked cap — full-level resistance can block roughly 3 hearts' worth. In other words, stepping on a small gloom puddle in resistance gear may break no hearts at all; without resistance, the same puddle eats straight into your heart containers."
+    ],
+    [
+      "走位上的预防同样重要，而且零成本：地底赶路时尽量走树根之间的已开区域，瘴气水洼能绕就绕，绕不过去时用载具或滑翔伞跨过去，别直线踩过去；打带瘴气的敌人时优先远程输出，弓箭与投掷物比贴身换血划算得多；看到瘴气魔这类高瘴气敌人，先确认身上有没有向阳料理再开战，没有就标记位置、回头再来。地底不是比谁胆子大的地方，绕路与标记都是正常玩法。",
+      "Positioning prevention matters just as much, and costs nothing: when traveling the Depths, stick to opened areas between Lightroots where possible, go around gloom puddles when you can, and cross them with vehicles or the paraglider when you can't — don't walk straight through; against gloom enemies, prefer ranged damage, since bows and thrown items beat close-quarters trading by a wide margin; and when you spot high-gloom enemies like Gloom Spawn, confirm you have Sundelion meals on you before engaging — if not, mark the location and come back later. The Depths isn't a contest of courage; detours and markers are normal play."
+    ],
+    [
+      "⚠️ 坑一：用普通料理硬补破损的心。",
+      "⚠️ Pitfall 1: Trying to patch broken hearts with ordinary meals."
+    ],
+    [
+      "烤肉与普通料理只能补当前血量，破损的部分吃多少都不动。发现红心变灰，第一反应应该是吃向阳料理或去树根，而不是再吃一锅烤肉。",
+      "Roast meat and ordinary meals only restore current HP; the broken part won't budge no matter how much you eat. When you see hearts turn gray, your first reaction should be a Sunny meal or a Lightroot — not another pot of roast meat."
+    ],
+    [
+      "⚠️ 坑二：一锅放太多向阳草。",
+      "⚠️ Pitfall 2: Putting too many Sundelions in one pot."
+    ],
+    [
+      "恢复量按朵数乘以 3 计算，超出破损数的部分直接浪费。先数清楚自己破了几颗心，再决定放几朵。",
+      "Recovery is calculated as flower count times 3; anything beyond your broken count is wasted outright. Count how many hearts you've broken first, then decide how many flowers to use."
+    ],
+    [
+      "⚠️ 坑三：满身破损还硬打 Boss。",
+      "⚠️ Pitfall 3: Fighting a boss while covered in broken hearts."
+    ],
+    [
+      "破损的心占着心槽，可用血量被压低后，Boss 的一次重击就可能直接带走你。开战前先把状态回满，没有料理就先去最近的树根，这是地底 Boss 战的基本礼仪。",
+      "Broken hearts occupy your heart slots, and with usable HP pressed down, one heavy boss hit can finish you. Restore your state fully before the fight; without meals, head to the nearest Lightroot first — that's basic etiquette for Depths boss fights."
+    ],
+    [
+      "作者视角的判断是：瘴气机制真正的成本不在战斗里，而在准备里。一次地底探索的瘴气成本，等于你出发前备好的向阳料理锅数——备两锅向阳炖肉、一路按树根规划路线，地底的瘴气就从“致命机制”降级成“路边水洼”；反之，空手下地底、指望路上现找向阳草，才是绝大多数地底翻车的根源。向阳草在天空岛随手可采，贵的是你下地底之后才发现没带的那一刻。",
+      "The author's judgment is this: the real cost of the gloom mechanic isn't in combat but in preparation. One Depths expedition's gloom cost equals the number of Sunny-meal pots you prepared before setting out — two pots of Sunny Meat Stew plus Lightroot-planned routes downgrade Depths gloom from a \"lethal mechanic\" to a \"roadside puddle\"; conversely, going down empty-handed and hoping to find Sundelions along the way is the root cause of most Depths failures. Sundelions are casually picked on the Sky Islands; what's expensive is the moment underground when you realize you brought none."
+    ],
+    [
+      "一句话总结：破损的心不可怕，可怕的是不知道它怎么来的、怎么解——记住三条恢复法（向阳料理、树根、回地面），记住每朵向阳草等于 3 颗心，出发前按破损数备好一锅，地底就再也不会因为瘴气而提前收工。",
+      "One-line summary: broken hearts aren't scary — not knowing where they come from or how to fix them is. Remember the three recovery methods (Sunny meals, Lightroots, returning to the surface), remember that each Sundelion equals 3 hearts, and prepare one pot matched to your broken count before setting out — and gloom will never cut a Depths trip short again."
+    ],
+    [
+      "← 上一篇：amiibo完全指南",
+      "← Previous: amiibo Complete Guide"
+    ],
+    [
+      "已经是最后一篇",
+      "This is the last article"
+    ],
+    [
+      "› 瘴气恢复完全指南：破损的心、向阳草与瘴气抗性（本篇）",
+      "› Gloom Recovery Complete Guide: Broken Hearts, Sundelions, and Gloom Resistance (This Article)"
+    ]
+  ],
+  "notes": [
+    "New article 2026-11-03. Single-node pairs only; link-split sentence fragments kept as fragment pairs."
+  ]
+}

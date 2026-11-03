@@ -1,351 +1,359 @@
 {
- "notes": [
-  "情节挑战 rendered as Side Adventures; the game distinguishes Side Quests from Side Adventures and the source page does not specify which set the 60 quests are.",
-  "马克兔飞行器 is a player nickname for the fan-and-steering-stick hover bike build; rendered descriptively as Hover Bike.",
-  "人马（青鬃） rendered as Blue-Maned Lynel, matching the glossary's Blue-Maned term; the source uses 青鬃 (literally teal/green-maned).",
-  "乌萨祖姆神庙 rendered by transliteration as Usazum Shrine; no glossary entry for this shrine name."
- ],
- "pairs": [
-  [
-   "王国之泪攻略站完整网站地图：主线任务、神庙挑战、武器图鉴、料理合成、套装获取、Boss图鉴等全部页面导航索引。",
-   "Complete sitemap for the Tears of the Kingdom guide site: a navigation index for all pages, including main quests, shrine challenges, weapon compendium, cooking recipes, armor set locations, Boss compendium, and more."
-  ],
-  [
-   "🗺️ 网站地图",
-   "🗺️ Sitemap"
-  ],
-  [
-   "快速导航到您需要的任何攻略页面",
-   "Quickly navigate to any guide page you need"
-  ],
-  [
-   "首页",
-   "Home"
-  ],
-  [
-   "网站地图",
-   "Sitemap"
-  ],
-  [
-   "📚 欢迎浏览网站地图",
-   "📚 Welcome to the Sitemap"
-  ],
-  [
-   "这里列出了本站所有攻略页面。您可以快速找到所需的任何攻略内容。本站共有26个主要页面，涵盖王国之泪的全部游戏内容。",
-   "This page lists every guide page on this site. You can quickly find any guide content you need. This site has 26 main pages, covering all of the game content in Tears of the Kingdom."
-  ],
-  [
-   "这里列出了本站所有攻略页面。",
-   "This page lists every guide page on this site."
-  ],
-  [
-   "您可以快速找到所需的任何攻略内容。",
-   "You can quickly find any guide content you need."
-  ],
-  [
-   "本站共有26个主要页面，涵盖王国之泪的全部游戏内容。",
-   "This site has 26 main pages, covering all of the game content in Tears of the Kingdom."
-  ],
-  [
-   "核心页面",
-   "Core Pages"
-  ],
-  [
-   "首页 - 网站导航与最新更新",
-   "Home – Site navigation and latest updates"
-  ],
-  [
-   "关于我们 - 网站介绍与联系方式",
-   "About Us – Site introduction and contact information"
-  ],
-  [
-   "常见问题FAQ - 新手疑问解答",
-   "Frequently Asked Questions (FAQ) – Answers to beginners' questions"
-  ],
-  [
-   "隐私政策 - 数据保护说明",
-   "Privacy Policy – Data protection notes"
-  ],
-  [
-   "任务攻略",
-   "Quest Guides"
-  ],
-  [
-   "主线任务 - 23条主线完整流程",
-   "Main Quests – Complete walkthrough for all 23 main quests"
-  ],
-  [
-   "情节挑战 - 60个支线任务攻略",
-   "Side Adventures – Guides for all 60 Side Adventures"
-  ],
-  [
-   "任务顺序 - 主线23+情节60全任务列表与攻略顺序",
-   "Quest Order – Full list of all 23 main quests + 60 Side Adventures, with recommended guide order"
-  ],
-  [
-   "神庙与探索",
-   "Shrines and Exploration"
-  ],
-  [
-   "神庙挑战 - 152个神庙完整攻略",
-   "Shrine Quests – Complete guides for all 152 shrines"
-  ],
-  [
-   "神庙开启 - 隐藏神庙开启方法",
-   "Unlocking Shrines – How to reveal hidden shrines"
-  ],
-  [
-   "破魔树根 - 120个树根位置地图",
-   "Lightroots – Map of all 120 Lightroot locations"
-  ],
-  [
-   "武器与装备",
-   "Weapons and Armor"
-  ],
-  [
-   "武器图鉴 - 全武器属性与获取",
-   "Weapon Compendium – Stats and locations for all weapons"
-  ],
-  [
-   "套装获取 - 38套装收集与升级",
-   "Armor Sets – Collecting and upgrading all 38 armor sets"
-  ],
-  [
-   "哈里的武器秘籍 - 最强武器推荐",
-   "Harry's Weapon Secrets – Best weapon recommendations"
-  ],
-  [
-   "哈里的套装秘籍 - 隐藏特效解析",
-   "Harry's Armor Secrets – Hidden set bonus explanations"
-  ],
-  [
-   "料理与合成",
-   "Cooking and Recipes"
-  ],
-  [
-   "料理合成 - 228种料理完整配方",
-   "Cooking Recipes – Complete recipes for all 228 dishes"
-  ],
-  [
-   "哈里的料理秘籍 - 最强配方推荐",
-   "Harry's Cooking Secrets – Best recipe recommendations"
-  ],
-  [
-   "Boss图鉴",
-   "Bosses"
-  ],
-  [
-   "Boss图鉴 - 16个Boss完整攻略",
-   "Boss Compendium – Complete guides for all 16 bosses"
-  ],
-  [
-   "加侬多夫 - 最终Boss攻略",
-   "Ganondorf – Final boss guide"
-  ],
-  [
-   "幻影加侬 - 中期Boss攻略",
-   "Phantom Ganon – Mid-game boss guide"
-  ],
-  [
-   "人马（红鬃）- 基础人马攻略",
-   "Lynel (Red-Maned) – Basic Lynel guide"
-  ],
-  [
-   "人马（青鬃）- 进阶人马攻略",
-   "Lynel (Blue-Maned) – Intermediate Lynel guide"
-  ],
-  [
-   "人马（白鬃）- 高级人马攻略",
-   "Lynel (White-Maned) – Advanced Lynel guide"
-  ],
-  [
-   "人马（银色）- 终极人马攻略",
-   "Lynel (Silver) – Ultimate Lynel guide"
-  ],
-  [
-   "物品收集",
-   "Collectibles"
-  ],
-  [
-   "魔犹伊的遗失物 - 11个遗失物位置",
-   "Bubbul Gems – Locations of all 11 Bubbul Gems"
-  ],
-  [
-   "贤者的遗志 - 20个遗志收集地图",
-   "Sage's Will – Map for collecting all 20 Sage's Wills"
-  ],
-  [
-   "终极秘籍",
-   "Ultimate Tips"
-  ],
-  [
-   "哈里的终极秘籍 - 老司机心得分享",
-   "Harry's Ultimate Tips – Tips and tricks from a veteran player"
-  ],
-  [
-   "乌萨祖姆神庙攻略 - 详细解法",
-   "Usazum Shrine Guide – Detailed solution"
-  ],
-  [
-   "白龙寻踪与大师之剑攻略 - 永久拔剑全指南",
-   "Tracking the Light Dragon and Master Sword Guide – Complete guide to drawing the sword permanently"
-  ],
-  [
-   "马克兔飞行器攻略 - 极致调校与蓝图指南",
-   "Hover Bike Guide – Ultimate tuning and Autobuild blueprint guide"
-  ],
-  [
-   "地底电池与大妖精攻略 - 16格全满扩充指南",
-   "Depths Batteries and Great Fairy Guide – Guide to fully expanding to 16 Energy Cells"
-  ],
-  [
-   "152座神庙自查指南 - 找出漏掉的神庙",
-   "152-Shrine Self-Check Guide – Find the shrines you missed"
-  ],
-  [
-   "新手开荒指南 - 落地先做的10件事",
-   "Beginner's Guide – The first 10 things to do after landing"
-  ],
-  [
-   "呀哈哈种子指南 - 1000颗解谜与扩充",
-   "Korok Seed Guide – 1,000 puzzles and inventory expansions"
-  ],
-  [
-   "地底世界生存指南 - 瘴气与照明完全指南",
-   "Depths Survival Guide – Complete guide to Gloom and lighting"
-  ],
-  [
-   "大妖精四姐妹指南 - 防具强化完全指南",
-   "Four Great Fairies Guide – Complete armor enhancement guide"
-  ],
-  [
-   "四条龙素材指南 - 路线与10分钟机制",
-   "Four Dragons Materials Guide – Routes and the 10-minute mechanic"
-  ],
-  [
-   "人马完全指南 - 白银人马与骑背打法",
-   "Complete Lynel Guide – Silver Lynels and mount-attack tactics"
-  ],
-  [
-   "卢比速刷指南 - 宝石、料理与打猎刷钱",
-   "Fast Rupee Farming Guide – Making money with gems, cooking, and hunting"
-  ],
-  [
-   "马匹完全指南 - 金色马、巨马与马神",
-   "Complete Horse Guide – Golden Horse, Giant Horse, and Malanya"
-  ],
-  [
-   "五位贤者能力全解 - 风火水雷魂",
-   "All Five Sages' Abilities Explained – Wind, Fire, Water, Lightning, and Spirit"
-  ],
-  [
-   "料理机制全解 - 效果、时长与暴击",
-   "Cooking Mechanics Explained – Effects, durations, and critical bonuses"
-  ],
-  [
-   "海拉鲁城堡探索指南 - 地面、浮空与地下",
-   "Hyrule Castle Exploration Guide – Surface, floating, and underground areas"
-  ],
-  [
-   "海拉鲁图鉴509项指南 - 相机与补买",
-   "Hyrule Compendium: 509 Entries Guide – Camera and buying missing entries"
-  ],
-  [
-   "左纳乌实用造物指南 - 飞行车与炮台",
-   "Practical Zonai Builds Guide – Flying vehicles and turrets"
-  ],
-  [
-   "血月机制全解 - 144分钟周期与刷新",
-   "Blood Moon Mechanics Explained – The 144-minute cycle and respawns"
-  ],
-  [
-   "余料建造完全指南 - 攻击表与翻倍配合",
-   "Complete Fuse Guide – Attack values and doubling combos"
-  ],
-  [
-   "祝福之光兑换完全指南 - 生命与精力的取舍路线",
-   "Complete Light of Blessing Exchange Guide – Choosing between hearts and stamina"
-  ],
-  [
-   "15座鸟望塔开图完全指南 - 开塔顺序与疑难塔解法",
-   "Complete Guide to All 15 Skyview Towers – Tower order and tricky tower solutions"
-  ],
-  [
-   "弓箭完全指南 - 选弓、箭矢搭配与五连兽神弓",
-   "Complete Bow Guide – Choosing bows, arrow combos, and the five-shot Savage Lynel Bow"
-  ],
-  [
-   "洞窟探险完全指南 - 樱花树找洞与柯尔天兑换",
-   "Complete Cave Exploration Guide – Finding caves via cherry blossom trees and exchanging with Koltin"
-  ],
-  [
-   "盾牌完全指南 - 海利亚盾、盾反与盾冲浪",
-   "Complete Shield Guide – Hylian Shield, shield parries, and shield surfing"
-  ],
-  [
-   "天空岛完全指南 - 上岛四法与贤者遗志",
-   "Complete Sky Islands Guide – Four ways to reach the sky and Sage's Wills"
-  ],
-  [
-   "📊 网站内容统计",
-   "📊 Site Content Statistics"
-  ],
-  [
-   "攻略页面",
-   "Guide Pages"
-  ],
-  [
-   "神庙攻略",
-   "Shrine Guides"
-  ],
-  [
-   "料理配方",
-   "Cooking Recipes"
-  ],
-  [
-   "破魔树根",
-   "Lightroots"
-  ],
-  [
-   "套装收集",
-   "Armor Set Collection"
-  ],
-  [
-   "Boss攻略",
-   "Boss Guides"
-  ],
-  [
-   "🏠 核心页面",
-   "🏠 Core Pages"
-  ],
-  [
-   "📜 任务攻略",
-   "📜 Quest Guides"
-  ],
-  [
-   "⛩️ 神庙与探索",
-   "⛩️ Shrines & Exploration"
-  ],
-  [
-   "⚔️ 武器与装备",
-   "⚔️ Weapons & Equipment"
-  ],
-  [
-   "🍳 料理与合成",
-   "🍳 Cooking and Recipes"
-  ],
-  [
-   "👹 Boss图鉴",
-   "👹 Boss Compendium"
-  ],
-  [
-   "💎 物品收集",
-   "💎 Collectibles"
-  ],
-  [
-   "⭐ 终极秘籍",
-   "⭐ Ultimate Tips"
-  ]
- ],
- "title": "Sitemap - All Pages Navigation Index | Tears of the Kingdom Guide"
+  "notes": [
+    "情节挑战 rendered as Side Adventures; the game distinguishes Side Quests from Side Adventures and the source page does not specify which set the 60 quests are.",
+    "马克兔飞行器 is a player nickname for the fan-and-steering-stick hover bike build; rendered descriptively as Hover Bike.",
+    "人马（青鬃） rendered as Blue-Maned Lynel, matching the glossary's Blue-Maned term; the source uses 青鬃 (literally teal/green-maned).",
+    "乌萨祖姆神庙 rendered by transliteration as Usazum Shrine; no glossary entry for this shrine name."
+  ],
+  "pairs": [
+    [
+      "王国之泪攻略站完整网站地图：主线任务、神庙挑战、武器图鉴、料理合成、套装获取、Boss图鉴等全部页面导航索引。",
+      "Complete sitemap for the Tears of the Kingdom guide site: a navigation index for all pages, including main quests, shrine challenges, weapon compendium, cooking recipes, armor set locations, Boss compendium, and more."
+    ],
+    [
+      "🗺️ 网站地图",
+      "🗺️ Sitemap"
+    ],
+    [
+      "快速导航到您需要的任何攻略页面",
+      "Quickly navigate to any guide page you need"
+    ],
+    [
+      "首页",
+      "Home"
+    ],
+    [
+      "网站地图",
+      "Sitemap"
+    ],
+    [
+      "📚 欢迎浏览网站地图",
+      "📚 Welcome to the Sitemap"
+    ],
+    [
+      "这里列出了本站所有攻略页面。您可以快速找到所需的任何攻略内容。本站共有26个主要页面，涵盖王国之泪的全部游戏内容。",
+      "This page lists every guide page on this site. You can quickly find any guide content you need. This site has 26 main pages, covering all of the game content in Tears of the Kingdom."
+    ],
+    [
+      "这里列出了本站所有攻略页面。",
+      "This page lists every guide page on this site."
+    ],
+    [
+      "您可以快速找到所需的任何攻略内容。",
+      "You can quickly find any guide content you need."
+    ],
+    [
+      "本站共有26个主要页面，涵盖王国之泪的全部游戏内容。",
+      "This site has 26 main pages, covering all of the game content in Tears of the Kingdom."
+    ],
+    [
+      "核心页面",
+      "Core Pages"
+    ],
+    [
+      "首页 - 网站导航与最新更新",
+      "Home – Site navigation and latest updates"
+    ],
+    [
+      "关于我们 - 网站介绍与联系方式",
+      "About Us – Site introduction and contact information"
+    ],
+    [
+      "常见问题FAQ - 新手疑问解答",
+      "Frequently Asked Questions (FAQ) – Answers to beginners' questions"
+    ],
+    [
+      "隐私政策 - 数据保护说明",
+      "Privacy Policy – Data protection notes"
+    ],
+    [
+      "任务攻略",
+      "Quest Guides"
+    ],
+    [
+      "主线任务 - 23条主线完整流程",
+      "Main Quests – Complete walkthrough for all 23 main quests"
+    ],
+    [
+      "情节挑战 - 60个支线任务攻略",
+      "Side Adventures – Guides for all 60 Side Adventures"
+    ],
+    [
+      "任务顺序 - 主线23+情节60全任务列表与攻略顺序",
+      "Quest Order – Full list of all 23 main quests + 60 Side Adventures, with recommended guide order"
+    ],
+    [
+      "神庙与探索",
+      "Shrines and Exploration"
+    ],
+    [
+      "神庙挑战 - 152个神庙完整攻略",
+      "Shrine Quests – Complete guides for all 152 shrines"
+    ],
+    [
+      "神庙开启 - 隐藏神庙开启方法",
+      "Unlocking Shrines – How to reveal hidden shrines"
+    ],
+    [
+      "破魔树根 - 120个树根位置地图",
+      "Lightroots – Map of all 120 Lightroot locations"
+    ],
+    [
+      "武器与装备",
+      "Weapons and Armor"
+    ],
+    [
+      "武器图鉴 - 全武器属性与获取",
+      "Weapon Compendium – Stats and locations for all weapons"
+    ],
+    [
+      "套装获取 - 38套装收集与升级",
+      "Armor Sets – Collecting and upgrading all 38 armor sets"
+    ],
+    [
+      "哈里的武器秘籍 - 最强武器推荐",
+      "Harry's Weapon Secrets – Best weapon recommendations"
+    ],
+    [
+      "哈里的套装秘籍 - 隐藏特效解析",
+      "Harry's Armor Secrets – Hidden set bonus explanations"
+    ],
+    [
+      "料理与合成",
+      "Cooking and Recipes"
+    ],
+    [
+      "料理合成 - 228种料理完整配方",
+      "Cooking Recipes – Complete recipes for all 228 dishes"
+    ],
+    [
+      "哈里的料理秘籍 - 最强配方推荐",
+      "Harry's Cooking Secrets – Best recipe recommendations"
+    ],
+    [
+      "Boss图鉴",
+      "Bosses"
+    ],
+    [
+      "Boss图鉴 - 16个Boss完整攻略",
+      "Boss Compendium – Complete guides for all 16 bosses"
+    ],
+    [
+      "加侬多夫 - 最终Boss攻略",
+      "Ganondorf – Final boss guide"
+    ],
+    [
+      "幻影加侬 - 中期Boss攻略",
+      "Phantom Ganon – Mid-game boss guide"
+    ],
+    [
+      "人马（红鬃）- 基础人马攻略",
+      "Lynel (Red-Maned) – Basic Lynel guide"
+    ],
+    [
+      "人马（青鬃）- 进阶人马攻略",
+      "Lynel (Blue-Maned) – Intermediate Lynel guide"
+    ],
+    [
+      "人马（白鬃）- 高级人马攻略",
+      "Lynel (White-Maned) – Advanced Lynel guide"
+    ],
+    [
+      "人马（银色）- 终极人马攻略",
+      "Lynel (Silver) – Ultimate Lynel guide"
+    ],
+    [
+      "物品收集",
+      "Collectibles"
+    ],
+    [
+      "魔犹伊的遗失物 - 11个遗失物位置",
+      "Bubbul Gems – Locations of all 11 Bubbul Gems"
+    ],
+    [
+      "贤者的遗志 - 20个遗志收集地图",
+      "Sage's Will – Map for collecting all 20 Sage's Wills"
+    ],
+    [
+      "终极秘籍",
+      "Ultimate Tips"
+    ],
+    [
+      "哈里的终极秘籍 - 老司机心得分享",
+      "Harry's Ultimate Tips – Tips and tricks from a veteran player"
+    ],
+    [
+      "乌萨祖姆神庙攻略 - 详细解法",
+      "Usazum Shrine Guide – Detailed solution"
+    ],
+    [
+      "白龙寻踪与大师之剑攻略 - 永久拔剑全指南",
+      "Tracking the Light Dragon and Master Sword Guide – Complete guide to drawing the sword permanently"
+    ],
+    [
+      "马克兔飞行器攻略 - 极致调校与蓝图指南",
+      "Hover Bike Guide – Ultimate tuning and Autobuild blueprint guide"
+    ],
+    [
+      "地底电池与大妖精攻略 - 16格全满扩充指南",
+      "Depths Batteries and Great Fairy Guide – Guide to fully expanding to 16 Energy Cells"
+    ],
+    [
+      "152座神庙自查指南 - 找出漏掉的神庙",
+      "152-Shrine Self-Check Guide – Find the shrines you missed"
+    ],
+    [
+      "新手开荒指南 - 落地先做的10件事",
+      "Beginner's Guide – The first 10 things to do after landing"
+    ],
+    [
+      "呀哈哈种子指南 - 1000颗解谜与扩充",
+      "Korok Seed Guide – 1,000 puzzles and inventory expansions"
+    ],
+    [
+      "地底世界生存指南 - 瘴气与照明完全指南",
+      "Depths Survival Guide – Complete guide to Gloom and lighting"
+    ],
+    [
+      "大妖精四姐妹指南 - 防具强化完全指南",
+      "Four Great Fairies Guide – Complete armor enhancement guide"
+    ],
+    [
+      "四条龙素材指南 - 路线与10分钟机制",
+      "Four Dragons Materials Guide – Routes and the 10-minute mechanic"
+    ],
+    [
+      "人马完全指南 - 白银人马与骑背打法",
+      "Complete Lynel Guide – Silver Lynels and mount-attack tactics"
+    ],
+    [
+      "卢比速刷指南 - 宝石、料理与打猎刷钱",
+      "Fast Rupee Farming Guide – Making money with gems, cooking, and hunting"
+    ],
+    [
+      "马匹完全指南 - 金色马、巨马与马神",
+      "Complete Horse Guide – Golden Horse, Giant Horse, and Malanya"
+    ],
+    [
+      "五位贤者能力全解 - 风火水雷魂",
+      "All Five Sages' Abilities Explained – Wind, Fire, Water, Lightning, and Spirit"
+    ],
+    [
+      "料理机制全解 - 效果、时长与暴击",
+      "Cooking Mechanics Explained – Effects, durations, and critical bonuses"
+    ],
+    [
+      "海拉鲁城堡探索指南 - 地面、浮空与地下",
+      "Hyrule Castle Exploration Guide – Surface, floating, and underground areas"
+    ],
+    [
+      "海拉鲁图鉴509项指南 - 相机与补买",
+      "Hyrule Compendium: 509 Entries Guide – Camera and buying missing entries"
+    ],
+    [
+      "左纳乌实用造物指南 - 飞行车与炮台",
+      "Practical Zonai Builds Guide – Flying vehicles and turrets"
+    ],
+    [
+      "血月机制全解 - 144分钟周期与刷新",
+      "Blood Moon Mechanics Explained – The 144-minute cycle and respawns"
+    ],
+    [
+      "余料建造完全指南 - 攻击表与翻倍配合",
+      "Complete Fuse Guide – Attack values and doubling combos"
+    ],
+    [
+      "祝福之光兑换完全指南 - 生命与精力的取舍路线",
+      "Complete Light of Blessing Exchange Guide – Choosing between hearts and stamina"
+    ],
+    [
+      "15座鸟望塔开图完全指南 - 开塔顺序与疑难塔解法",
+      "Complete Guide to All 15 Skyview Towers – Tower order and tricky tower solutions"
+    ],
+    [
+      "弓箭完全指南 - 选弓、箭矢搭配与五连兽神弓",
+      "Complete Bow Guide – Choosing bows, arrow combos, and the five-shot Savage Lynel Bow"
+    ],
+    [
+      "洞窟探险完全指南 - 樱花树找洞与柯尔天兑换",
+      "Complete Cave Exploration Guide – Finding caves via cherry blossom trees and exchanging with Koltin"
+    ],
+    [
+      "盾牌完全指南 - 海利亚盾、盾反与盾冲浪",
+      "Complete Shield Guide – Hylian Shield, shield parries, and shield surfing"
+    ],
+    [
+      "天空岛完全指南 - 上岛四法与贤者遗志",
+      "Complete Sky Islands Guide – Four ways to reach the sky and Sage's Wills"
+    ],
+    [
+      "📊 网站内容统计",
+      "📊 Site Content Statistics"
+    ],
+    [
+      "攻略页面",
+      "Guide Pages"
+    ],
+    [
+      "神庙攻略",
+      "Shrine Guides"
+    ],
+    [
+      "料理配方",
+      "Cooking Recipes"
+    ],
+    [
+      "破魔树根",
+      "Lightroots"
+    ],
+    [
+      "套装收集",
+      "Armor Set Collection"
+    ],
+    [
+      "Boss攻略",
+      "Boss Guides"
+    ],
+    [
+      "🏠 核心页面",
+      "🏠 Core Pages"
+    ],
+    [
+      "📜 任务攻略",
+      "📜 Quest Guides"
+    ],
+    [
+      "⛩️ 神庙与探索",
+      "⛩️ Shrines & Exploration"
+    ],
+    [
+      "⚔️ 武器与装备",
+      "⚔️ Weapons & Equipment"
+    ],
+    [
+      "🍳 料理与合成",
+      "🍳 Cooking and Recipes"
+    ],
+    [
+      "👹 Boss图鉴",
+      "👹 Boss Compendium"
+    ],
+    [
+      "💎 物品收集",
+      "💎 Collectibles"
+    ],
+    [
+      "⭐ 终极秘籍",
+      "⭐ Ultimate Tips"
+    ],
+    [
+      "amiibo完全指南 - 每天一次的免费奖励与布料收藏",
+      "amiibo Complete Guide - Daily Free Rewards and Fabric Collection"
+    ],
+    [
+      "瘴气恢复完全指南 - 破损的心、向阳草与瘴气抗性",
+      "Gloom Recovery Complete Guide - Broken Hearts, Sundelions, and Gloom Resistance"
+    ]
+  ],
+  "title": "Sitemap - All Pages Navigation Index | Tears of the Kingdom Guide"
 }
