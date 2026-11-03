@@ -930,6 +930,84 @@ function scrollToTop() {
   }
 
 })();
+
+/* ---------- 相关攻略：按点击偏好动态推荐 ---------- */
+/* 点击过的帖子只记在浏览器本地（localStorage，不上传）。底部“相关攻略”优先推荐与最近点击帖子相关的文章；无点击记录时保留页面原有静态链接。 */
+(function () {
+  var REL = {"amiibo-guide":["depths-guide","old-maps","horse-guide"],"beginner-guide":["korok-guide","harry-master-sword","shrine-checklist"],"blessing-light-guide":["shrine-checklist","beginner-guide","fairy-guide"],"blood-moon-guide":["cooking-mechanics","lynel-guide","castle-guide"],"boss-ganondorf":["boss","boss-phantom-ganon","harry-master-sword"],"boss-lynel-blue":["boss-lynel","boss-lynel-white","boss"],"boss-lynel-silver":["boss-lynel","boss-lynel-white","boss"],"boss-lynel-white":["boss-lynel","boss-lynel-blue","boss-lynel-silver"],"boss-lynel":["boss-lynel-blue","boss-lynel-white","boss-lynel-silver"],"boss-phantom-ganon":["boss","boss-ganondorf","harry-weapons"],"boss":["boss-ganondorf","boss-lynel","boss-phantom-ganon"],"bow-guide":["lynel-guide","fuse-guide","weapons"],"castle-guide":["harry-master-sword","depths-guide","sage-guide"],"cave-guide":["mauyu-lost","depths-guide","shrine-checklist"],"clothes":["harry-armor","fairy-guide","harry-tips"],"compendium-guide":["sage-will","korok-guide","depths-guide"],"cooking-mechanics":["cooking","harry-cooking","blood-moon-guide"],"cooking":["harry-cooking","beginner-guide","depths-guide"],"depths-guide":["roots","harry-battery-fairy","shrine-checklist"],"dragon-guide":["harry-master-sword","depths-guide","harry-weapons"],"fairy-guide":["clothes","harry-armor","harry-battery-fairy"],"faq":["harry-tips","beginner-guide","shrine-checklist"],"fuse-guide":["lynel-guide","harry-weapons","sage-guide"],"gloom-guide":["depths-guide","sky-guide","cooking-mechanics"],"harry-armor":["fairy-guide","clothes","harry-weapons"],"harry-battery-fairy":["depths-guide","fairy-guide","harry-hover-bike"],"harry-cooking":["beginner-guide","depths-guide","cooking"],"harry-hover-bike":["depths-guide","harry-battery-fairy","beginner-guide"],"harry-master-sword":["dragon-guide","shrine-checklist","beginner-guide"],"harry-shrine-usazum":["shrine-checklist","shrine-unlock","shrines"],"harry-weapons":["harry-master-sword","harry-armor","dragon-guide"],"horse-guide":["beginner-guide","fairy-guide","depths-guide"],"korok-guide":["beginner-guide","shrine-checklist","depths-guide"],"lynel-guide":["fuse-guide","boss-lynel-silver","depths-guide"],"main-quest":["side-quest","quest-order","harry-master-sword"],"mauyu-lost":["depths-guide","old-maps","shrine-checklist"],"old-maps":["mauyu-lost","depths-guide","shrine-checklist"],"quest-order":["main-quest","side-quest","harry-tips"],"roots":["shrines","depths-guide","shrine-checklist"],"rupee-guide":["depths-guide","cooking-mechanics","beginner-guide"],"sage-guide":["sage-will","fuse-guide","zonai-builds"],"sage-will":["main-quest","harry-master-sword","shrines"],"shield-guide":["bow-guide","fuse-guide","lynel-guide"],"shrine-checklist":["shrine-unlock","shrines","roots"],"shrine-unlock":["shrines","shrine-checklist","harry-shrine-usazum"],"shrines":["shrine-unlock","shrine-checklist","harry-shrine-usazum"],"side-quest":["main-quest","quest-order","harry-tips"],"sky-guide":["tower-guide","sage-guide","old-maps"],"tower-guide":["quest-order","shrine-checklist","depths-guide"],"weapons":["harry-weapons","harry-master-sword","dragon-guide"],"zonai-builds":["lynel-guide","harry-hover-bike","sage-guide"]};
+  var TITLES = {"depths-guide":"地底世界生存与探索完全指南","old-maps":"残旧的地图全收集","horse-guide":"马匹捕捉与稀有马完全指南","korok-guide":"呀哈哈种子全指南","harry-master-sword":"白龙寻踪与大师之剑","shrine-checklist":"152座神庙全收集自查指南","beginner-guide":"新手开荒指南：落地先做的10件事","fairy-guide":"大妖精四姐妹与防具强化完全指南","cooking-mechanics":"料理机制全解：效果、时长与暴击","lynel-guide":"人马（莱尼尔）完全指南","castle-guide":"海拉鲁城堡探索完全指南","boss":"Boss攻略","boss-phantom-ganon":"幻影加农","boss-lynel":"人马","boss-lynel-white":"白鬃人马","boss-lynel-blue":"蓝鬃人马","boss-lynel-silver":"白银人马","boss-ganondorf":"加农多夫","harry-weapons":"七宝匕首终极攻略","fuse-guide":"余料建造完全指南","weapons":"武器图鉴","sage-guide":"五位贤者能力全解","mauyu-lost":"魔犹伊的遗失物","harry-armor":"最强套装三梯队全解析","harry-tips":"哈里的终极秘籍","sage-will":"贤者的遗志","cooking":"料理合成","harry-cooking":"四大神级料理配方","blood-moon-guide":"血月机制全解","roots":"破魔树根","harry-battery-fairy":"地底电池扩充与大妖精","clothes":"套装获取","sky-guide":"天空岛完全指南：上岛四法、贤者遗志与残旧地图","harry-hover-bike":"马克兔飞行器调校","dragon-guide":"四条龙素材刷取指南","shrine-unlock":"神庙开启","shrines":"神庙挑战","side-quest":"情节挑战攻略","quest-order":"任务顺序清单","main-quest":"主线任务攻略","zonai-builds":"左纳乌装置实用造物指南","bow-guide":"弓箭完全指南：选弓、箭矢搭配与五连兽神弓","harry-shrine-usazum":"乌萨诸马神庙零基础包教包会","tower-guide":"15座鸟望塔开图完全指南"};
+  var KEY = 'totk-clicks';
+  function slugFromHref(href) {
+    if (!href) return null;
+    try {
+      var u = new URL(href, location.href);
+      var hostOk = (u.hostname === location.hostname) || (u.hostname.indexOf('uppersteps.com') !== -1);
+      if (!hostOk) return null;
+      var base = u.pathname.replace(/\/$/, '').split('/').pop();
+      if (!/\.html$/.test(base)) return null;
+      return base.replace(/\.html$/, '');
+    } catch (e) { return null; }
+  }
+  function curSlug() {
+    var base = location.pathname.split('/').pop().replace(/\.html$/, '');
+    return base || 'index';
+  }
+  function readHistory() {
+    try {
+      var v = JSON.parse(localStorage.getItem(KEY) || '[]');
+      return Array.isArray(v) ? v : [];
+    } catch (e) { return []; }
+  }
+  function recordClick(slug) {
+    if (!slug || !REL[slug]) return;
+    try {
+      var h = readHistory().filter(function (s) { return s !== slug; });
+      h.unshift(slug);
+      localStorage.setItem(KEY, JSON.stringify(h.slice(0, 20)));
+    } catch (e) {}
+  }
+  document.addEventListener('click', function (ev) {
+    var t = ev.target;
+    var a = (t && t.closest) ? t.closest('a[href]') : null;
+    if (!a) return;
+    var slug = slugFromHref(a.getAttribute('href'));
+    if (!slug || slug === curSlug()) return;
+    recordClick(slug);
+  });
+  function renderRelated() {
+    var box = document.querySelector('.bnav-rel ul');
+    if (!box) return;
+    var hist = readHistory();
+    if (!hist.length) return;
+    var cur = curSlug();
+    var seen = {};
+    hist.forEach(function (s) { seen[s] = true; });
+    seen[cur] = true;
+    var picked = [];
+    hist.forEach(function (s) {
+      (REL[s] || []).forEach(function (t) {
+        if (!seen[t] && TITLES[t]) { seen[t] = true; picked.push(t); }
+      });
+    });
+    if (!picked.length) return;
+    var defaults = [];
+    box.querySelectorAll('li a').forEach(function (a) {
+      var s = slugFromHref(a.getAttribute('href'));
+      if (s) defaults.push({ slug: s, text: a.textContent });
+    });
+    var items = picked.slice(0, 3).map(function (s) {
+      return { slug: s, text: '\u203a ' + TITLES[s] };
+    });
+    defaults.forEach(function (d) {
+      if (items.length < 3 && items.every(function (it) { return it.slug !== d.slug; })) items.push(d);
+    });
+    box.innerHTML = items.map(function (it) {
+      return '<li><a href="' + it.slug + '.html">' + it.text.replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</a></li>';
+    }).join('');
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', renderRelated);
+  else renderRelated();
+})();
 /* ============================================================
    语言切换 i18n：简体中文 / 繁體中文，全站生效
    - 简体：原文；繁体：OpenCC s2twp（台湾惯用）词表转换；
