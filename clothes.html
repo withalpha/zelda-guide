@@ -40,7 +40,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#020814">
   <title>王国之泪全31套套装图鉴与获取攻略 防具强化素材 | 塞尔达传说</title>
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=11">
   <link rel="icon" type="image/png" href="/images/characters/图标.png">
   <link rel="apple-touch-icon" href="/images/characters/图标.png">
   <!-- Structured Data -->
@@ -153,6 +153,10 @@
   @media (max-width: 640px) {
     .bnav-idx ul { columns: 1; }
     .bnav-series a, .bnav-series span.bnav-dis { flex: none; width: 100%; }
+  }
+  .table-swipe-hint { display: none; text-align: center; color: var(--text-muted); font-size: 0.75rem; margin-bottom: 8px; letter-spacing: 0.05em; }
+  @media (max-width: 768px) {
+    .table-swipe-hint { display: block; }
   }
 </style>
 </head>
@@ -907,6 +911,7 @@
     </div>
 
     <!-- 表格容器 -->
+    <div class="table-swipe-hint">← 左右滑动查看完整表格 →</div>
     <div class="table-wrap" style="border-radius:var(--radius-lg);overflow-x:auto">
       <table class="data-tbl" id="upgradeTable" style="min-width:860px">
         <thead>
