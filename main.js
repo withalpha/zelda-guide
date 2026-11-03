@@ -931,9 +931,9 @@ function scrollToTop() {
 
 })();
 /* ============================================================
-   语言切换 i18n：English / 简体中文 / 繁體中文，全站生效
+   语言切换 i18n：简体中文 / 繁體中文，全站生效
    - 简体：原文；繁体：OpenCC s2twp（台湾惯用）词表转换；
-     英文：按页加载翻译包 /i18n/en/<页>.json + 全站标题包。
+     英文已取消：旧 ?lang=en 链接与已存英文偏好自动回落简体中文。
    - 选择记入 localStorage，跨页保持；?lang= 参数可直接分享，且进页即落盘；
      站内链接自动带上当前语言（?lang=），点进其他页也不掉语言。
    ============================================================ */
@@ -982,9 +982,19 @@ var pageSlug = (function () {
 function getLang() {
   var m = /[?&]lang=(en|zh-CN|zh-TW)/.exec(location.search);
   var l = m ? m[1] : null;
-  if (l) { try { localStorage.setItem(KEY, l); } catch (e) {} }
+  if (l === 'en') {
+    /* 英文已取消：旧英文链接与偏好一律回落简体中文 */
+    l = 'zh-CN';
+    try {
+      localStorage.setItem(KEY, l);
+      var url = new URL(location.href);
+      url.searchParams.set('lang', l);
+      history.replaceState(null, '', url.toString());
+    } catch (e) {}
+  } else if (l) { try { localStorage.setItem(KEY, l); } catch (e) {} }
   if (!l) { try { l = localStorage.getItem(KEY); } catch (e) {} }
-  return (l === 'en' || l === 'zh-TW' || l === 'zh-CN') ? l : 'zh-CN';
+  if (l === 'en') { l = 'zh-CN'; try { localStorage.setItem(KEY, l); } catch (e) {} }
+  return (l === 'zh-TW' || l === 'zh-CN') ? l : 'zh-CN';
 }
 var lang = getLang();
 var textNodes = [], altEls = [], titleEls = [], metaEls = [], origTitle = document.title;
@@ -1257,7 +1267,7 @@ function injectSwitcher() {
   div.className = 'lang-switch';
   var sel = document.createElement('select');
   sel.setAttribute('aria-label', 'Language');
-  [['en', 'English'], ['zh-CN', '简体中文'], ['zh-TW', '繁體中文']].forEach(function (item) {
+  [['zh-CN', '简体中文'], ['zh-TW', '繁體中文']].forEach(function (item) {
     var o = document.createElement('option');
     o.value = item[0];
     o.textContent = item[1];
