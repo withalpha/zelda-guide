@@ -14,8 +14,8 @@
       "Weapons"
     ],
     [
-      "⚔ 武器完全图鉴",
-      "⚔ Complete Weapon Compendium"
+      "⚔️ 武器完全图鉴",
+      "⚔️ Complete Weapon Compendium"
     ],
     [
       "攻击力 · 耐久度 · 获取途径 · 特殊效果",
@@ -26,8 +26,8 @@
       "Last updated: June 2026"
     ],
     [
-      "余料建造 / 融合系统：按 Y 键可将素材与武器融合，最终攻击力 = 武器基础攻击 + 素材加成。龙骨碎片 / 银色莱乃尔角最高可加 +55；宝石融合附加元素属性（🔥火 / ❄冰 / ⚡雷）。大师之剑耐久无限，耗尽后约 10 分钟充能，不会永久破损。",
-      "Fuse system: press Y to fuse a material to a weapon, and final attack = weapon base attack + material bonus. Silver Lynel Saber Horns / Silver Lynel horns add up to +55 at most. Fusing gems adds elemental properties (🔥 Fire / ❄ Ice / ⚡ Lightning). The Master Sword has infinite durability, recharging in about 10 minutes after depletion, and never breaks permanently."
+      "余料建造 / 融合系统：按 Y 键可将素材与武器融合，最终攻击力 = 武器基础攻击 + 素材加成。龙骨碎片 / 银色莱乃尔角最高可加 +55；宝石融合附加元素属性（🔥火 / ❄️冰 / ⚡️雷）。大师之剑耐久无限，耗尽后约 10 分钟充能，不会永久破损。",
+      "Fuse system: press Y to fuse a material to a weapon, and final attack = weapon base attack + material bonus. Silver Lynel Saber Horns / Silver Lynel horns add up to +55 at most. Fusing gems adds elemental properties (🔥 Fire / ❄️ Ice / ⚡️ Lightning). The Master Sword has infinite durability, recharging in about 10 minutes after depletion, and never breaks permanently."
     ],
     [
       "余料建造 / 融合系统：按 Y 键可将素材与武器融合，最终攻击力 = 武器基础攻击 + 素材加成。",
@@ -38,8 +38,8 @@
       "Silver Lynel Saber Horns / Silver Lynel horns add up to +55 at most."
     ],
     [
-      "宝石融合附加元素属性（🔥火 / ❄冰 / ⚡雷）。",
-      "Fusing gems adds elemental properties (🔥 Fire / ❄ Ice / ⚡ Lightning)."
+      "宝石融合附加元素属性（🔥火 / ❄️冰 / ⚡️雷）。",
+      "Fusing gems adds elemental properties (🔥 Fire / ❄️ Ice / ⚡️ Lightning)."
     ],
     [
       "大师之剑耐久无限，耗尽后约 10 分钟充能，不会永久破损。",
@@ -86,8 +86,8 @@
       "Master Sword"
     ],
     [
-      "⚔ 攻击 30（满血 60） ♾ 耐久无限 ✨ 光束攻击",
-      "⚔ Attack 30 (60 at full health) ♾ Infinite durability ✨ Beam attack"
+      "⚔️ 攻击 30（满血 60） ♾ 耐久无限 ✨ 光束攻击",
+      "⚔️ Attack 30 (60 at full health) ♾ Infinite durability ✨ Beam attack"
     ],
     [
       "驱逐邪恶之力的圣剑。满血时攻击力翻倍至 60，可向远处发射能量光束。耐久归零后约 10 分钟充能复原，不会永久破损。需要 至少 13 颗心 才能从光源龙额头取下。",
@@ -166,8 +166,8 @@
       "can be wielded one-handed with a shield, balancing offense and defense."
     ],
     [
-      "蓝宝石（+4，❄）适合对付火属性敌人",
-      "Sapphire (+4, ❄) suits fighting fire-element enemies."
+      "蓝宝石（+4，❄️）适合对付火属性敌人",
+      "Sapphire (+4, ❄️) suits fighting fire-element enemies."
     ],
     [
       "骑士双手剑",
@@ -226,8 +226,8 @@
       "Royal Guard's Claymore"
     ],
     [
-      "⚔ 攻击 52 🔵 耐久 7 💥 濒死爆发",
-      "⚔ Attack 52 🔵 Durability 7 💥 Death's Door Burst"
+      "⚔️ 攻击 52 🔵 耐久 7 💥 濒死爆发",
+      "⚔️ Attack 52 🔵 Durability 7 💥 Death's Door Burst"
     ],
     [
       "谢卡族以古代技术为皇室护卫打造的试作双手剑，攻击力极高但耐久极度脆弱。耐久剩余 3 格时触发濒死爆发，攻击力翻倍至约 104，适合对 Boss 进行致命一击。",
@@ -290,8 +290,8 @@
       "Lightscale Trident"
     ],
     [
-      "⚔ 攻击 22 🔵 耐久 70 💧 水属性",
-      "⚔ Attack 22 🔵 Durability 70 💧 Water element"
+      "⚔️ 攻击 22 🔵 耐久 70 💧 水属性",
+      "⚔️ Attack 22 🔵 Durability 70 💧 Water element"
     ],
     [
       "卓拉英杰米法使用的三叉戟，由卓拉族最精良的海底矿石打造，耐久度为同类最高。每次攻击自带水属性，在水中攻击速度明显提升，对火焰系敌人克制效果翻倍。",
@@ -318,8 +318,8 @@
       "Scimitar of the Seven"
     ],
     [
-      "⚔ 攻击 16 🔵 耐久 20 ✨ 七宝之力",
-      "⚔ Attack 16 🔵 Durability 20 ✨ Power of the Seven"
+      "⚔️ 攻击 16 🔵 耐久 20 ✨ 七宝之力",
+      "⚔️ Attack 16 🔵 Durability 20 ✨ Power of the Seven"
     ],
     [
       "镶嵌七种神圣宝石的精致匕首，刀身短小但锋利异常。据传由杰鲁多古代工匠历时多年打造，攻击时随机触发宝石对应的元素属性爆发。",
@@ -398,8 +398,8 @@
       "Zora Greatsword"
     ],
     [
-      "⚔ 攻击 14 🔵 耐久 45 💧 水属性",
-      "⚔ Attack 14 🔵 Durability 45 💧 Water element"
+      "⚔️ 攻击 14 🔵 耐久 45 💧 水属性",
+      "⚔️ Attack 14 🔵 Durability 45 💧 Water element"
     ],
     [
       "卓拉族工匠以深海玄铁打造的双手大剑，耐久极高，攻击自带水属性。下雨天或在水中战斗时攻击力额外提升，是卓拉地区探险的理想装备。",
@@ -458,8 +458,8 @@
       "Gloom Sword"
     ],
     [
-      "⚔ 攻击 32 🔵 耐久 45 🟣 瘴气诅咒",
-      "⚔ Attack 32 🔵 Durability 45 🟣 Gloom curse"
+      "⚔️ 攻击 32 🔵 耐久 45 🟣 瘴气诅咒",
+      "⚔️ Attack 32 🔵 Durability 45 🟣 Gloom curse"
     ],
     [
       "被瘴气（幽暗之力）完全侵蚀的魔王之剑，攻击时会对敌人附加瘴气效果，持续减少其最大心力上限。但同时也会对持剑者自身造成相同反噬效果，需备足心力使用。",
@@ -658,8 +658,8 @@
       "Master Sword: Infinite Durability"
     ],
     [
-      "⚔ 攻击 30（满血 60）",
-      "⚔ Attack 30 (60 at full health)"
+      "⚔️ 攻击 30（满血 60）",
+      "⚔️ Attack 30 (60 at full health)"
     ],
     [
       "♾ 耐久无限",
@@ -694,24 +694,24 @@
       "at full health — the strongest damage output in the game"
     ],
     [
-      "⚔ 攻击 7",
-      "⚔ Attack 7"
+      "⚔️ 攻击 7",
+      "⚔️ Attack 7"
     ],
     [
       "🔵 耐久 35",
       "🔵 Durability 35"
     ],
     [
-      "⚔ 攻击 18",
-      "⚔ Attack 18"
+      "⚔️ 攻击 18",
+      "⚔️ Attack 18"
     ],
     [
       "🔵 耐久 27",
       "🔵 Durability 27"
     ],
     [
-      "⚔ 攻击 26",
-      "⚔ Attack 26"
+      "⚔️ 攻击 26",
+      "⚔️ Attack 26"
     ],
     [
       "🔵 耐久 20",
@@ -722,12 +722,12 @@
       "Silver Lynel Saber Horn (+55) → total attack"
     ],
     [
-      "⚔ 攻击 15",
-      "⚔ Attack 15"
+      "⚔️ 攻击 15",
+      "⚔️ Attack 15"
     ],
     [
-      "⚔ 攻击 52",
-      "⚔ Attack 52"
+      "⚔️ 攻击 52",
+      "⚔️ Attack 52"
     ],
     [
       "🔵 耐久 7",
@@ -742,24 +742,24 @@
       ", the king of burst damage in the game"
     ],
     [
-      "⚔ 攻击 28",
-      "⚔ Attack 28"
+      "⚔️ 攻击 28",
+      "⚔️ Attack 28"
     ],
     [
       "🔵 耐久 30",
       "🔵 Durability 30"
     ],
     [
-      "⚔ 攻击 10",
-      "⚔ Attack 10"
+      "⚔️ 攻击 10",
+      "⚔️ Attack 10"
     ],
     [
       "🔵 耐久 18",
       "🔵 Durability 18"
     ],
     [
-      "⚔ 攻击 22",
-      "⚔ Attack 22"
+      "⚔️ 攻击 22",
+      "⚔️ Attack 22"
     ],
     [
       "🔵 耐久 70",
@@ -770,24 +770,24 @@
       "💧 Water Element"
     ],
     [
-      "⚔ 攻击 16",
-      "⚔ Attack 16"
+      "⚔️ 攻击 16",
+      "⚔️ Attack 16"
     ],
     [
       "✨ 七宝之力",
       "✨ Seven's Power"
     ],
     [
-      "⚔ 攻击 8",
-      "⚔ Attack 8"
+      "⚔️ 攻击 8",
+      "⚔️ Attack 8"
     ],
     [
       "🔵 耐久 25",
       "🔵 Durability 25"
     ],
     [
-      "⚔ 攻击 32",
-      "⚔ Attack 32"
+      "⚔️ 攻击 32",
+      "⚔️ Attack 32"
     ],
     [
       "🔵 耐久 45",
@@ -798,8 +798,8 @@
       "🏹 Triple Shot"
     ],
     [
-      "⚔ 攻击 14",
-      "⚔ Attack 14"
+      "⚔️ 攻击 14",
+      "⚔️ Attack 14"
     ],
     [
       "🔵 耐久 15",
@@ -814,8 +814,8 @@
       "🟣 Gloom Curse"
     ],
     [
-      "⚔ 攻击 40",
-      "⚔ Attack 40"
+      "⚔️ 攻击 40",
+      "⚔️ Attack 40"
     ],
     [
       "🔵 耐久 32",
@@ -838,8 +838,8 @@
       "🥷 Combo Speed Boost"
     ],
     [
-      "⚔ 攻击 38",
-      "⚔ Attack 38"
+      "⚔️ 攻击 38",
+      "⚔️ Attack 38"
     ],
     [
       "🔵 耐久 40",
@@ -878,8 +878,8 @@
       ", and never breaks permanently."
     ],
     [
-      "⚔ 攻击 30（近瘴气 45、对加侬 60）",
-      "⚔ Attack 30 (45 near Gloom, 60 vs Ganondorf)"
+      "⚔️ 攻击 30（近瘴气 45、对加侬 60）",
+      "⚔️ Attack 30 (45 near Gloom, 60 vs Ganondorf)"
     ],
     [
       "♾ 充能复原",
@@ -922,8 +922,8 @@
       "Lizalfos Tail (+10) → wider attack range; Silver Lynel Saber Horn (+55) → total attack 70"
     ],
     [
-      "⚔ 攻击 32（未衰朽 42）",
-      "⚔ Attack 32 (pristine 42)"
+      "⚔️ 攻击 32（未衰朽 42）",
+      "⚔️ Attack 32 (pristine 42)"
     ],
     [
       "🔵 耐久 11（未衰朽 12）",
@@ -954,8 +954,8 @@
       "Ancient Blade (+50) → total attack 82 (decayed) / 92 (pristine), near-death burst about "
     ],
     [
-      "黄玉（+4，⚡雷击）对沙漠系和水系敌人有效；白银人马刃角（+55）→ 总攻击 83",
-      "Topaz (+4, ⚡ lightning) works well against desert and water enemies; Silver Lynel Saber Horn (+55) → total attack 83"
+      "黄玉（+4，⚡️雷击）对沙漠系和水系敌人有效；白银人马刃角（+55）→ 总攻击 83",
+      "Topaz (+4, ⚡️ lightning) works well against desert and water enemies; Silver Lynel Saber Horn (+55) → total attack 83"
     ],
     [
       "作为底座融合白银人马刃角（+55）→ 总攻击 65，性价比融合武器",
@@ -1022,8 +1022,8 @@
       "With the Stealth Set + stealth elixir → sneakstrike damage up to 16×, instantly killing most elite enemies"
     ],
     [
-      "⚔ 攻击 41",
-      "⚔ Attack 41"
+      "⚔️ 攻击 41",
+      "⚔️ Attack 41"
     ],
     [
       "被瘴气（幽暗之力）完全侵蚀的魔王之剑，攻击力极高，但每次攻击都会侵蚀持有者自身的心力（瘴气反噬），扣减自身心力上限，需备足心力与向阳草料理使用。",
@@ -1222,12 +1222,12 @@
       "Chests in the ancient Gerudo treasury;"
     ],
     [
-      "攻击时随机触发🔥火 / ❄冰 / ⚡雷三种元素之一的小范围爆发；匕首攻速极快",
-      "Attacks randomly trigger a small-area burst of one of three elements, 🔥 fire, ❄ ice, or ⚡ lightning; extremely fast dagger attack speed."
+      "攻击时随机触发🔥火 / ❄️冰 / ⚡️雷三种元素之一的小范围爆发；匕首攻速极快",
+      "Attacks randomly trigger a small-area burst of one of three elements, 🔥 fire, ❄️ ice, or ⚡️ lightning; extremely fast dagger attack speed."
     ],
     [
-      "攻击时随机触发🔥火 / ❄冰 / ⚡雷三种元素之一的小范围爆发；",
-      "Attacks randomly trigger a small-area burst of one of three elements, 🔥 fire, ❄ ice, or ⚡ lightning;"
+      "攻击时随机触发🔥火 / ❄️冰 / ⚡️雷三种元素之一的小范围爆发；",
+      "Attacks randomly trigger a small-area burst of one of three elements, 🔥 fire, ❄️ ice, or ⚡️ lightning;"
     ],
     [
       "8（+魔法爆炸附加伤害）",
@@ -1402,8 +1402,8 @@
       "Lizalfos Tail (+10) → increases attack range; Flint (+3, 🔥) suits lighting grass early on."
     ],
     [
-      "莱乃尔角（+21）→ 总攻击 39；蓝宝石（+4，❄）适合对付火属性敌人",
-      "Lynel Horn (+21) → total attack 39; Sapphire (+4, ❄) suits fighting fire-element enemies."
+      "莱乃尔角（+21）→ 总攻击 39；蓝宝石（+4，❄️）适合对付火属性敌人",
+      "Lynel Horn (+21) → total attack 39; Sapphire (+4, ❄️) suits fighting fire-element enemies."
     ],
     [
       "炸弹花（+2）→ 触发连锁大爆炸，清场效率极高",

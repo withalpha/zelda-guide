@@ -70,8 +70,8 @@
    "Number of phases"
   ],
   [
-   "⚠ 注意： 加侬多夫的瘴气攻击会 永久扣除心心上限 ，备好向阳草料理是通关必要条件。",
-   "⚠ Note: Ganondorf's Gloom attacks temporarily reduce your maximum hearts (his final-battle attacks can destroy a container until the fight ends). Having Sundelion meals ready is a requirement for clearing this fight."
+   "⚠️ 注意： 加侬多夫的瘴气攻击会 永久扣除心心上限 ，备好向阳草料理是通关必要条件。",
+   "⚠️ Note: Ganondorf's Gloom attacks temporarily reduce your maximum hearts (his final-battle attacks can destroy a container until the fight ends). Having Sundelion meals ready is a requirement for clearing this fight."
   ],
   [
    "战前核心整备",
@@ -166,8 +166,8 @@
    "Ganondorf frequently switches between three weapons — a pure swordsmanship duel built around perfect dodges"
   ],
   [
-   "⚠ 被动机制： 如果你直接上去平砍，他会 百分之百触发后撤闪避并反击 。不要主动攻击！拉开1到2个身位，观察他的武器起手式。",
-   "⚠ Passive mechanic: if you walk straight up and attack normally, he will 100% trigger a retreating dodge and counterattack. Don't attack first! Keep 1–2 body lengths away and watch his weapon's opening stance."
+   "⚠️ 被动机制： 如果你直接上去平砍，他会 百分之百触发后撤闪避并反击 。不要主动攻击！拉开1到2个身位，观察他的武器起手式。",
+   "⚠️ Passive mechanic: if you walk straight up and attack normally, he will 100% trigger a retreating dodge and counterattack. Don't attack first! Keep 1–2 body lengths away and watch his weapon's opening stance."
   ],
   [
    "🗡 单手剑 · 横劈",
@@ -178,8 +178,8 @@
    "When you see him slash horizontally, immediately jump backward (hold ZL + stick back + X) to trigger a perfect dodge (slow-motion Flurry Rush)."
   ],
   [
-   "⚔ 大剑 · 蓄力下砸",
-   "⚔ Greatsword · Charged downward smash"
+   "⚔️ 大剑 · 蓄力下砸",
+   "⚔️ Greatsword · Charged downward smash"
   ],
   [
    "看到他蓄力下砸， 立刻向左右侧跳 躲避冲击波。",
@@ -226,8 +226,8 @@
    "The clones vanish and the health bar fills completely, breaking past the screen's edge — the hardest phase in the game"
   ],
   [
-   "⚠ 核心危机： 他的部分瘴气攻击会 直接粉碎你的心心 （碎掉的心心无法用向阳草料理恢复）。",
-   "⚠ Core danger: some of his Gloom attacks directly shatter your hearts (shattered hearts cannot be restored with Sundelion meals)."
+   "⚠️ 核心危机： 他的部分瘴气攻击会 直接粉碎你的心心 （碎掉的心心无法用向阳草料理恢复）。",
+   "⚠️ Core danger: some of his Gloom attacks directly shatter your hearts (shattered hearts cannot be restored with Sundelion meals)."
   ],
   [
    "🔄 神技防反（博弈核心）",
@@ -322,8 +322,8 @@
    "🦁 Lynel Guide →"
   ],
   [
-   "⚔ 返回 Boss 图鉴 →",
-   "⚔ Back to the Boss Compendium →"
+   "⚔️ 返回 Boss 图鉴 →",
+   "⚔️ Back to the Boss Compendium →"
   ],
   [
    "🔗 相关攻略",
@@ -354,8 +354,8 @@
    "› Full Page Index"
   ],
   [
-   "⚠ 被动机制： 如果你直接上去平砍，他会 百分之百触发后撤闪避并反击 。",
-   "⚠ Passive mechanic: if you walk straight up and attack normally, he will 100% trigger a retreating dodge and counterattack."
+   "⚠️ 被动机制： 如果你直接上去平砍，他会 百分之百触发后撤闪避并反击 。",
+   "⚠️ Passive mechanic: if you walk straight up and attack normally, he will 100% trigger a retreating dodge and counterattack."
   ],
   [
    "不要主动攻击！",
@@ -414,8 +414,8 @@
    "Home"
   ],
   [
-   "⚠ 注意：",
-   "⚠ Note: "
+   "⚠️ 注意：",
+   "⚠️ Note: "
   ],
   [
    "加侬多夫的瘴气攻击会",
@@ -446,8 +446,8 @@
    "Barbarian Set"
   ],
   [
-   "⚠ 被动机制：",
-   "⚠ Passive mechanic: "
+   "⚠️ 被动机制：",
+   "⚠️ Passive mechanic: "
   ],
   [
    "如果你直接上去平砍，他会",
@@ -542,8 +542,8 @@
    "high-attack weapons to cheap-shot him repeatedly"
   ],
   [
-   "⚠ 核心危机：",
-   "⚠ Core crisis: "
+   "⚠️ 核心危机：",
+   "⚠️ Core crisis: "
   ],
   [
    "他的部分瘴气攻击会",

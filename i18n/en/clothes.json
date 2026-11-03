@@ -55,8 +55,8 @@
       "It is recommended to prioritize enhancing your most-used sets to ★★."
     ],
     [
-      "全部 🌿 环境适应 🌙 潜行 ⚔ 战斗强化 ✨ 勇者套装 🏅 特殊获取",
-      "All 🌿 Environmental Adaptation 🌙 Stealth ⚔ Combat Enhancement ✨ Hero Sets 🏅 Special Acquisition"
+      "全部 🌿 环境适应 🌙 潜行 ⚔️ 战斗强化 ✨ 勇者套装 🏅 特殊获取",
+      "All 🌿 Environmental Adaptation 🌙 Stealth ⚔️ Combat Enhancement ✨ Hero Sets 🏅 Special Acquisition"
     ],
     [
       "🌿 环境适应套装",
@@ -91,16 +91,16 @@
       "All three pieces cost about 2,400 Rupees in total."
     ],
     [
-      "⚡",
-      "⚡"
+      "⚡️",
+      "⚡️"
     ],
     [
       "橡胶套装",
       "Rubber Set"
     ],
     [
-      "⚡ 雷击免疫 套装加成：静电",
-      "⚡ Lightning Immunity · Set bonus: Static Electricity"
+      "⚡️ 雷击免疫 套装加成：静电",
+      "⚡️ Lightning Immunity · Set bonus: Static Electricity"
     ],
     [
       "穿戴后免疫雷击伤害，不会被闪电击落武器。三件齐穿解锁静电加成，攻击可传导雷电。雷电神庙及雷击平原探索必备。",
@@ -111,16 +111,16 @@
       "How to get: complete the three 'Oruk Shrine' (lightning-type shrine) quests. Head: a shrine in the lightning mountain region; torso: a shrine in the Faron Highlands; legs: a shrine in the lightning plains."
     ],
     [
-      "❄",
-      "❄"
+      "❄️",
+      "❄️"
     ],
     [
       "暴风雪套装",
       "Snowquill Set"
     ],
     [
-      "❄ 耐寒强化 套装加成：雪地急速",
-      "❄ Enhanced Cold Resistance · Set bonus: Snow Speed Boost"
+      "❄️ 耐寒强化 套装加成：雪地急速",
+      "❄️ Enhanced Cold Resistance · Set bonus: Snow Speed Boost"
     ],
     [
       "强力耐寒套装，穿戴后可在极寒地区活动无需进食热食。三件齐穿解锁雪地急速，在雪地中移动速度大幅加快。",
@@ -147,8 +147,8 @@
       "Desert Voe Set"
     ],
     [
-      "☀ 耐热强化 套装加成：沙地急速",
-      "☀ Enhanced Heat Resistance · Set bonus: Sand Speed Boost"
+      "☀️ 耐热强化 套装加成：沙地急速",
+      "☀️ Enhanced Heat Resistance · Set bonus: Sand Speed Boost"
     ],
     [
       "保护身体免受灼热沙漠气候影响，可在杰鲁多沙漠白天自由行动。三件齐穿在沙地中移动速度提升。",
@@ -271,8 +271,8 @@
       "How to get: the three pieces are located in specific treasure chests in the Depths, corresponding to the Depths versions of chests in three surface regions."
     ],
     [
-      "⚔ 战斗强化套装",
-      "⚔ Combat Enhancement Sets"
+      "⚔️ 战斗强化套装",
+      "⚔️ Combat Enhancement Sets"
     ],
     [
       "🪓",
@@ -283,8 +283,8 @@
       "Barbarian Set"
     ],
     [
-      "⚔ 攻击力↑ 套装加成：破防双倍",
-      "⚔ Attack Power ↑ · Set bonus: Double Defense Break"
+      "⚔️ 攻击力↑ 套装加成：破防双倍",
+      "⚔️ Attack Power ↑ · Set bonus: Double Defense Break"
     ],
     [
       "野蛮骑士穿戴的战斗套装，每件提升攻击力，三件齐穿后攻击伤害翻倍。是打莱乃尔、BOSS 战的核心战斗套装，后期必备。",
@@ -419,8 +419,8 @@
       "Hero of the Wild Set"
     ],
     [
-      "✨ 来自《旷野之息》 ⚔ 攀爬攻击↑",
-      "✨ From Breath of the Wild · ⚔ Climbing Attack ↑"
+      "✨ 来自《旷野之息》 ⚔️ 攀爬攻击↑",
+      "✨ From Breath of the Wild · ⚔️ Climbing Attack ↑"
     ],
     [
       "《旷野之息》林克的经典蓝色冒险服。穿戴后攀爬途中发动的攻击伤害提升，跳跃斩击强化。是探索高低起伏地形时的优选。",
@@ -439,8 +439,8 @@
       "Hero of Time Set"
     ],
     [
-      "✨ 来自《时之笛》 ⚔ 骑马攻击↑",
-      "✨ From Ocarina of Time · ⚔ Mounted Attack ↑"
+      "✨ 来自《时之笛》 ⚔️ 骑马攻击↑",
+      "✨ From Ocarina of Time · ⚔️ Mounted Attack ↑"
     ],
     [
       "《时之笛》时代勇者的深色铠甲，穿戴后骑乘坐骑时攻击力提升，马背上挥剑范围更广。适合骑马决斗场景。",
@@ -479,8 +479,8 @@
       "Hero of Twilight Set"
     ],
     [
-      "✨ 来自《黄昏公主》 ⚔ 受伤反伤",
-      "✨ From Twilight Princess · ⚔ Damage Reflection on Injury"
+      "✨ 来自《黄昏公主》 ⚔️ 受伤反伤",
+      "✨ From Twilight Princess · ⚔️ Damage Reflection on Injury"
     ],
     [
       "《黄昏公主》骑士林克的深蓝铠甲，穿戴后受到伤害时有概率触发反伤效果，将伤害反弹给攻击者。",
@@ -491,16 +491,16 @@
       "How to get: randomly obtained by scanning the Twilight Princess Link amiibo."
     ],
     [
-      "☁",
-      "☁"
+      "☁️",
+      "☁️"
     ],
     [
       "天空之勇者套装",
       "Hero of the Sky Set"
     ],
     [
-      "✨ 来自《御天之剑》 ☁ 天空岛加速",
-      "✨ From Skyward Sword · ☁ Sky Island Speed Boost"
+      "✨ 来自《御天之剑》 ☁️ 天空岛加速",
+      "✨ From Skyward Sword · ☁️ Sky Island Speed Boost"
     ],
     [
       "《御天之剑》飞行冒险版林克服装，穿戴后在天空岛地形的各种动作速度提升，如同原作中驾驭凌风鸟般轻盈。",
@@ -515,8 +515,8 @@
       "Hero of Awakening Set"
     ],
     [
-      "✨ 来自《梦见岛》 ⚔ 盾反强化",
-      "✨ From Link's Awakening · ⚔ Shield Parry Enhancement"
+      "✨ 来自《梦见岛》 ⚔️ 盾反强化",
+      "✨ From Link's Awakening · ⚔️ Shield Parry Enhancement"
     ],
     [
       "《梦见岛》像素风格林克的经典绿色服装（高清版），穿戴后盾反（完美格挡）的判定时间略微延长，更容易触发。",
@@ -571,8 +571,8 @@
       "How to get: buy at a Hyrule town clothing store; all three pieces cost about 600 Rupees in total, and can be bought not long after the game starts."
     ],
     [
-      "⚔",
-      "⚔"
+      "⚔️",
+      "⚔️"
     ],
     [
       "海力亚士兵套装",
@@ -611,8 +611,8 @@
       "How to get: after activating the four Great Fairy Fountains in-game, complete the Great Fairy side quest series to receive the three set pieces."
     ],
     [
-      "⛏",
-      "⛏"
+      "⛏️",
+      "⛏️"
     ],
     [
       "采矿套装",
@@ -671,8 +671,8 @@
       "Lightning Set"
     ],
     [
-      "⚡ 雷电攻击 套装加成：雷链",
-      "⚡ Lightning Attack · Set bonus: Lightning Chain"
+      "⚡️ 雷电攻击 套装加成：雷链",
+      "⚡️ Lightning Attack · Set bonus: Lightning Chain"
     ],
     [
       "穿戴后近战攻击附带雷电，命中可传导至附近敌人。三件齐穿触发雷链效果，攻击同时传导至最多三个目标，对群战极为有效。",
@@ -727,8 +727,8 @@
       "Rito Set"
     ],
     [
-      "❄ 耐寒↑ 套装加成：顺风加速",
-      "❄ Cold Resistance ↑ · Set bonus: Tailwind Speed Boost"
+      "❄️ 耐寒↑ 套装加成：顺风加速",
+      "❄️ Cold Resistance ↑ · Set bonus: Tailwind Speed Boost"
     ],
     [
       "利特族羽毛编织的保暖套装，穿戴后在寒冷地区不受冻伤。三件齐穿顺风滑翔时速度额外加快，是雪山和利特村探索的舒适选择。",
@@ -763,8 +763,8 @@
       "Divine Beast Armor · Medoh"
     ],
     [
-      "🛡 高防御 ⚡ 雷属性强化",
-      "🛡 High Defense · ⚡ Lightning Enhancement"
+      "🛡 高防御 ⚡️ 雷属性强化",
+      "🛡 High Defense · ⚡️ Lightning Enhancement"
     ],
     [
       "杰鲁多英杰乌尔波萨的神兽兵装（上身），金色杰鲁多甲胄，穿戴后攻击附带雷电，免疫自身雷击，与杰鲁多沙漠探索完美搭配。",
@@ -947,8 +947,8 @@
       "④ In the table, 'per piece ×N' means the quantity needed to upgrade each individual piece of the set."
     ],
     [
-      "全部 🌿 环境适应 🏃 移动能力 🌙 潜行 ⚔ 战斗强化 🏅 特殊 ✨ 勇者/英杰 💎 饰品",
-      "All 🌿 Environmental Adaptation 🏃 Movement Ability 🌙 Stealth ⚔ Combat Enhancement 🏅 Special ✨ Hero/Champion 💎 Accessories"
+      "全部 🌿 环境适应 🏃 移动能力 🌙 潜行 ⚔️ 战斗强化 🏅 特殊 ✨ 勇者/英杰 💎 饰品",
+      "All 🌿 Environmental Adaptation 🏃 Movement Ability 🌙 Stealth ⚔️ Combat Enhancement 🏅 Special ✨ Hero/Champion 💎 Accessories"
     ],
     [
       "套装名称 ⭐ 一星素材 （单件） ⭐⭐ 二星素材 （单件） ⭐⭐⭐ 三星素材 （单件） ⭐⭐⭐⭐ 四星素材 （单件）",
@@ -1023,8 +1023,8 @@
       "Set Name"
     ],
     [
-      "⚔ 战斗强化",
-      "⚔ Combat Boost"
+      "⚔️ 战斗强化",
+      "⚔️ Combat Boost"
     ],
     [
       "✨ 勇者/英杰",
@@ -1783,24 +1783,24 @@
       "Set Bonus: Speed Up"
     ],
     [
-      "⚡ 雷击免疫",
-      "⚡ Lightning Immunity"
+      "⚡️ 雷击免疫",
+      "⚡️ Lightning Immunity"
     ],
     [
       "套装加成：静电",
       "Set Bonus: Static"
     ],
     [
-      "❄ 耐寒强化",
-      "❄ Cold Resistance Boost"
+      "❄️ 耐寒强化",
+      "❄️ Cold Resistance Boost"
     ],
     [
       "套装加成：雪地急速",
       "Set Bonus: Snow Speed Up"
     ],
     [
-      "☀ 耐热强化",
-      "☀ Heat Resistance Boost"
+      "☀️ 耐热强化",
+      "☀️ Heat Resistance Boost"
     ],
     [
       "套装加成：沙地急速",
@@ -1847,8 +1847,8 @@
       "Set Bonus: Night Speed Up"
     ],
     [
-      "⚔ 攻击力↑",
-      "⚔ Attack ↑"
+      "⚔️ 攻击力↑",
+      "⚔️ Attack ↑"
     ],
     [
       "套装加成：破防双倍",
@@ -1911,16 +1911,16 @@
       "✨ From Breath of the Wild"
     ],
     [
-      "⚔ 攀爬攻击↑",
-      "⚔ Climb Attack ↑"
+      "⚔️ 攀爬攻击↑",
+      "⚔️ Climb Attack ↑"
     ],
     [
       "✨ 来自《时之笛》",
       "✨ From Ocarina of Time"
     ],
     [
-      "⚔ 骑马攻击↑",
-      "⚔ Mounted Attack ↑"
+      "⚔️ 骑马攻击↑",
+      "⚔️ Mounted Attack ↑"
     ],
     [
       "✨ 来自《风之律动》",
@@ -1935,24 +1935,24 @@
       "✨ From Twilight Princess"
     ],
     [
-      "⚔ 受伤反伤",
-      "⚔ Retaliation Damage"
+      "⚔️ 受伤反伤",
+      "⚔️ Retaliation Damage"
     ],
     [
       "✨ 来自《御天之剑》",
       "✨ From Skyward Sword"
     ],
     [
-      "☁ 天空岛加速",
-      "☁ Sky Island Speed Boost"
+      "☁️ 天空岛加速",
+      "☁️ Sky Island Speed Boost"
     ],
     [
       "✨ 来自《梦见岛》",
       "✨ From Link's Awakening"
     ],
     [
-      "⚔ 盾反强化",
-      "⚔ Parry Boost"
+      "⚔️ 盾反强化",
+      "⚔️ Parry Boost"
     ],
     [
       "✨ 经典绿色服装",
@@ -2011,8 +2011,8 @@
       "Set Bonus: Flame Burst"
     ],
     [
-      "⚡ 雷电攻击",
-      "⚡ Lightning Attack"
+      "⚡️ 雷电攻击",
+      "⚡️ Lightning Attack"
     ],
     [
       "套装加成：雷链",
@@ -2027,8 +2027,8 @@
       "Set Bonus: Swim Up Waterfalls"
     ],
     [
-      "❄ 耐寒↑",
-      "❄ Cold Resistance ↑"
+      "❄️ 耐寒↑",
+      "❄️ Cold Resistance ↑"
     ],
     [
       "套装加成：顺风加速",
@@ -2043,8 +2043,8 @@
       "💧 Water Boost"
     ],
     [
-      "⚡ 雷属性强化",
-      "⚡ Lightning Boost"
+      "⚡️ 雷属性强化",
+      "⚡️ Lightning Boost"
     ],
     [
       "🔥 火属性强化",
@@ -2143,8 +2143,8 @@
       "Move freely around volcanoes and lava areas without heat damage. Wearing all three grants Fireproof, making fire attacks completely ineffective. Essential for Goron City and volcanic regions."
     ],
     [
-      "⚡ 防雷",
-      "⚡ Shock Resistance"
+      "⚡️ 防雷",
+      "⚡️ Shock Resistance"
     ],
     [
       "套装加成：雷电免疫",
@@ -2167,8 +2167,8 @@
       "Frostbite Set"
     ],
     [
-      "❄ 寒冷攻击↑",
-      "❄ Cold Weather Attack ↑"
+      "❄️ 寒冷攻击↑",
+      "❄️ Cold Weather Attack ↑"
     ],
     [
       "套装加成：寒冷蓄力",
@@ -2323,8 +2323,8 @@
       "Melee attacks gain a fire effect in hot environments; wearing all three makes charged attacks faster in the heat and triggers a fire burst at the end. Unlike the Flamebreaker set, this one is all about offense."
     ],
     [
-      "⚡ 暴风雨攻击↑",
-      "⚡ Storm Attack ↑"
+      "⚡️ 暴风雨攻击↑",
+      "⚡️ Storm Attack ↑"
     ],
     [
       "套装加成：暴风雨蓄力",

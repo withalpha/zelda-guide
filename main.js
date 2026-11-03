@@ -653,7 +653,7 @@ function scrollToTop() {
   function initPageLoader() {
     var overlay = document.createElement('div');
     overlay.className = 'page-load-overlay';
-    overlay.innerHTML = '<div class="page-load-logo">⚔ 王国之泪</div>';
+    overlay.innerHTML = '<div class="page-load-logo">⚔️ 王国之泪</div>';
     document.body.appendChild(overlay);
     window.addEventListener('load', function () {
       setTimeout(function () { overlay.classList.add('loaded'); }, 400);
@@ -946,7 +946,7 @@ var UI_EN = {
   '武器图鉴': 'Weapons', '料理合成': 'Cooking', '套装获取': 'Armor Sets',
   'Boss图鉴': 'Bosses', '物品收集': 'Collectibles', '魔犹伊的遗失物': 'Bubbul Gems',
   '贤者的遗志': "Sage's Wills", '残旧的地图': 'Old Maps',
-  '⚔ 王国之泪 全攻略': '⚔ Tears of the Kingdom Complete Guide',
+  '⚔️ 王国之泪 全攻略': '⚔️ Tears of the Kingdom Complete Guide',
   '王国之泪 攻略': 'Tears of the Kingdom Guide',
   '本网站创作的游戏攻略指南为本人创作，游戏的人物著作权归任天堂株式会社所有。': 'All guides on this site are the author\'s original work. All game characters are copyrighted by Nintendo Co., Ltd.',
   '《塞尔达传说 王国之泪》版权归任天堂株式会社所有。': 'The Legend of Zelda: Tears of the Kingdom is copyrighted by Nintendo Co., Ltd.',
@@ -971,8 +971,8 @@ var UI_EN = {
   '（': '(', '）': ')', '「': '"', '」': '"', '『': '"', '』': '"', '…': '...',
   '你寻找的页面已消失在海拉鲁的迷雾中……': 'The page you are looking for has vanished into the mists of Hyrule…',
   '← 返回首页': '← Back to Home', '🎯 推荐内容': '🎯 Recommended',
-  '📜 主线任务攻略': '📜 Main Quest Guide', '🏛 神庙挑战': '🏛 Shrine Challenges',
-  '⚔ 武器图鉴': '⚔ Weapon Compendium', '🍲 料理合成': '🍲 Cooking Recipes',
+  '📜 主线任务攻略': '📜 Main Quest Guide', '🏛️ 神庙挑战': '🏛️ Shrine Challenges',
+  '⚔️ 武器图鉴': '⚔️ Weapon Compendium', '🍲 料理合成': '🍲 Cooking Recipes',
   '👹 Boss图鉴': '👹 Boss Compendium'
 };
 var pageSlug = (function () {

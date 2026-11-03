@@ -334,8 +334,8 @@
       "All (16)"
     ],
     [
-      "🏛 神殿Boss",
-      "🏛 Temple Bosses"
+      "🏛️ 神殿Boss",
+      "🏛️ Temple Bosses"
     ],
     [
       "🌍 野外强敌",
@@ -478,12 +478,12 @@
       "Physical / Elemental"
     ],
     [
-      "⛏ 背部矿石核心",
-      "⛏ Ore core on its back"
+      "⛏️ 背部矿石核心",
+      "⛏️ Ore core on its back"
     ],
     [
-      "❄ 熔岩巨人怕冰",
-      "❄ Igneo Talus fears ice"
+      "❄️ 熔岩巨人怕冰",
+      "❄️ Igneo Talus fears ice"
     ],
     [
       "🔥 冰岩巨人怕火",
@@ -554,8 +554,8 @@
       "💣 Bomb Flower (stun)"
     ],
     [
-      "⚔ 出土后的身体",
-      "⚔ Body after it surfaces"
+      "⚔️ 出土后的身体",
+      "⚔️ Body after it surfaces"
     ],
     [
       "它潜在沙子下游动，会循着你的脚步震动追踪。站在岩石上可避免被它感知。",
@@ -754,8 +754,8 @@
       "🪶 Gleeok Wing"
     ],
     [
-      "❄ 急冻盖拉之角",
-      "❄ Frost Gleeok Horn"
+      "❄️ 急冻盖拉之角",
+      "❄️ Frost Gleeok Horn"
     ],
     [
       "🫀 盖拉的内脏",
@@ -902,8 +902,8 @@
       "🔥 Yunobo's Blessing (charge ability)"
     ],
     [
-      "🏛 净化火之神殿",
-      "🏛 Purify the Fire Temple"
+      "🏛️ 净化火之神殿",
+      "🏛️ Purify the Fire Temple"
     ],
     [
       "提示：阿沅冷却期间专注走位躲避落石，切勿硬接。第二阶段清理包围圈时弓箭比阿沅更省时，留阿沅冲撞用于击落 BOSS。",
@@ -934,8 +934,8 @@
       "🏹 Purple core in its mouth (shoot with bow)"
     ],
     [
-      "⚔ 核心暴露后近战输出",
-      "⚔ Melee damage after the core is exposed"
+      "⚔️ 核心暴露后近战输出",
+      "⚔️ Melee damage after the core is exposed"
     ],
     [
       "核心机制：水属性洗掉淤泥破除无敌 → 引诱张嘴暴露紫色核心 → 射击核心触发硬直 → 近战疯狂输出，循环 2～3 轮击杀。",
@@ -994,8 +994,8 @@
       "Endless loop: after it gets up, it retreats underground and re-coats itself in sludge; repeat \"wash sludge → wait for mouth → shoot core → damage\" — usually 2–3 rounds is enough for the kill."
     ],
     [
-      "⚠ 战场生存要点",
-      "⚠ Battlefield survival points"
+      "⚠️ 战场生存要点",
+      "⚠️ Battlefield survival points"
     ],
     [
       "水盾走位：希多水盾不仅能攻击，还能抵挡一次任意伤害，CD好了就补盾。",
@@ -1090,8 +1090,8 @@
       "🦈 Sidon's Blessing (water bubble attack)"
     ],
     [
-      "🏛 净化水之神殿",
-      "🏛 Purify the Water Temple"
+      "🏛️ 净化水之神殿",
+      "🏛️ Purify the Water Temple"
     ],
     [
       "提示：希多的水之力全程既能攻击又能护身，二阶段优先飞到空中用林克时间清场，是最省力的稳定打法。",
@@ -1106,16 +1106,16 @@
       "Sandstorm / Flight"
     ],
     [
-      "⚡ 雷属性沙化（露珠技能 / 雷击果）",
-      "⚡ Lightning attribute calcification (Riju's skill / Shock Fruit)"
+      "⚡️ 雷属性沙化（露珠技能 / 雷击果）",
+      "⚡️ Lightning attribute calcification (Riju's skill / Shock Fruit)"
     ],
     [
       "🔥 火属性沙化（炸弹花 / 火之果）",
       "🔥 Fire attribute calcification (Bomb Flower / Fire Fruit)"
     ],
     [
-      "⚔ 沙化变白后近战输出",
-      "⚔ Melee damage after calcification turns it white"
+      "⚔️ 沙化变白后近战输出",
+      "⚔️ Melee damage after calcification turns it white"
     ],
     [
       "核心机制：BOSS 和小怪常态下极高免伤，必须先用雷属性或火属性攻击使其全身变白（沙化），才能造成正常伤害。",
@@ -1194,12 +1194,12 @@
       "She fires lasers and multiple tornadoes frequently — position yourself to her side, keep using Riju's lightning + bow to force stagger, then finish her with follow-ups."
     ],
     [
-      "⚡ 露珠的祝福（雷电能力）",
-      "⚡ Riju's Blessing (lightning ability)"
+      "⚡️ 露珠的祝福（雷电能力）",
+      "⚡️ Riju's Blessing (lightning ability)"
     ],
     [
-      "🏛 净化雷之神殿",
-      "🏛 Purify the Lightning Temple"
+      "🏛️ 净化雷之神殿",
+      "🏛️ Purify the Lightning Temple"
     ],
     [
       "注意：二阶段切勿被小怪群围攻——拆柱子优先级高于一切，光柱是最好的防守阵地。金属武器在雷电场景下会引雷，飞行阶段备足箭矢。",
@@ -1222,8 +1222,8 @@
       "Physical / Gloom"
     ],
     [
-      "⚡ 场地四周通电铁丝网",
-      "⚡ Electrified wire fences around the arena"
+      "⚡️ 场地四周通电铁丝网",
+      "⚡️ Electrified wire fences around the arena"
     ],
     [
       "🛡 盾反后组合拳推入电网",
@@ -1302,8 +1302,8 @@
       "🤖 Mineru's Blessing (Construct power)"
     ],
     [
-      "🏛 净化魂之神殿",
-      "🏛 Purify the Spirit Temple"
+      "🏛️ 净化魂之神殿",
+      "🏛️ Purify the Spirit Temple"
     ],
     [
       "提示：战前组装配件是胜负关键——大炮让两个阶段都变得简单无脑。盾反节奏不熟时可先用大炮偷鸡，熟悉后再练盾反组合拳。",
@@ -1446,8 +1446,8 @@
       "Gloom / All attributes"
     ],
     [
-      "⚠ 战前绝对核心准备",
-      "⚠ Absolutely core pre-battle preparations"
+      "⚠️ 战前绝对核心准备",
+      "⚠️ Absolutely core pre-battle preparations"
     ],
     [
       "向阳草料理：加侬的瘴气攻击会打碎心心上限。用向阳草 + 金苹果 / 肉大量烹饪「恢复被碎心心」料理，备足全程消耗。",
@@ -1698,8 +1698,8 @@
       "👁 Single eye (any bow arrow makes it kneel)"
     ],
     [
-      "⚔ 倒地后脚踝近战大风车",
-      "⚔ Melee whirlwind at its ankles after it falls"
+      "⚔️ 倒地后脚踝近战大风车",
+      "⚔️ Melee whirlwind at its ankles after it falls"
     ],
     [
       "💣 护腿弱点（木质用火/黑色用雷）",
@@ -1730,8 +1730,8 @@
       "Snatch it: while it sits paralyzed, climb onto its chest or mash A beside it to steal the high-quality weapon hanging from its necklace — fighting it with its own weapon is more efficient."
     ],
     [
-      "⚠ 高级变种与避坑",
-      "⚠ Advanced variants and pitfalls"
+      "⚠️ 高级变种与避坑",
+      "⚠️ Advanced variants and pitfalls"
     ],
     [
       "带木质护腿（蓝色/黑色常见）：近战弹刀无法伤害。 解法：弓箭附魔炸弹花 / 火之果 / 红丘丘胶射木护腿，木板遇火燃烧并触发二次输出硬直。",
@@ -1850,8 +1850,8 @@
       "👁 Three dragon heads (burst all at once with multi-shot bow + eyeball arrows)"
     ],
     [
-      "⚔ 三头倒地后近战大风车",
-      "⚔ Melee whirlwind after all three heads fall"
+      "⚔️ 三头倒地后近战大风车",
+      "⚔️ Melee whirlwind after all three heads fall"
     ],
     [
       "🔥 属性克制（火克冰头 / 冰克火头）",
@@ -1946,8 +1946,8 @@
       "Gleeok horns are the core material for crafting the strongest elemental arrows and Fuse weapons."
     ],
     [
-      "⚔ 通用 Boss 攻略要点： ① 战前备齐回血 / 攻击强化 / 元素抗性料理，对应 Boss 属性携带克制装备。 ② 多数大型 Boss 都有「击晕 → 倒地 → 集火弱点」的循环节奏，耐心找破绽比硬刚更高效。 ③ 瞬闪（横向闪避）与盾反是应对高速攻击的关键，练熟后能大幅降低难度。 ④ Boss 掉落的角 / 牙 / 内脏多为顶级融合素材，是打造最强武器的核心来源。",
-      "⚔ General boss strategy points: ① Before battle, prepare healing / attack-boosting / elemental-resistance meals, and bring counter gear matching the boss's attributes. ② Most large bosses follow a \"stun → fall → focus fire on weakness\" loop rhythm — patiently finding openings beats head-on fighting. ③ Flurry rushes (side dodges) and parries are key against fast attacks; mastering them greatly lowers difficulty. ④ Boss-dropped horns / fangs / guts are mostly top-tier Fuse materials, the core source for crafting the strongest weapons."
+      "⚔️ 通用 Boss 攻略要点： ① 战前备齐回血 / 攻击强化 / 元素抗性料理，对应 Boss 属性携带克制装备。 ② 多数大型 Boss 都有「击晕 → 倒地 → 集火弱点」的循环节奏，耐心找破绽比硬刚更高效。 ③ 瞬闪（横向闪避）与盾反是应对高速攻击的关键，练熟后能大幅降低难度。 ④ Boss 掉落的角 / 牙 / 内脏多为顶级融合素材，是打造最强武器的核心来源。",
+      "⚔️ General boss strategy points: ① Before battle, prepare healing / attack-boosting / elemental-resistance meals, and bring counter gear matching the boss's attributes. ② Most large bosses follow a \"stun → fall → focus fire on weakness\" loop rhythm — patiently finding openings beats head-on fighting. ③ Flurry rushes (side dodges) and parries are key against fast attacks; mastering them greatly lowers difficulty. ④ Boss-dropped horns / fangs / guts are mostly top-tier Fuse materials, the core source for crafting the strongest weapons."
     ],
     [
       "① 战前备齐回血 / 攻击强化 / 元素抗性料理，对应 Boss 属性携带克制装备。",
@@ -2822,8 +2822,8 @@
       "3 rounds "
     ],
     [
-      "⚔ 通用 Boss 攻略要点：",
-      "⚔ General boss guide points: "
+      "⚔️ 通用 Boss 攻略要点：",
+      "⚔️ General boss guide points: "
     ],
     [
       "① 战前备齐",
