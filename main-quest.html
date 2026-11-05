@@ -83,6 +83,18 @@
     .bnav-idx ul { columns: 1; }
     .bnav-series a, .bnav-series span.bnav-dis { flex: none; width: 100%; }
   }
+
+  .article-subtitle { font-size: 0.9rem; color: rgba(255,255,255,0.55); line-height: 1.6; margin-bottom: 8px; }
+  .article-body { font-size: 0.93rem; line-height: 1.85; color: rgba(255,255,255,0.82); }
+  .article-body h2 { font-family: 'Noto Serif SC', serif; font-size: 1.15rem; font-weight: 700; color: #c9a227; margin: 32px 0 14px; padding-left: 12px; border-left: 3px solid #ff6a2a; }
+  .article-body p { margin-bottom: 14px; }
+  .article-body ul { list-style: none; padding: 0; margin: 10px 0 16px; }
+  .article-body ul li { padding: 6px 0 6px 20px; position: relative; border-bottom: 1px solid rgba(201,162,39,0.06); }
+  .article-body ul li::before { content: '▸'; position: absolute; left: 0; color: #ff6a2a; }
+  .article-body ol { padding-left: 22px; margin: 10px 0 16px; }
+  .article-body ol li { padding: 6px 0; border-bottom: 1px solid rgba(201,162,39,0.06); }
+  .article-body .highlight-box ul { margin: 0; }
+  .quest-screenshot-caption { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 8px; text-align: center; }
 </style>
 </head>
 <body>
@@ -111,9 +123,9 @@
 </nav>
 
 <div class="page-hero">
-  <span class="page-hero-eyebrow">MAIN STORY</span>
-  <h1 class="page-hero-title">📜 主线任务</h1>
-  <p class="page-hero-subtitle">共 23 条主线任务 · 点击任意任务展开图文攻略</p>
+  <div class="harry-hero-badge">MAIN STORY · 23 QUESTS</div>
+  <h1 class="page-hero-title">📜 王国之泪主线任务全攻略</h1>
+  <p class="page-hero-subtitle">单页 23 项 · 点击任意任务展开图文攻略 · 展开内容按哈里版式编写</p>
 </div>
 
 <div class="page-body">
@@ -121,7 +133,7 @@
   <nav class="breadcrumb">
     <a href="index.html">首页</a><span class="sep">›</span><span class="cur">主线任务</span>
   </nav>
-  <p class="page-updated" style="font-size:0.72rem;color:var(--text-muted);margin:8px 0 20px;text-align:right">最后更新：2026年6月</p>
+  <p class="page-updated" style="font-size:0.72rem;color:var(--text-muted);margin:8px 0 20px;text-align:right">最后更新：2026年11月</p>
 
   <div class="progress-section">
     <div class="progress-info">
@@ -170,11 +182,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/TotK_The_Closed_Door.png" alt="初始空岛·紧闭的大门" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/TotK_The_Closed_Door.png" alt="初始空岛·紧闭的大门" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">初始空岛——大天空岛上的祖纳依遗迹入口</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>开场即是主线起点：与泽尔达一同调查城堡地底，封印崩解后你独自醒在初始空岛，右臂换成古代神手。这一段就是新手教学：拿齐四种能力才能离岛。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>无，游戏开场自动开始。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>与泽尔达下到城堡地底，见证加侬多夫封印崩解。</li><li>在初始空岛醒来，跟随拉乌鲁残影的指引行动。</li><li>完成乌可乌侯神庙拿究极手，伊恩伊萨神庙拿余料建造，古塔恩巴奇神庙拿通天术。</li><li>前往时间神殿，获得倒转乾坤。</li><li>从天空岛跃下，落入海拉鲁。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>别在空岛上跟强敌硬拼，初期武器很脆。</li><li>余料建造多练，木板木桩搭桥、做筏是后面常态。</li><li>时间神殿的谜题关键是倒转乾坤，别只用蛮力推。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>四种神手能力齐全，主线正式展开。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">开场即是主线起点：与泽尔达一同调查城堡地底，封印崩解后你独自醒在初始空岛，右臂换成古代神手。这一段就是新手教学：拿齐四种能力才能离岛。</div><h2>一、任务前置</h2><ul><li>无，游戏开场自动开始。</li></ul><h2>二、任务步骤</h2><ol><li>与泽尔达下到城堡地底，见证加侬多夫封印崩解。</li><li>在初始空岛醒来，跟随拉乌鲁残影的指引行动。</li><li>完成乌可乌侯神庙拿究极手，伊恩伊萨神庙拿余料建造，古塔恩巴奇神庙拿通天术。</li><li>前往时间神殿，获得倒转乾坤。</li><li>从天空岛跃下，落入海拉鲁。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>别在空岛上跟强敌硬拼，初期武器很脆。</li><li>余料建造多练，木板木桩搭桥、做筏是后面常态。</li><li>时间神殿的谜题关键是倒转乾坤，别只用蛮力推。</li></ul></div><h2>四、奖励</h2><p>四种神手能力齐全，主线正式展开。</p></div></div>
         </div>
       </div>
     </div>
@@ -198,11 +210,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Lookout_Landing.png" alt="监视堡垒" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Lookout_Landing.png" alt="监视堡垒" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">监视堡垒——海拉鲁中央平原的前线据点</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>落地后的第一个据点，也是整个主线的情报中心。在这里和普尔鲁汇合，接下四地区调查委托，之后无数次回来补给、交任务。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>完成初始空岛，落入海拉鲁。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>从天空岛跃下，滑翔落到中央平原。</li><li>向北走到监视堡垒，与普尔鲁汇合。</li><li>用瞭望镜确认浮空的海拉鲁城堡。</li><li>接下利特村、卓拉领地、鼓隆城、格鲁德四地调查委托。</li><li>在堡垒里补给料理和道具，再出发。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>别一落地就直奔城堡，浮空城堡现在还上不去。</li><li>鸟望塔可以以后再开，不用一到就强求。</li><li>堡垒有锅和床，出远门前先在这里整备。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>主线调查网铺开，四条地区线全部解锁。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">落地后的第一个据点，也是整个主线的情报中心。在这里和普尔鲁汇合，激活鸟望塔、拿到滑翔伞，四地区调查才正式开始。</div><h2>一、任务前置</h2><ul><li>完成初始空岛，落入海拉鲁。</li></ul><h2>二、任务步骤</h2><ol><li>从天空岛跃下，落到中央平原，向北走到监视堡垒，与普尔鲁汇合。</li><li>激活监视堡垒鸟望塔，取得滑翔伞。</li><li>接下利特村、卓拉领地、鼓隆城、格鲁德四地调查委托。</li><li>在堡垒里补给料理和道具，再出发。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>鸟望塔不是可选项，不开就拿不到滑翔伞、推不动主线，别跳过。</li><li>望远镜看浮空城堡是四座神殿全通后回来汇报时的剧情，不是初到时的步骤。</li><li>别一落地就直奔城堡，浮空城堡现在还上不去。</li></ul></div><h2>四、奖励</h2><p>主线调查网铺开，四条地区线全部解锁。</p></div></div>
         </div>
       </div>
     </div>
@@ -226,11 +238,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Regional_Phenomena.png" alt="四个地区的异变调查" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Regional_Phenomena.png" alt="四个地区的异变调查" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「四个地区的异变调查」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>这不是一条线性任务，而是四条地区线共用一个总标题：利特村、卓拉领地、鼓隆城、格鲁德小镇。顺序完全自由，任选一条先打都行。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>在监视堡垒接下委托。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>西北去利特村，备好耐寒。</li><li>东北去卓拉领地，备泼水果对付淤泥。</li><li>东北火山区去鼓隆城，备防火。</li><li>西南沙漠去格鲁德小镇，备耐热耐寒，沙漠昼夜温差大。</li><li>每完成一座神殿，回来推进后续剧情。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>所谓推荐顺序只是上手难度参考，不是硬性条件，别被顺序绑住。</li><li>格鲁德不需要像前作那样变装进镇，别白准备套装。</li><li>四条线可以并行，卡住了就换一条。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>四位贤者陆续加入，通往终局的路一条条打开。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">这不是一条线性任务，而是四条地区线共用一个总标题：利特村、卓拉领地、鼓隆城、格鲁德小镇。顺序完全自由，任选一条先打都行。</div><h2>一、任务前置</h2><ul><li>在监视堡垒接下委托，拿到滑翔伞。</li></ul><h2>二、任务步骤</h2><ol><li>西北去利特村，备好耐寒。</li><li>东北去卓拉领地，备泼水果对付淤泥。</li><li>东北火山区去鼓隆城，备防火。</li><li>西南沙漠去格鲁德小镇，备耐热耐寒，沙漠昼夜温差大。</li><li>四座神殿全部通关后，回监视堡垒找普尔鲁，完成总任务。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>所谓推荐顺序只是上手难度参考，不是硬性条件，别被顺序绑住。</li><li>单座神殿打完不用特意回来，四座全通后再回监视堡垒。</li><li>格鲁德不需要像前作那样变装进镇，别白准备套装。</li></ul></div><h2>四、奖励</h2><p>四位贤者陆续加入，通往终局的路一条条打开。</p></div></div>
         </div>
       </div>
     </div>
@@ -241,7 +253,7 @@
         <div class="quest-num">04</div>
         <div class="quest-body">
           <div class="quest-title">拍下地底人</div>
-          <div class="quest-desc">协助研究员约舒娅拍摄地底构装体，解锁相机功能与地底探索任务线。</div>
+          <div class="quest-desc">协助研究员约舒娅拍摄地底指路雕像，解锁相机功能与地底探索任务线。</div>
           <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-depth">▼ 地底世界</span>
@@ -254,11 +266,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Camera_Work_in_the_Depths.png" alt="拍下地底人" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Camera_Work_in_the_Depths.png" alt="拍下地底人" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">约沙展示神秘石板上的地底构装体图像</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>地底线的开端。约舒娅在监视堡垒研究地底资料，请你带相机下地底拍构装体照片，顺带解锁相机玩法和地底探索。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>到达监视堡垒；最好先带一点发光果。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>在监视堡垒研究室找约舒娅接任务。</li><li>从监视堡垒附近的裂缝跳入地底。</li><li>激活最近的破魔树根照明。</li><li>找到构装体，用相机拍下。</li><li>回地面把照片交给约舒娅。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>地底一片漆黑，没光寸步难行，发光果和破魔树根是命。</li><li>破魔树根只恢复被瘴气侵蚀的心心上限，不回血，别把它当补血点。</li><li>别在地底跟成群的敌人纠缠，先开树根点亮地图。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>相机功能与地底探索线解锁，后续地底任务由此展开。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">地底线的开端。约舒娅在监视堡垒研究地底资料，请你下地底拍一张指路雕像的照片，相机是在地底由研究员罗比解锁的。</div><h2>一、任务前置</h2><ul><li>到达监视堡垒；最好先带一点发光果。</li></ul><h2>二、任务步骤</h2><ol><li>在监视堡垒研究室找约舒娅接任务。</li><li>从监视堡垒南边到海拉鲁平原裂缝，跳入地底。</li><li>在地底见到研究员罗比，由他解锁相机功能。</li><li>激活最近的破魔树根照明，找到指路雕像并拍下。</li><li>回地面把照片交给约舒娅。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>地底一片漆黑，没光寸步难行，发光果和破魔树根是命。</li><li>破魔树根只恢复被瘴气侵蚀的心心上限，不回血，别把它当补血点。</li><li>要拍的是指路雕像，不是泛指的构装体，拍错了不算完成。</li></ul></div><h2>四、奖励</h2><p>相机功能解锁，另获海拉鲁图鉴与佐纳乌矿石；地底探索线由此展开。</p></div></div>
         </div>
       </div>
     </div>
@@ -269,7 +281,7 @@
         <div class="quest-num">05</div>
         <div class="quest-body">
           <div class="quest-title">利特村的丘栗 → 风之神殿</div>
-          <div class="quest-desc">调查被暴风雪封锁的利特村，与小鸟丘栗并肩作战，登上风之神殿，击败风之幻影盖侬。</div>
+          <div class="quest-desc">调查被暴风雪封锁的利特村，与小鸟丘栗并肩作战，登上风之神殿，击败急冻盖拉。</div>
           <div class="quest-meta">
             <span class="tag tag-gold">神殿攻略</span>
             <span class="rbadge rbadge-rito">▲ 利特村</span>
@@ -283,11 +295,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/TotK_Tulin_of_Rito_Village.png" alt="利特村的丘栗" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/TotK_Tulin_of_Rito_Village.png" alt="利特村的丘栗" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「利特村的丘栗」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>利特村被暴风雪封锁，村里的小鸟丘栗成了你的搭档。两人登上空中的风之神殿，首领是风之幻影盖侬。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>耐寒料理或防寒装备；已接下监视堡垒委托。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>向西北到利特村，与丘栗的父亲里冯对话了解暴风情况。</li><li>在村外找到独自调查的丘栗，与他同行。</li><li>借助丘栗的风力登上风之神殿。</li><li>神殿内启动五座风车终端。</li><li>击败首领风之幻影盖侬。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>没有所谓四颗灵石和逐层机关，别按旧攻略找。</li><li>首领战多在滑翔中进行，瞄准它身上的冰晶弱点。</li><li>丘栗的风力不仅能推风车，赶路和滑翔时也很好用。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>风之贤者丘栗加入，获得疾风冲刺；利特村暴风解除。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">利特村被暴风雪封锁，村里的小鸟丘栗成了你的搭档。两人登上空中的风之神殿，首领是急冻盖拉。</div><h2>一、任务前置</h2><ul><li>耐寒料理或防寒装备；已接下监视堡垒委托。</li></ul><h2>二、任务步骤</h2><ol><li>向西北到利特村，见村长特巴了解暴风情况。</li><li>按指引找哈茨，再到海布拉山南岳洞窟一带。</li><li>在塔隆托峰雪松树下找到丘栗，帮他取回弓，他才与你同行。</li><li>借助丘栗的风力登上风之神殿。</li><li>神殿内启动五座风车终端。</li><li>击败首领急冻盖拉。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>丘栗的父亲是村长特巴，不是其他名字，别按旧攻略找人。</li><li>首领战多在滑翔中进行，瞄准它身上的冰晶弱点。</li><li>丘栗的风力不仅能推风车，赶路和滑翔时也很好用。</li></ul></div><h2>四、奖励</h2><p>风之贤者丘栗加入，获得疾风冲刺；利特村暴风解除。</p></div></div>
         </div>
       </div>
     </div>
@@ -298,7 +310,7 @@
         <div class="quest-num">06</div>
         <div class="quest-body">
           <div class="quest-title">沉睡于地底神殿之谜</div>
-          <div class="quest-desc">完成一座神殿后，协助约舒娅调查中央大废矿的巨型构装体残骸，揭开地底世界秘密。</div>
+          <div class="quest-desc">完成一座神殿后，协助约舒娅调查地底中央大废矿，获得自动建造能力。</div>
           <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-depth">▼ 地底世界</span>
@@ -311,11 +323,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_A_Mystery_in_the_Depths.png" alt="沉睡于地底神殿之谜" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_A_Mystery_in_the_Depths.png" alt="沉睡于地底神殿之谜" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「沉睡于地底神殿之谜」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>完成一座神殿后回监视堡垒，约舒娅有了新发现：地底中央大废矿里有一具巨型构装体残骸。这条线会给你自动建造，并揭开灵殿的线索。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>完成任意一座神殿；已下过地底。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>回监视堡垒研究室找约舒娅。</li><li>按指引前往地底中央大废矿。</li><li>调查巨型构装体残骸。</li><li>在此获得自动建造能力。</li><li>带着残骸上的线索回去交差。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>没有人陪你下地底，别等同伴。</li><li>自动建造是本作核心能力，拿到后多用蓝图存常用载具。</li><li>中央地底地形相对平坦，适合练地底探索。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>自动建造解锁；灵殿与第五位贤者线索展开。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">完成一座神殿后回监视堡垒，约舒娅请你去地底中央大废矿调查。在矿场，管家构装体会授予你自动建造能力。</div><h2>一、任务前置</h2><ul><li>完成任意一座神殿；已下过地底。</li></ul><h2>二、任务步骤</h2><ol><li>回监视堡垒研究室找约舒娅接任务。</li><li>前往地底中央大废矿。</li><li>在矿场见管家构装体，获得自动建造能力，并收集蓝图石。</li><li>回去向约舒娅交差。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>矿场里没有巨型构装体残骸可调查，别按旧说法找。</li><li>本任务不开启灵殿与第五贤者线，那条线是城堡异变之后的另一条链。</li><li>自动建造拿到后多用蓝图存常用载具，后面省很多事。</li></ul></div><h2>四、奖励</h2><p>自动建造解锁。</p></div></div>
         </div>
       </div>
     </div>
@@ -326,7 +338,7 @@
         <div class="quest-num">07</div>
         <div class="quest-body">
           <div class="quest-title">被淤泥埋没的石像</div>
-          <div class="quest-desc">卓拉领地中央被红色淤泥侵蚀的石像需要清洗，开启卓拉领地剧情线。</div>
+          <div class="quest-desc">卓拉领地中央被红色淤泥侵蚀的转潮石像需要清洗，开启卓拉领地剧情线。</div>
           <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-zora">▲ 卓拉领地</span>
@@ -339,11 +351,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_The_Sludge-Covered_Statue.png" alt="被淤泥埋没的石像" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_The_Sludge-Covered_Statue.png" alt="被淤泥埋没的石像" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">卓拉领地广场上被淤泥覆盖的「转潮石像」</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>卓拉领地线的开场。领地广场中央的石像被红色淤泥糊住，尤娜正在调查，帮她清淤就打开了卓拉领地整条剧情。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>到达卓拉领地。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>到卓拉领地，与外围战士和尤娜对话。</li><li>在领地周边采集泼水果。</li><li>对淤泥投掷泼水果或用水系攻击清洗石像。</li><li>清完后与尤娜对话，推进后续剧情。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>石像没有“转潮”这个名字，别按名字找。</li><li>把泼水果融合到箭上射远处淤泥，效率最高。</li><li>清淤不会一次触发两条完整任务，后续是按顺序展开的。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>卓拉领地剧情线开启，尤娜成为后续任务的关键人物。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">卓拉领地线的开场。领地广场中央的转潮石像被红色淤泥糊住，尤娜正在调查，帮她清淤就打开了卓拉领地整条剧情。</div><h2>一、任务前置</h2><ul><li>到达卓拉领地。</li></ul><h2>二、任务步骤</h2><ol><li>到卓拉领地广场，见到正在调查石像的尤娜。</li><li>在领地周边采集泼水果。</li><li>对淤泥投掷泼水果或用水系攻击清洗石像。</li><li>清完后与尤娜对话，推进后续剧情。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>石像就叫转潮石像，清淤后现出的是它本来的样子。</li><li>把泼水果融合到箭上射远处淤泥，效率最高。</li></ul></div><h2>四、奖励</h2><p>卓拉领地剧情线开启，尤娜成为后续任务的关键人物。</p></div></div>
         </div>
       </div>
     </div>
@@ -354,7 +366,7 @@
         <div class="quest-num">08</div>
         <div class="quest-body">
           <div class="quest-title">碎裂的石碑</div>
-          <div class="quest-desc">在托托湖清理并拼合古代石板，由学者吉托翻译解读，揭示通往天空的关键线索。</div>
+          <div class="quest-desc">在托托湖清理并拼合古代石板，由学者翻译解读，揭示通往天空的关键线索。</div>
           <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-zora">▲ 卓拉领地</span>
@@ -367,11 +379,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_The_Broken_Slate.png" alt="碎裂的石碑" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_The_Broken_Slate.png" alt="碎裂的石碑" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">学者贾托在托托湖检视打捞上来的卓拉石板</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>清完石像后，学者吉托在托托湖为一块卓拉石板发愁。清淤、拼合、翻译，这块石板藏着上天空的关键一句。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>完成石像清淤。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>前往卓拉领地东北的托托湖找吉托。</li><li>清掉石板上的淤泥。</li><li>把石板拼合完整。</li><li>交给吉托翻译，得到“朝雷之鳞鱼之地的水滴射出王之印”。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>没有湖底三块碎片和潜水打捞这一说，别下湖捞。</li><li>译文是下一任务的钥匙，记好“王之印”和“水滴”两个词。</li><li>这一步做完才去普洛米斯山，别跳步骤。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>获得前往天空的线索，卓拉线继续推进。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">清完石像后，托托湖边有一块卓拉石板缺了一块。清淤、把缺块嵌回原位，学者当场就能读出译文，里面藏着上天空的关键一句。</div><h2>一、任务前置</h2><ul><li>完成石像清淤。</li></ul><h2>二、任务步骤</h2><ol><li>前往卓拉领地正北、米法庭西北的托托湖找学者。</li><li>清掉石板上的淤泥。</li><li>用究极手把缺失的中央一块嵌回墙上原位。</li><li>学者当场读出译文：立于天空鱼之地，仰望高处；浮石之间有一滴水珠，穿过水滴射出带王之印的箭。</li><li>接下来去找多雷凡国王。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>没有湖底三块碎片和潜水打捞这一说，别下湖捞。</li><li>石板不是交给学者带走翻译，是嵌回原位后当场读出来的。</li><li>这一步做完是去找多雷凡国王，不是直接去普洛米斯山，普洛米斯山是修铠甲找鱼的地方。</li></ul></div><h2>四、奖励</h2><p>获得前往天空的线索，卓拉线继续推进。</p></div></div>
         </div>
       </div>
     </div>
@@ -382,7 +394,7 @@
         <div class="quest-num">09</div>
         <div class="quest-body">
           <div class="quest-title">修复卓拉铠甲</div>
-          <div class="quest-desc">为尤娜寻找古代亚罗瓦那鱼鳞，由铁匠丹托修复卓拉铠甲，恢复水中冲浪与攀瀑能力。</div>
+          <div class="quest-desc">把古代亚罗瓦那交给尤娜，由她修复卓拉铠甲，恢复水中冲浪与攀瀑能力。</div>
           <div class="quest-meta">
             <span class="tag tag-gold">神殿前置</span>
             <span class="rbadge rbadge-zora">▲ 卓拉领地</span>
@@ -395,11 +407,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Restoring_the_Zora_Armor.png" alt="修复卓拉铠甲" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Restoring_the_Zora_Armor.png" alt="修复卓拉铠甲" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「修复卓拉铠甲」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>尤娜手里有你以前留下的卓拉铠甲，只差最后一样东西就能修好：古代亚罗瓦那的鳞片。拿到它，攀瀑能力就回来了。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>完成石像清淤，与尤娜对话；问铁匠丹托打听鱼的下落。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>在卓拉领地找尤娜接任务。</li><li>找铁匠丹托，他说古代亚罗瓦那在普洛米斯山米法雕像附近的水域。</li><li>到米法庭的水池里捉到古代亚罗瓦那，天空岛水域也有。</li><li>把鱼交给尤娜，取回修好的卓拉铠甲。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>不需要先穿一件“原版铠甲”才能上山，步行就能到米法庭。</li><li>鱼就是直接捉到的那条，不是做出来的。</li><li>拿到铠甲后才能攀瀑，水之神殿前务必先做完这一步。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>卓拉铠甲入手，可以逆瀑而上；水之神殿前置完成。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">尤娜手里有你以前留下的卓拉铠甲，只差最后一样东西就能修好：古代亚罗瓦那的鳞片。拿到它，攀瀑能力就回来了。</div><h2>一、任务前置</h2><ul><li>完成石像清淤，与尤娜对话；问铁匠丹托打听鱼的下落。</li></ul><h2>二、任务步骤</h2><ol><li>在卓拉领地找尤娜接任务。</li><li>找铁匠丹托，他说古代亚罗瓦那在普洛米斯山米法雕像附近的水域。</li><li>到米法庭的水池里捉到古代亚罗瓦那，天空岛水域也有。</li><li>把鱼交给尤娜，取回修好的卓拉铠甲。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>修铠甲的是尤娜，丹托只提供鱼的下落线索，别弄反。</li><li>不需要先穿一件原版铠甲才能上山，步行就能到米法庭。</li><li>拿到铠甲后才能攀瀑，水之神殿前务必先做完这一步。</li></ul></div><h2>四、奖励</h2><p>卓拉铠甲入手，可以逆瀑而上；水之神殿前置完成。</p></div></div>
         </div>
       </div>
     </div>
@@ -410,7 +422,7 @@
         <div class="quest-num">10</div>
         <div class="quest-body">
           <div class="quest-title">前往天空的线索</div>
-          <div class="quest-desc">取得王的鳞片后，在普洛米斯山向天空鱼群的水滴空隙射出附鳞片之箭。</div>
+          <div class="quest-desc">取得王的鳞片后，在浮空鳞岛向天空鱼群的水滴空隙射出附鳞片之箭。</div>
           <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-sky">▲ 天空群岛</span>
@@ -423,11 +435,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Clues_to_the_Sky.png" alt="前往天空的线索" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Clues_to_the_Sky.png" alt="前往天空的线索" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「前往天空的线索」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>石板译文的谜底揭晓：国王多雷凡给你王的鳞片，把它附在箭上，射入天空鱼群的水滴形空隙，天空之路就打开了。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>修好卓拉铠甲；见过多雷凡国王。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>与多雷凡国王会面，取得王的鳞片。</li><li>登上普洛米斯山顶。</li><li>找到天空中鱼群形状的水滴空隙。</li><li>把王的鳞片附在箭上，射入水滴空隙。</li><li>天空降下通路，跟随希多前往水之神殿。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>普通箭射不穿，关键是箭上附了王的鳞片。</li><li>山顶没有金徽章机关，别找徽章。</li><li>射中后别急着走，跟着剧情走才能进神殿。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>天空之路开启，水之神殿线正式开始。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">石板译文的谜底揭晓：多雷凡国王给你五片王的鳞片，把其中一片附在箭上，在浮空鳞岛射穿天空鱼群的水滴空隙，天空之路就打开了。</div><h2>一、任务前置</h2><ul><li>修好卓拉铠甲；先与米法庭的希多对话，再到瀑布后的清流王居见多雷凡国王。</li></ul><h2>二、任务步骤</h2><ol><li>与多雷凡国王会面，取得五片王的鳞片。</li><li>前往浮空鳞岛。</li><li>站在岛上向西南看，漂浮岩石构成水滴形状。</li><li>把王的鳞片附在箭上，射穿水滴。</li><li>东储水湖升起绿色光柱，揭示古代卓拉祭殿入口。</li><li>回东储水湖见希多，经祭殿水路攀瀑而上，前往水之神殿。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>普通箭射不穿，关键是箭上附了王的鳞片。</li><li>射箭点不是普洛米斯山顶，而是浮空鳞岛。</li><li>射中后不是天空降下通路，别在岛上空等，先回东储水湖。</li></ul></div><h2>四、奖励</h2><p>天空之路开启，水之神殿线正式开始。</p></div></div>
         </div>
       </div>
     </div>
@@ -451,11 +463,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Sidon_of_the_Zora.png" alt="卓拉领地的希多" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Sidon_of_the_Zora.png" alt="卓拉领地的希多" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「卓拉领地的希多」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>天空中的水之神殿，核心是让水流回到中央水柱：启动四个水栓。首领是淤泥莱克，希多的水球是你最好的帮手。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>修好卓拉铠甲；完成前往天空的线索。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>与希多同行进入水之神殿。</li><li>依次启动四个水栓，让水流回到中央。</li><li>回到中央水柱处。</li><li>与淤泥莱克决战。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>别按旧攻略记水栓方位，跟着神殿内的水管走向找。</li><li>淤泥莱克本体藏在淤泥里，先用泼水果或希多的水球清掉淤泥再近战。</li><li>打完没有“希多立即继位”这一出，奖励就是贤者能力本身。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>水之贤者希多加入，获得水球护盾能力；卓拉领地水流恢复。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">天空中的水之神殿，核心是让水流回到中央水柱：启动四个水栓。首领是淤泥莱克，希多的水球是你最好的帮手。</div><h2>一、任务前置</h2><ul><li>修好卓拉铠甲；完成前往天空的线索。</li></ul><h2>二、任务步骤</h2><ol><li>与希多同行进入水之神殿。</li><li>依次启动四个水栓，让水流回到中央。</li><li>回到中央水柱处。</li><li>与淤泥莱克决战。</li><li>打完回卓拉领地，多雷凡将王位交予希多。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>别按旧攻略记水栓方位，跟着神殿内的水管走向找。</li><li>淤泥莱克本体藏在淤泥里，先用泼水果或希多的水球清掉淤泥再近战。</li></ul></div><h2>四、奖励</h2><p>水之贤者希多加入，获得水球护盾能力；卓拉领地水流恢复，希多正式继位。</p></div></div>
         </div>
       </div>
     </div>
@@ -466,7 +478,7 @@
         <div class="quest-num">12</div>
         <div class="quest-body">
           <div class="quest-title">鼓隆城的阿沅 → 火之神殿</div>
-          <div class="quest-desc">与阿沅同行深入地底火之神殿，启动五个终端，击败熔岩巨人。</div>
+          <div class="quest-desc">与阿沅同行深入地底火之神殿，敲响五口锣，击败熔岩巨人。</div>
           <div class="quest-meta">
             <span class="tag tag-gold">神殿攻略</span>
             <span class="rbadge rbadge-goron">▲ 鼓隆城</span>
@@ -479,11 +491,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Yunobo_of_Goron_City.png" alt="鼓隆城的阿沅" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Yunobo_of_Goron_City.png" alt="鼓隆城的阿沅" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「鼓隆城的阿沅」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>鼓隆城全族沉迷岩石烤肉，阿沅也不例外。让他清醒过来，两人一起下到地底火之神殿，目标是启动五个终端，首领是熔岩巨人。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>防火装备或耐热料理；已接下监视堡垒委托。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>到鼓隆城了解岩石烤肉事件。</li><li>让阿沅恢复神智，与他同行。</li><li>搭乘矿车下到地底火之神殿。</li><li>启动五个终端。</li><li>击败熔岩巨人。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>没有蘑菇蛋糕治愈这一说，别去配料理。</li><li>没有固定的矿车流程和五层五锣，跟着终端走。</li><li>阿沅的滚石冲击是破岩关键，多用它开路。</li><li>地面持续掉血，防火准备做足。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>火之贤者阿沅加入，获得滚石冲击；鼓隆城恢复正常。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">鼓隆城全族沉迷岩石烤肉，阿沅戴着面具神智不清。让他清醒过来，两人一起下到地底火之神殿，敲响五口锣，首领是熔岩巨人。</div><h2>一、任务前置</h2><ul><li>防火装备或耐热料理；已接下监视堡垒委托。</li></ul><h2>二、任务步骤</h2><ol><li>到鼓隆城了解岩石烤肉事件。</li><li>追上戴面具的阿沅，打碎面具让他恢复神智，与他同行。</li><li>上死亡火山途中备好防火，击败莫拉吉亚后从火山口跳入深渊，向西走到火之神殿。</li><li>用阿沅的滚石冲击敲响五口锣。</li><li>击败首领熔岩巨人（Marbled Gohma）。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>五口锣不是泛指的终端，分布在不同楼层，跟着锣声找。</li><li>矿车只是上死亡火山途中的工具，进地底是跳火山口，不是坐矿车直达。</li><li>防火是上死亡火山途中需要的，不是神殿里地面持续掉血。</li></ul></div><h2>四、奖励</h2><p>火之贤者阿沅加入，获得滚石冲击；鼓隆城恢复正常。</p></div></div>
         </div>
       </div>
     </div>
@@ -494,7 +506,7 @@
         <div class="quest-num">13</div>
         <div class="quest-body">
           <div class="quest-title">格鲁德小镇的露珠 → 雷之神殿</div>
-          <div class="quest-desc">穿越沙暴抵达临时避难所，与首领露珠并肩战斗，攻略雷之神殿击败女王基布德。</div>
+          <div class="quest-desc">协助露珠守护格鲁德小镇与沙漠避难所，破除沙暴，登上雷之神殿，击败女王基布德。</div>
           <div class="quest-meta">
             <span class="tag tag-gold">神殿攻略</span>
             <span class="rbadge rbadge-gerudo">▲ 格鲁德</span>
@@ -507,11 +519,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Riju_of_Gerudo_Town.png" alt="格鲁德小镇的露珠" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Riju_of_Gerudo_Town.png" alt="格鲁德小镇的露珠" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「格鲁德小镇的露珠」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>格鲁德沙漠被沙暴和基布德围困，居民撤到避难所。首领露珠要找出沙暴源头，两人一路打到雷之神殿，首领是女王基布德。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>耐热耐寒准备；已接下监视堡垒委托。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>穿过沙暴到沙漠避难所，与露珠会面。</li><li>追踪沙暴中的线索，找到祖先留下的闪电雕像。</li><li>借助露珠的雷电能力击退基布德。</li><li>突破沙暴进入雷之神殿。</li><li>神殿内用镜子反射阳光开门。</li><li>击败女王基布德。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>女王基布德外壳免疫物理伤害，先用属性攻击或露珠的雷电箭破壳。</li><li>第二阶段会召唤大量小基布德，先清场再打本体。</li><li>神殿的镜面要调角度，抬升或旋转平台才能让光路接通。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>雷之贤者露珠加入，获得雷电箭能力；沙暴解除，小镇恢复。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">格鲁德小镇被吉布多围攻，居民撤到沙漠避难所。露珠和你先打防御战，再解开避难所壁画的谜语：背对王座看红柱，以光连柱，点亮三根红柱，祭坛升起雷之神殿。</div><h2>一、任务前置</h2><ul><li>耐热耐寒料理；已接下监视堡垒委托。</li></ul><h2>二、任务步骤</h2><ol><li>到卡拉卡拉集市参加防御战。</li><li>到格鲁德小镇参加三处吉布多巢穴防御战。</li><li>到沙漠避难所与露珠会合，看壁画谜语。</li><li>按谜语点亮三根红柱，祭坛升起雷之神殿。</li><li>在殿口与女王基布德首战。</li><li>神殿内用镜子反射阳光开门、调镜面角度接通光路，给四个电池充能。</li><li>击败女王基布德。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>没有祖先留下的闪电雕像这一环，别按旧攻略找。</li><li>神殿内是给四个电池充能，不是进神殿就直接打女王基布德。</li><li>沙暴解除的关键是打赢神殿战，不是清掉所有沙漠怪物。</li></ul></div><h2>四、奖励</h2><p>雷之贤者露珠加入，获得雷电箭能力；格鲁德沙暴解除。</p></div></div>
         </div>
       </div>
     </div>
@@ -522,7 +534,7 @@
         <div class="quest-num">14</div>
         <div class="quest-body">
           <div class="quest-title">海拉鲁城堡的异变</div>
-          <div class="quest-desc">霍兹队长报告城堡有「泽尔达」目击事件，下到城堡地底揭开冒牌泽尔达真相。</div>
+          <div class="quest-desc">四座神殿全通后潜入浮空的海拉鲁城堡，追踪冒牌泽尔达的幻影，击败幻影加侬。</div>
           <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-central">▲ 海拉鲁城堡</span>
@@ -535,11 +547,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Crisis_at_Hyrule_Castle.png" alt="海拉鲁城堡的异变" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Crisis_at_Hyrule_Castle.png" alt="海拉鲁城堡的异变" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">浮空的海拉鲁城堡——加侬多夫的瘴气源头</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>完成一座神殿后，霍兹队长报告城堡里出现了“泽尔达”。潜入浮空城堡一看，所谓的泽尔达是幻影加侬变的。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>完成至少一座神殿。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>回监视堡垒听霍兹队长的报告。</li><li>潜入海拉鲁城堡。</li><li>沿瘴气台阶下到城堡地下王座。</li><li>与幻影加侬决战。</li><li>战后与普尔鲁分析线索，方向指向地底。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>幻影加侬三种武器形态轮换，攻击会锁住心心上限，备好太阳花料理。</li><li>等它攻击落空再闪避反击，别贪刀。</li><li>第二阶段会出现分身，集中打本体。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>揭开冒牌泽尔达真相，第五位贤者线索开启。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">四座神殿全通、回监视堡垒向普尔鲁汇报后，普尔鲁指派你潜入浮空的海拉鲁城堡。城堡里那个泽尔达是假的，追踪她的幻影穿行各层，最终在圣所与幻影加侬决战。</div><h2>一、任务前置</h2><ul><li>四座神殿全部通关，并回监视堡垒向普尔鲁汇报。</li></ul><h2>二、任务步骤</h2><ol><li>回监视堡垒，接受普尔鲁的城堡潜入指派。</li><li>潜入浮空城堡，追踪泽尔达幻影穿行城堡各层。</li><li>到达圣所（王座大厅）与幻影加侬决战。</li><li>战后第五位贤者线索开启。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>前置不是一座神殿，而是四座全通，之前本任务一直处于暂停状态。</li><li>霍兹搜索队是四神殿之前在第一门楼一带的内容，别和城堡潜入拼成一步。</li><li>幻影加侬的攻击会削减心心上限，备好太阳花料理。</li><li>第二波是五具幻影加侬齐出，没有单一本体可集中，先用弓箭爆头打断那具正在铺瘴气的，再逐个击破。</li></ul></div><h2>四、奖励</h2><p>第五位贤者线索开启；城堡异变线告一段落。</p></div></div>
         </div>
       </div>
     </div>
@@ -550,7 +562,7 @@
         <div class="quest-num">15</div>
         <div class="quest-body">
           <div class="quest-title">寻找第五位贤者</div>
-          <div class="quest-desc">收集散落在地底的五个构装体零件，组装米涅露的灵之构装体，进入灵殿。</div>
+          <div class="quest-desc">由普尔鲁交予的第五位贤者总任务：经环卡遗迹与太古指引两条线，找到灵之贤者米涅露。</div>
           <div class="quest-meta">
             <span class="tag tag-gold">神殿攻略</span>
             <span class="tag tag-purple">隐藏任务</span>
@@ -563,11 +575,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Find_the_Fifth_Sage.png" alt="寻找第五位贤者" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Find_the_Fifth_Sage.png" alt="寻找第五位贤者" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「寻找第五位贤者」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>前面四位贤者之外还有第五位：米涅露的灵魂藏在一具被拆散的巨型构装体里。把五个零件找齐组装好，她就回来了。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>完成海拉鲁城堡的异变、环卡遗迹的秘密、来自太古的指引。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>按米涅露的指引前往地底各处。</li><li>收集五个构装体零件：头部在灵殿正前方，左臂在鼓隆地底，右臂在利特地底，左腿在法罗尼地底，右腿在格鲁德地底。</li><li>每个零件由大型构装体看守，击败后用究极手带回。</li><li>五个零件在灵殿前组装完成。</li><li>驾驶灵之构装体进入灵殿。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>每个零件上方地面都有对应神庙，找不到时先看地面神庙位置。</li><li>地底探索带足发光果，别摸黑。</li><li>零件很重，究极手搬运时注意别掉进深渊。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>第五位贤者米涅露加入，灵殿线完成。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">第五位贤者是灵之贤者米涅露。本任务由普尔鲁交予，实际推进靠两条线：环卡遗迹的秘密和来自太古的指引，走完这两条线，米涅露加入，本任务完成。</div><h2>一、任务前置</h2><ul><li>四座神殿全通，海拉鲁城堡幻影加侬战后。</li></ul><h2>二、任务步骤</h2><ol><li>在监视堡垒从普尔鲁处接下寻找第五位贤者的任务。</li><li>前往卡卡利科村，调查上空的环卡遗迹。</li><li>登上龙首岛取得佐纳依遗物。</li><li>跟随遗物光束到法罗尼地底的构装体工厂。</li><li>在工厂周围四座仓库取回构装体零件，在工厂模具上组装。</li><li>乘组装好的构装体前往灵殿，击败被夺构装体，取回灵之秘石。</li><li>获得米涅露的誓约与心之容器，第五位贤者加入。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>环卡遗迹与太古指引不是本任务的前置，它们就是本任务的推进路径。</li><li>零件不在鼓隆、利特、格鲁德地底，四座仓库都在法罗尼地底构装体工厂周围。</li><li>组装在工厂模具上完成，灵殿是组装好之后乘构装体去的目的地，不是组装地点。</li></ul></div><h2>四、奖励</h2><p>灵之贤者米涅露加入，获得灵之构装体；寻找第五位贤者完成。</p></div></div>
         </div>
       </div>
     </div>
@@ -578,7 +590,7 @@
         <div class="quest-num">16</div>
         <div class="quest-body">
           <div class="quest-title">环卡遗迹的秘密</div>
-          <div class="quest-desc">登上龙首岛找到环卡圣物（佐纳依神器），听见米涅露的声音，正式开启第五贤者线索。</div>
+          <div class="quest-desc">调查卡卡利科村上空的环卡遗迹，登上龙首岛取得佐纳依遗物，听见米涅露的声音。</div>
           <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-sky">▲ 天空群岛</span>
@@ -591,11 +603,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Secret_of_the_Ring_Ruins.png" alt="环卡遗迹的秘密" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Secret_of_the_Ring_Ruins.png" alt="环卡遗迹的秘密" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「环卡遗迹的秘密」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>卡卡利科村上空漂着一圈环卡遗迹，村里人正在研究它。登上龙首岛，拼合图样石，就能听见米涅露的声音。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>完成海拉鲁城堡的异变后即可调查。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>在卡卡利科村一带调查环卡遗迹石碑。</li><li>按石碑指引前往天空群岛西南的龙首岛。</li><li>从天空塔发射上空，滑翔登岛。</li><li>在岛上祭坛拼合四块图样石。</li><li>与浮现的佐纳依神器互动，听见米涅露的声音。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>龙首岛位置偏，光靠走是到不了的，用天空塔发射加滑翔。</li><li>图样石要按古文提示拼，别乱摆。</li><li>听完米涅露的话，跟着光柱方向走就是下一任务。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>米涅露的声音指引出现，第五位贤者线正式开启。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">城堡幻影加侬战后，向卡卡利科村的帕雅揭露假泽尔达之事，环卡遗迹的调查随即开启。登上龙首岛取得佐纳依遗物，你会听见米涅露的声音。</div><h2>一、任务前置</h2><ul><li>海拉鲁城堡幻影加侬战后，向帕雅揭露假泽尔达。</li></ul><h2>二、任务步骤</h2><ol><li>到卡卡利科村，向帕雅了解环卡遗迹。</li><li>按石碑指引前往雷云群岛东侧低处的龙首岛。</li><li>穿雷电套装，献佐纳乌能量球清雷云，穿越雷云群岛。</li><li>从高处滑翔落到低处的龙首岛。</li><li>在岛上砍藤蔓、推开挑战门，取得佐纳依遗物。</li><li>听见米涅露的声音，跟着光柱走，进入下一任务。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>龙首岛不在西南，在雷云群岛东侧低处、法罗尼上空东南部。</li><li>登岛不是天空塔发射直达，要先清雷云再穿越群岛。</li><li>岛上没有四块图样石拼合，推开挑战门需要至少 10 颗心。</li></ul></div><h2>四、奖励</h2><p>获得佐纳依遗物，米涅露的声音指引你前往法罗尼地底。</p></div></div>
         </div>
       </div>
     </div>
@@ -606,7 +618,7 @@
         <div class="quest-num">17</div>
         <div class="quest-body">
           <div class="quest-title">来自太古的指引</div>
-          <div class="quest-desc">追随佐纳依圣物的光束，进入西南地底灵殿入口，正式与米涅露的灵魂相会。</div>
+          <div class="quest-desc">跟随佐纳依遗物的光束前往法罗尼地底，在构装体工厂组装构装体，前往灵殿。</div>
           <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="tag tag-gold">重要剧情</span>
@@ -619,11 +631,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Link_Riding_Mineru_s_Construct.png" alt="米涅露构装体" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Link_Riding_Mineru_s_Construct.png" alt="米涅露构装体" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">林克乘米涅露构装体</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>从龙首岛带回的佐纳依神器会发光指路。跟着光束一路向西南，下到地底，就能见到米涅露的灵魂。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>完成环卡遗迹的秘密。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>带着佐纳依神器，跟随光束向西南前进。</li><li>从对应裂缝下到地底。</li><li>沿光束找到灵殿前厅。</li><li>与米涅露的灵魂见面。</li><li>接下收集构装体零件的委托。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>光束方向就是路线，别在地面绕。</li><li>地底入口在裂缝下方，先开破魔树根再深入。</li><li>这一步主要是剧情，战斗不多，安心走。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>米涅露现身，第五位贤者任务接续。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">佐纳依遗物会发光指路，跟着光束走，你会来到法罗尼地底的构装体工厂。米涅露在这里正式现身，委托你收集零件、组装构装体、前往灵殿。</div><h2>一、任务前置</h2><ul><li>完成环卡遗迹的秘密，持有佐纳依遗物。</li></ul><h2>二、任务步骤</h2><ol><li>跟随遗物光束向法罗尼地底前进。</li><li>从地底裂缝进入构装体工厂。</li><li>把遗物放进工厂入口模具的头部槽位，米涅露正式现身。</li><li>接下收集构装体零件的委托。</li><li>在工厂周围四座仓库取回零件，在工厂模具上组装构装体。</li><li>乘组装好的构装体前往灵殿，击败被夺构装体，取回灵之秘石。</li><li>获得米涅露的誓约与心之容器。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>光束指向法罗尼地底，不是西南。</li><li>米涅露正式现身在构装体工厂，不是灵殿前厅，灵殿是之后才去的地方。</li><li>本任务不是纯剧情散步，含四座仓库解谜与被夺构装体首领战。</li></ul></div><h2>四、奖励</h2><p>灵之贤者米涅露加入，获得灵之构装体；太古指引完成。</p></div></div>
         </div>
       </div>
     </div>
@@ -634,7 +646,7 @@
         <div class="quest-num">18</div>
         <div class="quest-body">
           <div class="quest-title">大师之剑的线索</div>
-          <div class="quest-desc">在被遗忘神殿中找到泽尔达留下的留言，确认大师之剑在光之龙头上。</div>
+          <div class="quest-desc">由灵殿的米涅露指引，净化克洛格森林的大德库树，获得大师之剑的下落。</div>
           <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="tag tag-gold">传说武器</span>
@@ -647,11 +659,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Trail_of_the_Master_Sword.png" alt="大师之剑的线索" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Trail_of_the_Master_Sword.png" alt="大师之剑的线索" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「大师之剑的线索」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>龙之泪看完一部分后，被遗忘神殿里泽尔达的留言会告诉你：大师之剑跟着她走了。而她，就是天上飞的光之龙。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>推进龙之泪剧情；最好已有两轮耐力。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>前往中央海拉鲁西南的被遗忘神殿。</li><li>深入神殿，找到泽尔达留下的石板留言。</li><li>结合龙之泪的回忆，确认大师之剑在光之龙头上。</li><li>开启失落的勇者之剑任务。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>神殿里没有林克石像或拉乌鲁雕像这类关键物，别找错。</li><li>拔剑要两轮满耐力，不够会被弹开，先攒耐力。</li><li>光之龙绕海拉鲁飞行，地图上有龙形标记可追踪。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>大师之剑下落确认，终局武器线开启。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">大师之剑不在被遗忘神殿。是在太古指引中看完关键抉择回忆后，灵殿的米涅露告诉你：泽尔达化龙修复了大师之剑，并指引你去找大德库树。</div><h2>一、任务前置</h2><ul><li>完成太古指引，在其中看完关键抉择回忆。</li></ul><h2>二、任务步骤</h2><ol><li>回监视堡垒向普尔鲁汇报。</li><li>经地底裂缝，用通天术上到克洛格森林。</li><li>净化大德库树的瘴气：击败瘴气之手与幻影加侬。</li><li>大德库树感应到大师之剑，在地图上标出它的移动位置。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>被遗忘神殿只有地画地图与壁画，与大师之剑线索无关，别去那里找留言。</li><li>地图上追踪的是大师之剑的任务标记，不是龙形标记。</li><li>触发者是米涅露，不是龙之泪剧情。</li></ul></div><h2>四、奖励</h2><p>获得大师之剑的移动位置标记，接下来去追光之龙拔剑。</p></div></div>
         </div>
       </div>
     </div>
@@ -662,7 +674,7 @@
         <div class="quest-num">19</div>
         <div class="quest-body">
           <div class="quest-title">英帕与地上图画</div>
-          <div class="quest-desc">与英帕汇合调查海拉鲁北部荒野的巨型地画（Geoglyph），还原泽尔达留下的记忆。</div>
+          <div class="quest-desc">在新塞雷尼马厩与英帕汇合，修好热气球，从空中寻找地画与龙之泪。</div>
           <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
           </div>
@@ -674,11 +686,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Impa_and_the_Geoglyphs.png" alt="英帕与地上图画" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Impa_and_the_Geoglyphs.png" alt="英帕与地上图画" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「英帕与地上图画」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>从天空塔往下看，海拉鲁北部荒野上有一幅巨大的地画。英帕推着热气球在那里等你：这些地画是泽尔达留下的龙之泪。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>到达监视堡垒后即可前往北部荒野。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>向北到北海拉鲁平原天空塔。</li><li>登塔发射上空，俯瞰下方的地画。</li><li>降落地画中心与英帕汇合。</li><li>触摸地画中心的龙之泪石碑观看回忆。</li><li>帮英帕继续调查其他地画。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>地画从地面看不出来，一定要从空中找。</li><li>第一颗龙之泪就在这幅地画中心，别错过。</li><li>英帕的热气球会移动，找不到人时看地图标记。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>龙之泪收集线开启，泽尔达的故事开始拼合。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">地画从地面看不出来，得从空中找。先在新塞雷尼马厩见英帕与卡多，修好热气球升空，滑翔降落找泪滴，龙之泪收集线由此开启。</div><h2>一、任务前置</h2><ul><li>完成初始空岛，落地海拉鲁。</li></ul><h2>二、任务步骤</h2><ol><li>到新塞雷尼马厩见英帕与卡多。</li><li>修好热气球，乘热气球升空。</li><li>滑翔降落，寻找地画中的泪滴形水池。</li><li>触摸第一颗龙之泪观看回忆。</li><li>继续按被遗忘神殿地图提示收集其余龙之泪。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>不是登塔发射再落地画中心与英帕汇合，见面地点是新塞雷尼马厩。</li><li>龙之泪是泪滴形水池与光点，不是石碑。</li><li>热气球不会到处移动；本任务做完后，英帕去了被遗忘神殿，卡多在神殿入口守着热气球。</li></ul></div><h2>四、奖励</h2><p>龙之泪收集线开启，获得第一颗龙之泪的回忆。</p></div></div>
         </div>
       </div>
     </div>
@@ -689,7 +701,7 @@
         <div class="quest-num">20</div>
         <div class="quest-body">
           <div class="quest-title">龙之泪</div>
-          <div class="quest-desc">收集散落于海拉鲁的 12 颗龙之泪，按顺序观看泽尔达穿越时空的完整故事，揭开整作核心剧情。</div>
+          <div class="quest-desc">收集全部 12 颗龙之泪：11 处地画加阿卡莱里斯特半岛的最后一颗，揭晓泽尔达就是光之龙。</div>
           <div class="quest-meta">
             <span class="tag tag-purple">核心剧情</span>
             <span class="tag tag-gold">强烈推荐</span>
@@ -702,11 +714,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_The_Dragon_s_Tears.png" alt="龙之泪" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_The_Dragon_s_Tears.png" alt="龙之泪" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">主线任务「龙之泪」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>海拉鲁全境散落着龙之泪，每一颗都是一段泽尔达穿越时空的记忆。集齐它们，整作的核心剧情就完整了。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>完成英帕与地上图画。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>登上各处天空塔，从空中发现地画。</li><li>降落到地画中心，触摸龙之泪石碑观看回忆。</li><li>按时间顺序集齐11处地画的龙之泪。</li><li>最后到被遗忘神殿调查第12颗。</li><li>看完所有回忆，真相揭晓：泽尔达就是光之龙。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>按顺时针顺序收集，剧情连贯感最好。</li><li>每段记忆只有一两分钟，别跳过。</li><li>最后一颗不在地画上，在被遗忘神殿。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>完整剧情解锁；大师之剑与终局的线索全部贯通。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">龙之泪一共 12 颗：11 处地画各一颗，外加最后一颗。看完所有回忆，你会知道泽尔达就是光之龙。</div><h2>一、任务前置</h2><ul><li>完成英帕与地上图画，开启收集线。</li></ul><h2>二、任务步骤</h2><ol><li>按被遗忘神殿地图提示与游戏编号，依次到 11 处地画。</li><li>在每处地画的泪滴形水池触摸龙之泪，观看回忆。</li><li>集齐 11 颗后，光之龙新落一颗泪滴，落在阿卡莱里斯特半岛尖端。</li><li>到里斯特半岛尖端触摸最后一颗，看完最终回忆。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>第 12 颗不在被遗忘神殿，被遗忘神殿只有地画地图与壁画。</li><li>龙之泪是泪滴形水池，不是石碑。</li><li>顺序按游戏编号与地图提示走，不是顺时针。</li></ul></div><h2>四、奖励</h2><p>全部 12 颗龙之泪的回忆，揭晓泽尔达化龙的真相。</p></div></div>
         </div>
       </div>
     </div>
@@ -717,7 +729,7 @@
         <div class="quest-num">21</div>
         <div class="quest-body">
           <div class="quest-title">失落的勇者之剑</div>
-          <div class="quest-desc">追上光之龙，跳到龙头上拔出大师之剑，需要 2 颗满耐力轮。</div>
+          <div class="quest-desc">追上光之龙，凭两轮满耐力拔出大师之剑。</div>
           <div class="quest-meta">
             <span class="tag tag-red">终章</span>
             <span class="tag tag-gold">大师之剑</span>
@@ -730,11 +742,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Link_Master_Sword_Light_Dragon.png" alt="拔取大师之剑" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/1200px-TotK_Link_Master_Sword_Light_Dragon.png" alt="拔取大师之剑" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">林克在光之龙头上拔取大师之剑</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>光之龙头上插着大师之剑。追上它，跳到龙头上，攥紧了拔——耐力不够会被弹开，两轮满耐力是硬门槛。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>两轮满耐力；已确认大师之剑在光之龙头上。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>在地图上追踪光之龙的飞行路线。</li><li>从天空塔射出，滑翔接近光之龙。</li><li>落到龙背上，沿龙背爬向龙头。</li><li>按住拔剑，耐力耗尽前完成。</li><li>成功后大师之剑归队。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>龙背有角刺会扣血，备好防御料理。</li><li>耐力料理只能救急，硬门槛还是两轮满耐力。</li><li>拔剑失败会被弹开，不用怕，再追一次就行。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>大师之剑入手，耐久耗尽后会进入冷却再恢复；满血时蓄力可发剑气。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">大师之剑插在光之龙头顶。拔剑的硬门槛是两轮满耐力：初始一轮加 5 个耐力容器，共 20 个祝福之光换来，临时黄色耐力不算。</div><h2>一、任务前置</h2><ul><li>两轮满耐力（初始一轮加 5 个耐力容器）；已获得大师之剑的位置标记。</li></ul><h2>二、任务步骤</h2><ol><li>按地图标记追上光之龙，登上龙头。</li><li>走到额头闪耀圣光的剑身前，按下交互。</li><li>按住拔剑，耐力持续消耗，直到拔出。</li><li>耐力不够会被弹开，追上光之龙再试一次。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>黄色临时耐力连救急都做不到，必须是绿色耐力凑满两轮。</li><li>拔剑时光之龙会剧烈挣扎，别在半途松手。</li><li>拔剑后别急着走，白龙身上的素材很值钱。</li></ul></div><h2>四、奖励</h2><p>大师之剑入手，能量耗尽后冷却恢复；满血时蓄力可发剑气。</p></div></div>
         </div>
       </div>
     </div>
@@ -745,7 +757,7 @@
         <div class="quest-num">22</div>
         <div class="quest-body">
           <div class="quest-title">讨伐加侬多夫</div>
-          <div class="quest-desc">从海拉鲁城堡正下方深渊潜入魔王宝座，与加侬多夫展开三阶段决战，最终空中击败魔王龙。</div>
+          <div class="quest-desc">从海拉鲁城堡正下方裂缝跳入地底，穿越瘴气军团营地，讨伐加侬多夫与魔王龙。</div>
           <div class="quest-meta">
             <span class="tag tag-red">终章</span>
             <span class="tag tag-gold">最终决战</span>
@@ -759,11 +771,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/TotK_Link_Confronting_Ganondorf.png" alt="讨伐加侬多夫" loading="lazy">
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/TotK_Link_Confronting_Ganondorf.png" alt="讨伐加侬多夫" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
             <p class="quest-screenshot-caption">链克与魔王加侬多夫的最终对决</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>从海拉鲁城堡正下方跳入深渊，一路打穿瘴气军团，直面加侬多夫。三阶段：人形、觉醒态、魔王龙。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>建议四位贤者齐全、大师之剑在手；备好抗瘴气料理。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>从城堡正下方裂缝跳入地底。</li><li>沿祖纳依祭坛向南推进，打穿瘴气军团。</li><li>与加侬多夫人形决战。</li><li>再战觉醒态。</li><li>乘光之龙迎战魔王龙，击破发光弱点，最后攻击胸前核心。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>瘴气攻击会锁心心上限，太阳花料理是标配。</li><li>觉醒态攻击窗口很短，别贪刀，完美防御很关键。</li><li>魔王龙战在空中进行，跟着光之龙走，别自己乱飞。</li><li>没有“打五个魔影贤者”这个固定流程，贤者们是随行助战。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>魔王讨伐完成，通往结局。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">终局战分三个阶段：人形加侬多夫、觉醒态、魔王龙。贤者们全程随行助战，没有打五个魔影贤者这个固定流程。</div><h2>一、任务前置</h2><ul><li>四位贤者加入；灵之贤者米涅露加入；备好太阳花料理。</li></ul><h2>二、任务步骤</h2><ol><li>从海拉鲁城堡正下方裂缝跳入地底。</li><li>沿地底通道向南，穿过瘴气军团营地，到达瘴气巢穴。</li><li>与加侬多夫决战：人形态、觉醒态依次击败。</li><li>乘光之龙迎战魔王龙，击破背上四处眼睛脓包。</li><li>最后刺向额头上的秘石。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>瘴气攻击会锁心心上限，太阳花料理是标配。</li><li>魔王龙的最后一击在额头秘石，不是胸前核心。</li><li>贤者们是随行助战，不是固定流程里要打的敌人。</li></ul></div><h2>四、奖励</h2><p>加侬多夫讨伐完成，结局动画触发。</p></div></div>
         </div>
       </div>
     </div>
@@ -773,8 +785,8 @@
       <div class="quest-row" onclick="toggleQuest(this)">
         <div class="quest-num">23</div>
         <div class="quest-body">
-          <div class="quest-title">寻找萨尔达</div>
-          <div class="quest-desc">击败魔王后，链克在云端坠落，伸手抓住化为人形的泽尔达，迎来感人的最终结局。</div>
+          <div class="quest-title">寻找泽尔达</div>
+          <div class="quest-desc">击败魔王龙后，林克俯冲接住坠落的泽尔达，迎来真正的结局。</div>
           <div class="quest-meta">
             <span class="tag tag-red">终章</span>
             <span class="tag tag-green">结局</span>
@@ -787,11 +799,11 @@
       </div>
       <div class="quest-detail">
         <div class="quest-detail-inner">
-          <div>
-            <img class="quest-screenshot" src="images/hotlink/TotK_Find_Princess_Zelda.png" alt="寻找萨尔达" loading="lazy">
-            <p class="quest-screenshot-caption">主线任务「寻找萨尔达」截图</p>
+          <div style="text-align:center">
+            <img class="quest-screenshot" src="images/hotlink/TotK_Find_Princess_Zelda.png" alt="寻找泽尔达" loading="lazy" style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid rgba(201,162,39,0.35);box-shadow:0 0 32px rgba(201,162,39,0.25),0 4px 20px rgba(0,0,0,0.6);">
+            <p class="quest-screenshot-caption">主线任务「寻找泽尔达」截图</p>
           </div>
-          <div><div class="wt-section"><div class="wt-title">📖 概述</div><p>魔王龙倒下后，恢复人形的泽尔达接住坠落的链克。海拉鲁恢复和平，故事落幕——而你的冒险还可以继续。</p></div><div class="wt-section"><div class="wt-title">🧰 前置</div><ol class="wt-steps"><li>击败魔王龙。</li></ol></div><div class="wt-section"><div class="wt-title">📋 步骤</div><ol class="wt-steps"><li>看完空中决战后的剧情。</li><li>与泽尔达重逢，触发结局动画。</li><li>结局后存档回到决战前，可继续探索收集。</li></ol></div><div class="wt-section"><div class="wt-title">⚠️ 翻车点</div><ol class="wt-steps"><li>结局后游戏不会重置，不用担心错过收集。</li><li>想全收集的话，152座神庙、120个破魔树根、1000颗克洛格、12颗龙之泪都在结局后继续做。</li><li>相关攻略在页面底部，卡关可直接跳转。</li></ol></div><div class="wt-section"><div class="wt-title">🎁 奖励</div><p>主线23项全部完成；海拉鲁的和平结局。</p></div></div>
+          <div><div class="article-body"><div class="article-subtitle">击败魔王龙后触发结局动画：林克俯冲接住失去意识坠落的泽尔达，两人落入湖中。结局之后，存档回到决战前，你可以继续探索海拉鲁。</div><h2>一、任务前置</h2><ul><li>完成讨伐加侬多夫。</li></ul><h2>二、任务步骤</h2><ol><li>观看结局动画。</li><li>结局后读取存档，回到决战前继续探索。</li><li>按需要补齐收集：152 座神庙、120 个破魔树根、1000 颗克洛格种子、12 颗龙之泪。</li></ol><h2>三、翻车点（防坑必看）</h2><div class="highlight-box"><ul><li>主线 23 项全部完成，之后全是自由探索，别再找第 24 项主线。</li><li>结局存档回到决战前是正常设计，不是进度丢失。</li></ul></div><h2>四、奖励</h2><p>真正的结局；全收集目标：152 座神庙、120 个破魔树根、1000 颗克洛格种子、12 颗龙之泪。</p></div></div>
         </div>
       </div>
     </div>
