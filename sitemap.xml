@@ -16,221 +16,221 @@
   
   <!-- 核心攻略页面 - 高优先级 -->
   <url>
-    <loc>https://uppersteps.com/main-quest.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/main-quest</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/shrines.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/shrines</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/weapons.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/weapons</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/cooking.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/cooking</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- 重要攻略页面 - 中高优先级 -->
   <url>
-    <loc>https://uppersteps.com/side-quest.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/side-quest</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/quest-order.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://uppersteps.com/clothes.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/quest-order</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/shrine-unlock.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/clothes</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/roots.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/shrine-unlock</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/boss.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/roots</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://uppersteps.com/boss</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- 专项攻略页面 -->
   <url>
-    <loc>https://uppersteps.com/harry-tips.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/harry-tips</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/harry-weapons.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/harry-weapons</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/harry-cooking.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/harry-cooking</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/harry-armor.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/harry-armor</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/harry-shrine-usazum.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/harry-shrine-usazum</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/harry-master-sword.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/harry-master-sword</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/harry-hover-bike.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/harry-hover-bike</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/harry-battery-fairy.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/harry-battery-fairy</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/shrine-checklist.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/shrine-checklist</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/beginner-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/beginner-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/korok-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/korok-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/depths-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/depths-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/fairy-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/fairy-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/dragon-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/dragon-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/lynel-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/lynel-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/rupee-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/rupee-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/horse-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/horse-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/sage-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/sage-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/cooking-mechanics.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/cooking-mechanics</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/castle-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/castle-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/compendium-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/compendium-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/zonai-builds.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/zonai-builds</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/blood-moon-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/blood-moon-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/fuse-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/fuse-guide</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -240,228 +240,228 @@
   
   <!-- 收集物品页面 -->
   <url>
-    <loc>https://uppersteps.com/sage-will.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/sage-will</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/old-maps.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/old-maps</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/mauyu-lost.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/mauyu-lost</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Boss 详情页面 -->
   <url>
-    <loc>https://uppersteps.com/boss-ganondorf.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/boss-ganondorf</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/boss-phantom-ganon.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/boss-phantom-ganon</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/boss-lynel.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/boss-lynel</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/boss-lynel-blue.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/boss-lynel-blue</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/boss-lynel-white.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/boss-lynel-white</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/boss-lynel-silver.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/boss-lynel-silver</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <!-- 工具与互动页面 -->
   <url>
-    <loc>https://uppersteps.com/faq.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/faq</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/sitemap-page.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/sitemap-page</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <!-- 其他页面 -->
   <url>
-    <loc>https://uppersteps.com/about.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/about</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://uppersteps.com/privacy.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://uppersteps.com/privacy</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
 
   <url>
-    <loc>https://uppersteps.com/blessing-light-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/tower-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://uppersteps.com/bow-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/cave-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/shield-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/sky-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/amiibo-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/gloom-guide.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/dragon-tears-guide.html</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/environment-guide.html</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/abilities-guide.html</loc>
-    <lastmod>2026-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/diamond-ore-guide.html</loc>
-    <lastmod>2026-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/yiga-clan-guide.html</loc>
-    <lastmod>2026-11-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/zonai-charge-guide.html</loc>
-    <lastmod>2026-11-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/wind-temple-guide.html</loc>
-    <lastmod>2026-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/water-temple-guide.html</loc>
-    <lastmod>2026-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/fire-temple-guide.html</loc>
-    <lastmod>2026-11-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/lightning-temple-guide.html</loc>
-    <lastmod>2026-11-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/paraglider-guide.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/golden-horse-guide.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uppersteps.com/star-fragment-guide.html</loc>
+    <loc>https://uppersteps.com/blessing-light-guide</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uppersteps.com/flurry-rush-guide.html</loc>
+    <loc>https://uppersteps.com/tower-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://uppersteps.com/bow-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/cave-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/shield-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/sky-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/amiibo-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/gloom-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/dragon-tears-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/environment-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/abilities-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/diamond-ore-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/yiga-clan-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/zonai-charge-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/wind-temple-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/water-temple-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/fire-temple-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/lightning-temple-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/paraglider-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/golden-horse-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/star-fragment-guide</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/flurry-rush-guide</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

@@ -944,8 +944,10 @@ function scrollToTop() {
       var hostOk = (u.hostname === location.hostname) || (u.hostname.indexOf('uppersteps.com') !== -1);
       if (!hostOk) return null;
       var base = u.pathname.replace(/\/$/, '').split('/').pop();
-      if (!/\.html$/.test(base)) return null;
-      return base.replace(/\.html$/, '');
+      if (!base) return null;
+      if (/\.html$/.test(base)) return base.replace(/\.html$/, '');
+      if (/\./.test(base)) return null; /* 带后缀的不是站内文章页 */
+      return base;
     } catch (e) { return null; }
   }
   function curSlug() {
@@ -1002,7 +1004,7 @@ function scrollToTop() {
       if (items.length < 3 && items.every(function (it) { return it.slug !== d.slug; })) items.push(d);
     });
     box.innerHTML = items.map(function (it) {
-      return '<li><a href="' + it.slug + '.html">' + it.text.replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</a></li>';
+      return '<li><a href="' + it.slug + '">' + it.text.replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</a></li>';
     }).join('');
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', renderRelated);
@@ -1386,7 +1388,7 @@ function rewriteLangLinks(root) {
     try { u = new URL(href, location.href); } catch (e) { continue; }
     var host = u.hostname;
     if (host !== 'uppersteps.com' && host.slice(-15) !== '.uppersteps.com') continue;
-    if (!(u.pathname === '/' || /\.html$/.test(u.pathname))) continue;
+    if (!(u.pathname === '/' || /\.html$/.test(u.pathname) || /^\/[A-Za-z0-9-]+$/.test(u.pathname))) continue;
     if (lang === 'zh-CN') {
       if (!u.searchParams.has('lang')) continue;
       u.searchParams.delete('lang');
