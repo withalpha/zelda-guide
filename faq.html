@@ -337,7 +337,7 @@
       color: var(--text-secondary);
       margin-bottom: 20px;
     }
-    .faq-contact a {
+    .faq-contact > a {
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -350,10 +350,19 @@
       font-weight: 600;
       transition: var(--transition);
     }
-    .faq-contact a:hover {
+    .faq-contact > a:hover {
       background: rgba(201,162,39,0.1);
       border-color: var(--gold);
       box-shadow: var(--glow-gold);
+    }
+    .faq-contact p a {
+      color: var(--gold-light);
+      text-decoration: none;
+      border-bottom: 1px dashed var(--gold-dim);
+    }
+    .faq-contact p a:hover {
+      color: var(--gold);
+      border-bottom-style: solid;
     }
     
     @media (max-width: 640px) {

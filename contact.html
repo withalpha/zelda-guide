@@ -69,20 +69,45 @@
       text-align: center;
       background: var(--bg-card);
       border: 1px solid var(--border-gold);
-      border-radius: var(--radius);
-      padding: 36px 28px 32px;
+      border-radius: var(--radius-lg);
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    /* 顶部金色装饰线 */
+    .contact-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg,
+        transparent, var(--gold-dim), var(--gold), var(--gold-dim), transparent);
+    }
+    /* 背景光晕 */
+    .contact-card::after {
+      content: '';
+      position: absolute; bottom: -40px; right: -40px;
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, rgba(201,162,39,0.06) 0%, transparent 65%);
+      pointer-events: none;
     }
     .contact-avatar {
-      font-size: 3rem;
-      line-height: 1;
-      margin-bottom: 16px;
+      width: 96px; height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(201,162,39,0.15), rgba(50,195,140,0.10));
+      border: 2px solid var(--border-gold);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.8rem;
+      box-shadow: 0 0 28px rgba(201,162,39,0.18);
+      flex-shrink: 0;
     }
     .contact-name {
       font-family: 'Noto Serif SC', serif;
-      font-size: 1.15rem;
+      font-size: 1.5rem;
       font-weight: 800;
       color: var(--text-primary);
-      margin-bottom: 10px;
     }
     .contact-sep {
       width: 56px;
@@ -129,9 +154,10 @@
     }
     .contact-long h2 {
       font-family: 'Noto Serif SC', serif;
-      font-size: 1.15rem; font-weight: 800;
+      font-size: 1.3rem; font-weight: 800;
       color: var(--text-primary);
-      margin: 28px 0 14px;
+      margin: 28px 0 20px;
+      text-align: center;
     }
     .contact-long h2:first-child { margin-top: 0; }
     .contact-long p {
@@ -139,6 +165,10 @@
       color: var(--text-secondary);
       line-height: 2.0;
       margin: 0 0 18px;
+    }
+
+    @media (max-width: 600px) {
+      .contact-card { padding: 28px 20px; }
     }
   </style>
 </head>
