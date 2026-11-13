@@ -14,6 +14,15 @@ Allow: /images/
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /.wrangler/
+Disallow: /pixel_match_debug/
+Disallow: /true_match_debug/
+Disallow: /debug_cells/
+Disallow: /grid_cells/
+Disallow: /grid_cells2/
+Disallow: /compare_view/
+Disallow: /col2_test/
+Disallow: /doc/
+Disallow: /tools/
 Disallow: /*.py$
 
 # Sitemap 位置
