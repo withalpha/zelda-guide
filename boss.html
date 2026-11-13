@@ -67,6 +67,18 @@
        Boss图鉴页面专属样式
     ══════════════════════════════════════ */
 
+    /* ── 页面引言 ── */
+    .section-tip {
+      background: rgba(201,162,39,0.04);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+
     /* ── 分类标签页 ── */
     .boss-tabs {
       display: flex; gap: 8px; flex-wrap: wrap;
@@ -439,6 +451,10 @@
     <a href="/">首页</a><span class="sep">›</span><span class="cur">Boss图鉴</span>
   </nav>
   <p class="page-updated" style="font-size:0.72rem;color:var(--text-muted);margin:8px 0 20px;text-align:right">最后更新：2026年6月</p>
+
+  <div class="section-tip">
+    <strong>Boss图鉴使用说明：</strong>这里收录了王国之泪里的主要 Boss，每个 Boss 都有独立的专题页，点卡片就能看完整打法、招式解析和掉落说明。野外最常见的强敌是人马，从红鬃（2000 血）到蓝鬃、白鬃，再到白银（5000 血），强度逐级递进，建议按顺序挑战；剧情 Boss 是幻影加侬，最终 Boss 是加侬多夫（三阶段）。打 Boss 之前先准备好强力武器和回复料理，上面四个分类标签可以按神殿 Boss、野外强敌、剧情 Boss、最终 Boss 筛选。打加侬多夫推荐带上大师之剑（对加侬时攻击力 60）。
+  </div>
 
   <!-- 概览统计 -->
   <div class="progress-section" style="margin-bottom:28px">
