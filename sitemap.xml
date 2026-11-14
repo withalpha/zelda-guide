@@ -46,7 +46,7 @@
   <!-- 重要攻略页面 - 中高优先级 -->
   <url>
     <loc>https://uppersteps.com/side-quest</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -88,7 +88,7 @@
   <!-- 专项攻略页面 -->
   <url>
     <loc>https://uppersteps.com/harry-tips</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
