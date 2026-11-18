@@ -70,8 +70,28 @@ function initDropdowns() {
     const menu    = dropdown.querySelector('.nav-dropdown-menu');
     if (!trigger || !menu) return;
 
-    // 点击触发项：第一次点击展开菜单；菜单已展开时再次点击，显式跳转到父级链接
+    // 桌面端：悬停展开菜单，点击父级直接跳转（不拦截）；移动端：点按展开/收起，再点跳转
+    // 注：两次点击跳转在真机上实测不生效，故桌面端改走悬停+直跳，不再依赖二次点击
+    let closeTimer = null;
+    dropdown.addEventListener('mouseenter', () => {
+      if (window.innerWidth <= 768) return;
+      if (closeTimer) { clearTimeout(closeTimer); closeTimer = null; }
+      document.querySelectorAll('.nav-dropdown.open').forEach(d => {
+        if (d !== dropdown) d.classList.remove('open');
+      });
+      positionMenu(trigger, menu);
+      dropdown.classList.add('open');
+    });
+    dropdown.addEventListener('mouseleave', () => {
+      if (window.innerWidth <= 768) return;
+      closeTimer = setTimeout(() => dropdown.classList.remove('open'), 150);
+    });
+
     trigger.addEventListener('click', (e) => {
+      // 桌面端：不拦截点击，直接跳转到父级链接
+      if (!isMobile()) {
+        return;
+      }
       e.stopPropagation();
 
       const isOpen = dropdown.classList.contains('open');
@@ -82,7 +102,7 @@ function initDropdowns() {
       });
 
       if (isOpen) {
-        // 菜单已展开：显式跳转到父级链接（不用默认行为：实测默认跳转在真机上会被吞掉）
+        // 菜单已展开：显式跳转到父级链接
         e.preventDefault();
         window.location.assign(trigger.getAttribute('href'));
         return;
@@ -90,10 +110,6 @@ function initDropdowns() {
 
       e.preventDefault();
       dropdown.classList.add('open');
-      // 桌面端：用 fixed 定位，计算位置
-      if (!isMobile()) {
-        positionMenu(trigger, menu);
-      }
     });
   });
 
