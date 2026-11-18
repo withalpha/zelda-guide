@@ -44,6 +44,30 @@
   <meta name="theme-color" content="#020814">
   <title>塞尔达传说王国之泪全攻略 | TotK完整攻略站</title>
   <link rel="stylesheet" href="style.css?v=12">
+  <!-- 站内搜索样式 (Day 8, 不动 style.css) -->
+  <style>
+  .site-search{position:relative;z-index:30;width:100%;max-width:560px;box-sizing:border-box;margin:22px auto 0;padding:0 16px;text-align:left;}
+  .site-search-form{display:flex;gap:8px;}
+  .site-search-input{flex:1;min-width:0;height:48px;padding:0 16px;font-size:16px;color:var(--text-primary,#e8e4d8);background:rgba(2,8,20,.72);border:1px solid var(--border-gold,rgba(201,162,39,.5));border-radius:999px;outline:none;-webkit-appearance:none;appearance:none;}
+  .site-search-input:focus{border-color:var(--gold,#c9a227);box-shadow:0 0 0 3px rgba(201,162,39,.25);}
+  .site-search-input::placeholder{color:var(--text-muted,#8a8fa3);}
+  .site-search-btn{flex:0 0 auto;height:48px;padding:0 20px;font-size:15px;font-weight:700;color:#0a0f1e;background:var(--gold,#c9a227);border:1px solid var(--gold,#c9a227);border-radius:999px;cursor:pointer;}
+  .site-search-btn:hover{filter:brightness(1.1);}
+  .site-search-chips{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin-top:12px;}
+  .site-search-chips-label{font-size:13px;color:var(--text-muted,#8a8fa3);}
+  .site-search-chip{padding:5px 12px;font-size:13px;color:var(--text-secondary,#c9c4b4);background:transparent;border:1px solid var(--border-gold,rgba(201,162,39,.4));border-radius:999px;cursor:pointer;}
+  .site-search-chip:hover{color:var(--gold,#c9a227);border-color:var(--gold,#c9a227);}
+  .site-search-results{position:fixed;z-index:9999;box-sizing:border-box;max-height:min(60vh,480px);overflow-y:auto;background:#0d1526;border:1px solid var(--border-gold,rgba(201,162,39,.5));border-radius:12px;box-shadow:0 16px 40px rgba(0,0,0,.55);text-align:left;}
+  .site-search-count{padding:10px 16px 4px;font-size:12px;color:var(--text-muted,#8a8fa3);}
+  .site-search-item{display:block;padding:10px 16px;text-decoration:none;border-top:1px solid rgba(201,162,39,.12);}
+  .site-search-item:hover,.site-search-item.active{background:rgba(201,162,39,.1);}
+  .site-search-item-title{font-size:15px;font-weight:700;line-height:1.5;color:var(--text-primary,#e8e4d8);}
+  .site-search-item-type{display:inline-block;margin-right:6px;padding:1px 7px;font-size:11px;font-weight:400;color:var(--gold,#c9a227);border:1px solid var(--border-gold,rgba(201,162,39,.5));border-radius:999px;vertical-align:1px;}
+  .site-search-item-summary{margin-top:3px;font-size:13px;line-height:1.5;color:var(--text-secondary,#c9c4b4);}
+  .site-search-item mark{color:var(--gold,#c9a227);background:transparent;}
+  .site-search-empty{padding:16px;font-size:14px;line-height:1.6;color:var(--text-secondary,#c9c4b4);}
+  @media (max-width:768px){.site-search{margin-top:18px;}.site-search-input{height:46px;}.site-search-btn{height:46px;}}
+  </style>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
   <link rel="apple-touch-icon" href="/favicon-180.png">
@@ -157,6 +181,23 @@
     </div>
 
     <p class="totk-tagline">Nintendo Switch · 全攻略指南</p>
+    <!-- ══ 站内搜索 (Day 8) ══ -->
+    <div class="site-search">
+      <div class="site-search-box">
+        <form class="site-search-form" role="search" action="#" onsubmit="return false;">
+          <input type="search" class="site-search-input" placeholder="搜攻略：神庙、武器、料理、坐标…" aria-label="站内搜索" autocomplete="off" enterkeyhint="search">
+          <button type="submit" class="site-search-btn" aria-label="搜索">搜索</button>
+        </form>
+        <div class="site-search-results" hidden></div>
+      </div>
+      <div class="site-search-chips">
+        <span class="site-search-chips-label">热门：</span>
+        <button type="button" class="site-search-chip" data-q="瘴气">瘴气</button>
+        <button type="button" class="site-search-chip" data-q="白银莱尼尔">白银莱尼尔</button>
+        <button type="button" class="site-search-chip" data-q="乌萨诸马">乌萨诸马</button>
+        <button type="button" class="site-search-chip" data-q="坐标">坐标</button>
+      </div>
+    </div>
   </div>
 
   <div class="totk-scroll-hint">
@@ -337,6 +378,7 @@
 </footer>
 
 <script src="main.js?v=12"></script>
+<script src="search.js?v=1"></script>
 </body>
 </html>
 
