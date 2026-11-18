@@ -70,7 +70,7 @@ function initDropdowns() {
     const menu    = dropdown.querySelector('.nav-dropdown-menu');
     if (!trigger || !menu) return;
 
-    // 点击触发项：第一次点击展开菜单；菜单已展开时再次点击，放行默认行为跳转到父级链接
+    // 点击触发项：第一次点击展开菜单；菜单已展开时再次点击，显式跳转到父级链接
     trigger.addEventListener('click', (e) => {
       e.stopPropagation();
 
@@ -82,7 +82,9 @@ function initDropdowns() {
       });
 
       if (isOpen) {
-        // 菜单已展开：不阻止默认行为，跳转到父级链接
+        // 菜单已展开：显式跳转到父级链接（不用默认行为：实测默认跳转在真机上会被吞掉）
+        e.preventDefault();
+        window.location.assign(trigger.getAttribute('href'));
         return;
       }
 
