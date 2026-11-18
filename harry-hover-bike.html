@@ -8,13 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#020814">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="马克兔飞行器极致调校与蓝图指南：两个风扇加一个操纵杆，45度不偏移调校工艺，9个左纳尼乌姆一键生成，地底探照与水晶快递两个神级用法。">
+  <meta name="description" content="马克兔飞行器极致调校与故障排查指南：两个风扇加一个操纵杆的极简结构，飞歪排查、爬升耗电实测、地底探照与水晶快递两个实战用法。">
   <meta name="keywords" content="王国之泪,马克兔,飞行器,蓝图,左纳乌,风扇,操纵杆">
   <meta property="og:site_name" content="王国之泪全攻略">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:title" content="马克兔飞行器极致调校与蓝图指南 · 哈里的终极秘籍 · 王国之泪">
-  <meta property="og:description" content="马克兔飞行器极致调校与蓝图指南：45度不偏移调校、9个左纳尼乌姆蓝图生成、地底探照与水晶快递。">
+  <meta property="og:description" content="马克兔飞行器极致调校与故障排查指南：飞歪排查、爬升耗电实测、地底探照与水晶快递。">
   <meta property="og:image" content="https://uppersteps.com/images/desktop/ui.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -22,7 +22,7 @@
   <link rel="canonical" href="https://uppersteps.com/harry-hover-bike">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="马克兔飞行器极致调校与蓝图指南 · 哈里的终极秘籍 · 王国之泪">
-  <meta name="twitter:description" content="马克兔飞行器极致调校与蓝图指南：45度不偏移调校、9个左纳尼乌姆蓝图生成、地底探照与水晶快递。">
+  <meta name="twitter:description" content="马克兔飞行器极致调校与故障排查指南：飞歪排查、爬升耗电实测、地底探照与水晶快递。">
   <meta name="google-site-verification" content="fODg6Pzs-XG-Lwe8510pkLAOSTUjkV1iyWn4U0Dgj-s">
   <meta name="msvalidate.01" content="52B659FD637CE3F4640DB7323AAB6C27">
   <!-- Google tag (gtag.js) -->
@@ -44,11 +44,11 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "马克兔飞行器极致调校与蓝图指南 · 哈里的终极秘籍 · 王国之泪",
-    "description": "马克兔飞行器极致调校与蓝图指南：45度不偏移调校、9个左纳尼乌姆蓝图生成、地底探照与水晶快递。",
+    "description": "马克兔飞行器极致调校与故障排查指南：飞歪排查、爬升耗电实测、地底探照与水晶快递。",
     "url": "https://uppersteps.com/harry-hover-bike",
     "inLanguage": "zh-CN",
     "datePublished": "2026-10-30",
-    "dateModified": "2026-10-30",
+    "dateModified": "2026-11-18",
     "author": { "@type": "Person", "name": "zelda-guide" },
     "publisher": { "@type": "Organization", "name": "王国之泪全攻略", "url": "https://uppersteps.com/" },
     "breadcrumb": {
@@ -251,6 +251,46 @@
     .bnav-series a, .bnav-series span.bnav-dis { flex: none; width: 100%; }
   }
 </style>
+<style>
+    .toc-box {
+      background: rgba(201,162,39,0.06);
+      border: 1px solid rgba(201,162,39,0.25);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin: 20px 0 26px;
+    }
+    .toc-box .toc-title { font-weight: 700; color: #c9a227; margin-bottom: 10px; }
+    .toc-box ul { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: 24px; }
+    .toc-box ul li { padding: 4px 0; font-size: 0.87rem; }
+    .toc-box ul li::before { content: none; }
+    .toc-box ul li a { color: rgba(255,255,255,0.8); text-decoration: none; }
+    .toc-box ul li a:hover { color: #c9a227; }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 20px;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .data-table th {
+      background: rgba(201,162,39,0.15);
+      color: #c9a227;
+      padding: 10px 12px;
+      text-align: left;
+      border: 1px solid rgba(201,162,39,0.25);
+    }
+    .data-table td {
+      padding: 10px 12px;
+      border: 1px solid rgba(201,162,39,0.15);
+      color: rgba(255,255,255,0.82);
+      vertical-align: top;
+    }
+    .data-table tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+    @media (max-width: 640px) {
+      .toc-box ul { columns: 1; }
+      .data-table { font-size: 0.8rem; }
+    }
+  </style>
 </head>
 <body>
 <nav class="navbar">
@@ -267,7 +307,7 @@
       <li><a href="cooking">料理合成</a></li>
       <li><a href="clothes">套装获取</a></li>
       <li><a href="boss">Boss图鉴</a></li>
-      <li class="nav-dropdown"><a href="#" onclick="return false">物品收集</a>
+      <li class="nav-dropdown"><a href="mauyu-lost">物品收集</a>
         <ul class="nav-dropdown-menu">
           <li><a href="mauyu-lost">魔犹伊的遗失物</a></li>
           <li><a href="sage-will">贤者的遗志</a></li>
@@ -275,7 +315,7 @@
         </ul>
       </li>
       <li><a href="harry-tips" class="active">哈里的终极秘籍</a></li>
-<li class="nav-dropdown"><a href="#" onclick="return false">关于我们</a><ul class="nav-dropdown-menu"><li><a href="about">关于我们</a></li><li><a href="contact">联系我们</a></li><li><a href="faq">常见问题</a></li><li><a href="sitemap-page">网站地图</a></li><li><a href="privacy">隐私政策</a></li></ul></li>
+<li class="nav-dropdown"><a href="about">关于我们</a><ul class="nav-dropdown-menu"><li><a href="about">关于我们</a></li><li><a href="contact">联系我们</a></li><li><a href="faq">常见问题</a></li><li><a href="sitemap-page">网站地图</a></li><li><a href="privacy">隐私政策</a></li></ul></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
   </div>
@@ -303,35 +343,88 @@
       <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-top:8px">林克驾驶马克兔悬浮摩托（游戏实机截图，图片来源：PC Invasion）</p>
     </div>
     <p>被全球玩家誉为《王国之泪》最伟大的工程学载具发明，以仅需两个风扇和一个操纵杆的极简结构，实现高速垂直爬升、平稳转向与全地形通达。</p>
-    <h2>一、核心材料清单与制作成本</h2>
-    <ul>
-      <li><strong>零件配置：</strong>左纳乌操纵杆 × 1，左纳乌风扇机 × 2。</li>
-      <li><strong>蓝图成本：</strong>若现场无实物零件，调用蓝图生成仅需 9 个左纳尼乌姆；若自带胶囊零件，组装耗费为 0。</li>
-      <li><strong>能耗表现：</strong>仅两台风扇基础耗电，开荒期极具性价比。</li>
-    </ul>
-    <h2>二、完美不偏移调校工艺（核心难点突破）</h2>
-    <p>很多玩家制作的飞天摩托存在向左或向右跑偏、下坠失衡的问题，关键在于操纵杆与两个风扇的角度及中轴对称度：</p>
+    <div class="toc-box"><div class="toc-title">📑 本篇目录</div><ul><li><a href="#s1">一、这篇只讲什么：调校与排查</a></li><li><a href="#s2">二、调校：从“能飞”到“飞得直”</a></li><li><a href="#s3">三、爬升与耗电：电池够飞多远</a></li><li><a href="#s4">四、飞歪了怎么办：故障排查步骤</a></li><li><a href="#s5">五、和其他飞行造物比：什么时候骑它，什么时候别骑</a></li><li><a href="#s6">六、实战用法：探照与水晶快递</a></li><li><a href="#s7">常见问题</a></li></ul></div>
+    <h2 id="s1">一、这篇只讲什么：调校与排查</h2>
+    <p>零件就三件：左纳乌操纵杆 1 个，左纳乌风扇机 2 个。拼法、角度、蓝图成本已经写在总论篇<a href="zonai-builds">《左纳乌装置实用造物指南》</a>里，那篇是配法大全，这篇不再重复。这篇只讲拼好之后的事：怎么把一辆“能离地”的车调到“松手也能飞直线”，电量怎么算，飞歪了按什么顺序查。</p>
+    <p>分工说清楚，是为了省你的时间。拼车时遇到“风扇该朝哪边、倾角多少”这类问题，直接去看总论篇；车拼好了飞不直、电不够用、不知道该骑车还是该滑翔，再回来看这篇。两篇数字只留在一处，以后改了也不容易打架。</p>
+    <div class="tip-box"><div class="tip-title">⭐ 本篇约定</div>本篇默认你手里已经有一辆能离地的飞行摩托。下面所有测试都按“低空先试、通过再高飞”的顺序写，别跳过低空测试直接往天上冲。</div>
+    <h2 id="s2">二、调校：从“能飞”到“飞得直”</h2>
+    <p>大多数飞歪不是运气问题，是左右不对称。两个风扇只要有一点点不在一条直线上，或者操纵杆偏离中轴线半格，车就会自己往一边跑。调校的目标就一个：双手松开方向摇杆，车自己保持直线爬升。达不到这个标准，别急着收藏蓝图，先按下面三步查。</p>
+    <h3>2.1 先找平，再谈直</h3>
+    <p>把两个风扇平面朝下，放在平整地面上拼。地面不平，拼出来的车天生就是歪的。手头没有平地时，神庙门口的平整台阶也可以当水平基准用。拼的时候别图快，风扇放稳了再粘操纵杆，粘歪了后面全白费。</p>
+    <h3>2.2 操纵杆必须落在中轴线上</h3>
+    <p>用究极手抓取操纵杆，把它的底座两端分别吸附在前风扇边缘与后风扇边缘的正中央连接点，操纵把手正对前方。操纵杆是整辆车的重心线，它偏一格，车就偏一路。贴完之后从正前方和正上方各看一眼：前后风扇、操纵杆应当在同一条直线上，左右对称，肉眼能看出歪，就一定飞不直。</p>
+    <h3>2.3 松手测试：最诚实的验收</h3>
     <ol>
-      <li><strong>基准面找平：</strong>将两个风扇平面朝下放置在平整地面上（或利用神庙平整阶梯作为水平基准）。</li>
-      <li><strong>前后风扇角度：</strong>
-        <ul>
-          <li>前风扇：向后倾斜45度（提供向上的升力兼顾前进推力）；</li>
-          <li>后风扇：同样向后倾斜45度，与前风扇保持严密在一条直线上。</li>
-        </ul>
-      </li>
-      <li><strong>操纵杆中轴对齐：</strong>使用究极手抓取操纵杆，将其底座两端分别吸附在前风扇边缘与后风扇边缘的正中央连接点，操纵把手正对前方。</li>
-      <li><strong>校验测试与保存：</strong>
-        <ul>
-          <li>启动上机后双手松开方向摇杆，观察飞行器是否自动保持平稳直线爬升；</li>
-          <li>若无任何侧向漂移，立刻打开"蓝图"功能，将其加入"喜好（收藏夹）"，从此一键随叫随到！</li>
-        </ul>
-      </li>
+      <li><strong>低空起飞：</strong>先飞到离地一人多高，别急着爬高。</li>
+      <li><strong>双手松开方向摇杆：</strong>看三件事——是不是直线爬升、有没有左右漂移、有没有原地打转。</li>
+      <li><strong>通过再收藏：</strong>三项全过，立刻打开蓝图功能，把它加入喜好收藏夹，从此一键随叫随到。</li>
+      <li><strong>不过就去查：</strong>任何一项不过，别凑合飞，按第四节的表逐项排查，每次只改一处，改完重新低空测试。</li>
     </ol>
-    <h2>三、实战神级衍生技巧</h2>
+    <div class="warn-box">⚠️ <strong>别在第一次试飞就往高处冲。</strong>调歪的车飞得越高，摔得越远。低空测三遍都直，再去跑长途。电量见底时车会直接下坠，试飞前确认电池至少剩一半。</div>
+    <h2 id="s3">三、爬升与耗电：电池够飞多远</h2>
+    <p>飞行摩托只有两台风扇在耗电，结构越简单越省电，这是它最大的优点。但“省电”是相对的：能飞多久不看风扇数量，看你的能量电池有多大。操纵杆一启动，就会同时激活连着的所有装置，风扇转着，电表就走着。装置越多，电掉得越快，两台风扇已经是飞行造物里最省的配置。</p>
+    <div class="stat-box">
+      <div class="stat-item"><span class="stat-val">1 格</span><span class="stat-lbl">初始电池（3 段能量井）</span></div>
+      <div class="stat-item"><span class="stat-val">8 格</span><span class="stat-lbl">绿色满格（24 段能量井）</span></div>
+      <div class="stat-item"><span class="stat-val">48 段</span><span class="stat-lbl">蓝色翻倍上限</span></div>
+      <div class="stat-item"><span class="stat-val">100 个</span><span class="stat-lbl">结晶电荷 = 1 段能量井</span></div>
+    </div>
+    <p>电池的升级口径是固定的：每 1 段能量井要 100 个结晶电荷，结晶电荷用左纳尼乌姆在锻造构装处换，1 个结晶电荷要 3 个左纳尼乌姆。开局自带 3 段，升满绿色 8 格还要再买 21 段，一共 2100 个结晶电荷。绿色满格之后继续加，段位会变蓝，一段蓝电能当两段用，顶到 48 段一共要 4500 个结晶电荷。升级地点与完整路线见本站<a href="harry-battery-fairy">《地底电池扩充与大妖精》</a>。</p>
+    <h3>3.1 一格电能飞多久</h3>
+    <p>先给结论：初始 1 格电池，一直按着飞，大约能飞 10 到 20 秒。这是多家攻略的实测口径，Gameranx 给的是 10 到 20 秒，Hyrule Archive 给的是 15 到 20 秒，数字是范围不是秒表，负重和操作不同会有出入。电池升到 2 格满电（10 段）时，同一口径大约能飞 60 到 80 秒，跑大多数跨岛、跨图的路程已经够了。</p>
+    <p>这个时间按“全程按着操纵杆”算。风扇只要转着就在耗电，松开方向摇杆不会断电，想省电就落地、松手，让电池自己回电。想自己测准，办法很简单：平地起飞，心里默数到电池见底，记下自己这格电的秒数。以后每次出远门，先按这个秒数估路程，估不准就多带电荷，别赌。</p>
+    <h3>3.2 爬升的正确姿势</h3>
+    <p>爬升是最费电的飞法。正确姿势是爬一段、平飞一段：推满摇杆爬到目标高度附近，松开摇杆让车平飞过去，电量见底之前找落点。一直顶满摇杆爬升，电表掉得最快，爬到一半没电，只能原地下坠。长途飞行的规矩是：电量剩三分之一就找落点，别等到红格再找，红格时下面是水是崖都由不得你。</p>
+    <p>能量电池耗尽后，要等它完全回满才能再用，耗尽前吃左纳乌电荷可以续上。平时养成习惯：落地就松手，让电池自己回电，别按着操纵杆在地上空转。</p>
+    <h3>3.3 续航三件套：电荷、套装、备用电池</h3>
     <ul>
-      <li><strong>盲探地下世界（光亮大车灯）：</strong>朝机身最前方投掷一颗巨大光亮花的种子，命中后发芽并附着，马克兔立刻变为强光探照直升机，无需点亮沿途树根即可在黑暗地底畅通无阻。投掷命中可能启动载具，装灯时注意站位。</li>
-      <li><strong>神庙绿色水晶快递：</strong>许多野外劳鲁神庙需要搬运大型绿色水晶，直接用究极手把水晶粘在马克兔底座正中间，即可轻松吊装直飞神庙受光点。</li>
+      <li><strong>左纳乌电荷：</strong>吃 1 个，恢复 1 段能量井的电量。长途必带，相当于随身油箱。</li>
+      <li><strong>大左纳乌电荷：</strong>吃 1 个直接回满全部电量，并且接下来一段时间内完全不耗电，相当于 3 段能量井的量。留着过海、爬高塔这种“中间没地方落”的路再用。</li>
+      <li><strong>左纳乌套装：</strong>单件自带“能量提升”，减少装置耗电；三件都升到两星以上，套装效果“能量回复提升”让电池回电速度翻倍。回电快，落地等的时间就短。</li>
+      <li><strong>挂一块备用电池：</strong>在车上贴一块左纳乌电池或大电池，先烧装置里的电，烧完再烧自己的。代价是多一件零件和一点重量，短途没必要，长途值得。</li>
     </ul>
+    <p>电荷的获取与存放见本站<a href="zonai-charge-guide">《左纳乌电荷指南》</a>；电池扩充的完整路线见<a href="harry-battery-fairy">《地底电池扩充与大妖精》</a>。</p>
+    <h2 id="s4">四、飞歪了怎么办：故障排查步骤</h2>
+    <p>按症状查表，别凭感觉乱拆。每次只改一处，改完回第二节做一次低空松手测试，通过了再往下改。一次改两处，好了也不知道是哪处好的，下次还歪。</p>
+    <table class="data-table">
+      <tr><th>症状</th><th>先查什么</th><th>修法</th></tr>
+      <tr><td>往左偏 / 往右偏</td><td>操纵杆是不是落在中轴线上；两只风扇的倾角是否一致</td><td>拆下操纵杆，重新贴到前后风扇正中央；逐只检查风扇朝向，左右要镜像一致</td></tr>
+      <tr><td>原地打转</td><td>是不是有一只风扇装反了</td><td>看两只风扇的出风方向，必须朝同一侧吹；装反的那只拆下来重装</td></tr>
+      <tr><td>爬不起来，越飞越低</td><td>车上是不是挂了重物；风扇倾角是不是太平</td><td>先卸货再试；倾角问题回总论篇按配法重对</td></tr>
+      <tr><td>一起飞就翻</td><td>操纵杆是不是装歪了；水晶、光亮花种子是不是粘偏了</td><td>落地重贴操纵杆；外挂物一律粘底座正中间</td></tr>
+      <tr><td>飞着飞着突然掉下来</td><td>电量是不是见底了</td><td>落地等电池回满再飞；长途带足左纳乌电荷；剩三分之一电量就找落点</td></tr>
+      <tr><td>飞得好好的突然散架</td><td>附近是不是有人马</td><td>人马咆哮会震碎附近的左纳乌装置，别在人马附近玩车，见总论篇</td></tr>
+    </table>
+    <p>查完一轮还是歪，别急着拆第三遍。先换个地方试：斜坡上拼的车，测出来天生就是歪的。回平地重测一次，确认是车的问题还是场地的问题，再动手。</p>
+    <h2 id="s5">五、和其他飞行造物比：什么时候骑它，什么时候别骑</h2>
+    <p>飞行摩托不是唯一的飞行方案，它只是综合起来最顺手的一个。下表按装置本身的说明比：风扇靠螺旋桨出风产生推力，气球靠热空气上升、越热升得越快，滑翔翼靠气流滑翔、站在中间平衡能飞得更远，火箭推力极大但很快烧完，操纵杆能同时启动连着的所有装置。</p>
+    <table class="data-table">
+      <tr><th>造物</th><th>怎么飞</th><th>耗电</th><th>适合</th><th>短板</th></tr>
+      <tr><td><strong>飞行摩托</strong></td><td>两台风扇加操纵杆，想去哪去哪，能垂直爬升</td><td>中等，只有两台风扇在耗电</td><td>点对点跑图、地底长途、空岛之间</td><td>怕没电、怕撞、载重有限</td></tr>
+      <tr><td><strong>热气球</strong></td><td>气球加火源，越热升得越快</td><td>火源持续耗电</td><td>定点升空、跨过悬崖</td><td>只能直上直下，基本不能转向</td></tr>
+      <tr><td><strong>滑翔翼</strong></td><td>借风滑翔，不用动力</td><td>不耗电</td><td>从高处往低处去的长距离滑翔</td><td>自己飞不起来，不能爬升</td></tr>
+      <tr><td><strong>风扇翼飞机</strong></td><td>翼加风扇加操纵杆，风扇推、翼托着</td><td>偏高，风扇数量多</td><td>超长距离跨海、跨图</td><td>零件多，拼起来麻烦</td></tr>
+      <tr><td><strong>风扇平台</strong></td><td>风扇推着平台走</td><td>低</td><td>渡河、运货、贴地代步</td><td>飞不起来</td></tr>
+      <tr><td><strong>火箭助推</strong></td><td>火箭爆发推力</td><td>一次性，烧完就没了</td><td>应急爬升、冲高处</td><td>不能当主力交通工具</td></tr>
+    </table>
+    <div class="tip-box"><div class="tip-title">⭐ 哈里的判断</div><p>我的判断很简单：要赶路、要上天、要下地底，默认骑摩托。只有三件事别骑——路程短到走路两分钟能到，骑车拼车的时间比走路还长；要运的东西超过一辆车的载重，硬挂只会越飞越歪；目的地头顶就是人马，车再好也经不起一声吼。滑翔翼留给“从高处往低处去”的顺路，气球留给“只想上去看看”的定点，火箭是救急不是交通工具。选造物的标准不是哪个更强，是哪个刚好够用。</p></div>
+    <p>滑翔翼的玩法见本站<a href="paraglider-guide">《滑翔伞指南》</a>、空岛路线见<a href="sky-guide">《空岛指南》</a>，地底长途的落点与光亮规划见<a href="depths-guide">《地底世界生存与探索完全指南》</a>。</p>
+    <h2 id="s6">六、实战用法：探照与水晶快递</h2>
+    <h3>6.1 盲探地底：把车变成探照灯</h3>
+    <p>朝机身最前方投掷一颗巨大光亮花的种子，命中后发芽并附着，马克兔立刻变为强光探照直升机，无需点亮沿途树根即可在黑暗地底畅通无阻。别用左纳乌灯代替，灯要耗电，种子不耗电。投掷命中可能启动载具，装灯时注意站位，别站在车头正前方。</p>
+    <h3>6.2 神庙绿色水晶快递</h3>
+    <p>许多野外神庙需要搬运大型绿色水晶，直接用究极手把水晶粘在马克兔底座正中间，即可轻松吊装直飞神庙受光点。粘偏了车会往一边歪，起飞前先低空试一下，歪了按第四节的表查，调直了再上路。重货起飞更耗电，出发前确认电池够飞到目的地。</p>
+    <h2 id="s7">常见问题</h2>
+    <ul>
+      <li><strong>一格电到底能飞多远？</strong>初始 1 格大约 10 到 20 秒，2 格满电大约 60 到 80 秒，都是攻略实测口径，算法见第三节。</li>
+      <li><strong>车总往左偏，怎么修？</strong>先查操纵杆是不是在中轴线上，再查两只风扇的倾角是不是一致，按第四节的表逐项排查，每次只改一处。</li>
+      <li><strong>电量耗尽会直接掉下来吗？</strong>会。车会直接下坠，所以电量剩三分之一就找落点，别等到红格再找。</li>
+      <li><strong>蓝图多少钱、风扇倾角多少？</strong>配法数字都在总论篇<a href="zonai-builds">《左纳乌装置实用造物指南》</a>里，本篇不重复，两篇以那篇为准。</li>
+      <li><strong>气球和摩托选哪个？</strong>只想上去看看就选气球，要赶路、要转向、要爬升就骑摩托，对比见第五节。</li>
+      <li><strong>电池怎么升？</strong>结晶电荷换能量井，完整路线见本站<a href="harry-battery-fairy">《地底电池扩充与大妖精》</a>。</li>
+    </ul>
+
     <div class="bnav">
   <div class="bnav-series"><a href="harry-master-sword">← 上一篇：白龙寻踪与大师之剑</a>
     <a href="harry-tips">返回秘籍专栏</a>
@@ -357,5 +450,6 @@
   </div>
 </footer>
 <script src="main.js?v=10"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"16df8646296b4f23a5b0917c5a69a030","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>

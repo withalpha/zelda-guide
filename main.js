@@ -70,9 +70,8 @@ function initDropdowns() {
     const menu    = dropdown.querySelector('.nav-dropdown-menu');
     if (!trigger || !menu) return;
 
-    // 点击触发项：切换 open 状态
+    // 点击触发项：第一次点击展开菜单；菜单已展开时再次点击，放行默认行为跳转到父级链接
     trigger.addEventListener('click', (e) => {
-      e.preventDefault();
       e.stopPropagation();
 
       const isOpen = dropdown.classList.contains('open');
@@ -82,12 +81,16 @@ function initDropdowns() {
         d.classList.remove('open');
       });
 
-      if (!isOpen) {
-        dropdown.classList.add('open');
-        // 桌面端：用 fixed 定位，计算位置
-        if (!isMobile()) {
-          positionMenu(trigger, menu);
-        }
+      if (isOpen) {
+        // 菜单已展开：不阻止默认行为，跳转到父级链接
+        return;
+      }
+
+      e.preventDefault();
+      dropdown.classList.add('open');
+      // 桌面端：用 fixed 定位，计算位置
+      if (!isMobile()) {
+        positionMenu(trigger, menu);
       }
     });
   });
