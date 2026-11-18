@@ -813,9 +813,15 @@ function scrollToTop() {
   }
 
   /* ─── 6. 数字滚动计数器 ─── */
+  /* 2026-11-20 Day 7：.progress-stat-val 不再参与滚动动画。进度区里的
+     总数（树根 120、神庙 152、地面 120/天空 32 等）是静态 HTML 写死的
+     最终数，动画会把它们从 0 递增 1.2 秒，爬虫/截图在动画中途抓到的
+     是中间数（36/85/75）。已激活计数仍由各页脚本直接写最终值，
+     不依赖这里的动画。首页 hero 数字（.totk-stat-num /
+     .hero-stat-number）保留动画。 */
   function initCounters() {
     var nums = document.querySelectorAll(
-      '.totk-stat-num, .hero-stat-number, .progress-stat-val'
+      '.totk-stat-num, .hero-stat-number'
     );
     var counterObs = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
