@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -53,7 +53,7 @@
     "url": "https://uppersteps.com/cooking",
     "inLanguage": "zh-CN",
     "datePublished": "2025-06-01",
-    "dateModified": "2026-06-22",
+    "dateModified": "2026-11-20",
     "author": { "@type": "Person", "name": "zelda-guide" },
     "publisher": { "@type": "Organization", "name": "王国之泪全攻略", "url": "https://uppersteps.com/" },
     "breadcrumb": {
@@ -147,7 +147,6 @@
       transition: all 0.28s cubic-bezier(0.4,0,0.2,1);
       cursor: pointer;
       position: relative;
-      aspect-ratio: 1 / 1;
     }
     .dish-card::before {
       content: ''; position: absolute; inset: 0; border-radius: 10px;
@@ -163,7 +162,7 @@
 
     /* 图片区（占满整个卡片） */
     .dish-img-wrap {
-      position: absolute; inset: 0;
+      position: relative; aspect-ratio: 1 / 1;
       overflow: hidden;
       background:
         radial-gradient(ellipse 70% 70% at 50% 45%,
@@ -271,7 +270,35 @@
     @media (max-width: 400px) {
       .dish-grid { grid-template-columns: repeat(3, 1fr); }
     }
-  </style>
+  
+    /* ── 搜索框（Day 11） ── */
+    #dishSearch {
+      flex: 1; padding: 10px 14px; border-radius: 10px;
+      border: 1px solid rgba(201,162,39,0.35); background: rgba(0,0,0,0.25);
+      color: var(--text-main); font-size: 0.95rem; outline: none; font-family: inherit;
+    }
+    #dishSearch:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,162,39,0.18); }
+    #dishSearch::placeholder { color: var(--text-muted); }
+    .search-count { font-size: 0.8rem; color: var(--gold); white-space: nowrap; }
+
+    /* ── 卡片菜名 + 效果标签（Day 11） ── */
+    .dish-meta { padding: 7px 9px 9px; }
+    .dish-name { font-size: 13px; font-weight: 700; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .dish-eff { display: inline-block; margin-top: 4px; font-size: 11px; color: var(--gold); border: 1px solid rgba(201,162,39,0.35); border-radius: 20px; padding: 1px 8px; }
+
+    /* ── 最优特效食谱推荐区（Day 11） ── */
+    .rec-zone { margin: 6px 0 26px; }
+    .rec-zone h2 { font-size: 1.15rem; color: var(--gold); margin: 0 0 6px; }
+    .rec-zone .rec-intro { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7; margin: 0 0 12px; }
+    .rec-table-wrap { overflow-x: auto; border: 1px solid rgba(201,162,39,0.25); border-radius: 10px; }
+    .rec-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 640px; }
+    .rec-table th { background: rgba(201,162,39,0.12); color: var(--gold); text-align: left; padding: 9px 10px; white-space: nowrap; }
+    .rec-table td { padding: 8px 10px; border-top: 1px solid rgba(201,162,39,0.15); color: var(--text-main); vertical-align: top; line-height: 1.55; }
+    .rec-table tr:hover td { background: rgba(201,162,39,0.05); }
+    .rec-dish { color: var(--gold); font-weight: 700; cursor: pointer; white-space: nowrap; }
+    .rec-dish:hover { text-decoration: underline; }
+    .rec-note { font-size: 0.8rem; color: var(--text-muted); line-height: 1.7; margin: 10px 0 0; }
+</style>
 <style>
   .bnav { margin: 36px 0 8px; max-width: 860px; margin-left: auto; margin-right: auto; }
   .bnav-series { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
@@ -329,7 +356,7 @@
   <nav class="breadcrumb">
     <a href="/">首页</a><span class="sep">›</span><span class="cur">料理图鉴</span>
   </nav>
-  <p class="page-updated" style="font-size:0.72rem;color:var(--text-muted);margin:8px 0 20px;text-align:right">最后更新：2026年6月</p>
+  <p class="page-updated" style="font-size:0.72rem;color:var(--text-muted);margin:8px 0 20px;text-align:right">最后更新：2026年11月20日</p>
 
   <!-- 统计栏 -->
   <div class="cook-stats">
@@ -342,6 +369,53 @@
     <strong>烹饪基础：</strong>在篝火旁按 <kbd style="background:rgba(201,162,39,0.15);border:1px solid var(--border-gold);padding:0 5px;border-radius:3px;font-size:0.8em">A</kbd> 键打开锅，放入 1~5 种食材即可烹饪。同类效果食材叠加效果更强，混合不同效果的食材会互相抵消。血月之夜 23:30 起做料理必定大成功（暴击），效果翻倍。点击卡片可查看详情。
   </div>
 
+  <!-- ══ 最优特效食谱推荐（Day 11 新增）：33 道数据齐全的食谱 ══ -->
+  <div class="rec-zone" id="recZone">
+    <h2>🍳 最优特效食谱推荐：照着做就行</h2>
+    <p class="rec-intro">下面 33 道是开荒和打 Boss 最常用的特效料理，效果等级、持续时间和回血量全部算好写明，不用再一张张点开卡片猜。算法按本站<a href="cooking-mechanics">《料理机制完全指南》</a>实测表：攻击／防御每颗食材加 0:50，耐寒／耐热／防电加 2:30，潜行／发光加 2:00，速度加 1:00，抗瘴加 1:00；回血＝食材回血之和 ×2；龙的犄角把时长固定为 30:00 并额外加 3.75 颗心。点菜名可以直接打开这道菜的详情卡片。</p>
+    <div class="rec-table-wrap">
+      <table class="rec-table">
+        <thead><tr><th>菜名</th><th>效果</th><th>回血</th><th>食材</th></tr></thead>
+        <tbody>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(1)">力量烤蘑菇串</span></td><td>攻击提升 3级 · 3:20</td><td>4颗心</td><td>利刃蘑菇×4</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(47)">力量炖水果</span></td><td>攻击提升 3级 · 3:20</td><td>4颗心</td><td>力量香蕉×4</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(47)">力量炖水果（龙角长效）</span></td><td>攻击提升 3级 · 30:00</td><td>7.75颗心</td><td>力量香蕉×4＋龙的犄角×1</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(5)">力量烤鱼（龙角长效）</span></td><td>攻击提升 3级 · 30:00</td><td>9.75颗心</td><td>力量鲤鱼×3＋龙的犄角×1</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(1)">铁甲烤蘑菇串</span></td><td>防御提升 3级 · 3:20</td><td>4颗心</td><td>铁甲蘑菇×4</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(47)">铁甲炖水果</span></td><td>防御提升 3级 · 3:20</td><td>4颗心</td><td>铠甲南瓜×4</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(5)">铁甲烤鱼（龙角长效）</span></td><td>防御提升 3级 · 30:00</td><td>9.75颗心</td><td>铁甲鲤鱼×3＋龙的犄角×1</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(1)">暖暖烤蘑菇串</span></td><td>耐寒 2级 · 12:30</td><td>5颗心</td><td>暖暖蘑菇×5</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(47)">暖暖炖水果</span></td><td>耐寒 2级 · 12:30</td><td>5颗心</td><td>暖暖草果×5</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(5)">暖暖烤鱼</span></td><td>耐寒 2级 · 12:30</td><td>8颗心</td><td>暖鳟×3＋暖暖草果×2</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(1)">冰冷烤蘑菇串</span></td><td>耐热 2级 · 12:30</td><td>5颗心</td><td>冰冷蘑菇×5</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(47)">冰冷炖水果</span></td><td>耐热 2级 · 12:30</td><td>5颗心</td><td>冰镇蜜瓜×5</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(5)">冰冷烤鱼</span></td><td>耐热 2级 · 12:30</td><td>8颗心</td><td>冷鳟×3＋冰冷蘑菇×2</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(1)">酥麻烤蘑菇串</span></td><td>防电 3级 · 12:30</td><td>5颗心</td><td>酥麻蘑菇×5</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(47)">酥麻炖水果</span></td><td>防电 3级 · 12:30</td><td>5颗心</td><td>伏特果×5</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(5)">酥麻烤鱼</span></td><td>防电 3级 · 12:30</td><td>8颗心</td><td>伏特鳟×3＋酥麻蘑菇×2</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(1)">潜行烤蘑菇串</span></td><td>潜行 3级 · 10:00</td><td>5颗心</td><td>潜行蘑菇×5</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(5)">潜行烤鱼</span></td><td>潜行 3级 · 10:00</td><td>8颗心</td><td>潜行鳟×3＋潜行蘑菇×2</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(11)">潜行蒸蘑菇</span></td><td>潜行 3级 · 10:00</td><td>2颗心</td><td>静谧公主×3＋潜行蘑菇×2</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(1)">速速烤蘑菇串</span></td><td>速度提升 3级 · 5:00</td><td>5颗心</td><td>疾行蘑菇×5</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(47)">速速炖水果</span></td><td>速度提升 3级 · 5:00</td><td>5颗心</td><td>速速莲蓬×5</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(11)">速速蒸蘑菇</span></td><td>速度提升 3级 · 5:00</td><td>5颗心</td><td>速速胡萝卜×3＋疾行蘑菇×2</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(1)">发光烤蘑菇串</span></td><td>发光 3级 · 10:00</td><td>5颗心</td><td>光亮蘑菇×5</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(5)">发光烤鱼</span></td><td>发光 3级 · 10:00</td><td>8颗心</td><td>荧光洞穴鱼×3＋光亮蘑菇×2</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(16)">生命炒野菜</span></td><td>回满红心＋25颗黄心</td><td>回满＋25黄心</td><td>大生命萝卜×5</td></tr>
+          <tr><td>向阳蔬菜粥</td><td>修3颗瘴气心</td><td>3颗心</td><td>向阳草×1＋海拉鲁米×1＋鲜奶×1</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(16)">向阳炒野菜</span></td><td>修15颗瘴气心</td><td>不回血</td><td>向阳草×5</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(16)">耐力炒野菜</span></td><td>＋2圈额外精力</td><td>20颗心</td><td>耐力胡萝卜×5</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(142)">魔人咖喱饭</span></td><td>抗瘴 3级 · 3:00</td><td>2颗心</td><td>黑暗团块×3＋海拉鲁米×1＋戈隆香料×1</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(1)">暖暖烤蘑菇串（龙角长效）</span></td><td>耐寒 2级 · 30:00</td><td>7.75颗心</td><td>暖暖蘑菇×4＋龙的犄角×1</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(1)">冰冷烤蘑菇串（龙角长效）</span></td><td>耐热 2级 · 30:00</td><td>7.75颗心</td><td>冰冷蘑菇×4＋龙的犄角×1</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(1)">潜行烤蘑菇串（龙角长效）</span></td><td>潜行 2级 · 30:00</td><td>7.75颗心</td><td>潜行蘑菇×4＋龙的犄角×1</td></tr>
+          <tr><td><span class="rec-dish" onclick="openDishByNo(1)">速速烤蘑菇串（龙角长效）</span></td><td>速度提升 3级 · 30:00</td><td>7.75颗心</td><td>疾行蘑菇×4＋龙的犄角×1</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="rec-note">注：龙的犄角指火龙、冰龙、雷龙、白龙任意一种的犄角；龙的鳞片 1:30、爪子 3:30、獠牙 10:30，时长不够 30 分钟时可用它们凑。向阳蔬菜粥不在下方 228 道图鉴里（图鉴只收了野菜牛奶粥），但配方经实测有效。不同效果的食材不要混进同一锅，会互相抵消。</p>
+  </div>
+
   <!-- 分类筛选 -->
   <div class="cat-bar" id="catBar">
     <button class="cat-btn active" data-cat="all"><span class="cat-em">🍽️</span>全部</button>
@@ -352,6 +426,12 @@
     <button class="cat-btn" data-cat="烤食"><span class="cat-em">🔥</span>烤食</button>
     <button class="cat-btn" data-cat="冷冻"><span class="cat-em">❄️</span>冷冻食品</button>
     <button class="cat-btn" data-cat="药水"><span class="cat-em">🧪</span>药水</button>
+  </div>
+
+  <!-- 搜索：按菜名 / 效果 / 食材筛（Day 11 新增） -->
+  <div class="search-row">
+    <input id="dishSearch" type="search" placeholder="搜菜名、效果或食材，例如：力量、潜行、暖暖蘑菇…" autocomplete="off" aria-label="搜索料理">
+    <span class="search-count" id="searchCount"></span>
   </div>
 
   <!-- 料理内容区 -->
@@ -390,6 +470,7 @@
       <div class="modal-section">
         <div class="modal-h">❤️ 回血</div>
         <div class="modal-effect" id="modalHearts"></div>
+        <p class="modal-note" id="modalRec" style="display:none"></p>
       </div>
       <button class="modal-close" onclick="document.getElementById('modalOverlay').classList.remove('open')">关闭</button>
     </div>
@@ -710,13 +791,14 @@ function render() {
   const container = document.getElementById("dishContainer");
   container.innerHTML = "";
 
+  const q = (document.getElementById("dishSearch") ? document.getElementById("dishSearch").value : "").trim().toLowerCase();
   const cats = activeCat === "all"
     ? Object.keys(CAT_META).filter(k => k !== "all")
     : [activeCat];
 
   let total = 0;
   for (const cat of cats) {
-    const items = DISHES.filter(d => d.cat === cat);
+    const items = DISHES.filter(d => d.cat === cat && matchesSearch(d, q));
     if (!items.length) continue;
     total += items.length;
 
@@ -741,6 +823,10 @@ function render() {
         <div class="dish-img-wrap">
           <img src="${getDishImg(d.no)}" alt="${d.name}" loading="lazy">
           <span class="dish-no">#${d.no}</span>
+        </div>
+        <div class="dish-meta">
+          <div class="dish-name">${escapeHtml(d.name)}</div>
+          <span class="dish-eff">${escapeHtml(cardEffectTag(d))}</span>
         </div>`;
       card.addEventListener("click", () => openModal(d));
       grid.appendChild(card);
@@ -748,7 +834,38 @@ function render() {
   }
 
   document.getElementById("visCount").textContent = total;
+  const sc = document.getElementById("searchCount");
+  if (sc) sc.textContent = q ? ("已找到 " + total + " 道") : "";
 }
+
+// ── 推荐区食谱文本，供搜索命中（Day 11） ──
+const REC_SEARCH = {"1": ["力量烤蘑菇串 攻击提升 3级 · 3:20 利刃蘑菇×4", "铁甲烤蘑菇串 防御提升 3级 · 3:20 铁甲蘑菇×4", "暖暖烤蘑菇串 耐寒 2级 · 12:30 暖暖蘑菇×5", "冰冷烤蘑菇串 耐热 2级 · 12:30 冰冷蘑菇×5", "酥麻烤蘑菇串 防电 3级 · 12:30 酥麻蘑菇×5", "潜行烤蘑菇串 潜行 3级 · 10:00 潜行蘑菇×5", "速速烤蘑菇串 速度提升 3级 · 5:00 疾行蘑菇×5", "发光烤蘑菇串 发光 3级 · 10:00 光亮蘑菇×5", "暖暖烤蘑菇串（龙角长效） 耐寒 2级 · 30:00 暖暖蘑菇×4＋龙的犄角×1", "冰冷烤蘑菇串（龙角长效） 耐热 2级 · 30:00 冰冷蘑菇×4＋龙的犄角×1", "潜行烤蘑菇串（龙角长效） 潜行 2级 · 30:00 潜行蘑菇×4＋龙的犄角×1", "速速烤蘑菇串（龙角长效） 速度提升 3级 · 30:00 疾行蘑菇×4＋龙的犄角×1"], "47": ["力量炖水果 攻击提升 3级 · 3:20 力量香蕉×4", "力量炖水果（龙角长效） 攻击提升 3级 · 30:00 力量香蕉×4＋龙的犄角×1", "铁甲炖水果 防御提升 3级 · 3:20 铠甲南瓜×4", "暖暖炖水果 耐寒 2级 · 12:30 暖暖草果×5", "冰冷炖水果 耐热 2级 · 12:30 冰镇蜜瓜×5", "酥麻炖水果 防电 3级 · 12:30 伏特果×5", "速速炖水果 速度提升 3级 · 5:00 速速莲蓬×5"], "5": ["力量烤鱼（龙角长效） 攻击提升 3级 · 30:00 力量鲤鱼×3＋龙的犄角×1", "铁甲烤鱼（龙角长效） 防御提升 3级 · 30:00 铁甲鲤鱼×3＋龙的犄角×1", "暖暖烤鱼 耐寒 2级 · 12:30 暖鳟×3＋暖暖草果×2", "冰冷烤鱼 耐热 2级 · 12:30 冷鳟×3＋冰冷蘑菇×2", "酥麻烤鱼 防电 3级 · 12:30 伏特鳟×3＋酥麻蘑菇×2", "潜行烤鱼 潜行 3级 · 10:00 潜行鳟×3＋潜行蘑菇×2", "发光烤鱼 发光 3级 · 10:00 荧光洞穴鱼×3＋光亮蘑菇×2"], "11": ["潜行蒸蘑菇 潜行 3级 · 10:00 静谧公主×3＋潜行蘑菇×2", "速速蒸蘑菇 速度提升 3级 · 5:00 速速胡萝卜×3＋疾行蘑菇×2"], "16": ["生命炒野菜 回满红心＋25颗黄心 大生命萝卜×5", "向阳炒野菜 修15颗瘴气心 向阳草×5", "耐力炒野菜 ＋2圈额外精力 耐力胡萝卜×5"], "142": ["魔人咖喱饭 抗瘴 3级 · 3:00 黑暗团块×3＋海拉鲁米×1＋戈隆香料×1"]};
+
+// ── 搜索：按菜名（中/英文）、效果、食材筛（Day 11） ──
+function matchesSearch(d, q) {
+  if (!q) return true;
+  const hay = [d.name, d.en || "", d.effect && d.effect !== "—" ? translateEffect(d.effect) : "回血",
+    d.ing.join(" "), parseDishIng(d).map(p => p.zh).join(" "), (REC_SEARCH[d.no] || []).join(" ")].join(" ").toLowerCase();
+  return hay.indexOf(q) !== -1;
+}
+
+// ── 卡片效果标签：有固定加成的显示加成，否则显示“回血”（Day 11） ──
+function cardEffectTag(d) {
+  if (d.no === 145 || d.no === 146) return "失败料理";
+  if (d.no === 228) return "回满红心";
+  if (d.effect && d.effect !== "—") return translateEffect(d.effect);
+  if (d.method === "Extreme Cold") return "耐热 Lv1";
+  return "回血";
+}
+
+// ── 推荐区菜名点击开详情（Day 11） ──
+const REC_ZONE_NOS = new Set([1, 5, 11, 16, 47, 142]);
+function openDishByNo(no) {
+  const d = DISHES.find(x => x.no === no);
+  if (d) openModal(d);
+}
+
+document.getElementById("dishSearch").addEventListener("input", render);
 
 // ── 弹窗：材料（中文名 + 数量）与加成效果 ──────────
 // 重要机制（王国之泪）：菜名不决定加成，加成由食材决定。
@@ -982,6 +1099,15 @@ function openModal(d) {
   document.getElementById("modalEffectNote").textContent = "加成优先采用 ZeldaCentral 配方表的固定加成；配方表未给固定加成的锅煮料理，加成由食材决定（同一道菜换不同食材，加成会跟着变）。回血量：锅煮料理取决于食材，烤食／冷冻／温泉为固定值。";
   const heartsEl = document.getElementById("modalHearts");
   if (heartsEl) heartsEl.textContent = d.no === 228 ? "恢复全部红心" : (d.hearts === "—" ? "取决于食材：回血量 = 各食材回血之和 ×2；血月夜必定大成功，效果更强。" : formatHearts(d.hearts));
+  const recEl = document.getElementById("modalRec");
+  if (recEl) {
+    if (REC_ZONE_NOS.has(d.no)) {
+      recEl.textContent = "推荐食谱：见本页上方「最优特效食谱推荐」区，33 道完整配方（效果、时长、回血全算好）。";
+      recEl.style.display = "";
+    } else {
+      recEl.style.display = "none";
+    }
+  }
   document.getElementById("modalOverlay").classList.add("open");
 }
 function closeModal(e) {
