@@ -1257,7 +1257,7 @@
       sorted.sort(function (a, b) { return (+a.dataset.index) - (+b.dataset.index); });
     }
     sorted.forEach(function (card) { grid.appendChild(card); });
-    countEl.textContent = '已显示 ' + visible.length + ' / 61 篇';
+    countEl.textContent = '已显示 ' + visible.length + ' / ' + cards.length + ' 篇';
     emptyEl.style.display = visible.length === 0 ? 'block' : 'none';
   }
   input.addEventListener('input', apply);
