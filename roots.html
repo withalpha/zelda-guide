@@ -142,6 +142,10 @@
     </div>
   </div>
 
+<div style="text-align:right;margin-bottom:22px;">
+  <button onclick="exportRootsCSV()" style="padding:8px 18px;background:rgba(201,162,39,0.12);border:1px solid #c9a227;color:#e8c85a;border-radius:20px;cursor:pointer;font-size:0.85rem;">📥 导出 CSV</button>
+</div>
+
   <div class="highlight-box">
     <strong>破魔树根说明：</strong>破魔树根分布在地底世界，激活后可照亮周围区域，并显示在地图上。其名称与地面神庙名称高度对应（反转拼写），可利用此规律快速定位。每个树根正上方通常有对应的地面神庙。共120个，与地面120座神庙一一对应。
   </div>
@@ -1809,6 +1813,7 @@
 </footer>
 
 <script src="main.js?v=12"></script>
+<script src="collect.js?v=1"></script>
 <script>
 // ================================================================
 //  王国之泪 破魔树根 · 互动地图引擎
@@ -2291,6 +2296,22 @@ document.addEventListener('DOMContentLoaded', function() {
   updateRootProgress();
   syncMapActivation();
 });
+
+// ── 导出 CSV：破魔树根收集记录 ──
+function exportRootsCSV() {
+  var headers = ['编号', '树根名', '坐标', '地区', '已收集'];
+  var rows = [];
+  document.querySelectorAll('#rootList .shrine-item').forEach(function(item) {
+    var t = function(sel) { var el = item.querySelector(sel); return el ? el.textContent.trim() : ''; };
+    var parts = t('.shrine-type').split('·');
+    var coords = parts[0] ? parts[0].replace('坐标：', '').trim() : '';
+    var region = parts[1] ? parts[1].trim() : '';
+    var btn = item.querySelector('.shrine-check');
+    var done = (btn && btn.classList.contains('done')) ? '是' : '否';
+    rows.push([t('.shrine-num'), t('.shrine-name'), coords, region, done]);
+  });
+  exportToCSV('破魔树根-收集记录.csv', headers, rows);
+}
 </script>
 </body>
 </html>

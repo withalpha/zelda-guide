@@ -146,6 +146,10 @@
     </div>
   </div>
 
+<div style="text-align:right;margin-bottom:22px;">
+  <button onclick="exportMainQuestCSV()" style="padding:8px 18px;background:rgba(201,162,39,0.12);border:1px solid #c9a227;color:#e8c85a;border-radius:20px;cursor:pointer;font-size:0.85rem;">📥 导出 CSV</button>
+</div>
+
   <div class="highlight-box">
     <strong>推荐攻略顺序：</strong>完成初始空岛取得四种能力后，建议按 <strong>风→水→火→雷</strong> 的神殿顺序推进，再攻略环卡遗迹与灵殿，最终挑战海拉鲁城堡。点击每条任务可展开详细图文攻略。
   </div>
@@ -831,6 +835,7 @@
 </footer>
 
 <script src="main.js?v=12"></script>
+<script src="collect.js?v=1"></script>
 <script>
 function filterQuest(cat, btn) {
   document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
@@ -847,6 +852,20 @@ function toggleQuest(rowEl) {
   const isOpen  = detail.classList.contains('open');
   detail.classList.toggle('open', !isOpen);
   chevron.classList.toggle('open', !isOpen);
+}
+
+// ── 导出 CSV：主线任务收集记录 ──
+function exportMainQuestCSV() {
+  var headers = ['编号', '任务名', '描述', '标签', '地区', '已收集'];
+  var rows = [];
+  document.querySelectorAll('#mqList .quest-item').forEach(function(item) {
+    var t = function(sel) { var el = item.querySelector(sel); return el ? el.textContent.trim() : ''; };
+    var tags = Array.prototype.map.call(item.querySelectorAll('.quest-meta .tag'), function(x) { return x.textContent.trim(); }).join('、');
+    var btn = item.querySelector('.quest-check');
+    var done = (btn && btn.classList.contains('done')) ? '是' : '否';
+    rows.push([t('.quest-num'), t('.quest-title'), t('.quest-desc'), tags, t('.rbadge'), done]);
+  });
+  exportToCSV('主线任务-收集记录.csv', headers, rows);
 }
 </script>
 </body>

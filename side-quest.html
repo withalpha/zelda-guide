@@ -142,6 +142,10 @@
     </div>
   </div>
 
+<div style="text-align:right;margin-bottom:22px;">
+  <button onclick="exportSideQuestCSV()" style="padding:8px 18px;background:rgba(201,162,39,0.12);border:1px solid #c9a227;color:#e8c85a;border-radius:20px;cursor:pointer;font-size:0.85rem;">📥 导出 CSV</button>
+</div>
+
   <div class="highlight-box">
     <strong>什么是情节挑战？</strong>情节挑战（Side Adventure）是王国之泪中规模较大的支线任务，通常有多个子任务且拥有更丰厚奖励，与普通支线任务（Side Quest）区分。共 60 个；全部完成是全收集清单的一部分，但没有统一的最终奖励。
   </div>
@@ -1776,6 +1780,7 @@
 </footer>
 
 <script src="main.js?v=12"></script>
+<script src="collect.js?v=1"></script>
 <script>
 function filterSQ(cat, btn) {
   document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
@@ -1821,7 +1826,15 @@ function toggleSQCheck(btn) {
 }
 
 function updateSQProgress() {
-  const done  = document.querySelectorAll('#sqList .quest-check.done').length;
+  // 43-47「怪物图鉴收集 I～V」一格代表 5 个任务，打勾时按 5 个算；其余每格 1 个，总数 60
+  let done = 0;
+  document.querySelectorAll('#sqList .quest-item').forEach(function(item) {
+    const btn = item.querySelector('.quest-check');
+    if (btn && btn.classList.contains('done')) {
+      const num = item.querySelector('.quest-num');
+      done += (num && num.textContent.indexOf('43-47') !== -1) ? 5 : 1;
+    }
+  });
   const fill  = document.getElementById('sqProgressFill');
   const count = document.getElementById('sqDoneCount');
   if (fill)  fill.style.width = (done / 60 * 100) + '%';
@@ -1849,6 +1862,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   updateSQProgress();
 });
+
+// ── 导出 CSV：情节挑战收集记录（56 行；43-47 一格代表 5 个任务，进度按 60 算）──
+function exportSideQuestCSV() {
+  var headers = ['编号', '任务名', '描述', '标签', '地区', '已收集'];
+  var rows = [];
+  document.querySelectorAll('#sqList .quest-item').forEach(function(item) {
+    var t = function(sel) { var el = item.querySelector(sel); return el ? el.textContent.trim() : ''; };
+    var tags = Array.prototype.map.call(item.querySelectorAll('.quest-meta .tag'), function(x) { return x.textContent.trim(); }).join('、');
+    var btn = item.querySelector('.quest-check');
+    var done = (btn && btn.classList.contains('done')) ? '是' : '否';
+    rows.push([t('.quest-num'), t('.quest-title'), t('.quest-desc'), tags, t('.rbadge'), done]);
+  });
+  exportToCSV('情节挑战-收集记录.csv', headers, rows);
+}
 </script>
 </body>
 </html>

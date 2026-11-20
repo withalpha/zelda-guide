@@ -269,6 +269,10 @@
     </div>
   </div>
 
+<div style="text-align:right;margin-bottom:22px;">
+  <button onclick="exportSageWillCSV()" style="padding:8px 18px;background:rgba(201,162,39,0.12);border:1px solid #c9a227;color:#e8c85a;border-radius:20px;cursor:pointer;font-size:0.85rem;">📥 导出 CSV</button>
+</div>
+
   <div class="highlight-box">
     <strong>贤者的遗志说明：</strong>全游戏共 <strong>20 个贤者的遗志（Sage's Will）</strong>，分布于天空群岛的宝箱中，每位贤者对应 5 个。
     收集后可在<strong>神庙</strong>内的雕像处兑换，每 4 个可提升一位贤者的能力等级（最高 2 级）。
@@ -457,6 +461,7 @@
 
 <script src="main.js?v=12"></script>
 
+<script src="collect.js?v=1"></script>
 <script>
 /* ====== 贤者遗志互动地图 ====== */
 window.addEventListener('load', function() {
@@ -608,6 +613,7 @@ window.addEventListener('load', function() {
   }
 
   var doneSet = getDoneSet();
+  window.WILL_DATA = WILL_DATA; // 供导出 CSV 用
   WILL_DATA.forEach(function(w) {
     var isDone = doneSet.has(w.id);
     var m = L.marker(g2ll(w.gx, w.gy), {
@@ -778,6 +784,31 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   updateProgress();
 });
+
+// ── 导出 CSV：贤者的遗志收集记录 ──
+var SAGE_ZH = {tulin: '丘栗', yunobo: '阿沅', sidon: '希多', riju: '卢珠'};
+function exportSageWillCSV() {
+  var headers = ['编号', '贤者', '地点', '英文名', '坐标', '地区', 'Boss', '备注', '已收集'];
+  var rows = [];
+  var done = getDoneIds();
+  var data = window.WILL_DATA || [];
+  if (data.length) {
+    data.forEach(function(w) {
+      var no = String(w.id + 1);
+      if (no.length < 3) no = ('00' + no).slice(-3);
+      rows.push([no, SAGE_ZH[w.sage] || w.sage, w.cn, w.en, w.gx + ', ' + w.gy + ', ' + w.gz, w.region, w.boss, w.note, done.has(w.id) ? '是' : '否']);
+    });
+  } else {
+    document.querySelectorAll('#willTableBody tr[data-sage]').forEach(function(tr, i) {
+      var t = function(sel) { var el = tr.querySelector(sel); return el ? el.textContent.trim() : ''; };
+      var no = String(i + 1);
+      if (no.length < 3) no = ('00' + no).slice(-3);
+      var btn = tr.querySelector('.will-check');
+      rows.push([no, SAGE_ZH[tr.dataset.sage] || tr.dataset.sage, t('.wname-cn'), t('.wname-en'), t('.coord'), tr.cells[3] ? tr.cells[3].textContent.trim() : '', '', '', (btn && btn.classList.contains('done')) ? '是' : '否']);
+    });
+  }
+  exportToCSV('贤者的遗志-收集记录.csv', headers, rows);
+}
 </script>
 </body>
 </html>

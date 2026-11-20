@@ -256,6 +256,20 @@
     <strong>余料建造 / 融合系统：</strong>按 <strong>Y</strong> 键可将素材与武器融合，最终攻击力 = 武器基础攻击 + 素材加成。白银人马刃角最高可加 <strong>+55</strong>；宝石融合附加元素属性（🔥火 / ❄️冰 / ⚡️雷）。<strong>大师之剑能量耗尽后约 10 分钟充能</strong>，不会永久破损。
   </div>
 
+<div class="progress-section">
+    <div class="progress-info">
+      <p class="progress-label">武器收集进度</p>
+      <div class="progress-bar"><div class="progress-fill" id="wpProgressFill" style="width:0%"></div></div>
+    </div>
+    <div class="progress-stats">
+      <div class="progress-stat"><span class="progress-stat-val" id="wpDoneCount">0</span><span class="progress-stat-lbl">已获得</span></div>
+      <div class="progress-stat"><span class="progress-stat-val">20</span><span class="progress-stat-lbl">全部</span></div>
+    </div>
+  </div>
+<div style="text-align:right;margin-bottom:22px;">
+  <button onclick="exportWeaponsCSV()" style="padding:8px 18px;background:rgba(201,162,39,0.12);border:1px solid #c9a227;color:#e8c85a;border-radius:20px;cursor:pointer;font-size:0.85rem;">📥 导出 CSV</button>
+</div>
+
   <!-- 过滤按钮 -->
   <div class="filter-bar">
     <button class="fb-btn active" onclick="filterWeapons('all', this)">全部（20）</button>
@@ -272,6 +286,7 @@
 
     <!-- ══════ 1. 大师之剑 ══════ -->
     <div class="weapon-card" data-type="sword legendary">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-legend"></div>
       <div class="wc-img">
         <span class="wc-type-badge">⭐ 传说 · 单手剑</span>
@@ -299,6 +314,7 @@
 
     <!-- ══════ 2. 森民之枪 ══════ -->
     <div class="weapon-card" data-type="spear">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-common"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🔱 长柄武器</span>
@@ -325,6 +341,7 @@
 
     <!-- ══════ 3. 骑士单手剑 ══════ -->
     <div class="weapon-card" data-type="sword">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-uncommon"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🗡 单手剑</span>
@@ -351,6 +368,7 @@
 
     <!-- ══════ 4. 骑士双手剑 ══════ -->
     <div class="weapon-card" data-type="twohanded">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-uncommon"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🪓 双手武器</span>
@@ -377,6 +395,7 @@
 
     <!-- ══════ 5. 骑士之枪 ══════ -->
     <div class="weapon-card" data-type="spear">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-uncommon"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🔱 长柄武器</span>
@@ -403,6 +422,7 @@
 
     <!-- ══════ 6. 近卫双手剑 ══════ -->
     <div class="weapon-card" data-type="twohanded legendary">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-legend"></div>
       <div class="wc-img">
         <span class="wc-type-badge">⭐ 传说 · 双手武器</span>
@@ -430,6 +450,7 @@
 
     <!-- ══════ 7. 格鲁德双手剑 ══════ -->
     <div class="weapon-card" data-type="twohanded">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-rare"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🪓 双手武器</span>
@@ -456,6 +477,7 @@
 
     <!-- ══════ 8. 蜥蜴战士之骨 ══════ -->
     <div class="weapon-card" data-type="sword">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-common"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🗡 怪物武器</span>
@@ -482,6 +504,7 @@
 
     <!-- ══════ 9. 光鳞之枪 ══════ -->
     <div class="weapon-card" data-type="spear legendary">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-legend"></div>
       <div class="wc-img">
         <span class="wc-type-badge">⭐ 英杰 · 长柄武器</span>
@@ -509,6 +532,7 @@
 
     <!-- ══════ 10. 七宝匕首 ══════ -->
     <div class="weapon-card" data-type="dagger">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-rare"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🗡 匕首</span>
@@ -536,6 +560,7 @@
 
     <!-- ══════ 11. 魔法短杖 ══════ -->
     <div class="weapon-card" data-type="spear">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-rare"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🔱 短杖</span>
@@ -563,6 +588,7 @@
 
     <!-- ══════ 12. 兽神弓 ══════ -->
     <div class="weapon-card" data-type="bow legendary">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-legend"></div>
       <div class="wc-img">
         <span class="wc-type-badge">⭐ 传说 · 弓</span>
@@ -590,6 +616,7 @@
 
     <!-- ══════ 13. 卓拉大剑 ══════ -->
     <div class="weapon-card" data-type="twohanded">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-uncommon"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🪓 双手武器</span>
@@ -617,6 +644,7 @@
 
     <!-- ══════ 14. 戒心小刀 ══════ -->
     <div class="weapon-card" data-type="dagger">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-uncommon"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🗡 匕首</span>
@@ -644,6 +672,7 @@
 
     <!-- ══════ 15. 瘴气之剑 ══════ -->
     <div class="weapon-card" data-type="sword gloom legendary">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-epic"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🟣 瘴气 · 单手剑</span>
@@ -671,6 +700,7 @@
 
     <!-- ══════ 16. 王族双手剑 ══════ -->
     <div class="weapon-card" data-type="twohanded">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-rare"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🪓 双手武器</span>
@@ -697,6 +727,7 @@
 
     <!-- ══════ 17. 王族之剑 ══════ -->
     <div class="weapon-card" data-type="sword">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-rare"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🗡 单手剑</span>
@@ -723,6 +754,7 @@
 
     <!-- ══════ 18. 戒心长刀 ══════ -->
     <div class="weapon-card" data-type="sword dagger">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-uncommon"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🗡 长刀</span>
@@ -750,6 +782,7 @@
 
     <!-- ══════ 19. 碎岩巨剑 ══════ -->
     <div class="weapon-card" data-type="twohanded legendary">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-legend"></div>
       <div class="wc-img">
         <span class="wc-type-badge">⭐ 英杰 · 双手武器</span>
@@ -777,6 +810,7 @@
 
     <!-- ══════ 20. 瘴气金属棒 ══════ -->
     <div class="weapon-card" data-type="twohanded gloom legendary">
+      <button class="quest-check" onclick="toggleWeaponCheck(this)" title="标记已获得" style="position:absolute;top:10px;right:10px;z-index:5;">✓</button>
       <div class="rarity-bar r-epic"></div>
       <div class="wc-img">
         <span class="wc-type-badge">🟣 瘴气 · 双手武器</span>
@@ -826,6 +860,7 @@
 </footer>
 
 <script src="main.js?v=12"></script>
+<script src="collect.js?v=1"></script>
 <script>
   // 武器过滤
   function filterWeapons(type, btn) {
@@ -840,6 +875,68 @@
       }
     });
   }
+
+// ── 武器收集打勾 & 导出 CSV ──
+var WP_KEY = 'weapons-done';
+function getWeaponDone() {
+  try { return new Set(JSON.parse(localStorage.getItem(WP_KEY) || '[]')); }
+  catch(e) { return new Set(); }
+}
+function saveWeaponDone(s) { localStorage.setItem(WP_KEY, JSON.stringify(Array.from(s))); }
+function toggleWeaponCheck(btn) {
+  var card = btn.closest('.weapon-card');
+  var name = card ? (card.querySelector('.wc-name') || {}).textContent.trim() : '';
+  if (!name) return;
+  var done = getWeaponDone();
+  if (done.has(name)) {
+    done.delete(name);
+    btn.classList.remove('done');
+    if (card) card.style.opacity = '';
+  } else {
+    done.add(name);
+    btn.classList.add('done');
+    if (card) card.style.opacity = '0.6';
+  }
+  saveWeaponDone(done);
+  updateWeaponProgress();
+}
+function updateWeaponProgress() {
+  var done = getWeaponDone().size;
+  var total = document.querySelectorAll('.weapon-card').length;
+  var fill = document.getElementById('wpProgressFill');
+  var cnt = document.getElementById('wpDoneCount');
+  if (fill) fill.style.width = (total ? done / total * 100 : 0) + '%';
+  if (cnt) cnt.textContent = done;
+}
+function exportWeaponsCSV() {
+  var headers = ['武器名', '类型', '描述', '攻击力', '耐久度', '获取方法', '特殊效果', '已获得'];
+  var rows = [];
+  var done = getWeaponDone();
+  document.querySelectorAll('.weapon-card').forEach(function(card) {
+    var t = function(sel) { var el = card.querySelector(sel); return el ? el.textContent.trim() : ''; };
+    var info = {};
+    card.querySelectorAll('.wc-info-row').forEach(function(row) {
+      var k = row.querySelector('.wc-info-label');
+      var v = row.querySelector('.wc-info-val');
+      if (k && v) info[k.textContent.trim()] = v.textContent.trim();
+    });
+    var name = t('.wc-name');
+    rows.push([name, t('.wc-type-badge'), t('.wc-desc'), info['攻击力'] || '', info['耐久度'] || '', info['获取方法'] || '', info['特殊效果'] || '', done.has(name) ? '是' : '否']);
+  });
+  exportToCSV('武器图鉴-收集记录.csv', headers, rows);
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var done = getWeaponDone();
+  document.querySelectorAll('.weapon-card').forEach(function(card) {
+    var name = (card.querySelector('.wc-name') || {}).textContent.trim();
+    var btn = card.querySelector('.quest-check');
+    if (name && done.has(name) && btn) {
+      btn.classList.add('done');
+      card.style.opacity = '0.6';
+    }
+  });
+  updateWeaponProgress();
+});
 </script>
 </body>
 </html>

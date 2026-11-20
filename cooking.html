@@ -370,6 +370,20 @@
     <div class="cook-stat"><span class="cook-stat-val" id="visCount">228</span><div class="cook-stat-lbl">当前显示</div></div>
   </div>
 
+<div class="progress-section">
+    <div class="progress-info">
+      <p class="progress-label">料理制作进度</p>
+      <div class="progress-bar"><div class="progress-fill" id="dishProgressFill" style="width:0%"></div></div>
+    </div>
+    <div class="progress-stats">
+      <div class="progress-stat"><span class="progress-stat-val" id="dishDoneCount">0</span><span class="progress-stat-lbl">已做过</span></div>
+      <div class="progress-stat"><span class="progress-stat-val">228</span><span class="progress-stat-lbl">全部</span></div>
+    </div>
+  </div>
+<div style="text-align:right;margin-bottom:22px;">
+  <button onclick="exportCookingCSV()" style="padding:8px 18px;background:rgba(201,162,39,0.12);border:1px solid #c9a227;color:#e8c85a;border-radius:20px;cursor:pointer;font-size:0.85rem;">📥 导出 CSV</button>
+</div>
+
   <div class="highlight-box"><strong>烹饪要点</strong> 手持1–5份材料，在点燃的料理锅旁选择“烹饪”。同效果可叠加，不同效果会抵消；篝火烤食、冷冻与温泉料理另有制作方式。</div>
 
   <!-- ══ 最优特效食谱推荐（Day 11 新增）：33 道数据齐全的食谱 ══ -->
@@ -499,6 +513,7 @@
 </footer>
 
 <script src="main.js?v=12"></script>
+<script src="collect.js?v=1"></script>
 <script>
 // ══════════════════════════════════════════
 // 料理编号 → Items 高清图片映射表
@@ -800,6 +815,7 @@ let activeCat = "all";
 function render() {
   const container = document.getElementById("dishContainer");
   container.innerHTML = "";
+  const doneSet = getDishDone();
 
   const q = (document.getElementById("dishSearch") ? document.getElementById("dishSearch").value : "").trim().toLowerCase();
   const cats = activeCat === "all"
@@ -830,8 +846,11 @@ function render() {
       card.className = "dish-card";
       card.dataset.no = d.no;
       card.tabIndex=0; card.setAttribute("role","button"); card.setAttribute("aria-label",d.name+"，查看配方");
-      card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openModal(d);}});
+      card.addEventListener("keydown",e=>{if(e.target.closest('.quest-check'))return;if(e.key==="Enter"||e.key===" "){e.preventDefault();openModal(d);}});
+      const isDone = doneSet.has(d.no);
+      card.style.position = "relative";
       card.innerHTML = `
+        <button class="quest-check${isDone ? ' done' : ''}" onclick="event.stopPropagation();toggleDishCheck(this, ${d.no})" title="标记已做过" style="position:absolute;top:8px;right:8px;z-index:5;">✓</button>
         <div class="dish-img-wrap">
           <img src="${getDishImg(d.no)}" alt="${d.name}" loading="lazy">
           <span class="dish-no">#${d.no}</span>
@@ -840,6 +859,7 @@ function render() {
           <div class="dish-name">${escapeHtml(d.name)}</div>
           <span class="dish-eff">${escapeHtml(cardEffectTag(d))}</span>
         </div>`;
+      if (isDone) card.style.opacity = "0.6";
       card.addEventListener("click", () => openModal(d));
       grid.appendChild(card);
     }
@@ -848,6 +868,7 @@ function render() {
   document.getElementById("visCount").textContent = total;
   const sc = document.getElementById("searchCount");
   if (sc) sc.textContent = q ? ("已找到 " + total + " 道") : "";
+  updateDishProgress();
 }
 
 // ── 推荐区食谱文本，供搜索命中（Day 11） ──
@@ -1125,6 +1146,50 @@ document.querySelectorAll(".rec-table tbody tr").forEach(row=>{
 // Keep keyboard focus within the active dialog.
 document.getElementById("modal").addEventListener("keydown",e=>{if(e.key==="Tab"){e.preventDefault();document.querySelector(".modal-close").focus();}});
 
+// ── 料理制作打勾 & 收集进度 & 导出 CSV ──
+var DISH_KEY = 'cooking-done';
+function getDishDone() {
+  try { return new Set(JSON.parse(localStorage.getItem(DISH_KEY) || '[]')); }
+  catch(e) { return new Set(); }
+}
+function saveDishDone(s) { localStorage.setItem(DISH_KEY, JSON.stringify(Array.from(s))); }
+function toggleDishCheck(btn, no) {
+  var done = getDishDone();
+  var card = btn.closest('.dish-card');
+  if (done.has(no)) {
+    done.delete(no);
+    btn.classList.remove('done');
+    if (card) card.style.opacity = '';
+  } else {
+    done.add(no);
+    btn.classList.add('done');
+    if (card) card.style.opacity = '0.6';
+  }
+  saveDishDone(done);
+  updateDishProgress();
+}
+function updateDishProgress() {
+  var done = getDishDone().size;
+  var total = DISHES.length;
+  var fill = document.getElementById('dishProgressFill');
+  var cnt = document.getElementById('dishDoneCount');
+  if (fill) fill.style.width = (total ? done / total * 100 : 0) + '%';
+  if (cnt) cnt.textContent = done;
+}
+function exportCookingCSV() {
+  var headers = ['编号', '菜名', '分类', '制作方式', '食材', '效果', '回血', '已做过'];
+  var rows = [];
+  var done = getDishDone();
+  DISHES.forEach(function(d) {
+    var parts = parseDishIng(d);
+    var ing = parts.map(function(p) {
+      if (DISTINCT_RECIPES.has(d.no)) return p.zh;
+      return p.qty > 1 ? p.zh + '×' + p.qty : p.zh;
+    }).join('、');
+    rows.push([d.no, d.name, d.cat, METHOD_ZH[d.method] || d.method, ing, getDishEffect(d).title, formatHearts(d.hearts), done.has(d.no) ? '是' : '否']);
+  });
+  exportToCSV('料理合成-收集记录.csv', headers, rows);
+}
 // ── 初始渲染 ──────────────────────────────────────
 render();
 </script>

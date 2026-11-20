@@ -255,6 +255,10 @@
     </div>
   </div>
 
+<div style="text-align:right;margin-bottom:22px;">
+  <button onclick="exportShrinesCSV()" style="padding:8px 18px;background:rgba(201,162,39,0.12);border:1px solid #c9a227;color:#e8c85a;border-radius:20px;cursor:pointer;font-size:0.85rem;">📥 导出 CSV</button>
+</div>
+
   <div class="filter-tabs" id="sqFilters">
     <button class="filter-tab active" onclick="filterSQ('all',this)">全部 (31)</button>
     <button class="filter-tab" onclick="filterSQ('surface',this)">陆地水晶</button>
@@ -1014,6 +1018,7 @@
 </footer>
 
 <script src="main.js?v=12"></script>
+<script src="collect.js?v=1"></script>
 <script>
   // ── 神庙挑战专用逻辑 ──
   const SQ_KEY_PREFIX = window.location.pathname + '_shrines_check_';
@@ -1055,6 +1060,20 @@
     });
     updateSQProgress();
   });
+
+// ── 导出 CSV：神庙挑战收集记录 ──
+function exportShrinesCSV() {
+  var headers = ['编号', '挑战名', '地区', '神庙名', '坐标', '分类', '已收集'];
+  var rows = [];
+  document.querySelectorAll('.sq-card').forEach(function(card) {
+    var t = function(sel) { var el = card.querySelector(sel); return el ? el.textContent.trim() : ''; };
+    var coords = t('.sq-coords').replace('📍', '').trim();
+    var btn = card.querySelector('.sq-check-btn');
+    var done = (btn && btn.classList.contains('done')) ? '是' : '否';
+    rows.push([t('.sq-num'), t('.sq-quest-name'), t('.sq-region-tag'), t('.sq-shrine-name'), coords, card.dataset.type || '', done]);
+  });
+  exportToCSV('神庙挑战-收集记录.csv', headers, rows);
+}
 </script>
 </body>
 </html>

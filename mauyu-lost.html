@@ -318,6 +318,10 @@
     </div>
   </div>
 
+<div style="text-align:right;margin-bottom:22px;">
+  <button onclick="exportMauyuCSV()" style="padding:8px 18px;background:rgba(201,162,39,0.12);border:1px solid #c9a227;color:#e8c85a;border-radius:20px;cursor:pointer;font-size:0.85rem;">📥 导出 CSV</button>
+</div>
+
   <div class="highlight-box">
     <strong>魔犹伊的遗失物说明：</strong>每个山洞深处都有一只<strong>魔犹伊（Bubbulfrog）</strong>，击败后掉落<strong>魔犹伊的遗失物（Bubbul Gem）</strong>。
     收集后可在夜晚找到<strong>柯尔天（Koltin）</strong>兑换怪物面具与神秘套装。
@@ -755,6 +759,7 @@
 
 </div><!-- end page-body -->
 
+<script src="collect.js?v=1"></script>
 <script>
 // ═══════════════════════════════════════════════
 //  魔犹伊遗失物 · 互动地图 & 进度追踪
@@ -1075,6 +1080,21 @@ document.addEventListener('DOMContentLoaded', function() {
   restoreCheckState();
   initCaveMap();
 });
+
+// ── 导出 CSV：魔犹伊的遗失物收集记录 ──
+function exportMauyuCSV() {
+  var headers = ['编号', '洞窟名', '英文名', '入口坐标', '魔犹伊坐标', '地区', '备注', '已收集'];
+  var rows = [];
+  document.querySelectorAll('#caveTableBody tr[id^="cave-row-"]').forEach(function(row) {
+    var t = function(sel) { var el = row.querySelector(sel); return el ? el.textContent.trim() : ''; };
+    var entr = (row.dataset.entrances || '').split('|').join('; ');
+    var id = row.dataset.gamertw || row.id;
+    var done = localStorage.getItem('cave_' + id) === '1' ? '是' : '否';
+    var mauyu = row.cells[3] ? row.cells[3].textContent.trim() : '';
+    rows.push([t('.cave-num-cell'), t('.cname-cn'), t('.cname-en'), entr, mauyu, t('.rbadge'), t('.cnote'), done]);
+  });
+  exportToCSV('魔犹伊的遗失物-收集记录.csv', headers, rows);
+}
 </script>
 
 
