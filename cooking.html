@@ -463,12 +463,10 @@
       <div class="modal-section">
         <div class="modal-h">🧂 所需材料</div>
         <ul class="modal-ing" id="modalIng"></ul>
-        <p class="modal-note" id="modalIngNote"></p>
       </div>
       <div class="modal-section">
         <div class="modal-h">✨ 加成效果</div>
         <div class="modal-effect" id="modalEffect"></div>
-        <p class="modal-note" id="modalEffectNote"></p>
       </div>
       <div class="modal-section">
         <div class="modal-h">❤️ 回血</div>
@@ -1069,19 +1067,6 @@ function getDishEffect(d) {
  if(effects.length>1) return {title:"随选材变化或互相抵消",warn:false,desc:"任选项分别提供不同效果；每个任选项只选一种。实际入锅材料含不同效果时，增益取消。"};
  return {title:"仅回复生命",warn:false,desc:"基础配方无额外增益。若有空位，加入效果材料可能改变料理名称与效果。"};
 }
-function ingNoteFor(d) {
-  if(DISTINCT_RECIPES.has(d.no))return "必须使用4种不同材料，各1份；同一种放4份不能做出这道大份料理。不同效果相混会取消增益。";
-  if(d.no===126) return "这里给出苹果＋草莓的明确可用组合；可用金苹果替换苹果。水果蛋糕要求两种不同水果。";
-  if (d.no === 228) return "妖精×1可单独制作；也可按合法配方搭配怪物素材等。妖精回力水不适用普通药水的生物＋怪物素材必选规则。";
-  if (d.method === "Campfire") return "将对应生食材放在火旁烤熟；不是放入料理锅。可以同时烤多份。";
-  if (d.method === "Extreme Cold") return "将原料置于足够寒冷的环境或受到冰属性作用；普通雪地不一定达到冷冻条件。";
-  if (d.method === "Hot Spring") return "温泉：放 1 个鸟蛋进温泉即可。";
-  if (d.cat === "药水") return "对应效果生物至少1只＋怪物素材至少1份；总计最多5份。时长取决于素材类型，角、牙、肝脏等贡献不同。";
-  if (d.no === 145 || d.no === 146) return "失败料理：按上面材料煮出即为失败品。";
-  let note = "锅最多放 5 个材料；上面是 ZeldaCentral 配方表的原配方，重复出现的材料已合并为数量（如肉×4 表示 4 份）。添加材料可能触发更优先的其他菜式；若只为解锁本菜谱，请使用上列基础组合。";
-  if (d.ing.join(" ").includes("Tier")) note += "一档肉 = 兽肉／禽腿肉类，二档肉 = 高级兽肉／高级禽腿肉类，三档肉 = 顶级兽肉／整只禽肉类。";
-  return note;
-}
 function openModal(d) {
   window.lastDishFocus=document.activeElement;
   document.getElementById("modalImg").src = getDishImg(d.no);
@@ -1091,12 +1076,10 @@ function openModal(d) {
   document.getElementById("modalCat").textContent = d.cat + " · " + (METHOD_ZH[d.method] || d.method) + " · " + (d.en || "");
   const parts = parseDishIng(d);
   document.getElementById("modalIng").innerHTML = parts.map(p => `<li><span>${escapeHtml(p.zh)}</span><span class="ing-qty">${DISTINCT_RECIPES.has(d.no) ? "各×1" : "×"+p.qty}</span></li>`).join("");
-  document.getElementById("modalIngNote").textContent = ingNoteFor(d);
   const eff = getDishEffect(d);
   const effEl = document.getElementById("modalEffect");
   effEl.className = "modal-effect" + (eff.warn ? " warn" : "");
   effEl.innerHTML = `<strong>${escapeHtml(eff.title)}</strong><br>${escapeHtml(eff.desc)}`;
-  document.getElementById("modalEffectNote").textContent = "菜名是图鉴条目；增益、等级与时长由实际材料决定。所列为基础配方；实际效果由入锅材料决定。烤食、冷冻和温泉料理按固定回复量显示。";
   const heartsEl = document.getElementById("modalHearts");
   if (heartsEl) heartsEl.textContent = d.no === 228 ? "妖精×1：7颗红心" : (d.hearts === "—" ? "随具体食材与数量变化；生命、毅力、失败料理和怪物精华等有特殊结算。" : formatHearts(d.hearts));
   const recEl = document.getElementById("modalRec");
@@ -1133,8 +1116,10 @@ document.getElementById("catBar").addEventListener("click", e => {
 
 document.querySelectorAll(".rec-table tbody tr").forEach(row=>{
  const link=row.querySelector(".rec-dish"); if(!link)return;
+ const m=link.getAttribute("onclick")?.match(/openDishByNo\((\d+)\)/);
+ const no=m?parseInt(m[1],10):1;
  link.removeAttribute("onclick"); link.tabIndex=0;link.setAttribute("role","button");
- const show=()=>{const cells=row.cells;const d=DISHES.find(x=>x.name===cells[0].textContent)||DISHES.find(x=>x.no===1);openModal(d);document.getElementById("modalName").textContent=cells[0].textContent;document.getElementById("modalIng").textContent=cells[3].textContent;document.getElementById("modalEffect").textContent=cells[1].textContent;document.getElementById("modalHearts").textContent=cells[2].textContent;document.getElementById("modalCat").textContent="常用配方 · 锅煮";document.getElementById("modalIngNote").textContent="按此处具体材料与数量制作；数值为普通烹饪基础结果。";document.getElementById("modalRec").style.display="none";};
+ const show=()=>{const cells=row.cells;const d=DISHES.find(x=>x.no===no)||DISHES.find(x=>x.no===1);openModal(d);document.getElementById("modalName").textContent=cells[0].textContent;document.getElementById("modalIng").textContent=cells[3].textContent;document.getElementById("modalEffect").textContent=cells[1].textContent;document.getElementById("modalHearts").textContent=cells[2].textContent;document.getElementById("modalCat").textContent="常用配方 · 锅煮";document.getElementById("modalRec").style.display="none";};
  link.addEventListener("click",show);link.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();show();}});
 });
 // Keep keyboard focus within the active dialog.
