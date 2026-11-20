@@ -7,7 +7,29 @@
   <link rel="preconnect" href="https://pagead2.googlesyndication.com">
   <!-- 移动端标题字体预载：仅 ≤768px 生效，桌面端完全忽略 -->
   <style media="screen and (max-width: 768px)">
-  </style>
+  /* 首页手机简化（2026-11-20）：关掉固定装饰层与入场动画，卡片直接显示 */
+  #particles-canvas, #cursor-glow { display: none !important; }
+  .scroll-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  /* 数据行：四列一行，不换行 */
+  .totk-stats { display: grid !important; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .totk-stat-sep { display: none; }
+  .totk-stat-num { font-size: 1.35rem; }
+  .totk-stat-lbl { font-size: 0.7rem; }
+  /* 搜索区收紧：输入框矮一点，热门词一行横滑不换行 */
+  .site-search { margin-top: 14px !important; }
+  .site-search-input, .site-search-btn { height: 44px !important; }
+  .site-search-chips { flex-wrap: nowrap !important; overflow-x: auto; justify-content: flex-start !important; scrollbar-width: none; padding-bottom: 2px; }
+  .site-search-chips::-webkit-scrollbar { display: none; }
+  .site-search-chip { flex: 0 0 auto; }
+  .site-search-chips-label { white-space: nowrap; flex: 0 0 auto; }
+  /* 栏目收紧：上下留白与卡片内边距减半 */
+  .categories-section { padding: 36px 16px 44px; }
+  .section-header { margin-bottom: 20px; }
+  .section-title { font-size: 1.45rem; }
+  .category-card { padding: 20px 18px; }
+  .card-desc { margin-bottom: 14px; line-height: 1.6; }
+  .site-intro { margin: 36px auto 24px !important; padding: 0 16px !important; }
+</style>
   <!-- ═══ 安全与版权 meta ═══ -->
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <meta name="robots" content="index, follow">
@@ -43,7 +65,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#020814">
   <title>塞尔达传说王国之泪全攻略 | TotK完整攻略站</title>
-  <link rel="stylesheet" href="style.css?v=12">
+  <link rel="stylesheet" href="style.css">
   <!-- 站内搜索样式 (Day 8, 不动 style.css) -->
   <style>
   .site-search{position:relative;z-index:30;width:100%;max-width:560px;box-sizing:border-box;margin:22px auto 0;padding:0 16px;text-align:left;}
@@ -185,7 +207,7 @@
     <div class="site-search" id="site-search">
       <div class="site-search-box">
         <form class="site-search-form" role="search" action="#" onsubmit="return false;">
-          <input type="search" class="site-search-input" placeholder="搜攻略：神庙、武器、料理、坐标…" aria-label="站内搜索" autocomplete="off" enterkeyhint="search">
+          <input type="search" class="site-search-input" placeholder="搜攻略：神庙、武器、料理" aria-label="站内搜索" autocomplete="off" enterkeyhint="search">
           <button type="submit" class="site-search-btn" aria-label="搜索">搜索</button>
         </form>
         <div class="site-search-results" hidden></div>
@@ -213,7 +235,7 @@
   <div class="section-header">
     <span class="section-tag">FIND BY GOAL</span>
     <h2 class="section-title">按目标<span>找攻略</span></h2>
-    <p class="section-subtitle">不知道从哪开始？先选你现在的目标，点进去就是对应的攻略</p>
+    <p class="section-subtitle">选你的目标，点进去就是攻略</p>
   </div>
 
   <div class="categories-grid">
@@ -222,7 +244,7 @@
       <span class="card-icon">🧭</span>
       <p class="card-number">GOAL 01</p>
       <h3 class="card-title">新手路线</h3>
-      <p class="card-desc">刚落地不知道先干什么？按这个顺序走：<a href="paraglider-guide" style="color:var(--gold);">开滑翔伞</a> → <a href="tower-guide" style="color:var(--gold);">开鸟望塔</a> → <a href="quest-order" style="color:var(--gold);">选神殿</a> → <a href="blessing-light-guide" style="color:var(--gold);">提升精力</a>。预计耗时约 2 小时走完开荒第一步（按本站新手指南的前 2 小时路线）。滑翔伞要先走监视堡垒主线见普尔亚，拿到之后再开鸟望塔；全图 15 座鸟望塔，点亮一座解锁一片地图。</p>
+      <p class="card-desc">刚落地不知道先干什么？按这个顺序走：<a href="paraglider-guide" style="color:var(--gold);">开滑翔伞</a> → <a href="tower-guide" style="color:var(--gold);">开鸟望塔</a> → <a href="quest-order" style="color:var(--gold);">选神殿</a> → <a href="blessing-light-guide" style="color:var(--gold);">提升精力</a>，约 2 小时走完开荒第一步。</p>
       <span class="card-count">📖 <a href="beginner-guide" style="color:var(--gold);">新手开荒指南：落地先做的 10 件事 →</a></span>
       <span class="card-arrow">→</span>
     </div>
@@ -231,7 +253,7 @@
       <span class="card-icon">🆘</span>
       <p class="card-number">GOAL 02</p>
       <h3 class="card-title">卡关了</h3>
-      <p class="card-desc">打不过、找不到、不知道下一步？直接搜：神庙名、武器、料理、坐标都能搜。比如搜“瘴气”“白银莱尼尔”“乌萨诸马”，一点就到对应攻略。搜不到就换个词试试：神庙挑战搜神庙名，武器搜名字或素材名，料理搜效果名比如攻击、耐寒。</p>
+      <p class="card-desc">打不过、找不到、不知道下一步？直接搜：神庙名、武器、料理、坐标都能搜。</p>
       <span class="card-count">🔍 <a href="#site-search" style="color:var(--gold);">直通本页上方的全站搜索 →</a></span>
       <span class="card-arrow">→</span>
     </div>
@@ -240,7 +262,7 @@
       <span class="card-icon">🗺️</span>
       <p class="card-number">GOAL 03</p>
       <h3 class="card-title">收集</h3>
-      <p class="card-desc">缺几个就差全收集了？四张清单一次找齐：<a href="shrine-unlock" style="color:var(--gold);">152 座神庙坐标</a>、<a href="roots" style="color:var(--gold);">120 个破魔树根</a>、<a href="mauyu-lost" style="color:var(--gold);">魔犹伊的遗失物</a>、<a href="sage-will" style="color:var(--gold);">20 个贤者的遗志</a>，带地图与清单入口，四张清单都带坐标，照着走就能一个一个清掉。</p>
+      <p class="card-desc">缺几个就差全收集了？四张清单一次找齐：<a href="shrine-unlock" style="color:var(--gold);">152 座神庙坐标</a>、<a href="roots" style="color:var(--gold);">120 个破魔树根</a>、<a href="mauyu-lost" style="color:var(--gold);">魔犹伊的遗失物</a>、<a href="sage-will" style="color:var(--gold);">20 个贤者的遗志</a>，照着走就能一个一个清掉。</p>
       <span class="card-count">✅ <a href="shrine-unlock" style="color:var(--gold);">从神庙清单开始 →</a></span>
       <span class="card-arrow">→</span>
     </div>
@@ -249,7 +271,7 @@
       <span class="card-icon">⚔️</span>
       <p class="card-number">GOAL 04</p>
       <h3 class="card-title">战斗</h3>
-      <p class="card-desc">想打得赢，先学会躲：<a href="lynel-guide" style="color:var(--gold);">人马打法</a>、<a href="boss" style="color:var(--gold);">全部 16 个 Boss</a>、<a href="flurry-rush-guide" style="color:var(--gold);">闪避与盾反</a>，打完最终 Boss <a href="boss-ganondorf" style="color:var(--gold);">魔王加侬多夫</a>再看这篇。先把闪避练熟再去挑战人马：人马是全游戏最考验闪避的敌人，练好了再打加侬多夫会轻松很多。</p>
+      <p class="card-desc">想打得赢，先学会躲：<a href="lynel-guide" style="color:var(--gold);">人马打法</a>、<a href="boss" style="color:var(--gold);">全部 16 个 Boss</a>、<a href="flurry-rush-guide" style="color:var(--gold);">闪避与盾反</a>，打完最终 Boss <a href="boss-ganondorf" style="color:var(--gold);">魔王加侬多夫</a>再看这篇。</p>
       <span class="card-count">⚔️ <a href="flurry-rush-guide" style="color:var(--gold);">先学闪避与盾反 →</a></span>
       <span class="card-arrow">→</span>
     </div>
@@ -266,7 +288,7 @@
       🏆 哈里的终极秘籍
     </h2>
     <p style="font-size:0.95rem;color:var(--text-secondary);line-height:2;max-width:800px;margin:0 auto 16px;">
-      每日一更的老司机通关秘籍，分享视频攻略不会分享的其他玩法
+      每日一更，视频里没有的玩法。
     </p>
     <a href="harry-tips" style="display:inline-block;padding:12px 32px;border:1px solid var(--border-gold);border-radius:var(--radius);color:var(--gold);background:rgba(201,162,39,0.12);font-weight:700;text-decoration:none;">
       进入哈里的终极秘籍 →
@@ -284,7 +306,7 @@
       🆕 最新攻略
     </h2>
     <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.8;max-width:800px;margin:0 auto 20px;">
-      最近更新的 8 篇攻略，最新两篇是今天 11 月 19 日上线的左纳乌套装与蛙人套装。每天更新，写完就上架，点标题直接看全文。
+      最近更新的 8 篇，点标题直接看全文。
     </p>
     <ul style="list-style:none;padding:0;margin:0;text-align:left;max-width:800px;margin-left:auto;margin-right:auto;">
       <li style="padding:10px 0;border-bottom:1px solid rgba(201,162,39,0.12);font-size:0.92rem;line-height:1.7;"><a href="zonaite-set-guide" style="color:var(--gold);text-decoration:none;">左纳乌套装完全指南：先上天，再省电</a> <span style="color:var(--text-muted);font-size:0.8rem;">2026-11-19</span></li>
@@ -296,7 +318,7 @@
       <li style="padding:10px 0;border-bottom:1px solid rgba(201,162,39,0.12);font-size:0.92rem;line-height:1.7;"><a href="barbarian-armor-guide" style="color:var(--gold);text-decoration:none;">蛮族套装完全指南：三件位置、强化材料与攻击提升全解</a> <span style="color:var(--text-muted);font-size:0.8rem;">2026-11-16</span></li>
       <li style="padding:10px 0;font-size:0.92rem;line-height:1.7;"><a href="fishing-guide" style="color:var(--gold);text-decoration:none;">钓鱼完全指南：电鱼、钓点与 15 种鱼全解</a> <span style="color:var(--text-muted);font-size:0.8rem;">2026-11-16</span></li>
     </ul>
-    <p style="font-size:0.9rem;margin:20px 0 0;"><a href="harry-tips" style="color:var(--gold);">查看全部 63 篇秘籍 →</a></p>
+    <p style="font-size:0.9rem;margin:20px 0 0;"><a href="harry-tips" style="color:var(--gold);">查看全部 65 篇秘籍 →</a></p>
   </div>
 </section>
 
@@ -308,13 +330,13 @@
       🔥 热门攻略
     </h2>
     <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.8;max-width:800px;margin:0 auto 20px;">
-      玩家搜得最多的四个方向，按本站搜索点击排。这四篇是玩家从搜索引擎点进来最多的页面，先看它们，再按需去翻专栏里的 63 篇。
+      玩家搜得最多的四个方向。
     </p>
     <ul style="list-style:none;padding:0;margin:0;text-align:left;max-width:800px;margin-left:auto;margin-right:auto;">
-      <li style="padding:10px 0;border-bottom:1px solid rgba(201,162,39,0.12);font-size:0.92rem;line-height:1.7;"><a href="main-quest" style="color:var(--gold);text-decoration:none;">主线任务：23 条主线完整攻略</a><span style="color:var(--text-secondary);">——从初始空岛到讨伐加侬多夫，含推进顺序与关键道具。</span></li>
-      <li style="padding:10px 0;border-bottom:1px solid rgba(201,162,39,0.12);font-size:0.92rem;line-height:1.7;"><a href="cooking-mechanics" style="color:var(--gold);text-decoration:none;">料理机制全解：效果、时长与暴击</a><span style="color:var(--text-secondary);">——效果时长表、必暴食材清单与三道实算配方。</span></li>
-      <li style="padding:10px 0;border-bottom:1px solid rgba(201,162,39,0.12);font-size:0.92rem;line-height:1.7;"><a href="dragon-tears-guide" style="color:var(--gold);text-decoration:none;">龙之泪：全收集与记忆位置</a><span style="color:var(--text-secondary);">——龙之泪位置与顺序，拿全记忆再去找白龙。</span></li>
-      <li style="padding:10px 0;font-size:0.92rem;line-height:1.7;"><a href="roots" style="color:var(--gold);text-decoration:none;">破魔树根：120 个树根全位置</a><span style="color:var(--text-secondary);">——地底世界分区攻略，点亮每一寸地图。</span></li>
+      <li style="padding:10px 0;border-bottom:1px solid rgba(201,162,39,0.12);font-size:0.92rem;line-height:1.7;"><a href="main-quest" style="color:var(--gold);text-decoration:none;">主线任务：23 条主线完整攻略</a></li>
+      <li style="padding:10px 0;border-bottom:1px solid rgba(201,162,39,0.12);font-size:0.92rem;line-height:1.7;"><a href="cooking-mechanics" style="color:var(--gold);text-decoration:none;">料理机制全解：效果、时长与暴击</a></li>
+      <li style="padding:10px 0;border-bottom:1px solid rgba(201,162,39,0.12);font-size:0.92rem;line-height:1.7;"><a href="dragon-tears-guide" style="color:var(--gold);text-decoration:none;">龙之泪：全收集与记忆位置</a></li>
+      <li style="padding:10px 0;font-size:0.92rem;line-height:1.7;"><a href="roots" style="color:var(--gold);text-decoration:none;">破魔树根：120 个树根全位置</a></li>
     </ul>
   </div>
 </section>
@@ -334,7 +356,7 @@
       <span class="card-icon">📜</span>
       <p class="card-number">CHAPTER 01</p>
       <h3 class="card-title">主线任务</h3>
-      <p class="card-desc">从初始空岛到讨伐加侬多夫，23条主线任务完整攻略，包含剧情解析、推进顺序与关键道具。</p>
+      <p class="card-desc">23 条主线完整攻略，含剧情解析与推进顺序。</p>
       <span class="card-count">🗺 共 23 条任务</span>
       <span class="card-arrow">→</span>
     </a>
@@ -343,7 +365,7 @@
       <span class="card-icon">💬</span>
       <p class="card-number">CHAPTER 02</p>
       <h3 class="card-title">情节挑战</h3>
-      <p class="card-desc">遍布海拉鲁大地的情节挑战全收录，NPC对话触发条件、奖励道具与完成建议一览。</p>
+      <p class="card-desc">全收录：触发条件、奖励与完成建议。</p>
       <span class="card-count">📋 精选情节挑战攻略</span>
       <span class="card-arrow">→</span>
     </a>
@@ -352,7 +374,7 @@
       <span class="card-icon">🏛️</span>
       <p class="card-number">CHAPTER 03</p>
       <h3 class="card-title">神庙挑战</h3>
-      <p class="card-desc">31 篇神庙挑战攻略（是攻略篇数，不是神庙总数；全作共 152 座神庙），涵盖水晶神庙、洞窟神庙与特殊任务触发等各类型，详解找寻路线与开启条件。</p>
+      <p class="card-desc">31 篇挑战攻略，详解找寻路线与开启条件。</p>
       <span class="card-count">🏛️ 31 篇神庙挑战攻略</span>
       <span class="card-arrow">→</span>
     </a>
@@ -361,7 +383,7 @@
       <span class="card-icon">🔮</span>
       <p class="card-number">CHAPTER 04</p>
       <h3 class="card-title">神庙开启指南</h3>
-      <p class="card-desc">152座神庙按地区分类，标注精确坐标、前置条件与开启方式，助你完成全神庙收集。</p>
+      <p class="card-desc">152 座神庙按地区分类，附精确坐标。</p>
       <span class="card-count">📍 全区坐标收录</span>
       <span class="card-arrow">→</span>
     </a>
@@ -370,7 +392,7 @@
       <span class="card-icon">🌿</span>
       <p class="card-number">CHAPTER 05</p>
       <h3 class="card-title">破魔树根</h3>
-      <p class="card-desc">120个破魔树根全部位置与开启方式，地底世界分区攻略，帮你点亮每一寸地图。</p>
+      <p class="card-desc">120 个树根全位置，地底分区攻略。</p>
       <span class="card-count">🌿 120 个树根</span>
       <span class="card-arrow">→</span>
     </a>
@@ -379,7 +401,7 @@
       <span class="card-icon">⚔️</span>
       <p class="card-number">CHAPTER 06</p>
       <h3 class="card-title">武器获取与合成</h3>
-      <p class="card-desc">各类武器获取途径、融合材料推荐、伤害计算与最优合成配方，打造你的究极兵装。</p>
+      <p class="card-desc">武器获取、融合材料与最优合成配方。</p>
       <span class="card-count">⚔️ 含融合配方</span>
       <span class="card-arrow">→</span>
     </a>
@@ -388,7 +410,7 @@
       <span class="card-icon">🍲</span>
       <p class="card-number">CHAPTER 07</p>
       <h3 class="card-title">料理合成</h3>
-      <p class="card-desc">回血、强化心跳、耐寒耐热等效果料理全收录，星级食材搭配与最高效食谱推荐。</p>
+      <p class="card-desc">效果料理全收录，星级食材搭配与高效食谱。</p>
       <span class="card-count">🍳 含特效料理</span>
       <span class="card-arrow">→</span>
     </a>
@@ -397,7 +419,7 @@
       <span class="card-icon">🧥</span>
       <p class="card-number">CHAPTER 08</p>
       <h3 class="card-title">套装获取</h3>
-      <p class="card-desc">全 31 套套装完整图鉴，含获取方式、套装加成、大妖精强化素材与使用建议，助你打造最强防具。</p>
+      <p class="card-desc">31 套套装图鉴：获取、加成与强化素材。</p>
       <span class="card-count">🛡 共 31 套套装</span>
       <span class="card-arrow">→</span>
     </a>
@@ -406,7 +428,7 @@
       <span class="card-icon">👹</span>
       <p class="card-number">CHAPTER 09</p>
       <h3 class="card-title">Boss 图鉴</h3>
-      <p class="card-desc">全 16 个 Boss 完整攻略，含方块魔像、巨霸迦马、吉波得女王、魔王加侬多夫等，详解弱点、阶段打法、推荐装备与掉落物品。</p>
+      <p class="card-desc">16 个 Boss：弱点、阶段打法与掉落。</p>
       <span class="card-count">👹 共 16 个 Boss</span>
       <span class="card-arrow">→</span>
     </a>
@@ -428,7 +450,7 @@
       <span class="card-icon">🌀</span>
       <p class="card-number">COLLECT 01</p>
       <h3 class="card-title">魔犹伊的遗失物</h3>
-      <p class="card-desc">散落于海拉鲁各地的魔犹伊遗失物全收录，含精确坐标、获取方式与交还奖励，助你完成全数集齐。</p>
+      <p class="card-desc">全收录：精确坐标、获取方式与交还奖励。</p>
       <span class="card-count">🔍 全部遗失物位置</span>
       <span class="card-arrow">→</span>
     </a>
@@ -437,7 +459,7 @@
       <span class="card-icon">📖</span>
       <p class="card-number">COLLECT 02</p>
       <h3 class="card-title">贤者的遗志</h3>
-      <p class="card-desc">全 20 个贤者的遗志精确坐标，含互动地图、Boss 击败条件与收集进度追踪，助你集齐四位贤者的全部遗志。</p>
+      <p class="card-desc">20 个遗志精确坐标，含互动地图与进度追踪。</p>
       <span class="card-count">📍 全 20 个遗志坐标</span>
       <span class="card-arrow">→</span>
     </a>
@@ -445,7 +467,7 @@
       <span class="card-icon">🗺️</span>
       <p class="card-number">COLLECT 03</p>
       <h3 class="card-title">残旧的地图</h3>
-      <p class="card-desc">全 31 张残旧的地图天空坐标，含天空交互地图、分布地点列表与收集进度追踪，勾选后可导出已收集 Excel 汇总表，助你集齐全部地底宝藏。</p>
+      <p class="card-desc">31 张地图天空坐标，含交互地图与进度追踪。</p>
       <span class="card-count">📍 全 31 张地图坐标</span>
       <span class="card-arrow">→</span>
     </a>
@@ -471,8 +493,8 @@
   </div>
 </footer>
 
-<script src="main.js?v=12"></script>
-<script src="search.js?v=1"></script>
+<script src="main.js"></script>
+<script src="search.js"></script>
 </body>
 </html>
 
