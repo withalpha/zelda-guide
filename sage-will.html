@@ -51,7 +51,7 @@
     "url": "https://uppersteps.com/sage-will",
     "inLanguage": "zh-CN",
     "datePublished": "2025-06-01",
-    "dateModified": "2026-11-22",
+    "dateModified": "2026-11-24",
     "author": { "@type": "Person", "name": "zelda-guide" },
     "publisher": { "@type": "Organization", "name": "王国之泪全攻略", "url": "https://uppersteps.com/" },
     "breadcrumb": {
@@ -274,45 +274,54 @@
 </div>
 
   <div class="highlight-box">
-    <strong>贤者的遗志说明：</strong>全游戏共 <strong>20 个贤者的遗志（Sage's Will）</strong>，分布于天空群岛的宝箱中，每位贤者对应 5 个。
-    收集后可在<strong>神庙</strong>内的雕像处兑换，每 4 个可提升一位贤者的能力等级（最高 2 级）。
+    <strong>贤者的遗志说明：</strong>全游戏共 <strong>20 个贤者的遗志（Sage's Will）</strong>，分布于天空群岛的宝箱中，集齐 20 个可把五位贤者的誓约全部升满。
+    收集后可在任意一座<strong>女神像</strong>处兑换：每 4 个可把一位贤者的誓约升为庄严誓约（每位只能升一次，提升该贤者化身的攻击力）。
     部分遗志需要<strong>击败特定 Boss</strong>（方块魔像 II/III、王者古栗欧克）才能开启宝箱，其余通过解谜或直接开箱获得。
     <br><strong>坐标说明：</strong>游戏内按 <strong>M</strong> 打开地图，右下角显示当前坐标（X, Y, Z）。天空群岛 Z 高度通常在 800 以上。
+  </div>
+
+  <!-- 使用说明 -->
+  <div class="usage-box" style="margin:22px 0;padding:20px 22px;border:1px solid rgba(201,162,39,0.4);border-radius:14px;background:rgba(201,162,39,0.05);">
+    <h2 style="margin:0 0 10px;font-size:1.15rem;color:#e8c85a;">📖 贤者的遗志怎么用</h2>
+    <p style="margin:0 0 10px;line-height:1.8;"><strong>这是什么：</strong>贤者的遗志是天空群岛宝箱里的关键道具，全游戏共 20 个。集齐 4 个后，去任意一座女神像处祈祷，就能把一位已觉醒贤者的誓约升为「庄严誓约」，提升该贤者化身在战斗中的攻击力。20 个正好把五位贤者全部升满。</p>
+    <p style="margin:0 0 10px;line-height:1.8;"><strong>怎么收集：</strong>20 个全在天空层的宝箱里，地面和地底一个也没有。大部分直接开箱或解个小谜就能拿；少数几个要击败方块魔像 II/III 或王者古栗欧克才能开箱。本页的表格与地图按贤者分成四组、每组 5 个，点上方的贤者卡片可以只看某一组；坐标对照游戏内地图右下角的 X、Y、Z，Z 在 800 以上就是天空层。</p>
+    <p style="margin:0 0 10px;line-height:1.8;"><strong>两个容易搞错的点：</strong>第一，遗志不绑定贤者——任意 4 个都能给任意一位贤者升级，本页按贤者分组只是为了查进度方便，不是游戏里的绑定关系；第二，必须先完成该贤者的神殿、拿到他的誓约，才能给他升级。在觉醒贤者之前捡到的遗志，游戏里只会显示「像是属于贤者的小石头」，看不出用途，别扔掉。</p>
+    <p style="margin:0;line-height:1.8;"><strong>先升谁（作者建议）：</strong>升级只加攻击力，不改变技能机制，所以先升最常用的那位收益最大。作者的顺序是：丘栗最先——风之贤者化身出场率最高，平时清怪、赶路都用得上；其次露珠，雷电范围伤害清群怪快；再是阿沅，火球破防好用；希多偏辅助、米涅鲁拿到得晚，放最后。手头刚凑够 4 个就别攒着，先给丘栗升了再说。</p>
   </div>
 
   <!-- 贤者卡片 -->
   <div class="section-label">🧙 五位贤者</div>
   <div class="sage-cards">
-    <div class="sage-card" onclick="filterWillSage('tulin',this)">
+    <div class="sage-card" onclick="filterWillSage('yunobo',this)">
       <img src="images/xianzhe/阿沅.png" alt="阿沅" loading="lazy">
       <div>
         <div class="sage-card-name">阿沅</div>
         <div class="sage-card-role">火之贤者 · 鼓隆族</div>
-        <div class="sage-card-count" id="count-tulin">0 / 5</div>
-      </div>
-    </div>
-    <div class="sage-card" onclick="filterWillSage('sidon',this)">
-      <img src="images/xianzhe/露珠.png" alt="露珠" loading="lazy">
-      <div>
-        <div class="sage-card-name">露珠</div>
-        <div class="sage-card-role">雷之贤者 · 格鲁德族</div>
-        <div class="sage-card-count" id="count-sidon">0 / 5</div>
-      </div>
-    </div>
-    <div class="sage-card" onclick="filterWillSage('yunobo',this)">
-      <img src="images/xianzhe/丘栗.png" alt="丘栗" loading="lazy">
-      <div>
-        <div class="sage-card-name">丘栗</div>
-        <div class="sage-card-role">风之贤者 · 利特族</div>
         <div class="sage-card-count" id="count-yunobo">0 / 5</div>
       </div>
     </div>
     <div class="sage-card" onclick="filterWillSage('riju',this)">
+      <img src="images/xianzhe/露珠.png" alt="露珠" loading="lazy">
+      <div>
+        <div class="sage-card-name">露珠</div>
+        <div class="sage-card-role">雷之贤者 · 格鲁德族</div>
+        <div class="sage-card-count" id="count-riju">0 / 5</div>
+      </div>
+    </div>
+    <div class="sage-card" onclick="filterWillSage('tulin',this)">
+      <img src="images/xianzhe/丘栗.png" alt="丘栗" loading="lazy">
+      <div>
+        <div class="sage-card-name">丘栗</div>
+        <div class="sage-card-role">风之贤者 · 利特族</div>
+        <div class="sage-card-count" id="count-tulin">0 / 5</div>
+      </div>
+    </div>
+    <div class="sage-card" onclick="filterWillSage('sidon',this)">
       <img src="images/xianzhe/希多.png" alt="希多" loading="lazy">
       <div>
         <div class="sage-card-name">希多</div>
         <div class="sage-card-role">水之贤者 · 卓拉族</div>
-        <div class="sage-card-count" id="count-riju">0 / 5</div>
+        <div class="sage-card-count" id="count-sidon">0 / 5</div>
       </div>
     </div>
     <div class="sage-card" onclick="filterWillSage('mineru',this)">
@@ -339,10 +348,10 @@
     <div id="sage-map-controls-row">
       <span class="map-ctrl-lbl">贤者筛选：</span>
       <button class="map-ctrl-btn active" id="mapWillAll" onclick="mapWillFilter('all',this)">全部</button>
-      <button class="map-ctrl-btn" onclick="mapWillFilter('tulin',this)">阿沅·火</button>
-      <button class="map-ctrl-btn" onclick="mapWillFilter('sidon',this)">露珠·雷</button>
-      <button class="map-ctrl-btn" onclick="mapWillFilter('yunobo',this)">丘栗·风</button>
-      <button class="map-ctrl-btn" onclick="mapWillFilter('riju',this)">希多·水</button>
+      <button class="map-ctrl-btn" onclick="mapWillFilter('yunobo',this)">阿沅·火</button>
+      <button class="map-ctrl-btn" onclick="mapWillFilter('riju',this)">露珠·雷</button>
+      <button class="map-ctrl-btn" onclick="mapWillFilter('tulin',this)">丘栗·风</button>
+      <button class="map-ctrl-btn" onclick="mapWillFilter('sidon',this)">希多·水</button>
       <button class="map-ctrl-btn map-done-btn" id="mapWillHideDone" onclick="mapWillToggleDone(this)">隐藏已完成</button>
     </div>
     <div id="sage-map-wrap" style="position:relative">
@@ -374,65 +383,65 @@
       </thead>
       <tbody id="willTableBody">
 
-<!-- ===== 阿沅 (Tulin) - 风之贤者 ===== -->
+<!-- ===== 阿沅 (Yunobo) - 火之贤者 ===== -->
 <tr><td colspan="5" style="padding:4px 0"><div class="will-section-header" style="margin:0">
   <img class="will-section-img" src="images/xianzhe/阿沅.png" alt="阿沅" loading="lazy">
   <div style="flex:1">
     <div class="will-section-title">🔥 阿沅 — 火之贤者</div>
     <div class="will-section-sub">鼓隆族 · Fire Sage · 5 个遗志</div>
   </div>
-  <span class="will-section-count" id="sec-count-tulin">0 / 5</span>
+  <span class="will-section-count" id="sec-count-yunobo">0 / 5</span>
 </div></td></tr>
-<tr id="will-row-0" data-sage="tulin"><td class="will-num-cell">001</td><td><span class="wname-cn">南奥尔汀天空群岛</span><span class="wname-en">South Eldin Sky Archipelago</span></td><td><span class="coord">1879, 1202, 1251</span></td><td>艾尔丁天空</td><td><button class="will-check" onclick="toggleWillCheck(this,0)">✓</button></td></tr>
-<tr id="will-row-1" data-sage="tulin"><td class="will-num-cell">002</td><td><span class="wname-cn">奥尔汀天空群岛</span><span class="wname-en">Eldin Sky Archipelago</span></td><td><span class="coord">1800, 1642, 1437</span></td><td>艾尔丁天空</td><td><button class="will-check" onclick="toggleWillCheck(this,1)">✓</button></td></tr>
-<tr id="will-row-2" data-sage="tulin"><td class="will-num-cell">003</td><td><span class="wname-cn">索卡拉天空群岛</span><span class="wname-en">Sokkala Sky Archipelago</span></td><td><span class="coord">3671, 1484, 1158</span></td><td>阿卡拉天空</td><td><button class="will-check" onclick="toggleWillCheck(this,2)">✓</button></td></tr>
-<tr id="will-row-3" data-sage="tulin"><td class="will-num-cell">004</td><td><span class="wname-cn">拉聂尔天空群岛</span><span class="wname-en">Lanayru Sky Archipelago</span></td><td><span class="coord">2999, -251, 894</span></td><td>拉纳尤天空</td><td><button class="will-check" onclick="toggleWillCheck(this,3)">✓</button></td></tr>
-<tr id="will-row-4" data-sage="tulin"><td class="will-num-cell">005</td><td><span class="wname-cn">拉聂尔大水源天空</span><span class="wname-en">Lanayru Great Spring Sky</span></td><td><span class="coord">2911, 525, 929</span></td><td>拉纳尤天空</td><td><button class="will-check" onclick="toggleWillCheck(this,4)">✓</button></td></tr>
+<tr id="will-row-0" data-sage="yunobo"><td class="will-num-cell">001</td><td><span class="wname-cn">南奥尔汀天空群岛</span><span class="wname-en">South Eldin Sky Archipelago</span></td><td><span class="coord">1879, 1202, 1251</span></td><td>艾尔丁天空</td><td><button class="will-check" onclick="toggleWillCheck(this,0)">✓</button></td></tr>
+<tr id="will-row-1" data-sage="yunobo"><td class="will-num-cell">002</td><td><span class="wname-cn">奥尔汀天空群岛</span><span class="wname-en">Eldin Sky Archipelago</span></td><td><span class="coord">1800, 1642, 1437</span></td><td>艾尔丁天空</td><td><button class="will-check" onclick="toggleWillCheck(this,1)">✓</button></td></tr>
+<tr id="will-row-2" data-sage="yunobo"><td class="will-num-cell">003</td><td><span class="wname-cn">索卡拉天空群岛</span><span class="wname-en">Sokkala Sky Archipelago</span></td><td><span class="coord">3671, 1484, 1158</span></td><td>阿卡拉天空</td><td><button class="will-check" onclick="toggleWillCheck(this,2)">✓</button></td></tr>
+<tr id="will-row-3" data-sage="yunobo"><td class="will-num-cell">004</td><td><span class="wname-cn">拉聂尔天空群岛</span><span class="wname-en">Lanayru Sky Archipelago</span></td><td><span class="coord">2999, -251, 894</span></td><td>拉纳尤天空</td><td><button class="will-check" onclick="toggleWillCheck(this,3)">✓</button></td></tr>
+<tr id="will-row-4" data-sage="yunobo"><td class="will-num-cell">005</td><td><span class="wname-cn">拉聂尔大水源天空</span><span class="wname-en">Lanayru Great Spring Sky</span></td><td><span class="coord">2911, 525, 929</span></td><td>拉纳尤天空</td><td><button class="will-check" onclick="toggleWillCheck(this,4)">✓</button></td></tr>
 
-<!-- ===== 露珠 (Sidon) - 水之贤者 ===== -->
+<!-- ===== 露珠 (Riju) - 雷之贤者 ===== -->
 <tr><td colspan="5" style="padding:4px 0"><div class="will-section-header" style="margin:0">
   <img class="will-section-img" src="images/xianzhe/露珠.png" alt="露珠" loading="lazy">
   <div style="flex:1">
     <div class="will-section-title">⚡️ 露珠 — 雷之贤者</div>
     <div class="will-section-sub">格鲁德族 · Thunder Sage · 5 个遗志</div>
   </div>
-  <span class="will-section-count" id="sec-count-sidon">0 / 5</span>
+  <span class="will-section-count" id="sec-count-riju">0 / 5</span>
 </div></td></tr>
-<tr id="will-row-5" data-sage="sidon"><td class="will-num-cell">006</td><td><span class="wname-cn">西格鲁德天空</span><span class="wname-en">West Gerudo Sky</span></td><td><span class="coord">-4447, -2731, 1419</span></td><td>格鲁德天空</td><td><button class="will-check" onclick="toggleWillCheck(this,5)">✓</button></td></tr>
-<tr id="will-row-6" data-sage="sidon"><td class="will-num-cell">007</td><td><span class="wname-cn">东格鲁德天空群岛</span><span class="wname-en">East Gerudo Sky Archipelago</span></td><td><span class="coord">-1958, -1812, 1140</span></td><td>格鲁德天空</td><td><button class="will-check" onclick="toggleWillCheck(this,6)">✓</button></td></tr>
-<tr id="will-row-7" data-sage="sidon"><td class="will-num-cell">008</td><td><span class="wname-cn">星望岛（北格鲁德天空）</span><span class="wname-en">Starview Island</span></td><td><span class="coord">-3457, -264, 1938</span></td><td>格鲁德天空</td><td><button class="will-check" onclick="toggleWillCheck(this,7)">✓</button></td></tr>
-<tr id="will-row-8" data-sage="sidon"><td class="will-num-cell">009</td><td><span class="wname-cn">西海拉鲁天空群岛</span><span class="wname-en">West Hyrule Sky Archipelago</span></td><td><span class="coord">-2290, -411, 894</span></td><td>中央天空</td><td><button class="will-check" onclick="toggleWillCheck(this,8)">✓</button></td></tr>
-<tr id="will-row-9" data-sage="sidon"><td class="will-num-cell">010</td><td><span class="wname-cn">法罗尼天空群岛</span><span class="wname-en">Faron Sky Archipelago</span></td><td><span class="coord">-324, -2591, 894</span></td><td>法罗尼天空</td><td><button class="will-check" onclick="toggleWillCheck(this,9)">✓</button></td></tr>
+<tr id="will-row-5" data-sage="riju"><td class="will-num-cell">006</td><td><span class="wname-cn">西格鲁德天空</span><span class="wname-en">West Gerudo Sky</span></td><td><span class="coord">-4447, -2731, 1419</span></td><td>格鲁德天空</td><td><button class="will-check" onclick="toggleWillCheck(this,5)">✓</button></td></tr>
+<tr id="will-row-6" data-sage="riju"><td class="will-num-cell">007</td><td><span class="wname-cn">东格鲁德天空群岛</span><span class="wname-en">East Gerudo Sky Archipelago</span></td><td><span class="coord">-1958, -1812, 1140</span></td><td>格鲁德天空</td><td><button class="will-check" onclick="toggleWillCheck(this,6)">✓</button></td></tr>
+<tr id="will-row-7" data-sage="riju"><td class="will-num-cell">008</td><td><span class="wname-cn">星望岛（北格鲁德天空）</span><span class="wname-en">Starview Island</span></td><td><span class="coord">-3457, -264, 1938</span></td><td>格鲁德天空</td><td><button class="will-check" onclick="toggleWillCheck(this,7)">✓</button></td></tr>
+<tr id="will-row-8" data-sage="riju"><td class="will-num-cell">009</td><td><span class="wname-cn">西海拉鲁天空群岛</span><span class="wname-en">West Hyrule Sky Archipelago</span></td><td><span class="coord">-2290, -411, 894</span></td><td>中央天空</td><td><button class="will-check" onclick="toggleWillCheck(this,8)">✓</button></td></tr>
+<tr id="will-row-9" data-sage="riju"><td class="will-num-cell">010</td><td><span class="wname-cn">法罗尼天空群岛</span><span class="wname-en">Faron Sky Archipelago</span></td><td><span class="coord">-324, -2591, 894</span></td><td>法罗尼天空</td><td><button class="will-check" onclick="toggleWillCheck(this,9)">✓</button></td></tr>
 
-<!-- ===== 丘栗 (Yunobo) - 火之贤者 ===== -->
+<!-- ===== 丘栗 (Tulin) - 风之贤者 ===== -->
 <tr><td colspan="5" style="padding:4px 0"><div class="will-section-header" style="margin:0">
   <img class="will-section-img" src="images/xianzhe/丘栗.png" alt="丘栗" loading="lazy">
   <div style="flex:1">
     <div class="will-section-title">🌬 丘栗 — 风之贤者</div>
     <div class="will-section-sub">利特族 · Wind Sage · 5 个遗志</div>
   </div>
-  <span class="will-section-count" id="sec-count-yunobo">0 / 5</span>
+  <span class="will-section-count" id="sec-count-tulin">0 / 5</span>
 </div></td></tr>
-<tr id="will-row-10" data-sage="yunobo"><td class="will-num-cell">011</td><td><span class="wname-cn">西海布拉天空群岛</span><span class="wname-en">West Hebra Sky Archipelago</span></td><td><span class="coord">-4470, 2171, 1253</span></td><td>赫布拉天空</td><td><button class="will-check" onclick="toggleWillCheck(this,10)">✓</button></td></tr>
-<tr id="will-row-11" data-sage="yunobo"><td class="will-num-cell">012</td><td><span class="wname-cn">南海布拉天空群岛</span><span class="wname-en">South Hebra Sky Archipelago</span></td><td><span class="coord">-3075, 2151, 648</span></td><td>赫布拉天空</td><td><button class="will-check" onclick="toggleWillCheck(this,11)">✓</button></td></tr>
-<tr id="will-row-12" data-sage="yunobo"><td class="will-num-cell">013</td><td><span class="wname-cn">北塔班达天空群岛</span><span class="wname-en">North Tabantha Sky Archipelago</span></td><td><span class="coord">-3780, 1572, 1237</span></td><td>塔班达天空</td><td><button class="will-check" onclick="toggleWillCheck(this,12)">✓</button></td></tr>
-<tr id="will-row-13" data-sage="yunobo"><td class="will-num-cell">014</td><td><span class="wname-cn">雷鸣岛（法罗尼天空）</span><span class="wname-en">Thunderhead Isles</span></td><td><span class="coord">967, -3306, 846</span></td><td>法罗尼天空</td><td><button class="will-check" onclick="toggleWillCheck(this,13)">✓</button></td></tr>
-<tr id="will-row-14" data-sage="yunobo"><td class="will-num-cell">015</td><td><span class="wname-cn">龙首岛（法罗尼天空）</span><span class="wname-en">Dragonhead Island</span></td><td><span class="coord">1309, -3210, 459</span></td><td>法罗尼天空</td><td><button class="will-check" onclick="toggleWillCheck(this,14)">✓</button></td></tr>
+<tr id="will-row-10" data-sage="tulin"><td class="will-num-cell">011</td><td><span class="wname-cn">西海布拉天空群岛</span><span class="wname-en">West Hebra Sky Archipelago</span></td><td><span class="coord">-4470, 2171, 1253</span></td><td>赫布拉天空</td><td><button class="will-check" onclick="toggleWillCheck(this,10)">✓</button></td></tr>
+<tr id="will-row-11" data-sage="tulin"><td class="will-num-cell">012</td><td><span class="wname-cn">南海布拉天空群岛</span><span class="wname-en">South Hebra Sky Archipelago</span></td><td><span class="coord">-3075, 2151, 648</span></td><td>赫布拉天空</td><td><button class="will-check" onclick="toggleWillCheck(this,11)">✓</button></td></tr>
+<tr id="will-row-12" data-sage="tulin"><td class="will-num-cell">013</td><td><span class="wname-cn">北塔班达天空群岛</span><span class="wname-en">North Tabantha Sky Archipelago</span></td><td><span class="coord">-3780, 1572, 1237</span></td><td>塔班达天空</td><td><button class="will-check" onclick="toggleWillCheck(this,12)">✓</button></td></tr>
+<tr id="will-row-13" data-sage="tulin"><td class="will-num-cell">014</td><td><span class="wname-cn">雷鸣岛（法罗尼天空）</span><span class="wname-en">Thunderhead Isles</span></td><td><span class="coord">967, -3306, 846</span></td><td>法罗尼天空</td><td><button class="will-check" onclick="toggleWillCheck(this,13)">✓</button></td></tr>
+<tr id="will-row-14" data-sage="tulin"><td class="will-num-cell">015</td><td><span class="wname-cn">龙首岛（法罗尼天空）</span><span class="wname-en">Dragonhead Island</span></td><td><span class="coord">1309, -3210, 459</span></td><td>法罗尼天空</td><td><button class="will-check" onclick="toggleWillCheck(this,14)">✓</button></td></tr>
 
-<!-- ===== 希多 (Riju) - 雷之贤者 ===== -->
+<!-- ===== 希多 (Sidon) - 水之贤者 ===== -->
 <tr><td colspan="5" style="padding:4px 0"><div class="will-section-header" style="margin:0">
   <img class="will-section-img" src="images/xianzhe/希多.png" alt="希多" loading="lazy">
   <div style="flex:1">
     <div class="will-section-title">💧 希多 — 水之贤者</div>
     <div class="will-section-sub">卓拉族 · Water Sage · 5 个遗志</div>
   </div>
-  <span class="will-section-count" id="sec-count-riju">0 / 5</span>
+  <span class="will-section-count" id="sec-count-sidon">0 / 5</span>
 </div></td></tr>
-<tr id="will-row-15" data-sage="riju"><td class="will-num-cell">016</td><td><span class="wname-cn">南海拉鲁天空群岛</span><span class="wname-en">South Hyrule Sky Archipelago</span></td><td><span class="coord">-950, -1736, 1008</span></td><td>中央天空</td><td><button class="will-check" onclick="toggleWillCheck(this,15)">✓</button></td></tr>
-<tr id="will-row-16" data-sage="riju"><td class="will-num-cell">017</td><td><span class="wname-cn">北奈克鲁达天空群岛</span><span class="wname-en">North Necluda Sky Archipelago</span></td><td><span class="coord">1934, -1063, 961</span></td><td>奈克鲁达天空</td><td><button class="will-check" onclick="toggleWillCheck(this,16)">✓</button></td></tr>
-<tr id="will-row-17" data-sage="riju"><td class="will-num-cell">018</td><td><span class="wname-cn">东南奈克鲁达天空</span><span class="wname-en">Southeast Necluda Sky</span></td><td><span class="coord">4652, -3828, 1065</span></td><td>奈克鲁达天空</td><td><button class="will-check" onclick="toggleWillCheck(this,17)">✓</button></td></tr>
-<tr id="will-row-18" data-sage="riju"><td class="will-num-cell">019</td><td><span class="wname-cn">南奈克鲁达天空群岛</span><span class="wname-en">South Necluda Sky Archipelago</span></td><td><span class="coord">2559, -3601, 894</span></td><td>奈克鲁达天空</td><td><button class="will-check" onclick="toggleWillCheck(this,18)">✓</button></td></tr>
-<tr id="will-row-19" data-sage="riju"><td class="will-num-cell">020</td><td><span class="wname-cn">涌泉岛（拉聂尔天空）</span><span class="wname-en">Wellspring Island</span></td><td><span class="coord">3480, 667, 1325</span></td><td>拉纳尤天空</td><td><button class="will-check" onclick="toggleWillCheck(this,19)">✓</button></td></tr>
+<tr id="will-row-15" data-sage="sidon"><td class="will-num-cell">016</td><td><span class="wname-cn">南海拉鲁天空群岛</span><span class="wname-en">South Hyrule Sky Archipelago</span></td><td><span class="coord">-950, -1736, 1008</span></td><td>中央天空</td><td><button class="will-check" onclick="toggleWillCheck(this,15)">✓</button></td></tr>
+<tr id="will-row-16" data-sage="sidon"><td class="will-num-cell">017</td><td><span class="wname-cn">北奈克鲁达天空群岛</span><span class="wname-en">North Necluda Sky Archipelago</span></td><td><span class="coord">1934, -1063, 961</span></td><td>奈克鲁达天空</td><td><button class="will-check" onclick="toggleWillCheck(this,16)">✓</button></td></tr>
+<tr id="will-row-17" data-sage="sidon"><td class="will-num-cell">018</td><td><span class="wname-cn">东南奈克鲁达天空</span><span class="wname-en">Southeast Necluda Sky</span></td><td><span class="coord">4652, -3828, 1065</span></td><td>奈克鲁达天空</td><td><button class="will-check" onclick="toggleWillCheck(this,17)">✓</button></td></tr>
+<tr id="will-row-18" data-sage="sidon"><td class="will-num-cell">019</td><td><span class="wname-cn">南奈克鲁达天空群岛</span><span class="wname-en">South Necluda Sky Archipelago</span></td><td><span class="coord">2559, -3601, 894</span></td><td>奈克鲁达天空</td><td><button class="will-check" onclick="toggleWillCheck(this,18)">✓</button></td></tr>
+<tr id="will-row-19" data-sage="sidon"><td class="will-num-cell">020</td><td><span class="wname-cn">涌泉岛（拉聂尔天空）</span><span class="wname-en">Wellspring Island</span></td><td><span class="coord">3480, 667, 1325</span></td><td>拉纳尤天空</td><td><button class="will-check" onclick="toggleWillCheck(this,19)">✓</button></td></tr>
 
       </tbody>
     </table>
@@ -443,6 +452,18 @@
   <div class="bnav-rel"><div class="bnav-title">🔗 相关攻略</div><ul><li><a href="main-quest">› 王国之泪主线任务全攻略：23条任务，每任务含翻车点防坑</a></li><li><a href="harry-master-sword">› 白龙寻踪与大师之剑永久拔剑全攻略</a></li><li><a href="shrines">› 王国之泪神庙挑战全攻略 31个神庙图文解说</a></li><li><a href="sage-guide">› 五位贤者能力全解</a></li><li><a href="depths-guide">› 地底世界生存与探索完全指南</a></li><li><a href="sky-guide">› 天空岛完全指南：上岛四法、贤者遗志与残旧地图</a></li></ul></div>
   
 </div>
+<!-- 页尾核验 · 2026-11-24 全站统一 -->
+<section class="verify-footer" style="max-width:860px;margin:36px auto 8px;padding:20px 22px;border:1px solid rgba(201,162,39,0.45);border-radius:14px;background:rgba(201,162,39,0.06);text-align:left;">
+  <div style="display:flex;gap:14px;align-items:flex-start;">
+    <span style="font-size:2rem;line-height:1.2;" aria-hidden="true">🧙</span>
+    <div>
+      <div style="font-weight:700;color:#e8c85a;font-size:1.02rem;">作者：哈里</div>
+      <p style="margin:6px 0 0;color:rgba(255,255,255,0.88);font-size:0.92rem;line-height:1.75;">哈里实测、数据逐一核实：本文的坐标、配方、数值与机制均对照游戏实测与公开资料逐项核对，不是转载拼凑。写错的地方，欢迎按下方链接告诉我。</p>
+    </div>
+  </div>
+  <p style="margin:14px 0 0;color:rgba(255,255,255,0.62);font-size:0.85rem;">最后核验：2026年11月24日</p>
+  <p style="margin:8px 0 0;font-size:0.92rem;color:rgba(255,255,255,0.85);">发现错误？<a href="mailto:withalpha@proton.me?subject=%E3%80%90%E7%8E%8B%E5%9B%BD%E4%B9%8B%E6%B3%AA%E6%94%BB%E7%95%A5%E3%80%91%E9%A1%B5%E9%9D%A2%E7%BA%A0%E9%94%99%EF%BC%9A%E8%B4%A4%E8%80%85%E7%9A%84%E9%81%97%E5%BF%97%E5%85%A820%E4%B8%AA%E6%94%B6%E9%9B%86%E6%94%BB%E7%95%A5%20-%20%E5%9D%90%E6%A0%87%E4%BD%8D%E7%BD%AE%E4%B8%8E%E5%A5%96%E5%8A%B1&amp;body=%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Fuppersteps.com%2Fsage-will%0A%0A%E9%94%99%E8%AF%AF%E6%8F%8F%E8%BF%B0%EF%BC%9A%0A%0A%E6%AD%A3%E7%A1%AE%E4%BF%A1%E6%81%AF%E5%BA%94%E8%AF%A5%E6%98%AF%EF%BC%9A%0A" style="color:#e8c85a;">报告错误</a>（邮件已自动带上本页标题与链接） · 或去<a href="contact" style="color:#e8c85a;">联系我们</a>页反馈</p>
+</section>
 <footer class="footer">
   <div class="footer-inner">
     <p class="footer-logo">⚔️ 王国之泪 全攻略</p>
@@ -537,33 +558,33 @@ window.addEventListener('load', function() {
   document.head.appendChild(st);
 
   var SAGE_COLORS = {
-    tulin:  '#ff6a2a',
-    sidon:  '#e8b400',
-    yunobo: '#ff4400',
-    riju:   '#3a9bff'
+    yunobo:  '#ff6a2a',
+    riju:  '#e8b400',
+    tulin: '#ff4400',
+    sidon:   '#3a9bff'
   };
 
   var WILL_DATA = [
-    {id:0,  sage:'tulin',  cn:'南奥尔汀天空群岛',       en:'South Eldin Sky Archipelago',       gx:1879,  gy:1202,  gz:1251, region:'艾尔丁天空',  boss:'方块魔像II',   note:'击败方块魔像II，宝箱从其身上掉落'},
-    {id:1,  sage:'tulin',  cn:'奥尔汀天空群岛',         en:'Eldin Sky Archipelago',             gx:1800,  gy:1642,  gz:1437, region:'艾尔丁天空',  boss:'宝箱（解谜）', note:'使用矿车穿越轨道后开箱'},
-    {id:2,  sage:'tulin',  cn:'索卡拉天空群岛',         en:'Sokkala Sky Archipelago',           gx:3671,  gy:1484,  gz:1158, region:'阿卡拉天空',  boss:'宝箱（解谜）', note:'球形岛内操控入口朝下，用通天术进入后开箱'},
-    {id:3,  sage:'tulin',  cn:'拉聂尔天空群岛',         en:'Lanayru Sky Archipelago',           gx:2999,  gy:-251,  gz:894,  region:'拉纳尤天空',  boss:'方块魔像II',   note:'击败方块魔像II，宝箱从其身上掉落'},
-    {id:4,  sage:'tulin',  cn:'拉聂尔大水源天空',       en:'Lanayru Great Spring Sky',          gx:2911,  gy:525,   gz:929,  region:'拉纳尤天空',  boss:'宝箱（解谜）', note:'球形旋转天空岛，停止旋转后进入下层开箱'},
-    {id:5,  sage:'sidon',  cn:'西格鲁德天空',           en:'West Gerudo Sky',                   gx:-4447, gy:-2731, gz:1419, region:'格鲁德天空',  boss:'王者古栗欧克', note:'击败王者古栗欧克后，南侧祭坛宝箱解锁'},
-    {id:6,  sage:'sidon',  cn:'东格鲁德天空群岛',       en:'East Gerudo Sky Archipelago',       gx:-1958, gy:-1812, gz:1140, region:'格鲁德天空',  boss:'宝箱（解谜）', note:'用镜子反射阳光点亮六边形面板，开启锁门宝箱'},
-    {id:7,  sage:'sidon',  cn:'星望岛（北格鲁德天空）', en:'Starview Island',                   gx:-3457, gy:-264,  gz:1938, region:'格鲁德天空',  boss:'宝箱（解谜）', note:'星望岛内用镜子反射光线点亮面板，开启宝箱'},
-    {id:8,  sage:'sidon',  cn:'西海拉鲁天空群岛',       en:'West Hyrule Sky Archipelago',       gx:-2290, gy:-411,  gz:894,  region:'中央天空',    boss:'方块魔像III',  note:'击败方块魔像III，宝箱从其身上掉落'},
-    {id:9,  sage:'sidon',  cn:'法罗尼天空群岛',         en:'Faron Sky Archipelago',             gx:-324,  gy:-2591, gz:894,  region:'法罗尼天空',  boss:'方块魔像III',  note:'击败方块魔像III，宝箱从其身上掉落'},
-    {id:10, sage:'yunobo', cn:'西海布拉天空群岛',       en:'West Hebra Sky Archipelago',        gx:-4470, gy:2171,  gz:1253, region:'赫布拉天空',  boss:'王者古栗欧克', note:'击败王者古栗欧克后，南侧祭坛宝箱解锁'},
-    {id:11, sage:'yunobo', cn:'南海布拉天空群岛',       en:'South Hebra Sky Archipelago',       gx:-3075, gy:2151,  gz:648,  region:'赫布拉天空',  boss:'宝箱（开放）', note:'南海布拉天空群岛废墟中央，直接开箱'},
-    {id:12, sage:'yunobo', cn:'北塔班达天空群岛',       en:'North Tabantha Sky Archipelago',    gx:-3780, gy:1572,  gz:1237, region:'塔班达天空',  boss:'宝箱（开放）', note:'北塔班达天空群岛西侧岛屿，直接开箱'},
-    {id:13, sage:'yunobo', cn:'雷鸣岛（法罗尼天空）',   en:'Thunderhead Isles',                 gx:967,   gy:-3306, gz:846,  region:'法罗尼天空',  boss:'宝箱（解谜）', note:'雷鸣岛，用弹射器发射后破石取箱'},
-    {id:14, sage:'yunobo', cn:'龙首岛（法罗尼天空）',   en:'Dragonhead Island',                 gx:1309,  gy:-3210, gz:459,  region:'法罗尼天空',  boss:'宝箱（开放）', note:'龙首岛西北角祭坛，直接开箱'},
-    {id:15, sage:'riju',   cn:'南海拉鲁天空群岛',       en:'South Hyrule Sky Archipelago',      gx:-950,  gy:-1736, gz:1008, region:'中央天空',    boss:'宝箱（解谜）', note:'双水池岛，用究极手抬起闸门排水后开箱'},
-    {id:16, sage:'riju',   cn:'北奈克鲁达天空群岛',     en:'North Necluda Sky Archipelago',     gx:1934,  gy:-1063, gz:961,  region:'奈克鲁达天空',boss:'宝箱（开放）', note:'北奈克鲁达天空群岛发光石岛屿，直接开箱'},
-    {id:17, sage:'riju',   cn:'东南奈克鲁达天空',       en:'Southeast Necluda Sky',             gx:4652,  gy:-3828, gz:1065, region:'奈克鲁达天空',boss:'王者古栗欧克', note:'击败王者古栗欧克后，南侧祭坛宝箱解锁'},
-    {id:18, sage:'riju',   cn:'南奈克鲁达天空群岛',     en:'South Necluda Sky Archipelago',     gx:2559,  gy:-3601, gz:894,  region:'奈克鲁达天空',boss:'方块魔像III',  note:'击败方块魔像III，宝箱从其身上掉落'},
-    {id:19, sage:'riju',   cn:'涌泉岛（拉聂尔天空）',   en:'Wellspring Island',                 gx:3480,  gy:667,   gz:1325, region:'拉纳尤天空',  boss:'方块魔像II',   note:'涌泉岛，击败方块魔像II后开箱'}
+    {id:0,  sage:'yunobo',  cn:'南奥尔汀天空群岛',       en:'South Eldin Sky Archipelago',       gx:1879,  gy:1202,  gz:1251, region:'艾尔丁天空',  boss:'方块魔像II',   note:'击败方块魔像II，宝箱从其身上掉落'},
+    {id:1,  sage:'yunobo',  cn:'奥尔汀天空群岛',         en:'Eldin Sky Archipelago',             gx:1800,  gy:1642,  gz:1437, region:'艾尔丁天空',  boss:'宝箱（解谜）', note:'使用矿车穿越轨道后开箱'},
+    {id:2,  sage:'yunobo',  cn:'索卡拉天空群岛',         en:'Sokkala Sky Archipelago',           gx:3671,  gy:1484,  gz:1158, region:'阿卡拉天空',  boss:'宝箱（解谜）', note:'球形岛内操控入口朝下，用通天术进入后开箱'},
+    {id:3,  sage:'yunobo',  cn:'拉聂尔天空群岛',         en:'Lanayru Sky Archipelago',           gx:2999,  gy:-251,  gz:894,  region:'拉纳尤天空',  boss:'方块魔像II',   note:'击败方块魔像II，宝箱从其身上掉落'},
+    {id:4,  sage:'yunobo',  cn:'拉聂尔大水源天空',       en:'Lanayru Great Spring Sky',          gx:2911,  gy:525,   gz:929,  region:'拉纳尤天空',  boss:'宝箱（解谜）', note:'球形旋转天空岛，停止旋转后进入下层开箱'},
+    {id:5,  sage:'riju',  cn:'西格鲁德天空',           en:'West Gerudo Sky',                   gx:-4447, gy:-2731, gz:1419, region:'格鲁德天空',  boss:'王者古栗欧克', note:'击败王者古栗欧克后，南侧祭坛宝箱解锁'},
+    {id:6,  sage:'riju',  cn:'东格鲁德天空群岛',       en:'East Gerudo Sky Archipelago',       gx:-1958, gy:-1812, gz:1140, region:'格鲁德天空',  boss:'宝箱（解谜）', note:'用镜子反射阳光点亮六边形面板，开启锁门宝箱'},
+    {id:7,  sage:'riju',  cn:'星望岛（北格鲁德天空）', en:'Starview Island',                   gx:-3457, gy:-264,  gz:1938, region:'格鲁德天空',  boss:'宝箱（解谜）', note:'星望岛内用镜子反射光线点亮面板，开启宝箱'},
+    {id:8,  sage:'riju',  cn:'西海拉鲁天空群岛',       en:'West Hyrule Sky Archipelago',       gx:-2290, gy:-411,  gz:894,  region:'中央天空',    boss:'方块魔像III',  note:'击败方块魔像III，宝箱从其身上掉落'},
+    {id:9,  sage:'riju',  cn:'法罗尼天空群岛',         en:'Faron Sky Archipelago',             gx:-324,  gy:-2591, gz:894,  region:'法罗尼天空',  boss:'方块魔像III',  note:'击败方块魔像III，宝箱从其身上掉落'},
+    {id:10, sage:'tulin', cn:'西海布拉天空群岛',       en:'West Hebra Sky Archipelago',        gx:-4470, gy:2171,  gz:1253, region:'赫布拉天空',  boss:'王者古栗欧克', note:'击败王者古栗欧克后，南侧祭坛宝箱解锁'},
+    {id:11, sage:'tulin', cn:'南海布拉天空群岛',       en:'South Hebra Sky Archipelago',       gx:-3075, gy:2151,  gz:648,  region:'赫布拉天空',  boss:'宝箱（开放）', note:'南海布拉天空群岛废墟中央，直接开箱'},
+    {id:12, sage:'tulin', cn:'北塔班达天空群岛',       en:'North Tabantha Sky Archipelago',    gx:-3780, gy:1572,  gz:1237, region:'塔班达天空',  boss:'宝箱（开放）', note:'北塔班达天空群岛西侧岛屿，直接开箱'},
+    {id:13, sage:'tulin', cn:'雷鸣岛（法罗尼天空）',   en:'Thunderhead Isles',                 gx:967,   gy:-3306, gz:846,  region:'法罗尼天空',  boss:'宝箱（解谜）', note:'雷鸣岛，用弹射器发射后破石取箱'},
+    {id:14, sage:'tulin', cn:'龙首岛（法罗尼天空）',   en:'Dragonhead Island',                 gx:1309,  gy:-3210, gz:459,  region:'法罗尼天空',  boss:'宝箱（开放）', note:'龙首岛西北角祭坛，直接开箱'},
+    {id:15, sage:'sidon',   cn:'南海拉鲁天空群岛',       en:'South Hyrule Sky Archipelago',      gx:-950,  gy:-1736, gz:1008, region:'中央天空',    boss:'宝箱（解谜）', note:'双水池岛，用究极手抬起闸门排水后开箱'},
+    {id:16, sage:'sidon',   cn:'北奈克鲁达天空群岛',     en:'North Necluda Sky Archipelago',     gx:1934,  gy:-1063, gz:961,  region:'奈克鲁达天空',boss:'宝箱（开放）', note:'北奈克鲁达天空群岛发光石岛屿，直接开箱'},
+    {id:17, sage:'sidon',   cn:'东南奈克鲁达天空',       en:'Southeast Necluda Sky',             gx:4652,  gy:-3828, gz:1065, region:'奈克鲁达天空',boss:'王者古栗欧克', note:'击败王者古栗欧克后，南侧祭坛宝箱解锁'},
+    {id:18, sage:'sidon',   cn:'南奈克鲁达天空群岛',     en:'South Necluda Sky Archipelago',     gx:2559,  gy:-3601, gz:894,  region:'奈克鲁达天空',boss:'方块魔像III',  note:'击败方块魔像III，宝箱从其身上掉落'},
+    {id:19, sage:'sidon',   cn:'涌泉岛（拉聂尔天空）',   en:'Wellspring Island',                 gx:3480,  gy:667,   gz:1325, region:'拉纳尤天空',  boss:'方块魔像II',   note:'涌泉岛，击败方块魔像II后开箱'}
   ];
 
   var LS_KEY = 'totk_sage_will_done';
@@ -701,8 +722,8 @@ function updateProgress() {
   if (cnt)  cnt.textContent = count;
 
   // 更新各贤者计数
-  var sages = ['tulin','sidon','yunobo','riju'];
-  var sageIds = {tulin:[0,1,2,3,4], sidon:[5,6,7,8,9], yunobo:[10,11,12,13,14], riju:[15,16,17,18,19]};
+  var sages = ['yunobo','riju','tulin','sidon'];
+  var sageIds = {yunobo:[0,1,2,3,4], riju:[5,6,7,8,9], tulin:[10,11,12,13,14], sidon:[15,16,17,18,19]};
   sages.forEach(function(s) {
     var ids = sageIds[s];
     var c = ids.filter(function(id){ return done.has(id); }).length;
@@ -729,7 +750,7 @@ window.toggleWillCheck = function(btn, id) {
     window._willMapMarkers.forEach(function(item) {
       if (item.data.id === id) {
         item.done = done.has(id);
-        var c = {tulin:'#ff6a2a',sidon:'#e8b400',yunobo:'#ff4400',riju:'#3a9bff'}[item.data.sage] || '#aaa';
+        var c = {yunobo:'#ff6a2a',riju:'#e8b400',tulin:'#ff4400',sidon:'#3a9bff'}[item.data.sage] || '#aaa';
         item.m.setIcon(L.divIcon({
           className: '',
           html: '<div style="width:14px;height:14px;border-radius:50%;background:' + c +
@@ -760,7 +781,7 @@ function searchWills(val) {
 
 window.filterWillSage = function(sage, card) {
   document.querySelectorAll('.sage-card').forEach(function(c){ c.style.borderColor = ''; });
-  var colors = {tulin:'#ff6a2a',sidon:'#e8b400',yunobo:'#ff4400',riju:'#3a9bff'};
+  var colors = {yunobo:'#ff6a2a',riju:'#e8b400',tulin:'#ff4400',sidon:'#3a9bff'};
   if (card) card.style.borderColor = colors[sage] || 'var(--border-gold)';
   document.querySelectorAll('#willTableBody tr[data-sage]').forEach(function(tr){
     tr.style.display = (tr.dataset.sage === sage) ? '' : 'none';
@@ -786,7 +807,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ── 导出 CSV：贤者的遗志收集记录 ──
-var SAGE_ZH = {tulin: '丘栗', yunobo: '阿沅', sidon: '希多', riju: '卢珠'};
+var SAGE_ZH = {tulin: '丘栗', yunobo: '阿沅', sidon: '希多', riju: '露珠'};
 function exportSageWillCSV() {
   var headers = ['编号', '贤者', '地点', '英文名', '坐标', '地区', 'Boss', '备注', '已收集'];
   var rows = [];
