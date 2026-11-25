@@ -66,39 +66,29 @@
   }
   </script>
 <style>
-.bnav { margin: 36px 0 8px; max-width: 860px; margin-left: auto; margin-right: auto; }
-.bnav-series { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
-.bnav-series a, .bnav-series span.bnav-dis { flex: 1; text-align: center; padding: 10px 12px; border: 1px solid rgba(201,162,39,0.35); border-radius: 10px; color: #c9a227; text-decoration: none; font-size: 0.85rem; min-width: 120px; }
-.bnav-series span.bnav-dis { color: rgba(255,255,255,0.35); border-color: rgba(255,255,255,0.12); }
-.bnav-rel, .bnav-idx { background: rgba(201,162,39,0.06); border: 1px solid rgba(201,162,39,0.25); border-radius: 12px; padding: 16px 20px; margin-bottom: 18px; }
-.bnav-title { font-weight: 700; color: #c9a227; margin-bottom: 10px; }
-.bnav-rel ul, .bnav-idx ul { list-style: none; padding: 0; margin: 0; }
-.bnav-rel li, .bnav-idx li { padding: 4px 0; font-size: 0.87rem; }
-.bnav-rel a, .bnav-idx a { color: rgba(255,255,255,0.82); text-decoration: none; }
-.bnav-rel a:hover, .bnav-idx a:hover { color: #c9a227; }
-.bnav-idx ul { columns: 2; column-gap: 24px; }
-.bnav-grp { font-weight: 700; color: rgba(255,255,255,0.6); margin: 12px 0 2px; font-size: 0.85rem; }
-.bnav-cur { color: #c9a227; }
-@media (max-width: 640px) {
-    .bnav-idx ul { columns: 1; }
-    .bnav-series a, .bnav-series span.bnav-dis { flex: none; width: 100%; }
-  }
-.article-subtitle { font-size: 0.9rem; color: rgba(255,255,255,0.55); line-height: 1.6; margin-bottom: 8px; }
-.article-body { font-size: 0.93rem; line-height: 1.85; color: rgba(255,255,255,0.82); }
-.article-body h2 { font-family: 'Noto Serif SC', serif; font-size: 1.15rem; font-weight: 700; color: #c9a227; margin: 32px 0 14px; padding-left: 12px; border-left: 3px solid #ff6a2a; }
-.article-body p { margin-bottom: 14px; }
-.article-body ul { list-style: none; padding: 0; margin: 10px 0 16px; }
-.article-body ul li { padding: 6px 0 6px 20px; position: relative; border-bottom: 1px solid rgba(201,162,39,0.06); }
-.article-body ul li::before { content: '▸'; position: absolute; left: 0; color: #ff6a2a; }
-.article-body ol { padding-left: 22px; margin: 10px 0 16px; }
-.article-body ol li { padding: 6px 0; border-bottom: 1px solid rgba(201,162,39,0.06); }
-.article-body .highlight-box ul { margin: 0; }
-.quest-screenshot-caption { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 8px; text-align: center; }
-.article-body h3 { font-family: 'Noto Serif SC', serif; font-size: 1.02rem; font-weight: 700; color: #c9a227; margin: 26px 0 10px; padding-left: 10px; border-left: 2px solid #ff6a2a; }
-.quest-links { margin-top: 18px; padding: 12px 16px; background: rgba(201,162,39,0.06); border: 1px solid rgba(201,162,39,0.25); border-radius: 10px; font-size: 0.85rem; }
-.quest-links a { color: #c9a227; text-decoration: none; }
-.quest-links a:hover { text-decoration: underline; }
-.harry-hero-badge {
+  .site-search{position:relative;z-index:30;width:100%;max-width:560px;box-sizing:border-box;margin:22px auto 0;padding:0 16px;text-align:left;}
+  .site-search-form{display:flex;gap:8px;}
+  .site-search-input{flex:1;min-width:0;height:48px;padding:0 16px;font-size:16px;color:var(--text-primary,#e8e4d8);background:rgba(2,8,20,.72);border:1px solid var(--border-gold,rgba(201,162,39,.5));border-radius:999px;outline:none;-webkit-appearance:none;appearance:none;}
+  .site-search-input:focus{border-color:var(--gold,#c9a227);box-shadow:0 0 0 3px rgba(201,162,39,.25);}
+  .site-search-input::placeholder{color:var(--text-muted,#8a8fa3);}
+  .site-search-btn{flex:0 0 auto;height:48px;padding:0 20px;font-size:15px;font-weight:700;color:#0a0f1e;background:var(--gold,#c9a227);border:1px solid var(--gold,#c9a227);border-radius:999px;cursor:pointer;}
+  .site-search-btn:hover{filter:brightness(1.1);}
+  .site-search-chips{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin-top:12px;}
+  .site-search-chips-label{font-size:13px;color:var(--text-muted,#8a8fa3);}
+  .site-search-chip{padding:5px 12px;font-size:13px;color:var(--text-secondary,#c9c4b4);background:transparent;border:1px solid var(--border-gold,rgba(201,162,39,.4));border-radius:999px;cursor:pointer;}
+  .site-search-chip:hover{color:var(--gold,#c9a227);border-color:var(--gold,#c9a227);}
+  .site-search-results{position:fixed;z-index:9999;box-sizing:border-box;max-height:min(60vh,480px);overflow-y:auto;background:#0d1526;border:1px solid var(--border-gold,rgba(201,162,39,.5));border-radius:12px;box-shadow:0 16px 40px rgba(0,0,0,.55);text-align:left;}
+  .site-search-count{padding:10px 16px 4px;font-size:12px;color:var(--text-muted,#8a8fa3);}
+  .site-search-item{display:block;padding:10px 16px;text-decoration:none;border-top:1px solid rgba(201,162,39,.12);}
+  .site-search-item:hover,.site-search-item.active{background:rgba(201,162,39,.1);}
+  .site-search-item-title{font-size:15px;font-weight:700;line-height:1.5;color:var(--text-primary,#e8e4d8);}
+  .site-search-item-type{display:inline-block;margin-right:6px;padding:1px 7px;font-size:12px;font-weight:400;color:var(--gold,#c9a227);border:1px solid var(--border-gold,rgba(201,162,39,.5));border-radius:999px;vertical-align:1px;}
+  .site-search-item-summary{margin-top:3px;font-size:13px;line-height:1.5;color:var(--text-secondary,#c9c4b4);}
+  .site-search-item mark{color:var(--gold,#c9a227);background:transparent;}
+  .site-search-empty{padding:16px;font-size:14px;line-height:1.6;color:var(--text-secondary,#c9c4b4);}
+  @media (max-width:768px){.site-search{margin-top:18px;}.site-search-input{height:46px;}.site-search-btn{height:46px;}}
+  </style><style>
+    .harry-hero-badge {
       display: inline-block;
       background: linear-gradient(135deg, rgba(201,162,39,0.2), rgba(201,162,39,0.05));
       border: 1px solid rgba(201,162,39,0.5);
@@ -109,35 +99,37 @@
       letter-spacing: .15em;
       margin-bottom: 12px;
     }
-.article-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
-      margin: 20px 0;
-    }
-.article-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-gold);
+    .harry-author-card {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: linear-gradient(135deg, rgba(201,162,39,0.08), rgba(201,162,39,0.03));
+      border: 1px solid rgba(201,162,39,0.35);
       border-radius: 14px;
-      overflow: hidden;
-      transition: transform .2s, box-shadow .2s;
-      text-decoration: none;
-      display: block;
+      padding: 20px 24px;
+      margin: 24px 0;
     }
-.article-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 32px rgba(201,162,39,0.2);
+    .harry-author-avatar {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: linear-gradient(135deg, #c9a227, #8b6914);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; flex-shrink: 0;
+      border: 2px solid rgba(201,162,39,0.5);
+      box-shadow: 0 0 20px rgba(201,162,39,0.3);
     }
-.article-card-banner {
+    .harry-author-name { font-size: 1.1rem; font-weight: 700; color: #c9a227; }
+    .harry-author-title { font-size: 0.78rem; color: rgba(201,162,39,0.6); margin-top: 2px; }
+    .harry-author-desc { font-size: 0.85rem; color: rgba(255,255,255,0.65); margin-top: 6px; line-height: 1.6; }
+    .article-card-banner {
       height: 180px;
       overflow: hidden;
       display: block;
     }
-.article-card-banner img {
+    .article-card-banner img {
       width: 100%; height: 100%; object-fit: cover; display: block;
     }
-.article-card-body { padding: 18px 20px; }
-.article-card-tag {
+    .article-card-body { padding: 18px 20px; }
+    .article-card-tag {
       display: inline-block;
       padding: 2px 10px;
       border-radius: 12px;
@@ -145,46 +137,64 @@
       font-weight: 600;
       margin-bottom: 8px;
     }
-.tag-weapon { background: rgba(255,106,42,0.15); border: 1px solid #ff6a2a; color: #ff6a2a; }
-.tag-cook   { background: rgba(76,175,80,0.15);  border: 1px solid #4caf50; color: #81c784; }
-.tag-armor  { background: rgba(167,139,250,0.15);border: 1px solid #a78bfa; color: #a78bfa; }
-.article-card-title {
+    .tag-weapon { background: rgba(255,106,42,0.15); border: 1px solid #ff6a2a; color: #ff6a2a; }
+    .tag-cook   { background: rgba(76,175,80,0.15);  border: 1px solid #4caf50; color: #81c784; }
+    .tag-armor  { background: rgba(167,139,250,0.15);border: 1px solid #a78bfa; color: #a78bfa; }
+    .article-card-title {
       font-size: 1rem; font-weight: 700; color: var(--text-primary);
       line-height: 1.4; margin-bottom: 8px;
     }
-.article-card-desc {
+    .article-card-desc {
       font-size: 0.8rem; color: var(--text-muted); line-height: 1.6;
     }
-.article-card-footer {
+    .article-card-footer {
       padding: 12px 20px;
       border-top: 1px solid rgba(201,162,39,0.12);
       display: flex; align-items: center; justify-content: space-between;
       font-size: 0.75rem; color: rgba(201,162,39,0.6);
     }
-/* ══ 本页筛选：标题搜索 + 标签 + 排序 (Day 9；不动 style.css / main.js / search.js) ══ */
-.page-filter{position:sticky;top:60px;z-index:50;background:var(--bg-primary,#07070f);border:1px solid var(--border-gold);border-radius:14px;padding:14px 16px;margin:0 0 20px;}
-.page-filter-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
-.page-filter-input{flex:1;min-width:180px;height:44px;padding:0 16px;font-size:16px;color:var(--text-primary,#e8e4d8);background:rgba(2,8,20,.72);border:1px solid var(--border-gold,rgba(201,162,39,.5));border-radius:999px;outline:none;-webkit-appearance:none;appearance:none;}
-.page-filter-input:focus{border-color:var(--gold,#c9a227);box-shadow:0 0 0 3px rgba(201,162,39,.25);}
-.page-filter-input::placeholder{color:var(--text-muted,#8a8fa3);}
-.page-filter-sort{flex:0 0 auto;height:44px;padding:0 12px;font-size:14px;color:var(--text-primary,#e8e4d8);background:rgba(2,8,20,.72);border:1px solid var(--border-gold,rgba(201,162,39,.5));border-radius:999px;outline:none;cursor:pointer;}
-.page-filter-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
-.page-filter-tag{padding:6px 14px;font-size:13px;color:var(--text-secondary,#c9c4b4);background:transparent;border:1px solid var(--border-gold,rgba(201,162,39,.4));border-radius:999px;cursor:pointer;}
-.page-filter-tag:hover{color:var(--gold,#c9a227);border-color:var(--gold,#c9a227);}
-.page-filter-tag[aria-pressed="true"]{color:#0a0f1e;background:var(--gold,#c9a227);border-color:var(--gold,#c9a227);font-weight:700;}
-.page-filter-count{margin-top:10px;font-size:13px;color:var(--text-muted,#8a8fa3);}
-.page-filter-empty{display:none;padding:32px 16px;text-align:center;font-size:14px;line-height:1.6;color:var(--text-secondary,#c9c4b4);}
-@media (max-width:768px){.page-filter{padding:12px;border-radius:12px;}.page-filter-input{height:42px;}.page-filter-sort{height:42px;}}
-    /* ══ 主线页卡片化补充（quest-detail 展开 + 卡片内布局） ══ */
-    .article-card.quest-item{display:flex;flex-direction:column;align-items:stretch;padding:0;gap:0;}
-    .article-card.quest-item::before{display:none;}
-    .article-card .quest-detail-inner{display:block;padding:14px 20px 20px;}
-    .article-card .quest-screenshot-caption{padding:6px 16px 0;margin-top:0;}
-    .article-card .article-card-desc{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-    .page-filter-tag.active{color:#0a0f1e;background:var(--gold,#c9a227);border-color:var(--gold,#c9a227);font-weight:700;}
-    .article-card-footer .mq-reward{flex:1;min-width:0;}
-    .article-card-footer .mq-hint{flex-shrink:0;white-space:nowrap;}
-</style>
+
+    /* ══ 本页筛选：标题搜索 + 标签 + 排序 (Day 9；不动 style.css / main.js / search.js) ══ */
+    .page-filter{position:sticky;top:60px;z-index:50;background:var(--bg-primary,#07070f);border:1px solid var(--border-gold);border-radius:14px;padding:14px 16px;margin:0 0 20px;}
+    .page-filter-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+    .page-filter-input{flex:1;min-width:180px;height:44px;padding:0 16px;font-size:16px;color:var(--text-primary,#e8e4d8);background:rgba(2,8,20,.72);border:1px solid var(--border-gold,rgba(201,162,39,.5));border-radius:999px;outline:none;-webkit-appearance:none;appearance:none;}
+    .page-filter-input:focus{border-color:var(--gold,#c9a227);box-shadow:0 0 0 3px rgba(201,162,39,.25);}
+    .page-filter-input::placeholder{color:var(--text-muted,#8a8fa3);}
+    .page-filter-sort{flex:0 0 auto;height:44px;padding:0 12px;font-size:14px;color:var(--text-primary,#e8e4d8);background:rgba(2,8,20,.72);border:1px solid var(--border-gold,rgba(201,162,39,.5));border-radius:999px;outline:none;cursor:pointer;}
+    .page-filter-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+    .page-filter-tag{padding:6px 14px;font-size:13px;color:var(--text-secondary,#c9c4b4);background:transparent;border:1px solid var(--border-gold,rgba(201,162,39,.4));border-radius:999px;cursor:pointer;}
+    .page-filter-tag:hover{color:var(--gold,#c9a227);border-color:var(--gold,#c9a227);}
+    .page-filter-tag[aria-pressed="true"]{color:#0a0f1e;background:var(--gold,#c9a227);border-color:var(--gold,#c9a227);font-weight:700;}
+    .page-filter-count{margin-top:10px;font-size:13px;color:var(--text-muted,#8a8fa3);}
+    .page-filter-empty{display:none;padding:32px 16px;text-align:center;font-size:14px;line-height:1.6;color:var(--text-secondary,#c9c4b4);}
+    @media (max-width:768px){.page-filter{padding:12px;border-radius:12px;}.page-filter-input{height:42px;}.page-filter-sort{height:42px;}}
+  </style><style>
+    /* == 主线页单列通栏补充（不做网格、不折叠） == */
+    .quest-list{display:block;}
+    .quest-entry{background:var(--bg-card);border:1px solid var(--border-gold);border-radius:14px;overflow:hidden;margin-bottom:20px;scroll-margin-top:230px;}
+    .quest-entry .article-card-desc{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+    .quest-entry .quest-screenshot-caption{padding:6px 16px 0;margin-top:0;}
+    .quest-entry .article-card-body{padding:18px 20px 10px;}
+    .quest-entry .article-body{padding:6px 20px 20px;}
+    .quest-entry .article-card-footer .mq-reward{flex:1;min-width:0;}
+    .quest-entry .article-card-footer .mq-num{flex-shrink:0;white-space:nowrap;color:#c9a227;}
+    .article-subtitle { font-size: 0.9rem; color: rgba(255,255,255,0.55); line-height: 1.6; margin-bottom: 8px; }
+    .article-body { font-size: 0.93rem; line-height: 1.85; color: rgba(255,255,255,0.82); }
+    .article-body h2 { font-family: 'Noto Serif SC', serif; font-size: 1.15rem; font-weight: 700; color: #c9a227; margin: 32px 0 14px; padding-left: 12px; border-left: 3px solid #ff6a2a; }
+    .article-body p { margin-bottom: 14px; }
+    .article-body ul { list-style: none; padding: 0; margin: 10px 0 16px; }
+    .article-body ul li { padding: 6px 0 6px 20px; position: relative; border-bottom: 1px solid rgba(201,162,39,0.06); }
+    .article-body ul li::before { content: '\25b8'; position: absolute; left: 0; color: #ff6a2a; }
+    .article-body ol { padding-left: 22px; margin: 10px 0 16px; }
+    .article-body ol li { padding: 6px 0; border-bottom: 1px solid rgba(201,162,39,0.06); }
+    .article-body .highlight-box ul { margin: 0; }
+    .article-body h3 { font-family: 'Noto Serif SC', serif; font-size: 1.02rem; font-weight: 700; color: #c9a227; margin: 26px 0 10px; padding-left: 10px; border-left: 2px solid #ff6a2a; }
+    .quest-links { margin-top: 18px; padding: 12px 16px; background: rgba(201,162,39,0.06); border: 1px solid rgba(201,162,39,0.25); border-radius: 10px; font-size: 0.85rem; }
+    .quest-links a { color: #c9a227; text-decoration: none; }
+    .quest-links a:hover { text-decoration: underline; }
+    .quest-screenshot-caption { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 8px; text-align: center; }
+
+  </style>
 </head>
 <body>
 
@@ -215,753 +225,496 @@
   <div class="harry-hero-badge">MAIN QUESTS · 23</div>
   <h1 class="page-hero-title">📜 主线任务全攻略</h1>
   <p class="page-hero-subtitle">23 个主线任务全收录</p>
+    <!-- ══ 站内搜索 (Day 8) ══ -->
+    <div class="site-search">
+      <div class="site-search-box">
+        <form class="site-search-form" role="search" action="#" onsubmit="return false;">
+          <input type="search" class="site-search-input" placeholder="搜攻略：神庙、武器、料理、坐标…" aria-label="站内搜索" autocomplete="off" enterkeyhint="search">
+          <button type="submit" class="site-search-btn" aria-label="搜索">搜索</button>
+        </form>
+        <div class="site-search-results" hidden></div>
+      </div>
+      <div class="site-search-chips">
+        <span class="site-search-chips-label">热门：</span>
+        <button type="button" class="site-search-chip" data-q="加侬">加侬</button>
+        <button type="button" class="site-search-chip" data-q="神殿">神殿</button>
+        <button type="button" class="site-search-chip" data-q="贤者">贤者</button>
+        <button type="button" class="site-search-chip" data-q="龙之泪">龙之泪</button>
+      </div>
+    </div>
 </div>
 
 <div class="page-body">
 
   <nav class="breadcrumb">
-    <a href="/">首页</a><span class="sep">›</span><span class="cur">全任务列表</span>
+    <a href="/">首页</a><span class="sep">›</span><span class="cur">主线任务</span>
   </nav>
 
-  <div class="progress-section">
-    <div class="progress-info">
-      <p class="progress-label">主线完成进度</p>
-      <div class="progress-bar"><div class="progress-fill" id="mqProgressFill" style="width:0%"></div></div>
-    </div>
-    <div class="progress-stats">
-      <div class="progress-stat"><span class="progress-stat-val" id="mqDoneCount">0</span><span class="progress-stat-lbl">已完成</span></div>
-      <div class="progress-stat"><span class="progress-stat-val">23</span><span class="progress-stat-lbl">全部任务</span></div>
+<!-- 作者卡片 -->
+  <div class="harry-author-card">
+    <div class="harry-author-avatar">🧙</div>
+    <div>
+      <div class="harry-author-name">哈里</div>
+      <div class="harry-author-title">王国之泪硬核攻略作者 · 海拉鲁老司机</div>
+      <div class="harry-author-desc">
+        通关时间超过800小时，专注于研究王国之泪的机制深层玩法。
+        在这里分享那些教程视频不会告诉你的"老司机心得"——
+        真正能改变你游戏体验的秘籍与套路。
+      </div>
     </div>
   </div>
 
-<div style="text-align:right;margin-bottom:22px;">
-  <button onclick="exportMainQuestCSV()" style="padding:16px 18px;background:rgba(201,162,39,0.12);border:1px solid #c9a227;color:#e8c85a;border-radius:20px;cursor:pointer;font-size:0.85rem;">📥 导出 CSV</button>
-</div>
-
   <div class="highlight-box">
-    <strong>📌 栏目说明：</strong>本页收录 23 个主线任务完整攻略，点击卡片可展开图文流程；点 ✓ 可打勾记进度，进度会自动保存。
+    <strong>📌 栏目说明：</strong>本页收录 23 个主线任务，全部内容直接展示。
   </div>
 
   <div class="section-label">📜 主线任务（共 23 个）</div>
 
+
+  <!-- ══ 本页筛选：标题搜索 + 标签 + 排序 ══ -->
   <div class="page-filter" id="pageFilter">
     <div class="page-filter-row">
       <input type="search" class="page-filter-input" id="pageFilterSearch" placeholder="搜本页任务名：神殿、贤者、加侬…" aria-label="搜索本页任务名" autocomplete="off" enterkeyhint="search">
+      <select class="page-filter-sort" id="pageFilterSort" aria-label="排序方式">
+        <option value="default" selected>默认顺序</option>
+        <option value="long">篇幅：长 → 短</option>
+        <option value="short">篇幅：短 → 长</option>
+      </select>
     </div>
     <div class="page-filter-tags" id="pageFilterTags" role="group" aria-label="按分类筛选">
-      <button type="button" class="filter-tab page-filter-tag active" data-cat="all" aria-pressed="true" onclick="filterQuest('all',this)">全部 23</button>
-      <button type="button" class="filter-tab page-filter-tag" data-cat="prologue" aria-pressed="false" onclick="filterQuest('prologue',this)">序章 3</button>
-      <button type="button" class="filter-tab page-filter-tag" data-cat="dungeon" aria-pressed="false" onclick="filterQuest('dungeon',this)">神殿攻略 6</button>
-      <button type="button" class="filter-tab page-filter-tag" data-cat="story" aria-pressed="false" onclick="filterQuest('story',this)">剧情线 11</button>
-      <button type="button" class="filter-tab page-filter-tag" data-cat="final" aria-pressed="false" onclick="filterQuest('final',this)">终章 3</button>
+      <button type="button" class="page-filter-tag" data-tag="all" aria-pressed="true">全部 23</button>
+      <button type="button" class="page-filter-tag" data-tag="prologue" aria-pressed="false">序章 3</button>
+      <button type="button" class="page-filter-tag" data-tag="dungeon" aria-pressed="false">神殿攻略 6</button>
+      <button type="button" class="page-filter-tag" data-tag="story" aria-pressed="false">剧情线 11</button>
+      <button type="button" class="page-filter-tag" data-tag="final" aria-pressed="false">终章 3</button>
     </div>
-    <div class="page-filter-count" id="pageFilterCount">已显示 23 / 23 个任务</div>
+    <div class="page-filter-count" id="pageFilterCount">已显示 23 / 23 篇</div>
   </div>
 
-  <div class="article-grid" id="mqList">
+  <div class="quest-list" id="mqList">
 
-    <!-- ══ Q01 ══ -->
-    <article class="article-card quest-item expandable" id="q01" data-cat="prologue">
+    <article class="quest-entry" id="q01" data-cat="prologue" data-words="180">
       <div class="article-card-banner"><img src="images/hotlink/TotK_The_Closed_Door.png" alt="初始空岛·紧闭的大门" loading="lazy"></div>
       <p class="quest-screenshot-caption">初始空岛——大天空岛上的祖纳依遗迹入口</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">01</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">紧闭的大门 / 初始空岛</div>
-          <div class="quest-desc article-card-desc">与泽尔达公主调查城堡地底异变，被冲上大天空岛，习得四种新能力后降落海拉鲁。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-gold">序章</span>
             <span class="tag tag-green">新手必读</span>
             <span class="rbadge rbadge-sky">▲ 初始空岛</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)" title="标记完成">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">紧闭的大门 / 初始空岛</div>
+        <div class="article-card-desc">与泽尔达公主调查城堡地底异变，被冲上大天空岛，习得四种新能力后降落海拉鲁。</div>
       </div>
+<div class="article-body"><h2>01 紧闭的大门 / 初始空岛</h2><div class="article-subtitle">开场即是主线起点：与泽尔达一同调查城堡地底，封印崩解后你独自醒在初始空岛，右臂换成古代神手。这一段就是新手教学：拿齐四种能力才能离岛。</div><h3>一、任务前置</h3><ul><li>无，游戏开场自动开始。</li></ul><h3>二、任务步骤</h3><ol><li>与泽尔达下到城堡地底，见证加侬多夫封印崩解。</li><li>在初始空岛醒来，跟随拉乌鲁残影的指引行动。</li><li>完成乌可乌侯神庙拿究极手，伊恩伊萨神庙拿余料建造，古塔恩巴奇神庙拿通天术。</li><li>前往时间神殿，获得倒转乾坤。</li><li>从天空岛跃下，落入海拉鲁。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>别在空岛上跟强敌硬拼，初期武器很脆。</li><li>余料建造多练，木板木桩搭桥、做筏是后面常态。</li><li>时间神殿的谜题关键是倒转乾坤，别只用蛮力推。</li></ul></div><h3>四、奖励</h3><p>四种神手能力齐全，主线正式展开。</p><p class="quest-links">相关攻略：<a href="abilities-guide">初始空岛四种能力与自动建造实战指南</a> · <a href="beginner-guide">新手开荒指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 四种神手能力齐全，主线正式展开。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>01 紧闭的大门 / 初始空岛</h2><div class="article-subtitle">开场即是主线起点：与泽尔达一同调查城堡地底，封印崩解后你独自醒在初始空岛，右臂换成古代神手。这一段就是新手教学：拿齐四种能力才能离岛。</div><h3>一、任务前置</h3><ul><li>无，游戏开场自动开始。</li></ul><h3>二、任务步骤</h3><ol><li>与泽尔达下到城堡地底，见证加侬多夫封印崩解。</li><li>在初始空岛醒来，跟随拉乌鲁残影的指引行动。</li><li>完成乌可乌侯神庙拿究极手，伊恩伊萨神庙拿余料建造，古塔恩巴奇神庙拿通天术。</li><li>前往时间神殿，获得倒转乾坤。</li><li>从天空岛跃下，落入海拉鲁。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>别在空岛上跟强敌硬拼，初期武器很脆。</li><li>余料建造多练，木板木桩搭桥、做筏是后面常态。</li><li>时间神殿的谜题关键是倒转乾坤，别只用蛮力推。</li></ul></div><h3>四、奖励</h3><p>四种神手能力齐全，主线正式展开。</p><p class="quest-links">相关攻略：<a href="abilities-guide">初始空岛四种能力与自动建造实战指南</a> · <a href="beginner-guide">新手开荒指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q01</span>
       </div>
     </article>
 
-    <!-- ══ Q02 ══ -->
-    <article class="article-card quest-item expandable" id="q02" data-cat="prologue">
+    <article class="quest-entry" id="q02" data-cat="prologue" data-words="184">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Lookout_Landing.png" alt="监视堡垒" loading="lazy"></div>
       <p class="quest-screenshot-caption">监视堡垒——海拉鲁中央平原的前线据点</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">02</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">监视堡垒</div>
-          <div class="quest-desc article-card-desc">降落海拉鲁后前往监视堡垒与普尔鲁汇合，了解各地异变情报，触发四大地区调查任务。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-gold">序章</span>
             <span class="rbadge rbadge-central">▲ 海拉鲁中央</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)" title="标记完成">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">监视堡垒</div>
+        <div class="article-card-desc">降落海拉鲁后前往监视堡垒与普尔鲁汇合，了解各地异变情报，触发四大地区调查任务。</div>
       </div>
+<div class="article-body"><h2>02 监视堡垒</h2><div class="article-subtitle">落地后的第一个据点，也是整个主线的情报中心。在这里和普尔鲁汇合，激活鸟望塔、拿到滑翔伞，四地区调查才正式开始。</div><h3>一、任务前置</h3><ul><li>完成初始空岛，落入海拉鲁。</li></ul><h3>二、任务步骤</h3><ol><li>从天空岛跃下，落到中央平原，向北走到监视堡垒，与普尔鲁汇合。</li><li>激活监视堡垒鸟望塔，取得滑翔伞。</li><li>接下利特村、卓拉领地、鼓隆城、格鲁德四地调查委托。</li><li>在堡垒里补给料理和道具，再出发。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>鸟望塔不是可选项，不开就拿不到滑翔伞、推不动主线，别跳过。</li><li>望远镜看浮空城堡是四座神殿全通后回来汇报时的剧情，不是初到时的步骤。</li><li>别一落地就直奔城堡，浮空城堡现在还上不去。</li></ul></div><h3>四、奖励</h3><p>主线调查网铺开，四条地区线全部解锁。</p><p class="quest-links">相关攻略：<a href="tower-guide">15座鸟望塔开图完全指南</a> · <a href="paraglider-guide">滑翔伞完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 主线调查网铺开，四条地区线全部解锁。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>02 监视堡垒</h2><div class="article-subtitle">落地后的第一个据点，也是整个主线的情报中心。在这里和普尔鲁汇合，激活鸟望塔、拿到滑翔伞，四地区调查才正式开始。</div><h3>一、任务前置</h3><ul><li>完成初始空岛，落入海拉鲁。</li></ul><h3>二、任务步骤</h3><ol><li>从天空岛跃下，落到中央平原，向北走到监视堡垒，与普尔鲁汇合。</li><li>激活监视堡垒鸟望塔，取得滑翔伞。</li><li>接下利特村、卓拉领地、鼓隆城、格鲁德四地调查委托。</li><li>在堡垒里补给料理和道具，再出发。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>鸟望塔不是可选项，不开就拿不到滑翔伞、推不动主线，别跳过。</li><li>望远镜看浮空城堡是四座神殿全通后回来汇报时的剧情，不是初到时的步骤。</li><li>别一落地就直奔城堡，浮空城堡现在还上不去。</li></ul></div><h3>四、奖励</h3><p>主线调查网铺开，四条地区线全部解锁。</p><p class="quest-links">相关攻略：<a href="tower-guide">15座鸟望塔开图完全指南</a> · <a href="paraglider-guide">滑翔伞完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q02</span>
       </div>
     </article>
 
-    <!-- ══ Q03 ══ -->
-    <article class="article-card quest-item expandable" id="q03" data-cat="prologue">
+    <article class="quest-entry" id="q03" data-cat="prologue" data-words="187">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Regional_Phenomena.png" alt="四个地区的异变调查" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「四个地区的异变调查」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">03</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">四个地区的异变调查</div>
-          <div class="quest-desc article-card-desc">分别前往利特村、卓拉领地、鼓隆城、格鲁德小镇调查各地异变，四条线可自由并行推进。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-gold">序章</span>
             <span class="tag tag-blue">多路并行</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)" title="标记完成">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">四个地区的异变调查</div>
+        <div class="article-card-desc">分别前往利特村、卓拉领地、鼓隆城、格鲁德小镇调查各地异变，四条线可自由并行推进。</div>
       </div>
+<div class="article-body"><h2>03 四个地区的异变调查</h2><div class="article-subtitle">这不是一条线性任务，而是四条地区线共用一个总标题：利特村、卓拉领地、鼓隆城、格鲁德小镇。顺序完全自由，任选一条先打都行。</div><h3>一、任务前置</h3><ul><li>在监视堡垒接下委托，拿到滑翔伞。</li></ul><h3>二、任务步骤</h3><ol><li>西北去利特村，备好耐寒。</li><li>东北去卓拉领地，备泼水果对付淤泥。</li><li>东北火山区去鼓隆城，备防火。</li><li>西南沙漠去格鲁德小镇，备耐热耐寒，沙漠昼夜温差大。</li><li>四座神殿全部通关后，回监视堡垒找普尔鲁，完成总任务。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>所谓推荐顺序只是上手难度参考，不是硬性条件，别被顺序绑住。</li><li>单座神殿打完不用特意回来，四座全通后再回监视堡垒。</li><li>格鲁德不需要像前作那样变装进镇，别白准备套装。</li></ul></div><h3>四、奖励</h3><p>四位贤者陆续加入，通往终局的路一条条打开。</p><p class="quest-links">相关攻略：<a href="quest-order">全任务列表与攻略顺序</a> · <a href="wind-temple-guide">风之神殿完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 四位贤者陆续加入，通往终局的路一条条打开。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>03 四个地区的异变调查</h2><div class="article-subtitle">这不是一条线性任务，而是四条地区线共用一个总标题：利特村、卓拉领地、鼓隆城、格鲁德小镇。顺序完全自由，任选一条先打都行。</div><h3>一、任务前置</h3><ul><li>在监视堡垒接下委托，拿到滑翔伞。</li></ul><h3>二、任务步骤</h3><ol><li>西北去利特村，备好耐寒。</li><li>东北去卓拉领地，备泼水果对付淤泥。</li><li>东北火山区去鼓隆城，备防火。</li><li>西南沙漠去格鲁德小镇，备耐热耐寒，沙漠昼夜温差大。</li><li>四座神殿全部通关后，回监视堡垒找普尔鲁，完成总任务。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>所谓推荐顺序只是上手难度参考，不是硬性条件，别被顺序绑住。</li><li>单座神殿打完不用特意回来，四座全通后再回监视堡垒。</li><li>格鲁德不需要像前作那样变装进镇，别白准备套装。</li></ul></div><h3>四、奖励</h3><p>四位贤者陆续加入，通往终局的路一条条打开。</p><p class="quest-links">相关攻略：<a href="quest-order">全任务列表与攻略顺序</a> · <a href="wind-temple-guide">风之神殿完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q03</span>
       </div>
     </article>
 
-    <!-- ══ Q04 ══ -->
-    <article class="article-card quest-item expandable" id="q04" data-cat="story">
+    <article class="quest-entry" id="q04" data-cat="story" data-words="189">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Camera_Work_in_the_Depths.png" alt="拍下地底人" loading="lazy"></div>
       <p class="quest-screenshot-caption">约沙展示神秘石板上的地底构装体图像</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">04</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">拍下地底人</div>
-          <div class="quest-desc article-card-desc">协助研究员约舒娅拍摄地底指路雕像，解锁相机功能与地底探索任务线。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-depth">▼ 地底世界</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)" title="标记完成">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">拍下地底人</div>
+        <div class="article-card-desc">协助研究员约舒娅拍摄地底指路雕像，解锁相机功能与地底探索任务线。</div>
       </div>
+<div class="article-body"><h2>04 拍下地底人</h2><div class="article-subtitle">地底线的开端。约舒娅在监视堡垒研究地底资料，请你下地底拍一张指路雕像的照片，相机是在地底由研究员罗比解锁的。</div><h3>一、任务前置</h3><ul><li>到达监视堡垒；最好先带一点发光果。</li></ul><h3>二、任务步骤</h3><ol><li>在监视堡垒研究室找约舒娅接任务。</li><li>从监视堡垒南边到海拉鲁平原裂缝，跳入地底。</li><li>在地底见到研究员罗比，由他解锁相机功能。</li><li>激活最近的破魔树根照明，找到指路雕像并拍下。</li><li>回地面把照片交给约舒娅。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>地底一片漆黑，没光寸步难行，发光果和破魔树根是命。</li><li>破魔树根只恢复被瘴气侵蚀的心心上限，不回血，别把它当补血点。</li><li>要拍的是指路雕像，不是泛指的构装体，拍错了不算完成。</li></ul></div><h3>四、奖励</h3><p>相机功能解锁，另获海拉鲁图鉴与左纳乌矿石；地底探索线由此展开。</p><p class="quest-links">相关攻略：<a href="compendium-guide">海拉鲁图鉴509项收集指南</a> · <a href="depths-guide">地底世界生存与探索完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 相机功能解锁，另获海拉鲁图鉴与左纳乌矿石；地底探索线由此展开。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>04 拍下地底人</h2><div class="article-subtitle">地底线的开端。约舒娅在监视堡垒研究地底资料，请你下地底拍一张指路雕像的照片，相机是在地底由研究员罗比解锁的。</div><h3>一、任务前置</h3><ul><li>到达监视堡垒；最好先带一点发光果。</li></ul><h3>二、任务步骤</h3><ol><li>在监视堡垒研究室找约舒娅接任务。</li><li>从监视堡垒南边到海拉鲁平原裂缝，跳入地底。</li><li>在地底见到研究员罗比，由他解锁相机功能。</li><li>激活最近的破魔树根照明，找到指路雕像并拍下。</li><li>回地面把照片交给约舒娅。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>地底一片漆黑，没光寸步难行，发光果和破魔树根是命。</li><li>破魔树根只恢复被瘴气侵蚀的心心上限，不回血，别把它当补血点。</li><li>要拍的是指路雕像，不是泛指的构装体，拍错了不算完成。</li></ul></div><h3>四、奖励</h3><p>相机功能解锁，另获海拉鲁图鉴与左纳乌矿石；地底探索线由此展开。</p><p class="quest-links">相关攻略：<a href="compendium-guide">海拉鲁图鉴509项收集指南</a> · <a href="depths-guide">地底世界生存与探索完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q04</span>
       </div>
     </article>
 
-    <!-- ══ Q05 ══ -->
-    <article class="article-card quest-item expandable" id="q05" data-cat="dungeon">
+    <article class="quest-entry" id="q05" data-cat="dungeon" data-words="193">
       <div class="article-card-banner"><img src="images/hotlink/TotK_Tulin_of_Rito_Village.png" alt="利特村的丘栗" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「利特村的丘栗」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">05</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">利特村的丘栗 → 风之神殿</div>
-          <div class="quest-desc article-card-desc">调查被暴风雪封锁的利特村，与小鸟丘栗并肩作战，登上风之神殿，击败急冻盖拉。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-gold">神殿攻略</span>
             <span class="rbadge rbadge-rito">▲ 利特村</span>
             <span class="tag tag-blue">推荐首攻</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)" title="标记完成">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">利特村的丘栗 → 风之神殿</div>
+        <div class="article-card-desc">调查被暴风雪封锁的利特村，与小鸟丘栗并肩作战，登上风之神殿，击败急冻盖拉。</div>
       </div>
+<div class="article-body"><h2>05 利特村的丘栗 → 风之神殿</h2><div class="article-subtitle">利特村被暴风雪封锁，村里的小鸟丘栗成了你的搭档。两人登上空中的风之神殿，首领是急冻盖拉。</div><h3>一、任务前置</h3><ul><li>耐寒料理或防寒装备；已接下监视堡垒委托。</li></ul><h3>二、任务步骤</h3><ol><li>向西北到利特村，见村长特巴了解暴风情况。</li><li>按指引找哈茨，再到海布拉山南岳洞窟一带。</li><li>在塔隆托峰雪松树下找到丘栗，帮他取回弓，他才与你同行。</li><li>借助丘栗的风力登上风之神殿。</li><li>神殿内启动五座风车终端。</li><li>击败首领急冻盖拉。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>丘栗的父亲是村长特巴，不是其他名字，别按旧攻略找人。</li><li>首领战多在滑翔中进行，瞄准它身上的冰晶弱点。</li><li>丘栗的风力不仅能推风车，赶路和滑翔时也很好用。</li></ul></div><h3>四、奖励</h3><p>风之贤者丘栗加入，获得疾风冲刺；利特村暴风解除。</p><p class="quest-links">相关攻略：<a href="wind-temple-guide">风之神殿完全指南</a> · <a href="sage-guide">五位贤者能力全解</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 风之贤者丘栗加入，获得疾风冲刺；利特村暴风解除。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>05 利特村的丘栗 → 风之神殿</h2><div class="article-subtitle">利特村被暴风雪封锁，村里的小鸟丘栗成了你的搭档。两人登上空中的风之神殿，首领是急冻盖拉。</div><h3>一、任务前置</h3><ul><li>耐寒料理或防寒装备；已接下监视堡垒委托。</li></ul><h3>二、任务步骤</h3><ol><li>向西北到利特村，见村长特巴了解暴风情况。</li><li>按指引找哈茨，再到海布拉山南岳洞窟一带。</li><li>在塔隆托峰雪松树下找到丘栗，帮他取回弓，他才与你同行。</li><li>借助丘栗的风力登上风之神殿。</li><li>神殿内启动五座风车终端。</li><li>击败首领急冻盖拉。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>丘栗的父亲是村长特巴，不是其他名字，别按旧攻略找人。</li><li>首领战多在滑翔中进行，瞄准它身上的冰晶弱点。</li><li>丘栗的风力不仅能推风车，赶路和滑翔时也很好用。</li></ul></div><h3>四、奖励</h3><p>风之贤者丘栗加入，获得疾风冲刺；利特村暴风解除。</p><p class="quest-links">相关攻略：<a href="wind-temple-guide">风之神殿完全指南</a> · <a href="sage-guide">五位贤者能力全解</a></p></div></div>
-        </div>
+        <span class="mq-num">Q05</span>
       </div>
     </article>
 
-    <!-- ══ Q06 ══ -->
-    <article class="article-card quest-item expandable" id="q06" data-cat="story">
+    <article class="quest-entry" id="q06" data-cat="story" data-words="154">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_A_Mystery_in_the_Depths.png" alt="沉睡于地底神殿之谜" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「沉睡于地底神殿之谜」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">06</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">沉睡于地底神殿之谜</div>
-          <div class="quest-desc article-card-desc">完成一座神殿后，协助约舒娅调查地底中央大废矿，获得自动建造能力。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-depth">▼ 地底世界</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)" title="标记完成">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">沉睡于地底神殿之谜</div>
+        <div class="article-card-desc">完成一座神殿后，协助约舒娅调查地底中央大废矿，获得自动建造能力。</div>
       </div>
+<div class="article-body"><h2>06 沉睡于地底神殿之谜</h2><div class="article-subtitle">完成一座神殿后回监视堡垒，约舒娅请你去地底中央大废矿调查。在矿场，管家构装体会授予你自动建造能力。</div><h3>一、任务前置</h3><ul><li>完成任意一座神殿；已下过地底。</li></ul><h3>二、任务步骤</h3><ol><li>回监视堡垒研究室找约舒娅接任务。</li><li>前往地底中央大废矿。</li><li>在矿场见管家构装体，获得自动建造能力，并收集蓝图石。</li><li>回去向约舒娅交差。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>矿场里没有巨型构装体残骸可调查，别按旧说法找。</li><li>本任务不开启灵殿与第五贤者线，那条线是城堡异变之后的另一条链。</li><li>自动建造拿到后多用蓝图存常用载具，后面省很多事。</li></ul></div><h3>四、奖励</h3><p>自动建造解锁。</p><p class="quest-links">相关攻略：<a href="abilities-guide">初始空岛四种能力与自动建造实战指南</a> · <a href="zonai-builds">左纳乌装置实用造物指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 自动建造解锁。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>06 沉睡于地底神殿之谜</h2><div class="article-subtitle">完成一座神殿后回监视堡垒，约舒娅请你去地底中央大废矿调查。在矿场，管家构装体会授予你自动建造能力。</div><h3>一、任务前置</h3><ul><li>完成任意一座神殿；已下过地底。</li></ul><h3>二、任务步骤</h3><ol><li>回监视堡垒研究室找约舒娅接任务。</li><li>前往地底中央大废矿。</li><li>在矿场见管家构装体，获得自动建造能力，并收集蓝图石。</li><li>回去向约舒娅交差。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>矿场里没有巨型构装体残骸可调查，别按旧说法找。</li><li>本任务不开启灵殿与第五贤者线，那条线是城堡异变之后的另一条链。</li><li>自动建造拿到后多用蓝图存常用载具，后面省很多事。</li></ul></div><h3>四、奖励</h3><p>自动建造解锁。</p><p class="quest-links">相关攻略：<a href="abilities-guide">初始空岛四种能力与自动建造实战指南</a> · <a href="zonai-builds">左纳乌装置实用造物指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q06</span>
       </div>
     </article>
 
-    <!-- ══ Q07 ══ -->
-    <article class="article-card quest-item expandable" id="q07" data-cat="story">
+    <article class="quest-entry" id="q07" data-cat="story" data-words="116">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_The_Sludge-Covered_Statue.png" alt="被淤泥埋没的石像" loading="lazy"></div>
       <p class="quest-screenshot-caption">卓拉领地广场上被淤泥覆盖的「转潮石像」</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">07</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">被淤泥埋没的石像</div>
-          <div class="quest-desc article-card-desc">卓拉领地中央被红色淤泥侵蚀的转潮石像需要清洗，开启卓拉领地剧情线。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-zora">▲ 卓拉领地</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">被淤泥埋没的石像</div>
+        <div class="article-card-desc">卓拉领地中央被红色淤泥侵蚀的转潮石像需要清洗，开启卓拉领地剧情线。</div>
       </div>
+<div class="article-body"><h2>07 被淤泥埋没的石像</h2><div class="article-subtitle">卓拉领地线的开场。领地广场中央的转潮石像被红色淤泥糊住，尤娜正在调查，帮她清淤就打开了卓拉领地整条剧情。</div><h3>一、任务前置</h3><ul><li>到达卓拉领地。</li></ul><h3>二、任务步骤</h3><ol><li>到卓拉领地广场，见到正在调查石像的尤娜。</li><li>在领地周边采集泼水果。</li><li>对淤泥投掷泼水果或用水系攻击清洗石像。</li><li>清完后与尤娜对话，推进后续剧情。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>石像就叫转潮石像，清淤后现出的是它本来的样子。</li><li>把泼水果融合到箭上射远处淤泥，效率最高。</li></ul></div><h3>四、奖励</h3><p>卓拉领地剧情线开启，尤娜成为后续任务的关键人物。</p><p class="quest-links">相关攻略：<a href="water-temple-guide">水之神殿完全指南</a> · <a href="zora-armor-guide">卓拉套装完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 卓拉领地剧情线开启，尤娜成为后续任务的关键人物。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>07 被淤泥埋没的石像</h2><div class="article-subtitle">卓拉领地线的开场。领地广场中央的转潮石像被红色淤泥糊住，尤娜正在调查，帮她清淤就打开了卓拉领地整条剧情。</div><h3>一、任务前置</h3><ul><li>到达卓拉领地。</li></ul><h3>二、任务步骤</h3><ol><li>到卓拉领地广场，见到正在调查石像的尤娜。</li><li>在领地周边采集泼水果。</li><li>对淤泥投掷泼水果或用水系攻击清洗石像。</li><li>清完后与尤娜对话，推进后续剧情。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>石像就叫转潮石像，清淤后现出的是它本来的样子。</li><li>把泼水果融合到箭上射远处淤泥，效率最高。</li></ul></div><h3>四、奖励</h3><p>卓拉领地剧情线开启，尤娜成为后续任务的关键人物。</p><p class="quest-links">相关攻略：<a href="water-temple-guide">水之神殿完全指南</a> · <a href="zora-armor-guide">卓拉套装完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q07</span>
       </div>
     </article>
 
-    <!-- ══ Q08 ══ -->
-    <article class="article-card quest-item expandable" id="q08" data-cat="story">
+    <article class="quest-entry" id="q08" data-cat="story" data-words="201">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_The_Broken_Slate.png" alt="碎裂的石碑" loading="lazy"></div>
       <p class="quest-screenshot-caption">学者贾托在托托湖检视打捞上来的卓拉石板</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">08</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">碎裂的石碑</div>
-          <div class="quest-desc article-card-desc">在托托湖清理并拼合古代石板，由学者翻译解读，揭示通往天空的关键线索。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-zora">▲ 卓拉领地</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">碎裂的石碑</div>
+        <div class="article-card-desc">在托托湖清理并拼合古代石板，由学者翻译解读，揭示通往天空的关键线索。</div>
       </div>
+<div class="article-body"><h2>08 碎裂的石碑</h2><div class="article-subtitle">清完石像后，托托湖边有一块卓拉石板缺了一块。清淤、把缺块嵌回原位，学者当场就能读出译文，里面藏着上天空的关键一句。</div><h3>一、任务前置</h3><ul><li>完成石像清淤。</li></ul><h3>二、任务步骤</h3><ol><li>前往卓拉领地正北、米法庭西北的托托湖找学者。</li><li>清掉石板上的淤泥。</li><li>用究极手把缺失的中央一块嵌回墙上原位。</li><li>学者当场读出译文：立于天空鱼之地，仰望高处；浮石之间有一滴水珠，穿过水滴射出带王之印的箭。</li><li>接下来去找多雷凡国王。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>没有湖底三块碎片和潜水打捞这一说，别下湖捞。</li><li>石板不是交给学者带走翻译，是嵌回原位后当场读出来的。</li><li>这一步做完是去找多雷凡国王，不是直接去普洛米斯山，普洛米斯山是修铠甲找鱼的地方。</li></ul></div><h3>四、奖励</h3><p>获得前往天空的线索，卓拉线继续推进。</p><p class="quest-links">相关攻略：<a href="water-temple-guide">水之神殿完全指南</a> · <a href="sky-guide">天空岛完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 获得前往天空的线索，卓拉线继续推进。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>08 碎裂的石碑</h2><div class="article-subtitle">清完石像后，托托湖边有一块卓拉石板缺了一块。清淤、把缺块嵌回原位，学者当场就能读出译文，里面藏着上天空的关键一句。</div><h3>一、任务前置</h3><ul><li>完成石像清淤。</li></ul><h3>二、任务步骤</h3><ol><li>前往卓拉领地正北、米法庭西北的托托湖找学者。</li><li>清掉石板上的淤泥。</li><li>用究极手把缺失的中央一块嵌回墙上原位。</li><li>学者当场读出译文：立于天空鱼之地，仰望高处；浮石之间有一滴水珠，穿过水滴射出带王之印的箭。</li><li>接下来去找多雷凡国王。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>没有湖底三块碎片和潜水打捞这一说，别下湖捞。</li><li>石板不是交给学者带走翻译，是嵌回原位后当场读出来的。</li><li>这一步做完是去找多雷凡国王，不是直接去普洛米斯山，普洛米斯山是修铠甲找鱼的地方。</li></ul></div><h3>四、奖励</h3><p>获得前往天空的线索，卓拉线继续推进。</p><p class="quest-links">相关攻略：<a href="water-temple-guide">水之神殿完全指南</a> · <a href="sky-guide">天空岛完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q08</span>
       </div>
     </article>
 
-    <!-- ══ Q09 ══ -->
-    <article class="article-card quest-item expandable" id="q09" data-cat="dungeon">
+    <article class="quest-entry" id="q09" data-cat="dungeon" data-words="182">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Restoring_the_Zora_Armor.png" alt="修复卓拉铠甲" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「修复卓拉铠甲」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">09</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">修复卓拉铠甲</div>
-          <div class="quest-desc article-card-desc">把古代亚罗瓦那交给尤娜，由她修复卓拉铠甲，恢复水中冲浪与攀瀑能力。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-gold">神殿前置</span>
             <span class="rbadge rbadge-zora">▲ 卓拉领地</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">修复卓拉铠甲</div>
+        <div class="article-card-desc">把古代亚罗瓦那交给尤娜，由她修复卓拉铠甲，恢复水中冲浪与攀瀑能力。</div>
       </div>
+<div class="article-body"><h2>09 修复卓拉铠甲</h2><div class="article-subtitle">尤娜手里有你以前留下的卓拉铠甲，只差最后一样东西就能修好：古代亚罗瓦那的鳞片。拿到它，攀瀑能力就回来了。</div><h3>一、任务前置</h3><ul><li>完成石像清淤，与尤娜对话；问铁匠丹托打听鱼的下落。</li></ul><h3>二、任务步骤</h3><ol><li>在卓拉领地找尤娜接任务。</li><li>找铁匠丹托，他说古代亚罗瓦那在普洛米斯山米法雕像附近的水域。</li><li>到米法庭的水池里捉到古代亚罗瓦那，天空岛水域也有。</li><li>把鱼交给尤娜，取回修好的卓拉铠甲。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>修铠甲的是尤娜，丹托只提供鱼的下落线索，别弄反。</li><li>不需要先穿一件原版铠甲才能上山，步行就能到米法庭。</li><li>拿到铠甲后才能攀瀑，水之神殿前务必先做完这一步。</li></ul></div><h3>四、奖励</h3><p>卓拉铠甲入手，可以逆瀑而上；水之神殿前置完成。</p><p class="quest-links">相关攻略：<a href="zora-armor-guide">卓拉套装完全指南</a> · <a href="water-temple-guide">水之神殿完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 卓拉铠甲入手，可以逆瀑而上；水之神殿前置完成。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>09 修复卓拉铠甲</h2><div class="article-subtitle">尤娜手里有你以前留下的卓拉铠甲，只差最后一样东西就能修好：古代亚罗瓦那的鳞片。拿到它，攀瀑能力就回来了。</div><h3>一、任务前置</h3><ul><li>完成石像清淤，与尤娜对话；问铁匠丹托打听鱼的下落。</li></ul><h3>二、任务步骤</h3><ol><li>在卓拉领地找尤娜接任务。</li><li>找铁匠丹托，他说古代亚罗瓦那在普洛米斯山米法雕像附近的水域。</li><li>到米法庭的水池里捉到古代亚罗瓦那，天空岛水域也有。</li><li>把鱼交给尤娜，取回修好的卓拉铠甲。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>修铠甲的是尤娜，丹托只提供鱼的下落线索，别弄反。</li><li>不需要先穿一件原版铠甲才能上山，步行就能到米法庭。</li><li>拿到铠甲后才能攀瀑，水之神殿前务必先做完这一步。</li></ul></div><h3>四、奖励</h3><p>卓拉铠甲入手，可以逆瀑而上；水之神殿前置完成。</p><p class="quest-links">相关攻略：<a href="zora-armor-guide">卓拉套装完全指南</a> · <a href="water-temple-guide">水之神殿完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q09</span>
       </div>
     </article>
 
-    <!-- ══ Q10 ══ -->
-    <article class="article-card quest-item expandable" id="q10" data-cat="story">
+    <article class="quest-entry" id="q10" data-cat="story" data-words="207">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Clues_to_the_Sky.png" alt="前往天空的线索" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「前往天空的线索」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">10</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">前往天空的线索</div>
-          <div class="quest-desc article-card-desc">取得王的鳞片后，在浮空鳞岛向天空鱼群的水滴空隙射出附鳞片之箭。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-sky">▲ 天空群岛</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">前往天空的线索</div>
+        <div class="article-card-desc">取得王的鳞片后，在浮空鳞岛向天空鱼群的水滴空隙射出附鳞片之箭。</div>
       </div>
+<div class="article-body"><h2>10 前往天空的线索</h2><div class="article-subtitle">石板译文的谜底揭晓：多雷凡国王给你五片王的鳞片，把其中一片附在箭上，在浮空鳞岛射穿天空鱼群的水滴空隙，天空之路就打开了。</div><h3>一、任务前置</h3><ul><li>修好卓拉铠甲；先与米法庭的希多对话，再到瀑布后的清流王居见多雷凡国王。</li></ul><h3>二、任务步骤</h3><ol><li>与多雷凡国王会面，取得五片王的鳞片。</li><li>前往浮空鳞岛。</li><li>站在岛上向西南看，漂浮岩石构成水滴形状。</li><li>把王的鳞片附在箭上，射穿水滴。</li><li>东储水湖升起绿色光柱，揭示古代卓拉祭殿入口。</li><li>回东储水湖见希多，经祭殿水路攀瀑而上，前往水之神殿。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>普通箭射不穿，关键是箭上附了王的鳞片。</li><li>射箭点不是普洛米斯山顶，而是浮空鳞岛。</li><li>射中后不是天空降下通路，别在岛上空等，先回东储水湖。</li></ul></div><h3>四、奖励</h3><p>天空之路开启，水之神殿线正式开始。</p><p class="quest-links">相关攻略：<a href="sky-guide">天空岛完全指南</a> · <a href="water-temple-guide">水之神殿完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 天空之路开启，水之神殿线正式开始。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>10 前往天空的线索</h2><div class="article-subtitle">石板译文的谜底揭晓：多雷凡国王给你五片王的鳞片，把其中一片附在箭上，在浮空鳞岛射穿天空鱼群的水滴空隙，天空之路就打开了。</div><h3>一、任务前置</h3><ul><li>修好卓拉铠甲；先与米法庭的希多对话，再到瀑布后的清流王居见多雷凡国王。</li></ul><h3>二、任务步骤</h3><ol><li>与多雷凡国王会面，取得五片王的鳞片。</li><li>前往浮空鳞岛。</li><li>站在岛上向西南看，漂浮岩石构成水滴形状。</li><li>把王的鳞片附在箭上，射穿水滴。</li><li>东储水湖升起绿色光柱，揭示古代卓拉祭殿入口。</li><li>回东储水湖见希多，经祭殿水路攀瀑而上，前往水之神殿。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>普通箭射不穿，关键是箭上附了王的鳞片。</li><li>射箭点不是普洛米斯山顶，而是浮空鳞岛。</li><li>射中后不是天空降下通路，别在岛上空等，先回东储水湖。</li></ul></div><h3>四、奖励</h3><p>天空之路开启，水之神殿线正式开始。</p><p class="quest-links">相关攻略：<a href="sky-guide">天空岛完全指南</a> · <a href="water-temple-guide">水之神殿完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q10</span>
       </div>
     </article>
 
-    <!-- ══ Q11 ══ -->
-    <article class="article-card quest-item expandable" id="q11" data-cat="dungeon">
+    <article class="quest-entry" id="q11" data-cat="dungeon" data-words="135">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Sidon_of_the_Zora.png" alt="卓拉领地的希多" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「卓拉领地的希多」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">11</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">卓拉领地的希多 → 水之神殿</div>
-          <div class="quest-desc article-card-desc">与希多同行登上天空的水之神殿，启动四个水栓，击败淤泥莱克。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-gold">神殿攻略</span>
             <span class="rbadge rbadge-zora">▲ 卓拉领地</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">卓拉领地的希多 → 水之神殿</div>
+        <div class="article-card-desc">与希多同行登上天空的水之神殿，启动四个水栓，击败淤泥莱克。</div>
       </div>
+<div class="article-body"><h2>11 卓拉领地的希多 → 水之神殿</h2><div class="article-subtitle">天空中的水之神殿，核心是让水流回到中央水柱：启动四个水栓。首领是淤泥莱克，希多的水球是你最好的帮手。</div><h3>一、任务前置</h3><ul><li>修好卓拉铠甲；完成前往天空的线索。</li></ul><h3>二、任务步骤</h3><ol><li>与希多同行进入水之神殿。</li><li>依次启动四个水栓，让水流回到中央。</li><li>回到中央水柱处。</li><li>与淤泥莱克决战。</li><li>打完回卓拉领地，多雷凡将王位交予希多。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>别按旧攻略记水栓方位，跟着神殿内的水管走向找。</li><li>淤泥莱克本体藏在淤泥里，先用泼水果或希多的水球清掉淤泥再近战。</li></ul></div><h3>四、奖励</h3><p>水之贤者希多加入，获得水球护盾能力；卓拉领地水流恢复，希多正式继位。</p><p class="quest-links">相关攻略：<a href="water-temple-guide">水之神殿完全指南</a> · <a href="sage-guide">五位贤者能力全解</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 水之贤者希多加入，获得水球护盾能力；卓拉领地水流恢复，希多正式继位。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>11 卓拉领地的希多 → 水之神殿</h2><div class="article-subtitle">天空中的水之神殿，核心是让水流回到中央水柱：启动四个水栓。首领是淤泥莱克，希多的水球是你最好的帮手。</div><h3>一、任务前置</h3><ul><li>修好卓拉铠甲；完成前往天空的线索。</li></ul><h3>二、任务步骤</h3><ol><li>与希多同行进入水之神殿。</li><li>依次启动四个水栓，让水流回到中央。</li><li>回到中央水柱处。</li><li>与淤泥莱克决战。</li><li>打完回卓拉领地，多雷凡将王位交予希多。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>别按旧攻略记水栓方位，跟着神殿内的水管走向找。</li><li>淤泥莱克本体藏在淤泥里，先用泼水果或希多的水球清掉淤泥再近战。</li></ul></div><h3>四、奖励</h3><p>水之贤者希多加入，获得水球护盾能力；卓拉领地水流恢复，希多正式继位。</p><p class="quest-links">相关攻略：<a href="water-temple-guide">水之神殿完全指南</a> · <a href="sage-guide">五位贤者能力全解</a></p></div></div>
-        </div>
+        <span class="mq-num">Q11</span>
       </div>
     </article>
 
-    <!-- ══ Q12 ══ -->
-    <article class="article-card quest-item expandable" id="q12" data-cat="dungeon">
+    <article class="quest-entry" id="q12" data-cat="dungeon" data-words="215">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Yunobo_of_Goron_City.png" alt="鼓隆城的阿沅" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「鼓隆城的阿沅」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">12</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">鼓隆城的阿沅 → 火之神殿</div>
-          <div class="quest-desc article-card-desc">与阿沅同行深入地底火之神殿，敲响五口锣，击败熔岩巨人。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-gold">神殿攻略</span>
             <span class="rbadge rbadge-goron">▲ 鼓隆城</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">鼓隆城的阿沅 → 火之神殿</div>
+        <div class="article-card-desc">与阿沅同行深入地底火之神殿，敲响五口锣，击败熔岩巨人。</div>
       </div>
+<div class="article-body"><h2>12 鼓隆城的阿沅 → 火之神殿</h2><div class="article-subtitle">鼓隆城全族沉迷岩石烤肉，阿沅戴着面具神智不清。让他清醒过来，两人一起下到地底火之神殿，敲响五口锣，首领是熔岩巨人。</div><h3>一、任务前置</h3><ul><li>防火装备或耐热料理；已接下监视堡垒委托。</li></ul><h3>二、任务步骤</h3><ol><li>到鼓隆城了解岩石烤肉事件。</li><li>追上戴面具的阿沅，打碎面具让他恢复神智，与他同行。</li><li>上死亡火山途中备好防火，击败莫拉吉亚后从火山口跳入深渊，向西走到火之神殿。</li><li>用阿沅的滚石冲击敲响五口锣。</li><li>击败首领熔岩巨人（Marbled Gohma）。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>五口锣不是泛指的终端，分布在不同楼层，跟着锣声找。</li><li>矿车只是上死亡火山途中的工具，进地底是跳火山口，不是坐矿车直达。</li><li>防火是上死亡火山途中需要的，不是神殿里地面持续掉血。</li></ul></div><h3>四、奖励</h3><p>火之贤者阿沅加入，获得滚石冲击；鼓隆城恢复正常。</p><p class="quest-links">相关攻略：<a href="fire-temple-guide">火之神殿完全指南</a> · <a href="sage-guide">五位贤者能力全解</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 火之贤者阿沅加入，获得滚石冲击；鼓隆城恢复正常。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>12 鼓隆城的阿沅 → 火之神殿</h2><div class="article-subtitle">鼓隆城全族沉迷岩石烤肉，阿沅戴着面具神智不清。让他清醒过来，两人一起下到地底火之神殿，敲响五口锣，首领是熔岩巨人。</div><h3>一、任务前置</h3><ul><li>防火装备或耐热料理；已接下监视堡垒委托。</li></ul><h3>二、任务步骤</h3><ol><li>到鼓隆城了解岩石烤肉事件。</li><li>追上戴面具的阿沅，打碎面具让他恢复神智，与他同行。</li><li>上死亡火山途中备好防火，击败莫拉吉亚后从火山口跳入深渊，向西走到火之神殿。</li><li>用阿沅的滚石冲击敲响五口锣。</li><li>击败首领熔岩巨人（Marbled Gohma）。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>五口锣不是泛指的终端，分布在不同楼层，跟着锣声找。</li><li>矿车只是上死亡火山途中的工具，进地底是跳火山口，不是坐矿车直达。</li><li>防火是上死亡火山途中需要的，不是神殿里地面持续掉血。</li></ul></div><h3>四、奖励</h3><p>火之贤者阿沅加入，获得滚石冲击；鼓隆城恢复正常。</p><p class="quest-links">相关攻略：<a href="fire-temple-guide">火之神殿完全指南</a> · <a href="sage-guide">五位贤者能力全解</a></p></div></div>
-        </div>
+        <span class="mq-num">Q12</span>
       </div>
     </article>
 
-    <!-- ══ Q13 ══ -->
-    <article class="article-card quest-item expandable" id="q13" data-cat="dungeon">
+    <article class="quest-entry" id="q13" data-cat="dungeon" data-words="211">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Riju_of_Gerudo_Town.png" alt="格鲁德小镇的露珠" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「格鲁德小镇的露珠」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">13</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">格鲁德小镇的露珠 → 雷之神殿</div>
-          <div class="quest-desc article-card-desc">协助露珠守护格鲁德小镇与沙漠避难所，破除沙暴，登上雷之神殿，击败女王基布德。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-gold">神殿攻略</span>
             <span class="rbadge rbadge-gerudo">▲ 格鲁德</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">格鲁德小镇的露珠 → 雷之神殿</div>
+        <div class="article-card-desc">协助露珠守护格鲁德小镇与沙漠避难所，破除沙暴，登上雷之神殿，击败女王基布德。</div>
       </div>
+<div class="article-body"><h2>13 格鲁德小镇的露珠 → 雷之神殿</h2><div class="article-subtitle">格鲁德小镇被吉布多围攻，居民撤到沙漠避难所。露珠和你先打防御战，再解开避难所壁画的谜语：背对王座看红柱，以光连柱，点亮三根红柱，祭坛升起雷之神殿。</div><h3>一、任务前置</h3><ul><li>耐热耐寒料理；已接下监视堡垒委托。</li></ul><h3>二、任务步骤</h3><ol><li>到卡拉卡拉集市参加防御战。</li><li>到格鲁德小镇参加三处吉布多巢穴防御战。</li><li>到沙漠避难所与露珠会合，看壁画谜语。</li><li>按谜语点亮三根红柱，祭坛升起雷之神殿。</li><li>在殿口与女王基布德首战。</li><li>神殿内用镜子反射阳光开门、调镜面角度接通光路，给四个电池充能。</li><li>击败女王基布德。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>没有祖先留下的闪电雕像这一环，别按旧攻略找。</li><li>神殿内是给四个电池充能，不是进神殿就直接打女王基布德。</li><li>沙暴解除的关键是打赢神殿战，不是清掉所有沙漠怪物。</li></ul></div><h3>四、奖励</h3><p>雷之贤者露珠加入，获得雷电箭能力；格鲁德沙暴解除。</p><p class="quest-links">相关攻略：<a href="lightning-temple-guide">雷之神殿完全指南</a> · <a href="sage-guide">五位贤者能力全解</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 雷之贤者露珠加入，获得雷电箭能力；格鲁德沙暴解除。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>13 格鲁德小镇的露珠 → 雷之神殿</h2><div class="article-subtitle">格鲁德小镇被吉布多围攻，居民撤到沙漠避难所。露珠和你先打防御战，再解开避难所壁画的谜语：背对王座看红柱，以光连柱，点亮三根红柱，祭坛升起雷之神殿。</div><h3>一、任务前置</h3><ul><li>耐热耐寒料理；已接下监视堡垒委托。</li></ul><h3>二、任务步骤</h3><ol><li>到卡拉卡拉集市参加防御战。</li><li>到格鲁德小镇参加三处吉布多巢穴防御战。</li><li>到沙漠避难所与露珠会合，看壁画谜语。</li><li>按谜语点亮三根红柱，祭坛升起雷之神殿。</li><li>在殿口与女王基布德首战。</li><li>神殿内用镜子反射阳光开门、调镜面角度接通光路，给四个电池充能。</li><li>击败女王基布德。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>没有祖先留下的闪电雕像这一环，别按旧攻略找。</li><li>神殿内是给四个电池充能，不是进神殿就直接打女王基布德。</li><li>沙暴解除的关键是打赢神殿战，不是清掉所有沙漠怪物。</li></ul></div><h3>四、奖励</h3><p>雷之贤者露珠加入，获得雷电箭能力；格鲁德沙暴解除。</p><p class="quest-links">相关攻略：<a href="lightning-temple-guide">雷之神殿完全指南</a> · <a href="sage-guide">五位贤者能力全解</a></p></div></div>
-        </div>
+        <span class="mq-num">Q13</span>
       </div>
     </article>
 
-    <!-- ══ Q14 ══ -->
-    <article class="article-card quest-item expandable" id="q14" data-cat="story">
+    <article class="quest-entry" id="q14" data-cat="story" data-words="224">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Crisis_at_Hyrule_Castle.png" alt="海拉鲁城堡的异变" loading="lazy"></div>
       <p class="quest-screenshot-caption">浮空的海拉鲁城堡——加侬多夫的瘴气源头</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">14</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">海拉鲁城堡的异变</div>
-          <div class="quest-desc article-card-desc">四座神殿全通后潜入浮空的海拉鲁城堡，追踪冒牌泽尔达的幻影，击败幻影加侬。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-central">▲ 海拉鲁城堡</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">海拉鲁城堡的异变</div>
+        <div class="article-card-desc">四座神殿全通后潜入浮空的海拉鲁城堡，追踪冒牌泽尔达的幻影，击败幻影加侬。</div>
       </div>
+<div class="article-body"><h2>14 海拉鲁城堡的异变</h2><div class="article-subtitle">四座神殿全通、回监视堡垒向普尔鲁汇报后，普尔鲁指派你潜入浮空的海拉鲁城堡。城堡里那个泽尔达是假的，追踪她的幻影穿行各层，最终在圣所与幻影加侬决战。</div><h3>一、任务前置</h3><ul><li>四座神殿全部通关，并回监视堡垒向普尔鲁汇报。</li></ul><h3>二、任务步骤</h3><ol><li>回监视堡垒，接受普尔鲁的城堡潜入指派。</li><li>潜入浮空城堡，追踪泽尔达幻影穿行城堡各层。</li><li>到达圣所（王座大厅）与幻影加侬决战。</li><li>战后第五位贤者线索开启。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>前置不是一座神殿，而是四座全通，之前本任务一直处于暂停状态。</li><li>霍兹搜索队是四神殿之前在第一门楼一带的内容，别和城堡潜入拼成一步。</li><li>幻影加侬的攻击会削减心心上限，备好向阳草料理。</li><li>第二波是五具幻影加侬齐出，没有单一本体可集中，先用弓箭爆头打断那具正在铺瘴气的，再逐个击破。</li></ul></div><h3>四、奖励</h3><p>第五位贤者线索开启；城堡异变线告一段落。</p><p class="quest-links">相关攻略：<a href="castle-guide">海拉鲁城堡探索完全指南</a> · <a href="boss-ganondorf">魔王加侬多夫攻略</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 第五位贤者线索开启；城堡异变线告一段落。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>14 海拉鲁城堡的异变</h2><div class="article-subtitle">四座神殿全通、回监视堡垒向普尔鲁汇报后，普尔鲁指派你潜入浮空的海拉鲁城堡。城堡里那个泽尔达是假的，追踪她的幻影穿行各层，最终在圣所与幻影加侬决战。</div><h3>一、任务前置</h3><ul><li>四座神殿全部通关，并回监视堡垒向普尔鲁汇报。</li></ul><h3>二、任务步骤</h3><ol><li>回监视堡垒，接受普尔鲁的城堡潜入指派。</li><li>潜入浮空城堡，追踪泽尔达幻影穿行城堡各层。</li><li>到达圣所（王座大厅）与幻影加侬决战。</li><li>战后第五位贤者线索开启。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>前置不是一座神殿，而是四座全通，之前本任务一直处于暂停状态。</li><li>霍兹搜索队是四神殿之前在第一门楼一带的内容，别和城堡潜入拼成一步。</li><li>幻影加侬的攻击会削减心心上限，备好向阳草料理。</li><li>第二波是五具幻影加侬齐出，没有单一本体可集中，先用弓箭爆头打断那具正在铺瘴气的，再逐个击破。</li></ul></div><h3>四、奖励</h3><p>第五位贤者线索开启；城堡异变线告一段落。</p><p class="quest-links">相关攻略：<a href="castle-guide">海拉鲁城堡探索完全指南</a> · <a href="boss-ganondorf">魔王加侬多夫攻略</a></p></div></div>
-        </div>
+        <span class="mq-num">Q14</span>
       </div>
     </article>
 
-    <!-- ══ Q15 ══ -->
-    <article class="article-card quest-item expandable" id="q15" data-cat="dungeon">
+    <article class="quest-entry" id="q15" data-cat="dungeon" data-words="270">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Find_the_Fifth_Sage.png" alt="寻找第五位贤者" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「寻找第五位贤者」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">15</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">寻找第五位贤者</div>
-          <div class="quest-desc article-card-desc">由普尔鲁交予的第五位贤者总任务：经环卡遗迹与太古指引两条线，找到灵之贤者米涅露。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-gold">神殿攻略</span>
             <span class="tag tag-purple">隐藏任务</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">寻找第五位贤者</div>
+        <div class="article-card-desc">由普尔鲁交予的第五位贤者总任务：经环卡遗迹与太古指引两条线，找到灵之贤者米涅露。</div>
       </div>
+<div class="article-body"><h2>15 寻找第五位贤者</h2><div class="article-subtitle">第五位贤者是灵之贤者米涅露。本任务由普尔鲁交予，实际推进靠两条线：环卡遗迹的秘密和来自太古的指引，走完这两条线，米涅露加入，本任务完成。</div><h3>一、任务前置</h3><ul><li>四座神殿全通，海拉鲁城堡幻影加侬战后。</li></ul><h3>二、任务步骤</h3><ol><li>在监视堡垒从普尔鲁处接下寻找第五位贤者的任务。</li><li>前往卡卡利科村，调查上空的环卡遗迹。</li><li>登上龙首岛取得佐纳依遗物。</li><li>跟随遗物光束到法罗尼地底的构装体工厂。</li><li>在工厂周围四座仓库取回构装体零件，在工厂模具上组装。</li><li>乘组装好的构装体前往灵殿，击败被夺构装体，取回灵之秘石。</li><li>获得米涅露的誓约与心之容器，第五位贤者加入。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>环卡遗迹与太古指引不是本任务的前置，它们就是本任务的推进路径。</li><li>零件不在鼓隆、利特、格鲁德地底，四座仓库都在法罗尼地底构装体工厂周围。</li><li>组装在工厂模具上完成，灵殿是组装好之后乘构装体去的目的地，不是组装地点。</li></ul></div><h3>四、奖励</h3><p>灵之贤者米涅露加入，获得灵之构装体；寻找第五位贤者完成。</p><p class="quest-links">相关攻略：<a href="sage-guide">五位贤者能力全解</a> · <a href="depths-guide">地底世界生存与探索完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 灵之贤者米涅露加入，获得灵之构装体；寻找第五位贤者完成。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>15 寻找第五位贤者</h2><div class="article-subtitle">第五位贤者是灵之贤者米涅露。本任务由普尔鲁交予，实际推进靠两条线：环卡遗迹的秘密和来自太古的指引，走完这两条线，米涅露加入，本任务完成。</div><h3>一、任务前置</h3><ul><li>四座神殿全通，海拉鲁城堡幻影加侬战后。</li></ul><h3>二、任务步骤</h3><ol><li>在监视堡垒从普尔鲁处接下寻找第五位贤者的任务。</li><li>前往卡卡利科村，调查上空的环卡遗迹。</li><li>登上龙首岛取得佐纳依遗物。</li><li>跟随遗物光束到法罗尼地底的构装体工厂。</li><li>在工厂周围四座仓库取回构装体零件，在工厂模具上组装。</li><li>乘组装好的构装体前往灵殿，击败被夺构装体，取回灵之秘石。</li><li>获得米涅露的誓约与心之容器，第五位贤者加入。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>环卡遗迹与太古指引不是本任务的前置，它们就是本任务的推进路径。</li><li>零件不在鼓隆、利特、格鲁德地底，四座仓库都在法罗尼地底构装体工厂周围。</li><li>组装在工厂模具上完成，灵殿是组装好之后乘构装体去的目的地，不是组装地点。</li></ul></div><h3>四、奖励</h3><p>灵之贤者米涅露加入，获得灵之构装体；寻找第五位贤者完成。</p><p class="quest-links">相关攻略：<a href="sage-guide">五位贤者能力全解</a> · <a href="depths-guide">地底世界生存与探索完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q15</span>
       </div>
     </article>
 
-    <!-- ══ Q16 ══ -->
-    <article class="article-card quest-item expandable" id="q16" data-cat="story">
+    <article class="quest-entry" id="q16" data-cat="story" data-words="216">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Secret_of_the_Ring_Ruins.png" alt="环卡遗迹的秘密" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「环卡遗迹的秘密」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">16</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">环卡遗迹的秘密</div>
-          <div class="quest-desc article-card-desc">调查卡卡利科村上空的环卡遗迹，登上龙首岛取得佐纳依遗物，听见米涅露的声音。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="rbadge rbadge-sky">▲ 天空群岛</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">环卡遗迹的秘密</div>
+        <div class="article-card-desc">调查卡卡利科村上空的环卡遗迹，登上龙首岛取得佐纳依遗物，听见米涅露的声音。</div>
       </div>
+<div class="article-body"><h2>16 环卡遗迹的秘密</h2><div class="article-subtitle">城堡幻影加侬战后，向卡卡利科村的帕雅揭露假泽尔达之事，环卡遗迹的调查随即开启。登上龙首岛取得佐纳依遗物，你会听见米涅露的声音。</div><h3>一、任务前置</h3><ul><li>海拉鲁城堡幻影加侬战后，向帕雅揭露假泽尔达。</li></ul><h3>二、任务步骤</h3><ol><li>到卡卡利科村，向帕雅了解环卡遗迹。</li><li>按石碑指引前往雷云群岛东侧低处的龙首岛。</li><li>穿雷电套装，献左纳乌能量球清雷云，穿越雷云群岛。</li><li>从高处滑翔落到低处的龙首岛。</li><li>在岛上砍藤蔓、推开挑战门，取得佐纳依遗物。</li><li>听见米涅露的声音，跟着光柱走，进入下一任务。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>龙首岛不在西南，在雷云群岛东侧低处、法罗尼上空东南部。</li><li>登岛不是天空塔发射直达，要先清雷云再穿越群岛。</li><li>岛上没有四块图样石拼合，推开挑战门需要至少 10 颗心。</li></ul></div><h3>四、奖励</h3><p>获得佐纳依遗物，米涅露的声音指引你前往法罗尼地底。</p><p class="quest-links">相关攻略：<a href="sky-guide">天空岛完全指南</a> · <a href="depths-guide">地底世界生存与探索完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 获得佐纳依遗物，米涅露的声音指引你前往法罗尼地底。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>16 环卡遗迹的秘密</h2><div class="article-subtitle">城堡幻影加侬战后，向卡卡利科村的帕雅揭露假泽尔达之事，环卡遗迹的调查随即开启。登上龙首岛取得佐纳依遗物，你会听见米涅露的声音。</div><h3>一、任务前置</h3><ul><li>海拉鲁城堡幻影加侬战后，向帕雅揭露假泽尔达。</li></ul><h3>二、任务步骤</h3><ol><li>到卡卡利科村，向帕雅了解环卡遗迹。</li><li>按石碑指引前往雷云群岛东侧低处的龙首岛。</li><li>穿雷电套装，献左纳乌能量球清雷云，穿越雷云群岛。</li><li>从高处滑翔落到低处的龙首岛。</li><li>在岛上砍藤蔓、推开挑战门，取得佐纳依遗物。</li><li>听见米涅露的声音，跟着光柱走，进入下一任务。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>龙首岛不在西南，在雷云群岛东侧低处、法罗尼上空东南部。</li><li>登岛不是天空塔发射直达，要先清雷云再穿越群岛。</li><li>岛上没有四块图样石拼合，推开挑战门需要至少 10 颗心。</li></ul></div><h3>四、奖励</h3><p>获得佐纳依遗物，米涅露的声音指引你前往法罗尼地底。</p><p class="quest-links">相关攻略：<a href="sky-guide">天空岛完全指南</a> · <a href="depths-guide">地底世界生存与探索完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q16</span>
       </div>
     </article>
 
-    <!-- ══ Q17 ══ -->
-    <article class="article-card quest-item expandable" id="q17" data-cat="story">
+    <article class="quest-entry" id="q17" data-cat="story" data-words="227">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Link_Riding_Mineru_s_Construct.png" alt="米涅露构装体" loading="lazy"></div>
       <p class="quest-screenshot-caption">林克乘米涅露构装体</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">17</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">来自太古的指引</div>
-          <div class="quest-desc article-card-desc">跟随佐纳依遗物的光束前往法罗尼地底，在构装体工厂组装构装体，前往灵殿。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="tag tag-gold">重要剧情</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">来自太古的指引</div>
+        <div class="article-card-desc">跟随佐纳依遗物的光束前往法罗尼地底，在构装体工厂组装构装体，前往灵殿。</div>
       </div>
+<div class="article-body"><h2>17 来自太古的指引</h2><div class="article-subtitle">佐纳依遗物会发光指路，跟着光束走，你会来到法罗尼地底的构装体工厂。米涅露在这里正式现身，委托你收集零件、组装构装体、前往灵殿。</div><h3>一、任务前置</h3><ul><li>完成环卡遗迹的秘密，持有佐纳依遗物。</li></ul><h3>二、任务步骤</h3><ol><li>跟随遗物光束向法罗尼地底前进。</li><li>从地底裂缝进入构装体工厂。</li><li>把遗物放进工厂入口模具的头部槽位，米涅露正式现身。</li><li>接下收集构装体零件的委托。</li><li>在工厂周围四座仓库取回零件，在工厂模具上组装构装体。</li><li>乘组装好的构装体前往灵殿，击败被夺构装体，取回灵之秘石。</li><li>获得米涅露的誓约与心之容器。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>光束指向法罗尼地底，不是西南。</li><li>米涅露正式现身在构装体工厂，不是灵殿前厅，灵殿是之后才去的地方。</li><li>本任务不是纯剧情散步，含四座仓库解谜与被夺构装体首领战。</li></ul></div><h3>四、奖励</h3><p>灵之贤者米涅露加入，获得灵之构装体；太古指引完成。</p><p class="quest-links">相关攻略：<a href="sage-guide">五位贤者能力全解</a> · <a href="depths-guide">地底世界生存与探索完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 灵之贤者米涅露加入，获得灵之构装体；太古指引完成。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>17 来自太古的指引</h2><div class="article-subtitle">佐纳依遗物会发光指路，跟着光束走，你会来到法罗尼地底的构装体工厂。米涅露在这里正式现身，委托你收集零件、组装构装体、前往灵殿。</div><h3>一、任务前置</h3><ul><li>完成环卡遗迹的秘密，持有佐纳依遗物。</li></ul><h3>二、任务步骤</h3><ol><li>跟随遗物光束向法罗尼地底前进。</li><li>从地底裂缝进入构装体工厂。</li><li>把遗物放进工厂入口模具的头部槽位，米涅露正式现身。</li><li>接下收集构装体零件的委托。</li><li>在工厂周围四座仓库取回零件，在工厂模具上组装构装体。</li><li>乘组装好的构装体前往灵殿，击败被夺构装体，取回灵之秘石。</li><li>获得米涅露的誓约与心之容器。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>光束指向法罗尼地底，不是西南。</li><li>米涅露正式现身在构装体工厂，不是灵殿前厅，灵殿是之后才去的地方。</li><li>本任务不是纯剧情散步，含四座仓库解谜与被夺构装体首领战。</li></ul></div><h3>四、奖励</h3><p>灵之贤者米涅露加入，获得灵之构装体；太古指引完成。</p><p class="quest-links">相关攻略：<a href="sage-guide">五位贤者能力全解</a> · <a href="depths-guide">地底世界生存与探索完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q17</span>
       </div>
     </article>
 
-    <!-- ══ Q18 ══ -->
-    <article class="article-card quest-item expandable" id="q18" data-cat="story">
+    <article class="quest-entry" id="q18" data-cat="story" data-words="169">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Trail_of_the_Master_Sword.png" alt="大师之剑的线索" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「大师之剑的线索」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">18</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">大师之剑的线索</div>
-          <div class="quest-desc article-card-desc">由灵殿的米涅露指引，净化克洛格森林的大德库树，获得大师之剑的下落。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
             <span class="tag tag-gold">传说武器</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">大师之剑的线索</div>
+        <div class="article-card-desc">由灵殿的米涅露指引，净化克洛格森林的大德库树，获得大师之剑的下落。</div>
       </div>
+<div class="article-body"><h2>18 大师之剑的线索</h2><div class="article-subtitle">大师之剑不在被遗忘神殿。是在太古指引中看完关键抉择回忆后，灵殿的米涅露告诉你：泽尔达化龙修复了大师之剑，并指引你去找大德库树。</div><h3>一、任务前置</h3><ul><li>完成太古指引，在其中看完关键抉择回忆。</li></ul><h3>二、任务步骤</h3><ol><li>回监视堡垒向普尔鲁汇报。</li><li>经地底裂缝，用通天术上到克洛格森林。</li><li>净化大德库树的瘴气：击败瘴气之手与幻影加侬。</li><li>大德库树感应到大师之剑，在地图上标出它的移动位置。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>被遗忘神殿只有地画地图与壁画，与大师之剑线索无关，别去那里找留言。</li><li>地图上追踪的是大师之剑的任务标记，不是龙形标记。</li><li>触发者是米涅露，不是龙之泪剧情。</li></ul></div><h3>四、奖励</h3><p>获得大师之剑的移动位置标记，接下来去追光之龙拔剑。</p><p class="quest-links">相关攻略：<a href="harry-master-sword">白龙寻踪与大师之剑永久拔剑全攻略</a> · <a href="lost-woods-guide">迷雾森林完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 获得大师之剑的移动位置标记，接下来去追光之龙拔剑。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>18 大师之剑的线索</h2><div class="article-subtitle">大师之剑不在被遗忘神殿。是在太古指引中看完关键抉择回忆后，灵殿的米涅露告诉你：泽尔达化龙修复了大师之剑，并指引你去找大德库树。</div><h3>一、任务前置</h3><ul><li>完成太古指引，在其中看完关键抉择回忆。</li></ul><h3>二、任务步骤</h3><ol><li>回监视堡垒向普尔鲁汇报。</li><li>经地底裂缝，用通天术上到克洛格森林。</li><li>净化大德库树的瘴气：击败瘴气之手与幻影加侬。</li><li>大德库树感应到大师之剑，在地图上标出它的移动位置。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>被遗忘神殿只有地画地图与壁画，与大师之剑线索无关，别去那里找留言。</li><li>地图上追踪的是大师之剑的任务标记，不是龙形标记。</li><li>触发者是米涅露，不是龙之泪剧情。</li></ul></div><h3>四、奖励</h3><p>获得大师之剑的移动位置标记，接下来去追光之龙拔剑。</p><p class="quest-links">相关攻略：<a href="harry-master-sword">白龙寻踪与大师之剑永久拔剑全攻略</a> · <a href="lost-woods-guide">迷雾森林完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q18</span>
       </div>
     </article>
 
-    <!-- ══ Q19 ══ -->
-    <article class="article-card quest-item expandable" id="q19" data-cat="story">
+    <article class="quest-entry" id="q19" data-cat="story" data-words="178">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Impa_and_the_Geoglyphs.png" alt="英帕与地上图画" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「英帕与地上图画」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">19</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">英帕与地上图画</div>
-          <div class="quest-desc article-card-desc">在新塞雷尼马厩与英帕汇合，修好热气球，从空中寻找地画与龙之泪。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-purple">剧情线</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">英帕与地上图画</div>
+        <div class="article-card-desc">在新塞雷尼马厩与英帕汇合，修好热气球，从空中寻找地画与龙之泪。</div>
       </div>
+<div class="article-body"><h2>19 英帕与地上图画</h2><div class="article-subtitle">地画从地面看不出来，得从空中找。先在新塞雷尼马厩见英帕与卡多，修好热气球升空，滑翔降落找泪滴，龙之泪收集线由此开启。</div><h3>一、任务前置</h3><ul><li>完成初始空岛，落地海拉鲁。</li></ul><h3>二、任务步骤</h3><ol><li>到新塞雷尼马厩见英帕与卡多。</li><li>修好热气球，乘热气球升空。</li><li>滑翔降落，寻找地画中的泪滴形水池。</li><li>触摸第一颗龙之泪观看回忆。</li><li>继续按被遗忘神殿地图提示收集其余龙之泪。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>不是登塔发射再落地画中心与英帕汇合，见面地点是新塞雷尼马厩。</li><li>龙之泪是泪滴形水池与光点，不是石碑。</li><li>热气球不会到处移动；本任务做完后，英帕去了被遗忘神殿，卡多在神殿入口守着热气球。</li></ul></div><h3>四、奖励</h3><p>龙之泪收集线开启，获得第一颗龙之泪的回忆。</p><p class="quest-links">相关攻略：<a href="dragon-tears-guide">龙之泪完全指南</a> · <a href="tower-guide">15座鸟望塔开图完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 龙之泪收集线开启，获得第一颗龙之泪的回忆。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>19 英帕与地上图画</h2><div class="article-subtitle">地画从地面看不出来，得从空中找。先在新塞雷尼马厩见英帕与卡多，修好热气球升空，滑翔降落找泪滴，龙之泪收集线由此开启。</div><h3>一、任务前置</h3><ul><li>完成初始空岛，落地海拉鲁。</li></ul><h3>二、任务步骤</h3><ol><li>到新塞雷尼马厩见英帕与卡多。</li><li>修好热气球，乘热气球升空。</li><li>滑翔降落，寻找地画中的泪滴形水池。</li><li>触摸第一颗龙之泪观看回忆。</li><li>继续按被遗忘神殿地图提示收集其余龙之泪。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>不是登塔发射再落地画中心与英帕汇合，见面地点是新塞雷尼马厩。</li><li>龙之泪是泪滴形水池与光点，不是石碑。</li><li>热气球不会到处移动；本任务做完后，英帕去了被遗忘神殿，卡多在神殿入口守着热气球。</li></ul></div><h3>四、奖励</h3><p>龙之泪收集线开启，获得第一颗龙之泪的回忆。</p><p class="quest-links">相关攻略：<a href="dragon-tears-guide">龙之泪完全指南</a> · <a href="tower-guide">15座鸟望塔开图完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q19</span>
       </div>
     </article>
 
-    <!-- ══ Q20 ══ -->
-    <article class="article-card quest-item expandable" id="q20" data-cat="story">
+    <article class="quest-entry" id="q20" data-cat="story" data-words="177">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_The_Dragon_s_Tears.png" alt="龙之泪" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「龙之泪」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">20</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">龙之泪</div>
-          <div class="quest-desc article-card-desc">收集全部 12 颗龙之泪：11 处地画加阿卡莱里斯特半岛的最后一颗，揭晓泽尔达就是光之龙。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-purple">核心剧情</span>
             <span class="tag tag-gold">强烈推荐</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">龙之泪</div>
+        <div class="article-card-desc">收集全部 12 颗龙之泪：11 处地画加阿卡莱里斯特半岛的最后一颗，揭晓泽尔达就是光之龙。</div>
       </div>
+<div class="article-body"><h2>20 龙之泪</h2><div class="article-subtitle">龙之泪一共 12 颗：11 处地画各一颗，外加最后一颗。看完所有回忆，你会知道泽尔达就是光之龙。</div><h3>一、任务前置</h3><ul><li>完成英帕与地上图画，开启收集线。</li></ul><h3>二、任务步骤</h3><ol><li>按被遗忘神殿地图提示与游戏编号，依次到 11 处地画。</li><li>在每处地画的泪滴形水池触摸龙之泪，观看回忆。</li><li>集齐 11 颗后，光之龙新落一颗泪滴，落在阿卡莱里斯特半岛尖端。</li><li>到里斯特半岛尖端触摸最后一颗，看完最终回忆。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>第 12 颗不在被遗忘神殿，被遗忘神殿只有地画地图与壁画。</li><li>龙之泪是泪滴形水池，不是石碑。</li><li>顺序按游戏编号与地图提示走，不是顺时针。</li></ul></div><h3>四、奖励</h3><p>全部 12 颗龙之泪的回忆，揭晓泽尔达化龙的真相。</p><p class="quest-links">相关攻略：<a href="dragon-tears-guide">龙之泪完全指南</a> · <a href="harry-master-sword">白龙寻踪与大师之剑永久拔剑全攻略</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 全部 12 颗龙之泪的回忆，揭晓泽尔达化龙的真相。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>20 龙之泪</h2><div class="article-subtitle">龙之泪一共 12 颗：11 处地画各一颗，外加最后一颗。看完所有回忆，你会知道泽尔达就是光之龙。</div><h3>一、任务前置</h3><ul><li>完成英帕与地上图画，开启收集线。</li></ul><h3>二、任务步骤</h3><ol><li>按被遗忘神殿地图提示与游戏编号，依次到 11 处地画。</li><li>在每处地画的泪滴形水池触摸龙之泪，观看回忆。</li><li>集齐 11 颗后，光之龙新落一颗泪滴，落在阿卡莱里斯特半岛尖端。</li><li>到里斯特半岛尖端触摸最后一颗，看完最终回忆。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>第 12 颗不在被遗忘神殿，被遗忘神殿只有地画地图与壁画。</li><li>龙之泪是泪滴形水池，不是石碑。</li><li>顺序按游戏编号与地图提示走，不是顺时针。</li></ul></div><h3>四、奖励</h3><p>全部 12 颗龙之泪的回忆，揭晓泽尔达化龙的真相。</p><p class="quest-links">相关攻略：<a href="dragon-tears-guide">龙之泪完全指南</a> · <a href="harry-master-sword">白龙寻踪与大师之剑永久拔剑全攻略</a></p></div></div>
-        </div>
+        <span class="mq-num">Q20</span>
       </div>
     </article>
 
-    <!-- ══ Q21 ══ -->
-    <article class="article-card quest-item expandable" id="q21" data-cat="final">
+    <article class="quest-entry" id="q21" data-cat="final" data-words="166">
       <div class="article-card-banner"><img src="images/hotlink/1200px-TotK_Link_Master_Sword_Light_Dragon.png" alt="拔取大师之剑" loading="lazy"></div>
       <p class="quest-screenshot-caption">林克在光之龙头上拔取大师之剑</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">21</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">失落的勇者之剑</div>
-          <div class="quest-desc article-card-desc">追上光之龙，凭两轮满耐力拔出大师之剑。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-red">终章</span>
             <span class="tag tag-gold">大师之剑</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">失落的勇者之剑</div>
+        <div class="article-card-desc">追上光之龙，凭两轮满耐力拔出大师之剑。</div>
       </div>
+<div class="article-body"><h2>21 失落的勇者之剑</h2><div class="article-subtitle">大师之剑插在光之龙头顶。拔剑的硬门槛是两轮满耐力：初始一轮加 5 个耐力容器，共 20 个祝福之光换来，临时黄色耐力不算。</div><h3>一、任务前置</h3><ul><li>两轮满耐力（初始一轮加 5 个耐力容器）；已获得大师之剑的位置标记。</li></ul><h3>二、任务步骤</h3><ol><li>按地图标记追上光之龙，登上龙头。</li><li>走到额头闪耀圣光的剑身前，按下交互。</li><li>按住拔剑，耐力持续消耗，直到拔出。</li><li>耐力不够会被弹开，追上光之龙再试一次。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>黄色临时耐力连救急都做不到，必须是绿色耐力凑满两轮。</li><li>拔剑时光之龙会剧烈挣扎，别在半途松手。</li><li>拔剑后别急着走，白龙身上的素材很值钱。</li></ul></div><h3>四、奖励</h3><p>大师之剑入手，能量耗尽后冷却恢复；满血时蓄力可发剑气。</p><p class="quest-links">相关攻略：<a href="harry-master-sword">白龙寻踪与大师之剑永久拔剑全攻略</a> · <a href="dragon-guide">四条龙素材刷取指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 大师之剑入手，能量耗尽后冷却恢复；满血时蓄力可发剑气。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>21 失落的勇者之剑</h2><div class="article-subtitle">大师之剑插在光之龙头顶。拔剑的硬门槛是两轮满耐力：初始一轮加 5 个耐力容器，共 20 个祝福之光换来，临时黄色耐力不算。</div><h3>一、任务前置</h3><ul><li>两轮满耐力（初始一轮加 5 个耐力容器）；已获得大师之剑的位置标记。</li></ul><h3>二、任务步骤</h3><ol><li>按地图标记追上光之龙，登上龙头。</li><li>走到额头闪耀圣光的剑身前，按下交互。</li><li>按住拔剑，耐力持续消耗，直到拔出。</li><li>耐力不够会被弹开，追上光之龙再试一次。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>黄色临时耐力连救急都做不到，必须是绿色耐力凑满两轮。</li><li>拔剑时光之龙会剧烈挣扎，别在半途松手。</li><li>拔剑后别急着走，白龙身上的素材很值钱。</li></ul></div><h3>四、奖励</h3><p>大师之剑入手，能量耗尽后冷却恢复；满血时蓄力可发剑气。</p><p class="quest-links">相关攻略：<a href="harry-master-sword">白龙寻踪与大师之剑永久拔剑全攻略</a> · <a href="dragon-guide">四条龙素材刷取指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q21</span>
       </div>
     </article>
 
-    <!-- ══ Q22 ══ -->
-    <article class="article-card quest-item expandable" id="q22" data-cat="final">
+    <article class="quest-entry" id="q22" data-cat="final" data-words="180">
       <div class="article-card-banner"><img src="images/hotlink/TotK_Link_Confronting_Ganondorf.png" alt="讨伐加侬多夫" loading="lazy"></div>
       <p class="quest-screenshot-caption">链克与魔王加侬多夫的最终对决</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">22</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">讨伐加侬多夫</div>
-          <div class="quest-desc article-card-desc">从海拉鲁城堡正下方裂缝跳入地底，穿越瘴气军团营地，讨伐加侬多夫与魔王龙。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-red">终章</span>
             <span class="tag tag-gold">最终决战</span>
             <span class="tag tag-purple">剧情高潮</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">讨伐加侬多夫</div>
+        <div class="article-card-desc">从海拉鲁城堡正下方裂缝跳入地底，穿越瘴气军团营地，讨伐加侬多夫与魔王龙。</div>
       </div>
+<div class="article-body"><h2>22 讨伐加侬多夫</h2><div class="article-subtitle">终局战分三个阶段：人形加侬多夫、觉醒态、魔王龙。贤者们全程随行助战，没有打五个魔影贤者这个固定流程。</div><h3>一、任务前置</h3><ul><li>四位贤者加入；灵之贤者米涅露加入；备好向阳草料理。</li></ul><h3>二、任务步骤</h3><ol><li>从海拉鲁城堡正下方裂缝跳入地底。</li><li>沿地底通道向南，穿过瘴气军团营地，到达瘴气巢穴。</li><li>与加侬多夫决战：人形态、觉醒态依次击败。</li><li>乘光之龙迎战魔王龙，击破背上四处眼睛脓包。</li><li>最后刺向额头上的秘石。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>瘴气攻击会锁心心上限，向阳草料理是标配。</li><li>魔王龙的最后一击在额头秘石，不是胸前核心。</li><li>贤者们是随行助战，不是固定流程里要打的敌人。</li></ul></div><h3>四、奖励</h3><p>加侬多夫讨伐完成，结局动画触发。</p><p class="quest-links">相关攻略：<a href="boss-ganondorf">魔王加侬多夫攻略</a> · <a href="castle-guide">海拉鲁城堡探索完全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 加侬多夫讨伐完成，结局动画触发。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>22 讨伐加侬多夫</h2><div class="article-subtitle">终局战分三个阶段：人形加侬多夫、觉醒态、魔王龙。贤者们全程随行助战，没有打五个魔影贤者这个固定流程。</div><h3>一、任务前置</h3><ul><li>四位贤者加入；灵之贤者米涅露加入；备好向阳草料理。</li></ul><h3>二、任务步骤</h3><ol><li>从海拉鲁城堡正下方裂缝跳入地底。</li><li>沿地底通道向南，穿过瘴气军团营地，到达瘴气巢穴。</li><li>与加侬多夫决战：人形态、觉醒态依次击败。</li><li>乘光之龙迎战魔王龙，击破背上四处眼睛脓包。</li><li>最后刺向额头上的秘石。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>瘴气攻击会锁心心上限，向阳草料理是标配。</li><li>魔王龙的最后一击在额头秘石，不是胸前核心。</li><li>贤者们是随行助战，不是固定流程里要打的敌人。</li></ul></div><h3>四、奖励</h3><p>加侬多夫讨伐完成，结局动画触发。</p><p class="quest-links">相关攻略：<a href="boss-ganondorf">魔王加侬多夫攻略</a> · <a href="castle-guide">海拉鲁城堡探索完全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q22</span>
       </div>
     </article>
 
-    <!-- ══ Q23 ══ -->
-    <article class="article-card quest-item expandable" id="q23" data-cat="final">
+    <article class="quest-entry" id="q23" data-cat="final" data-words="127">
       <div class="article-card-banner"><img src="images/hotlink/TotK_Find_Princess_Zelda.png" alt="寻找泽尔达" loading="lazy"></div>
       <p class="quest-screenshot-caption">主线任务「寻找泽尔达」截图</p>
-      <div class="article-card-body quest-row" onclick="toggleQuest(this)">
-        <div class="quest-num">23</div>
-        <div class="quest-body">
-          <div class="quest-title article-card-title">寻找泽尔达</div>
-          <div class="quest-desc article-card-desc">击败魔王龙后，林克俯冲接住坠落的泽尔达，迎来真正的结局。</div>
-          <div class="quest-meta">
+      <div class="article-card-body">
+        <div class="quest-meta">
             <span class="tag tag-red">终章</span>
             <span class="tag tag-green">结局</span>
           </div>
-        </div>
-        <div class="quest-actions">
-          <button class="quest-check" onclick="event.stopPropagation();toggleCheck(this)">✓</button>
-          <span class="expand-chevron">▼</span>
-        </div>
+        <div class="article-card-title">寻找泽尔达</div>
+        <div class="article-card-desc">击败魔王龙后，林克俯冲接住坠落的泽尔达，迎来真正的结局。</div>
       </div>
+<div class="article-body"><h2>23 寻找泽尔达</h2><div class="article-subtitle">击败魔王龙后触发结局动画：林克俯冲接住失去意识坠落的泽尔达，两人落入湖中。结局之后，存档回到决战前，你可以继续探索海拉鲁。</div><h3>一、任务前置</h3><ul><li>完成讨伐加侬多夫。</li></ul><h3>二、任务步骤</h3><ol><li>观看结局动画。</li><li>结局后读取存档，回到决战前继续探索。</li><li>按需要补齐收集：152 座神庙、120 个破魔树根、1000 颗克洛格种子、12 颗龙之泪。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>主线 23 项全部完成，之后全是自由探索，别再找第 24 项主线。</li><li>结局存档回到决战前是正常设计，不是进度丢失。</li></ul></div><h3>四、奖励</h3><p>真正的结局；全收集目标：152 座神庙、120 个破魔树根、1000 颗克洛格种子、12 颗龙之泪。</p><p class="quest-links">相关攻略：<a href="shrine-checklist">152座神庙全收集自查指南</a> · <a href="korok-guide">呀哈哈种子全指南</a></p></div>
       <div class="article-card-footer">
         <span class="mq-reward">🎁 真正的结局；全收集目标：152 座神庙、120 个破魔树根、1000 颗克洛格种子、12 颗龙之泪。</span>
-        <span class="mq-hint" style="color:#c9a227">📖 完整攻略</span>
-      </div>
-      <div class="quest-detail">
-        <div class="quest-detail-inner">
-          <div><div class="article-body"><h2>23 寻找泽尔达</h2><div class="article-subtitle">击败魔王龙后触发结局动画：林克俯冲接住失去意识坠落的泽尔达，两人落入湖中。结局之后，存档回到决战前，你可以继续探索海拉鲁。</div><h3>一、任务前置</h3><ul><li>完成讨伐加侬多夫。</li></ul><h3>二、任务步骤</h3><ol><li>观看结局动画。</li><li>结局后读取存档，回到决战前继续探索。</li><li>按需要补齐收集：152 座神庙、120 个破魔树根、1000 颗克洛格种子、12 颗龙之泪。</li></ol><h3>三、翻车点（防坑必看）</h3><div class="highlight-box"><ul><li>主线 23 项全部完成，之后全是自由探索，别再找第 24 项主线。</li><li>结局存档回到决战前是正常设计，不是进度丢失。</li></ul></div><h3>四、奖励</h3><p>真正的结局；全收集目标：152 座神庙、120 个破魔树根、1000 颗克洛格种子、12 颗龙之泪。</p><p class="quest-links">相关攻略：<a href="shrine-checklist">152座神庙全收集自查指南</a> · <a href="korok-guide">呀哈哈种子全指南</a></p></div></div>
-        </div>
+        <span class="mq-num">Q23</span>
       </div>
     </article>
 
-  </div><!-- end article-grid -->
+  </div><!-- end quest-list -->
 
   <div class="page-filter-empty" id="pageFilterEmpty">没有找到匹配的任务，换个关键词或分类试试。</div>
 
 </div><!-- end page-body -->
 
-<div class="bnav">
-  <div class="bnav-rel"><div class="bnav-title">🔗 相关攻略</div><ul><li><a href="side-quest">› 情节挑战攻略</a></li><li><a href="quest-order">› 任务顺序清单</a></li><li><a href="harry-master-sword">› 白龙寻踪与大师之剑永久拔剑全攻略</a></li></ul></div>
-  
-</div>
 <footer class="footer">
   <div class="footer-inner">
     <p class="footer-logo">⚔️ 王国之泪 全攻略</p>
@@ -979,71 +732,92 @@
 </footer>
 
 <script src="main.js?v=12"></script>
-<script src="collect.js?v=1"></script>
+<script src="search.js?v=1"></script>
 <script>
-// ── 本页筛选：分类 pills + 标题搜索（哈里页版式；分类筛选行为不变，另加已显示计数） ──
-var mqActiveCat = 'all';
-function applyMqFilter() {
-  var input = document.getElementById('pageFilterSearch');
-  var q = input ? input.value.toLowerCase().replace(/\s+/g, '') : '';
-  var visible = 0;
-  document.querySelectorAll('#mqList .quest-item').forEach(function (el) {
-    var t = el.querySelector('.quest-title');
-    var title = t ? t.textContent.toLowerCase().replace(/\s+/g, '') : '';
-    var okCat = (mqActiveCat === 'all' || el.dataset.cat === mqActiveCat);
-    var okQ = (!q || title.indexOf(q) !== -1);
-    var show = okCat && okQ;
-    el.style.display = show ? 'flex' : 'none';
-    if (show) visible++;
-  });
-  var countEl = document.getElementById('pageFilterCount');
-  if (countEl) countEl.textContent = '已显示 ' + visible + ' / 23 个任务';
-  var emptyEl = document.getElementById('pageFilterEmpty');
-  if (emptyEl) emptyEl.style.display = visible === 0 ? 'block' : 'none';
-}
-
-function filterQuest(cat, btn) {
-  mqActiveCat = cat;
-  document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.filter-tab').forEach(b => b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
-  applyMqFilter();
-}
-
+// ══ 本页筛选：标题搜索 + 标签 + 排序（纯前端；不改 main.js / search.js / 全站搜索） ══
 (function () {
+  var list = document.getElementById('mqList');
+  if (!list) return;
+  var entries = Array.prototype.slice.call(list.querySelectorAll('.quest-entry'));
+  entries.forEach(function (entry, i) { entry.dataset.index = i; });
   var input = document.getElementById('pageFilterSearch');
-  if (input) input.addEventListener('input', applyMqFilter);
-})();
-
-function toggleQuest(rowEl) {
-  const item    = rowEl.parentElement;
-  const detail  = item.querySelector('.quest-detail');
-  const chevron = rowEl.querySelector('.expand-chevron');
-  const isOpen  = detail.classList.contains('open');
-  detail.classList.toggle('open', !isOpen);
-  chevron.classList.toggle('open', !isOpen);
-}
-
-// ── 导出 CSV：主线任务收集记录 ──
-function exportMainQuestCSV() {
-  var headers = ['编号', '任务名', '描述', '标签', '地区', '已收集'];
-  var rows = [];
-  document.querySelectorAll('#mqList .quest-item').forEach(function(item) {
-    var t = function(sel) { var el = item.querySelector(sel); return el ? el.textContent.trim() : ''; };
-    var tags = Array.prototype.map.call(item.querySelectorAll('.quest-meta .tag'), function(x) { return x.textContent.trim(); }).join('、');
-    var btn = item.querySelector('.quest-check');
-    var done = (btn && btn.classList.contains('done')) ? '是' : '否';
-    rows.push([t('.quest-num'), t('.quest-title'), t('.quest-desc'), tags, t('.rbadge'), done]);
+  var sortSel = document.getElementById('pageFilterSort');
+  var countEl = document.getElementById('pageFilterCount');
+  var emptyEl = document.getElementById('pageFilterEmpty');
+  var tagBtns = Array.prototype.slice.call(document.querySelectorAll('.page-filter-tag'));
+  var activeTag = 'all';
+  // 与全站搜索同一套站内旧称对照：查旧称也能找到新名标题
+  var ALIASES = [
+    ['白银人马', '白银莱尼尔'], ['白鬃人马', '白鬃莱尼尔'], ['蓝鬃人马', '蓝鬃莱尼尔'],
+    ['红鬃人马', '红鬃莱尼尔'], ['乌萨祖姆', '乌萨诸马'], ['塔列镇', '一始村'],
+    ['格鲁多', '格鲁德'], ['莫尔德拉吉克', '巨霸迦马'], ['三头龙', '古栗欧克'],
+    ['吉波多', '吉波得'], ['图林', '丘栗'], ['尤诺波', '阿沅'],
+    ['佐拉', '卓拉'], ['太阳花', '向阳草'], ['克洛格', '呀哈哈'], ['人马', '莱尼尔']
+  ];
+  ALIASES.sort(function (a, b) { return b[0].length - a[0].length; });
+  function norm(str) { return (str || '').toLowerCase().replace(/\s+/g, ''); }
+  function canon(q) {
+    ALIASES.forEach(function (pair) { q = q.split(pair[0]).join(pair[1]); });
+    return q;
+  }
+  function apply() {
+    var q = canon(norm(input.value));
+    var visible = [];
+    entries.forEach(function (entry) {
+      var titleEl = entry.querySelector('.article-card-title');
+      var title = titleEl ? titleEl.textContent : '';
+      var okTag = (activeTag === 'all' || entry.dataset.cat === activeTag);
+      var okQ = (!q || norm(title).indexOf(q) !== -1);
+      var show = okTag && okQ;
+      entry.style.display = show ? '' : 'none';
+      if (show) visible.push(entry);
+    });
+    var mode = sortSel.value;
+    var sorted = entries.slice();
+    if (mode === 'long') {
+      sorted.sort(function (a, b) { return ((+b.dataset.words) - (+a.dataset.words)) || ((+a.dataset.index) - (+b.dataset.index)); });
+    } else if (mode === 'short') {
+      sorted.sort(function (a, b) { return ((+a.dataset.words) - (+b.dataset.words)) || ((+a.dataset.index) - (+b.dataset.index)); });
+    } else {
+      sorted.sort(function (a, b) { return (+a.dataset.index) - (+b.dataset.index); });
+    }
+    sorted.forEach(function (entry) { list.appendChild(entry); });
+    countEl.textContent = '已显示 ' + visible.length + ' / ' + entries.length + ' 篇';
+    emptyEl.style.display = visible.length === 0 ? 'block' : 'none';
+  }
+  input.addEventListener('input', apply);
+  sortSel.addEventListener('change', apply);
+  tagBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activeTag = btn.dataset.tag;
+      tagBtns.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+      apply();
+    });
   });
-  exportToCSV('主线任务-收集记录.csv', headers, rows);
-}
+  window.__mqResetFilter = function () {
+    activeTag = 'all';
+    input.value = '';
+    sortSel.value = 'default';
+    tagBtns.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.tag === 'all' ? 'true' : 'false'); });
+    apply();
+  };
+  apply();
+})();
+// ══ #qXX 直达：先恢复全部显示，再滚动到对应任务 ══
+(function () {
+  function openHash() {
+    var h = location.hash;
+    if (!/^#q\d{2}$/.test(h)) return;
+    var item = document.querySelector(h);
+    if (!item) return;
+    if (typeof window.__mqResetFilter === 'function') window.__mqResetFilter();
+    item.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  window.addEventListener('hashchange', openHash);
+  document.addEventListener('DOMContentLoaded', openHash);
+  openHash();
+})();
 </script>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"16df8646296b4f23a5b0917c5a69a030","r":1,"spa":2}' crossorigin="anonymous"></script>
-<script>
-(function(){function openHash(){var h=location.hash;if(!/^#q\d{2}$/.test(h))return;var item=document.querySelector(h);if(!item)return;if(typeof filterQuest==='function'){var tab=document.querySelector('.filter-tab');if(tab)filterQuest('all',tab);}var d=item.querySelector('.quest-detail');if(d&&!d.classList.contains('open')){d.classList.add('open');var c=item.querySelector('.expand-chevron');if(c)c.classList.add('open');}}window.addEventListener('hashchange',openHash);document.addEventListener('DOMContentLoaded',openHash);openHash();})();
-</script>
 </body>
 </html>
-
-
-
