@@ -17,7 +17,7 @@
   <!-- 核心攻略页面 - 高优先级 -->
   <url>
     <loc>https://uppersteps.com/main-quest</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -38,7 +38,7 @@
   
   <url>
     <loc>https://uppersteps.com/cooking</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -263,14 +263,14 @@
   <!-- Boss 详情页面 -->
   <url>
     <loc>https://uppersteps.com/boss-ganondorf</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://uppersteps.com/boss-phantom-ganon</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -338,6 +338,12 @@
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
+  <url>
+    <loc>https://uppersteps.com/terms</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
 
   <url>
     <loc>https://uppersteps.com/blessing-light-guide</loc>
@@ -354,7 +360,7 @@
 
   <url>
     <loc>https://uppersteps.com/bow-guide</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -450,7 +456,7 @@
   </url>
   <url>
     <loc>https://uppersteps.com/paraglider-guide</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -492,7 +498,7 @@
   </url>
   <url>
     <loc>https://uppersteps.com/koltin-guide</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
