@@ -1,3 +1,7 @@
+/* 站内搜索 · Day 8 (2026-11-18) + 本页范围搜索 (2026-11-26, v2)
+ * data-scope: 搜索框所在 .site-search 加 data-scope="/main-quest-" 后, 只在该前缀的索引页里搜; 不设则全站搜。
+ * 旧页面不设 data-scope, 行为与 v1 完全一致。
+ */
 /* 站内搜索 · Day 8 (2026-11-18)
  * 纯前端实现: fetch search-index.json, 本地匹配, 不依赖服务端。
  * 容错: 简繁互通(繁转简归一)、别名(白银人马->白银莱尼尔、乌萨祖姆->乌萨诸马等)、
@@ -196,8 +200,14 @@
     if (!rawQuery || !String(rawQuery).trim()) { panel.hidden = true; panel.innerHTML = ''; return; }
     if (!results.length) {
       panel.hidden = false;
+      var hint = '神庙、呀哈哈、料理';
+      if (box.getAttribute('data-scope')) {
+        var sc = [];
+        box.querySelectorAll('.site-search-chip').forEach(function (c) { sc.push(c.getAttribute('data-q') || c.textContent); });
+        if (sc.length) hint = sc.join('、');
+      }
       panel.innerHTML = '<div class="site-search-empty">没有找到“' + esc(rawQuery) +
-        '”相关攻略，换个词试试，如：神庙、呀哈哈、料理。</div>';
+        '”相关攻略，换个词试试，如：' + esc(hint) + '。</div>';
       positionPanel(box, panel);
       return;
     }
@@ -220,6 +230,12 @@
     var input = box.querySelector('.site-search-input');
     var panel = box.querySelector('.site-search-results');
     if (!form || !input || !panel) return;
+    /* 本页搜索范围: data-scope="/main-quest-" 时只在该前缀的索引页里搜; 不设则全站搜。 */
+    var scope = box.getAttribute('data-scope') || '';
+    function applyScope(pages) {
+      if (!scope) return pages;
+      return pages.filter(function (pg) { return String(pg.url || '').indexOf(scope) === 0; });
+    }
     if (document.body && panel.parentNode !== document.body) document.body.appendChild(panel);
     var reposition = function () { if (!panel.hidden) positionPanel(box, panel); };
     window.addEventListener('scroll', reposition, true);
@@ -236,6 +252,7 @@
         return;
       }
       loadIndex().then(function (pages) {
+        pages = applyScope(pages);
         var res = searchIndex(pages, q);
         var total = totalMatches(pages, q);
         render(box, panel, res, total, q, false);
@@ -288,6 +305,7 @@
       if (!q.trim()) return;
       recordStat(q);
       loadIndex().then(function (pages) {
+        pages = applyScope(pages);
         var res = searchIndex(pages, q);
         if (res.length) window.location.href = res[0].page.url;
       }).catch(function () { /* 停留在当前页, 面板已显示失败提示 */ });

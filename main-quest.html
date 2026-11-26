@@ -72,7 +72,7 @@
     "url": "https://uppersteps.com/main-quest",
     "inLanguage": "zh-CN",
     "datePublished": "2025-06-01",
-    "dateModified": "2026-11-25",
+    "dateModified": "2026-11-26",
     "author": { "@type": "Person", "name": "zelda-guide" },
     "publisher": { "@type": "Organization", "name": "王国之泪全攻略", "url": "https://uppersteps.com/" },
     "breadcrumb": {
@@ -199,7 +199,7 @@
     <a class="navbar-logo" href="/"><div class="logo-icon">⚔️</div>王国之泪 攻略</a>
     <ul class="navbar-nav" id="mainNav">
       <li><a href="/">首页</a></li>
-      <li><a href="main-quest">主线任务</a></li>
+      <li><a href="main-quest" class="active">主线任务</a></li>
       <li><a href="side-quest">情节挑战</a></li>
       <li><a href="shrines">神庙挑战</a></li>
       <li><a href="shrine-unlock">神庙开启</a></li>
@@ -215,7 +215,7 @@
           <li><a href="old-maps">残旧的地图</a></li>
         </ul>
       </li>
-      <li><a href="harry-tips" class="active">哈里的终极秘籍</a></li>
+      <li><a href="harry-tips">哈里的终极秘籍</a></li>
 <li class="nav-dropdown"><a href="about">关于我们</a><ul class="nav-dropdown-menu"><li><a href="about">关于我们</a></li><li><a href="contact">联系我们</a></li><li><a href="faq">常见问题</a></li><li><a href="sitemap-page">网站地图</a></li><li><a href="privacy">隐私政策</a></li><li><a href="terms">服务条款</a></li></ul></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
@@ -224,24 +224,24 @@
 
 
 <div class="page-hero">
-  <div class="harry-hero-badge">HARRY'S ULTIMATE TIPS</div>
-  <h1 class="page-hero-title">🏆 哈里的终极秘籍</h1>
-  <p class="page-hero-subtitle">硬核老司机带你解锁王国之泪的隐藏玩法 · 74篇精选攻略</p>
+  <div class="harry-hero-badge">MAIN QUEST</div>
+  <h1 class="page-hero-title">主线任务</h1>
+  <p class="page-hero-subtitle">王国之泪主线全流程攻略 · 23个主线任务</p>
     <!-- ══ 站内搜索 (Day 8) ══ -->
-    <div class="site-search">
+    <div class="site-search" data-scope="/main-quest-">
       <div class="site-search-box">
         <form class="site-search-form" role="search" action="#" onsubmit="return false;">
-          <input type="search" class="site-search-input" placeholder="搜攻略：神庙、武器、料理、坐标…" aria-label="站内搜索" autocomplete="off" enterkeyhint="search">
+          <input type="search" class="site-search-input" placeholder="搜主线任务：神殿、贤者、加侬…" aria-label="站内搜索" autocomplete="off" enterkeyhint="search">
           <button type="submit" class="site-search-btn" aria-label="搜索">搜索</button>
         </form>
         <div class="site-search-results" hidden></div>
       </div>
       <div class="site-search-chips">
         <span class="site-search-chips-label">热门：</span>
-        <button type="button" class="site-search-chip" data-q="瘴气">瘴气</button>
-        <button type="button" class="site-search-chip" data-q="白银莱尼尔">白银莱尼尔</button>
-        <button type="button" class="site-search-chip" data-q="乌萨诸马">乌萨诸马</button>
-        <button type="button" class="site-search-chip" data-q="坐标">坐标</button>
+        <button type="button" class="site-search-chip" data-q="神殿">神殿</button>
+        <button type="button" class="site-search-chip" data-q="贤者">贤者</button>
+        <button type="button" class="site-search-chip" data-q="加侬">加侬</button>
+        <button type="button" class="site-search-chip" data-q="魔王">魔王</button>
       </div>
     </div>
 </div>
@@ -273,7 +273,7 @@
   <div class="section-label">📜 主线任务（共 23 个）</div>
 
 
-  <!-- ══ 本页筛选：标题搜索 + 标签 + 排序 (Day 9；与上方 Day 8 全站搜索框不同，只筛本页 65 张卡片) ══ -->
+  <!-- ══ 本页筛选：标题搜索 + 标签 + 排序 (Day 9；与上方 Day 8 全站搜索框不同，只筛本页 23 张卡片) ══ -->
   <div class="page-filter" id="pageFilter">
     <div class="page-filter-row">
       <input type="search" class="page-filter-input" id="pageFilterSearch" placeholder="搜本页任务名：神殿、贤者、加侬…" aria-label="搜索本页文章标题" autocomplete="off" enterkeyhint="search">
@@ -594,7 +594,7 @@
 </footer>
 
 <script src="main.js?v=12"></script>
-<script src="search.js?v=1"></script>
+<script src="search.js?v=2"></script>
 <script>
 // ══ 本页筛选：标题搜索 + 标签 + 排序 (Day 9，纯前端；不改 main.js / search.js / 全站搜索) ══
 (function () {
