@@ -5,7 +5,7 @@
   <!-- 首页 - 最高优先级 -->
   <url>
     <loc>https://uppersteps.com/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -88,7 +88,7 @@
   <!-- 专项攻略页面 -->
   <url>
     <loc>https://uppersteps.com/harry-tips</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -313,7 +313,7 @@
   
   <url>
     <loc>https://uppersteps.com/sitemap-page</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1173,7 +1173,19 @@
   </url>
   <url>
     <loc>https://uppersteps.com/cherry-blossom-guide</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/kakariko-village-guide</loc>
+    <lastmod>2026-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://uppersteps.com/rito-village-guide</loc>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
